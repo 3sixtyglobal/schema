@@ -258,6 +258,50 @@
 			"destination": "https://schema.twindev.org/documents/:path*.json"
 		},
 		{
+			"source": "/rights-management/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/rights-management/types.html"
+		},
+		{
+			"source": "/rights-management/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/rights-management/types.jsonld"
+		},
+		{
+			"source": "/rights-management/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/rights-management/:path*.json"
+		},
+		{
+			"source": "/rights-management/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/rights-management/:path*.json"
+		},
+		{
 			"source": "/immutable-proof/",
 			"has": [
 				{

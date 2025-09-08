@@ -1,0 +1,65 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/rights-management/PolicyNegotiationRequest",
+	"description": "The JSON-LD definition for the policy negotiation proof.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "array",
+			"minItems": 2,
+			"items": false,
+			"maxItems": 2,
+			"description": "The JSON-LD context.",
+			"prefixItems": [
+				{
+					"type": "string",
+					"const": "https://www.w3.org/ns/credentials/v2"
+				},
+				{
+					"type": "string",
+					"const": "https://schema.twindev.org/rights-management"
+				}
+			]
+		},
+		"type": {
+			"type": "string",
+			"const": "PolicyNegotiationRequest",
+			"description": "The type of the proof."
+		},
+		"assetType": {
+			"type": "string",
+			"description": "The asset type."
+		},
+		"action": {
+			"type": "string",
+			"description": "The action type."
+		},
+		"resourceId": {
+			"type": "string",
+			"description": "The specific resource id or can be left undefined for a whole asset class."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The id of the the node."
+		},
+		"information": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "array",
+				"items": false,
+				"prefixItems": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				]
+			},
+			"description": "Additional information provided by the requester to determine if a policy can be created."
+		},
+		"proof": {
+			"$ref": "https://schema.twindev.org/rights-management/Proof",
+			"description": "The proof object."
+		}
+	},
+	"required": ["@context", "type", "assetType", "action", "nodeIdentity", "proof"],
+	"additionalProperties": false
+}

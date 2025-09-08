@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/rights-management/PolicyState",
+	"description": "The state of the policy negotiation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "string",
+			"const": "https://schema.twindev.org/rights-management",
+			"description": "The JSON-LD context."
+		},
+		"type": {
+			"type": "string",
+			"const": "PolicyState",
+			"description": "The type of the proof."
+		},
+		"id": {
+			"type": "string",
+			"description": "The id of the policy."
+		},
+		"status": {
+			"$ref": "https://schema.twindev.org/rights-management/PolicyNegotiationStatus",
+			"description": "The current status of the policy negotiation."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason which might be provided if the negotiation status is not approved."
+		},
+		"expires": {
+			"type": "string",
+			"description": "The expiration date of the policy created by the negotiation if it was approved, and it has an expiration date."
+		}
+	},
+	"required": ["@context", "type", "id", "status"],
+	"additionalProperties": false
+}

@@ -305,6 +305,14 @@
 				"y": {
 					"type": "string",
 					"description": "EC JWK \"y\" (Y Coordinate) Parameter"
+				},
+				"pub": {
+					"type": "string",
+					"description": "AKP JWK \"pub\" (Public Key) Parameter"
+				},
+				"priv": {
+					"type": "string",
+					"description": "AKP JWK \"priv\" (Private key) Parameter"
 				}
 			},
 			"description": "The public key for the entry as a JWK. Spec https://datatracker.ietf.org/doc/html/rfc7517 ."
