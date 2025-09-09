@@ -1,0 +1,9 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/rights-management/PolicyInformation",
+	"description": "Interface describing a Policy Information.",
+	"type": "object",
+	"additionalProperties": {
+		"$ref": "https://schema.twindev.org/rights-management/PolicyInformationItems"
+	}
+}

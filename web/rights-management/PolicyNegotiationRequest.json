@@ -4,6 +4,22 @@
 	"description": "The JSON-LD definition for the policy negotiation proof.",
 	"type": "object",
 	"properties": {
+		"assignee": {
+			"type": "string",
+			"description": "The assignee for the locator."
+		},
+		"action": {
+			"type": "string",
+			"description": "The action for the locator."
+		},
+		"assetType": {
+			"type": "string",
+			"description": "The asset type for the locator."
+		},
+		"resourceId": {
+			"type": "string",
+			"description": "A resource identifier for the locator."
+		},
 		"@context": {
 			"type": "array",
 			"minItems": 2,
@@ -26,33 +42,8 @@
 			"const": "PolicyNegotiationRequest",
 			"description": "The type of the proof."
 		},
-		"assetType": {
-			"type": "string",
-			"description": "The asset type."
-		},
-		"action": {
-			"type": "string",
-			"description": "The action type."
-		},
-		"resourceId": {
-			"type": "string",
-			"description": "The specific resource id or can be left undefined for a whole asset class."
-		},
-		"nodeIdentity": {
-			"type": "string",
-			"description": "The id of the the node."
-		},
 		"information": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "array",
-				"items": false,
-				"prefixItems": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				]
-			},
+			"$ref": "https://schema.twindev.org/rights-management/PolicyInformation",
 			"description": "Additional information provided by the requester to determine if a policy can be created."
 		},
 		"proof": {
@@ -60,6 +51,6 @@
 			"description": "The proof object."
 		}
 	},
-	"required": ["@context", "type", "assetType", "action", "nodeIdentity", "proof"],
+	"required": ["@context", "type", "proof"],
 	"additionalProperties": false
 }
