@@ -740,6 +740,39 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/dublin-core/dcmitype.jsonld"
+		},
+		{
+			"source": "/ids-contract-negotiation/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/ids-contract-negotiation/types.html"
+		},
+		{
+			"source": "/ids-contract-negotiation/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/ids-contract-negotiation/:path*.json"
+		},
+		{
+			"source": "/ids-contract-negotiation/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/ids-contract-negotiation/:path*.json"
 		}
 	]
 }

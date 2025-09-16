@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlPermission",
-	"description": "Interface for Permission Rules. A Permission allows an action to be exercised on an Asset if all constraints are satisfied and if all duties are fulfilled.",
+	"description": "Interface for Permission Rules. A Permission allows an action to be exercised on an Asset if all constraints are satisfied and if all duties are fulfilled. https://www.w3.org/TR/odrl-model/#permission",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -93,6 +93,9 @@
 					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
 				},
 				{
+					"type": "string"
+				},
+				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 				},
 				{
@@ -103,6 +106,9 @@
 							"anyOf": [
 								{
 									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+								},
+								{
+									"type": "string"
 								},
 								{
 									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"

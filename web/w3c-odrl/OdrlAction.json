@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAction",
-	"description": "Interface for ODRL Actions.",
+	"description": "Interface for ODRL Actions. https://www.w3.org/TR/odrl-model/#action",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -110,7 +110,14 @@
 			"description": "Refinements applied to the action."
 		},
 		"includedIn": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/ActionType",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "Reference to the action this action is included in."
 		},
 		"implies": {
@@ -119,7 +126,14 @@
 			"description": "References to actions this action implies.",
 			"prefixItems": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+						},
+						{
+							"type": "string"
+						}
+					]
 				}
 			]
 		}

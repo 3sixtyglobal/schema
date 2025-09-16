@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/rights-management/DataAccessRequestWithObject",
+	"description": "The JSON-LD definition for the data access request with object.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "string",
+			"const": "https://schema.twindev.org/rights-management",
+			"description": "The JSON-LD context."
+		},
+		"type": {
+			"type": "string",
+			"const": "DataAccessRequestWithObject",
+			"description": "The type of the request."
+		},
+		"assetType": {
+			"type": "string",
+			"description": "The asset type being requested."
+		},
+		"object": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"description": "The object being sent with the request."
+		}
+	},
+	"required": ["@context", "type", "object"],
+	"additionalProperties": false
+}

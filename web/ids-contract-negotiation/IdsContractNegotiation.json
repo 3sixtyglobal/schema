@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractNegotiation",
+	"description": "Interface for IDS Contract Agreement Messages. https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol/contract-negotiation/contract.negotiation.protocol#id-3.1-ack-contract-negotiation",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The IDS Contract Negotiation JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://w3id.org/dspace/2024/1/context.json"
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2024/1/context.json"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2024/1/context.json"
+						}
+					]
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "ContractNegotiation",
+			"description": "The type of the message."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "The provider id for the contract."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "The consumer id for the contract."
+		},
+		"state": {
+			"$ref": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractNegotiationStateType",
+			"description": "The offer being requested."
+		}
+	},
+	"required": ["@context", "@type", "providerPid", "consumerPid", "state"],
+	"additionalProperties": false
+}

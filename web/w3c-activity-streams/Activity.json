@@ -5,8 +5,38 @@
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
-			"description": "The LD Context."
+			"description": "The Activity Streams JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://www.w3.org/ns/activitystreams"
+				},
+				{
+					"type": "array",
+					"items": false,
+					"minItems": 1,
+					"maxItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/activitystreams"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/activitystreams"
+						}
+					]
+				}
+			]
 		},
 		"@id": {
 			"anyOf": [

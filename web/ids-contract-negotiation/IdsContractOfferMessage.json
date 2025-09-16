@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractOfferMessage",
+	"description": "Interface for IDS Contract Offer Messages. https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol/contract-negotiation/contract.negotiation.protocol#id-2.2-contract-offer-message",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The IDS Contract Negotiation JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://w3id.org/dspace/2024/1/context.json"
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2024/1/context.json"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2024/1/context.json"
+						}
+					]
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "ContractOfferMessage",
+			"description": "The type of the message."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "The provider id for the contract."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "The consumer id for the contract."
+		},
+		"offer": {
+			"$ref": "https://schema.twindev.org/w3c-ids-contract-negotiation/OdrlOffer",
+			"description": "The offer being requested."
+		},
+		"callbackAddress": {
+			"type": "string",
+			"description": "The base callback address for the provider to update the consumer on the state of the negotiation."
+		}
+	},
+	"required": ["@context", "@type", "providerPid", "offer"],
+	"additionalProperties": false
+}

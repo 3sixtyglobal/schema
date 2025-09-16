@@ -5,8 +5,45 @@
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/gaia-x/GaiaXContextType",
-			"description": "The LD context."
+			"description": "The Gaia-X JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://w3id.org/gaia-x/development"
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://w3id.org/gaia-x/development"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://w3id.org/gaia-x/development"
+						}
+					]
+				}
+			]
 		},
 		"@id": {
 			"anyOf": [

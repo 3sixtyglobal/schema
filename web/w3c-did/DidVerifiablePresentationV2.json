@@ -1,0 +1,91 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-did/DidVerifiablePresentationV2",
+	"description": "Interface describing a verifiable presentation.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Provide a unique identifier for the presentation."
+		},
+		"type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": false,
+					"prefixItems": [
+						{
+							"type": "string"
+						}
+					]
+				}
+			],
+			"description": "The types of the data stored in the verifiable credential."
+		},
+		"holder": {
+			"type": "string",
+			"description": "The entity generating the presentation."
+		},
+		"proof": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-did/Proof"
+				},
+				{
+					"type": "array",
+					"items": false,
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-did/Proof"
+						}
+					]
+				}
+			],
+			"description": "Proofs that the verifiable presentation is valid. Optional if a different proof method is used, such as JWT."
+		},
+		"@context": {
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://www.w3.org/ns/credentials/v2"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/credentials/v2"
+						}
+					]
+				}
+			],
+			"description": "The context for the verifiable presentation."
+		},
+		"verifiableCredential": {
+			"type": "array",
+			"items": false,
+			"description": "The data for the verifiable credentials.",
+			"prefixItems": [
+				{
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-did/DidVerifiableCredentialV2"
+						}
+					]
+				}
+			]
+		}
+	},
+	"required": ["@context", "type"],
+	"additionalProperties": false
+}

@@ -1,12 +1,49 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlOffer",
-	"description": "Interface representing an ODRL Offer. An Offer requires an assigner (the party making the offer).",
+	"description": "Interface representing an ODRL Offer. An Offer requires an assigner (the party making the offer). https://www.w3.org/TR/odrl-model/#policy-offer",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
-			"description": "The context for the policy. Must include \"https://www.w3.org/ns/odrl.jsonld\""
+			"description": "The ODRL JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://www.w3.org/ns/odrl/2/"
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/odrl/2/"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/odrl/2/"
+						}
+					]
+				}
+			]
 		},
 		"@id": {
 			"anyOf": [
@@ -149,6 +186,9 @@
 					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
 				},
 				{
+					"type": "string"
+				},
+				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 				},
 				{
@@ -159,6 +199,9 @@
 							"anyOf": [
 								{
 									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+								},
+								{
+									"type": "string"
 								},
 								{
 									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
