@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/synchronised-storage/SynchronisedEntity",
+	"description": "The base definition for synchronised entries.",
+	"type": "object",
+	"properties": {
+		"dateModified": {
+			"type": "string",
+			"description": "The date the entry was modified."
+		},
+		"id": {
+			"type": "string",
+			"description": "The id of the entry."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The identity of the node that owns the entry."
+		}
+	},
+	"required": ["dateModified", "id", "nodeIdentity"],
+	"additionalProperties": false
+}

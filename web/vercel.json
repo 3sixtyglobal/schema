@@ -302,6 +302,39 @@
 			"destination": "https://schema.twindev.org/rights-management/:path*.json"
 		},
 		{
+			"source": "/synchronised-storage/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/synchronised-storage/types.html"
+		},
+		{
+			"source": "/synchronised-storage/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/synchronised-storage/:path*.json"
+		},
+		{
+			"source": "/synchronised-storage/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/synchronised-storage/:path*.json"
+		},
+		{
 			"source": "/immutable-proof/",
 			"has": [
 				{

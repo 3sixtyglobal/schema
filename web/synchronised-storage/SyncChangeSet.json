@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/synchronised-storage/SyncChangeSet",
+	"description": "The object definition for a sync change set.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "string",
+			"const": "https://schema.twindev.org/synchronised-storage",
+			"description": "The LD Context for the change set."
+		},
+		"type": {
+			"type": "string",
+			"const": "ChangeSet",
+			"description": "The LD Type for the change set."
+		},
+		"id": {
+			"type": "string",
+			"description": "The id of the change set."
+		},
+		"storageKey": {
+			"type": "string",
+			"description": "The storage key of the change set. This is used to identify the entities being synchronised."
+		},
+		"dateCreated": {
+			"type": "string",
+			"description": "The date the change set was created."
+		},
+		"dateModified": {
+			"type": "string",
+			"description": "The date the change set was last modified."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The identity of the node that created the change set."
+		},
+		"changes": {
+			"type": "array",
+			"items": false,
+			"description": "The changes to apply after a snapshot.",
+			"prefixItems": [
+				{
+					"$ref": "https://schema.twindev.org/synchronised-storage/SyncChange"
+				}
+			]
+		}
+	},
+	"required": [
+		"@context",
+		"type",
+		"id",
+		"storageKey",
+		"dateCreated",
+		"dateModified",
+		"nodeIdentity",
+		"changes"
+	],
+	"additionalProperties": false
+}
