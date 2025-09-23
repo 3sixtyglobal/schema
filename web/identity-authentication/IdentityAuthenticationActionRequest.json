@@ -14,15 +14,18 @@
 			"const": "ActionRequest",
 			"description": "The type of the request."
 		},
-		"nodeIdentity": {
+		"requester": {
 			"type": "string",
-			"description": "The node identity."
+			"description": "The identity of the entity making the request."
 		},
 		"action": {
 			"type": "string",
-			"description": "The action."
+			"description": "The action which can be checked to make sure it matches the specific operation."
+		},
+		"data": {
+			"description": "Additional data for the action request, can be customised per request."
 		}
 	},
-	"required": ["@context", "type", "nodeIdentity", "action"],
+	"required": ["@context", "type", "requester"],
 	"additionalProperties": false
 }
