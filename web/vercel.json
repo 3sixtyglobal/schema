@@ -335,6 +335,50 @@
 			"destination": "https://schema.twindev.org/synchronised-storage/:path*.json"
 		},
 		{
+			"source": "/identity-authentication/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/identity-authentication/types.html"
+		},
+		{
+			"source": "/identity-authentication/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/identity-authentication/types.jsonld"
+		},
+		{
+			"source": "/identity-authentication/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/identity-authentication/:path*.json"
+		},
+		{
+			"source": "/identity-authentication/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/identity-authentication/:path*.json"
+		},
+		{
 			"source": "/immutable-proof/",
 			"has": [
 				{

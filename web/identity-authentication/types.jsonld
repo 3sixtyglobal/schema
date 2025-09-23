@@ -1,0 +1,19 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"@protected": true,
+		"twin-identity-authentication": "https://schema.twindev.org/identity-authentication/",
+		"twin-common": "https://schema.twindev.org/common/",
+		"id": "@id",
+		"type": "@type",
+		"IdentityAuthenticationActionRequest": "https://schema.twindev.org/identity-authentication/IdentityAuthenticationActionRequest",
+		"nodeIdentity": {
+			"@id": "twin-identity-authentication:nodeIdentity",
+			"@type": "schema:Text"
+		},
+		"action": {
+			"@id": "twin-identity-authentication:action",
+			"@type": "schema:Text"
+		}
+	}
+}

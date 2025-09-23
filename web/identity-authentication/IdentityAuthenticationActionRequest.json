@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/identity-authentication/IdentityAuthenticationActionRequest",
+	"description": "The JSON-LD definition for a action request.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "string",
+			"const": "https://schema.twindev.org/identity-authentication",
+			"description": "The JSON-LD context."
+		},
+		"type": {
+			"type": "string",
+			"const": "ActionRequest",
+			"description": "The type of the request."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The node identity."
+		},
+		"action": {
+			"type": "string",
+			"description": "The action."
+		}
+	},
+	"required": ["@context", "type", "nodeIdentity", "action"],
+	"additionalProperties": false
+}
