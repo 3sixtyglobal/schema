@@ -850,6 +850,28 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/ids-contract-negotiation/:path*.json"
+		},
+		{
+			"source": "/gaia-x-loire/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/gaia-x-loire/types.html"
+		},
+		{
+			"source": "/gaia-x-loire/types.jsonld",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/gaia-x-loire/types.jsonld"
 		}
 	]
 }
