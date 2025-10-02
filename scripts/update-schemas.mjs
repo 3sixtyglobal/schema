@@ -166,6 +166,7 @@ async function createRewriteRules(schemas) {
 		const jsonLdTypes = schema.jsonLdTypes;
 
 		rewrites.push({
+			// description: `HTML: '${rewriteName}/' returns '${rewriteName}/types.html' when requested with 'text/html' header`,
 			source: `/${rewriteName}/`,
 			has: [
 				{
@@ -179,6 +180,7 @@ async function createRewriteRules(schemas) {
 		if (Array.isArray(jsonLdTypes)) {
 			for (const type of jsonLdTypes) {
 				rewrites.push({
+					// description: `JSON-LD: '${rewriteName}/${type}.jsonld' returns '${rewriteName}/${type}.jsonld' when requested with 'application/ld+json' header`,
 					source: `/${rewriteName}/${type}.jsonld`,
 					has: [
 						{
@@ -192,6 +194,7 @@ async function createRewriteRules(schemas) {
 			}
 		} else {
 			rewrites.push({
+				// description: `JSON-LD: '${rewriteName}/' returns '${rewriteName}/types.jsonld' when requested with 'application/ld+json' header`,
 				source: `/${rewriteName}/`,
 				has: [
 					{
@@ -205,6 +208,7 @@ async function createRewriteRules(schemas) {
 		}
 		if (hasTypes) {
 			rewrites.push({
+				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with no header`,
 				source: `/${rewriteName}/:path*`,
 				missing: [
 					{
@@ -216,6 +220,7 @@ async function createRewriteRules(schemas) {
 				destination: `https://schema.twindev.org/${rewriteName}/:path*.json`
 			});
 			rewrites.push({
+				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with 'application/json' header`,
 				source: `/${rewriteName}/:path*`,
 				missing: [
 					{

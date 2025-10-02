@@ -872,6 +872,28 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/gaia-x-loire/types.jsonld"
+		},
+		{
+			"source": "/gaia-x-loire/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
+		},
+		{
+			"source": "/gaia-x-loire/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
 		}
 	]
 }
