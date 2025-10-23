@@ -6,14 +6,14 @@
  * will try to find the package in the sibling folders and link it.
  *
  * Usage:
- * npm run local-link <package-name>
+ *    npm run local-link <package-name>
  * or
- * npm run local-link /path/to/package
+ *    npm run local-link /path/to/package
  *
  * To unlink
- * npm run local-link <package-name> unlink
+ *    npm run local-link <package-name> unlink
  * or
- * npm run local-link /path/to/package unlink
+ *    npm run local-link /path/to/package unlink
  */
 import fs, { readdir } from 'node:fs/promises';
 import path from 'node:path';
@@ -101,7 +101,7 @@ async function unlinkPackage(targetPackage) {
 		throw new Error(`The package ${linkName} is not a symbolic link`);
 	}
 
-	process.stdout.write(`Removing link: ${linkName}\n`);
+	process.stdout.write(`Removing symlink: ${linkName}\n`);
 	await fs.unlink(linkName);
 
 	const linkNameBackup = `${linkName}.bak`;
