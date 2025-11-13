@@ -5,185 +5,175 @@
 	"anyOf": [
 		{
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@graph"
+					},
+					{
+						"type": "string",
+						"const": "@id"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@id"
+					},
+					{
+						"type": "string",
+						"const": "@graph"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@set"
+					},
+					{
+						"type": "string",
+						"const": "@graph"
+					},
+					{
+						"type": "string",
+						"const": "@id"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@set"
+					},
+					{
+						"type": "string",
+						"const": "@id"
+					},
+					{
+						"type": "string",
+						"const": "@graph"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@graph"
+					},
+					{
+						"type": "string",
+						"const": "@set"
+					},
+					{
+						"type": "string",
+						"const": "@id"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@id"
+					},
+					{
+						"type": "string",
+						"const": "@set"
+					},
+					{
+						"type": "string",
+						"const": "@graph"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@set"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@graph"
+					},
+					{
+						"type": "string",
+						"const": "@id"
+					},
+					{
+						"type": "string",
+						"const": "@set"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@set"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@id"
+					},
+					{
+						"type": "string",
+						"const": "@graph"
+					},
+					{
+						"type": "string",
+						"const": "@set"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "@set"
+					},
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+					}
+				]
+			}
 		},
 		{
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-				},
-				{
-					"type": "string",
-					"const": "@set"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+					},
+					{
+						"type": "string",
+						"const": "@set"
+					}
+				]
+			}
 		}
 	]
 }

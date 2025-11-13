@@ -15,12 +15,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The type of the service."
@@ -32,12 +29,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The endpoint for the service."

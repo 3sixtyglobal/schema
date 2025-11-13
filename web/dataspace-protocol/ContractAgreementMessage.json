@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractAgreementMessage",
-	"description": "Interface for IDS Contract Agreement Messages. https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol/contract-negotiation/contract.negotiation.protocol#id-2.3-contract-agreement-message",
+	"$id": "https://schema.twindev.org/dataspace-protocol/ContractAgreementMessage",
+	"description": "Interface for Dataspace Protocol Contract Agreement Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-agreement-message",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The IDS Contract Negotiation JSON-LD context type.",
+			"description": "The Dataspace Protocol Contract Negotiation JSON-LD context type.",
 			"anyOf": [
 				{
 					"type": "string",
@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,7 +38,10 @@
 							"type": "string",
 							"const": "https://w3id.org/dspace/2024/1/context.json"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -59,7 +59,7 @@
 			"description": "The consumer id for the contract."
 		},
 		"agreement": {
-			"$ref": "https://schema.twindev.org/w3c-ids-contract-negotiation/OdrlAgreement",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAgreement",
 			"description": "The agreement being sent."
 		},
 		"callbackAddress": {

@@ -22,13 +22,10 @@
 		},
 		"evidence": {
 			"type": "array",
-			"items": false,
-			"description": "The evidences concerning the data resource.",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "The evidences concerning the data resource."
 		},
 		"@context": {
 			"$ref": "https://schema.twindev.org/federated-catalogue/FederatedCatalogueContextType",
@@ -41,12 +38,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -60,12 +54,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -76,12 +67,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -92,12 +80,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -113,9 +98,6 @@
 		"type": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"type": "string"
-			},
 			"description": "A Connector is a Data Exchange Component",
 			"prefixItems": [
 				{
@@ -126,7 +108,10 @@
 					"type": "string",
 					"const": "DataSpaceConnector"
 				}
-			]
+			],
+			"items": {
+				"type": "string"
+			}
 		},
 		"id": {
 			"type": "string",
@@ -166,13 +151,10 @@
 		},
 		"offeredResource": {
 			"type": "array",
-			"items": false,
-			"description": "Offered resources. Probably in the future this wll be separated in a different entry so that a  Data Space Connector entry does not need to be modified when a new Data Resource is offered.",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "Offered resources. Probably in the future this wll be separated in a different entry so that a  Data Space Connector entry does not need to be modified when a new Data Resource is offered."
 		}
 	},
 	"required": [

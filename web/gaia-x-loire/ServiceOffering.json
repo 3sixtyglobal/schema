@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,7 +38,10 @@
 							"type": "string",
 							"const": "https://schema.twindev.org/gaia-x-loire/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -52,12 +52,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -71,12 +68,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -87,12 +81,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -103,12 +94,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -191,12 +179,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"type": "string"
-										}
-									]
+									"items": {
+										"type": "string"
+									}
 								}
 							]
 						},
@@ -210,12 +195,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-										}
-									]
+									"items": {
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
 								}
 							]
 						},
@@ -226,12 +208,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-										}
-									]
+									"items": {
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+									}
 								}
 							]
 						},
@@ -242,12 +221,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"type": "string"
-										}
-									]
+									"items": {
+										"type": "string"
+									}
 								}
 							]
 						},
@@ -274,12 +250,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy"
+					}
 				}
 			]
 		},
@@ -287,21 +260,15 @@
 			"anyOf": [
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/gaia-x-loire/DataResource"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/gaia-x-loire/DataResource"
+					}
 				},
 				{
 					"type": "object",
@@ -348,12 +315,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"type": "string"
-										}
-									]
+									"items": {
+										"type": "string"
+									}
 								}
 							]
 						},
@@ -367,12 +331,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-										}
-									]
+									"items": {
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
 								}
 							]
 						},
@@ -383,12 +344,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-										}
-									]
+									"items": {
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+									}
 								}
 							]
 						},
@@ -399,12 +357,9 @@
 								},
 								{
 									"type": "array",
-									"items": false,
-									"prefixItems": [
-										{
-											"type": "string"
-										}
-									]
+									"items": {
+										"type": "string"
+									}
 								}
 							]
 						},

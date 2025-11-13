@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -24,7 +21,10 @@
 					"type": "string",
 					"const": "https://schema.org"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "string",
@@ -90,9 +90,9 @@
 			"type": "string",
 			"description": "The date/time of when the document was deleted, as we never actually remove items."
 		},
-		"nodeIdentity": {
+		"organizationIdentity": {
 			"type": "string",
-			"description": "The node which added the document to the graph."
+			"description": "The organization which added the document to the graph."
 		},
 		"userIdentity": {
 			"type": "string",
@@ -108,9 +108,7 @@
 		"documentRevision",
 		"blobStorageId",
 		"blobHash",
-		"dateCreated",
-		"nodeIdentity",
-		"userIdentity"
+		"dateCreated"
 	],
 	"additionalProperties": false
 }

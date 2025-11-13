@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -20,7 +17,10 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "string",
@@ -41,13 +41,10 @@
 		},
 		"patches": {
 			"type": "array",
-			"items": false,
-			"description": "The patches in the changeset.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation"
+			},
+			"description": "The patches in the changeset."
 		},
 		"proofId": {
 			"type": "string",
@@ -58,6 +55,6 @@
 			"description": "The verification for the changeset."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "userIdentity", "patches"],
+	"required": ["@context", "type", "id", "dateCreated", "patches"],
 	"additionalProperties": false
 }

@@ -12,11 +12,11 @@
 			"type": "string",
 			"description": "The id of the entry."
 		},
-		"nodeIdentity": {
+		"nodeId": {
 			"type": "string",
 			"description": "The identity of the node that owns the entry."
 		}
 	},
-	"required": ["dateModified", "id", "nodeIdentity"],
+	"required": ["dateModified", "id"],
 	"additionalProperties": false
 }

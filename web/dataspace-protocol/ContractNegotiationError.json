@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractNegotiationError",
-	"description": "Interface for IDS Contract Negotiation Error Messages. https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol/contract-negotiation/contract.negotiation.protocol#id-3.2-error-contract-negotiation-error",
+	"$id": "https://schema.twindev.org/dataspace-protocol/ContractNegotiationError",
+	"description": "Interface for Dataspace Protocol Contract Negotiation Error Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#error-contract-negotiation-error",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The IDS Contract Negotiation JSON-LD context type.",
+			"description": "The Dataspace Protocol Contract Negotiation JSON-LD context type.",
 			"anyOf": [
 				{
 					"type": "string",
@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,7 +38,10 @@
 							"type": "string",
 							"const": "https://w3id.org/dspace/2024/1/context.json"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -64,43 +64,37 @@
 		},
 		"reason": {
 			"type": "array",
-			"items": false,
-			"description": "The error reason(s).",
-			"prefixItems": [
-				{
-					"type": "object",
-					"properties": {
-						"@value": {
-							"type": "string"
-						},
-						"@language": {
-							"type": "string"
-						}
+			"items": {
+				"type": "object",
+				"properties": {
+					"@value": {
+						"type": "string"
 					},
-					"required": ["@value"],
-					"additionalProperties": false
-				}
-			]
+					"@language": {
+						"type": "string"
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false
+			},
+			"description": "The error reason(s)."
 		},
 		"description": {
 			"type": "array",
-			"items": false,
-			"description": "The error description(s).",
-			"prefixItems": [
-				{
-					"type": "object",
-					"properties": {
-						"@value": {
-							"type": "string"
-						},
-						"@language": {
-							"type": "string"
-						}
+			"items": {
+				"type": "object",
+				"properties": {
+					"@value": {
+						"type": "string"
 					},
-					"required": ["@value"],
-					"additionalProperties": false
-				}
-			]
+					"@language": {
+						"type": "string"
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false
+			},
+			"description": "The error description(s)."
 		}
 	},
 	"required": ["@context", "@type", "providerPid", "consumerPid"],

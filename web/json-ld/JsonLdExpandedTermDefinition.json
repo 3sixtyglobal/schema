@@ -14,12 +14,9 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
+							"items": {
+								"type": "string"
+							}
 						},
 						{
 							"type": "null"
@@ -44,24 +41,21 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"anyOf": [
-										{
-											"type": "string",
-											"const": "@list"
-										},
-										{
-											"type": "string",
-											"const": "@set"
-										},
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-										}
-									]
-								}
-							]
+							"items": {
+								"anyOf": [
+									{
+										"type": "string",
+										"const": "@list"
+									},
+									{
+										"type": "string",
+										"const": "@set"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+									}
+								]
+							}
 						},
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray"

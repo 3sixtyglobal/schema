@@ -23,9 +23,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -36,16 +33,19 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "string",
 			"const": "AuditableItemGraphVertex",
 			"description": "JSON-LD Type."
 		},
-		"nodeIdentity": {
+		"organizationIdentity": {
 			"type": "string",
-			"description": "The identity of the node which controls the vertex."
+			"description": "The identity of the organization which controls the vertex."
 		},
 		"annotationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
@@ -53,43 +53,31 @@
 		},
 		"aliases": {
 			"type": "array",
-			"items": false,
-			"description": "Alternative aliases that can be used to identify the vertex.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
+			},
+			"description": "Alternative aliases that can be used to identify the vertex."
 		},
 		"resources": {
 			"type": "array",
-			"items": false,
-			"description": "The resources attached to the vertex.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
+			},
+			"description": "The resources attached to the vertex."
 		},
 		"edges": {
 			"type": "array",
-			"items": false,
-			"description": "Edges connected to the vertex.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
+			},
+			"description": "Edges connected to the vertex."
 		},
 		"changesets": {
 			"type": "array",
-			"items": false,
-			"description": "Changesets for the vertex.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
+			},
+			"description": "Changesets for the vertex."
 		},
 		"verified": {
 			"type": "boolean",

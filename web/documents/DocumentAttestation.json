@@ -6,24 +6,23 @@
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"description": "JSON-LD Context.",
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/documents/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.org"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/documents/"
+					},
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/common/"
+					},
+					{
+						"type": "string",
+						"const": "https://schema.org"
+					}
+				]
+			},
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "string",

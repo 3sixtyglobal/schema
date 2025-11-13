@@ -14,12 +14,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -33,12 +30,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -49,12 +43,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -65,12 +56,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -137,12 +125,9 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
+							"items": {
+								"type": "string"
+							}
 						}
 					]
 				},
@@ -156,12 +141,9 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-								}
-							]
+							"items": {
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
 						}
 					]
 				},
@@ -172,12 +154,9 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-								}
-							]
+							"items": {
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+							}
 						}
 					]
 				},
@@ -188,12 +167,9 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
+							"items": {
+								"type": "string"
+							}
 						}
 					]
 				},
@@ -216,13 +192,10 @@
 				},
 				"key_ops": {
 					"type": "array",
-					"items": false,
-					"description": "JWK \"key_ops\" (Key Operations) Parameter",
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					},
+					"description": "JWK \"key_ops\" (Key Operations) Parameter"
 				},
 				"ext": {
 					"type": "boolean",
@@ -234,13 +207,10 @@
 				},
 				"x5c": {
 					"type": "array",
-					"items": false,
-					"description": "JWK \"x5c\" (X.509 Certificate Chain) Parameter",
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					},
+					"description": "JWK \"x5c\" (X.509 Certificate Chain) Parameter"
 				},
 				"x5t": {
 					"type": "string",

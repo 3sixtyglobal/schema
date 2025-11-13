@@ -30,19 +30,16 @@
 			"type": "string",
 			"description": "The date the change set was last modified."
 		},
-		"nodeIdentity": {
+		"nodeId": {
 			"type": "string",
 			"description": "The identity of the node that created the change set."
 		},
 		"changes": {
 			"type": "array",
-			"items": false,
-			"description": "The changes to apply after a snapshot.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/synchronised-storage/SyncChange"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/synchronised-storage/SyncChange"
+			},
+			"description": "The changes to apply after a snapshot."
 		}
 	},
 	"required": [
@@ -52,7 +49,7 @@
 		"storageKey",
 		"dateCreated",
 		"dateModified",
-		"nodeIdentity",
+		"nodeId",
 		"changes"
 	],
 	"additionalProperties": false

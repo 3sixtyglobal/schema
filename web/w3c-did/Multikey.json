@@ -17,28 +17,28 @@
 				{
 					"type": "array",
 					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://www.w3.org/ns/cid/v1"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://w3id.org/security/multikey/v1"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			],
 			"description": "JSON-LD Context."

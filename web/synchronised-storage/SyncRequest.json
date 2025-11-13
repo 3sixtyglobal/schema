@@ -14,11 +14,11 @@
 			"const": "SyncRequest",
 			"description": "The LD Type for the request."
 		},
-		"nodeIdentity": {
+		"nodeId": {
 			"type": "string",
 			"description": "The identity of the node that created the request."
 		}
 	},
-	"required": ["@context", "type", "nodeIdentity"],
+	"required": ["@context", "type", "nodeId"],
 	"additionalProperties": false
 }

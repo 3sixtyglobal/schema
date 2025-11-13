@@ -21,12 +21,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -37,12 +34,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -53,12 +47,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -92,19 +83,16 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
+							}
+						]
+					}
 				}
 			],
 			"description": "Refinements applied to the action."
@@ -122,20 +110,17 @@
 		},
 		"implies": {
 			"type": "array",
-			"items": false,
-			"description": "References to actions this action implies.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-						},
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "References to actions this action implies."
 		}
 	},
 	"additionalProperties": {

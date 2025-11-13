@@ -15,12 +15,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -34,12 +31,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -50,12 +44,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -66,12 +57,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -107,23 +95,17 @@
 		},
 		"servicePolicy": {
 			"type": "array",
-			"items": false,
-			"description": "The service policy is always stored as an array",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/federated-catalogue/OdrlPolicy"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/federated-catalogue/OdrlPolicy"
+			},
+			"description": "The service policy is always stored as an array"
 		},
 		"aggregationOfResources": {
 			"type": "array",
-			"items": false,
-			"description": "Overwrites aggregationOfResources as we only store identifier as string",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "Overwrites aggregationOfResources as we only store identifier as string"
 		},
 		"endpoint": {
 			"$ref": "https://schema.twindev.org/federated-catalogue/Endpoint",
@@ -147,13 +129,10 @@
 		},
 		"evidence": {
 			"type": "array",
-			"items": false,
-			"description": "The evidences concerning the data resource.",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "The evidences concerning the data resource."
 		}
 	},
 	"required": [

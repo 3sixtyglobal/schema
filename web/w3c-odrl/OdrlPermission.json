@@ -14,12 +14,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -33,12 +30,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -49,12 +43,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -65,12 +56,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -100,22 +88,19 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-								},
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+							},
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+							}
+						]
+					}
 				}
 			],
 			"description": "The action associated with the rule."
@@ -130,19 +115,16 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+							}
+						]
+					}
 				}
 			],
 			"description": "The target asset for the rule."
@@ -171,13 +153,10 @@
 		},
 		"constraint": {
 			"type": "array",
-			"items": false,
-			"description": "Constraints applied to the rule.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+			},
+			"description": "Constraints applied to the rule."
 		},
 		"summary": {
 			"type": "string",
@@ -185,13 +164,10 @@
 		},
 		"duty": {
 			"type": "array",
-			"items": false,
-			"description": "The duties that must be fulfilled before the permission can be exercised. A Permission MAY have none, one, or more duty property values.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+			},
+			"description": "The duties that must be fulfilled before the permission can be exercised. A Permission MAY have none, one, or more duty property values."
 		}
 	},
 	"additionalProperties": {

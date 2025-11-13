@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -20,7 +17,10 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "string",

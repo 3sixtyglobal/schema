@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -20,7 +17,10 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "string",
@@ -30,14 +30,6 @@
 		"id": {
 			"type": "string",
 			"description": "The id of the proof."
-		},
-		"nodeIdentity": {
-			"type": "string",
-			"description": "The id of the node who created the proof."
-		},
-		"userIdentity": {
-			"type": "string",
-			"description": "The id of the user who created the proof."
 		},
 		"proofObjectId": {
 			"type": "string",
@@ -60,6 +52,6 @@
 			"description": "The immutable receipt detail for where the proof is stored."
 		}
 	},
-	"required": ["@context", "type", "id", "nodeIdentity", "userIdentity", "proofObjectHash"],
+	"required": ["@context", "type", "id", "proofObjectHash"],
 	"additionalProperties": false
 }

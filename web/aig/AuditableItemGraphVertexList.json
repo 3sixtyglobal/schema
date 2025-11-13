@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -20,34 +17,33 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/aig/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"description": "JSON-LD Type.",
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "ItemList"
-				},
-				{
-					"type": "string",
-					"const": "AuditableItemGraphVertexList"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "ItemList"
+					},
+					{
+						"type": "string",
+						"const": "AuditableItemGraphVertexList"
+					}
+				]
+			},
+			"description": "JSON-LD Type."
 		},
 		"itemListElement": {
 			"type": "array",
-			"items": false,
-			"description": "The list of vertices.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
+			},
+			"description": "The list of vertices."
 		},
 		"nextItem": {
 			"type": "string",

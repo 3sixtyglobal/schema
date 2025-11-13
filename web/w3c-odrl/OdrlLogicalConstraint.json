@@ -14,12 +14,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -33,12 +30,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -49,12 +43,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -65,12 +56,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -92,19 +80,16 @@
 			"properties": {
 				"@list": {
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
+					"items": {
+						"type": "object",
+						"properties": {
+							"@id": {
+								"type": "string"
+							}
+						},
+						"required": ["@id"],
+						"additionalProperties": false
+					}
 				}
 			},
 			"required": ["@list"],
@@ -116,19 +101,16 @@
 			"properties": {
 				"@list": {
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
+					"items": {
+						"type": "object",
+						"properties": {
+							"@id": {
+								"type": "string"
+							}
+						},
+						"required": ["@id"],
+						"additionalProperties": false
+					}
 				}
 			},
 			"required": ["@list"],
@@ -140,19 +122,16 @@
 			"properties": {
 				"@list": {
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
+					"items": {
+						"type": "object",
+						"properties": {
+							"@id": {
+								"type": "string"
+							}
+						},
+						"required": ["@id"],
+						"additionalProperties": false
+					}
 				}
 			},
 			"required": ["@list"],
@@ -164,19 +143,16 @@
 			"properties": {
 				"@list": {
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
+					"items": {
+						"type": "object",
+						"properties": {
+							"@id": {
+								"type": "string"
+							}
+						},
+						"required": ["@id"],
+						"additionalProperties": false
+					}
 				}
 			},
 			"required": ["@list"],

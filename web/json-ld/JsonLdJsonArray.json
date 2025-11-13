@@ -3,10 +3,7 @@
 	"$id": "https://schema.twindev.org/json-ld/JsonLdJsonArray",
 	"description": "JSON Type for array.",
 	"type": "array",
-	"items": false,
-	"prefixItems": [
-		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonValue"
-		}
-	]
+	"items": {
+		"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonValue"
+	}
 }

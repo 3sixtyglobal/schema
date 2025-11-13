@@ -13,28 +13,25 @@
 				},
 				{
 					"type": "array",
-					"items": false,
+					"items": {
+						"type": "string",
+						"const": "https://www.w3.org/ns/activitystreams"
+					},
 					"minItems": 1,
-					"maxItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						}
-					]
+					"maxItems": 1
 				},
 				{
 					"type": "array",
 					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://www.w3.org/ns/activitystreams"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -45,12 +42,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -64,12 +58,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -80,12 +71,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -96,12 +84,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -125,19 +110,16 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
-								},
-								{
-									"type": "string"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
 				}
 			]
 		},
@@ -148,12 +130,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
@@ -168,12 +147,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
@@ -211,12 +187,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"

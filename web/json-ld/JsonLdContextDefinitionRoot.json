@@ -8,12 +8,9 @@
 		},
 		{
 			"type": "array",
-			"items": false,
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		}
 	]
 }

@@ -15,12 +15,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -34,12 +31,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -50,12 +44,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -66,12 +57,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -119,13 +107,10 @@
 		},
 		"resourcePolicy": {
 			"type": "array",
-			"items": false,
-			"description": "Overwriting to ensure always an array is stored",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/federated-catalogue/OdrlPolicy"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/federated-catalogue/OdrlPolicy"
+			},
+			"description": "Overwriting to ensure always an array is stored"
 		},
 		"issuer": {
 			"type": "string",
@@ -145,13 +130,10 @@
 		},
 		"evidence": {
 			"type": "array",
-			"items": false,
-			"description": "The evidences concerning the data resource.",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "The evidences concerning the data resource."
 		}
 	},
 	"required": [

@@ -15,12 +15,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The types of the data stored in the verifiable credential."
@@ -36,12 +33,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/Proof"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-did/Proof"
+					}
 				}
 			],
 			"description": "Proofs that the verifiable presentation is valid. Optional if a different proof method is used, such as JWT."
@@ -55,35 +49,32 @@
 				{
 					"type": "array",
 					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://www.w3.org/ns/credentials/v2"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			],
 			"description": "The context for the verifiable presentation."
 		},
 		"verifiableCredential": {
 			"type": "array",
-			"items": false,
-			"description": "The data for the verifiable credentials.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidVerifiableCredentialV2"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.twindev.org/w3c-did/DidVerifiableCredentialV2"
+					}
+				]
+			},
+			"description": "The data for the verifiable credentials."
 		}
 	},
 	"required": ["@context", "type"],

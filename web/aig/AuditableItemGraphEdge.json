@@ -29,15 +29,15 @@
 				{
 					"type": "array",
 					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://schema.twindev.org/aig/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			],
 			"description": "JSON-LD Context."
@@ -57,13 +57,10 @@
 		},
 		"edgeRelationships": {
 			"type": "array",
-			"items": false,
-			"description": "The relationships between the two vertices.",
-			"prefixItems": [
-				{
-					"type": "string"
-				}
-			]
+			"items": {
+				"type": "string"
+			},
+			"description": "The relationships between the two vertices."
 		}
 	},
 	"required": ["@context", "targetId", "type", "edgeRelationships"],

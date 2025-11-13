@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,7 +38,10 @@
 							"type": "string",
 							"const": "https://www.w3.org/ns/odrl/2/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -52,12 +52,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -71,12 +68,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -87,12 +81,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -120,12 +111,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The profile(s) this policy conforms to. IRIs identifying the ODRL Profile(s)."
@@ -162,19 +150,16 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+							}
+						]
+					}
 				}
 			],
 			"description": "The target asset for the rule."
@@ -192,22 +177,19 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-								},
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+							},
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+							}
+						]
+					}
 				}
 			],
 			"description": "The action associated with the rule."
@@ -219,12 +201,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The parent policy(ies) this policy inherits from. IRIs identifying the parent Policy(ies)."
@@ -235,33 +214,24 @@
 		},
 		"permission": {
 			"type": "array",
-			"items": false,
-			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+			},
+			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present."
 		},
 		"prohibition": {
 			"type": "array",
-			"items": false,
-			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+			},
+			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present."
 		},
 		"obligation": {
 			"type": "array",
-			"items": false,
-			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+			},
+			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present."
 		}
 	},
 	"required": ["@context", "@type", "uid"],

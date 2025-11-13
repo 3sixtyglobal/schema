@@ -8,12 +8,9 @@
 		},
 		{
 			"type": "array",
-			"items": false,
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+			}
 		},
 		{
 			"type": "object",
@@ -31,19 +28,16 @@
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"anyOf": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
-										},
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-										}
-									]
-								}
-							]
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
 						}
 					]
 				}

@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-ids-contract-negotiation/IdsContractNegotiationTerminationMessage",
-	"description": "Interface for IDS Contract Negotiation Termination Messages. https://docs.internationaldataspaces.org/ids-knowledgebase/dataspace-protocol/contract-negotiation/contract.negotiation.protocol#id-2.6-contract-negotiation-termination-message",
+	"$id": "https://schema.twindev.org/dataspace-protocol/ContractRequestMessage",
+	"description": "Interface for Dataspace Protocol Contract Request Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-request-message",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The IDS Contract Negotiation JSON-LD context type.",
+			"description": "The Dataspace Protocol Contract Negotiation JSON-LD context type.",
 			"anyOf": [
 				{
 					"type": "string",
@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,13 +38,16 @@
 							"type": "string",
 							"const": "https://w3id.org/dspace/2024/1/context.json"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
 		"@type": {
 			"type": "string",
-			"const": "ContractNegotiationTerminationMessage",
+			"const": "ContractRequestMessage",
 			"description": "The type of the message."
 		},
 		"providerPid": {
@@ -58,17 +58,15 @@
 			"type": "string",
 			"description": "The consumer id for the contract."
 		},
-		"code": {
-			"type": "string",
-			"description": "The termination code."
+		"offer": {
+			"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlOffer",
+			"description": "The offer being requested."
 		},
-		"reason": {
-			"type": "array",
-			"items": false,
-			"description": "The termination reason(s).",
-			"prefixItems": [{}]
+		"callbackAddress": {
+			"type": "string",
+			"description": "The base callback address for the provider to update the consumer on the state of the negotiation."
 		}
 	},
-	"required": ["@context", "@type", "providerPid", "consumerPid"],
+	"required": ["@context", "@type", "consumerPid", "offer"],
 	"additionalProperties": false
 }

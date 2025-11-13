@@ -10,12 +10,9 @@
 			},
 			{
 				"type": "array",
-				"items": false,
-				"prefixItems": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMapItem"
-					}
-				]
+				"items": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMapItem"
+				}
 			}
 		]
 	}

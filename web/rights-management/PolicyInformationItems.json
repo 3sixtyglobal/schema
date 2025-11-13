@@ -3,10 +3,7 @@
 	"$id": "https://schema.twindev.org/rights-management/PolicyInformationItems",
 	"description": "Interface describing a Policy Information.",
 	"type": "array",
-	"items": false,
-	"prefixItems": [
-		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-		}
-	]
+	"items": {
+		"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+	}
 }

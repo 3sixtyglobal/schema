@@ -819,7 +819,7 @@
 			"destination": "https://schema.twindev.org/dublin-core/dcmitype.jsonld"
 		},
 		{
-			"source": "/ids-contract-negotiation/",
+			"source": "/dataspace-protocol/",
 			"has": [
 				{
 					"type": "header",
@@ -827,10 +827,10 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/ids-contract-negotiation/types.html"
+			"destination": "https://schema.twindev.org/dataspace-protocol/types.html"
 		},
 		{
-			"source": "/ids-contract-negotiation/:path*",
+			"source": "/dataspace-protocol/:path*",
 			"missing": [
 				{
 					"type": "header",
@@ -838,10 +838,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/ids-contract-negotiation/:path*.json"
+			"destination": "https://schema.twindev.org/dataspace-protocol/:path*.json"
 		},
 		{
-			"source": "/ids-contract-negotiation/:path*",
+			"source": "/dataspace-protocol/:path*",
 			"missing": [
 				{
 					"type": "header",
@@ -849,7 +849,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/ids-contract-negotiation/:path*.json"
+			"destination": "https://schema.twindev.org/dataspace-protocol/:path*.json"
 		},
 		{
 			"source": "/gaia-x-loire/",

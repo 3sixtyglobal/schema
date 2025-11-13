@@ -16,13 +16,10 @@
 		},
 		"items": {
 			"type": "array",
-			"items": false,
-			"description": "The items matching the query.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+			},
+			"description": "The items matching the query."
 		},
 		"cursor": {
 			"type": "string",

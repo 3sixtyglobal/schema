@@ -7,9 +7,6 @@
 		"@context": {
 			"type": "array",
 			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
 			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
@@ -24,34 +21,33 @@
 					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			}
 		},
 		"type": {
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"description": "JSON-LD Type.",
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "ItemList"
-				},
-				{
-					"type": "string",
-					"const": "AuditableItemStreamEntryList"
-				}
-			]
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "ItemList"
+					},
+					{
+						"type": "string",
+						"const": "AuditableItemStreamEntryList"
+					}
+				]
+			},
+			"description": "JSON-LD Type."
 		},
 		"itemListElement": {
 			"type": "array",
-			"items": false,
-			"description": "The entries in the stream.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
+			},
+			"description": "The entries in the stream."
 		},
 		"nextItem": {
 			"type": "string",

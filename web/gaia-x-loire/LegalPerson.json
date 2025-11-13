@@ -14,9 +14,6 @@
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"type": "string",
@@ -25,14 +22,14 @@
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				},
 				{
 					"type": "array",
 					"minItems": 2,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -41,7 +38,10 @@
 							"type": "string",
 							"const": "https://schema.twindev.org/gaia-x-loire/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
 				}
 			]
 		},
@@ -52,12 +52,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -71,12 +68,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
@@ -87,12 +81,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -103,12 +94,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -156,227 +144,221 @@
 		},
 		"parentOrganizationOf": {
 			"type": "array",
-			"items": false,
-			"description": "Parent organization.",
-			"prefixItems": [
-				{
-					"type": "object",
-					"additionalProperties": {
+			"items": {
+				"type": "object",
+				"additionalProperties": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+						},
+						{
+							"type": "array"
+						}
+					]
+				},
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string",
+						"const": "LegalPerson"
+					},
+					"@context": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+					},
+					"@id": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-							},
-							{
-								"type": "array"
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
 							}
 						]
 					},
-					"properties": {
-						"id": {
-							"type": "string"
-						},
-						"type": {
-							"type": "string",
-							"const": "LegalPerson"
-						},
-						"@context": {
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-						},
-						"@id": {
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								}
-							]
-						},
-						"@included": {
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-						},
-						"@graph": {
-							"anyOf": [
-								{
+					"@included": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+					},
+					"@graph": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							},
+							{
+								"type": "array",
+								"items": {
 									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-								},
-								{
-									"type": "array",
-									"items": {
-										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-									}
 								}
-							]
-						},
-						"@nest": {
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-								},
-								{
-									"type": "array",
-									"items": {
-										"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-									}
-								}
-							]
-						},
-						"@type": {
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								}
-							]
-						},
-						"@reverse": {
-							"type": "object",
-							"additionalProperties": {
-								"type": "string"
 							}
-						},
-						"@index": {
+						]
+					},
+					"@nest": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+							},
+							{
+								"type": "array",
+								"items": {
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+								}
+							}
+						]
+					},
+					"@type": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							}
+						]
+					},
+					"@reverse": {
+						"type": "object",
+						"additionalProperties": {
 							"type": "string"
 						}
 					},
-					"required": ["id", "type"]
-				}
-			]
+					"@index": {
+						"type": "string"
+					}
+				},
+				"required": ["id", "type"]
+			},
+			"description": "Parent organization."
 		},
 		"subOrganizationOf": {
 			"type": "array",
-			"items": false,
-			"description": "Sub organization of.",
-			"prefixItems": [
-				{
-					"type": "object",
-					"additionalProperties": {
+			"items": {
+				"type": "object",
+				"additionalProperties": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+						},
+						{
+							"type": "array"
+						}
+					]
+				},
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string",
+						"const": "LegalPerson"
+					},
+					"@context": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+					},
+					"@id": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-							},
-							{
-								"type": "array"
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
 							}
 						]
 					},
-					"properties": {
-						"id": {
-							"type": "string"
-						},
-						"type": {
-							"type": "string",
-							"const": "LegalPerson"
-						},
-						"@context": {
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-						},
-						"@id": {
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								}
-							]
-						},
-						"@included": {
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-						},
-						"@graph": {
-							"anyOf": [
-								{
+					"@included": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+					},
+					"@graph": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							},
+							{
+								"type": "array",
+								"items": {
 									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-								},
-								{
-									"type": "array",
-									"items": {
-										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-									}
 								}
-							]
-						},
-						"@nest": {
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-								},
-								{
-									"type": "array",
-									"items": {
-										"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-									}
-								}
-							]
-						},
-						"@type": {
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								}
-							]
-						},
-						"@reverse": {
-							"type": "object",
-							"additionalProperties": {
-								"type": "string"
 							}
-						},
-						"@index": {
+						]
+					},
+					"@nest": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+							},
+							{
+								"type": "array",
+								"items": {
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+								}
+							}
+						]
+					},
+					"@type": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							}
+						]
+					},
+					"@reverse": {
+						"type": "object",
+						"additionalProperties": {
 							"type": "string"
 						}
 					},
-					"required": ["id", "type"]
-				}
-			]
+					"@index": {
+						"type": "string"
+					}
+				},
+				"required": ["id", "type"]
+			},
+			"description": "Sub organization of."
 		}
 	},
 	"required": ["@context", "id", "legalAddress", "legalName", "registrationNumber", "type"],
