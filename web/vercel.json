@@ -467,50 +467,6 @@
 			"destination": "https://schema.twindev.org/verifiable-storage/:path*.json"
 		},
 		{
-			"source": "/federated-catalogue/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "text/html.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/types.html"
-		},
-		{
-			"source": "/federated-catalogue/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/types.jsonld"
-		},
-		{
-			"source": "/federated-catalogue/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/:path*.json"
-		},
-		{
-			"source": "/federated-catalogue/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/json"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/:path*.json"
-		},
-		{
 			"source": "/framework/",
 			"has": [
 				{
@@ -894,6 +850,50 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
+		},
+		{
+			"source": "/foaf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/foaf/types.html"
+		},
+		{
+			"source": "/foaf/types.jsonld",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/foaf/types.jsonld"
+		},
+		{
+			"source": "/w3c-rdf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/w3c-rdf/types.html"
+		},
+		{
+			"source": "/w3c-rdf/types.jsonld",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/w3c-rdf/types.jsonld"
 		}
 	]
 }

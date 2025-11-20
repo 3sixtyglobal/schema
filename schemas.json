@@ -64,13 +64,6 @@
 		"namespace": "verifiable-storage"
 	},
 	{
-		"repo": "federated-catalogue",
-		"packages": ["federated-catalogue-models"],
-		"title": "Federated Catalogue",
-		"namespace": "federated-catalogue",
-		"description": "Defines terms not covered by the Gaia-X, IDSA or other Vocabularies."
-	},
-	{
 		"repo": "framework",
 		"types": ["TimestampMilliseconds", "TimestampSeconds", "URN"],
 		"title": "Framework",
@@ -139,5 +132,17 @@
 		"title": "Gaia-X v24.11",
 		"namespace": "gaia-x-loire",
 		"description": "Gaia-X 24.11 LD Context."
+	},
+	{
+		"title": "FOAF (Friend Of A Friend)",
+		"namespace": "foaf",
+		"jsonLdTypes": ["types"],
+		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the FOAF body itself. <a target='_blank' href='http://xmlns.com/foaf/spec/'>FOAF Schema</a>"
+	},
+	{
+		"title": "W3C RDF Schema",
+		"namespace": "w3c-rdf",
+		"jsonLdTypes": ["types"],
+		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the RDF body itself. <a target='_blank' href='https://www.w3.org/TR/rdf-schema/'>RDF Schema</a>"
 	}
 ]
