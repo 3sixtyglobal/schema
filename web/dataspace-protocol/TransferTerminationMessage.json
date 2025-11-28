@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/ContractOfferMessage",
-	"description": "Interface for Dataspace Protocol Contract Offer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-offer-message",
+	"$id": "https://schema.twindev.org/dataspace-protocol/TransferTerminationMessage",
+	"description": "Interface for Dataspace Protocol Transfer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-termination-message",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -52,26 +52,27 @@
 		},
 		"@type": {
 			"type": "string",
-			"const": "ContractOfferMessage",
-			"description": "The type of the message."
-		},
-		"providerPid": {
-			"type": "string",
-			"description": "The provider id for the contract."
+			"const": "TransferTerminationMessage",
+			"description": "LD Type"
 		},
 		"consumerPid": {
 			"type": "string",
-			"description": "The consumer id for the contract."
+			"description": "MUST refer to the transfer identifier of the Consumer side."
 		},
-		"offer": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlOffer",
-			"description": "The offer being requested."
-		},
-		"callbackAddress": {
+		"providerPid": {
 			"type": "string",
-			"description": "The base callback address for the provider to update the consumer on the state of the negotiation."
+			"description": "MUST refer to the transfer identifier of the Provider side."
+		},
+		"code": {
+			"type": "string",
+			"description": "The termination code."
+		},
+		"reason": {
+			"type": "array",
+			"items": {},
+			"description": "The termination reason(s)."
 		}
 	},
-	"required": ["@context", "@type", "providerPid", "offer"],
+	"required": ["@context", "@type", "consumerPid", "providerPid"],
 	"additionalProperties": false
 }

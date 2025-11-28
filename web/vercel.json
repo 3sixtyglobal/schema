@@ -894,6 +894,50 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/w3c-rdf/types.jsonld"
+		},
+		{
+			"source": "/dspace/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dspace/types.html"
+		},
+		{
+			"source": "/dspace/types.jsonld",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dspace/types.jsonld"
+		},
+		{
+			"source": "/odrl/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/odrl/types.html"
+		},
+		{
+			"source": "/odrl/types.jsonld",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/odrl/types.jsonld"
 		}
 	]
 }

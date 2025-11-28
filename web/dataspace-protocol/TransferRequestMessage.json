@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/ContractOfferMessage",
-	"description": "Interface for Dataspace Protocol Contract Offer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-offer-message",
+	"$id": "https://schema.twindev.org/dataspace-protocol/TransferRequestMessage",
+	"description": "Interface for Dataspace Protocol Transfer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-request-message",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -52,26 +52,30 @@
 		},
 		"@type": {
 			"type": "string",
-			"const": "ContractOfferMessage",
-			"description": "The type of the message."
+			"const": "TransferRequestMessage",
+			"description": "LD Type"
 		},
-		"providerPid": {
+		"agreementId": {
 			"type": "string",
-			"description": "The provider id for the contract."
-		},
-		"consumerPid": {
-			"type": "string",
-			"description": "The consumer id for the contract."
-		},
-		"offer": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlOffer",
-			"description": "The offer being requested."
+			"description": "MUST refer to an existing Agreement between the Consumer and Provider."
 		},
 		"callbackAddress": {
 			"type": "string",
-			"description": "The base callback address for the provider to update the consumer on the state of the negotiation."
+			"description": "MUST be a URI indicating where messages to the Consumer SHOULD be sent."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"format": {
+			"type": "string",
+			"description": "The format property is a format specified by a Distribution for the Dataset associated with the Agreement. This is generally obtained from the Provider's Catalog."
+		},
+		"dataAddress": {
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataAddress",
+			"description": "If defined MUST contain a transport-specific set of properties for pushing the data. It MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
 		}
 	},
-	"required": ["@context", "@type", "providerPid", "offer"],
+	"required": ["@context", "@type", "agreementId", "callbackAddress", "consumerPid", "format"],
 	"additionalProperties": false
 }
