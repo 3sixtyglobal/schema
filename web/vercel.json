@@ -938,6 +938,28 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/odrl/v1/types.jsonld"
+		},
+		{
+			"source": "/federated-catalogue/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/federated-catalogue/v1/types.html"
+		},
+		{
+			"source": "/federated-catalogue/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/federated-catalogue/v1/types.jsonld"
 		}
 	]
 }

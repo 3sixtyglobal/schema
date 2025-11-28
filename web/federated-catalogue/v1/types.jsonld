@@ -1,0 +1,16 @@
+{
+	"@context": {
+		"@version": 1.1,
+        "twin": "https://schema.twindev.org/",
+		"twin-federated-catalogue": "twin:federated-catalogue/v1/",
+		"@type": "@type",
+		"cursor": {
+			"@id": "https://schema.twindev.org/federated-catalogue/cursor",
+			"@type": "xsd:string"
+		},
+		"limit": {
+			"@id": "https://schema.twindev.org/federated-catalogue/limit",
+			"@type": "xsd:integer"
+		}
+	}
+}
