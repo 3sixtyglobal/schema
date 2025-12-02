@@ -1,0 +1,559 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/HeaderTradeAgreement",
+	"description": "The contractual terms of a header trade agreement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "HeaderTradeAgreement",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"additionalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An additional document referenced in this header trade agreement."
+		},
+		"applicableDeliveryTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DeliveryTerms"
+			},
+			"description": "The terms of delivery applicable to this header trade agreement."
+		},
+		"applicableForecastTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ForecastTerms"
+			},
+			"description": "The supply chain forecast terms applicable to this header trade agreement."
+		},
+		"applicableLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
+			},
+			"description": "A logistics location or place applicable to this header trade agreement."
+		},
+		"applicableLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
+			},
+			"description": "A logistics location or place applicable to this header trade agreement."
+		},
+		"applicablePaymentTerms": {
+			"$ref": "https://schema.twindev.org/unece/PaymentTerms",
+			"description": "The payment terms applicable to this header trade agreement."
+		},
+		"applicableRegulatoryProcedure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/RegulatoryProcedure"
+			},
+			"description": "A cross-border regulatory procedure applicable to this header trade agreement."
+		},
+		"blanketOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The blanket order document referenced in this header trade agreement."
+		},
+		"buyerAgentParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The buyer agent party for this header trade agreement."
+		},
+		"buyerApprovedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
+		},
+		"buyerAssignedAccountantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party assigned as an accountant by the buyer for this header trade agreement."
+		},
+		"buyerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The buyer generated order document referenced in this header trade agreement."
+		},
+		"buyerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The buyer party for this header trade agreement."
+		},
+		"buyerReference": {
+			"type": "string",
+			"description": "A buyer reference, expressed as text, for this header trade agreement."
+		},
+		"buyerRequisitionerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party who is a buyer requisitioner in this header trade agreement."
+		},
+		"buyerTaxRepresentativeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party acting as a tax representative for the buyer for this header trade agreement."
+		},
+		"carrierParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The carrier party, at header level, for this trade agreement."
+		},
+		"catalogueDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A catalogue document referenced in this header trade agreement."
+		},
+		"catalogueInformationProviderParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that provides catalogue information for this header trade agreement."
+		},
+		"catalogueInformationReceiverParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that receives catalogue information for this header trade agreement."
+		},
+		"catalogueRequestDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A catalogue request document referenced in this header trade agreement."
+		},
+		"catalogueSubscriptionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A catalogue subscription document referenced in this header trade agreement."
+		},
+		"contractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A contract document referenced in this header trade agreement."
+		},
+		"demandForecastDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A demand forecast document referenced in this header trade agreement."
+		},
+		"engineeringChangeDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The engineering change document referenced in this header trade agreement."
+		},
+		"exportLicenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The export licence document referenced in this header trade agreement."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this header trade agreement."
+		},
+		"impactCode": {
+			"type": "string",
+			"description": "The code specifying the impact for this header trade agreement."
+		},
+		"importLicenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The import licence document referenced in this header trade agreement."
+		},
+		"letterOfCreditDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The letter of credit document referenced in this header trade agreement."
+		},
+		"marketplaceOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The marketplace generated order document referenced in this header trade agreement."
+		},
+		"orderResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The order response document referenced in this header trade agreement."
+		},
+		"originalOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The original order document referenced in this header trade agreement."
+		},
+		"previousOrderChangeDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The previous order change document referenced in this header trade agreement."
+		},
+		"previousOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The previous order document referenced in this header trade agreement."
+		},
+		"previousOrderResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The previous order response document referenced in this header trade agreement."
+		},
+		"priceListDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The price list document referenced in this header trade agreement."
+		},
+		"pricingBaseApplicableLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
+			},
+			"description": "The logistics location applicable to the pricing base for this header trade agreement."
+		},
+		"primeContractSellerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The seller party acting as the prime contractor for this header trade agreement."
+		},
+		"priorityCode": {
+			"type": "string",
+			"description": "The code specifying the priority for this header trade agreement."
+		},
+		"priorityDescriptionCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PriorityDescriptionCodeList"
+			},
+			"description": "The code specifying the delivery priority for this header trade agreement."
+		},
+		"procurementParty": {
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
+			"description": "The procurement party for this header trade agreement."
+		},
+		"productEndUserParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party acting as the end user for the products in this header trade agreement."
+		},
+		"promotionalDealDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The promotional deal document referenced in this header trade agreement."
+		},
+		"purchaseConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A purchase conditions document referenced in this header trade agreement."
+		},
+		"quotationDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation document referenced in this header trade agreement."
+		},
+		"quotationProposalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation proposal document referenced in this header trade agreement."
+		},
+		"quotationProposalResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation proposal response document referenced in this header trade agreement."
+		},
+		"quotationRequestDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation request document referenced in this header trade agreement."
+		},
+		"quotationRequestResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation request response document referenced in this header trade agreement."
+		},
+		"quoteReferencedWorkflowObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WorkflowObject"
+			},
+			"description": "The quote trade workflow object referenced in this header trade agreement."
+		},
+		"reference": {
+			"type": "string",
+			"description": "A reference, expressed as text, for this header trade agreement."
+		},
+		"relevantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A relevant party for this header trade agreement."
+		},
+		"requisitionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A requisition document referenced in this header trade agreement."
+		},
+		"requisitionerDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A requisitioner document referenced in this header trade agreement."
+		},
+		"revisionId": {
+			"type": "string",
+			"description": "An identifier for the revision of this header trade agreement."
+		},
+		"salesAgentParty": {
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
+			"description": "The agent party representing the seller for this header trade agreement."
+		},
+		"salesConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A sales conditions document referenced in this header trade agreement."
+		},
+		"salesReportDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The sales report document referenced in this header trade agreement."
+		},
+		"sellerAssignedAccountantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party assigned as an accountant by the seller for this header trade agreement."
+		},
+		"sellerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The seller generated order document referenced in this header trade agreement."
+		},
+		"sellerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The seller party for this header trade agreement."
+		},
+		"sellerReference": {
+			"type": "string",
+			"description": "A seller reference, expressed as text, for this header trade agreement."
+		},
+		"sellerTaxRepresentativeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party acting as a tax representative for the seller for this header trade agreement."
+		},
+		"shippingPeriod": {
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
+			"description": "The shipping period specified in this header trade agreement."
+		},
+		"specifiedProject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Project"
+			},
+			"description": "The procuring project specified for this header trade agreement."
+		},
+		"supplyInstructionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A supply instruction document referenced in this header trade agreement."
+		},
+		"targetMarketCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Country"
+			},
+			"description": "A target market country for this header trade agreement."
+		},
+		"ultimateCustomerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An ultimate customer order document referenced for this header trade agreement."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

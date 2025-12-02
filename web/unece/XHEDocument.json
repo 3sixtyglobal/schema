@@ -1,0 +1,149 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/XHEDocument",
+	"description": "A collection of data for electronic matter that provides XHE (Exchange Header Envelope) information or evidence.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "XHEDocument",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the creation of this XHE document."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this XHE document."
+		},
+		"recipientXHEParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/XHEParty"
+			},
+			"description": "A recipient party for this XHE document."
+		},
+		"scopeContext": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/XHEContext"
+			},
+			"description": "A context scope for this XHE document."
+		},
+		"senderXHEParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/XHEParty"
+			},
+			"description": "The sender party for this XHE document."
+		},
+		"testIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this XHE document is a test ."
+		},
+		"uUIDId": {
+			"type": "string",
+			"description": "The UUID (Universally Unique IDentifier) of this XHE document."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

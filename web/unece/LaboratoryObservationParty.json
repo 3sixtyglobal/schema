@@ -1,0 +1,156 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/LaboratoryObservationParty",
+	"description": "An individual, group, or body having a role in laboratory observations.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "LaboratoryObservationParty",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this laboratory observation party."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this laboratory observation party."
+		},
+		"officeAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeAddress"
+			},
+			"description": "The office address of this laboratory observation party."
+		},
+		"personDefinedContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LaboratoryObservationContact"
+			},
+			"description": "The person defined as the contact for this laboratory observation party."
+		},
+		"postalAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeAddress"
+			},
+			"description": "The postal address of this laboratory observation party."
+		},
+		"thirdPartyIssuedId": {
+			"type": "string",
+			"description": "An alternate identifier issued by a third party for this laboratory observation party."
+		},
+		"thirdPartyIssuedIdentification": {
+			"type": "string",
+			"description": "A third party issued identifier, expressed as text, for this laboratory observation party."
+		},
+		"websiteURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "The website URI (Uniform Resource Identifier) of this laboratory observation party."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

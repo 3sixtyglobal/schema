@@ -1,0 +1,221 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/Chemical",
+	"description": "Any clearly defined substance having a defined molecular composition.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Chemical",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"applicableHazardousMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/HazardousMaterial"
+			},
+			"description": "An applicable toxicological hazardous material for this distinct chemical."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this distinct chemical."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this distinct chemical."
+		},
+		"commonName": {
+			"type": "string",
+			"description": "A common name, expressed as text, for this distinct chemical."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "The family name expressed as text for this distinct chemical."
+		},
+		"formulaDescription": {
+			"type": "string",
+			"description": "The textual description of the formula for this distinct chemical."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this distinct chemical."
+		},
+		"massMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A measure of the mass of this distinct chemical."
+		},
+		"massRatioMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A mass measure of this distinct chemical expressed as a ratio to another mass, such as the total mass."
+		},
+		"molecularWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "The measure of the molecular weight (in grams) for this distinct chemical."
+		},
+		"presenceMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/IngredientRangeMeasurement"
+			},
+			"description": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+		},
+		"presencePercent": {
+			"type": "string",
+			"description": "The percentage of the presence of distinct chemical."
+		},
+		"scientificName": {
+			"type": "string",
+			"description": "The scientific name, expressed as text, for this distinct chemical."
+		},
+		"specifiedProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductCertificate"
+			},
+			"description": "A product certificate specified for this distinct chemical."
+		},
+		"synonymName": {
+			"type": "string",
+			"description": "A synonym name, expressed as text, for this distinct chemical."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of distinct chemical."
+		},
+		"volumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A measure of the volume of this distinct chemical."
+		},
+		"volumeRatioMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
+		},
+		"weightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A measure of the weight of this distinct chemical."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

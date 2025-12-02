@@ -1,0 +1,256 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/TradeContact",
+	"description": "A person or a department that acts as a point of contact with another person or department in a trading relationship.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "TradeContact",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"accessibleLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedLocation"
+			},
+			"description": "An accessible location specified for this trade contact."
+		},
+		"authorizedPersonName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the authorized person for this trade contact."
+		},
+		"contactTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ContactTypeCodeList"
+			},
+			"description": "The code specifying the type of trade contact."
+		},
+		"departmentName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the department to which this trade contact belongs within an organization."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade contact."
+		},
+		"directTelephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "The direct telephone communication information for this trade contact."
+		},
+		"eDICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Electronic Data Interchange (EDI) communication information for this trade contact."
+		},
+		"emailURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "The email URI communication information for this trade contact."
+		},
+		"faxCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Fax communication information for this trade contact."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this trade contact."
+		},
+		"instantMessagingCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Instant messaging communication information for this trade contact."
+		},
+		"jobTitle": {
+			"type": "string",
+			"description": "A job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager."
+		},
+		"mobileTelephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "The mobile telephone communication information for this trade contact."
+		},
+		"personId": {
+			"type": "string",
+			"description": "A unique identifier for this trade contact person."
+		},
+		"personName": {
+			"type": "string",
+			"description": "A name, expressed as text, of this trade contact person."
+		},
+		"postalAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeAddress"
+			},
+			"description": "Postal address information for this trade contact."
+		},
+		"responsibility": {
+			"type": "string",
+			"description": "A responsibility, expressed as text, of this trade contact."
+		},
+		"specifiedContactPerson": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ContactPerson"
+			},
+			"description": "The contact person specified for this trade contact."
+		},
+		"specifiedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Note"
+			},
+			"description": "A note specified for this trade contact."
+		},
+		"telephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Telephone communication information for this trade contact."
+		},
+		"telexCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Telegraphy (Telex) communication information for this trade contact."
+		},
+		"uRICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Uniform Resource Identifier (URI) communication information for this trade contact, such as a web or an email address."
+		},
+		"usedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "A communication used by this trade contact."
+		},
+		"vOIPCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Voice Over Internet Protocol (VOIP) communication information for this trade contact."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,153 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/DeliveryTerms",
+	"description": "Conditions agreed upon between the parties with regard to the delivery of goods and or services for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "DeliveryTerms",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"declarationCountryRelationshipCode": {
+			"type": "string",
+			"description": "The code specifying whether the place specified by these trade delivery terms is located in the country where a declaration is made, in another member country of the same economic or customs union, or in a third country."
+		},
+		"deliveryDiscontinuationCode": {
+			"type": "string",
+			"description": "The code specifying the delivery discontinuation for this trade delivery terms."
+		},
+		"deliveryTermsDeliveryTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DeliveryTermsCodeList"
+			},
+			"description": "The code specifying the type of delivery for these trade delivery terms."
+		},
+		"deliveryTermsFunctionCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DeliveryTermsFunctionCodeList"
+			},
+			"description": "A code specifying a function of these trade delivery terms."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these trade delivery terms."
+		},
+		"partialDeliveryAllowedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not these trade delivery terms allow a partial delivery."
+		},
+		"relevantLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeLocation"
+			},
+			"description": "The trade location relevant for these trade delivery terms."
+		},
+		"riskResponsibilityCode": {
+			"type": "string",
+			"description": "A code specifying the risk responsibility for these trade delivery terms."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

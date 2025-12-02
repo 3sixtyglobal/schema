@@ -1,0 +1,166 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/PaymentFinancialInstitution",
+	"description": "An institution that provides financial services and financial transactions for payment.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "PaymentFinancialInstitution",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"bEIId": {
+			"type": "string",
+			"description": "The unique Business Entity Identifier (BEI) as defined in ISO 9362 for this payment financial institution."
+		},
+		"bICId": {
+			"type": "string",
+			"description": "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
+		},
+		"branchName": {
+			"type": "string",
+			"description": "A branch name, expressed as text, for this payment financial institution."
+		},
+		"branchNameId": {
+			"type": "string",
+			"description": "The identifier of the branch name for this payment financial institution."
+		},
+		"gLNId": {
+			"type": "string",
+			"description": "The unique Global Location Number (GLN) as defined by GS1 for this payment financial institution."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this payment financial institution."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this payment financial institution."
+		},
+		"nameId": {
+			"type": "string",
+			"description": "The identifier of the name for this payment financial institution."
+		},
+		"roleCode": {
+			"type": "string",
+			"description": "The code specifying the role for this payment financial institution, such as intermediary or settlement agent."
+		},
+		"specifiedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "A communication specified for this payment financial institution."
+		},
+		"specifiedPaymentFinancialAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PaymentFinancialAccount"
+			},
+			"description": "A payment financial account specified for this payment financial institution."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of payment financial institution."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

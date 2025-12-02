@@ -1,0 +1,440 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/Document",
+	"description": "Written, printed or electronic matter that is referenced.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Document",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"acceptablePeriod": {
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
+			"description": "The specified period within which this referenced document may be accepted."
+		},
+		"acceptanceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the acceptance of this referenced document."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/BinaryFile"
+			},
+			"description": "A specified binary file attached to this referenced document."
+		},
+		"attachmentBinaryObject": {
+			"type": "string",
+			"description": "A binary object that is attached or otherwise appended to this referenced document."
+		},
+		"authenticatedOriginalIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this referenced document is an authenticated original."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of this referenced document."
+		},
+		"communicationChannelCode": {
+			"$ref": "https://schema.twindev.org/unece/CommunicationChannelCodeList",
+			"description": "The code specifying the channel by which this referenced document is sent, such as mail, email, fax."
+		},
+		"contractualClause": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Clause"
+			},
+			"description": "A contractual clause of this referenced document."
+		},
+		"controlRequirementIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this referenced document requires a control."
+		},
+		"copyIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the referenced document is a copy."
+		},
+		"copyIssuedQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of copies issued of this referenced document."
+		},
+		"copyRequiredQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of copies required of this referenced document."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the creation of this referenced document."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this referenced document."
+		},
+		"documentAmendmentPurposeCode": {
+			"type": "string",
+			"description": "The code specifying the purpose of an amendment to this referenced document."
+		},
+		"documentLanguageId": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LanguageId"
+			},
+			"description": "An identifier for a language used in this referenced document."
+		},
+		"documentLineStatusCode": {
+			"$ref": "https://schema.twindev.org/unece/LineStatusCodeList",
+			"description": "The code specifying the status of a line in this referenced document."
+		},
+		"documentStatusCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentStatusCodeList"
+			},
+			"description": "The code specifying the status for this referenced document."
+		},
+		"documentType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this referenced document."
+		},
+		"documentTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentCodeList"
+			},
+			"description": "The code specifying the type of referenced document."
+		},
+		"effectiveSpecifiedPeriod": {
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
+			"description": "The specified period within which this referenced document is effective."
+		},
+		"electronicPresentationIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this referenced document is presented in an electronic format."
+		},
+		"globalId": {
+			"type": "string",
+			"description": "A unique global identifier for this referenced document."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "A unique identifier for this referenced document."
+		},
+		"includedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value included in this referenced document."
+		},
+		"includedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Note"
+			},
+			"description": "A note included in this referenced document."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this referenced document."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The formatted date or date time for the issuance of this referenced document."
+		},
+		"issueLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
+			},
+			"description": "The logistics related location where this referenced document has been issued."
+		},
+		"issuerAssignedId": {
+			"type": "string",
+			"description": "The unique issuer assigned identifier for this referenced document."
+		},
+		"issuerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The trade related party that issues this referenced document."
+		},
+		"issuerSpecifiedInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentHandlingInstructions"
+			},
+			"description": "Handling instructions specified by the issuer for this referenced document."
+		},
+		"itemIdentificationId": {
+			"type": "string",
+			"description": "The unique identifier of an item in this referenced document."
+		},
+		"lineCountNumeric": {
+			"type": "string",
+			"description": "The number of lines for this referenced document."
+		},
+		"lineId": {
+			"type": "string",
+			"description": "The unique identifier of a line in this referenced document."
+		},
+		"lineItemQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The number of line items in this referenced document."
+		},
+		"lodgementLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
+			},
+			"description": "The logistics related location where this referenced document has been lodged."
+		},
+		"messageFunctionPurposeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MessageFunctionCodeList"
+			},
+			"description": "The code specifying the purpose of this referenced document."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this referenced document."
+		},
+		"originalIssuedQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of originals issued of this referenced document."
+		},
+		"originalRequiredQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of originals required of this referenced document."
+		},
+		"pageId": {
+			"type": "string",
+			"description": "The identifier of the page for this referenced document."
+		},
+		"previousRevisionId": {
+			"type": "string",
+			"description": "An identifier for a previous revision of this referenced document."
+		},
+		"processCondition": {
+			"type": "string",
+			"description": "A process condition, expressed as text, for this referenced document."
+		},
+		"processConditionCode": {
+			"type": "string",
+			"description": "The code specifying the process condition for this referenced document."
+		},
+		"proprietaryType": {
+			"type": "string",
+			"description": "A proprietary type, expressed as text, for this referenced document."
+		},
+		"receiptDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the formal receipt of this referenced document."
+		},
+		"recipientTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A trade related party that receives this referenced document."
+		},
+		"referenceDateTime": {
+			"type": "string",
+			"description": "The reference date or date time for this referenced document."
+		},
+		"referenceRelationshipTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ReferenceCodeList"
+			},
+			"description": "The code specifying the type of relationship between this referenced document and another artefact, such as a replacement of an original document."
+		},
+		"referenceTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ReferenceCodeList"
+			},
+			"description": "The code specifying the reference type of this referenced document."
+		},
+		"remarks": {
+			"type": "string",
+			"description": "A remark, expressed as text, regarding this referenced document."
+		},
+		"reportCountNumeric": {
+			"type": "string",
+			"description": "The report count for this referenced document."
+		},
+		"revision": {
+			"type": "string",
+			"description": "A revision, expressed as text, for this referenced document."
+		},
+		"revisionDateTime": {
+			"type": "string",
+			"description": "A date, time, date time or other date time value for the revision of this referenced document."
+		},
+		"revisionId": {
+			"type": "string",
+			"description": "A unique identifier for a revision of this referenced document."
+		},
+		"sectionName": {
+			"type": "string",
+			"description": "A section name, expressed as text, for this referenced document."
+		},
+		"senderTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The trade related party that sends this referenced document."
+		},
+		"signatoryAuthentication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Authentication"
+			},
+			"description": "A signatory authentication for this referenced document."
+		},
+		"specifiedDocumentStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentStatus"
+			},
+			"description": "Status information specified for this referenced document."
+		},
+		"status": {
+			"type": "string",
+			"description": "A status, expressed as text, for this referenced document."
+		},
+		"subordinateLineId": {
+			"type": "string",
+			"description": "The identifier of the subordinate line of this referenced document."
+		},
+		"subtypeCode": {
+			"type": "string",
+			"description": "A code specifying a subtype of this referenced document."
+		},
+		"totalIssueCountNumeric": {
+			"type": "string",
+			"description": "The total issue count for this referenced document."
+		},
+		"uRIId": {
+			"type": "string",
+			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
+		},
+		"validityPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "A period of validity specified for this referenced document."
+		},
+		"versionId": {
+			"type": "string",
+			"description": "The identifier for the version of this referenced document."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

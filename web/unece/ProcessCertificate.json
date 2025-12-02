@@ -1,0 +1,201 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/ProcessCertificate",
+	"description": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "ProcessCertificate",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this process certificate."
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Assertion"
+			},
+			"description": "The sustainability assertion applicable to this process certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object for which this process certificate is applicable."
+		},
+		"applicableProcessCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProcessCertification"
+			},
+			"description": "A process certification applicable to this process certificate."
+		},
+		"applicableProcessCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProcessCharacteristic"
+			},
+			"description": "A process characteristic applicable to this process certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Standard"
+			},
+			"description": "A referenced standard applicable to this process certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this process certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/BinaryFile"
+			},
+			"description": "A binary file attached to this process certificate."
+		},
+		"certificateTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CertificateTypeCodeList"
+			},
+			"description": "The code specifying the type of process certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this process certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this process certificate expires."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this process certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the issuance of this process certificate."
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for the issue of this process certificate."
+		},
+		"issuingPartyId": {
+			"type": "string",
+			"description": "An identifier of the party issuing this process certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "The code specifying the purpose of this process certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this process certificate."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,158 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/Contract",
+	"description": "An agreement between two or more parties for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Contract",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"automaticExtensionDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of automatic extension for this trade contract."
+		},
+		"automaticExtensionDurationMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DurationUnitMeasureType"
+			},
+			"description": "The measure of the duration of the automatic extension for this trade contract."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade contract."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier of this trade contract."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, date time, or other date time value for the issuance of this trade contract."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this trade contract."
+		},
+		"signatureName": {
+			"type": "string",
+			"description": "A signature name, expressed as text, for this trade contract."
+		},
+		"signedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value when this trade contract was signed."
+		},
+		"signedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedLocation"
+			},
+			"description": "A location where this trade contract was or will be signed."
+		},
+		"signeeJobTitle": {
+			"type": "string",
+			"description": "A job title of the signee, expressed as text, for this trade contract."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

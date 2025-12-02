@@ -1,0 +1,169 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/SpecifiedCertification",
+	"description": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "SpecifiedCertification",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"assertion": {
+			"type": "string",
+			"description": "An assertion, expressed as text, for this specified certification."
+		},
+		"assertionCode": {
+			"type": "string",
+			"description": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
+		},
+		"auditDateTime": {
+			"type": "string",
+			"description": "An audit date, time, date time or other date time value for this specified certification."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The end date value for this specified certification."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this specified certification."
+		},
+		"relatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Location"
+			},
+			"description": "A referenced location related to this specified certification."
+		},
+		"relatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Standard"
+			},
+			"description": "A referenced standard related to this specified certification."
+		},
+		"responsibleAgency": {
+			"type": "string",
+			"description": "A responsible agency, expressed as text, for this specified certification."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Assertion"
+			},
+			"description": "A sustainability assertion for this specified certification."
+		},
+		"standard": {
+			"type": "string",
+			"description": "A standard, expressed as text, for this specified certification."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The start date value for this specified certification."
+		},
+		"uRIId": {
+			"type": "string",
+			"description": "A Uniform Resource Identifier (URI) for this specified certification."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

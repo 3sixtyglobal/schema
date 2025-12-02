@@ -1,0 +1,224 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/TradeSettlementLineMonetarySummation",
+	"description": "A collection of monetary amount totals, specified at line level, for a trade settlement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "TradeSettlementLineMonetarySummation",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"allowanceTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all allowance amounts being reported in this trade settlement line monetary summation."
+		},
+		"chargeTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all charge amounts being reported in this trade settlement line monetary summation."
+		},
+		"duePayableAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value that is an amount due and payable for this trade settlement line monetary summation, such as the amount due to the creditor."
+		},
+		"grandTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the grand total of this trade settlement line monetary summation, to include addition and subtraction of individual summation amounts."
+		},
+		"grossLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, excluding line level allowances and charges and taxes, being reported in this trade settlement line monetary summation."
+		},
+		"includingTaxesLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the line total, including taxes, being reported in this trade settlement line monetary summation."
+		},
+		"informationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of an amount being reported for information in this trade settlement monetary summation."
+		},
+		"lineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the line amount total being reported in this trade settlement line monetary summation."
+		},
+		"netIncludingTaxesLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement line monetary summation."
+		},
+		"netLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level taxes, being reported in this trade settlement line monetary summation."
+		},
+		"paymentTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of a payment total reported in this trade settlement line monetary summation."
+		},
+		"productWeightLossInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the loss of weight of a product, such as fresh goods, stated for information purposes in this trade settlement line monetary summation."
+		},
+		"taxBasisTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all tax basis amounts being reported in this trade settlement line monetary summation."
+		},
+		"taxTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of the total of all tax amounts being reported in this trade settlement line monetary summation."
+		},
+		"totalAllowanceChargeAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of a total allowance and charge reported in this trade settlement line monetary summation."
+		},
+		"totalRetailValueInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value which constitutes the total retail value stated for information purposes in this trade settlement line monetary summation."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,154 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/CurrencyExchange",
+	"description": "The conversion of one currency to another for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "CurrencyExchange",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An associated document referenced for this trade related currency exchange."
+		},
+		"conversionRate": {
+			"type": "string",
+			"description": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
+		},
+		"conversionRateDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange."
+		},
+		"currencySourceCurrencyCode": {
+			"$ref": "https://schema.twindev.org/unece/CurrencyCodeList",
+			"description": "The code specifying the source currency of a trade related currency conversion."
+		},
+		"currencyTargetCurrencyCode": {
+			"$ref": "https://schema.twindev.org/unece/CurrencyCodeList",
+			"description": "The code specifying the target currency of a trade related currency conversion."
+		},
+		"document": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A document referenced for this trade related currency exchange."
+		},
+		"sourceUnitBasisNumeric": {
+			"type": "string",
+			"description": "The numeric unit basis of the source currency used in this trade related currency exchange rate calculation."
+		},
+		"targetUnitBaseNumeric": {
+			"type": "string",
+			"description": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
+		},
+		"tradeCurrencyExchangeMarketId": {
+			"type": "string",
+			"description": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

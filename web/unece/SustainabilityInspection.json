@@ -1,0 +1,195 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/SustainabilityInspection",
+	"description": "The process of performing documented checks of sustainability characteristics, with a focus on discovering deviations, related to documented sustainability requirements.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "SustainabilityInspection",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"applicableInspectionResult": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/InspectionResult"
+			},
+			"description": "The specified inspection result applicable to this sustainability inspection."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Standard"
+			},
+			"description": "A referenced standard applicable to this sustainability inspection."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SustainabilityCharacteristic"
+			},
+			"description": "A characteristic applicable to this sustainability inspection."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/BinaryFile"
+			},
+			"description": "A binary file attached for this sustainability inspection."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this sustainability inspection."
+		},
+		"executionParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party responsible for the execution of this sustainability inspection."
+		},
+		"executionPerson": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/InspectionPerson"
+			},
+			"description": "The inspector responsible for the execution of this sustainability inspection."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this sustainability inspection."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this sustainability inspection."
+		},
+		"outsourcedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this sustainability inspection is outsourced."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A referenced document specified for this sustainability inspection."
+		},
+		"specifiedInspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/InspectionEvent"
+			},
+			"description": "A specified inspection event for this sustainability inspection."
+		},
+		"specifiedInspectionStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/InspectionStatus"
+			},
+			"description": "The inspection status specified for this sustainability inspection."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of sustainability inspection."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,156 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/CountrySubDivision",
+	"description": "A political or physical area or region within the political boundaries of a country used or referenced for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "CountrySubDivision",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"activityAuthorizedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party that is authorized to perform an activity in this trade country sub-division."
+		},
+		"hierarchicalLevelCode": {
+			"type": "string",
+			"description": "The code specifying the hierarchical level of this trade country sub-division."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this trade country sub-division."
+		},
+		"locationFunctionTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LocationFunctionCodeList"
+			},
+			"description": "The code specifying the function type of this trade country sub-division."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this trade country sub-division."
+		},
+		"subordinateCountrySubDivision": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CountrySubDivision"
+			},
+			"description": "A subordinate country sub-division within this trade country sub-division."
+		},
+		"superordinateCountrySubDivision": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CountrySubDivision"
+			},
+			"description": "A superordinate country sub-division for this trade country sub-division."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of country sub-division for trade purposes."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

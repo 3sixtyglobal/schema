@@ -1,0 +1,158 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/SubordinateLineTradeSettlement",
+	"description": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "SubordinateLineTradeSettlement",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"amountDirectionCode": {
+			"type": "string",
+			"description": "The code, specifying the direction, either an addition or subtraction, for the amount of this subordinate line trade settlement."
+		},
+		"applicableTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeTax"
+			},
+			"description": "A tax applicable to this subordinate line trade settlement."
+		},
+		"billingPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "The billing period specified for the subordinate line of this trade settlement."
+		},
+		"invoiceReferencedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An invoice document referenced for this subordinate line trade settlement."
+		},
+		"purchaseSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AccountingAccount"
+			},
+			"description": "A purchase accounting account specified for the subordinate line of this trade settlement."
+		},
+		"specifiedAllowanceCharge": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeAllowanceCharge"
+			},
+			"description": "An allowance or charge specified for this subordinate line trade settlement."
+		},
+		"specifiedFinancialAdjustment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/FinancialAdjustment"
+			},
+			"description": "A financial adjustment specified for this subordinate line trade settlement."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

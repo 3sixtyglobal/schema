@@ -1,0 +1,152 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/DigitalMethod",
+	"description": "The use of online and digital technologies to collect monetary payment amounts.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "DigitalMethod",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"accountHolderName": {
+			"type": "string",
+			"description": "An account holder's name, expressed as text, for this digital method used for payment."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this digital method used for payment is applicable."
+		},
+		"cardholderName": {
+			"type": "string",
+			"description": "A cardholder's name, expressed as text, for this digital method used for payment."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this digital method used for payment."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The expiry date or date time of this digital method used for payment."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of the digital method used for payment."
+		},
+		"issuingCompanyName": {
+			"type": "string",
+			"description": "An issuing company name, expressed as text, for this digital method used for payment."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of digital method used for payment."
+		},
+		"validFromDateTime": {
+			"type": "string",
+			"description": "The date or date time from when this digital method used for payment is valid."
+		},
+		"verificationNumeric": {
+			"type": "string",
+			"description": "The verification number for this digital method used for payment."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

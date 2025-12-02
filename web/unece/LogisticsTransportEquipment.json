@@ -1,0 +1,705 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/LogisticsTransportEquipment",
+	"description": "A piece of equipment used to hold, protect or secure cargo for logistics purposes. A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "LogisticsTransportEquipment",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"accompaniedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this piece of logistics transport equipment is accompanied, such as by a transport means."
+		},
+		"actualRoute": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportRoute"
+			},
+			"description": "An actual route for this piece of logistics transport equipment."
+		},
+		"additionalInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportInstructions"
+			},
+			"description": "Additional instructions for this piece of logistics transport equipment."
+		},
+		"affixedSeal": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Seal"
+			},
+			"description": "A seal affixed to this piece of logistics transport equipment."
+		},
+		"airFlowUnitAirFlowMeasure": {
+			"$ref": "https://schema.twindev.org/unece/AirFlowUnitMeasureType",
+			"description": "The measure of the air flow for this piece of logistics transport equipment."
+		},
+		"applicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Note"
+			},
+			"description": "A note providing information applicable to this piece of logistics transport equipment."
+		},
+		"applicableServiceCharge": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ServiceCharge"
+			},
+			"description": "A service charge applicable to this piece of logistics transport equipment."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A referenced document associated with this piece of logistics transport equipment."
+		},
+		"attachedAttachedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AttachedTransportEquipment"
+			},
+			"description": "Transport equipment attached to this piece of logistics transport equipment, such as ropes or refrigeration units."
+		},
+		"attachedIOTDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/IOTDevice"
+			},
+			"description": "An IOT device attached to this piece of logistics transport equipment."
+		},
+		"axleQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The number of axles for this piece of logistics transport equipment."
+		},
+		"bondedWarehouseStorageEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A bonded warehouse storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+		},
+		"cargoResidueStatusCode": {
+			"type": "string",
+			"description": "A code specifying the cargo residue status for this piece of logistics transport equipment, such as required by dangerous goods regulations."
+		},
+		"carriedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AssociatedTransportEquipment"
+			},
+			"description": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
+		},
+		"carrierAssignedBookingId": {
+			"type": "string",
+			"description": "A carrier assigned booking identifier for this piece of logistics transport equipment."
+		},
+		"carrierParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A carrier party for this piece of logistics transport equipment."
+		},
+		"characteristic": {
+			"type": "string",
+			"description": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
+		},
+		"consigneeAssignedConsignmentId": {
+			"type": "string",
+			"description": "The consignee assigned consignment identifier for this piece of logistics transport equipment."
+		},
+		"consolidationEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
+		},
+		"containedConsignment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Consignment"
+			},
+			"description": "A consignment contained in this piece of logistics transport equipment."
+		},
+		"containedConsignmentQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of consignments contained in this piece of logistics transport equipment."
+		},
+		"containedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AssociatedTransportEquipment"
+			},
+			"description": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
+		},
+		"damageRemark": {
+			"type": "string",
+			"description": "A damage remark, expressed as text, for this piece of logistics transport equipment."
+		},
+		"deconsolidationEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A deconsolidation event for this piece of logistics transport equipment."
+		},
+		"deliveryInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DeliveryInstructions"
+			},
+			"description": "Delivery instructions for this piece of logistics transport equipment."
+		},
+		"deliveryTransportEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A delivery event for this piece of logistics transport equipment."
+		},
+		"goodsItemUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "A quantity of goods items in this logistics transport equipment."
+		},
+		"grossGoodsVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/VolumeUnitMeasureType"
+			},
+			"description": "A measure of the gross goods volume of this logistics transport equipment."
+		},
+		"grossGoodsWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "A measure of the gross goods weight of this logistics transport equipment."
+		},
+		"handlingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
+			},
+			"description": "Handling instructions for this piece of logistics transport equipment."
+		},
+		"humidityPercent": {
+			"type": "string",
+			"description": "The percent of the humidity (moisture content) within this piece of logistics transport equipment."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier of this piece of logistics transport equipment."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this piece of logistics transport equipment."
+		},
+		"invoiceeParty": {
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
+			"description": "The invoicee party for this piece of logistics transport equipment."
+		},
+		"linearDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpatialDimension"
+			},
+			"description": "The linear spatial dimensions of this piece of logistics transport equipment."
+		},
+		"linearUnitLoadingLengthMeasure": {
+			"$ref": "https://schema.twindev.org/unece/LinearUnitMeasureType",
+			"description": "The measure of the loading length of this piece of logistics transport equipment."
+		},
+		"linearUnitRequiredLaneLengthMeasure": {
+			"$ref": "https://schema.twindev.org/unece/LinearUnitMeasureType",
+			"description": "The measure of the length required in a lane for this piece of logistics transport equipment."
+		},
+		"loadedConsignmentItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ConsignmentItem"
+			},
+			"description": "A consignment item loaded onto, or into, this piece of logistics transport equipment."
+		},
+		"loadedDangerousGoods": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DangerousGoods"
+			},
+			"description": "Dangerous goods loaded into this piece of logistics transport equipment."
+		},
+		"loadedPackageQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of packages loaded into or onto this piece of logistics transport equipment."
+		},
+		"loadingEvent": {
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
+			"description": "The loading event for this piece of logistics transport equipment."
+		},
+		"loadingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportInstructions"
+			},
+			"description": "Loading instructions for this piece of logistics transport equipment."
+		},
+		"loadingParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that loads this piece of logistics transport equipment."
+		},
+		"loadingRemark": {
+			"type": "string",
+			"description": "A loading remark, expressed as text, for this piece of logistics transport equipment."
+		},
+		"loadingSequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number differentiating this piece of logistics transport equipment from others during loading."
+		},
+		"logisticsTransportEquipmentCharacteristicCode": {
+			"type": "string",
+			"description": "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code."
+		},
+		"mainCarriageTransportMovement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportMovement"
+			},
+			"description": "A main carriage transport movement for this piece of logistic transport equipment."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The manufacturer party specified for this piece of logistics transport equipment."
+		},
+		"manufacturingDateTime": {
+			"type": "string",
+			"description": "The manufacturing date, time, date time, or other date time value for this piece of logistics transport equipment."
+		},
+		"netGoodsVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/VolumeUnitMeasureType"
+			},
+			"description": "A measure of the net goods volume of this logistics transport equipment."
+		},
+		"netGoodsWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "A measure of the net goods weight of this logistics transport equipment."
+		},
+		"notifiedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party who has been or will be notified about this piece of logistics transport equipment."
+		},
+		"onCarriageTransportMovement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportMovement"
+			},
+			"description": "An on-carriage transport movement for this piece of logistics transport equipment."
+		},
+		"operatingParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that operates this piece of logistics transport equipment."
+		},
+		"ownerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party who owns this piece of logistics transport equipment."
+		},
+		"pickUpEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
+		},
+		"positioningEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
+		},
+		"powerSupplyConnectorQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The number of power supply connectors for this piece of logistics transport equipment."
+		},
+		"powerSupplyType": {
+			"type": "string",
+			"description": "The type of power supply, expressed as text, for this piece of logistics transport equipment, such as diesel fuel or electricity."
+		},
+		"powerSupplyTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of power supply for this piece of logistics transport equipment, such as diesel fuel or electricity."
+		},
+		"preCarriageTransportMovement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportMovement"
+			},
+			"description": "A pre-carriage transport movement for this piece of logistics transport equipment."
+		},
+		"quarantineInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuarantineInstructions"
+			},
+			"description": "Quarantine instructions for this piece of logistics transport equipment."
+		},
+		"registrationCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Country"
+			},
+			"description": "The registration country for this logistics transport equipment."
+		},
+		"relatedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CommunicationEvent"
+			},
+			"description": "A communication event related to this piece of logistics transport equipment."
+		},
+		"releaseId": {
+			"type": "string",
+			"description": "The release identifier for this piece of logistics transport equipment."
+		},
+		"releaseRestriction": {
+			"type": "string",
+			"description": "The release restriction, expressed as text, for this piece of logistics transport equipment."
+		},
+		"reportableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "A reportable quantity for this logistics transport equipment."
+		},
+		"reportedLogisticsStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsStatus"
+			},
+			"description": "A status reported for this piece of logistics transport equipment."
+		},
+		"reportingIOTDevicePairing": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Pairing"
+			},
+			"description": "An IOT device reported communication pairing for this piece of logistics transport equipment."
+		},
+		"reportingIOTDeviceTransportEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "An IOT device reported transport event for this piece of logistics transport equipment."
+		},
+		"requestedRoute": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportRoute"
+			},
+			"description": "A requested route for this piece of logistics transport equipment."
+		},
+		"returnableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this piece of logistics transport equipment is returnable."
+		},
+		"scheduledRoute": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportRoute"
+			},
+			"description": "A scheduled or planned route for this piece of logistics transport equipment."
+		},
+		"sealQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The quantity of seals for this piece of logistics transport equipment."
+		},
+		"sealedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this piece of logistics transport equipment is sealed."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number differentiating this piece of logistics transport equipment from others in a set of transport equipment."
+		},
+		"settingTemperature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportSettingTemperature"
+			},
+			"description": "A temperature setting for this piece of logistics transport equipment, such as storage temperature or operational temperature."
+		},
+		"shipperReferenceInformation": {
+			"type": "string",
+			"description": "Shipper reference information, expressed as text, for this piece of logistics transport equipment."
+		},
+		"specifiedRiskAnalysisResult": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/RiskAnalysisResult"
+			},
+			"description": "A result of a logistics risk analysis calculation specified for this transport equipment."
+		},
+		"specifiedTransportMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsTransportMeans"
+			},
+			"description": "A transport means specified for this piece of logistics transport equipment."
+		},
+		"storageEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEvent"
+			},
+			"description": "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+		},
+		"stowagePositionId": {
+			"type": "string",
+			"description": "The stowage position identifier for this piece of logistics transport equipment."
+		},
+		"transportEquipmentCategoryCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEquipmentCategoryCodeList"
+			},
+			"description": "The code specifying the category for this piece of logistics transport equipment, such as container or trailer."
+		},
+		"transportEquipmentFullnessUsedCapacityCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentFullnessCodeList",
+			"description": "The code specifying the used capacity of this piece of logistics transport equipment, such as full or empty."
+		},
+		"transportEquipmentHaulageArrangementsCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentHaulageArrangementsCodeList",
+			"description": "The code specifying the arrangement for the haulage of this piece of logistics transport equipment."
+		},
+		"transportEquipmentLegalStatusLegalStatusCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentLegalStatusCodeList",
+			"description": "The code specifying the legal status of this piece of logistics transport equipment with respect to a specific law such as the \"Container Convention Code\"."
+		},
+		"transportEquipmentMovementStatusTransportMovementStatusCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentMovementStatusCodeList",
+			"description": "The code specifying the transport movement status for this piece of logistics transport equipment, such as for export, for import, or for transhipment."
+		},
+		"transportEquipmentOperationalStatusCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportEquipmentOperationalStatusCodeList"
+			},
+			"description": "The code specifying the operational status for this piece of logistics transport equipment, such as to be repaired or to be shifted."
+		},
+		"transportEquipmentSizeTypeCharacteristicCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentSizeTypeCodeList",
+			"description": "The code specifying the characteristics, such as size and type, of this referenced piece of logistics transport equipment."
+		},
+		"transportEquipmentSupplierPartyRoleCode": {
+			"$ref": "https://schema.twindev.org/unece/TransportEquipmentSupplierPartyRoleCodeList",
+			"description": "The code specifying the role of the party responsible for supplying this piece of logistics transport equipment, such as the carrier or the buyer."
+		},
+		"transportService": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Service"
+			},
+			"description": "A transport service for this piece of logistics transport equipment."
+		},
+		"transportServicesBuyerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The transport services buyer party for this piece of logistics transport equipment."
+		},
+		"unitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The number of units of this type of logistics transport equipment."
+		},
+		"unloadingEvent": {
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
+			"description": "The unloading event for this piece of logistics transport equipment."
+		},
+		"unloadingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TransportInstructions"
+			},
+			"description": "Unloading instructions for this piece of logistics transport equipment."
+		},
+		"unloadingSequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number differentiating this piece of logistics transport equipment from others during unloading."
+		},
+		"verifiedGrossWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "A measure of the verified gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+		},
+		"volumeUnitGrossVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/VolumeUnitMeasureType"
+			},
+			"description": "The measure of the gross volume of this piece of logistics transport equipment."
+		},
+		"weightUnitGrossWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "The measure of the gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+		},
+		"weightUnitNetWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "A measure of the net weight (mass) of this piece of logistics transport equipment."
+		},
+		"weightUnitTareWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "The measure of the tare weight (mass) of this piece of logistics transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,234 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/ContactPerson",
+	"description": "An individual human being in a position to give assistance or information.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "ContactPerson",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"alias": {
+			"type": "string",
+			"description": "The alias, expressed as text, reflecting a shortened form of the name of this person or any other name such as a nickname by which this contact person may be known."
+		},
+		"birthDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value which specifies the birth date for this contact person."
+		},
+		"birthplaceName": {
+			"type": "string",
+			"description": "The name of the place where this contact person was born, expressed as text."
+		},
+		"contactPersonTitleCode": {
+			"type": "string",
+			"description": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
+		},
+		"countryResidenceCountryId": {
+			"$ref": "https://schema.twindev.org/unece/CountryId",
+			"description": "The identifier of the residence country of this contact person."
+		},
+		"emailURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "An email Uniform Resource Identifier (URI) communication for this contact person."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "A name, expressed as text, that this contact person shares with members of his/her family."
+		},
+		"familyNamePrefix": {
+			"type": "string",
+			"description": "The prefix, expressed as text, that precedes this contact person's family name, such as Van, Von."
+		},
+		"faxCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Facsimile communication information for this contact person."
+		},
+		"genderCode": {
+			"type": "string",
+			"description": "The code specifying the gender of this contact person."
+		},
+		"givenName": {
+			"type": "string",
+			"description": "The name, expressed as text, given to this contact person, usually by parents at birth."
+		},
+		"instantMessagingCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "An instant messaging communication for this contact person."
+		},
+		"middleName": {
+			"type": "string",
+			"description": "The middle name, expressed as text, of this contact person, usually given by parents at birth."
+		},
+		"nameSuffix": {
+			"type": "string",
+			"description": "The suffix, expressed as text, that follows this contact person's name, such as Junior, Third."
+		},
+		"role": {
+			"type": "string",
+			"description": "A role, expressed as text, for this contact person."
+		},
+		"specifiedBirthAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/BirthAddress"
+			},
+			"description": "The birth address specified for this contact person."
+		},
+		"specifiedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "A universal communication specified for this contact person."
+		},
+		"specifiedEmployerIdentity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/EmployerIdentity"
+			},
+			"description": "An employer identity specified for this contact person."
+		},
+		"specifiedPersonIdentity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PersonIdentity"
+			},
+			"description": "The person identity specified for this contact person."
+		},
+		"specifiedTaxRegistration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TaxRegistration"
+			},
+			"description": "A tax registration specified for this contact person."
+		},
+		"telephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "Telephone communication information for this contact person."
+		},
+		"title": {
+			"type": "string",
+			"description": "The textual expression of the title associated with this contact person, such as Doctor."
+		},
+		"websiteURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Communication"
+			},
+			"description": "A website Uniform Resource Identifier (URI) communication for this contact person."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

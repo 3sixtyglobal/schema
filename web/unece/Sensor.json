@@ -1,0 +1,191 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/Sensor",
+	"description": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Sensor",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"actualReportedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CalibratedMeasurement"
+			},
+			"description": "An actual calibrated measurement reported for this monitoring sensor."
+		},
+		"definedControlSettingParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ControlSettingParameter"
+			},
+			"description": "A control setting parameter defined for this monitoring sensor."
+		},
+		"definedOperationalParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/OperationalParameter"
+			},
+			"description": "An operational parameter defined for this monitoring sensor."
+		},
+		"grantedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductCertificate"
+			},
+			"description": "A product certificate granted for this monitoring sensor."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this monitoring sensor."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The manufacturer party for this monitoring sensor."
+		},
+		"ownerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The owner party of this monitoring sensor."
+		},
+		"positionCode": {
+			"type": "string",
+			"description": "The code specifying a position of this monitoring sensor."
+		},
+		"precisionMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CalibratedMeasurement"
+			},
+			"description": "A calibrated measurement of precision for this monitoring sensor."
+		},
+		"remainingBatteryChargePercent": {
+			"type": "string",
+			"description": "The percentage of the remaining battery charge of this monitoring sensor."
+		},
+		"scheduledReportedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CalibratedMeasurement"
+			},
+			"description": "A scheduled calibrated measurement reported for this monitoring sensor."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying a type of monitoring sensor."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "The measure of the value for this monitoring sensor."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

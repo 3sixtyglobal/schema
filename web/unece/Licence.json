@@ -1,0 +1,179 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/Licence",
+	"description": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Licence",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Standard"
+			},
+			"description": "A referenced standard associated to this specified licence."
+		},
+		"assuranceLevelCode": {
+			"type": "string",
+			"description": "A code specifying an assurance level of this specified licence."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified licence."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "An expiry date, time, date time or other date time value for this specified licence."
+		},
+		"grantedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party granted this specified licence."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this specified licence."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "An issue date, time, date time or other date time value of this specified licence."
+		},
+		"issuerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that issues this specified licence."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified licence."
+		},
+		"subjectTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SubjectCodeList"
+			},
+			"description": "A code specifying a subject type for this licence."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of licence."
+		},
+		"validIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified licence is valid."
+		},
+		"verifiedObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Object"
+			},
+			"description": "An object verified for this specified licence."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

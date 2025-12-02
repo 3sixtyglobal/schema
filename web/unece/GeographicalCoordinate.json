@@ -1,0 +1,178 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/GeographicalCoordinate",
+	"description": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "GeographicalCoordinate",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"acquisitionDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
+		},
+		"alternativeSourceSystemId": {
+			"type": "string",
+			"description": "An alternative source system identifier for this geographical coordinate."
+		},
+		"altimetricSystemId": {
+			"type": "string",
+			"description": "The unique identifier of the system used for measuring the altitude."
+		},
+		"altitudeMeasure": {
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
+			"description": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this geographical coordinate (Reference ISO 6709)."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this geographical coordinate."
+		},
+		"latitudeDirectionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether the latitude compass direction from the Equator meridian to the meridian of a specific place is North (+) or South (-) (Reference ISO 6709)."
+		},
+		"latitudeMeasure": {
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
+			"description": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a specific place for this geographical coordinate (Reference ISO 6709)."
+		},
+		"longitudeDirectionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
+		},
+		"longitudeMeasure": {
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
+			"description": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place (Reference ISO 6709)."
+		},
+		"systemId": {
+			"type": "string",
+			"description": "The unique identifier of the reference system used for measuring a geographical coordinate."
+		},
+		"timeZone": {
+			"type": "string",
+			"description": "The time zone, expressed as text, for this geographical coordinate."
+		},
+		"timeZoneCode": {
+			"type": "string",
+			"description": "The code specifying the time zone of this geographical coordinate."
+		},
+		"timeZoneDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
+		},
+		"usedCoordinateReferenceSystem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CoordinateReferenceSystem"
+			},
+			"description": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+		},
+		"usedCoordinateSourceSystem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CoordinateSourceSystem"
+			},
+			"description": "The geographical coordinate source system used for this geographical coordinate."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

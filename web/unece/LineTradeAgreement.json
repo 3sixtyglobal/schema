@@ -1,0 +1,594 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/LineTradeAgreement",
+	"description": "The contractual terms of a line trade agreement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "LineTradeAgreement",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"additionalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An additional document referenced in this line trade agreement."
+		},
+		"agreedPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradePrice"
+			},
+			"description": "An agreed product price for this line trade agreement."
+		},
+		"applicableDeliveryTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DeliveryTerms"
+			},
+			"description": "The terms of delivery applicable to this line trade agreement."
+		},
+		"applicableForecastTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ForecastTerms"
+			},
+			"description": "The supply chain forecast terms applicable to this line trade agreement."
+		},
+		"blanketOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The blanket order document referenced in this line trade agreement."
+		},
+		"buyerApprovedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement."
+		},
+		"buyerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A buyer generated order document referenced in this line trade agreement."
+		},
+		"buyerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The buyer party for this line trade agreement."
+		},
+		"buyerReference": {
+			"type": "string",
+			"description": "A buyer reference, expressed as text, for this line trade agreement."
+		},
+		"buyerRequisitionerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party who is a buyer requisitioner in this line trade agreement."
+		},
+		"carrierParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A carrier party for this line trade agreement."
+		},
+		"catalogueDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A catalogue document referenced by this line trade agreement."
+		},
+		"catalogueInformationProviderParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party that provides catalogue information for this line trade agreement."
+		},
+		"contractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A contract document referenced in this line trade agreement."
+		},
+		"deliveryOrderFulfilmentLeadTimeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DurationUnitMeasureType"
+			},
+			"description": "The measure of the expected time interval between the receipt of an order and its delivery fulfilment according to this line trade agreement."
+		},
+		"demandForecastDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A demand forecast document referenced in this line trade agreement."
+		},
+		"economicOrderQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The economic order quantity for this line trade agreement."
+		},
+		"engineeringChangeDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The engineering change document referenced in this line trade agreement."
+		},
+		"exclusivityPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "The exclusivity period specified in this line trade agreement."
+		},
+		"exportLicenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The export licence document referenced in this line trade agreement."
+		},
+		"grossPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradePrice"
+			},
+			"description": "A gross product price in this line trade agreement."
+		},
+		"guaranteedProductLifeSpanPeriod": {
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
+			"description": "The guaranteed product life span specified in this line trade agreement."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this line trade agreement."
+		},
+		"immediatePreviousPriceListDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The immediate previous price list document referenced in this line trade agreement."
+		},
+		"impactCode": {
+			"type": "string",
+			"description": "The code specifying the impact for this line trade agreement."
+		},
+		"importLicenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The import licence document referenced in this line trade agreement."
+		},
+		"includedMarketplace": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Marketplace"
+			},
+			"description": "A marketplace included in this line trade agreement."
+		},
+		"incrementalProductOrderableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The incremental product orderable quantity for this line trade agreement."
+		},
+		"informationUseRestrictionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the use of the information provided in this line trade agreement is restricted."
+		},
+		"itemBuyerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The item buyer party for this line trade agreement."
+		},
+		"itemSellerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The item seller party for this line trade agreement."
+		},
+		"letterOfCreditDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The letter of credit document referenced in this line trade agreement."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A manufacturer party, at line level, for this trade agreement."
+		},
+		"marketplaceOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The marketplace generated order document referenced in this line trade agreement."
+		},
+		"maximumOrderQuantityOrderingPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "The maximum order quantity ordering period specified in this line trade agreement."
+		},
+		"maximumProductOrderableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The maximum product orderable quantity for this line trade agreement."
+		},
+		"minimumOrderQuantityOrderingPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "The minimum order quantity ordering period specified in this line trade agreement."
+		},
+		"minimumProductOrderableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The minimum product orderable quantity for this line trade agreement."
+		},
+		"netPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradePrice"
+			},
+			"description": "A net product price in this line trade agreement."
+		},
+		"orderPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradePrice"
+			},
+			"description": "An order price for a product in this line trade agreement."
+		},
+		"orderProductUnitMeasureCode": {
+			"type": "string",
+			"description": "The code specifying the order product unit of measure, such as kilogram or litre, for this line trade agreement."
+		},
+		"orderingSpecifiedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "The ordering period specified in this line trade agreement."
+		},
+		"originalOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The original order document referenced in this line trade agreement."
+		},
+		"pickUpOrderFulfilmentLeadTimeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DurationUnitMeasureType"
+			},
+			"description": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this line trade agreement."
+		},
+		"previousOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The previous order document referenced in this line trade agreement."
+		},
+		"priceListDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The price list document referenced in this line trade agreement."
+		},
+		"primeContractSellerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The seller party acting as the prime contractor for this line trade agreement."
+		},
+		"priorityCode": {
+			"type": "string",
+			"description": "The code specifying the priority for this line trade agreement."
+		},
+		"priorityDescriptionCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PriorityDescriptionCodeList"
+			},
+			"description": "The code specifying the delivery priority for this line trade agreement."
+		},
+		"procurementParty": {
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
+			"description": "The procurement party for this line trade agreement."
+		},
+		"productAvailabilityCode": {
+			"type": "string",
+			"description": "The code specifying the product availability according to this line trade agreement."
+		},
+		"productEndUserParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The party acting as the end user for the products in this line trade agreement."
+		},
+		"productMadeToOrderIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or customized only after receipt of order."
+		},
+		"productOrderableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the product can be ordered according to this line trade agreement."
+		},
+		"productReorderableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the product can be reordered according to this line trade agreement."
+		},
+		"promotionalDealDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The promotional deal document referenced in this line trade agreement."
+		},
+		"quotationDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation document referenced in this line trade agreement."
+		},
+		"quotationProposalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation proposal document referenced in this line trade agreement."
+		},
+		"quotationProposalResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation proposal response document referenced in this line trade agreement."
+		},
+		"quotationRequestDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation request document referenced in this line trade agreement."
+		},
+		"quotationRequestResponseDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The quotation request response document referenced in this line trade agreement."
+		},
+		"reference": {
+			"type": "string",
+			"description": "A reference, expressed as text, for this line trade agreement."
+		},
+		"relevantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A party relevant for this line trade agreement."
+		},
+		"requisitionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A requisition document referenced in this line trade agreement."
+		},
+		"requisitionerDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A requisitioner document referenced in this line trade agreement."
+		},
+		"resalePeriod": {
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
+			"description": "The resale period specified in this line trade agreement."
+		},
+		"resaleProductUnitMeasureCode": {
+			"type": "string",
+			"description": "The code specifying the resale product unit of measure, such as kilogram or litre, for this trade line agreement."
+		},
+		"revisionId": {
+			"type": "string",
+			"description": "An identifier for the revision of this line trade agreement."
+		},
+		"salesConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A sales conditions document referenced by this line trade agreement."
+		},
+		"salesReportDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The sales report document referenced in this line trade agreement."
+		},
+		"sellerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The seller generated order document referenced in this line trade agreement."
+		},
+		"sellerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The seller party for this line trade agreement."
+		},
+		"sellerReference": {
+			"type": "string",
+			"description": "A seller reference, expressed as text, for this line trade agreement."
+		},
+		"supplyInstructionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A supply instruction document referenced in this line trade agreement."
+		},
+		"supportCentreParty": {
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
+			"description": "The support centre party for this line trade agreement."
+		},
+		"targetMarketCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Country"
+			},
+			"description": "A target market country for this line trade agreement."
+		},
+		"ultimateCustomerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "An ultimate customer order document referenced for this line trade agreement."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

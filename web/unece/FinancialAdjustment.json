@@ -1,0 +1,166 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/FinancialAdjustment",
+	"description": "A correction or modification to reflect actual financial conditions.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "FinancialAdjustment",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"accountingDebitCreditStatusDirectionCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AccountingDebitCreditStatusCodeList"
+			},
+			"description": "The code specifying whether the financial adjustment must be subtracted or added."
+		},
+		"actualAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "An actual monetary value added or subtracted as a result of this financial adjustment."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of this financial adjustment."
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
+			"description": "The actual quantity added or subtracted as a result of this financial adjustment."
+		},
+		"claimRelatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "The claim related party for this financial adjustment."
+		},
+		"financialAdjustmentReasonCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/FinancialAdjustmentReasonCodeList"
+			},
+			"description": "A code specifying a reason for this financial adjustment."
+		},
+		"invoiceReferenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "The invoice document referenced for this financial adjustment."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this financial adjustment."
+		},
+		"relatedTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeTax"
+			},
+			"description": "A trade tax related to this financial adjustment."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

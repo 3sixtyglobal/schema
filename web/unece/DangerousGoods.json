@@ -1,0 +1,463 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/DangerousGoods",
+	"description": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "DangerousGoods",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"additionalHazardClassificationId": {
+			"type": "string",
+			"description": "The unique identifier of an additional hazard class applicable to these transported dangerous goods."
+		},
+		"aircraftLimitationInformation": {
+			"type": "string",
+			"description": "Aircraft limitation information, expressed as text, for these transported dangerous goods."
+		},
+		"allPackedInOneInformation": {
+			"type": "string",
+			"description": "All packed in one information, expressed as text, for these transported dangerous goods."
+		},
+		"associatedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/LogisticsTransportEquipment"
+			},
+			"description": "Referenced transport equipment associated with the dangerous goods."
+		},
+		"authorizationInformation": {
+			"type": "string",
+			"description": "Authorization information, expressed as text, for these transported dangerous goods."
+		},
+		"complianceDeclarationInformation": {
+			"type": "string",
+			"description": "Compliance declaration information, expressed as text, for these transported dangerous goods."
+		},
+		"controlTemperatureMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Measurement"
+			},
+			"description": "The measurement of the control temperature of these transported dangerous goods."
+		},
+		"crewEmergencyInformation": {
+			"type": "string",
+			"description": "Crew emergency information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"crewMemberEmergencyIdentityInformation": {
+			"type": "string",
+			"description": "Crew member emergency identity information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"dangerousGoodsPackagingLevelPackagingDangerLevelCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DangerousGoodsPackagingLevelCodeList"
+			},
+			"description": "The code specifying the level of danger that the packaging of these dangerous goods must cover for transport purposes."
+		},
+		"dangerousGoodsRegulationCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DangerousGoodsRegulationCodeList"
+			},
+			"description": "The code specifying a regulation applicable to these transported dangerous goods."
+		},
+		"densityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A density measure for these transported dangerous goods."
+		},
+		"eMSId": {
+			"type": "string",
+			"description": "The unique transport emergency procedure (EMS) identifier applicable for these transported dangerous goods."
+		},
+		"emergencyContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeContact"
+			},
+			"description": "The person or department to be contacted in the event of any emergency related to these transported dangerous goods."
+		},
+		"emergencyTemperatureMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Measurement"
+			},
+			"description": "The measurement of the emergency temperature of these transported dangerous goods."
+		},
+		"exceptedQuantityStatementInformation": {
+			"type": "string",
+			"description": "Excepted quantity information statement, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"expertTrainingCertificateInformation": {
+			"type": "string",
+			"description": "Expert training certificate information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"explosiveCargoNetWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "The measure of the explosive cargo weight applicable to these transported dangerous goods."
+		},
+		"explosiveCompatibilityGroupCode": {
+			"type": "string",
+			"description": "The code specifying the explosive compatibility group for these transported dangerous goods."
+		},
+		"explosiveLabelStatementInformation": {
+			"type": "string",
+			"description": "Explosive label material statement information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"flashpointTemperatureMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Measurement"
+			},
+			"description": "A measurement of the flashpoint temperature of these transported dangerous goods."
+		},
+		"handlingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
+			},
+			"description": "Handling instructions for the transported dangerous goods."
+		},
+		"hazardCategoryCode": {
+			"type": "string",
+			"description": "The code specifying the hazard category for these transported dangerous goods."
+		},
+		"hazardClassVersionId": {
+			"type": "string",
+			"description": "The unique identifier of the version of a hazard class for these transported dangerous goods."
+		},
+		"hazardClassificationId": {
+			"type": "string",
+			"description": "The unique identifier of a hazard class applicable to these transported dangerous goods as defined by the relevant governing regulation authority."
+		},
+		"hazardTypeCode": {
+			"type": "string",
+			"description": "A code specifying the type of hazard for these transported dangerous goods."
+		},
+		"iMDGSegregationGroupCode": {
+			"type": "string",
+			"description": "The code specifying the IMDG (International Maritime Dangerous Goods regulation) segregation group for these transported dangerous goods."
+		},
+		"includedFuel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Fuel"
+			},
+			"description": "Gaseous fuels included in the transport of these dangerous goods."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"limitedQuantityCode": {
+			"type": "string",
+			"description": "A code specifying facilitations for transport of limited quantities of these transported dangerous goods."
+		},
+		"lowerPartOrangeHazardPlacardId": {
+			"type": "string",
+			"description": "The unique lower part of the orange hazard placard identifier for these transported dangerous goods."
+		},
+		"mFAGId": {
+			"type": "string",
+			"description": "The unique Medical First Aid Guide (MFAG) identifier for these transported dangerous goods."
+		},
+		"marinePollutantIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not these transported dangerous goods have a marine pollutant content."
+		},
+		"maritimePollutantTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of maritime pollutant for the transported dangerous goods."
+		},
+		"marking": {
+			"type": "string",
+			"description": "Marking, expressed as text, for these transported dangerous goods."
+		},
+		"overpackInformation": {
+			"type": "string",
+			"description": "Overpack information, expressed as text, for these transported dangerous goods."
+		},
+		"packingInstructionTypeCode": {
+			"type": "string",
+			"description": "The code specifying a type of packing instruction for these transported dangerous goods."
+		},
+		"pollutantIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not these transported dangerous goods have a pollutant content."
+		},
+		"pollutantLevelCode": {
+			"type": "string",
+			"description": "The code specifying the level of pollution of these transported dangerous goods."
+		},
+		"previousCargoInformation": {
+			"type": "string",
+			"description": "Previous cargo information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"properShippingName": {
+			"type": "string",
+			"description": "The proper shipping name, expressed as text, for these transported dangerous goods."
+		},
+		"qValueNumeric": {
+			"type": "string",
+			"description": "The number of the Q-Value for these transported dangerous goods."
+		},
+		"radioactiveIndicator": {
+			"type": "boolean",
+			"description": "The indicator of whether or not these transported dangerous goods are radioactive."
+		},
+		"radioactiveMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/RadioactiveMaterial"
+			},
+			"description": "The radioactive material (Class 7) transported as dangerous goods."
+		},
+		"regulationName": {
+			"type": "string",
+			"description": "A name, expressed as text, for a regulation of these transported dangerous goods."
+		},
+		"regulatoryAuthorityName": {
+			"type": "string",
+			"description": "The name, expressed as text, for the regulatory authority for these transported dangerous goods."
+		},
+		"relatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A document related to these transported dangerous goods."
+		},
+		"reportableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The reportable quantity for these transported dangerous goods."
+		},
+		"shipperDeclarationInformation": {
+			"type": "string",
+			"description": "Shipper declaration information, expressed as text, for these transported dangerous goods."
+		},
+		"specialProvisionId": {
+			"type": "string",
+			"description": "The unique identifier of the special provision for these transported dangerous goods."
+		},
+		"specifiedPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Package"
+			},
+			"description": "A logistics package specified for these transported dangerous goods."
+		},
+		"statedCondition": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedCondition"
+			},
+			"description": "A stated condition of these transported dangerous goods."
+		},
+		"supplementaryInformation": {
+			"type": "string",
+			"description": "Supplementary information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"tREMId": {
+			"type": "string",
+			"description": "The unique TRansport EMergency (TREM) card identifier for these transported dangerous goods."
+		},
+		"tankTypeCertificateInformation": {
+			"type": "string",
+			"description": "Tank type certificate information, expressed as text, concerning the transport of these dangerous goods."
+		},
+		"technicalName": {
+			"type": "string",
+			"description": "A technical name, expressed as text, for these transported dangerous goods."
+		},
+		"temperatureUnitMeltingPointTemperatureMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TemperatureUnitMeasureType"
+			},
+			"description": "A melting point temperature measure for these transported dangerous goods."
+		},
+		"transportDangerousGoodsPackageTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/PackageTypeCodeList",
+			"description": "The code specifying the package type for the transported dangerous goods."
+		},
+		"transportExpertContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeContact"
+			},
+			"description": "The expert to be contacted for details about the transport of these dangerous goods."
+		},
+		"tunnelRestrictionCode": {
+			"type": "string",
+			"description": "The code specifying the tunnel restriction for these transported dangerous goods."
+		},
+		"uNDGIdentificationCode": {
+			"type": "string",
+			"description": "The code specifying the unique United Nations Dangerous Goods (UNDG) number assigned to these transported dangerous goods."
+		},
+		"unitDensityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnitMeasureType"
+			},
+			"description": "A density measure for these transported dangerous goods."
+		},
+		"unitViscosityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnitMeasureType"
+			},
+			"description": "A viscosity measure for these transported dangerous goods."
+		},
+		"upperPartOrangeHazardPlacardId": {
+			"type": "string",
+			"description": "The unique upper part of the orange hazard placard identifier for these transported dangerous goods."
+		},
+		"viscosityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "A viscosity measure for these transported dangerous goods."
+		},
+		"volumeUnitGrossVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/VolumeUnitMeasureType"
+			},
+			"description": "The measure of the gross volume, normally calculated by multiplying the maximum length, width and height dimensions of these transported dangerous goods."
+		},
+		"volumeUnitMarinePollutantVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/VolumeUnitMeasureType"
+			},
+			"description": "A measure of the marine pollutant volume of these transported dangerous goods."
+		},
+		"weightUnitGrossWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "The measure of the weight (mass) of these transported dangerous goods including packaging but excluding the transport equipment."
+		},
+		"weightUnitNetWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/WeightUnitMeasureType"
+			},
+			"description": "The measure of the net weight (mass) of these transported dangerous goods."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

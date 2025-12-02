@@ -1,0 +1,167 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/RequestingParty",
+	"description": "An individual, a group, or a body having a role as a requestor.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "RequestingParty",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"accessRightsTypeAccessRightsCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AccessRightsTypeCodeList"
+			},
+			"description": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
+		},
+		"bEIId": {
+			"type": "string",
+			"description": "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this requesting party."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this requesting party."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this requesting party."
+		},
+		"languageCode": {
+			"type": "string",
+			"description": "A code specifying a language for this requesting party."
+		},
+		"lineOfCreditSpecifiedFinancialAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/FinancingFinancialAccount"
+			},
+			"description": "The financing financial account, used for managing the line of credit, specified for this requesting party."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this requesting party."
+		},
+		"partyTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PartyTypeCodeList"
+			},
+			"description": "The code specifying the type of requesting party."
+		},
+		"specifiedCreditorFinancialAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CreditorFinancialAccount"
+			},
+			"description": "The creditor financial account, used for crediting, specified for this requesting party."
+		},
+		"specifiedProprietaryIdentity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProprietaryIdentity"
+			},
+			"description": "A proprietary identity specified for this requesting party."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

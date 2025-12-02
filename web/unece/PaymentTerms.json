@@ -1,0 +1,219 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/PaymentTerms",
+	"description": "Terms and conditions by which payment has been or will be made for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "PaymentTerms",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"applicablePaymentDiscountTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PaymentDiscountTerms"
+			},
+			"description": "Trade payment discount terms applicable to these trade payment terms."
+		},
+		"applicablePaymentPenaltyTerms": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PaymentPenaltyTerms"
+			},
+			"description": "Trade payment penalty terms applicable to these trade payment terms."
+		},
+		"billStartDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these trade payment terms."
+		},
+		"dueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+		},
+		"durationUnitDurationMeasure": {
+			"$ref": "https://schema.twindev.org/unece/DurationUnitMeasureType",
+			"description": "The measure of a length of time duration specified for these trade payment terms, such as 12 hours, 15 days, 2 weeks, 3 months, 5 years."
+		},
+		"equivalentAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "An equivalent monetary value to be transferred between debtor and creditor before deduction of charges for these trade payment terms, expressed in the currency of the debtor's account which is different from the currency in which it is to be transferred."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for these trade payment terms."
+		},
+		"instructedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value that has been instructed to be transferred between debtor and creditor for these trade payment terms before deduction of charges."
+		},
+		"instructionCode": {
+			"type": "string",
+			"description": "A code specifying an instruction for these trade payment terms."
+		},
+		"partialPaymentAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AmountType"
+			},
+			"description": "A monetary value of a partial payment in these trade payment terms."
+		},
+		"partialPaymentPercent": {
+			"type": "string",
+			"description": "A partial payment, expressed as a percent, in these trade payment terms."
+		},
+		"payeeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A payee party in these trade payment terms."
+		},
+		"paymentTermsEventTimeReferenceFromEventCode": {
+			"type": "string",
+			"description": "The code specifying the event from which these trade payment terms are offered for a length of time."
+		},
+		"paymentTermsId": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PaymentTermsId"
+			},
+			"description": "The unique identifier of these trade payment terms."
+		},
+		"paymentTermsTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/PaymentTermsTypeCodeList"
+			},
+			"description": "A code specifying the type of trade payment terms."
+		},
+		"settlementPeriodMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
+		},
+		"tradePaymentTermsDirectDebitMandateId": {
+			"type": "string",
+			"description": "An identifier of a direct debit mandate in these trade payment terms."
+		},
+		"tradePaymentTermsInstructionTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of instruction for these trade payment terms."
+		},
+		"tradePaymentTermsPaymentMeansId": {
+			"type": "string",
+			"description": "An identifier of a payment means in these trade payment terms."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

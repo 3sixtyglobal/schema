@@ -1,0 +1,182 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/CropProduceBatch",
+	"description": "A group of crop produce considered or dealt with together.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "CropProduceBatch",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"appliedTreatment": {
+			"type": "string",
+			"description": "A treatment, expressed as text, applied to this crop produce batch."
+		},
+		"breakUpDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the break up of this crop produce batch."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the creation of this crop produce batch."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this crop produce batch."
+		},
+		"nominalSizeNumeric": {
+			"type": "string",
+			"description": "The value of the nominal size for this crop produce batch."
+		},
+		"productName": {
+			"type": "string",
+			"description": "The product name, expressed as text, for this crop produce batch."
+		},
+		"sizeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/MeasureType"
+			},
+			"description": "The size, expressed as a measure, for this crop produce batch."
+		},
+		"specifiedAgriculturalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AgriculturalCertificate"
+			},
+			"description": "An agricultural certificate specified for this crop produce batch."
+		},
+		"specifiedAgriculturalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/AgriculturalCharacteristic"
+			},
+			"description": "An agricultural characteristic specified for this crop produce batch."
+		},
+		"specifiedProduce": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Produce"
+			},
+			"description": "A crop produce specified for this crop produce batch."
+		},
+		"specifiedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The quantity specified for this crop produce batch."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of crop produce batch."
+		},
+		"unitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/QuantityType"
+			},
+			"description": "The number of units, expressed as a quantity, for this crop produce batch."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

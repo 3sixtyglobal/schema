@@ -1,0 +1,208 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/DocumentStatus",
+	"description": "The information relevant to a condition related to a document.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "DocumentStatus",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"condition": {
+			"type": "string",
+			"description": "A condition, expressed as text, for this document status."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this document status."
+		},
+		"documentStatusConditionCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentStatusCodeList"
+			},
+			"description": "The code specifying the condition of this document status."
+		},
+		"documentStatusProcessConditionCode": {
+			"type": "string",
+			"description": "The code specifying the process condition of this document status."
+		},
+		"documentStatusReasonCode": {
+			"type": "string",
+			"description": "A code specifying a reason for this document status."
+		},
+		"includedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Note"
+			},
+			"description": "A note included for this document status."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this document status."
+		},
+		"invalidInformation": {
+			"type": "string",
+			"description": "The invalid information, expressed as text, for this document status."
+		},
+		"processCondition": {
+			"type": "string",
+			"description": "A process condition, expressed as text, for this document status."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this document status."
+		},
+		"reasonClassification": {
+			"type": "string",
+			"description": "A reason classification, expressed as text, for this document status."
+		},
+		"reasonClassificationCode": {
+			"type": "string",
+			"description": "The code specifying the reason classification for this document status."
+		},
+		"reasonInformation": {
+			"type": "string",
+			"description": "Reason information, expressed as text, for this document status."
+		},
+		"reasonInformationCode": {
+			"type": "string",
+			"description": "The code specifying the reason for the information for this document status."
+		},
+		"referenceDateTime": {
+			"type": "string",
+			"description": "The reference date, time, date time or other date time value for this document status."
+		},
+		"requestedAction": {
+			"type": "string",
+			"description": "A requested action, expressed as text, for this document status."
+		},
+		"requestedActionCode": {
+			"type": "string",
+			"description": "The code specifying the requested action for this document status."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "A sequence number for this document status."
+		},
+		"specifiedDocumentCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DocumentCharacteristic"
+			},
+			"description": "A document characteristic specified for this document status."
+		},
+		"validInformation": {
+			"type": "string",
+			"description": "The valid information, expressed as text, for this document status."
+		},
+		"validityPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "A specified validity period for this document status."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

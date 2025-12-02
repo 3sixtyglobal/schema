@@ -1,0 +1,152 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/LaboratoryObservationInstructions",
+	"description": "Information of an instructive nature that describes how to conduct this laboratory observation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "LaboratoryObservationInstructions",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this set of laboratory observation instructions."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this set of laboratory observation instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "The type, expressed as text, of this set of laboratory observation instructions."
+		},
+		"interpretationCode": {
+			"type": "string",
+			"description": "The code specifying the interpretation for this laboratory instruction."
+		},
+		"laboratoryObservationInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of a laboratory observation instruction or a set of instructions."
+		},
+		"latestUpdateDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the latest update of this set of laboratory observation instructions."
+		},
+		"procedure": {
+			"type": "string",
+			"description": "The procedure, expressed as text, for a set of laboratory observation Instructions."
+		},
+		"propertyReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the property reference of this laboratory observation instruction."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number of this set of laboratory observation instructions."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this set of laboratory observation instructions."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

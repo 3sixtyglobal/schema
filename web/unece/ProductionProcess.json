@@ -1,0 +1,474 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/ProductionProcess",
+	"description": "A naturally occurring or designed sequence of operations or events in order to produce something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "ProductionProcess",
+			"description": "JSON-LD Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"additionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Note"
+			},
+			"description": "An additional information note for this production process."
+		},
+		"allocatedMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Machine"
+			},
+			"description": "A machine allocated to this production process."
+		},
+		"allocatedProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductionDevice"
+			},
+			"description": "A production device allocated to this production process."
+		},
+		"applicableAssessment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Assessment"
+			},
+			"description": "An assessment applicable to this production process."
+		},
+		"applicableDeclaration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedDeclaration"
+			},
+			"description": "A specified declaration applicable to this production process."
+		},
+		"applicableFault": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedFault"
+			},
+			"description": "A specified fault applicable to this production process."
+		},
+		"applicableLicence": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Licence"
+			},
+			"description": "A specified licence applicable to this production process."
+		},
+		"applicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedParameter"
+			},
+			"description": "A specified parameter applicable to this production process."
+		},
+		"applicablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
+			},
+			"description": "A period applicable to this production process."
+		},
+		"applicableProductionCycle": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductionCycle"
+			},
+			"description": "A specified production cycle applicable to this production process."
+		},
+		"applicableSpecifiedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedCertificate"
+			},
+			"description": "A certificate applicable to this production process."
+		},
+		"applicableSpecifiedInspection": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedInspection"
+			},
+			"description": "A specified inspection applicable to this production process."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this production process."
+		},
+		"applicableSustainabilityInspection": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SustainabilityInspection"
+			},
+			"description": "A sustainability inspection applicable to this production process."
+		},
+		"appliedChemicalTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedChemicalTreatment"
+			},
+			"description": "A chemical treatment applied during this production process."
+		},
+		"appliedCropProtectionTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/CropProtectionTreatment"
+			},
+			"description": "A crop protection treatment applied during this production process."
+		},
+		"appliedProductFinishingTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductFinishingTreatment"
+			},
+			"description": "A product finishing treatment applied during this production process."
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Standard"
+			},
+			"description": "A referenced standard associated with this production process."
+		},
+		"criticalIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this production process is critical."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this production process."
+		},
+		"disclosureLevelCode": {
+			"type": "string",
+			"description": "A code specifying a disclosure level for this production process."
+		},
+		"finalIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this production process is a final one."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this production process."
+		},
+		"inputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductBatch"
+			},
+			"description": "An input product batch applicable to this production process."
+		},
+		"inputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedMaterial"
+			},
+			"description": "Input material applicable to this production process."
+		},
+		"inputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeProduct"
+			},
+			"description": "An input product applicable to this production process."
+		},
+		"inventoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the inventory type for this production process."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A manufacturer party for this production process."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this production process."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the occurrence of this production process."
+		},
+		"occurrenceEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SupplyChainEvent"
+			},
+			"description": "An occurrence of an event for this production process."
+		},
+		"operationReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the operation reference for this production process."
+		},
+		"operationTechnologyCode": {
+			"type": "string",
+			"description": "The code specifying the operation technology for this production process."
+		},
+		"outputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductBatch"
+			},
+			"description": "An output product batch applicable to this production process."
+		},
+		"outputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/SpecifiedMaterial"
+			},
+			"description": "Output material applicable to this production process."
+		},
+		"outputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeProduct"
+			},
+			"description": "An output product applicable to this production process."
+		},
+		"performedWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProcessWorkItem"
+			},
+			"description": "A work item performed for this production process."
+		},
+		"productionProcessInventoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the inventory type for this production process."
+		},
+		"productionProcessSubordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type of production process."
+		},
+		"productionProcessTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of production process."
+		},
+		"productionWasteInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/DisposalInstructions"
+			},
+			"description": "Disposal instructions for the waste resulting from this production process."
+		},
+		"recyclingIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this is a recycling production process."
+		},
+		"relatedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/BinaryFile"
+			},
+			"description": "A binary file related to this production process."
+		},
+		"reportedProductionWasteMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductionWasteMaterial"
+			},
+			"description": "Waste material reported for this production process."
+		},
+		"specificationDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A specification document referenced for this production process."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Assertion"
+			},
+			"description": "A sustainability assertion specified for this production process."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/Document"
+			},
+			"description": "A referenced document specified for this production process."
+		},
+		"specifiedFacility": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductionFacility"
+			},
+			"description": "A production facility specified for this production process."
+		},
+		"specifiedOrganizationalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/OrganizationalCertificate"
+			},
+			"description": "An organizational certificate specified for this production process."
+		},
+		"specifiedOrganizationalCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/OrganizationalCertification"
+			},
+			"description": "An organizational certification specified for this production process."
+		},
+		"specifiedProcessCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProcessCertificate"
+			},
+			"description": "A process certificate specified for this production process."
+		},
+		"specifiedProcessCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProcessCertification"
+			},
+			"description": "A process certification specified for this production process."
+		},
+		"specifiedProductBatchCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductBatchCertification"
+			},
+			"description": "A product batch certification specified for this production process."
+		},
+		"specifiedTradeProductCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeProductCertification"
+			},
+			"description": "A trade product certification specified for this production process."
+		},
+		"status": {
+			"type": "string",
+			"description": "A status, expressed as text, of this production process."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this production process."
+		},
+		"stepCode": {
+			"type": "string",
+			"description": "The code specifying the step in this production process."
+		},
+		"subcontractorParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/TradeParty"
+			},
+			"description": "A subcontractor party specified for this production process."
+		},
+		"subordinateProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/ProductionProcess"
+			},
+			"description": "A subordinate process of this production process."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}
