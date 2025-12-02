@@ -3,6 +3,12 @@
 	"$id": "https://schema.twindev.org/unece/PaymentTermsEventTimeReferenceCodeList",
 	"description": "A character string used to represent a time reference for a payment terms event. Deprecated since version D23B.",
 	"type": "string",
-	"enum": ["24", "29", "45", "5", "71"],
+	"enum": [
+		"unece:PaymentTermsEventTimeReferenceCodeList#24",
+		"unece:PaymentTermsEventTimeReferenceCodeList#29",
+		"unece:PaymentTermsEventTimeReferenceCodeList#45",
+		"unece:PaymentTermsEventTimeReferenceCodeList#5",
+		"unece:PaymentTermsEventTimeReferenceCodeList#71"
+	],
 	"deprecated": true
 }

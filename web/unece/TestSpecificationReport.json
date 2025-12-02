@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "TestSpecificationReport",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TestSpecificationReport",
+			"description": "JSON-LD Type."
 		},
 		"result": {
 			"type": "string",
@@ -95,7 +108,7 @@
 			"description": "A test name, expressed as text, for this certification test specification report."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

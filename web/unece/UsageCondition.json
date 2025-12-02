@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "UsageCondition",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "UsageCondition",
+			"description": "JSON-LD Type."
 		},
 		"ageLimitation": {
 			"type": "string",
@@ -114,7 +127,7 @@
 			"description": "A party requiring this specified usage condition."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "Accreditation",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Accreditation",
+			"description": "JSON-LD Type."
 		},
 		"accreditingBodyName": {
 			"type": "string",
@@ -115,7 +128,7 @@
 			"description": "The code specifying the type of this certified accreditation, such as a type of driving license."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

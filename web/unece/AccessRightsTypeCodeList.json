@@ -3,5 +3,9 @@
 	"$id": "https://schema.twindev.org/unece/AccessRightsTypeCodeList",
 	"description": "A character string used to represent the type of access rights.",
 	"type": "string",
-	"enum": ["P", "R", "U"]
+	"enum": [
+		"unece:AccessRightsTypeCodeList#P",
+		"unece:AccessRightsTypeCodeList#R",
+		"unece:AccessRightsTypeCodeList#U"
+	]
 }

@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "SupplyChainReference",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SupplyChainReference",
+			"description": "JSON-LD Type."
 		},
 		"abbreviation": {
 			"type": "string",
@@ -119,7 +132,7 @@
 			"description": "A value, expressed as a code, for this supply chain reference."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

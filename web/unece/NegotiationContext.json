@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "NegotiationContext",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,6 +90,11 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "NegotiationContext",
+			"description": "JSON-LD Type."
+		},
 		"identifier": {
 			"type": "string",
 			"description": "The identifier of the negotiation context."
@@ -91,7 +104,7 @@
 			"description": "The code specifying the type for this negotiation context, such as chain negotiation, item negotiation or counterpart negotiation."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

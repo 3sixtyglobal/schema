@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "CountrySubDivision",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "CountrySubDivision",
+			"description": "JSON-LD Type."
 		},
 		"activityAuthorizedParty": {
 			"type": "array",
@@ -127,7 +140,7 @@
 			"description": "A code specifying a type of country sub-division for trade purposes."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

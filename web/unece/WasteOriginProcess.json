@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "WasteOriginProcess",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,12 +90,17 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "WasteOriginProcess",
+			"description": "JSON-LD Type."
+		},
 		"description": {
 			"type": "string",
 			"description": "The textual description of this waste origin process."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

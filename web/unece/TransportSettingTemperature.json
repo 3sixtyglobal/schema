@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "TransportSettingTemperature",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TransportSettingTemperature",
+			"description": "JSON-LD Type."
 		},
 		"informationInstructions": {
 			"$ref": "https://schema.twindev.org/unece/TemperatureSettingInstructions",
@@ -112,7 +125,7 @@
 			"description": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

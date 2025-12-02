@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "ProprietaryIdentity",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,6 +90,11 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "ProprietaryIdentity",
+			"description": "JSON-LD Type."
+		},
 		"identificationType": {
 			"type": "string",
 			"description": "An identifier type, expressed as text, for this proprietary identity."
@@ -91,7 +104,7 @@
 			"description": "A proprietary identifier."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

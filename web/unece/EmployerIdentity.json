@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "EmployerIdentity",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,12 +90,17 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "EmployerIdentity",
+			"description": "JSON-LD Type."
+		},
 		"identifier": {
 			"type": "string",
 			"description": "The unique identifier for this employer identity."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

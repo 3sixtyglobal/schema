@@ -3,5 +3,11 @@
 	"$id": "https://schema.twindev.org/unece/VolumeUnitMeasureCode",
 	"description": "RDF Class for VolumeUnitMeasureType unit code type to define unit code values.",
 	"type": "string",
-	"enum": ["CMQ", "FTQ", "LTR", "MMQ", "MTQ"]
+	"enum": [
+		"unece:VolumeUnitMeasureCode#CMQ",
+		"unece:VolumeUnitMeasureCode#FTQ",
+		"unece:VolumeUnitMeasureCode#LTR",
+		"unece:VolumeUnitMeasureCode#MMQ",
+		"unece:VolumeUnitMeasureCode#MTQ"
+	]
 }

@@ -3,5 +3,11 @@
 	"$id": "https://schema.twindev.org/unece/PartyTypeCodeList",
 	"description": "A character string used to represent the type of a party.",
 	"type": "string",
-	"enum": ["BRA", "DEP", "DIR", "SEC", "SER"]
+	"enum": [
+		"unece:PartyTypeCodeList#BRA",
+		"unece:PartyTypeCodeList#DEP",
+		"unece:PartyTypeCodeList#DIR",
+		"unece:PartyTypeCodeList#SEC",
+		"unece:PartyTypeCodeList#SER"
+	]
 }

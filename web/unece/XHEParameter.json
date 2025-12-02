@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "XHEParameter",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,6 +90,11 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "XHEParameter",
+			"description": "JSON-LD Type."
+		},
 		"typeCode": {
 			"type": "string",
 			"description": "The code specifying the type of XHE parameter."
@@ -91,7 +104,7 @@
 			"description": "The value, expressed as text, of this XHE parameter."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -3,5 +3,10 @@
 	"$id": "https://schema.twindev.org/unece/TransportServicePaymentArrangementCodeList",
 	"description": "A character string used to represent a transport service payment arrangement.",
 	"type": "string",
-	"enum": ["A", "B", "C", "P"]
+	"enum": [
+		"unece:TransportServicePaymentArrangementCodeList#A",
+		"unece:TransportServicePaymentArrangementCodeList#B",
+		"unece:TransportServicePaymentArrangementCodeList#C",
+		"unece:TransportServicePaymentArrangementCodeList#P"
+	]
 }

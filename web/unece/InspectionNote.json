@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "InspectionNote",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -82,6 +90,11 @@
 		"@index": {
 			"type": "string"
 		},
+		"type": {
+			"type": "string",
+			"const": "InspectionNote",
+			"description": "JSON-LD Type."
+		},
 		"content": {
 			"type": "string",
 			"description": "Content, expressed as text, of this inspection note."
@@ -91,7 +104,7 @@
 			"description": "The date, time, date time, or other date time value for the creation of this inspection note."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

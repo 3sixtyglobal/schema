@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "Polygon",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Polygon",
+			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
 			"type": "array",
@@ -108,7 +121,7 @@
 			"description": "An interior linear ring specified for this polygon."
 		}
 	},
-	"required": ["@type", "exteriorLinearRing"],
+	"required": ["type", "exteriorLinearRing"],
 	"additionalProperties": {
 		"anyOf": [
 			{

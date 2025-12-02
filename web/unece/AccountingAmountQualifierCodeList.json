@@ -3,5 +3,9 @@
 	"$id": "https://schema.twindev.org/unece/AccountingAmountQualifierCodeList",
 	"description": "A character string used to qualify an accounting amount.",
 	"type": "string",
-	"enum": ["EN", "SB", "SE"]
+	"enum": [
+		"unece:AccountingAmountQualifierCodeList#EN",
+		"unece:AccountingAmountQualifierCodeList#SB",
+		"unece:AccountingAmountQualifierCodeList#SE"
+	]
 }

@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "ConsignmentItem",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ConsignmentItem",
+			"description": "JSON-LD Type."
 		},
 		"applicableCustomsValuation": {
 			"$ref": "https://schema.twindev.org/unece/CustomsValuation",
@@ -505,7 +518,7 @@
 			"description": "A measure of the net weight (mass) of this supply chain consignment item which excludes all packaging."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "TradeSettlementPaymentMonetarySummation",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TradeSettlementPaymentMonetarySummation",
+			"description": "JSON-LD Type."
 		},
 		"adjustedBalanceOutAmount": {
 			"type": "array",
@@ -146,7 +159,7 @@
 			"description": "A monetary value of the total of all tax amounts reported in this trade settlement payment monetary summation."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -69,9 +69,17 @@
 			]
 		},
 		"@type": {
-			"type": "string",
-			"const": "BirthAddress",
-			"description": "JSON-LD Type."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"@reverse": {
 			"type": "object",
@@ -81,6 +89,11 @@
 		},
 		"@index": {
 			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "BirthAddress",
+			"description": "JSON-LD Type."
 		},
 		"birthAddressCountryId": {
 			"$ref": "https://schema.twindev.org/unece/CountryId",
@@ -95,7 +108,7 @@
 			"description": "The name, expressed as text, of the sub-division of a country for this birth address."
 		}
 	},
-	"required": ["@type"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

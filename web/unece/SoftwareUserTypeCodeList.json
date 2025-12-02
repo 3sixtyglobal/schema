@@ -3,5 +3,9 @@
 	"$id": "https://schema.twindev.org/unece/SoftwareUserTypeCodeList",
 	"description": "A character string used to represent the type of software user.",
 	"type": "string",
-	"enum": ["I", "R", "S"]
+	"enum": [
+		"unece:SoftwareUserTypeCodeList#I",
+		"unece:SoftwareUserTypeCodeList#R",
+		"unece:SoftwareUserTypeCodeList#S"
+	]
 }
