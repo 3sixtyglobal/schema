@@ -144,10 +144,7 @@
 			"description": "A basis for a certification, expressed as text, for this cross-border regulatory procedure."
 		},
 		"consignmentDestinationSpecifiedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/LogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/LogisticsLocation",
 			"description": "A consignment destination location specified for this cross-border regulatory procedure."
 		},
 		"controlRequirementIndicator": {
@@ -186,10 +183,7 @@
 			"description": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
 		},
 		"deferredPayableTotalChargeAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the total charges, including tariff and non-tariff charges, deferred for this cross-border regulatory procedure."
 		},
 		"deferredPaymentMethodIndicator": {
@@ -218,10 +212,7 @@
 			"description": "An examination event for this cross-border regulatory procedure."
 		},
 		"exemptionClaimantParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
 			"description": "A party who claims an exemption from this cross-border regulatory procedure."
 		},
 		"exitCustomsOfficeSpecifiedLocation": {
@@ -251,10 +242,7 @@
 			"description": "The code specifying the goods status for this cross-border regulatory procedure."
 		},
 		"governmentActionResponsibleAgencyActionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/GovernmentActionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/GovernmentActionCodeList",
 			"description": "A code specifying an action for a responsible agency in this cross-border regulatory procedure."
 		},
 		"guarantee": {
@@ -262,10 +250,7 @@
 			"description": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
 		},
 		"immediatePayableTotalChargeAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the total charges, including tariff and non-tariff charges, immediately payable for this cross-border regulatory procedure."
 		},
 		"importCustomsOfficeSpecifiedLocation": {
@@ -276,10 +261,7 @@
 			"description": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
 		},
 		"nonTariffChargeAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of all non-tariff charges for this cross-border regulatory procedure."
 		},
 		"originCriteria": {
@@ -350,10 +332,7 @@
 			"description": "A report of a certification test and its attributes that is required for this cross-border regulatory procedure."
 		},
 		"responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/ResponsibleGovernmentAgencyInvolvementCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/ResponsibleGovernmentAgencyInvolvementCodeList",
 			"description": "A code specifying a responsible agency involved in this cross-border regulatory procedure."
 		},
 		"responsibleGovernmentAgencyResponsibleAgencyCode": {
@@ -375,17 +354,11 @@
 			"description": "A statement note for this cross-border regulatory procedure."
 		},
 		"tariffAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of a tariff for this cross-border regulatory procedure."
 		},
 		"tariffDeductionQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/QuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
 			"description": "A quantity to be deducted from the tariff quantity for this cross-border regulatory procedure."
 		},
 		"tariffQuantity": {
@@ -425,10 +398,7 @@
 			"description": "A location of a specified customs office at which the goods which are subject to this cross-border regulatory procedure are released from a customs transit regime."
 		},
 		"transportMovementTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportMovementTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportMovementTypeCodeList",
 			"description": "A code specifying the transport movement type, such as import, export, transit, for this cross-border regulatory procedure."
 		},
 		"treatmentEvent": {

@@ -343,17 +343,11 @@
 			"description": "The code specifying the type of category, such as refund or service charge, for this trade price."
 		},
 		"unitAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the unit of this trade price."
 		},
 		"validityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
 			"description": "A specified period for which this trade price is valid."
 		}
 	},

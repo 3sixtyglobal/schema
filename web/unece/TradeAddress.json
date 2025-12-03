@@ -163,10 +163,7 @@
 			"description": "A free form representation, expressed as text, of this trade address."
 		},
 		"geoCoordinateIdentificationGeographicalCoordinate": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/GeographicalCoordinate"
-			},
+			"$ref": "https://schema.twindev.org/unece/GeographicalCoordinate",
 			"description": "An identification of a set of geographical coordinates for this trade address."
 		},
 		"identifier": {

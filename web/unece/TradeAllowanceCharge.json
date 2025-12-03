@@ -157,10 +157,7 @@
 			"description": "The indication of whether or not the trade allowance charge is a charge."
 		},
 		"deductionAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value to be deducted from this trade allowance charge."
 		},
 		"description": {
@@ -198,10 +195,7 @@
 			"description": "The monetary value of the unit basis on which the allowance or charge is calculated."
 		},
 		"validityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
 			"description": "The specified period for which this trade allowance charge is valid."
 		}
 	},

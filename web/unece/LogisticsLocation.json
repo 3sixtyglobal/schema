@@ -204,10 +204,7 @@
 			"description": "A logistics location subordinate to this logistics location."
 		},
 		"subordinateSubordinateLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SubordinateLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/SubordinateLocation",
 			"description": "A location subordinate to this logistics related location."
 		},
 		"uTCOffsetNumeric": {

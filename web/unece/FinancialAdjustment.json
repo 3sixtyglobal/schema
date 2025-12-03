@@ -125,10 +125,7 @@
 			"description": "The claim related party for this financial adjustment."
 		},
 		"financialAdjustmentReasonCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/FinancialAdjustmentReasonCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/FinancialAdjustmentReasonCodeList",
 			"description": "A code specifying a reason for this financial adjustment."
 		},
 		"invoiceReferenceDocument": {

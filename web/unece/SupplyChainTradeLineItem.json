@@ -338,10 +338,7 @@
 			"description": "Substituted material applicable for this supply chain trade line item."
 		},
 		"substitutedProduct": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Product"
-			},
+			"$ref": "https://schema.twindev.org/unece/Product",
 			"description": "A referenced product substituted for this supply chain trade line item."
 		},
 		"supplyChainTradeLineItemSpecialConditionCode": {

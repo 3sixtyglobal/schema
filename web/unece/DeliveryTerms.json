@@ -111,10 +111,7 @@
 			"description": "The code specifying the type of delivery for these trade delivery terms."
 		},
 		"deliveryTermsFunctionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/DeliveryTermsFunctionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/DeliveryTermsFunctionCodeList",
 			"description": "A code specifying a function of these trade delivery terms."
 		},
 		"description": {

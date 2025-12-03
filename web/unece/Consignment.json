@@ -153,10 +153,7 @@
 			"description": "A monetary value of an invoice associated with this supply chain consignment."
 		},
 		"associatedInvoiceDiscountAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the discount on an invoice associated with this supply chain consignment."
 		},
 		"associatedInvoiceDiscountPercent": {
@@ -503,10 +500,7 @@
 			"description": "A grouping centre party for this supply chain consignment."
 		},
 		"handlingInstructions": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
-			},
+			"$ref": "https://schema.twindev.org/unece/HandlingInstructions",
 			"description": "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
 		},
 		"haulageInstructions": {
@@ -557,10 +551,7 @@
 			"description": "Information, expressed as text, for this supply chain consignment."
 		},
 		"insuranceApplicableCurrencyExchange": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CurrencyExchange"
-			},
+			"$ref": "https://schema.twindev.org/unece/CurrencyExchange",
 			"description": "A currency exchange applicable to an insurance charge for this supply chain consignment."
 		},
 		"insurancePremiumAmount": {
@@ -585,10 +576,7 @@
 			"description": "A party that is an intermediate consignee for this supply chain consignment."
 		},
 		"invoiceApplicableCurrencyExchange": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CurrencyExchange"
-			},
+			"$ref": "https://schema.twindev.org/unece/CurrencyExchange",
 			"description": "A currency exchange applicable to the invoice for this supply chain consignment."
 		},
 		"invoiceeAssociatedParty": {
@@ -647,10 +635,7 @@
 			"description": "A main carriage logistics transport movement for this supply chain consignment."
 		},
 		"manifestAssociatedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Document"
-			},
+			"$ref": "https://schema.twindev.org/unece/Document",
 			"description": "A referenced manifest document associated to this supply chain consignment."
 		},
 		"natureIdentificationCargo": {
@@ -723,10 +708,7 @@
 			"description": "A type of package, expressed as text, for this supply chain consignment."
 		},
 		"physicalShippingMarks": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/ShippingMarks"
-			},
+			"$ref": "https://schema.twindev.org/unece/ShippingMarks",
 			"description": "Physical logistics shipping marks and barcoding information related to this supply chain consignment."
 		},
 		"pickUpEvent": {
@@ -791,10 +773,7 @@
 			"description": "The sequence number for this referenced supply chain consignment."
 		},
 		"serviceChargeApplicableCurrencyExchange": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CurrencyExchange"
-			},
+			"$ref": "https://schema.twindev.org/unece/CurrencyExchange",
 			"description": "A currency exchange applicable to a service charge for this supply chain consignment."
 		},
 		"shipFromParty": {
@@ -820,10 +799,7 @@
 			"description": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard."
 		},
 		"specifiedDeliveryTerms": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/DeliveryTerms"
-			},
+			"$ref": "https://schema.twindev.org/unece/DeliveryTerms",
 			"description": "Delivery terms specified for this supply chain consignment."
 		},
 		"specifiedInspectionEvent": {
@@ -951,10 +927,7 @@
 			"description": "The referenced transport contract document for this supply chain consignment, such as an airwaybill or a seawaybill."
 		},
 		"transportEquipmentQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/QuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
 			"description": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
 		},
 		"transportEquipmentSplitGoodsIndicator": {

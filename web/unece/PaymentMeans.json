@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableFinancialCard": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/FinancialCard"
-			},
+			"$ref": "https://schema.twindev.org/unece/FinancialCard",
 			"description": "A financial card applicable to this trade settlement payment means."
 		},
 		"creditorSpecifiedFinancialInstitution": {

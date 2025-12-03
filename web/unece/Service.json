@@ -205,10 +205,7 @@
 			"description": "A trade party responsible for this transport service."
 		},
 		"specifiedRoute": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportRoute"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportRoute",
 			"description": "A transport route specified for this transport service."
 		},
 		"transportContractMovementContractMovementTypeCode": {
@@ -223,10 +220,7 @@
 			"description": "A code specifying a type of category for this transport service."
 		},
 		"transportServiceConditionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportServiceConditionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportServiceConditionCodeList",
 			"description": "A code specifying a type of condition for this transport service, such as a contract or carriage condition."
 		},
 		"transportServicePaymentArrangementCode": {

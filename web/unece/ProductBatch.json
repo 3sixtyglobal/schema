@@ -236,10 +236,7 @@
 			"description": "A global identifier of this product batch."
 		},
 		"grossVolumeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "A measure of the gross volume of this product batch."
 		},
 		"grossWeightMeasure": {
@@ -290,17 +287,11 @@
 			"description": "The name, expressed as text, of this product batch."
 		},
 		"netVolumeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "A measure of the net volume of this product batch."
 		},
 		"netWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "A measure of the net weight of this product batch."
 		},
 		"productName": {

@@ -187,10 +187,7 @@
 			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
 		},
 		"deductionAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the deduction from this trade related tax, levy or duty."
 		},
 		"deferredStatusPartyFinancialAccount": {
@@ -274,10 +271,7 @@
 			"description": "The code specifying the rate for this trade related tax, levy or duty."
 		},
 		"refundAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the refund of this trade related tax, levy or duty."
 		},
 		"regimeType": {
@@ -285,10 +279,7 @@
 			"description": "The type of regime, expressed as text, applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
 		},
 		"selfAssessedBasisAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
 		},
 		"selfAssessedBasisQuantity": {
@@ -299,10 +290,7 @@
 			"description": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
 		},
 		"selfAssessedCalculatedAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
 		},
 		"sellerPayableTaxSpecifiedAccountingAccount": {
@@ -334,10 +322,7 @@
 			"description": "A specified accounting account for this trade related tax, levy or duty."
 		},
 		"tariffDeductionQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/QuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
 			"description": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
 		},
 		"taxBasisAllowanceRate": {
@@ -353,10 +338,7 @@
 			"description": "The unique tax exemption authority identifier for this trade tax."
 		},
 		"taxExemptionReasonExemptionReasonCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TaxExemptionReasonCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/TaxExemptionReasonCodeList",
 			"description": "A code specifying a reason for exemption from this trade related tax, levy or duty."
 		},
 		"taxPointDate": {

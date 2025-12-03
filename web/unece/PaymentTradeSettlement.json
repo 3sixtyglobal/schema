@@ -228,10 +228,7 @@
 			"description": "A specified experience item recorded for this payment trade settlement."
 		},
 		"refundAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/AmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/AmountType",
 			"description": "A monetary value of the refund related to this payment trade settlement."
 		},
 		"requestedAmount": {

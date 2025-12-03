@@ -277,10 +277,7 @@
 			"description": "A quantity of goods, such as gaseous fuel systems or automotive parts, in this supply chain consignment item."
 		},
 		"handlingInstructions": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
-			},
+			"$ref": "https://schema.twindev.org/unece/HandlingInstructions",
 			"description": "Handling instructions for this supply chain consignment item."
 		},
 		"identifier": {
@@ -375,10 +372,7 @@
 			"description": "A package type, expressed as text, for this supply chain consignment item."
 		},
 		"physicalShippingMarks": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/ShippingMarks"
-			},
+			"$ref": "https://schema.twindev.org/unece/ShippingMarks",
 			"description": "Physical logistics shipping marks and barcode information for this supply chain consignment item."
 		},
 		"pickUpEvent": {

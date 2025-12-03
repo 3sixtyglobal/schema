@@ -179,10 +179,7 @@
 			"description": "A transport unloading event reported for this logistics status."
 		},
 		"validityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
 			"description": "A specific validity period for this logistics status."
 		}
 	},

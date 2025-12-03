@@ -200,17 +200,11 @@
 			"description": "Explosive label material statement information, expressed as text, concerning the transport of these dangerous goods."
 		},
 		"flashpointTemperatureMeasurement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Measurement"
-			},
+			"$ref": "https://schema.twindev.org/unece/Measurement",
 			"description": "A measurement of the flashpoint temperature of these transported dangerous goods."
 		},
 		"handlingInstructions": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
-			},
+			"$ref": "https://schema.twindev.org/unece/HandlingInstructions",
 			"description": "Handling instructions for the transported dangerous goods."
 		},
 		"hazardCategoryCode": {

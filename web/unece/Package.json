@@ -126,10 +126,7 @@
 			"description": "The unique global identifier for this logistics package."
 		},
 		"grossVolumeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "The measure of the gross volume of this logistics package."
 		},
 		"grossWeightMeasure": {
@@ -177,17 +174,11 @@
 			"description": "The code specifying the additional level of this logistics package."
 		},
 		"netVolumeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "A measure of a net volume of this logistics package."
 		},
 		"netWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/MeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/MeasureType",
 			"description": "The measure of the net weight of this logistics package, i.e. the weight (mass) of the contents."
 		},
 		"nominalGrossVolumeMeasure": {
@@ -234,10 +225,7 @@
 			"description": "A number of units per package in this logistics package."
 		},
 		"physicalShippingMarks": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/ShippingMarks"
-			},
+			"$ref": "https://schema.twindev.org/unece/ShippingMarks",
 			"description": "Physical shipping marks and barcode information for this logistics package."
 		},
 		"returnableIndicator": {

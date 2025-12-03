@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"countryId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CountryId"
-			},
+			"$ref": "https://schema.twindev.org/unece/CountryId",
 			"description": "A unique country identifier for this location party."
 		},
 		"definedContact": {
@@ -161,10 +158,7 @@
 			"description": "A transport related person specified for this location party."
 		},
 		"telephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Communication"
-			},
+			"$ref": "https://schema.twindev.org/unece/Communication",
 			"description": "Telephone communication information for this location party."
 		},
 		"typeCode": {

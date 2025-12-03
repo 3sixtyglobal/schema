@@ -204,10 +204,7 @@
 			"description": "The consignee assigned consignment identifier for this piece of logistics transport equipment."
 		},
 		"consolidationEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
 			"description": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
 		},
 		"containedConsignment": {
@@ -275,10 +272,7 @@
 			"description": "A measure of the gross goods weight of this logistics transport equipment."
 		},
 		"handlingInstructions": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/HandlingInstructions"
-			},
+			"$ref": "https://schema.twindev.org/unece/HandlingInstructions",
 			"description": "Handling instructions for this piece of logistics transport equipment."
 		},
 		"humidityPercent": {
@@ -428,10 +422,7 @@
 			"description": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
 		},
 		"positioningEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
 			"description": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
 		},
 		"powerSupplyConnectorQuantity": {
@@ -562,10 +553,7 @@
 			"description": "A result of a logistics risk analysis calculation specified for this transport equipment."
 		},
 		"specifiedTransportMeans": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/LogisticsTransportMeans"
-			},
+			"$ref": "https://schema.twindev.org/unece/LogisticsTransportMeans",
 			"description": "A transport means specified for this piece of logistics transport equipment."
 		},
 		"storageEvent": {
@@ -643,10 +631,7 @@
 			"description": "The unloading event for this piece of logistics transport equipment."
 		},
 		"unloadingInstructions": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportInstructions"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportInstructions",
 			"description": "Unloading instructions for this piece of logistics transport equipment."
 		},
 		"unloadingSequenceNumeric": {

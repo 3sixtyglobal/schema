@@ -129,10 +129,7 @@
 			"description": "The name, expressed as text, of the person for this laboratory observation contact."
 		},
 		"telephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Communication"
-			},
+			"$ref": "https://schema.twindev.org/unece/Communication",
 			"description": "The telephone number of this laboratory observation contact."
 		}
 	},

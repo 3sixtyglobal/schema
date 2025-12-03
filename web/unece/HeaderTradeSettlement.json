@@ -181,10 +181,7 @@
 			"description": "A factoring list document referenced in this header trade settlement."
 		},
 		"invoiceApplicableCurrencyExchange": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CurrencyExchange"
-			},
+			"$ref": "https://schema.twindev.org/unece/CurrencyExchange",
 			"description": "The currency exchange applicable to the invoice in this header trade settlement."
 		},
 		"invoiceCurrencyCode": {

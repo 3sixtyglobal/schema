@@ -177,10 +177,7 @@
 			"description": "The unique identifier of these trade payment terms."
 		},
 		"paymentTermsTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/PaymentTermsTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/PaymentTermsTypeCodeList",
 			"description": "A code specifying the type of trade payment terms."
 		},
 		"settlementPeriodMeasure": {

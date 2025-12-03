@@ -185,10 +185,7 @@
 			"description": "The valid information, expressed as text, for this document status."
 		},
 		"validityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
 			"description": "A specified validity period for this document status."
 		}
 	},

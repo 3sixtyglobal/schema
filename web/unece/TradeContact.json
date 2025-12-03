@@ -205,10 +205,7 @@
 			"description": "A note specified for this trade contact."
 		},
 		"telephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Communication"
-			},
+			"$ref": "https://schema.twindev.org/unece/Communication",
 			"description": "Telephone communication information for this trade contact."
 		},
 		"telexCommunication": {

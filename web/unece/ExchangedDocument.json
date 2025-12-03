@@ -104,10 +104,7 @@
 			"description": "An additional identifier of this exchanged document."
 		},
 		"agentParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/TradeParty",
 			"description": "A party representing another party for this exchanged document."
 		},
 		"amendmentPurpose": {

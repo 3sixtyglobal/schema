@@ -138,10 +138,7 @@
 			"description": "A sustainability inspection applicable to this logistics transport movement."
 		},
 		"arrivalEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
 			"description": "An arrival event for this logistics transport movement."
 		},
 		"associatedConvoy": {
@@ -282,10 +279,7 @@
 			"description": "The indication of whether or not dangerous goods are carried for this logistics transport movement."
 		},
 		"departureEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/TransportEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/TransportEvent",
 			"description": "A departure event during this logistics transport movement."
 		},
 		"documentaryInstructionsNotifiedParty": {
@@ -622,17 +616,11 @@
 			"description": "The number of trained medical personnel onboard this logistics transport movement."
 		},
 		"transportContractRelatedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Document"
-			},
+			"$ref": "https://schema.twindev.org/unece/Document",
 			"description": "A transport contract document related to this logistics transport movement."
 		},
 		"transportEquipmentQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/QuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/QuantityType",
 			"description": "The number of pieces of transport equipment for this logistics transport movement."
 		},
 		"transportMeansDirectionTransitDirectionCode": {

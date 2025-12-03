@@ -581,10 +581,7 @@
 			"description": "A subcontractor for this trade party."
 		},
 		"telephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/Communication"
-			},
+			"$ref": "https://schema.twindev.org/unece/Communication",
 			"description": "A telephone communication for this trade party."
 		},
 		"tradePartyLanguageCode": {

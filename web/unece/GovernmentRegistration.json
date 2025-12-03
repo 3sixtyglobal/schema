@@ -100,10 +100,7 @@
 			"description": "A code specifying a category of this government registration."
 		},
 		"countryId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/CountryId"
-			},
+			"$ref": "https://schema.twindev.org/unece/CountryId",
 			"description": "The identifier of the country for this government registration."
 		},
 		"countrySubDivisionId": {
@@ -131,10 +128,7 @@
 			"description": "A code specifying a type of government registration."
 		},
 		"validityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/SpecifiedPeriod",
 			"description": "The period of time during which this government registration is valid."
 		},
 		"versionId": {
