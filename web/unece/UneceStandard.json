@@ -1,0 +1,224 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceStandard",
+	"description": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Standard",
+			"description": "JSON-LD Type."
+		},
+		"agencyId": {
+			"type": "string",
+			"description": "The identifier of the agency for this referenced standard."
+		},
+		"applicableAssessment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
+			},
+			"description": "A specified assessment applicable to this referenced standard."
+		},
+		"applicableCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+			},
+			"description": "A country where this referenced standard is applicable."
+		},
+		"applicableDeclaration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclaration"
+			},
+			"description": "A specified declaration applicable to this referenced standard."
+		},
+		"applicableLicence": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLicence"
+			},
+			"description": "A specified licence applicable to this referenced standard."
+		},
+		"applicableMetricCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic"
+			},
+			"description": "A metric characteristic applicable to this referenced standard."
+		},
+		"applicableSpecifiedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A specified certificate applicable to this referenced standard."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this referenced standard."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this referenced standard."
+		},
+		"elementVersionId": {
+			"type": "string",
+			"description": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this referenced standard."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this referenced standard."
+		},
+		"partId": {
+			"type": "string",
+			"description": "The identifier of a part of this referenced standard, such as a section or topic."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion specified for this referenced standard."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this referenced standard."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of referenced standard."
+		},
+		"uRIId": {
+			"type": "string",
+			"description": "The Uniform Resource Identifier (URI) for this referenced standard."
+		},
+		"versionId": {
+			"type": "string",
+			"description": "The identifier of the version of this referenced standard."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

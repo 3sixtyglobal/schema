@@ -1,0 +1,244 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTradeAddress",
+	"description": "The location at which a particular trade related organization or person may be found or reached.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TradeAddress",
+			"description": "JSON-LD Type."
+		},
+		"additionalStreetName": {
+			"type": "string",
+			"description": "The additional name of a street, expressed as text, for this trade address."
+		},
+		"addressTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAddressTypeCodeList"
+			},
+			"description": "A code specifying the type of this trade address, such as business address or home address."
+		},
+		"attentionOf": {
+			"type": "string",
+			"description": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN' for this trade address."
+		},
+		"buildingName": {
+			"type": "string",
+			"description": "The name, expressed as text, of a building, a house or other structure on a street at this trade address."
+		},
+		"buildingNumber": {
+			"type": "string",
+			"description": "The building number, expressed as text, in this trade address."
+		},
+		"careOf": {
+			"type": "string",
+			"description": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'."
+		},
+		"cityId": {
+			"type": "string",
+			"description": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE)."
+		},
+		"cityName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the city, town or village of this trade address."
+		},
+		"citySubDivisionName": {
+			"type": "string",
+			"description": "A name, expressed as text, of a sub-division of a city for this trade address, for example a district or borough."
+		},
+		"countryIdentificationCountry": {
+			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"description": "The unique identifier of the country for this trade address."
+		},
+		"countryName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the country for this trade address."
+		},
+		"countrySubDivisionId": {
+			"type": "string",
+			"description": "A unique identifier of the country sub-division for this trade address."
+		},
+		"countrySubDivisionName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the sub-division of a country for this trade address."
+		},
+		"departmentName": {
+			"type": "string",
+			"description": "The name, expressed as text, of a department for this trade address."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade address."
+		},
+		"freeForm": {
+			"type": "string",
+			"description": "A free form representation, expressed as text, of this trade address."
+		},
+		"geoCoordinateIdentificationGeographicalCoordinate": {
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
+			"description": "An identification of a set of geographical coordinates for this trade address."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "A unique identifier for this trade address."
+		},
+		"invalidIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade address is invalid."
+		},
+		"lineFive": {
+			"type": "string",
+			"description": "The fifth free form line, expressed as text, of this trade address."
+		},
+		"lineFour": {
+			"type": "string",
+			"description": "The fourth free form line, expressed as text, of this trade address."
+		},
+		"lineOne": {
+			"type": "string",
+			"description": "The first free form line, expressed as text, of this trade address."
+		},
+		"lineThree": {
+			"type": "string",
+			"description": "The third free form line, expressed as text, of this trade address."
+		},
+		"lineTwo": {
+			"type": "string",
+			"description": "The second free form line, expressed as text, of this trade address."
+		},
+		"postOfficeBox": {
+			"type": "string",
+			"description": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address."
+		},
+		"postcodeCode": {
+			"type": "string",
+			"description": "A code specifying the postcode of this trade address."
+		},
+		"secondaryPostcodeCode": {
+			"type": "string",
+			"description": "A code specifying a secondary postcode of this trade address."
+		},
+		"streetName": {
+			"type": "string",
+			"description": "A name, expressed as text, of a street or thoroughfare for this trade address."
+		},
+		"tradeAddressCountryId": {
+			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"description": "The unique identifier of a country for this trade address."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

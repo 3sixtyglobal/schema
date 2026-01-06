@@ -1,0 +1,178 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceGeographicalGrid",
+	"description": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "GeographicalGrid",
+			"description": "JSON-LD Type."
+		},
+		"associatedGeographicalObjectCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic"
+			},
+			"description": "The geographical object characteristic associated with this geographical grid."
+		},
+		"associatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location associated with this specified geographical grid."
+		},
+		"axisName": {
+			"type": "string",
+			"description": "An axis name, expressed as text, for this geographical grid."
+		},
+		"cell": {
+			"type": "string",
+			"description": "The cell value, expressed as text, for this geographical grid."
+		},
+		"dimensionNumeric": {
+			"type": "string",
+			"description": "The dimension, expressed as a number, of this geographical grid."
+		},
+		"highLimit": {
+			"type": "string",
+			"description": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally opposing corner of each axis."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this geographical grid."
+		},
+		"lowLimit": {
+			"type": "string",
+			"description": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of each axis."
+		},
+		"offsetVectorNumeric": {
+			"type": "string",
+			"description": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical grid."
+		},
+		"originAssociatedDirectPositionList": {
+			"type": "string",
+			"description": "The direct position list associated with the origin of this geographical grid."
+		},
+		"specifiedPlot": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+			},
+			"description": "A crop plot specified for this geographical grid."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

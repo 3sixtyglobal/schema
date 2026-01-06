@@ -1,0 +1,149 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceProcessWorkItem",
+	"description": "A distinct operation or task that is part of a process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ProcessWorkItem",
+			"description": "JSON-LD Type."
+		},
+		"alternativeClassificationCode": {
+			"type": "string",
+			"description": "The code specifying an alternative classification for this process work item."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this process work item."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this process work item."
+		},
+		"primaryClassificationCode": {
+			"type": "string",
+			"description": "The code specifying the primary classification for this process work item."
+		},
+		"totalQuantity": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"description": "The total quantity for this process work item."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of process work item."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

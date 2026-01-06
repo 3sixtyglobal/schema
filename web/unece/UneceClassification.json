@@ -1,0 +1,175 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceClassification",
+	"description": "A systematic arrangement of products in classes or categories according to established criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Classification",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+			},
+			"description": "The referenced standard that is applicable to this product classification."
+		},
+		"classCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
+			},
+			"description": "A product class characteristic for this product classification."
+		},
+		"classCode": {
+			"type": "string",
+			"description": "The code specifying the class for this product classification."
+		},
+		"classContentTypeDescription": {
+			"type": "string",
+			"description": "The textual description for the class content type of this product classification."
+		},
+		"classContentTypeDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying the description of the class content type of this product classification."
+		},
+		"className": {
+			"type": "string",
+			"description": "A class name, expressed as text, for this product classification."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product classification."
+		},
+		"subClassCode": {
+			"type": "string",
+			"description": "The code specifying the sub class for this product classification."
+		},
+		"systemId": {
+			"type": "string",
+			"description": "The unique identifier of the classification system for this product classification."
+		},
+		"systemName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the classification system for this product classification."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of product classification."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

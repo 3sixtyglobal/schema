@@ -1,0 +1,207 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceGroupedWorkItem",
+	"description": "A grouping of related work items.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "GroupedWorkItem",
+			"description": "JSON-LD Type."
+		},
+		"actualComplexDescription": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceComplexDescription"
+			},
+			"description": "An actual complex description for this work item group."
+		},
+		"alternativeClassificationCode": {
+			"type": "string",
+			"description": "A code specifying an alternative classification for this work item group."
+		},
+		"binaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A specified binary file referenced by this grouped work item."
+		},
+		"changedStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceRecordedStatus"
+			},
+			"description": "A changed recorded status for this grouped work item."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text, for this work item group."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this grouped work item."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this work item group."
+		},
+		"index": {
+			"type": "string",
+			"description": "The index, expressed as text, to be used for this grouped work item."
+		},
+		"itemBasicWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBasicWorkItem"
+			},
+			"description": "A basic work item within this grouped work item."
+		},
+		"itemGroupedWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGroupedWorkItem"
+			},
+			"description": "A grouped work item within this grouped work item."
+		},
+		"priceListItemId": {
+			"type": "string",
+			"description": "The identifier of a price list item for this grouped work item."
+		},
+		"primaryClassificationCode": {
+			"type": "string",
+			"description": "A code specifying the primary classification for this work item group."
+		},
+		"requestedActionCode": {
+			"type": "string",
+			"description": "A code specifying a requested action for this grouped work item."
+		},
+		"totalPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCalculatedPrice"
+			},
+			"description": "A total calculated price for this work item group."
+		},
+		"totalQuantity": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"description": "The total quantity of this work item group."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying the type of this work item group."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

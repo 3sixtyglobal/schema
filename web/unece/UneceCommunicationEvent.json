@@ -1,0 +1,180 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceCommunicationEvent",
+	"description": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "CommunicationEvent",
+			"description": "JSON-LD Type."
+		},
+		"associatedGeographicalFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature"
+			},
+			"description": "A geographical feature associated with this communication event."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this communication event."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this communication event."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of an occurrence of this communication event."
+		},
+		"occurrenceLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "The logistics location where this communication event will occur or has occurred."
+		},
+		"operationalResponsibleParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The operational responsible party for this communication event."
+		},
+		"reasonCode": {
+			"type": "string",
+			"description": "The code specifying a reason for this communication event."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of communication event."
+		},
+		"unitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of units for this communication event."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "The measure of a value for this communication event."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

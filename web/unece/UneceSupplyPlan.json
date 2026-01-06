@@ -1,0 +1,282 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSupplyPlan",
+	"description": "Specification of the delivery quantities and date/time values in a supply schedule.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SupplyPlan",
+			"description": "JSON-LD Type."
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"description": "The actual quantity in this supply chain supply plan."
+		},
+		"applicablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "The period applicable for this supply chain supply plan."
+		},
+		"availableQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A quantity available for this supply chain supply plan."
+		},
+		"confirmedDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "A confirmed delivery event in this supply chain supply plan."
+		},
+		"contractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A referenced contract document for this supply chain supply plan."
+		},
+		"deliveryNoteDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A delivery note document referenced by this supply chain supply plan."
+		},
+		"deliverySupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "A delivery event for this supply chain supply plan."
+		},
+		"latestSynchronizationDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value of the latest synchronization of the supply chain supply plan."
+		},
+		"minusToleranceQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The minus tolerance quantity from the planned or requested quantity in this supply chain supply plan."
+		},
+		"plannedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The planned quantity in this supply chain supply plan."
+		},
+		"plusToleranceQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The plus tolerance quantity from the planned or requested quantity in this supply chain supply plan."
+		},
+		"projectedSpecifiedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A specified period projected for this supply chain supply plan."
+		},
+		"requiredQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A quantity required for this supply chain supply plan."
+		},
+		"scheduledDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "A scheduled delivery event in this supply chain supply plan."
+		},
+		"shipToParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The ship to trade party for this supply chain supply plan."
+		},
+		"specifiedLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "A location specified for this supply chain supply plan."
+		},
+		"specifiedSpecifiedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "The period specified for this supply chain supply plan."
+		},
+		"specifiedSupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "An event specified for this supply chain supply plan."
+		},
+		"supplyChainSupplyPlanCommitmentLevelCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommitmentLevelCodeList"
+			},
+			"description": "The code specifying the commitment level for this supply chain supply plan, such as fabrication or raw material."
+		},
+		"supplyChainSupplyPlanReleaseFrequencyCode": {
+			"type": "string",
+			"description": "A code specifying the release frequency of this supply chain supply plan."
+		},
+		"supplyChainSupplyPlanReviewFrequencyCode": {
+			"type": "string",
+			"description": "A code specifying the review frequency of this supply chain supply plan."
+		},
+		"synchronizationDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan."
+		},
+		"synchronizationQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The value specifying the quantity for a synchronization of this supply chain supply plan."
+		},
+		"toleranceQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The quantity of tolerance from the planned quantity in this supply chain supply plan."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type for this supply chain supply plan."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

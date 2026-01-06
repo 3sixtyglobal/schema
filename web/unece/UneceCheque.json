@@ -1,0 +1,177 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceCheque",
+	"description": "A written payment order to a bank to pay the stated sum from the drawer's account.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Cheque",
+			"description": "JSON-LD Type."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this payment cheque is applicable."
+		},
+		"clearingRegion": {
+			"type": "string",
+			"description": "The clearing region, expressed as text, for this payment cheque."
+		},
+		"deliveryMethod": {
+			"type": "string",
+			"description": "A delivery method, expressed as text, for this payment cheque."
+		},
+		"deliveryMethodCode": {
+			"type": "string",
+			"description": "The code specifying the delivery method for this payment cheque."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this payment cheque."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this payment cheque."
+		},
+		"instructionPriorityCode": {
+			"type": "string",
+			"description": "The code specifying the instruction priority for this payment cheque, such as the urgency or order of importance for the processing of the payment cheque."
+		},
+		"layoutDescription": {
+			"type": "string",
+			"description": "The textual description of the layout for this payment cheque, such as a description of the company logo and digitized signature printed on the cheque."
+		},
+		"maturityDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this payment cheque reaches maturity."
+		},
+		"memoField": {
+			"type": "string",
+			"description": "A memo field, expressed as text, on this payment cheque."
+		},
+		"number": {
+			"type": "string",
+			"description": "The number, expressed as text, of this payment cheque."
+		},
+		"printLocation": {
+			"type": "string",
+			"description": "The print location, expressed as text, for this payment cheque."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of payment cheque."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

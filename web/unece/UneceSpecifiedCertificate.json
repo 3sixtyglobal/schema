@@ -1,0 +1,326 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedCertificate",
+	"description": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SpecifiedCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this specified certificate."
+		},
+		"aliasNameCode": {
+			"type": "string",
+			"description": "A code specifying an alias name of this specified certificate."
+		},
+		"applicableClause": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
+			},
+			"description": "A clause applicable to this specified certificate."
+		},
+		"applicableGeographicRegion": {
+			"type": "string",
+			"description": "A geographic region, expressed as text, applicable for this specified certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this specified certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this specified certificate."
+		},
+		"assuranceLevelCode": {
+			"type": "string",
+			"description": "The code specifying the assurance level, such as certified by third party, for this specified certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this specified certificate."
+		},
+		"availableLanguageCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLanguageCodeList"
+			},
+			"description": "A code specifying an available language for this specified certificate."
+		},
+		"capabilityLevel": {
+			"type": "string",
+			"description": "A capability level, expressed as text, in this specified certificate."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying a category for this specified certificate."
+		},
+		"certificateTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
+			},
+			"description": "A code specifying a type of specified certificate."
+		},
+		"certifiedObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceObject"
+			},
+			"description": "An object certified by this specified certificate."
+		},
+		"certifiedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The certified party for this specified certificate."
+		},
+		"certifiedPersonQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of certified persons for this specified certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified certificate."
+		},
+		"effectiveFromDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value from which this specified certificate is effective."
+		},
+		"endorsementDateTime": {
+			"type": "string",
+			"description": "An endorsement date, time, date time or other date time value for this specified certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The expiry date, time, date time, or other date time value for this specified certificate."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this specified certificate."
+		},
+		"issuanceLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeLocation"
+			},
+			"description": "An issuance location for this specified certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The issue date, time, date time, or other date time value for this specified certificate."
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why this specified certificate was issued."
+		},
+		"issuerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The issuer party for this specified certificate."
+		},
+		"latestEndorsementDateTime": {
+			"type": "string",
+			"description": "A latest endorsement date, time, date time or other date time value for this specified certificate."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified certificate."
+		},
+		"partyId": {
+			"type": "string",
+			"description": "An identifier of a party for this specified certificate."
+		},
+		"providingParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The party, other than the issuer, providing this specified certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "A code specifying a purpose of this specified certificate."
+		},
+		"relatedTradeTransaction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
+			},
+			"description": "A supply chain trade transaction related to this specified certificate."
+		},
+		"reportedDocumentStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentStatus"
+			},
+			"description": "A reported status for this specified certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this specified certificate."
+		},
+		"requiredIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified certificate is required."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "A sequence number for this specified certificate."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this specified certificate."
+		},
+		"subjectTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
+			},
+			"description": "A code specifying a subject type for this specified certificate."
+		},
+		"validIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified certificate is valid."
+		},
+		"validityExtendedUntilDateTime": {
+			"type": "string",
+			"description": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period."
+		},
+		"validityTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of validity for this specified certificate."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

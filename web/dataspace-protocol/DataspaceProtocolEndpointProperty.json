@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolEndpointProperty",
+	"description": "Interface for Dataspace Protocol Transfer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#lower-level-types",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"type": "string",
+			"const": "EndpointProperty",
+			"description": "LD Type."
+		},
+		"name": {
+			"type": "string",
+			"description": "Property name."
+		},
+		"value": {
+			"type": "string",
+			"description": "Property value."
+		}
+	},
+	"required": ["@type", "name", "value"],
+	"additionalProperties": false
+}

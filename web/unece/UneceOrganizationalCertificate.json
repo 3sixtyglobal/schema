@@ -1,0 +1,214 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceOrganizationalCertificate",
+	"description": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "OrganizationalCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this organizational certificate."
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this organizational certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object for which this organizational certificate is applicable."
+		},
+		"applicableOrganizationCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceOrganizationCharacteristic"
+			},
+			"description": "A characteristic applicable to this organization certificate."
+		},
+		"applicableOrganizationalCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertification"
+			},
+			"description": "An organizational certification applicable to this organizational certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this organizational certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this organizational certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this organizational certificate."
+		},
+		"certificateTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
+			},
+			"description": "The code specifying the type of organizational certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this organizational certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this organizational certificate expires."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this organizational certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the issuance of this organizational certificate."
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why this organizational certificate was issued."
+		},
+		"issuingPartyId": {
+			"type": "string",
+			"description": "An identifier of the party issuing this organizational certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "The code specifying the purpose of this organizational certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this organizational certificate."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

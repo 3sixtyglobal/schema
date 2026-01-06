@@ -1,0 +1,172 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UnecePortMovementEvent",
+	"description": "A movement of a vessel during a port call.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "PortMovementEvent",
+			"description": "JSON-LD Type."
+		},
+		"actualOccurrenceDateTime": {
+			"type": "string",
+			"description": "An actual date, time, date time, or other date time value of the occurrence of this port movement event."
+		},
+		"arrivalRelatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "An arrival location related to this port movement event."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this port movement event."
+		},
+		"estimatedOccurrenceDateTime": {
+			"type": "string",
+			"description": "An estimated date, time, date time, or other date time value of the occurrence of this port movement event."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this port movement event."
+		},
+		"maritimeAnchorageIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this port movement event involves a maritime anchorage."
+		},
+		"pilotBoardingPlace": {
+			"type": "string",
+			"description": "A pilot boarding place, expressed as text, for this port movement event."
+		},
+		"requestedOccurrenceDateTime": {
+			"type": "string",
+			"description": "A requested date, time, date time, or other date time value of the occurrence of this port movement event."
+		},
+		"scheduledOccurrenceDateTime": {
+			"type": "string",
+			"description": "A scheduled date, time, date time, or other date time value of the occurrence of this port movement event."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for this port movement event."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of port movement event."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

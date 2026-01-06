@@ -1,0 +1,199 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic",
+	"description": "A prominent attribute or aspect of an agricultural object.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "AgriculturalCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"agriculturalCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this agricultural characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this agricultural characteristic."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this agricultural characteristic."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of agricultural characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "The value, expressed as text, for this agricultural characteristic."
+		},
+		"valueAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The value, expressed as an amount, for this agricultural characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value, expressed as a date, time, date time, or other date time value, of this agricultural characteristic."
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value, expressed as an indicator, for this agricultural characteristic."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "The measure of a value for this agricultural characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for the value of this agricultural characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this agricultural characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for the value of this agricultural characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
+			},
+			"description": "A range specified for the value of this agricultural characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for the value of this agricultural characteristic."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

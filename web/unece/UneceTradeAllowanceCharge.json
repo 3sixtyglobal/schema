@@ -1,0 +1,228 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge",
+	"description": "A component of pricing, such as an allowance or charge for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TradeAllowanceCharge",
+			"description": "JSON-LD Type."
+		},
+		"actualAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "An actual monetary value of the trade allowance charge."
+		},
+		"actualCurrencyExchange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+			},
+			"description": "The actual trade currency exchange for this trade allowance charge."
+		},
+		"allowanceChargeIdTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeIdCodeList"
+			},
+			"description": "The code specifying the type of this trade allowance charge."
+		},
+		"allowanceChargeReasonCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeReasonCodeList"
+			},
+			"description": "The code specifying the reason for this trade allowance charge."
+		},
+		"appliedDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value applied to the trade allowance charge."
+		},
+		"basisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value that is the basis on which this trade allowance charge is calculated."
+		},
+		"basisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The quantity on which this trade allowance charge is based."
+		},
+		"calculationPercent": {
+			"type": "string",
+			"description": "The percentage applied to calculate this trade allowance charge."
+		},
+		"categoryTradeTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
+			},
+			"description": "A tax category of this trade allowance charge."
+		},
+		"chargeIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the trade allowance charge is a charge."
+		},
+		"deductionAmount": {
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"description": "A monetary value to be deducted from this trade allowance charge."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade allowance charge."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this trade allowance charge."
+		},
+		"prepaidIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade allowance charge is prepaid."
+		},
+		"reason": {
+			"type": "string",
+			"description": "The reason, expressed as text, for this trade allowance charge."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for applying this trade allowance charge."
+		},
+		"specifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "An accounting account specified for this trade allowance charge."
+		},
+		"unitBasisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The monetary value of the unit basis on which the allowance or charge is calculated."
+		},
+		"validityPeriod": {
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"description": "The specified period for which this trade allowance charge is valid."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

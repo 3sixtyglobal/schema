@@ -1,0 +1,161 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gaia-x-loire/GaiaXDataExchangeComponent",
+	"description": "Data Exchange component as defined by Gaia-X https://docs.gaia-x.eu/ontology/development/classes/DataExchangeComponent",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The Gaia-X JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://schema.twindev.org/gaia-x-loire/"
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://schema.twindev.org/gaia-x-loire/"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://schema.twindev.org/gaia-x-loire/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "DataExchangeComponent"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "DataExchangeComponent"
+						}
+					],
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The type of JSON-LD node"
+		}
+	},
+	"required": ["@context", "type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

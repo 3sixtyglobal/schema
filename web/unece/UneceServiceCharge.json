@@ -1,0 +1,315 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceServiceCharge",
+	"description": "A charge made for a logistics related service.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ServiceCharge",
+			"description": "JSON-LD Type."
+		},
+		"allowanceCharge": {
+			"type": "string",
+			"description": "The allowance or charge, expressed as text, for this logistics service charge."
+		},
+		"appliedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value applied to this logistics service charge."
+		},
+		"appliedFromLocation": {
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"description": "The start location from which this logistics service charge should be applied."
+		},
+		"appliedTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
+			},
+			"description": "A tax that is applied to this logistics service charge."
+		},
+		"appliedToLocation": {
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"description": "The end location at which this logistics service charge is no longer to be applied."
+		},
+		"calculationBasis": {
+			"type": "string",
+			"description": "The basis, expressed as text, on which this logistics service charge is to be calculated, such as by volume or per unit."
+		},
+		"calculationBasisAreaMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "The measure of the area used as the basis for the calculation of this logistics service charge."
+		},
+		"calculationBasisCommodityCode": {
+			"type": "string",
+			"description": "The code specifying the commodity used as the basis for the calculation of this logistics service charge."
+		},
+		"calculationBasisPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradePrice"
+			},
+			"description": "The trade price upon which a calculation of this logistics service charge is or will be based."
+		},
+		"calculationBasisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A number used as a basis in a calculation of this logistics service charge."
+		},
+		"chargeCategoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of charge for this logistics service charge."
+		},
+		"chargeCurrencyCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
+			},
+			"description": "A code specifying a charge currency for this logistics service charge."
+		},
+		"chargePayingPartyRoleCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceChargePayingPartyRoleCodeList"
+			},
+			"description": "The code specifying the role of the party responsible for paying this logistics service charge."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this logistics service charge."
+		},
+		"disbursementAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a disbursement for this logistics service charge."
+		},
+		"freightChargeTariffClassCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceFreightChargeTariffClassCodeList"
+			},
+			"description": "The code specifying the tariff class for this logistics service charge which represents an entry in a table of fixed charges [Reference United Nations Code List (UNCL) 5243]."
+		},
+		"freightChargeTypeId": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceFreightChargeTypeId"
+			},
+			"description": "The unique identifier for this logistics service charge."
+		},
+		"freightInvoiceTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of freight invoice of this logistics service charge."
+		},
+		"informationTypeCode": {
+			"type": "string",
+			"description": "A code specifying an information type of this logistics service charge."
+		},
+		"invoiceTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of invoice of this logistics service charge."
+		},
+		"linearUnitCalculationBasisDistanceMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
+			},
+			"description": "The measure of the distance used as the basis for the calculation of this logistics service charge."
+		},
+		"logisticsChargeCalculationBasisCalculationBasisCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsChargeCalculationBasisCodeList",
+			"description": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
+		},
+		"logisticsServiceChargeTransportPaymentMethodCode": {
+			"type": "string",
+			"description": "The code specifying the transport payment method for this logistics service charge."
+		},
+		"paymentPlaceLocation": {
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"description": "The location of the place of payment of this logistics service charge."
+		},
+		"postTranshipmentCalculationBasisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A number used as a basis in a post-transhipment calculation of this logistics service charge."
+		},
+		"preTranshipmentCalculationBasisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A number used as a basis in a pre-transhipment calculation of this logistics service charge."
+		},
+		"repackageAppliedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The monetary value of the repackage on which the logistics service charge is determined."
+		},
+		"serviceCategoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of service for this logistics service charge."
+		},
+		"serviceTypeCode": {
+			"type": "string",
+			"description": "A code specifying a service type of this logistics service charge."
+		},
+		"specifiedPaymentMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans"
+			},
+			"description": "The trade settlement payment means specified for this logistics service charge."
+		},
+		"tariffCurrencyCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
+			},
+			"description": "A code specifying a tariff currency for this logistics service charge."
+		},
+		"transportServiceCategoryCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportServiceCategoryCodeList"
+			},
+			"description": "The code specifying the category of this logistics service charge [Reference United Nations Code List (UNCL) 5237]."
+		},
+		"transportServicePaymentArrangementCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTransportServicePaymentArrangementCodeList",
+			"description": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
+		},
+		"unitCalculationBasisAreaMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType"
+			},
+			"description": "The measure of the area used as the basis for the calculation of this logistics service charge."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,196 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTTAnimal",
+	"description": "A Track and Trace (TT) animal or a group of animals, such as those kept or raised on a farm, ranch.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TTAnimal",
+			"description": "JSON-LD Type."
+		},
+		"holderResponsibleParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
+			},
+			"description": "The holder responsible party for this TT animal."
+		},
+		"relatedTTLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
+			},
+			"description": "A location related to this TT animal."
+		},
+		"speciesTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of species and subclasses of this TT animal, such as bovine, sheep or salmon."
+		},
+		"specifiedAnimalBatch": {
+			"$ref": "https://schema.twindev.org/unece/UneceAnimalBatch",
+			"description": "The animal batch specified for this TT animal."
+		},
+		"specifiedAnimalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertificate"
+			},
+			"description": "An animal certificate specified for this TT animal."
+		},
+		"specifiedAnimalHoldingEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalHoldingEvent"
+			},
+			"description": "An animal holding event specified for this TT animal."
+		},
+		"specifiedAnimalIdentity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalIdentity"
+			},
+			"description": "An animal identity specified for this TT animal."
+		},
+		"specifiedDelimitedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+			},
+			"description": "A delimited period specified for this TT animal."
+		},
+		"specifiedIndividualTTAnimal": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceIndividualTTAnimal"
+			},
+			"description": "The individual tracking animal specified for this TT animal."
+		},
+		"specifiedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+			},
+			"description": "A delimited period specified for this TT animal."
+		},
+		"specifiedSpeciesTTAnimal": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpeciesTTAnimal"
+			},
+			"description": "A species specified for this TT animal."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,181 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceCommunication",
+	"description": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Communication",
+			"description": "JSON-LD Type."
+		},
+		"access": {
+			"type": "string",
+			"description": "Access information, expressed as text, for the mode of universal communication such as 9 or *70 for a telephone network."
+		},
+		"areaNumberCode": {
+			"type": "string",
+			"description": "The code specifying the area number for this universal communication."
+		},
+		"communicationChannelCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceCommunicationChannelCodeList",
+			"description": "The code specifying the channel or manner in which a universal communication can be made, such as telephone or email."
+		},
+		"completeNumber": {
+			"type": "string",
+			"description": "The text string of characters that make up the complete number for this universal communication."
+		},
+		"countryNumberCode": {
+			"type": "string",
+			"description": "The country access code for this universal communication number such as 44, 1, 353 etc."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this universal communication."
+		},
+		"emailURIId": {
+			"type": "string",
+			"description": "The Uniform Resource Identifier (URI) of the email for this universal communication."
+		},
+		"extensionNumber": {
+			"type": "string",
+			"description": "The extension number, expressed as text, assigned to this universal communication number to enable a caller to reach a specific party."
+		},
+		"hTMLPreferredIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not HTML format is preferred by the recipient for email universal communications."
+		},
+		"invalidIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this universal communication is invalid."
+		},
+		"localNumber": {
+			"type": "string",
+			"description": "The universal communication number, expressed as text and not including country access code or the area number code, for this communication."
+		},
+		"uRIId": {
+			"type": "string",
+			"description": "The Uniform Resource Identifier (URI), such as a web or an email address, for this universal communication."
+		},
+		"useCode": {
+			"type": "string",
+			"description": "The code specifying the use of this universal communication such as for business purposes or private."
+		},
+		"websiteURIId": {
+			"type": "string",
+			"description": "The Uniform Resource Identifier (URI) of the website for this universal communication."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

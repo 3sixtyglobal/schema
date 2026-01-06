@@ -1,0 +1,383 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItem",
+	"description": "A collection of information specific to an item being used or reported on for supply chain trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SupplyChainTradeLineItem",
+			"description": "JSON-LD Type."
+		},
+		"accessoryApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A referenced accessory product applicable for this supply chain trade line item."
+		},
+		"additionalApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A referenced product additionally applicable with this supply chain trade line item."
+		},
+		"additionalId": {
+			"type": "string",
+			"description": "An additional unique identifier for this supply chain trade line item."
+		},
+		"additionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "A note providing additional information for this supply chain trade line item."
+		},
+		"applicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+			},
+			"description": "A product batch applicable to this supply chain trade line item."
+		},
+		"applicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Material applicable for this supply chain trade line item."
+		},
+		"appliedProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductHandlingProcess"
+			},
+			"description": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
+		},
+		"assertedAuthentication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAuthentication"
+			},
+			"description": "A document authentication asserted for this supply chain trade line item."
+		},
+		"associatedDocumentLineDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument"
+			},
+			"description": "The document line associated with this trade line item."
+		},
+		"associatedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
+			},
+			"description": "A piece of transport equipment associated with this supply chain trade line item."
+		},
+		"barcodeId": {
+			"type": "string",
+			"description": "A unique barcode identifier for this supply chain trade line item."
+		},
+		"complementaryApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A referenced complementary product applicable for this supply chain trade line item."
+		},
+		"componentApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A referenced component product applicable for this supply chain trade line item."
+		},
+		"declaredValueForCustomsAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value declared for customs purposes for this supply chain trade line item."
+		},
+		"descriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of this supply chain trade line item."
+		},
+		"generalInformationDescription": {
+			"type": "string",
+			"description": "A textual description providing general information for this supply chain trade line item."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier for this supply chain trade line item."
+		},
+		"includedSubordinateTradeLineItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSubordinateTradeLineItem"
+			},
+			"description": "A subordinate trade line item included in this supply chain trade line item."
+		},
+		"includedWithinConsignmentItem": {
+			"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem",
+			"description": "The consignment item within which this supply chain trade line item is included."
+		},
+		"invoiceAssociatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "An invoice document associated to this supply chain trade line item."
+		},
+		"package": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePackage"
+			},
+			"description": "A logistics package referenced in this supply chain trade line item."
+		},
+		"physicalPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePackage"
+			},
+			"description": "A physical logistics package for this supply chain trade line item."
+		},
+		"referenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A document referenced for this supply chain trade line item."
+		},
+		"requiredApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A required product applicable for this supply chain trade line item."
+		},
+		"requisitionerSpecifiedProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+			},
+			"description": "The product specified by the requisitioner for this supply chain trade line item."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "A sequence number for this supply chain trade line item."
+		},
+		"specifiedLineTradeAgreement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLineTradeAgreement"
+			},
+			"description": "The line trade agreement specified for this supply chain trade line item."
+		},
+		"specifiedLineTradeDelivery": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLineTradeDelivery"
+			},
+			"description": "A line trade delivery specified for this supply chain trade line item."
+		},
+		"specifiedLineTradeSettlement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLineTradeSettlement"
+			},
+			"description": "A line trade settlement specified for this supply chain trade line item."
+		},
+		"specifiedProduction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduction"
+			},
+			"description": "A production of goods specified for this supply chain trade line Item."
+		},
+		"specifiedTradeProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+			},
+			"description": "A product specified for this supply chain trade line item."
+		},
+		"subordinateLineIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this supply chain trade line item is a subordinate trade line item."
+		},
+		"subordinateTradeLineItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSubordinateTradeLineItem"
+			},
+			"description": "A trade line item subordinate to this supply chain trade line item."
+		},
+		"substituteApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+			},
+			"description": "A substitute product batch applicable to this supply chain trade line item."
+		},
+		"substituteApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Substitute material applicable for this supply chain trade line item."
+		},
+		"substituteApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
+			"description": "A referenced substitute product applicable for this supply chain trade line item."
+		},
+		"substitutedApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+			},
+			"description": "A substituted product batch applicable to this supply chain trade line item."
+		},
+		"substitutedApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Substituted material applicable for this supply chain trade line item."
+		},
+		"substitutedProduct": {
+			"$ref": "https://schema.twindev.org/unece/UneceProduct",
+			"description": "A referenced product substituted for this supply chain trade line item."
+		},
+		"supplyChainTradeLineItemSpecialConditionCode": {
+			"type": "string",
+			"description": "A code specifying a special condition for this supply chain trade line item."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of supply chain trade line item."
+		},
+		"typeExtensionCode": {
+			"type": "string",
+			"description": "The code used as an extension to the type code for further specifying a type of supply chain trade line item."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

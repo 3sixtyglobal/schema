@@ -1,0 +1,189 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTransportationWasteMaterialComponent",
+	"description": "An unused and rejected as unwanted component of transport material resulting from transportation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TransportationWasteMaterialComponent",
+			"description": "JSON-LD Type."
+		},
+		"applicableProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate applicable to this transportation waste material component."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this transportation waste material component."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this transportation waste material component."
+		},
+		"estimatedGeneratedMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "The estimated measure for this generated transportation waste material component."
+		},
+		"maximumDedicatedStorageCapacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "The measure of the maximum dedicated storage capacity for this transportation waste material component."
+		},
+		"plannedDischargedMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "The planned measure for this discharged transportation waste material component."
+		},
+		"remainingDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+			},
+			"description": "A delivery event for this remaining transportation waste material component."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of transportation waste material component."
+		},
+		"volumeUnitReceivedMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "The measure of this received transportation waste material component."
+		},
+		"volumeUnitRetainedMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "The measure for this retained transportation waste material component."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

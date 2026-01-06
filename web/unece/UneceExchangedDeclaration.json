@@ -1,0 +1,245 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceExchangedDeclaration",
+	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two parties as a formal declaration.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ExchangedDeclaration",
+			"description": "JSON-LD Type."
+		},
+		"additionalStatementNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "An additional statement note for this exchanged declaration."
+		},
+		"applicableCustomsValuation": {
+			"$ref": "https://schema.twindev.org/unece/UneceCustomsValuation",
+			"description": "Customs valuation information applicable to this exchanged declaration."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A referenced document associated with this exchanged declaration."
+		},
+		"currencyExchangeRate": {
+			"type": "string",
+			"description": "The rate of currency exchange in this exchanged declaration."
+		},
+		"customsValueSpecifiedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The monetary value specified for customs purposes in this exchanged declaration."
+		},
+		"declarantAgentParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The trade party acting as an agent for the declarant for this exchanged declaration."
+		},
+		"declarantParty": {
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"description": "The trade party acting as the declarant for this exchanged declaration."
+		},
+		"documentTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
+			},
+			"description": "The code specifying the type of this exchanged declaration."
+		},
+		"grossWeightSpecifiedMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "The gross weight measure specified in this exchanged declaration."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this exchanged declaration."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the issuance of this exchanged declaration."
+		},
+		"jurisdictionEntryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration enter a jurisdiction, such as the actual date of arrival of a means of transport."
+		},
+		"previousDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A previous document referenced for this exchanged declaration."
+		},
+		"principalAssociatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "A principal trade party associated with this exchanged declaration."
+		},
+		"procedureCode": {
+			"type": "string",
+			"description": "A code specifying a procedure for this exchanged declaration."
+		},
+		"specificCircumstanceCode": {
+			"type": "string",
+			"description": "The code specifying a specific circumstance in this exchanged declaration."
+		},
+		"statisticalValueSpecifiedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The monetary value specified for statistical purposes in this exchanged declaration."
+		},
+		"submissionLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "The submission location for this exchanged declaration."
+		},
+		"totalInvoiceSpecifiedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The total invoice monetary value specified in this exchanged declaration."
+		},
+		"totalPackageSpecifiedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The total package quantity specified in this exchanged declaration."
+		},
+		"versionId": {
+			"type": "string",
+			"description": "The identifier for the version of this exchanged declaration."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

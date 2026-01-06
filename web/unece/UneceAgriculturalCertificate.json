@@ -1,0 +1,200 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceAgriculturalCertificate",
+	"description": "A legal proof of ownership, worthiness or qualification to operate an agricultural item.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "AgriculturalCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this agricultural certificate."
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this agricultural certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this agricultural certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this agricultural certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this agricultural certificate."
+		},
+		"certificateTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
+			},
+			"description": "The code specifying the type of agricultural certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this agricultural certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this agricultural certificate expires."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this agricultural certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this agricultural certificate was issued."
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why the agricultural certificate was issued."
+		},
+		"issuingPartyId": {
+			"type": "string",
+			"description": "The identifier for the issuing party of this agricultural certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "A code specifying the purpose of this agricultural certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this agricultural certificate."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

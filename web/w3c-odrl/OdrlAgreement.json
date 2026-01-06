@@ -9,7 +9,16 @@
 			"anyOf": [
 				{
 					"type": "string",
-					"const": "http://www.w3.org/ns/odrl/2/"
+					"const": "http://www.w3.org/ns/odrl.jsonld"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "http://www.w3.org/ns/odrl.jsonld"
+					},
+					"minItems": 1,
+					"maxItems": 1
 				},
 				{
 					"type": "array",
@@ -17,7 +26,7 @@
 					"prefixItems": [
 						{
 							"type": "string",
-							"const": "http://www.w3.org/ns/odrl/2/"
+							"const": "http://www.w3.org/ns/odrl.jsonld"
 						},
 						{
 							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
@@ -36,7 +45,7 @@
 						},
 						{
 							"type": "string",
-							"const": "http://www.w3.org/ns/odrl/2/"
+							"const": "http://www.w3.org/ns/odrl.jsonld"
 						}
 					],
 					"items": {

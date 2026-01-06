@@ -1,0 +1,246 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceProductCharacteristic",
+	"description": "A prominent attribute or aspect of a product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ProductCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"applicableCondition": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristicCondition"
+			},
+			"description": "A condition applicable to this product characteristic."
+		},
+		"applicableCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+			},
+			"description": "A country applicable to this product characteristic."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+			},
+			"description": "The referenced standard that is applicable to this product characteristic."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this product characteristic."
+		},
+		"contentTypeCode": {
+			"type": "string",
+			"description": "A code specifying the content type of this product characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product characteristic."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "A unique identifier for this product characteristic."
+		},
+		"measurementMethodCode": {
+			"type": "string",
+			"description": "A code specifying a measurement method for this product characteristic."
+		},
+		"productCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this product characteristic."
+		},
+		"targetMarketDescription": {
+			"type": "string",
+			"description": "A textual description of a target market for this product characteristic."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of product characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this product characteristic."
+		},
+		"valueAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The value, expressed as an amount, for this product characteristic."
+		},
+		"valueBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "The value for this product characteristic expressed in a binary file."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value for this product characteristic expressed as a date, time, date time, or other date time value."
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value for this product characteristic expressed as an indicator."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this product characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for a value of this product characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this product characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for a value of this product characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
+			},
+			"description": "A range specified for a value of this product characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for a value of this product characteristic."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

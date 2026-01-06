@@ -1,0 +1,219 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceFinancingRequestDocument",
+	"description": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "FinancingRequestDocument",
+			"description": "JSON-LD Type."
+		},
+		"additionalInformationIncludedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "An additional information note included for this financing request document."
+		},
+		"agreementInformation": {
+			"type": "string",
+			"description": "Agreement information, expressed as text, in this financing request document, such as a collection mandate."
+		},
+		"authorization": {
+			"type": "string",
+			"description": "An authorization, expressed as text, for this financing request document."
+		},
+		"cancellationReason": {
+			"type": "string",
+			"description": "A cancellation reason, expressed as text, in this financing request document."
+		},
+		"contractualClause": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
+			},
+			"description": "A contractual document clause specified for this financing request document."
+		},
+		"copyIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this financing request document is a copy rather than an original."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the creation of this financing request document."
+		},
+		"financingRequestDocumentCurrencyCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
+			},
+			"description": "The code specifying the currency in this financing request document."
+		},
+		"firstAgentSpecifiedFinancialInstitution": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution"
+			},
+			"description": "The creditor financial institution specified as the first agent in this financing request document."
+		},
+		"groupId": {
+			"type": "string",
+			"description": "The group identifier in this financing request document."
+		},
+		"groupedTransactionSpecifiedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of grouped transactions specified in this financing request document."
+		},
+		"groupedTransactionTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A total monetary value of grouped transactions in this financing request document."
+		},
+		"intermediarySpecifiedFinancialInstitution": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution"
+			},
+			"description": "The creditor financial institution specified as the intermediary in this financing request document."
+		},
+		"specifiedCancellationStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCancellationStatus"
+			},
+			"description": "A status of a cancellation specified for this financing request document, such as accepted."
+		},
+		"specifiedRequestingParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceRequestingParty"
+			},
+			"description": "The requesting party specified in this financing request document."
+		},
+		"specifiedValidationStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceValidationStatus"
+			},
+			"description": "The status of the validation specified for this financing request document, such as error."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

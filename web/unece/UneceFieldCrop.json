@@ -1,0 +1,230 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceFieldCrop",
+	"description": "A field with one or more cultivated plants or produce from one or more botanical species or varieties.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "FieldCrop",
+			"description": "JSON-LD Type."
+		},
+		"applicableAgriculturalProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalProcess"
+			},
+			"description": "An agricultural process crop production applicable for this field crop."
+		},
+		"appliedAgriculturalApplication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
+			},
+			"description": "An agricultural application applied to this field crop."
+		},
+		"className": {
+			"type": "string",
+			"description": "The class name, expressed as a text, for this field crop."
+		},
+		"classificationCode": {
+			"type": "string",
+			"description": "A code specifying a classification for this field crop."
+		},
+		"cultivationContainerCode": {
+			"type": "string",
+			"description": "The code specifying the type of cultivation container, such as a pot or an iron cabinet, for this field crop."
+		},
+		"cultivationCoverageCode": {
+			"type": "string",
+			"description": "A code specifying a type of cultivation coverage, such as glass, for this field crop."
+		},
+		"cultivationMediumCode": {
+			"type": "string",
+			"description": "The code specifying the type of cultivation medium, such as substrate, for this field crop."
+		},
+		"cultivationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of cultivation for this field crop."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description for this field crop."
+		},
+		"grownPlot": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+			},
+			"description": "The plot where this field crop is grown."
+		},
+		"grownPreviousCrop": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceFieldCrop"
+			},
+			"description": "A field crop grown previous to this field crop."
+		},
+		"harvestDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the harvest of this field crop."
+		},
+		"harvestedProduce": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduce"
+			},
+			"description": "Produce harvested from this field crop."
+		},
+		"plantingReasonCode": {
+			"type": "string",
+			"description": "A code specifying a reason for planting this field crop."
+		},
+		"productionEnvironmentCode": {
+			"type": "string",
+			"description": "The code specifying the production environment for this field crop."
+		},
+		"productionPeriodCode": {
+			"type": "string",
+			"description": "The code specifying the production period for this field crop."
+		},
+		"propagationMaterialIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not a field crop is to be used as propagation material."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "A code specifying a purpose for this field crop."
+		},
+		"sowingPeriodCode": {
+			"type": "string",
+			"description": "The code specifying the sowing period for this field crop, such as spring or winter."
+		},
+		"specifiedAgriculturalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic"
+			},
+			"description": "An agricultural characteristic specified for this field crop."
+		},
+		"specifiedCropMixtureConstituent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCropMixtureConstituent"
+			},
+			"description": "A field crop mixture constituent specified for this field crop."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

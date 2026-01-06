@@ -1,0 +1,250 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceMachine",
+	"description": "An apparatus specified to be used to perform an activity to produce something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Machine",
+			"description": "JSON-LD Type."
+		},
+		"combinedMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMachine"
+			},
+			"description": "A production machine combined with this production machine."
+		},
+		"combinedProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductionDevice"
+			},
+			"description": "A production device combined with this production machine."
+		},
+		"functionDescription": {
+			"type": "string",
+			"description": "A textual description of the function of this production machine."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this production machine."
+		},
+		"inputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+			},
+			"description": "An input batch applicable to this production machine."
+		},
+		"inputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Input material applicable to this production machine."
+		},
+		"inputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+			},
+			"description": "An input product applicable to this production machine."
+		},
+		"inputCapacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "A measure of the input capacity of this production machine."
+		},
+		"machineType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this production machine."
+		},
+		"operationalApplicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+			},
+			"description": "An operational parameter applicable to this production machine."
+		},
+		"outputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+			},
+			"description": "An output product batch applicable to this production machine."
+		},
+		"outputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Output material applicable to this production machine."
+		},
+		"outputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+			},
+			"description": "An output product applicable to this production machine."
+		},
+		"outputCapacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "A measure of the output capacity of this production machine."
+		},
+		"reportingIOTDeviceSupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+		},
+		"requestedOperationalApplicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+			},
+			"description": "A requested operational parameter applicable to this production machine."
+		},
+		"specifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+			},
+			"description": "A referenced location specified for this production machine."
+		},
+		"specifiedProductionUnit": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductionUnit"
+			},
+			"description": "A facility production unit specified for this production machine."
+		},
+		"subordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type of this production machine."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of production machine."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

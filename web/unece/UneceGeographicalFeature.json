@@ -1,0 +1,219 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceGeographicalFeature",
+	"description": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "GeographicalFeature",
+			"description": "JSON-LD Type."
+		},
+		"collectionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified geographical feature is a collection of features."
+		},
+		"coordinateReferenceSystemId": {
+			"type": "string",
+			"description": "The identifier of the coordinate reference system for this geographical feature."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this specified geographical feature."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier for this specified geographical feature."
+		},
+		"includedCircle": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCircle"
+			},
+			"description": "A circle included in this specified geographical feature."
+		},
+		"includedGeographicalGrid": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalGrid"
+			},
+			"description": "The geographical grid included in this geographical feature."
+		},
+		"includedGeographicalLine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalLine"
+			},
+			"description": "The geographical line included in this geographical feature."
+		},
+		"includedGeographicalMultiCurve": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiCurve"
+			},
+			"description": "The geographical multi-curve included in this geographical feature."
+		},
+		"includedGeographicalMultiPoint": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiPoint"
+			},
+			"description": "The geographical multi-point included in this geographical feature."
+		},
+		"includedGeographicalMultiSurface": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiSurface"
+			},
+			"description": "The geographical multi-surface included in this geographical feature."
+		},
+		"includedGeographicalPoint": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint"
+			},
+			"description": "The geographical point included in this geographical feature."
+		},
+		"includedGeographicalSurface": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalSurface"
+			},
+			"description": "The geographical surface included in this geographical feature."
+		},
+		"includedPolygon": {
+			"$ref": "https://schema.twindev.org/unece/UnecePolygon",
+			"description": "The polygon included in this geographical feature."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this specified geographical feature."
+		},
+		"usedCoordinateReferenceSystem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem"
+			},
+			"description": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
+		},
+		"usedCoordinateSourceSystem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem"
+			},
+			"description": "The geographical coordinate source system used for this specified geographical feature."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

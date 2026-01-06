@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferProcessStateType",
+	"description": "The states for Dataspace Protocol Transfer Process. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-err1/#ack-transfer-process   The types for Dataspace Protocol Transfer.",
+	"type": "string",
+	"enum": ["COMPLETED", "REQUESTED", "STARTED", "SUSPENDED", "TERMINATED"]
+}

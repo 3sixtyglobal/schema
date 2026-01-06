@@ -1,0 +1,187 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceFinancialCard",
+	"description": "A card used to represent a financial account for a trade settlement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "FinancialCard",
+			"description": "JSON-LD Type."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade settlement financial card is applicable."
+		},
+		"cardholderName": {
+			"type": "string",
+			"description": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card."
+		},
+		"creditAvailableAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the credit available for this trade settlement financial card."
+		},
+		"creditLimitAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the credit limit for this trade settlement financial card."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade settlement financial card."
+		},
+		"expiryDate": {
+			"type": "string",
+			"description": "The date of expiry up to which this trade settlement financial card is valid."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date of expiry up to which this trade settlement financial card is valid."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier, commonly known as the card number, of this trade settlement financial card."
+		},
+		"interestRatePercent": {
+			"type": "string",
+			"description": "The interest rate expressed as a percentage for this trade settlement financial card."
+		},
+		"issuingCompanyName": {
+			"type": "string",
+			"description": "An issuing company name, expressed as text, for this trade settlement financial card."
+		},
+		"microchipIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade settlement financial card has a microchip."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of this trade settlement financial card, such as debit or credit."
+		},
+		"validFromDateTime": {
+			"type": "string",
+			"description": "The date from which this trade settlement financial card is valid."
+		},
+		"verificationNumeric": {
+			"type": "string",
+			"description": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

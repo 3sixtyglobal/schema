@@ -1,0 +1,310 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSupplyChainPackaging",
+	"description": "Any material with which supply chain goods are packaged, such as a box or bubble wrap.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SupplyChainPackaging",
+			"description": "JSON-LD Type."
+		},
+		"additionalInstructionCode": {
+			"type": "string",
+			"description": "A code specifying an additional instruction for this supply chain packaging."
+		},
+		"additionalInstructionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is an additional instruction for this supply chain packaging."
+		},
+		"applicableDisposalInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
+			},
+			"description": "Disposal instructions for this supply chain packaging."
+		},
+		"applicableGoodsCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristic"
+			},
+			"description": "Material goods characteristic applicable to this supply chain packaging."
+		},
+		"applicablePackagingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePackagingInstructions"
+			},
+			"description": "Packaging instructions applicable to this supply chain packaging."
+		},
+		"applicableReturnableAssetInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceReturnableAssetInstructions"
+			},
+			"description": "Returnable asset instructions for this supply chain packaging."
+		},
+		"capacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "The measure of the capacity of this supply chain packaging."
+		},
+		"conditionCode": {
+			"type": "string",
+			"description": "A code specifying the condition of this supply chain packaging."
+		},
+		"contentLayerQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+		},
+		"customerFacingTotalUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging is placed on a retail shelf."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this supply chain packaging."
+		},
+		"disposalMethodCode": {
+			"type": "string",
+			"description": "A code specifying the disposal method of this supply chain packaging."
+		},
+		"instructionCode": {
+			"type": "string",
+			"description": "A code specifying an instruction for this supply chain packaging."
+		},
+		"layerTotalUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The total number of units in a layer of this supply chain packaging."
+		},
+		"linearDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
+			"description": "The linear spatial dimensions of this supply chain packaging."
+		},
+		"maximumLinearDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
+			"description": "The maximum linear spatial dimensions of this supply chain packaging."
+		},
+		"maximumStackabilityQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of units of this type of supply chain packaging which can be stacked on top of each other."
+		},
+		"maximumStackabilityWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "The measure of the maximum stackability weight of this supply chain packaging."
+		},
+		"minimumLinearDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
+			"description": "The minimum linear spatial dimensions of this supply chain packaging."
+		},
+		"packageTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePackageTypeCodeList"
+			},
+			"description": "The code specifying the type of supply chain packaging."
+		},
+		"packagingType": {
+			"type": "string",
+			"description": "The type, expressed as text, of supply chain packaging."
+		},
+		"recyclableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this supply chain packaging is recyclable."
+		},
+		"recycledMaterialIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this supply chain packaging is made of recycled material."
+		},
+		"recycledMaterialPercent": {
+			"type": "string",
+			"description": "The percentage of recycled material in this supply chain packaging."
+		},
+		"returnableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this supply chain packaging is returnable."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The number of a sequence of the supply chain packaging."
+		},
+		"specifiedMarking": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMarking"
+			},
+			"description": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin."
+		},
+		"supplyChainPackagingLevelCode": {
+			"type": "string",
+			"description": "The code specifying a level for this supply chain packaging."
+		},
+		"totalUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A total number of units contained in this supply chain packaging."
+		},
+		"transportMaximumStackabilityQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The number of units of this type of supply chain packaging which can be stacked vertically for transport operations."
+		},
+		"weightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "A measure of the weight of this supply chain packaging."
+		},
+		"weightUnitLoadBearingCapabilityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "The load bearing capability measure for this supply chain packaging."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

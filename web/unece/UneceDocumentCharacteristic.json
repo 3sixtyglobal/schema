@@ -1,0 +1,194 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceDocumentCharacteristic",
+	"description": "A prominent attribute or aspect of a document.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "DocumentCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this document characteristic."
+		},
+		"documentCharacteristicValueCode": {
+			"type": "string",
+			"description": "A code specifying a value of this document characteristic."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this document characteristic."
+		},
+		"location": {
+			"type": "string",
+			"description": "A location, expressed as text, for this document characteristic."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this document characteristic."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of document characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this document characteristic."
+		},
+		"valueAdjustmentDirectionCode": {
+			"type": "string",
+			"description": "The code specifying the adjustment direction for value of this document characteristic."
+		},
+		"valueAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A value, expressed as a monetary value, for this document characteristic."
+		},
+		"valueChangedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the value of this document characteristic is changed."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "A date, time, date time or other date time value for this document characteristic."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this document characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "A value, expressed as a number, for this document characteristic."
+		},
+		"valuePercent": {
+			"type": "string",
+			"description": "A value, expressed as a percentage, for this document characteristic."
+		},
+		"valueQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A value, expressed as a quantity, for this document characteristic."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

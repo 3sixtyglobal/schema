@@ -1,0 +1,278 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceService",
+	"description": "A service associated with a transport movement. A referenced service associated with a specified event during transport movement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Service",
+			"description": "JSON-LD Type."
+		},
+		"actualPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An actual period of performance for this referenced transport service."
+		},
+		"chargeAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "The monetary value of the charge for this transport service."
+		},
+		"contractId": {
+			"type": "string",
+			"description": "The contract identifier of this referenced transport service."
+		},
+		"deliverySpecifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location specified for a delivery by this referenced transport service."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this transport service."
+		},
+		"effectiveSpecifiedPeriod": {
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"description": "The specified period during which this transport service is effective."
+		},
+		"estimatedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An estimated period of performance for this referenced transport service."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The unique identifier of this transport service."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this transport service."
+		},
+		"itemQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "A quantity of items for this referenced transport service."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this transport service."
+		},
+		"plannedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A planned period of performance for this referenced transport service."
+		},
+		"preplannedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this referenced transport service has been planned in advance of its execution."
+		},
+		"reasonCode": {
+			"type": "string",
+			"description": "A code specifying a reason for this transport service."
+		},
+		"relatedSpecifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "A related logistics location specified for this referenced transport service."
+		},
+		"requestedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A requested period of performance for this referenced transport service."
+		},
+		"requesterParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "A trade party requesting this referenced transport service."
+		},
+		"responsibleParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "A trade party responsible for this transport service."
+		},
+		"responsibleTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "A trade party responsible for this transport service."
+		},
+		"specifiedRoute": {
+			"$ref": "https://schema.twindev.org/unece/UneceTransportRoute",
+			"description": "A transport route specified for this transport service."
+		},
+		"transportContractMovementContractMovementTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportContractMovementCodeList"
+			},
+			"description": "A code specifying a contract movement type of this transport service."
+		},
+		"transportServiceCategoryTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of category for this transport service."
+		},
+		"transportServiceConditionTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTransportServiceConditionCodeList",
+			"description": "A code specifying a type of condition for this transport service, such as a contract or carriage condition."
+		},
+		"transportServicePaymentArrangementCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTransportServicePaymentArrangementCodeList",
+			"description": "The code specifying the payment arrangement for this transport service."
+		},
+		"transportServicePriorityCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportServicePriorityCodeList"
+			},
+			"description": "The code specifying the priority of this transport service."
+		},
+		"transportServiceRequirementCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportServiceRequirementCodeList"
+			},
+			"description": "A code specifying a service requirement for this transport service."
+		},
+		"uRICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
+			"description": "The Uniform Resource Identifier (URI) communication for this transport service, such as its website or email address."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

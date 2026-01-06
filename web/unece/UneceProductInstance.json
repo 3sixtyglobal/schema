@@ -1,0 +1,336 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceProductInstance",
+	"description": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "ProductInstance",
+			"description": "JSON-LD Type."
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"description": "The actual quantity of items in this trade product instance."
+		},
+		"ammunitionId": {
+			"type": "string",
+			"description": "A unique ammunition identifier for this trade product instance."
+		},
+		"applicableClassification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceClassification"
+			},
+			"description": "A product classification applicable to this trade product instance."
+		},
+		"applicableGoodsCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristic"
+			},
+			"description": "A distinguishing material feature applicable to this trade product instance."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this trade product instance."
+		},
+		"appliedProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductHandlingProcess"
+			},
+			"description": "A product handling process applied to this trade product instance, such as manufacturing or storage."
+		},
+		"batchId": {
+			"type": "string",
+			"description": "The unique batch identifier for this trade product instance."
+		},
+		"bestBeforeDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance."
+		},
+		"brandNameAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "An additional brand name information note for this trade product instance."
+		},
+		"ceramicCapacitorId": {
+			"type": "string",
+			"description": "The ceramic capacitor identifier of this trade product instance."
+		},
+		"certificationEvidenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A referenced document providing evidence of certification for this trade product instance."
+		},
+		"commonName": {
+			"type": "string",
+			"description": "A common name, expressed as text, for this trade product instance."
+		},
+		"dNAMarkerId": {
+			"type": "string",
+			"description": "The DNA marker identifier of this trade product instance."
+		},
+		"disposalReasonCode": {
+			"type": "string",
+			"description": "A code specifying a disposal reason for this trade product instance."
+		},
+		"ePCId": {
+			"type": "string",
+			"description": "The EPC (Electronic Product Code) identifier of this trade product instance."
+		},
+		"equipmentId": {
+			"type": "string",
+			"description": "A unique equipment identifier for this trade product instance."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of expiry of the items contained in the trade product instance."
+		},
+		"globalSerialId": {
+			"type": "string",
+			"description": "The unique global serial identifier for this trade product instance."
+		},
+		"iUIDId": {
+			"type": "string",
+			"description": "A unique Department of Defense Item Unique Identifier (IUID) for this trade product instance."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "A unique identifier for this trade product instance."
+		},
+		"ingredientAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "A note providing additional ingredient information for this trade product instance."
+		},
+		"inspectionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
+			"description": "A referenced inspection document for this trade product instance."
+		},
+		"inspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "The inspection event for this trade product instance."
+		},
+		"intendedUse": {
+			"type": "string",
+			"description": "An intended use, expressed as text, for this trade product instance."
+		},
+		"kanbanId": {
+			"type": "string",
+			"description": "The unique kanban identifier for this trade product instance."
+		},
+		"lotId": {
+			"type": "string",
+			"description": "The unique lot identifier for this trade product instance."
+		},
+		"manufacturerAssignedSerialId": {
+			"type": "string",
+			"description": "The unique manufacturer assigned serial identifier for this trade product instance."
+		},
+		"originLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "A location of origin for this supply chain product instance."
+		},
+		"packagingEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "The packaging event for this trade product instance."
+		},
+		"processingEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "The processing event for this trade product instance."
+		},
+		"productCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic for this trade product instance."
+		},
+		"productionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "The production event for this trade product instance."
+		},
+		"qualityGradeAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "A note providing additional quality grade information for this trade product instance."
+		},
+		"reclassificationEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+			},
+			"description": "A reclassification supply chain event for this trade product instance."
+		},
+		"registrationId": {
+			"type": "string",
+			"description": "A unique registration identifier, such as a vehicle licence plate identification, for this trade product instance."
+		},
+		"scientificName": {
+			"type": "string",
+			"description": "A scientific name, expressed as text, for this trade product instance."
+		},
+		"sellByDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold."
+		},
+		"serialId": {
+			"type": "string",
+			"description": "A unique serial identifier for this trade product instance."
+		},
+		"supplierAssignedSerialId": {
+			"type": "string",
+			"description": "The unique supplier assigned serial identifier for this trade product instance."
+		},
+		"usedPackaging": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging"
+			},
+			"description": "Packaging used for this trade product instance."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

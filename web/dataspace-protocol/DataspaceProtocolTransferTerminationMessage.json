@@ -1,0 +1,78 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferTerminationMessage",
+	"description": "Interface for Dataspace Protocol Transfer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-termination-message",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The Dataspace Protocol JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+					},
+					"minItems": 1,
+					"maxItems": 1
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "TransferTerminationMessage",
+			"description": "LD Type"
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Provider side."
+		},
+		"code": {
+			"type": "string",
+			"description": "The termination code."
+		},
+		"reason": {
+			"type": "array",
+			"items": {},
+			"description": "The termination reason(s)."
+		}
+	},
+	"required": ["@context", "@type", "consumerPid", "providerPid"],
+	"additionalProperties": false
+}

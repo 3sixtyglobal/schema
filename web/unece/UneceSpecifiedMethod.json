@@ -1,0 +1,176 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedMethod",
+	"description": "A defined way of performing something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "SpecifiedMethod",
+			"description": "JSON-LD Type."
+		},
+		"applicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter applicable to this specified method."
+		},
+		"certificationId": {
+			"type": "string",
+			"description": "A certification identifier of this specified method."
+		},
+		"certificationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the certification type of this method."
+		},
+		"externalReference": {
+			"type": "string",
+			"description": "An external reference, expressed as text, for this specified method."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier of this specified method."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this specified method."
+		},
+		"localTypeCode": {
+			"type": "string",
+			"description": "The code specifying the local type for this method."
+		},
+		"measurementCode": {
+			"type": "string",
+			"description": "The code specifying the measurement for this method."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this specified method."
+		},
+		"obligatoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the obligatory type for this method."
+		},
+		"standardTypeCode": {
+			"type": "string",
+			"description": "The code specifying the standard type for this method."
+		},
+		"usedTechnologyCode": {
+			"type": "string",
+			"description": "The code specifying the technology used by this method."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

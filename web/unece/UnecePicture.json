@@ -1,0 +1,214 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UnecePicture",
+	"description": "A photograph or video still represented as a digital image for electronic sharing.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Picture",
+			"description": "JSON-LD Type."
+		},
+		"additionalDescription": {
+			"type": "string",
+			"description": "An additional textual description of this photographic picture."
+		},
+		"areaIncluded": {
+			"type": "string",
+			"description": "The area or location, expressed as text, that is included in this photographic picture."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this photographic picture."
+		},
+		"copyrightOwnerName": {
+			"type": "string",
+			"description": "The name of the copyright owner, expressed as text, for this photographic picture."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this photographic picture."
+		},
+		"digitalImageBinaryObject": {
+			"type": "string",
+			"description": "Binary object data that is the actual digital image for this photographic picture."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "An identifier for this photographic picture."
+		},
+		"intendedUse": {
+			"type": "string",
+			"description": "An intended use, expressed as text, for this photographic picture."
+		},
+		"intendedUseCode": {
+			"type": "string",
+			"description": "The code specifying the intended use of this photographic picture."
+		},
+		"linearDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
+			"description": "Linear spatial dimensions of this photographic picture."
+		},
+		"pictureType": {
+			"type": "string",
+			"description": "The type, expressed as text, of this photographic picture."
+		},
+		"reference": {
+			"type": "string",
+			"description": "A reference, expressed as text, for this photographic picture."
+		},
+		"renderingInformation": {
+			"type": "string",
+			"description": "Rendering information, expressed as text, for this photographic picture."
+		},
+		"resolutionTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of resolution for this photographic picture."
+		},
+		"resolutionValueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for the resolution of this photographic picture."
+		},
+		"specifiedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
+			},
+			"description": "A note specified for this photographic picture."
+		},
+		"subject": {
+			"type": "string",
+			"description": "The subject, expressed as text, of this photographic picture."
+		},
+		"takenDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date value of when this photographic picture was created."
+		},
+		"titleName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the title for this photographic picture."
+		},
+		"uRIId": {
+			"type": "string",
+			"description": "The URI (Uniform Resource Identifier) for this photographic picture."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,204 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceAuthentication",
+	"description": "A proof that a document is genuine.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "Authentication",
+			"description": "JSON-LD Type."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of this document authentication."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying a category for this document authentication."
+		},
+		"governmentActionTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceGovernmentActionCodeList",
+			"description": "The code specifying the type of document authentication."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "A unique identifier for this document authentication."
+		},
+		"includedClause": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
+			},
+			"description": "A document clause included in this document authentication."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this document authentication."
+		},
+		"issueLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+			},
+			"description": "The referenced location of issue of this document authentication."
+		},
+		"issueLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
+			"description": "The issue location for this document authentication."
+		},
+		"locationProviderParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The trade party providing the location for this document authentication."
+		},
+		"providerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+			},
+			"description": "The trade party providing this document authentication."
+		},
+		"representationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of representation of this document authentication, such as direct or indirect."
+		},
+		"signatory": {
+			"type": "string",
+			"description": "The signatory, expressed as text, for this document authentication."
+		},
+		"signatoryImageBinaryObject": {
+			"type": "string",
+			"description": "The signatory image, expressed as a binary object, for this document authentication."
+		},
+		"statement": {
+			"type": "string",
+			"description": "The statement, expressed as text, for this document authentication."
+		},
+		"statementCode": {
+			"type": "string",
+			"description": "The code specifying the statement for this document authentication."
+		},
+		"transportMeansId": {
+			"type": "string",
+			"description": "The unique identifier of a transport means for this document authentication."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

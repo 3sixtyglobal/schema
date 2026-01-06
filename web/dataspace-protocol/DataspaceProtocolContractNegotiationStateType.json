@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContractNegotiationStateType",
+	"description": "The types for Dataspace Protocol Contract Negotiation States. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-negotiation-states   The types for Dataspace Protocol Contract Negotiation States.",
+	"type": "string",
+	"enum": ["REQUESTED", "OFFERED", "ACCEPTED", "AGREED", "VERIFIED", "FINALIZED", "TERMINATED"]
+}

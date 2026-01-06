@@ -1,0 +1,412 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTradeTax",
+	"description": "A trade related fiscal levy or duty.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The UNECE JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://vocabulary.uncefact.org/"
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://vocabulary.uncefact.org/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TradeTax",
+			"description": "JSON-LD Type."
+		},
+		"allowanceChargeBasisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value used as the allowance and charge basis on which this trade related tax, levy or duty is calculated."
+		},
+		"applicablePercent": {
+			"type": "string",
+			"description": "The percent of trade tax applicable, such as to an object or an activity."
+		},
+		"applicableTradeLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeLocation"
+			},
+			"description": "A location where this trade tax is applicable."
+		},
+		"basisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value used as the basis on which this trade related tax, levy or duty is calculated."
+		},
+		"basisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The quantity used as the basis for calculating the amount of this trade related tax, levy or duty."
+		},
+		"buyerDeductibleTaxSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "The buyer deductible tax specified accounting account for this trade related tax, levy or duty."
+		},
+		"buyerNonDeductibleTaxSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "The buyer non-deductible tax specified accounting account for this trade related tax, levy or duty."
+		},
+		"buyerRepayableTaxSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "The buyer repayable tax specified accounting account for this trade related tax, levy or duty."
+		},
+		"calculatedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value resulting from the calculation of this trade related tax, levy or duty."
+		},
+		"calculatedRate": {
+			"type": "string",
+			"description": "The rate used to calculate the amount of this trade related tax, levy or duty."
+		},
+		"calculationMethodCode": {
+			"type": "string",
+			"description": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax calculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on grand total\"."
+		},
+		"calculationSequenceNumeric": {
+			"type": "string",
+			"description": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes are applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
+		},
+		"categoryName": {
+			"type": "string",
+			"description": "A category name, expressed as text, of this trade related tax, levy or duty."
+		},
+		"customsDutyIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade related tax, levy or duty is a customs duty."
+		},
+		"customsDutyRegimeTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCustomsDutyRegimeTypeCodeList"
+			},
+			"description": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+		},
+		"customsProcedureGuaranteeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList",
+			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+		},
+		"deductionAmount": {
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"description": "A monetary value of the deduction from this trade related tax, levy or duty."
+		},
+		"deferredStatusPartyFinancialAccount": {
+			"$ref": "https://schema.twindev.org/unece/UneceDebtorFinancialAccount",
+			"description": "The debtor financial account of the party with deferred status for this trade related tax, levy or duty."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade related tax, levy or duty."
+		},
+		"exemptionAuthorizationId": {
+			"type": "string",
+			"description": "The unique identifier of the exemption authorization for this trade tax."
+		},
+		"exemptionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is an exemption from this trade tax."
+		},
+		"exemptionReason": {
+			"type": "string",
+			"description": "The reason, expressed as text, for exemption from this trade related tax, levy or duty."
+		},
+		"grandTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the grand total of the basis plus tax for this trade tax."
+		},
+		"guarantee": {
+			"type": "string",
+			"description": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "The identifier of this trade tax."
+		},
+		"informationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value of an amount being reported for information for this trade related tax, levy or duty."
+		},
+		"jurisdiction": {
+			"type": "string",
+			"description": "A jurisdiction, expressed as text, to which this trade related tax, levy or duty applies."
+		},
+		"lineTotalBasisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value used as the line total basis on which this trade related tax, levy or duty is calculated."
+		},
+		"localTaxSystemId": {
+			"type": "string",
+			"description": "The identifier of the local tax system for this trade tax."
+		},
+		"paymentId": {
+			"type": "string",
+			"description": "The unique identifier of the payment of this trade related tax, levy or duty."
+		},
+		"placeApplicableLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeLocation"
+			},
+			"description": "A location where this trade tax is applicable."
+		},
+		"rate": {
+			"type": "string",
+			"description": "The rate, expressed as text, of this trade related tax, levy or duty."
+		},
+		"rateApplicablePercent": {
+			"type": "string",
+			"description": "The applicable rate, expressed as a percentage, for this trade tax, levy or duty."
+		},
+		"rateCode": {
+			"type": "string",
+			"description": "The code specifying the rate for this trade related tax, levy or duty."
+		},
+		"refundAmount": {
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"description": "A monetary value of the refund of this trade related tax, levy or duty."
+		},
+		"regimeType": {
+			"type": "string",
+			"description": "The type of regime, expressed as text, applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+		},
+		"selfAssessedBasisAmount": {
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"description": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+		},
+		"selfAssessedBasisQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
+			"description": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+		},
+		"selfAssessedCalculatedAmount": {
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"description": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
+		},
+		"sellerPayableTaxSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "The seller payable tax specified accounting account for this trade related tax, levy or duty."
+		},
+		"sellerRefundableTaxSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "The seller refundable tax specified accounting account for this trade related tax, levy or duty."
+		},
+		"serviceSupplyCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+			},
+			"description": "The country or country sub-division where a service was supplied for this trade tax."
+		},
+		"specifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+			},
+			"description": "A specified accounting account for this trade related tax, levy or duty."
+		},
+		"tariffDeductionQuantity": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"description": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
+		},
+		"taxBasisAllowanceRate": {
+			"type": "string",
+			"description": "The rate of the tax basis allowance (deduction or discount) used to calculate the trade related tax, levy or duty."
+		},
+		"taxCategoryCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTaxCategoryCodeList",
+			"description": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
+		},
+		"taxExemptionAuthorityId": {
+			"type": "string",
+			"description": "The unique tax exemption authority identifier for this trade tax."
+		},
+		"taxExemptionReasonExemptionReasonCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTaxExemptionReasonCodeList",
+			"description": "A code specifying a reason for exemption from this trade related tax, levy or duty."
+		},
+		"taxPointDate": {
+			"type": "string",
+			"description": "The date of the tax point when this trade related tax, levy or duty becomes applicable."
+		},
+		"taxType": {
+			"type": "string",
+			"description": "The type, expressed as text, of this trade related tax, levy or duty."
+		},
+		"taxTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTaxTypeCodeList"
+			},
+			"description": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
+		},
+		"timeReferenceDueDateTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceTimeReferenceCodeList",
+			"description": "The code specifying a type of due date for this trade tax."
+		},
+		"tradeTaxCurrencyCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the currency for this trade related tax, levy or duty [UNCL 6345]."
+		},
+		"tradeTaxFunctionCode": {
+			"type": "string",
+			"description": "A code specifying the function of this trade tax."
+		},
+		"tradeTaxPaymentMethodCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList"
+			},
+			"description": "The code specifying the payment method for this trade related tax, levy or duty."
+		},
+		"unitBasisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
+			"description": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}
