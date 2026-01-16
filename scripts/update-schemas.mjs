@@ -154,7 +154,7 @@ async function createRewriteRules(schemas) {
 	process.stdout.write('Write rewrites file\n');
 	process.stdout.write('\n');
 
-	const allSchemas = [{ namespace: 'common' }, ...schemas];
+	const allSchemas = schemas;
 	const rewrites = [];
 
 	for (const schema of allSchemas) {

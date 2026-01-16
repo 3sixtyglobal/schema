@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataset",
+	"description": "Dataset compliant with Eclipse Data Space Protocol. Validates only DS Protocol-specific requirements while allowing all optional DCAT properties.",
+	"title": "DataspaceProtocolDataset",
+	"allOf": [
+		{
+			"$ref": "https://w3id.org/dspace/2025/1/catalog/dataset-schema.json"
+		}
+	]
+}

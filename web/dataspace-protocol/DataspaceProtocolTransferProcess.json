@@ -64,31 +64,7 @@
 			"description": "MUST refer to the transfer identifier of the Provider side."
 		},
 		"state": {
-			"type": "object",
-			"properties": {
-				"COMPLETED": {
-					"type": "string",
-					"const": "COMPLETED"
-				},
-				"REQUESTED": {
-					"type": "string",
-					"const": "REQUESTED"
-				},
-				"STARTED": {
-					"type": "string",
-					"const": "STARTED"
-				},
-				"SUSPENDED": {
-					"type": "string",
-					"const": "SUSPENDED"
-				},
-				"TERMINATED": {
-					"type": "string",
-					"const": "TERMINATED"
-				}
-			},
-			"required": ["COMPLETED", "REQUESTED", "STARTED", "SUSPENDED", "TERMINATED"],
-			"additionalProperties": false,
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferProcessStateType",
 			"description": "The transfer process state."
 		}
 	},
