@@ -156,6 +156,7 @@ async function createRewriteRules(schemas) {
 
 	const allSchemas = schemas;
 	const rewrites = [];
+	const redirects = [];
 
 	for (const schema of allSchemas) {
 		const rewriteName = schema.namespace;
@@ -165,6 +166,11 @@ async function createRewriteRules(schemas) {
 		const hasTypes = types.length > 0 || packages.length > 0;
 		const jsonLdTypes = schema.jsonLdTypes;
 
+		redirects.push({
+			source: `/${rewriteName}`,
+			destination: `https://schema.twindev.org/${rewriteName}/`,
+			permanent: true
+		});
 		rewrites.push({
 			// description: `HTML: '${rewriteName}/' returns '${rewriteName}/types.html' when requested with 'text/html' header`,
 			source: `/${rewriteName}/`,
@@ -244,7 +250,8 @@ async function createRewriteRules(schemas) {
 				]
 			}
 		],
-		rewrites
+		rewrites,
+		redirects
 	});
 }
 
