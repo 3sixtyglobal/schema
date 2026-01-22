@@ -8,6 +8,10 @@
 			"description": "The Dataspace Protocol JSON-LD context type.",
 			"anyOf": [
 				{
+					"type": "string",
+					"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+				},
+				{
 					"type": "array",
 					"items": {
 						"type": "string",

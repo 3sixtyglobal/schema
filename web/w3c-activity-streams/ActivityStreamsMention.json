@@ -1,0 +1,202 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsMention",
+	"description": "A W3C Activity Streams Mention.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The Activity Streams JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://www.w3.org/ns/activitystreams"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "https://www.w3.org/ns/activitystreams"
+					},
+					"minItems": 1,
+					"maxItems": 1
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/activitystreams"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://www.w3.org/ns/activitystreams"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22Mention%22%7Cstring)%3E",
+			"description": "Mention type."
+		},
+		"href": {
+			"type": "string",
+			"description": "The target URI of the Link."
+		},
+		"name": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "A natural language name for the link."
+		},
+		"hreflang": {
+			"type": "string",
+			"description": "A language hint for the target resource."
+		},
+		"mediaType": {
+			"type": "string",
+			"description": "MIME media type of the referenced resource."
+		},
+		"rel": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"height": {
+			"type": "number",
+			"description": "Desired rendered height."
+		},
+		"width": {
+			"type": "number",
+			"description": "Desired rendered width."
+		},
+		"preview": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				}
+			],
+			"description": "Preview of the link."
+		}
+	},
+	"required": ["@context", "href", "type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}
