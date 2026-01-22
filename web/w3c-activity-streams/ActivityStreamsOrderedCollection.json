@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsOrderedCollection",
-	"description": "A W3C Activity Streams OrderedCollection.",
+	"description": "A W3C Activity Streams OrderedCollection.\n\nAn `OrderedCollection` is a `Collection` whose items are explicitly ordered.",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -354,15 +354,28 @@
 			]
 		},
 		"context": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Context."
+			]
 		},
 		"location": {
 			"description": "Object or array data type",
@@ -438,7 +451,7 @@
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection."
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
 			"description": "Object or array data type",

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsProfile",
-	"description": "A W3C Activity Streams Profile.",
+	"description": "A W3C Activity Streams Profile.\n\nA `Profile` is a content object that describes another `Object`.",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -354,15 +354,28 @@
 			]
 		},
 		"context": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Context."
+			]
 		},
 		"location": {
 			"description": "Object or array data type",
@@ -438,7 +451,7 @@
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection."
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
 			"description": "Object or array data type",
@@ -569,7 +582,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				}
 			],
-			"description": "The object being described."
+			"description": "The object being described.\n\nThis is the target entity that the `Profile` is about."
 		}
 	},
 	"required": ["@context", "type"],

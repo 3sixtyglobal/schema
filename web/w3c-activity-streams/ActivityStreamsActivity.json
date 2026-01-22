@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsActivity",
-	"description": "A W3C Activity from Activity Streams",
+	"description": "A W3C Activity from Activity Streams.\n\nAn `Activity` describes an action performed by an `actor` on an `object`, and can optionally include a `target`, `result`, `origin`, or `instrument`.",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -374,15 +374,28 @@
 			]
 		},
 		"context": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Context."
+			]
 		},
 		"location": {
 			"description": "Object or array data type",
@@ -458,7 +471,7 @@
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection."
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
 			"description": "Object or array data type",
@@ -653,33 +666,79 @@
 			]
 		},
 		"result": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Result of the Activity."
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			]
 		},
 		"origin": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Activity's origin."
+			]
 		},
 		"instrument": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Instrument used in the Activity."
+			]
 		}
 	},
-	"required": ["@context", "object", "type"],
+	"required": ["@context", "type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

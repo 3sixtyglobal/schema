@@ -354,15 +354,28 @@
 			]
 		},
 		"context": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Context."
+			]
 		},
 		"location": {
 			"description": "Object or array data type",
@@ -438,7 +451,7 @@
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection."
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
 			"description": "Object or array data type",
@@ -562,23 +575,23 @@
 		},
 		"latitude": {
 			"type": "number",
-			"description": "Latitude."
+			"description": "The latitude of the Place.\n\nThe Activity Streams vocabulary defines this as an `xsd:float`."
 		},
 		"longitude": {
 			"type": "number",
-			"description": "Longitude."
+			"description": "The longitude of the Place.\n\nThe Activity Streams vocabulary defines this as an `xsd:float`."
 		},
 		"altitude": {
 			"type": "number",
-			"description": "Altitude."
+			"description": "The altitude of the Place.\n\nMeasurement units are specified using the `units` property. If `units` is not specified, the default is assumed to be \"m\" (meters)."
 		},
 		"radius": {
 			"type": "number",
-			"description": "Radius."
+			"description": "The radius from the given `latitude` and `longitude`.\n\nMeasurement units are specified using the `units` property. If `units` is not specified, the default is assumed to be \"m\" (meters)."
 		},
 		"units": {
 			"type": "string",
-			"description": "Units for radius."
+			"description": "Measurement units for the `radius` and `altitude` properties.\n\nIf not specified, the default is assumed to be \"m\" (meters). The Activity Streams vocabulary allows values such as \"cm\", \"feet\", \"inches\", \"km\", \"m\", \"miles\", or any other unit expressed as a URI."
 		}
 	},
 	"required": ["@context", "type"],

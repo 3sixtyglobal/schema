@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsMention",
-	"description": "A W3C Activity Streams Mention.",
+	"description": "A W3C Activity Streams Mention.\n\nA `Mention` is a specialised `Link` typically used to identify users or objects being mentioned within content.",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -162,15 +162,28 @@
 			"description": "Desired rendered width."
 		},
 		"preview": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Preview of the link."
+			]
 		}
 	},
 	"required": ["@context", "href", "type"],

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsCollection",
-	"description": "A W3C Activity Streams Collection.",
+	"description": "A W3C Activity Streams Collection.\n\nA `Collection` represents an unordered set of items. Implementations can page large collections using `first`/`last`/`current` and `CollectionPage`.",
 	"type": "object",
 	"properties": {
 		"@context": {
@@ -354,15 +354,28 @@
 			]
 		},
 		"context": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
 				},
 				{
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
 				}
-			],
-			"description": "Context."
+			]
 		},
 		"location": {
 			"description": "Object or array data type",
@@ -438,7 +451,7 @@
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection."
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
 			"description": "Object or array data type",
