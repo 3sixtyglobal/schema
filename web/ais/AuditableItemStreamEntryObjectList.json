@@ -48,10 +48,6 @@
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 			},
 			"description": "The entry objects in the stream."
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "Cursor for the next chunk of entry objects."
 		}
 	},
 	"required": ["@context", "type", "itemListElement"],

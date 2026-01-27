@@ -44,10 +44,6 @@
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
 			},
 			"description": "The list of vertices."
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "The cursor to get the next chunk of vertices."
 		}
 	},
 	"required": ["@context", "type", "itemListElement"],

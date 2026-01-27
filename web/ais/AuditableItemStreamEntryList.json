@@ -48,10 +48,6 @@
 				"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
 			},
 			"description": "The entries in the stream."
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "Cursor for the next chunk of entries."
 		}
 	},
 	"required": ["@context", "type", "itemListElement"],
