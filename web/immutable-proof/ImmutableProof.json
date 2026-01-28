@@ -33,23 +33,23 @@
 		},
 		"proofObjectId": {
 			"type": "string",
-			"description": "The id of the object associated with the proof."
+			"description": "The id of the object associated with the proof. json-ld type:schema:identifier"
 		},
 		"proofObjectHash": {
 			"type": "string",
-			"description": "The hash of the object associated with the proof."
+			"description": "The hash of the object associated with the proof. json-ld type:schema:Text"
 		},
 		"verifiableStorageId": {
 			"type": "string",
-			"description": "The verifiable storage id for where the proof is stored."
+			"description": "The verifiable storage id for where the proof is stored. json-ld type:schema:identifier"
 		},
 		"proof": {
 			"$ref": "https://schema.twindev.org/w3c-did/DataIntegrityProof",
-			"description": "The proof which can be undefined if it has not yet been issued."
+			"description": "The proof which can be undefined if it has not yet been issued. json-ld id"
 		},
 		"immutableReceipt": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The immutable receipt detail for where the proof is stored."
+			"description": "The immutable receipt detail for where the proof is stored. json-ld id"
 		}
 	},
 	"required": ["@context", "type", "id", "proofObjectHash"],

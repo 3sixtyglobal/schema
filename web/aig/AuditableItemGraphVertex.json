@@ -10,15 +10,15 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the element was created."
+			"description": "The date/time of when the element was created. json-ld namespace:schema"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the element was modified."
+			"description": "The date/time of when the element was modified. json-ld namespace:schema"
 		},
 		"dateDeleted": {
 			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items."
+			"description": "The date/time of when the element was deleted, as we never actually remove items. json-ld namespace:schema"
 		},
 		"@context": {
 			"type": "array",
@@ -45,43 +45,43 @@
 		},
 		"organizationIdentity": {
 			"type": "string",
-			"description": "The identity of the organization which controls the vertex."
+			"description": "The identity of the organization which controls the vertex. json-ld namespace:twin-common"
 		},
 		"annotationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The JSON-LD annotation object for the vertex."
+			"description": "The JSON-LD annotation object for the vertex. json-ld namespace:twin-common"
 		},
 		"aliases": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
 			},
-			"description": "Alternative aliases that can be used to identify the vertex."
+			"description": "Alternative aliases that can be used to identify the vertex. json-ld container:set"
 		},
 		"resources": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
 			},
-			"description": "The resources attached to the vertex."
+			"description": "The resources attached to the vertex. json-ld container:set"
 		},
 		"edges": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
 			},
-			"description": "Edges connected to the vertex."
+			"description": "Edges connected to the vertex. json-ld container:set"
 		},
 		"changesets": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
 			},
-			"description": "Changesets for the vertex."
+			"description": "Changesets for the vertex. json-ld container:set"
 		},
 		"verified": {
 			"type": "boolean",
-			"description": "Is the vertex verified, will only be populated when verification is requested."
+			"description": "Is the vertex verified, will only be populated when verification is requested. json-ld namespace:twin-common"
 		}
 	},
 	"required": ["@context", "id", "type"],

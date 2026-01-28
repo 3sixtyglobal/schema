@@ -33,26 +33,26 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the changeset was created."
+			"description": "The date/time of when the changeset was created. json-ld namespace:schema"
 		},
 		"userIdentity": {
 			"type": "string",
-			"description": "The user identity that created the changes."
+			"description": "The user identity that created the changes. json-ld namespace:twin-common"
 		},
 		"patches": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation"
 			},
-			"description": "The patches in the changeset."
+			"description": "The patches in the changeset. json-ld container:set"
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The immutable proof id which contains the signature for this changeset."
+			"description": "The immutable proof id which contains the signature for this changeset. json-ld type:schema:identifier"
 		},
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
-			"description": "The verification for the changeset."
+			"description": "The verification for the changeset. json-ld id"
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "patches"],

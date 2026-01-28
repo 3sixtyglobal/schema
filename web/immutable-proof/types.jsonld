@@ -4,27 +4,32 @@
 		"@protected": true,
 		"twin-immutable-proof": "https://schema.twindev.org/immutable-proof/",
 		"twin-common": "https://schema.twindev.org/common/",
+		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"ImmutableProof": "https://schema.twindev.org/immutable-proof/ImmutableProof",
-		"ImmutableProofVerification": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
-		"proofObjectId": {
-			"@id": "twin-immutable-proof:proofObjectId",
+		"ImmutableProof": "twin-immutable-proof:ImmutableProof",
+		"ImmutableProofVerification": "twin-immutable-proof:ImmutableProofVerification",
+		"failure": {
+			"@id": "twin-immutable-proof:failure",
 			"@type": "schema:Text"
+		},
+		"immutableReceipt": {
+			"@id": "twin-immutable-proof:immutableReceipt"
+		},
+		"proof": {
+			"@id": "twin-immutable-proof:proof"
 		},
 		"proofObjectHash": {
 			"@id": "twin-immutable-proof:proofObjectHash",
 			"@type": "schema:Text"
 		},
-		"proof": {
-			"@id": "twin-immutable-proof:proof"
+		"proofObjectId": {
+			"@id": "twin-immutable-proof:proofObjectId",
+			"@type": "schema:identifier"
 		},
-		"immutableReceipt": {
-			"@id": "twin-immutable-proof:immutableReceipt"
-		},
-		"failure": {
-			"@id": "twin-immutable-proof:failure",
-			"@type": "schema:Text"
+		"verifiableStorageId": {
+			"@id": "twin-immutable-proof:verifiableStorageId",
+			"@type": "schema:identifier"
 		}
 	}
 }

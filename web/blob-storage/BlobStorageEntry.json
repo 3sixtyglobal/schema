@@ -33,43 +33,43 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time when the entry was created."
+			"description": "The date/time when the entry was created. json-ld namespace:schema"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time when the entry was modified."
+			"description": "The date/time when the entry was modified. json-ld namespace:schema"
 		},
 		"blobSize": {
 			"type": "number",
-			"description": "The size of the data in the blob."
+			"description": "The size of the data in the blob. json-ld type:schema:Integer"
 		},
 		"blobHash": {
 			"type": "string",
-			"description": "The hash of the data in the blob."
+			"description": "The hash of the data in the blob. json-ld namespace:twin-common"
 		},
 		"encodingFormat": {
 			"type": "string",
-			"description": "The mime type for the blob."
+			"description": "The mime type for the blob. json-ld namespace:schema"
 		},
 		"isEncrypted": {
 			"type": "boolean",
-			"description": "Indicates if the blob is encrypted."
+			"description": "Indicates if the blob is encrypted. json-ld type:schema:Boolean"
 		},
 		"compression": {
 			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageCompressionType",
-			"description": "The type of compression used for the blob, if not set it is not stored with compression."
+			"description": "The type of compression used for the blob, if not set it is not stored with compression. json-ld type:schema:Text"
 		},
 		"fileExtension": {
 			"type": "string",
-			"description": "The extension."
+			"description": "The extension. json-ld type:schema:Text"
 		},
 		"metadata": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The metadata for the blob as JSON-LD."
+			"description": "The metadata for the blob as JSON-LD. json-ld id"
 		},
 		"blob": {
 			"type": "string",
-			"description": "The blob in base64 format, included if the includeContent flag was set in the request."
+			"description": "The blob in base64 format, included if the includeContent flag was set in the request. json-ld type:schema:Text"
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "blobSize", "blobHash"],

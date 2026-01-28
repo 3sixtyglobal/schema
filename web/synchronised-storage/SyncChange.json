@@ -6,7 +6,7 @@
 	"properties": {
 		"operation": {
 			"$ref": "https://schema.twindev.org/synchronised-storage/SyncChangeOperation",
-			"description": "Operation."
+			"description": "Operation. json-ld type:schema:Text"
 		},
 		"id": {
 			"type": "string",
@@ -14,7 +14,7 @@
 		},
 		"entity": {
 			"$ref": "https://schema.twindev.org/synchronised-storage/SynchronisedEntityCore",
-			"description": "The entity to set."
+			"description": "The entity to set. json-ld type:json"
 		}
 	},
 	"required": ["operation", "id"],

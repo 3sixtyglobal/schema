@@ -34,18 +34,18 @@
 		"patchOperation": {
 			"type": "string",
 			"enum": ["add", "remove", "replace", "move", "copy", "test"],
-			"description": "The operation that was performed on the item."
+			"description": "The operation that was performed on the item. json-ld type:schema:Text"
 		},
 		"patchPath": {
 			"type": "string",
-			"description": "The path to the object that was changed."
+			"description": "The path to the object that was changed. json-ld type:schema:Text"
 		},
 		"patchFrom": {
 			"type": "string",
-			"description": "The path the value was copied or moved from."
+			"description": "The path the value was copied or moved from. json-ld type:schema:Text"
 		},
 		"patchValue": {
-			"description": "The value to add."
+			"description": "The value to add. json-ld type:json"
 		}
 	},
 	"required": ["@context", "type", "patchOperation", "patchPath"],

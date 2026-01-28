@@ -1,0 +1,32 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"@protected": true,
+		"twin-synchronised-storage": "https://schema.twindev.org/synchronised-storage/",
+		"twin-common": "https://schema.twindev.org/common/",
+		"schema": "http://schema.org/",
+		"id": "@id",
+		"type": "@type",
+		"SyncRequest": "twin-synchronised-storage:SyncRequest",
+		"SynchronisedEntityCore": "twin-synchronised-storage:SynchronisedEntityCore",
+		"SyncChange": "twin-synchronised-storage:SyncChange",
+		"SyncChangeSet": "twin-synchronised-storage:SyncChangeSet",
+		"SynchronisedEntity": "twin-synchronised-storage:SynchronisedEntity",
+		"changes": {
+			"@id": "twin-synchronised-storage:changes",
+			"@type": "@json"
+		},
+		"entity": {
+			"@id": "twin-synchronised-storage:entity",
+			"@type": "@json"
+		},
+		"operation": {
+			"@id": "twin-synchronised-storage:operation",
+			"@type": "schema:Text"
+		},
+		"storageKey": {
+			"@id": "twin-synchronised-storage:storageKey",
+			"@type": "schema:identifier"
+		}
+	}
+}

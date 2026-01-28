@@ -33,46 +33,46 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the stream was created."
+			"description": "The date/time of when the stream was created. json-ld namespace:schema"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the stream was modified."
+			"description": "The date/time of when the stream was modified. json-ld namespace:schema"
 		},
 		"organizationIdentity": {
 			"type": "string",
-			"description": "The identity of the organization which controls the stream."
+			"description": "The identity of the organization which controls the stream. json-ld namespace:twin-common"
 		},
 		"userIdentity": {
 			"type": "string",
-			"description": "The identity of the user who created the stream."
+			"description": "The identity of the user who created the stream. json-ld namespace:twin-common"
 		},
 		"annotationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The object to associate with the entry as JSON-LD."
+			"description": "The object to associate with the entry as JSON-LD. json-ld namespace:twin-common"
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The id of the immutable proof for the stream."
+			"description": "The id of the immutable proof for the stream. json-ld type:schema:identifier"
 		},
 		"immutableInterval": {
 			"type": "number",
-			"description": "After how many entries do we add immutable checks."
+			"description": "After how many entries do we add immutable checks. json-ld type:schema:Integer"
 		},
 		"entries": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
 			},
-			"description": "Entries in the stream."
+			"description": "Entries in the stream. json-ld container:set"
 		},
 		"cursor": {
 			"type": "string",
-			"description": "The cursor for the stream entries."
+			"description": "The cursor for the stream entries. json-ld namespace:twin-common"
 		},
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
-			"description": "The verification of the stream."
+			"description": "The verification of the stream. json-ld id"
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "immutableInterval"],

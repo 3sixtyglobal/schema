@@ -258,50 +258,6 @@
 			"destination": "https://schema.twindev.org/documents/:path*.json"
 		},
 		{
-			"source": "/rights-management/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "text/html.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/rights-management/types.html"
-		},
-		{
-			"source": "/rights-management/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/rights-management/types.jsonld"
-		},
-		{
-			"source": "/rights-management/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/rights-management/:path*.json"
-		},
-		{
-			"source": "/rights-management/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/json"
-				}
-			],
-			"destination": "https://schema.twindev.org/rights-management/:path*.json"
-		},
-		{
 			"source": "/synchronised-storage/",
 			"has": [
 				{
@@ -311,6 +267,17 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/synchronised-storage/types.html"
+		},
+		{
+			"source": "/synchronised-storage/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/synchronised-storage/types.jsonld"
 		},
 		{
 			"source": "/synchronised-storage/:path*",
@@ -925,11 +892,6 @@
 		{
 			"source": "/documents",
 			"destination": "https://schema.twindev.org/documents/",
-			"permanent": true
-		},
-		{
-			"source": "/rights-management",
-			"destination": "https://schema.twindev.org/rights-management/",
 			"permanent": true
 		},
 		{

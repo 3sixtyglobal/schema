@@ -7,7 +7,7 @@
  */
 import path from 'node:path';
 import FastGlob from 'fast-glob';
-import { loadJson, saveJson } from './common.mjs';
+import { fileExists, loadJson, saveJson } from './common.mjs';
 import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises';
 
 /**
@@ -25,6 +25,7 @@ async function run() {
 	for (const schema of schemas) {
 		const packages = schema.packages ?? [];
 		let types = schema.types ?? [];
+		let combinedJsonLd;
 
 		const hasTypes = types.length > 0 || packages.length > 0;
 
@@ -64,6 +65,21 @@ async function run() {
 						const typeContent = await loadJson(sourcePath);
 						const typeOutputPath = path.join(outputPath, `${stripInterface(type)}.json`);
 						await saveJson(typeOutputPath, typeContent);
+					}
+
+					const jsonLdContextSourcePath = path.join(packagePath, 'src', 'schemas', `types.jsonld`);
+
+					if (await fileExists(jsonLdContextSourcePath)) {
+						const jsonLdContextContent = await loadJson(jsonLdContextSourcePath);
+						combinedJsonLd = {
+							['@context']: {
+								...combinedJsonLd?.['@context'],
+								...jsonLdContextContent?.['@context']
+							}
+						};
+						const jsonLdContextOutputPath = path.join(outputPath, `types.jsonld`);
+						process.stdout.write(`         Copying JSON-LD context: ${jsonLdContextSourcePath}\n`);
+						await saveJson(jsonLdContextOutputPath, combinedJsonLd);
 					}
 				}
 			}

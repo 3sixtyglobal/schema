@@ -6,17 +6,17 @@
 	"properties": {
 		"dateModified": {
 			"type": "string",
-			"description": "The date the entry was modified."
+			"description": "The date the entry was modified. json-ld namespace:schema"
 		},
 		"id": {
 			"type": "string",
 			"description": "The id of the entry."
 		},
-		"nodeId": {
+		"nodeIdentity": {
 			"type": "string",
-			"description": "The identity of the node that owns the entry."
+			"description": "The identity of the node that owns the entry. json-ld namespace:twin-common"
 		}
 	},
-	"required": ["dateModified", "id"],
+	"required": ["dateModified", "id", "nodeIdentity"],
 	"additionalProperties": false
 }

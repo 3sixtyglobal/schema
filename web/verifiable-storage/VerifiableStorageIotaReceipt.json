@@ -16,11 +16,11 @@
 		},
 		"epoch": {
 			"type": "string",
-			"description": "The epoch of the transaction."
+			"description": "The epoch of the transaction. json-ld type:schema:Text"
 		},
 		"digest": {
 			"type": "string",
-			"description": "The digest of the transaction."
+			"description": "The digest of the transaction. json-ld type:schema:Text"
 		}
 	},
 	"required": ["@context", "type", "epoch", "digest"],

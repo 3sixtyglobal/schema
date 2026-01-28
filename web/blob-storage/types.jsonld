@@ -6,14 +6,26 @@
 		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"BlobStorageEntry": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
+		"BlobStorageEntry": "twin-blob-storage:BlobStorageEntry",
+		"blob": {
+			"@id": "twin-blob-storage:blob",
+			"@type": "schema:Text"
+		},
 		"blobSize": {
 			"@id": "twin-blob-storage:blobSize",
-			"@type": "schema:Number"
+			"@type": "schema:Integer"
+		},
+		"compression": {
+			"@id": "twin-blob-storage:compression",
+			"@type": "schema:Text"
 		},
 		"fileExtension": {
 			"@id": "twin-blob-storage:fileExtension",
 			"@type": "schema:Text"
+		},
+		"isEncrypted": {
+			"@id": "twin-blob-storage:isEncrypted",
+			"@type": "schema:Boolean"
 		},
 		"metadata": {
 			"@id": "twin-blob-storage:metadata"

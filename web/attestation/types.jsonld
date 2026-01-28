@@ -7,21 +7,24 @@
 		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"AuditableInformation": "twin-attestation:AuditableInformation",
-		"AuditableJwtProof": "twin-attestation:AuditableJwtProof",
+		"AttestationInformation": "twin-attestation:AttestationInformation",
+		"AttestationJwtProof": "twin-attestation:AttestationJwtProof",
 		"dateTransferred": {
 			"@id": "twin-attestation:dateTransferred",
 			"@type": "schema:Date"
-		},
-		"ownerIdentity": {
-			"@id": "twin-attestation:ownerIdentity",
-			"@type": "schema:identifier"
 		},
 		"holderIdentity": {
 			"@id": "twin-attestation:holderIdentity",
 			"@type": "schema:identifier"
 		},
-		"proof": "twin-attestation:proof",
+		"ownerIdentity": {
+			"@id": "twin-attestation:ownerIdentity",
+			"@type": "schema:identifier"
+		},
+		"value": {
+			"@id": "twin-attestation:value",
+			"@type": "schema:Text"
+		},
 		"verificationFailure": {
 			"@id": "twin-attestation:verificationFailure",
 			"@type": "schema:Text"

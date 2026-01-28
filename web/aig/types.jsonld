@@ -8,48 +8,39 @@
 		"id": "@id",
 		"type": "@type",
 		"AuditableItemGraphAlias": "twin-aig:AuditableItemGraphAlias",
+		"AuditableItemGraphAuditedElement": "twin-aig:AuditableItemGraphAuditedElement",
+		"AuditableItemGraphPatchOperation": "twin-aig:AuditableItemGraphPatchOperation",
+		"AuditableItemGraphChangeset": "twin-aig:AuditableItemGraphChangeset",
 		"AuditableItemGraphEdge": "twin-aig:AuditableItemGraphEdge",
 		"AuditableItemGraphResource": "twin-aig:AuditableItemGraphResource",
 		"AuditableItemGraphVertex": "twin-aig:AuditableItemGraphVertex",
-		"AuditableItemGraphChangeset": "twin-aig:AuditableItemGraphChangeset",
-		"AuditableItemGraphPatchOperation": "twin-aig:AuditableItemGraphPatchOperation",
+		"AuditableItemGraphVertexList": "twin-aig:AuditableItemGraphVertexList",
 		"aliases": {
 			"@id": "twin-aig:aliases",
+			"@container": "@set"
+		},
+		"aliasFormat": {
+			"@id": "twin-aig:aliasFormat",
+			"@type": "schema:Text"
+		},
+		"changesets": {
+			"@id": "twin-aig:changesets",
+			"@container": "@set"
+		},
+		"edgeRelationships": {
+			"@id": "twin-aig:edgeRelationships",
 			"@container": "@set"
 		},
 		"edges": {
 			"@id": "twin-aig:edges",
 			"@container": "@set"
 		},
-		"resources": {
-			"@id": "twin-aig:resources",
-			"@container": "@set"
-		},
-		"changesets": {
-			"@id": "twin-aig:changesets",
-			"@container": "@set"
-		},
 		"patches": {
 			"@id": "twin-aig:patches",
 			"@container": "@set"
 		},
-		"resourceObject": {
-			"@id": "twin-aig:resourceObject",
-			"@type": "@json"
-		},
-		"verification": {
-			"@id": "twin-aig:verification"
-		},
-		"edgeRelationship": {
-			"@id": "twin-aig:edgeRelationship",
-			"@type": "schema:Text"
-		},
-		"edgeRelationships": {
-			"@id": "twin-aig:edgeRelationships",
-			"@container": "@set"
-		},
-		"aliasFormat": {
-			"@id": "twin-aig:aliasFormat",
+		"patchFrom": {
+			"@id": "twin-aig:patchFrom",
 			"@type": "schema:Text"
 		},
 		"patchOperation": {
@@ -60,10 +51,6 @@
 			"@id": "twin-aig:patchPath",
 			"@type": "schema:Text"
 		},
-		"patchFrom": {
-			"@id": "twin-aig:patchFrom",
-			"@type": "schema:Text"
-		},
 		"patchValue": {
 			"@id": "twin-aig:patchValue",
 			"@type": "@json"
@@ -72,9 +59,20 @@
 			"@id": "twin-aig:proofId",
 			"@type": "schema:identifier"
 		},
+		"resourceObject": {
+			"@id": "twin-aig:resourceObject",
+			"@type": "@json"
+		},
+		"resources": {
+			"@id": "twin-aig:resources",
+			"@container": "@set"
+		},
 		"targetId": {
 			"@id": "twin-aig:targetId",
 			"@type": "schema:identifier"
+		},
+		"verification": {
+			"@id": "twin-aig:verification"
 		}
 	}
 }
