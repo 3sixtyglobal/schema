@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaPortCallServiceTypeCodes",
+	"description": "Port call service type codes.\n\nSource: `portCallServiceTypeCode` enum in the DCSA Event Domain (v3.1.0).   Port call service type codes.",
+	"type": "string",
+	"enum": [
+		"PILO",
+		"MOOR",
+		"CRGO",
+		"TOWG",
+		"BUNK",
+		"LASH",
+		"SAFE",
+		"FAST",
+		"GWAY",
+		"ANCO",
+		"SLUG",
+		"SHPW",
+		"LCRO",
+		"DCRO",
+		"VRDY"
+	]
+}

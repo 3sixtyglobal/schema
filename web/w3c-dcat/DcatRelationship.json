@@ -1,0 +1,171 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatRelationship",
+	"description": "Interface for DCAT Relationship. An association class for attaching additional information to a relationship between DCAT Resources.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The DCAT JSON-LD context type. Supports the DCAT context URL or arrays with additional context definitions.",
+			"type": "object",
+			"additionalProperties": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
+					},
+					{
+						"type": ["null", "string"]
+					}
+				]
+			},
+			"properties": {
+				"@base": {
+					"type": ["string", "null"]
+				},
+				"@direction": {
+					"type": ["string", "null"],
+					"enum": ["ltr", "rtl", null]
+				},
+				"@import": {
+					"type": "string"
+				},
+				"@language": {
+					"type": "string"
+				},
+				"@propagate": {
+					"type": "boolean"
+				},
+				"@protected": {
+					"type": "boolean"
+				},
+				"@type": {
+					"type": "object",
+					"properties": {
+						"@container": {
+							"type": "string",
+							"const": "@set"
+						},
+						"@protected": {
+							"type": "boolean"
+						}
+					},
+					"required": ["@container"],
+					"additionalProperties": false
+				},
+				"@version": {
+					"type": "string",
+					"const": "1.1"
+				},
+				"@vocab": {
+					"type": ["string", "null"]
+				},
+				"dcat": {
+					"type": "string",
+					"const": "http://www.w3.org/ns/dcat#"
+				},
+				"dcterms": {
+					"type": "string",
+					"const": "http://purl.org/dc/terms/"
+				},
+				"odrl": {
+					"type": "string",
+					"const": "http://www.w3.org/ns/odrl/2/"
+				},
+				"foaf": {
+					"type": "string",
+					"const": "https://xmlns.com/foaf/0.1/"
+				}
+			},
+			"required": ["dcat", "dcterms"]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "dcat:Relationship",
+			"description": "The type identifier, typically \"Relationship\"."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"dcterms:relation": {
+			"type": "string",
+			"description": "The link to a related resource."
+		},
+		"dcat:hadRole": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatRole",
+			"description": "The function of an entity or agent with respect to another resource."
+		}
+	},
+	"required": ["@context", "@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

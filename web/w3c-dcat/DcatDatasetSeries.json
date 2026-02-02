@@ -1,0 +1,410 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatDatasetSeries",
+	"description": "Interface for DCAT Dataset Series. A collection of datasets that are published separately, but share some common characteristics that enable them to be grouped together.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The DCAT JSON-LD context type. Supports the DCAT context URL or arrays with additional context definitions.",
+			"type": "object",
+			"additionalProperties": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
+					},
+					{
+						"type": ["null", "string"]
+					}
+				]
+			},
+			"properties": {
+				"@base": {
+					"type": ["string", "null"]
+				},
+				"@direction": {
+					"type": ["string", "null"],
+					"enum": ["ltr", "rtl", null]
+				},
+				"@import": {
+					"type": "string"
+				},
+				"@language": {
+					"type": "string"
+				},
+				"@propagate": {
+					"type": "boolean"
+				},
+				"@protected": {
+					"type": "boolean"
+				},
+				"@type": {
+					"type": "object",
+					"properties": {
+						"@container": {
+							"type": "string",
+							"const": "@set"
+						},
+						"@protected": {
+							"type": "boolean"
+						}
+					},
+					"required": ["@container"],
+					"additionalProperties": false
+				},
+				"@version": {
+					"type": "string",
+					"const": "1.1"
+				},
+				"@vocab": {
+					"type": ["string", "null"]
+				},
+				"dcat": {
+					"type": "string",
+					"const": "http://www.w3.org/ns/dcat#"
+				},
+				"dcterms": {
+					"type": "string",
+					"const": "http://purl.org/dc/terms/"
+				},
+				"odrl": {
+					"type": "string",
+					"const": "http://www.w3.org/ns/odrl/2/"
+				},
+				"foaf": {
+					"type": "string",
+					"const": "https://xmlns.com/foaf/0.1/"
+				}
+			},
+			"required": ["dcat", "dcterms"]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "dcat:DatasetSeries",
+			"description": "The type identifier, typically \"DatasetSeries\"."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"dcterms:title": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
+			"description": "A name given to the resource."
+		},
+		"dcterms:description": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
+			"description": "A free-text account of the resource."
+		},
+		"dcterms:identifier": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
+			"description": "A unique identifier of the resource."
+		},
+		"dcterms:issued": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDateTimeType",
+			"description": "Date of formal issuance (publication) of the resource."
+		},
+		"dcterms:modified": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDateTimeType",
+			"description": "Most recent date on which the resource was changed, updated or modified."
+		},
+		"dcterms:language": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"dcterms:publisher": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgent"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "An entity responsible for making the resource available."
+		},
+		"dcterms:creator": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgent",
+			"description": "An entity responsible for producing the resource."
+		},
+		"dcterms:accessRights": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Information about who can access the resource or an indication of its security status."
+		},
+		"dcterms:license": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A legal document under which the resource is made available."
+		},
+		"dcterms:rights": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Information about rights held in and over the resource."
+		},
+		"dcterms:conformsTo": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"dcterms:type": {
+			"type": "string",
+			"description": "The nature or genre of the resource."
+		},
+		"dcat:contactPoint": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Relevant contact information for the catalogued resource."
+		},
+		"dcat:keyword": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
+			"description": "A keyword or tag describing the resource."
+		},
+		"dcat:theme": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"dcat:landingPage": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"dcat:qualifiedRelation": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/DcatRelationship"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Link to a description of a relationship with another resource."
+		},
+		"odrl:hasPolicy": {
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy",
+			"description": "An ODRL conformant policy expressing the rights associated with the resource."
+		},
+		"dcat:distribution": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/DistributionOptionalContext"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-dcat/DistributionOptionalContext"
+					}
+				}
+			]
+		},
+		"dcterms:accrualPeriodicity": {
+			"type": "string",
+			"description": "The frequency at which the dataset is published."
+		},
+		"dcat:inSeries": {
+			"type": "string",
+			"description": "A dataset series of which the dataset is part."
+		},
+		"dcterms:spatial": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "Object or array data type"
+				}
+			],
+			"description": "The geographical area covered by the dataset."
+		},
+		"dcat:spatialResolutionInMeters": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDecimalType",
+			"description": "Minimum spatial separation resolvable in a dataset, measured in meters."
+		},
+		"dcterms:temporal": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DublinCorePeriodOfTime",
+			"description": "The temporal period that the dataset covers."
+		},
+		"dcat:temporalResolution": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDurationType",
+			"description": "Minimum time period resolvable in the dataset."
+		},
+		"prov:wasGeneratedBy": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "An activity that generated, or provides the business context for, the creation of the dataset."
+		},
+		"dcat:first": {
+			"type": "string",
+			"description": "A dataset that is part of this dataset series."
+		},
+		"dcat:last": {
+			"type": "string",
+			"description": "A dataset that is part of this dataset series."
+		},
+		"dcat:seriesMember": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		}
+	},
+	"required": ["@context", "@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

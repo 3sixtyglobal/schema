@@ -85,7 +85,15 @@
 		"repo": "standards",
 		"packages": ["standards-w3c-activity-streams"],
 		"title": "W3C Activity Streams",
-		"namespace": "w3c-activity-streams"
+		"namespace": "w3c-activity-streams",
+		"jsonLdTypes": []
+	},
+	{
+		"repo": "standards",
+		"packages": ["standards-w3c-dcat"],
+		"title": "W3C DCAT",
+		"namespace": "w3c-dcat",
+		"jsonLdTypes": []
 	},
 	{
 		"repo": "standards",
@@ -129,7 +137,23 @@
 	{
 		"title": "FOAF (Friend Of A Friend)",
 		"namespace": "foaf",
-		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the FOAF body itself. <a target='_blank' href='http://xmlns.com/foaf/spec/'>FOAF Schema</a>"
+		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the FOAF body itself. <a target='_blank' href='http://xmlns.com/foaf/spec/'>FOAF Schema</a>",
+		"repo": "standards",
+		"packages": ["standards-foaf"]
+	},
+	{
+		"title": "DCSA (Digital Container Shipping Association)",
+		"repo": "standards",
+		"packages": ["standards-dcsa"],
+		"namespace": "dcsa",
+		"jsonLdTypes": []
+	},
+	{
+		"title": "GS1",
+		"repo": "standards",
+		"packages": ["standards-gs1"],
+		"namespace": "gs1",
+		"jsonLdTypes": []
 	},
 	{
 		"title": "W3C RDF Schema",

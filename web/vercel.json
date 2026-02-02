@@ -566,17 +566,6 @@
 			"destination": "https://schema.twindev.org/w3c-activity-streams/types.html"
 		},
 		{
-			"source": "/w3c-activity-streams/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/w3c-activity-streams/types.jsonld"
-		},
-		{
 			"source": "/w3c-activity-streams/:path*",
 			"missing": [
 				{
@@ -597,6 +586,39 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/w3c-activity-streams/:path*.json"
+		},
+		{
+			"source": "/w3c-dcat/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/w3c-dcat/types.html"
+		},
+		{
+			"source": "/w3c-dcat/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/w3c-dcat/:path*.json"
+		},
+		{
+			"source": "/w3c-dcat/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/w3c-dcat/:path*.json"
 		},
 		{
 			"source": "/gaia-x/",
@@ -797,6 +819,94 @@
 			"destination": "https://schema.twindev.org/foaf/types.jsonld"
 		},
 		{
+			"source": "/foaf/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/foaf/:path*.json"
+		},
+		{
+			"source": "/foaf/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/foaf/:path*.json"
+		},
+		{
+			"source": "/dcsa/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dcsa/types.html"
+		},
+		{
+			"source": "/dcsa/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dcsa/:path*.json"
+		},
+		{
+			"source": "/dcsa/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/dcsa/:path*.json"
+		},
+		{
+			"source": "/gs1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/gs1/types.html"
+		},
+		{
+			"source": "/gs1/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/gs1/:path*.json"
+		},
+		{
+			"source": "/gs1/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/gs1/:path*.json"
+		},
+		{
 			"source": "/w3c-rdf/",
 			"has": [
 				{
@@ -935,6 +1045,11 @@
 			"permanent": true
 		},
 		{
+			"source": "/w3c-dcat",
+			"destination": "https://schema.twindev.org/w3c-dcat/",
+			"permanent": true
+		},
+		{
 			"source": "/gaia-x",
 			"destination": "https://schema.twindev.org/gaia-x/",
 			"permanent": true
@@ -962,6 +1077,16 @@
 		{
 			"source": "/foaf",
 			"destination": "https://schema.twindev.org/foaf/",
+			"permanent": true
+		},
+		{
+			"source": "/dcsa",
+			"destination": "https://schema.twindev.org/dcsa/",
+			"permanent": true
+		},
+		{
+			"source": "/gs1",
+			"destination": "https://schema.twindev.org/gs1/",
 			"permanent": true
 		},
 		{

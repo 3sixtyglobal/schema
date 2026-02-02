@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEventRetraction",
+	"description": "Retraction event.",
+	"type": "object",
+	"properties": {
+		"metadata": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction",
+			"description": "Retraction metadata."
+		}
+	},
+	"required": ["metadata"],
+	"additionalProperties": false
+}

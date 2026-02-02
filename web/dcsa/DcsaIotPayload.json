@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaIotPayload",
+	"description": "IoT payload.\n\nSource: `iotPayload` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"eventDateTime": {
+			"type": "string",
+			"description": "The local date and time when the event took place (or will take place). Format: ISO 8601 date-time."
+		},
+		"eventClassifierCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCode",
+			"description": "Code for the event classifier.\n\nNote: allowed values depend on event type. Some event categories in the upstream spec constrain this to a subset (e.g. Shipment/IoT/Reefer are always ACT)."
+		},
+		"iotEventTypeCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventTypeCodes",
+			"description": "IoT event type code."
+		},
+		"iotEventCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventCode",
+			"description": "IoT event code."
+		},
+		"geoLocation": {
+			"description": "Geo location.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
+		},
+		"equipmentReference": {
+			"type": "string",
+			"description": "Equipment reference."
+		},
+		"relatedDocumentReferences": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+			},
+			"description": "Related document references."
+		}
+	},
+	"required": [
+		"equipmentReference",
+		"eventClassifierCode",
+		"eventDateTime",
+		"iotEventCode",
+		"iotEventTypeCode"
+	]
+}

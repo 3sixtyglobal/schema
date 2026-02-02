@@ -1,0 +1,175 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/foaf/FoafOrganization",
+	"description": "A FOAF Organization.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "The FOAF JSON-LD context type.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://xmlns.com/foaf/0.1/"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "https://xmlns.com/foaf/0.1/"
+					},
+					"minItems": 1,
+					"maxItems": 1
+				},
+				{
+					"type": "array",
+					"minItems": 1,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://xmlns.com/foaf/0.1/"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"type": "string",
+			"const": "Organization",
+			"description": "Type."
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string",
+			"description": "A name for some thing."
+		},
+		"title": {
+			"type": "string",
+			"description": "Title (Mr, Mrs, Ms, Dr. etc)"
+		},
+		"mbox": {
+			"type": "string",
+			"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox"
+		},
+		"homepage": {
+			"type": "string",
+			"description": "A homepage for some thing."
+		},
+		"depiction": {
+			"$ref": "https://schema.twindev.org/foaf/FoafImage",
+			"description": "A depiction of some thing."
+		},
+		"age": {
+			"type": "number",
+			"description": "The age in years of some agent."
+		},
+		"made": {
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"weblog": {
+			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"description": "A weblog of some thing (whether person, group, company etc.)."
+		},
+		"openid": {
+			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"description": "An OpenID for an agent."
+		},
+		"interest": {
+			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"description": "A page about a topic of interest to this person."
+		},
+		"topic_interest": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"description": "A thing of interest to this person."
+		}
+	},
+	"required": ["@type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

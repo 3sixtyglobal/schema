@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisComponentTypes",
+	"description": "Supported EPCIS 2.0 `component` values.",
+	"type": "string",
+	"enum": [
+		"x",
+		"y",
+		"z",
+		"axial_distance",
+		"azimuth",
+		"height",
+		"spherical_radius",
+		"polar_angle",
+		"elevation_angle",
+		"easting",
+		"northing",
+		"latitude",
+		"longitude",
+		"altitude"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaTransportCall",
+	"description": "Transport call.\n\nDiscriminator: `modeOfTransport`.\n\nSource: `transportCall` schema in the DCSA Event Domain (v3.1.0).",
+	"anyOf": [
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaVesselTransportCall"
+		},
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBargeTransportCall"
+		},
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaRailTransportCall"
+		},
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTruckTransportCall"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive",
+	"description": "Active event metadata (not a retraction).\n\nThe OpenAPI schema defines `retractedEventID` with a default of `null`, so we allow it to be omitted or explicitly set to `null`.",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"retractedEventID": {
+			"type": "null",
+			"description": "Must be `null` (or omitted) for non-retraction events."
+		},
+		"eventID": {
+			"type": "string",
+			"description": "The unique identifier for this event message (not the source system)."
+		},
+		"eventCreatedDateTime": {
+			"type": "string",
+			"description": "Timestamp of when the event was created by the publisher. Format: ISO 8601 date-time."
+		},
+		"publisher": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaPublisher",
+			"description": "The party publishing this event."
+		},
+		"publisherRole": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTntPublisherRole",
+			"description": "Publisher role (context of the publisher). For Track & Trace events, this is the `tntPublisherRole` code list."
+		},
+		"eventType": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
+			"description": "Event type discriminator.\n\nFor the base `event` schema (T&T polling), the discriminator is limited to SHIPMENT/EQUIPMENT/TRANSPORT and is further narrowed by the concrete event union types. Other event hub schemas (e.g. IoT/Reefer) constrain this to IOT/REEFER."
+		}
+	},
+	"required": ["eventCreatedDateTime", "eventID", "eventType", "publisher", "publisherRole"]
+}

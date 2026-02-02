@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaTransportSubscriptionBody",
+	"description": "Transport subscription filters.\n\nSource: `transportSubscriptionBody` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"transportCallReference": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific transport call."
+		},
+		"vesselIMONumber": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific vessel IMO number."
+		},
+		"carrierExportVoyageNumber": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific carrier export voyage number."
+		},
+		"universalExportVoyageReference": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific universal export voyage reference."
+		},
+		"carrierServiceCode": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific carrier service code."
+		},
+		"universalServiceReference": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific universal service reference."
+		},
+		"UNLocationCode": {
+			"type": "string",
+			"description": "Filters to only receive events for a specific UN/LOCODE."
+		},
+		"transportEventTypeCodes": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dcsa/DcsaTransportEventTypeCodes"
+			},
+			"description": "Transport event type codes to filter by."
+		}
+	},
+	"additionalProperties": false
+}

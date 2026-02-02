@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaPublisher",
+	"description": "Publisher (the party sending the event).\n\nSource: `publisher` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"partyName": {
+			"type": "string",
+			"description": "Name of the publishing party."
+		},
+		"carrierCode": {
+			"type": "string",
+			"description": "Carrier code identifying the publisher."
+		},
+		"carrierCodeListProvider": {
+			"type": "string",
+			"description": "Provider of the carrier code list."
+		}
+	},
+	"required": ["carrierCode", "carrierCodeListProvider"],
+	"additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisActionTypes",
+	"description": "GS1 EPCIS 2.0 action values capturing whether an event adds, observes, or removes associations.",
+	"type": "string",
+	"enum": ["ADD", "OBSERVE", "DELETE"]
+}

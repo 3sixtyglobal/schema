@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorAlertTypes",
+	"description": "Supported EPCIS 2.0 `sensorAlertType` values for sensor-generated alarms or errors.",
+	"type": "string",
+	"enum": ["ALARM_CONDITION", "ERROR_CONDITION"]
+}

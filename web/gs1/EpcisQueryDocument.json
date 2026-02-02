@@ -1,0 +1,169 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisQueryDocument",
+	"description": "EPCIS 2.0 QueryDocument used to submit queries to an EPCIS repository.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://ref.gs1.org/epcis"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "https://ref.gs1.org/epcis"
+					},
+					"minItems": 1,
+					"maxItems": 1
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://ref.gs1.org/epcis"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://ref.gs1.org/epcis"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"id": {
+			"type": "string",
+			"description": "The JSON-LD document id."
+		},
+		"type": {
+			"type": "string",
+			"const": "EPCISQueryDocument",
+			"description": "JSON-LD Type."
+		},
+		"schemaVersion": {
+			"type": "string",
+			"description": "Schema version."
+		},
+		"creationDate": {
+			"type": "string",
+			"description": "Creation Date."
+		},
+		"epcisBody": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQueryDocumentBody",
+			"description": "The EPCIS Body."
+		}
+	},
+	"required": ["@context", "type", "epcisBody"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

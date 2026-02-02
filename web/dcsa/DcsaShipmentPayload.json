@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaShipmentPayload",
+	"description": "Shipment payload.\n\nSource: `shipmentPayload` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"eventClassifierCode": {
+			"type": "string",
+			"const": "ACT",
+			"description": "Shipment events are always \"ACT\"."
+		},
+		"eventDateTime": {
+			"type": "string",
+			"description": "The local date and time when the event took place (or will take place). Format: ISO 8601 date-time."
+		},
+		"shipmentEventTypeCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaShipmentEventTypeCodes",
+			"description": "Shipment event type code."
+		},
+		"documentTypeCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaDocumentTypeCodes",
+			"description": "Document type code. Identifies what kind of document `documentReference` points to."
+		},
+		"documentReference": {
+			"type": "string",
+			"description": "Reference for the document identified by `documentTypeCode`. Note: `documentReference` is not necessarily globally unique without `documentTypeCode`."
+		},
+		"reason": {
+			"type": "string",
+			"description": "Free-text field that can be used to explain why a specific ShipmentEvent was sent."
+		},
+		"relatedDocumentReferences": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+			},
+			"description": "Related documents."
+		},
+		"references": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dcsa/DcsaReference"
+			},
+			"description": "Additional references."
+		}
+	},
+	"required": [
+		"documentReference",
+		"documentTypeCode",
+		"eventClassifierCode",
+		"eventDateTime",
+		"shipmentEventTypeCode"
+	],
+	"additionalProperties": false
+}

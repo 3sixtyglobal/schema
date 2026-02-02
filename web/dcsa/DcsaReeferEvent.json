@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaReeferEvent",
+	"description": "Reefer event.\n\nSource: `reeferEvent` schema in the DCSA Event Domain (v3.1.0).\n\nRetraction rule: if `metadata.retractedEventID` is set, `payload` MUST NOT be present.",
+	"anyOf": [
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"$ref": "https://schema.twindev.org/dcsa/DcsaReeferEventMetadataActive",
+					"description": "Event metadata."
+				},
+				"payload": {
+					"$ref": "https://schema.twindev.org/dcsa/DcsaReeferPayload",
+					"description": "Event payload."
+				}
+			},
+			"required": ["metadata", "payload"],
+			"additionalProperties": false
+		},
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"$ref": "https://schema.twindev.org/dcsa/DcsaReeferEventMetadataRetraction",
+					"description": "Retraction metadata."
+				}
+			},
+			"required": ["metadata"],
+			"additionalProperties": false
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaBargeTransportCall",
+	"description": "Barge transport call details.\n\nSource: `bargeTransportCall` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"transportCallReference": {
+			"type": "string",
+			"description": "Unique reference for the transport call."
+		},
+		"transportCallSequenceNumber": {
+			"type": "number",
+			"description": "Sequence number of the transport call."
+		},
+		"location": {
+			"description": "Location of the transport call.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
+		},
+		"facilityTypeCode": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallFacilityTypeCodes",
+			"description": "Facility type code."
+		},
+		"modeOfTransport": {
+			"type": "string",
+			"const": "BARGE",
+			"description": "Discriminator for the transport mode."
+		},
+		"barge": {
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBarge",
+			"description": "Barge."
+		},
+		"portVisitReference": {
+			"type": "string",
+			"description": "Port visit reference."
+		},
+		"carrierServiceCode": {
+			"type": "string",
+			"description": "Carrier service code."
+		},
+		"universalServiceReference": {
+			"type": "string",
+			"description": "Universal service reference."
+		},
+		"carrierExportVoyageNumber": {
+			"type": "string",
+			"description": "Carrier export voyage number."
+		},
+		"universalExportVoyageReference": {
+			"type": "string",
+			"description": "Universal export voyage reference."
+		},
+		"carrierImportVoyageNumber": {
+			"type": "string",
+			"description": "Carrier import voyage number."
+		},
+		"universalImportVoyageReference": {
+			"type": "string",
+			"description": "Universal import voyage reference."
+		}
+	},
+	"required": ["modeOfTransport", "transportCallReference"],
+	"additionalProperties": false
+}

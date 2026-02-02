@@ -1,0 +1,218 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorReport",
+	"description": "EPCIS 2.0 SensorReport containing measurement values and related sensor observation details.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisMeasurementTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Identifier indicating what kind of measurement the SensorReport pertains to (e.g. Length, Mass, Temperature).\n\nUse  {@link  EpcisMeasurementTypes }  for known values."
+		},
+		"exception": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSensorAlertTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A sensor alert value (alarm condition or error condition); extra details may be provided via booleanValue or uriValue.\n\nUse  {@link  EpcisSensorAlertTypes }  for known values."
+		},
+		"deviceID": {
+			"type": "string",
+			"description": "(Optional) Device from which the sensor data originates."
+		},
+		"deviceMetadata": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating metadata of the device from which the sensor data originates."
+		},
+		"rawData": {
+			"type": "string",
+			"description": "(Optional) Storage/service location of the raw sensor data on which the aggregated/business-oriented data contained in the sensorElement is based."
+		},
+		"dataProcessingMethod": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating the data processing method of the contained sensor data, if applicable."
+		},
+		"bizRules": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating product- or application-specific business rules on which basis the EPCIS event was triggered."
+		},
+		"time": {
+			"type": "string",
+			"description": "(Optional) The actual point in time of an observation as transmitted by a sensor device."
+		},
+		"microorganism": {
+			"type": "string",
+			"description": "(Optional) Identifies a specific microorganism species; SHALL NOT be present if chemicalSubstance is included."
+		},
+		"chemicalSubstance": {
+			"type": "string",
+			"description": "(Optional) Identifies a specific chemical substance; SHALL NOT be present together with microorganism."
+		},
+		"coordinateReferenceSystem": {
+			"type": "string",
+			"description": "(Optional) A URI identifying the Coordinate Reference System; if omitted, WGS-84 is assumed."
+		},
+		"value": {
+			"type": "number",
+			"description": "(Optional) Value of the property specified by the type; if a time field is present, it pertains to that time, otherwise to the eventTime."
+		},
+		"component": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisComponentTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "(Optional) Vector component identifier for measurements with magnitude and direction (e.g. force, pressure); repeat SensorReport per component."
+		},
+		"stringValue": {
+			"type": "string",
+			"description": "(Optional) The String value of the property specified by the type as part of the sensorReport element."
+		},
+		"booleanValue": {
+			"type": "boolean",
+			"description": "(Optional) Similar to stringValue, for Boolean value."
+		},
+		"hexBinaryValue": {
+			"type": "string",
+			"description": "(Optional) Similar to stringValue, for HexBinary value."
+		},
+		"uriValue": {
+			"type": "string",
+			"description": "(Optional) Similar to stringValue, for a URI value."
+		},
+		"minValue": {
+			"type": "number",
+			"description": "(Optional) Minimum quantitative value of the property specified by type, as part of the sensorReport element."
+		},
+		"maxValue": {
+			"type": "number",
+			"description": "(Optional) Similar to minValue, for the maximum quantitative value."
+		},
+		"meanValue": {
+			"type": "number",
+			"description": "(Optional) The arithmetic mean of the values of the property specified by the type as part of the sensorReport element."
+		},
+		"sDev": {
+			"type": "number",
+			"description": "(Optional) Standard deviation of the values of the property specified by type, as part of the sensorReport element."
+		},
+		"percRank": {
+			"type": "number",
+			"description": "(Optional) Percentile rank, signifying the percentage of observations in a frequency distribution that are equal to or lower than it."
+		},
+		"percValue": {
+			"type": "number",
+			"description": "(Optional) The percentile value, at or below which a given percentage of observations may be found."
+		},
+		"uom": {
+			"type": "string",
+			"description": "(Optional) Unit of measure by which the specified value(s) of the property specified by type should be interpreted."
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

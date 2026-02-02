@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaReeferMeasurements",
+	"description": "Measured reefer values.\n\nSource: `reeferMeasurements` schema in the DCSA Event Domain (v3.1.0).\n\nNote: The OpenAPI references value ranges and units from DCSA_DOMAIN; this package models values as numbers and unit fields as strings.",
+	"type": "object",
+	"properties": {
+		"ambientTemperature": {
+			"type": "number",
+			"description": "Ambient temperature."
+		},
+		"temperature": {
+			"type": "number",
+			"description": "Temperature."
+		},
+		"temperatureUnit": {
+			"type": "string",
+			"description": "Temperature unit."
+		},
+		"o2": {
+			"type": "number",
+			"description": "O2 measurement."
+		},
+		"co2": {
+			"type": "number",
+			"description": "CO2 measurement."
+		},
+		"humidity": {
+			"type": "number",
+			"description": "Humidity measurement."
+		},
+		"airExchange": {
+			"type": "number",
+			"description": "Air exchange measurement."
+		},
+		"airExchangeUnit": {
+			"type": "string",
+			"description": "Air exchange unit."
+		}
+	},
+	"additionalProperties": false
+}

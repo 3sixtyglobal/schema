@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaDocumentTypeCodes",
+	"description": "DCSA document type codes.\n\nSource: `documentTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA document type codes.",
+	"type": "string",
+	"enum": [
+		"CBR",
+		"BKG",
+		"SHI",
+		"TRD",
+		"DEI",
+		"DEO",
+		"TRO",
+		"CRO",
+		"ARN",
+		"VGM",
+		"CAS",
+		"CUC",
+		"DGD",
+		"OOG",
+		"CQU",
+		"INV",
+		"HCE",
+		"PCE",
+		"VCE",
+		"FCE",
+		"ICE",
+		"CEA",
+		"CEO"
+	]
+}

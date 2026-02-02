@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisBizTransactionTypes",
+	"description": "Supported EPCIS 2.0 `bizTransaction-type` values.",
+	"type": "string",
+	"enum": [
+		"bol",
+		"cert",
+		"desadv",
+		"inv",
+		"pedigree",
+		"po",
+		"poc",
+		"prodorder",
+		"recadv",
+		"rma",
+		"testprd",
+		"testres",
+		"upevt"
+	]
+}

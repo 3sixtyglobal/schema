@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEquipmentEventTypeCodes",
+	"description": "DCSA equipment event type codes.\n\nSource: `equipmentEventTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA equipment event type codes.",
+	"type": "string",
+	"enum": [
+		"LOAD",
+		"DISC",
+		"GTIN",
+		"GTOT",
+		"STUF",
+		"STRP",
+		"PICK",
+		"AVPU",
+		"DROP",
+		"AVDO",
+		"INSP",
+		"RSEA",
+		"RMVD",
+		"CUSS",
+		"CUSI",
+		"CUSR",
+		"CROS"
+	]
+}

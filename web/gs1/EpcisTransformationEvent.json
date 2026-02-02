@@ -1,0 +1,285 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisTransformationEvent",
+	"description": "EPCIS 2.0 TransformationEvent describing how inputs are transformed into outputs during a business process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "https://ref.gs1.org/epcis"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string",
+						"const": "https://ref.gs1.org/epcis"
+					},
+					"minItems": 1,
+					"maxItems": 1
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"type": "string",
+							"const": "https://ref.gs1.org/epcis"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				},
+				{
+					"type": "array",
+					"minItems": 2,
+					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
+						{
+							"type": "string",
+							"const": "https://ref.gs1.org/epcis"
+						}
+					],
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					}
+				}
+			]
+		},
+		"@id": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@included": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+		},
+		"@graph": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			]
+		},
+		"@nest": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					}
+				}
+			]
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"@reverse": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			}
+		},
+		"@index": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"const": "TransformationEvent",
+			"description": "Fixed to TransformationEvent."
+		},
+		"eventID": {
+			"type": "string",
+			"description": "URI identifier of a specific EPCIS event (alias of id in JSON or XML)."
+		},
+		"certificationInfo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or Organizations mentioned in this Event."
+		},
+		"errorDeclaration": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
+			"description": "Error declaration."
+		},
+		"eventTime": {
+			"type": "string",
+			"description": "The date and time at which the EPCIS Capturing Applications asserts the event occurred."
+		},
+		"eventTimeZoneOffset": {
+			"type": "string",
+			"description": "The time zone offset in effect at the time and place the event occurred, expressed as an offset from UTC."
+		},
+		"recordTime": {
+			"type": "string",
+			"description": "(Optional) The date and time at which this event was recorded by an EPCIS Repository; ignored at capture and present on query results."
+		},
+		"inputEPCList": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "(Optional) Unordered list of one or more EPCs identifying (at the instance level) objects that were inputs to the transformation."
+		},
+		"inputQuantityList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
+			},
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying class-level inputs; may be omitted subject to the EPCIS quantity-list constraints."
+		},
+		"outputEPCList": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "(Optional) Unordered list of one or more EPCs naming (at the instance level) objects that were outputs from the transformation."
+		},
+		"outputQuantityList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
+			},
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying class-level outputs; may be omitted subject to the EPCIS quantity-list constraints."
+		},
+		"transformationID": {
+			"type": "string",
+			"description": "A unique identifier linking TransformationEvents; shared values connect inputs and outputs across those events."
+		},
+		"bizStep": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizStepTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "(Optional) The business step of which this event was a part."
+		},
+		"disposition": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDispositionTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "(Optional) The business condition of the objects associated with the EPCs, presumed to hold true until contradicted by a subsequent event."
+		},
+		"persistentDisposition": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisPersistentDisposition",
+			"description": "Persistent disposition."
+		},
+		"readPoint": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
+			"description": "(Optional) The read point at which the event took place."
+		},
+		"bizLocation": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
+			"description": "(Optional) The business location where the objects associated with the EPCs may be found, until contradicted by a subsequent event."
+		},
+		"bizTransactionList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizTransaction"
+			},
+			"description": "An unordered list of business transactions that define the context of this event."
+		},
+		"sourceList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSource"
+			},
+			"description": "(Optional) Unordered list of Source elements that provide context about the originating endpoint of a business transfer of which this event is a part."
+		},
+		"destinationList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDestination"
+			},
+			"description": "(Optional) Unordered list of Destination elements that provide context about the terminating endpoint of a business transfer of which this event is a part."
+		},
+		"sensorElementList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSensorElement"
+			},
+			"description": "(Optional) Connects event to one or more SensorElements."
+		},
+		"ilmd": {
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisIlmd",
+			"description": "(Optional) Instance/Lot master data that describes the objects created during this event."
+		}
+	},
+	"required": ["@context", "eventTime", "eventTimeZoneOffset", "type"],
+	"additionalProperties": {
+		"anyOf": [
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
+			},
+			{
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
+			},
+			{
+				"type": "array"
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaShipmentEventTypeCodes",
+	"description": "DCSA shipment event type codes.\n\nSource: `shipmentEventTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA shipment event type codes.",
+	"type": "string",
+	"enum": [
+		"RECE",
+		"DRFT",
+		"PENA",
+		"PENU",
+		"PENC",
+		"CONF",
+		"REJE",
+		"APPR",
+		"ISSU",
+		"SURR",
+		"SUBM",
+		"VOID",
+		"REQS",
+		"CMPL",
+		"HOLD",
+		"RELS",
+		"CANC"
+	]
+}

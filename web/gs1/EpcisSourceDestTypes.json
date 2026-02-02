@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSourceDestTypes",
+	"description": "Supported EPCIS 2.0 `source-dest-type` values describing the role of a party or location in a transfer.",
+	"type": "string",
+	"enum": ["owning_party", "possessing_party", "location"]
+}

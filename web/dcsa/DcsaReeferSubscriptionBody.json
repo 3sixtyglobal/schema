@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaReeferSubscriptionBody",
+	"description": "Reefer subscription filters.\n\nSource: `reeferSubscriptionBody` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"carrierBookingReference": {
+			"type": "string",
+			"description": "Carrier booking reference to filter by."
+		},
+		"equipmentReference": {
+			"type": "string",
+			"description": "Equipment reference to filter by."
+		}
+	},
+	"additionalProperties": false
+}

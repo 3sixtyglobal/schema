@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEventTypes",
+	"description": "DCSA event types.\n\nSource: the Event Domain defines `eventType` as the discriminator for the base `event` schema (SHIPMENT/EQUIPMENT/TRANSPORT). The domain also defines dedicated `iotEvent` and `reeferEvent` schemas which constrain the discriminator to IOT and REEFER respectively.   DCSA event types.",
+	"type": "string",
+	"enum": ["SHIPMENT", "TRANSPORT", "EQUIPMENT", "IOT", "REEFER"]
+}
