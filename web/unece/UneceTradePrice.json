@@ -128,10 +128,7 @@
 			"description": "The date, time, date time, or other date time value used as the basis for this trade price."
 		},
 		"basisQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity on which the trade price is based."
 		},
 		"bracketTypeCode": {
@@ -169,17 +166,11 @@
 			"description": "A price that provides a comparison with this trade price."
 		},
 		"customerServicePointQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of customer service points for this trade price."
 		},
 		"dayQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of days related to this trade price."
 		},
 		"deliveryLocation": {
@@ -234,10 +225,7 @@
 			"description": "A monetary value that is the maximum charge in a range of trade prices."
 		},
 		"maximumQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum quantity in a range for which the trade price applies."
 		},
 		"minimumChargeAmount": {
@@ -248,10 +236,7 @@
 			"description": "A monetary value that is the minimum charge in a range of trade prices."
 		},
 		"minimumQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum quantity in a range for which this trade price applies."
 		},
 		"multipleReasonIndicator": {
@@ -278,10 +263,7 @@
 			"description": "A type, expressed as text, for this trade price."
 		},
 		"priceTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePriceTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePriceTypeCodeList",
 			"description": "The code specifying the type of trade price."
 		},
 		"reasonCode": {

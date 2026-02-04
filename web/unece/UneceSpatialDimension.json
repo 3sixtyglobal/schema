@@ -107,17 +107,11 @@
 			"description": "A textual description of this spatial dimension."
 		},
 		"dimensionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDimensionTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDimensionTypeCodeList",
 			"description": "The code specifying the type of spatial dimension, such as thickness, area, or volume."
 		},
 		"heightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the height component of this spatial dimension."
 		},
 		"identifier": {
@@ -125,31 +119,19 @@
 			"description": "The unique identifier of this spatial dimension."
 		},
 		"lengthMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the length component of this spatial dimension."
 		},
 		"linearUnitDiameterMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the diameter component for this spatial dimension."
 		},
 		"linearUnitHeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the height component of this spatial dimension."
 		},
 		"linearUnitLengthMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the length component of this spatial dimension."
 		},
 		"linearUnitWidthMeasure": {
@@ -160,28 +142,19 @@
 			"description": "The measure of the width component of this spatial dimension."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units with these spatial dimensions."
 		},
 		"unitValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType",
 			"description": "The measure of the value of this spatial dimension."
 		},
 		"widthMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the width component of this spatial dimension."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "dimensionTypeCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

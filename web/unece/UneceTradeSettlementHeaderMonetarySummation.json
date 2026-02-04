@@ -152,10 +152,7 @@
 			"description": "A monetary value of the grand total of this trade settlement header monetary summation, to include addition and subtraction of individual summation amounts."
 		},
 		"grandTotalSpecifiedAdjustment": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustment"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustment",
 			"description": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
 		},
 		"grossLineTotalAmount": {

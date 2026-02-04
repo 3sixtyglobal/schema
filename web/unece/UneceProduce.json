@@ -140,7 +140,7 @@
 			"description": "The code specifying the type of crop produce."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "inputSpecifiedBatch", "outputSpecifiedBatch"],
 	"additionalProperties": {
 		"anyOf": [
 			{

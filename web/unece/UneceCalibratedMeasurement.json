@@ -104,10 +104,7 @@
 			"description": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
 		},
 		"toleranceMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the tolerance of this calibrated measurement."
 		},
 		"tolerancePercent": {
@@ -123,10 +120,7 @@
 			"description": "The code specifying a value for this calibrated measurement."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The value of a measure for this calibrated measurement."
 		},
 		"versionId": {

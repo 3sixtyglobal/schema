@@ -130,17 +130,11 @@
 			"description": "The date, time, date time or other date time value for the creation of this financing request document."
 		},
 		"financingRequestDocumentCurrencyCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the currency in this financing request document."
 		},
 		"firstAgentSpecifiedFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution",
 			"description": "The creditor financial institution specified as the first agent in this financing request document."
 		},
 		"groupId": {
@@ -148,10 +142,7 @@
 			"description": "The group identifier in this financing request document."
 		},
 		"groupedTransactionSpecifiedQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of grouped transactions specified in this financing request document."
 		},
 		"groupedTransactionTotalAmount": {
@@ -162,10 +153,7 @@
 			"description": "A total monetary value of grouped transactions in this financing request document."
 		},
 		"intermediarySpecifiedFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution",
 			"description": "The creditor financial institution specified as the intermediary in this financing request document."
 		},
 		"specifiedCancellationStatus": {
@@ -176,10 +164,7 @@
 			"description": "A status of a cancellation specified for this financing request document, such as accepted."
 		},
 		"specifiedRequestingParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRequestingParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceRequestingParty",
 			"description": "The requesting party specified in this financing request document."
 		},
 		"specifiedValidationStatus": {
@@ -190,7 +175,7 @@
 			"description": "The status of the validation specified for this financing request document, such as error."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "groupId", "specifiedRequestingParty"],
 	"additionalProperties": {
 		"anyOf": [
 			{

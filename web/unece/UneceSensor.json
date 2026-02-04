@@ -168,10 +168,7 @@
 			"description": "The code specifying a type of monitoring sensor."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the value for this monitoring sensor."
 		}
 	},

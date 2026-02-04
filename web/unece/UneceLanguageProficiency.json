@@ -100,10 +100,7 @@
 			"description": "A name, expressed as text, of the language for which this language proficiency is defined."
 		},
 		"personalLanguageProficiencyLanguageCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLanguageCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLanguageCodeList",
 			"description": "The code specifying the language for this personal language proficiency."
 		},
 		"personalLanguageProficiencyLanguageId": {

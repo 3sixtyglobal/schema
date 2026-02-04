@@ -156,17 +156,11 @@
 			"description": "A value, expressed as text, for this product characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this product characteristic."
 		},
 		"valueBinaryFile": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBinaryFile",
 			"description": "The value for this product characteristic expressed in a binary file."
 		},
 		"valueDateTime": {
@@ -178,10 +172,7 @@
 			"description": "The value for this product characteristic expressed as an indicator."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a value for this product characteristic."
 		},
 		"valueMethod": {

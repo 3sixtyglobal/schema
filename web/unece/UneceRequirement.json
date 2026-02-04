@@ -111,10 +111,7 @@
 			"description": "The payment trade settlement for this specified requirement."
 		},
 		"specifyingParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party specifying this specified requirement."
 		},
 		"typeCode": {

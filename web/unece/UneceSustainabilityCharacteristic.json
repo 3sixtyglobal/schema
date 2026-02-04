@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableInspectionResult": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResult"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
 			"description": "A specified inspection result applicable to this sustainability characteristic."
 		},
 		"applicableStandard": {
@@ -126,10 +123,7 @@
 			"description": "An identifier of this sustainability characteristic."
 		},
 		"maximumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a maximum value for this sustainability characteristic."
 		},
 		"measurementMethodCode": {
@@ -137,10 +131,7 @@
 			"description": "The code specifying the measurement method for this sustainability characteristic."
 		},
 		"minimumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a minimum value for this sustainability characteristic."
 		},
 		"shareableIndicator": {
@@ -175,17 +166,11 @@
 			"description": "A value, expressed as text, for this sustainability characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this sustainability characteristic."
 		},
 		"valueBinaryFile": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBinaryFile",
 			"description": "A value, expressed in a binary file, for this sustainability characteristic."
 		},
 		"valueDateTime": {
@@ -197,10 +182,7 @@
 			"description": "The value, expressed as an indicator, for this sustainability characteristic."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a value for this sustainability characteristic."
 		},
 		"valueNumeric": {

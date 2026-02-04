@@ -108,10 +108,7 @@
 			"description": "The date, time, date time, or other date time value when this specified guest arrival is expected."
 		},
 		"transportModeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportModeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportModeCodeList",
 			"description": "The code specifying the transport mode of this specified guest arrival."
 		}
 	},

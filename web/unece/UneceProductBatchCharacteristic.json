@@ -134,10 +134,7 @@
 			"description": "A value, expressed as text, for this product batch characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this product batch characteristic."
 		},
 		"valueDateTime": {
@@ -149,10 +146,7 @@
 			"description": "The value, expressed as an indicator, for this product batch characteristic."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a value for this product batch characteristic."
 		},
 		"valueMethod": {

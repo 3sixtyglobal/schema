@@ -112,10 +112,7 @@
 			"description": "The unique identifier for this location used or referenced in trade."
 		},
 		"locationFunctionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
 			"description": "A code specifying the type of trade location."
 		},
 		"name": {
@@ -123,10 +120,7 @@
 			"description": "The name, expressed as text, of this location used or referenced in trade."
 		},
 		"tradeLocationCountryId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
 			"description": "The unique identifier of a country location used or referenced in trade."
 		}
 	},

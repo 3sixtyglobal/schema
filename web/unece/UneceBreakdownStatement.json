@@ -129,10 +129,7 @@
 			"description": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
 		},
 		"defaultCurrencyCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the default currency for this valuation breakdown statement."
 		},
 		"defaultLanguageCode": {
@@ -196,7 +193,7 @@
 			"description": "A code specifying the type of valuation breakdown statement."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "defaultCurrencyCode", "defaultLanguageCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -100,24 +100,15 @@
 			"description": "The identifier of this target issue."
 		},
 		"maximumSpecifiedCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The maximum metric characteristic specified for this target issue."
 		},
 		"minimumSpecifiedCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The minimum metric characteristic specified for this target issue."
 		},
 		"specifiedMetricCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The metric characteristic specified for this target issue."
 		},
 		"typeCode": {

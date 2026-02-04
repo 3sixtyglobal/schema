@@ -112,10 +112,7 @@
 			"description": "The name, expressed as text, of this procuring project."
 		},
 		"netBudgetAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the net budget for this procuring project."
 		},
 		"specifiedInspectionEvent": {
@@ -130,10 +127,7 @@
 			"description": "A code specifying the type of sub works, such as land surveying or information technology consulting, for this procuring project."
 		},
 		"totalBudgetAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project."
 		},
 		"typeCode": {

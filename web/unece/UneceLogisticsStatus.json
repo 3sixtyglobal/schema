@@ -132,17 +132,11 @@
 			"description": "A transport loading event reported for this logistics status."
 		},
 		"logisticsStatusConditionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList",
 			"description": "The code specifying this logistics status condition [UNECE Recommendation 24]."
 		},
 		"logisticsStatusReasonCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList",
 			"description": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
 		},
 		"reason": {
@@ -165,10 +159,7 @@
 			"description": "The sequence number of this logistics status, such as within a status report."
 		},
 		"specifiedLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "A location specified for this logistics status."
 		},
 		"unloadingReportedEvent": {

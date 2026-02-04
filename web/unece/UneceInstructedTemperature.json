@@ -100,17 +100,11 @@
 			"description": "The code specifying the control of this instructed temperature, such as normal or chilled."
 		},
 		"maximumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum value of this instructed temperature."
 		},
 		"minimumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum value of this instructed temperature."
 		}
 	},

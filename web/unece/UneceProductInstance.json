@@ -238,17 +238,11 @@
 			"description": "A location of origin for this supply chain product instance."
 		},
 		"packagingEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The packaging event for this trade product instance."
 		},
 		"processingEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The processing event for this trade product instance."
 		},
 		"productCharacteristic": {
@@ -259,10 +253,7 @@
 			"description": "A product characteristic for this trade product instance."
 		},
 		"productionEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The production event for this trade product instance."
 		},
 		"qualityGradeAdditionalInformationNote": {
@@ -300,10 +291,7 @@
 			"description": "The unique supplier assigned serial identifier for this trade product instance."
 		},
 		"usedPackaging": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging",
 			"description": "Packaging used for this trade product instance."
 		}
 	},

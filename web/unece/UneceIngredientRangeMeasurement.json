@@ -100,10 +100,7 @@
 			"description": "The textual description of this ingredient range measurement."
 		},
 		"lowerLimitActualMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The actual lower limit measure of this ingredient range measurement."
 		},
 		"lowerLimitComparisonOperatorCode": {
@@ -111,17 +108,11 @@
 			"description": "The code specifying the comparison operator for the lower limit of this ingredient range measurement."
 		},
 		"lowerLimitPressureConditionMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the pressure condition at which this lower limit ingredient range measurement is taken."
 		},
 		"upperLimitActualMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The actual upper limit measure of this ingredient range measurement."
 		},
 		"upperLimitComparisonOperatorCode": {
@@ -129,10 +120,7 @@
 			"description": "The code specifying the comparison operator for the upper limit of this ingredient range measurement."
 		},
 		"upperLimitPressureConditionMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the pressure condition at which this upper limit ingredient range measurement is taken."
 		}
 	},

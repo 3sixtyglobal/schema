@@ -96,17 +96,11 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableTransportSettingTemperature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportSettingTemperature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportSettingTemperature",
 			"description": "A transport related temperature setting applicable to these handling instructions."
 		},
 		"deliveryApplicableTemperature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature",
 			"description": "The instructed temperature for delivery applicable to these handling instructions."
 		},
 		"description": {
@@ -142,38 +136,23 @@
 			"description": "A name, expressed as text, of an item included in these handling instructions."
 		},
 		"marketDeliveryApplicableTemperature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature",
 			"description": "The instructed temperature for market delivery applicable to these handling instructions."
 		},
 		"maximumStackabilityApplicableQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
 		},
 		"maximumStackabilityWeightApplicableMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The maximum stackability weight applicable to these handling instructions."
 		},
 		"maximumStorageHumidityApplicableMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum storage humidity applicable to these handling instructions."
 		},
 		"minimumStorageHumidityApplicableMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum storage humidity applicable to these handling instructions."
 		},
 		"procedure": {
@@ -185,14 +164,11 @@
 			"description": "An indication of whether or not a requirement exists for these handling instructions."
 		},
 		"storageApplicableTemperature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInstructedTemperature",
 			"description": "The instructed temperature for storage applicable to these handling instructions."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "handling"],
 	"additionalProperties": {
 		"anyOf": [
 			{

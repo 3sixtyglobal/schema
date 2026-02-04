@@ -100,14 +100,11 @@
 			"description": "The identifier of the object class for this TT event element."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this TT event element."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "objectClassId"],
 	"additionalProperties": {
 		"anyOf": [
 			{

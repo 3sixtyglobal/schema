@@ -118,10 +118,7 @@
 			"description": "A note attached to the laboratory observation results with additional observations and or conclusions."
 		},
 		"authorizationParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty",
 			"description": "The laboratory observation party who authorized this sample observation result."
 		},
 		"emergencyObservationIndicator": {
@@ -199,10 +196,7 @@
 			"description": "An observed value for the characteristic, acquired by observing or measuring according to the specified type of observation for this sample observation result."
 		},
 		"outsourcedLaboratoryParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty",
 			"description": "The outsourced laboratory party who performed this sample observation result."
 		},
 		"outsourcedObservationIndicator": {

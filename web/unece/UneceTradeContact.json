@@ -107,10 +107,7 @@
 			"description": "The name, expressed as text, of the authorized person for this trade contact."
 		},
 		"contactTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceContactTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceContactTypeCodeList",
 			"description": "The code specifying the type of trade contact."
 		},
 		"departmentName": {
@@ -122,10 +119,7 @@
 			"description": "A textual description of this trade contact."
 		},
 		"directTelephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The direct telephone communication information for this trade contact."
 		},
 		"eDICommunication": {
@@ -165,10 +159,7 @@
 			"description": "A job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager."
 		},
 		"mobileTelephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The mobile telephone communication information for this trade contact."
 		},
 		"personId": {
@@ -191,10 +182,7 @@
 			"description": "A responsibility, expressed as text, of this trade contact."
 		},
 		"specifiedContactPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceContactPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceContactPerson",
 			"description": "The contact person specified for this trade contact."
 		},
 		"specifiedNote": {
@@ -216,10 +204,7 @@
 			"description": "Telegraphy (Telex) communication information for this trade contact."
 		},
 		"uRICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "Uniform Resource Identifier (URI) communication information for this trade contact, such as a web or an email address."
 		},
 		"usedCommunication": {

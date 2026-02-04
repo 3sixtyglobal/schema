@@ -135,10 +135,7 @@
 			"description": "The indication of whether or not this value is allowed for this parameter observation objective."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the value for this observation objective parameter."
 		}
 	},

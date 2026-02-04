@@ -107,17 +107,11 @@
 			"description": "A textual description of this specified inspection."
 		},
 		"executionParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party executing this specified inspection."
 		},
 		"executionPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson",
 			"description": "The inspector executing this specified inspection."
 		},
 		"identifier": {
@@ -133,10 +127,7 @@
 			"description": "The indication of whether or not this specified inspection is outsourced."
 		},
 		"reportedInspectionResult": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResult"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
 			"description": "The result reported for this specified inspection."
 		},
 		"specifiedDocument": {
@@ -154,10 +145,7 @@
 			"description": "An inspection event for this specified inspection."
 		},
 		"specifiedInspectionStatus": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus",
 			"description": "The status for this specified inspection."
 		},
 		"typeCode": {

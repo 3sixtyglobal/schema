@@ -111,10 +111,7 @@
 			"description": "A code specifying an object for which this process certificate is applicable."
 		},
 		"applicableProcessCertification": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertification"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceProcessCertification",
 			"description": "A process certification applicable to this process certificate."
 		},
 		"applicableProcessCharacteristic": {

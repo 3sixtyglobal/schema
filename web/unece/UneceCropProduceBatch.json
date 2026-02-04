@@ -120,10 +120,7 @@
 			"description": "The product name, expressed as text, for this crop produce batch."
 		},
 		"sizeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The size, expressed as a measure, for this crop produce batch."
 		},
 		"specifiedAgriculturalCertificate": {
@@ -148,10 +145,7 @@
 			"description": "A crop produce specified for this crop produce batch."
 		},
 		"specifiedQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity specified for this crop produce batch."
 		},
 		"typeCode": {
@@ -159,10 +153,7 @@
 			"description": "The code specifying the type of crop produce batch."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units, expressed as a quantity, for this crop produce batch."
 		}
 	},

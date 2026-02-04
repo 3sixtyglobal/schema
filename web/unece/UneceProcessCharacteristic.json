@@ -122,24 +122,15 @@
 			"description": "An identifier of this process characteristic."
 		},
 		"maximumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum value for this process characteristic."
 		},
 		"measuredAttributeTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasuredAttributeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasuredAttributeCodeList",
 			"description": "The code specifying the type of this process characteristic."
 		},
 		"minimumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum value for this process characteristic."
 		},
 		"processCharacteristicValueCode": {
@@ -151,10 +142,7 @@
 			"description": "A value, expressed as text, for this process characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this process characteristic."
 		},
 		"valueDateTime": {
@@ -166,10 +154,7 @@
 			"description": "The value, expressed as an indicator, for this process characteristic."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the value for this process characteristic."
 		},
 		"valueMethod": {

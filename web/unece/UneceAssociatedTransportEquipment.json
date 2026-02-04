@@ -183,10 +183,7 @@
 			"description": "A measure of the net goods weight of this associated transport equipment."
 		},
 		"registrationCountry": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCountry",
 			"description": "A registration country for this associated transport equipment."
 		},
 		"reportableQuantity": {
@@ -197,10 +194,7 @@
 			"description": "A reportable quantity for this associated transport equipment."
 		},
 		"sealQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "A quantity of seals for this associated piece of transport equipment."
 		},
 		"sealedIndicator": {
@@ -227,10 +221,7 @@
 			"description": "The measure of the tare weight (mass) of this piece of associated transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
 		},
 		"transportEquipmentCategoryCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEquipmentCategoryCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportEquipmentCategoryCodeList",
 			"description": "A code specifying a category of this piece of associated transport equipment."
 		},
 		"transportEquipmentSizeTypeCharacteristicCode": {
@@ -238,10 +229,7 @@
 			"description": "The code specifying the characteristics, i.e. size and type, of this piece of associated transport equipment."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this type of associated transport equipment."
 		},
 		"usedCapacityCode": {
@@ -249,10 +237,7 @@
 			"description": "The code specifying the used capacity, such as full or empty, of this associated piece of transport equipment."
 		},
 		"verifiedGrossWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "A measure of the verified gross weight (mass) of this piece of associated transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
 		},
 		"weightUnitNetWeightMeasure": {

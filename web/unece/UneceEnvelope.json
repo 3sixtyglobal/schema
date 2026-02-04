@@ -100,17 +100,11 @@
 			"description": "The customization identifier for this XHE envelope."
 		},
 		"includedPayload": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePayload"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePayload",
 			"description": "The payload included in this XHE envelope."
 		},
 		"metadataDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceXHEDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceXHEDocument",
 			"description": "The document metadata for this XHE envelope."
 		},
 		"payloadIncludedIndicator": {
@@ -130,7 +124,7 @@
 			"description": "The version identifier for this XHE envelope."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "metadataDocument"],
 	"additionalProperties": {
 		"anyOf": [
 			{

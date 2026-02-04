@@ -144,17 +144,11 @@
 			"description": "A transport service provided by this location party."
 		},
 		"specifiedLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "A logistics location or place specified for this party."
 		},
 		"specifiedTransportPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportPerson",
 			"description": "A transport related person specified for this location party."
 		},
 		"telephoneCommunication": {
@@ -166,10 +160,7 @@
 			"description": "A code specifying the type of location party that is independent of its role."
 		},
 		"uRICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
 		}
 	},

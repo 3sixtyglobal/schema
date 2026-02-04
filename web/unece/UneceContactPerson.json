@@ -165,10 +165,7 @@
 			"description": "A role, expressed as text, for this contact person."
 		},
 		"specifiedBirthAddress": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBirthAddress"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBirthAddress",
 			"description": "The birth address specified for this contact person."
 		},
 		"specifiedCommunication": {
@@ -179,17 +176,11 @@
 			"description": "A universal communication specified for this contact person."
 		},
 		"specifiedEmployerIdentity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceEmployerIdentity"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceEmployerIdentity",
 			"description": "An employer identity specified for this contact person."
 		},
 		"specifiedPersonIdentity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePersonIdentity"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePersonIdentity",
 			"description": "The person identity specified for this contact person."
 		},
 		"specifiedTaxRegistration": {
@@ -208,10 +199,7 @@
 			"description": "The textual expression of the title associated with this contact person, such as Doctor."
 		},
 		"websiteURICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "A website Uniform Resource Identifier (URI) communication for this contact person."
 		}
 	},

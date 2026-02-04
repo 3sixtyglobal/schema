@@ -204,10 +204,7 @@
 			"description": "An output product applicable to this facility production unit."
 		},
 		"physicalLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "A physical location referenced for this facility production unit."
 		},
 		"relatedParty": {

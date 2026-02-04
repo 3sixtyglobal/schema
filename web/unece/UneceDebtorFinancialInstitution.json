@@ -192,10 +192,7 @@
 			"description": "The unique Spanish Domestic Interbanking Code identifier as assigned by the Centro de Cooperacion Interbancaria (CCI) for this debtor financial institution."
 		},
 		"subDivisionFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution",
 			"description": "The branch financial institution for this debtor financial institution."
 		},
 		"swissBCId": {
@@ -207,7 +204,7 @@
 			"description": "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this debtor financial institution."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "bICId", "cHIPSUniversalId"],
 	"additionalProperties": {
 		"anyOf": [
 			{

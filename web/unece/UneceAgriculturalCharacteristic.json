@@ -116,10 +116,7 @@
 			"description": "The value, expressed as text, for this agricultural characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this agricultural characteristic."
 		},
 		"valueDateTime": {
@@ -131,10 +128,7 @@
 			"description": "The value, expressed as an indicator, for this agricultural characteristic."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of a value for this agricultural characteristic."
 		},
 		"valueMethod": {

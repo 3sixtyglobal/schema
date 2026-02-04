@@ -118,10 +118,7 @@
 			"description": "A context scope for this XHE document."
 		},
 		"senderXHEParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceXHEParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceXHEParty",
 			"description": "The sender party for this XHE document."
 		},
 		"testIndicator": {
@@ -133,7 +130,7 @@
 			"description": "The UUID (Universally Unique IDentifier) of this XHE document."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "recipientXHEParty"],
 	"additionalProperties": {
 		"anyOf": [
 			{

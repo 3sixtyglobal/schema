@@ -131,10 +131,7 @@
 			"description": "A type, expressed as text, for this transport route."
 		},
 		"scheduledPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The specified period during which this transport route is scheduled."
 		},
 		"securityLevelCode": {
@@ -142,10 +139,7 @@
 			"description": "A code specifying a security level for this transport route."
 		},
 		"specifiedTransportMovement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
 			"description": "The logistics transport movement specified for this transport route."
 		},
 		"transportMeans": {
@@ -153,10 +147,7 @@
 			"description": "A means of transport, expressed as text, for this transport route."
 		},
 		"transportRouteStatusCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList",
 			"description": "The code specifying a status for a transport route, such as planned or actual."
 		}
 	},

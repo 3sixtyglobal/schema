@@ -104,10 +104,7 @@
 			"description": "The date, time, date time, or other date time value of the occurrence of this animal holding event."
 		},
 		"relatedTTLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "A Track and Trace (TT) location related to this animal holding event."
 		},
 		"relatedTechnicalCharacteristic": {

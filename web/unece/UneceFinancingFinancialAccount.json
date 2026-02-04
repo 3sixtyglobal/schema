@@ -108,10 +108,7 @@
 			"description": "The code specifying the type of financing financial account."
 		},
 		"financingFinancialAccountCurrencyCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the currency of this financing financial account."
 		},
 		"iBANId": {

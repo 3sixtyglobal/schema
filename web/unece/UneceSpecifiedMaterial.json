@@ -124,10 +124,7 @@
 			"description": "A product characteristic applicable to this specified material."
 		},
 		"applicableQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity applicable to this specified material."
 		},
 		"applicableSpecifiedCertificate": {
@@ -193,10 +190,7 @@
 			"description": "A manufacturer party for this specified material."
 		},
 		"massMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the mass of this specified material."
 		},
 		"massRatioMeasure": {
@@ -251,10 +245,7 @@
 			"description": "A measure of the volume of this specified material expressed as a ratio to another volume, such as the total volume."
 		},
 		"weightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the weight of this specified material."
 		}
 	},

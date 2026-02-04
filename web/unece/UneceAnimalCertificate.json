@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableAnimalCertification": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertification"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAnimalCertification",
 			"description": "An animal certification applicable to this animal certificate."
 		},
 		"applicableAssertion": {

@@ -103,10 +103,7 @@
 			"description": "A deposit value specified in these returnable asset instructions."
 		},
 		"depositValueValidityPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
 		},
 		"materialId": {

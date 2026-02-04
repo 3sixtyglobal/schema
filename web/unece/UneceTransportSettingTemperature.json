@@ -100,17 +100,11 @@
 			"description": "Informational instructions for achieving, maintaining, using or responding to this transport setting temperature."
 		},
 		"maximumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius."
 		},
 		"minimumValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius."
 		},
 		"temperatureTypeCode": {
@@ -118,10 +112,7 @@
 			"description": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
 		},
 		"temperatureUnitValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTemperatureUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTemperatureUnitMeasureType",
 			"description": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
 		}
 	},

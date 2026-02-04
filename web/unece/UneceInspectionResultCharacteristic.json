@@ -125,10 +125,7 @@
 			"description": "The measured value, expressed as text, for this inspection result characteristic."
 		},
 		"measuredValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measured value for this inspection result characteristic."
 		},
 		"qualityResultCode": {

@@ -100,10 +100,7 @@
 			"description": "The name, expressed as text, of the department to which this laboratory observation contact belongs."
 		},
 		"emailCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The email address of this laboratory observation contact."
 		},
 		"faxCommunication": {
@@ -118,10 +115,7 @@
 			"description": "The identifier of this laboratory observation contact."
 		},
 		"mobileTelephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The mobile phone number of this laboratory observation contact."
 		},
 		"personName": {

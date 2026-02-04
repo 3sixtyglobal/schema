@@ -123,31 +123,19 @@
 			"description": "Information, expressed as text, for this document authentication."
 		},
 		"issueLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location of issue of this document authentication."
 		},
 		"issueLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The issue location for this document authentication."
 		},
 		"locationProviderParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party providing the location for this document authentication."
 		},
 		"providerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party providing this document authentication."
 		},
 		"representationTypeCode": {
@@ -175,7 +163,7 @@
 			"description": "The unique identifier of a transport means for this document authentication."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "includedClause"],
 	"additionalProperties": {
 		"anyOf": [
 			{

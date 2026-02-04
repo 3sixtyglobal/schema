@@ -119,52 +119,31 @@
 			"description": "A circle included in this specified geographical feature."
 		},
 		"includedGeographicalGrid": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalGrid"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalGrid",
 			"description": "The geographical grid included in this geographical feature."
 		},
 		"includedGeographicalLine": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalLine"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalLine",
 			"description": "The geographical line included in this geographical feature."
 		},
 		"includedGeographicalMultiCurve": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiCurve"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiCurve",
 			"description": "The geographical multi-curve included in this geographical feature."
 		},
 		"includedGeographicalMultiPoint": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiPoint"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiPoint",
 			"description": "The geographical multi-point included in this geographical feature."
 		},
 		"includedGeographicalMultiSurface": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiSurface"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiSurface",
 			"description": "The geographical multi-surface included in this geographical feature."
 		},
 		"includedGeographicalPoint": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint",
 			"description": "The geographical point included in this geographical feature."
 		},
 		"includedGeographicalSurface": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalSurface"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalSurface",
 			"description": "The geographical surface included in this geographical feature."
 		},
 		"includedPolygon": {
@@ -176,17 +155,11 @@
 			"description": "The name, expressed as text, of this specified geographical feature."
 		},
 		"usedCoordinateReferenceSystem": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
 			"description": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
 		},
 		"usedCoordinateSourceSystem": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem",
 			"description": "The geographical coordinate source system used for this specified geographical feature."
 		}
 	},

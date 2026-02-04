@@ -121,31 +121,19 @@
 			"description": "A monetary value used as the basis on which this trade related tax, levy or duty is calculated."
 		},
 		"basisQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity used as the basis for calculating the amount of this trade related tax, levy or duty."
 		},
 		"buyerDeductibleTaxSpecifiedAccountingAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount",
 			"description": "The buyer deductible tax specified accounting account for this trade related tax, levy or duty."
 		},
 		"buyerNonDeductibleTaxSpecifiedAccountingAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount",
 			"description": "The buyer non-deductible tax specified accounting account for this trade related tax, levy or duty."
 		},
 		"buyerRepayableTaxSpecifiedAccountingAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount",
 			"description": "The buyer repayable tax specified accounting account for this trade related tax, levy or duty."
 		},
 		"calculatedAmount": {
@@ -176,10 +164,7 @@
 			"description": "The indication of whether or not this trade related tax, levy or duty is a customs duty."
 		},
 		"customsDutyRegimeTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCustomsDutyRegimeTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCustomsDutyRegimeTypeCodeList",
 			"description": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
 		},
 		"customsProcedureGuaranteeCode": {
@@ -283,10 +268,7 @@
 			"description": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
 		},
 		"selfAssessedBasisQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
 		},
 		"selfAssessedCalculatedAmount": {
@@ -294,24 +276,15 @@
 			"description": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
 		},
 		"sellerPayableTaxSpecifiedAccountingAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount",
 			"description": "The seller payable tax specified accounting account for this trade related tax, levy or duty."
 		},
 		"sellerRefundableTaxSpecifiedAccountingAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount",
 			"description": "The seller refundable tax specified accounting account for this trade related tax, levy or duty."
 		},
 		"serviceSupplyCountry": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCountry",
 			"description": "The country or country sub-division where a service was supplied for this trade tax."
 		},
 		"specifiedAccountingAccount": {
@@ -350,10 +323,7 @@
 			"description": "The type, expressed as text, of this trade related tax, levy or duty."
 		},
 		"taxTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTaxTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTaxTypeCodeList",
 			"description": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
 		},
 		"timeReferenceDueDateTypeCode": {
@@ -369,10 +339,7 @@
 			"description": "A code specifying the function of this trade tax."
 		},
 		"tradeTaxPaymentMethodCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList",
 			"description": "The code specifying the payment method for this trade related tax, levy or duty."
 		},
 		"unitBasisAmount": {

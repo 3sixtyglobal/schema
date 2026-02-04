@@ -100,10 +100,7 @@
 			"description": "The direct position list associated with this geographical multi-point."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical multi-point."
 		},
 		"memberGeographicalPoint": {
@@ -114,7 +111,7 @@
 			"description": "A geographical point member of this geographical multi-point feature."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "associatedGeographicalObjectCharacteristic"],
 	"additionalProperties": {
 		"anyOf": [
 			{

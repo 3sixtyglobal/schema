@@ -122,10 +122,7 @@
 			"description": "The unique identifier for this work item dimension."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measured value for this work item dimension."
 		},
 		"workItemDimensionTypeCode": {
@@ -133,7 +130,7 @@
 			"description": "The code specifying the type of this work item dimension."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "workItemDimensionTypeCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

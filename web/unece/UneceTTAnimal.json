@@ -96,17 +96,11 @@
 			"description": "JSON-LD Type."
 		},
 		"holderResponsibleParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "The holder responsible party for this TT animal."
 		},
 		"relatedTTLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "A location related to this TT animal."
 		},
 		"speciesTypeCode": {
@@ -167,7 +161,7 @@
 			"description": "A species specified for this TT animal."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "holderResponsibleParty", "speciesTypeCode", "specifiedAnimalIdentity"],
 	"additionalProperties": {
 		"anyOf": [
 			{

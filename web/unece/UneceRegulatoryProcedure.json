@@ -104,10 +104,7 @@
 			"description": "A code specifying a reason for an amendment to this cross-border regulatory procedure."
 		},
 		"annualQuotaQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The annual quota quantity under this cross-border regulatory procedure."
 		},
 		"applicableCurrencyExchange": {
@@ -160,10 +157,7 @@
 			"description": "The indication of whether or not the start date of a control has been confirmed for this cross-border regulatory procedure."
 		},
 		"crossBorderRegulatoryProcedurePaymentMethodCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList",
 			"description": "The code specifying the payment method for this cross-border regulatory procedure, such as by deferred payment method."
 		},
 		"crossBorderRegulatoryProcedureTypeCode": {
@@ -362,10 +356,7 @@
 			"description": "A quantity to be deducted from the tariff quantity for this cross-border regulatory procedure."
 		},
 		"tariffQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "A tariff quantity for this cross-border regulatory procedure."
 		},
 		"totalChargeAmount": {
@@ -409,17 +400,11 @@
 			"description": "A treatment event for this cross-border regulatory procedure."
 		},
 		"usedToDateQuotaQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity of the quota used to date under this cross-border regulatory procedure."
 		},
 		"valuationBasisAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the basis on which the valuation is, or will be, calculated for this cross-border regulatory procedure."
 		}
 	},

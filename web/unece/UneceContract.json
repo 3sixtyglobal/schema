@@ -100,10 +100,7 @@
 			"description": "The date, time, date time, or other date time value of automatic extension for this trade contract."
 		},
 		"automaticExtensionDurationMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the duration of the automatic extension for this trade contract."
 		},
 		"description": {

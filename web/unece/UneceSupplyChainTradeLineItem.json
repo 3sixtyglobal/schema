@@ -246,10 +246,7 @@
 			"description": "A required product applicable for this supply chain trade line item."
 		},
 		"requisitionerSpecifiedProduct": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeProduct",
 			"description": "The product specified by the requisitioner for this supply chain trade line item."
 		},
 		"sequenceNumeric": {
@@ -257,17 +254,11 @@
 			"description": "A sequence number for this supply chain trade line item."
 		},
 		"specifiedLineTradeAgreement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLineTradeAgreement"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLineTradeAgreement",
 			"description": "The line trade agreement specified for this supply chain trade line item."
 		},
 		"specifiedLineTradeDelivery": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLineTradeDelivery"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLineTradeDelivery",
 			"description": "A line trade delivery specified for this supply chain trade line item."
 		},
 		"specifiedLineTradeSettlement": {
@@ -354,7 +345,7 @@
 			"description": "The code used as an extension to the type code for further specifying a type of supply chain trade line item."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "additionalId"],
 	"additionalProperties": {
 		"anyOf": [
 			{

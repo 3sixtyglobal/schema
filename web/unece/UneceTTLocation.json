@@ -111,10 +111,7 @@
 			"description": "The identifier for this TT location."
 		},
 		"locationFunctionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
 			"description": "The code specifying the type of TT location."
 		},
 		"name": {
@@ -122,10 +119,7 @@
 			"description": "A name, expressed as text, of this TT location."
 		},
 		"responsibleTTParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "The party responsible for this TT location."
 		},
 		"specifiedAnimalHoldingEvent": {
@@ -136,10 +130,7 @@
 			"description": "An animal holding event specified for this TT location."
 		},
 		"specifiedGeographicalArea": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalArea"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalArea",
 			"description": "The geographical area specified for this TT location."
 		},
 		"specifiedTTAnimal": {

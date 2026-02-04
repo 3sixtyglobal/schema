@@ -104,10 +104,7 @@
 			"description": "A textual description of this experience item voucher."
 		},
 		"faceAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "A monetary value shown on the face of this experience item voucher."
 		},
 		"identifier": {

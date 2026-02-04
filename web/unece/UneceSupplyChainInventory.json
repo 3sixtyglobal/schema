@@ -104,10 +104,7 @@
 			"description": "The indication of whether or not this supply chain inventory is available."
 		},
 		"averageDemandQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The average demand quantity for this supply chain inventory."
 		},
 		"averageDurationDateTime": {
@@ -147,31 +144,19 @@
 			"description": "A product included in this supply chain inventory."
 		},
 		"maximumStockLevelMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum stock level for this supply chain inventory."
 		},
 		"maximumStockQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum stock quantity in this CI supply chain inventory."
 		},
 		"minimumStockLevelMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum stock level for this supply chain inventory."
 		},
 		"minimumStockQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum stock quantity in this CI supply chain inventory."
 		},
 		"plannedStockCalculationDateTime": {
@@ -179,10 +164,7 @@
 			"description": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
 		},
 		"plannedStockQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The planned stock quantity for this supply chain inventory."
 		},
 		"remarkNote": {
@@ -193,10 +175,7 @@
 			"description": "A note containing a remark for this supply chain inventory."
 		},
 		"specifiedLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The location specified for this supply chain inventory."
 		},
 		"specifiedSupplyChainEvent": {
@@ -218,10 +197,7 @@
 			"description": "The code specifying a status for this supply chain inventory."
 		},
 		"stockQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity of stock in this supply chain inventory."
 		}
 	},

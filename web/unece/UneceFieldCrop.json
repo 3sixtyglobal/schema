@@ -138,10 +138,7 @@
 			"description": "The textual description for this field crop."
 		},
 		"grownPlot": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePlot"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePlot",
 			"description": "The plot where this field crop is grown."
 		},
 		"grownPreviousCrop": {
@@ -201,7 +198,7 @@
 			"description": "A field crop mixture constituent specified for this field crop."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "grownPlot", "specifiedCropMixtureConstituent"],
 	"additionalProperties": {
 		"anyOf": [
 			{

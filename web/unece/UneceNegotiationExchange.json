@@ -130,7 +130,7 @@
 			"description": "The code specifying the type of electronic negotiation exchange, such as prerequisite, offer, suggestion or withdrawal."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "sessionId"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -100,10 +100,7 @@
 			"description": "The unique identifier for this subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
 		},
 		"locationFunctionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
 			"description": "The code specifying the type of subordinate location."
 		},
 		"name": {
@@ -111,17 +108,11 @@
 			"description": "The name, expressed as text, of this subordinate location."
 		},
 		"physicalGeographicalCoordinate": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
 			"description": "Physical geographical coordinate information for this subordinate location."
 		},
 		"subordinateSubordinateSubordinateLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSubordinateSubordinateLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSubordinateSubordinateLocation",
 			"description": "The location subordinate to this subordinate location."
 		}
 	},

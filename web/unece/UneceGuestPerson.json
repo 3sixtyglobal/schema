@@ -132,10 +132,7 @@
 			"description": "A textual description of this guest person."
 		},
 		"durationUnitAgeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the age of this guest person."
 		},
 		"genderCode": {
@@ -259,7 +256,7 @@
 			"description": "A universal communication used by this guest."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "passportId"],
 	"additionalProperties": {
 		"anyOf": [
 			{

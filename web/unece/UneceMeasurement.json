@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"actualMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "An actual measure for this measurement."
 		},
 		"comparisonOperatorCode": {
@@ -107,10 +104,7 @@
 			"description": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
 		},
 		"conditionMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a condition for this measurement."
 		},
 		"description": {

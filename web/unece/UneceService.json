@@ -228,10 +228,7 @@
 			"description": "The code specifying the payment arrangement for this transport service."
 		},
 		"transportServicePriorityCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportServicePriorityCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportServicePriorityCodeList",
 			"description": "The code specifying the priority of this transport service."
 		},
 		"transportServiceRequirementCode": {
@@ -242,10 +239,7 @@
 			"description": "A code specifying a service requirement for this transport service."
 		},
 		"uRICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The Uniform Resource Identifier (URI) communication for this transport service, such as its website or email address."
 		}
 	},

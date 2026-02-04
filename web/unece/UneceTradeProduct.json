@@ -121,10 +121,7 @@
 			"description": "An assessment applicable to this trade product."
 		},
 		"applicableDangerousGoods": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods",
 			"description": "Transport dangerous goods information applicable for this trade product."
 		},
 		"applicableDeclaration": {
@@ -388,10 +385,7 @@
 			"description": "A consumer gender description, expressed as text, for this trade product."
 		},
 		"contentUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of content units of this trade product."
 		},
 		"contentVariableMeasureIndicator": {
@@ -445,10 +439,7 @@
 			"description": "A distributor trade party for this trade product."
 		},
 		"drainedNetWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the drained net weight (mass) of this trade product."
 		},
 		"ePCId": {
@@ -497,24 +488,15 @@
 			"description": "A final assembly country for this trade product."
 		},
 		"fromDeliveryLifeSpanMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of delivery."
 		},
 		"fromOpeningLifeSpanMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of opening."
 		},
 		"fromProductionLifeSpanMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of production."
 		},
 		"functionDescription": {
@@ -564,17 +546,11 @@
 			"description": "An included product referenced from this trade product."
 		},
 		"includedProductContentUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of content units of products included in this trade product."
 		},
 		"includedProductTypeQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of different product types included at the next lower level in this trade product."
 		},
 		"individualProductInstance": {
@@ -596,17 +572,11 @@
 			"description": "An information note for this trade product."
 		},
 		"innerPackContentUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of content units in an inner pack of this trade product."
 		},
 		"innerPackQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of inner packs of this trade product."
 		},
 		"inspectionReferenceDocument": {
@@ -637,10 +607,7 @@
 			"description": "A product line, such as a fashion product line, expressed as text, for this trade product."
 		},
 		"linearDimension": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "Linear spatial dimensions of this trade product."
 		},
 		"mSDSReferenceDocument": {
@@ -651,10 +618,7 @@
 			"description": "A Material Safety Data Sheet (MSDS) document referenced for this product."
 		},
 		"mSRPPrice": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradePrice"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradePrice",
 			"description": "The MSRP (Manufacturer Suggested Retail Price) for this trade product."
 		},
 		"manufactureCountry": {
@@ -936,10 +900,7 @@
 			"description": "The code specifying the species, such as for a plant or animal, of this trade product."
 		},
 		"specifiedAssertion": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
 			"description": "A sustainability assertion specified for this trade product."
 		},
 		"specifiedColour": {
@@ -1006,10 +967,7 @@
 			"description": "A supply chain event specified for this trade product."
 		},
 		"specifiedSupplyPlan": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyPlan"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyPlan",
 			"description": "The specification of the delivery quantities and delivery date/time values in a supply plan for this trade product."
 		},
 		"statusCode": {

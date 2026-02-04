@@ -107,17 +107,11 @@
 			"description": "The code specifying the category of this subordinate trade line item."
 		},
 		"goodsTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList",
 			"description": "The code specifying the type of subordinate trade line item."
 		},
 		"goodsTypeExtensionTypeExtensionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList",
 			"description": "A code used as an extension to the type code for further specifying this subordinate trade line item."
 		},
 		"identifier": {
@@ -140,17 +134,11 @@
 			"description": "The code specifying the response reason of this subordinate trade line item."
 		},
 		"specifiedProduct": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProduct"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceProduct",
 			"description": "The referenced product specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeAgreement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeAgreement"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeAgreement",
 			"description": "The trade agreement specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeDelivery": {

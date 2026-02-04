@@ -139,10 +139,7 @@
 			"description": "The identifier of the country sub-division for this referenced location."
 		},
 		"definedCoordinateReferenceSystem": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
 			"description": "The Coordinate System (CS) engineering coordinate reference system defined for this referenced location."
 		},
 		"description": {
@@ -162,10 +159,7 @@
 			"description": "The polygon included for this referenced location."
 		},
 		"locationCountryId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
 			"description": "The identifier of the country for this referenced location."
 		},
 		"locationReferenceTypeCode": {
@@ -181,17 +175,11 @@
 			"description": "A name, expressed as text, of this referenced location."
 		},
 		"physicalGeographicalFeature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature",
 			"description": "The physical geographical feature specified for this referenced location."
 		},
 		"physicalGeographicalPoint": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint",
 			"description": "The physical geographical point specified for this location."
 		},
 		"postalAddress": {
@@ -209,10 +197,7 @@
 			"description": "A facility production unit related to this referenced location."
 		},
 		"specifiedAssertion": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
 			"description": "A sustainability assertion specified for this referenced location."
 		},
 		"specifiedFacility": {

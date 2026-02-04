@@ -148,21 +148,15 @@
 			"description": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
 		},
 		"usedCoordinateReferenceSystem": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
 			"description": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
 		},
 		"usedCoordinateSourceSystem": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem",
 			"description": "The geographical coordinate source system used for this geographical coordinate."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "latitudeMeasure", "longitudeMeasure"],
 	"additionalProperties": {
 		"anyOf": [
 			{

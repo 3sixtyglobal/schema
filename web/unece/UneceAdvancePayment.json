@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"identifiedPaymentTerms": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentTerms"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentTerms",
 			"description": "The payment terms identified for this advance payment."
 		},
 		"identifier": {
@@ -114,17 +111,11 @@
 			"description": "A tax included in this advance payment."
 		},
 		"invoiceSpecifiedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "An invoice document referenced by this advance payment."
 		},
 		"paidAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the funds or securities paid in this advance payment."
 		},
 		"receivedDateTime": {

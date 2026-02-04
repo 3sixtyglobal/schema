@@ -100,10 +100,7 @@
 			"description": "The identifier for this geographical coordinate source system."
 		},
 		"signalSourceAvailableQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity of signal source available for this geographical coordinate source system."
 		},
 		"sourceTypeCode": {
@@ -111,17 +108,11 @@
 			"description": "The code specifying a type of source for this geographical coordinate source system."
 		},
 		"toleranceMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the tolerance of this geographical coordinate source system."
 		},
 		"usedSignalSourceQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity of the used signal source of this geographical coordinate source system."
 		}
 	},

@@ -111,10 +111,7 @@
 			"description": "The indication of whether or not this OEM equipment has a polling capability."
 		},
 		"pollingRateMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the polling rate for this OEM equipment."
 		},
 		"typeCode": {

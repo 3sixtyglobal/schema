@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical surface."
 		},
 		"includedPolygon": {
@@ -107,7 +104,7 @@
 			"description": "The polygon included in this geographical surface."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "associatedGeographicalObjectCharacteristic"],
 	"additionalProperties": {
 		"anyOf": [
 			{

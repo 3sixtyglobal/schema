@@ -103,10 +103,7 @@
 			"description": "A referenced standard applicable to this technical characteristic."
 		},
 		"capacityValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The capacity, expressed as a measure, such as a production volume, a surface area or a number of animals, for this technical characteristic."
 		},
 		"certificationCode": {
@@ -179,10 +176,7 @@
 			"description": "A value, expressed as text, for this technical characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this technical characteristic."
 		},
 		"valueDateTime": {
@@ -194,10 +188,7 @@
 			"description": "The value, expressed as an indicator, for this technical characteristic."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the value of this technical characteristic."
 		},
 		"valueNumeric": {

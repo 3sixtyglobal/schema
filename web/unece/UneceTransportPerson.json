@@ -197,10 +197,7 @@
 			"description": "Landline telephone communication information for this transport person."
 		},
 		"mobileTelephoneCommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "Mobile telephone communication information for this transport person."
 		},
 		"nationalityCountry": {

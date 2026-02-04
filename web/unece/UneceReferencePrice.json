@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"basisQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "A quantity on which the reference price is based."
 		},
 		"chargeAmount": {

@@ -181,10 +181,7 @@
 			"description": "A code specifying the type of trade payment terms."
 		},
 		"settlementPeriodMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
 		},
 		"tradePaymentTermsDirectDebitMandateId": {

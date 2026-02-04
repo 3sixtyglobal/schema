@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical grid."
 		},
 		"associatedLocation": {
@@ -149,7 +146,15 @@
 			"description": "A crop plot specified for this geographical grid."
 		}
 	},
-	"required": ["type"],
+	"required": [
+		"type",
+		"associatedGeographicalObjectCharacteristic",
+		"axisName",
+		"cell",
+		"highLimit",
+		"lowLimit",
+		"originAssociatedDirectPositionList"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

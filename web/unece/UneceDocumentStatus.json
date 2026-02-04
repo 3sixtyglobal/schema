@@ -104,10 +104,7 @@
 			"description": "The textual description of this document status."
 		},
 		"documentStatusConditionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
 			"description": "The code specifying the condition of this document status."
 		},
 		"documentStatusProcessConditionCode": {

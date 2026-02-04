@@ -211,10 +211,7 @@
 			"description": "A proprietary identity specified for this creditor financial institution."
 		},
 		"subDivisionFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution",
 			"description": "The branch financial institution for this creditor financial institution."
 		},
 		"swissBCId": {
@@ -226,7 +223,7 @@
 			"description": "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this creditor financial institution."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "bICId", "cHIPSUniversalId", "specifiedProprietaryIdentity"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -122,10 +122,7 @@
 			"description": "The measured value, expressed as text, for this sample observation result characteristic."
 		},
 		"measuredValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measured value, expressed as a measure, for this sample observation result characteristic."
 		},
 		"methodParameterId": {

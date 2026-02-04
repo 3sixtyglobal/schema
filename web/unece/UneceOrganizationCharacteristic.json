@@ -134,10 +134,7 @@
 			"description": "A value, expressed as text, for this organization characteristic."
 		},
 		"valueAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this organization characteristic."
 		},
 		"valueDateTime": {
@@ -149,10 +146,7 @@
 			"description": "The value for this organization characteristic expressed as an indicator."
 		},
 		"valueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of a value for this organization characteristic."
 		},
 		"valueMethod": {

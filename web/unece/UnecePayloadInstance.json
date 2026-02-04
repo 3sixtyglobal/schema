@@ -104,17 +104,11 @@
 			"description": "The customization identifier for this XHE payload instance."
 		},
 		"decryptionKeyReference": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceXHEReference"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the decryption key for this XHE payload instance."
 		},
 		"decryptionReference": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceXHEReference"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the decryption for this XHE payload instance."
 		},
 		"description": {
@@ -122,10 +116,7 @@
 			"description": "A textual description of this XHE payload instance."
 		},
 		"documentTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the document type for this XHE payload instance."
 		},
 		"encryptedIndicator": {
@@ -153,10 +144,7 @@
 			"description": "The identifier of this XHE payload instance."
 		},
 		"payloadReference": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceXHEReference"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the payload for this XHE payload instance."
 		},
 		"profileExecutionId": {
@@ -183,7 +171,7 @@
 			"description": "The validation version identifier for this XHE payload instance."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "encryptedIndicator"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableInspectionResult": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResult"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
 			"description": "The specified inspection result applicable to this sustainability inspection."
 		},
 		"applicableStandard": {
@@ -128,17 +125,11 @@
 			"description": "A textual description of this sustainability inspection."
 		},
 		"executionParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party responsible for the execution of this sustainability inspection."
 		},
 		"executionPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson",
 			"description": "The inspector responsible for the execution of this sustainability inspection."
 		},
 		"identifier": {
@@ -168,10 +159,7 @@
 			"description": "A specified inspection event for this sustainability inspection."
 		},
 		"specifiedInspectionStatus": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus",
 			"description": "The inspection status specified for this sustainability inspection."
 		},
 		"typeCode": {

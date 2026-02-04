@@ -118,17 +118,11 @@
 			"description": "The rate of currency exchange in this exchanged declaration."
 		},
 		"customsValueSpecifiedAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value specified for customs purposes in this exchanged declaration."
 		},
 		"declarantAgentParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party acting as an agent for the declarant for this exchanged declaration."
 		},
 		"declarantParty": {
@@ -136,17 +130,11 @@
 			"description": "The trade party acting as the declarant for this exchanged declaration."
 		},
 		"documentTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of this exchanged declaration."
 		},
 		"grossWeightSpecifiedMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The gross weight measure specified in this exchanged declaration."
 		},
 		"identifier": {
@@ -184,31 +172,19 @@
 			"description": "The code specifying a specific circumstance in this exchanged declaration."
 		},
 		"statisticalValueSpecifiedAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value specified for statistical purposes in this exchanged declaration."
 		},
 		"submissionLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The submission location for this exchanged declaration."
 		},
 		"totalInvoiceSpecifiedAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The total invoice monetary value specified in this exchanged declaration."
 		},
 		"totalPackageSpecifiedQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total package quantity specified in this exchanged declaration."
 		},
 		"versionId": {

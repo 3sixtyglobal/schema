@@ -91,6 +91,7 @@
 			"description": "The operator of the constraint."
 		},
 		"rightOperand": {
+			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -117,13 +118,55 @@
 					},
 					"required": ["@id"],
 					"additionalProperties": false
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"type": "object",
+								"properties": {
+									"@value": {
+										"type": "string"
+									},
+									"@type": {
+										"type": "string"
+									}
+								},
+								"required": ["@value"],
+								"additionalProperties": false
+							},
+							{
+								"type": "object",
+								"properties": {
+									"@id": {
+										"type": "string"
+									}
+								},
+								"required": ["@id"],
+								"additionalProperties": false
+							}
+						]
+					}
 				}
-			],
-			"description": "The right operand of the constraint. value with optional"
+			]
 		},
 		"rightOperandReference": {
-			"type": "string",
-			"description": "Reference to the right operand."
+			"description": "Object or array data type",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			]
 		},
 		"dataType": {
 			"type": "string",

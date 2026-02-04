@@ -160,17 +160,11 @@
 			"description": "A location, expressed as text, specified for this experience product."
 		},
 		"maximumUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum number of units of this experience product."
 		},
 		"minimumUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum number of units of this experience product."
 		},
 		"name": {

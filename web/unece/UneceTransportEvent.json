@@ -148,10 +148,7 @@
 			"description": "A geographical feature associated with this transport event."
 		},
 		"cargoFacilityRelatedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The location of a cargo facility related to this transport event."
 		},
 		"certifyingParty": {
@@ -162,10 +159,7 @@
 			"description": "A certifying party for this transport event."
 		},
 		"conveyanceFacilityRelatedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "A location of a conveyance facility related to this transport event."
 		},
 		"delayOccurrencePeriod": {
@@ -218,10 +212,7 @@
 			"description": "The indication of whether or not this transport event is a maritime anchorage."
 		},
 		"occurrenceLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The logistics location where this transport event occurs."
 		},
 		"occurrencePeriod": {
@@ -265,17 +256,11 @@
 			"description": "An observation related to this transport event."
 		},
 		"relatedRoute": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportRoute"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportRoute",
 			"description": "The route related to this transport event."
 		},
 		"reportedConditionTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList",
 			"description": "The code specifying the type of reported condition for this transport event."
 		},
 		"reportingIOTDevice": {
@@ -352,21 +337,24 @@
 			"description": "The code specifying the type of transport event."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units for this transport event."
 		},
 		"unitValueMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType",
 			"description": "The measure of a value for this transport event."
 		}
 	},
-	"required": ["type"],
+	"required": [
+		"type",
+		"actualOccurrenceDateTime",
+		"estimatedOccurrenceDateTime",
+		"estimatedTransportMeansArrivalOccurrenceDateTime",
+		"reasonTypeCode",
+		"reportedConditionTypeCode",
+		"requestedOccurrenceDateTime",
+		"scheduledOccurrenceDateTime"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this specified polygon."
 		},
 		"associatedLocation": {
@@ -121,7 +118,7 @@
 			"description": "An interior linear ring specified for this polygon."
 		}
 	},
-	"required": ["type", "exteriorLinearRing"],
+	"required": ["type", "associatedGeographicalObjectCharacteristic", "exteriorLinearRing"],
 	"additionalProperties": {
 		"anyOf": [
 			{

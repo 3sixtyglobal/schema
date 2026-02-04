@@ -100,10 +100,7 @@
 			"description": "The additional name of a street, expressed as text, for this trade address."
 		},
 		"addressTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAddressTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAddressTypeCodeList",
 			"description": "A code specifying the type of this trade address, such as business address or home address."
 		},
 		"attentionOf": {

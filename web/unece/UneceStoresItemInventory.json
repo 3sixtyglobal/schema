@@ -111,10 +111,7 @@
 			"description": "A sequence number for this stores inventory item."
 		},
 		"specifiedLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "A location specified for this stores inventory item."
 		},
 		"typeCode": {

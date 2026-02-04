@@ -110,10 +110,7 @@
 			"description": "A specified agricultural application applied to this crop plot."
 		},
 		"areaMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The area measure for this crop plot."
 		},
 		"endDateTime": {
@@ -132,10 +129,7 @@
 			"description": "The identifier for this crop plot."
 		},
 		"includedPlot": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePlot"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePlot",
 			"description": "A crop plot included in this crop plot."
 		},
 		"regulatoryOrganicIndicator": {

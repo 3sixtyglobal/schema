@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableHazardousMaterial": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceHazardousMaterial"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceHazardousMaterial",
 			"description": "An applicable toxicological hazardous material for this distinct chemical."
 		},
 		"applicableProductCharacteristic": {
@@ -133,10 +130,7 @@
 			"description": "An identifier of this distinct chemical."
 		},
 		"massMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the mass of this distinct chemical."
 		},
 		"massRatioMeasure": {
@@ -154,10 +148,7 @@
 			"description": "The measure of the molecular weight (in grams) for this distinct chemical."
 		},
 		"presenceMeasurement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceIngredientRangeMeasurement"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceIngredientRangeMeasurement",
 			"description": "A measurement of the range of the presence of an ingredient in this distinct chemical."
 		},
 		"presencePercent": {
@@ -198,10 +189,7 @@
 			"description": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
 		},
 		"weightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the weight of this distinct chemical."
 		}
 	},

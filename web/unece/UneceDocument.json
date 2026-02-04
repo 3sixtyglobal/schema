@@ -170,10 +170,7 @@
 			"description": "The code specifying the status of a line in this referenced document."
 		},
 		"documentStatusCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
 			"description": "The code specifying the status for this referenced document."
 		},
 		"documentType": {
@@ -181,10 +178,7 @@
 			"description": "A type, expressed as text, for this referenced document."
 		},
 		"documentTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of referenced document."
 		},
 		"effectiveSpecifiedPeriod": {
@@ -226,10 +220,7 @@
 			"description": "The formatted date or date time for the issuance of this referenced document."
 		},
 		"issueLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The logistics related location where this referenced document has been issued."
 		},
 		"issuerAssignedId": {
@@ -263,24 +254,15 @@
 			"description": "The unique identifier of a line in this referenced document."
 		},
 		"lineItemQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of line items in this referenced document."
 		},
 		"lodgementLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The logistics related location where this referenced document has been lodged."
 		},
 		"messageFunctionPurposeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMessageFunctionCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMessageFunctionCodeList",
 			"description": "The code specifying the purpose of this referenced document."
 		},
 		"name": {
@@ -331,17 +313,11 @@
 			"description": "The reference date or date time for this referenced document."
 		},
 		"referenceRelationshipTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
 			"description": "The code specifying the type of relationship between this referenced document and another artefact, such as a replacement of an original document."
 		},
 		"referenceTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
 			"description": "The code specifying the reference type of this referenced document."
 		},
 		"remarks": {
@@ -369,10 +345,7 @@
 			"description": "A section name, expressed as text, for this referenced document."
 		},
 		"senderTradeParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade related party that sends this referenced document."
 		},
 		"signatoryAuthentication": {
@@ -418,7 +391,14 @@
 			"description": "The identifier for the version of this referenced document."
 		}
 	},
-	"required": ["type"],
+	"required": [
+		"type",
+		"issuerAssignedId",
+		"previousRevisionId",
+		"recipientTradeParty",
+		"referenceRelationshipTypeCode",
+		"signatoryAuthentication"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

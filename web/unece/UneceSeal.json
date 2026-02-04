@@ -108,10 +108,7 @@
 			"description": "The code specifying the type of logistics seal."
 		},
 		"logisticsSealingPartyRoleCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSealingPartyRoleCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSealingPartyRoleCodeList",
 			"description": "The code specifying the role of the party responsible for the sealing of this logistics seal."
 		},
 		"maximumId": {

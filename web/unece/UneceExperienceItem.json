@@ -121,10 +121,7 @@
 			"description": "An available product for this specified experience item."
 		},
 		"availableUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units available for this specified experience item."
 		},
 		"brandName": {
@@ -178,17 +175,11 @@
 			"description": "A monetary value of a lower price limit of this specified experience item."
 		},
 		"maximumGuestQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum number of guests for this specified experience item."
 		},
 		"minimumGuestQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum number of guests for this specified experience item."
 		},
 		"name": {
@@ -230,10 +221,7 @@
 			"description": "The code specifying the type of theme for this specified experience item."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units for this specified experience item."
 		},
 		"upperPriceLimitAmount": {

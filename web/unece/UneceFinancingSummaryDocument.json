@@ -114,24 +114,15 @@
 			"description": "A financed total monetary value in this financing summary document."
 		},
 		"financedTransactionSpecifiedQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of financed transactions specified in this financing summary document."
 		},
 		"lineOfCreditSpecifiedFinancialAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancingFinancialAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceFinancingFinancialAccount",
 			"description": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
 		},
 		"relatedBooking": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBooking"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBooking",
 			"description": "The financial booking related to this financing summary document."
 		},
 		"specifiedCreditorFinancialAccount": {

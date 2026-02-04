@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"accountingDebitCreditStatusDirectionCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingDebitCreditStatusCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingDebitCreditStatusCodeList",
 			"description": "The code specifying whether the financial adjustment must be subtracted or added."
 		},
 		"actualAmount": {
@@ -118,10 +115,7 @@
 			"description": "The actual quantity added or subtracted as a result of this financial adjustment."
 		},
 		"claimRelatedParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The claim related party for this financial adjustment."
 		},
 		"financialAdjustmentReasonCode": {
@@ -129,10 +123,7 @@
 			"description": "A code specifying a reason for this financial adjustment."
 		},
 		"invoiceReferenceDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The invoice document referenced for this financial adjustment."
 		},
 		"reason": {

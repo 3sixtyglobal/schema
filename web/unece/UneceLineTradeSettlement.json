@@ -180,10 +180,7 @@
 			"description": "The payer reference, expressed as text, for this line trade settlement."
 		},
 		"paymentAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "A monetary value of a payment for this line trade settlement."
 		},
 		"paymentReference": {
@@ -191,10 +188,7 @@
 			"description": "A payment reference, expressed as text, for this line trade settlement."
 		},
 		"priceCurrencyCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the price currency for this line trade settlement."
 		},
 		"purchaseSpecifiedAccountingAccount": {
@@ -279,10 +273,7 @@
 			"description": "A tax subtotal calculated for this line trade settlement."
 		},
 		"totalAdjustmentAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the total adjustment for this line trade settlement."
 		},
 		"tradeTransaction": {

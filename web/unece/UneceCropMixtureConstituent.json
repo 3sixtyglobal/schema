@@ -100,14 +100,11 @@
 			"description": "The percent of the crop proportion of this field crop mixture constituent."
 		},
 		"specifiedBotanicalCrop": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBotanicalCrop"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceBotanicalCrop",
 			"description": "The botanical crop specified for this field crop mixture constituent."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "cropProportionPercent", "specifiedBotanicalCrop"],
 	"additionalProperties": {
 		"anyOf": [
 			{

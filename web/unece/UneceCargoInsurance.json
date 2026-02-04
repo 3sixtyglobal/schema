@@ -108,10 +108,7 @@
 			"description": "The textual description of the coverage of this transport cargo insurance."
 		},
 		"coverageParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The coverage party for this transport cargo insurance."
 		}
 	},

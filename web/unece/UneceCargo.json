@@ -96,24 +96,15 @@
 			"description": "JSON-LD Type."
 		},
 		"cargoCategoryTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCargoCategoryCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCargoCategoryCodeList",
 			"description": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
 		},
 		"cargoCommodityCategoryStatisticalClassificationCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList",
 			"description": "The code specifying a statistical classification for this transport cargo."
 		},
 		"cargoOperationalCategoryCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCargoOperationalCategoryCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCargoOperationalCategoryCodeList",
 			"description": "The code specifying the operational category for this transport cargo, such as obnoxious or military."
 		},
 		"identification": {

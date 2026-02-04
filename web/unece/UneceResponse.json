@@ -112,10 +112,7 @@
 			"description": "The unique identifier for the query to which this response refers."
 		},
 		"responseTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceResponseTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceResponseTypeCodeList",
 			"description": "The code specifying the type of this specification response."
 		}
 	},

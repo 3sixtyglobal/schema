@@ -100,10 +100,7 @@
 			"description": "The code specifying the action for this TT object event."
 		},
 		"businessRelatedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "The business location related to this TT object event."
 		},
 		"businessStepCode": {
@@ -111,10 +108,7 @@
 			"description": "The code specifying the business step for this TT object event."
 		},
 		"destinationRelatedParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "A destination related party for this TT object event."
 		},
 		"dispositionCode": {
@@ -141,10 +135,7 @@
 			"description": "A quantity event element specified for this TT object event."
 		},
 		"readPointRelatedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "The read point related location of this TT object event."
 		},
 		"recordedDateTime": {
@@ -159,10 +150,7 @@
 			"description": "A certification related to this TT object event."
 		},
 		"sourceRelatedParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "A source related party for this TT object event."
 		},
 		"specifiedError": {
@@ -180,7 +168,7 @@
 			"description": "A trade transaction specified for this TT object event."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "recordedDateTime"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -129,10 +129,7 @@
 			"description": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
 		},
 		"latestReceivedGeographicalCoordinate": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
 			"description": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
 		},
 		"latestReceivedSignalDateTime": {
@@ -155,10 +152,7 @@
 			"description": "The code specifying the operational status, such as broken, stolen, unpaired, inactive of this monitoring IOT device."
 		},
 		"operatorParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
 		},
 		"ownerParty": {
@@ -177,10 +171,7 @@
 			"description": "The code specifying a type of power source for this monitoring IOT device."
 		},
 		"providerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The provider party for this monitoring IOT device."
 		},
 		"relatedEvent": {

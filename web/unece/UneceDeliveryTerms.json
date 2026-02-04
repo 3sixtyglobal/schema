@@ -104,10 +104,7 @@
 			"description": "The code specifying the delivery discontinuation for this trade delivery terms."
 		},
 		"deliveryTermsDeliveryTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDeliveryTermsCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDeliveryTermsCodeList",
 			"description": "The code specifying the type of delivery for these trade delivery terms."
 		},
 		"deliveryTermsFunctionCode": {
@@ -123,10 +120,7 @@
 			"description": "The indication of whether or not these trade delivery terms allow a partial delivery."
 		},
 		"relevantLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeLocation",
 			"description": "The trade location relevant for these trade delivery terms."
 		},
 		"riskResponsibilityCode": {

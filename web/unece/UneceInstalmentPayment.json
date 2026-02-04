@@ -100,10 +100,7 @@
 			"description": "The due date for this instalment payment."
 		},
 		"paidAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "A monetary value paid or to be paid for this instalment payment."
 		},
 		"sequenceId": {
@@ -111,10 +108,7 @@
 			"description": "The sequence identifier for this instalment payment."
 		},
 		"specifiedFinancingRequestResultDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancingRequestResultDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceFinancingRequestResultDocument",
 			"description": "The financing request result document specified for this instalment payment."
 		}
 	},

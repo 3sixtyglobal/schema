@@ -108,10 +108,7 @@
 			"description": "The identifier for this payment financial account."
 		},
 		"paymentFinancialAccountCurrencyCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the currency of this payment financial account."
 		},
 		"typeCode": {

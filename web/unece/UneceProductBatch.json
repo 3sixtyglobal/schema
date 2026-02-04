@@ -255,10 +255,7 @@
 			"description": "A manufacturer assigned identifier of this product batch."
 		},
 		"massMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the mass of this product batch."
 		},
 		"massRatioMeasure": {
@@ -269,17 +266,11 @@
 			"description": "A mass measure of this product batch expressed as a ratio to another mass, such as the total mass."
 		},
 		"maximumSizeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the maximum size of this product batch."
 		},
 		"minimumSizeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "A measure of the minimum size of this product batch."
 		},
 		"name": {
@@ -307,10 +298,7 @@
 			"description": "A seller assigned identifier of this product batch."
 		},
 		"sizeMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The size, expressed as a measure, for this product batch."
 		},
 		"specifiedAgriculturalCertificate": {
@@ -328,10 +316,7 @@
 			"description": "An agricultural characteristic specified for this product batch."
 		},
 		"specifiedAssertion": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
 			"description": "A sustainability assertion specified for this product batch."
 		},
 		"specifiedDocument": {
@@ -399,17 +384,11 @@
 			"description": "The code specifying the type of product batch."
 		},
 		"unitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units, expressed as a quantity, for this product batch."
 		},
 		"weightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The weight, expressed as a measure, for this product batch."
 		}
 	},

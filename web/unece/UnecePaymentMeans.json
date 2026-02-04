@@ -153,10 +153,7 @@
 			"description": "Information, expressed as text, for this trade settlement payment means."
 		},
 		"paidAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value to be paid by this trade settlement payment means."
 		},
 		"payeePartyFinancialAccount": {
@@ -200,10 +197,7 @@
 			"description": "The type of trade settlement payment means, expressed as text."
 		},
 		"paymentMeansTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansCodeList",
 			"description": "The code specifying the type of trade settlement payment means, such as cash or check."
 		},
 		"paymentMethodCode": {

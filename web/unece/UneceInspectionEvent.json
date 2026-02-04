@@ -104,10 +104,7 @@
 			"description": "The date, time, date time, or other date time value of the occurrence of this inspection event."
 		},
 		"occurrenceLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location where this inspection event will occur or has occurred."
 		},
 		"typeCode": {

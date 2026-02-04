@@ -108,17 +108,11 @@
 			"description": "The date, time, date time, or other date time value of the issuance of this TT exchanged document."
 		},
 		"receiverSpecifiedParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "The receiving party specified for this TT exchanged document."
 		},
 		"senderSpecifiedParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
 			"description": "The sending party specified for this TT exchanged document."
 		},
 		"tTExchangedDocumentPurposeCode": {
@@ -134,7 +128,7 @@
 			"description": "The code specifying the type of TT exchanged document."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "receiverSpecifiedParty", "senderSpecifiedParty"],
 	"additionalProperties": {
 		"anyOf": [
 			{

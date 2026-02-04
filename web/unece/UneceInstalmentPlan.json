@@ -103,7 +103,7 @@
 			"description": "An instalment payment specified for this instalment plan."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "specifiedInstalmentPayment"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableSpecifiedTemperature": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedTemperature"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedTemperature",
 			"description": "The specified temperature applicable for this applied chemical treatment."
 		},
 		"appliedPeriod": {
@@ -129,17 +126,11 @@
 			"description": "The date time of the occurrence of this applied chemical treatment."
 		},
 		"resultAuthentication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAuthentication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The authentication of the results of this applied chemical treatment."
 		},
 		"resultNote": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceNote",
 			"description": "The note describing the results of this applied chemical treatment."
 		},
 		"unitChemicalConcentrationMeasure": {

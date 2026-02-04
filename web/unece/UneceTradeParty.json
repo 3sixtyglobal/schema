@@ -314,10 +314,7 @@
 			"description": "The email communication for this trade party."
 		},
 		"endPointURICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The communication address of the end point URI for this trade party."
 		},
 		"faxCommunication": {
@@ -340,10 +337,7 @@
 			"description": "A unique identifier of this trade party."
 		},
 		"issuedNotificationReferencedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "A referenced notification document issued to this trade party."
 		},
 		"logoAssociatedBinaryFile": {
@@ -354,10 +348,7 @@
 			"description": "A file containing a specified binary representation of a logo associated with this trade party."
 		},
 		"logoReferencedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The referenced logo document for this trade party."
 		},
 		"name": {
@@ -365,10 +356,7 @@
 			"description": "A name, expressed as text, for this trade party."
 		},
 		"ownedFinancialAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount",
 			"description": "The creditor financial account owned by this trade party."
 		},
 		"partyRoleCode": {
@@ -440,10 +428,7 @@
 			"description": "An experience item requested for or by this trade party."
 		},
 		"requestedNotificationReferencedDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "A referenced notification document requested by this trade party."
 		},
 		"reservedExperienceItem": {
@@ -469,31 +454,19 @@
 			"description": "An experience item wish list searched for or by this trade party."
 		},
 		"specifiedAssertion": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
 			"description": "The sustainability assertion specified for this trade party."
 		},
 		"specifiedAuthoritativeSignatoryPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAuthoritativeSignatoryPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAuthoritativeSignatoryPerson",
 			"description": "A person specified to sign on behalf of this trade party."
 		},
 		"specifiedContactPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceContactPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceContactPerson",
 			"description": "A contact person specified for this trade party."
 		},
 		"specifiedCooperatingOrganization": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCooperatingOrganization"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCooperatingOrganization",
 			"description": "A cooperating organization specified for this trade party."
 		},
 		"specifiedCreditorFinancialInstitution": {
@@ -525,24 +498,15 @@
 			"description": "A governmental registration specified for this trade party."
 		},
 		"specifiedGuestPerson": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGuestPerson"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceGuestPerson",
 			"description": "A guest person specified by this trade party."
 		},
 		"specifiedLegalOrganization": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLegalOrganization"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLegalOrganization",
 			"description": "The legally constituted organization specified for this trade party."
 		},
 		"specifiedLogisticsLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "A logistics related location or place specified for this trade party."
 		},
 		"specifiedProprietaryIdentity": {
@@ -592,14 +556,11 @@
 			"description": "A code specifying a language for this trade party."
 		},
 		"uRICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "specifiedFinancialIdentity", "specifiedProprietaryIdentity"],
 	"additionalProperties": {
 		"anyOf": [
 			{
