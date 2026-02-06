@@ -73,12 +73,35 @@
 				},
 				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "Reference to the asset collection this asset is part of. Used to identify an AssetCollection that this Asset is a member of."
 		},
 		"hasPolicy": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Reference to the policy that governs this asset. Used to identify the Policy that governs this Asset."
 		}
 	},

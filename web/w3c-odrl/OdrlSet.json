@@ -135,6 +135,25 @@
 				},
 				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+				},
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "The assigner of the policy. Applies to all rules unless overridden at rule level."
@@ -146,6 +165,25 @@
 				},
 				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+				},
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "The assignee of the policy. Applies to all rules unless overridden at rule level."
@@ -159,6 +197,9 @@
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 				},
 				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+				},
+				{
 					"type": "array",
 					"items": {
 						"anyOf": [
@@ -167,6 +208,9 @@
 							},
 							{
 								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 							}
 						]
 					}
@@ -223,24 +267,45 @@
 			"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
 		},
 		"permission": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
-			},
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+					}
+				}
+			],
 			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present."
 		},
 		"prohibition": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
-			},
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+					}
+				}
+			],
 			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present."
 		},
 		"obligation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
-			},
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+					}
+				}
+			],
 			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present."
 		}
 	},

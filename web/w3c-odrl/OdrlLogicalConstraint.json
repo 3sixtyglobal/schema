@@ -76,88 +76,20 @@
 			"description": "Optional unique identifier for the logical constraint. Must be an IRI."
 		},
 		"and": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"@id": {
-								"type": "string"
-							}
-						},
-						"required": ["@id"],
-						"additionalProperties": false
-					}
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "AND operator - all constraints must be satisfied."
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "AND operator - all constraints must be satisfied. Exactly one logical operator must be present."
 		},
 		"or": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"@id": {
-								"type": "string"
-							}
-						},
-						"required": ["@id"],
-						"additionalProperties": false
-					}
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "OR operator - at least one constraint must be satisfied."
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "OR operator - at least one constraint must be satisfied. Exactly one logical operator must be present."
 		},
 		"xone": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"@id": {
-								"type": "string"
-							}
-						},
-						"required": ["@id"],
-						"additionalProperties": false
-					}
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "XOR operator - exactly one constraint must be satisfied."
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "XOR operator - exactly one constraint must be satisfied. Exactly one logical operator must be present."
 		},
 		"andSequence": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"@id": {
-								"type": "string"
-							}
-						},
-						"required": ["@id"],
-						"additionalProperties": false
-					}
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "AND Sequence operator - all constraints must be satisfied in order."
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "AND Sequence operator - all constraints must be satisfied in order. Exactly one logical operator must be present."
 		}
 	},
 	"additionalProperties": {

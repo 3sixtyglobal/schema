@@ -83,16 +83,49 @@
 				},
 				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "Reference to the party collection this party is part of. Used to identify a PartyCollection that a Party entity is a member of."
 		},
 		"assigneeOf": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Reference to a policy where this party is an assignee. When assigneeOf is asserted, the Party MUST be inferred to undertake the assignee functional role of all the Rules of that Policy."
 		},
 		"assignerOf": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Reference to a policy where this party is an assigner. When assignerOf is asserted, the Party MUST be inferred to undertake the assigner functional role of all the Rules of that Policy."
 		}
 	},

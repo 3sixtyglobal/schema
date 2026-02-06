@@ -83,16 +83,49 @@
 				},
 				{
 					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "Reference to the party collection this party is part of. Used to identify a PartyCollection that a Party entity is a member of."
 		},
 		"assigneeOf": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Reference to a policy where this party is an assignee. When assigneeOf is asserted, the Party MUST be inferred to undertake the assignee functional role of all the Rules of that Policy."
 		},
 		"assignerOf": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Reference to a policy where this party is an assigner. When assignerOf is asserted, the Party MUST be inferred to undertake the assigner functional role of all the Rules of that Policy."
 		},
 		"source": {
@@ -100,10 +133,27 @@
 			"description": "Reference to the source of the party collection. Used to identify the origin or location of the collection."
 		},
 		"refinement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-			},
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+				},
+				{
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
+							}
+						]
+					}
+				}
+			],
 			"description": "Refinements applied to the party collection. Used to specify constraints that apply to all members of the collection."
 		}
 	},
