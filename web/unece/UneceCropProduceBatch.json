@@ -149,7 +149,14 @@
 			"description": "The quantity specified for this crop produce batch."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCropProduceBatchTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of crop produce batch."
 		},
 		"unitQuantity": {

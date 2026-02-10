@@ -112,7 +112,14 @@
 			"description": "A code specifying the status of this supply chain schedule."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceScheduleTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of supply chain schedule."
 		}
 	},

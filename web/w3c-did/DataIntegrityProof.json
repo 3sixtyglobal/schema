@@ -8,7 +8,7 @@
 			"anyOf": [
 				{
 					"type": "string",
-					"const": "https://www.w3.org/ns/credentials/v2"
+					"const": "https://w3id.org/security/data-integrity/v2"
 				},
 				{
 					"type": "array",
@@ -16,7 +16,7 @@
 					"prefixItems": [
 						{
 							"type": "string",
-							"const": "https://www.w3.org/ns/credentials/v2"
+							"const": "https://w3id.org/security/data-integrity/v2"
 						}
 					],
 					"items": {

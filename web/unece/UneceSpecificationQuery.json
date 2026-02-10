@@ -108,7 +108,14 @@
 			"description": "The unique identifier for this specification query."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecificationQueryTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specification query."
 		}
 	},

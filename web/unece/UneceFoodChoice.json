@@ -108,7 +108,14 @@
 			"description": "A restriction, expressed as text, for this guest food choice."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceFoodChoiceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of guest food choice."
 		}
 	},

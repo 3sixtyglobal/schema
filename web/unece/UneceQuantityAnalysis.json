@@ -145,7 +145,14 @@
 			"description": "A code specifying a primary classification value for this work item quantity analysis."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceQuantityAnalysisTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of work item quantity analysis."
 		}
 	},

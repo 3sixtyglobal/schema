@@ -43,9 +43,9 @@
 			"type": "number",
 			"description": "The size of the data in the blob. json-ld type:schema:Integer"
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the data in the blob. json-ld namespace:twin-common"
+			"description": "The integrity of the data in the blob. json-ld namespace:twin-common"
 		},
 		"encodingFormat": {
 			"type": "string",
@@ -72,6 +72,6 @@
 			"description": "The blob in base64 format, included if the includeContent flag was set in the request. json-ld type:schema:Text"
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "blobSize", "blobHash"],
+	"required": ["@context", "type", "id", "dateCreated", "blobSize", "integrity"],
 	"additionalProperties": false
 }

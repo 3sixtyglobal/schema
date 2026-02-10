@@ -112,7 +112,14 @@
 			"description": "The code specifying the currency of this payment financial account."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentFinancialAccountTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of payment financial account."
 		}
 	},

@@ -172,7 +172,14 @@
 			"description": "The indication of whether or not this product colour is a test."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceColourTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product colour."
 		},
 		"usedLightSourceCode": {

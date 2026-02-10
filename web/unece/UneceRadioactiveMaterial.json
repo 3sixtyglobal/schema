@@ -139,7 +139,14 @@
 			"description": "The transport index number of this radioactive material."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceRadioactiveMaterialTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this radioactive material."
 		}
 	},

@@ -176,7 +176,14 @@
 			"description": "A time value of an occurrence of this supply chain event."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of supply chain event."
 		},
 		"unitQuantity": {

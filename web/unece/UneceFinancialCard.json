@@ -146,7 +146,14 @@
 			"description": "The indication of whether or not this trade settlement financial card has a microchip."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceFinancialCardTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this trade settlement financial card, such as debit or credit."
 		},
 		"validFromDateTime": {

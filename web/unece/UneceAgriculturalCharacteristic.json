@@ -108,7 +108,14 @@
 			"description": "The identifier for this agricultural characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of agricultural characteristic."
 		},
 		"value": {

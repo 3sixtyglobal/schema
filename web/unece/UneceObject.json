@@ -116,7 +116,14 @@
 			"description": "A remark, expressed as text, for this specified object."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceObjectTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified object."
 		}
 	},

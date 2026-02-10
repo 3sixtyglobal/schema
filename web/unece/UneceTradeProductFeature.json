@@ -119,7 +119,14 @@
 			"description": "A name, expressed as text, for this trade product feature."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceTradeProductFeatureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of trade product feature."
 		}
 	},

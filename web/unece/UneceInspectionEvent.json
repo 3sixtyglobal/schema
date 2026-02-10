@@ -108,7 +108,14 @@
 			"description": "The referenced location where this inspection event will occur or has occurred."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceInspectionEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of inspection for this event."
 		}
 	},

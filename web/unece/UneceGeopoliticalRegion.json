@@ -111,7 +111,14 @@
 			"description": "The name, expressed as text, of this trade geopolitical region."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of trade geopolitical region."
 		}
 	},

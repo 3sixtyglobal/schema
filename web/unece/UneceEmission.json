@@ -107,7 +107,14 @@
 			"description": "A measure of the pollution calculated for this emission."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceEmissionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this calculated emission."
 		},
 		"weightUnitWeightMeasure": {

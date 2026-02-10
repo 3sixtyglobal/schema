@@ -185,7 +185,14 @@
 			"description": "A textual description of the content for this product print."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePrintTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product print."
 		}
 	},

@@ -146,7 +146,14 @@
 			"description": "A payment financial account specified for this payment financial institution."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentFinancialInstitutionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of payment financial institution."
 		}
 	},

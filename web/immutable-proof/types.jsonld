@@ -8,6 +8,7 @@
 		"id": "@id",
 		"type": "@type",
 		"ImmutableProof": "twin-immutable-proof:ImmutableProof",
+		"ImmutableProofReceipt": "twin-immutable-proof:ImmutableProofReceipt",
 		"ImmutableProofVerification": "twin-immutable-proof:ImmutableProofVerification",
 		"failure": {
 			"@id": "twin-immutable-proof:failure",
@@ -16,20 +17,8 @@
 		"immutableReceipt": {
 			"@id": "twin-immutable-proof:immutableReceipt"
 		},
-		"proof": {
-			"@id": "twin-immutable-proof:proof"
-		},
-		"proofObjectHash": {
-			"@id": "twin-immutable-proof:proofObjectHash",
-			"@type": "schema:Text"
-		},
-		"proofObjectId": {
-			"@id": "twin-immutable-proof:proofObjectId",
-			"@type": "schema:identifier"
-		},
 		"verifiableStorageId": {
-			"@id": "twin-immutable-proof:verifiableStorageId",
-			"@type": "schema:identifier"
+			"@id": "twin-immutable-proof:verifiableStorageId"
 		}
 	}
 }

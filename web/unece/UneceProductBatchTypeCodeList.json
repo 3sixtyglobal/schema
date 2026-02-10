@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceProductBatchTypeCodeList",
+	"description": "Values for UneceProductBatch typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:applicableBatch",
+		"unece:componentBatch",
+		"unece:includedBatch",
+		"unece:inputApplicableBatch",
+		"unece:outputApplicableBatch",
+		"unece:relatedBatch",
+		"unece:specifiedProductBatch",
+		"unece:substituteApplicableBatch",
+		"unece:substitutedApplicableBatch"
+	]
+}

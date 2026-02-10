@@ -220,7 +220,14 @@
 			"description": "A logistics package specified for this supply chain trade transaction."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransactionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of supply chain trade transaction."
 		}
 	},

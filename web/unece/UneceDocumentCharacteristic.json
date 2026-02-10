@@ -116,7 +116,14 @@
 			"description": "A name, expressed as text, for this document characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceDocumentCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of document characteristic."
 		},
 		"value": {

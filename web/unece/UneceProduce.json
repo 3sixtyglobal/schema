@@ -136,7 +136,14 @@
 			"description": "The code specifying the subordinate type of crop produce, such as product or by-product."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProduceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of crop produce."
 		}
 	},

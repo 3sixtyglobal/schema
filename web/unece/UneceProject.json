@@ -131,7 +131,14 @@
 			"description": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProjectTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of procuring project, such as goods, works and service."
 		},
 		"worksTypeCode": {

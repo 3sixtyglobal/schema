@@ -156,7 +156,14 @@
 			"description": "Telephone communication information for this location party."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLocationPartyTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of location party that is independent of its role."
 		},
 		"uRICommunication": {

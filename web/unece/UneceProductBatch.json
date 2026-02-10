@@ -380,7 +380,14 @@
 			"description": "The code specifying the status of this product batch."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductBatchTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product batch."
 		},
 		"unitQuantity": {

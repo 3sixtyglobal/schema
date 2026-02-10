@@ -124,7 +124,14 @@
 			"description": "An issuing company name, expressed as text, for this digital method used for payment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceDigitalMethodTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of digital method used for payment."
 		},
 		"validFromDateTime": {

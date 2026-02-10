@@ -123,7 +123,14 @@
 			"description": "A measure of a value of the status for this specified parameter."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameterTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of parameter."
 		},
 		"value": {

@@ -126,7 +126,14 @@
 			"description": "The code specifying the value of this organization characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceOrganizationCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of organization characteristic."
 		},
 		"value": {

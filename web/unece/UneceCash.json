@@ -108,7 +108,14 @@
 			"description": "A textual description of cash used for this payment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCashTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of cash used for payment."
 		}
 	},

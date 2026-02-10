@@ -115,7 +115,14 @@
 			"description": "The measure of the polling rate for this OEM equipment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceEquipmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of OEM equipment."
 		}
 	},

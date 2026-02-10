@@ -217,7 +217,14 @@
 			"description": "The code specifying the subordinate type for this production device."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductionDeviceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of production device."
 		}
 	},

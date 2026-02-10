@@ -149,7 +149,14 @@
 			"description": "The status for this specified inspection."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspectionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of inspection."
 		}
 	},

@@ -127,7 +127,14 @@
 			"description": "The code specifying a reason for this communication event."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCommunicationEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of communication event."
 		},
 		"unitQuantity": {

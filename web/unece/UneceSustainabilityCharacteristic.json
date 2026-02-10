@@ -158,7 +158,14 @@
 			"description": "The code specifying the value of this sustainability characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of sustainability characteristic."
 		},
 		"value": {

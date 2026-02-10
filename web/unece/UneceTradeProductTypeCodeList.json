@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceTradeProductTypeCodeList",
+	"description": "Values for UneceTradeProduct typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:applicableProduct",
+		"unece:componentProduct",
+		"unece:includedTradeProduct",
+		"unece:inputApplicableProduct",
+		"unece:outputApplicableProduct",
+		"unece:requisitionerSpecifiedProduct",
+		"unece:specifiedTradeProduct"
+	]
+}

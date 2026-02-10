@@ -124,7 +124,14 @@
 			"description": "The date that this government registration was recorded."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGovernmentRegistrationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of government registration."
 		},
 		"validityPeriod": {

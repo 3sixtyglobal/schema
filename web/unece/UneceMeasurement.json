@@ -116,7 +116,14 @@
 			"description": "A measurement method expressed as text."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceMeasurementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of measurement."
 		}
 	},

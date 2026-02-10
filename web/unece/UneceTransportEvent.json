@@ -333,7 +333,14 @@
 			"description": "The specified period during which the transport means is held at a location."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceTransportEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of transport event."
 		},
 		"unitQuantity": {

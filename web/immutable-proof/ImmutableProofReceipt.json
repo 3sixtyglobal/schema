@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProofReceipt",
+	"description": "Interface describing an immutable proof receipt.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "array",
+			"items": {
+				"allOf": [
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/immutable-proof/"
+					},
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/common/"
+					}
+				]
+			},
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"type": "string",
+			"const": "ImmutableProofReceipt",
+			"description": "JSON-LD Type."
+		},
+		"immutableReceipt": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"description": "The immutable receipt detail for where the proof is stored. json-ld id"
+		},
+		"verifiableStorageId": {
+			"type": "string",
+			"description": "The verifiable storage id for where the proof is stored. json-ld id"
+		}
+	},
+	"required": ["type"],
+	"additionalProperties": false
+}

@@ -337,7 +337,14 @@
 			"description": "A code specifying a special condition for this supply chain trade line item."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of supply chain trade line item."
 		},
 		"typeExtensionCode": {

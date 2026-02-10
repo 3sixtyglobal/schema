@@ -142,7 +142,14 @@
 			"description": "A name, expressed as text, of the classification system for this product classification."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceClassificationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product classification."
 		}
 	},

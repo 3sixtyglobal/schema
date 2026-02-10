@@ -112,7 +112,14 @@
 			"description": "The metric characteristic specified for this target issue."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceIssueTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of target issue, such as a value or a range."
 		}
 	},

@@ -120,7 +120,14 @@
 			"description": "A status, expressed as text, for this supply chain reference."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSupplyChainReferenceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of supply chain reference."
 		},
 		"value": {

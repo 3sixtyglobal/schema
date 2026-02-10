@@ -193,7 +193,14 @@
 			"description": "The number of units of this type of logistics packaging which can be stacked vertically for transport operations."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLogisticsPackagingTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of logistics packaging."
 		},
 		"weightMeasure": {

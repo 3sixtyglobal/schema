@@ -137,7 +137,14 @@
 			"description": "A code specifying a subject type for this specified declaration."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclarationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified declaration."
 		},
 		"verifiedObject": {

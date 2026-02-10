@@ -118,7 +118,14 @@
 			"description": "An identifier of this specified product finishing treatment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductFinishingTreatmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product finishing treatment."
 		},
 		"usedMaterial": {

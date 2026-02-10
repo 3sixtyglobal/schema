@@ -108,7 +108,14 @@
 			"description": "A location, expressed as text, for this MDH sanitary measure."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSanitaryMeasureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of MDH sanitary measure."
 		}
 	},

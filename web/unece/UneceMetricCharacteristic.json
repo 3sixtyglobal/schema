@@ -112,7 +112,14 @@
 			"description": "The code specifying the value of this metric characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of metric characteristic."
 		},
 		"value": {

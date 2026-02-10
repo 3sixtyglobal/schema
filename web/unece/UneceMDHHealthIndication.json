@@ -130,7 +130,14 @@
 			"description": "The indication of whether or not the status of this MDH health indication is true or false."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndicationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of MDH health indication."
 		}
 	},

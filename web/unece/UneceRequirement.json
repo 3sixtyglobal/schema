@@ -115,7 +115,14 @@
 			"description": "The party specifying this specified requirement."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceRequirementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified requirement."
 		}
 	},

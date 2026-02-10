@@ -96,7 +96,14 @@
 			"description": "JSON-LD Type."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceFuelTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified fuel."
 		},
 		"volumeUnitVolumeMeasure": {

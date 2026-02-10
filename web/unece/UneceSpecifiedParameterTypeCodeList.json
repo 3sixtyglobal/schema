@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedParameterTypeCodeList",
+	"description": "Values for UneceSpecifiedParameter typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:applicableParameter",
+		"unece:operationalApplicableParameter",
+		"unece:qualityParameter",
+		"unece:requestedOperationalApplicableParameter",
+		"unece:valueParameter"
+	]
+}

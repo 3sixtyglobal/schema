@@ -171,7 +171,14 @@
 			"description": "The code specifying the status of this specified assessment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAssessmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified assessment."
 		},
 		"verifiedIndicator": {

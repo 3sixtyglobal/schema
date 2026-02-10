@@ -118,7 +118,14 @@
 			"description": "A process certificate for this specified chemical treatment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of chemical treatment."
 		},
 		"usedChemical": {

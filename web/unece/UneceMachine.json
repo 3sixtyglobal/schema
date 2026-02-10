@@ -217,7 +217,14 @@
 			"description": "The code specifying the subordinate type of this production machine."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceMachineTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of production machine."
 		}
 	},

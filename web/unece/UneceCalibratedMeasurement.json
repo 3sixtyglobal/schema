@@ -112,7 +112,14 @@
 			"description": "The percent of tolerance of this calibrated measurement."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCalibratedMeasurementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of calibrated measurement."
 		},
 		"valueCode": {

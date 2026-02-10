@@ -124,7 +124,14 @@
 			"description": "The date, time, date time or other date time value when this certified accreditation was obtained."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAccreditationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this certified accreditation, such as a type of driving license."
 		}
 	},

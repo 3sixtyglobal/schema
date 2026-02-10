@@ -148,7 +148,14 @@
 			"description": "A textual description of a target market for this product characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of product characteristic."
 		},
 		"value": {

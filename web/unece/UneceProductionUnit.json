@@ -257,7 +257,14 @@
 			"description": "A production unit subordinate to this facility production unit."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductionUnitTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of facility production unit."
 		}
 	},

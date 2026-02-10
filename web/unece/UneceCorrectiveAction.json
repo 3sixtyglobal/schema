@@ -104,7 +104,14 @@
 			"description": "A textual description for this corrective action."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCorrectiveActionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of corrective action."
 		}
 	},

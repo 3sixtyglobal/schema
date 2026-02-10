@@ -228,7 +228,14 @@
 			"description": "The quantity of tolerance from the planned quantity in this supply chain supply plan."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSupplyPlanTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type for this supply chain supply plan."
 		}
 	},

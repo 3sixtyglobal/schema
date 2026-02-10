@@ -207,7 +207,14 @@
 			"description": "A sensor communication pairing reported for this monitoring IOT device."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceIOTDeviceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of monitoring IOT device."
 		}
 	},

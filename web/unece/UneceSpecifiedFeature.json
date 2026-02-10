@@ -112,7 +112,14 @@
 			"description": "An objective, expressed as text, for this specified feature."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFeatureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of feature."
 		},
 		"usageCode": {

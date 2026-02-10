@@ -116,7 +116,14 @@
 			"description": "The total quantity for this process work item."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProcessWorkItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of process work item."
 		}
 	},

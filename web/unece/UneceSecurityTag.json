@@ -100,7 +100,14 @@
 			"description": "The code specifying the location of this product security tag."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSecurityTagTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this product security tag."
 		}
 	},

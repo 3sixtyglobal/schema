@@ -6,21 +6,19 @@
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"description": "JSON-LD Context.",
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/immutable-proof/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				}
-			],
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+				"allOf": [
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/immutable-proof/"
+					},
+					{
+						"type": "string",
+						"const": "https://schema.twindev.org/common/"
+					}
+				]
+			},
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "string",
@@ -29,29 +27,13 @@
 		},
 		"id": {
 			"type": "string",
-			"description": "The id of the proof."
+			"description": "The id of the object associated with the proof."
 		},
-		"proofObjectId": {
+		"proofIntegrity": {
 			"type": "string",
-			"description": "The id of the object associated with the proof. json-ld type:schema:identifier"
-		},
-		"proofObjectHash": {
-			"type": "string",
-			"description": "The hash of the object associated with the proof. json-ld type:schema:Text"
-		},
-		"verifiableStorageId": {
-			"type": "string",
-			"description": "The verifiable storage id for where the proof is stored. json-ld type:schema:identifier"
-		},
-		"proof": {
-			"$ref": "https://schema.twindev.org/w3c-did/DataIntegrityProof",
-			"description": "The proof which can be undefined if it has not yet been issued. json-ld id"
-		},
-		"immutableReceipt": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The immutable receipt detail for where the proof is stored. json-ld id"
+			"description": "The integrity hash of the object associated with the proof. json-ld namespace:twin-common"
 		}
 	},
-	"required": ["@context", "type", "id", "proofObjectHash"],
+	"required": ["proofIntegrity"],
 	"additionalProperties": false
 }

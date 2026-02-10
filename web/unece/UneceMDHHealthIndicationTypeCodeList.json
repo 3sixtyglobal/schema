@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceMDHHealthIndicationTypeCodeList",
+	"description": "Values for UneceMDHHealthIndication typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:diedOnboardHealthIndication",
+		"unece:diseaseOnboardHealthIndication",
+		"unece:illPersonNowOnboardHealthIndication",
+		"unece:medicalPractitionerConsultedHealthIndication",
+		"unece:moreIllOnboardHealthIndication",
+		"unece:onboardInfectionConditionHealthIndication",
+		"unece:sanitaryMeasureAppliedHealthIndication",
+		"unece:sickAnimalOnboardHealthIndication",
+		"unece:stowawayFoundOnboardHealthIndication"
+	]
+}

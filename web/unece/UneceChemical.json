@@ -171,7 +171,14 @@
 			"description": "A synonym name, expressed as text, for this distinct chemical."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceChemicalTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of distinct chemical."
 		},
 		"volumeMeasure": {

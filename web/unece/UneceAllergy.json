@@ -108,7 +108,14 @@
 			"description": "A restriction, expressed as text, related to this guest allergy."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAllergyTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of guest allergy."
 		}
 	},

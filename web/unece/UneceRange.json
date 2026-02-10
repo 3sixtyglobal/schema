@@ -116,7 +116,14 @@
 			"description": "The total number of items in this specified range."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceRangeTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a type of this specified range."
 		},
 		"value": {

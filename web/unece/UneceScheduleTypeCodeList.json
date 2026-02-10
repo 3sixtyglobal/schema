@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceScheduleTypeCodeList",
+	"description": "Values for UneceSchedule typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:consumptionSchedule",
+		"unece:deliverySchedule",
+		"unece:despatchSchedule",
+		"unece:orderSchedule",
+		"unece:receiptSchedule",
+		"unece:specifiedSchedule",
+		"unece:supplySpecifiedSchedule"
+	]
+}

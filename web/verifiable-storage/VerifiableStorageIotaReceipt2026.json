@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/verifiable-storage/VerifiableStorageIotaReceipt2026",
+	"description": "Receipt for the IOTA Verifiable Storage connector.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "string",
+			"const": "https://schema.twindev.org/verifiable-storage/",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"type": "string",
+			"const": "VerifiableStorageIotaReceipt2026",
+			"description": "JSON-LD Type."
+		},
+		"epoch": {
+			"type": "number",
+			"description": "The epoch of the transaction. json-ld type:schema:Integer"
+		},
+		"digest": {
+			"type": "string",
+			"description": "The digest of the transaction. json-ld type:schema:Text"
+		},
+		"network": {
+			"type": "string",
+			"description": "The network of the transaction. json-ld type:schema:Text"
+		},
+		"objectId": {
+			"type": "string",
+			"description": "The object id of the transaction. json-ld type:schema:Text"
+		},
+		"smartContractId": {
+			"type": "string",
+			"description": "The smart contract id of the transaction. json-ld type:schema:Text"
+		}
+	},
+	"required": ["@context", "type", "epoch", "digest", "network", "objectId", "smartContractId"],
+	"additionalProperties": false
+}

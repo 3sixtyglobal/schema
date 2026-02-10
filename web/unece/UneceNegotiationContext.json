@@ -100,7 +100,14 @@
 			"description": "The identifier of the negotiation context."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceNegotiationContextTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type for this negotiation context, such as chain negotiation, item negotiation or counterpart negotiation."
 		}
 	},

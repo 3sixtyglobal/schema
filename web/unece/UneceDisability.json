@@ -116,7 +116,14 @@
 			"description": "A restriction, expressed as text, for this guest disability."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceDisabilityTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of guest disability."
 		}
 	},

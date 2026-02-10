@@ -111,7 +111,14 @@
 			"description": "A sequence number for these specified personal effects."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePersonalEffectsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of specified personal effects."
 		}
 	},

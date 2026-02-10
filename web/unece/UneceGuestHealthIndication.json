@@ -108,7 +108,14 @@
 			"description": "A status, expressed as text, for this guest health indication."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGuestHealthIndicationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of guest heath indication."
 		}
 	},

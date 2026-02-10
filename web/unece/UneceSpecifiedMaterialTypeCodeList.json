@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedMaterialTypeCodeList",
+	"description": "Values for UneceSpecifiedMaterial typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:applicableMaterial",
+		"unece:appliedMaterial",
+		"unece:componentMaterial",
+		"unece:includedMaterial",
+		"unece:inputApplicableMaterial",
+		"unece:outputApplicableMaterial",
+		"unece:relatedMaterial",
+		"unece:substituteApplicableMaterial",
+		"unece:substitutedApplicableMaterial",
+		"unece:usedMaterial"
+	]
+}

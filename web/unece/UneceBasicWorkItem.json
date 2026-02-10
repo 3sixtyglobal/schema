@@ -182,7 +182,14 @@
 			"description": "The code specifying the classification of the total quantity for this basic work item."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceBasicWorkItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of basic work item."
 		},
 		"unitPrice": {

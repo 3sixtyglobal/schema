@@ -115,7 +115,14 @@
 			"description": "A specification note for this guest carried equipment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCarriedEquipmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of guest carried equipment."
 		}
 	},

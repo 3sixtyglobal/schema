@@ -123,7 +123,14 @@
 			"description": "The code specifying the status of this control setting parameter."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceControlSettingParameterTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a type of parameter for this control setting parameter."
 		},
 		"value": {

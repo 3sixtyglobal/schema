@@ -3,11 +3,5 @@
 	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProofFailure",
 	"description": "The failure reason of the proof.",
 	"type": "string",
-	"enum": [
-		"notIssued",
-		"proofMissing",
-		"cryptoSuiteMismatch",
-		"proofTypeMismatch",
-		"signatureMismatch"
-	]
+	"enum": ["notIssued", "proofMissing", "verificationFailure", "revoked"]
 }

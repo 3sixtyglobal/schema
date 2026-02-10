@@ -6,13 +6,25 @@
 		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"VerifiableStorageIotaReceipt": "twin-verifiable-storage:VerifiableStorageIotaReceipt",
+		"VerifiableStorageIotaReceipt2026": "twin-verifiable-storage:VerifiableStorageIotaReceipt2026",
 		"digest": {
 			"@id": "twin-verifiable-storage:digest",
 			"@type": "schema:Text"
 		},
 		"epoch": {
 			"@id": "twin-verifiable-storage:epoch",
+			"@type": "schema:Integer"
+		},
+		"network": {
+			"@id": "twin-verifiable-storage:network",
+			"@type": "schema:Text"
+		},
+		"objectId": {
+			"@id": "twin-verifiable-storage:objectId",
+			"@type": "schema:Text"
+		},
+		"smartContractId": {
+			"@id": "twin-verifiable-storage:smartContractId",
 			"@type": "schema:Text"
 		},
 		"VerifiableStorageEntityStorageReceipt": "twin-verifiable-storage:VerifiableStorageEntityStorageReceipt",

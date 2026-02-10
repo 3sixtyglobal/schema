@@ -168,7 +168,14 @@
 			"description": "The code specifying the value of this technical characteristic."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of technical characteristic."
 		},
 		"value": {

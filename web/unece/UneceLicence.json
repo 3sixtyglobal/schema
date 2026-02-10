@@ -148,7 +148,14 @@
 			"description": "A code specifying a subject type for this licence."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLicenceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of licence."
 		},
 		"validIndicator": {

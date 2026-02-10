@@ -220,7 +220,14 @@
 			"description": "The code specifying the status of this material."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterialTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of material."
 		},
 		"usedChemical": {

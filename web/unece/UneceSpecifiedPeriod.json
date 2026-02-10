@@ -180,7 +180,14 @@
 			"description": "The code specifying the start day of the week for this specified period."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriodTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of specified period."
 		}
 	},

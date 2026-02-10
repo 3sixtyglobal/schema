@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceCalibratedMeasurementTypeCodeList",
+	"description": "Values for UneceCalibratedMeasurement typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:actualReportedMeasurement",
+		"unece:precisionMeasurement",
+		"unece:scheduledReportedMeasurement",
+		"unece:specifiedMeasurement"
+	]
+}

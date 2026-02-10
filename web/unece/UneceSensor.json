@@ -164,7 +164,14 @@
 			"description": "A scheduled calibrated measurement reported for this monitoring sensor."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSensorTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a type of monitoring sensor."
 		},
 		"valueMeasure": {

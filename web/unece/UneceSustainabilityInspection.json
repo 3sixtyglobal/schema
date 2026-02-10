@@ -163,7 +163,14 @@
 			"description": "The inspection status specified for this sustainability inspection."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspectionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of sustainability inspection."
 		}
 	},

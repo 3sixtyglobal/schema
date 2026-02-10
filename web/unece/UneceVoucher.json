@@ -120,7 +120,14 @@
 			"description": "A name, expressed as text, of the company issuing this experience item voucher."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceVoucherTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of experience item voucher."
 		}
 	},

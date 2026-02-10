@@ -135,7 +135,14 @@
 			"description": "The trading business name, expressed as text, of this legally set up organization."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLegalOrganizationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of legally set up organization."
 		}
 	},

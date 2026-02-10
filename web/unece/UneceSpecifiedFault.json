@@ -131,7 +131,14 @@
 			"description": "An applicable operational tolerance of this specified fault."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFaultTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of fault."
 		}
 	},

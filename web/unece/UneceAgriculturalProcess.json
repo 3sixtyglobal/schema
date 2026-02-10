@@ -159,7 +159,14 @@
 			"description": "The code specifying the subordinate type of the agricultural process for this crop production."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAgriculturalProcessTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of agricultural process for this crop production."
 		}
 	},

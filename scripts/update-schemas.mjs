@@ -277,7 +277,7 @@ async function createRewriteRules(schemas) {
  * @returns The string without the "I" at the start.
  */
 function stripInterface(typeString) {
-	if (/I[A-Z]/.test(typeString)) {
+	if (/^I[A-Z]/.test(typeString)) {
 		return typeString.slice(1);
 	}
 

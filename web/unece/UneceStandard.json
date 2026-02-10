@@ -180,7 +180,14 @@
 			"description": "A referenced document specified for this referenced standard."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceStandardTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of referenced standard."
 		},
 		"uRIId": {

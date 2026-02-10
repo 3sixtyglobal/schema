@@ -155,7 +155,14 @@
 			"description": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs valuation."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCustomsValuationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of cross-border customs valuation."
 		},
 		"wTOAdditionCode": {

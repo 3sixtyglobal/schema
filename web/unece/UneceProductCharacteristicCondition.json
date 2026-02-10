@@ -100,7 +100,14 @@
 			"description": "A name, expressed as text, for this product characteristic condition."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristicConditionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product characteristic condition."
 		},
 		"valueMeasure": {

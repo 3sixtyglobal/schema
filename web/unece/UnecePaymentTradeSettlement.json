@@ -254,7 +254,14 @@
 			"description": "The indication of whether or not this payment trade settlement includes a transfer fee."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentTradeSettlementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this payment trade settlement."
 		},
 		"unstructuredDescription": {

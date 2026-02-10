@@ -124,7 +124,14 @@
 			"description": "A date when this legal registration was recorded."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLegalRegistrationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of this legal registration."
 		}
 	},

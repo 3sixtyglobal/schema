@@ -133,7 +133,14 @@
 			"description": "A superordinate country sub-division for this trade country sub-division."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCountrySubDivisionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying a type of country sub-division for trade purposes."
 		}
 	},

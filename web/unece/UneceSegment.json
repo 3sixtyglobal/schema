@@ -108,7 +108,14 @@
 			"description": "Information, expressed as text, in this section segment."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceSegmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of section segment."
 		}
 	},

@@ -104,7 +104,14 @@
 			"description": "A textual description of this preventive action."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePreventiveActionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of preventive action."
 		}
 	},

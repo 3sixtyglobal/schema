@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/unece/UneceMeasurementTypeCodeList",
+	"description": "Values for UneceMeasurement typeCode property.",
+	"type": "string",
+	"enum": [
+		"unece:associatedMeasurement",
+		"unece:controlTemperatureMeasurement",
+		"unece:emergencyTemperatureMeasurement",
+		"unece:flashpointTemperatureMeasurement"
+	]
+}

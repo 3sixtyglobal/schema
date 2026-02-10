@@ -174,7 +174,14 @@
 			"description": "The total quantity of this work item group."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGroupedWorkItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "A code specifying the type of this work item group."
 		}
 	},

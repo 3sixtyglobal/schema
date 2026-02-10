@@ -114,7 +114,14 @@
 			"description": "A textual description of this production waste material component."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProductionWasteMaterialComponentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of production waste material component."
 		}
 	},

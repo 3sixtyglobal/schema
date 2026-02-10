@@ -115,7 +115,14 @@
 			"description": "A technical characteristic related to this animal holding event."
 		},
 		"typeCode": {
-			"type": "string",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAnimalHoldingEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of animal holding event."
 		}
 	},
