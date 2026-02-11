@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"countryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+			},
 			"description": "A unique identifier for this trade country."
 		},
 		"name": {
@@ -104,7 +107,10 @@
 			"description": "A name, expressed as text, of this trade country."
 		},
 		"specifiedQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A quantity specified for this trade country."
 		},
 		"subordinateCountrySubDivision": {

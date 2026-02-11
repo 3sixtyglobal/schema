@@ -100,7 +100,10 @@
 			"description": "The additional name of a street, expressed as text, for this trade address."
 		},
 		"addressTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAddressTypeCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAddressTypeCodeList"
+			},
 			"description": "A code specifying the type of this trade address, such as business address or home address."
 		},
 		"attentionOf": {
@@ -160,7 +163,10 @@
 			"description": "A free form representation, expressed as text, of this trade address."
 		},
 		"geoCoordinateIdentificationGeographicalCoordinate": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate"
+			},
 			"description": "An identification of a set of geographical coordinates for this trade address."
 		},
 		"identifier": {

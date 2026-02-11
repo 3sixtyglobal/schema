@@ -100,7 +100,10 @@
 			"description": "The allowance or charge, expressed as text, for this logistics service charge."
 		},
 		"appliedAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value applied to this logistics service charge."
 		},
 		"appliedFromLocation": {
@@ -230,10 +233,7 @@
 			"description": "A code specifying a service type of this logistics service charge."
 		},
 		"specifiedPaymentMeans": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans",
 			"description": "The trade settlement payment means specified for this logistics service charge."
 		},
 		"tariffCurrencyCode": {

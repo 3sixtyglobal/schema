@@ -138,7 +138,10 @@
 			"description": "A measure of the buffer capacity for this production facility."
 		},
 		"capacityMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the capacity of this production facility."
 		},
 		"completionDate": {
@@ -192,7 +195,10 @@
 			"description": "A measure of the output capacity for this production facility."
 		},
 		"physicalLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+			},
 			"description": "A physical location referenced for this production facility."
 		},
 		"productionFacilityCertificationTypeCode": {

@@ -124,10 +124,7 @@
 			"description": "A guideline context parameter specified for this exchanged document context."
 		},
 		"messageStandardSpecifiedParameter": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentContextParameter"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentContextParameter",
 			"description": "The message standard document context parameter specified for this exchanged document context."
 		},
 		"processingTransactionDateTime": {

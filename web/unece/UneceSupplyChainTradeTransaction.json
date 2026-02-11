@@ -128,10 +128,7 @@
 			"description": "A referenced document associated with this supply chain trade transaction, such as the purchase order, invoice or packing list."
 		},
 		"associatedDocumentLineDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument",
 			"description": "The document line associated with this supply chain trade transaction."
 		},
 		"associatedFinancingRequestResultDocument": {

@@ -120,14 +120,7 @@
 			"description": "The International Business Entity Identifier (IBEI) for this financial identity."
 		}
 	},
-	"required": [
-		"type",
-		"agentAssignedCustomerId",
-		"bICId",
-		"bankAssignedId",
-		"cHIPSUniversalId",
-		"iBEIId"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

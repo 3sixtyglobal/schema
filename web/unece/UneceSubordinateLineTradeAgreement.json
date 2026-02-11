@@ -124,10 +124,7 @@
 			"description": "A net product price in this subordinate line trade agreement."
 		},
 		"sellerOrderDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The seller generated order document referenced in this subordinate line trade agreement."
 		}
 	},

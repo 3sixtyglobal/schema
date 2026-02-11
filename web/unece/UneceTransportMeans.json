@@ -112,10 +112,7 @@
 			"description": "The type, expressed as text, of this referenced transport means."
 		},
 		"transportMeansTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList",
 			"description": "The code specifying the type of referenced transport means [Reference UNECE Recommendation 28]."
 		}
 	},

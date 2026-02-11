@@ -115,7 +115,10 @@
 			"description": "Binary object data, such as a photograph, describing this supply chain event."
 		},
 		"discretePeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
 			"description": "A discrete period specified for this supply chain event."
 		},
 		"dueDateTime": {
@@ -147,7 +150,10 @@
 			"description": "The referenced location for the occurrence of this supply chain event."
 		},
 		"occurrenceLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "A logistics location where this supply chain event occurs."
 		},
 		"occurrencePeriod": {
@@ -187,16 +193,14 @@
 			"description": "A code specifying the type of supply chain event."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A number of units for this supply chain event."
 		}
 	},
-	"required": [
-		"type",
-		"earliestOccurrenceDateTime",
-		"latestOccurrenceDateTime",
-		"timeOccurrenceDateTime"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

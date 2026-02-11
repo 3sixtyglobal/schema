@@ -162,7 +162,10 @@
 			"description": "The code specifying the purpose of an amendment to this referenced document."
 		},
 		"documentLanguageId": {
-			"$ref": "https://schema.twindev.org/unece/UneceLanguageId",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLanguageId"
+			},
 			"description": "An identifier for a language used in this referenced document."
 		},
 		"documentLineStatusCode": {
@@ -228,10 +231,7 @@
 			"description": "The unique issuer assigned identifier for this referenced document."
 		},
 		"issuerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade related party that issues this referenced document."
 		},
 		"issuerSpecifiedInstructions": {
@@ -383,7 +383,10 @@
 			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
 		},
 		"validityPeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
 			"description": "A period of validity specified for this referenced document."
 		},
 		"versionId": {
@@ -391,14 +394,7 @@
 			"description": "The identifier for the version of this referenced document."
 		}
 	},
-	"required": [
-		"type",
-		"issuerAssignedId",
-		"previousRevisionId",
-		"recipientTradeParty",
-		"referenceRelationshipTypeCode",
-		"signatoryAuthentication"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

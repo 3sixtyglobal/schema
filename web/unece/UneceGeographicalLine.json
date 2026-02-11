@@ -111,7 +111,11 @@
 			"description": "A logistics location associated with this specified geographical line."
 		}
 	},
-	"required": ["type", "associatedGeographicalObjectCharacteristic"],
+	"required": [
+		"type",
+		"associatedDirectPositionList",
+		"associatedGeographicalObjectCharacteristic"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

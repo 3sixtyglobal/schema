@@ -126,10 +126,7 @@
 			"description": "The financial booking related to this financing summary document."
 		},
 		"specifiedCreditorFinancialAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount",
 			"description": "The creditor financial account, used for crediting, specified for this financing summary document."
 		}
 	},

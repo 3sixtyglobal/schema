@@ -135,7 +135,10 @@
 			"description": "The code specifying the intended use of this photographic picture."
 		},
 		"linearDimension": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
 			"description": "Linear spatial dimensions of this photographic picture."
 		},
 		"pictureType": {

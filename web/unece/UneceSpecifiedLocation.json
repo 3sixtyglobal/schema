@@ -124,7 +124,10 @@
 			"description": "The code specifying the type of this specified location."
 		},
 		"specifiedTradeAddress": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
+			},
 			"description": "A address specified for this location."
 		}
 	},

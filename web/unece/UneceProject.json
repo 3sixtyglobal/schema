@@ -116,10 +116,7 @@
 			"description": "The monetary value of the net budget for this procuring project."
 		},
 		"specifiedInspectionEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent",
 			"description": "The inspection event specified for this procuring project."
 		},
 		"subWorksTypeCode": {
@@ -146,7 +143,7 @@
 			"description": "A code specifying the type of work, such as surveying or consulting, for this procuring project."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "identifier", "name"],
 	"additionalProperties": {
 		"anyOf": [
 			{

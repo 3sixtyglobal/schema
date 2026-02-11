@@ -132,10 +132,7 @@
 			"description": "A binary file attached to this agricultural certificate."
 		},
 		"certificateTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of agricultural certificate."
 		},
 		"description": {

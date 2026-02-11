@@ -212,10 +212,7 @@
 			"description": "The code specifying the reason why this specified certificate was issued."
 		},
 		"issuerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The issuer party for this specified certificate."
 		},
 		"latestEndorsementDateTime": {

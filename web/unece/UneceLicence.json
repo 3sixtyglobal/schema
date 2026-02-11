@@ -130,10 +130,7 @@
 			"description": "An issue date, time, date time or other date time value of this specified licence."
 		},
 		"issuerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party that issues this specified licence."
 		},
 		"name": {

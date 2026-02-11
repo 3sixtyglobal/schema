@@ -130,7 +130,10 @@
 			"description": "An identifier of this distinct chemical."
 		},
 		"massMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the mass of this distinct chemical."
 		},
 		"massRatioMeasure": {
@@ -141,10 +144,7 @@
 			"description": "A mass measure of this distinct chemical expressed as a ratio to another mass, such as the total mass."
 		},
 		"molecularWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the molecular weight (in grams) for this distinct chemical."
 		},
 		"presenceMeasurement": {
@@ -196,7 +196,10 @@
 			"description": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the weight of this distinct chemical."
 		}
 	},

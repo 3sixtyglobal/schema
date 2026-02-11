@@ -169,7 +169,10 @@
 			"description": "The identifier of a part of this referenced standard, such as a section or topic."
 		},
 		"specifiedAssertion": {
-			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
 			"description": "A sustainability assertion specified for this referenced standard."
 		},
 		"specifiedDocument": {

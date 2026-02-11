@@ -168,10 +168,7 @@
 			"description": "The linear spatial dimensions of this supply chain packaging."
 		},
 		"maximumLinearDimension": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "The maximum linear spatial dimensions of this supply chain packaging."
 		},
 		"maximumStackabilityQuantity": {
@@ -183,10 +180,7 @@
 			"description": "The measure of the maximum stackability weight of this supply chain packaging."
 		},
 		"minimumLinearDimension": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "The minimum linear spatial dimensions of this supply chain packaging."
 		},
 		"packageTypeCode": {
@@ -229,7 +223,10 @@
 			"description": "The code specifying a level for this supply chain packaging."
 		},
 		"totalUnitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A total number of units contained in this supply chain packaging."
 		},
 		"transportMaximumStackabilityQuantity": {
@@ -237,7 +234,10 @@
 			"description": "The number of units of this type of supply chain packaging which can be stacked vertically for transport operations."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the weight of this supply chain packaging."
 		},
 		"weightUnitLoadBearingCapabilityMeasure": {

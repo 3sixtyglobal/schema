@@ -183,10 +183,7 @@
 			"description": "The physical geographical point specified for this location."
 		},
 		"postalAddress": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
 			"description": "The postal trade address for this referenced location."
 		},
 		"relatedProductionUnit": {
@@ -197,7 +194,10 @@
 			"description": "A facility production unit related to this referenced location."
 		},
 		"specifiedAssertion": {
-			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
 			"description": "A sustainability assertion specified for this referenced location."
 		},
 		"specifiedFacility": {

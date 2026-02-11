@@ -124,7 +124,7 @@
 			"description": "The measure of the pressure condition at which this upper limit ingredient range measurement is taken."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "lowerLimitActualMeasure", "lowerLimitComparisonOperatorCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

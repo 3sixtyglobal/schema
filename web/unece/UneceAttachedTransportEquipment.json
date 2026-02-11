@@ -104,7 +104,10 @@
 			"description": "A unique identifier of this piece of attached transport equipment."
 		},
 		"transportEquipmentCategoryCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEquipmentCategoryCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEquipmentCategoryCodeList"
+			},
 			"description": "A code specifying a category of this piece of attached transport equipment."
 		},
 		"transportEquipmentSizeTypeCharacteristicCode": {

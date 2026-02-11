@@ -170,14 +170,14 @@
 			"description": "The code specifying the event from which these trade payment terms are offered for a length of time."
 		},
 		"paymentTermsId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsId"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsId",
 			"description": "The unique identifier of these trade payment terms."
 		},
 		"paymentTermsTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList"
+			},
 			"description": "A code specifying the type of trade payment terms."
 		},
 		"settlementPeriodMeasure": {

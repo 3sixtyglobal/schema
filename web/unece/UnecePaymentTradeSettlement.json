@@ -107,10 +107,7 @@
 			"description": "A description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
 		},
 		"applicableTax": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeTax",
 			"description": "The tax applicable to this payment trade settlement."
 		},
 		"creationDateTime": {
@@ -142,10 +139,7 @@
 			"description": "The due date, time, date time, or other date time value for this payment trade settlement."
 		},
 		"duePayableAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the payment that is the exact amount due and payable for this trade settlement, such as the amount due to the creditor."
 		},
 		"identifiedGuarantee": {
@@ -161,21 +155,18 @@
 			"description": "The identifier of the invoice payer assigned reference of this payment trade settlement."
 		},
 		"payeeParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The payee party for this payment trade settlement."
 		},
 		"payerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The payer party for this payment trade settlement."
 		},
 		"paymentAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of the payment for this trade settlement payment."
 		},
 		"paymentApplicableCurrencyExchange": {
@@ -210,7 +201,10 @@
 			"description": "A specified experience item recorded for this payment trade settlement."
 		},
 		"refundAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of the refund related to this payment trade settlement."
 		},
 		"requestedAmount": {
@@ -221,17 +215,11 @@
 			"description": "A monetary value requested for this payment trade settlement."
 		},
 		"specifiedPaymentMeans": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans",
 			"description": "The payment means specified for this payment trade settlement."
 		},
 		"specifiedTradeSettlementPaymentMonetarySummation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementPaymentMonetarySummation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementPaymentMonetarySummation",
 			"description": "The monetary summation totals specified for this payment trade settlement."
 		},
 		"statusCode": {
@@ -269,7 +257,7 @@
 			"description": "An unstructured description, expressed as text, for this payment trade settlement."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "specifiedTradeSettlementPaymentMonetarySummation"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -208,10 +208,7 @@
 			"description": "A referenced inspection document for this trade product instance."
 		},
 		"inspectionEvent": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The inspection event for this trade product instance."
 		},
 		"intendedUse": {

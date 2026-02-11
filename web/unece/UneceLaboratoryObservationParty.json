@@ -108,17 +108,11 @@
 			"description": "The office address of this laboratory observation party."
 		},
 		"personDefinedContact": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationContact"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationContact",
 			"description": "The person defined as the contact for this laboratory observation party."
 		},
 		"postalAddress": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
 			"description": "The postal address of this laboratory observation party."
 		},
 		"thirdPartyIssuedId": {
@@ -134,7 +128,7 @@
 			"description": "The website URI (Uniform Resource Identifier) of this laboratory observation party."
 		}
 	},
-	"required": ["type", "thirdPartyIssuedId"],
+	"required": ["type", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

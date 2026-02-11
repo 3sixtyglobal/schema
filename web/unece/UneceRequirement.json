@@ -104,10 +104,7 @@
 			"description": "A rule, expressed as text, for this specified requirement."
 		},
 		"specifiedPaymentTradeSettlement": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentTradeSettlement"
-			},
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentTradeSettlement",
 			"description": "The payment trade settlement for this specified requirement."
 		},
 		"specifyingParty": {

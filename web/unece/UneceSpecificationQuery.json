@@ -119,7 +119,7 @@
 			"description": "The code specifying the type of specification query."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "content", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

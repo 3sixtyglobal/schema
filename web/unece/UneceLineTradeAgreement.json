@@ -246,10 +246,7 @@
 			"description": "The item buyer party for this line trade agreement."
 		},
 		"itemSellerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The item seller party for this line trade agreement."
 		},
 		"letterOfCreditDocument": {
@@ -264,10 +261,7 @@
 			"description": "A manufacturer party, at line level, for this trade agreement."
 		},
 		"marketplaceOrderDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The marketplace generated order document referenced in this line trade agreement."
 		},
 		"maximumOrderQuantityOrderingPeriod": {
@@ -309,10 +303,7 @@
 			"description": "The ordering period specified in this line trade agreement."
 		},
 		"originalOrderDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The original order document referenced in this line trade agreement."
 		},
 		"pickUpOrderFulfilmentLeadTimeMeasure": {
@@ -320,10 +311,7 @@
 			"description": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this line trade agreement."
 		},
 		"previousOrderDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The previous order document referenced in this line trade agreement."
 		},
 		"priceListDocument": {
@@ -331,10 +319,7 @@
 			"description": "The price list document referenced in this line trade agreement."
 		},
 		"primeContractSellerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The seller party acting as the prime contractor for this line trade agreement."
 		},
 		"priorityCode": {
@@ -442,17 +427,11 @@
 			"description": "The sales report document referenced in this line trade agreement."
 		},
 		"sellerOrderDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The seller generated order document referenced in this line trade agreement."
 		},
 		"sellerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The seller party for this line trade agreement."
 		},
 		"sellerReference": {

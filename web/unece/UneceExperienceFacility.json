@@ -135,7 +135,10 @@
 			"description": "A name, expressed as text, for this experience facility."
 		},
 		"physicalSpecifiedLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedLocation"
+			},
 			"description": "A physical location specified for this experience facility."
 		},
 		"specifiedCommunication": {

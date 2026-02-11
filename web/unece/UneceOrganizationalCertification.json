@@ -122,7 +122,10 @@
 			"description": "An agency, expressed as text, responsible for this organizational certification."
 		},
 		"specifiedAssertion": {
-			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
 			"description": "A sustainability assertion specified for this organizational certification."
 		},
 		"standard": {

@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"actualAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The actual monetary value of the applied allowance charge."
 		},
 		"appliedAllowanceChargeReasonCode": {
@@ -107,10 +104,7 @@
 			"description": "The code specifying the reason for this applied allowance charge."
 		},
 		"basisAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value that is the basis on which the applied allowance charge is calculated."
 		},
 		"calculationPercent": {
@@ -118,10 +112,7 @@
 			"description": "The percentage used to calculate the applied allowance charge."
 		},
 		"categoryAppliedTax": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAppliedTax"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAppliedTax",
 			"description": "The applied tax category of this applied allowance charge."
 		},
 		"chargeIndicator": {
@@ -133,7 +124,7 @@
 			"description": "The textual description of the applied allowance charge."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "chargeIndicator"],
 	"additionalProperties": {
 		"anyOf": [
 			{

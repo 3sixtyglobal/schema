@@ -100,7 +100,10 @@
 			"description": "The geographical object characteristic associated with this geographical multi-surface."
 		},
 		"includedPolygon": {
-			"$ref": "https://schema.twindev.org/unece/UnecePolygon",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePolygon"
+			},
 			"description": "A polygon included in this geographical multi-surface."
 		}
 	},

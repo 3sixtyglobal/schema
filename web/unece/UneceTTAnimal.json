@@ -100,7 +100,10 @@
 			"description": "The holder responsible party for this TT animal."
 		},
 		"relatedTTLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
+			},
 			"description": "A location related to this TT animal."
 		},
 		"speciesTypeCode": {
@@ -140,10 +143,7 @@
 			"description": "A delimited period specified for this TT animal."
 		},
 		"specifiedIndividualTTAnimal": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceIndividualTTAnimal"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceIndividualTTAnimal",
 			"description": "The individual tracking animal specified for this TT animal."
 		},
 		"specifiedPeriod": {
@@ -161,7 +161,13 @@
 			"description": "A species specified for this TT animal."
 		}
 	},
-	"required": ["type", "holderResponsibleParty", "speciesTypeCode", "specifiedAnimalIdentity"],
+	"required": [
+		"type",
+		"holderResponsibleParty",
+		"speciesTypeCode",
+		"specifiedAnimalHoldingEvent",
+		"specifiedAnimalIdentity"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

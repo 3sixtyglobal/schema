@@ -176,7 +176,10 @@
 			"description": "A universal communication specified for this contact person."
 		},
 		"specifiedEmployerIdentity": {
-			"$ref": "https://schema.twindev.org/unece/UneceEmployerIdentity",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceEmployerIdentity"
+			},
 			"description": "An employer identity specified for this contact person."
 		},
 		"specifiedPersonIdentity": {
@@ -191,7 +194,10 @@
 			"description": "A tax registration specified for this contact person."
 		},
 		"telephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "Telephone communication information for this contact person."
 		},
 		"title": {
@@ -199,7 +205,10 @@
 			"description": "The textual expression of the title associated with this contact person, such as Doctor."
 		},
 		"websiteURICommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "A website Uniform Resource Identifier (URI) communication for this contact person."
 		}
 	},

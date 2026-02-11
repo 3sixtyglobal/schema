@@ -100,7 +100,10 @@
 			"description": "An actual date, time, date time, or other date time value of the occurrence of this port movement event."
 		},
 		"arrivalRelatedLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "An arrival location related to this port movement event."
 		},
 		"description": {
@@ -140,13 +143,7 @@
 			"description": "A code specifying a type of port movement event."
 		}
 	},
-	"required": [
-		"type",
-		"actualOccurrenceDateTime",
-		"estimatedOccurrenceDateTime",
-		"requestedOccurrenceDateTime",
-		"scheduledOccurrenceDateTime"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

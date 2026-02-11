@@ -103,7 +103,10 @@
 			"description": "An actual delivery event for this subordinate line trade delivery."
 		},
 		"billedQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A billed quantity of this subordinate line trade delivery."
 		},
 		"includedPackaging": {
@@ -118,10 +121,7 @@
 			"description": "The number of packages in this subordinate line trade delivery."
 		},
 		"perPackageUnitQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units per package in this subordinate line trade delivery."
 		},
 		"productUnitQuantity": {

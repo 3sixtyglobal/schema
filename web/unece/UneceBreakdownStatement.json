@@ -193,7 +193,14 @@
 			"description": "A code specifying the type of valuation breakdown statement."
 		}
 	},
-	"required": ["type", "defaultCurrencyCode", "defaultLanguageCode"],
+	"required": [
+		"type",
+		"creationDateTime",
+		"defaultCurrencyCode",
+		"defaultLanguageCode",
+		"identifier",
+		"name"
+	],
 	"additionalProperties": {
 		"anyOf": [
 			{

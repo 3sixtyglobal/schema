@@ -182,11 +182,17 @@
 			"description": "Explosive label material statement information, expressed as text, concerning the transport of these dangerous goods."
 		},
 		"flashpointTemperatureMeasurement": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasurement",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasurement"
+			},
 			"description": "A measurement of the flashpoint temperature of these transported dangerous goods."
 		},
 		"handlingInstructions": {
-			"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
+			},
 			"description": "Handling instructions for the transported dangerous goods."
 		},
 		"hazardCategoryCode": {
@@ -296,10 +302,7 @@
 			"description": "A document related to these transported dangerous goods."
 		},
 		"reportableQuantity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The reportable quantity for these transported dangerous goods."
 		},
 		"shipperDeclarationInformation": {
@@ -404,10 +407,7 @@
 			"description": "The measure of the weight (mass) of these transported dangerous goods including packaging but excluding the transport equipment."
 		},
 		"weightUnitNetWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The measure of the net weight (mass) of these transported dangerous goods."
 		}
 	},

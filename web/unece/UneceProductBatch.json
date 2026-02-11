@@ -236,7 +236,10 @@
 			"description": "A global identifier of this product batch."
 		},
 		"grossVolumeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the gross volume of this product batch."
 		},
 		"grossWeightMeasure": {
@@ -255,7 +258,10 @@
 			"description": "A manufacturer assigned identifier of this product batch."
 		},
 		"massMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the mass of this product batch."
 		},
 		"massRatioMeasure": {
@@ -266,11 +272,17 @@
 			"description": "A mass measure of this product batch expressed as a ratio to another mass, such as the total mass."
 		},
 		"maximumSizeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the maximum size of this product batch."
 		},
 		"minimumSizeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the minimum size of this product batch."
 		},
 		"name": {
@@ -278,11 +290,17 @@
 			"description": "The name, expressed as text, of this product batch."
 		},
 		"netVolumeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the net volume of this product batch."
 		},
 		"netWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the net weight of this product batch."
 		},
 		"productName": {
@@ -316,7 +334,10 @@
 			"description": "An agricultural characteristic specified for this product batch."
 		},
 		"specifiedAssertion": {
-			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+			},
 			"description": "A sustainability assertion specified for this product batch."
 		},
 		"specifiedDocument": {

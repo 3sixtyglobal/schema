@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"authorizedRegistration": {
-			"$ref": "https://schema.twindev.org/unece/UneceLegalRegistration",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLegalRegistration"
+			},
 			"description": "A legal registration authorized for this legally set up organization."
 		},
 		"businessTypeCode": {

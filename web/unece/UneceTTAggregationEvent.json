@@ -115,7 +115,10 @@
 			"description": "A quantity event element specified for a child of this TT aggregation event."
 		},
 		"destinationRelatedParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
+			},
 			"description": "A destination related party for this TT aggregation event."
 		},
 		"dispositionCode": {
@@ -154,7 +157,10 @@
 			"description": "The location related to this TT aggregation event."
 		},
 		"sourceRelatedParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
+			},
 			"description": "A source related party for this TT aggregation event."
 		},
 		"specifiedError": {
@@ -172,7 +178,7 @@
 			"description": "A trade transaction specified for this TT aggregation event."
 		}
 	},
-	"required": ["type", "recordedDateTime"],
+	"required": ["type", "actionCode", "occurrenceDateTime", "recordedDateTime"],
 	"additionalProperties": {
 		"anyOf": [
 			{

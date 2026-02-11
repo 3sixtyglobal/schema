@@ -114,7 +114,10 @@
 			"description": "The date, time, date time or other date time value when the book closing is due for this header trade settlement."
 		},
 		"creditNoteAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of the credit note for this header trade settlement."
 		},
 		"creditReason": {
@@ -225,10 +228,7 @@
 			"description": "The code specifying the currency of the order for this header trade settlement."
 		},
 		"outstandingSpecifiedMonetarySummation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementHeaderMonetarySummation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementHeaderMonetarySummation",
 			"description": "The monetary summation totals outstanding for this header trade settlement."
 		},
 		"payableSpecifiedAccountingAccount": {
@@ -246,10 +246,7 @@
 			"description": "A payee party for this header trade settlement."
 		},
 		"payerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The payer party for this header trade settlement."
 		},
 		"payerReference": {
@@ -257,7 +254,10 @@
 			"description": "The payer reference, expressed as text, for this header trade settlement."
 		},
 		"paymentAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of a payment for this header trade settlement."
 		},
 		"paymentApplicableCurrencyExchange": {
@@ -389,10 +389,7 @@
 			"description": "A logistics service charge specified for this header trade settlement."
 		},
 		"specifiedTradeSettlementHeaderMonetarySummation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementHeaderMonetarySummation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementHeaderMonetarySummation",
 			"description": "The monetary summation totals specified for this header trade settlement."
 		},
 		"subtotalCalculatedTax": {
@@ -403,7 +400,10 @@
 			"description": "A tax subtotal calculated for this header trade settlement."
 		},
 		"taxApplicableCurrencyExchange": {
-			"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+			},
 			"description": "A currency exchange applicable to a tax in this header trade settlement."
 		},
 		"taxCurrencyCode": {
@@ -411,11 +411,17 @@
 			"description": "The code specifying the tax currency for this header trade settlement."
 		},
 		"totalAdjustmentAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of the total adjustment for this header trade settlement."
 		},
 		"totalInvoiceAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+			},
 			"description": "A monetary value of the total invoice on which this header trade settlement is calculated."
 		},
 		"ultimatePayeeParty": {

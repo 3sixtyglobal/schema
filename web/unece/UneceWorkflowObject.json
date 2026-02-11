@@ -108,7 +108,7 @@
 			"description": "The code specifying the status of this trade workflow object."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "identifier", "workflowStatusCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -107,10 +107,7 @@
 			"description": "A tax applicable to this subordinate line trade settlement."
 		},
 		"billingPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The billing period specified for the subordinate line of this trade settlement."
 		},
 		"invoiceReferencedDocument": {

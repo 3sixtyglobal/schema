@@ -103,7 +103,10 @@
 			"description": "Instructions applicable to this logistics packaging."
 		},
 		"capacityMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a capacity of this logistics packaging."
 		},
 		"certificationIndicator": {
@@ -122,7 +125,10 @@
 			"description": "A package contained in this logistics packaging."
 		},
 		"contentLayerQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A number of content layers in this logistics packaging."
 		},
 		"description": {
@@ -150,7 +156,10 @@
 			"description": "The indication of whether or not this logistics packaging has an instruction."
 		},
 		"linearDimension": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+			},
 			"description": "A linear dimension or a set of linear dimensions of this logistics packaging."
 		},
 		"logisticsPackagingLevelCode": {
@@ -185,7 +194,10 @@
 			"description": "A marking specified for this logistics packaging."
 		},
 		"totalUnitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A total number of units contained in this logistics packaging."
 		},
 		"transportMaximumStackabilityQuantity": {
@@ -204,7 +216,10 @@
 			"description": "A code specifying a type of logistics packaging."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a weight (mass) of this logistics packaging."
 		},
 		"weightUnitLoadBearingCapabilityMeasure": {

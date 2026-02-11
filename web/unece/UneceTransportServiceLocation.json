@@ -100,7 +100,10 @@
 			"description": "An identifier for this transport service location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
 		},
 		"locationFunctionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+			},
 			"description": "A code specifying the type of transport service location."
 		},
 		"name": {
@@ -108,7 +111,10 @@
 			"description": "A name, expressed as text, of this transport service location."
 		},
 		"physicalGeographicalCoordinate": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate"
+			},
 			"description": "Geographical coordinate information for this physical transport service location."
 		}
 	},

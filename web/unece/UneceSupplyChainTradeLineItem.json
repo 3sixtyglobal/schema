@@ -149,10 +149,7 @@
 			"description": "A document authentication asserted for this supply chain trade line item."
 		},
 		"associatedDocumentLineDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument",
 			"description": "The document line associated with this trade line item."
 		},
 		"associatedTransportEquipment": {
@@ -258,7 +255,10 @@
 			"description": "The line trade agreement specified for this supply chain trade line item."
 		},
 		"specifiedLineTradeDelivery": {
-			"$ref": "https://schema.twindev.org/unece/UneceLineTradeDelivery",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLineTradeDelivery"
+			},
 			"description": "A line trade delivery specified for this supply chain trade line item."
 		},
 		"specifiedLineTradeSettlement": {
@@ -329,7 +329,10 @@
 			"description": "Substituted material applicable for this supply chain trade line item."
 		},
 		"substitutedProduct": {
-			"$ref": "https://schema.twindev.org/unece/UneceProduct",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+			},
 			"description": "A referenced product substituted for this supply chain trade line item."
 		},
 		"supplyChainTradeLineItemSpecialConditionCode": {
@@ -352,7 +355,7 @@
 			"description": "The code used as an extension to the type code for further specifying a type of supply chain trade line item."
 		}
 	},
-	"required": ["type", "additionalId"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

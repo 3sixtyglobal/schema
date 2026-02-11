@@ -132,7 +132,10 @@
 			"description": "The unique seller assigned identifier for this referenced product."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A unit quantity of this referenced product."
 		}
 	},

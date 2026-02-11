@@ -112,13 +112,7 @@
 			"description": "A code specifying the type of trade species name for this TT animal."
 		}
 	},
-	"required": [
-		"type",
-		"regulationSpeciesNameTypeCode",
-		"scientificSpeciesNameTypeCode",
-		"speciesTypeCode",
-		"tradeSpeciesNameTypeCode"
-	],
+	"required": ["type", "speciesTypeCode"],
 	"additionalProperties": {
 		"anyOf": [
 			{

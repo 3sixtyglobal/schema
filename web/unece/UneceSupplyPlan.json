@@ -100,10 +100,7 @@
 			"description": "The actual quantity in this supply chain supply plan."
 		},
 		"applicablePeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The period applicable for this supply chain supply plan."
 		},
 		"availableQuantity": {
@@ -179,21 +176,18 @@
 			"description": "A scheduled delivery event in this supply chain supply plan."
 		},
 		"shipToParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The ship to trade party for this supply chain supply plan."
 		},
 		"specifiedLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "A location specified for this supply chain supply plan."
 		},
 		"specifiedSpecifiedPeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The period specified for this supply chain supply plan."
 		},
 		"specifiedSupplyChainEvent": {

@@ -155,10 +155,7 @@
 			"description": "The date, time, date time, or other date time value of the publication of this document line."
 		},
 		"referenceAcknowledgementDocument": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementDocument"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementDocument",
 			"description": "The acknowledgement document referenced in this document line."
 		},
 		"referenceDocument": {

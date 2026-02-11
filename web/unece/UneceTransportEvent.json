@@ -108,10 +108,7 @@
 			"description": "The actual date, time, date time, or other date time value of the occurrence of this transport event."
 		},
 		"actualOccurrencePeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The actual period of time during which this transport event occurred."
 		},
 		"additionalSecurityMeasuresApplicableNote": {
@@ -159,7 +156,10 @@
 			"description": "A certifying party for this transport event."
 		},
 		"conveyanceFacilityRelatedLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "A location of a conveyance facility related to this transport event."
 		},
 		"delayOccurrencePeriod": {
@@ -201,10 +201,7 @@
 			"description": "The unique identifier for this transport event."
 		},
 		"laycanOccurrencePeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The specified period of laycan time during which this transport event occurs."
 		},
 		"maritimeAnchorageIndicator": {
@@ -294,10 +291,7 @@
 			"description": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event."
 		},
 		"scheduledOccurrencePeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The scheduled period of time specified for the occurrence of this transport event."
 		},
 		"securityLevelCode": {
@@ -326,10 +320,7 @@
 			"description": "A note providing transport information applicable to this transport event."
 		},
 		"transportMeansStayOccurrencePeriod": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The specified period during which the transport means is held at a location."
 		},
 		"typeCode": {
@@ -352,16 +343,7 @@
 			"description": "The measure of a value for this transport event."
 		}
 	},
-	"required": [
-		"type",
-		"actualOccurrenceDateTime",
-		"estimatedOccurrenceDateTime",
-		"estimatedTransportMeansArrivalOccurrenceDateTime",
-		"reasonTypeCode",
-		"reportedConditionTypeCode",
-		"requestedOccurrenceDateTime",
-		"scheduledOccurrenceDateTime"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

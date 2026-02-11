@@ -142,7 +142,10 @@
 			"description": "The indication of whether or not the value for this specified parameter is allowed."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a value for this specified parameter."
 		},
 		"valueTolerance": {

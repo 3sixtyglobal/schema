@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableAnimalCertification": {
-			"$ref": "https://schema.twindev.org/unece/UneceAnimalCertification",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertification"
+			},
 			"description": "An animal certification applicable to this animal certificate."
 		},
 		"applicableAssertion": {
@@ -121,10 +124,7 @@
 			"description": "A sustainability characteristic applicable to this animal certificate."
 		},
 		"certificateTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of animal certificate."
 		},
 		"identifier": {
@@ -132,7 +132,7 @@
 			"description": "The identifier for this animal certificate."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "certificateTypeCode", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

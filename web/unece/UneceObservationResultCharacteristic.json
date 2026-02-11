@@ -111,10 +111,7 @@
 			"description": "An applicable observation objective parameter of the interpretation result for this sample observation result characteristic."
 		},
 		"measuredAccuracyMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "Accuracy, expressed as a measure, of the measurement for this sample observation result characteristic."
 		},
 		"measuredValue": {

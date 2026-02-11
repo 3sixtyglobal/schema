@@ -135,10 +135,7 @@
 			"description": "The measure of the length component of this spatial dimension."
 		},
 		"linearUnitWidthMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the width component of this spatial dimension."
 		},
 		"unitQuantity": {
@@ -154,7 +151,7 @@
 			"description": "The measure of the width component of this spatial dimension."
 		}
 	},
-	"required": ["type", "dimensionTypeCode"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

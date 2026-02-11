@@ -182,10 +182,7 @@
 			"description": "A specified requirement provided for this experience event."
 		},
 		"requiredUsageCondition": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceUsageCondition"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceUsageCondition",
 			"description": "The specified usage condition required for this experience event."
 		},
 		"reservationGuarantee": {

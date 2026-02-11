@@ -168,14 +168,11 @@
 			"description": "The requesting party specified in this financing request document."
 		},
 		"specifiedValidationStatus": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceValidationStatus"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceValidationStatus",
 			"description": "The status of the validation specified for this financing request document, such as error."
 		}
 	},
-	"required": ["type", "groupId", "specifiedRequestingParty"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

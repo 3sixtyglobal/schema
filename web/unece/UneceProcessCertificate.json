@@ -100,10 +100,7 @@
 			"description": "The actual effective date, time, date time or other date time value for this process certificate."
 		},
 		"applicableAssertion": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
 			"description": "The sustainability assertion applicable to this process certificate."
 		},
 		"applicableObjectCode": {
@@ -111,7 +108,10 @@
 			"description": "A code specifying an object for which this process certificate is applicable."
 		},
 		"applicableProcessCertification": {
-			"$ref": "https://schema.twindev.org/unece/UneceProcessCertification",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertification"
+			},
 			"description": "A process certification applicable to this process certificate."
 		},
 		"applicableProcessCharacteristic": {
@@ -143,10 +143,7 @@
 			"description": "A binary file attached to this process certificate."
 		},
 		"certificateTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of process certificate."
 		},
 		"description": {

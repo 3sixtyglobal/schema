@@ -96,14 +96,14 @@
 			"description": "JSON-LD Type."
 		},
 		"basisQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+			},
 			"description": "A quantity on which the reference price is based."
 		},
 		"chargeAmount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of a charged reference price."
 		},
 		"comparisonMethodCode": {

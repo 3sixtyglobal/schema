@@ -116,7 +116,10 @@
 			"description": "A duration, expressed as text, for this specified period."
 		},
 		"durationMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the length of time for this specified time period such as hours, days, weeks, months, years."
 		},
 		"endDateTime": {

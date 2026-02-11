@@ -129,7 +129,10 @@
 			"description": "The identifier for this crop plot."
 		},
 		"includedPlot": {
-			"$ref": "https://schema.twindev.org/unece/UnecePlot",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+			},
 			"description": "A crop plot included in this crop plot."
 		},
 		"regulatoryOrganicIndicator": {
@@ -170,10 +173,7 @@
 			"deprecated": true
 		},
 		"specifiedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location specified for this crop plot."
 		},
 		"startDateTime": {
@@ -181,7 +181,7 @@
 			"description": "The date, time, date time, or other date time value for the start of this crop plot."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

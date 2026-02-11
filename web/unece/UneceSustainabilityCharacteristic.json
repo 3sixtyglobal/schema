@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableInspectionResult": {
-			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceInspectionResult"
+			},
 			"description": "A specified inspection result applicable to this sustainability characteristic."
 		},
 		"applicableStandard": {
@@ -123,7 +126,10 @@
 			"description": "An identifier of this sustainability characteristic."
 		},
 		"maximumValueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a maximum value for this sustainability characteristic."
 		},
 		"measurementMethodCode": {
@@ -131,7 +137,10 @@
 			"description": "The code specifying the measurement method for this sustainability characteristic."
 		},
 		"minimumValueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a minimum value for this sustainability characteristic."
 		},
 		"shareableIndicator": {
@@ -177,7 +186,10 @@
 			"description": "The value, expressed as an amount, for this sustainability characteristic."
 		},
 		"valueBinaryFile": {
-			"$ref": "https://schema.twindev.org/unece/UneceBinaryFile",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+			},
 			"description": "A value, expressed in a binary file, for this sustainability characteristic."
 		},
 		"valueDateTime": {
@@ -189,7 +201,10 @@
 			"description": "The value, expressed as an indicator, for this sustainability characteristic."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a value for this sustainability characteristic."
 		},
 		"valueNumeric": {

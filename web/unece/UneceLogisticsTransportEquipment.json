@@ -201,7 +201,10 @@
 			"description": "The consignee assigned consignment identifier for this piece of logistics transport equipment."
 		},
 		"consolidationEvent": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+			},
 			"description": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
 		},
 		"containedConsignment": {
@@ -269,7 +272,10 @@
 			"description": "A measure of the gross goods weight of this logistics transport equipment."
 		},
 		"handlingInstructions": {
-			"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
+			},
 			"description": "Handling instructions for this piece of logistics transport equipment."
 		},
 		"humidityPercent": {
@@ -353,10 +359,7 @@
 			"description": "A main carriage transport movement for this piece of logistic transport equipment."
 		},
 		"manufacturerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The manufacturer party specified for this piece of logistics transport equipment."
 		},
 		"manufacturingDateTime": {
@@ -410,7 +413,10 @@
 			"description": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
 		},
 		"positioningEvent": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+			},
 			"description": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
 		},
 		"powerSupplyConnectorQuantity": {
@@ -535,7 +541,10 @@
 			"description": "A result of a logistics risk analysis calculation specified for this transport equipment."
 		},
 		"specifiedTransportMeans": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportMeans",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportMeans"
+			},
 			"description": "A transport means specified for this piece of logistics transport equipment."
 		},
 		"storageEvent": {
@@ -601,7 +610,10 @@
 			"description": "The unloading event for this piece of logistics transport equipment."
 		},
 		"unloadingInstructions": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
+			},
 			"description": "Unloading instructions for this piece of logistics transport equipment."
 		},
 		"unloadingSequenceNumeric": {
@@ -609,7 +621,10 @@
 			"description": "The sequence number differentiating this piece of logistics transport equipment from others during unloading."
 		},
 		"verifiedGrossWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+			},
 			"description": "A measure of the verified gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
 		},
 		"volumeUnitGrossVolumeMeasure": {
@@ -632,7 +647,7 @@
 			"description": "The measure of the tare weight (mass) of this piece of logistics transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
 		}
 	},
-	"required": ["type", "carrierAssignedBookingId", "consigneeAssignedConsignmentId"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

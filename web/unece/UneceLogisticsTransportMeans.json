@@ -96,10 +96,7 @@
 			"description": "JSON-LD Type."
 		},
 		"aftDraughtLevelMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The draught level measured at the aft end of this transport means."
 		},
 		"airDraughtLevelMeasure": {
@@ -164,10 +161,7 @@
 			"description": "The code specifying the conference for this logistics means of transport."
 		},
 		"draughtLevelMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the draught level of this logistics means of transport."
 		},
 		"driverAccompaniedIndicator": {
@@ -175,10 +169,7 @@
 			"description": "The indication of whether or not this logistics means of transport is accompanied by a driver."
 		},
 		"forwardDraughtLevelMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The draught level measured at the fore end of this transport means."
 		},
 		"helipadIndicator": {
@@ -237,10 +228,7 @@
 			"description": "The manoeuvring speed measured for this logistics means of transport."
 		},
 		"manufacturerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The manufacturer party for this logistics means of transport."
 		},
 		"manufacturingDateTime": {
@@ -271,10 +259,7 @@
 			"description": "The owner agent trade party for this logistics means of transport."
 		},
 		"ownerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party owning this logistics means of transport."
 		},
 		"registrationCountry": {
@@ -350,10 +335,7 @@
 			"description": "The type, expressed as text, of this logistics means of transport."
 		},
 		"transportMeansTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList",
 			"description": "The code specifying the type of logistics means of transport (Reference UNECE Recommendation 28)."
 		},
 		"validSanitationControlIndicator": {
@@ -377,10 +359,7 @@
 			"description": "The measure of the gross weight (mass) of this logistics means of transport including cargo, such as the measure of the overall size of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
 		},
 		"weightUnitNetWeightMeasure": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The measure of the net weight (mass) of this logistics means of transport, such as the net tonnage of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
 		},
 		"weightUnitTareWeightMeasure": {
@@ -388,7 +367,7 @@
 			"description": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
 		}
 	},
-	"required": ["type", "callSignId", "iMOId", "mMSIId"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

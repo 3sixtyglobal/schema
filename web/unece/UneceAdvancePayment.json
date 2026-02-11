@@ -111,7 +111,10 @@
 			"description": "A tax included in this advance payment."
 		},
 		"invoiceSpecifiedDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocument",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
 			"description": "An invoice document referenced by this advance payment."
 		},
 		"paidAmount": {
@@ -123,7 +126,7 @@
 			"description": "The formatted date or date time value when an advance payment has been received."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "paidAmount"],
 	"additionalProperties": {
 		"anyOf": [
 			{

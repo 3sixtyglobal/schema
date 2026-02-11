@@ -137,10 +137,7 @@
 			"description": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
 		},
 		"manufacturerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The manufacturer party of this monitoring IOT device."
 		},
 		"modelId": {
@@ -156,10 +153,7 @@
 			"description": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
 		},
 		"ownerParty": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The owner party of this monitoring IOT device."
 		},
 		"positionCode": {

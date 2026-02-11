@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableTransportSettingTemperature": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportSettingTemperature",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportSettingTemperature"
+			},
 			"description": "A transport related temperature setting applicable to these handling instructions."
 		},
 		"deliveryApplicableTemperature": {
@@ -168,7 +171,7 @@
 			"description": "The instructed temperature for storage applicable to these handling instructions."
 		}
 	},
-	"required": ["type", "handling"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

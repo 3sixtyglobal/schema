@@ -111,7 +111,10 @@
 			"description": "The code specifying the type of subordinate trade line item."
 		},
 		"goodsTypeExtensionTypeExtensionCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
+			},
 			"description": "A code used as an extension to the type code for further specifying this subordinate trade line item."
 		},
 		"identifier": {
@@ -142,10 +145,7 @@
 			"description": "The trade agreement specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeDelivery": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeDelivery"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeDelivery",
 			"description": "The delivery specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeSettlement": {

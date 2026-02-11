@@ -153,7 +153,10 @@
 			"description": "The value for this organization characteristic expressed as an indicator."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of a value for this organization characteristic."
 		},
 		"valueMethod": {

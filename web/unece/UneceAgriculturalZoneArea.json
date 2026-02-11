@@ -133,10 +133,7 @@
 			"description": "The name, expressed as text, for this agricultural zone area."
 		},
 		"specifiedLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location specified for this agricultural zone area."
 		},
 		"specifiedPlot": {
@@ -158,7 +155,7 @@
 			"description": "An identifier issued by a third party for this agricultural zone area."
 		}
 	},
-	"required": ["type", "multiSurfaceTypeCode", "thirdPartyIssuedId"],
+	"required": ["type", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

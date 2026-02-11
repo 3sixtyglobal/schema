@@ -123,15 +123,7 @@
 			"description": "A proprietary Identity specified for this person."
 		}
 	},
-	"required": [
-		"type",
-		"alienRegistrationId",
-		"driversLicenceId",
-		"identityCardId",
-		"passportId",
-		"socialSecurityId",
-		"specifiedProprietaryIdentity"
-	],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

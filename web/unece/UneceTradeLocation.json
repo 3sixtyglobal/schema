@@ -112,7 +112,10 @@
 			"description": "The unique identifier for this location used or referenced in trade."
 		},
 		"locationFunctionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+			},
 			"description": "A code specifying the type of trade location."
 		},
 		"name": {

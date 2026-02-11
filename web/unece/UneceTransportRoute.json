@@ -104,7 +104,10 @@
 			"description": "The textual description of this transport route."
 		},
 		"frequencyEffectivePeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+			},
 			"description": "A specified period of time for which a frequency is effective for this transport route."
 		},
 		"frequencyTypeCode": {

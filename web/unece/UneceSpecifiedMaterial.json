@@ -190,7 +190,10 @@
 			"description": "A manufacturer party for this specified material."
 		},
 		"massMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the mass of this specified material."
 		},
 		"massRatioMeasure": {
@@ -252,7 +255,10 @@
 			"description": "A measure of the volume of this specified material expressed as a ratio to another volume, such as the total volume."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+			},
 			"description": "A measure of the weight of this specified material."
 		}
 	},

@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableFinancialCard": {
-			"$ref": "https://schema.twindev.org/unece/UneceFinancialCard",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceFinancialCard"
+			},
 			"description": "A financial card applicable to this trade settlement payment means."
 		},
 		"creditorSpecifiedFinancialInstitution": {
@@ -164,24 +167,15 @@
 			"description": "A creditor financial account of the payee party for this trade settlement payment means."
 		},
 		"payeeSpecifiedFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution",
 			"description": "The creditor financial institution of the payee party specified for this trade settlement payment means."
 		},
 		"payerPartyFinancialAccount": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDebtorFinancialAccount"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDebtorFinancialAccount",
 			"description": "The debtor financial account of the payer party for this trade settlement payment means."
 		},
 		"payerSpecifiedFinancialInstitution": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDebtorFinancialInstitution"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceDebtorFinancialInstitution",
 			"description": "The debtor financial institution of the payer party specified for this trade settlement payment means."
 		},
 		"paymentGuaranteeMeansGuaranteeMethodCode": {

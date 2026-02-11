@@ -307,10 +307,7 @@
 			"description": "A code specifying a disclosure level for this trade party."
 		},
 		"emailURICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The email communication for this trade party."
 		},
 		"endPointURICommunication": {
@@ -337,7 +334,10 @@
 			"description": "A unique identifier of this trade party."
 		},
 		"issuedNotificationReferencedDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocument",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
 			"description": "A referenced notification document issued to this trade party."
 		},
 		"logoAssociatedBinaryFile": {
@@ -374,10 +374,7 @@
 			"description": "A code specifying the type of trade party that is independent of its role."
 		},
 		"postalAddress": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
 			"description": "The postal address for this trade party."
 		},
 		"providedProcess": {
@@ -428,7 +425,10 @@
 			"description": "An experience item requested for or by this trade party."
 		},
 		"requestedNotificationReferencedDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocument",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			},
 			"description": "A referenced notification document requested by this trade party."
 		},
 		"reservedExperienceItem": {
@@ -458,15 +458,24 @@
 			"description": "The sustainability assertion specified for this trade party."
 		},
 		"specifiedAuthoritativeSignatoryPerson": {
-			"$ref": "https://schema.twindev.org/unece/UneceAuthoritativeSignatoryPerson",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAuthoritativeSignatoryPerson"
+			},
 			"description": "A person specified to sign on behalf of this trade party."
 		},
 		"specifiedContactPerson": {
-			"$ref": "https://schema.twindev.org/unece/UneceContactPerson",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceContactPerson"
+			},
 			"description": "A contact person specified for this trade party."
 		},
 		"specifiedCooperatingOrganization": {
-			"$ref": "https://schema.twindev.org/unece/UneceCooperatingOrganization",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCooperatingOrganization"
+			},
 			"description": "A cooperating organization specified for this trade party."
 		},
 		"specifiedCreditorFinancialInstitution": {
@@ -484,10 +493,7 @@
 			"description": "A production facility specified for this trade party."
 		},
 		"specifiedFinancialIdentity": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancialIdentity"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceFinancialIdentity",
 			"description": "The financial identity specified for this trade party."
 		},
 		"specifiedGovernmentRegistration": {
@@ -498,7 +504,10 @@
 			"description": "A governmental registration specified for this trade party."
 		},
 		"specifiedGuestPerson": {
-			"$ref": "https://schema.twindev.org/unece/UneceGuestPerson",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceGuestPerson"
+			},
 			"description": "A guest person specified by this trade party."
 		},
 		"specifiedLegalOrganization": {
@@ -506,7 +515,10 @@
 			"description": "The legally constituted organization specified for this trade party."
 		},
 		"specifiedLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "A logistics related location or place specified for this trade party."
 		},
 		"specifiedProprietaryIdentity": {
@@ -545,7 +557,10 @@
 			"description": "A subcontractor for this trade party."
 		},
 		"telephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "A telephone communication for this trade party."
 		},
 		"tradePartyLanguageCode": {
@@ -556,11 +571,14 @@
 			"description": "A code specifying a language for this trade party."
 		},
 		"uRICommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
 		}
 	},
-	"required": ["type", "specifiedFinancialIdentity", "specifiedProprietaryIdentity"],
+	"required": ["type"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -130,10 +130,7 @@
 			"description": "Electronic Data Interchange (EDI) communication information for this trade contact."
 		},
 		"emailURICommunication": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The email URI communication information for this trade contact."
 		},
 		"faxCommunication": {
@@ -193,7 +190,10 @@
 			"description": "A note specified for this trade contact."
 		},
 		"telephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "Telephone communication information for this trade contact."
 		},
 		"telexCommunication": {
@@ -204,7 +204,10 @@
 			"description": "Telegraphy (Telex) communication information for this trade contact."
 		},
 		"uRICommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "Uniform Resource Identifier (URI) communication information for this trade contact, such as a web or an email address."
 		},
 		"usedCommunication": {

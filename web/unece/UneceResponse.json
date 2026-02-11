@@ -116,7 +116,7 @@
 			"description": "The code specifying the type of this specification response."
 		}
 	},
-	"required": ["type"],
+	"required": ["type", "content", "identifier"],
 	"additionalProperties": {
 		"anyOf": [
 			{

@@ -130,7 +130,7 @@
 			"description": "The UUID (Universally Unique IDentifier) of this XHE document."
 		}
 	},
-	"required": ["type", "recipientXHEParty"],
+	"required": ["type", "creationDateTime", "identifier", "recipientXHEParty"],
 	"additionalProperties": {
 		"anyOf": [
 			{

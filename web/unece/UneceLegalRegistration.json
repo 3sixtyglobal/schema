@@ -100,7 +100,10 @@
 			"description": "A code specifying the category of this legal registration."
 		},
 		"countryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+			},
 			"description": "An identifier of the country in which this legal registration is valid."
 		},
 		"countrySubDivisionId": {

@@ -132,10 +132,7 @@
 			"description": "A sustainability characteristic applicable to this product batch certificate."
 		},
 		"applicableTradeProductCertification": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification",
 			"description": "The trade product certification applicable to this product batch certificate."
 		},
 		"attachedBinaryFile": {
@@ -146,10 +143,7 @@
 			"description": "A binary file attached to this product batch certificate."
 		},
 		"certificateTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of product batch certificate."
 		},
 		"description": {

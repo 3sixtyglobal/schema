@@ -104,11 +104,17 @@
 			"description": "Reason information, expressed as text, for this acknowledgement document."
 		},
 		"acknowledgementDocumentStatusCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList"
+			},
 			"description": "A code specifying a status for this acknowledgement document."
 		},
 		"acknowledgementStatusCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementCodeList"
+			},
 			"description": "A code specifying an acknowledgment status for this acknowledgement document."
 		},
 		"channelCode": {
@@ -124,7 +130,10 @@
 			"description": "The date or date time value of the creation of this acknowledgement document."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
+			},
 			"description": "A code specifying a type of acknowledgement document."
 		},
 		"identifier": {

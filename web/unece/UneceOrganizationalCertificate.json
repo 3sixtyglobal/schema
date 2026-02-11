@@ -146,10 +146,7 @@
 			"description": "A binary file attached to this organizational certificate."
 		},
 		"certificateTypeCode": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
-			},
+			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of organizational certificate."
 		},
 		"description": {

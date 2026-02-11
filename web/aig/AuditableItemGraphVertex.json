@@ -72,13 +72,6 @@
 			},
 			"description": "Edges connected to the vertex. json-ld container:set"
 		},
-		"changesets": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
-			},
-			"description": "Changesets for the vertex. json-ld container:set"
-		},
 		"verified": {
 			"type": "boolean",
 			"description": "Is the vertex verified, will only be populated when verification is requested. json-ld namespace:twin-common"

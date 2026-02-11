@@ -96,7 +96,10 @@
 			"description": "JSON-LD Type."
 		},
 		"countryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+			},
 			"description": "A unique country identifier for this location party."
 		},
 		"definedContact": {
@@ -144,15 +147,24 @@
 			"description": "A transport service provided by this location party."
 		},
 		"specifiedLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+			},
 			"description": "A logistics location or place specified for this party."
 		},
 		"specifiedTransportPerson": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportPerson",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceTransportPerson"
+			},
 			"description": "A transport related person specified for this location party."
 		},
 		"telephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "Telephone communication information for this location party."
 		},
 		"typeCode": {
@@ -167,7 +179,10 @@
 			"description": "A code specifying the type of location party that is independent of its role."
 		},
 		"uRICommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+			},
 			"description": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
 		}
 	},

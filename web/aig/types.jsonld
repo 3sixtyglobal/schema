@@ -11,6 +11,7 @@
 		"AuditableItemGraphAuditedElement": "twin-aig:AuditableItemGraphAuditedElement",
 		"AuditableItemGraphPatchOperation": "twin-aig:AuditableItemGraphPatchOperation",
 		"AuditableItemGraphChangeset": "twin-aig:AuditableItemGraphChangeset",
+		"AuditableItemGraphChangesetList": "twin-aig:AuditableItemGraphChangesetList",
 		"AuditableItemGraphEdge": "twin-aig:AuditableItemGraphEdge",
 		"AuditableItemGraphResource": "twin-aig:AuditableItemGraphResource",
 		"AuditableItemGraphVertex": "twin-aig:AuditableItemGraphVertex",
@@ -22,10 +23,6 @@
 		"aliasFormat": {
 			"@id": "twin-aig:aliasFormat",
 			"@type": "schema:Text"
-		},
-		"changesets": {
-			"@id": "twin-aig:changesets",
-			"@container": "@set"
 		},
 		"edgeRelationships": {
 			"@id": "twin-aig:edgeRelationships",
