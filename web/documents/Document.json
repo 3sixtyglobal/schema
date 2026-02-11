@@ -59,9 +59,9 @@
 			"type": "string",
 			"description": "The blob storage id for the document. json-ld type:schema:identifier"
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the blob data. json-ld namespace:twin-common"
+			"description": "The integrity of the blob data. json-ld namespace:twin-common"
 		},
 		"blobStorageEntry": {
 			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
@@ -107,7 +107,7 @@
 		"documentCode",
 		"documentRevision",
 		"blobStorageId",
-		"blobHash",
+		"integrity",
 		"dateCreated"
 	],
 	"additionalProperties": false

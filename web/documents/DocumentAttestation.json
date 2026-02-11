@@ -45,9 +45,9 @@
 			"type": "string",
 			"description": "The date/time of when the document was created. json-ld namespace:schema"
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the document being attested. json-ld namespace:twin-common"
+			"description": "The integrity of the document being attested. json-ld namespace:twin-common"
 		}
 	},
 	"required": [
@@ -57,7 +57,7 @@
 		"documentCode",
 		"documentRevision",
 		"dateCreated",
-		"blobHash"
+		"integrity"
 	],
 	"additionalProperties": false
 }
