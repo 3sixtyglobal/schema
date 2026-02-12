@@ -1,0 +1,119 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/supply-chain/NotificationSubscriberConfig",
+	"description": "Configuration for a notification subscriber.",
+	"type": "object",
+	"properties": {
+		"baseEndpoint": {
+			"type": "string",
+			"description": "Base endpoint for sending notifications."
+		},
+		"auth": {
+			"type": "object",
+			"properties": {
+				"method": {
+					"$ref": "https://schema.twindev.org/supply-chain/HttpMethod",
+					"description": "The type of authentication to use."
+				},
+				"security": {
+					"type": "object",
+					"properties": {
+						"in": {
+							"type": "string",
+							"description": "The location of the authentication information."
+						},
+						"type": {
+							"type": "string",
+							"description": "The type of security scheme."
+						},
+						"name": {
+							"type": "string",
+							"description": "The name of the header, query parameter, or cookie to be used.",
+							"examples": ["Authorization"]
+						},
+						"scheme": {
+							"type": "string",
+							"description": "The HTTP authentication scheme to be used.",
+							"examples": ["bearer"]
+						}
+					},
+					"additionalProperties": false,
+					"description": "Security scheme details."
+				},
+				"credentials": {
+					"type": "object",
+					"properties": {
+						"algorithm": {
+							"type": "string",
+							"enum": ["RS256", "HS256"],
+							"description": "JWT token configuration."
+						},
+						"privateKey": {
+							"type": "string",
+							"description": "Private key for signing JWT tokens.",
+							"examples": ["your-private-key"]
+						},
+						"accessToken": {
+							"type": "string",
+							"description": "Access token for authentication.",
+							"examples": ["jwt-access-token"]
+						}
+					},
+					"additionalProperties": false,
+					"description": "Credentials and token information."
+				},
+				"subjectPayload": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "JWT token claims."
+				},
+				"bodyPayload": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "Optional body payload for the authentication request."
+				},
+				"path": {
+					"type": "string",
+					"description": "Optional path to append to the base endpoint.",
+					"examples": ["/login"]
+				},
+				"responseTokenPath": {
+					"type": "string",
+					"description": "Optional path to extract the token from the authentication response.",
+					"examples": ["$.access_token"]
+				}
+			},
+			"additionalProperties": false,
+			"description": "Authentication and request details for sending notifications."
+		},
+		"request": {
+			"type": "object",
+			"properties": {
+				"method": {
+					"$ref": "https://schema.twindev.org/supply-chain/HttpMethod",
+					"description": "The type of authentication to use."
+				},
+				"path": {
+					"type": "string",
+					"description": "Optional path to append to the base endpoint.",
+					"examples": ["/data"]
+				},
+				"headers": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "Additional headers to include in the request."
+				}
+			},
+			"additionalProperties": false,
+			"description": "Optional request configuration overrides."
+		}
+	},
+	"required": ["baseEndpoint", "auth"],
+	"additionalProperties": false
+}
