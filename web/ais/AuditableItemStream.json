@@ -59,6 +59,10 @@
 			"type": "number",
 			"description": "After how many entries do we add immutable checks. json-ld type:schema:Integer"
 		},
+		"numberOfItems": {
+			"type": "number",
+			"description": "How many entries are in the stream. json-ld type:schema:numberOfItems"
+		},
 		"entries": {
 			"type": "array",
 			"items": {
@@ -75,6 +79,6 @@
 			"description": "The verification of the stream. json-ld id"
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "immutableInterval"],
+	"required": ["@context", "type", "id", "dateCreated", "immutableInterval", "numberOfItems"],
 	"additionalProperties": false
 }
