@@ -971,6 +971,50 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/odrl/v1/types.jsonld"
+		},
+		{
+			"source": "/supply-chain/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/supply-chain/types.html"
+		},
+		{
+			"source": "/supply-chain/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/supply-chain/types.jsonld"
+		},
+		{
+			"source": "/supply-chain/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/supply-chain/:path*.json"
+		},
+		{
+			"source": "/supply-chain/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/supply-chain/:path*.json"
 		}
 	],
 	"redirects": [
@@ -1102,6 +1146,11 @@
 		{
 			"source": "/odrl/v1",
 			"destination": "https://schema.twindev.org/odrl/v1/",
+			"permanent": true
+		},
+		{
+			"source": "/supply-chain",
+			"destination": "https://schema.twindev.org/supply-chain/",
 			"permanent": true
 		}
 	]
