@@ -33,15 +33,15 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the entry was created. json-ld namespace:schema"
+			"description": "The date/time of when the entry was created. json-ld namespace:sch"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the entry was modified. json-ld namespace:schema"
+			"description": "The date/time of when the entry was modified. json-ld namespace:sch"
 		},
 		"dateDeleted": {
 			"type": "string",
-			"description": "The date/time of when the entry was deleted, as we never actually remove items. json-ld namespace:schema"
+			"description": "The date/time of when the entry was deleted, as we never actually remove items. json-ld namespace:sch"
 		},
 		"userIdentity": {
 			"type": "string",
@@ -53,11 +53,11 @@
 		},
 		"index": {
 			"type": "number",
-			"description": "The index of the entry in the stream. json-ld type:schema:Integer"
+			"description": "The index of the entry in the stream. json-ld type:sch:Integer"
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The id of the immutable proof. json-ld type:schema:identifier"
+			"description": "The id of the immutable proof. json-ld type:sch:identifier"
 		},
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",

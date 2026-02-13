@@ -33,11 +33,11 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the stream was created. json-ld namespace:schema"
+			"description": "The date/time of when the stream was created. json-ld namespace:sch"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the stream was modified. json-ld namespace:schema"
+			"description": "The date/time of when the stream was modified. json-ld namespace:sch"
 		},
 		"organizationIdentity": {
 			"type": "string",
@@ -53,15 +53,15 @@
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The id of the immutable proof for the stream. json-ld type:schema:identifier"
+			"description": "The id of the immutable proof for the stream. json-ld type:sch:identifier"
 		},
 		"immutableInterval": {
 			"type": "number",
-			"description": "After how many entries do we add immutable checks. json-ld type:schema:Integer"
+			"description": "After how many entries do we add immutable checks. json-ld type:sch:Integer"
 		},
 		"numberOfItems": {
 			"type": "number",
-			"description": "How many entries are in the stream. json-ld type:schema:numberOfItems"
+			"description": "How many entries are in the stream. json-ld id:sch:numberOfItems"
 		},
 		"entries": {
 			"type": "array",

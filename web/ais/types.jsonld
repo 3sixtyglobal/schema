@@ -4,7 +4,7 @@
 		"@protected": true,
 		"twin-ais": "https://schema.twindev.org/ais/",
 		"twin-common": "https://schema.twindev.org/common/",
-		"schema": "http://schema.org/",
+		"sch": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
 		"AuditableItemStreamEntry": "twin-ais:AuditableItemStreamEntry",
@@ -22,19 +22,18 @@
 		},
 		"immutableInterval": {
 			"@id": "twin-ais:immutableInterval",
-			"@type": "schema:Integer"
+			"@type": "sch:Integer"
 		},
 		"index": {
 			"@id": "twin-ais:index",
-			"@type": "schema:Integer"
+			"@type": "sch:Integer"
 		},
 		"numberOfItems": {
-			"@id": "twin-ais:numberOfItems",
-			"@type": "schema:numberOfItems"
+			"@id": "sch:numberOfItems"
 		},
 		"proofId": {
 			"@id": "twin-ais:proofId",
-			"@type": "schema:identifier"
+			"@type": "sch:identifier"
 		},
 		"verification": {
 			"@id": "twin-ais:verification"
