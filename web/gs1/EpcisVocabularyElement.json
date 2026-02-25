@@ -4,73 +4,6 @@
 	"description": "EPCIS 2.0 VocabularyElement representing a master data entity with attributes and optional children.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"id": {
 			"type": "string",
 			"description": "Element id."
@@ -90,30 +23,5 @@
 			"description": "Children."
 		}
 	},
-	"required": ["id"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["id"]
 }

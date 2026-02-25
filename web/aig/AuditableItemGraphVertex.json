@@ -10,15 +10,15 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the element was created. json-ld namespace:schema"
+			"description": "The date/time of when the element was created. json-ld namespace:sch"
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the element was modified. json-ld namespace:schema"
+			"description": "The date/time of when the element was modified. json-ld namespace:sch"
 		},
 		"dateDeleted": {
 			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items. json-ld namespace:schema"
+			"description": "The date/time of when the element was deleted, as we never actually remove items. json-ld namespace:sch"
 		},
 		"@context": {
 			"type": "array",
@@ -77,6 +77,5 @@
 			"description": "Is the vertex verified, will only be populated when verification is requested. json-ld namespace:twin-common"
 		}
 	},
-	"required": ["@context", "id", "type"],
-	"additionalProperties": false
+	"required": ["@context", "id", "type"]
 }

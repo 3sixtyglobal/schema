@@ -54,61 +54,10 @@
 				}
 			]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
 		"@type": {
 			"type": "string",
 			"const": "Set",
 			"description": "The type must be \"Set\"."
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
 		},
 		"uid": {
 			"type": "string",
@@ -309,30 +258,5 @@
 			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present."
 		}
 	},
-	"required": ["@context", "@type", "uid"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["@context", "@type", "uid"]
 }

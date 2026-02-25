@@ -30,6 +30,5 @@
 			"description": "Must be `null` (or omitted) for non-retraction events. The upstream schema defines a default of `null`."
 		}
 	},
-	"required": ["eventID", "eventCreatedDateTime", "publisher", "publisherRole", "eventType"],
-	"additionalProperties": false
+	"required": ["eventID", "eventCreatedDateTime", "publisher", "publisherRole", "eventType"]
 }

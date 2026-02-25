@@ -48,8 +48,7 @@
 							"type": "boolean"
 						}
 					},
-					"required": ["@container"],
-					"additionalProperties": false
+					"required": ["@container"]
 				},
 				"@version": {
 					"type": "string",
@@ -77,61 +76,14 @@
 			},
 			"required": ["dcat", "dcterms"]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
 		"@type": {
 			"type": "string",
 			"const": "dcat:CatalogRecord",
 			"description": "The type identifier, typically \"CatalogRecord\"."
 		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
+		"@id": {
+			"type": "string",
+			"description": "The unique identifier for the catalog record."
 		},
 		"dcterms:title": {
 			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
@@ -168,30 +120,5 @@
 			"description": "The dataset or data service described in the catalog record."
 		}
 	},
-	"required": ["@context", "@type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["@context", "@type"]
 }

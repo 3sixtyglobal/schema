@@ -8,7 +8,6 @@
 			"properties": {
 				"metadata": {
 					"type": "object",
-					"additionalProperties": false,
 					"properties": {
 						"eventType": {
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
@@ -49,15 +48,13 @@
 					"description": "Business attributes related to the `EquipmentEvent`."
 				}
 			},
-			"required": ["metadata", "payload"],
-			"additionalProperties": false
+			"required": ["metadata", "payload"]
 		},
 		{
 			"type": "object",
 			"properties": {
 				"metadata": {
 					"type": "object",
-					"additionalProperties": false,
 					"properties": {
 						"eventType": {
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
@@ -95,8 +92,7 @@
 					"description": "Retraction metadata (eventType = EQUIPMENT)."
 				}
 			},
-			"required": ["metadata"],
-			"additionalProperties": false
+			"required": ["metadata"]
 		}
 	]
 }

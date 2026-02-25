@@ -4,73 +4,6 @@
 	"description": "EPCIS 2.0 ErrorDeclaration describing corrections to previously captured events.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"declarationTime": {
 			"type": "string",
 			"description": "The date and time at which the declaration of error is made."
@@ -94,30 +27,5 @@
 			"description": "(Optional) If present, indicates that the events having the specified URIs as the value of their eventID fields are to be considered as \"corrections\" to the event declared erroneous by this event."
 		}
 	},
-	"required": ["declarationTime"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["declarationTime"]
 }

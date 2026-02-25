@@ -43,9 +43,8 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
 			},
-			"description": "The list of vertices. json-ld namespace:schema"
+			"description": "The list of vertices. json-ld namespace:sch"
 		}
 	},
-	"required": ["@context", "type", "itemListElement"],
-	"additionalProperties": false
+	"required": ["@context", "type", "itemListElement"]
 }

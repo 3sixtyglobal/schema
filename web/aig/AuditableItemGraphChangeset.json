@@ -33,7 +33,7 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the changeset was created. json-ld namespace:schema"
+			"description": "The date/time of when the changeset was created. json-ld namespace:sch"
 		},
 		"userIdentity": {
 			"type": "string",
@@ -48,13 +48,12 @@
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The immutable proof id which contains the signature for this changeset. json-ld type:schema:identifier"
+			"description": "The immutable proof id which contains the signature for this changeset. json-ld type:sch:identifier"
 		},
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
 			"description": "The verification for the changeset. json-ld id"
 		}
 	},
-	"required": ["type", "id", "dateCreated", "patches"],
-	"additionalProperties": false
+	"required": ["type", "id", "dateCreated", "patches"]
 }

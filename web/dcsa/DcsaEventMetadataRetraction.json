@@ -3,7 +3,6 @@
 	"$id": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction",
 	"description": "Retraction event metadata.\n\nIf `retractedEventID` is provided, the event MUST NOT include a payload.",
 	"type": "object",
-	"additionalProperties": false,
 	"properties": {
 		"retractedEventID": {
 			"type": "string",

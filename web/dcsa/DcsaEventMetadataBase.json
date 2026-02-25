@@ -25,6 +25,5 @@
 			"description": "Event type discriminator.\n\nFor the base `event` schema (T&T polling), the discriminator is limited to SHIPMENT/EQUIPMENT/TRANSPORT and is further narrowed by the concrete event union types. Other event hub schemas (e.g. IoT/Reefer) constrain this to IOT/REEFER."
 		}
 	},
-	"required": ["eventID", "eventCreatedDateTime", "publisher", "publisherRole", "eventType"],
-	"additionalProperties": false
+	"required": ["eventID", "eventCreatedDateTime", "publisher", "publisherRole", "eventType"]
 }

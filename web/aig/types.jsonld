@@ -4,7 +4,7 @@
 		"@protected": true,
 		"twin-aig": "https://schema.twindev.org/aig/",
 		"twin-common": "https://schema.twindev.org/common/",
-		"schema": "http://schema.org/",
+		"sch": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
 		"AuditableItemGraphAlias": "twin-aig:AuditableItemGraphAlias",
@@ -22,7 +22,7 @@
 		},
 		"aliasFormat": {
 			"@id": "twin-aig:aliasFormat",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"edgeRelationships": {
 			"@id": "twin-aig:edgeRelationships",
@@ -38,15 +38,15 @@
 		},
 		"patchFrom": {
 			"@id": "twin-aig:patchFrom",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"patchOperation": {
 			"@id": "twin-aig:patchOperation",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"patchPath": {
 			"@id": "twin-aig:patchPath",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"patchValue": {
 			"@id": "twin-aig:patchValue",
@@ -54,7 +54,7 @@
 		},
 		"proofId": {
 			"@id": "twin-aig:proofId",
-			"@type": "schema:identifier"
+			"@type": "sch:identifier"
 		},
 		"resourceObject": {
 			"@id": "twin-aig:resourceObject",

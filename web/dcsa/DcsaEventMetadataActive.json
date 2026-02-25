@@ -3,7 +3,6 @@
 	"$id": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive",
 	"description": "Active event metadata (not a retraction).\n\nThe OpenAPI schema defines `retractedEventID` with a default of `null`, so we allow it to be omitted or explicitly set to `null`.",
 	"type": "object",
-	"additionalProperties": false,
 	"properties": {
 		"retractedEventID": {
 			"type": "null",

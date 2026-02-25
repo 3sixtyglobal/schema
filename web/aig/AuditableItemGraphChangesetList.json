@@ -43,9 +43,8 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
 			},
-			"description": "The list of changesets. json-ld namespace:schema"
+			"description": "The list of changesets. json-ld namespace:sch"
 		}
 	},
-	"required": ["@context", "type", "itemListElement"],
-	"additionalProperties": false
+	"required": ["@context", "type", "itemListElement"]
 }

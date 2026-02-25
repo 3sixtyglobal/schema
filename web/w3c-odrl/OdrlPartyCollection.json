@@ -4,50 +4,9 @@
 	"description": "Interface for ODRL Party Collections. A PartyCollection identifies a collection of entities and is a subclass of Party. https://www.w3.org/TR/odrl-model/#party",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
+		"uid": {
+			"type": "string",
+			"description": "The unique identifier for the party. Must be an IRI."
 		},
 		"@type": {
 			"anyOf": [
@@ -62,19 +21,6 @@
 				}
 			],
 			"description": "The type of the party. Can be used to specify additional type information (e.g., \"Party\", \"vcard:Organization\", \"vcard:Individual\")."
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
-		"uid": {
-			"type": "string",
-			"description": "The unique identifier for the party. Must be an IRI."
 		},
 		"partOf": {
 			"anyOf": [
@@ -157,30 +103,5 @@
 			"description": "Refinements applied to the party collection. Used to specify constraints that apply to all members of the collection."
 		}
 	},
-	"required": ["source"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["source"]
 }

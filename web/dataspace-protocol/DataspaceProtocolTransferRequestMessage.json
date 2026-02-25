@@ -80,6 +80,5 @@
 			"description": "If defined MUST contain a transport-specific set of properties for pushing the data. It MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
 		}
 	},
-	"required": ["@context", "@type", "agreementId", "callbackAddress", "consumerPid", "format"],
-	"additionalProperties": false
+	"required": ["@context", "@type", "agreementId", "callbackAddress", "consumerPid", "format"]
 }

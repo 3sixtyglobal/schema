@@ -26,70 +26,6 @@
 				}
 			]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"type": {
 			"type": "string",
 			"const": "LogisticsTransportEquipment",
@@ -647,30 +583,5 @@
 			"description": "The measure of the tare weight (mass) of this piece of logistics transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
 		}
 	},
-	"required": ["type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["type"]
 }

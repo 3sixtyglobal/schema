@@ -48,8 +48,7 @@
 							"type": "boolean"
 						}
 					},
-					"required": ["@container"],
-					"additionalProperties": false
+					"required": ["@container"]
 				},
 				"@version": {
 					"type": "string",
@@ -77,48 +76,6 @@
 			},
 			"required": ["dcat", "dcterms"]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
 		"@type": {
 			"type": "string",
 			"enum": [
@@ -130,14 +87,9 @@
 			],
 			"description": "The type of the resource. Typically \"Catalog\", \"Dataset\", \"DataService\", \"DatasetSeries\", or the base \"Resource\"."
 		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
+		"@id": {
+			"type": "string",
+			"description": "The unique identifier for the resource."
 		},
 		"dcterms:title": {
 			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
@@ -176,7 +128,7 @@
 		"dcterms:publisher": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgent"
+					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
 				},
 				{
 					"type": "string"
@@ -185,7 +137,14 @@
 			"description": "An entity responsible for making the resource available."
 		},
 		"dcterms:creator": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgent",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "An entity responsible for producing the resource."
 		},
 		"dcterms:accessRights": {
@@ -298,30 +257,5 @@
 			"description": "An ODRL conformant policy expressing the rights associated with the resource."
 		}
 	},
-	"required": ["@context", "@type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["@context", "@type"]
 }

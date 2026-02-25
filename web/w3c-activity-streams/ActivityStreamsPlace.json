@@ -48,70 +48,6 @@
 				}
 			]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"type": {
 			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22Place%22%7Cstring)%3E",
 			"description": "Place type."
@@ -573,6 +509,10 @@
 				}
 			]
 		},
+		"mediaType": {
+			"type": "string",
+			"description": "MIME media type of the referenced resource."
+		},
 		"latitude": {
 			"type": "number",
 			"description": "The latitude of the Place.\n\nThe Activity Streams vocabulary defines this as an `xsd:float`."
@@ -585,6 +525,10 @@
 			"type": "number",
 			"description": "The altitude of the Place.\n\nMeasurement units are specified using the `units` property. If `units` is not specified, the default is assumed to be \"m\" (meters)."
 		},
+		"accuracy": {
+			"type": "number",
+			"description": "The accuracy of the Place.\n\nIndicates the accuracy of position coordinates on a Place objects. Expressed in properties of percentage. e.g. \"94.0\" means \"94.0% accurate\"."
+		},
 		"radius": {
 			"type": "number",
 			"description": "The radius from the given `latitude` and `longitude`.\n\nMeasurement units are specified using the `units` property. If `units` is not specified, the default is assumed to be \"m\" (meters)."
@@ -594,30 +538,5 @@
 			"description": "Measurement units for the `radius` and `altitude` properties.\n\nIf not specified, the default is assumed to be \"m\" (meters). The Activity Streams vocabulary allows values such as \"cm\", \"feet\", \"inches\", \"km\", \"m\", \"miles\", or any other unit expressed as a URI."
 		}
 	},
-	"required": ["@context", "type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["@context", "type"]
 }

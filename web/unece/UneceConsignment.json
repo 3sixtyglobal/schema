@@ -26,70 +26,6 @@
 				}
 			]
 		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"type": {
 			"type": "string",
 			"const": "Consignment",
@@ -1003,30 +939,5 @@
 			"description": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
 		}
 	},
-	"required": ["type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/unece/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["type"]
 }

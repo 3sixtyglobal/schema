@@ -4,73 +4,6 @@
 	"description": "Interface for ODRL Constraints. https://www.w3.org/TR/odrl-model/#constraint",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-					}
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"uid": {
 			"type": "string",
 			"description": "Optional unique identifier for the constraint."
@@ -106,8 +39,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["@value"],
-					"additionalProperties": false
+					"required": ["@value"]
 				},
 				{
 					"type": "object",
@@ -116,8 +48,7 @@
 							"type": "string"
 						}
 					},
-					"required": ["@id"],
-					"additionalProperties": false
+					"required": ["@id"]
 				},
 				{
 					"type": "array",
@@ -136,8 +67,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["@value"],
-								"additionalProperties": false
+								"required": ["@value"]
 							},
 							{
 								"type": "object",
@@ -146,8 +76,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["@id"],
-								"additionalProperties": false
+								"required": ["@id"]
 							}
 						]
 					}
@@ -181,30 +110,5 @@
 			"description": "The status value for comparison."
 		}
 	},
-	"required": ["leftOperand", "operator"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["leftOperand", "operator"]
 }

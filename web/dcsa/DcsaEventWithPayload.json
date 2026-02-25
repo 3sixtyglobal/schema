@@ -8,7 +8,6 @@
 			"properties": {
 				"metadata": {
 					"type": "object",
-					"additionalProperties": false,
 					"properties": {
 						"eventType": {
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
@@ -49,15 +48,13 @@
 					"description": "Event payload."
 				}
 			},
-			"required": ["metadata", "payload"],
-			"additionalProperties": false
+			"required": ["metadata", "payload"]
 		},
 		{
 			"type": "object",
 			"properties": {
 				"metadata": {
 					"type": "object",
-					"additionalProperties": false,
 					"properties": {
 						"eventType": {
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
@@ -98,15 +95,13 @@
 					"description": "Event payload."
 				}
 			},
-			"required": ["metadata", "payload"],
-			"additionalProperties": false
+			"required": ["metadata", "payload"]
 		},
 		{
 			"type": "object",
 			"properties": {
 				"metadata": {
 					"type": "object",
-					"additionalProperties": false,
 					"properties": {
 						"eventType": {
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventTypes",
@@ -147,8 +142,7 @@
 					"description": "Event payload."
 				}
 			},
-			"required": ["metadata", "payload"],
-			"additionalProperties": false
+			"required": ["metadata", "payload"]
 		}
 	]
 }
