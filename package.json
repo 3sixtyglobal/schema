@@ -14,6 +14,7 @@
 		"lint:markdown": "markdownlint **/*.md --ignore **/node_modules/** --ignore **/docs/reference/**",
 		"lint:spell": "cspell ** --no-progress",
 		"lint": "npm run lint:format && npm run lint:markdown && npm run lint:spell",
+		"docs": "node ./scripts/workspaces.mjs docs",
 		"dist": "echo There is no dist in this package",
 		"commitlint": "commitlint --edit",
 		"prepare": "husky",
