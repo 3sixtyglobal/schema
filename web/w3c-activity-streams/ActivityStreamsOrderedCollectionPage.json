@@ -22,8 +22,11 @@
 				},
 				{
 					"type": "array",
-					"minItems": 1,
+					"minItems": 2,
 					"prefixItems": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						},
 						{
 							"type": "string",
 							"const": "https://www.w3.org/ns/activitystreams"
@@ -35,11 +38,14 @@
 				},
 				{
 					"type": "array",
-					"minItems": 1,
+					"minItems": 2,
 					"prefixItems": [
 						{
 							"type": "string",
 							"const": "https://www.w3.org/ns/activitystreams"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 						}
 					],
 					"items": {
