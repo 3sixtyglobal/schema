@@ -55,7 +55,21 @@
 			]
 		},
 		"type": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22Organization%22%7Cstring)%3E",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "Organization"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Organization type."
 		},
 		"id": {

@@ -55,7 +55,35 @@
 			]
 		},
 		"type": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22IntransitiveActivity%22%7CActivityStreamsTypes%7Cstring)%3E",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "IntransitiveActivity"
+				},
+				{
+					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string",
+								"const": "IntransitiveActivity"
+							},
+							{
+								"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
 			"description": "Intransitive activity type."
 		},
 		"id": {

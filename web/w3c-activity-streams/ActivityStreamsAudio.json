@@ -55,7 +55,21 @@
 			]
 		},
 		"type": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22Audio%22%7Cstring)%3E",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "Audio"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "Audio type."
 		},
 		"id": {

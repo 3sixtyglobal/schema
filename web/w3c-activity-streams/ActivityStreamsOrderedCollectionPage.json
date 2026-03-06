@@ -55,7 +55,21 @@
 			]
 		},
 		"type": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ObjectOrArray%3C(%22OrderedCollectionPage%22%7Cstring)%3E",
+			"anyOf": [
+				{
+					"type": "string",
+					"const": "OrderedCollectionPage"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "OrderedCollectionPage type."
 		},
 		"id": {

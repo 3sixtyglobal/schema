@@ -55,7 +55,6 @@
 			]
 		},
 		"type": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
@@ -76,7 +75,8 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Activity Type."
 		},
 		"id": {
 			"type": "string",
