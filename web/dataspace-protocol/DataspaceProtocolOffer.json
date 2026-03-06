@@ -15,10 +15,14 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				}
 			],
 			"description": "The assigner of the offer. Required for Offer policies."
+		},
+		"@context": {
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
+			"description": "The context for the policy. Must include \"https://www.w3.org/ns/odrl.jsonld\""
 		},
 		"profile": {
 			"anyOf": [
@@ -40,10 +44,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPartyCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 				},
 				{
 					"type": "array",
@@ -53,10 +57,10 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 							},
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPartyCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 							}
 						]
 					}
@@ -70,10 +74,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAsset"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAssetCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 				},
 				{
 					"type": "array",
@@ -83,10 +87,10 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAsset"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 							},
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAssetCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 							}
 						]
 					}
@@ -97,26 +101,26 @@
 		"action": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/ActionType"
+					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAction"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/ActionType"
+								"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
 							},
 							{
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAction"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 							}
 						]
 					}
@@ -139,18 +143,18 @@
 			"description": "The parent policy(ies) this policy inherits from. IRIs identifying the parent Policy(ies)."
 		},
 		"conflict": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/ConflictStrategyType",
+			"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyType",
 			"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
 		},
 		"permission": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPermission"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPermission"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
 					}
 				}
 			],
@@ -159,12 +163,12 @@
 		"prohibition": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlProhibition"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlProhibition"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
 					}
 				}
 			],
@@ -173,12 +177,12 @@
 		"obligation": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlDuty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlDuty"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 					}
 				}
 			],
@@ -189,5 +193,5 @@
 			"description": "Unique identifier for the offer."
 		}
 	},
-	"required": ["@id", "@type", "assigner"]
+	"required": ["@context", "@id", "@type", "assigner"]
 }
