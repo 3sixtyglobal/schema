@@ -1,0 +1,193 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOffer",
+	"description": "Offer interface compliant with Eclipse Data Space Protocol.\n\nExtends IOdrlOffer with DS Protocol-specific constraints:\n- `@id` is REQUIRED (used as the primary offer identifier in DS Protocol)\n- `@context` is omitted (inherited from the parent Dataset/Distribution)",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"type": "string",
+			"const": "Offer",
+			"description": "The type must be \"Offer\"."
+		},
+		"assigner": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+				}
+			],
+			"description": "The assigner of the offer. Required for Offer policies."
+		},
+		"profile": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The profile(s) this policy conforms to. IRIs identifying the ODRL Profile(s)."
+		},
+		"assignee": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlParty"
+							},
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPartyCollection"
+							}
+						]
+					}
+				}
+			],
+			"description": "The assignee of the policy. Applies to all rules unless overridden at rule level."
+		},
+		"target": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAsset"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAssetCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAsset"
+							},
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAssetCollection"
+							}
+						]
+					}
+				}
+			],
+			"description": "The target asset for the rule."
+		},
+		"action": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/ActionType"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAction"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/ActionType"
+							},
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlAction"
+							}
+						]
+					}
+				}
+			],
+			"description": "The action associated with the rule."
+		},
+		"inheritFrom": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The parent policy(ies) this policy inherits from. IRIs identifying the parent Policy(ies)."
+		},
+		"conflict": {
+			"$ref": "https://schema.twindev.org/dataspace-protocol/ConflictStrategyType",
+			"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
+		},
+		"permission": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPermission"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlPermission"
+					}
+				}
+			],
+			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present."
+		},
+		"prohibition": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlProhibition"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlProhibition"
+					}
+				}
+			],
+			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present."
+		},
+		"obligation": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlDuty"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/dataspace-protocol/OdrlDuty"
+					}
+				}
+			],
+			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present."
+		},
+		"@id": {
+			"type": "string",
+			"description": "Unique identifier for the offer."
+		}
+	},
+	"required": ["@id", "@type", "assigner"]
+}
