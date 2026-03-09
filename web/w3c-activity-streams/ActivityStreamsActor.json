@@ -94,7 +94,8 @@
 		},
 		"id": {
 			"type": "string",
-			"description": "Global identifier."
+			"description": "Global identifier.",
+			"format": "uri"
 		},
 		"name": {
 			"anyOf": [
@@ -215,23 +216,28 @@
 		},
 		"published": {
 			"type": "string",
-			"description": "Published date-time."
+			"description": "Published date-time.",
+			"format": "date-time"
 		},
 		"updated": {
 			"type": "string",
-			"description": "Updated date-time."
+			"description": "Updated date-time.",
+			"format": "date-time"
 		},
 		"startTime": {
 			"type": "string",
-			"description": "Start time."
+			"description": "Start time.",
+			"format": "date-time"
 		},
 		"endTime": {
 			"type": "string",
-			"description": "End time."
+			"description": "End time.",
+			"format": "date-time"
 		},
 		"duration": {
 			"type": "string",
-			"description": "Duration."
+			"description": "Duration.",
+			"format": "duration"
 		},
 		"generator": {
 			"description": "Object or array data type",
