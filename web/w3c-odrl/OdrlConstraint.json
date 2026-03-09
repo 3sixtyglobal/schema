@@ -24,7 +24,6 @@
 			"description": "The operator of the constraint."
 		},
 		"rightOperand": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -67,7 +66,8 @@
 										"type": "string"
 									}
 								},
-								"required": ["@value"]
+								"required": ["@value"],
+								"additionalProperties": false
 							},
 							{
 								"type": "object",
@@ -76,15 +76,16 @@
 										"type": "string"
 									}
 								},
-								"required": ["@id"]
+								"required": ["@id"],
+								"additionalProperties": false
 							}
 						]
 					}
 				}
-			]
+			],
+			"description": "The right operand of the constraint. value with optional"
 		},
 		"rightOperandReference": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -95,7 +96,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "Reference to the right operand. Can be used to reference external resources or policies using an IRI. Mutually exclusive with rightOperand."
 		},
 		"dataType": {
 			"type": "string",

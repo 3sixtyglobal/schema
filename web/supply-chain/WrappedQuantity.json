@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/supply-chain/WrappedQuantity",
+	"description": "Wrapped UNECE quantity structure (D23B).",
+	"type": "object",
+	"properties": {
+		"unece:QuantityTypeValue": {
+			"type": "number",
+			"description": "Quantity numeric value."
+		}
+	},
+	"required": ["unece:QuantityTypeValue"]
+}

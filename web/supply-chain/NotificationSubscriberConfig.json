@@ -37,7 +37,6 @@
 							"examples": ["bearer"]
 						}
 					},
-					"additionalProperties": false,
 					"description": "Security scheme details."
 				},
 				"credentials": {
@@ -59,7 +58,6 @@
 							"examples": ["jwt-access-token"]
 						}
 					},
-					"additionalProperties": false,
 					"description": "Credentials and token information."
 				},
 				"subjectPayload": {
@@ -87,7 +85,6 @@
 					"examples": ["$.access_token"]
 				}
 			},
-			"additionalProperties": false,
 			"description": "Authentication and request details for sending notifications."
 		},
 		"request": {
@@ -110,10 +107,8 @@
 					"description": "Additional headers to include in the request."
 				}
 			},
-			"additionalProperties": false,
 			"description": "Optional request configuration overrides."
 		}
 	},
-	"required": ["baseEndpoint", "auth"],
-	"additionalProperties": false
+	"required": ["baseEndpoint", "auth"]
 }

@@ -102,7 +102,6 @@
 			"description": "Most recent date on which the catalog record entry was changed or modified."
 		},
 		"dcterms:conformsTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -113,7 +112,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "An established standard to which the catalog record conforms."
 		},
 		"foaf:primaryTopic": {
 			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource",

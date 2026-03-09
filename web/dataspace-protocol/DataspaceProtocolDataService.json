@@ -33,7 +33,6 @@
 			"description": "Most recent date on which the resource was changed, updated or modified."
 		},
 		"dcterms:language": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -44,7 +43,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A language of the resource."
 		},
 		"dcterms:publisher": {
 			"anyOf": [
@@ -102,7 +102,6 @@
 			"description": "Information about rights held in and over the resource."
 		},
 		"dcterms:conformsTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -113,7 +112,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "An established standard to which the resource conforms."
 		},
 		"dcterms:type": {
 			"type": "string",
@@ -135,7 +135,6 @@
 			"description": "A keyword or tag describing the resource."
 		},
 		"dcat:theme": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -146,10 +145,10 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A main category of the resource. A resource can have multiple themes."
 		},
 		"dcat:landingPage": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -160,7 +159,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A Web page that can be navigated to gain access to the resource."
 		},
 		"dcat:qualifiedRelation": {
 			"anyOf": [

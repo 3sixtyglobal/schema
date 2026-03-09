@@ -37,28 +37,28 @@
 			"description": "Exit location of the consignment"
 		},
 		"firstConsignor": {
-			"$ref": "https://schema.twindev.org/supply-chain/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The first consignor of the consignment which is the party that initially sent the goods."
 		},
 		"lastConsignee": {
-			"$ref": "https://schema.twindev.org/supply-chain/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The last consignee of the consignment"
 		},
 		"tradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/supply-chain/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "The import and exporter of the consignment"
 		},
 		"carrierParty": {
-			"$ref": "https://schema.twindev.org/supply-chain/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The carrier party responsible for the consignment"
 		},
 		"commodities": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/supply-chain/UneceConsignmentItem"
+				"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem"
 			},
 			"description": "Commodities in the consignment"
 		},
@@ -73,7 +73,7 @@
 		"transportMeans": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/supply-chain/UneceLogisticsTransportEquipment"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
 			},
 			"description": "Details of the transport means used for the consignment"
 		},
@@ -90,7 +90,6 @@
 				}
 			},
 			"required": ["name", "date"],
-			"additionalProperties": false,
 			"description": "Latest status information e.g. Planned."
 		},
 		"dateCreated": {
@@ -123,6 +122,5 @@
 		"transportMeans",
 		"latestStatus",
 		"dateCreated"
-	],
-	"additionalProperties": false
+	]
 }

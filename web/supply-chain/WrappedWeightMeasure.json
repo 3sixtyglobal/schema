@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/supply-chain/WrappedWeightMeasure",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.twindev.org/supply-chain/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"type": "string",
+			"const": "WeightUnitMeasureType",
+			"description": "JSON-LD Type."
+		},
+		"WeightUnitMeasureTypeValue": {
+			"type": "string",
+			"description": "The numeric value."
+		},
+		"WeightUnitMeasureTypeCode": {
+			"$ref": "https://schema.twindev.org/supply-chain/UneceWeightUnitMeasureCode",
+			"description": "The unit code."
+		},
+		"unece:WeightUnitMeasureTypeValue": {
+			"type": "string"
+		},
+		"unece:WeightUnitMeasureTypeCode": {
+			"type": "string"
+		}
+	},
+	"required": ["type", "unece:WeightUnitMeasureTypeCode", "unece:WeightUnitMeasureTypeValue"]
+}

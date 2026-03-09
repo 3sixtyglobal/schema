@@ -61,7 +61,6 @@
 			"description": "Minimum time period resolvable in the distribution."
 		},
 		"dcterms:conformsTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -72,7 +71,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "An established standard to which the distribution conforms."
 		},
 		"dcat:mediaType": {
 			"type": "string",

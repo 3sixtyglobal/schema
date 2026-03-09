@@ -106,7 +106,6 @@
 			"description": "Most recent date on which the resource was changed, updated or modified."
 		},
 		"dcterms:language": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -117,7 +116,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A language of the resource."
 		},
 		"dcterms:publisher": {
 			"anyOf": [
@@ -175,7 +175,6 @@
 			"description": "Information about rights held in and over the resource."
 		},
 		"dcterms:conformsTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -186,7 +185,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "An established standard to which the resource conforms."
 		},
 		"dcterms:type": {
 			"type": "string",
@@ -208,7 +208,6 @@
 			"description": "A keyword or tag describing the resource."
 		},
 		"dcat:theme": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -219,10 +218,10 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A main category of the resource. A resource can have multiple themes."
 		},
 		"dcat:landingPage": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -233,7 +232,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A Web page that can be navigated to gain access to the resource."
 		},
 		"dcat:qualifiedRelation": {
 			"anyOf": [
@@ -251,7 +251,6 @@
 			"description": "An ODRL conformant policy expressing the rights associated with the resource."
 		},
 		"dcat:distribution": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"$ref": "https://schema.twindev.org/w3c-dcat/DistributionOptionalContext"
@@ -262,7 +261,8 @@
 						"$ref": "https://schema.twindev.org/w3c-dcat/DistributionOptionalContext"
 					}
 				}
-			]
+			],
+			"description": "An available distribution of the dataset."
 		},
 		"dcterms:accrualPeriodicity": {
 			"type": "string",
@@ -278,18 +278,13 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					],
-					"description": "Object or array data type"
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The geographical area covered by the dataset."
@@ -326,7 +321,6 @@
 			"description": "A dataset that is part of this dataset series."
 		},
 		"dcat:seriesMember": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -337,10 +331,10 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "A dataset that is part of this dataset series."
 		},
 		"dcat:dataset": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"$ref": "https://schema.twindev.org/w3c-dcat/DatasetOptionalContext"
@@ -351,7 +345,8 @@
 						"$ref": "https://schema.twindev.org/w3c-dcat/DatasetOptionalContext"
 					}
 				}
-			]
+			],
+			"description": "A dataset that is part of this dataset series."
 		}
 	},
 	"required": ["@context", "@type"]
