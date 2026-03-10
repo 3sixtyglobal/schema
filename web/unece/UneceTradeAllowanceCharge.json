@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -52,7 +52,8 @@
 		},
 		"appliedDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value applied to the trade allowance charge."
+			"description": "A date, time, date time, or other date time value applied to the trade allowance charge.",
+			"format": "date-time"
 		},
 		"basisAmount": {
 			"type": "array",
@@ -92,7 +93,14 @@
 			"description": "A textual description of this trade allowance charge."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this trade allowance charge."
 		},
 		"prepaidIndicator": {

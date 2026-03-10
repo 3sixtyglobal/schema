@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -40,7 +40,14 @@
 			"description": "A textual description of this metric characteristic."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this metric characteristic."
 		},
 		"metricCharacteristicValueCode": {
@@ -68,7 +75,8 @@
 		},
 		"valueDateTime": {
 			"type": "string",
-			"description": "The value for this metric characteristic, expressed as a date, time, date time, or other date time value."
+			"description": "The value for this metric characteristic, expressed as a date, time, date time, or other date time value.",
+			"format": "date-time"
 		},
 		"valueIndicator": {
 			"type": "boolean",

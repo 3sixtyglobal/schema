@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,23 +36,52 @@
 			"description": "A code specifying a category of this government registration."
 		},
 		"countryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the country for this government registration."
 		},
 		"countrySubDivisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the country sub-division for this registration."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this government registration."
 		},
 		"lastRegisteredYearDateTime": {
 			"type": "string",
-			"description": "The last registered year of this government registration."
+			"description": "The last registered year of this government registration.",
+			"format": "date-time"
 		},
 		"licenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of a licence for this government registration."
 		},
 		"recordedDate": {
@@ -75,7 +104,14 @@
 			"description": "The period of time during which this government registration is valid."
 		},
 		"versionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the version of this government registration."
 		}
 	},

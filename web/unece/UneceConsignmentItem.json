@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -167,7 +167,14 @@
 			"description": "The code used as a first extension to the type code for further specifying the type of supply chain consignment item."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global identifier for this supply chain consignment item."
 		},
 		"goodsTypeCode": {
@@ -193,7 +200,14 @@
 			"description": "Handling instructions for this supply chain consignment item."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this supply chain consignment item."
 		},
 		"importTypeCode": {

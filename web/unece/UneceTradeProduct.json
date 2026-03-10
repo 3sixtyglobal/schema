@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -212,7 +212,14 @@
 			"description": "A code specifying the available measurement of this trade product."
 		},
 		"batchId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A batch identifier for this trade product."
 		},
 		"biologicallyBasedIndicator": {
@@ -232,7 +239,14 @@
 			"description": "The brand range name, expressed as text, for this trade product."
 		},
 		"buyerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique buyer assigned identifier for this trade product."
 		},
 		"buyerSuppliedPartsReferenceDocument": {
@@ -248,7 +262,8 @@
 		},
 		"cancellationAnnouncedLaunchDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value of the cancellation of the announced launch of this trade product."
+			"description": "The formatted date, time, date time, or other date time value of the cancellation of the announced launch of this trade product.",
+			"format": "date-time"
 		},
 		"careSpecifiedLabel": {
 			"type": "array",
@@ -269,7 +284,14 @@
 			"description": "The code specifying the classification for this trade product."
 		},
 		"collectionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A collection identifier of this trade product."
 		},
 		"collectionStatusCode": {
@@ -289,7 +311,14 @@
 			"description": "The code specifying the light source used for colour matching of this trade product."
 		},
 		"colourMatchingSampleId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of the colour matching sample for this trade product."
 		},
 		"commonName": {
@@ -336,7 +365,14 @@
 			"description": "The code specifying the criticality type of this trade product."
 		},
 		"customerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique customer assigned identifier for this trade product."
 		},
 		"customsStatisticalClassificationCode": {
@@ -344,7 +380,14 @@
 			"description": "The code specifying the customs statistical classification for this trade product."
 		},
 		"dNAMarkerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The DNA marker identifier of this trade product."
 		},
 		"description": {
@@ -367,7 +410,14 @@
 			"description": "A designation, expressed as text, for this trade product."
 		},
 		"digitalPlatformAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The digital platform assigned identifier for this trade product."
 		},
 		"distributorParty": {
@@ -382,7 +432,14 @@
 			"description": "The measure of the drained net weight (mass) of this trade product."
 		},
 		"ePCId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The EPC (Electronic Product Code) identifier of this trade product."
 		},
 		"endItemName": {
@@ -416,7 +473,14 @@
 			"description": "A code specifying the Federal Item Identification Guide (FIIG) criticality type of this trade product."
 		},
 		"fSCId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique Federal Supply Class (FSC) identifier for this trade product."
 		},
 		"finalAssemblyCountry": {
@@ -447,7 +511,14 @@
 			"description": "The code specifying the type of function for this trade product."
 		},
 		"gTINId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A Global Trade Item Number (GTIN) identifier for this trade product."
 		},
 		"geneticModificationExtentCode": {
@@ -455,11 +526,25 @@
 			"description": "The code specifying the extent of a genetic modification to this trade product."
 		},
 		"globalExtensionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global extension identifier for this trade product, such as a prefix or a suffix."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique global identifier for this trade product."
 		},
 		"grossVolumeMeasure": {
@@ -477,7 +562,14 @@
 			"description": "A measure of the gross weight (mass) of this trade product."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this trade product."
 		},
 		"includedProduct": {
@@ -503,7 +595,14 @@
 			"description": "An individual instance of this trade product."
 		},
 		"industryAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique industry assigned identifier for this product."
 		},
 		"informationNote": {
@@ -534,7 +633,8 @@
 		},
 		"latestProductDataChangeDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product."
+			"description": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product.",
+			"format": "date-time"
 		},
 		"legalRightsOwnerParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -571,7 +671,14 @@
 			"description": "The country of manufacture of this trade product."
 		},
 		"manufacturerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique manufacturer assigned identifier for this trade product."
 		},
 		"manufacturerParty": {
@@ -618,7 +725,14 @@
 			"description": "Minimum linear spatial dimensions of this trade product."
 		},
 		"modelId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique model identifier for this trade product."
 		},
 		"modelName": {
@@ -626,11 +740,25 @@
 			"description": "The model name, expressed as text, for this trade product."
 		},
 		"nIINId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique National Item Identification Number (NIIN) identifier for this trade product."
 		},
 		"nSNId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique National Stock Number (NSN) identifier for this trade product."
 		},
 		"name": {
@@ -696,7 +824,14 @@
 			"description": "A textual description of the print design for this trade product."
 		},
 		"printDesignId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of the print design for this trade product."
 		},
 		"priorityCode": {
@@ -704,12 +839,20 @@
 			"description": "A code specifying a priority for this trade product."
 		},
 		"productGroupId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for a product group for this trade product."
 		},
 		"productionDiscontinuedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the discontinuation of the production of this trade product."
+			"description": "The date, time, date time, or other date time value of the discontinuation of the production of this trade product.",
+			"format": "date-time"
 		},
 		"productionLeadTimeMeasure": {
 			"type": "array",
@@ -719,7 +862,14 @@
 			"description": "A measure of the production lead time for this trade product."
 		},
 		"promotionalVariantId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The promotional variant identifier for this trade product."
 		},
 		"qualityLevelCode": {
@@ -750,7 +900,14 @@
 			"description": "The code specifying the type of recycling for this trade product."
 		},
 		"regulationConformityId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier assigned to indicate conformity with a regulation or standard for this trade product, such as \"CE\" which declares that the product conforms with the essential requirements of the applicable EC directives."
 		},
 		"rejectionReasonCode": {
@@ -838,7 +995,14 @@
 			"description": "A security information note for this trade product."
 		},
 		"sellerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique seller assigned identifier for this trade product."
 		},
 		"sizeCode": {
@@ -979,7 +1143,14 @@
 			"description": "A country of supply for this trade product."
 		},
 		"trackingSystemId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for a tracking system of this trade product."
 		},
 		"tradeName": {
@@ -1009,11 +1180,25 @@
 			"description": "A textual description of the type for this trade product."
 		},
 		"uRIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The URI (Uniform Resource Identifier), such as a web or an email address, for this trade product."
 		},
 		"ultimateCustomerAssignedExtensionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An ultimate customer assigned extension identifier for this trade product."
 		},
 		"unitTypeCode": {
@@ -1040,7 +1225,14 @@
 			"description": "A textual description of a variant of this trade product."
 		},
 		"variantId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A variant identifier of this trade product."
 		}
 	},

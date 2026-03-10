@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -32,7 +32,14 @@
 			"description": "JSON-LD Type."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this specified marketplace."
 		},
 		"name": {
@@ -55,7 +62,14 @@
 			"description": "The indication of whether or not this specified marketplace is virtual, such as a web-based marketplace."
 		},
 		"websiteURIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A website Uniform Resource Identifier (URI) for this specified marketplace."
 		}
 	},

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -45,11 +45,13 @@
 		},
 		"averageDurationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time of the average duration for this supply chain inventory."
+			"description": "The date, time, date time, or other date time of the average duration for this supply chain inventory.",
+			"format": "date-time"
 		},
 		"calculationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the calculation of this supply chain inventory."
+			"description": "The date, time, date time, or other date time value of the calculation of this supply chain inventory.",
+			"format": "date-time"
 		},
 		"dispositionDocument": {
 			"type": "array",
@@ -97,7 +99,8 @@
 		},
 		"plannedStockCalculationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
+			"description": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory.",
+			"format": "date-time"
 		},
 		"plannedStockQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",

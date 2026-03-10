@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -59,7 +59,14 @@
 			"description": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'."
 		},
 		"cityId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE)."
 		},
 		"cityName": {
@@ -79,7 +86,14 @@
 			"description": "A name, expressed as text, of the country for this trade address."
 		},
 		"countrySubDivisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier of the country sub-division for this trade address."
 		},
 		"countrySubDivisionName": {
@@ -106,7 +120,14 @@
 			"description": "An identification of a set of geographical coordinates for this trade address."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this trade address."
 		},
 		"invalidIndicator": {
@@ -150,7 +171,14 @@
 			"description": "A name, expressed as text, of a street or thoroughfare for this trade address."
 		},
 		"tradeAddressCountryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a country for this trade address."
 		}
 	},

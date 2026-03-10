@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -40,10 +40,18 @@
 		},
 		"endDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the end of this specified production cycle."
+			"description": "The date, time, date time, or other date time value of the end of this specified production cycle.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this specified production cycle."
 		},
 		"name": {
@@ -59,7 +67,8 @@
 		},
 		"productionYearDateTime": {
 			"type": "string",
-			"description": "The production year for this specified production cycle."
+			"description": "The production year for this specified production cycle.",
+			"format": "date-time"
 		},
 		"relatedBinaryFile": {
 			"type": "array",
@@ -74,7 +83,8 @@
 		},
 		"startDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the start of this specified production cycle."
+			"description": "The date, time, date time, or other date time value of the start of this specified production cycle.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type"]

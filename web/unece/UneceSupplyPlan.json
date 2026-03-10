@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -76,7 +76,8 @@
 		},
 		"latestSynchronizationDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value of the latest synchronization of the supply chain supply plan."
+			"description": "A date, time, date time, or other date time value of the latest synchronization of the supply chain supply plan.",
+			"format": "date-time"
 		},
 		"minusToleranceQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
@@ -147,7 +148,8 @@
 		},
 		"synchronizationDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan."
+			"description": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan.",
+			"format": "date-time"
 		},
 		"synchronizationQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",

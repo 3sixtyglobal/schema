@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,14 +33,23 @@
 		},
 		"birthDateTime": {
 			"type": "string",
-			"description": "The birth date for this individual TT animal."
+			"description": "The birth date for this individual TT animal.",
+			"format": "date-time"
 		},
 		"deathDateTime": {
 			"type": "string",
-			"description": "The death date for this individual TT animal."
+			"description": "The death date for this individual TT animal.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this TT animal, such as the number appearing on an animal ear tag."
 		},
 		"specifiedDelimitedPeriod": {

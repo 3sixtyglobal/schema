@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,12 +36,20 @@
 			"description": "A textual description of this supply chain schedule."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this supply chain schedule."
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+			"description": "A date, time, date time, or other date time of an occurrence in this supply chain schedule.",
+			"format": "date-time"
 		},
 		"statusCode": {
 			"type": "string",

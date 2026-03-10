@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,15 +33,18 @@
 		},
 		"actualDateTime": {
 			"type": "string",
-			"description": "An actual date, time, date time, or other date time value of this financial booking."
+			"description": "An actual date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
 		},
 		"creditDateTime": {
 			"type": "string",
-			"description": "The credit date, time, date time, or other date time value of this financial booking."
+			"description": "The credit date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
 		},
 		"debitDateTime": {
 			"type": "string",
-			"description": "The debit date, time, date time, or other date time value of this financial booking."
+			"description": "The debit date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type"]

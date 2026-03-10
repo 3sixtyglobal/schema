@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -81,7 +81,8 @@
 		},
 		"buyerApprovedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement.",
+			"format": "date-time"
 		},
 		"buyerAssignedAccountantParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -166,7 +167,14 @@
 			"description": "The export licence document referenced in this header trade agreement."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this header trade agreement."
 		},
 		"impactCode": {
@@ -294,7 +302,14 @@
 			"description": "A requisitioner document referenced in this header trade agreement."
 		},
 		"revisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for the revision of this header trade agreement."
 		},
 		"salesAgentParty": {

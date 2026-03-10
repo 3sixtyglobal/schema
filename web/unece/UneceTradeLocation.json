@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The name, expressed as text, of a country location used or referenced in trade."
 		},
 		"countrySubDivisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the country sub-division for this trade location."
 		},
 		"countrySubDivisionName": {
@@ -44,7 +51,14 @@
 			"description": "The name, expressed as text, of a sub-division of a country location used or referenced in trade."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this location used or referenced in trade."
 		},
 		"locationFunctionTypeCode": {
@@ -59,7 +73,14 @@
 			"description": "The name, expressed as text, of this location used or referenced in trade."
 		},
 		"tradeLocationCountryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a country location used or referenced in trade."
 		}
 	},

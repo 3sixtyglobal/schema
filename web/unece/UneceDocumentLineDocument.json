@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -52,7 +52,14 @@
 			"description": "The period within which this document line is effective."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this document line document."
 		},
 		"includedNote": {
@@ -64,14 +71,23 @@
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the issuance of this document line."
+			"description": "The date, time, date time, or other date time value for the issuance of this document line.",
+			"format": "date-time"
 		},
 		"latestRevisionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the latest revision of this document line."
+			"description": "The date, time, date time, or other date time value for the latest revision of this document line.",
+			"format": "date-time"
 		},
 		"lineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this document line."
 		},
 		"lineStatusReason": {
@@ -83,12 +99,20 @@
 			"description": "The code specifying the line status reason for this document line."
 		},
 		"parentLineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the parent line to this document line."
 		},
 		"publicationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the publication of this document line."
+			"description": "The date, time, date time, or other date time value of the publication of this document line.",
+			"format": "date-time"
 		},
 		"referenceAcknowledgementDocument": {
 			"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementDocument",
@@ -106,11 +130,25 @@
 			"description": "The code specifying the response reason of this document line."
 		},
 		"subordinateLineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a subordinate line of this document line."
 		},
 		"uUIDLineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The universally unique identifier (UUID) of this document line."
 		}
 	},

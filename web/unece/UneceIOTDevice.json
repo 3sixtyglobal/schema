@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -32,7 +32,14 @@
 			"description": "JSON-LD Type."
 		},
 		"attachedAssetId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for the asset, such as a container, to which this monitoring IOT device is attached."
 		},
 		"communicationCapabilityCode": {
@@ -54,7 +61,14 @@
 			"description": "A product certificate granted for this monitoring IOT device."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this monitoring IOT device."
 		},
 		"interfaceEquipment": {
@@ -70,14 +84,22 @@
 		},
 		"latestReceivedSignalDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
+			"description": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver.",
+			"format": "date-time"
 		},
 		"manufacturerParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The manufacturer party of this monitoring IOT device."
 		},
 		"modelId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A model identifier for this monitoring IOT device."
 		},
 		"operationalStatusCode": {

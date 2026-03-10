@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -74,16 +74,25 @@
 			"description": "The gross weight measure specified in this exchanged declaration."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this exchanged declaration."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the issuance of this exchanged declaration."
+			"description": "The date, time, date time or other date time value for the issuance of this exchanged declaration.",
+			"format": "date-time"
 		},
 		"jurisdictionEntryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration enter a jurisdiction, such as the actual date of arrival of a means of transport."
+			"description": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration enter a jurisdiction, such as the actual date of arrival of a means of transport.",
+			"format": "date-time"
 		},
 		"previousDocument": {
 			"type": "array",
@@ -124,7 +133,14 @@
 			"description": "The total package quantity specified in this exchanged declaration."
 		},
 		"versionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for the version of this exchanged declaration."
 		}
 	},

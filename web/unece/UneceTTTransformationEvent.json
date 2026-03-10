@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -51,11 +51,25 @@
 			"description": "The code specifying the disposition related to this TT transformation event."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this TT transformation event."
 		},
 		"inputObjectInstanceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An instance identifier for an input object of this TT transformation event."
 		},
 		"inputQuantitySpecifiedEventElement": {
@@ -67,10 +81,18 @@
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value at which this TT transformation event occurred."
+			"description": "The date, time, date time, or other date time value at which this TT transformation event occurred.",
+			"format": "date-time"
 		},
 		"outputObjectInstanceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An instance identifier for an output object of this TT transformation event."
 		},
 		"outputQuantitySpecifiedEventElement": {
@@ -86,7 +108,8 @@
 		},
 		"recordedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value at which this TT transformation event was recorded."
+			"description": "The date, time, date time, or other date time value at which this TT transformation event was recorded.",
+			"format": "date-time"
 		},
 		"relatedCertification": {
 			"type": "array",
@@ -117,7 +140,14 @@
 			"description": "A trade transaction specified for this TT transformation event."
 		},
 		"transformationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The transformation identifier for this TT transformation event."
 		}
 	},

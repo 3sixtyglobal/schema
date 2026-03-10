@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -48,7 +48,8 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "An expiry date, time, date time or other date time value for this specified licence."
+			"description": "An expiry date, time, date time or other date time value for this specified licence.",
+			"format": "date-time"
 		},
 		"grantedParty": {
 			"type": "array",
@@ -58,12 +59,20 @@
 			"description": "A party granted this specified licence."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this specified licence."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "An issue date, time, date time or other date time value of this specified licence."
+			"description": "An issue date, time, date time or other date time value of this specified licence.",
+			"format": "date-time"
 		},
 		"issuerParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -48,18 +48,33 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The creation date, time, date time, or other date time value for this payment trade settlement."
+			"description": "The creation date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
 		},
 		"creditNoteAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the credit note for this payment trade settlement."
 		},
 		"creditorReferenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
 		},
 		"creditorReferenceIssuerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the issuer of the creditor reference for this payment trade settlement."
 		},
 		"creditorReferenceTypeCode": {
@@ -72,7 +87,8 @@
 		},
 		"dueDateTime": {
 			"type": "string",
-			"description": "The due date, time, date time, or other date time value for this payment trade settlement."
+			"description": "The due date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
 		},
 		"duePayableAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
@@ -87,7 +103,14 @@
 			"description": "An instruction, expressed as text, for this payment trade settlement."
 		},
 		"invoicePayerAssignedReferenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the invoice payer assigned reference of this payment trade settlement."
 		},
 		"payeeParty": {
@@ -127,7 +150,8 @@
 		},
 		"receiptDateTime": {
 			"type": "string",
-			"description": "The receipt date, time, date time, or other date time value for this payment trade settlement."
+			"description": "The receipt date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
 		},
 		"recordedExperienceItem": {
 			"type": "array",

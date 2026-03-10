@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,10 +33,18 @@
 		},
 		"birthDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value which specifies the birth date for this representative person."
+			"description": "The date, time, date time or other date time value which specifies the birth date for this representative person.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this representative person."
 		},
 		"nationalityCountry": {

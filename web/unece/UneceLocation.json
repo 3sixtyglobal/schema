@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -71,7 +71,14 @@
 			"description": "The country name, expressed as text, of this referenced location."
 		},
 		"countrySubDivisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the country sub-division for this referenced location."
 		},
 		"definedCoordinateReferenceSystem": {
@@ -83,11 +90,25 @@
 			"description": "A textual description for this referenced location."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global identifier of this referenced location."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this referenced location such as a United Nations Blue Number (UNBN) or GS1 Global Location Number (GLN)."
 		},
 		"includedPolygon": {
@@ -95,7 +116,14 @@
 			"description": "The polygon included for this referenced location."
 		},
 		"locationCountryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the country for this referenced location."
 		},
 		"locationReferenceTypeCode": {

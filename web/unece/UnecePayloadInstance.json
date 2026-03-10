@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The code specifying the content type of this XHE payload instance."
 		},
 		"customizationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The customization identifier for this XHE payload instance."
 		},
 		"decryptionKeyReference": {
@@ -72,11 +79,25 @@
 			"description": "The code specifying the encryption method for this XHE payload instance."
 		},
 		"handlingServiceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The handling service identifier for this XHE payload instance."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this XHE payload instance."
 		},
 		"payloadReference": {
@@ -84,11 +105,25 @@
 			"description": "The reference to the payload for this XHE payload instance."
 		},
 		"profileExecutionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The profile execution identifier for this XHE payload instance."
 		},
 		"profileId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The profile identifier for this XHE payload instance."
 		},
 		"relevantReference": {
@@ -103,7 +138,14 @@
 			"description": "The code specifying the validation type of this XHE payload instance."
 		},
 		"validationVersionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The validation version identifier for this XHE payload instance."
 		}
 	},

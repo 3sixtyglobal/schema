@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,10 +33,18 @@
 		},
 		"endAvailabilityDateTime": {
 			"type": "string",
-			"description": "The end date, time, date time, or other date time value for the availability of this XHE reference."
+			"description": "The end date, time, date time, or other date time value for the availability of this XHE reference.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this XHE reference."
 		},
 		"login": {
@@ -49,7 +57,8 @@
 		},
 		"startAvailabilityDateTime": {
 			"type": "string",
-			"description": "The start date, time, date time, or other date time value for the availability of this XHE reference."
+			"description": "The start date, time, date time, or other date time value for the availability of this XHE reference.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type", "identifier"]

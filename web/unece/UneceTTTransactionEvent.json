@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -55,19 +55,41 @@
 			"description": "The code specifying the disposition related to this TT transaction event."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this TT transaction event."
 		},
 		"objectInstanceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An instance identifier for an object of this TT transaction event."
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value at which this TT transaction event occurred."
+			"description": "The date, time, date time, or other date time value at which this TT transaction event occurred.",
+			"format": "date-time"
 		},
 		"parentObjectId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the parent object for this TT transaction event."
 		},
 		"quantitySpecifiedEventElement": {
@@ -83,7 +105,8 @@
 		},
 		"recordedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value at which this TT transaction event was recorded."
+			"description": "The date, time, date time, or other date time value at which this TT transaction event was recorded.",
+			"format": "date-time"
 		},
 		"relatedCertification": {
 			"type": "array",

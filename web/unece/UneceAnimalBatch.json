@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,18 +33,34 @@
 		},
 		"breakUpDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the break up of this animal batch."
+			"description": "The date, time, date time, or other date time value of the break up of this animal batch.",
+			"format": "date-time"
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the creation of this animal batch."
+			"description": "The date, time, date time, or other date time value of the creation of this animal batch.",
+			"format": "date-time"
 		},
 		"fLUXId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A Fisheries Language for Universal eXchange (FLUX) identifier for this animal batch."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this animal batch."
 		},
 		"maximumSizeMeasure": {
@@ -57,10 +73,18 @@
 		},
 		"saleDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the sale for this animal batch."
+			"description": "The date, time, date time, or other date time value of the sale for this animal batch.",
+			"format": "date-time"
 		},
 		"salesNoteId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for the sales note for this animal batch."
 		},
 		"specifiedDelimitedPeriod": {

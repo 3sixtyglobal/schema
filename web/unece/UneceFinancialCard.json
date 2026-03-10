@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -63,10 +63,18 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The date of expiry up to which this trade settlement financial card is valid."
+			"description": "The date of expiry up to which this trade settlement financial card is valid.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier, commonly known as the card number, of this trade settlement financial card."
 		},
 		"interestRatePercent": {
@@ -94,7 +102,8 @@
 		},
 		"validFromDateTime": {
 			"type": "string",
-			"description": "The date from which this trade settlement financial card is valid."
+			"description": "The date from which this trade settlement financial card is valid.",
+			"format": "date-time"
 		},
 		"verificationNumeric": {
 			"type": "string",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -184,7 +184,14 @@
 			"description": "The code specifying the business type of this trade party."
 		},
 		"cAGEId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Commercial And Government Entity (CAGE) identifier for this trade party."
 		},
 		"chainName": {
@@ -220,11 +227,25 @@
 			"description": "A cooperative information source specified for this trade party."
 		},
 		"dODAACId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Department Of Defense Activity Address Code (DODAAC) identifier for this trade party."
 		},
 		"dUNSId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique nine-digit Data Universal Numbering System (DUNS) identifier for this trade party."
 		},
 		"definedContact": {
@@ -258,15 +279,36 @@
 			"description": "A fax communication for this trade party."
 		},
 		"gLNId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A Global Location Number (GLN) identifier for this trade party."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A globally unique identifier of this trade party."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier of this trade party."
 		},
 		"issuedNotificationReferencedDocument": {
@@ -332,11 +374,25 @@
 			"description": "The indication of whether or not this trade party is quality assured."
 		},
 		"rICId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Routing Identifier Code (RIC) identifier for this trade party."
 		},
 		"registeredId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A registered identifier of this trade party."
 		},
 		"relatedBatch": {

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -46,7 +46,14 @@
 			"description": "A referenced product additionally applicable with this supply chain trade line item."
 		},
 		"additionalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An additional unique identifier for this supply chain trade line item."
 		},
 		"additionalInformationNote": {
@@ -96,7 +103,14 @@
 			"description": "A piece of transport equipment associated with this supply chain trade line item."
 		},
 		"barcodeId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique barcode identifier for this supply chain trade line item."
 		},
 		"complementaryApplicableProduct": {
@@ -129,7 +143,14 @@
 			"description": "A textual description providing general information for this supply chain trade line item."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this supply chain trade line item."
 		},
 		"includedSubordinateTradeLineItem": {

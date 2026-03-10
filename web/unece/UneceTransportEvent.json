@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,15 +33,18 @@
 		},
 		"actualArrivalRelatedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the actual arrival related to this transport event."
+			"description": "The date, time, date time or other date time value of the actual arrival related to this transport event.",
+			"format": "date-time"
 		},
 		"actualDepartureRelatedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the actual departure related to this transport event."
+			"description": "The date, time, date time or other date time value of the actual departure related to this transport event.",
+			"format": "date-time"
 		},
 		"actualOccurrenceDateTime": {
 			"type": "string",
-			"description": "The actual date, time, date time, or other date time value of the occurrence of this transport event."
+			"description": "The actual date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
 		},
 		"actualOccurrencePeriod": {
 			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
@@ -71,7 +74,8 @@
 		},
 		"arrivalRelatedDateTime": {
 			"type": "string",
-			"description": "An arrival date, time, date time, or other date time value related to this transport event."
+			"description": "An arrival date, time, date time, or other date time value related to this transport event.",
+			"format": "date-time"
 		},
 		"associatedGeographicalFeature": {
 			"type": "array",
@@ -114,7 +118,8 @@
 		},
 		"departureRelatedDateTime": {
 			"type": "string",
-			"description": "A departure date, time, date time, or other date time value related to this transport event."
+			"description": "A departure date, time, date time, or other date time value related to this transport event.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
@@ -122,18 +127,27 @@
 		},
 		"estimatedOccurrenceDateTime": {
 			"type": "string",
-			"description": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
+			"description": "The estimated date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
 		},
 		"estimatedTransportMeansArrivalOccurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this transport event is estimated to occur."
+			"description": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this transport event is estimated to occur.",
+			"format": "date-time"
 		},
 		"expectedIndicator": {
 			"type": "boolean",
 			"description": "The indication of whether or not this transport event is or was expected."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this transport event."
 		},
 		"laycanOccurrencePeriod": {
@@ -179,7 +193,8 @@
 		},
 		"receivedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver."
+			"description": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver.",
+			"format": "date-time"
 		},
 		"relatedObservation": {
 			"type": "array",
@@ -205,7 +220,8 @@
 		},
 		"requestedOccurrenceDateTime": {
 			"type": "string",
-			"description": "The requested date, time, date time, or other date time value of the occurrence of this transport event."
+			"description": "The requested date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
 		},
 		"requestedRelatedService": {
 			"type": "array",
@@ -216,15 +232,18 @@
 		},
 		"scheduledArrivalRelatedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event."
+			"description": "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event.",
+			"format": "date-time"
 		},
 		"scheduledDepartureRelatedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the scheduled departure related to this referenced transport event."
+			"description": "The date, time, date time or other date time value of the scheduled departure related to this referenced transport event.",
+			"format": "date-time"
 		},
 		"scheduledOccurrenceDateTime": {
 			"type": "string",
-			"description": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event."
+			"description": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
 		},
 		"scheduledOccurrencePeriod": {
 			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"acquisitionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of an acquisition for this cross-border regulatory procedure."
+			"description": "The date, time, date time, or other date time value of an acquisition for this cross-border regulatory procedure.",
+			"format": "date-time"
 		},
 		"amendmentReasonCode": {
 			"type": "string",
@@ -108,7 +109,14 @@
 			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
 		},
 		"declarantAssignedDeclarationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The declarant assigned identifier of a declaration for this cross-border regulatory procedure."
 		},
 		"declarationLodgementLocation": {
@@ -160,7 +168,14 @@
 			"description": "The location of the specified customs office which is responsible for export formalities for the goods which are subject to this cross-border regulatory procedure."
 		},
 		"exportLicenceControlClassificationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the export licence classification for control purposes relevant to this cross-border regulatory procedure, such as per the Wassenaar agreement concerning trade in weapons and dual-use goods and technologies."
 		},
 		"freeTradeAgreementName": {
@@ -210,7 +225,8 @@
 		},
 		"performanceDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value on which this cross-border regulatory procedure was, or will be, performed."
+			"description": "A date, time, date time, or other date time value on which this cross-border regulatory procedure was, or will be, performed.",
+			"format": "date-time"
 		},
 		"previousDocument": {
 			"type": "array",
@@ -224,11 +240,25 @@
 			"description": "A code specifying a type of previous procedure for this cross-border regulatory procedure."
 		},
 		"quotaId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A quota identifier for this cross-border regulatory procedure."
 		},
 		"registeredDeferredPaymentPayerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the registered deferred payment payer for this cross-border regulatory procedure."
 		},
 		"remark": {

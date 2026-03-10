@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -44,7 +44,8 @@
 		},
 		"breakUpDateTime": {
 			"type": "string",
-			"description": "The break up date, time, date time, or other date time value for this experience event."
+			"description": "The break up date, time, date time, or other date time value for this experience event.",
+			"format": "date-time"
 		},
 		"calculatedPrice": {
 			"type": "array",
@@ -73,7 +74,14 @@
 			"description": "A distinctive feature specified for this experience event."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this experience event."
 		},
 		"indemnityClause": {
@@ -90,7 +98,8 @@
 		},
 		"meetingDateTime": {
 			"type": "string",
-			"description": "The meeting date, time, date time, or other date time value for this experience event."
+			"description": "The meeting date, time, date time, or other date time value for this experience event.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",

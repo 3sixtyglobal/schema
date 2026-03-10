@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"applicationDateTime": {
 			"type": "string",
-			"description": "An application date, time, date time or other date time value for this MDH sanitary measure."
+			"description": "An application date, time, date time or other date time value for this MDH sanitary measure.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",

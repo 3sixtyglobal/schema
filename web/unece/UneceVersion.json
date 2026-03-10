@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -32,12 +32,20 @@
 			"description": "JSON-LD Type."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this document version."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date and time or other date time value of issue of this document version."
+			"description": "The date, time, date and time or other date time value of issue of this document version.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",

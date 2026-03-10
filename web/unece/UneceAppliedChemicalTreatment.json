@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -59,7 +59,8 @@
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date time of the occurrence of this applied chemical treatment."
+			"description": "The date time of the occurrence of this applied chemical treatment.",
+			"format": "date-time"
 		},
 		"resultAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",

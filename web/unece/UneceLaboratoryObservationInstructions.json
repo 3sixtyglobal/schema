@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The textual description of this set of laboratory observation instructions."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this set of laboratory observation instructions."
 		},
 		"instructionsType": {
@@ -53,7 +60,8 @@
 		},
 		"latestUpdateDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the latest update of this set of laboratory observation instructions."
+			"description": "The date, time, date time, or other date time value of the latest update of this set of laboratory observation instructions.",
+			"format": "date-time"
 		},
 		"procedure": {
 			"type": "string",

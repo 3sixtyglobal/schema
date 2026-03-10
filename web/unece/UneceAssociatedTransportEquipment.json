@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -87,7 +87,14 @@
 			"description": "The measure of the gross weight (mass) of this piece of associated transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique number, mark or name which identifies this associated piece of transport equipment."
 		},
 		"loadedDangerousGoods": {
@@ -152,7 +159,14 @@
 			"description": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
 		},
 		"stowagePositionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The stowage position identifier for this associated transport equipment."
 		},
 		"tareWeightMeasure": {

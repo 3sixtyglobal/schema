@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -47,7 +47,8 @@
 		},
 		"billStartDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms."
+			"description": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
@@ -55,7 +56,8 @@
 		},
 		"dueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+			"description": "The date, time, date time, or other date time value of the due date specified by these trade payment terms.",
+			"format": "date-time"
 		},
 		"durationUnitDurationMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
@@ -106,7 +108,14 @@
 			"description": "The code specifying the event from which these trade payment terms are offered for a length of time."
 		},
 		"paymentTermsId": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of these trade payment terms."
 		},
 		"paymentTermsTypeCode": {
@@ -121,7 +130,14 @@
 			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
 		},
 		"tradePaymentTermsDirectDebitMandateId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a direct debit mandate in these trade payment terms."
 		},
 		"tradePaymentTermsInstructionTypeCode": {
@@ -129,7 +145,14 @@
 			"description": "A code specifying a type of instruction for these trade payment terms."
 		},
 		"tradePaymentTermsPaymentMeansId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a payment means in these trade payment terms."
 		}
 	},

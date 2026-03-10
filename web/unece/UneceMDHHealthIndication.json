@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -43,7 +43,14 @@
 			"description": "A textual description of this MDH health indication."
 		},
 		"locationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a location for this MDH health indication."
 		},
 		"locationName": {
@@ -52,7 +59,8 @@
 		},
 		"reportedDateTime": {
 			"type": "string",
-			"description": "A reported date, time, date time or other date time value for this MDH health indication."
+			"description": "A reported date, time, date time or other date time value for this MDH health indication.",
+			"format": "date-time"
 		},
 		"reportedQuantity": {
 			"type": "array",

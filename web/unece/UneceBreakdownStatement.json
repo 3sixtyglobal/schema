@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -62,7 +62,8 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
+			"description": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement.",
+			"format": "date-time"
 		},
 		"defaultCurrencyCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
@@ -77,7 +78,14 @@
 			"description": "A textual description of this valuation breakdown statement."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this valuation breakdown statement."
 		},
 		"itemBasicWorkItem": {
@@ -95,7 +103,14 @@
 			"description": "A grouped work item in this valuation breakdown statement."
 		},
 		"measurementMethodId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier of a method of measurement for this valuation breakdown statement."
 		},
 		"name": {
@@ -103,7 +118,14 @@
 			"description": "The name, expressed as text, for this valuation breakdown statement."
 		},
 		"priceListId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of a price list for this valuation breakdown statement."
 		},
 		"readerBinaryFile": {

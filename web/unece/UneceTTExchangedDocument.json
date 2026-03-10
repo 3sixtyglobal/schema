@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,12 +36,20 @@
 			"description": "The textual description of this TT exchanged document."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this TT exchanged document."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the issuance of this TT exchanged document."
+			"description": "The date, time, date time, or other date time value of the issuance of this TT exchanged document.",
+			"format": "date-time"
 		},
 		"receiverSpecifiedParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTTParty",

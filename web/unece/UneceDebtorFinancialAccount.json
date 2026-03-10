@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The account name, expressed as text, of this debtor financial account."
 		},
 		"bBANId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this debtor financial account."
 		},
 		"currencyCode": {
@@ -48,11 +55,25 @@
 			"description": "The code specifying the type of debtor financial account."
 		},
 		"iBANId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique International Bank Account Number (IBAN) identifier for this debtor financial account."
 		},
 		"proprietaryId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique proprietary identifier for this debtor financial account."
 		},
 		"proprietaryType": {
@@ -60,7 +81,14 @@
 			"description": "The proprietary type, expressed as text, of this debtor financial account, such as the nature or use of the debtor account."
 		},
 		"uPICId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this debtor financial account."
 		}
 	},

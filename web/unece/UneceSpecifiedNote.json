@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,14 +37,22 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the creation of this specified note."
+			"description": "The date, time, date time, or other date time value for the creation of this specified note.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
 			"description": "A textual description of this specified note."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this specified note."
 		},
 		"name": {

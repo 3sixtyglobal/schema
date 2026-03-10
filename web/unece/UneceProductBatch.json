@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -127,7 +127,14 @@
 			"description": "A treatment, expressed as text, applied to this product batch."
 		},
 		"buyerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A buyer assigned identifier of this product batch."
 		},
 		"componentBatch": {
@@ -153,10 +160,18 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the creation of this product batch."
+			"description": "The date, time, date time or other date time value of the creation of this product batch.",
+			"format": "date-time"
 		},
 		"dNAMarkerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The DNA marker identifier of this product batch."
 		},
 		"description": {
@@ -168,7 +183,14 @@
 			"description": "The code specifying the description of this product batch."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global identifier of this product batch."
 		},
 		"grossVolumeMeasure": {
@@ -186,11 +208,25 @@
 			"description": "A measure of the gross weight of this product batch."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this product batch."
 		},
 		"manufacturerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A manufacturer assigned identifier of this product batch."
 		},
 		"massMeasure": {
@@ -248,7 +284,14 @@
 			"description": "The code specifying the production mode for this product batch."
 		},
 		"sellerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A seller assigned identifier of this product batch."
 		},
 		"sizeMeasure": {

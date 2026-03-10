@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,7 +37,8 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the creation of this laboratory observation note."
+			"description": "The date, time, date time, or other date time value for the creation of this laboratory observation note.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type", "content", "creationDateTime"]

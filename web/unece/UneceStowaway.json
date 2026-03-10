@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -43,15 +43,20 @@
 			"description": "Personal language proficiency skills claimed by this found stowaway."
 		},
 		"countryClaimedNationalityId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountryId"
-			},
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a nationality claimed by this found stowaway."
 		},
 		"discoveredDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value on which this found stowaway is discovered."
+			"description": "A date, time, date time, or other date time value on which this found stowaway is discovered.",
+			"format": "date-time"
 		},
 		"embarkationLocation": {
 			"type": "array",
@@ -77,7 +82,8 @@
 		},
 		"interviewDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value on which this found stowaway is interviewed."
+			"description": "A date, time, date time, or other date time value on which this found stowaway is interviewed.",
+			"format": "date-time"
 		},
 		"personalStatement": {
 			"type": "string",

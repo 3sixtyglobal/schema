@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"automaticExtensionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of automatic extension for this trade contract."
+			"description": "The date, time, date time, or other date time value of automatic extension for this trade contract.",
+			"format": "date-time"
 		},
 		"automaticExtensionDurationMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
@@ -44,12 +45,20 @@
 			"description": "A textual description of this trade contract."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this trade contract."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, date time, or other date time value for the issuance of this trade contract."
+			"description": "The date, date time, or other date time value for the issuance of this trade contract.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",
@@ -61,7 +70,8 @@
 		},
 		"signedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this trade contract was signed."
+			"description": "The date, time, date time or other date time value when this trade contract was signed.",
+			"format": "date-time"
 		},
 		"signedLocation": {
 			"type": "array",

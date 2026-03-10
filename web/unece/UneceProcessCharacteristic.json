@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -54,7 +54,14 @@
 			"description": "A textual description of this process characteristic."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this process characteristic."
 		},
 		"maximumValueMeasure": {
@@ -83,7 +90,8 @@
 		},
 		"valueDateTime": {
 			"type": "string",
-			"description": "The value, expressed as a date, time, date time, or other date time value, for this process characteristic."
+			"description": "The value, expressed as a date, time, date time, or other date time value, for this process characteristic.",
+			"format": "date-time"
 		},
 		"valueIndicator": {
 			"type": "boolean",

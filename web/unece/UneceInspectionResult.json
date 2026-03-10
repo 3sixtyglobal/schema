@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -68,7 +68,8 @@
 		},
 		"approvalDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the approval of this specified inspection result."
+			"description": "The date, time, date time, or other date time value for the approval of this specified inspection result.",
+			"format": "date-time"
 		},
 		"attachedBinaryFile": {
 			"type": "array",
@@ -96,12 +97,20 @@
 			"description": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this specified inspection result."
 		},
 		"inspectionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the inspection for this specified inspection result."
+			"description": "The date, time, date time, or other date time value of the inspection for this specified inspection result.",
+			"format": "date-time"
 		},
 		"inspectionParty": {
 			"type": "array",

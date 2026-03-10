@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,10 +33,18 @@
 		},
 		"acceptanceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the acceptance of this exchanged document."
+			"description": "The date, time, date time, or other date time value for the acceptance of this exchanged document.",
+			"format": "date-time"
 		},
 		"additionalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An additional identifier of this exchanged document."
 		},
 		"agentParty": {
@@ -71,7 +79,8 @@
 		},
 		"cancellationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of a cancellation of the exchanged document."
+			"description": "The date, time, date time, or other date time value of a cancellation of the exchanged document.",
+			"format": "date-time"
 		},
 		"categoryCode": {
 			"type": "string",
@@ -102,10 +111,18 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of a creation of this exchanged document."
+			"description": "The date, time, date time, or other date time value of a creation of this exchanged document.",
+			"format": "date-time"
 		},
 		"customsId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier, for customs purposes, for this exchanged document."
 		},
 		"description": {
@@ -156,14 +173,22 @@
 		},
 		"firstVersionIssueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when the first version of this exchanged document was issued."
+			"description": "The date, time, date time or other date time value when the first version of this exchanged document was issued.",
+			"format": "date-time"
 		},
 		"fourthSignatoryAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique global identifier for this exchanged document."
 		},
 		"headerInformation": {
@@ -171,7 +196,14 @@
 			"description": "Header information, expressed as text, for this exchanged document."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this exchanged document."
 		},
 		"includedNote": {
@@ -187,7 +219,8 @@
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the issuance of this exchanged document."
+			"description": "The date, time, date time or other date time value for the issuance of this exchanged document.",
+			"format": "date-time"
 		},
 		"issueLogisticsLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
@@ -198,11 +231,25 @@
 			"description": "The party that issues this exchanged document."
 		},
 		"itemIdentificationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a specific item in this exchanged document."
 		},
 		"languageId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for a language used in this exchanged document."
 		},
 		"lineCountNumeric": {
@@ -245,7 +292,14 @@
 			"description": "The party that owns this exchanged document."
 		},
 		"pageId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a specific page of this exchanged document."
 		},
 		"platformProviderParty": {
@@ -256,7 +310,14 @@
 			"description": "A platform provider party specified for this exchanged document."
 		},
 		"previousRevisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the previous revision of this exchanged document."
 		},
 		"purpose": {
@@ -264,7 +325,14 @@
 			"description": "The purpose, expressed as text, of this exchanged document."
 		},
 		"recipientAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique recipient assigned identifier for this exchanged document."
 		},
 		"recipientTradeParty": {
@@ -283,7 +351,8 @@
 		},
 		"rejectionResponseDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value of a rejection response of the exchanged document."
+			"description": "A date, time, date time, or other date time value of a rejection response of the exchanged document.",
+			"format": "date-time"
 		},
 		"remarks": {
 			"type": "string",
@@ -291,7 +360,8 @@
 		},
 		"responseDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value of a response of the exchanged document."
+			"description": "A date, time, date time, or other date time value of a response of the exchanged document.",
+			"format": "date-time"
 		},
 		"responseReasonCode": {
 			"type": "string",
@@ -299,10 +369,18 @@
 		},
 		"revisionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the revision of this exchanged document."
+			"description": "The date, time, date time or other date time value for the revision of this exchanged document.",
+			"format": "date-time"
 		},
 		"revisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the revision of this exchanged document."
 		},
 		"secondSignatoryAuthentication": {
@@ -310,7 +388,14 @@
 			"description": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
 		},
 		"senderAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique sender assigned identifier for this exchanged document."
 		},
 		"senderTradeParty": {
@@ -326,14 +411,22 @@
 		},
 		"submissionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the formal submission of this exchanged document to a receiver by a sender."
+			"description": "The date, time, date time or other date time value for the formal submission of this exchanged document to a receiver by a sender.",
+			"format": "date-time"
 		},
 		"subtypeCode": {
 			"type": "string",
 			"description": "The code specifying the subtype of this exchanged document."
 		},
 		"suffixId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique suffix identifier for this exchanged document."
 		},
 		"summaryInformation": {
@@ -349,7 +442,14 @@
 			"description": "The total number of pages for this exchanged document."
 		},
 		"traderAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique trader assigned identifier for this exchanged document."
 		},
 		"urgency": {
@@ -361,7 +461,14 @@
 			"description": "The code specifying the urgency for this exchanged document."
 		},
 		"versionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for the version of this exchanged document."
 		}
 	},

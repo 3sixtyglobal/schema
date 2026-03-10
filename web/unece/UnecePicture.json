@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -59,7 +59,14 @@
 			"description": "Binary object data that is the actual digital image for this photographic picture."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this photographic picture."
 		},
 		"intendedUse": {
@@ -110,14 +117,22 @@
 		},
 		"takenDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date value of when this photographic picture was created."
+			"description": "The date, time, date time, or other date value of when this photographic picture was created.",
+			"format": "date-time"
 		},
 		"titleName": {
 			"type": "string",
 			"description": "The name, expressed as text, of the title for this photographic picture."
 		},
 		"uRIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The URI (Uniform Resource Identifier) for this photographic picture."
 		}
 	},

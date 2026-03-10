@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -58,7 +58,14 @@
 			"description": "A despatch note associated with this logistics package."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique global identifier for this logistics package."
 		},
 		"grossVolumeMeasure": {
@@ -70,11 +77,25 @@
 			"description": "The measure of the gross weight (mass) of this logistics package and its contents."
 		},
 		"hierarchicalLevelId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The level identifier for this logistics package."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this logistics package."
 		},
 		"includedSupplyChainTradeLineItem": {
@@ -135,7 +156,14 @@
 			"description": "The code specifying the level of this logistics package."
 		},
 		"parentId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique parent identifier for this logistics package."
 		},
 		"perPackageUnitQuantity": {
@@ -161,11 +189,25 @@
 			"description": "The sequence number of this logistics package."
 		},
 		"seriesEndId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the end of a series of packages within this logistics package."
 		},
 		"seriesStartId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique start identifier of a series of packages within this logistics package."
 		},
 		"specifiedLineTradeDelivery": {

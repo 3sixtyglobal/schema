@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,7 +37,8 @@
 		},
 		"birthDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value which specifies the birth date for this contact person."
+			"description": "The date, time, date time or other date time value which specifies the birth date for this contact person.",
+			"format": "date-time"
 		},
 		"birthplaceName": {
 			"type": "string",
@@ -48,7 +49,14 @@
 			"description": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
 		},
 		"countryResidenceCountryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the residence country of this contact person."
 		},
 		"emailURICommunication": {

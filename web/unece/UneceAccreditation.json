@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -49,15 +49,24 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this certified accreditation expires."
+			"description": "The date, time, date time or other date time value when this certified accreditation expires.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this certified accreditation."
 		},
 		"obtainedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this certified accreditation was obtained."
+			"description": "The date, time, date time or other date time value when this certified accreditation was obtained.",
+			"format": "date-time"
 		},
 		"typeCode": {
 			"anyOf": [

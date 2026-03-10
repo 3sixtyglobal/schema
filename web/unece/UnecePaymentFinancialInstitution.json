@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -32,11 +32,25 @@
 			"description": "JSON-LD Type."
 		},
 		"bEIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Business Entity Identifier (BEI) as defined in ISO 9362 for this payment financial institution."
 		},
 		"bICId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
 		},
 		"branchName": {
@@ -44,15 +58,36 @@
 			"description": "A branch name, expressed as text, for this payment financial institution."
 		},
 		"branchNameId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the branch name for this payment financial institution."
 		},
 		"gLNId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Global Location Number (GLN) as defined by GS1 for this payment financial institution."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this payment financial institution."
 		},
 		"name": {
@@ -60,7 +95,14 @@
 			"description": "A name, expressed as text, for this payment financial institution."
 		},
 		"nameId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the name for this payment financial institution."
 		},
 		"roleCode": {

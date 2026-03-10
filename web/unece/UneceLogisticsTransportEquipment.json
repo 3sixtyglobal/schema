@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -118,7 +118,14 @@
 			"description": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
 		},
 		"carrierAssignedBookingId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A carrier assigned booking identifier for this piece of logistics transport equipment."
 		},
 		"carrierParty": {
@@ -133,7 +140,14 @@
 			"description": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
 		},
 		"consigneeAssignedConsignmentId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The consignee assigned consignment identifier for this piece of logistics transport equipment."
 		},
 		"consolidationEvent": {
@@ -219,7 +233,14 @@
 			"description": "The percent of the humidity (moisture content) within this piece of logistics transport equipment."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this piece of logistics transport equipment."
 		},
 		"information": {
@@ -300,7 +321,8 @@
 		},
 		"manufacturingDateTime": {
 			"type": "string",
-			"description": "The manufacturing date, time, date time, or other date time value for this piece of logistics transport equipment."
+			"description": "The manufacturing date, time, date time, or other date time value for this piece of logistics transport equipment.",
+			"format": "date-time"
 		},
 		"netGoodsVolumeMeasure": {
 			"type": "array",
@@ -393,7 +415,14 @@
 			"description": "A communication event related to this piece of logistics transport equipment."
 		},
 		"releaseId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The release identifier for this piece of logistics transport equipment."
 		},
 		"releaseRestriction": {
@@ -491,7 +520,14 @@
 			"description": "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
 		},
 		"stowagePositionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The stowage position identifier for this piece of logistics transport equipment."
 		},
 		"transportEquipmentCategoryCode": {

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -60,7 +60,14 @@
 			"description": "The file name, expressed as text, of this specified binary file."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this specified binary file."
 		},
 		"includedBinaryObject": {
@@ -80,7 +87,14 @@
 			"description": "A title, expressed as text, for this specified binary file."
 		},
 		"uRIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Uniform Resource Identifier (URI) for this specified binary file."
 		},
 		"validityPeriod": {
@@ -88,7 +102,14 @@
 			"description": "The validity period specified of this binary file."
 		},
 		"versionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique version identifier for this specified binary file."
 		}
 	},

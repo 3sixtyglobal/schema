@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -65,7 +65,8 @@
 		},
 		"processingTransactionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the processing of a transaction for this exchanged document context."
+			"description": "The date, time, date time, or other date time value of the processing of a transaction for this exchanged document context.",
+			"format": "date-time"
 		},
 		"scenarioSpecifiedParameter": {
 			"type": "array",
@@ -75,7 +76,14 @@
 			"description": "A scenario context parameter specified for this exchanged document context."
 		},
 		"specifiedTransactionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of a specified transaction in this exchanged document context."
 		},
 		"subsetSpecifiedParameter": {

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -61,7 +61,8 @@
 		},
 		"basisDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value used as the basis for this trade price."
+			"description": "The date, time, date time, or other date time value used as the basis for this trade price.",
+			"format": "date-time"
 		},
 		"basisQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
@@ -133,7 +134,8 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The expiry date, time, date time, or other date time value for this trade price."
+			"description": "The expiry date, time, date time, or other date time value for this trade price.",
+			"format": "date-time"
 		},
 		"grandTotalChargeAmount": {
 			"type": "array",

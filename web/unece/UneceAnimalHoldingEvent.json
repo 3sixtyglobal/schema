@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -32,12 +32,20 @@
 			"description": "JSON-LD Type."
 		},
 		"locationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the location for this animal holding event."
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the occurrence of this animal holding event."
+			"description": "The date, time, date time, or other date time value of the occurrence of this animal holding event.",
+			"format": "date-time"
 		},
 		"relatedTTLocation": {
 			"type": "array",

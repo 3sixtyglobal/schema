@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -63,7 +63,8 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date or date time value of the creation of this acknowledgement document."
+			"description": "The date or date time value of the creation of this acknowledgement document.",
+			"format": "date-time"
 		},
 		"documentTypeCode": {
 			"type": "array",
@@ -73,15 +74,30 @@
 			"description": "A code specifying a type of acknowledgement document."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this acknowledgement document."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the issuance of this acknowledgement document."
+			"description": "The date, time, date time or other date time value for the issuance of this acknowledgement document.",
+			"format": "date-time"
 		},
 		"itemIdentificationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of an item in this acknowledgement document."
 		},
 		"multipleReferencesIndicator": {
@@ -109,11 +125,13 @@
 		},
 		"reportReceiptDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the receipt of the report being acknowledged by this acknowledgment document."
+			"description": "The date, time, date time or other date time value of the receipt of the report being acknowledged by this acknowledgment document.",
+			"format": "date-time"
 		},
 		"reportSubmissionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the submission of the report being acknowledged by this acknowledgment document."
+			"description": "The date, time, date time or other date time value of the submission of the report being acknowledged by this acknowledgment document.",
+			"format": "date-time"
 		},
 		"status": {
 			"type": "string",

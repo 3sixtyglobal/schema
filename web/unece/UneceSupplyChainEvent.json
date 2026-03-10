@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -59,27 +59,38 @@
 		},
 		"dueDateTime": {
 			"type": "string",
-			"description": "The due date, time, date time, or other date time value of this supply chain event."
+			"description": "The due date, time, date time, or other date time value of this supply chain event.",
+			"format": "date-time"
 		},
 		"earliestOccurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the earliest occurrence of this supply chain event."
+			"description": "The date, time, date time, or other date time value of the earliest occurrence of this supply chain event.",
+			"format": "date-time"
 		},
 		"frequencyCode": {
 			"type": "string",
 			"description": "The code specifying a frequency for this supply chain event."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this supply chain event."
 		},
 		"latestOccurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the latest occurrence of this supply chain event."
+			"description": "The date, time, date time, or other date time value of the latest occurrence of this supply chain event.",
+			"format": "date-time"
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value of an occurrence of this supply chain event."
+			"description": "A date, time, date time, or other date time value of an occurrence of this supply chain event.",
+			"format": "date-time"
 		},
 		"occurrenceLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLocation",
@@ -115,7 +126,8 @@
 		},
 		"timeOccurrenceDateTime": {
 			"type": "string",
-			"description": "A time value of an occurrence of this supply chain event."
+			"description": "A time value of an occurrence of this supply chain event.",
+			"format": "date-time"
 		},
 		"typeCode": {
 			"anyOf": [

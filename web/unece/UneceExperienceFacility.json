@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -44,7 +44,8 @@
 		},
 		"completionDateTime": {
 			"type": "string",
-			"description": "The date of the completion of this experience facility."
+			"description": "The date of the completion of this experience facility.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
@@ -59,12 +60,20 @@
 			"description": "A type, expressed as text, of this experience facility."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this experience facility."
 		},
 		"latestRenovationDateTime": {
 			"type": "string",
-			"description": "The date of the latest renovation of this experience facility."
+			"description": "The date of the latest renovation of this experience facility.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",

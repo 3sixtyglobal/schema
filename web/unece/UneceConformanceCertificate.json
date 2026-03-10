@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,15 +36,30 @@
 			"description": "The code specifying the type of conformance certificate."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of this conformance certificate."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this conformance certificate was issued."
+			"description": "The date, time, date time, or other date time value when this conformance certificate was issued.",
+			"format": "date-time"
 		},
 		"issuingPartyId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of the issuing party of this conformance certificate."
 		},
 		"softwareOperatingSystem": {

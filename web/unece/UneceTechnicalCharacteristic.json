@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -55,7 +55,8 @@
 		},
 		"constructionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the construction of this technical characteristic."
+			"description": "The date, time, date time, or other date time value of the construction of this technical characteristic.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
@@ -66,12 +67,20 @@
 			"description": "A code specifying a description of this technical characteristic."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this technical characteristic."
 		},
 		"latestRenovationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the latest renovation of this technical characteristic."
+			"description": "The date, time, date time, or other date time value of the latest renovation of this technical characteristic.",
+			"format": "date-time"
 		},
 		"licence": {
 			"type": "string",
@@ -124,7 +133,8 @@
 		},
 		"valueDateTime": {
 			"type": "string",
-			"description": "The value, expressed as a date, time, date time, or other date time value. for this technical characteristic."
+			"description": "The value, expressed as a date, time, date time, or other date time value. for this technical characteristic.",
+			"format": "date-time"
 		},
 		"valueIndicator": {
 			"type": "boolean",

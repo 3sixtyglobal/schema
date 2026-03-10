@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -56,7 +56,14 @@
 			"description": "A textual description of this universal communication."
 		},
 		"emailURIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The Uniform Resource Identifier (URI) of the email for this universal communication."
 		},
 		"extensionNumber": {
@@ -76,7 +83,14 @@
 			"description": "The universal communication number, expressed as text and not including country access code or the area number code, for this communication."
 		},
 		"uRIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The Uniform Resource Identifier (URI), such as a web or an email address, for this universal communication."
 		},
 		"useCode": {
@@ -84,7 +98,14 @@
 			"description": "The code specifying the use of this universal communication such as for business purposes or private."
 		},
 		"websiteURIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The Uniform Resource Identifier (URI) of the website for this universal communication."
 		}
 	},

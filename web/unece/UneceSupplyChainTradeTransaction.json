@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -79,11 +79,25 @@
 			"description": "A referenced standard associated with this supply chain trade transaction."
 		},
 		"documentURLId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this supply chain trade transaction."
 		},
 		"includedDeliverySchedule": {
@@ -127,22 +141,44 @@
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the issuance of this supply chain trade transaction."
+			"description": "The date, time, date time or other date time value for the issuance of this supply chain trade transaction.",
+			"format": "date-time"
 		},
 		"lineItemQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of line items for this supply chain trade transaction."
 		},
 		"salesAgentAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier assigned by the sales agent to identify this supply chain trade transaction."
 		},
 		"senderRecipientSequenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The sender-recipient sequence identifier for this supply chain trade transaction."
 		},
 		"shipmentId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
 		},
 		"specifiedPackage": {

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -59,7 +59,8 @@
 		},
 		"buyerApprovedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement."
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement.",
+			"format": "date-time"
 		},
 		"buyerOrderDocument": {
 			"type": "array",
@@ -147,7 +148,14 @@
 			"description": "The guaranteed product life span specified in this line trade agreement."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this line trade agreement."
 		},
 		"immediatePreviousPriceListDocument": {
@@ -348,7 +356,14 @@
 			"description": "The code specifying the resale product unit of measure, such as kilogram or litre, for this trade line agreement."
 		},
 		"revisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for the revision of this line trade agreement."
 		},
 		"salesConditionsDocument": {

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -40,7 +40,8 @@
 		},
 		"actualDateTime": {
 			"type": "string",
-			"description": "The actual date, time, date time, or other date time value of this delivery adjustment."
+			"description": "The actual date, time, date time, or other date time value of this delivery adjustment.",
+			"format": "date-time"
 		},
 		"actualQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,10 +33,18 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the creation of this XHE document."
+			"description": "The date, time, date time or other date time value of the creation of this XHE document.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this XHE document."
 		},
 		"recipientXHEParty": {
@@ -62,7 +70,14 @@
 			"description": "The indication of whether or not this XHE document is a test ."
 		},
 		"uUIDId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The UUID (Universally Unique IDentifier) of this XHE document."
 		}
 	},

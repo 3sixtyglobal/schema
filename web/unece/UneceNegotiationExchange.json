@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,14 +37,22 @@
 		},
 		"responseDueDateTime": {
 			"type": "string",
-			"description": "The date or date time value when the response is due for this electronic negotiation exchange."
+			"description": "The date or date time value when the response is due for this electronic negotiation exchange.",
+			"format": "date-time"
 		},
 		"sequenceNumeric": {
 			"type": "string",
 			"description": "The sequence number for this electronic negotiation exchange."
 		},
 		"sessionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the session for this electronic negotiation exchange."
 		},
 		"specifiedContext": {

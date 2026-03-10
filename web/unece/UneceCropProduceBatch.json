@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,14 +37,23 @@
 		},
 		"breakUpDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the break up of this crop produce batch."
+			"description": "The date, time, date time, or other date time value of the break up of this crop produce batch.",
+			"format": "date-time"
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the creation of this crop produce batch."
+			"description": "The date, time, date time, or other date time value of the creation of this crop produce batch.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this crop produce batch."
 		},
 		"nominalSizeNumeric": {

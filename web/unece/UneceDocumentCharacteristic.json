@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -40,7 +40,14 @@
 			"description": "A code specifying a value of this document characteristic."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this document characteristic."
 		},
 		"location": {
@@ -83,7 +90,8 @@
 		},
 		"valueDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value for this document characteristic."
+			"description": "A date, time, date time or other date time value for this document characteristic.",
+			"format": "date-time"
 		},
 		"valueMeasure": {
 			"type": "array",

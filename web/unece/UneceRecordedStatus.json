@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"changedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this recorded status changed."
+			"description": "The date, time, date time, or other date time value when this recorded status changed.",
+			"format": "date-time"
 		},
 		"changerName": {
 			"type": "string",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,10 +37,18 @@
 		},
 		"endDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the end of this specified membership."
+			"description": "The date, time, date time, or other date time value of the end of this specified membership.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this specified membership."
 		},
 		"name": {
@@ -49,7 +57,8 @@
 		},
 		"startDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the start of this specified membership."
+			"description": "The date, time, date time, or other date time value of the start of this specified membership.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type"]

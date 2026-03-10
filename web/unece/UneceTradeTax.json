@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -123,7 +123,14 @@
 			"description": "A textual description of this trade related tax, levy or duty."
 		},
 		"exemptionAuthorizationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the exemption authorization for this trade tax."
 		},
 		"exemptionIndicator": {
@@ -146,7 +153,14 @@
 			"description": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this trade tax."
 		},
 		"informationAmount": {
@@ -168,11 +182,25 @@
 			"description": "A monetary value used as the line total basis on which this trade related tax, levy or duty is calculated."
 		},
 		"localTaxSystemId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the local tax system for this trade tax."
 		},
 		"paymentId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the payment of this trade related tax, levy or duty."
 		},
 		"placeApplicableLocation": {
@@ -258,7 +286,14 @@
 			"description": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
 		},
 		"taxExemptionAuthorityId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique tax exemption authority identifier for this trade tax."
 		},
 		"taxExemptionReasonExemptionReasonCode": {

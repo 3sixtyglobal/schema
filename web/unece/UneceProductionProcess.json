@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -174,7 +174,14 @@
 			"description": "The indication of whether or not this production process is a final one."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this production process."
 		},
 		"inputApplicableBatch": {
@@ -215,7 +222,8 @@
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the occurrence of this production process."
+			"description": "The date, time, date time or other date time value of the occurrence of this production process.",
+			"format": "date-time"
 		},
 		"occurrenceEvent": {
 			"type": "array",

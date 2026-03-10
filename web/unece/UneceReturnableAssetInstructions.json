@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -43,7 +43,14 @@
 			"description": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
 		},
 		"materialId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of the material to which these returnable asset instructions apply."
 		},
 		"returnableAssetInstructionsTermsAndConditionsDescriptionCode": {

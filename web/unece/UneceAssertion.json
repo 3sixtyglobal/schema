@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -47,7 +47,14 @@
 			"description": "The code specifying the description for this sustainability assertion."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this sustainability assertion."
 		},
 		"includedCharacteristic": {
@@ -58,7 +65,14 @@
 			"description": "A sustainability characteristic included in this sustainability assertion."
 		},
 		"issuingPartyId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a party issuing this sustainability assertion."
 		},
 		"relatedPolicy": {

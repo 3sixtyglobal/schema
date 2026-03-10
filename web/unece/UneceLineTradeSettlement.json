@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -80,7 +80,8 @@
 		},
 		"invoiceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the invoice in this line trade settlement."
+			"description": "The date, time, date time or other date time value of the invoice in this line trade settlement.",
+			"format": "date-time"
 		},
 		"invoiceDocument": {
 			"type": "array",

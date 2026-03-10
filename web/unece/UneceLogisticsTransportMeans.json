@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -75,7 +75,14 @@
 			"description": "A piece of logistics transport equipment attached to this logistics means of transport."
 		},
 		"callSignId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A call sign identifier for this logistics transport means."
 		},
 		"certifiedEmission": {
@@ -113,7 +120,14 @@
 			"description": "The indication of whether or not there is a helipad on this logistics means of transport."
 		},
 		"iMOId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The IMO (International Maritime Organization) identifier for this logistics transport means."
 		},
 		"iSPSSecurityLevelCode": {
@@ -129,7 +143,14 @@
 			"description": "The trade party authorized to issue the International Ship Security Certificate (ISSC) for this logistics means of transport."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of this logistics means of transport, such as the International Maritime Organization number of a vessel."
 		},
 		"linearUnitLengthMeasure": {
@@ -156,7 +177,14 @@
 			"description": "The code specifying the power type for this logistics transport means."
 		},
 		"mMSIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The MMSI (Maritime Mobile Service Identity) identifier for this logistics transport means."
 		},
 		"manoeuvringSpeedMeasure": {
@@ -169,7 +197,8 @@
 		},
 		"manufacturingDateTime": {
 			"type": "string",
-			"description": "The manufacturing date, time, date time, or other date time value for this logistics means of transport."
+			"description": "The manufacturing date, time, date time, or other date time value for this logistics means of transport.",
+			"format": "date-time"
 		},
 		"maritimeApplicableCertificate": {
 			"type": "array",

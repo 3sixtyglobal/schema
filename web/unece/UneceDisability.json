@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -41,7 +41,8 @@
 		},
 		"registeredDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this guest disability has been registered."
+			"description": "The date, time, date time, or other date time value when this guest disability has been registered.",
+			"format": "date-time"
 		},
 		"requiredSupportingDevice": {
 			"type": "string",

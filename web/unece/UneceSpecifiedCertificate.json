@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"actualEffectiveDateTime": {
 			"type": "string",
-			"description": "The actual effective date, time, date time or other date time value for this specified certificate."
+			"description": "The actual effective date, time, date time or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"aliasNameCode": {
 			"type": "string",
@@ -118,18 +119,28 @@
 		},
 		"effectiveFromDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value from which this specified certificate is effective."
+			"description": "The date, time, date time, or other date time value from which this specified certificate is effective.",
+			"format": "date-time"
 		},
 		"endorsementDateTime": {
 			"type": "string",
-			"description": "An endorsement date, time, date time or other date time value for this specified certificate."
+			"description": "An endorsement date, time, date time or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The expiry date, time, date time, or other date time value for this specified certificate."
+			"description": "The expiry date, time, date time, or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this specified certificate."
 		},
 		"issuanceLocation": {
@@ -141,7 +152,8 @@
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The issue date, time, date time, or other date time value for this specified certificate."
+			"description": "The issue date, time, date time, or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"issueReasonCode": {
 			"type": "string",
@@ -153,14 +165,22 @@
 		},
 		"latestEndorsementDateTime": {
 			"type": "string",
-			"description": "A latest endorsement date, time, date time or other date time value for this specified certificate."
+			"description": "A latest endorsement date, time, date time or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",
 			"description": "A name, expressed as text, for this specified certificate."
 		},
 		"partyId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of a party for this specified certificate."
 		},
 		"providingParty": {
@@ -187,7 +207,8 @@
 		},
 		"requestedEffectiveDateTime": {
 			"type": "string",
-			"description": "The requested effective date, time, date time or other date time value for this specified certificate."
+			"description": "The requested effective date, time, date time or other date time value for this specified certificate.",
+			"format": "date-time"
 		},
 		"requiredIndicator": {
 			"type": "boolean",
@@ -214,7 +235,8 @@
 		},
 		"validityExtendedUntilDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period."
+			"description": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period.",
+			"format": "date-time"
 		},
 		"validityTypeCode": {
 			"type": "string",

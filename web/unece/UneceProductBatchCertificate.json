@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"actualEffectiveDateTime": {
 			"type": "string",
-			"description": "The actual effective date, time, date time or other date time value for this product batch certificate."
+			"description": "The actual effective date, time, date time or other date time value for this product batch certificate.",
+			"format": "date-time"
 		},
 		"applicableAssertion": {
 			"type": "array",
@@ -88,22 +89,38 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this product batch certificate expires."
+			"description": "The date, time, date time, or other date time value when this product batch certificate expires.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of this product batch certificate."
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this product batch certificate was issued."
+			"description": "The date, time, date time, or other date time value when this product batch certificate was issued.",
+			"format": "date-time"
 		},
 		"issueReasonCode": {
 			"type": "string",
 			"description": "The code specifying the reason why this product batch certificate was issued."
 		},
 		"issuingPartyId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the party issuing this product batch certificate."
 		},
 		"purposeCode": {
@@ -112,7 +129,8 @@
 		},
 		"requestedEffectiveDateTime": {
 			"type": "string",
-			"description": "The requested effective date, time, date time or other date time value for this product batch certificate."
+			"description": "The requested effective date, time, date time or other date time value for this product batch certificate.",
+			"format": "date-time"
 		}
 	},
 	"required": ["type"]

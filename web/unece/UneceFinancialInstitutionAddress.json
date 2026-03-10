@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The number, expressed as text, of the building on a street for this financial institution address."
 		},
 		"cityId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the city for this financial institution address, such as United Nations Location Code (UNLOCODE)."
 		},
 		"cityName": {
@@ -44,7 +51,14 @@
 			"description": "The name, expressed as text, of the city, town or village of this financial institution address."
 		},
 		"countryId": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountryId",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a country for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
 		},
 		"countryName": {
@@ -52,7 +66,14 @@
 			"description": "The name, expressed as text, of the country within this financial institution address."
 		},
 		"countrySubDivisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
 		},
 		"countrySubDivisionName": {

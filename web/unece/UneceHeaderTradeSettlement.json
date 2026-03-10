@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -47,7 +47,8 @@
 		},
 		"closingBookDueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when the book closing is due for this header trade settlement."
+			"description": "The date, time, date time or other date time value when the book closing is due for this header trade settlement.",
+			"format": "date-time"
 		},
 		"creditNoteAmount": {
 			"type": "array",
@@ -65,11 +66,25 @@
 			"description": "The code specifying the reason for a credit being given in this header trade settlement."
 		},
 		"creditorReferenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the creditor reference for this header trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
 		},
 		"creditorReferenceIssuerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier of the creditor reference issuer for this header trade settlement."
 		},
 		"creditorReferenceType": {
@@ -126,7 +141,8 @@
 		},
 		"invoiceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the invoice in this header trade settlement."
+			"description": "The date, time, date time or other date time value of the invoice in this header trade settlement.",
+			"format": "date-time"
 		},
 		"invoiceDocument": {
 			"type": "array",
@@ -153,7 +169,8 @@
 		},
 		"nextInvoiceDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement."
+			"description": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement.",
+			"format": "date-time"
 		},
 		"orderApplicableCurrencyExchange": {
 			"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange",
@@ -269,7 +286,8 @@
 		},
 		"scheduledPaymentDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the scheduled payment of this header trade settlement."
+			"description": "The date, time, date time or other date time value of the scheduled payment of this header trade settlement.",
+			"format": "date-time"
 		},
 		"specifiedAdvancePayment": {
 			"type": "array",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -43,15 +43,30 @@
 			"description": "A code specifying the type of business of this legally set up organization."
 		},
 		"districtId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier of the district area regarded as a geographic or administrative unit within which this legally set up organization operates."
 		},
 		"establishedDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value when this legally set up organization was established."
+			"description": "The date, time, date time, or other date time value when this legally set up organization was established.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this legally set up organization."
 		},
 		"legalClassificationCode": {

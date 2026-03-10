@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,19 +33,35 @@
 		},
 		"closingBookDueDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value of a closing book due date for this trade settlement payment."
+			"description": "A date, time, date time or other date time value of a closing book due date for this trade settlement payment.",
+			"format": "date-time"
 		},
 		"endToEndId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for the end-to-end processing of this trade settlement payment, such as an identifier assigned by an initiating party to unambiguously identify the transaction."
 		},
 		"instructionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the instruction for this trade settlement payment."
 		},
 		"requestedExecutionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the requested execution of this trade settlement payment."
+			"description": "The date, time, date time or other date time value of the requested execution of this trade settlement payment.",
+			"format": "date-time"
 		},
 		"specifiedPaymentTradeSettlement": {
 			"type": "array",

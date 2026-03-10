@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -36,7 +36,14 @@
 			"description": "The actual quantity of items in this trade product instance."
 		},
 		"ammunitionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique ammunition identifier for this trade product instance."
 		},
 		"applicableClassification": {
@@ -68,12 +75,20 @@
 			"description": "A product handling process applied to this trade product instance, such as manufacturing or storage."
 		},
 		"batchId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique batch identifier for this trade product instance."
 		},
 		"bestBeforeDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance."
+			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance.",
+			"format": "date-time"
 		},
 		"brandNameAdditionalInformationNote": {
 			"type": "array",
@@ -83,7 +98,14 @@
 			"description": "An additional brand name information note for this trade product instance."
 		},
 		"ceramicCapacitorId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The ceramic capacitor identifier of this trade product instance."
 		},
 		"certificationEvidenceDocument": {
@@ -98,7 +120,14 @@
 			"description": "A common name, expressed as text, for this trade product instance."
 		},
 		"dNAMarkerId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The DNA marker identifier of this trade product instance."
 		},
 		"disposalReasonCode": {
@@ -106,27 +135,63 @@
 			"description": "A code specifying a disposal reason for this trade product instance."
 		},
 		"ePCId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The EPC (Electronic Product Code) identifier of this trade product instance."
 		},
 		"equipmentId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique equipment identifier for this trade product instance."
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of expiry of the items contained in the trade product instance."
+			"description": "The date, time, date time, or other date time value of expiry of the items contained in the trade product instance.",
+			"format": "date-time"
 		},
 		"globalSerialId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique global serial identifier for this trade product instance."
 		},
 		"iUIDId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique Department of Defense Item Unique Identifier (IUID) for this trade product instance."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this trade product instance."
 		},
 		"ingredientAdditionalInformationNote": {
@@ -152,15 +217,36 @@
 			"description": "An intended use, expressed as text, for this trade product instance."
 		},
 		"kanbanId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique kanban identifier for this trade product instance."
 		},
 		"lotId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique lot identifier for this trade product instance."
 		},
 		"manufacturerAssignedSerialId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique manufacturer assigned serial identifier for this trade product instance."
 		},
 		"originLocation": {
@@ -204,7 +290,14 @@
 			"description": "A reclassification supply chain event for this trade product instance."
 		},
 		"registrationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique registration identifier, such as a vehicle licence plate identification, for this trade product instance."
 		},
 		"scientificName": {
@@ -213,14 +306,29 @@
 		},
 		"sellByDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold."
+			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold.",
+			"format": "date-time"
 		},
 		"serialId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique serial identifier for this trade product instance."
 		},
 		"supplierAssignedSerialId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique supplier assigned serial identifier for this trade product instance."
 		},
 		"usedPackaging": {

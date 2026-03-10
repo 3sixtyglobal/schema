@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -81,7 +81,8 @@
 		},
 		"buyerOrderDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value, at header level, for the buyer order for this trade delivery."
+			"description": "The date, time, date time, or other date time value, at header level, for the buyer order for this trade delivery.",
+			"format": "date-time"
 		},
 		"classificationDocument": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocument",
@@ -161,12 +162,20 @@
 			"description": "The indication, at header level, of whether or not this trade delivery is fully delivered."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global identifier, at header level, for this trade delivery."
 		},
 		"goodsOwnershipChangeDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value, at header level, when the goods ownership of this trade delivery changed."
+			"description": "The date, time, date time, or other date time value, at header level, when the goods ownership of this trade delivery changed.",
+			"format": "date-time"
 		},
 		"goodsReceiptNoteDocument": {
 			"type": "array",
@@ -192,7 +201,14 @@
 			"description": "The code specifying the type of physical state of the goods, at header level, for this trade delivery."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier, at header level, for this trade delivery."
 		},
 		"includedPackaging": {
@@ -234,7 +250,8 @@
 		},
 		"pickUpAvailabilityDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up."
+			"description": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up.",
+			"format": "date-time"
 		},
 		"plannedConsignment": {
 			"type": "array",
@@ -372,12 +389,20 @@
 			"description": "The code specifying the status, at header level, for this trade delivery."
 		},
 		"subordinateId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A subordinate identifier, at header level, for this trade delivery."
 		},
 		"ultimateShipToDeliveryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party."
+			"description": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party.",
+			"format": "date-time"
 		},
 		"ultimateShipToDeliveryEvent": {
 			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",

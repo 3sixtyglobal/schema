@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"dueDateTime": {
 			"type": "string",
-			"description": "The due date for this instalment payment."
+			"description": "The due date for this instalment payment.",
+			"format": "date-time"
 		},
 		"paidAmount": {
 			"type": "array",
@@ -43,7 +44,14 @@
 			"description": "A monetary value paid or to be paid for this instalment payment."
 		},
 		"sequenceId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The sequence identifier for this instalment payment."
 		},
 		"specifiedFinancingRequestResultDocument": {

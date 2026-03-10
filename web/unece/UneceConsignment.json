@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -116,7 +116,8 @@
 		},
 		"availabilityDueDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this supply chain consignment is due to be available."
+			"description": "The date, time, date time or other date time value when this supply chain consignment is due to be available.",
+			"format": "date-time"
 		},
 		"bondedWarehouseStorageEvent": {
 			"type": "array",
@@ -146,7 +147,8 @@
 		},
 		"carrierAcceptanceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
+			"description": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier.",
+			"format": "date-time"
 		},
 		"carrierAcceptanceLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
@@ -157,7 +159,14 @@
 			"description": "The party acting as the agent of the carrier for this supply chain consignment."
 		},
 		"carrierAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
 		},
 		"carrierParty": {
@@ -188,7 +197,14 @@
 			"description": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
 		},
 		"consigneeAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier assigned by the consignee to this referenced supply chain consignment."
 		},
 		"consigneeParty": {
@@ -208,7 +224,14 @@
 			"description": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
 		},
 		"consignorAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier assigned by the consignor to this referenced supply chain consignment."
 		},
 		"consignorParty": {
@@ -235,7 +258,14 @@
 			"description": "The indication of whether or not this supply chain consignment is to be transported in a container or containers."
 		},
 		"contractId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A contract identifier for this supply chain consignment."
 		},
 		"contractTermsInformation": {
@@ -261,7 +291,14 @@
 			"description": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this supply chain consignment."
 		},
 		"customsId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier, for customs purposes, for this consignment."
 		},
 		"customsImportAgentParty": {
@@ -357,7 +394,8 @@
 		},
 		"exportExitDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when this supply chain consignment will exit, or has exited from the last port, airport, or border post of the country of export."
+			"description": "The date, time, date time or other date time value when this supply chain consignment will exit, or has exited from the last port, airport, or border post of the country of export.",
+			"format": "date-time"
 		},
 		"exportGeopoliticalRegion": {
 			"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
@@ -380,7 +418,14 @@
 			"description": "The final destination location for this supply chain consignment."
 		},
 		"freightForwarderAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier assigned by the freight forwarder to this referenced supply chain consignment."
 		},
 		"freightForwarderParty": {
@@ -388,7 +433,14 @@
 			"description": "The freight forwarder party for this supply chain consignment."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A global identifier of this supply chain consignment."
 		},
 		"goodsReleaseRestriction": {
@@ -417,7 +469,14 @@
 			"description": "Haulage instructions for this supply chain consignment."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this referenced supply chain consignment."
 		},
 		"importCountry": {
@@ -681,7 +740,8 @@
 		},
 		"shippedOnboardDateTime": {
 			"type": "string",
-			"description": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard."
+			"description": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard.",
+			"format": "date-time"
 		},
 		"specifiedDeliveryTerms": {
 			"type": "array",
@@ -772,7 +832,14 @@
 			"description": "The measure of the total tare weight (mass) of this supply chain consignment."
 		},
 		"tradedParcelId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A traded parcel identifier for this supply chain consignment."
 		},
 		"transitCountry": {
@@ -887,7 +954,8 @@
 		},
 		"warehouseArrivalDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the arrival of this supply chain consignment at a warehouse."
+			"description": "The date, time, date time or other date time value of the arrival of this supply chain consignment at a warehouse.",
+			"format": "date-time"
 		},
 		"warehouseDepositorParty": {
 			"type": "array",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -47,7 +47,8 @@
 		},
 		"birthDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value which specifies the birth date for this guest."
+			"description": "The date, time, date time, or other date time value which specifies the birth date for this guest.",
+			"format": "date-time"
 		},
 		"carriedCertificate": {
 			"type": "array",
@@ -76,11 +77,25 @@
 			"description": "The code specifying the gender of this guest, such as male, female."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this guest."
 		},
 		"languageId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the language of this guest."
 		},
 		"name": {
@@ -137,7 +152,14 @@
 			"description": "A disease protection means notified for this guest person."
 		},
 		"passportId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the passport of this guest."
 		},
 		"raisedQuery": {
@@ -148,7 +170,14 @@
 			"description": "A special query raised for this guest person."
 		},
 		"residenceCountryId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the residence country of this guest person."
 		},
 		"roleCode": {

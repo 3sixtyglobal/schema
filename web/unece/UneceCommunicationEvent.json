@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -43,12 +43,20 @@
 			"description": "A textual description of this communication event."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for this communication event."
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of an occurrence of this communication event."
+			"description": "The date, time, date time, or other date time value of an occurrence of this communication event.",
+			"format": "date-time"
 		},
 		"occurrenceLogisticsLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",

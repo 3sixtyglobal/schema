@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -49,10 +49,18 @@
 		},
 		"expiryDateTime": {
 			"type": "string",
-			"description": "The expiry date or date time of this digital method used for payment."
+			"description": "The expiry date or date time of this digital method used for payment.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the digital method used for payment."
 		},
 		"issuingCompanyName": {
@@ -72,7 +80,8 @@
 		},
 		"validFromDateTime": {
 			"type": "string",
-			"description": "The date or date time from when this digital method used for payment is valid."
+			"description": "The date or date time from when this digital method used for payment is valid.",
+			"format": "date-time"
 		},
 		"verificationNumeric": {
 			"type": "string",

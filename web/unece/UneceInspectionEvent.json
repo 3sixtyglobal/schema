@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,7 +37,8 @@
 		},
 		"occurrenceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the occurrence of this inspection event."
+			"description": "The date, time, date time, or other date time value of the occurrence of this inspection event.",
+			"format": "date-time"
 		},
 		"occurrenceLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLocation",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -92,7 +92,8 @@
 		},
 		"referenceDateTime": {
 			"type": "string",
-			"description": "The reference date, time, date time or other date time value for this document status."
+			"description": "The reference date, time, date time or other date time value for this document status.",
+			"format": "date-time"
 		},
 		"requestedAction": {
 			"type": "string",

@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,7 +37,8 @@
 		},
 		"acceptanceDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the acceptance of this referenced document."
+			"description": "The date, time, date time, or other date time value of the acceptance of this referenced document.",
+			"format": "date-time"
 		},
 		"attachedBinaryFile": {
 			"type": "array",
@@ -87,7 +88,8 @@
 		},
 		"creationDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value of the creation of this referenced document."
+			"description": "The date, time, date time, or other date time value of the creation of this referenced document.",
+			"format": "date-time"
 		},
 		"description": {
 			"type": "string",
@@ -98,10 +100,14 @@
 			"description": "The code specifying the purpose of an amendment to this referenced document."
 		},
 		"documentLanguageId": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLanguageId"
-			},
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for a language used in this referenced document."
 		},
 		"documentLineStatusCode": {
@@ -129,11 +135,25 @@
 			"description": "The indication of whether or not this referenced document is presented in an electronic format."
 		},
 		"globalId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique global identifier for this referenced document."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this referenced document."
 		},
 		"includedAmount": {
@@ -156,14 +176,22 @@
 		},
 		"issueDateTime": {
 			"type": "string",
-			"description": "The formatted date or date time for the issuance of this referenced document."
+			"description": "The formatted date or date time for the issuance of this referenced document.",
+			"format": "date-time"
 		},
 		"issueLogisticsLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The logistics related location where this referenced document has been issued."
 		},
 		"issuerAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique issuer assigned identifier for this referenced document."
 		},
 		"issuerParty": {
@@ -178,7 +206,14 @@
 			"description": "Handling instructions specified by the issuer for this referenced document."
 		},
 		"itemIdentificationId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of an item in this referenced document."
 		},
 		"lineCountNumeric": {
@@ -186,7 +221,14 @@
 			"description": "The number of lines for this referenced document."
 		},
 		"lineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a line in this referenced document."
 		},
 		"lineItemQuantity": {
@@ -214,11 +256,25 @@
 			"description": "The number of originals required of this referenced document."
 		},
 		"pageId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the page for this referenced document."
 		},
 		"previousRevisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for a previous revision of this referenced document."
 		},
 		"processCondition": {
@@ -235,7 +291,8 @@
 		},
 		"receiptDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value for the formal receipt of this referenced document."
+			"description": "The date, time, date time, or other date time value for the formal receipt of this referenced document.",
+			"format": "date-time"
 		},
 		"recipientTradeParty": {
 			"type": "array",
@@ -246,7 +303,8 @@
 		},
 		"referenceDateTime": {
 			"type": "string",
-			"description": "The reference date or date time for this referenced document."
+			"description": "The reference date or date time for this referenced document.",
+			"format": "date-time"
 		},
 		"referenceRelationshipTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
@@ -270,10 +328,18 @@
 		},
 		"revisionDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value for the revision of this referenced document."
+			"description": "A date, time, date time or other date time value for the revision of this referenced document.",
+			"format": "date-time"
 		},
 		"revisionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for a revision of this referenced document."
 		},
 		"sectionName": {
@@ -303,7 +369,14 @@
 			"description": "A status, expressed as text, for this referenced document."
 		},
 		"subordinateLineId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of the subordinate line of this referenced document."
 		},
 		"subtypeCode": {
@@ -315,7 +388,14 @@
 			"description": "The total issue count for this referenced document."
 		},
 		"uRIId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
 		},
 		"validityPeriod": {
@@ -326,7 +406,14 @@
 			"description": "A period of validity specified for this referenced document."
 		},
 		"versionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier for the version of this referenced document."
 		}
 	},

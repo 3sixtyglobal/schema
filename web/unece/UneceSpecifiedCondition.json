@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -37,7 +37,8 @@
 		},
 		"actionDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value of an action for this specified condition."
+			"description": "A date, time, date time or other date time value of an action for this specified condition.",
+			"format": "date-time"
 		},
 		"name": {
 			"type": "string",

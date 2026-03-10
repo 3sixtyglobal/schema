@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -83,7 +83,8 @@
 		},
 		"borderCrossingDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value when this logistics transport movement crosses a border."
+			"description": "A date, time, date time or other date time value when this logistics transport movement crosses a border.",
+			"format": "date-time"
 		},
 		"borderCrossingEvent": {
 			"type": "array",
@@ -134,7 +135,8 @@
 		},
 		"closingDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the departure of this logistics transport movement."
+			"description": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the departure of this logistics transport movement.",
+			"format": "date-time"
 		},
 		"commodityConsolidatorAgentParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -229,7 +231,14 @@
 			"description": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number."
 		},
 		"information": {
@@ -348,7 +357,14 @@
 			"description": "The number of passengers for this logistics transport movement."
 		},
 		"pilotageExemptionId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The identifier of a pilotage exemption for this logistics transport movement."
 		},
 		"professionalMedicalPersonnelOnboardQuantity": {
@@ -389,7 +405,14 @@
 			"description": "A party to be notified of the sailing advice for this logistics transport movement."
 		},
 		"scheduledId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as stated in a schedule."
 		},
 		"sequenceNumeric": {
@@ -472,7 +495,14 @@
 			"description": "A stage, expressed as text, of this logistics transport movement."
 		},
 		"stayId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of a stay in a port, airport or other place of service for this logistics transport movement."
 		},
 		"stevedoreParty": {
@@ -483,7 +513,14 @@
 			"description": "A stevedore party for this logistics transport movement."
 		},
 		"terminalOperatorAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "A unique identifier for this logistics transport movement as assigned by a terminal operator."
 		},
 		"terminalOperatorParty": {
@@ -505,7 +542,14 @@
 			"description": "The number of traded parcels of cargo being transported in this logistics transport movement."
 		},
 		"tradingConsolidatorAssignedId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier for this logistics transport movement as assigned by the trading consolidator."
 		},
 		"trainedMedicalPersonnelOnboardQuantity": {

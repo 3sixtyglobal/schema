@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -33,7 +33,8 @@
 		},
 		"actualOccurrenceDateTime": {
 			"type": "string",
-			"description": "An actual date, time, date time, or other date time value of the occurrence of this port movement event."
+			"description": "An actual date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
 		},
 		"arrivalRelatedLocation": {
 			"type": "array",
@@ -48,10 +49,18 @@
 		},
 		"estimatedOccurrenceDateTime": {
 			"type": "string",
-			"description": "An estimated date, time, date time, or other date time value of the occurrence of this port movement event."
+			"description": "An estimated date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
 		},
 		"identifier": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "An identifier for this port movement event."
 		},
 		"maritimeAnchorageIndicator": {
@@ -64,11 +73,13 @@
 		},
 		"requestedOccurrenceDateTime": {
 			"type": "string",
-			"description": "A requested date, time, date time, or other date time value of the occurrence of this port movement event."
+			"description": "A requested date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
 		},
 		"scheduledOccurrenceDateTime": {
 			"type": "string",
-			"description": "A scheduled date, time, date time, or other date time value of the occurrence of this port movement event."
+			"description": "A scheduled date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
 		},
 		"sequenceNumeric": {
 			"type": "string",

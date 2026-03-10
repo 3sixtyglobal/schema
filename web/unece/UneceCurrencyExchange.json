@@ -21,7 +21,7 @@
 						}
 					],
 					"items": {
-						"$ref": "https://schema.twindev.org/unece/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					}
 				}
 			]
@@ -44,7 +44,8 @@
 		},
 		"conversionRateDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange."
+			"description": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange.",
+			"format": "date-time"
 		},
 		"currencySourceCurrencyCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
@@ -70,7 +71,14 @@
 			"description": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
 		},
 		"tradeCurrencyExchangeMarketId": {
-			"type": "string",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
 			"description": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
 		}
 	},
