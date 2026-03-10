@@ -16,23 +16,23 @@
 		},
 		"epoch": {
 			"type": "number",
-			"description": "The epoch of the transaction. json-ld type:schema:Integer"
+			"description": "The epoch of the transaction."
 		},
 		"digest": {
 			"type": "string",
-			"description": "The digest of the transaction. json-ld type:schema:Text"
+			"description": "The digest of the transaction."
 		},
 		"network": {
 			"type": "string",
-			"description": "The network of the transaction. json-ld type:schema:Text"
+			"description": "The network of the transaction."
 		},
 		"objectId": {
 			"type": "string",
-			"description": "The object id of the transaction. json-ld type:schema:Text"
+			"description": "The object id of the transaction."
 		},
 		"smartContractId": {
 			"type": "string",
-			"description": "The smart contract id of the transaction. json-ld type:schema:Text"
+			"description": "The smart contract id of the transaction."
 		}
 	},
 	"required": ["@context", "type", "epoch", "digest", "network", "objectId", "smartContractId"]
