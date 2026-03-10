@@ -37,35 +37,35 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "Created date/time of the attestation in ISO format. json-ld namespace:schema"
+			"description": "Created date/time of the attestation in ISO format."
 		},
 		"dateTransferred": {
 			"type": "string",
-			"description": "Transferred date/time of the attestation in ISO format, can be blank if holder identity is owner. json-ld type:schema:Date"
+			"description": "Transferred date/time of the attestation in ISO format, can be blank if holder identity is owner."
 		},
 		"ownerIdentity": {
 			"type": "string",
-			"description": "The identity of the owner. json-ld type:schema:identifier"
+			"description": "The identity of the owner."
 		},
 		"holderIdentity": {
 			"type": "string",
-			"description": "The identity of the current holder, can be undefined if owner is still the holder. json-ld type:schema:identifier"
+			"description": "The identity of the current holder, can be undefined if owner is still the holder."
 		},
 		"attestationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The data that was attested. json-ld namespace:twin-common"
+			"description": "The data that was attested."
 		},
 		"proof": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The proof for the attested data. json-ld namespace:twin-attestation"
+			"description": "The proof for the attested data."
 		},
 		"verified": {
 			"type": "boolean",
-			"description": "Whether the attestation has been verified. json-ld namespace:twin-common"
+			"description": "Whether the attestation has been verified."
 		},
 		"verificationFailure": {
 			"type": "string",
-			"description": "The verification failure message. json-ld type:schema:Text"
+			"description": "The verification failure message."
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "ownerIdentity", "attestationObject"]

@@ -31,23 +31,23 @@
 		},
 		"documentId": {
 			"type": "string",
-			"description": "The id of the document. json-ld type:schema:identifier"
+			"description": "The id of the document."
 		},
 		"documentCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
-			"description": "The code for the document type. json-ld type:schema:identifier"
+			"description": "The code for the document type."
 		},
 		"documentRevision": {
 			"type": "number",
-			"description": "The revision of the document as a 0 based index. json-ld type:schema:Integer"
+			"description": "The revision of the document as a 0 based index."
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the document was created. json-ld namespace:schema"
+			"description": "The date/time of when the document was created."
 		},
 		"integrity": {
 			"type": "string",
-			"description": "The integrity of the document being attested. json-ld namespace:twin-common"
+			"description": "The integrity of the document being attested."
 		}
 	},
 	"required": [

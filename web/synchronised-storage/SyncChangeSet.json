@@ -20,26 +20,26 @@
 		},
 		"storageKey": {
 			"type": "string",
-			"description": "The storage key of the change set. This is used to identify the entities being synchronised. json-ld type:schema:identifier"
+			"description": "The storage key of the change set. This is used to identify the entities being synchronised."
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date the change set was created. json-ld namespace:schema"
+			"description": "The date the change set was created."
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date the change set was last modified. json-ld namespace:schema"
+			"description": "The date the change set was last modified."
 		},
 		"nodeIdentity": {
 			"type": "string",
-			"description": "The identity of the node that created the change set. json-ld namespace:twin-common"
+			"description": "The identity of the node that created the change set."
 		},
 		"changes": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/synchronised-storage/SyncChange"
 			},
-			"description": "The changes to apply after a snapshot. json-ld type:json"
+			"description": "The changes to apply after a snapshot."
 		}
 	},
 	"required": [

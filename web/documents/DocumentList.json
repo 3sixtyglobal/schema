@@ -36,14 +36,14 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/documents/Document"
 			},
-			"description": "The list of documents. json-ld namespace:schema"
+			"description": "The list of documents."
 		},
 		"edges": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "The ids of the other vertices which are connected to the document. json-ld container:set"
+			"description": "The ids of the other vertices which are connected to the document."
 		}
 	},
 	"required": ["@context", "type", "itemListElement"]

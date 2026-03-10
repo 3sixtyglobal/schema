@@ -10,15 +10,15 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the element was created. json-ld namespace:sch"
+			"description": "The date/time of when the element was created."
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the element was modified. json-ld namespace:sch"
+			"description": "The date/time of when the element was modified."
 		},
 		"dateDeleted": {
 			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items. json-ld namespace:sch"
+			"description": "The date/time of when the element was deleted, as we never actually remove items."
 		},
 		"@context": {
 			"type": "array",
@@ -45,36 +45,36 @@
 		},
 		"organizationIdentity": {
 			"type": "string",
-			"description": "The identity of the organization which controls the vertex. json-ld namespace:twin-common"
+			"description": "The identity of the organization which controls the vertex."
 		},
 		"annotationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The JSON-LD annotation object for the vertex. json-ld namespace:twin-common"
+			"description": "The JSON-LD annotation object for the vertex."
 		},
 		"aliases": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
 			},
-			"description": "Alternative aliases that can be used to identify the vertex. json-ld container:set"
+			"description": "Alternative aliases that can be used to identify the vertex."
 		},
 		"resources": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
 			},
-			"description": "The resources attached to the vertex. json-ld container:set"
+			"description": "The resources attached to the vertex."
 		},
 		"edges": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
 			},
-			"description": "Edges connected to the vertex. json-ld container:set"
+			"description": "Edges connected to the vertex."
 		},
 		"verified": {
 			"type": "boolean",
-			"description": "Is the vertex verified, will only be populated when verification is requested. json-ld namespace:twin-common"
+			"description": "Is the vertex verified, will only be populated when verification is requested."
 		}
 	},
 	"required": ["@context", "id", "type"]

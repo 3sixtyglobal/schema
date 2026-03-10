@@ -33,43 +33,43 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time when the entry was created. json-ld namespace:schema"
+			"description": "The date/time when the entry was created."
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time when the entry was modified. json-ld namespace:schema"
+			"description": "The date/time when the entry was modified."
 		},
 		"blobSize": {
 			"type": "number",
-			"description": "The size of the data in the blob. json-ld type:schema:Integer"
+			"description": "The size of the data in the blob."
 		},
 		"integrity": {
 			"type": "string",
-			"description": "The integrity of the data in the blob. json-ld namespace:twin-common"
+			"description": "The integrity of the data in the blob."
 		},
 		"encodingFormat": {
 			"type": "string",
-			"description": "The mime type for the blob. json-ld namespace:schema"
+			"description": "The mime type for the blob."
 		},
 		"isEncrypted": {
 			"type": "boolean",
-			"description": "Indicates if the blob is encrypted. json-ld type:schema:Boolean"
+			"description": "Indicates if the blob is encrypted."
 		},
 		"compression": {
 			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageCompressionType",
-			"description": "The type of compression used for the blob, if not set it is not stored with compression. json-ld type:schema:Text"
+			"description": "The type of compression used for the blob, if not set it is not stored with compression."
 		},
 		"fileExtension": {
 			"type": "string",
-			"description": "The extension. json-ld type:schema:Text"
+			"description": "The extension."
 		},
 		"metadata": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The metadata for the blob as JSON-LD. json-ld id"
+			"description": "The metadata for the blob as JSON-LD."
 		},
 		"blob": {
 			"type": "string",
-			"description": "The blob in base64 format, included if the includeContent flag was set in the request. json-ld type:schema:Text"
+			"description": "The blob in base64 format, included if the includeContent flag was set in the request."
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "blobSize", "integrity"]

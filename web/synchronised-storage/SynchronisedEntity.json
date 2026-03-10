@@ -6,7 +6,7 @@
 	"properties": {
 		"dateModified": {
 			"type": "string",
-			"description": "The date the entry was modified. json-ld namespace:schema"
+			"description": "The date the entry was modified."
 		},
 		"id": {
 			"type": "string",
@@ -14,7 +14,7 @@
 		},
 		"nodeIdentity": {
 			"type": "string",
-			"description": "The identity of the node that owns the entry. json-ld namespace:twin-common"
+			"description": "The identity of the node that owns the entry."
 		}
 	},
 	"required": ["dateModified", "id", "nodeIdentity"]

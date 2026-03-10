@@ -16,11 +16,11 @@
 		},
 		"verified": {
 			"type": "boolean",
-			"description": "Was the verification successful. json-ld namespace:twin-common"
+			"description": "Was the verification successful."
 		},
 		"failure": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofFailure",
-			"description": "If the verification was unsuccessful the failure reason. json-ld type:schema:Text"
+			"description": "If the verification was unsuccessful the failure reason."
 		}
 	},
 	"required": ["@context", "type", "verified"]

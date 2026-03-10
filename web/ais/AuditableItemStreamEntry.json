@@ -33,35 +33,35 @@
 		},
 		"dateCreated": {
 			"type": "string",
-			"description": "The date/time of when the entry was created. json-ld namespace:sch"
+			"description": "The date/time of when the entry was created."
 		},
 		"dateModified": {
 			"type": "string",
-			"description": "The date/time of when the entry was modified. json-ld namespace:sch"
+			"description": "The date/time of when the entry was modified."
 		},
 		"dateDeleted": {
 			"type": "string",
-			"description": "The date/time of when the entry was deleted, as we never actually remove items. json-ld namespace:sch"
+			"description": "The date/time of when the entry was deleted, as we never actually remove items."
 		},
 		"userIdentity": {
 			"type": "string",
-			"description": "The identity of the user which added the entry to the stream. json-ld namespace:twin-common"
+			"description": "The identity of the user which added the entry to the stream."
 		},
 		"entryObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The object to associate with the entry as JSON-LD. json-ld type:json"
+			"description": "The object to associate with the entry as JSON-LD."
 		},
 		"index": {
 			"type": "number",
-			"description": "The index of the entry in the stream. json-ld type:sch:Integer"
+			"description": "The index of the entry in the stream."
 		},
 		"proofId": {
 			"type": "string",
-			"description": "The id of the immutable proof. json-ld type:sch:identifier"
+			"description": "The id of the immutable proof."
 		},
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
-			"description": "The verification of the entry. json-ld id"
+			"description": "The verification of the entry."
 		}
 	},
 	"required": ["@context", "type", "id", "dateCreated", "entryObject", "index"]
