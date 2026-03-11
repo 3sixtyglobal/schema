@@ -10,7 +10,10 @@ on:
 
 jobs:
   add-to-project:
-    runs-on: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+    runs-on:
+        labels: ${{ github.event.repository.private && 'self-hosted-small' || 'ubuntu-latest' }}
+        group:  ${{ github.event.repository.private && 'small' || 'default' }}
+
     steps:
       - uses: actions/add-to-project@v1.0.2
         with:

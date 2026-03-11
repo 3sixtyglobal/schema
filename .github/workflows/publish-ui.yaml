@@ -44,14 +44,14 @@ jobs:
 
       # Clone the repository to the runner
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }} # Using GITHUB_TOKEN makes actions run as github-actions bot
           ref: ${{ steps.set-branch.outputs.branch }} # Checkout the calculated branch
           fetch-depth: 0 # Needed for merge operations
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
 
