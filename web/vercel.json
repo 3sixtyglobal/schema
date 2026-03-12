@@ -478,6 +478,39 @@
 			"destination": "https://schema.twindev.org/json-ld/:path*.json"
 		},
 		{
+			"source": "/dataspace/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dataspace/types.html"
+		},
+		{
+			"source": "/dataspace/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.twindev.org/dataspace/:path*.json"
+		},
+		{
+			"source": "/dataspace/:path*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.twindev.org/dataspace/:path*.json"
+		},
+		{
 			"source": "/w3c-did/",
 			"has": [
 				{
@@ -1071,6 +1104,11 @@
 		{
 			"source": "/json-ld",
 			"destination": "https://schema.twindev.org/json-ld/",
+			"permanent": true
+		},
+		{
+			"source": "/dataspace",
+			"destination": "https://schema.twindev.org/dataspace/",
 			"permanent": true
 		},
 		{
