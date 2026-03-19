@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+	"title": "DataspaceProtocolContextType",
+	"description": "The Dataspace Protocol JSON-LD context type.",
+	"anyOf": [
+		{
+			"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+		},
+		{
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					{
+						"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+					}
+				]
+			},
+			"contains": {
+				"const": "https://w3id.org/dspace/2025/1/context.jsonld"
+			},
+			"minContains": 1,
+			"maxContains": 1,
+			"minItems": 1
+		}
+	]
+}

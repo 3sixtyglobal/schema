@@ -1,16 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaBaseEvent",
+	"title": "DcsaBaseEvent",
 	"description": "Base event attributes shared by all payloads.\n\nSource: `baseEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
 		"eventClassifierCode": {
 			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCode",
-			"description": "Code for the event classifier.\n\nNote: allowed values depend on event type. Some event categories in the upstream spec constrain this to a subset (e.g. Shipment/IoT/Reefer are always ACT)."
+			"description": "Code for the event classifier.\n\nNote: allowed values depend on event type. Some event categories in the upstream spec\nconstrain this to a subset (e.g. Shipment/IoT/Reefer are always ACT)."
 		},
 		"eventDateTime": {
 			"type": "string",
-			"description": "The local date and time when the event took place (or will take place). Format: ISO 8601 date-time."
+			"description": "The local date and time when the event took place (or will take place).\nFormat: ISO 8601 date-time."
 		}
 	},
 	"required": ["eventClassifierCode", "eventDateTime"]

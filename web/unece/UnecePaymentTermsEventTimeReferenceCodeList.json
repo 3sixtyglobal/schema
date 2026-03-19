@@ -1,14 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentTermsEventTimeReferenceCodeList",
-	"description": "A character string used to represent a time reference for a payment terms event. Deprecated since version D23B.",
-	"type": "string",
-	"enum": [
-		"unece:PaymentTermsEventTimeReferenceCodeList#24",
-		"unece:PaymentTermsEventTimeReferenceCodeList#29",
-		"unece:PaymentTermsEventTimeReferenceCodeList#45",
-		"unece:PaymentTermsEventTimeReferenceCodeList#5",
-		"unece:PaymentTermsEventTimeReferenceCodeList#71"
-	],
-	"deprecated": true
+	"title": "UnecePaymentTermsEventTimeReferenceCodeList",
+	"description": "A character string used to represent a time reference for a payment terms event.\nDeprecated since version D23B.",
+	"oneOf": [
+		{
+			"const": "unece:PaymentTermsEventTimeReferenceCodeList#24",
+			"description": "Date ex-works: 24.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:PaymentTermsEventTimeReferenceCodeList#29",
+			"description": "Date of delivery of goods to establishments/domicile/site: 29.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:PaymentTermsEventTimeReferenceCodeList#45",
+			"description": "Date of bill of lading, consignment note or other transport document: 45.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:PaymentTermsEventTimeReferenceCodeList#5",
+			"description": "Date of invoice: 5.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:PaymentTermsEventTimeReferenceCodeList#71",
+			"description": "Date of presentation of documents: 71.\nDeprecated since version D23B."
+		}
+	]
 }

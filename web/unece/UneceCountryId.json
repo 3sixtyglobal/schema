@@ -1,257 +1,1004 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCountryId",
-	"description": "A character string to identify and distinguish uniquely, one instance of a country in an identification scheme from all other objects within the same scheme.",
-	"type": "string",
-	"enum": [
-		"unece:CountryId#AD",
-		"unece:CountryId#AE",
-		"unece:CountryId#AF",
-		"unece:CountryId#AG",
-		"unece:CountryId#AI",
-		"unece:CountryId#AL",
-		"unece:CountryId#AM",
-		"unece:CountryId#AO",
-		"unece:CountryId#AQ",
-		"unece:CountryId#AR",
-		"unece:CountryId#AS",
-		"unece:CountryId#AT",
-		"unece:CountryId#AU",
-		"unece:CountryId#AW",
-		"unece:CountryId#AX",
-		"unece:CountryId#AZ",
-		"unece:CountryId#BA",
-		"unece:CountryId#BB",
-		"unece:CountryId#BD",
-		"unece:CountryId#BE",
-		"unece:CountryId#BF",
-		"unece:CountryId#BG",
-		"unece:CountryId#BH",
-		"unece:CountryId#BI",
-		"unece:CountryId#BJ",
-		"unece:CountryId#BL",
-		"unece:CountryId#BM",
-		"unece:CountryId#BN",
-		"unece:CountryId#BO",
-		"unece:CountryId#BQ",
-		"unece:CountryId#BR",
-		"unece:CountryId#BS",
-		"unece:CountryId#BT",
-		"unece:CountryId#BV",
-		"unece:CountryId#BW",
-		"unece:CountryId#BY",
-		"unece:CountryId#BZ",
-		"unece:CountryId#CA",
-		"unece:CountryId#CC",
-		"unece:CountryId#CD",
-		"unece:CountryId#CF",
-		"unece:CountryId#CG",
-		"unece:CountryId#CH",
-		"unece:CountryId#CI",
-		"unece:CountryId#CK",
-		"unece:CountryId#CL",
-		"unece:CountryId#CM",
-		"unece:CountryId#CN",
-		"unece:CountryId#CO",
-		"unece:CountryId#CR",
-		"unece:CountryId#CU",
-		"unece:CountryId#CV",
-		"unece:CountryId#CW",
-		"unece:CountryId#CX",
-		"unece:CountryId#CY",
-		"unece:CountryId#CZ",
-		"unece:CountryId#DE",
-		"unece:CountryId#DJ",
-		"unece:CountryId#DK",
-		"unece:CountryId#DM",
-		"unece:CountryId#DO",
-		"unece:CountryId#DZ",
-		"unece:CountryId#EC",
-		"unece:CountryId#EE",
-		"unece:CountryId#EG",
-		"unece:CountryId#EH",
-		"unece:CountryId#ER",
-		"unece:CountryId#ES",
-		"unece:CountryId#ET",
-		"unece:CountryId#FI",
-		"unece:CountryId#FJ",
-		"unece:CountryId#FK",
-		"unece:CountryId#FM",
-		"unece:CountryId#FO",
-		"unece:CountryId#FR",
-		"unece:CountryId#GA",
-		"unece:CountryId#GB",
-		"unece:CountryId#GD",
-		"unece:CountryId#GE",
-		"unece:CountryId#GF",
-		"unece:CountryId#GG",
-		"unece:CountryId#GH",
-		"unece:CountryId#GI",
-		"unece:CountryId#GL",
-		"unece:CountryId#GM",
-		"unece:CountryId#GN",
-		"unece:CountryId#GP",
-		"unece:CountryId#GQ",
-		"unece:CountryId#GR",
-		"unece:CountryId#GS",
-		"unece:CountryId#GT",
-		"unece:CountryId#GU",
-		"unece:CountryId#GW",
-		"unece:CountryId#GY",
-		"unece:CountryId#HK",
-		"unece:CountryId#HM",
-		"unece:CountryId#HN",
-		"unece:CountryId#HR",
-		"unece:CountryId#HT",
-		"unece:CountryId#HU",
-		"unece:CountryId#ID",
-		"unece:CountryId#IE",
-		"unece:CountryId#IL",
-		"unece:CountryId#IM",
-		"unece:CountryId#IN",
-		"unece:CountryId#IO",
-		"unece:CountryId#IQ",
-		"unece:CountryId#IR",
-		"unece:CountryId#IS",
-		"unece:CountryId#IT",
-		"unece:CountryId#JE",
-		"unece:CountryId#JM",
-		"unece:CountryId#JO",
-		"unece:CountryId#JP",
-		"unece:CountryId#KE",
-		"unece:CountryId#KG",
-		"unece:CountryId#KH",
-		"unece:CountryId#KI",
-		"unece:CountryId#KM",
-		"unece:CountryId#KN",
-		"unece:CountryId#KP",
-		"unece:CountryId#KR",
-		"unece:CountryId#KW",
-		"unece:CountryId#KY",
-		"unece:CountryId#KZ",
-		"unece:CountryId#LA",
-		"unece:CountryId#LB",
-		"unece:CountryId#LC",
-		"unece:CountryId#LI",
-		"unece:CountryId#LK",
-		"unece:CountryId#LR",
-		"unece:CountryId#LS",
-		"unece:CountryId#LT",
-		"unece:CountryId#LU",
-		"unece:CountryId#LV",
-		"unece:CountryId#LY",
-		"unece:CountryId#MA",
-		"unece:CountryId#MC",
-		"unece:CountryId#MD",
-		"unece:CountryId#ME",
-		"unece:CountryId#MF",
-		"unece:CountryId#MG",
-		"unece:CountryId#MH",
-		"unece:CountryId#MK",
-		"unece:CountryId#ML",
-		"unece:CountryId#MM",
-		"unece:CountryId#MN",
-		"unece:CountryId#MO",
-		"unece:CountryId#MP",
-		"unece:CountryId#MQ",
-		"unece:CountryId#MR",
-		"unece:CountryId#MS",
-		"unece:CountryId#MT",
-		"unece:CountryId#MU",
-		"unece:CountryId#MV",
-		"unece:CountryId#MW",
-		"unece:CountryId#MX",
-		"unece:CountryId#MY",
-		"unece:CountryId#MZ",
-		"unece:CountryId#NA",
-		"unece:CountryId#NC",
-		"unece:CountryId#NE",
-		"unece:CountryId#NF",
-		"unece:CountryId#NG",
-		"unece:CountryId#NI",
-		"unece:CountryId#NL",
-		"unece:CountryId#NO",
-		"unece:CountryId#NP",
-		"unece:CountryId#NR",
-		"unece:CountryId#NU",
-		"unece:CountryId#NZ",
-		"unece:CountryId#OM",
-		"unece:CountryId#PA",
-		"unece:CountryId#PE",
-		"unece:CountryId#PF",
-		"unece:CountryId#PG",
-		"unece:CountryId#PH",
-		"unece:CountryId#PK",
-		"unece:CountryId#PL",
-		"unece:CountryId#PM",
-		"unece:CountryId#PN",
-		"unece:CountryId#PR",
-		"unece:CountryId#PS",
-		"unece:CountryId#PT",
-		"unece:CountryId#PW",
-		"unece:CountryId#PY",
-		"unece:CountryId#QA",
-		"unece:CountryId#RE",
-		"unece:CountryId#RO",
-		"unece:CountryId#RS",
-		"unece:CountryId#RU",
-		"unece:CountryId#RW",
-		"unece:CountryId#SA",
-		"unece:CountryId#SB",
-		"unece:CountryId#SC",
-		"unece:CountryId#SD",
-		"unece:CountryId#SE",
-		"unece:CountryId#SG",
-		"unece:CountryId#SH",
-		"unece:CountryId#SI",
-		"unece:CountryId#SJ",
-		"unece:CountryId#SK",
-		"unece:CountryId#SL",
-		"unece:CountryId#SM",
-		"unece:CountryId#SN",
-		"unece:CountryId#SO",
-		"unece:CountryId#SR",
-		"unece:CountryId#SS",
-		"unece:CountryId#ST",
-		"unece:CountryId#SV",
-		"unece:CountryId#SX",
-		"unece:CountryId#SY",
-		"unece:CountryId#SZ",
-		"unece:CountryId#TC",
-		"unece:CountryId#TD",
-		"unece:CountryId#TF",
-		"unece:CountryId#TG",
-		"unece:CountryId#TH",
-		"unece:CountryId#TJ",
-		"unece:CountryId#TK",
-		"unece:CountryId#TL",
-		"unece:CountryId#TM",
-		"unece:CountryId#TN",
-		"unece:CountryId#TO",
-		"unece:CountryId#TR",
-		"unece:CountryId#TT",
-		"unece:CountryId#TV",
-		"unece:CountryId#TW",
-		"unece:CountryId#TZ",
-		"unece:CountryId#UA",
-		"unece:CountryId#UG",
-		"unece:CountryId#UM",
-		"unece:CountryId#US",
-		"unece:CountryId#UY",
-		"unece:CountryId#UZ",
-		"unece:CountryId#VA",
-		"unece:CountryId#VC",
-		"unece:CountryId#VE",
-		"unece:CountryId#VG",
-		"unece:CountryId#VI",
-		"unece:CountryId#VN",
-		"unece:CountryId#VU",
-		"unece:CountryId#WF",
-		"unece:CountryId#WS",
-		"unece:CountryId#YE",
-		"unece:CountryId#YT",
-		"unece:CountryId#ZA",
-		"unece:CountryId#ZM",
-		"unece:CountryId#ZW"
+	"title": "UneceCountryId",
+	"description": "A character string to identify and distinguish uniquely, one instance of a country in an identification scheme from all\nother objects within the same scheme.",
+	"oneOf": [
+		{
+			"const": "unece:CountryId#AD",
+			"description": "ANDORRA: AD."
+		},
+		{
+			"const": "unece:CountryId#AE",
+			"description": "UNITED ARAB EMIRATES: AE."
+		},
+		{
+			"const": "unece:CountryId#AF",
+			"description": "AFGHANISTAN: AF."
+		},
+		{
+			"const": "unece:CountryId#AG",
+			"description": "ANTIGUA AND BARBUDA: AG."
+		},
+		{
+			"const": "unece:CountryId#AI",
+			"description": "ANGUILLA: AI."
+		},
+		{
+			"const": "unece:CountryId#AL",
+			"description": "ALBANIA: AL."
+		},
+		{
+			"const": "unece:CountryId#AM",
+			"description": "ARMENIA: AM."
+		},
+		{
+			"const": "unece:CountryId#AO",
+			"description": "ANGOLA: AO."
+		},
+		{
+			"const": "unece:CountryId#AQ",
+			"description": "ANTARCTICA: AQ."
+		},
+		{
+			"const": "unece:CountryId#AR",
+			"description": "ARGENTINA: AR."
+		},
+		{
+			"const": "unece:CountryId#AS",
+			"description": "AMERICAN SAMOA: AS."
+		},
+		{
+			"const": "unece:CountryId#AT",
+			"description": "AUSTRIA: AT."
+		},
+		{
+			"const": "unece:CountryId#AU",
+			"description": "AUSTRALIA: AU."
+		},
+		{
+			"const": "unece:CountryId#AW",
+			"description": "ARUBA: AW."
+		},
+		{
+			"const": "unece:CountryId#AX",
+			"description": "ÅLAND ISLANDS: AX."
+		},
+		{
+			"const": "unece:CountryId#AZ",
+			"description": "AZERBAIJAN: AZ."
+		},
+		{
+			"const": "unece:CountryId#BA",
+			"description": "BOSNIA AND HERZEGOVINA: BA."
+		},
+		{
+			"const": "unece:CountryId#BB",
+			"description": "BARBADOS: BB."
+		},
+		{
+			"const": "unece:CountryId#BD",
+			"description": "BANGLADESH: BD."
+		},
+		{
+			"const": "unece:CountryId#BE",
+			"description": "BELGIUM: BE."
+		},
+		{
+			"const": "unece:CountryId#BF",
+			"description": "BURKINA FASO: BF."
+		},
+		{
+			"const": "unece:CountryId#BG",
+			"description": "BULGARIA: BG."
+		},
+		{
+			"const": "unece:CountryId#BH",
+			"description": "BAHRAIN: BH."
+		},
+		{
+			"const": "unece:CountryId#BI",
+			"description": "BURUNDI: BI."
+		},
+		{
+			"const": "unece:CountryId#BJ",
+			"description": "BENIN: BJ."
+		},
+		{
+			"const": "unece:CountryId#BL",
+			"description": "SAINT BARTHÉLEMY: BL."
+		},
+		{
+			"const": "unece:CountryId#BM",
+			"description": "BERMUDA: BM."
+		},
+		{
+			"const": "unece:CountryId#BN",
+			"description": "BRUNEI DARUSSALAM: BN."
+		},
+		{
+			"const": "unece:CountryId#BO",
+			"description": "BOLIVIA (PLURINATIONAL STATE OF): BO."
+		},
+		{
+			"const": "unece:CountryId#BQ",
+			"description": "BONAIRE, SINT EUSTATIUS AND SABA: BQ."
+		},
+		{
+			"const": "unece:CountryId#BR",
+			"description": "BRAZIL: BR."
+		},
+		{
+			"const": "unece:CountryId#BS",
+			"description": "BAHAMAS: BS."
+		},
+		{
+			"const": "unece:CountryId#BT",
+			"description": "BHUTAN: BT."
+		},
+		{
+			"const": "unece:CountryId#BV",
+			"description": "BOUVET ISLAND: BV."
+		},
+		{
+			"const": "unece:CountryId#BW",
+			"description": "BOTSWANA: BW."
+		},
+		{
+			"const": "unece:CountryId#BY",
+			"description": "BELARUS: BY."
+		},
+		{
+			"const": "unece:CountryId#BZ",
+			"description": "BELIZE: BZ."
+		},
+		{
+			"const": "unece:CountryId#CA",
+			"description": "CANADA: CA."
+		},
+		{
+			"const": "unece:CountryId#CC",
+			"description": "COCOS (KEELING) ISLANDS: CC."
+		},
+		{
+			"const": "unece:CountryId#CD",
+			"description": "CONGO, DEMOCRATIC REPUBLIC OF: CD."
+		},
+		{
+			"const": "unece:CountryId#CF",
+			"description": "CENTRAL AFRICAN REPUBLIC: CF."
+		},
+		{
+			"const": "unece:CountryId#CG",
+			"description": "CONGO: CG."
+		},
+		{
+			"const": "unece:CountryId#CH",
+			"description": "SWITZERLAND: CH."
+		},
+		{
+			"const": "unece:CountryId#CI",
+			"description": "CÔTE D'IVOIRE: CI."
+		},
+		{
+			"const": "unece:CountryId#CK",
+			"description": "COOK ISLANDS: CK."
+		},
+		{
+			"const": "unece:CountryId#CL",
+			"description": "CHILE: CL."
+		},
+		{
+			"const": "unece:CountryId#CM",
+			"description": "CAMEROON: CM."
+		},
+		{
+			"const": "unece:CountryId#CN",
+			"description": "CHINA: CN."
+		},
+		{
+			"const": "unece:CountryId#CO",
+			"description": "COLOMBIA: CO."
+		},
+		{
+			"const": "unece:CountryId#CR",
+			"description": "COSTA RICA: CR."
+		},
+		{
+			"const": "unece:CountryId#CU",
+			"description": "CUBA: CU."
+		},
+		{
+			"const": "unece:CountryId#CV",
+			"description": "CABO VERDE: CV."
+		},
+		{
+			"const": "unece:CountryId#CW",
+			"description": "CURAÇAO: CW."
+		},
+		{
+			"const": "unece:CountryId#CX",
+			"description": "CHRISTMAS ISLAND: CX."
+		},
+		{
+			"const": "unece:CountryId#CY",
+			"description": "CYPRUS: CY."
+		},
+		{
+			"const": "unece:CountryId#CZ",
+			"description": "CZECHIA: CZ."
+		},
+		{
+			"const": "unece:CountryId#DE",
+			"description": "GERMANY: DE."
+		},
+		{
+			"const": "unece:CountryId#DJ",
+			"description": "DJIBOUTI: DJ."
+		},
+		{
+			"const": "unece:CountryId#DK",
+			"description": "DENMARK: DK."
+		},
+		{
+			"const": "unece:CountryId#DM",
+			"description": "DOMINICA: DM."
+		},
+		{
+			"const": "unece:CountryId#DO",
+			"description": "DOMINICAN REPUBLIC: DO."
+		},
+		{
+			"const": "unece:CountryId#DZ",
+			"description": "ALGERIA: DZ."
+		},
+		{
+			"const": "unece:CountryId#EC",
+			"description": "ECUADOR: EC."
+		},
+		{
+			"const": "unece:CountryId#EE",
+			"description": "ESTONIA: EE."
+		},
+		{
+			"const": "unece:CountryId#EG",
+			"description": "EGYPT: EG."
+		},
+		{
+			"const": "unece:CountryId#EH",
+			"description": "WESTERN SAHARA: EH."
+		},
+		{
+			"const": "unece:CountryId#ER",
+			"description": "ERITREA: ER."
+		},
+		{
+			"const": "unece:CountryId#ES",
+			"description": "SPAIN: ES."
+		},
+		{
+			"const": "unece:CountryId#ET",
+			"description": "ETHIOPIA: ET."
+		},
+		{
+			"const": "unece:CountryId#FI",
+			"description": "FINLAND: FI."
+		},
+		{
+			"const": "unece:CountryId#FJ",
+			"description": "FIJI: FJ."
+		},
+		{
+			"const": "unece:CountryId#FK",
+			"description": "FALKLAND ISLANDS (MALVINAS): FK."
+		},
+		{
+			"const": "unece:CountryId#FM",
+			"description": "MICRONESIA (FEDERATED STATES OF): FM."
+		},
+		{
+			"const": "unece:CountryId#FO",
+			"description": "FAROE ISLANDS: FO."
+		},
+		{
+			"const": "unece:CountryId#FR",
+			"description": "FRANCE: FR."
+		},
+		{
+			"const": "unece:CountryId#GA",
+			"description": "GABON: GA."
+		},
+		{
+			"const": "unece:CountryId#GB",
+			"description": "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND: GB."
+		},
+		{
+			"const": "unece:CountryId#GD",
+			"description": "GRENADA: GD."
+		},
+		{
+			"const": "unece:CountryId#GE",
+			"description": "GEORGIA: GE."
+		},
+		{
+			"const": "unece:CountryId#GF",
+			"description": "FRENCH GUIANA: GF."
+		},
+		{
+			"const": "unece:CountryId#GG",
+			"description": "GUERNSEY: GG."
+		},
+		{
+			"const": "unece:CountryId#GH",
+			"description": "GHANA: GH."
+		},
+		{
+			"const": "unece:CountryId#GI",
+			"description": "GIBRALTAR: GI."
+		},
+		{
+			"const": "unece:CountryId#GL",
+			"description": "GREENLAND: GL."
+		},
+		{
+			"const": "unece:CountryId#GM",
+			"description": "GAMBIA: GM."
+		},
+		{
+			"const": "unece:CountryId#GN",
+			"description": "GUINEA: GN."
+		},
+		{
+			"const": "unece:CountryId#GP",
+			"description": "GUADELOUPE: GP."
+		},
+		{
+			"const": "unece:CountryId#GQ",
+			"description": "EQUATORIAL GUINEA: GQ."
+		},
+		{
+			"const": "unece:CountryId#GR",
+			"description": "GREECE: GR."
+		},
+		{
+			"const": "unece:CountryId#GS",
+			"description": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS: GS."
+		},
+		{
+			"const": "unece:CountryId#GT",
+			"description": "GUATEMALA: GT."
+		},
+		{
+			"const": "unece:CountryId#GU",
+			"description": "GUAM: GU."
+		},
+		{
+			"const": "unece:CountryId#GW",
+			"description": "GUINEA-BISSAU: GW."
+		},
+		{
+			"const": "unece:CountryId#GY",
+			"description": "GUYANA: GY."
+		},
+		{
+			"const": "unece:CountryId#HK",
+			"description": "HONG KONG: HK."
+		},
+		{
+			"const": "unece:CountryId#HM",
+			"description": "HEARD ISLAND AND MCDONALD ISLANDS: HM."
+		},
+		{
+			"const": "unece:CountryId#HN",
+			"description": "HONDURAS: HN."
+		},
+		{
+			"const": "unece:CountryId#HR",
+			"description": "CROATIA: HR."
+		},
+		{
+			"const": "unece:CountryId#HT",
+			"description": "HAITI: HT."
+		},
+		{
+			"const": "unece:CountryId#HU",
+			"description": "HUNGARY: HU."
+		},
+		{
+			"const": "unece:CountryId#ID",
+			"description": "INDONESIA: ID."
+		},
+		{
+			"const": "unece:CountryId#IE",
+			"description": "IRELAND: IE."
+		},
+		{
+			"const": "unece:CountryId#IL",
+			"description": "ISRAEL: IL."
+		},
+		{
+			"const": "unece:CountryId#IM",
+			"description": "ISLE OF MAN: IM."
+		},
+		{
+			"const": "unece:CountryId#IN",
+			"description": "INDIA: IN."
+		},
+		{
+			"const": "unece:CountryId#IO",
+			"description": "BRITISH INDIAN OCEAN TERRITORY: IO."
+		},
+		{
+			"const": "unece:CountryId#IQ",
+			"description": "IRAQ: IQ."
+		},
+		{
+			"const": "unece:CountryId#IR",
+			"description": "IRAN (ISLAMIC REPUBLIC OF): IR."
+		},
+		{
+			"const": "unece:CountryId#IS",
+			"description": "ICELAND: IS."
+		},
+		{
+			"const": "unece:CountryId#IT",
+			"description": "ITALY: IT."
+		},
+		{
+			"const": "unece:CountryId#JE",
+			"description": "JERSEY: JE."
+		},
+		{
+			"const": "unece:CountryId#JM",
+			"description": "JAMAICA: JM."
+		},
+		{
+			"const": "unece:CountryId#JO",
+			"description": "JORDAN: JO."
+		},
+		{
+			"const": "unece:CountryId#JP",
+			"description": "JAPAN: JP."
+		},
+		{
+			"const": "unece:CountryId#KE",
+			"description": "KENYA: KE."
+		},
+		{
+			"const": "unece:CountryId#KG",
+			"description": "KYRGYZSTAN: KG."
+		},
+		{
+			"const": "unece:CountryId#KH",
+			"description": "CAMBODIA: KH."
+		},
+		{
+			"const": "unece:CountryId#KI",
+			"description": "KIRIBATI: KI."
+		},
+		{
+			"const": "unece:CountryId#KM",
+			"description": "COMOROS: KM."
+		},
+		{
+			"const": "unece:CountryId#KN",
+			"description": "SAINT KITTS AND NEVIS: KN."
+		},
+		{
+			"const": "unece:CountryId#KP",
+			"description": "KOREA (DEMOCRATIC PEOPLE'S REPUBLIC OF): KP."
+		},
+		{
+			"const": "unece:CountryId#KR",
+			"description": "KOREA, REPUBLIC OF: KR."
+		},
+		{
+			"const": "unece:CountryId#KW",
+			"description": "KUWAIT: KW."
+		},
+		{
+			"const": "unece:CountryId#KY",
+			"description": "CAYMAN ISLANDS: KY."
+		},
+		{
+			"const": "unece:CountryId#KZ",
+			"description": "KAZAKHSTAN: KZ."
+		},
+		{
+			"const": "unece:CountryId#LA",
+			"description": "LAO PEOPLE'S DEMOCRATIC REPUBLIC: LA."
+		},
+		{
+			"const": "unece:CountryId#LB",
+			"description": "LEBANON: LB."
+		},
+		{
+			"const": "unece:CountryId#LC",
+			"description": "SAINT LUCIA: LC."
+		},
+		{
+			"const": "unece:CountryId#LI",
+			"description": "LIECHTENSTEIN: LI."
+		},
+		{
+			"const": "unece:CountryId#LK",
+			"description": "SRI LANKA: LK."
+		},
+		{
+			"const": "unece:CountryId#LR",
+			"description": "LIBERIA: LR."
+		},
+		{
+			"const": "unece:CountryId#LS",
+			"description": "LESOTHO: LS."
+		},
+		{
+			"const": "unece:CountryId#LT",
+			"description": "LITHUANIA: LT."
+		},
+		{
+			"const": "unece:CountryId#LU",
+			"description": "LUXEMBOURG: LU."
+		},
+		{
+			"const": "unece:CountryId#LV",
+			"description": "LATVIA: LV."
+		},
+		{
+			"const": "unece:CountryId#LY",
+			"description": "LIBYA: LY."
+		},
+		{
+			"const": "unece:CountryId#MA",
+			"description": "MOROCCO: MA."
+		},
+		{
+			"const": "unece:CountryId#MC",
+			"description": "MONACO: MC."
+		},
+		{
+			"const": "unece:CountryId#MD",
+			"description": "MOLDOVA, REPUBLIC OF: MD."
+		},
+		{
+			"const": "unece:CountryId#ME",
+			"description": "MONTENEGRO: ME."
+		},
+		{
+			"const": "unece:CountryId#MF",
+			"description": "SAINT MARTIN (FRENCH PART): MF."
+		},
+		{
+			"const": "unece:CountryId#MG",
+			"description": "MADAGASCAR: MG."
+		},
+		{
+			"const": "unece:CountryId#MH",
+			"description": "MARSHALL ISLANDS: MH."
+		},
+		{
+			"const": "unece:CountryId#MK",
+			"description": "NORTH MACEDONIA: MK."
+		},
+		{
+			"const": "unece:CountryId#ML",
+			"description": "MALI: ML."
+		},
+		{
+			"const": "unece:CountryId#MM",
+			"description": "MYANMAR: MM."
+		},
+		{
+			"const": "unece:CountryId#MN",
+			"description": "MONGOLIA: MN."
+		},
+		{
+			"const": "unece:CountryId#MO",
+			"description": "MACAO: MO."
+		},
+		{
+			"const": "unece:CountryId#MP",
+			"description": "NORTHERN MARIANA ISLANDS: MP."
+		},
+		{
+			"const": "unece:CountryId#MQ",
+			"description": "MARTINIQUE: MQ."
+		},
+		{
+			"const": "unece:CountryId#MR",
+			"description": "MAURITANIA: MR."
+		},
+		{
+			"const": "unece:CountryId#MS",
+			"description": "MONTSERRAT: MS."
+		},
+		{
+			"const": "unece:CountryId#MT",
+			"description": "MALTA: MT."
+		},
+		{
+			"const": "unece:CountryId#MU",
+			"description": "MAURITIUS: MU."
+		},
+		{
+			"const": "unece:CountryId#MV",
+			"description": "MALDIVES: MV."
+		},
+		{
+			"const": "unece:CountryId#MW",
+			"description": "MALAWI: MW."
+		},
+		{
+			"const": "unece:CountryId#MX",
+			"description": "MEXICO: MX."
+		},
+		{
+			"const": "unece:CountryId#MY",
+			"description": "MALAYSIA: MY."
+		},
+		{
+			"const": "unece:CountryId#MZ",
+			"description": "MOZAMBIQUE: MZ."
+		},
+		{
+			"const": "unece:CountryId#NA",
+			"description": "NAMIBIA: NA."
+		},
+		{
+			"const": "unece:CountryId#NC",
+			"description": "NEW CALEDONIA: NC."
+		},
+		{
+			"const": "unece:CountryId#NE",
+			"description": "NIGER: NE."
+		},
+		{
+			"const": "unece:CountryId#NF",
+			"description": "NORFOLK ISLAND: NF."
+		},
+		{
+			"const": "unece:CountryId#NG",
+			"description": "NIGERIA: NG."
+		},
+		{
+			"const": "unece:CountryId#NI",
+			"description": "NICARAGUA: NI."
+		},
+		{
+			"const": "unece:CountryId#NL",
+			"description": "NETHERLANDS, KINGDOM OF THE: NL."
+		},
+		{
+			"const": "unece:CountryId#NO",
+			"description": "NORWAY: NO."
+		},
+		{
+			"const": "unece:CountryId#NP",
+			"description": "NEPAL: NP."
+		},
+		{
+			"const": "unece:CountryId#NR",
+			"description": "NAURU: NR."
+		},
+		{
+			"const": "unece:CountryId#NU",
+			"description": "NIUE: NU."
+		},
+		{
+			"const": "unece:CountryId#NZ",
+			"description": "NEW ZEALAND: NZ."
+		},
+		{
+			"const": "unece:CountryId#OM",
+			"description": "OMAN: OM."
+		},
+		{
+			"const": "unece:CountryId#PA",
+			"description": "PANAMA: PA."
+		},
+		{
+			"const": "unece:CountryId#PE",
+			"description": "PERU: PE."
+		},
+		{
+			"const": "unece:CountryId#PF",
+			"description": "FRENCH POLYNESIA: PF."
+		},
+		{
+			"const": "unece:CountryId#PG",
+			"description": "PAPUA NEW GUINEA: PG."
+		},
+		{
+			"const": "unece:CountryId#PH",
+			"description": "PHILIPPINES: PH."
+		},
+		{
+			"const": "unece:CountryId#PK",
+			"description": "PAKISTAN: PK."
+		},
+		{
+			"const": "unece:CountryId#PL",
+			"description": "POLAND: PL."
+		},
+		{
+			"const": "unece:CountryId#PM",
+			"description": "SAINT PIERRE AND MIQUELON: PM."
+		},
+		{
+			"const": "unece:CountryId#PN",
+			"description": "PITCAIRN: PN."
+		},
+		{
+			"const": "unece:CountryId#PR",
+			"description": "PUERTO RICO: PR."
+		},
+		{
+			"const": "unece:CountryId#PS",
+			"description": "PALESTINE, STATE OF: PS."
+		},
+		{
+			"const": "unece:CountryId#PT",
+			"description": "PORTUGAL: PT."
+		},
+		{
+			"const": "unece:CountryId#PW",
+			"description": "PALAU: PW."
+		},
+		{
+			"const": "unece:CountryId#PY",
+			"description": "PARAGUAY: PY."
+		},
+		{
+			"const": "unece:CountryId#QA",
+			"description": "QATAR: QA."
+		},
+		{
+			"const": "unece:CountryId#RE",
+			"description": "REUNION: RE."
+		},
+		{
+			"const": "unece:CountryId#RO",
+			"description": "ROMANIA: RO."
+		},
+		{
+			"const": "unece:CountryId#RS",
+			"description": "SERBIA: RS."
+		},
+		{
+			"const": "unece:CountryId#RU",
+			"description": "RUSSIAN FEDERATION: RU."
+		},
+		{
+			"const": "unece:CountryId#RW",
+			"description": "RWANDA: RW."
+		},
+		{
+			"const": "unece:CountryId#SA",
+			"description": "SAUDI ARABIA: SA."
+		},
+		{
+			"const": "unece:CountryId#SB",
+			"description": "SOLOMON ISLANDS: SB."
+		},
+		{
+			"const": "unece:CountryId#SC",
+			"description": "SEYCHELLES: SC."
+		},
+		{
+			"const": "unece:CountryId#SD",
+			"description": "SUDAN: SD."
+		},
+		{
+			"const": "unece:CountryId#SE",
+			"description": "SWEDEN: SE."
+		},
+		{
+			"const": "unece:CountryId#SG",
+			"description": "SINGAPORE: SG."
+		},
+		{
+			"const": "unece:CountryId#SH",
+			"description": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA: SH."
+		},
+		{
+			"const": "unece:CountryId#SI",
+			"description": "SLOVENIA: SI."
+		},
+		{
+			"const": "unece:CountryId#SJ",
+			"description": "SVALBARD AND JAN MAYEN: SJ."
+		},
+		{
+			"const": "unece:CountryId#SK",
+			"description": "SLOVAKIA: SK."
+		},
+		{
+			"const": "unece:CountryId#SL",
+			"description": "SIERRA LEONE: SL."
+		},
+		{
+			"const": "unece:CountryId#SM",
+			"description": "SAN MARINO: SM."
+		},
+		{
+			"const": "unece:CountryId#SN",
+			"description": "SENEGAL: SN."
+		},
+		{
+			"const": "unece:CountryId#SO",
+			"description": "SOMALIA: SO."
+		},
+		{
+			"const": "unece:CountryId#SR",
+			"description": "SURINAME: SR."
+		},
+		{
+			"const": "unece:CountryId#SS",
+			"description": "SOUTH SUDAN: SS."
+		},
+		{
+			"const": "unece:CountryId#ST",
+			"description": "SAO TOME AND PRINCIPE: ST."
+		},
+		{
+			"const": "unece:CountryId#SV",
+			"description": "EL SALVADOR: SV."
+		},
+		{
+			"const": "unece:CountryId#SX",
+			"description": "SINT MAARTEN (DUTCH PART): SX."
+		},
+		{
+			"const": "unece:CountryId#SY",
+			"description": "SYRIAN ARAB REPUBLIC: SY."
+		},
+		{
+			"const": "unece:CountryId#SZ",
+			"description": "ESWATINI: SZ."
+		},
+		{
+			"const": "unece:CountryId#TC",
+			"description": "TURKS AND CAICOS ISLANDS: TC."
+		},
+		{
+			"const": "unece:CountryId#TD",
+			"description": "CHAD: TD."
+		},
+		{
+			"const": "unece:CountryId#TF",
+			"description": "FRENCH SOUTHERN TERRITORIES: TF."
+		},
+		{
+			"const": "unece:CountryId#TG",
+			"description": "TOGO: TG."
+		},
+		{
+			"const": "unece:CountryId#TH",
+			"description": "THAILAND: TH."
+		},
+		{
+			"const": "unece:CountryId#TJ",
+			"description": "TAJIKISTAN: TJ."
+		},
+		{
+			"const": "unece:CountryId#TK",
+			"description": "TOKELAU: TK."
+		},
+		{
+			"const": "unece:CountryId#TL",
+			"description": "TIMOR-LESTE: TL."
+		},
+		{
+			"const": "unece:CountryId#TM",
+			"description": "TURKMENISTAN: TM."
+		},
+		{
+			"const": "unece:CountryId#TN",
+			"description": "TUNISIA: TN."
+		},
+		{
+			"const": "unece:CountryId#TO",
+			"description": "TONGA: TO."
+		},
+		{
+			"const": "unece:CountryId#TR",
+			"description": "TÜRKİYE: TR."
+		},
+		{
+			"const": "unece:CountryId#TT",
+			"description": "TRINIDAD AND TOBAGO: TT."
+		},
+		{
+			"const": "unece:CountryId#TV",
+			"description": "TUVALU: TV."
+		},
+		{
+			"const": "unece:CountryId#TW",
+			"description": "TAIWAN, PROVINCE OF CHINA: TW."
+		},
+		{
+			"const": "unece:CountryId#TZ",
+			"description": "TANZANIA, UNITED REPUBLIC OF: TZ."
+		},
+		{
+			"const": "unece:CountryId#UA",
+			"description": "UKRAINE: UA."
+		},
+		{
+			"const": "unece:CountryId#UG",
+			"description": "UGANDA: UG."
+		},
+		{
+			"const": "unece:CountryId#UM",
+			"description": "UNITED STATES MINOR OUTLYING ISLANDS: UM."
+		},
+		{
+			"const": "unece:CountryId#US",
+			"description": "UNITED STATES OF AMERICA: US."
+		},
+		{
+			"const": "unece:CountryId#UY",
+			"description": "URUGUAY: UY."
+		},
+		{
+			"const": "unece:CountryId#UZ",
+			"description": "UZBEKISTAN: UZ."
+		},
+		{
+			"const": "unece:CountryId#VA",
+			"description": "HOLY SEE: VA."
+		},
+		{
+			"const": "unece:CountryId#VC",
+			"description": "SAINT VINCENT AND THE GRENADINES: VC."
+		},
+		{
+			"const": "unece:CountryId#VE",
+			"description": "VENEZUELA (BOLIVARIAN REPUBLIC OF): VE."
+		},
+		{
+			"const": "unece:CountryId#VG",
+			"description": "VIRGIN ISLANDS, BRITISH: VG."
+		},
+		{
+			"const": "unece:CountryId#VI",
+			"description": "VIRGIN ISLANDS, U.S.: VI."
+		},
+		{
+			"const": "unece:CountryId#VN",
+			"description": "VIET NAM: VN."
+		},
+		{
+			"const": "unece:CountryId#VU",
+			"description": "VANUATU: VU."
+		},
+		{
+			"const": "unece:CountryId#WF",
+			"description": "WALLIS AND FUTUNA: WF."
+		},
+		{
+			"const": "unece:CountryId#WS",
+			"description": "SAMOA: WS."
+		},
+		{
+			"const": "unece:CountryId#YE",
+			"description": "YEMEN: YE."
+		},
+		{
+			"const": "unece:CountryId#YT",
+			"description": "MAYOTTE: YT."
+		},
+		{
+			"const": "unece:CountryId#ZA",
+			"description": "SOUTH AFRICA: ZA."
+		},
+		{
+			"const": "unece:CountryId#ZM",
+			"description": "ZAMBIA: ZM."
+		},
+		{
+			"const": "unece:CountryId#ZW",
+			"description": "ZIMBABWE: ZW."
+		}
 	]
 }

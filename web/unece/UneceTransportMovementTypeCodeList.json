@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportMovementTypeCodeList",
+	"title": "UneceTransportMovementTypeCodeList",
 	"description": "A character string used to represent a transport movement type.",
-	"type": "string",
-	"enum": [
-		"unece:TransportMovementTypeCodeList#1",
-		"unece:TransportMovementTypeCodeList#2",
-		"unece:TransportMovementTypeCodeList#3",
-		"unece:TransportMovementTypeCodeList#4",
-		"unece:TransportMovementTypeCodeList#5"
+	"oneOf": [
+		{
+			"const": "unece:TransportMovementTypeCodeList#1",
+			"description": "Export: 1."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#2",
+			"description": "Import: 2."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#3",
+			"description": "Transit: 3."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#4",
+			"description": "Relay: 4."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#5",
+			"description": "Transshipment: 5."
+		}
 	]
 }

@@ -1,66 +1,22 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlPolicy",
-	"description": "Interface representing an ODRL Policy. https://www.w3.org/TR/odrl-model/#policy",
+	"title": "OdrlPolicy",
+	"description": "Interface representing an ODRL Policy.\nhttps://www.w3.org/TR/odrl-model/#policy",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The ODRL JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "http://www.w3.org/ns/odrl.jsonld"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "http://www.w3.org/ns/odrl.jsonld"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "http://www.w3.org/ns/odrl.jsonld"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "http://www.w3.org/ns/odrl.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
+			"description": "The context for the policy.\nMust include \"https://www.w3.org/ns/odrl.jsonld\""
 		},
 		"@type": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/PolicyType",
-			"description": "The type of policy. Must be one of: \"Set\", \"Offer\", \"Agreement\""
+			"description": "The type of policy.\nMust be one of: \"Set\", \"Offer\", \"Agreement\""
 		},
 		"uid": {
 			"type": "string",
-			"description": "The unique identifier for the policy. Must be an IRI."
+			"description": "The unique identifier for the policy.\nMust be an IRI.",
+			"format": "uri"
 		},
 		"profile": {
 			"anyOf": [
@@ -74,7 +30,7 @@
 					}
 				}
 			],
-			"description": "The profile(s) this policy conforms to. IRIs identifying the ODRL Profile(s)."
+			"description": "The profile(s) this policy conforms to.\nIRIs identifying the ODRL Profile(s)."
 		},
 		"assigner": {
 			"anyOf": [
@@ -104,7 +60,7 @@
 					}
 				}
 			],
-			"description": "The assigner of the policy. Applies to all rules unless overridden at rule level."
+			"description": "The assigner of the policy.\nApplies to all rules unless overridden at rule level."
 		},
 		"assignee": {
 			"anyOf": [
@@ -134,7 +90,7 @@
 					}
 				}
 			],
-			"description": "The assignee of the policy. Applies to all rules unless overridden at rule level."
+			"description": "The assignee of the policy.\nApplies to all rules unless overridden at rule level."
 		},
 		"target": {
 			"anyOf": [
@@ -208,7 +164,7 @@
 					}
 				}
 			],
-			"description": "The parent policy(ies) this policy inherits from. IRIs identifying the parent Policy(ies)."
+			"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies)."
 		},
 		"conflict": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyType",
@@ -226,7 +182,7 @@
 					}
 				}
 			],
-			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present."
+			"description": "The permissions in the policy.\nAt least one of permission, prohibition, or obligation must be present."
 		},
 		"prohibition": {
 			"anyOf": [
@@ -240,7 +196,7 @@
 					}
 				}
 			],
-			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present."
+			"description": "The prohibitions in the policy.\nAt least one of permission, prohibition, or obligation must be present."
 		},
 		"obligation": {
 			"anyOf": [
@@ -254,7 +210,7 @@
 					}
 				}
 			],
-			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present."
+			"description": "The obligations in the policy.\nAt least one of permission, prohibition, or obligation must be present."
 		}
 	},
 	"required": ["@context", "@type", "uid"]

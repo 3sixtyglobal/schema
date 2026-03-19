@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportationWasteMaterialComponentTypeCodeList",
+	"title": "UneceTransportationWasteMaterialComponentTypeCodeList",
 	"description": "Values for UneceTransportationWasteMaterialComponent typeCode property.",
-	"type": "string",
-	"const": "unece:includedTransportationWasteMaterialComponent"
+	"oneOf": [
+		{
+			"const": "unece:includedTransportationWasteMaterialComponent",
+			"description": "A material component included in this transportation waste."
+		}
+	]
 }

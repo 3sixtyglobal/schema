@@ -1,7 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/StatusType",
+	"title": "StatusType",
 	"description": "The types for ODRL Status.",
-	"type": "string",
-	"enum": ["active", "inactive", "pending", "revoked"]
+	"oneOf": [
+		{
+			"const": "active",
+			"description": "Active type."
+		},
+		{
+			"const": "inactive",
+			"description": "Inactive type."
+		},
+		{
+			"const": "pending",
+			"description": "Pending type."
+		},
+		{
+			"const": "revoked",
+			"description": "Revoked type."
+		}
+	]
 }

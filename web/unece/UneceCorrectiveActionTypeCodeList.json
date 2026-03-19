@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCorrectiveActionTypeCodeList",
+	"title": "UneceCorrectiveActionTypeCodeList",
 	"description": "Values for UneceCorrectiveAction typeCode property.",
-	"type": "string",
-	"const": "unece:applicableCorrectiveAction"
+	"oneOf": [
+		{
+			"const": "unece:applicableCorrectiveAction",
+			"description": "A corrective action applicable to this specified inspection result."
+		}
+	]
 }

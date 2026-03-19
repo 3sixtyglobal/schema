@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceStoresItemInventoryTypeCodeList",
+	"title": "UneceStoresItemInventoryTypeCodeList",
 	"description": "Values for UneceStoresItemInventory typeCode property.",
-	"type": "string",
-	"const": "unece:onboardInventory"
+	"oneOf": [
+		{
+			"const": "unece:onboardInventory",
+			"description": "A stores inventory item held onboard for this logistics transport movement."
+		}
+	]
 }

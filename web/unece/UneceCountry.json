@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCountry",
-	"description": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes.",
+	"title": "UneceCountry",
+	"description": "The area of land that belongs to a nation together with its properties, such as population, political organization,\netc., used or referenced for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Country",
 			"description": "JSON-LD Type."
 		},

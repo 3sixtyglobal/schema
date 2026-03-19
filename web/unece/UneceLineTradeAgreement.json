@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLineTradeAgreement",
+	"title": "UneceLineTradeAgreement",
 	"description": "The contractual terms of a line trade agreement.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "LineTradeAgreement",
 			"description": "JSON-LD Type."
 		},
@@ -111,7 +93,7 @@
 		},
 		"deliveryOrderFulfilmentLeadTimeMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
-			"description": "The measure of the expected time interval between the receipt of an order and its delivery fulfilment according to this line trade agreement."
+			"description": "The measure of the expected time interval between the receipt of an order and its delivery fulfilment according to this\nline trade agreement."
 		},
 		"demandForecastDocument": {
 			"type": "array",
@@ -252,7 +234,7 @@
 		},
 		"pickUpOrderFulfilmentLeadTimeMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
-			"description": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this line trade agreement."
+			"description": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this\nline trade agreement."
 		},
 		"previousOrderDocument": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocument",
@@ -288,7 +270,7 @@
 		},
 		"productMadeToOrderIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or customized only after receipt of order."
+			"description": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or\ncustomized only after receipt of order."
 		},
 		"productOrderableIndicator": {
 			"type": "boolean",

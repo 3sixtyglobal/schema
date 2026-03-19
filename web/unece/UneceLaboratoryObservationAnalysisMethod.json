@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLaboratoryObservationAnalysisMethod",
+	"title": "UneceLaboratoryObservationAnalysisMethod",
 	"description": "A defined way of performing laboratory observation analysis.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "LaboratoryObservationAnalysisMethod",
 			"description": "JSON-LD Type."
 		},
@@ -67,7 +49,7 @@
 		},
 		"localTypeCode": {
 			"type": "string",
-			"description": "The code specifying the type of laboratory observation analysis method, which is the local method of the observer party for the kind of observation."
+			"description": "The code specifying the type of laboratory observation analysis method, which is the local method of the observer party\nfor the kind of observation."
 		},
 		"name": {
 			"type": "string",
@@ -83,7 +65,7 @@
 		},
 		"standardTypeCode": {
 			"type": "string",
-			"description": "The code specifying the type of laboratory observation analysis method, which is the standard method of the observer party for the kind of observation, such as a Logical Observation Identifiers Names and Codes (LOINC) code and method."
+			"description": "The code specifying the type of laboratory observation analysis method, which is the standard method of the observer\nparty for the kind of observation, such as a Logical Observation Identifiers Names and Codes (LOINC) code and method."
 		}
 	},
 	"required": ["type"]

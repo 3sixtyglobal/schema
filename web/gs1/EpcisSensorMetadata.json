@@ -1,12 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorMetadata",
-	"description": "EPCIS 2.0 SensorMetadata describing timing, device, and processing details for sensor observations.",
+	"title": "EpcisSensorMetadata",
+	"description": "EPCIS 2.0 SensorMetadata describing timing, device, and processing details for\nsensor observations.",
 	"type": "object",
 	"properties": {
 		"time": {
 			"type": "string",
-			"description": "(Optional) The actual point in time of an observation as transmitted by a sensor device."
+			"description": "(Optional) The actual point in time of an observation as transmitted by a\nsensor device."
 		},
 		"deviceID": {
 			"type": "string",
@@ -14,27 +15,27 @@
 		},
 		"deviceMetadata": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating metadata of the device from which the sensor data originates."
+			"description": "(Optional) Storage location of an electronic document accommodating metadata\nof the device from which the sensor data originates."
 		},
 		"rawData": {
 			"type": "string",
-			"description": "(Optional) Storage/service location of the raw sensor data on which the aggregated/business-oriented data contained in the sensorElement is based."
+			"description": "(Optional) Storage/service location of the raw sensor data on which the\naggregated/business-oriented data contained in the sensorElement is based."
 		},
 		"startTime": {
 			"type": "string",
-			"description": "(Optional) The lowest (earliest) value of a given observation period as transmitted by a sensor device."
+			"description": "(Optional) The lowest (earliest) value of a given observation period as\ntransmitted by a sensor device."
 		},
 		"endTime": {
 			"type": "string",
-			"description": "(Optional) The highest (most recent) value of a given observation period, as transmitted by a sensor device."
+			"description": "(Optional) The highest (most recent) value of a given observation period, as\ntransmitted by a sensor device."
 		},
 		"dataProcessingMethod": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating the data processing method of the contained sensor data, if applicable."
+			"description": "(Optional) Storage location of an electronic document accommodating the data\nprocessing method of the contained sensor data, if applicable."
 		},
 		"bizRules": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating product- or application-specific business rules on which basis the EPCIS event was triggered."
+			"description": "(Optional) Storage location of an electronic document accommodating product- or\napplication-specific business rules on which basis the EPCIS event was\ntriggered."
 		}
 	}
 }

@@ -1,81 +1,300 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceMessageFunctionCodeList",
+	"title": "UneceMessageFunctionCodeList",
 	"description": "A character string used to represent a message function.",
-	"type": "string",
-	"enum": [
-		"unece:MessageFunctionCodeList#1",
-		"unece:MessageFunctionCodeList#10",
-		"unece:MessageFunctionCodeList#11",
-		"unece:MessageFunctionCodeList#12",
-		"unece:MessageFunctionCodeList#13",
-		"unece:MessageFunctionCodeList#14",
-		"unece:MessageFunctionCodeList#15",
-		"unece:MessageFunctionCodeList#16",
-		"unece:MessageFunctionCodeList#17",
-		"unece:MessageFunctionCodeList#18",
-		"unece:MessageFunctionCodeList#19",
-		"unece:MessageFunctionCodeList#2",
-		"unece:MessageFunctionCodeList#20",
-		"unece:MessageFunctionCodeList#21",
-		"unece:MessageFunctionCodeList#22",
-		"unece:MessageFunctionCodeList#23",
-		"unece:MessageFunctionCodeList#24",
-		"unece:MessageFunctionCodeList#25",
-		"unece:MessageFunctionCodeList#26",
-		"unece:MessageFunctionCodeList#27",
-		"unece:MessageFunctionCodeList#28",
-		"unece:MessageFunctionCodeList#29",
-		"unece:MessageFunctionCodeList#3",
-		"unece:MessageFunctionCodeList#30",
-		"unece:MessageFunctionCodeList#31",
-		"unece:MessageFunctionCodeList#32",
-		"unece:MessageFunctionCodeList#33",
-		"unece:MessageFunctionCodeList#34",
-		"unece:MessageFunctionCodeList#35",
-		"unece:MessageFunctionCodeList#36",
-		"unece:MessageFunctionCodeList#37",
-		"unece:MessageFunctionCodeList#38",
-		"unece:MessageFunctionCodeList#39",
-		"unece:MessageFunctionCodeList#4",
-		"unece:MessageFunctionCodeList#40",
-		"unece:MessageFunctionCodeList#41",
-		"unece:MessageFunctionCodeList#42",
-		"unece:MessageFunctionCodeList#43",
-		"unece:MessageFunctionCodeList#44",
-		"unece:MessageFunctionCodeList#45",
-		"unece:MessageFunctionCodeList#46",
-		"unece:MessageFunctionCodeList#47",
-		"unece:MessageFunctionCodeList#48",
-		"unece:MessageFunctionCodeList#49",
-		"unece:MessageFunctionCodeList#5",
-		"unece:MessageFunctionCodeList#50",
-		"unece:MessageFunctionCodeList#51",
-		"unece:MessageFunctionCodeList#52",
-		"unece:MessageFunctionCodeList#53",
-		"unece:MessageFunctionCodeList#54",
-		"unece:MessageFunctionCodeList#55",
-		"unece:MessageFunctionCodeList#56",
-		"unece:MessageFunctionCodeList#57",
-		"unece:MessageFunctionCodeList#58",
-		"unece:MessageFunctionCodeList#59",
-		"unece:MessageFunctionCodeList#6",
-		"unece:MessageFunctionCodeList#60",
-		"unece:MessageFunctionCodeList#61",
-		"unece:MessageFunctionCodeList#62",
-		"unece:MessageFunctionCodeList#63",
-		"unece:MessageFunctionCodeList#64",
-		"unece:MessageFunctionCodeList#65",
-		"unece:MessageFunctionCodeList#66",
-		"unece:MessageFunctionCodeList#67",
-		"unece:MessageFunctionCodeList#68",
-		"unece:MessageFunctionCodeList#69",
-		"unece:MessageFunctionCodeList#7",
-		"unece:MessageFunctionCodeList#70",
-		"unece:MessageFunctionCodeList#71",
-		"unece:MessageFunctionCodeList#72",
-		"unece:MessageFunctionCodeList#73",
-		"unece:MessageFunctionCodeList#8",
-		"unece:MessageFunctionCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:MessageFunctionCodeList#1",
+			"description": "Cancellation: 1."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#10",
+			"description": "Not found: 10."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#11",
+			"description": "Response: 11."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#12",
+			"description": "Not processed: 12."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#13",
+			"description": "Request: 13."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#14",
+			"description": "Advance notification: 14."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#15",
+			"description": "Reminder: 15."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#16",
+			"description": "Proposal: 16."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#17",
+			"description": "Cancel, to be reissued: 17."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#18",
+			"description": "Reissue: 18."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#19",
+			"description": "Seller initiated change: 19."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#2",
+			"description": "Addition: 2."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#20",
+			"description": "Replace heading section only: 20."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#21",
+			"description": "Replace item detail and summary only: 21."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#22",
+			"description": "Final transmission: 22."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#23",
+			"description": "Transaction on hold: 23."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#24",
+			"description": "Delivery instruction: 24."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#25",
+			"description": "Forecast: 25."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#26",
+			"description": "Delivery instruction and forecast: 26."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#27",
+			"description": "Not accepted: 27."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#28",
+			"description": "Accepted, with amendment in heading section: 28."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#29",
+			"description": "Accepted without amendment: 29."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#3",
+			"description": "Deletion: 3."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#30",
+			"description": "Accepted, with amendment in detail section: 30."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#31",
+			"description": "Copy: 31."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#32",
+			"description": "Approval: 32."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#33",
+			"description": "Change in heading section: 33."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#34",
+			"description": "Accepted with amendment: 34."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#35",
+			"description": "Retransmission: 35."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#36",
+			"description": "Change in detail section: 36."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#37",
+			"description": "Reversal of a debit: 37."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#38",
+			"description": "Reversal of a credit: 38."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#39",
+			"description": "Reversal for cancellation: 39."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#4",
+			"description": "Change: 4."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#40",
+			"description": "Request for deletion: 40."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#41",
+			"description": "Finishing/closing order: 41."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#42",
+			"description": "Confirmation via specific means: 42."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#43",
+			"description": "Additional transmission: 43."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#44",
+			"description": "Accepted without reserves: 44."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#45",
+			"description": "Accepted with reserves: 45."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#46",
+			"description": "Provisional: 46."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#47",
+			"description": "Definitive: 47."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#48",
+			"description": "Accepted, contents rejected: 48."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#49",
+			"description": "Settled dispute: 49."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#5",
+			"description": "Replace: 5."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#50",
+			"description": "Withdraw: 50."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#51",
+			"description": "Authorisation: 51."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#52",
+			"description": "Proposed amendment: 52."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#53",
+			"description": "Test: 53."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#54",
+			"description": "Extract: 54."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#55",
+			"description": "Notification only: 55."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#56",
+			"description": "Advice of ledger booked items: 56."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#57",
+			"description": "Advice of items pending to be booked in the ledger: 57."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#58",
+			"description": "Pre-advice of items requiring further information: 58."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#59",
+			"description": "Pre-adviced items: 59."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#6",
+			"description": "Confirmation: 6."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#60",
+			"description": "No action since last message: 60."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#61",
+			"description": "Complete schedule: 61."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#62",
+			"description": "Update schedule: 62."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#63",
+			"description": "Not accepted, provisional: 63."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#64",
+			"description": "Verification: 64."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#65",
+			"description": "Unsettled dispute: 65."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#66",
+			"description": "Discharge of operation guarantee: 66."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#67",
+			"description": "Termination of operation guarantee: 67."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#68",
+			"description": "Start of operation guarantee: 68."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#69",
+			"description": "New declaration data: 69."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#7",
+			"description": "Duplicate: 7."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#70",
+			"description": "Amended declaration data: 70."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#71",
+			"description": "Refusal to start operation guarantee: 71."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#72",
+			"description": "Seals information (Start): 72."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#73",
+			"description": "Seals information (Terminate): 73."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#8",
+			"description": "Status: 8."
+		},
+		{
+			"const": "unece:MessageFunctionCodeList#9",
+			"description": "Original: 9."
+		}
 	]
 }

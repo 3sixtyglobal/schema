@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDebtorFinancialAccount",
+	"title": "UneceDebtorFinancialAccount",
 	"description": "A specific business arrangement whereby debits arising from transactions are recorded.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DebtorFinancialAccount",
 			"description": "JSON-LD Type."
 		},
@@ -44,7 +26,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this debtor financial account."
+			"description": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this\ndebtor financial account."
 		},
 		"currencyCode": {
 			"type": "string",
@@ -78,7 +60,7 @@
 		},
 		"proprietaryType": {
 			"type": "string",
-			"description": "The proprietary type, expressed as text, of this debtor financial account, such as the nature or use of the debtor account."
+			"description": "The proprietary type, expressed as text, of this debtor financial account, such as the nature or use of the debtor\naccount."
 		},
 		"uPICId": {
 			"anyOf": [
@@ -89,7 +71,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this debtor financial account."
+			"description": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this debtor\nfinancial account."
 		}
 	},
 	"required": ["type"]

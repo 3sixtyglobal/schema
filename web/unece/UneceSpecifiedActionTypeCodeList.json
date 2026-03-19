@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedActionTypeCodeList",
+	"title": "UneceSpecifiedActionTypeCodeList",
 	"description": "Values for UneceSpecifiedAction typeCode property.",
-	"type": "string",
-	"const": "unece:applicableSpecifiedAction"
+	"oneOf": [
+		{
+			"const": "unece:applicableSpecifiedAction",
+			"description": "An action applicable to this specified inspection result."
+		}
+	]
 }

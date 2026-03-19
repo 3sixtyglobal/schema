@@ -1,61 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContractAgreementMessage",
-	"description": "Interface for Dataspace Protocol Contract Agreement Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-agreement-message",
+	"title": "DataspaceProtocolContractAgreementMessage",
+	"description": "Interface for Dataspace Protocol Contract Agreement Messages.\nhttps://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#contract-agreement-message",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The Dataspace Protocol JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
 		},
 		"@type": {
-			"type": "string",
 			"const": "ContractAgreementMessage",
 			"description": "The type of the message."
 		},
@@ -68,8 +22,188 @@
 			"description": "The consumer id for the contract."
 		},
 		"agreement": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolAgreementNoContext",
-			"description": "The agreement being sent."
+			"description": "The agreement being sent.",
+			"type": "object",
+			"properties": {
+				"@type": {
+					"const": "Agreement",
+					"description": "The type must be \"Agreement\".",
+					"$comment": "Inherited from OdrlAgreement"
+				},
+				"profile": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The profile(s) this policy conforms to.\nIRIs identifying the ODRL Profile(s).",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"assigner": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+						}
+					],
+					"description": "The assigner of the agreement.\nRequired for Agreement policies.",
+					"$comment": "Inherited from OdrlAgreement"
+				},
+				"assignee": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+						}
+					],
+					"description": "The assignee of the agreement.\nRequired for Agreement policies.",
+					"$comment": "Inherited from OdrlAgreement"
+				},
+				"target": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The target asset for the rule.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"action": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+									},
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+									}
+								]
+							}
+						}
+					],
+					"description": "The action associated with the rule.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"inheritFrom": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies).",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"conflict": {
+					"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyTypeConflictStrategyType",
+					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"permission": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+							}
+						}
+					],
+					"description": "The permissions in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"prohibition": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+							}
+						}
+					],
+					"description": "The prohibitions in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"obligation": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+							}
+						}
+					],
+					"description": "The obligations in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"@id": {
+					"type": "string",
+					"description": "Unique identifier for the agreement.",
+					"$comment": "Inherited from DataspaceProtocolAgreement"
+				}
+			},
+			"required": ["@type", "assigner", "assignee", "@id"],
+			"$comment": "Inlined utility base type DataspaceProtocolAgreement so utility transformations can operate on concrete properties instead of a $ref."
 		},
 		"callbackAddress": {
 			"type": "string",

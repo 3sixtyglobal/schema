@@ -1,44 +1,26 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAgriculturalProcess",
+	"title": "UneceAgriculturalProcess",
 	"description": "A practice of cultivating land, raising crops, or treatment of the agricultural produce.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AgriculturalProcess",
 			"description": "JSON-LD Type."
 		},
 		"actualEndDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the actual end for the crop production in this agricultural process.",
+			"description": "The date, time, date time or other date time value of the actual end for the crop production in this agricultural\nprocess.",
 			"format": "date-time"
 		},
 		"actualStartDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the actual start of the crop production in this agricultural process.",
+			"description": "The date, time, date time or other date time value for the actual start of the crop production in this agricultural\nprocess.",
 			"format": "date-time"
 		},
 		"appliedAgriculturalApplication": {
@@ -54,7 +36,7 @@
 		},
 		"earliestStartDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the earliest start of the crop production in this agricultural process.",
+			"description": "The date, time, date time or other date time value for the earliest start of the crop production in this agricultural\nprocess.",
 			"format": "date-time"
 		},
 		"harvestedBatch": {
@@ -66,7 +48,7 @@
 		},
 		"latestEndDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the latest end for the crop production in this agricultural process.",
+			"description": "The date, time, date time or other date time value of the latest end for the crop production in this agricultural\nprocess.",
 			"format": "date-time"
 		},
 		"productionWasteInstructions": {

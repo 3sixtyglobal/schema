@@ -1,39 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+	"title": "UneceSpecifiedPeriod",
 	"description": "A specified period of time.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "SpecifiedPeriod",
 			"description": "JSON-LD Type."
 		},
 		"completeDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for a complete specified period of time expressed as a specific month, a specific week, etc.",
+			"description": "The date, time, date time or other date time value for a complete specified period of time expressed as a specific\nmonth, a specific week, etc.",
 			"format": "date-time"
 		},
 		"continuousIndicator": {

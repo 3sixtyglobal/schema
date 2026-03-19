@@ -1,129 +1,45 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisTransformationEvent",
-	"description": "EPCIS 2.0 TransformationEvent describing how inputs are transformed into outputs during a business process.",
+	"title": "EpcisTransformationEvent",
+	"description": "EPCIS 2.0 TransformationEvent describing how inputs are transformed into\noutputs during a business process.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://ref.gs1.org/epcis"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://ref.gs1.org/epcis"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
-		},
 		"type": {
-			"type": "string",
 			"const": "TransformationEvent",
 			"description": "Fixed to TransformationEvent."
-		},
-		"eventID": {
-			"type": "string",
-			"description": "URI identifier of a specific EPCIS event (alias of id in JSON or XML)."
-		},
-		"certificationInfo": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or Organizations mentioned in this Event."
-		},
-		"errorDeclaration": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
-			"description": "Error declaration."
-		},
-		"eventTime": {
-			"type": "string",
-			"description": "The date and time at which the EPCIS Capturing Applications asserts the event occurred."
-		},
-		"eventTimeZoneOffset": {
-			"type": "string",
-			"description": "The time zone offset in effect at the time and place the event occurred, expressed as an offset from UTC."
-		},
-		"recordTime": {
-			"type": "string",
-			"description": "(Optional) The date and time at which this event was recorded by an EPCIS Repository; ignored at capture and present on query results."
 		},
 		"inputEPCList": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "(Optional) Unordered list of one or more EPCs identifying (at the instance level) objects that were inputs to the transformation."
+			"description": "(Optional) Unordered list of one or more EPCs identifying (at the instance\nlevel) objects that were inputs to the transformation."
 		},
 		"inputQuantityList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
 			},
-			"description": "(Optional) Unordered list of one or more QuantityElements identifying class-level inputs; may be omitted subject to the EPCIS quantity-list constraints."
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level inputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
 		},
 		"outputEPCList": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "(Optional) Unordered list of one or more EPCs naming (at the instance level) objects that were outputs from the transformation."
+			"description": "(Optional) Unordered list of one or more EPCs naming (at the instance level)\nobjects that were outputs from the transformation."
 		},
 		"outputQuantityList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
 			},
-			"description": "(Optional) Unordered list of one or more QuantityElements identifying class-level outputs; may be omitted subject to the EPCIS quantity-list constraints."
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level outputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
 		},
 		"transformationID": {
 			"type": "string",
-			"description": "A unique identifier linking TransformationEvents; shared values connect inputs and outputs across those events."
+			"description": "A unique identifier linking TransformationEvents; shared values connect inputs\nand outputs across those events."
 		},
 		"bizStep": {
 			"anyOf": [
@@ -145,7 +61,7 @@
 					"type": "string"
 				}
 			],
-			"description": "(Optional) The business condition of the objects associated with the EPCs, presumed to hold true until contradicted by a subsequent event."
+			"description": "(Optional) The business condition of the objects associated with the EPCs,\npresumed to hold true until contradicted by a subsequent event."
 		},
 		"persistentDisposition": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisPersistentDisposition",
@@ -157,28 +73,28 @@
 		},
 		"bizLocation": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
-			"description": "(Optional) The business location where the objects associated with the EPCs may be found, until contradicted by a subsequent event."
+			"description": "(Optional) The business location where the objects associated with the EPCs\nmay be found, until contradicted by a subsequent event."
 		},
 		"bizTransactionList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizTransaction"
 			},
-			"description": "An unordered list of business transactions that define the context of this event."
+			"description": "An unordered list of business transactions that define the context of this\nevent."
 		},
 		"sourceList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSource"
 			},
-			"description": "(Optional) Unordered list of Source elements that provide context about the originating endpoint of a business transfer of which this event is a part."
+			"description": "(Optional) Unordered list of Source elements that provide context about the\noriginating endpoint of a business transfer of which this event is a part."
 		},
 		"destinationList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDestination"
 			},
-			"description": "(Optional) Unordered list of Destination elements that provide context about the terminating endpoint of a business transfer of which this event is a part."
+			"description": "(Optional) Unordered list of Destination elements that provide context about\nthe terminating endpoint of a business transfer of which this event is a part."
 		},
 		"sensorElementList": {
 			"type": "array",
@@ -189,8 +105,13 @@
 		},
 		"ilmd": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisIlmd",
-			"description": "(Optional) Instance/Lot master data that describes the objects created during this event."
+			"description": "(Optional) Instance/Lot master data that describes the objects created during\nthis event."
 		}
 	},
-	"required": ["@context", "eventTime", "eventTimeZoneOffset", "type"]
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisEvent"
+		}
+	]
 }

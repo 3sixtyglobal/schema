@@ -1,15 +1,36 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/DidTypes",
+	"title": "DidTypes",
 	"description": "The types for DIDs.",
-	"type": "string",
-	"enum": [
-		"Document",
-		"VerifiableCredential",
-		"VerifiablePresentation",
-		"Ed25519VerificationKey2020",
-		"JsonWebKey2020",
-		"LinkedDomains",
-		"Multikey"
+	"oneOf": [
+		{
+			"const": "Document",
+			"description": "The type for Document."
+		},
+		{
+			"const": "VerifiableCredential",
+			"description": "The type for Verifiable Credential."
+		},
+		{
+			"const": "VerifiablePresentation",
+			"description": "The type for Verifiable Presentation."
+		},
+		{
+			"const": "Ed25519VerificationKey2020",
+			"description": "The type for Ed25519VerificationKey2020."
+		},
+		{
+			"const": "JsonWebKey2020",
+			"description": "The type for JsonWebKey2020."
+		},
+		{
+			"const": "LinkedDomains",
+			"description": "The type for LinkedDomains."
+		},
+		{
+			"const": "Multikey",
+			"description": "The type for Multikey."
+		}
 	]
 }

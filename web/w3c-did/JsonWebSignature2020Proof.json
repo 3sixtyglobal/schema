@@ -1,33 +1,38 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/JsonWebSignature2020Proof",
-	"description": "Interface describing a did proof in JSON Web Signature 2020 Format. https://www.w3.org/TR/vc-jws-2020/",
+	"title": "JsonWebSignature2020Proof",
+	"description": "Interface describing a did proof in JSON Web Signature 2020 Format.\nhttps://www.w3.org/TR/vc-jws-2020/",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://w3id.org/security/suites/jws-2020/v1"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://w3id.org/security/suites/jws-2020/v1"
-						}
-					],
 					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+							},
+							{
+								"const": "https://w3id.org/security/suites/jws-2020/v1"
+							}
+						]
+					},
+					"contains": {
+						"const": "https://w3id.org/security/suites/jws-2020/v1"
+					},
+					"minContains": 1,
+					"maxContains": 1,
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "JsonWebSignature2020",
 			"description": "JSON-LD Type."
 		},

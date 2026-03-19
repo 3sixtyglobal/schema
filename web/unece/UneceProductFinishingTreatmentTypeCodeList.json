@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProductFinishingTreatmentTypeCodeList",
+	"title": "UneceProductFinishingTreatmentTypeCodeList",
 	"description": "Values for UneceProductFinishingTreatment typeCode property.",
-	"type": "string",
-	"const": "unece:appliedProductFinishingTreatment"
+	"oneOf": [
+		{
+			"const": "unece:appliedProductFinishingTreatment",
+			"description": "A product finishing treatment applied during this production process.\nA product finishing treatment applied to this product batch.\nA product finishing treatment applied to this trade product."
+		}
+	]
 }

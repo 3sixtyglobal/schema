@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceColourTypeCodeList",
+	"title": "UneceColourTypeCodeList",
 	"description": "Values for UneceColour typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedColour"
+	"oneOf": [
+		{
+			"const": "unece:specifiedColour",
+			"description": "A colour specified for this trade product."
+		}
+	]
 }

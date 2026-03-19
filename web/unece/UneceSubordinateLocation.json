@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSubordinateLocation",
+	"title": "UneceSubordinateLocation",
 	"description": "A physical location or place which is a subordinate location of a location.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "SubordinateLocation",
 			"description": "JSON-LD Type."
 		},
@@ -40,7 +22,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique identifier for this subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
+			"description": "The unique identifier for this subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global\nLocation Number (GLN)."
 		},
 		"locationFunctionTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",

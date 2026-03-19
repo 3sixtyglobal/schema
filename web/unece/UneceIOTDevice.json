@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceIOTDevice",
-	"description": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously transmit digital data.",
+	"title": "UneceIOTDevice",
+	"description": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously\ntransmit digital data.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "IOTDevice",
 			"description": "JSON-LD Type."
 		},
@@ -84,7 +66,7 @@
 		},
 		"latestReceivedSignalDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver.",
+			"description": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from\nthe perspective of the receiver.",
 			"format": "date-time"
 		},
 		"manufacturerParty": {

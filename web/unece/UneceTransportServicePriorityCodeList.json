@@ -1,12 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportServicePriorityCodeList",
+	"title": "UneceTransportServicePriorityCodeList",
 	"description": "A character string used to represent a transport service priority.",
-	"type": "string",
-	"enum": [
-		"unece:TransportServicePriorityCodeList#1",
-		"unece:TransportServicePriorityCodeList#2",
-		"unece:TransportServicePriorityCodeList#3",
-		"unece:TransportServicePriorityCodeList#4"
+	"oneOf": [
+		{
+			"const": "unece:TransportServicePriorityCodeList#1",
+			"description": "Express: 1."
+		},
+		{
+			"const": "unece:TransportServicePriorityCodeList#2",
+			"description": "High speed: 2."
+		},
+		{
+			"const": "unece:TransportServicePriorityCodeList#3",
+			"description": "Normal speed: 3."
+		},
+		{
+			"const": "unece:TransportServicePriorityCodeList#4",
+			"description": "Post service: 4."
+		}
 	]
 }

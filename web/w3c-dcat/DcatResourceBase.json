@@ -1,0 +1,241 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatResourceBase",
+	"title": "DcatResourceBase",
+	"description": "Base interface for DCAT catalogued resources without JSON-LD context.\nThis is the context-free variant of IDcatResource, intended for embedding\nresources inline within other objects where the context is provided by the enclosing document.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"anyOf": [
+				{
+					"const": "dcat:Resource"
+				},
+				{
+					"const": "dcat:Dataset"
+				},
+				{
+					"const": "dcat:DataService"
+				},
+				{
+					"const": "dcat:Catalog"
+				},
+				{
+					"const": "dcat:DatasetSeries"
+				}
+			],
+			"description": "The type of the resource.\nTypically \"Catalog\", \"Dataset\", \"DataService\", \"DatasetSeries\", or the base \"Resource\"."
+		},
+		"@id": {
+			"type": "string",
+			"description": "The unique identifier for the resource."
+		},
+		"dcterms:title": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A name given to the resource."
+		},
+		"dcterms:description": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A free-text account of the resource."
+		},
+		"dcterms:identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A unique identifier of the resource."
+		},
+		"dcterms:issued": {
+			"type": "string",
+			"description": "Date of formal issuance (publication) of the resource.",
+			"format": "date-time"
+		},
+		"dcterms:modified": {
+			"type": "string",
+			"description": "Most recent date on which the resource was changed, updated or modified.",
+			"format": "date-time"
+		},
+		"dcterms:language": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A language of the resource."
+		},
+		"dcterms:publisher": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "An entity responsible for making the resource available."
+		},
+		"dcterms:creator": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "An entity responsible for producing the resource."
+		},
+		"dcterms:accessRights": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Information about who can access the resource or an indication of its security status."
+		},
+		"dcterms:license": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A legal document under which the resource is made available."
+		},
+		"dcterms:rights": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Information about rights held in and over the resource."
+		},
+		"dcterms:conformsTo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "An established standard to which the resource conforms."
+		},
+		"dcterms:type": {
+			"type": "string",
+			"description": "The nature or genre of the resource."
+		},
+		"dcat:contactPoint": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Relevant contact information for the catalogued resource."
+		},
+		"dcat:keyword": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A keyword or tag describing the resource."
+		},
+		"dcat:theme": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A main category of the resource. A resource can have multiple themes."
+		},
+		"dcat:landingPage": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A Web page that can be navigated to gain access to the resource."
+		},
+		"dcat:qualifiedRelation": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-dcat/DcatRelationship"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Link to a description of a relationship with another resource."
+		},
+		"odrl:hasPolicy": {
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy",
+			"description": "An ODRL conformant policy expressing the rights associated with the resource."
+		}
+	},
+	"required": ["@type"]
+}

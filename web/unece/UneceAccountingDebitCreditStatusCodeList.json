@@ -1,15 +1,36 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingDebitCreditStatusCodeList",
+	"title": "UneceAccountingDebitCreditStatusCodeList",
 	"description": "A character string used to represent the accounting debit or credit sign.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingDebitCreditStatusCodeList#29",
-		"unece:AccountingDebitCreditStatusCodeList#30",
-		"unece:AccountingDebitCreditStatusCodeList#31",
-		"unece:AccountingDebitCreditStatusCodeList#32",
-		"unece:AccountingDebitCreditStatusCodeList#33",
-		"unece:AccountingDebitCreditStatusCodeList#34",
-		"unece:AccountingDebitCreditStatusCodeList#66"
+	"oneOf": [
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#29",
+			"description": "Debit: 29."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#30",
+			"description": "Credit: 30."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#31",
+			"description": "Positive debit: 31."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#32",
+			"description": "Negative debit: 32."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#33",
+			"description": "Positive credit: 33."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#34",
+			"description": "Negative credit: 34."
+		},
+		{
+			"const": "unece:AccountingDebitCreditStatusCodeList#66",
+			"description": "Unsigned amount: 66."
+		}
 	]
 }

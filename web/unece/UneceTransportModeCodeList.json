@@ -1,18 +1,48 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportModeCodeList",
+	"title": "UneceTransportModeCodeList",
 	"description": "A character string used to represent a transport mode.",
-	"type": "string",
-	"enum": [
-		"unece:TransportModeCodeList#0",
-		"unece:TransportModeCodeList#1",
-		"unece:TransportModeCodeList#2",
-		"unece:TransportModeCodeList#3",
-		"unece:TransportModeCodeList#4",
-		"unece:TransportModeCodeList#5",
-		"unece:TransportModeCodeList#6",
-		"unece:TransportModeCodeList#7",
-		"unece:TransportModeCodeList#8",
-		"unece:TransportModeCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:TransportModeCodeList#0",
+			"description": "Transport mode not specified: 0."
+		},
+		{
+			"const": "unece:TransportModeCodeList#1",
+			"description": "Maritime transport: 1."
+		},
+		{
+			"const": "unece:TransportModeCodeList#2",
+			"description": "Rail transport: 2."
+		},
+		{
+			"const": "unece:TransportModeCodeList#3",
+			"description": "Road transport: 3."
+		},
+		{
+			"const": "unece:TransportModeCodeList#4",
+			"description": "Air transport: 4."
+		},
+		{
+			"const": "unece:TransportModeCodeList#5",
+			"description": "Mail: 5."
+		},
+		{
+			"const": "unece:TransportModeCodeList#6",
+			"description": "Multimodal transport: 6."
+		},
+		{
+			"const": "unece:TransportModeCodeList#7",
+			"description": "Fixed transport installations: 7."
+		},
+		{
+			"const": "unece:TransportModeCodeList#8",
+			"description": "Inland water transport: 8."
+		},
+		{
+			"const": "unece:TransportModeCodeList#9",
+			"description": "Transport mode not applicable: 9."
+		}
 	]
 }

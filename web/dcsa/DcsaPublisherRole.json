@@ -1,7 +1,44 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaPublisherRole",
+	"title": "DcsaPublisherRole",
 	"description": "Publisher role.",
-	"type": "string",
-	"enum": ["CA", "AG", "VSL", "ATH", "PLT", "TWG", "MOR", "TR", "LSH", "BUK", "SLU", "SVP"]
+	"anyOf": [
+		{
+			"const": "CA"
+		},
+		{
+			"const": "AG"
+		},
+		{
+			"const": "VSL"
+		},
+		{
+			"const": "ATH"
+		},
+		{
+			"const": "PLT"
+		},
+		{
+			"const": "TWG"
+		},
+		{
+			"const": "MOR"
+		},
+		{
+			"const": "TR"
+		},
+		{
+			"const": "LSH"
+		},
+		{
+			"const": "BUK"
+		},
+		{
+			"const": "SLU"
+		},
+		{
+			"const": "SVP"
+		}
+	]
 }

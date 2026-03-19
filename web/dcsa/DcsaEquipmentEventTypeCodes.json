@@ -1,25 +1,76 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaEquipmentEventTypeCodes",
-	"description": "DCSA equipment event type codes.\n\nSource: `equipmentEventTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA equipment event type codes.",
-	"type": "string",
-	"enum": [
-		"LOAD",
-		"DISC",
-		"GTIN",
-		"GTOT",
-		"STUF",
-		"STRP",
-		"PICK",
-		"AVPU",
-		"DROP",
-		"AVDO",
-		"INSP",
-		"RSEA",
-		"RMVD",
-		"CUSS",
-		"CUSI",
-		"CUSR",
-		"CROS"
+	"title": "DcsaEquipmentEventTypeCodes",
+	"description": "DCSA equipment event type codes.",
+	"oneOf": [
+		{
+			"const": "LOAD",
+			"description": "Loaded."
+		},
+		{
+			"const": "DISC",
+			"description": "Discharged."
+		},
+		{
+			"const": "GTIN",
+			"description": "Gated in."
+		},
+		{
+			"const": "GTOT",
+			"description": "Gated out."
+		},
+		{
+			"const": "STUF",
+			"description": "Stuffed."
+		},
+		{
+			"const": "STRP",
+			"description": "Stripped."
+		},
+		{
+			"const": "PICK",
+			"description": "Pick-up."
+		},
+		{
+			"const": "AVPU",
+			"description": "Available for pick-up."
+		},
+		{
+			"const": "DROP",
+			"description": "Drop-off."
+		},
+		{
+			"const": "AVDO",
+			"description": "Available for drop-off."
+		},
+		{
+			"const": "INSP",
+			"description": "Inspected."
+		},
+		{
+			"const": "RSEA",
+			"description": "Resealed."
+		},
+		{
+			"const": "RMVD",
+			"description": "Removed."
+		},
+		{
+			"const": "CUSS",
+			"description": "Customs selected for scan."
+		},
+		{
+			"const": "CUSI",
+			"description": "Customs selected for inspection."
+		},
+		{
+			"const": "CUSR",
+			"description": "Customs released."
+		},
+		{
+			"const": "CROS",
+			"description": "Crossed."
+		}
 	]
 }

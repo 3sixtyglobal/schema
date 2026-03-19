@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTechnicalCharacteristicTypeCodeList",
+	"title": "UneceTechnicalCharacteristicTypeCodeList",
 	"description": "Values for UneceTechnicalCharacteristic typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableTechnicalCharacteristic",
-		"unece:managedCharacteristic",
-		"unece:relatedTechnicalCharacteristic"
+	"oneOf": [
+		{
+			"const": "unece:applicableTechnicalCharacteristic",
+			"description": "A technical characteristic applicable to this TT location.\nA technical characteristic applicable to this product colour.\nA technical characteristic applicable to this product print.\nA technical characteristic applicable to this trade party.\nA technical characteristic applicable to this trade product."
+		},
+		{
+			"const": "unece:managedCharacteristic",
+			"description": "A technical characteristic managed by this TT party."
+		},
+		{
+			"const": "unece:relatedTechnicalCharacteristic",
+			"description": "A technical characteristic related to this animal holding event.\nA technical characteristic related to this supply chain event."
+		}
 	]
 }

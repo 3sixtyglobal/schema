@@ -1,55 +1,196 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCommunicationChannelCodeList",
+	"title": "UneceCommunicationChannelCodeList",
 	"description": "A character string used to represent a communication channel.",
-	"type": "string",
-	"enum": [
-		"unece:CommunicationChannelCodeList#AA",
-		"unece:CommunicationChannelCodeList#AB",
-		"unece:CommunicationChannelCodeList#AC",
-		"unece:CommunicationChannelCodeList#AD",
-		"unece:CommunicationChannelCodeList#AE",
-		"unece:CommunicationChannelCodeList#AF",
-		"unece:CommunicationChannelCodeList#AG",
-		"unece:CommunicationChannelCodeList#AH",
-		"unece:CommunicationChannelCodeList#AI",
-		"unece:CommunicationChannelCodeList#AJ",
-		"unece:CommunicationChannelCodeList#AK",
-		"unece:CommunicationChannelCodeList#AL",
-		"unece:CommunicationChannelCodeList#AM",
-		"unece:CommunicationChannelCodeList#AN",
-		"unece:CommunicationChannelCodeList#AO",
-		"unece:CommunicationChannelCodeList#AP",
-		"unece:CommunicationChannelCodeList#AQ",
-		"unece:CommunicationChannelCodeList#AR",
-		"unece:CommunicationChannelCodeList#AS",
-		"unece:CommunicationChannelCodeList#AT",
-		"unece:CommunicationChannelCodeList#AU",
-		"unece:CommunicationChannelCodeList#AV",
-		"unece:CommunicationChannelCodeList#AW",
-		"unece:CommunicationChannelCodeList#CA",
-		"unece:CommunicationChannelCodeList#EI",
-		"unece:CommunicationChannelCodeList#EM",
-		"unece:CommunicationChannelCodeList#EX",
-		"unece:CommunicationChannelCodeList#FT",
-		"unece:CommunicationChannelCodeList#FX",
-		"unece:CommunicationChannelCodeList#GM",
-		"unece:CommunicationChannelCodeList#IE",
-		"unece:CommunicationChannelCodeList#IM",
-		"unece:CommunicationChannelCodeList#MA",
-		"unece:CommunicationChannelCodeList#PB",
-		"unece:CommunicationChannelCodeList#PS",
-		"unece:CommunicationChannelCodeList#SW",
-		"unece:CommunicationChannelCodeList#TE",
-		"unece:CommunicationChannelCodeList#TG",
-		"unece:CommunicationChannelCodeList#TL",
-		"unece:CommunicationChannelCodeList#TM",
-		"unece:CommunicationChannelCodeList#TT",
-		"unece:CommunicationChannelCodeList#TX",
-		"unece:CommunicationChannelCodeList#XF",
-		"unece:CommunicationChannelCodeList#XG",
-		"unece:CommunicationChannelCodeList#XH",
-		"unece:CommunicationChannelCodeList#XI",
-		"unece:CommunicationChannelCodeList#XJ"
+	"oneOf": [
+		{
+			"const": "unece:CommunicationChannelCodeList#AA",
+			"description": "Circuit switching: AA."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AB",
+			"description": "SITA: AB."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AC",
+			"description": "ARINC: AC."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AD",
+			"description": "AT&T mailbox: AD."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AE",
+			"description": "Peripheral device: AE."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AF",
+			"description": "U.S. Defense Switched Network: AF."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AG",
+			"description": "U.S. federal telecommunications system: AG."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AH",
+			"description": "World Wide Web: AH."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AI",
+			"description": "International calling country code: AI."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AJ",
+			"description": "Alternate telephone: AJ."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AK",
+			"description": "Videotex number: AK."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AL",
+			"description": "Cellular phone: AL."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AM",
+			"description": "International telephone direct line: AM."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AN",
+			"description": "O.F.T.P. (ODETTE File Transfer Protocol): AN."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AO",
+			"description": "Uniform Resource Location (URL): AO."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AP",
+			"description": "Very High Frequency (VHF) radio telephone: AP."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AQ",
+			"description": "X.400 address for mail text: AQ."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AR",
+			"description": "AS1 address: AR."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AS",
+			"description": "AS2 address: AS."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AT",
+			"description": "AS3 address: AT."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AU",
+			"description": "File Transfer Protocol: AU."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AV",
+			"description": "Inmarsat call number: AV."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#AW",
+			"description": "Radio communication call sign: AW."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#CA",
+			"description": "Cable address: CA."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#EI",
+			"description": "EDI transmission: EI."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#EM",
+			"description": "Electronic mail: EM."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#EX",
+			"description": "Extension: EX."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#FT",
+			"description": "File transfer access method: FT."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#FX",
+			"description": "Telefax: FX."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#GM",
+			"description": "GEIS (General Electric Information Service) mailbox: GM."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#IE",
+			"description": "IBM information exchange: IE."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#IM",
+			"description": "Internal mail: IM."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#MA",
+			"description": "Mail: MA."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#PB",
+			"description": "Postbox number: PB."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#PS",
+			"description": "Packet switching: PS."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#SW",
+			"description": "S.W.I.F.T.: SW."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TE",
+			"description": "Telephone: TE."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TG",
+			"description": "Telegraph: TG."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TL",
+			"description": "Telex: TL."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TM",
+			"description": "Telemail: TM."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TT",
+			"description": "Teletext: TT."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#TX",
+			"description": "TWX: TX."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#XF",
+			"description": "X.400 address: XF."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#XG",
+			"description": "Pager: XG."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#XH",
+			"description": "International telephone switchboard: XH."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#XI",
+			"description": "National telephone direct line: XI."
+		},
+		{
+			"const": "unece:CommunicationChannelCodeList#XJ",
+			"description": "National telephone switchboard: XJ."
+		}
 	]
 }

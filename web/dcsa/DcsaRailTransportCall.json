@@ -1,26 +1,11 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaRailTransportCall",
+	"title": "DcsaRailTransportCall",
 	"description": "Rail transport call details.\n\nSource: `railTransportCall` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
-		"transportCallReference": {
-			"type": "string",
-			"description": "Unique reference for the transport call."
-		},
-		"transportCallSequenceNumber": {
-			"type": "number",
-			"description": "Sequence number of the transport call."
-		},
-		"location": {
-			"description": "Location of the transport call.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
-		},
-		"facilityTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallFacilityTypeCodes",
-			"description": "Facility type code."
-		},
 		"modeOfTransport": {
-			"type": "string",
 			"const": "RAIL",
 			"description": "Discriminator for the transport mode."
 		},
@@ -37,5 +22,10 @@
 			"description": "Railcar identifier."
 		}
 	},
-	"required": ["modeOfTransport", "transportCallReference"]
+	"required": ["modeOfTransport"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallBase"
+		}
+	]
 }

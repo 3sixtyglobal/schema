@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAcknowledgementDocument",
+	"title": "UneceAcknowledgementDocument",
 	"description": "A document exchanged between parties for a business application level acknowledgement of the receipt of information.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AcknowledgementDocument",
 			"description": "JSON-LD Type."
 		},
@@ -125,12 +107,12 @@
 		},
 		"reportReceiptDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the receipt of the report being acknowledged by this acknowledgment document.",
+			"description": "The date, time, date time or other date time value of the receipt of the report being acknowledged by this\nacknowledgment document.",
 			"format": "date-time"
 		},
 		"reportSubmissionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value of the submission of the report being acknowledged by this acknowledgment document.",
+			"description": "The date, time, date time or other date time value of the submission of the report being acknowledged by this\nacknowledgment document.",
 			"format": "date-time"
 		},
 		"status": {

@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceExchangedDocument",
+	"title": "UneceExchangedDocument",
 	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ExchangedDocument",
 			"description": "JSON-LD Type."
 		},
@@ -138,7 +120,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
 			},
-			"description": "A code specifying a type of response document for this exchanged document, such as a requested or required response document type."
+			"description": "A code specifying a type of response document for this exchanged document, such as a requested or required response\ndocument type."
 		},
 		"documentStatusCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
@@ -178,7 +160,7 @@
 		},
 		"fourthSignatoryAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
-			"description": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
+			"description": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"globalId": {
 			"anyOf": [
@@ -277,7 +259,7 @@
 		},
 		"offsetProcessingStatus": {
 			"type": "string",
-			"description": "A status of an offset processing, expressed as text, for this exchanged document, such as the process offsetted by this document."
+			"description": "A status of an offset processing, expressed as text, for this exchanged document, such as the process offsetted by this\ndocument."
 		},
 		"originalIssuedQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
@@ -385,7 +367,7 @@
 		},
 		"secondSignatoryAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
-			"description": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
+			"description": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"senderAssignedId": {
 			"anyOf": [
@@ -411,7 +393,7 @@
 		},
 		"submissionDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value for the formal submission of this exchanged document to a receiver by a sender.",
+			"description": "The date, time, date time or other date time value for the formal submission of this exchanged document to a receiver by\na sender.",
 			"format": "date-time"
 		},
 		"subtypeCode": {
@@ -435,7 +417,7 @@
 		},
 		"thirdSignatoryAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
-			"description": "The third signature, also known as the second counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
+			"description": "The third signature, also known as the second counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"totalPageQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",

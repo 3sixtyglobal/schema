@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProductCharacteristicTypeCodeList",
+	"title": "UneceProductCharacteristicTypeCodeList",
 	"description": "Values for UneceProductCharacteristic typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableProductCharacteristic",
-		"unece:classCharacteristic",
-		"unece:productCharacteristic"
+	"oneOf": [
+		{
+			"const": "unece:applicableProductCharacteristic",
+			"description": "A characteristic applicable to this trade product.\nA product characteristic applicable to this distinct chemical.\nA product characteristic applicable to this product batch certificate.\nA product characteristic applicable to this product certificate.\nA product characteristic applicable to this specified material.\nA product characteristic applicable to this toxicological hazardous material.\nA product characteristic applicable to this trade product instance."
+		},
+		{
+			"const": "unece:classCharacteristic",
+			"description": "A product class characteristic for this product classification."
+		},
+		{
+			"const": "unece:productCharacteristic",
+			"description": "A product characteristic for this trade product instance."
+		}
 	]
 }

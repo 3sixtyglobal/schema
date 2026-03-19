@@ -1,39 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProject",
+	"title": "UneceProject",
 	"description": "An endeavour carefully planned to achieve a procurement of goods, works and service.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Project",
 			"description": "JSON-LD Type."
 		},
 		"constraintIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not the project is constrained by an authority such as the World Trade Organization (WTO) for this procuring project."
+			"description": "The indication of whether or not the project is constrained by an authority such as the World Trade Organization (WTO)\nfor this procuring project."
 		},
 		"description": {
 			"type": "string",
@@ -64,11 +46,11 @@
 		},
 		"subWorksTypeCode": {
 			"type": "string",
-			"description": "A code specifying the type of sub works, such as land surveying or information technology consulting, for this procuring project."
+			"description": "A code specifying the type of sub works, such as land surveying or information technology consulting, for this procuring\nproject."
 		},
 		"totalBudgetAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-			"description": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project."
+			"description": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this\nprocuring project."
 		},
 		"typeCode": {
 			"anyOf": [

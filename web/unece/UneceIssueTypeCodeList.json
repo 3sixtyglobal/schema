@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceIssueTypeCodeList",
+	"title": "UneceIssueTypeCodeList",
 	"description": "Values for UneceIssue typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedIssue"
+	"oneOf": [
+		{
+			"const": "unece:specifiedIssue",
+			"description": "A target issue specified for this electronic negotiation exchange."
+		}
+	]
 }

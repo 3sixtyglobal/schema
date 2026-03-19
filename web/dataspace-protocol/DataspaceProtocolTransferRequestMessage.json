@@ -1,61 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferRequestMessage",
-	"description": "Interface for Dataspace Protocol Transfer Messages. https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-request-message",
+	"title": "DataspaceProtocolTransferRequestMessage",
+	"description": "Interface for Dataspace Protocol Transfer Messages.\nhttps://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-request-message",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The Dataspace Protocol JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "LD Context"
 		},
 		"@type": {
-			"type": "string",
 			"const": "TransferRequestMessage",
 			"description": "LD Type"
 		},
@@ -73,11 +27,11 @@
 		},
 		"format": {
 			"type": "string",
-			"description": "The format property is a format specified by a Distribution for the Dataset associated with the Agreement. This is generally obtained from the Provider's Catalog."
+			"description": "The format property is a format specified by a Distribution for the Dataset associated with the Agreement.\nThis is generally obtained from the Provider's Catalog."
 		},
 		"dataAddress": {
 			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataAddress",
-			"description": "If defined MUST contain a transport-specific set of properties for pushing the data. It MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
+			"description": "If defined MUST contain a transport-specific set of properties for pushing the data.\nIt MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
 		}
 	},
 	"required": ["@context", "@type", "agreementId", "callbackAddress", "consumerPid", "format"]

@@ -1,161 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlPermission",
-	"description": "Interface for Permission Rules. A Permission allows an action to be exercised on an Asset if all constraints are satisfied and if all duties are fulfilled. https://www.w3.org/TR/odrl-model/#permission",
+	"title": "OdrlPermission",
+	"description": "Interface for Permission Rules.\nA Permission allows an action to be exercised on an Asset\nif all constraints are satisfied and if all duties are fulfilled.\nhttps://www.w3.org/TR/odrl-model/#permission",
 	"type": "object",
 	"properties": {
-		"uid": {
-			"type": "string",
-			"description": "Optional unique identifier for the rule."
-		},
-		"action": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-				},
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-							},
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-							}
-						]
-					}
-				}
-			],
-			"description": "The action associated with the rule."
-		},
-		"target": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The target asset for the rule."
-		},
-		"assigner": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The assigner of the rule."
-		},
-		"assignee": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The assignee of the rule."
-		},
-		"constraint": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
-							}
-						]
-					}
-				}
-			],
-			"description": "Constraints applied to the rule."
-		},
-		"summary": {
-			"type": "string",
-			"description": "Additional relation sub-properties as defined in ODRL profiles. For example, 'summary' in profile \"http://example.com/odrl:profile:03\" indicates where the output should be stored."
-		},
 		"duty": {
 			"anyOf": [
 				{
@@ -168,7 +17,12 @@
 					}
 				}
 			],
-			"description": "The duties that must be fulfilled before the permission can be exercised. A Permission MAY have none, one, or more duty property values."
+			"description": "The duties that must be fulfilled before the permission can be exercised.\nA Permission MAY have none, one, or more duty property values."
 		}
-	}
+	},
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlRule"
+		}
+	]
 }

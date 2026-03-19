@@ -1,37 +1,124 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes",
-	"description": "The types concerning Activity Streams. Section 3.1 Activity Types: https://www.w3.org/TR/activitystreams-vocabulary/#activity-types   The types concerning Activity. Section 3.1 Activity Types: https://www.w3.org/TR/activitystreams-vocabulary/#activity-types",
-	"type": "string",
-	"enum": [
-		"Activity",
-		"Accept",
-		"Add",
-		"Announce",
-		"Arrive",
-		"Block",
-		"Create",
-		"Delete",
-		"Dislike",
-		"Flag",
-		"Follow",
-		"Ignore",
-		"Invite",
-		"Join",
-		"Leave",
-		"Like",
-		"Listen",
-		"Move",
-		"Offer",
-		"Question",
-		"Reject",
-		"Read",
-		"Remove",
-		"TentativeReject",
-		"TentativeAccept",
-		"Travel",
-		"Undo",
-		"Update",
-		"View"
+	"title": "ActivityStreamsTypes",
+	"description": "The types concerning Activity.\nSection 3.1 Activity Types: https://www.w3.org/TR/activitystreams-vocabulary/#activity-types",
+	"oneOf": [
+		{
+			"const": "Activity",
+			"description": "Activity.\n\nGeneric base type for activities (actions) in Activity Streams."
+		},
+		{
+			"const": "Accept",
+			"description": "Accept.\n\nIndicates that the actor accepts the object."
+		},
+		{
+			"const": "Add",
+			"description": "Add.\n\nIndicates that the actor added the object to the target."
+		},
+		{
+			"const": "Announce",
+			"description": "Announce.\n\nIndicates that the actor is calling attention to the object."
+		},
+		{
+			"const": "Arrive",
+			"description": "Arrive.\n\nIntransitive activity indicating that the actor arrived at a location."
+		},
+		{
+			"const": "Block",
+			"description": "Block.\n\nIndicates that the actor is blocking the object (a stronger form of Ignore)."
+		},
+		{
+			"const": "Create",
+			"description": "Create.\n\nIndicates that the actor has created the object."
+		},
+		{
+			"const": "Delete",
+			"description": "Delete.\n\nIndicates that the actor has deleted the object."
+		},
+		{
+			"const": "Dislike",
+			"description": "Dislike.\n\nIndicates that the actor dislikes the object."
+		},
+		{
+			"const": "Flag",
+			"description": "Flag.\n\nIndicates that the actor is flagging the object (e.g., reporting it)."
+		},
+		{
+			"const": "Follow",
+			"description": "Follow.\n\nIndicates that the actor is following the object."
+		},
+		{
+			"const": "Ignore",
+			"description": "Ignore.\n\nIndicates that the actor is ignoring the object."
+		},
+		{
+			"const": "Invite",
+			"description": "Invite.\n\nSpecialization of Offer in which the actor is extending an invitation."
+		},
+		{
+			"const": "Join",
+			"description": "Join.\n\nIndicates that the actor has joined the object."
+		},
+		{
+			"const": "Leave",
+			"description": "Leave.\n\nIndicates that the actor has left the object."
+		},
+		{
+			"const": "Like",
+			"description": "Like.\n\nIndicates that the actor likes, recommends, or endorses the object."
+		},
+		{
+			"const": "Listen",
+			"description": "Listen.\n\nIndicates that the actor has listened to the object."
+		},
+		{
+			"const": "Move",
+			"description": "Move.\n\nIndicates that the actor has moved the object from `origin` to `target`."
+		},
+		{
+			"const": "Offer",
+			"description": "Offer.\n\nIndicates that the actor is offering the object (optionally to a target)."
+		},
+		{
+			"const": "Question",
+			"description": "Question.\n\nIntransitive activity representing a question; can express options via `oneOf`/`anyOf`."
+		},
+		{
+			"const": "Reject",
+			"description": "Reject.\n\nIndicates that the actor is rejecting the object."
+		},
+		{
+			"const": "Read",
+			"description": "Read.\n\nIndicates that the actor has read the object."
+		},
+		{
+			"const": "Remove",
+			"description": "Remove.\n\nIndicates that the actor is removing the object (optionally from an origin context)."
+		},
+		{
+			"const": "TentativeReject",
+			"description": "TentativeReject.\n\nSpecialization of Reject indicating that the rejection is tentative."
+		},
+		{
+			"const": "TentativeAccept",
+			"description": "TentativeAccept.\n\nSpecialization of Accept indicating that the acceptance is tentative."
+		},
+		{
+			"const": "Travel",
+			"description": "Travel.\n\nIntransitive activity indicating that the actor is travelling to `target` from `origin`."
+		},
+		{
+			"const": "Undo",
+			"description": "Undo.\n\nIndicates that the actor is undoing a previous activity."
+		},
+		{
+			"const": "Update",
+			"description": "Update.\n\nIndicates that the actor has updated the object."
+		},
+		{
+			"const": "View",
+			"description": "View.\n\nIndicates that the actor has viewed the object."
+		}
 	]
 }

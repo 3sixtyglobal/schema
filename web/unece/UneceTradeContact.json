@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeContact",
+	"title": "UneceTradeContact",
 	"description": "A person or a department that acts as a point of contact with another person or department in a trading relationship.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeContact",
 			"description": "JSON-LD Type."
 		},
@@ -96,7 +78,7 @@
 		},
 		"jobTitle": {
 			"type": "string",
-			"description": "A job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager."
+			"description": "A job title, position or designation, expressed as text, of this trade contact within an organization, such as Director,\nSoftware Engineer, Purchasing Manager."
 		},
 		"mobileTelephoneCommunication": {
 			"$ref": "https://schema.twindev.org/unece/UneceCommunication",

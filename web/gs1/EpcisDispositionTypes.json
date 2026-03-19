@@ -1,41 +1,140 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisDispositionTypes",
-	"description": "Supported EPCIS 2.0 `disposition` values from the GS1 Core Business Vocabulary (CBV).\n\nUse the union type `EpcisDispositionTypes` to restrict a field to known CBV values.",
-	"type": "string",
-	"enum": [
-		"active",
-		"container_closed",
-		"damaged",
-		"destroyed",
-		"dispensed",
-		"disposed",
-		"encoded",
-		"expired",
-		"in_progress",
-		"in_transit",
-		"inactive",
-		"no_pedigree_match",
-		"non_sellable_other",
-		"partially_dispensed",
-		"recalled",
-		"reserved",
-		"retail_sold",
-		"returned",
-		"sellable_accessible",
-		"sellable_not_accessible",
-		"stolen",
-		"unknown",
-		"available",
-		"completeness_verified",
-		"completeness_inferred",
-		"conformant",
-		"container_open",
-		"mismatch_instance",
-		"mismatch_class",
-		"mismatch_quantity",
-		"needs_replacement",
-		"non_conformant",
-		"unavailable"
+	"title": "EpcisDispositionTypes",
+	"description": "Supported EPCIS 2.0 `disposition` values from the GS1 Core Business\nVocabulary (CBV).\n\nUse the union type `EpcisDispositionTypes` to restrict a field to known CBV\nvalues.",
+	"oneOf": [
+		{
+			"const": "active",
+			"description": "A commissioned object has just been introduced into the supply chain."
+		},
+		{
+			"const": "container_closed",
+			"description": "Object has been loaded onto a container, the doors closed, and the shipment\nsealed."
+		},
+		{
+			"const": "damaged",
+			"description": "Object is impaired in usefulness or value due to a defect."
+		},
+		{
+			"const": "destroyed",
+			"description": "Object has been fully rendered non-usable."
+		},
+		{
+			"const": "dispensed",
+			"description": "A full quantity of product is distributed to a consumer."
+		},
+		{
+			"const": "disposed",
+			"description": "Object has been returned for disposal."
+		},
+		{
+			"const": "encoded",
+			"description": "An instance-level identifier has been written to a barcode or RFID tag, but\nnot yet commissioned."
+		},
+		{
+			"const": "expired",
+			"description": "Object's expiration date is in the past."
+		},
+		{
+			"const": "in_progress",
+			"description": "Optional disposition for objects proceeding through points in the supply\nchain."
+		},
+		{
+			"const": "in_transit",
+			"description": "Object is being shipped between two trading partners."
+		},
+		{
+			"const": "inactive",
+			"description": "Decommissioned object that may be reintroduced to the supply chain."
+		},
+		{
+			"const": "no_pedigree_match",
+			"description": "No pedigree match was found during validation, so the product is quarantined\nfor investigation."
+		},
+		{
+			"const": "non_sellable_other",
+			"description": "Object cannot be sold to a customer."
+		},
+		{
+			"const": "partially_dispensed",
+			"description": "A portion of a product is distributed to a customer while additional product\nis retained."
+		},
+		{
+			"const": "recalled",
+			"description": "Object is non-sellable because of public safety reasons."
+		},
+		{
+			"const": "reserved",
+			"description": "Instance-level identifier has been allocated for a third party."
+		},
+		{
+			"const": "retail_sold",
+			"description": "Product has been purchased by a customer."
+		},
+		{
+			"const": "returned",
+			"description": "Object has been sent or brought back for various reasons; it may or may not\nbe sellable."
+		},
+		{
+			"const": "sellable_accessible",
+			"description": "Product can be sold as is and a customer can access it for purchase."
+		},
+		{
+			"const": "sellable_not_accessible",
+			"description": "Product can be sold as is, but a customer cannot access it for purchase."
+		},
+		{
+			"const": "stolen",
+			"description": "An object has been taken without permission or right."
+		},
+		{
+			"const": "unknown",
+			"description": "An object's condition is not known."
+		},
+		{
+			"const": "available",
+			"description": "Object has been returned to service or the supply chain after repair."
+		},
+		{
+			"const": "completeness_verified",
+			"description": "Explicitly indicates verified integrity of an aggregation when children are\nunpacked or verified."
+		},
+		{
+			"const": "completeness_inferred",
+			"description": "Indicates inferred integrity of an aggregation based on upstream aggregation\ninformation."
+		},
+		{
+			"const": "conformant",
+			"description": "Outcome of a successful inspection in an inspecting or repairing step."
+		},
+		{
+			"const": "container_open",
+			"description": "Container doors have been opened or a shipment seal has been broken."
+		},
+		{
+			"const": "mismatch_instance",
+			"description": "Instance-level identifiers do not match what was expected."
+		},
+		{
+			"const": "mismatch_class",
+			"description": "Class-level identifiers do not match what was expected."
+		},
+		{
+			"const": "mismatch_quantity",
+			"description": "Quantities do not match what was expected."
+		},
+		{
+			"const": "needs_replacement",
+			"description": "Components or assets must be replaced to ensure functional requirements."
+		},
+		{
+			"const": "non_conformant",
+			"description": "Outcome of an unsuccessful inspection in an inspecting or repairing step."
+		},
+		{
+			"const": "unavailable",
+			"description": "Object has been removed from service or the supply chain, for example pending\nrepair."
+		}
 	]
 }

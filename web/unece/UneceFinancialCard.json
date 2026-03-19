@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceFinancialCard",
+	"title": "UneceFinancialCard",
 	"description": "A card used to represent a financial account for a trade settlement.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "FinancialCard",
 			"description": "JSON-LD Type."
 		},
@@ -37,7 +19,7 @@
 		},
 		"cardholderName": {
 			"type": "string",
-			"description": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card."
+			"description": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual\nauthorized to use the card as well as the organization that owns the card."
 		},
 		"creditAvailableAmount": {
 			"type": "array",
@@ -107,7 +89,7 @@
 		},
 		"verificationNumeric": {
 			"type": "string",
-			"description": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card."
+			"description": "The unique card verification number for security purposes to help verify the card user is in actual possession of this\ntrade settlement financial card."
 		}
 	},
 	"required": ["type"]

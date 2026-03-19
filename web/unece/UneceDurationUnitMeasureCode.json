@@ -1,23 +1,68 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDurationUnitMeasureCode",
+	"title": "UneceDurationUnitMeasureCode",
 	"description": "RDF Class for DurationUnitMeasureType unit code type to define unit code values.",
-	"type": "string",
-	"enum": [
-		"unece:DurationUnitMeasureCode#ANN",
-		"unece:DurationUnitMeasureCode#B98",
-		"unece:DurationUnitMeasureCode#C26",
-		"unece:DurationUnitMeasureCode#C47",
-		"unece:DurationUnitMeasureCode#D42",
-		"unece:DurationUnitMeasureCode#DAD",
-		"unece:DurationUnitMeasureCode#DAY",
-		"unece:DurationUnitMeasureCode#DEC",
-		"unece:DurationUnitMeasureCode#HUR",
-		"unece:DurationUnitMeasureCode#MIN",
-		"unece:DurationUnitMeasureCode#MON",
-		"unece:DurationUnitMeasureCode#RH",
-		"unece:DurationUnitMeasureCode#SAN",
-		"unece:DurationUnitMeasureCode#SEC",
-		"unece:DurationUnitMeasureCode#WEE"
+	"oneOf": [
+		{
+			"const": "unece:DurationUnitMeasureCode#ANN",
+			"description": "year: ANN."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#B98",
+			"description": "microsecond: B98."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#C26",
+			"description": "millisecond: C26."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#C47",
+			"description": "nanosecond: C47."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#D42",
+			"description": "tropical year: D42."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#DAD",
+			"description": "ten day: DAD."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#DAY",
+			"description": "day: DAY."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#DEC",
+			"description": "decade: DEC."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#HUR",
+			"description": "hour: HUR."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#MIN",
+			"description": "minute [unit of time]: MIN."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#MON",
+			"description": "month: MON."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#RH",
+			"description": "running or operating hour: RH."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#SAN",
+			"description": "half year (6 months): SAN."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#SEC",
+			"description": "second [unit of time]: SEC."
+		},
+		{
+			"const": "unece:DurationUnitMeasureCode#WEE",
+			"description": "week: WEE."
+		}
 	]
 }

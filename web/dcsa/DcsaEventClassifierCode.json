@@ -1,7 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaEventClassifierCode",
+	"title": "DcsaEventClassifierCode",
 	"description": "DCSA event classifier codes.",
-	"type": "string",
-	"enum": ["ACT", "PLN", "EST", "REQ"]
+	"anyOf": [
+		{
+			"const": "ACT"
+		},
+		{
+			"const": "PLN"
+		},
+		{
+			"const": "EST"
+		},
+		{
+			"const": "REQ"
+		}
+	]
 }

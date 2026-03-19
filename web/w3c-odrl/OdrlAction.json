@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAction",
-	"description": "Interface for ODRL Actions. https://www.w3.org/TR/odrl-model/#action",
+	"title": "OdrlAction",
+	"description": "Interface for ODRL Actions.\nhttps://www.w3.org/TR/odrl-model/#action",
 	"type": "object",
 	"properties": {
 		"rdf:value": {
@@ -12,11 +13,11 @@
 				}
 			},
 			"required": ["@id"],
-			"description": "The value/identifier of the action. Used in complex action definitions."
+			"description": "The value/identifier of the action.\nUsed in complex action definitions."
 		},
 		"@id": {
 			"type": "string",
-			"description": "Direct action identifier. Used in simple action references."
+			"description": "Direct action identifier.\nUsed in simple action references."
 		},
 		"refinement": {
 			"anyOf": [

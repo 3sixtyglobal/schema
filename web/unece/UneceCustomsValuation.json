@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCustomsValuation",
+	"title": "UneceCustomsValuation",
 	"description": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "CustomsValuation",
 			"description": "JSON-LD Type."
 		},
@@ -45,11 +27,11 @@
 		},
 		"buyerSellerRelationshipIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not there is a relationship between the buyer and the seller, such as a financial relationship, for this cross-border customs valuation."
+			"description": "The indication of whether or not there is a relationship between the buyer and the seller, such as a financial\nrelationship, for this cross-border customs valuation."
 		},
 		"buyerSellerRelationshipPriceInfluenceIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not the buyer seller relationship influences the price of the goods for this cross-border customs valuation."
+			"description": "The indication of whether or not the buyer seller relationship influences the price of the goods for this cross-border\ncustoms valuation."
 		},
 		"chargeApportionMethodCode": {
 			"type": "string",
@@ -72,15 +54,15 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value added or subtracted from the total invoice price not previously taken into account for this cross-border customs valuation."
+			"description": "A monetary value added or subtracted from the total invoice price not previously taken into account for this\ncross-border customs valuation."
 		},
 		"royaltyLicenseFeeIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not there is a royalty or licence fee related to the goods for this cross-border customs valuation."
+			"description": "The indication of whether or not there is a royalty or licence fee related to the goods for this cross-border customs\nvaluation."
 		},
 		"salePriceConditionIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not there is a condition imposed on the sale price of the goods for this cross-border customs valuation."
+			"description": "The indication of whether or not there is a condition imposed on the sale price of the goods for this cross-border\ncustoms valuation."
 		},
 		"saleRestriction": {
 			"type": "string",
@@ -88,7 +70,7 @@
 		},
 		"saleRestrictionIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs valuation."
+			"description": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs\nvaluation."
 		},
 		"typeCode": {
 			"anyOf": [
@@ -103,7 +85,7 @@
 		},
 		"wTOAdditionCode": {
 			"type": "string",
-			"description": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the assessment of this cross-border customs valuation."
+			"description": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the\nassessment of this cross-border customs valuation."
 		}
 	},
 	"required": ["type"]

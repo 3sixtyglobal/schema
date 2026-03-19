@@ -1,31 +1,100 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportEquipmentOperationalStatusCodeList",
+	"title": "UneceTransportEquipmentOperationalStatusCodeList",
 	"description": "A character string used to represent the transport equipment operational status.",
-	"type": "string",
-	"enum": [
-		"unece:TransportEquipmentOperationalStatusCodeList#10",
-		"unece:TransportEquipmentOperationalStatusCodeList#11",
-		"unece:TransportEquipmentOperationalStatusCodeList#12",
-		"unece:TransportEquipmentOperationalStatusCodeList#13",
-		"unece:TransportEquipmentOperationalStatusCodeList#14",
-		"unece:TransportEquipmentOperationalStatusCodeList#15",
-		"unece:TransportEquipmentOperationalStatusCodeList#16",
-		"unece:TransportEquipmentOperationalStatusCodeList#17",
-		"unece:TransportEquipmentOperationalStatusCodeList#18",
-		"unece:TransportEquipmentOperationalStatusCodeList#19",
-		"unece:TransportEquipmentOperationalStatusCodeList#20",
-		"unece:TransportEquipmentOperationalStatusCodeList#21",
-		"unece:TransportEquipmentOperationalStatusCodeList#22",
-		"unece:TransportEquipmentOperationalStatusCodeList#23",
-		"unece:TransportEquipmentOperationalStatusCodeList#24",
-		"unece:TransportEquipmentOperationalStatusCodeList#25",
-		"unece:TransportEquipmentOperationalStatusCodeList#26",
-		"unece:TransportEquipmentOperationalStatusCodeList#27",
-		"unece:TransportEquipmentOperationalStatusCodeList#28",
-		"unece:TransportEquipmentOperationalStatusCodeList#29",
-		"unece:TransportEquipmentOperationalStatusCodeList#30",
-		"unece:TransportEquipmentOperationalStatusCodeList#4",
-		"unece:TransportEquipmentOperationalStatusCodeList#5"
+	"oneOf": [
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#10",
+			"description": "Positioning: 10."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#11",
+			"description": "Delivery: 11."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#12",
+			"description": "Redelivery: 12."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#13",
+			"description": "Repair: 13."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#14",
+			"description": "Reloader: 14."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#15",
+			"description": "Returned: 15."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#16",
+			"description": "Dropped off: 16."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#17",
+			"description": "Cross terminal transshipment: 17."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#18",
+			"description": "Booking confirmed: 18."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#19",
+			"description": "Inspected at terminal gate: 19."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#20",
+			"description": "Arrived at offloading location: 20."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#21",
+			"description": "Departed from loading location.: 21."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#22",
+			"description": "Loaded: 22."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#23",
+			"description": "Unloaded: 23."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#24",
+			"description": "Intra-terminal movement: 24."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#25",
+			"description": "Stuffing ordered: 25."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#26",
+			"description": "Stripping ordered: 26."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#27",
+			"description": "Stuffing confirmed: 27."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#28",
+			"description": "Stripping confirmed: 28."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#29",
+			"description": "Sent for heavy repair: 29."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#30",
+			"description": "Replaced: 30."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#4",
+			"description": "Remain on board: 4."
+		},
+		{
+			"const": "unece:TransportEquipmentOperationalStatusCodeList#5",
+			"description": "Shifter: 5."
+		}
 	]
 }

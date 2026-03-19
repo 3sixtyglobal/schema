@@ -1,12 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAccountStatusCodeList",
+	"title": "UneceAccountingAccountStatusCodeList",
 	"description": "A character string used to represent the type of accounting account status.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAccountStatusCodeList#1",
-		"unece:AccountingAccountStatusCodeList#2",
-		"unece:AccountingAccountStatusCodeList#3",
-		"unece:AccountingAccountStatusCodeList#4"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAccountStatusCodeList#1",
+			"description": "Open: 1."
+		},
+		{
+			"const": "unece:AccountingAccountStatusCodeList#2",
+			"description": "Closed: 2."
+		},
+		{
+			"const": "unece:AccountingAccountStatusCodeList#3",
+			"description": "Temporarily unusable: 3."
+		},
+		{
+			"const": "unece:AccountingAccountStatusCodeList#4",
+			"description": "Pending: 4."
+		}
 	]
 }

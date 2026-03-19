@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAssociatedTransportEquipment",
-	"description": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
+	"title": "UneceAssociatedTransportEquipment",
+	"description": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime\ncontainer placed on a rail wagon for transportation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AssociatedTransportEquipment",
 			"description": "JSON-LD Type."
 		},
@@ -44,7 +26,7 @@
 		},
 		"cargoResidueStatusCode": {
 			"type": "string",
-			"description": "A code specifying the cargo residue status for this piece of associated transport equipment, such as required by dangerous goods regulations."
+			"description": "A code specifying the cargo residue status for this piece of associated transport equipment, such as required by\ndangerous goods regulations."
 		},
 		"characteristic": {
 			"type": "string",
@@ -84,7 +66,7 @@
 		},
 		"grossWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-			"description": "The measure of the gross weight (mass) of this piece of associated transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+			"description": "The measure of the gross weight (mass) of this piece of associated transport equipment which is the weight (mass)\nincluding loaded goods, packing and transport equipment."
 		},
 		"identifier": {
 			"anyOf": [
@@ -149,14 +131,14 @@
 		},
 		"sequenceNumeric": {
 			"type": "string",
-			"description": "The sequence number differentiating this piece of transport equipment from others in a set of associated transport equipment."
+			"description": "The sequence number differentiating this piece of transport equipment from others in a set of associated transport\nequipment."
 		},
 		"settingTemperature": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceTransportSettingTemperature"
 			},
-			"description": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
+			"description": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational\ntemperature."
 		},
 		"stowagePositionId": {
 			"anyOf": [
@@ -171,7 +153,7 @@
 		},
 		"tareWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-			"description": "The measure of the tare weight (mass) of this piece of associated transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
+			"description": "The measure of the tare weight (mass) of this piece of associated transport equipment which is the weight (mass)\nincluding permanent equipment but excluding goods and loose accessories."
 		},
 		"transportEquipmentCategoryCode": {
 			"type": "array",
@@ -197,7 +179,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
 			},
-			"description": "A measure of the verified gross weight (mass) of this piece of associated transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+			"description": "A measure of the verified gross weight (mass) of this piece of associated transport equipment which is the weight (mass)\nincluding loaded goods, packing and transport equipment."
 		},
 		"weightUnitNetWeightMeasure": {
 			"type": "array",

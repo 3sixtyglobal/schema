@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisEventTypes",
+	"title": "EpcisEventTypes",
 	"description": "EPCIS 2.0 event type identifiers used in EPCIS JSON and XML documents.",
-	"type": "string",
-	"enum": [
-		"ObjectEvent",
-		"AggregationEvent",
-		"AssociationEvent",
-		"TransformationEvent",
-		"TransactionEvent"
+	"oneOf": [
+		{
+			"const": "ObjectEvent",
+			"description": "Event that observes one or more instance- or class-level objects."
+		},
+		{
+			"const": "AggregationEvent",
+			"description": "Event recording child objects aggregated under a parent identifier."
+		},
+		{
+			"const": "AssociationEvent",
+			"description": "Event recording parent/child associations without implying containment."
+		},
+		{
+			"const": "TransformationEvent",
+			"description": "Event recording how inputs are transformed into outputs."
+		},
+		{
+			"const": "TransactionEvent",
+			"description": "Event linking objects or quantities to business transactions."
+		}
 	]
 }

@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProductionDeviceTypeCodeList",
+	"title": "UneceProductionDeviceTypeCodeList",
 	"description": "Values for UneceProductionDevice typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:allocatedProductionDevice",
-		"unece:applicableProductionDevice",
-		"unece:combinedProductionDevice"
+	"oneOf": [
+		{
+			"const": "unece:allocatedProductionDevice",
+			"description": "A production device allocated to this production process."
+		},
+		{
+			"const": "unece:applicableProductionDevice",
+			"description": "A production device applicable to this facility production unit.\nA production device applicable to this product colour.\nA production device applicable to this product print."
+		},
+		{
+			"const": "unece:combinedProductionDevice",
+			"description": "A production device combined with this production machine.\nA production device combined with this specified production device."
+		}
 	]
 }

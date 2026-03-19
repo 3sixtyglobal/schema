@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceStandard",
-	"description": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+	"title": "UneceStandard",
+	"description": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in\nengineering or technical areas.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Standard",
 			"description": "JSON-LD Type."
 		},
@@ -104,7 +86,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
+			"description": "The identifier of the version of a specific element within the referenced standard, such as the version of a data\nelement."
 		},
 		"identifier": {
 			"anyOf": [

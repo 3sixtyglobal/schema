@@ -1,15 +1,36 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSealingPartyRoleCodeList",
+	"title": "UneceSealingPartyRoleCodeList",
 	"description": "A character string used to represent the sealing party role.",
-	"type": "string",
-	"enum": [
-		"unece:SealingPartyRoleCodeList#AA",
-		"unece:SealingPartyRoleCodeList#AB",
-		"unece:SealingPartyRoleCodeList#AC",
-		"unece:SealingPartyRoleCodeList#CA",
-		"unece:SealingPartyRoleCodeList#CU",
-		"unece:SealingPartyRoleCodeList#SH",
-		"unece:SealingPartyRoleCodeList#TO"
+	"oneOf": [
+		{
+			"const": "unece:SealingPartyRoleCodeList#AA",
+			"description": "Consolidator: AA."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#AB",
+			"description": "Unknown: AB."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#AC",
+			"description": "Quarantine agency: AC."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#CA",
+			"description": "Carrier: CA."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#CU",
+			"description": "Customs: CU."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#SH",
+			"description": "Shipper: SH."
+		},
+		{
+			"const": "unece:SealingPartyRoleCodeList#TO",
+			"description": "Terminal operator: TO."
+		}
 	]
 }

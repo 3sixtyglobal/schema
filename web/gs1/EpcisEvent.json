@@ -1,58 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisEvent",
+	"title": "EpcisEvent",
 	"description": "Base EPCIS 2.0 Event carrying shared fields across all event types.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://ref.gs1.org/epcis"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://ref.gs1.org/epcis"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisContextType",
+			"description": "JSON-LD"
 		},
 		"type": {
 			"type": "string",
@@ -74,7 +29,7 @@
 					}
 				}
 			],
-			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or Organizations mentioned in this Event."
+			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or\nOrganizations mentioned in this Event."
 		},
 		"errorDeclaration": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
@@ -82,15 +37,15 @@
 		},
 		"eventTime": {
 			"type": "string",
-			"description": "The date and time at which the EPCIS Capturing Applications asserts the event occurred."
+			"description": "The date and time at which the EPCIS Capturing Applications asserts the event\noccurred."
 		},
 		"eventTimeZoneOffset": {
 			"type": "string",
-			"description": "The time zone offset in effect at the time and place the event occurred, expressed as an offset from UTC."
+			"description": "The time zone offset in effect at the time and place the event occurred,\nexpressed as an offset from UTC."
 		},
 		"recordTime": {
 			"type": "string",
-			"description": "(Optional) The date and time at which this event was recorded by an EPCIS Repository; ignored at capture and present on query results."
+			"description": "(Optional) The date and time at which this event was recorded by an EPCIS\nRepository; ignored at capture and present on query results."
 		}
 	},
 	"required": ["@context", "type", "eventTime", "eventTimeZoneOffset"]

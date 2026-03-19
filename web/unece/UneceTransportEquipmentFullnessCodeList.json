@@ -1,21 +1,60 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportEquipmentFullnessCodeList",
+	"title": "UneceTransportEquipmentFullnessCodeList",
 	"description": "A character string used to represent the transport equipment fullness.",
-	"type": "string",
-	"enum": [
-		"unece:TransportEquipmentFullnessCodeList#1",
-		"unece:TransportEquipmentFullnessCodeList#10",
-		"unece:TransportEquipmentFullnessCodeList#11",
-		"unece:TransportEquipmentFullnessCodeList#12",
-		"unece:TransportEquipmentFullnessCodeList#13",
-		"unece:TransportEquipmentFullnessCodeList#2",
-		"unece:TransportEquipmentFullnessCodeList#3",
-		"unece:TransportEquipmentFullnessCodeList#4",
-		"unece:TransportEquipmentFullnessCodeList#5",
-		"unece:TransportEquipmentFullnessCodeList#6",
-		"unece:TransportEquipmentFullnessCodeList#7",
-		"unece:TransportEquipmentFullnessCodeList#8",
-		"unece:TransportEquipmentFullnessCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#1",
+			"description": "More than one quarter volume available: 1."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#10",
+			"description": "Part load mixed consignments: 10."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#11",
+			"description": "Single invoiced load: 11."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#12",
+			"description": "Multi invoiced load: 12."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#13",
+			"description": "Full load, multiple bills: 13."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#2",
+			"description": "More than half volume available: 2."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#3",
+			"description": "More than three quarters volume available: 3."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#4",
+			"description": "Empty: 4."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#5",
+			"description": "Full: 5."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#6",
+			"description": "No volume available: 6."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#7",
+			"description": "Full, mixed consignment: 7."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#8",
+			"description": "Full, single consignment: 8."
+		},
+		{
+			"const": "unece:TransportEquipmentFullnessCodeList#9",
+			"description": "Part load: 9."
+		}
 	]
 }

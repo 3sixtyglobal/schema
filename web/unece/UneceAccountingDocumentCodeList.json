@@ -1,32 +1,104 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingDocumentCodeList",
+	"title": "UneceAccountingDocumentCodeList",
 	"description": "A character string used to represent the type of an accounting document.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingDocumentCodeList#105",
-		"unece:AccountingDocumentCodeList#220",
-		"unece:AccountingDocumentCodeList#223",
-		"unece:AccountingDocumentCodeList#224",
-		"unece:AccountingDocumentCodeList#245",
-		"unece:AccountingDocumentCodeList#315",
-		"unece:AccountingDocumentCodeList#320",
-		"unece:AccountingDocumentCodeList#325",
-		"unece:AccountingDocumentCodeList#326",
-		"unece:AccountingDocumentCodeList#380",
-		"unece:AccountingDocumentCodeList#389",
-		"unece:AccountingDocumentCodeList#393",
-		"unece:AccountingDocumentCodeList#394",
-		"unece:AccountingDocumentCodeList#395",
-		"unece:AccountingDocumentCodeList#398",
-		"unece:AccountingDocumentCodeList#399",
-		"unece:AccountingDocumentCodeList#455",
-		"unece:AccountingDocumentCodeList#481",
-		"unece:AccountingDocumentCodeList#533",
-		"unece:AccountingDocumentCodeList#534",
-		"unece:AccountingDocumentCodeList#640",
-		"unece:AccountingDocumentCodeList#719",
-		"unece:AccountingDocumentCodeList#731",
-		"unece:AccountingDocumentCodeList#747"
+	"oneOf": [
+		{
+			"const": "unece:AccountingDocumentCodeList#105",
+			"description": "Purchase order: 105."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#220",
+			"description": "Order: 220."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#223",
+			"description": "Lease order: 223."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#224",
+			"description": "Rush order: 224."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#245",
+			"description": "Delivery release: 245."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#315",
+			"description": "Contract: 315."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#320",
+			"description": "Acknowledgement of order: 320."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#325",
+			"description": "Proforma invoice: 325."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#326",
+			"description": "Partial invoice: 326."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#380",
+			"description": "Commercial invoice: 380."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#389",
+			"description": "Self-billed invoice: 389."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#393",
+			"description": "Factored invoice: 393."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#394",
+			"description": "Lease invoice: 394."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#395",
+			"description": "Consignment invoice: 395."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#398",
+			"description": "Cross docking despatch advice: 398."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#399",
+			"description": "Transshipment despatch advice: 399."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#455",
+			"description": "Extended credit advice: 455."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#481",
+			"description": "Remittance advice: 481."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#533",
+			"description": "Original accounting voucher: 533."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#534",
+			"description": "Copy accounting voucher: 534."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#640",
+			"description": "Delivery order: 640."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#719",
+			"description": "General message: 719."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#731",
+			"description": "Commercial account summary: 731."
+		},
+		{
+			"const": "unece:AccountingDocumentCodeList#747",
+			"description": "Payroll deductions advice: 747."
+		}
 	]
 }

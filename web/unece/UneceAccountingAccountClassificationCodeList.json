@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAccountClassificationCodeList",
+	"title": "UneceAccountingAccountClassificationCodeList",
 	"description": "A character string used to represent the type of accounting account classification.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAccountClassificationCodeList#1",
-		"unece:AccountingAccountClassificationCodeList#2",
-		"unece:AccountingAccountClassificationCodeList#3"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAccountClassificationCodeList#1",
+			"description": "General Chart of accounts: 1."
+		},
+		{
+			"const": "unece:AccountingAccountClassificationCodeList#2",
+			"description": "Cost Chart of accounts: 2."
+		},
+		{
+			"const": "unece:AccountingAccountClassificationCodeList#3",
+			"description": "Budget Chart of accounts: 3."
+		}
 	]
 }

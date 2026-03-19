@@ -1,7 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaModeOfTransport",
-	"description": "DCSA mode of transport.\n\nSource: discriminator `modeOfTransport` used by `transportCall` (v3.1.0).   DCSA mode of transport.",
-	"type": "string",
-	"enum": ["VESSEL", "BARGE", "RAIL", "TRUCK"]
+	"title": "DcsaModeOfTransport",
+	"description": "DCSA mode of transport.",
+	"oneOf": [
+		{
+			"const": "VESSEL",
+			"description": "Vessel."
+		},
+		{
+			"const": "BARGE",
+			"description": "Barge."
+		},
+		{
+			"const": "RAIL",
+			"description": "Rail."
+		},
+		{
+			"const": "TRUCK",
+			"description": "Truck."
+		}
+	]
 }

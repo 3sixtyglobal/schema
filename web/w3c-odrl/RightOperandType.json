@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/RightOperandType",
-	"description": "Right operand types for ODRL constraints   The types for ODRL Right Operand Types.",
-	"type": "string",
-	"const": "odrl:policyUsage"
+	"title": "RightOperandType",
+	"description": "The types for ODRL Right Operand Types.",
+	"oneOf": [
+		{
+			"const": "odrl:policyUsage",
+			"description": "Reference to policy usage events"
+		}
+	]
 }

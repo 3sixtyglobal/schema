@@ -1,16 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaTransportPayload",
+	"title": "DcsaTransportPayload",
 	"description": "Transport payload.\n\nSource: `transportPayload` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
 		"eventClassifierCode": {
 			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCodeNoReq",
 			"description": "Event classifier code."
-		},
-		"eventDateTime": {
-			"type": "string",
-			"description": "The local date and time when the event took place (or will take place). Format: ISO 8601 date-time."
 		},
 		"transportEventTypeCode": {
 			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportEventTypeCodes",
@@ -22,7 +19,7 @@
 		},
 		"delayReasonCode": {
 			"type": "string",
-			"description": "Delay reason code. The authoritative schema references the shared `delayReasonCode` from DCSA_DOMAIN."
+			"description": "Delay reason code.\nThe authoritative schema references the shared `delayReasonCode` from DCSA_DOMAIN."
 		},
 		"changeRemark": {
 			"type": "string",
@@ -43,5 +40,10 @@
 			"description": "Additional references."
 		}
 	},
-	"required": ["eventClassifierCode", "eventDateTime", "transportCall", "transportEventTypeCode"]
+	"required": ["eventClassifierCode", "transportEventTypeCode", "transportCall"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseEvent"
+		}
+	]
 }

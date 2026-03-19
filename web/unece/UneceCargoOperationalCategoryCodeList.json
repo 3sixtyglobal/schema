@@ -1,33 +1,108 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCargoOperationalCategoryCodeList",
+	"title": "UneceCargoOperationalCategoryCodeList",
 	"description": "A character string used to represent cargo operational categories.",
-	"type": "string",
-	"enum": [
-		"unece:CargoOperationalCategoryCodeList#1",
-		"unece:CargoOperationalCategoryCodeList#10",
-		"unece:CargoOperationalCategoryCodeList#11",
-		"unece:CargoOperationalCategoryCodeList#12",
-		"unece:CargoOperationalCategoryCodeList#13",
-		"unece:CargoOperationalCategoryCodeList#14",
-		"unece:CargoOperationalCategoryCodeList#15",
-		"unece:CargoOperationalCategoryCodeList#16",
-		"unece:CargoOperationalCategoryCodeList#17",
-		"unece:CargoOperationalCategoryCodeList#18",
-		"unece:CargoOperationalCategoryCodeList#19",
-		"unece:CargoOperationalCategoryCodeList#2",
-		"unece:CargoOperationalCategoryCodeList#20",
-		"unece:CargoOperationalCategoryCodeList#21",
-		"unece:CargoOperationalCategoryCodeList#22",
-		"unece:CargoOperationalCategoryCodeList#23",
-		"unece:CargoOperationalCategoryCodeList#24",
-		"unece:CargoOperationalCategoryCodeList#25",
-		"unece:CargoOperationalCategoryCodeList#3",
-		"unece:CargoOperationalCategoryCodeList#4",
-		"unece:CargoOperationalCategoryCodeList#5",
-		"unece:CargoOperationalCategoryCodeList#6",
-		"unece:CargoOperationalCategoryCodeList#7",
-		"unece:CargoOperationalCategoryCodeList#8",
-		"unece:CargoOperationalCategoryCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#1",
+			"description": "Documents: 1."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#10",
+			"description": "Breakbulk: 10."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#11",
+			"description": "Hazardous cargo: 11."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#12",
+			"description": "General cargo: 12."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#13",
+			"description": "Liquid cargo: 13."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#14",
+			"description": "Temperature controlled cargo: 14."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#15",
+			"description": "Environmental pollutant cargo: 15."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#16",
+			"description": "Not-hazardous cargo: 16."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#17",
+			"description": "Diplomatic: 17."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#18",
+			"description": "Military: 18."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#19",
+			"description": "Obnoxious: 19."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#2",
+			"description": "Low value non-dutiable consignments: 2."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#20",
+			"description": "Out of gauge: 20."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#21",
+			"description": "Household goods and personal effects: 21."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#22",
+			"description": "Frozen cargo: 22."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#23",
+			"description": "Ballast only: 23."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#24",
+			"description": "Incompatible cargo: 24."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#25",
+			"description": "Deep-frozen cargo: 25."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#3",
+			"description": "Low value dutiable consignments: 3."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#4",
+			"description": "High value consignments: 4."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#5",
+			"description": "Other non-containerized: 5."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#6",
+			"description": "Vehicles: 6."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#7",
+			"description": "Roll-on roll-off: 7."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#8",
+			"description": "Palletized: 8."
+		},
+		{
+			"const": "unece:CargoOperationalCategoryCodeList#9",
+			"description": "Containerized: 9."
+		}
 	]
 }

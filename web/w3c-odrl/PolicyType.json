@@ -1,7 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/PolicyType",
+	"title": "PolicyType",
 	"description": "The types for ODRL Policies.",
-	"type": "string",
-	"enum": ["Policy", "Set", "Offer", "Agreement"]
+	"oneOf": [
+		{
+			"const": "Policy",
+			"description": "Policy type."
+		},
+		{
+			"const": "Set",
+			"description": "Set type."
+		},
+		{
+			"const": "Offer",
+			"description": "Offer type."
+		},
+		{
+			"const": "Agreement",
+			"description": "Agreement type."
+		}
+	]
 }

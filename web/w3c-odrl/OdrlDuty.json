@@ -1,168 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlDuty",
-	"description": "Interface for Duty Rules. A Duty is the obligation to exercise an action, with all refinements satisfied. A Duty is fulfilled if all constraints are satisfied and if its action has been exercised. https://www.w3.org/TR/odrl-model/#duty",
+	"title": "OdrlDuty",
+	"description": "Interface for Duty Rules.\nA Duty is the obligation to exercise an action, with all refinements satisfied.\nA Duty is fulfilled if all constraints are satisfied and if its action has been exercised.\nhttps://www.w3.org/TR/odrl-model/#duty",
 	"type": "object",
 	"properties": {
-		"uid": {
-			"type": "string",
-			"description": "Optional unique identifier for the rule."
-		},
-		"action": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-				},
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-							},
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-							}
-						]
-					}
-				}
-			],
-			"description": "The action associated with the rule."
-		},
-		"target": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The target asset for the rule."
-		},
-		"assigner": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The assigner of the rule."
-		},
-		"assignee": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "The assignee of the rule."
-		},
-		"constraint": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
-							}
-						]
-					}
-				}
-			],
-			"description": "Constraints applied to the rule."
-		},
-		"summary": {
-			"type": "string",
-			"description": "Additional relation sub-properties as defined in ODRL profiles. For example, 'summary' in profile \"http://example.com/odrl:profile:03\" indicates where the output should be stored."
-		},
 		"attributedParty": {
 			"type": "string",
-			"description": "The party to be attributed Used when the duty involves attribution"
+			"description": "The party to be attributed\nUsed when the duty involves attribution"
 		},
 		"trackingParty": {
 			"type": "string",
-			"description": "The party performing the tracking Used when the duty involves tracking"
+			"description": "The party performing the tracking\nUsed when the duty involves tracking"
 		},
 		"consequence": {
 			"anyOf": [
@@ -176,11 +25,16 @@
 					}
 				}
 			],
-			"description": "The consequences if the duty is not fulfilled. Only applicable when the Duty is referenced by a Rule with duty or obligation properties."
+			"description": "The consequences if the duty is not fulfilled.\nOnly applicable when the Duty is referenced by a Rule with duty or obligation\nproperties."
 		},
 		"compensatedParty": {
 			"type": "string",
-			"description": "The party to be compensated Used when the duty involves compensation"
+			"description": "The party to be compensated\nUsed when the duty involves compensation"
 		}
-	}
+	},
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlRule"
+		}
+	]
 }

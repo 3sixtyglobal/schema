@@ -1,39 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceNegotiationExchange",
+	"title": "UneceNegotiationExchange",
 	"description": "An offer exchanged between parties for an electronic negotiation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "NegotiationExchange",
 			"description": "JSON-LD Type."
 		},
 		"protocolTypeCode": {
 			"type": "string",
-			"description": "The code specifying the type of the protocol for this electronic negotiation exchange, such as Alternating Offer Protocol, Continuous Offer Protocol, Withdrawable Alternating Offer Protocol, Withdrawable Continuous Offer Protocol."
+			"description": "The code specifying the type of the protocol for this electronic negotiation exchange, such as Alternating Offer\nProtocol, Continuous Offer Protocol, Withdrawable Alternating Offer Protocol, Withdrawable Continuous Offer Protocol."
 		},
 		"responseDueDateTime": {
 			"type": "string",

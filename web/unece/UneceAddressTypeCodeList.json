@@ -1,16 +1,40 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAddressTypeCodeList",
+	"title": "UneceAddressTypeCodeList",
 	"description": "A character string used to represent or replace an address type.",
-	"type": "string",
-	"enum": [
-		"unece:AddressTypeCodeList#1",
-		"unece:AddressTypeCodeList#2",
-		"unece:AddressTypeCodeList#3",
-		"unece:AddressTypeCodeList#4",
-		"unece:AddressTypeCodeList#5",
-		"unece:AddressTypeCodeList#6",
-		"unece:AddressTypeCodeList#7",
-		"unece:AddressTypeCodeList#8"
+	"oneOf": [
+		{
+			"const": "unece:AddressTypeCodeList#1",
+			"description": "Postal address: 1."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#2",
+			"description": "Fiscal address: 2."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#3",
+			"description": "Physical address: 3."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#4",
+			"description": "Business address: 4."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#5",
+			"description": "Delivery To Address: 5."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#6",
+			"description": "Residential Address: 6."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#7",
+			"description": "Mail To Address: 7."
+		},
+		{
+			"const": "unece:AddressTypeCodeList#8",
+			"description": "Postbox Address: 8."
+		}
 	]
 }

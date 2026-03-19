@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLogisticsChargeCalculationBasisCodeList",
+	"title": "UneceLogisticsChargeCalculationBasisCodeList",
 	"description": "A character string used to represent the type of basis on which logistic charges are to be calculated.",
-	"type": "string",
-	"const": "unece:LogisticsChargeCalculationBasisCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:LogisticsChargeCalculationBasisCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
 }

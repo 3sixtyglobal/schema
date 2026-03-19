@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatDataServiceBase",
+	"title": "DcatDataServiceBase",
+	"description": "Base interface for DCAT Data Service without JSON-LD context.\nThis is the context-free variant of IDcatDataService, intended for embedding\ndata service objects inline within other objects where the context is provided by the enclosing document.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "dcat:DataService",
+			"description": "The type identifier, typically \"DataService\"."
+		},
+		"dcat:endpointURL": {
+			"type": "string",
+			"description": "The root location or primary endpoint of the service (a Web-resolvable IRI)."
+		},
+		"dcat:endpointDescription": {
+			"type": "string",
+			"description": "A description of the services available via the end-points, including their\noperations, parameters, etc."
+		},
+		"dcat:servesDataset": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A collection of data that this data service can distribute."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResourceBase"
+		}
+	]
+}

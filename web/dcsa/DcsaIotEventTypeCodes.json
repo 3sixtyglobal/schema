@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaIotEventTypeCodes",
-	"description": "DCSA IoT event type codes.\n\nSource: `iotEventTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA IoT event type codes.",
-	"type": "string",
-	"const": "DETC"
+	"title": "DcsaIotEventTypeCodes",
+	"description": "DCSA IoT event type codes.",
+	"oneOf": [
+		{
+			"const": "DETC",
+			"description": "Detected."
+		}
+	]
 }

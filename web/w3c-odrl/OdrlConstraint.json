@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlConstraint",
-	"description": "Interface for ODRL Constraints. https://www.w3.org/TR/odrl-model/#constraint",
+	"title": "OdrlConstraint",
+	"description": "Interface for ODRL Constraints.\nhttps://www.w3.org/TR/odrl-model/#constraint",
 	"type": "object",
 	"properties": {
 		"uid": {
@@ -66,8 +67,7 @@
 										"type": "string"
 									}
 								},
-								"required": ["@value"],
-								"additionalProperties": false
+								"required": ["@value"]
 							},
 							{
 								"type": "object",
@@ -76,14 +76,13 @@
 										"type": "string"
 									}
 								},
-								"required": ["@id"],
-								"additionalProperties": false
+								"required": ["@id"]
 							}
 						]
 					}
 				}
 			],
-			"description": "The right operand of the constraint. value with optional"
+			"description": "The right operand of the constraint.\nvalue with optional"
 		},
 		"rightOperandReference": {
 			"anyOf": [
@@ -97,7 +96,7 @@
 					}
 				}
 			],
-			"description": "Reference to the right operand. Can be used to reference external resources or policies using an IRI. Mutually exclusive with rightOperand."
+			"description": "Reference to the right operand.\nCan be used to reference external resources or policies using an IRI.\nMutually exclusive with rightOperand."
 		},
 		"dataType": {
 			"type": "string",

@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProductInstance",
-	"description": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process.",
+	"title": "UneceProductInstance",
+	"description": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural\nprocess.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ProductInstance",
 			"description": "JSON-LD Type."
 		},
@@ -87,7 +69,7 @@
 		},
 		"bestBeforeDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance.",
+			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade\nproduct instance.",
 			"format": "date-time"
 		},
 		"brandNameAdditionalInformationNote": {
@@ -306,7 +288,7 @@
 		},
 		"sellByDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold.",
+			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance\nshould not be sold.",
 			"format": "date-time"
 		},
 		"serialId": {

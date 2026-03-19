@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/DidCryptoSuites",
+	"title": "DidCryptoSuites",
 	"description": "The types for DID Proof crypto suites.",
-	"type": "string",
-	"enum": ["eddsa-jcs-2022", "eddsa-rdfc-2022"]
+	"oneOf": [
+		{
+			"const": "eddsa-jcs-2022",
+			"description": "The type for EdDSA crypto suite for JSON Canonicalization Scheme [RFC8785].\nhttps://www.w3.org/TR/vc-di-eddsa/#eddsa-jcs-2022"
+		},
+		{
+			"const": "eddsa-rdfc-2022",
+			"description": "The type for EdDSA crypto suite for RDF Dataset Canonicalization.\nhttps://www.w3.org/TR/vc-di-eddsa/#eddsa-rdfc-2022"
+		}
+	]
 }

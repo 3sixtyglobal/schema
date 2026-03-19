@@ -1,80 +1,296 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisMeasurementTypes",
-	"description": "Supported EPCIS 2.0 `measurementType` values.\n\nThese values come from the GS1 EPCIS JSON Schema enumeration. Use the union type `EpcisMeasurementTypes` when you want to restrict a field to known values.",
-	"type": "string",
-	"enum": [
-		"AbsoluteHumidity",
-		"AbsorbedDose",
-		"AbsorbedDoseRate",
-		"Acceleration",
-		"Radioactivity",
-		"Altitude",
-		"AmountOfSubstance",
-		"AmountOfSubstancePerUnitVolume",
-		"Angle",
-		"AngularAcceleration",
-		"AngularMomentum",
-		"AngularVelocity",
-		"Area",
-		"Capacitance",
-		"Conductance",
-		"Conductivity",
-		"Count",
-		"Density",
-		"Dimensionless",
-		"DoseEquivalent",
-		"DoseEquivalentRate",
-		"DynamicViscosity",
-		"ElectricCharge",
-		"ElectricCurrent",
-		"ElectricCurrentDensity",
-		"ElectricFieldStrength",
-		"Energy",
-		"Exposure",
-		"Force",
-		"Frequency",
-		"Illuminance",
-		"Inductance",
-		"Irradiance",
-		"KinematicViscosity",
-		"Length",
-		"LinearMomentum",
-		"Luminance",
-		"LuminousFlux",
-		"LuminousIntensity",
-		"MagneticFlux",
-		"MagneticFluxDensity",
-		"MagneticVectorPotential",
-		"Mass",
-		"MassConcentration",
-		"MassFlowRate",
-		"MassPerAreaTime",
-		"MemoryCapacity",
-		"MolalityOfSolute",
-		"MolarEnergy",
-		"MolarMass",
-		"MolarVolume",
-		"Power",
-		"Pressure",
-		"RadiantFlux",
-		"RadiantIntensity",
-		"RelativeHumidity",
-		"Resistance",
-		"Resistivity",
-		"SolidAngle",
-		"SpecificVolume",
-		"Speed",
-		"SurfaceDensity",
-		"SurfaceTension",
-		"Temperature",
-		"Time",
-		"Torque",
-		"Voltage",
-		"Volume",
-		"VolumeFlowRate",
-		"VolumeFraction",
-		"VolumetricFlux",
-		"Wavenumber"
+	"title": "EpcisMeasurementTypes",
+	"description": "Supported EPCIS 2.0 `measurementType` values.\n\nThese values come from the GS1 EPCIS JSON Schema enumeration.\nUse the union type `EpcisMeasurementTypes` when you want to restrict a field to known values.",
+	"oneOf": [
+		{
+			"const": "AbsoluteHumidity",
+			"description": "Measurement type \"AbsoluteHumidity\"."
+		},
+		{
+			"const": "AbsorbedDose",
+			"description": "Measurement type \"AbsorbedDose\"."
+		},
+		{
+			"const": "AbsorbedDoseRate",
+			"description": "Measurement type \"AbsorbedDoseRate\"."
+		},
+		{
+			"const": "Acceleration",
+			"description": "Measurement type \"Acceleration\"."
+		},
+		{
+			"const": "Radioactivity",
+			"description": "Measurement type \"Radioactivity\"."
+		},
+		{
+			"const": "Altitude",
+			"description": "Measurement type \"Altitude\"."
+		},
+		{
+			"const": "AmountOfSubstance",
+			"description": "Measurement type \"AmountOfSubstance\"."
+		},
+		{
+			"const": "AmountOfSubstancePerUnitVolume",
+			"description": "Measurement type \"AmountOfSubstancePerUnitVolume\"."
+		},
+		{
+			"const": "Angle",
+			"description": "Measurement type \"Angle\"."
+		},
+		{
+			"const": "AngularAcceleration",
+			"description": "Measurement type \"AngularAcceleration\"."
+		},
+		{
+			"const": "AngularMomentum",
+			"description": "Measurement type \"AngularMomentum\"."
+		},
+		{
+			"const": "AngularVelocity",
+			"description": "Measurement type \"AngularVelocity\"."
+		},
+		{
+			"const": "Area",
+			"description": "Measurement type \"Area\"."
+		},
+		{
+			"const": "Capacitance",
+			"description": "Measurement type \"Capacitance\"."
+		},
+		{
+			"const": "Conductance",
+			"description": "Measurement type \"Conductance\"."
+		},
+		{
+			"const": "Conductivity",
+			"description": "Measurement type \"Conductivity\"."
+		},
+		{
+			"const": "Count",
+			"description": "Measurement type \"Count\"."
+		},
+		{
+			"const": "Density",
+			"description": "Measurement type \"Density\"."
+		},
+		{
+			"const": "Dimensionless",
+			"description": "Measurement type \"Dimensionless\"."
+		},
+		{
+			"const": "DoseEquivalent",
+			"description": "Measurement type \"DoseEquivalent\"."
+		},
+		{
+			"const": "DoseEquivalentRate",
+			"description": "Measurement type \"DoseEquivalentRate\"."
+		},
+		{
+			"const": "DynamicViscosity",
+			"description": "Measurement type \"DynamicViscosity\"."
+		},
+		{
+			"const": "ElectricCharge",
+			"description": "Measurement type \"ElectricCharge\"."
+		},
+		{
+			"const": "ElectricCurrent",
+			"description": "Measurement type \"ElectricCurrent\"."
+		},
+		{
+			"const": "ElectricCurrentDensity",
+			"description": "Measurement type \"ElectricCurrentDensity\"."
+		},
+		{
+			"const": "ElectricFieldStrength",
+			"description": "Measurement type \"ElectricFieldStrength\"."
+		},
+		{
+			"const": "Energy",
+			"description": "Measurement type \"Energy\"."
+		},
+		{
+			"const": "Exposure",
+			"description": "Measurement type \"Exposure\"."
+		},
+		{
+			"const": "Force",
+			"description": "Measurement type \"Force\"."
+		},
+		{
+			"const": "Frequency",
+			"description": "Measurement type \"Frequency\"."
+		},
+		{
+			"const": "Illuminance",
+			"description": "Measurement type \"Illuminance\"."
+		},
+		{
+			"const": "Inductance",
+			"description": "Measurement type \"Inductance\"."
+		},
+		{
+			"const": "Irradiance",
+			"description": "Measurement type \"Irradiance\"."
+		},
+		{
+			"const": "KinematicViscosity",
+			"description": "Measurement type \"KinematicViscosity\"."
+		},
+		{
+			"const": "Length",
+			"description": "Measurement type \"Length\"."
+		},
+		{
+			"const": "LinearMomentum",
+			"description": "Measurement type \"LinearMomentum\"."
+		},
+		{
+			"const": "Luminance",
+			"description": "Measurement type \"Luminance\"."
+		},
+		{
+			"const": "LuminousFlux",
+			"description": "Measurement type \"LuminousFlux\"."
+		},
+		{
+			"const": "LuminousIntensity",
+			"description": "Measurement type \"LuminousIntensity\"."
+		},
+		{
+			"const": "MagneticFlux",
+			"description": "Measurement type \"MagneticFlux\"."
+		},
+		{
+			"const": "MagneticFluxDensity",
+			"description": "Measurement type \"MagneticFluxDensity\"."
+		},
+		{
+			"const": "MagneticVectorPotential",
+			"description": "Measurement type \"MagneticVectorPotential\"."
+		},
+		{
+			"const": "Mass",
+			"description": "Measurement type \"Mass\"."
+		},
+		{
+			"const": "MassConcentration",
+			"description": "Measurement type \"MassConcentration\"."
+		},
+		{
+			"const": "MassFlowRate",
+			"description": "Measurement type \"MassFlowRate\"."
+		},
+		{
+			"const": "MassPerAreaTime",
+			"description": "Measurement type \"MassPerAreaTime\"."
+		},
+		{
+			"const": "MemoryCapacity",
+			"description": "Measurement type \"MemoryCapacity\"."
+		},
+		{
+			"const": "MolalityOfSolute",
+			"description": "Measurement type \"MolalityOfSolute\"."
+		},
+		{
+			"const": "MolarEnergy",
+			"description": "Measurement type \"MolarEnergy\"."
+		},
+		{
+			"const": "MolarMass",
+			"description": "Measurement type \"MolarMass\"."
+		},
+		{
+			"const": "MolarVolume",
+			"description": "Measurement type \"MolarVolume\"."
+		},
+		{
+			"const": "Power",
+			"description": "Measurement type \"Power\"."
+		},
+		{
+			"const": "Pressure",
+			"description": "Measurement type \"Pressure\"."
+		},
+		{
+			"const": "RadiantFlux",
+			"description": "Measurement type \"RadiantFlux\"."
+		},
+		{
+			"const": "RadiantIntensity",
+			"description": "Measurement type \"RadiantIntensity\"."
+		},
+		{
+			"const": "RelativeHumidity",
+			"description": "Measurement type \"RelativeHumidity\"."
+		},
+		{
+			"const": "Resistance",
+			"description": "Measurement type \"Resistance\"."
+		},
+		{
+			"const": "Resistivity",
+			"description": "Measurement type \"Resistivity\"."
+		},
+		{
+			"const": "SolidAngle",
+			"description": "Measurement type \"SolidAngle\"."
+		},
+		{
+			"const": "SpecificVolume",
+			"description": "Measurement type \"SpecificVolume\"."
+		},
+		{
+			"const": "Speed",
+			"description": "Measurement type \"Speed\"."
+		},
+		{
+			"const": "SurfaceDensity",
+			"description": "Measurement type \"SurfaceDensity\"."
+		},
+		{
+			"const": "SurfaceTension",
+			"description": "Measurement type \"SurfaceTension\"."
+		},
+		{
+			"const": "Temperature",
+			"description": "Measurement type \"Temperature\"."
+		},
+		{
+			"const": "Time",
+			"description": "Measurement type \"Time\"."
+		},
+		{
+			"const": "Torque",
+			"description": "Measurement type \"Torque\"."
+		},
+		{
+			"const": "Voltage",
+			"description": "Measurement type \"Voltage\"."
+		},
+		{
+			"const": "Volume",
+			"description": "Measurement type \"Volume\"."
+		},
+		{
+			"const": "VolumeFlowRate",
+			"description": "Measurement type \"VolumeFlowRate\"."
+		},
+		{
+			"const": "VolumeFraction",
+			"description": "Measurement type \"VolumeFraction\"."
+		},
+		{
+			"const": "VolumetricFlux",
+			"description": "Measurement type \"VolumetricFlux\"."
+		},
+		{
+			"const": "Wavenumber",
+			"description": "Measurement type \"Wavenumber\"."
+		}
 	]
 }

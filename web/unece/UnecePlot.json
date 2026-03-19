@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePlot",
+	"title": "UnecePlot",
 	"description": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Plot",
 			"description": "JSON-LD Type."
 		},
@@ -113,8 +95,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceArea"
 			},
-			"description": "An agricultural zone area specified for this crop plot.",
-			"deprecated": true
+			"description": "An agricultural zone area specified for this crop plot."
 		},
 		"specifiedLocation": {
 			"$ref": "https://schema.twindev.org/unece/UneceLocation",

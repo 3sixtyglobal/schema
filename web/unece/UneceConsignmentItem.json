@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceConsignmentItem",
-	"description": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes. An item within a supply chain consignment of goods separately identified for transport and customs purposes.",
+	"title": "UneceConsignmentItem",
+	"description": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs\npurposes.\nAn item within a supply chain consignment of goods separately identified for transport and customs purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ConsignmentItem",
 			"description": "JSON-LD Type."
 		},
@@ -109,7 +91,7 @@
 		},
 		"declaredValueForCarriageAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-			"description": "The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery."
+			"description": "The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of\nvarying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to\ngoods or delayed delivery."
 		},
 		"declaredValueForCustomsAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
@@ -183,7 +165,7 @@
 		},
 		"goodsTypeExtensionTypeExtensionCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList",
-			"description": "The code used as an extension to the type code for further specifying the type of referenced supply chain consignment item."
+			"description": "The code used as an extension to the type code for further specifying the type of referenced supply chain consignment\nitem."
 		},
 		"goodsUnitQuantity": {
 			"type": "array",
@@ -261,7 +243,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceCargo"
 			},
-			"description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
+			"description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical\nor transport purposes."
 		},
 		"originCountry": {
 			"$ref": "https://schema.twindev.org/unece/UneceCountry",
@@ -350,7 +332,7 @@
 		},
 		"totalExportExitToImportEntryChargeAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-			"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain consignment item calculated from the export exit location to the import entry location."
+			"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain\nconsignment item calculated from the export exit location to the import entry location."
 		},
 		"tradeLineItemQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
@@ -383,14 +365,14 @@
 		},
 		"vanningEvent": {
 			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-			"description": "The vanning event for this supply chain consignment item, i.e. the loading of this consignment item at the place of original despatch."
+			"description": "The vanning event for this supply chain consignment item, i.e. the loading of this consignment item at the place of\noriginal despatch."
 		},
 		"volumeUnitGrossVolumeMeasure": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
 			},
-			"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
+			"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply\nchain consignment item."
 		},
 		"weightUnitChargeableWeightMeasure": {
 			"type": "array",
@@ -404,7 +386,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
 			},
-			"description": "A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any transport equipment."
+			"description": "A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any\ntransport equipment."
 		},
 		"weightUnitNetWeightMeasure": {
 			"type": "array",

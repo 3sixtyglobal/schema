@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaReeferSetpoint",
-	"description": "Reefer setpoint values.\n\nSource: `reeferSetpoint` schema in the DCSA Event Domain (v3.1.0).\n\nNote: The OpenAPI references value ranges and units from DCSA_DOMAIN; this package models values as numbers and unit fields as strings.",
+	"title": "DcsaReeferSetpoint",
+	"description": "Reefer setpoint values.\n\nSource: `reeferSetpoint` schema in the DCSA Event Domain (v3.1.0).\n\nNote: The OpenAPI references value ranges and units from DCSA_DOMAIN; this package models values as numbers and\nunit fields as strings.",
 	"type": "object",
 	"properties": {
 		"temperature": {

@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCountrySubDivisionTypeCodeList",
+	"title": "UneceCountrySubDivisionTypeCodeList",
 	"description": "Values for UneceCountrySubDivision typeCode property.",
-	"type": "string",
-	"enum": ["unece:subordinateCountrySubDivision", "unece:superordinateCountrySubDivision"]
+	"oneOf": [
+		{
+			"const": "unece:subordinateCountrySubDivision",
+			"description": "A subordinate country sub-division within this trade country sub-division.\nA trade country sub-division that is subordinate to this trade country, such as a state, a county, a canton, a province."
+		},
+		{
+			"const": "unece:superordinateCountrySubDivision",
+			"description": "A superordinate country sub-division for this trade country sub-division."
+		}
+	]
 }

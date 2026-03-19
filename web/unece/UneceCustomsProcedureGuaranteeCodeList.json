@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList",
+	"title": "UneceCustomsProcedureGuaranteeCodeList",
 	"description": "A character string used to represent a customs procedure guarantee.",
-	"type": "string",
-	"const": "unece:CustomsProcedureGuaranteeCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:CustomsProcedureGuaranteeCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
 }

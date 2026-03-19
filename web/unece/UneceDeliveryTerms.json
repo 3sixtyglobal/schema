@@ -1,39 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDeliveryTerms",
+	"title": "UneceDeliveryTerms",
 	"description": "Conditions agreed upon between the parties with regard to the delivery of goods and or services for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DeliveryTerms",
 			"description": "JSON-LD Type."
 		},
 		"declarationCountryRelationshipCode": {
 			"type": "string",
-			"description": "The code specifying whether the place specified by these trade delivery terms is located in the country where a declaration is made, in another member country of the same economic or customs union, or in a third country."
+			"description": "The code specifying whether the place specified by these trade delivery terms is located in the country where a\ndeclaration is made, in another member country of the same economic or customs union, or in a third country."
 		},
 		"deliveryDiscontinuationCode": {
 			"type": "string",

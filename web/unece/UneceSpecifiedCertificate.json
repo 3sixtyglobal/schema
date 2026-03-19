@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedCertificate",
-	"description": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object.",
+	"title": "UneceSpecifiedCertificate",
+	"description": "A document issued by a government, public organization or association to certify a property of a person, entity, process\nor object.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "SpecifiedCertificate",
 			"description": "JSON-LD Type."
 		},
@@ -235,7 +217,7 @@
 		},
 		"validityExtendedUntilDateTime": {
 			"type": "string",
-			"description": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period.",
+			"description": "A date, time, date time or other date time value until which this specified certificate will remain valid under the\nterms of an approved extension period.",
 			"format": "date-time"
 		},
 		"validityTypeCode": {

@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAllergyTypeCodeList",
+	"title": "UneceAllergyTypeCodeList",
 	"description": "Values for UneceAllergy typeCode property.",
-	"type": "string",
-	"const": "unece:notifiedAllergy"
+	"oneOf": [
+		{
+			"const": "unece:notifiedAllergy",
+			"description": "An allergy notified for this guest person."
+		}
+	]
 }

@@ -1,14 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceOrganizationFunctionTypeCodeList",
+	"title": "UneceOrganizationFunctionTypeCodeList",
 	"description": "A character string used to represent the type of an organization function.",
-	"type": "string",
-	"enum": [
-		"unece:OrganizationFunctionTypeCodeList#5",
-		"unece:OrganizationFunctionTypeCodeList#6",
-		"unece:OrganizationFunctionTypeCodeList#AUD",
-		"unece:OrganizationFunctionTypeCodeList#CER",
-		"unece:OrganizationFunctionTypeCodeList#EXC",
-		"unece:OrganizationFunctionTypeCodeList#LAU"
+	"oneOf": [
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#5",
+			"description": "Management Chartered Centre: 5."
+		},
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#6",
+			"description": "Management Chartered Association: 6."
+		},
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#AUD",
+			"description": "Audit Firm: AUD."
+		},
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#CER",
+			"description": "Centre of Rural Economy Firm: CER."
+		},
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#EXC",
+			"description": "Chartered Accountant Firm: EXC."
+		},
+		{
+			"const": "unece:OrganizationFunctionTypeCodeList#LAU",
+			"description": "Legal Audit Firm: LAU."
+		}
 	]
 }

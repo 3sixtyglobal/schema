@@ -1,35 +1,116 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceResponseTypeCodeList",
+	"title": "UneceResponseTypeCodeList",
 	"description": "A character string used to represent a response type.",
-	"type": "string",
-	"enum": [
-		"unece:ResponseTypeCodeList#AA",
-		"unece:ResponseTypeCodeList#AB",
-		"unece:ResponseTypeCodeList#AC",
-		"unece:ResponseTypeCodeList#AD",
-		"unece:ResponseTypeCodeList#AE",
-		"unece:ResponseTypeCodeList#AF",
-		"unece:ResponseTypeCodeList#AG",
-		"unece:ResponseTypeCodeList#AH",
-		"unece:ResponseTypeCodeList#AI",
-		"unece:ResponseTypeCodeList#AJ",
-		"unece:ResponseTypeCodeList#AK",
-		"unece:ResponseTypeCodeList#AL",
-		"unece:ResponseTypeCodeList#AM",
-		"unece:ResponseTypeCodeList#AN",
-		"unece:ResponseTypeCodeList#AP",
-		"unece:ResponseTypeCodeList#AQ",
-		"unece:ResponseTypeCodeList#AR",
-		"unece:ResponseTypeCodeList#AS",
-		"unece:ResponseTypeCodeList#CA",
-		"unece:ResponseTypeCodeList#CO",
-		"unece:ResponseTypeCodeList#NA",
-		"unece:ResponseTypeCodeList#RE",
-		"unece:ResponseTypeCodeList#UR",
-		"unece:ResponseTypeCodeList#US",
-		"unece:ResponseTypeCodeList#UT",
-		"unece:ResponseTypeCodeList#UU",
-		"unece:ResponseTypeCodeList#UV"
+	"oneOf": [
+		{
+			"const": "unece:ResponseTypeCodeList#AA",
+			"description": "Debit advice: AA."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AB",
+			"description": "Message acknowledgement: AB."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AC",
+			"description": "Acknowledge - with detail and change: AC."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AD",
+			"description": "Acknowledge - with detail, no change: AD."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AE",
+			"description": "Debit advice for each transaction: AE."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AF",
+			"description": "Debit advice/message acknowledgement: AF."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AG",
+			"description": "Authentication: AG."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AH",
+			"description": "Debit advice/message acknowledgement for each transaction: AH."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AI",
+			"description": "Acknowledge only changes: AI."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AJ",
+			"description": "Pending: AJ."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AK",
+			"description": "Return only TIR transport information: AK."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AL",
+			"description": "Return only declaration information: AL."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AM",
+			"description": "Return only guarantee information: AM."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AN",
+			"description": "Return all information regarding guarantee: AN."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AP",
+			"description": "Accepted: AP."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AQ",
+			"description": "Response expected: AQ."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AR",
+			"description": "Direct documentary credit collection: AR."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#AS",
+			"description": "Credit advice and message acknowledgement: AS."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#CA",
+			"description": "Conditionally accepted: CA."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#CO",
+			"description": "Confirmation of measurements: CO."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#NA",
+			"description": "No acknowledgement needed: NA."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#RE",
+			"description": "Rejected: RE."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#UR",
+			"description": "Credit advice: UR."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#US",
+			"description": "Acknowledgement when error: US."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#UT",
+			"description": "Acknowledgment due to error: UT."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#UU",
+			"description": "Alternate date: UU."
+		},
+		{
+			"const": "unece:ResponseTypeCodeList#UV",
+			"description": "Alternate service: UV."
+		}
 	]
 }

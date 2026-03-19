@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePreventiveActionTypeCodeList",
+	"title": "UnecePreventiveActionTypeCodeList",
 	"description": "Values for UnecePreventiveAction typeCode property.",
-	"type": "string",
-	"const": "unece:applicablePreventiveAction"
+	"oneOf": [
+		{
+			"const": "unece:applicablePreventiveAction",
+			"description": "A preventive action applicable to this specified inspection result."
+		}
+	]
 }

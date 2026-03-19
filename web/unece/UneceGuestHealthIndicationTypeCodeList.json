@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceGuestHealthIndicationTypeCodeList",
+	"title": "UneceGuestHealthIndicationTypeCodeList",
 	"description": "Values for UneceGuestHealthIndication typeCode property.",
-	"type": "string",
-	"const": "unece:notifiedHealthIndication"
+	"oneOf": [
+		{
+			"const": "unece:notifiedHealthIndication",
+			"description": "A health indication notified for this guest person."
+		}
+	]
 }

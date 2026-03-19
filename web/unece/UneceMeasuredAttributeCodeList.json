@@ -1,300 +1,1176 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceMeasuredAttributeCodeList",
+	"title": "UneceMeasuredAttributeCodeList",
 	"description": "A character string used to replace or represent a measured attribute.",
-	"type": "string",
-	"enum": [
-		"unece:MeasuredAttributeCodeList#A",
-		"unece:MeasuredAttributeCodeList#AAA",
-		"unece:MeasuredAttributeCodeList#AAB",
-		"unece:MeasuredAttributeCodeList#AAC",
-		"unece:MeasuredAttributeCodeList#AAD",
-		"unece:MeasuredAttributeCodeList#AAF",
-		"unece:MeasuredAttributeCodeList#AAG",
-		"unece:MeasuredAttributeCodeList#AAH",
-		"unece:MeasuredAttributeCodeList#AAI",
-		"unece:MeasuredAttributeCodeList#AAJ",
-		"unece:MeasuredAttributeCodeList#AAK",
-		"unece:MeasuredAttributeCodeList#AAM",
-		"unece:MeasuredAttributeCodeList#AAN",
-		"unece:MeasuredAttributeCodeList#AAO",
-		"unece:MeasuredAttributeCodeList#AAP",
-		"unece:MeasuredAttributeCodeList#AAQ",
-		"unece:MeasuredAttributeCodeList#AAR",
-		"unece:MeasuredAttributeCodeList#AAS",
-		"unece:MeasuredAttributeCodeList#AAT",
-		"unece:MeasuredAttributeCodeList#AAU",
-		"unece:MeasuredAttributeCodeList#AAV",
-		"unece:MeasuredAttributeCodeList#AAW",
-		"unece:MeasuredAttributeCodeList#AAX",
-		"unece:MeasuredAttributeCodeList#AAY",
-		"unece:MeasuredAttributeCodeList#AAZ",
-		"unece:MeasuredAttributeCodeList#ABA",
-		"unece:MeasuredAttributeCodeList#ABB",
-		"unece:MeasuredAttributeCodeList#ABC",
-		"unece:MeasuredAttributeCodeList#ABD",
-		"unece:MeasuredAttributeCodeList#ABE",
-		"unece:MeasuredAttributeCodeList#ABF",
-		"unece:MeasuredAttributeCodeList#ABG",
-		"unece:MeasuredAttributeCodeList#ABH",
-		"unece:MeasuredAttributeCodeList#ABI",
-		"unece:MeasuredAttributeCodeList#ABJ",
-		"unece:MeasuredAttributeCodeList#ABK",
-		"unece:MeasuredAttributeCodeList#ABL",
-		"unece:MeasuredAttributeCodeList#ABM",
-		"unece:MeasuredAttributeCodeList#ABN",
-		"unece:MeasuredAttributeCodeList#ABO",
-		"unece:MeasuredAttributeCodeList#ABP",
-		"unece:MeasuredAttributeCodeList#ABS",
-		"unece:MeasuredAttributeCodeList#ABT",
-		"unece:MeasuredAttributeCodeList#ABX",
-		"unece:MeasuredAttributeCodeList#ABY",
-		"unece:MeasuredAttributeCodeList#ABZ",
-		"unece:MeasuredAttributeCodeList#ACA",
-		"unece:MeasuredAttributeCodeList#ACE",
-		"unece:MeasuredAttributeCodeList#ACG",
-		"unece:MeasuredAttributeCodeList#ACN",
-		"unece:MeasuredAttributeCodeList#ACP",
-		"unece:MeasuredAttributeCodeList#ACS",
-		"unece:MeasuredAttributeCodeList#ACV",
-		"unece:MeasuredAttributeCodeList#ACW",
-		"unece:MeasuredAttributeCodeList#ACX",
-		"unece:MeasuredAttributeCodeList#ADR",
-		"unece:MeasuredAttributeCodeList#ADS",
-		"unece:MeasuredAttributeCodeList#ADT",
-		"unece:MeasuredAttributeCodeList#ADU",
-		"unece:MeasuredAttributeCodeList#ADV",
-		"unece:MeasuredAttributeCodeList#ADW",
-		"unece:MeasuredAttributeCodeList#ADX",
-		"unece:MeasuredAttributeCodeList#ADY",
-		"unece:MeasuredAttributeCodeList#ADZ",
-		"unece:MeasuredAttributeCodeList#AEA",
-		"unece:MeasuredAttributeCodeList#AEB",
-		"unece:MeasuredAttributeCodeList#AEC",
-		"unece:MeasuredAttributeCodeList#AED",
-		"unece:MeasuredAttributeCodeList#AEE",
-		"unece:MeasuredAttributeCodeList#AEF",
-		"unece:MeasuredAttributeCodeList#AEG",
-		"unece:MeasuredAttributeCodeList#AEH",
-		"unece:MeasuredAttributeCodeList#AEI",
-		"unece:MeasuredAttributeCodeList#AEJ",
-		"unece:MeasuredAttributeCodeList#AEK",
-		"unece:MeasuredAttributeCodeList#AEL",
-		"unece:MeasuredAttributeCodeList#AEM",
-		"unece:MeasuredAttributeCodeList#AEN",
-		"unece:MeasuredAttributeCodeList#AEO",
-		"unece:MeasuredAttributeCodeList#AEP",
-		"unece:MeasuredAttributeCodeList#AEQ",
-		"unece:MeasuredAttributeCodeList#AER",
-		"unece:MeasuredAttributeCodeList#AES",
-		"unece:MeasuredAttributeCodeList#AET",
-		"unece:MeasuredAttributeCodeList#AEU",
-		"unece:MeasuredAttributeCodeList#AEV",
-		"unece:MeasuredAttributeCodeList#AEW",
-		"unece:MeasuredAttributeCodeList#AEX",
-		"unece:MeasuredAttributeCodeList#AEY",
-		"unece:MeasuredAttributeCodeList#AEZ",
-		"unece:MeasuredAttributeCodeList#AF",
-		"unece:MeasuredAttributeCodeList#AFA",
-		"unece:MeasuredAttributeCodeList#AFB",
-		"unece:MeasuredAttributeCodeList#AFC",
-		"unece:MeasuredAttributeCodeList#AFD",
-		"unece:MeasuredAttributeCodeList#AFE",
-		"unece:MeasuredAttributeCodeList#AFF",
-		"unece:MeasuredAttributeCodeList#AFG",
-		"unece:MeasuredAttributeCodeList#AFH",
-		"unece:MeasuredAttributeCodeList#AFI",
-		"unece:MeasuredAttributeCodeList#AFJ",
-		"unece:MeasuredAttributeCodeList#AFK",
-		"unece:MeasuredAttributeCodeList#AFL",
-		"unece:MeasuredAttributeCodeList#AFM",
-		"unece:MeasuredAttributeCodeList#AFN",
-		"unece:MeasuredAttributeCodeList#AFO",
-		"unece:MeasuredAttributeCodeList#AFP",
-		"unece:MeasuredAttributeCodeList#AFQ",
-		"unece:MeasuredAttributeCodeList#AFR",
-		"unece:MeasuredAttributeCodeList#AFS",
-		"unece:MeasuredAttributeCodeList#AFT",
-		"unece:MeasuredAttributeCodeList#AFU",
-		"unece:MeasuredAttributeCodeList#AFV",
-		"unece:MeasuredAttributeCodeList#AFW",
-		"unece:MeasuredAttributeCodeList#AFX",
-		"unece:MeasuredAttributeCodeList#B",
-		"unece:MeasuredAttributeCodeList#BL",
-		"unece:MeasuredAttributeCodeList#BMY",
-		"unece:MeasuredAttributeCodeList#BMZ",
-		"unece:MeasuredAttributeCodeList#BNA",
-		"unece:MeasuredAttributeCodeList#BNB",
-		"unece:MeasuredAttributeCodeList#BNC",
-		"unece:MeasuredAttributeCodeList#BND",
-		"unece:MeasuredAttributeCodeList#BNE",
-		"unece:MeasuredAttributeCodeList#BNF",
-		"unece:MeasuredAttributeCodeList#BNG",
-		"unece:MeasuredAttributeCodeList#BNH",
-		"unece:MeasuredAttributeCodeList#BNI",
-		"unece:MeasuredAttributeCodeList#BNJ",
-		"unece:MeasuredAttributeCodeList#BNK",
-		"unece:MeasuredAttributeCodeList#BNL",
-		"unece:MeasuredAttributeCodeList#BNM",
-		"unece:MeasuredAttributeCodeList#BNN",
-		"unece:MeasuredAttributeCodeList#BNO",
-		"unece:MeasuredAttributeCodeList#BNP",
-		"unece:MeasuredAttributeCodeList#BNQ",
-		"unece:MeasuredAttributeCodeList#BNR",
-		"unece:MeasuredAttributeCodeList#BNS",
-		"unece:MeasuredAttributeCodeList#BNT",
-		"unece:MeasuredAttributeCodeList#BNU",
-		"unece:MeasuredAttributeCodeList#BNV",
-		"unece:MeasuredAttributeCodeList#BNW",
-		"unece:MeasuredAttributeCodeList#BNX",
-		"unece:MeasuredAttributeCodeList#BNY",
-		"unece:MeasuredAttributeCodeList#BNZ",
-		"unece:MeasuredAttributeCodeList#BR",
-		"unece:MeasuredAttributeCodeList#BRA",
-		"unece:MeasuredAttributeCodeList#BRB",
-		"unece:MeasuredAttributeCodeList#BRC",
-		"unece:MeasuredAttributeCodeList#BRD",
-		"unece:MeasuredAttributeCodeList#BRE",
-		"unece:MeasuredAttributeCodeList#BRF",
-		"unece:MeasuredAttributeCodeList#BRG",
-		"unece:MeasuredAttributeCodeList#BRH",
-		"unece:MeasuredAttributeCodeList#BRI",
-		"unece:MeasuredAttributeCodeList#BRJ",
-		"unece:MeasuredAttributeCodeList#BRK",
-		"unece:MeasuredAttributeCodeList#BRL",
-		"unece:MeasuredAttributeCodeList#BRM",
-		"unece:MeasuredAttributeCodeList#BRN",
-		"unece:MeasuredAttributeCodeList#BRO",
-		"unece:MeasuredAttributeCodeList#BRP",
-		"unece:MeasuredAttributeCodeList#BRQ",
-		"unece:MeasuredAttributeCodeList#BRR",
-		"unece:MeasuredAttributeCodeList#BRS",
-		"unece:MeasuredAttributeCodeList#BRT",
-		"unece:MeasuredAttributeCodeList#BRU",
-		"unece:MeasuredAttributeCodeList#BRV",
-		"unece:MeasuredAttributeCodeList#BS",
-		"unece:MeasuredAttributeCodeList#BSW",
-		"unece:MeasuredAttributeCodeList#BSX",
-		"unece:MeasuredAttributeCodeList#BSY",
-		"unece:MeasuredAttributeCodeList#BSZ",
-		"unece:MeasuredAttributeCodeList#BTA",
-		"unece:MeasuredAttributeCodeList#BTB",
-		"unece:MeasuredAttributeCodeList#BTC",
-		"unece:MeasuredAttributeCodeList#BTD",
-		"unece:MeasuredAttributeCodeList#BTE",
-		"unece:MeasuredAttributeCodeList#BTF",
-		"unece:MeasuredAttributeCodeList#BTG",
-		"unece:MeasuredAttributeCodeList#BTH",
-		"unece:MeasuredAttributeCodeList#BTI",
-		"unece:MeasuredAttributeCodeList#BTJ",
-		"unece:MeasuredAttributeCodeList#BTK",
-		"unece:MeasuredAttributeCodeList#BTL",
-		"unece:MeasuredAttributeCodeList#BTM",
-		"unece:MeasuredAttributeCodeList#BW",
-		"unece:MeasuredAttributeCodeList#CHN",
-		"unece:MeasuredAttributeCodeList#CHO",
-		"unece:MeasuredAttributeCodeList#CM",
-		"unece:MeasuredAttributeCodeList#CT",
-		"unece:MeasuredAttributeCodeList#CV",
-		"unece:MeasuredAttributeCodeList#CZ",
-		"unece:MeasuredAttributeCodeList#D",
-		"unece:MeasuredAttributeCodeList#DI",
-		"unece:MeasuredAttributeCodeList#DL",
-		"unece:MeasuredAttributeCodeList#DN",
-		"unece:MeasuredAttributeCodeList#DP",
-		"unece:MeasuredAttributeCodeList#DR",
-		"unece:MeasuredAttributeCodeList#DS",
-		"unece:MeasuredAttributeCodeList#DW",
-		"unece:MeasuredAttributeCodeList#E",
-		"unece:MeasuredAttributeCodeList#EA",
-		"unece:MeasuredAttributeCodeList#F",
-		"unece:MeasuredAttributeCodeList#FI",
-		"unece:MeasuredAttributeCodeList#FL",
-		"unece:MeasuredAttributeCodeList#FN",
-		"unece:MeasuredAttributeCodeList#FV",
-		"unece:MeasuredAttributeCodeList#GG",
-		"unece:MeasuredAttributeCodeList#GW",
-		"unece:MeasuredAttributeCodeList#HF",
-		"unece:MeasuredAttributeCodeList#HM",
-		"unece:MeasuredAttributeCodeList#HT",
-		"unece:MeasuredAttributeCodeList#IB",
-		"unece:MeasuredAttributeCodeList#ID",
-		"unece:MeasuredAttributeCodeList#L",
-		"unece:MeasuredAttributeCodeList#LM",
-		"unece:MeasuredAttributeCodeList#LN",
-		"unece:MeasuredAttributeCodeList#LND",
-		"unece:MeasuredAttributeCodeList#M",
-		"unece:MeasuredAttributeCodeList#MO",
-		"unece:MeasuredAttributeCodeList#MW",
-		"unece:MeasuredAttributeCodeList#N",
-		"unece:MeasuredAttributeCodeList#OD",
-		"unece:MeasuredAttributeCodeList#PRS",
-		"unece:MeasuredAttributeCodeList#PTN",
-		"unece:MeasuredAttributeCodeList#RA",
-		"unece:MeasuredAttributeCodeList#RF",
-		"unece:MeasuredAttributeCodeList#RJ",
-		"unece:MeasuredAttributeCodeList#RMW",
-		"unece:MeasuredAttributeCodeList#RP",
-		"unece:MeasuredAttributeCodeList#RUN",
-		"unece:MeasuredAttributeCodeList#RY",
-		"unece:MeasuredAttributeCodeList#SQ",
-		"unece:MeasuredAttributeCodeList#T",
-		"unece:MeasuredAttributeCodeList#TC",
-		"unece:MeasuredAttributeCodeList#TH",
-		"unece:MeasuredAttributeCodeList#TN",
-		"unece:MeasuredAttributeCodeList#TT",
-		"unece:MeasuredAttributeCodeList#VGM",
-		"unece:MeasuredAttributeCodeList#VH",
-		"unece:MeasuredAttributeCodeList#VW",
-		"unece:MeasuredAttributeCodeList#WA",
-		"unece:MeasuredAttributeCodeList#WD",
-		"unece:MeasuredAttributeCodeList#WM",
-		"unece:MeasuredAttributeCodeList#WU",
-		"unece:MeasuredAttributeCodeList#XH",
-		"unece:MeasuredAttributeCodeList#XQ",
-		"unece:MeasuredAttributeCodeList#XZ",
-		"unece:MeasuredAttributeCodeList#YS",
-		"unece:MeasuredAttributeCodeList#ZAL",
-		"unece:MeasuredAttributeCodeList#ZAS",
-		"unece:MeasuredAttributeCodeList#ZB",
-		"unece:MeasuredAttributeCodeList#ZBI",
-		"unece:MeasuredAttributeCodeList#ZC",
-		"unece:MeasuredAttributeCodeList#ZCA",
-		"unece:MeasuredAttributeCodeList#ZCB",
-		"unece:MeasuredAttributeCodeList#ZCE",
-		"unece:MeasuredAttributeCodeList#ZCL",
-		"unece:MeasuredAttributeCodeList#ZCO",
-		"unece:MeasuredAttributeCodeList#ZCR",
-		"unece:MeasuredAttributeCodeList#ZCU",
-		"unece:MeasuredAttributeCodeList#ZFE",
-		"unece:MeasuredAttributeCodeList#ZFS",
-		"unece:MeasuredAttributeCodeList#ZGE",
-		"unece:MeasuredAttributeCodeList#ZH",
-		"unece:MeasuredAttributeCodeList#ZK",
-		"unece:MeasuredAttributeCodeList#ZMG",
-		"unece:MeasuredAttributeCodeList#ZMN",
-		"unece:MeasuredAttributeCodeList#ZMO",
-		"unece:MeasuredAttributeCodeList#ZN",
-		"unece:MeasuredAttributeCodeList#ZNA",
-		"unece:MeasuredAttributeCodeList#ZNB",
-		"unece:MeasuredAttributeCodeList#ZNI",
-		"unece:MeasuredAttributeCodeList#ZO",
-		"unece:MeasuredAttributeCodeList#ZP",
-		"unece:MeasuredAttributeCodeList#ZPB",
-		"unece:MeasuredAttributeCodeList#ZS",
-		"unece:MeasuredAttributeCodeList#ZSB",
-		"unece:MeasuredAttributeCodeList#ZSE",
-		"unece:MeasuredAttributeCodeList#ZSI",
-		"unece:MeasuredAttributeCodeList#ZSL",
-		"unece:MeasuredAttributeCodeList#ZSN",
-		"unece:MeasuredAttributeCodeList#ZTA",
-		"unece:MeasuredAttributeCodeList#ZTE",
-		"unece:MeasuredAttributeCodeList#ZTI",
-		"unece:MeasuredAttributeCodeList#ZV",
-		"unece:MeasuredAttributeCodeList#ZW",
-		"unece:MeasuredAttributeCodeList#ZWA",
-		"unece:MeasuredAttributeCodeList#ZZN",
-		"unece:MeasuredAttributeCodeList#ZZR",
-		"unece:MeasuredAttributeCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:MeasuredAttributeCodeList#A",
+			"description": "Consolidated weight: A."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAA",
+			"description": "Net weight: AAA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAB",
+			"description": "Goods item gross weight: AAB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAC",
+			"description": "Total net weight: AAC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAD",
+			"description": "Consignment gross weight: AAD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAF",
+			"description": "Net net weight: AAF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAG",
+			"description": "Stern thrust: AAG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAH",
+			"description": "Bow thrust: AAH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAI",
+			"description": "Hydrate content of an alcoholic product at bottling: AAI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAJ",
+			"description": "Number of units per pallet: AAJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAK",
+			"description": "Fat content: AAK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAM",
+			"description": "Transport means gross weight: AAM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAN",
+			"description": "Net tonnage of the vessel: AAN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAO",
+			"description": "Humidity: AAO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAP",
+			"description": "Voltage: AAP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAQ",
+			"description": "Power consumption: AAQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAR",
+			"description": "Heat dissipation: AAR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAS",
+			"description": "Air flow: AAS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAT",
+			"description": "Shock impact: AAT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAU",
+			"description": "Operative temperature: AAU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAV",
+			"description": "Non operative temperature: AAV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAW",
+			"description": "Gross volume: AAW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAX",
+			"description": "Net volume: AAX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAY",
+			"description": "Water content: AAY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AAZ",
+			"description": "Tensile stress: AAZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABA",
+			"description": "Fibrosity: ABA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABB",
+			"description": "Gauge length: ABB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABC",
+			"description": "Radius: ABC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABD",
+			"description": "Straightness: ABD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABE",
+			"description": "Strain: ABE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABF",
+			"description": "Item width when unrolled: ABF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABG",
+			"description": "Item length when unrolled: ABG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABH",
+			"description": "Item area when unrolled: ABH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABI",
+			"description": "Original wort: ABI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABJ",
+			"description": "Volume: ABJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABK",
+			"description": "Angle: ABK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABL",
+			"description": "Peg hole horizontal distance from package leftmost edge: ABL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABM",
+			"description": "Peg hole vertical distance from package top: ABM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABN",
+			"description": "Number of layers per pallet: ABN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABO",
+			"description": "Product strengh, chemical: ABO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABP",
+			"description": "Product strength basis, chemical: ABP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABS",
+			"description": "Item weight: ABS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABT",
+			"description": "Payload weight, maximum: ABT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABX",
+			"description": "Weight of conveyance: ABX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABY",
+			"description": "Conveyance summer dead weight: ABY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ABZ",
+			"description": "Containerized cargo on vessel's weight: ABZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACA",
+			"description": "Non-containerized cargo on vessel's weight: ACA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACE",
+			"description": "Ascertained weight: ACE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACG",
+			"description": "Chargeable weight: ACG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACN",
+			"description": "Estimated gross weight: ACN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACP",
+			"description": "Estimated volume: ACP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACS",
+			"description": "Vessel overall length: ACS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACV",
+			"description": "Loading meters: ACV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACW",
+			"description": "Number of axles: ACW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ACX",
+			"description": "Payload: ACX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADR",
+			"description": "Start position in the length: ADR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADS",
+			"description": "End position in the length: ADS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADT",
+			"description": "Start position in the width: ADT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADU",
+			"description": "End position in the width: ADU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADV",
+			"description": "Start position in the thickness: ADV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADW",
+			"description": "End position in the thickness: ADW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADX",
+			"description": "Transport container actual filling weight: ADX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADY",
+			"description": "Transport container maximum capacity: ADY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ADZ",
+			"description": "Declared net weight: ADZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEA",
+			"description": "Loading height: AEA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEB",
+			"description": "Stacking height: AEB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEC",
+			"description": "Calculated weight: AEC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AED",
+			"description": "Ferrite: AED."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEE",
+			"description": "Impurity: AEE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEF",
+			"description": "Grain size: AEF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEG",
+			"description": "Lanthanides: AEG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEH",
+			"description": "Elasticity: AEH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEI",
+			"description": "Drained weight: AEI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEJ",
+			"description": "Gallium: AEJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEK",
+			"description": "Strontium: AEK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEL",
+			"description": "Area: AEL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEM",
+			"description": "Equipment storage limitation: AEM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEN",
+			"description": "Radioactive index of transport: AEN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEO",
+			"description": "Radioactivity: AEO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEP",
+			"description": "Average gross weight: AEP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEQ",
+			"description": "Forward draft: AEQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AER",
+			"description": "After draft: AER."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AES",
+			"description": "Acidity: AES."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AET",
+			"description": "Transport equipment gross weight: AET."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEU",
+			"description": "Total transport equipment gross weight: AEU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEV",
+			"description": "Acidity of juice: AEV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEW",
+			"description": "Penetrometry: AEW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEX",
+			"description": "Durofel: AEX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEY",
+			"description": "Juice weight per 100 grams: AEY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AEZ",
+			"description": "Fruit skin colour: AEZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AF",
+			"description": "Angle of bend: AF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFA",
+			"description": "Fixed incremental measurement: AFA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFB",
+			"description": "Durofel D10: AFB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFC",
+			"description": "Durofel D25: AFC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFD",
+			"description": "Durofel D50: AFD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFE",
+			"description": "Maximum stacking weight: AFE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFF",
+			"description": "Gross measure cube: AFF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFG",
+			"description": "Percentage fat content in dry matter: AFG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFH",
+			"description": "Saccharometric content: AFH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFI",
+			"description": "Hydrate content of an alcoholic product after bottling: AFI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFJ",
+			"description": "Anhydrous content: AFJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFK",
+			"description": "Certified weight: AFK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFL",
+			"description": "Freeboard: AFL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFM",
+			"description": "Maximum vessel draught: AFM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFN",
+			"description": "Net explosive weight: AFN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFO",
+			"description": "Radioactive criticality safety index: AFO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFP",
+			"description": "Waste currently on board: AFP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFQ",
+			"description": "Waste to be delivered at waste reception facility: AFQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFR",
+			"description": "Waste to be generated until next port of call, estimated: AFR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFS",
+			"description": "Waste remaining on board at departure: AFS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFT",
+			"description": "Colour depth: AFT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFU",
+			"description": "Colour depth, maximum: AFU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFV",
+			"description": "Image resolution: AFV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFW",
+			"description": "Device resolution, maximum: AFW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#AFX",
+			"description": "Acoustic absorption coefficient: AFX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#B",
+			"description": "Billed weight: B."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BL",
+			"description": "Breaking load: BL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BMY",
+			"description": "Platinum: BMY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BMZ",
+			"description": "Silver: BMZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNA",
+			"description": "List: BNA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNB",
+			"description": "Trim: BNB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNC",
+			"description": "Free water: BNC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BND",
+			"description": "Bands: BND."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNE",
+			"description": "API (American Petroleum Institute) gravity: BNE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNF",
+			"description": "Petroleum gross observed volume: BNF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNG",
+			"description": "Petroleum gross standard volume: BNG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNH",
+			"description": "Volume variance: BNH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNI",
+			"description": "Petroleum net standard volume: BNI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNJ",
+			"description": "Material on-board quantity, after discharge: BNJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNK",
+			"description": "Petroleum total calculated volume: BNK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNL",
+			"description": "Petroleum total observed volume: BNL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNM",
+			"description": "Innage gauge distance: BNM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNN",
+			"description": "Petroleum net standard weight: BNN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNO",
+			"description": "Sediment and water in petroleum: BNO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNP",
+			"description": "Observed reference height, tank: BNP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNQ",
+			"description": "Reference height, tank: BNQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNR",
+			"description": "Ullage gauge distance: BNR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNS",
+			"description": "Trim correction: BNS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNT",
+			"description": "Bow to bridge distance: BNT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNU",
+			"description": "Peg hole number: BNU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNV",
+			"description": "Number of inner packs: BNV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNW",
+			"description": "Number of next level trade items within inner pack: BNW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNX",
+			"description": "Number of trade items per pallet layer: BNX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNY",
+			"description": "Packed items layer height: BNY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BNZ",
+			"description": "Packing material weight, skin tight covering: BNZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BR",
+			"description": "Brightness: BR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRA",
+			"description": "Brakes: BRA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRB",
+			"description": "Components labelled for recycling percentage: BRB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRC",
+			"description": "Renewable plastic components percentage, by net weight: BRC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRD",
+			"description": "Clamp pressure, required: BRD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRE",
+			"description": "Break: BRE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRF",
+			"description": "Ascertained volume: BRF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRG",
+			"description": "Unit weight: BRG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRH",
+			"description": "Total volume: BRH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRI",
+			"description": "Unit volume: BRI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRJ",
+			"description": "Vertical center of gravity: BRJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRK",
+			"description": "Maximum allowable transport stacking weight: BRK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRL",
+			"description": "Carbon Dioxide: BRL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRM",
+			"description": "Number of base units per pallet: BRM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRN",
+			"description": "Colony forming unit: BRN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRO",
+			"description": "Diluted liquid volume: BRO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRP",
+			"description": "Energy efficiency: BRP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRQ",
+			"description": "Number of layers: BRQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRR",
+			"description": "Maximum demand: BRR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRS",
+			"description": "Number of pallet places: BRS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRT",
+			"description": "Package net measurement, cubed: BRT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRU",
+			"description": "Power factor: BRU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BRV",
+			"description": "Stacking factor excluding bottom item: BRV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BS",
+			"description": "Breaking strength: BS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BSW",
+			"description": "Breaking strength wet: BSW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BSX",
+			"description": "Step size: BSX."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BSY",
+			"description": "Number of units per package: BSY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BSZ",
+			"description": "Number of units per layer: BSZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTA",
+			"description": "Weight per running metre: BTA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTB",
+			"description": "Weight per square metre: BTB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTC",
+			"description": "Acidity of meat: BTC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTD",
+			"description": "Slaughtering weight: BTD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTE",
+			"description": "Stacking factor including bottom item: BTE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTF",
+			"description": "Number of units in the width of a layer: BTF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTG",
+			"description": "Number of units in the depth of a layer: BTG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTH",
+			"description": "Nestable percentage: BTH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTI",
+			"description": "Gross weight including carrier's equipment: BTI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTJ",
+			"description": "Sugar content: BTJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTK",
+			"description": "Self-accelerating polymerization temperature (SAPT): BTK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTL",
+			"description": "Self-accelerating decomposition temperature (SADT): BTL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BTM",
+			"description": "Control temperature: BTM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#BW",
+			"description": "Basis weight: BW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CHN",
+			"description": "Change: CHN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CHO",
+			"description": "Emergency temperature: CHO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CM",
+			"description": "Colour: CM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CT",
+			"description": "Contents of package: CT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CV",
+			"description": "Commercial weight: CV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#CZ",
+			"description": "Core length: CZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#D",
+			"description": "Destination weight agreement: D."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DI",
+			"description": "Diameter: DI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DL",
+			"description": "Delta value L: DL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DN",
+			"description": "Density: DN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DP",
+			"description": "Depth: DP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DR",
+			"description": "Denier: DR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DS",
+			"description": "Distance between points: DS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#DW",
+			"description": "Width, boxcar door: DW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#E",
+			"description": "Estimated new weight: E."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#EA",
+			"description": "Elongation: EA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#F",
+			"description": "Deficit weight: F."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#FI",
+			"description": "Filament count: FI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#FL",
+			"description": "Longitudinal flatness: FL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#FN",
+			"description": "Flatness: FN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#FV",
+			"description": "Transverse flatness: FV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#GG",
+			"description": "Gauge: GG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#GW",
+			"description": "Gross weight, maximum: GW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#HF",
+			"description": "Hardness: HF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#HM",
+			"description": "Height, maximum: HM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#HT",
+			"description": "Height dimension: HT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#IB",
+			"description": "Impact energy: IB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ID",
+			"description": "Inside diameter: ID."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#L",
+			"description": "Legal weight: L."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#LM",
+			"description": "Length, maximum: LM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#LN",
+			"description": "Length: LN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#LND",
+			"description": "Lost end: LND."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#M",
+			"description": "Minimum weight: M."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#MO",
+			"description": "Moisture: MO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#MW",
+			"description": "Maximum weight: MW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#N",
+			"description": "Actual net weight: N."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#OD",
+			"description": "Outside diameter: OD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#PRS",
+			"description": "Pre stretch: PRS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#PTN",
+			"description": "Per tonne: PTN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RA",
+			"description": "Relative humidity: RA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RF",
+			"description": "Resistivity: RF."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RJ",
+			"description": "Rockwell C: RJ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RMW",
+			"description": "Ream weight: RMW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RP",
+			"description": "Reduction of area: RP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RUN",
+			"description": "Run (process): RUN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#RY",
+			"description": "Ratio: RY."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#SQ",
+			"description": "Shipped quantity: SQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#T",
+			"description": "Tare weight: T."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#TC",
+			"description": "Temperature: TC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#TH",
+			"description": "Thickness: TH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#TN",
+			"description": "Time period: TN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#TT",
+			"description": "Time: TT."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#VGM",
+			"description": "Transport equipment verified gross mass (weight): VGM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#VH",
+			"description": "Height, van door: VH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#VW",
+			"description": "Width, van door: VW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#WA",
+			"description": "Weight per unit of area: WA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#WD",
+			"description": "Width dimension: WD."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#WM",
+			"description": "Width, maximum: WM."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#WU",
+			"description": "Weight per unit of length: WU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#XH",
+			"description": "Side height, flat bed with removable sides: XH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#XQ",
+			"description": "Squareness: XQ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#XZ",
+			"description": "Spool size: XZ."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#YS",
+			"description": "Yield stress: YS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZAL",
+			"description": "Aluminium: ZAL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZAS",
+			"description": "Arsenic: ZAS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZB",
+			"description": "Boron: ZB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZBI",
+			"description": "Bismuth: ZBI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZC",
+			"description": "Carbon: ZC."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCA",
+			"description": "Calcium: ZCA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCB",
+			"description": "Columbium: ZCB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCE",
+			"description": "Cerium: ZCE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCL",
+			"description": "Chlorine: ZCL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCO",
+			"description": "Cobalt: ZCO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCR",
+			"description": "Chromium: ZCR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZCU",
+			"description": "Copper: ZCU."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZFE",
+			"description": "Iron: ZFE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZFS",
+			"description": "Iron plus silicon: ZFS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZGE",
+			"description": "Germanium: ZGE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZH",
+			"description": "Hydrogen: ZH."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZK",
+			"description": "Potassium: ZK."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZMG",
+			"description": "Magnesium: ZMG."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZMN",
+			"description": "Manganese: ZMN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZMO",
+			"description": "Molybdenum: ZMO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZN",
+			"description": "Nitrogen: ZN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZNA",
+			"description": "Sodium: ZNA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZNB",
+			"description": "Niobium: ZNB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZNI",
+			"description": "Nickel: ZNI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZO",
+			"description": "Oxygen: ZO."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZP",
+			"description": "Phosphorus: ZP."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZPB",
+			"description": "Lead: ZPB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZS",
+			"description": "Sulphur: ZS."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZSB",
+			"description": "Antimony: ZSB."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZSE",
+			"description": "Selenium: ZSE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZSI",
+			"description": "Silicon: ZSI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZSL",
+			"description": "Silicium oxyd: ZSL."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZSN",
+			"description": "Tin: ZSN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZTA",
+			"description": "Tantalium: ZTA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZTE",
+			"description": "Tellurium: ZTE."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZTI",
+			"description": "Titanium: ZTI."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZV",
+			"description": "Vanadium: ZV."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZW",
+			"description": "Tungsten: ZW."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZWA",
+			"description": "Waste content: ZWA."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZZN",
+			"description": "Zinc: ZZN."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZZR",
+			"description": "Zirconium: ZZR."
+		},
+		{
+			"const": "unece:MeasuredAttributeCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

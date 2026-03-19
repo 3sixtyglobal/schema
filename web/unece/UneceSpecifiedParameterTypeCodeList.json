@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedParameterTypeCodeList",
+	"title": "UneceSpecifiedParameterTypeCodeList",
 	"description": "Values for UneceSpecifiedParameter typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableParameter",
-		"unece:operationalApplicableParameter",
-		"unece:qualityParameter",
-		"unece:requestedOperationalApplicableParameter",
-		"unece:valueParameter"
+	"oneOf": [
+		{
+			"const": "unece:applicableParameter",
+			"description": "A parameter applicable to this specified method.\nA parameter applicable to this specified production device.\nA specified parameter applicable to this production process."
+		},
+		{
+			"const": "unece:operationalApplicableParameter",
+			"description": "An operational parameter applicable to this production machine."
+		},
+		{
+			"const": "unece:qualityParameter",
+			"description": "A quality parameter specified for this trade product."
+		},
+		{
+			"const": "unece:requestedOperationalApplicableParameter",
+			"description": "A requested operational parameter applicable to this production machine.\nAn operational parameter requested for this specified production device."
+		},
+		{
+			"const": "unece:valueParameter",
+			"description": "A parameter specified for a value for this metric characteristic.\nA parameter specified for a value of this product batch characteristic.\nA parameter specified for a value of this product characteristic.\nA parameter specified for the value of this agricultural characteristic.\nA parameter specified for the value of this organization characteristic.\nA parameter specified for the value of this process characteristic.\nA parameter specified for the value of this sustainability characteristic.\nA parameter specified for the value of this technical characteristic."
+		}
 	]
 }

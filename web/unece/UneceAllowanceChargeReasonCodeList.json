@@ -1,113 +1,428 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAllowanceChargeReasonCodeList",
+	"title": "UneceAllowanceChargeReasonCodeList",
 	"description": "A character string used to represent an allowance charge reason.",
-	"type": "string",
-	"enum": [
-		"unece:AllowanceChargeReasonCodeList#1",
-		"unece:AllowanceChargeReasonCodeList#10",
-		"unece:AllowanceChargeReasonCodeList#100",
-		"unece:AllowanceChargeReasonCodeList#101",
-		"unece:AllowanceChargeReasonCodeList#102",
-		"unece:AllowanceChargeReasonCodeList#103",
-		"unece:AllowanceChargeReasonCodeList#104",
-		"unece:AllowanceChargeReasonCodeList#11",
-		"unece:AllowanceChargeReasonCodeList#12",
-		"unece:AllowanceChargeReasonCodeList#13",
-		"unece:AllowanceChargeReasonCodeList#14",
-		"unece:AllowanceChargeReasonCodeList#15",
-		"unece:AllowanceChargeReasonCodeList#16",
-		"unece:AllowanceChargeReasonCodeList#17",
-		"unece:AllowanceChargeReasonCodeList#18",
-		"unece:AllowanceChargeReasonCodeList#19",
-		"unece:AllowanceChargeReasonCodeList#2",
-		"unece:AllowanceChargeReasonCodeList#20",
-		"unece:AllowanceChargeReasonCodeList#21",
-		"unece:AllowanceChargeReasonCodeList#22",
-		"unece:AllowanceChargeReasonCodeList#23",
-		"unece:AllowanceChargeReasonCodeList#24",
-		"unece:AllowanceChargeReasonCodeList#25",
-		"unece:AllowanceChargeReasonCodeList#26",
-		"unece:AllowanceChargeReasonCodeList#27",
-		"unece:AllowanceChargeReasonCodeList#28",
-		"unece:AllowanceChargeReasonCodeList#29",
-		"unece:AllowanceChargeReasonCodeList#3",
-		"unece:AllowanceChargeReasonCodeList#30",
-		"unece:AllowanceChargeReasonCodeList#31",
-		"unece:AllowanceChargeReasonCodeList#32",
-		"unece:AllowanceChargeReasonCodeList#33",
-		"unece:AllowanceChargeReasonCodeList#34",
-		"unece:AllowanceChargeReasonCodeList#35",
-		"unece:AllowanceChargeReasonCodeList#36",
-		"unece:AllowanceChargeReasonCodeList#37",
-		"unece:AllowanceChargeReasonCodeList#38",
-		"unece:AllowanceChargeReasonCodeList#39",
-		"unece:AllowanceChargeReasonCodeList#4",
-		"unece:AllowanceChargeReasonCodeList#40",
-		"unece:AllowanceChargeReasonCodeList#41",
-		"unece:AllowanceChargeReasonCodeList#42",
-		"unece:AllowanceChargeReasonCodeList#43",
-		"unece:AllowanceChargeReasonCodeList#44",
-		"unece:AllowanceChargeReasonCodeList#45",
-		"unece:AllowanceChargeReasonCodeList#46",
-		"unece:AllowanceChargeReasonCodeList#47",
-		"unece:AllowanceChargeReasonCodeList#48",
-		"unece:AllowanceChargeReasonCodeList#49",
-		"unece:AllowanceChargeReasonCodeList#5",
-		"unece:AllowanceChargeReasonCodeList#50",
-		"unece:AllowanceChargeReasonCodeList#51",
-		"unece:AllowanceChargeReasonCodeList#52",
-		"unece:AllowanceChargeReasonCodeList#53",
-		"unece:AllowanceChargeReasonCodeList#54",
-		"unece:AllowanceChargeReasonCodeList#55",
-		"unece:AllowanceChargeReasonCodeList#56",
-		"unece:AllowanceChargeReasonCodeList#57",
-		"unece:AllowanceChargeReasonCodeList#58",
-		"unece:AllowanceChargeReasonCodeList#59",
-		"unece:AllowanceChargeReasonCodeList#6",
-		"unece:AllowanceChargeReasonCodeList#60",
-		"unece:AllowanceChargeReasonCodeList#61",
-		"unece:AllowanceChargeReasonCodeList#62",
-		"unece:AllowanceChargeReasonCodeList#63",
-		"unece:AllowanceChargeReasonCodeList#64",
-		"unece:AllowanceChargeReasonCodeList#65",
-		"unece:AllowanceChargeReasonCodeList#66",
-		"unece:AllowanceChargeReasonCodeList#67",
-		"unece:AllowanceChargeReasonCodeList#68",
-		"unece:AllowanceChargeReasonCodeList#69",
-		"unece:AllowanceChargeReasonCodeList#7",
-		"unece:AllowanceChargeReasonCodeList#70",
-		"unece:AllowanceChargeReasonCodeList#71",
-		"unece:AllowanceChargeReasonCodeList#72",
-		"unece:AllowanceChargeReasonCodeList#73",
-		"unece:AllowanceChargeReasonCodeList#74",
-		"unece:AllowanceChargeReasonCodeList#75",
-		"unece:AllowanceChargeReasonCodeList#76",
-		"unece:AllowanceChargeReasonCodeList#77",
-		"unece:AllowanceChargeReasonCodeList#78",
-		"unece:AllowanceChargeReasonCodeList#79",
-		"unece:AllowanceChargeReasonCodeList#8",
-		"unece:AllowanceChargeReasonCodeList#80",
-		"unece:AllowanceChargeReasonCodeList#81",
-		"unece:AllowanceChargeReasonCodeList#82",
-		"unece:AllowanceChargeReasonCodeList#83",
-		"unece:AllowanceChargeReasonCodeList#84",
-		"unece:AllowanceChargeReasonCodeList#85",
-		"unece:AllowanceChargeReasonCodeList#86",
-		"unece:AllowanceChargeReasonCodeList#87",
-		"unece:AllowanceChargeReasonCodeList#88",
-		"unece:AllowanceChargeReasonCodeList#89",
-		"unece:AllowanceChargeReasonCodeList#9",
-		"unece:AllowanceChargeReasonCodeList#90",
-		"unece:AllowanceChargeReasonCodeList#91",
-		"unece:AllowanceChargeReasonCodeList#92",
-		"unece:AllowanceChargeReasonCodeList#93",
-		"unece:AllowanceChargeReasonCodeList#94",
-		"unece:AllowanceChargeReasonCodeList#95",
-		"unece:AllowanceChargeReasonCodeList#96",
-		"unece:AllowanceChargeReasonCodeList#97",
-		"unece:AllowanceChargeReasonCodeList#98",
-		"unece:AllowanceChargeReasonCodeList#99",
-		"unece:AllowanceChargeReasonCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#1",
+			"description": "Agreed settlement: 1."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#10",
+			"description": "Costs for draft: 10."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#100",
+			"description": "Incorrect product identification: 100."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#101",
+			"description": "New employee: 101."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#102",
+			"description": "Employee retirement: 102."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#103",
+			"description": "Salary change: 103."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#104",
+			"description": "Parental leave: 104."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#11",
+			"description": "Bank charges: 11."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#12",
+			"description": "Agent commission: 12."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#13",
+			"description": "Counter claim: 13."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#14",
+			"description": "Wrong delivery: 14."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#15",
+			"description": "Goods returned to agent: 15."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#16",
+			"description": "Goods partly returned: 16."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#17",
+			"description": "Transport damage: 17."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#18",
+			"description": "Goods on consignment: 18."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#19",
+			"description": "Trade discount: 19."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#2",
+			"description": "Below specification goods: 2."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#20",
+			"description": "Deduction for late delivery: 20."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#21",
+			"description": "Advertising costs: 21."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#22",
+			"description": "Customs duties: 22."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#23",
+			"description": "Telephone and postal costs: 23."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#24",
+			"description": "Repair costs: 24."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#25",
+			"description": "Attorney fees: 25."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#26",
+			"description": "Taxes: 26."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#27",
+			"description": "Reclaimed deduction: 27."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#28",
+			"description": "See separate advice: 28."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#29",
+			"description": "Buyer refused to take delivery: 29."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#3",
+			"description": "Damaged goods: 3."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#30",
+			"description": "Direct payment to seller: 30."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#31",
+			"description": "Buyer disagrees with due date: 31."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#32",
+			"description": "Goods not delivered: 32."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#33",
+			"description": "Late delivery: 33."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#34",
+			"description": "Quoted as paid to you: 34."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#35",
+			"description": "Goods returned: 35."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#36",
+			"description": "Invoice not received: 36."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#37",
+			"description": "Credit note to debtor/not to us: 37."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#38",
+			"description": "Deducted bonus: 38."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#39",
+			"description": "Deducted discount: 39."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#4",
+			"description": "Short delivery: 4."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#40",
+			"description": "Deducted freight costs: 40."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#41",
+			"description": "Deduction against other invoices: 41."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#42",
+			"description": "Credit balance(s): 42."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#43",
+			"description": "Reason unknown: 43."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#44",
+			"description": "Awaiting message from seller: 44."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#45",
+			"description": "Debit note to seller: 45."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#46",
+			"description": "Discount beyond terms: 46."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#47",
+			"description": "See buyer's letter: 47."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#48",
+			"description": "Allowance/charge error: 48."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#49",
+			"description": "Substitute product: 49."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#5",
+			"description": "Price query: 5."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#50",
+			"description": "Terms of sale error: 50."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#51",
+			"description": "Required data missing: 51."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#52",
+			"description": "Wrong invoice: 52."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#53",
+			"description": "Duplicate invoice: 53."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#54",
+			"description": "Weight error: 54."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#55",
+			"description": "Additional charge not authorized: 55."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#56",
+			"description": "Incorrect discount: 56."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#57",
+			"description": "Price change: 57."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#58",
+			"description": "Variation: 58."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#59",
+			"description": "Chargeback: 59."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#6",
+			"description": "Proof of delivery required: 6."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#60",
+			"description": "Offset: 60."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#61",
+			"description": "Indirect payment: 61."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#62",
+			"description": "Financial reassignment: 62."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#63",
+			"description": "Reinstatement of chargeback/offset: 63."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#64",
+			"description": "Expecting new terms: 64."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#65",
+			"description": "Settlement to agent: 65."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#66",
+			"description": "Cash discount: 66."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#67",
+			"description": "Delcredere costs: 67."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#68",
+			"description": "Early payment allowance adjustment: 68."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#69",
+			"description": "Incorrect due date for monetary amount: 69."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#7",
+			"description": "Payment on account: 7."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#70",
+			"description": "Wrong monetary amount resulting from incorrect free goods quantity: 70."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#71",
+			"description": "Rack or shelf replenishment service by a supplier: 71."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#72",
+			"description": "Temporary special promotion: 72."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#73",
+			"description": "Difference in tax rate: 73."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#74",
+			"description": "Quantity discount: 74."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#75",
+			"description": "Promotion discount: 75."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#76",
+			"description": "Cancellation deadline passed: 76."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#77",
+			"description": "Pricing discount: 77."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#78",
+			"description": "Volume discount: 78."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#79",
+			"description": "Sundry discount: 79."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#8",
+			"description": "Returnable container charge included: 8."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#80",
+			"description": "Card holder signature missing: 80."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#81",
+			"description": "Card expiry date missing: 81."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#82",
+			"description": "Card number error: 82."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#83",
+			"description": "Card expired: 83."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#84",
+			"description": "Test card transaction: 84."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#85",
+			"description": "Permission limit exceeded: 85."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#86",
+			"description": "Wrong authorisation code: 86."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#87",
+			"description": "Wrong authorised amount: 87."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#88",
+			"description": "Authorisation failed: 88."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#89",
+			"description": "Card acceptor data error: 89."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#9",
+			"description": "Invoice error: 9."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#90",
+			"description": "Treasury management service charge: 90."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#91",
+			"description": "Agreed discount: 91."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#92",
+			"description": "Expediting fee: 92."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#93",
+			"description": "Invoicing fee: 93."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#94",
+			"description": "Freight charge: 94."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#95",
+			"description": "Small order processing service charge: 95."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#96",
+			"description": "Currency exchange differences: 96."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#97",
+			"description": "Insolvency: 97."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#98",
+			"description": "Incorrect references: 98."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#99",
+			"description": "Incorrect identification of the buyer: 99."
+		},
+		{
+			"const": "unece:AllowanceChargeReasonCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

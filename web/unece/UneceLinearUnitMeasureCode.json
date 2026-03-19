@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLinearUnitMeasureCode",
+	"title": "UneceLinearUnitMeasureCode",
 	"description": "RDF Class for LinearUnitMeasureType unit code type to define unit code values.",
-	"type": "string",
-	"enum": [
-		"unece:LinearUnitMeasureCode#CMT",
-		"unece:LinearUnitMeasureCode#FOT",
-		"unece:LinearUnitMeasureCode#INH",
-		"unece:LinearUnitMeasureCode#KMT",
-		"unece:LinearUnitMeasureCode#MTR"
+	"oneOf": [
+		{
+			"const": "unece:LinearUnitMeasureCode#CMT",
+			"description": "centimetre: CMT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#FOT",
+			"description": "foot: FOT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#INH",
+			"description": "inch: INH."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#KMT",
+			"description": "kilometre: KMT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#MTR",
+			"description": "metre: MTR."
+		}
 	]
 }

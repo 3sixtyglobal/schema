@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProduceTypeCodeList",
+	"title": "UneceProduceTypeCodeList",
 	"description": "Values for UneceProduce typeCode property.",
-	"type": "string",
-	"enum": ["unece:harvestedProduce", "unece:specifiedProduce"]
+	"oneOf": [
+		{
+			"const": "unece:harvestedProduce",
+			"description": "Crop produce harvested from this agricultural zone area.\nProduce harvested from this field crop."
+		},
+		{
+			"const": "unece:specifiedProduce",
+			"description": "A crop produce specified for this crop produce batch."
+		}
+	]
 }

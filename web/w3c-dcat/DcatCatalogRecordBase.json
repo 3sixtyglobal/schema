@@ -1,0 +1,74 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase",
+	"title": "DcatCatalogRecordBase",
+	"description": "Base interface for DCAT Catalog Record without JSON-LD context.\nThis is the context-free variant of IDcatCatalogRecord, intended for embedding\ncatalog record objects inline within catalogs where the context is provided by the enclosing document.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "dcat:CatalogRecord",
+			"description": "The type identifier, typically \"CatalogRecord\"."
+		},
+		"@id": {
+			"type": "string",
+			"description": "The unique identifier for the catalog record."
+		},
+		"dcterms:title": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A name given to the catalog record."
+		},
+		"dcterms:description": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A free-text account of the catalog record."
+		},
+		"dcterms:issued": {
+			"type": "string",
+			"description": "The date of listing of the catalog record in the catalog.",
+			"format": "date-time"
+		},
+		"dcterms:modified": {
+			"type": "string",
+			"description": "Most recent date on which the catalog record entry was changed or modified.",
+			"format": "date-time"
+		},
+		"dcterms:conformsTo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "An established standard to which the catalog record conforms."
+		},
+		"foaf:primaryTopic": {
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource",
+			"description": "The dataset or data service described in the catalog record."
+		}
+	},
+	"required": ["@type"]
+}

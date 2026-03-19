@@ -1,8 +1,9 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/Proof",
+	"title": "Proof",
 	"description": "Interface describing a proof.",
-	"anyOf": [
+	"oneOf": [
 		{
 			"$ref": "https://schema.twindev.org/w3c-did/DataIntegrityProof"
 		},

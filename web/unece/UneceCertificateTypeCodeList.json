@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
+	"title": "UneceCertificateTypeCodeList",
 	"description": "A character string used to represent the type of a certificate.",
-	"type": "string",
-	"enum": [
-		"unece:CertificateTypeCodeList#1",
-		"unece:CertificateTypeCodeList#2",
-		"unece:CertificateTypeCodeList#3"
+	"oneOf": [
+		{
+			"const": "unece:CertificateTypeCodeList#1",
+			"description": "Mark: 1."
+		},
+		{
+			"const": "unece:CertificateTypeCodeList#2",
+			"description": "Certificate: 2."
+		},
+		{
+			"const": "unece:CertificateTypeCodeList#3",
+			"description": "Label: 3."
+		}
 	]
 }

@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProjectTypeCodeList",
+	"title": "UneceProjectTypeCodeList",
 	"description": "Values for UneceProject typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedProject"
+	"oneOf": [
+		{
+			"const": "unece:specifiedProject",
+			"description": "The procuring project specified for this header trade agreement."
+		}
+	]
 }

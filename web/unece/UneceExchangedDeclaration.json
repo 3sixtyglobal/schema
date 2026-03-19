@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceExchangedDeclaration",
-	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two parties as a formal declaration.",
+	"title": "UneceExchangedDeclaration",
+	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two parties as a\nformal declaration.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ExchangedDeclaration",
 			"description": "JSON-LD Type."
 		},
@@ -91,7 +73,7 @@
 		},
 		"jurisdictionEntryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration enter a jurisdiction, such as the actual date of arrival of a means of transport.",
+			"description": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration\nenter a jurisdiction, such as the actual date of arrival of a means of transport.",
 			"format": "date-time"
 		},
 		"previousDocument": {

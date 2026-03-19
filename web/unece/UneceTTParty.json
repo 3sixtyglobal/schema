@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTTParty",
+	"title": "UneceTTParty",
 	"description": "An individual, group, or body related to a Track and Trace (TT) process.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TTParty",
 			"description": "JSON-LD Type."
 		},
@@ -69,7 +51,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a corporation has its place of incorporation."
+			"description": "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a\ncorporation has its place of incorporation."
 		},
 		"specifiedTTAnimal": {
 			"type": "array",

@@ -1,40 +1,136 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/LeftOperandType",
+	"title": "LeftOperandType",
 	"description": "The types for ODRL Data Types.",
-	"type": "string",
-	"enum": [
-		"absolutePosition",
-		"absoluteSpatialPosition",
-		"absoluteTemporalPosition",
-		"absoluteSize",
-		"count",
-		"dateTime",
-		"delayPeriod",
-		"deliveryChannel",
-		"elapsedTime",
-		"event",
-		"fileFormat",
-		"industry",
-		"language",
-		"media",
-		"meteredTime",
-		"payAmount",
-		"percentage",
-		"product",
-		"purpose",
-		"recipient",
-		"relativePosition",
-		"relativeSpatialPosition",
-		"relativeTemporalPosition",
-		"relativeSize",
-		"resolution",
-		"spatial",
-		"spatialCoordinates",
-		"systemDevice",
-		"timeInterval",
-		"unitOfCount",
-		"version",
-		"virtualLocation"
+	"oneOf": [
+		{
+			"const": "absolutePosition",
+			"description": "Absolute Position type."
+		},
+		{
+			"const": "absoluteSpatialPosition",
+			"description": "Absolute Spatial Position type."
+		},
+		{
+			"const": "absoluteTemporalPosition",
+			"description": "Absolute Temporal Position type."
+		},
+		{
+			"const": "absoluteSize",
+			"description": "Absolute Size type."
+		},
+		{
+			"const": "count",
+			"description": "Count type."
+		},
+		{
+			"const": "dateTime",
+			"description": "DateTime type."
+		},
+		{
+			"const": "delayPeriod",
+			"description": "Delay Period type."
+		},
+		{
+			"const": "deliveryChannel",
+			"description": "Delivery Channel type."
+		},
+		{
+			"const": "elapsedTime",
+			"description": "Elapsed Time type."
+		},
+		{
+			"const": "event",
+			"description": "Event type."
+		},
+		{
+			"const": "fileFormat",
+			"description": "File Format type."
+		},
+		{
+			"const": "industry",
+			"description": "Industry type."
+		},
+		{
+			"const": "language",
+			"description": "Language type."
+		},
+		{
+			"const": "media",
+			"description": "Media type."
+		},
+		{
+			"const": "meteredTime",
+			"description": "Metered Time type."
+		},
+		{
+			"const": "payAmount",
+			"description": "Pay Amount type."
+		},
+		{
+			"const": "percentage",
+			"description": "Percentage type."
+		},
+		{
+			"const": "product",
+			"description": "Product type."
+		},
+		{
+			"const": "purpose",
+			"description": "Purpose type."
+		},
+		{
+			"const": "recipient",
+			"description": "Recipient type."
+		},
+		{
+			"const": "relativePosition",
+			"description": "Relative Position type."
+		},
+		{
+			"const": "relativeSpatialPosition",
+			"description": "Relative Spatial Position type."
+		},
+		{
+			"const": "relativeTemporalPosition",
+			"description": "Relative Temporal Position type."
+		},
+		{
+			"const": "relativeSize",
+			"description": "Relative Size type."
+		},
+		{
+			"const": "resolution",
+			"description": "Resolution type."
+		},
+		{
+			"const": "spatial",
+			"description": "Spatial type."
+		},
+		{
+			"const": "spatialCoordinates",
+			"description": "Spatial Coordinates type."
+		},
+		{
+			"const": "systemDevice",
+			"description": "System Device type."
+		},
+		{
+			"const": "timeInterval",
+			"description": "Time Interval type."
+		},
+		{
+			"const": "unitOfCount",
+			"description": "Unit of Count type."
+		},
+		{
+			"const": "version",
+			"description": "Version type."
+		},
+		{
+			"const": "virtualLocation",
+			"description": "Virtual Location type."
+		}
 	]
 }

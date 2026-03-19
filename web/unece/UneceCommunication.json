@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCommunication",
-	"description": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations.",
+	"title": "UneceCommunication",
+	"description": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour\nbetween persons and/or organizations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Communication",
 			"description": "JSON-LD Type."
 		},
@@ -68,7 +50,7 @@
 		},
 		"extensionNumber": {
 			"type": "string",
-			"description": "The extension number, expressed as text, assigned to this universal communication number to enable a caller to reach a specific party."
+			"description": "The extension number, expressed as text, assigned to this universal communication number to enable a caller to reach a\nspecific party."
 		},
 		"hTMLPreferredIndicator": {
 			"type": "boolean",
@@ -80,7 +62,7 @@
 		},
 		"localNumber": {
 			"type": "string",
-			"description": "The universal communication number, expressed as text and not including country access code or the area number code, for this communication."
+			"description": "The universal communication number, expressed as text and not including country access code or the area number code, for\nthis communication."
 		},
 		"uRIId": {
 			"anyOf": [

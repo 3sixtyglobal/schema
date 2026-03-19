@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceGoodsCharacteristicTypeCodeList",
+	"title": "UneceGoodsCharacteristicTypeCodeList",
 	"description": "Values for UneceGoodsCharacteristic typeCode property.",
-	"type": "string",
-	"enum": ["unece:applicableGoodsCharacteristic", "unece:carriedGoodsCharacteristic"]
+	"oneOf": [
+		{
+			"const": "unece:applicableGoodsCharacteristic",
+			"description": "A distinguishing material feature applicable to this trade product instance.\nA goods characteristic applicable to this specified material.\nA material goods characteristic applicable to this trade product.\nMaterial goods characteristic applicable to this supply chain packaging."
+		},
+		{
+			"const": "unece:carriedGoodsCharacteristic",
+			"description": "Material characteristics of goods carried during this logistics transport movement."
+		}
+	]
 }

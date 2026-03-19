@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDebtorFinancialInstitution",
+	"title": "UneceDebtorFinancialInstitution",
 	"description": "A bank, building society, credit union, stock brokerage, or similar business of the party that owes money.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DebtorFinancialInstitution",
 			"description": "JSON-LD Type."
 		},
@@ -40,7 +22,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Australian Bank State Branch (BSB) Code identifier as assigned by the Australian Payments Clearing Association (APCA) for this debtor financial institution."
+			"description": "The unique Australian Bank State Branch (BSB) Code identifier as assigned by the Australian Payments Clearing\nAssociation (APCA) for this debtor financial institution."
 		},
 		"austrianBankleitzahlId": {
 			"anyOf": [
@@ -73,7 +55,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique (United States) Clearing House Interbank Payment System (CHIPS) Participant Identifier (ID) as assigned by the New York Clearing House for this debtor financial institution."
+			"description": "The unique (United States) Clearing House Interbank Payment System (CHIPS) Participant Identifier (ID) as assigned by\nthe New York Clearing House for this debtor financial institution."
 		},
 		"cHIPSUniversalId": {
 			"anyOf": [
@@ -84,7 +66,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned by the New York Clearing House for this debtor financial institution."
+			"description": "The unique (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned\nby the New York Clearing House for this debtor financial institution."
 		},
 		"canadianPaymentsAssociationId": {
 			"anyOf": [
@@ -110,7 +92,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Fedwire Routing Number identifier as assigned by the American Bankers Association (ABA) for this debtor financial institution."
+			"description": "The unique Fedwire Routing Number identifier as assigned by the American Bankers Association (ABA) for this debtor\nfinancial institution."
 		},
 		"germanBankleitzahlId": {
 			"anyOf": [
@@ -165,7 +147,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Irish National Sorting Code (NSC) identifier as assigned by the Irish Payments Services Organisation (IPSO) for this debtor financial institution."
+			"description": "The unique Irish National Sorting Code (NSC) identifier as assigned by the Irish Payments Services Organisation (IPSO)\nfor this debtor financial institution."
 		},
 		"italianDomesticId": {
 			"anyOf": [
@@ -176,7 +158,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Italian Domestic Identification Code identifier as assigned by the Associazione Bancaria Italiana (ABI) for this debtor financial institution."
+			"description": "The unique Italian Domestic Identification Code identifier as assigned by the Associazione Bancaria Italiana (ABI) for\nthis debtor financial institution."
 		},
 		"japanFinancialInstitutionCommonId": {
 			"anyOf": [
@@ -187,7 +169,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The Japan Financial Institution Common identifier as assigned by the Japanese Bankers Association for this debtor financial institution."
+			"description": "The Japan Financial Institution Common identifier as assigned by the Japanese Bankers Association for this debtor\nfinancial institution."
 		},
 		"locationAddress": {
 			"$ref": "https://schema.twindev.org/unece/UneceFinancialInstitutionAddress",
@@ -206,7 +188,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique New Zealand National Clearing Code (NCC) identifier as assigned by the New Zealand Bankers' Association (NZBA) for this debtor financial institution."
+			"description": "The unique New Zealand National Clearing Code (NCC) identifier as assigned by the New Zealand Bankers' Association\n(NZBA) for this debtor financial institution."
 		},
 		"polishNationalClearingId": {
 			"anyOf": [
@@ -261,7 +243,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique South African National Clearing Code (NCC) identifier as assigned by the South African Bankers Services Company Ltd. (BankServ) for this debtor financial institution."
+			"description": "The unique South African National Clearing Code (NCC) identifier as assigned by the South African Bankers Services\nCompany Ltd. (BankServ) for this debtor financial institution."
 		},
 		"spanishDomesticInterbankingId": {
 			"anyOf": [
@@ -272,7 +254,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique Spanish Domestic Interbanking Code identifier as assigned by the Centro de Cooperacion Interbancaria (CCI) for this debtor financial institution."
+			"description": "The unique Spanish Domestic Interbanking Code identifier as assigned by the Centro de Cooperacion Interbancaria (CCI)\nfor this debtor financial institution."
 		},
 		"subDivisionFinancialInstitution": {
 			"$ref": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution",
@@ -298,7 +280,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this debtor financial institution."
+			"description": "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this debtor\nfinancial institution."
 		}
 	},
 	"required": ["type"]

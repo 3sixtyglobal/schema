@@ -1,124 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecord",
-	"description": "Interface for DCAT Catalog Record. A record in a catalog, describing the registration of a single dataset or data service.",
+	"title": "DcatCatalogRecord",
+	"description": "Interface for DCAT Catalog Record.\nA record in a catalog, describing the registration of a single dataset or data\nservice.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The DCAT JSON-LD context type. Supports the DCAT context URL or arrays with additional context definitions.",
-			"type": "object",
-			"additionalProperties": {
-				"anyOf": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
-					},
-					{
-						"type": ["null", "string"]
-					}
-				]
-			},
-			"properties": {
-				"@base": {
-					"type": ["string", "null"]
-				},
-				"@direction": {
-					"type": ["string", "null"],
-					"enum": ["ltr", "rtl", null]
-				},
-				"@import": {
-					"type": "string"
-				},
-				"@language": {
-					"type": "string"
-				},
-				"@propagate": {
-					"type": "boolean"
-				},
-				"@protected": {
-					"type": "boolean"
-				},
-				"@type": {
-					"type": "object",
-					"properties": {
-						"@container": {
-							"type": "string",
-							"const": "@set"
-						},
-						"@protected": {
-							"type": "boolean"
-						}
-					},
-					"required": ["@container"]
-				},
-				"@version": {
-					"type": "string",
-					"const": "1.1"
-				},
-				"@vocab": {
-					"type": ["string", "null"]
-				},
-				"dcat": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/dcat#"
-				},
-				"dcterms": {
-					"type": "string",
-					"const": "http://purl.org/dc/terms/"
-				},
-				"odrl": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/odrl/2/"
-				},
-				"foaf": {
-					"type": "string",
-					"const": "https://xmlns.com/foaf/0.1/"
-				}
-			},
-			"required": ["dcat", "dcterms"]
-		},
-		"@type": {
-			"type": "string",
-			"const": "dcat:CatalogRecord",
-			"description": "The type identifier, typically \"CatalogRecord\"."
-		},
-		"@id": {
-			"type": "string",
-			"description": "The unique identifier for the catalog record."
-		},
-		"dcterms:title": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
-			"description": "A name given to the catalog record."
-		},
-		"dcterms:description": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
-			"description": "A free-text account of the catalog record."
-		},
-		"dcterms:issued": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDateTimeType",
-			"description": "The date of listing of the catalog record in the catalog."
-		},
-		"dcterms:modified": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDateTimeType",
-			"description": "Most recent date on which the catalog record entry was changed or modified."
-		},
-		"dcterms:conformsTo": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "An established standard to which the catalog record conforms."
-		},
-		"foaf:primaryTopic": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource",
-			"description": "The dataset or data service described in the catalog record."
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
 		}
 	},
-	"required": ["@context", "@type"]
+	"required": ["@context"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
+		}
+	]
 }

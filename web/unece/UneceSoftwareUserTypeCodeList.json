@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSoftwareUserTypeCodeList",
+	"title": "UneceSoftwareUserTypeCodeList",
 	"description": "A character string used to represent the type of software user.",
-	"type": "string",
-	"enum": [
-		"unece:SoftwareUserTypeCodeList#I",
-		"unece:SoftwareUserTypeCodeList#R",
-		"unece:SoftwareUserTypeCodeList#S"
+	"oneOf": [
+		{
+			"const": "unece:SoftwareUserTypeCodeList#I",
+			"description": "Intermediate: I."
+		},
+		{
+			"const": "unece:SoftwareUserTypeCodeList#R",
+			"description": "Recipient: R."
+		},
+		{
+			"const": "unece:SoftwareUserTypeCodeList#S",
+			"description": "Sender: S."
+		}
 	]
 }

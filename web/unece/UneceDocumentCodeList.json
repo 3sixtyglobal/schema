@@ -1,822 +1,3264 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+	"title": "UneceDocumentCodeList",
 	"description": "A character string denoting the type of a document. [Reference United Nations Code List (UNCL) 1001].",
-	"type": "string",
-	"enum": [
-		"unece:DocumentCodeList#1",
-		"unece:DocumentCodeList#10",
-		"unece:DocumentCodeList#100",
-		"unece:DocumentCodeList#101",
-		"unece:DocumentCodeList#102",
-		"unece:DocumentCodeList#103",
-		"unece:DocumentCodeList#104",
-		"unece:DocumentCodeList#105",
-		"unece:DocumentCodeList#106",
-		"unece:DocumentCodeList#107",
-		"unece:DocumentCodeList#108",
-		"unece:DocumentCodeList#109",
-		"unece:DocumentCodeList#11",
-		"unece:DocumentCodeList#110",
-		"unece:DocumentCodeList#111",
-		"unece:DocumentCodeList#112",
-		"unece:DocumentCodeList#113",
-		"unece:DocumentCodeList#114",
-		"unece:DocumentCodeList#115",
-		"unece:DocumentCodeList#116",
-		"unece:DocumentCodeList#117",
-		"unece:DocumentCodeList#118",
-		"unece:DocumentCodeList#119",
-		"unece:DocumentCodeList#12",
-		"unece:DocumentCodeList#120",
-		"unece:DocumentCodeList#121",
-		"unece:DocumentCodeList#122",
-		"unece:DocumentCodeList#123",
-		"unece:DocumentCodeList#124",
-		"unece:DocumentCodeList#125",
-		"unece:DocumentCodeList#126",
-		"unece:DocumentCodeList#127",
-		"unece:DocumentCodeList#128",
-		"unece:DocumentCodeList#129",
-		"unece:DocumentCodeList#13",
-		"unece:DocumentCodeList#130",
-		"unece:DocumentCodeList#131",
-		"unece:DocumentCodeList#132",
-		"unece:DocumentCodeList#133",
-		"unece:DocumentCodeList#134",
-		"unece:DocumentCodeList#135",
-		"unece:DocumentCodeList#136",
-		"unece:DocumentCodeList#137",
-		"unece:DocumentCodeList#138",
-		"unece:DocumentCodeList#139",
-		"unece:DocumentCodeList#14",
-		"unece:DocumentCodeList#140",
-		"unece:DocumentCodeList#141",
-		"unece:DocumentCodeList#142",
-		"unece:DocumentCodeList#143",
-		"unece:DocumentCodeList#144",
-		"unece:DocumentCodeList#145",
-		"unece:DocumentCodeList#146",
-		"unece:DocumentCodeList#147",
-		"unece:DocumentCodeList#148",
-		"unece:DocumentCodeList#149",
-		"unece:DocumentCodeList#15",
-		"unece:DocumentCodeList#150",
-		"unece:DocumentCodeList#151",
-		"unece:DocumentCodeList#152",
-		"unece:DocumentCodeList#153",
-		"unece:DocumentCodeList#154",
-		"unece:DocumentCodeList#155",
-		"unece:DocumentCodeList#156",
-		"unece:DocumentCodeList#157",
-		"unece:DocumentCodeList#158",
-		"unece:DocumentCodeList#159",
-		"unece:DocumentCodeList#16",
-		"unece:DocumentCodeList#160",
-		"unece:DocumentCodeList#161",
-		"unece:DocumentCodeList#162",
-		"unece:DocumentCodeList#163",
-		"unece:DocumentCodeList#164",
-		"unece:DocumentCodeList#165",
-		"unece:DocumentCodeList#166",
-		"unece:DocumentCodeList#167",
-		"unece:DocumentCodeList#168",
-		"unece:DocumentCodeList#169",
-		"unece:DocumentCodeList#17",
-		"unece:DocumentCodeList#170",
-		"unece:DocumentCodeList#171",
-		"unece:DocumentCodeList#172",
-		"unece:DocumentCodeList#173",
-		"unece:DocumentCodeList#174",
-		"unece:DocumentCodeList#175",
-		"unece:DocumentCodeList#176",
-		"unece:DocumentCodeList#177",
-		"unece:DocumentCodeList#178",
-		"unece:DocumentCodeList#179",
-		"unece:DocumentCodeList#18",
-		"unece:DocumentCodeList#180",
-		"unece:DocumentCodeList#181",
-		"unece:DocumentCodeList#182",
-		"unece:DocumentCodeList#183",
-		"unece:DocumentCodeList#184",
-		"unece:DocumentCodeList#185",
-		"unece:DocumentCodeList#186",
-		"unece:DocumentCodeList#187",
-		"unece:DocumentCodeList#188",
-		"unece:DocumentCodeList#189",
-		"unece:DocumentCodeList#19",
-		"unece:DocumentCodeList#190",
-		"unece:DocumentCodeList#191",
-		"unece:DocumentCodeList#192",
-		"unece:DocumentCodeList#193",
-		"unece:DocumentCodeList#194",
-		"unece:DocumentCodeList#195",
-		"unece:DocumentCodeList#196",
-		"unece:DocumentCodeList#197",
-		"unece:DocumentCodeList#198",
-		"unece:DocumentCodeList#199",
-		"unece:DocumentCodeList#2",
-		"unece:DocumentCodeList#20",
-		"unece:DocumentCodeList#200",
-		"unece:DocumentCodeList#201",
-		"unece:DocumentCodeList#202",
-		"unece:DocumentCodeList#203",
-		"unece:DocumentCodeList#204",
-		"unece:DocumentCodeList#205",
-		"unece:DocumentCodeList#206",
-		"unece:DocumentCodeList#207",
-		"unece:DocumentCodeList#208",
-		"unece:DocumentCodeList#209",
-		"unece:DocumentCodeList#21",
-		"unece:DocumentCodeList#210",
-		"unece:DocumentCodeList#211",
-		"unece:DocumentCodeList#212",
-		"unece:DocumentCodeList#213",
-		"unece:DocumentCodeList#214",
-		"unece:DocumentCodeList#215",
-		"unece:DocumentCodeList#216",
-		"unece:DocumentCodeList#217",
-		"unece:DocumentCodeList#218",
-		"unece:DocumentCodeList#219",
-		"unece:DocumentCodeList#22",
-		"unece:DocumentCodeList#220",
-		"unece:DocumentCodeList#221",
-		"unece:DocumentCodeList#222",
-		"unece:DocumentCodeList#223",
-		"unece:DocumentCodeList#224",
-		"unece:DocumentCodeList#225",
-		"unece:DocumentCodeList#226",
-		"unece:DocumentCodeList#227",
-		"unece:DocumentCodeList#228",
-		"unece:DocumentCodeList#229",
-		"unece:DocumentCodeList#23",
-		"unece:DocumentCodeList#230",
-		"unece:DocumentCodeList#231",
-		"unece:DocumentCodeList#232",
-		"unece:DocumentCodeList#233",
-		"unece:DocumentCodeList#234",
-		"unece:DocumentCodeList#235",
-		"unece:DocumentCodeList#236",
-		"unece:DocumentCodeList#237",
-		"unece:DocumentCodeList#238",
-		"unece:DocumentCodeList#239",
-		"unece:DocumentCodeList#24",
-		"unece:DocumentCodeList#240",
-		"unece:DocumentCodeList#241",
-		"unece:DocumentCodeList#242",
-		"unece:DocumentCodeList#243",
-		"unece:DocumentCodeList#244",
-		"unece:DocumentCodeList#245",
-		"unece:DocumentCodeList#246",
-		"unece:DocumentCodeList#247",
-		"unece:DocumentCodeList#248",
-		"unece:DocumentCodeList#249",
-		"unece:DocumentCodeList#25",
-		"unece:DocumentCodeList#250",
-		"unece:DocumentCodeList#251",
-		"unece:DocumentCodeList#252",
-		"unece:DocumentCodeList#253",
-		"unece:DocumentCodeList#254",
-		"unece:DocumentCodeList#255",
-		"unece:DocumentCodeList#256",
-		"unece:DocumentCodeList#257",
-		"unece:DocumentCodeList#258",
-		"unece:DocumentCodeList#259",
-		"unece:DocumentCodeList#26",
-		"unece:DocumentCodeList#260",
-		"unece:DocumentCodeList#261",
-		"unece:DocumentCodeList#262",
-		"unece:DocumentCodeList#263",
-		"unece:DocumentCodeList#264",
-		"unece:DocumentCodeList#265",
-		"unece:DocumentCodeList#266",
-		"unece:DocumentCodeList#267",
-		"unece:DocumentCodeList#268",
-		"unece:DocumentCodeList#269",
-		"unece:DocumentCodeList#27",
-		"unece:DocumentCodeList#270",
-		"unece:DocumentCodeList#271",
-		"unece:DocumentCodeList#272",
-		"unece:DocumentCodeList#273",
-		"unece:DocumentCodeList#274",
-		"unece:DocumentCodeList#275",
-		"unece:DocumentCodeList#276",
-		"unece:DocumentCodeList#277",
-		"unece:DocumentCodeList#278",
-		"unece:DocumentCodeList#279",
-		"unece:DocumentCodeList#28",
-		"unece:DocumentCodeList#280",
-		"unece:DocumentCodeList#281",
-		"unece:DocumentCodeList#282",
-		"unece:DocumentCodeList#283",
-		"unece:DocumentCodeList#284",
-		"unece:DocumentCodeList#285",
-		"unece:DocumentCodeList#286",
-		"unece:DocumentCodeList#287",
-		"unece:DocumentCodeList#288",
-		"unece:DocumentCodeList#289",
-		"unece:DocumentCodeList#29",
-		"unece:DocumentCodeList#290",
-		"unece:DocumentCodeList#291",
-		"unece:DocumentCodeList#292",
-		"unece:DocumentCodeList#293",
-		"unece:DocumentCodeList#294",
-		"unece:DocumentCodeList#295",
-		"unece:DocumentCodeList#296",
-		"unece:DocumentCodeList#297",
-		"unece:DocumentCodeList#298",
-		"unece:DocumentCodeList#299",
-		"unece:DocumentCodeList#3",
-		"unece:DocumentCodeList#30",
-		"unece:DocumentCodeList#300",
-		"unece:DocumentCodeList#301",
-		"unece:DocumentCodeList#302",
-		"unece:DocumentCodeList#303",
-		"unece:DocumentCodeList#304",
-		"unece:DocumentCodeList#305",
-		"unece:DocumentCodeList#306",
-		"unece:DocumentCodeList#307",
-		"unece:DocumentCodeList#308",
-		"unece:DocumentCodeList#309",
-		"unece:DocumentCodeList#31",
-		"unece:DocumentCodeList#310",
-		"unece:DocumentCodeList#311",
-		"unece:DocumentCodeList#312",
-		"unece:DocumentCodeList#313",
-		"unece:DocumentCodeList#314",
-		"unece:DocumentCodeList#315",
-		"unece:DocumentCodeList#316",
-		"unece:DocumentCodeList#317",
-		"unece:DocumentCodeList#318",
-		"unece:DocumentCodeList#319",
-		"unece:DocumentCodeList#32",
-		"unece:DocumentCodeList#320",
-		"unece:DocumentCodeList#321",
-		"unece:DocumentCodeList#322",
-		"unece:DocumentCodeList#323",
-		"unece:DocumentCodeList#324",
-		"unece:DocumentCodeList#325",
-		"unece:DocumentCodeList#326",
-		"unece:DocumentCodeList#327",
-		"unece:DocumentCodeList#328",
-		"unece:DocumentCodeList#329",
-		"unece:DocumentCodeList#33",
-		"unece:DocumentCodeList#330",
-		"unece:DocumentCodeList#331",
-		"unece:DocumentCodeList#332",
-		"unece:DocumentCodeList#333",
-		"unece:DocumentCodeList#334",
-		"unece:DocumentCodeList#335",
-		"unece:DocumentCodeList#336",
-		"unece:DocumentCodeList#337",
-		"unece:DocumentCodeList#338",
-		"unece:DocumentCodeList#339",
-		"unece:DocumentCodeList#34",
-		"unece:DocumentCodeList#340",
-		"unece:DocumentCodeList#341",
-		"unece:DocumentCodeList#342",
-		"unece:DocumentCodeList#343",
-		"unece:DocumentCodeList#344",
-		"unece:DocumentCodeList#345",
-		"unece:DocumentCodeList#346",
-		"unece:DocumentCodeList#347",
-		"unece:DocumentCodeList#348",
-		"unece:DocumentCodeList#349",
-		"unece:DocumentCodeList#35",
-		"unece:DocumentCodeList#350",
-		"unece:DocumentCodeList#351",
-		"unece:DocumentCodeList#352",
-		"unece:DocumentCodeList#353",
-		"unece:DocumentCodeList#354",
-		"unece:DocumentCodeList#355",
-		"unece:DocumentCodeList#356",
-		"unece:DocumentCodeList#357",
-		"unece:DocumentCodeList#358",
-		"unece:DocumentCodeList#359",
-		"unece:DocumentCodeList#36",
-		"unece:DocumentCodeList#360",
-		"unece:DocumentCodeList#361",
-		"unece:DocumentCodeList#362",
-		"unece:DocumentCodeList#363",
-		"unece:DocumentCodeList#364",
-		"unece:DocumentCodeList#365",
-		"unece:DocumentCodeList#366",
-		"unece:DocumentCodeList#367",
-		"unece:DocumentCodeList#368",
-		"unece:DocumentCodeList#369",
-		"unece:DocumentCodeList#37",
-		"unece:DocumentCodeList#370",
-		"unece:DocumentCodeList#371",
-		"unece:DocumentCodeList#372",
-		"unece:DocumentCodeList#373",
-		"unece:DocumentCodeList#374",
-		"unece:DocumentCodeList#375",
-		"unece:DocumentCodeList#376",
-		"unece:DocumentCodeList#377",
-		"unece:DocumentCodeList#378",
-		"unece:DocumentCodeList#379",
-		"unece:DocumentCodeList#38",
-		"unece:DocumentCodeList#380",
-		"unece:DocumentCodeList#381",
-		"unece:DocumentCodeList#382",
-		"unece:DocumentCodeList#383",
-		"unece:DocumentCodeList#384",
-		"unece:DocumentCodeList#385",
-		"unece:DocumentCodeList#386",
-		"unece:DocumentCodeList#387",
-		"unece:DocumentCodeList#388",
-		"unece:DocumentCodeList#389",
-		"unece:DocumentCodeList#39",
-		"unece:DocumentCodeList#390",
-		"unece:DocumentCodeList#391",
-		"unece:DocumentCodeList#392",
-		"unece:DocumentCodeList#393",
-		"unece:DocumentCodeList#394",
-		"unece:DocumentCodeList#395",
-		"unece:DocumentCodeList#396",
-		"unece:DocumentCodeList#397",
-		"unece:DocumentCodeList#398",
-		"unece:DocumentCodeList#399",
-		"unece:DocumentCodeList#4",
-		"unece:DocumentCodeList#40",
-		"unece:DocumentCodeList#400",
-		"unece:DocumentCodeList#401",
-		"unece:DocumentCodeList#402",
-		"unece:DocumentCodeList#403",
-		"unece:DocumentCodeList#404",
-		"unece:DocumentCodeList#405",
-		"unece:DocumentCodeList#406",
-		"unece:DocumentCodeList#407",
-		"unece:DocumentCodeList#408",
-		"unece:DocumentCodeList#409",
-		"unece:DocumentCodeList#41",
-		"unece:DocumentCodeList#410",
-		"unece:DocumentCodeList#411",
-		"unece:DocumentCodeList#412",
-		"unece:DocumentCodeList#413",
-		"unece:DocumentCodeList#414",
-		"unece:DocumentCodeList#415",
-		"unece:DocumentCodeList#416",
-		"unece:DocumentCodeList#417",
-		"unece:DocumentCodeList#418",
-		"unece:DocumentCodeList#419",
-		"unece:DocumentCodeList#42",
-		"unece:DocumentCodeList#420",
-		"unece:DocumentCodeList#421",
-		"unece:DocumentCodeList#422",
-		"unece:DocumentCodeList#423",
-		"unece:DocumentCodeList#424",
-		"unece:DocumentCodeList#425",
-		"unece:DocumentCodeList#426",
-		"unece:DocumentCodeList#427",
-		"unece:DocumentCodeList#428",
-		"unece:DocumentCodeList#429",
-		"unece:DocumentCodeList#43",
-		"unece:DocumentCodeList#430",
-		"unece:DocumentCodeList#431",
-		"unece:DocumentCodeList#432",
-		"unece:DocumentCodeList#433",
-		"unece:DocumentCodeList#434",
-		"unece:DocumentCodeList#435",
-		"unece:DocumentCodeList#436",
-		"unece:DocumentCodeList#437",
-		"unece:DocumentCodeList#438",
-		"unece:DocumentCodeList#439",
-		"unece:DocumentCodeList#44",
-		"unece:DocumentCodeList#440",
-		"unece:DocumentCodeList#441",
-		"unece:DocumentCodeList#442",
-		"unece:DocumentCodeList#443",
-		"unece:DocumentCodeList#444",
-		"unece:DocumentCodeList#445",
-		"unece:DocumentCodeList#446",
-		"unece:DocumentCodeList#447",
-		"unece:DocumentCodeList#448",
-		"unece:DocumentCodeList#449",
-		"unece:DocumentCodeList#45",
-		"unece:DocumentCodeList#450",
-		"unece:DocumentCodeList#451",
-		"unece:DocumentCodeList#452",
-		"unece:DocumentCodeList#453",
-		"unece:DocumentCodeList#454",
-		"unece:DocumentCodeList#455",
-		"unece:DocumentCodeList#456",
-		"unece:DocumentCodeList#457",
-		"unece:DocumentCodeList#458",
-		"unece:DocumentCodeList#459",
-		"unece:DocumentCodeList#46",
-		"unece:DocumentCodeList#460",
-		"unece:DocumentCodeList#461",
-		"unece:DocumentCodeList#462",
-		"unece:DocumentCodeList#463",
-		"unece:DocumentCodeList#464",
-		"unece:DocumentCodeList#465",
-		"unece:DocumentCodeList#466",
-		"unece:DocumentCodeList#467",
-		"unece:DocumentCodeList#468",
-		"unece:DocumentCodeList#469",
-		"unece:DocumentCodeList#47",
-		"unece:DocumentCodeList#470",
-		"unece:DocumentCodeList#48",
-		"unece:DocumentCodeList#480",
-		"unece:DocumentCodeList#481",
-		"unece:DocumentCodeList#482",
-		"unece:DocumentCodeList#483",
-		"unece:DocumentCodeList#484",
-		"unece:DocumentCodeList#485",
-		"unece:DocumentCodeList#486",
-		"unece:DocumentCodeList#487",
-		"unece:DocumentCodeList#488",
-		"unece:DocumentCodeList#489",
-		"unece:DocumentCodeList#49",
-		"unece:DocumentCodeList#490",
-		"unece:DocumentCodeList#491",
-		"unece:DocumentCodeList#493",
-		"unece:DocumentCodeList#494",
-		"unece:DocumentCodeList#495",
-		"unece:DocumentCodeList#496",
-		"unece:DocumentCodeList#497",
-		"unece:DocumentCodeList#498",
-		"unece:DocumentCodeList#499",
-		"unece:DocumentCodeList#5",
-		"unece:DocumentCodeList#50",
-		"unece:DocumentCodeList#500",
-		"unece:DocumentCodeList#501",
-		"unece:DocumentCodeList#502",
-		"unece:DocumentCodeList#503",
-		"unece:DocumentCodeList#51",
-		"unece:DocumentCodeList#52",
-		"unece:DocumentCodeList#520",
-		"unece:DocumentCodeList#521",
-		"unece:DocumentCodeList#522",
-		"unece:DocumentCodeList#523",
-		"unece:DocumentCodeList#524",
-		"unece:DocumentCodeList#525",
-		"unece:DocumentCodeList#526",
-		"unece:DocumentCodeList#527",
-		"unece:DocumentCodeList#528",
-		"unece:DocumentCodeList#529",
-		"unece:DocumentCodeList#53",
-		"unece:DocumentCodeList#530",
-		"unece:DocumentCodeList#531",
-		"unece:DocumentCodeList#532",
-		"unece:DocumentCodeList#533",
-		"unece:DocumentCodeList#534",
-		"unece:DocumentCodeList#535",
-		"unece:DocumentCodeList#536",
-		"unece:DocumentCodeList#537",
-		"unece:DocumentCodeList#538",
-		"unece:DocumentCodeList#539",
-		"unece:DocumentCodeList#54",
-		"unece:DocumentCodeList#55",
-		"unece:DocumentCodeList#550",
-		"unece:DocumentCodeList#551",
-		"unece:DocumentCodeList#552",
-		"unece:DocumentCodeList#553",
-		"unece:DocumentCodeList#554",
-		"unece:DocumentCodeList#56",
-		"unece:DocumentCodeList#57",
-		"unece:DocumentCodeList#575",
-		"unece:DocumentCodeList#576",
-		"unece:DocumentCodeList#577",
-		"unece:DocumentCodeList#578",
-		"unece:DocumentCodeList#579",
-		"unece:DocumentCodeList#58",
-		"unece:DocumentCodeList#580",
-		"unece:DocumentCodeList#581",
-		"unece:DocumentCodeList#582",
-		"unece:DocumentCodeList#583",
-		"unece:DocumentCodeList#584",
-		"unece:DocumentCodeList#585",
-		"unece:DocumentCodeList#586",
-		"unece:DocumentCodeList#587",
-		"unece:DocumentCodeList#588",
-		"unece:DocumentCodeList#589",
-		"unece:DocumentCodeList#59",
-		"unece:DocumentCodeList#6",
-		"unece:DocumentCodeList#60",
-		"unece:DocumentCodeList#61",
-		"unece:DocumentCodeList#610",
-		"unece:DocumentCodeList#62",
-		"unece:DocumentCodeList#621",
-		"unece:DocumentCodeList#622",
-		"unece:DocumentCodeList#623",
-		"unece:DocumentCodeList#624",
-		"unece:DocumentCodeList#625",
-		"unece:DocumentCodeList#626",
-		"unece:DocumentCodeList#627",
-		"unece:DocumentCodeList#628",
-		"unece:DocumentCodeList#629",
-		"unece:DocumentCodeList#63",
-		"unece:DocumentCodeList#630",
-		"unece:DocumentCodeList#631",
-		"unece:DocumentCodeList#632",
-		"unece:DocumentCodeList#633",
-		"unece:DocumentCodeList#634",
-		"unece:DocumentCodeList#635",
-		"unece:DocumentCodeList#636",
-		"unece:DocumentCodeList#637",
-		"unece:DocumentCodeList#638",
-		"unece:DocumentCodeList#639",
-		"unece:DocumentCodeList#64",
-		"unece:DocumentCodeList#640",
-		"unece:DocumentCodeList#641",
-		"unece:DocumentCodeList#642",
-		"unece:DocumentCodeList#643",
-		"unece:DocumentCodeList#644",
-		"unece:DocumentCodeList#645",
-		"unece:DocumentCodeList#646",
-		"unece:DocumentCodeList#647",
-		"unece:DocumentCodeList#648",
-		"unece:DocumentCodeList#649",
-		"unece:DocumentCodeList#65",
-		"unece:DocumentCodeList#650",
-		"unece:DocumentCodeList#651",
-		"unece:DocumentCodeList#652",
-		"unece:DocumentCodeList#653",
-		"unece:DocumentCodeList#654",
-		"unece:DocumentCodeList#655",
-		"unece:DocumentCodeList#656",
-		"unece:DocumentCodeList#657",
-		"unece:DocumentCodeList#658",
-		"unece:DocumentCodeList#659",
-		"unece:DocumentCodeList#66",
-		"unece:DocumentCodeList#660",
-		"unece:DocumentCodeList#67",
-		"unece:DocumentCodeList#68",
-		"unece:DocumentCodeList#69",
-		"unece:DocumentCodeList#7",
-		"unece:DocumentCodeList#70",
-		"unece:DocumentCodeList#700",
-		"unece:DocumentCodeList#701",
-		"unece:DocumentCodeList#702",
-		"unece:DocumentCodeList#703",
-		"unece:DocumentCodeList#704",
-		"unece:DocumentCodeList#705",
-		"unece:DocumentCodeList#706",
-		"unece:DocumentCodeList#707",
-		"unece:DocumentCodeList#708",
-		"unece:DocumentCodeList#709",
-		"unece:DocumentCodeList#71",
-		"unece:DocumentCodeList#710",
-		"unece:DocumentCodeList#711",
-		"unece:DocumentCodeList#712",
-		"unece:DocumentCodeList#713",
-		"unece:DocumentCodeList#714",
-		"unece:DocumentCodeList#715",
-		"unece:DocumentCodeList#716",
-		"unece:DocumentCodeList#717",
-		"unece:DocumentCodeList#718",
-		"unece:DocumentCodeList#719",
-		"unece:DocumentCodeList#72",
-		"unece:DocumentCodeList#720",
-		"unece:DocumentCodeList#721",
-		"unece:DocumentCodeList#722",
-		"unece:DocumentCodeList#723",
-		"unece:DocumentCodeList#724",
-		"unece:DocumentCodeList#725",
-		"unece:DocumentCodeList#726",
-		"unece:DocumentCodeList#727",
-		"unece:DocumentCodeList#728",
-		"unece:DocumentCodeList#729",
-		"unece:DocumentCodeList#73",
-		"unece:DocumentCodeList#730",
-		"unece:DocumentCodeList#731",
-		"unece:DocumentCodeList#732",
-		"unece:DocumentCodeList#733",
-		"unece:DocumentCodeList#734",
-		"unece:DocumentCodeList#735",
-		"unece:DocumentCodeList#736",
-		"unece:DocumentCodeList#737",
-		"unece:DocumentCodeList#738",
-		"unece:DocumentCodeList#739",
-		"unece:DocumentCodeList#74",
-		"unece:DocumentCodeList#740",
-		"unece:DocumentCodeList#741",
-		"unece:DocumentCodeList#742",
-		"unece:DocumentCodeList#743",
-		"unece:DocumentCodeList#744",
-		"unece:DocumentCodeList#745",
-		"unece:DocumentCodeList#746",
-		"unece:DocumentCodeList#747",
-		"unece:DocumentCodeList#748",
-		"unece:DocumentCodeList#749",
-		"unece:DocumentCodeList#75",
-		"unece:DocumentCodeList#750",
-		"unece:DocumentCodeList#751",
-		"unece:DocumentCodeList#752",
-		"unece:DocumentCodeList#753",
-		"unece:DocumentCodeList#754",
-		"unece:DocumentCodeList#755",
-		"unece:DocumentCodeList#756",
-		"unece:DocumentCodeList#757",
-		"unece:DocumentCodeList#758",
-		"unece:DocumentCodeList#759",
-		"unece:DocumentCodeList#76",
-		"unece:DocumentCodeList#760",
-		"unece:DocumentCodeList#761",
-		"unece:DocumentCodeList#762",
-		"unece:DocumentCodeList#763",
-		"unece:DocumentCodeList#764",
-		"unece:DocumentCodeList#765",
-		"unece:DocumentCodeList#766",
-		"unece:DocumentCodeList#767",
-		"unece:DocumentCodeList#768",
-		"unece:DocumentCodeList#769",
-		"unece:DocumentCodeList#77",
-		"unece:DocumentCodeList#770",
-		"unece:DocumentCodeList#771",
-		"unece:DocumentCodeList#772",
-		"unece:DocumentCodeList#773",
-		"unece:DocumentCodeList#774",
-		"unece:DocumentCodeList#775",
-		"unece:DocumentCodeList#776",
-		"unece:DocumentCodeList#777",
-		"unece:DocumentCodeList#778",
-		"unece:DocumentCodeList#779",
-		"unece:DocumentCodeList#78",
-		"unece:DocumentCodeList#780",
-		"unece:DocumentCodeList#781",
-		"unece:DocumentCodeList#782",
-		"unece:DocumentCodeList#783",
-		"unece:DocumentCodeList#784",
-		"unece:DocumentCodeList#785",
-		"unece:DocumentCodeList#786",
-		"unece:DocumentCodeList#787",
-		"unece:DocumentCodeList#788",
-		"unece:DocumentCodeList#789",
-		"unece:DocumentCodeList#79",
-		"unece:DocumentCodeList#790",
-		"unece:DocumentCodeList#791",
-		"unece:DocumentCodeList#792",
-		"unece:DocumentCodeList#793",
-		"unece:DocumentCodeList#794",
-		"unece:DocumentCodeList#795",
-		"unece:DocumentCodeList#796",
-		"unece:DocumentCodeList#797",
-		"unece:DocumentCodeList#798",
-		"unece:DocumentCodeList#799",
-		"unece:DocumentCodeList#8",
-		"unece:DocumentCodeList#80",
-		"unece:DocumentCodeList#81",
-		"unece:DocumentCodeList#810",
-		"unece:DocumentCodeList#811",
-		"unece:DocumentCodeList#812",
-		"unece:DocumentCodeList#813",
-		"unece:DocumentCodeList#814",
-		"unece:DocumentCodeList#815",
-		"unece:DocumentCodeList#816",
-		"unece:DocumentCodeList#817",
-		"unece:DocumentCodeList#818",
-		"unece:DocumentCodeList#819",
-		"unece:DocumentCodeList#82",
-		"unece:DocumentCodeList#820",
-		"unece:DocumentCodeList#821",
-		"unece:DocumentCodeList#822",
-		"unece:DocumentCodeList#823",
-		"unece:DocumentCodeList#824",
-		"unece:DocumentCodeList#825",
-		"unece:DocumentCodeList#826",
-		"unece:DocumentCodeList#827",
-		"unece:DocumentCodeList#828",
-		"unece:DocumentCodeList#829",
-		"unece:DocumentCodeList#83",
-		"unece:DocumentCodeList#830",
-		"unece:DocumentCodeList#831",
-		"unece:DocumentCodeList#832",
-		"unece:DocumentCodeList#833",
-		"unece:DocumentCodeList#834",
-		"unece:DocumentCodeList#835",
-		"unece:DocumentCodeList#836",
-		"unece:DocumentCodeList#837",
-		"unece:DocumentCodeList#838",
-		"unece:DocumentCodeList#839",
-		"unece:DocumentCodeList#84",
-		"unece:DocumentCodeList#840",
-		"unece:DocumentCodeList#841",
-		"unece:DocumentCodeList#842",
-		"unece:DocumentCodeList#843",
-		"unece:DocumentCodeList#844",
-		"unece:DocumentCodeList#845",
-		"unece:DocumentCodeList#846",
-		"unece:DocumentCodeList#847",
-		"unece:DocumentCodeList#848",
-		"unece:DocumentCodeList#849",
-		"unece:DocumentCodeList#85",
-		"unece:DocumentCodeList#850",
-		"unece:DocumentCodeList#851",
-		"unece:DocumentCodeList#852",
-		"unece:DocumentCodeList#853",
-		"unece:DocumentCodeList#854",
-		"unece:DocumentCodeList#855",
-		"unece:DocumentCodeList#856",
-		"unece:DocumentCodeList#857",
-		"unece:DocumentCodeList#858",
-		"unece:DocumentCodeList#859",
-		"unece:DocumentCodeList#86",
-		"unece:DocumentCodeList#860",
-		"unece:DocumentCodeList#861",
-		"unece:DocumentCodeList#862",
-		"unece:DocumentCodeList#863",
-		"unece:DocumentCodeList#864",
-		"unece:DocumentCodeList#865",
-		"unece:DocumentCodeList#866",
-		"unece:DocumentCodeList#867",
-		"unece:DocumentCodeList#868",
-		"unece:DocumentCodeList#869",
-		"unece:DocumentCodeList#87",
-		"unece:DocumentCodeList#870",
-		"unece:DocumentCodeList#871",
-		"unece:DocumentCodeList#872",
-		"unece:DocumentCodeList#873",
-		"unece:DocumentCodeList#874",
-		"unece:DocumentCodeList#875",
-		"unece:DocumentCodeList#876",
-		"unece:DocumentCodeList#877",
-		"unece:DocumentCodeList#878",
-		"unece:DocumentCodeList#879",
-		"unece:DocumentCodeList#88",
-		"unece:DocumentCodeList#89",
-		"unece:DocumentCodeList#890",
-		"unece:DocumentCodeList#891",
-		"unece:DocumentCodeList#892",
-		"unece:DocumentCodeList#893",
-		"unece:DocumentCodeList#894",
-		"unece:DocumentCodeList#895",
-		"unece:DocumentCodeList#896",
-		"unece:DocumentCodeList#897",
-		"unece:DocumentCodeList#898",
-		"unece:DocumentCodeList#899",
-		"unece:DocumentCodeList#9",
-		"unece:DocumentCodeList#90",
-		"unece:DocumentCodeList#900",
-		"unece:DocumentCodeList#901",
-		"unece:DocumentCodeList#902",
-		"unece:DocumentCodeList#903",
-		"unece:DocumentCodeList#904",
-		"unece:DocumentCodeList#905",
-		"unece:DocumentCodeList#906",
-		"unece:DocumentCodeList#907",
-		"unece:DocumentCodeList#908",
-		"unece:DocumentCodeList#909",
-		"unece:DocumentCodeList#91",
-		"unece:DocumentCodeList#910",
-		"unece:DocumentCodeList#911",
-		"unece:DocumentCodeList#912",
-		"unece:DocumentCodeList#913",
-		"unece:DocumentCodeList#914",
-		"unece:DocumentCodeList#915",
-		"unece:DocumentCodeList#916",
-		"unece:DocumentCodeList#917",
-		"unece:DocumentCodeList#92",
-		"unece:DocumentCodeList#925",
-		"unece:DocumentCodeList#926",
-		"unece:DocumentCodeList#927",
-		"unece:DocumentCodeList#929",
-		"unece:DocumentCodeList#93",
-		"unece:DocumentCodeList#930",
-		"unece:DocumentCodeList#931",
-		"unece:DocumentCodeList#932",
-		"unece:DocumentCodeList#933",
-		"unece:DocumentCodeList#934",
-		"unece:DocumentCodeList#935",
-		"unece:DocumentCodeList#936",
-		"unece:DocumentCodeList#937",
-		"unece:DocumentCodeList#938",
-		"unece:DocumentCodeList#94",
-		"unece:DocumentCodeList#940",
-		"unece:DocumentCodeList#941",
-		"unece:DocumentCodeList#95",
-		"unece:DocumentCodeList#950",
-		"unece:DocumentCodeList#951",
-		"unece:DocumentCodeList#952",
-		"unece:DocumentCodeList#953",
-		"unece:DocumentCodeList#954",
-		"unece:DocumentCodeList#955",
-		"unece:DocumentCodeList#96",
-		"unece:DocumentCodeList#960",
-		"unece:DocumentCodeList#961",
-		"unece:DocumentCodeList#962",
-		"unece:DocumentCodeList#963",
-		"unece:DocumentCodeList#964",
-		"unece:DocumentCodeList#965",
-		"unece:DocumentCodeList#966",
-		"unece:DocumentCodeList#97",
-		"unece:DocumentCodeList#970",
-		"unece:DocumentCodeList#971",
-		"unece:DocumentCodeList#972",
-		"unece:DocumentCodeList#974",
-		"unece:DocumentCodeList#975",
-		"unece:DocumentCodeList#976",
-		"unece:DocumentCodeList#977",
-		"unece:DocumentCodeList#978",
-		"unece:DocumentCodeList#979",
-		"unece:DocumentCodeList#98",
-		"unece:DocumentCodeList#99",
-		"unece:DocumentCodeList#990",
-		"unece:DocumentCodeList#991",
-		"unece:DocumentCodeList#995",
-		"unece:DocumentCodeList#996",
-		"unece:DocumentCodeList#998"
+	"oneOf": [
+		{
+			"const": "unece:DocumentCodeList#1",
+			"description": "Certificate of analysis: 1."
+		},
+		{
+			"const": "unece:DocumentCodeList#10",
+			"description": "Party information: 10."
+		},
+		{
+			"const": "unece:DocumentCodeList#100",
+			"description": "Excise certificate: 100."
+		},
+		{
+			"const": "unece:DocumentCodeList#101",
+			"description": "Registration document: 101."
+		},
+		{
+			"const": "unece:DocumentCodeList#102",
+			"description": "Tax notification: 102."
+		},
+		{
+			"const": "unece:DocumentCodeList#103",
+			"description": "Transport equipment direct interchange report: 103."
+		},
+		{
+			"const": "unece:DocumentCodeList#104",
+			"description": "Transport equipment impending arrival advice: 104."
+		},
+		{
+			"const": "unece:DocumentCodeList#105",
+			"description": "Purchase order: 105."
+		},
+		{
+			"const": "unece:DocumentCodeList#106",
+			"description": "Transport equipment damage report: 106."
+		},
+		{
+			"const": "unece:DocumentCodeList#107",
+			"description": "Transport equipment maintenance and repair work estimate advice: 107."
+		},
+		{
+			"const": "unece:DocumentCodeList#108",
+			"description": "Transport equipment empty release instruction: 108."
+		},
+		{
+			"const": "unece:DocumentCodeList#109",
+			"description": "Transport movement gate in report: 109."
+		},
+		{
+			"const": "unece:DocumentCodeList#11",
+			"description": "Federal label approval: 11."
+		},
+		{
+			"const": "unece:DocumentCodeList#110",
+			"description": "Manufacturing instructions: 110."
+		},
+		{
+			"const": "unece:DocumentCodeList#111",
+			"description": "Transport movement gate out report: 111."
+		},
+		{
+			"const": "unece:DocumentCodeList#112",
+			"description": "Transport equipment unpacking instruction: 112."
+		},
+		{
+			"const": "unece:DocumentCodeList#113",
+			"description": "Transport equipment unpacking report: 113."
+		},
+		{
+			"const": "unece:DocumentCodeList#114",
+			"description": "Transport equipment pick-up availability request: 114."
+		},
+		{
+			"const": "unece:DocumentCodeList#115",
+			"description": "Transport equipment pick-up availability confirmation: 115."
+		},
+		{
+			"const": "unece:DocumentCodeList#116",
+			"description": "Transport equipment pick-up report: 116."
+		},
+		{
+			"const": "unece:DocumentCodeList#117",
+			"description": "Transport equipment shift report: 117."
+		},
+		{
+			"const": "unece:DocumentCodeList#118",
+			"description": "Transport discharge instruction: 118."
+		},
+		{
+			"const": "unece:DocumentCodeList#119",
+			"description": "Transport discharge report: 119."
+		},
+		{
+			"const": "unece:DocumentCodeList#12",
+			"description": "Mill certificate: 12."
+		},
+		{
+			"const": "unece:DocumentCodeList#120",
+			"description": "Stores requisition: 120."
+		},
+		{
+			"const": "unece:DocumentCodeList#121",
+			"description": "Transport loading instruction: 121."
+		},
+		{
+			"const": "unece:DocumentCodeList#122",
+			"description": "Transport loading report: 122."
+		},
+		{
+			"const": "unece:DocumentCodeList#123",
+			"description": "Transport equipment maintenance and repair work authorisation: 123."
+		},
+		{
+			"const": "unece:DocumentCodeList#124",
+			"description": "Transport departure report: 124."
+		},
+		{
+			"const": "unece:DocumentCodeList#125",
+			"description": "Transport empty equipment advice: 125."
+		},
+		{
+			"const": "unece:DocumentCodeList#126",
+			"description": "Transport equipment acceptance order: 126."
+		},
+		{
+			"const": "unece:DocumentCodeList#127",
+			"description": "Transport equipment special service instruction: 127."
+		},
+		{
+			"const": "unece:DocumentCodeList#128",
+			"description": "Transport equipment stock report: 128."
+		},
+		{
+			"const": "unece:DocumentCodeList#129",
+			"description": "Transport cargo release order: 129."
+		},
+		{
+			"const": "unece:DocumentCodeList#13",
+			"description": "Post receipt: 13."
+		},
+		{
+			"const": "unece:DocumentCodeList#130",
+			"description": "Invoicing data sheet: 130."
+		},
+		{
+			"const": "unece:DocumentCodeList#131",
+			"description": "Transport equipment packing instruction: 131."
+		},
+		{
+			"const": "unece:DocumentCodeList#132",
+			"description": "Customs clearance notice: 132."
+		},
+		{
+			"const": "unece:DocumentCodeList#133",
+			"description": "Customs documents expiration notice: 133."
+		},
+		{
+			"const": "unece:DocumentCodeList#134",
+			"description": "Transport equipment on-hire request: 134."
+		},
+		{
+			"const": "unece:DocumentCodeList#135",
+			"description": "Transport equipment on-hire order: 135."
+		},
+		{
+			"const": "unece:DocumentCodeList#136",
+			"description": "Transport equipment off-hire request: 136."
+		},
+		{
+			"const": "unece:DocumentCodeList#137",
+			"description": "Transport equipment survey order: 137."
+		},
+		{
+			"const": "unece:DocumentCodeList#138",
+			"description": "Transport equipment survey order response: 138."
+		},
+		{
+			"const": "unece:DocumentCodeList#139",
+			"description": "Transport equipment survey report: 139."
+		},
+		{
+			"const": "unece:DocumentCodeList#14",
+			"description": "Weight certificate: 14."
+		},
+		{
+			"const": "unece:DocumentCodeList#140",
+			"description": "Packing instructions: 140."
+		},
+		{
+			"const": "unece:DocumentCodeList#141",
+			"description": "Advising items to be booked to a financial account: 141."
+		},
+		{
+			"const": "unece:DocumentCodeList#142",
+			"description": "Transport equipment maintenance and repair work estimate order: 142."
+		},
+		{
+			"const": "unece:DocumentCodeList#143",
+			"description": "Transport equipment maintenance and repair notice: 143."
+		},
+		{
+			"const": "unece:DocumentCodeList#144",
+			"description": "Empty container disposition order: 144."
+		},
+		{
+			"const": "unece:DocumentCodeList#145",
+			"description": "Cargo vessel discharge order: 145."
+		},
+		{
+			"const": "unece:DocumentCodeList#146",
+			"description": "Cargo vessel loading order: 146."
+		},
+		{
+			"const": "unece:DocumentCodeList#147",
+			"description": "Multidrop order: 147."
+		},
+		{
+			"const": "unece:DocumentCodeList#148",
+			"description": "Bailment contract: 148."
+		},
+		{
+			"const": "unece:DocumentCodeList#149",
+			"description": "Basic agreement: 149."
+		},
+		{
+			"const": "unece:DocumentCodeList#15",
+			"description": "Weight list: 15."
+		},
+		{
+			"const": "unece:DocumentCodeList#150",
+			"description": "Internal transport order: 150."
+		},
+		{
+			"const": "unece:DocumentCodeList#151",
+			"description": "Grant: 151."
+		},
+		{
+			"const": "unece:DocumentCodeList#152",
+			"description": "Indefinite delivery indefinite quantity contract: 152."
+		},
+		{
+			"const": "unece:DocumentCodeList#153",
+			"description": "Indefinite delivery definite quantity contract: 153."
+		},
+		{
+			"const": "unece:DocumentCodeList#154",
+			"description": "Requirements contract: 154."
+		},
+		{
+			"const": "unece:DocumentCodeList#155",
+			"description": "Task order: 155."
+		},
+		{
+			"const": "unece:DocumentCodeList#156",
+			"description": "Make or buy plan: 156."
+		},
+		{
+			"const": "unece:DocumentCodeList#157",
+			"description": "Subcontractor plan: 157."
+		},
+		{
+			"const": "unece:DocumentCodeList#158",
+			"description": "Cost data summary: 158."
+		},
+		{
+			"const": "unece:DocumentCodeList#159",
+			"description": "Certified cost and price data: 159."
+		},
+		{
+			"const": "unece:DocumentCodeList#16",
+			"description": "Certificate: 16."
+		},
+		{
+			"const": "unece:DocumentCodeList#160",
+			"description": "Wage determination: 160."
+		},
+		{
+			"const": "unece:DocumentCodeList#161",
+			"description": "Contract Funds Status Report (CFSR): 161."
+		},
+		{
+			"const": "unece:DocumentCodeList#162",
+			"description": "Certified inspection and test results: 162."
+		},
+		{
+			"const": "unece:DocumentCodeList#163",
+			"description": "Material inspection and receiving report: 163."
+		},
+		{
+			"const": "unece:DocumentCodeList#164",
+			"description": "Purchasing specification: 164."
+		},
+		{
+			"const": "unece:DocumentCodeList#165",
+			"description": "Payment or performance bond: 165."
+		},
+		{
+			"const": "unece:DocumentCodeList#166",
+			"description": "Contract security classification specification: 166."
+		},
+		{
+			"const": "unece:DocumentCodeList#167",
+			"description": "Manufacturing specification: 167."
+		},
+		{
+			"const": "unece:DocumentCodeList#168",
+			"description": "Buy America certificate of compliance: 168."
+		},
+		{
+			"const": "unece:DocumentCodeList#169",
+			"description": "Container off-hire notice: 169."
+		},
+		{
+			"const": "unece:DocumentCodeList#17",
+			"description": "Combined certificate of value and origin: 17."
+		},
+		{
+			"const": "unece:DocumentCodeList#170",
+			"description": "Cargo acceptance order: 170."
+		},
+		{
+			"const": "unece:DocumentCodeList#171",
+			"description": "Pick-up notice: 171."
+		},
+		{
+			"const": "unece:DocumentCodeList#172",
+			"description": "Authorisation to plan and suggest orders: 172."
+		},
+		{
+			"const": "unece:DocumentCodeList#173",
+			"description": "Authorisation to plan and ship orders: 173."
+		},
+		{
+			"const": "unece:DocumentCodeList#174",
+			"description": "Drawing: 174."
+		},
+		{
+			"const": "unece:DocumentCodeList#175",
+			"description": "Cost Performance Report (CPR) format 2: 175."
+		},
+		{
+			"const": "unece:DocumentCodeList#176",
+			"description": "Cost Schedule Status Report (CSSR): 176."
+		},
+		{
+			"const": "unece:DocumentCodeList#177",
+			"description": "Cost Performance Report (CPR) format 1: 177."
+		},
+		{
+			"const": "unece:DocumentCodeList#178",
+			"description": "Cost Performance Report (CPR) format 3: 178."
+		},
+		{
+			"const": "unece:DocumentCodeList#179",
+			"description": "Cost Performance Report (CPR) format 4: 179."
+		},
+		{
+			"const": "unece:DocumentCodeList#18",
+			"description": "Movement certificate A.TR.1: 18."
+		},
+		{
+			"const": "unece:DocumentCodeList#180",
+			"description": "Cost Performance Report (CPR) format 5: 180."
+		},
+		{
+			"const": "unece:DocumentCodeList#181",
+			"description": "Progressive discharge report: 181."
+		},
+		{
+			"const": "unece:DocumentCodeList#182",
+			"description": "Balance confirmation: 182."
+		},
+		{
+			"const": "unece:DocumentCodeList#183",
+			"description": "Container stripping order: 183."
+		},
+		{
+			"const": "unece:DocumentCodeList#184",
+			"description": "Container stuffing order: 184."
+		},
+		{
+			"const": "unece:DocumentCodeList#185",
+			"description": "Conveyance declaration (arrival): 185."
+		},
+		{
+			"const": "unece:DocumentCodeList#186",
+			"description": "Conveyance declaration (departure): 186."
+		},
+		{
+			"const": "unece:DocumentCodeList#187",
+			"description": "Conveyance declaration (combined): 187."
+		},
+		{
+			"const": "unece:DocumentCodeList#188",
+			"description": "Project recovery plan: 188."
+		},
+		{
+			"const": "unece:DocumentCodeList#189",
+			"description": "Project production plan: 189."
+		},
+		{
+			"const": "unece:DocumentCodeList#19",
+			"description": "Certificate of quantity: 19."
+		},
+		{
+			"const": "unece:DocumentCodeList#190",
+			"description": "Statistical and other administrative internal documents: 190."
+		},
+		{
+			"const": "unece:DocumentCodeList#191",
+			"description": "Project master schedule: 191."
+		},
+		{
+			"const": "unece:DocumentCodeList#192",
+			"description": "Priced alternate tender bill of quantity: 192."
+		},
+		{
+			"const": "unece:DocumentCodeList#193",
+			"description": "Estimated priced bill of quantity: 193."
+		},
+		{
+			"const": "unece:DocumentCodeList#194",
+			"description": "Draft bill of quantity: 194."
+		},
+		{
+			"const": "unece:DocumentCodeList#195",
+			"description": "Documentary credit collection instruction: 195."
+		},
+		{
+			"const": "unece:DocumentCodeList#196",
+			"description": "Request for an amendment of a documentary credit: 196."
+		},
+		{
+			"const": "unece:DocumentCodeList#197",
+			"description": "Documentary credit amendment information: 197."
+		},
+		{
+			"const": "unece:DocumentCodeList#198",
+			"description": "Advice of an amendment of a documentary credit: 198."
+		},
+		{
+			"const": "unece:DocumentCodeList#199",
+			"description": "Response to an amendment of a documentary credit: 199."
+		},
+		{
+			"const": "unece:DocumentCodeList#2",
+			"description": "Certificate of conformity: 2."
+		},
+		{
+			"const": "unece:DocumentCodeList#20",
+			"description": "Quality data message: 20."
+		},
+		{
+			"const": "unece:DocumentCodeList#200",
+			"description": "Documentary credit issuance information: 200."
+		},
+		{
+			"const": "unece:DocumentCodeList#201",
+			"description": "Direct payment valuation request: 201."
+		},
+		{
+			"const": "unece:DocumentCodeList#202",
+			"description": "Direct payment valuation: 202."
+		},
+		{
+			"const": "unece:DocumentCodeList#203",
+			"description": "Provisional payment valuation: 203."
+		},
+		{
+			"const": "unece:DocumentCodeList#204",
+			"description": "Payment valuation: 204."
+		},
+		{
+			"const": "unece:DocumentCodeList#205",
+			"description": "Quantity valuation: 205."
+		},
+		{
+			"const": "unece:DocumentCodeList#206",
+			"description": "Quantity valuation request: 206."
+		},
+		{
+			"const": "unece:DocumentCodeList#207",
+			"description": "Contract bill of quantities - BOQ: 207."
+		},
+		{
+			"const": "unece:DocumentCodeList#208",
+			"description": "Unpriced bill of quantity: 208."
+		},
+		{
+			"const": "unece:DocumentCodeList#209",
+			"description": "Priced tender BOQ: 209."
+		},
+		{
+			"const": "unece:DocumentCodeList#21",
+			"description": "Query: 21."
+		},
+		{
+			"const": "unece:DocumentCodeList#210",
+			"description": "Enquiry: 210."
+		},
+		{
+			"const": "unece:DocumentCodeList#211",
+			"description": "Interim application for payment: 211."
+		},
+		{
+			"const": "unece:DocumentCodeList#212",
+			"description": "Agreement to pay: 212."
+		},
+		{
+			"const": "unece:DocumentCodeList#213",
+			"description": "Request for financial cancellation: 213."
+		},
+		{
+			"const": "unece:DocumentCodeList#214",
+			"description": "Pre-authorised direct debit(s): 214."
+		},
+		{
+			"const": "unece:DocumentCodeList#215",
+			"description": "Letter of intent: 215."
+		},
+		{
+			"const": "unece:DocumentCodeList#216",
+			"description": "Approved unpriced bill of quantity: 216."
+		},
+		{
+			"const": "unece:DocumentCodeList#217",
+			"description": "Payment valuation for unscheduled items: 217."
+		},
+		{
+			"const": "unece:DocumentCodeList#218",
+			"description": "Final payment request based on completion of work: 218."
+		},
+		{
+			"const": "unece:DocumentCodeList#219",
+			"description": "Payment request for completed units: 219."
+		},
+		{
+			"const": "unece:DocumentCodeList#22",
+			"description": "Response to query: 22."
+		},
+		{
+			"const": "unece:DocumentCodeList#220",
+			"description": "Order: 220."
+		},
+		{
+			"const": "unece:DocumentCodeList#221",
+			"description": "Blanket order: 221."
+		},
+		{
+			"const": "unece:DocumentCodeList#222",
+			"description": "Spot order: 222."
+		},
+		{
+			"const": "unece:DocumentCodeList#223",
+			"description": "Lease order: 223."
+		},
+		{
+			"const": "unece:DocumentCodeList#224",
+			"description": "Rush order: 224."
+		},
+		{
+			"const": "unece:DocumentCodeList#225",
+			"description": "Repair order: 225."
+		},
+		{
+			"const": "unece:DocumentCodeList#226",
+			"description": "Call off order: 226."
+		},
+		{
+			"const": "unece:DocumentCodeList#227",
+			"description": "Consignment order: 227."
+		},
+		{
+			"const": "unece:DocumentCodeList#228",
+			"description": "Sample order: 228."
+		},
+		{
+			"const": "unece:DocumentCodeList#229",
+			"description": "Swap order: 229."
+		},
+		{
+			"const": "unece:DocumentCodeList#23",
+			"description": "Status information: 23."
+		},
+		{
+			"const": "unece:DocumentCodeList#230",
+			"description": "Purchase order change request: 230."
+		},
+		{
+			"const": "unece:DocumentCodeList#231",
+			"description": "Purchase order response: 231."
+		},
+		{
+			"const": "unece:DocumentCodeList#232",
+			"description": "Hire order: 232."
+		},
+		{
+			"const": "unece:DocumentCodeList#233",
+			"description": "Spare parts order: 233."
+		},
+		{
+			"const": "unece:DocumentCodeList#234",
+			"description": "Campaign price/sales catalogue: 234."
+		},
+		{
+			"const": "unece:DocumentCodeList#235",
+			"description": "Container list: 235."
+		},
+		{
+			"const": "unece:DocumentCodeList#236",
+			"description": "Delivery forecast: 236."
+		},
+		{
+			"const": "unece:DocumentCodeList#237",
+			"description": "Cross docking services order: 237."
+		},
+		{
+			"const": "unece:DocumentCodeList#238",
+			"description": "Non-pre-authorised direct debit(s): 238."
+		},
+		{
+			"const": "unece:DocumentCodeList#239",
+			"description": "Rejected direct debit(s): 239."
+		},
+		{
+			"const": "unece:DocumentCodeList#24",
+			"description": "Restow: 24."
+		},
+		{
+			"const": "unece:DocumentCodeList#240",
+			"description": "Delivery instructions: 240."
+		},
+		{
+			"const": "unece:DocumentCodeList#241",
+			"description": "Delivery schedule: 241."
+		},
+		{
+			"const": "unece:DocumentCodeList#242",
+			"description": "Delivery just-in-time: 242."
+		},
+		{
+			"const": "unece:DocumentCodeList#243",
+			"description": "Pre-authorised direct debit request(s): 243."
+		},
+		{
+			"const": "unece:DocumentCodeList#244",
+			"description": "Non-pre-authorised direct debit request(s): 244."
+		},
+		{
+			"const": "unece:DocumentCodeList#245",
+			"description": "Delivery release: 245."
+		},
+		{
+			"const": "unece:DocumentCodeList#246",
+			"description": "Settlement of a letter of credit: 246."
+		},
+		{
+			"const": "unece:DocumentCodeList#247",
+			"description": "Bank to bank funds transfer: 247."
+		},
+		{
+			"const": "unece:DocumentCodeList#248",
+			"description": "Customer payment order(s): 248."
+		},
+		{
+			"const": "unece:DocumentCodeList#249",
+			"description": "Low value payment order(s): 249."
+		},
+		{
+			"const": "unece:DocumentCodeList#25",
+			"description": "Container discharge list: 25."
+		},
+		{
+			"const": "unece:DocumentCodeList#250",
+			"description": "Crew list declaration: 250."
+		},
+		{
+			"const": "unece:DocumentCodeList#251",
+			"description": "Inquiry: 251."
+		},
+		{
+			"const": "unece:DocumentCodeList#252",
+			"description": "Response to previous banking status message: 252."
+		},
+		{
+			"const": "unece:DocumentCodeList#253",
+			"description": "Project master plan: 253."
+		},
+		{
+			"const": "unece:DocumentCodeList#254",
+			"description": "Project plan: 254."
+		},
+		{
+			"const": "unece:DocumentCodeList#255",
+			"description": "Project schedule: 255."
+		},
+		{
+			"const": "unece:DocumentCodeList#256",
+			"description": "Project planning available resources: 256."
+		},
+		{
+			"const": "unece:DocumentCodeList#257",
+			"description": "Project planning calendar: 257."
+		},
+		{
+			"const": "unece:DocumentCodeList#258",
+			"description": "Standing order: 258."
+		},
+		{
+			"const": "unece:DocumentCodeList#259",
+			"description": "Cargo movement event log: 259."
+		},
+		{
+			"const": "unece:DocumentCodeList#26",
+			"description": "Corporate superannuation contributions advice: 26."
+		},
+		{
+			"const": "unece:DocumentCodeList#260",
+			"description": "Cargo analysis voyage report: 260."
+		},
+		{
+			"const": "unece:DocumentCodeList#261",
+			"description": "Self billed credit note: 261."
+		},
+		{
+			"const": "unece:DocumentCodeList#262",
+			"description": "Consolidated credit note - goods and services: 262."
+		},
+		{
+			"const": "unece:DocumentCodeList#263",
+			"description": "Inventory adjustment status report: 263."
+		},
+		{
+			"const": "unece:DocumentCodeList#264",
+			"description": "Transport equipment movement instruction: 264."
+		},
+		{
+			"const": "unece:DocumentCodeList#265",
+			"description": "Transport equipment movement report: 265."
+		},
+		{
+			"const": "unece:DocumentCodeList#266",
+			"description": "Transport equipment status change report: 266."
+		},
+		{
+			"const": "unece:DocumentCodeList#267",
+			"description": "Fumigation certificate: 267."
+		},
+		{
+			"const": "unece:DocumentCodeList#268",
+			"description": "Wine certificate: 268."
+		},
+		{
+			"const": "unece:DocumentCodeList#269",
+			"description": "Wool health certificate: 269."
+		},
+		{
+			"const": "unece:DocumentCodeList#27",
+			"description": "Industry superannuation contributions advice: 27."
+		},
+		{
+			"const": "unece:DocumentCodeList#270",
+			"description": "Delivery note: 270."
+		},
+		{
+			"const": "unece:DocumentCodeList#271",
+			"description": "Packing list: 271."
+		},
+		{
+			"const": "unece:DocumentCodeList#272",
+			"description": "New code request: 272."
+		},
+		{
+			"const": "unece:DocumentCodeList#273",
+			"description": "Code change request: 273."
+		},
+		{
+			"const": "unece:DocumentCodeList#274",
+			"description": "Simple data element request: 274."
+		},
+		{
+			"const": "unece:DocumentCodeList#275",
+			"description": "Simple data element change request: 275."
+		},
+		{
+			"const": "unece:DocumentCodeList#276",
+			"description": "Composite data element request: 276."
+		},
+		{
+			"const": "unece:DocumentCodeList#277",
+			"description": "Composite data element change request: 277."
+		},
+		{
+			"const": "unece:DocumentCodeList#278",
+			"description": "Segment request: 278."
+		},
+		{
+			"const": "unece:DocumentCodeList#279",
+			"description": "Segment change request: 279."
+		},
+		{
+			"const": "unece:DocumentCodeList#28",
+			"description": "Corporate superannuation member maintenance message: 28."
+		},
+		{
+			"const": "unece:DocumentCodeList#280",
+			"description": "New message request: 280."
+		},
+		{
+			"const": "unece:DocumentCodeList#281",
+			"description": "Message in development request: 281."
+		},
+		{
+			"const": "unece:DocumentCodeList#282",
+			"description": "Modification of existing message: 282."
+		},
+		{
+			"const": "unece:DocumentCodeList#283",
+			"description": "Tracking number assignment report: 283."
+		},
+		{
+			"const": "unece:DocumentCodeList#284",
+			"description": "User directory definition: 284."
+		},
+		{
+			"const": "unece:DocumentCodeList#285",
+			"description": "United Nations standard message request: 285."
+		},
+		{
+			"const": "unece:DocumentCodeList#286",
+			"description": "Service directory definition: 286."
+		},
+		{
+			"const": "unece:DocumentCodeList#287",
+			"description": "Status report: 287."
+		},
+		{
+			"const": "unece:DocumentCodeList#288",
+			"description": "Kanban schedule: 288."
+		},
+		{
+			"const": "unece:DocumentCodeList#289",
+			"description": "Product data message: 289."
+		},
+		{
+			"const": "unece:DocumentCodeList#29",
+			"description": "Industry superannuation member maintenance message: 29."
+		},
+		{
+			"const": "unece:DocumentCodeList#290",
+			"description": "A claim for parts and/or labour charges: 290."
+		},
+		{
+			"const": "unece:DocumentCodeList#291",
+			"description": "Delivery schedule response: 291."
+		},
+		{
+			"const": "unece:DocumentCodeList#292",
+			"description": "Inspection request: 292."
+		},
+		{
+			"const": "unece:DocumentCodeList#293",
+			"description": "Inspection report: 293."
+		},
+		{
+			"const": "unece:DocumentCodeList#294",
+			"description": "Application acknowledgement and error report: 294."
+		},
+		{
+			"const": "unece:DocumentCodeList#295",
+			"description": "Price variation invoice: 295."
+		},
+		{
+			"const": "unece:DocumentCodeList#296",
+			"description": "Credit note for price variation: 296."
+		},
+		{
+			"const": "unece:DocumentCodeList#297",
+			"description": "Instruction to collect: 297."
+		},
+		{
+			"const": "unece:DocumentCodeList#298",
+			"description": "Dangerous goods list: 298."
+		},
+		{
+			"const": "unece:DocumentCodeList#299",
+			"description": "Registration renewal: 299."
+		},
+		{
+			"const": "unece:DocumentCodeList#3",
+			"description": "Certificate of quality: 3."
+		},
+		{
+			"const": "unece:DocumentCodeList#30",
+			"description": "Life insurance payroll deductions advice: 30."
+		},
+		{
+			"const": "unece:DocumentCodeList#300",
+			"description": "Registration change: 300."
+		},
+		{
+			"const": "unece:DocumentCodeList#301",
+			"description": "Response to registration: 301."
+		},
+		{
+			"const": "unece:DocumentCodeList#302",
+			"description": "Implementation guideline: 302."
+		},
+		{
+			"const": "unece:DocumentCodeList#303",
+			"description": "Request for transfer: 303."
+		},
+		{
+			"const": "unece:DocumentCodeList#304",
+			"description": "Cost performance report: 304."
+		},
+		{
+			"const": "unece:DocumentCodeList#305",
+			"description": "Application error and acknowledgement: 305."
+		},
+		{
+			"const": "unece:DocumentCodeList#306",
+			"description": "Cash pool financial statement: 306."
+		},
+		{
+			"const": "unece:DocumentCodeList#307",
+			"description": "Sequenced delivery schedule: 307."
+		},
+		{
+			"const": "unece:DocumentCodeList#308",
+			"description": "Delcredere credit note: 308."
+		},
+		{
+			"const": "unece:DocumentCodeList#309",
+			"description": "Healthcare discharge report, final: 309."
+		},
+		{
+			"const": "unece:DocumentCodeList#31",
+			"description": "Underbond request: 31."
+		},
+		{
+			"const": "unece:DocumentCodeList#310",
+			"description": "Offer / quotation: 310."
+		},
+		{
+			"const": "unece:DocumentCodeList#311",
+			"description": "Request for quote: 311."
+		},
+		{
+			"const": "unece:DocumentCodeList#312",
+			"description": "Acknowledgement message: 312."
+		},
+		{
+			"const": "unece:DocumentCodeList#313",
+			"description": "Application error message: 313."
+		},
+		{
+			"const": "unece:DocumentCodeList#314",
+			"description": "Cargo movement voyage summary: 314."
+		},
+		{
+			"const": "unece:DocumentCodeList#315",
+			"description": "Contract: 315."
+		},
+		{
+			"const": "unece:DocumentCodeList#316",
+			"description": "Application for usage of berth or mooring facilities: 316."
+		},
+		{
+			"const": "unece:DocumentCodeList#317",
+			"description": "Application for designation of berthing places: 317."
+		},
+		{
+			"const": "unece:DocumentCodeList#318",
+			"description": "Application for shifting from the designated place in port: 318."
+		},
+		{
+			"const": "unece:DocumentCodeList#319",
+			"description": "Supplementary document for application for cargo operation of dangerous goods: 319."
+		},
+		{
+			"const": "unece:DocumentCodeList#32",
+			"description": "Underbond approval: 32."
+		},
+		{
+			"const": "unece:DocumentCodeList#320",
+			"description": "Acknowledgement of order: 320."
+		},
+		{
+			"const": "unece:DocumentCodeList#321",
+			"description": "Supplementary document for application for transport of dangerous goods: 321."
+		},
+		{
+			"const": "unece:DocumentCodeList#322",
+			"description": "Optical Character Reading (OCR) payment: 322."
+		},
+		{
+			"const": "unece:DocumentCodeList#323",
+			"description": "Preliminary sales report: 323."
+		},
+		{
+			"const": "unece:DocumentCodeList#324",
+			"description": "Transport emergency card: 324."
+		},
+		{
+			"const": "unece:DocumentCodeList#325",
+			"description": "Proforma invoice: 325."
+		},
+		{
+			"const": "unece:DocumentCodeList#326",
+			"description": "Partial invoice: 326."
+		},
+		{
+			"const": "unece:DocumentCodeList#327",
+			"description": "Operating instructions: 327."
+		},
+		{
+			"const": "unece:DocumentCodeList#328",
+			"description": "Name/product plate: 328."
+		},
+		{
+			"const": "unece:DocumentCodeList#329",
+			"description": "Co-insurance ceding bordereau: 329."
+		},
+		{
+			"const": "unece:DocumentCodeList#33",
+			"description": "Certificate of sealing of export meat lockers: 33."
+		},
+		{
+			"const": "unece:DocumentCodeList#330",
+			"description": "Request for delivery instructions: 330."
+		},
+		{
+			"const": "unece:DocumentCodeList#331",
+			"description": "Commercial invoice which includes a packing list: 331."
+		},
+		{
+			"const": "unece:DocumentCodeList#332",
+			"description": "Trade data: 332."
+		},
+		{
+			"const": "unece:DocumentCodeList#333",
+			"description": "Customs declaration for cargo examination: 333."
+		},
+		{
+			"const": "unece:DocumentCodeList#334",
+			"description": "Customs declaration for cargo examination, alternate: 334."
+		},
+		{
+			"const": "unece:DocumentCodeList#335",
+			"description": "Booking request: 335."
+		},
+		{
+			"const": "unece:DocumentCodeList#336",
+			"description": "Customs crew and conveyance: 336."
+		},
+		{
+			"const": "unece:DocumentCodeList#337",
+			"description": "Customs summary declaration with commercial detail, alternate: 337."
+		},
+		{
+			"const": "unece:DocumentCodeList#338",
+			"description": "Items booked to a financial account report: 338."
+		},
+		{
+			"const": "unece:DocumentCodeList#339",
+			"description": "Report of transactions which need further information from the receiver: 339."
+		},
+		{
+			"const": "unece:DocumentCodeList#34",
+			"description": "Cargo status: 34."
+		},
+		{
+			"const": "unece:DocumentCodeList#340",
+			"description": "Shipping instructions: 340."
+		},
+		{
+			"const": "unece:DocumentCodeList#341",
+			"description": "Shipper's letter of instructions (air): 341."
+		},
+		{
+			"const": "unece:DocumentCodeList#342",
+			"description": "Report of transactions for information only: 342."
+		},
+		{
+			"const": "unece:DocumentCodeList#343",
+			"description": "Cartage order (local transport): 343."
+		},
+		{
+			"const": "unece:DocumentCodeList#344",
+			"description": "EDI associated object administration message: 344."
+		},
+		{
+			"const": "unece:DocumentCodeList#345",
+			"description": "Ready for despatch advice: 345."
+		},
+		{
+			"const": "unece:DocumentCodeList#346",
+			"description": "Summary sales report: 346."
+		},
+		{
+			"const": "unece:DocumentCodeList#347",
+			"description": "Order status enquiry: 347."
+		},
+		{
+			"const": "unece:DocumentCodeList#348",
+			"description": "Order status report: 348."
+		},
+		{
+			"const": "unece:DocumentCodeList#349",
+			"description": "Declaration regarding the inward and outward movement of vessel: 349."
+		},
+		{
+			"const": "unece:DocumentCodeList#35",
+			"description": "Inventory report: 35."
+		},
+		{
+			"const": "unece:DocumentCodeList#350",
+			"description": "Despatch order: 350."
+		},
+		{
+			"const": "unece:DocumentCodeList#351",
+			"description": "Despatch advice: 351."
+		},
+		{
+			"const": "unece:DocumentCodeList#352",
+			"description": "Notification of usage of berth or mooring facilities: 352."
+		},
+		{
+			"const": "unece:DocumentCodeList#353",
+			"description": "Application for vessel's entering into port area in night- time: 353."
+		},
+		{
+			"const": "unece:DocumentCodeList#354",
+			"description": "Notification of emergency shifting from the designated place in port: 354."
+		},
+		{
+			"const": "unece:DocumentCodeList#355",
+			"description": "Customs summary declaration without commercial detail, alternate: 355."
+		},
+		{
+			"const": "unece:DocumentCodeList#356",
+			"description": "Performance bond: 356."
+		},
+		{
+			"const": "unece:DocumentCodeList#357",
+			"description": "Payment bond: 357."
+		},
+		{
+			"const": "unece:DocumentCodeList#358",
+			"description": "Healthcare discharge report, preliminary: 358."
+		},
+		{
+			"const": "unece:DocumentCodeList#359",
+			"description": "Request for provision of a health service: 359."
+		},
+		{
+			"const": "unece:DocumentCodeList#36",
+			"description": "Identity card: 36."
+		},
+		{
+			"const": "unece:DocumentCodeList#360",
+			"description": "Request for price quote: 360."
+		},
+		{
+			"const": "unece:DocumentCodeList#361",
+			"description": "Price quote: 361."
+		},
+		{
+			"const": "unece:DocumentCodeList#362",
+			"description": "Delivery quote: 362."
+		},
+		{
+			"const": "unece:DocumentCodeList#363",
+			"description": "Price and delivery quote: 363."
+		},
+		{
+			"const": "unece:DocumentCodeList#364",
+			"description": "Contract price quote: 364."
+		},
+		{
+			"const": "unece:DocumentCodeList#365",
+			"description": "Contract price and delivery quote: 365."
+		},
+		{
+			"const": "unece:DocumentCodeList#366",
+			"description": "Price quote, specified end-customer: 366."
+		},
+		{
+			"const": "unece:DocumentCodeList#367",
+			"description": "Price and delivery quote, specified end-customer: 367."
+		},
+		{
+			"const": "unece:DocumentCodeList#368",
+			"description": "Price quote, ship and debit: 368."
+		},
+		{
+			"const": "unece:DocumentCodeList#369",
+			"description": "Price and delivery quote, ship and debit: 369."
+		},
+		{
+			"const": "unece:DocumentCodeList#37",
+			"description": "Response to a trade statistics message: 37."
+		},
+		{
+			"const": "unece:DocumentCodeList#370",
+			"description": "Advice of distribution of documents: 370."
+		},
+		{
+			"const": "unece:DocumentCodeList#371",
+			"description": "Plan for provision of health service: 371."
+		},
+		{
+			"const": "unece:DocumentCodeList#372",
+			"description": "Prescription: 372."
+		},
+		{
+			"const": "unece:DocumentCodeList#373",
+			"description": "Prescription request: 373."
+		},
+		{
+			"const": "unece:DocumentCodeList#374",
+			"description": "Prescription dispensing report: 374."
+		},
+		{
+			"const": "unece:DocumentCodeList#375",
+			"description": "Certificate of shipment: 375."
+		},
+		{
+			"const": "unece:DocumentCodeList#376",
+			"description": "Standing inquiry on product information: 376."
+		},
+		{
+			"const": "unece:DocumentCodeList#377",
+			"description": "Party credit information: 377."
+		},
+		{
+			"const": "unece:DocumentCodeList#378",
+			"description": "Party payment behaviour information: 378."
+		},
+		{
+			"const": "unece:DocumentCodeList#379",
+			"description": "Request for metering point information: 379."
+		},
+		{
+			"const": "unece:DocumentCodeList#38",
+			"description": "Vaccination certificate: 38."
+		},
+		{
+			"const": "unece:DocumentCodeList#380",
+			"description": "Commercial invoice: 380."
+		},
+		{
+			"const": "unece:DocumentCodeList#381",
+			"description": "Credit note: 381."
+		},
+		{
+			"const": "unece:DocumentCodeList#382",
+			"description": "Commission note: 382."
+		},
+		{
+			"const": "unece:DocumentCodeList#383",
+			"description": "Debit note: 383."
+		},
+		{
+			"const": "unece:DocumentCodeList#384",
+			"description": "Corrected invoice: 384."
+		},
+		{
+			"const": "unece:DocumentCodeList#385",
+			"description": "Consolidated invoice: 385."
+		},
+		{
+			"const": "unece:DocumentCodeList#386",
+			"description": "Prepayment invoice: 386."
+		},
+		{
+			"const": "unece:DocumentCodeList#387",
+			"description": "Hire invoice: 387."
+		},
+		{
+			"const": "unece:DocumentCodeList#388",
+			"description": "Tax invoice: 388."
+		},
+		{
+			"const": "unece:DocumentCodeList#389",
+			"description": "Self-billed invoice: 389."
+		},
+		{
+			"const": "unece:DocumentCodeList#39",
+			"description": "Passport: 39."
+		},
+		{
+			"const": "unece:DocumentCodeList#390",
+			"description": "Delcredere invoice: 390."
+		},
+		{
+			"const": "unece:DocumentCodeList#391",
+			"description": "Metering point information response: 391."
+		},
+		{
+			"const": "unece:DocumentCodeList#392",
+			"description": "Notification of change of supplier: 392."
+		},
+		{
+			"const": "unece:DocumentCodeList#393",
+			"description": "Factored invoice: 393."
+		},
+		{
+			"const": "unece:DocumentCodeList#394",
+			"description": "Lease invoice: 394."
+		},
+		{
+			"const": "unece:DocumentCodeList#395",
+			"description": "Consignment invoice: 395."
+		},
+		{
+			"const": "unece:DocumentCodeList#396",
+			"description": "Factored credit note: 396."
+		},
+		{
+			"const": "unece:DocumentCodeList#397",
+			"description": "Commercial account summary response: 397."
+		},
+		{
+			"const": "unece:DocumentCodeList#398",
+			"description": "Cross docking despatch advice: 398."
+		},
+		{
+			"const": "unece:DocumentCodeList#399",
+			"description": "Transshipment despatch advice: 399."
+		},
+		{
+			"const": "unece:DocumentCodeList#4",
+			"description": "Test report: 4."
+		},
+		{
+			"const": "unece:DocumentCodeList#40",
+			"description": "Driving licence (national): 40."
+		},
+		{
+			"const": "unece:DocumentCodeList#400",
+			"description": "Exceptional order: 400."
+		},
+		{
+			"const": "unece:DocumentCodeList#401",
+			"description": "Pre-packed cross docking order: 401."
+		},
+		{
+			"const": "unece:DocumentCodeList#402",
+			"description": "Intermediate handling cross docking order: 402."
+		},
+		{
+			"const": "unece:DocumentCodeList#403",
+			"description": "Means of transportation availability information: 403."
+		},
+		{
+			"const": "unece:DocumentCodeList#404",
+			"description": "Means of transportation schedule information: 404."
+		},
+		{
+			"const": "unece:DocumentCodeList#405",
+			"description": "Transport equipment delivery notice: 405."
+		},
+		{
+			"const": "unece:DocumentCodeList#406",
+			"description": "Notification to supplier of contract termination: 406."
+		},
+		{
+			"const": "unece:DocumentCodeList#407",
+			"description": "Notification to supplier of metering point changes: 407."
+		},
+		{
+			"const": "unece:DocumentCodeList#408",
+			"description": "Notification of meter change: 408."
+		},
+		{
+			"const": "unece:DocumentCodeList#409",
+			"description": "Instructions for bank transfer: 409."
+		},
+		{
+			"const": "unece:DocumentCodeList#41",
+			"description": "Driving licence (international): 41."
+		},
+		{
+			"const": "unece:DocumentCodeList#410",
+			"description": "Notification of metering point identification change: 410."
+		},
+		{
+			"const": "unece:DocumentCodeList#411",
+			"description": "Utilities time series message: 411."
+		},
+		{
+			"const": "unece:DocumentCodeList#412",
+			"description": "Application for banker's draft: 412."
+		},
+		{
+			"const": "unece:DocumentCodeList#413",
+			"description": "Infrastructure condition: 413."
+		},
+		{
+			"const": "unece:DocumentCodeList#414",
+			"description": "Acknowledgement of change of supplier: 414."
+		},
+		{
+			"const": "unece:DocumentCodeList#415",
+			"description": "Data Plot Sheet: 415."
+		},
+		{
+			"const": "unece:DocumentCodeList#416",
+			"description": "Soil analysis: 416."
+		},
+		{
+			"const": "unece:DocumentCodeList#417",
+			"description": "Farmyard manure analysis: 417."
+		},
+		{
+			"const": "unece:DocumentCodeList#418",
+			"description": "WCO Cargo Report Export, Rail or Road: 418."
+		},
+		{
+			"const": "unece:DocumentCodeList#419",
+			"description": "WCO Cargo Report Export, Air or Maritime: 419."
+		},
+		{
+			"const": "unece:DocumentCodeList#42",
+			"description": "Free pass: 42."
+		},
+		{
+			"const": "unece:DocumentCodeList#420",
+			"description": "Optical Character Reading (OCR) payment credit note: 420."
+		},
+		{
+			"const": "unece:DocumentCodeList#421",
+			"description": "WCO Cargo Report Import, Rail or Road: 421."
+		},
+		{
+			"const": "unece:DocumentCodeList#422",
+			"description": "WCO Cargo Report Import, Air or Maritime: 422."
+		},
+		{
+			"const": "unece:DocumentCodeList#423",
+			"description": "WCO one-step export declaration: 423."
+		},
+		{
+			"const": "unece:DocumentCodeList#424",
+			"description": "WCO first step of two-step export declaration: 424."
+		},
+		{
+			"const": "unece:DocumentCodeList#425",
+			"description": "Collection payment advice: 425."
+		},
+		{
+			"const": "unece:DocumentCodeList#426",
+			"description": "Documentary credit payment advice: 426."
+		},
+		{
+			"const": "unece:DocumentCodeList#427",
+			"description": "Documentary credit acceptance advice: 427."
+		},
+		{
+			"const": "unece:DocumentCodeList#428",
+			"description": "Documentary credit negotiation advice: 428."
+		},
+		{
+			"const": "unece:DocumentCodeList#429",
+			"description": "Application for banker's guarantee: 429."
+		},
+		{
+			"const": "unece:DocumentCodeList#43",
+			"description": "Season ticket: 43."
+		},
+		{
+			"const": "unece:DocumentCodeList#430",
+			"description": "Banker's guarantee: 430."
+		},
+		{
+			"const": "unece:DocumentCodeList#431",
+			"description": "Documentary credit letter of indemnity: 431."
+		},
+		{
+			"const": "unece:DocumentCodeList#432",
+			"description": "Notification to grid operator of contract termination: 432."
+		},
+		{
+			"const": "unece:DocumentCodeList#433",
+			"description": "Notification to grid operator of metering point changes: 433."
+		},
+		{
+			"const": "unece:DocumentCodeList#434",
+			"description": "Notification of balance responsible entity change: 434."
+		},
+		{
+			"const": "unece:DocumentCodeList#435",
+			"description": "Preadvice of a credit: 435."
+		},
+		{
+			"const": "unece:DocumentCodeList#436",
+			"description": "Transport equipment profile report: 436."
+		},
+		{
+			"const": "unece:DocumentCodeList#437",
+			"description": "Request for price and delivery quote, specified end-user: 437."
+		},
+		{
+			"const": "unece:DocumentCodeList#438",
+			"description": "Request for price quote, ship and debit: 438."
+		},
+		{
+			"const": "unece:DocumentCodeList#439",
+			"description": "Request for price and delivery quote, ship and debit: 439."
+		},
+		{
+			"const": "unece:DocumentCodeList#44",
+			"description": "Transport status report: 44."
+		},
+		{
+			"const": "unece:DocumentCodeList#440",
+			"description": "Delivery point list.: 440."
+		},
+		{
+			"const": "unece:DocumentCodeList#441",
+			"description": "Transport routing information: 441."
+		},
+		{
+			"const": "unece:DocumentCodeList#442",
+			"description": "Request for delivery quote: 442."
+		},
+		{
+			"const": "unece:DocumentCodeList#443",
+			"description": "Request for price and delivery quote: 443."
+		},
+		{
+			"const": "unece:DocumentCodeList#444",
+			"description": "Request for contract price quote: 444."
+		},
+		{
+			"const": "unece:DocumentCodeList#445",
+			"description": "Request for contract price and delivery quote: 445."
+		},
+		{
+			"const": "unece:DocumentCodeList#446",
+			"description": "Request for price quote, specified end-customer: 446."
+		},
+		{
+			"const": "unece:DocumentCodeList#447",
+			"description": "Collection order: 447."
+		},
+		{
+			"const": "unece:DocumentCodeList#448",
+			"description": "Documents presentation form: 448."
+		},
+		{
+			"const": "unece:DocumentCodeList#449",
+			"description": "Identification match: 449."
+		},
+		{
+			"const": "unece:DocumentCodeList#45",
+			"description": "Transport status request: 45."
+		},
+		{
+			"const": "unece:DocumentCodeList#450",
+			"description": "Payment order: 450."
+		},
+		{
+			"const": "unece:DocumentCodeList#451",
+			"description": "Extended payment order: 451."
+		},
+		{
+			"const": "unece:DocumentCodeList#452",
+			"description": "Multiple payment order: 452."
+		},
+		{
+			"const": "unece:DocumentCodeList#453",
+			"description": "Notice that circumstances prevent payment of delivered goods: 453."
+		},
+		{
+			"const": "unece:DocumentCodeList#454",
+			"description": "Credit advice: 454."
+		},
+		{
+			"const": "unece:DocumentCodeList#455",
+			"description": "Extended credit advice: 455."
+		},
+		{
+			"const": "unece:DocumentCodeList#456",
+			"description": "Debit advice: 456."
+		},
+		{
+			"const": "unece:DocumentCodeList#457",
+			"description": "Reversal of debit: 457."
+		},
+		{
+			"const": "unece:DocumentCodeList#458",
+			"description": "Reversal of credit: 458."
+		},
+		{
+			"const": "unece:DocumentCodeList#459",
+			"description": "Travel ticket: 459."
+		},
+		{
+			"const": "unece:DocumentCodeList#46",
+			"description": "Banking status: 46."
+		},
+		{
+			"const": "unece:DocumentCodeList#460",
+			"description": "Documentary credit application: 460."
+		},
+		{
+			"const": "unece:DocumentCodeList#461",
+			"description": "Payment card: 461."
+		},
+		{
+			"const": "unece:DocumentCodeList#462",
+			"description": "Ready for transshipment despatch advice: 462."
+		},
+		{
+			"const": "unece:DocumentCodeList#463",
+			"description": "Pre-packed cross docking despatch advice: 463."
+		},
+		{
+			"const": "unece:DocumentCodeList#464",
+			"description": "Intermediate handling cross docking despatch advice: 464."
+		},
+		{
+			"const": "unece:DocumentCodeList#465",
+			"description": "Documentary credit: 465."
+		},
+		{
+			"const": "unece:DocumentCodeList#466",
+			"description": "Documentary credit notification: 466."
+		},
+		{
+			"const": "unece:DocumentCodeList#467",
+			"description": "Documentary credit transfer advice: 467."
+		},
+		{
+			"const": "unece:DocumentCodeList#468",
+			"description": "Documentary credit amendment notification: 468."
+		},
+		{
+			"const": "unece:DocumentCodeList#469",
+			"description": "Documentary credit amendment: 469."
+		},
+		{
+			"const": "unece:DocumentCodeList#47",
+			"description": "Extra-Community trade statistical declaration: 47."
+		},
+		{
+			"const": "unece:DocumentCodeList#470",
+			"description": "Waste disposal report: 470."
+		},
+		{
+			"const": "unece:DocumentCodeList#48",
+			"description": "Written instructions in conformance with ADR article number 10385: 48."
+		},
+		{
+			"const": "unece:DocumentCodeList#480",
+			"description": "Invoice out of scope of tax: 480."
+		},
+		{
+			"const": "unece:DocumentCodeList#481",
+			"description": "Remittance advice: 481."
+		},
+		{
+			"const": "unece:DocumentCodeList#482",
+			"description": "Port authority waste disposal report: 482."
+		},
+		{
+			"const": "unece:DocumentCodeList#483",
+			"description": "Visa: 483."
+		},
+		{
+			"const": "unece:DocumentCodeList#484",
+			"description": "Multiple direct debit request: 484."
+		},
+		{
+			"const": "unece:DocumentCodeList#485",
+			"description": "Banker's draft: 485."
+		},
+		{
+			"const": "unece:DocumentCodeList#486",
+			"description": "Multiple direct debit: 486."
+		},
+		{
+			"const": "unece:DocumentCodeList#487",
+			"description": "Certificate of disembarkation permission: 487."
+		},
+		{
+			"const": "unece:DocumentCodeList#488",
+			"description": "Deratting exemption certificate: 488."
+		},
+		{
+			"const": "unece:DocumentCodeList#489",
+			"description": "Reefer connection order: 489."
+		},
+		{
+			"const": "unece:DocumentCodeList#49",
+			"description": "Damage certification: 49."
+		},
+		{
+			"const": "unece:DocumentCodeList#490",
+			"description": "Bill of exchange: 490."
+		},
+		{
+			"const": "unece:DocumentCodeList#491",
+			"description": "Promissory note: 491."
+		},
+		{
+			"const": "unece:DocumentCodeList#493",
+			"description": "Statement of account message: 493."
+		},
+		{
+			"const": "unece:DocumentCodeList#494",
+			"description": "Direct delivery (transport): 494."
+		},
+		{
+			"const": "unece:DocumentCodeList#495",
+			"description": "WCO second step of two-step export declaration: 495."
+		},
+		{
+			"const": "unece:DocumentCodeList#496",
+			"description": "WCO one-step import declaration: 496."
+		},
+		{
+			"const": "unece:DocumentCodeList#497",
+			"description": "WCO first step of two-step import declaration: 497."
+		},
+		{
+			"const": "unece:DocumentCodeList#498",
+			"description": "WCO second step of two-step import declaration: 498."
+		},
+		{
+			"const": "unece:DocumentCodeList#499",
+			"description": "Previous transport document: 499."
+		},
+		{
+			"const": "unece:DocumentCodeList#5",
+			"description": "Product performance report: 5."
+		},
+		{
+			"const": "unece:DocumentCodeList#50",
+			"description": "Validated priced tender: 50."
+		},
+		{
+			"const": "unece:DocumentCodeList#500",
+			"description": "Self billed prepayment invoice: 500."
+		},
+		{
+			"const": "unece:DocumentCodeList#501",
+			"description": "Self billed factored invoice: 501."
+		},
+		{
+			"const": "unece:DocumentCodeList#502",
+			"description": "Self billed factored credit note: 502."
+		},
+		{
+			"const": "unece:DocumentCodeList#503",
+			"description": "Prepayment credit note: 503."
+		},
+		{
+			"const": "unece:DocumentCodeList#51",
+			"description": "Price/sales catalogue response: 51."
+		},
+		{
+			"const": "unece:DocumentCodeList#52",
+			"description": "Price negotiation result: 52."
+		},
+		{
+			"const": "unece:DocumentCodeList#520",
+			"description": "Insurance certificate: 520."
+		},
+		{
+			"const": "unece:DocumentCodeList#521",
+			"description": "Special requirements permit related to the transport of cargo: 521."
+		},
+		{
+			"const": "unece:DocumentCodeList#522",
+			"description": "Dangerous Goods Notification for Tanker vessel: 522."
+		},
+		{
+			"const": "unece:DocumentCodeList#523",
+			"description": "Dangerous Goods Notification for non-tanker vessel: 523."
+		},
+		{
+			"const": "unece:DocumentCodeList#524",
+			"description": "WCO Conveyance Arrival Report: 524."
+		},
+		{
+			"const": "unece:DocumentCodeList#525",
+			"description": "WCO Conveyance Departure Report: 525."
+		},
+		{
+			"const": "unece:DocumentCodeList#526",
+			"description": "Accounting voucher: 526."
+		},
+		{
+			"const": "unece:DocumentCodeList#527",
+			"description": "Self billed debit note: 527."
+		},
+		{
+			"const": "unece:DocumentCodeList#528",
+			"description": "Military Identification Card: 528."
+		},
+		{
+			"const": "unece:DocumentCodeList#529",
+			"description": "Re-Entry Permit: 529."
+		},
+		{
+			"const": "unece:DocumentCodeList#53",
+			"description": "Safety and hazard data sheet: 53."
+		},
+		{
+			"const": "unece:DocumentCodeList#530",
+			"description": "Insurance policy: 530."
+		},
+		{
+			"const": "unece:DocumentCodeList#531",
+			"description": "Refugee Permit: 531."
+		},
+		{
+			"const": "unece:DocumentCodeList#532",
+			"description": "Forwarder’s credit note: 532."
+		},
+		{
+			"const": "unece:DocumentCodeList#533",
+			"description": "Original accounting voucher: 533."
+		},
+		{
+			"const": "unece:DocumentCodeList#534",
+			"description": "Copy accounting voucher: 534."
+		},
+		{
+			"const": "unece:DocumentCodeList#535",
+			"description": "Pro-forma accounting voucher: 535."
+		},
+		{
+			"const": "unece:DocumentCodeList#536",
+			"description": "International Ship Security Certificate: 536."
+		},
+		{
+			"const": "unece:DocumentCodeList#537",
+			"description": "Interim International Ship Security Certificate: 537."
+		},
+		{
+			"const": "unece:DocumentCodeList#538",
+			"description": "Good Manufacturing Practice (GMP) Certificate: 538."
+		},
+		{
+			"const": "unece:DocumentCodeList#539",
+			"description": "Framework Agreement: 539."
+		},
+		{
+			"const": "unece:DocumentCodeList#54",
+			"description": "Legal statement of an account: 54."
+		},
+		{
+			"const": "unece:DocumentCodeList#55",
+			"description": "Listing statement of an account: 55."
+		},
+		{
+			"const": "unece:DocumentCodeList#550",
+			"description": "Insurance declaration sheet (bordereau): 550."
+		},
+		{
+			"const": "unece:DocumentCodeList#551",
+			"description": "Transport capacity offer: 551."
+		},
+		{
+			"const": "unece:DocumentCodeList#552",
+			"description": "Ship Security Plan: 552."
+		},
+		{
+			"const": "unece:DocumentCodeList#553",
+			"description": "Forwarder’s invoice discrepancy report: 553."
+		},
+		{
+			"const": "unece:DocumentCodeList#554",
+			"description": "Storage capacity offer: 554."
+		},
+		{
+			"const": "unece:DocumentCodeList#56",
+			"description": "Closing statement of an account: 56."
+		},
+		{
+			"const": "unece:DocumentCodeList#57",
+			"description": "Transport equipment on-hire report: 57."
+		},
+		{
+			"const": "unece:DocumentCodeList#575",
+			"description": "Insurer's invoice: 575."
+		},
+		{
+			"const": "unece:DocumentCodeList#576",
+			"description": "Storage capacity request: 576."
+		},
+		{
+			"const": "unece:DocumentCodeList#577",
+			"description": "Transport capacity request: 577."
+		},
+		{
+			"const": "unece:DocumentCodeList#578",
+			"description": "EU Customs declaration for External Community Transit (T1): 578."
+		},
+		{
+			"const": "unece:DocumentCodeList#579",
+			"description": "EU Customs declaration for internal Community Transit (T2): 579."
+		},
+		{
+			"const": "unece:DocumentCodeList#58",
+			"description": "Transport equipment off-hire report: 58."
+		},
+		{
+			"const": "unece:DocumentCodeList#580",
+			"description": "Cover note: 580."
+		},
+		{
+			"const": "unece:DocumentCodeList#581",
+			"description": "EU Customs declaration for non-fiscal area internal Community Transit (T2F): 581."
+		},
+		{
+			"const": "unece:DocumentCodeList#582",
+			"description": "EU Customs declaration for internal transit to San Marino (T2SM): 582."
+		},
+		{
+			"const": "unece:DocumentCodeList#583",
+			"description": "EU Customs declaration for mixed consignments (T): 583."
+		},
+		{
+			"const": "unece:DocumentCodeList#584",
+			"description": "EU Document for establishing the Community status of goods (T2L): 584."
+		},
+		{
+			"const": "unece:DocumentCodeList#585",
+			"description": "EU Document for establishing the Community status of goods for certain fiscal purposes (T2LF): 585."
+		},
+		{
+			"const": "unece:DocumentCodeList#586",
+			"description": "Document for establishing the Customs Status of goods for San Marino (T2LSM): 586."
+		},
+		{
+			"const": "unece:DocumentCodeList#587",
+			"description": "Customs declaration for TIR Carnet goods: 587."
+		},
+		{
+			"const": "unece:DocumentCodeList#588",
+			"description": "Transport Means Security Report: 588."
+		},
+		{
+			"const": "unece:DocumentCodeList#589",
+			"description": "Halal Slaughtering Certificate: 589."
+		},
+		{
+			"const": "unece:DocumentCodeList#59",
+			"description": "Treatment - nil outturn: 59."
+		},
+		{
+			"const": "unece:DocumentCodeList#6",
+			"description": "Product specification report: 6."
+		},
+		{
+			"const": "unece:DocumentCodeList#60",
+			"description": "Treatment - time-up underbond: 60."
+		},
+		{
+			"const": "unece:DocumentCodeList#61",
+			"description": "Treatment - underbond by sea: 61."
+		},
+		{
+			"const": "unece:DocumentCodeList#610",
+			"description": "Forwarding instructions: 610."
+		},
+		{
+			"const": "unece:DocumentCodeList#62",
+			"description": "Treatment - personal effect: 62."
+		},
+		{
+			"const": "unece:DocumentCodeList#621",
+			"description": "Forwarder's advice to import agent: 621."
+		},
+		{
+			"const": "unece:DocumentCodeList#622",
+			"description": "Forwarder's advice to exporter: 622."
+		},
+		{
+			"const": "unece:DocumentCodeList#623",
+			"description": "Forwarder's invoice: 623."
+		},
+		{
+			"const": "unece:DocumentCodeList#624",
+			"description": "Forwarder's certificate of receipt: 624."
+		},
+		{
+			"const": "unece:DocumentCodeList#625",
+			"description": "Heat Treatment Certificate: 625."
+		},
+		{
+			"const": "unece:DocumentCodeList#626",
+			"description": "Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) Certificate: 626."
+		},
+		{
+			"const": "unece:DocumentCodeList#627",
+			"description": "Free Sale Certificate in the Country of Origin: 627."
+		},
+		{
+			"const": "unece:DocumentCodeList#628",
+			"description": "Transit license: 628."
+		},
+		{
+			"const": "unece:DocumentCodeList#629",
+			"description": "Veterinary quarantine certificate: 629."
+		},
+		{
+			"const": "unece:DocumentCodeList#63",
+			"description": "Treatment - timber: 63."
+		},
+		{
+			"const": "unece:DocumentCodeList#630",
+			"description": "Shipping note: 630."
+		},
+		{
+			"const": "unece:DocumentCodeList#631",
+			"description": "Forwarder's warehouse receipt: 631."
+		},
+		{
+			"const": "unece:DocumentCodeList#632",
+			"description": "Goods receipt: 632."
+		},
+		{
+			"const": "unece:DocumentCodeList#633",
+			"description": "Port charges documents: 633."
+		},
+		{
+			"const": "unece:DocumentCodeList#634",
+			"description": "Certified list of ingredients: 634."
+		},
+		{
+			"const": "unece:DocumentCodeList#635",
+			"description": "Warehouse warrant: 635."
+		},
+		{
+			"const": "unece:DocumentCodeList#636",
+			"description": "Health certificate: 636."
+		},
+		{
+			"const": "unece:DocumentCodeList#637",
+			"description": "Food grade certificate: 637."
+		},
+		{
+			"const": "unece:DocumentCodeList#638",
+			"description": "Certificate of suitability for transport of grains and legumes: 638."
+		},
+		{
+			"const": "unece:DocumentCodeList#639",
+			"description": "Certificate of refrigerated transport equipment inspection: 639."
+		},
+		{
+			"const": "unece:DocumentCodeList#64",
+			"description": "Preliminary credit assessment: 64."
+		},
+		{
+			"const": "unece:DocumentCodeList#640",
+			"description": "Delivery order: 640."
+		},
+		{
+			"const": "unece:DocumentCodeList#641",
+			"description": "Thermographic reading report: 641."
+		},
+		{
+			"const": "unece:DocumentCodeList#642",
+			"description": "Certificate of food item transport readiness: 642."
+		},
+		{
+			"const": "unece:DocumentCodeList#643",
+			"description": "Food packaging contact certificate: 643."
+		},
+		{
+			"const": "unece:DocumentCodeList#644",
+			"description": "Packaging material composition report: 644."
+		},
+		{
+			"const": "unece:DocumentCodeList#645",
+			"description": "Export price certificate: 645."
+		},
+		{
+			"const": "unece:DocumentCodeList#646",
+			"description": "Public price certificate: 646."
+		},
+		{
+			"const": "unece:DocumentCodeList#647",
+			"description": "Drug shelf life study report: 647."
+		},
+		{
+			"const": "unece:DocumentCodeList#648",
+			"description": "Certificate of compliance with standards of the World Organization for Animal Health (OIE): 648."
+		},
+		{
+			"const": "unece:DocumentCodeList#649",
+			"description": "Production facility license: 649."
+		},
+		{
+			"const": "unece:DocumentCodeList#65",
+			"description": "Credit cover: 65."
+		},
+		{
+			"const": "unece:DocumentCodeList#650",
+			"description": "Handling order: 650."
+		},
+		{
+			"const": "unece:DocumentCodeList#651",
+			"description": "Manufacturing license: 651."
+		},
+		{
+			"const": "unece:DocumentCodeList#652",
+			"description": "Low risk country formal letter: 652."
+		},
+		{
+			"const": "unece:DocumentCodeList#653",
+			"description": "Previous correspondence: 653."
+		},
+		{
+			"const": "unece:DocumentCodeList#654",
+			"description": "Declaration for radioactive material: 654."
+		},
+		{
+			"const": "unece:DocumentCodeList#655",
+			"description": "Gate pass: 655."
+		},
+		{
+			"const": "unece:DocumentCodeList#656",
+			"description": "Resale information: 656."
+		},
+		{
+			"const": "unece:DocumentCodeList#657",
+			"description": "Phytosanitary Re-export Certificate: 657."
+		},
+		{
+			"const": "unece:DocumentCodeList#658",
+			"description": "Bayplan/stowage plan, full: 658."
+		},
+		{
+			"const": "unece:DocumentCodeList#659",
+			"description": "Bayplan/stowage plan, partial: 659."
+		},
+		{
+			"const": "unece:DocumentCodeList#66",
+			"description": "Current account: 66."
+		},
+		{
+			"const": "unece:DocumentCodeList#660",
+			"description": "Production Report: 660."
+		},
+		{
+			"const": "unece:DocumentCodeList#67",
+			"description": "Commercial dispute: 67."
+		},
+		{
+			"const": "unece:DocumentCodeList#68",
+			"description": "Chargeback: 68."
+		},
+		{
+			"const": "unece:DocumentCodeList#69",
+			"description": "Reassignment: 69."
+		},
+		{
+			"const": "unece:DocumentCodeList#7",
+			"description": "Process data report: 7."
+		},
+		{
+			"const": "unece:DocumentCodeList#70",
+			"description": "Collateral account: 70."
+		},
+		{
+			"const": "unece:DocumentCodeList#700",
+			"description": "Waybill: 700."
+		},
+		{
+			"const": "unece:DocumentCodeList#701",
+			"description": "Universal (multipurpose) transport document: 701."
+		},
+		{
+			"const": "unece:DocumentCodeList#702",
+			"description": "Goods receipt, carriage: 702."
+		},
+		{
+			"const": "unece:DocumentCodeList#703",
+			"description": "House waybill: 703."
+		},
+		{
+			"const": "unece:DocumentCodeList#704",
+			"description": "Master bill of lading: 704."
+		},
+		{
+			"const": "unece:DocumentCodeList#705",
+			"description": "Bill of lading: 705."
+		},
+		{
+			"const": "unece:DocumentCodeList#706",
+			"description": "Bill of lading original: 706."
+		},
+		{
+			"const": "unece:DocumentCodeList#707",
+			"description": "Bill of lading copy: 707."
+		},
+		{
+			"const": "unece:DocumentCodeList#708",
+			"description": "Empty container bill: 708."
+		},
+		{
+			"const": "unece:DocumentCodeList#709",
+			"description": "Tanker bill of lading: 709."
+		},
+		{
+			"const": "unece:DocumentCodeList#71",
+			"description": "Request for payment: 71."
+		},
+		{
+			"const": "unece:DocumentCodeList#710",
+			"description": "Sea waybill: 710."
+		},
+		{
+			"const": "unece:DocumentCodeList#711",
+			"description": "Inland waterway bill of lading: 711."
+		},
+		{
+			"const": "unece:DocumentCodeList#712",
+			"description": "Non-negotiable maritime transport document (generic): 712."
+		},
+		{
+			"const": "unece:DocumentCodeList#713",
+			"description": "Mate's receipt: 713."
+		},
+		{
+			"const": "unece:DocumentCodeList#714",
+			"description": "House bill of lading: 714."
+		},
+		{
+			"const": "unece:DocumentCodeList#715",
+			"description": "Letter of indemnity for non-surrender of bill of lading: 715."
+		},
+		{
+			"const": "unece:DocumentCodeList#716",
+			"description": "Forwarder's bill of lading: 716."
+		},
+		{
+			"const": "unece:DocumentCodeList#717",
+			"description": "Residence permit: 717."
+		},
+		{
+			"const": "unece:DocumentCodeList#718",
+			"description": "Seaman’s book: 718."
+		},
+		{
+			"const": "unece:DocumentCodeList#719",
+			"description": "General message: 719."
+		},
+		{
+			"const": "unece:DocumentCodeList#72",
+			"description": "Unship permit: 72."
+		},
+		{
+			"const": "unece:DocumentCodeList#720",
+			"description": "Rail consignment note (generic term): 720."
+		},
+		{
+			"const": "unece:DocumentCodeList#721",
+			"description": "Product data response: 721."
+		},
+		{
+			"const": "unece:DocumentCodeList#722",
+			"description": "Road list-SMGS: 722."
+		},
+		{
+			"const": "unece:DocumentCodeList#723",
+			"description": "Escort official recognition: 723."
+		},
+		{
+			"const": "unece:DocumentCodeList#724",
+			"description": "Recharging document: 724."
+		},
+		{
+			"const": "unece:DocumentCodeList#725",
+			"description": "Manufacturer raised order: 725."
+		},
+		{
+			"const": "unece:DocumentCodeList#726",
+			"description": "Manufacturer raised consignment order: 726."
+		},
+		{
+			"const": "unece:DocumentCodeList#727",
+			"description": "Price/sales catalogue not containing commercial information: 727."
+		},
+		{
+			"const": "unece:DocumentCodeList#728",
+			"description": "Price/sales catalogue containing commercial information: 728."
+		},
+		{
+			"const": "unece:DocumentCodeList#729",
+			"description": "Returns advice: 729."
+		},
+		{
+			"const": "unece:DocumentCodeList#73",
+			"description": "Statistical definitions: 73."
+		},
+		{
+			"const": "unece:DocumentCodeList#730",
+			"description": "Road consignment note: 730."
+		},
+		{
+			"const": "unece:DocumentCodeList#731",
+			"description": "Commercial account summary: 731."
+		},
+		{
+			"const": "unece:DocumentCodeList#732",
+			"description": "Announcement for returns: 732."
+		},
+		{
+			"const": "unece:DocumentCodeList#733",
+			"description": "Instruction for returns: 733."
+		},
+		{
+			"const": "unece:DocumentCodeList#734",
+			"description": "Sales forecast report: 734."
+		},
+		{
+			"const": "unece:DocumentCodeList#735",
+			"description": "Sales data report: 735."
+		},
+		{
+			"const": "unece:DocumentCodeList#736",
+			"description": "Standing inquiry on complete product information: 736."
+		},
+		{
+			"const": "unece:DocumentCodeList#737",
+			"description": "Proof of delivery: 737."
+		},
+		{
+			"const": "unece:DocumentCodeList#738",
+			"description": "Cargo/goods handling and movement message: 738."
+		},
+		{
+			"const": "unece:DocumentCodeList#739",
+			"description": "Metered services consumption report supporting an invoice: 739."
+		},
+		{
+			"const": "unece:DocumentCodeList#74",
+			"description": "Statistical data: 74."
+		},
+		{
+			"const": "unece:DocumentCodeList#740",
+			"description": "Air waybill: 740."
+		},
+		{
+			"const": "unece:DocumentCodeList#741",
+			"description": "Master air waybill: 741."
+		},
+		{
+			"const": "unece:DocumentCodeList#742",
+			"description": "Metered services consumption report: 742."
+		},
+		{
+			"const": "unece:DocumentCodeList#743",
+			"description": "Substitute air waybill: 743."
+		},
+		{
+			"const": "unece:DocumentCodeList#744",
+			"description": "Crew's effects declaration: 744."
+		},
+		{
+			"const": "unece:DocumentCodeList#745",
+			"description": "Passenger list: 745."
+		},
+		{
+			"const": "unece:DocumentCodeList#746",
+			"description": "Delivery notice (rail transport): 746."
+		},
+		{
+			"const": "unece:DocumentCodeList#747",
+			"description": "Payroll deductions advice: 747."
+		},
+		{
+			"const": "unece:DocumentCodeList#748",
+			"description": "Consignment despatch advice: 748."
+		},
+		{
+			"const": "unece:DocumentCodeList#749",
+			"description": "Transport equipment gross mass verification message: 749."
+		},
+		{
+			"const": "unece:DocumentCodeList#75",
+			"description": "Request for statistical data: 75."
+		},
+		{
+			"const": "unece:DocumentCodeList#750",
+			"description": "Despatch note (post parcels): 750."
+		},
+		{
+			"const": "unece:DocumentCodeList#751",
+			"description": "Invoice information for accounting purposes: 751."
+		},
+		{
+			"const": "unece:DocumentCodeList#752",
+			"description": "Plant Passport: 752."
+		},
+		{
+			"const": "unece:DocumentCodeList#753",
+			"description": "Certificate of sustainability: 753."
+		},
+		{
+			"const": "unece:DocumentCodeList#754",
+			"description": "Call for tender: 754."
+		},
+		{
+			"const": "unece:DocumentCodeList#755",
+			"description": "Invitation to tender: 755."
+		},
+		{
+			"const": "unece:DocumentCodeList#756",
+			"description": "European Single Procurement Document request: 756."
+		},
+		{
+			"const": "unece:DocumentCodeList#757",
+			"description": "Tendering price/sales catalogue request: 757."
+		},
+		{
+			"const": "unece:DocumentCodeList#758",
+			"description": "Tender: 758."
+		},
+		{
+			"const": "unece:DocumentCodeList#759",
+			"description": "European Single Procurement Document: 759."
+		},
+		{
+			"const": "unece:DocumentCodeList#76",
+			"description": "Call-off delivery: 76."
+		},
+		{
+			"const": "unece:DocumentCodeList#760",
+			"description": "Multimodal/combined transport document (generic): 760."
+		},
+		{
+			"const": "unece:DocumentCodeList#761",
+			"description": "Through bill of lading: 761."
+		},
+		{
+			"const": "unece:DocumentCodeList#762",
+			"description": "Tendering price/sales catalogue: 762."
+		},
+		{
+			"const": "unece:DocumentCodeList#763",
+			"description": "Forwarder's certificate of transport: 763."
+		},
+		{
+			"const": "unece:DocumentCodeList#764",
+			"description": "Combined transport document (generic): 764."
+		},
+		{
+			"const": "unece:DocumentCodeList#765",
+			"description": "Multimodal transport document (generic): 765."
+		},
+		{
+			"const": "unece:DocumentCodeList#766",
+			"description": "Combined transport bill of lading/multimodal bill of lading: 766."
+		},
+		{
+			"const": "unece:DocumentCodeList#767",
+			"description": "Acknowledgment of receipt: 767."
+		},
+		{
+			"const": "unece:DocumentCodeList#768",
+			"description": "Civil status document: 768."
+		},
+		{
+			"const": "unece:DocumentCodeList#769",
+			"description": "Advice report: 769."
+		},
+		{
+			"const": "unece:DocumentCodeList#77",
+			"description": "Consignment status report: 77."
+		},
+		{
+			"const": "unece:DocumentCodeList#770",
+			"description": "Booking confirmation: 770."
+		},
+		{
+			"const": "unece:DocumentCodeList#771",
+			"description": "Binding offer: 771."
+		},
+		{
+			"const": "unece:DocumentCodeList#772",
+			"description": "Binding customer agreement for contract: 772."
+		},
+		{
+			"const": "unece:DocumentCodeList#773",
+			"description": "Coverage confirmation note: 773."
+		},
+		{
+			"const": "unece:DocumentCodeList#774",
+			"description": "General terms and conditions: 774."
+		},
+		{
+			"const": "unece:DocumentCodeList#775",
+			"description": "Calling forward notice: 775."
+		},
+		{
+			"const": "unece:DocumentCodeList#776",
+			"description": "Contract clauses: 776."
+		},
+		{
+			"const": "unece:DocumentCodeList#777",
+			"description": "Specific contract conditions: 777."
+		},
+		{
+			"const": "unece:DocumentCodeList#778",
+			"description": "Group insurance rules: 778."
+		},
+		{
+			"const": "unece:DocumentCodeList#779",
+			"description": "Questionnaire: 779."
+		},
+		{
+			"const": "unece:DocumentCodeList#78",
+			"description": "Inventory movement advice: 78."
+		},
+		{
+			"const": "unece:DocumentCodeList#780",
+			"description": "Freight invoice: 780."
+		},
+		{
+			"const": "unece:DocumentCodeList#781",
+			"description": "Arrival notice (goods): 781."
+		},
+		{
+			"const": "unece:DocumentCodeList#782",
+			"description": "Notice of circumstances preventing delivery (goods): 782."
+		},
+		{
+			"const": "unece:DocumentCodeList#783",
+			"description": "Notice of circumstances preventing transport (goods): 783."
+		},
+		{
+			"const": "unece:DocumentCodeList#784",
+			"description": "Delivery notice (goods): 784."
+		},
+		{
+			"const": "unece:DocumentCodeList#785",
+			"description": "Cargo manifest: 785."
+		},
+		{
+			"const": "unece:DocumentCodeList#786",
+			"description": "Freight manifest: 786."
+		},
+		{
+			"const": "unece:DocumentCodeList#787",
+			"description": "Bordereau: 787."
+		},
+		{
+			"const": "unece:DocumentCodeList#788",
+			"description": "Container manifest (unit packing list): 788."
+		},
+		{
+			"const": "unece:DocumentCodeList#789",
+			"description": "Charges note: 789."
+		},
+		{
+			"const": "unece:DocumentCodeList#79",
+			"description": "Inventory status advice: 79."
+		},
+		{
+			"const": "unece:DocumentCodeList#790",
+			"description": "Advice of collection: 790."
+		},
+		{
+			"const": "unece:DocumentCodeList#791",
+			"description": "Safety of ship certificate: 791."
+		},
+		{
+			"const": "unece:DocumentCodeList#792",
+			"description": "Safety of radio certificate: 792."
+		},
+		{
+			"const": "unece:DocumentCodeList#793",
+			"description": "Safety of equipment certificate: 793."
+		},
+		{
+			"const": "unece:DocumentCodeList#794",
+			"description": "Civil liability for oil certificate: 794."
+		},
+		{
+			"const": "unece:DocumentCodeList#795",
+			"description": "Loadline document: 795."
+		},
+		{
+			"const": "unece:DocumentCodeList#796",
+			"description": "Derat document: 796."
+		},
+		{
+			"const": "unece:DocumentCodeList#797",
+			"description": "Maritime declaration of health: 797."
+		},
+		{
+			"const": "unece:DocumentCodeList#798",
+			"description": "Certificate of registry: 798."
+		},
+		{
+			"const": "unece:DocumentCodeList#799",
+			"description": "Ship's stores declaration: 799."
+		},
+		{
+			"const": "unece:DocumentCodeList#8",
+			"description": "First sample test report: 8."
+		},
+		{
+			"const": "unece:DocumentCodeList#80",
+			"description": "Debit note related to goods or services: 80."
+		},
+		{
+			"const": "unece:DocumentCodeList#81",
+			"description": "Credit note related to goods or services: 81."
+		},
+		{
+			"const": "unece:DocumentCodeList#810",
+			"description": "Export licence, application for: 810."
+		},
+		{
+			"const": "unece:DocumentCodeList#811",
+			"description": "Export licence: 811."
+		},
+		{
+			"const": "unece:DocumentCodeList#812",
+			"description": "Exchange control declaration, export: 812."
+		},
+		{
+			"const": "unece:DocumentCodeList#813",
+			"description": "Declaration of final beneficiary: 813."
+		},
+		{
+			"const": "unece:DocumentCodeList#814",
+			"description": "US, FATCA statement: 814."
+		},
+		{
+			"const": "unece:DocumentCodeList#815",
+			"description": "Insured status report: 815."
+		},
+		{
+			"const": "unece:DocumentCodeList#816",
+			"description": "Group pension commitment information: 816."
+		},
+		{
+			"const": "unece:DocumentCodeList#817",
+			"description": "Claim notification: 817."
+		},
+		{
+			"const": "unece:DocumentCodeList#818",
+			"description": "Assessment report: 818."
+		},
+		{
+			"const": "unece:DocumentCodeList#819",
+			"description": "Loss statement: 819."
+		},
+		{
+			"const": "unece:DocumentCodeList#82",
+			"description": "Metered services invoice: 82."
+		},
+		{
+			"const": "unece:DocumentCodeList#820",
+			"description": "Despatch note model T: 820."
+		},
+		{
+			"const": "unece:DocumentCodeList#821",
+			"description": "Despatch note model T1: 821."
+		},
+		{
+			"const": "unece:DocumentCodeList#822",
+			"description": "Despatch note model T2: 822."
+		},
+		{
+			"const": "unece:DocumentCodeList#823",
+			"description": "Control document T5: 823."
+		},
+		{
+			"const": "unece:DocumentCodeList#824",
+			"description": "Re-sending consignment note: 824."
+		},
+		{
+			"const": "unece:DocumentCodeList#825",
+			"description": "Despatch note model T2L: 825."
+		},
+		{
+			"const": "unece:DocumentCodeList#826",
+			"description": "Guarantee of cost acceptance: 826."
+		},
+		{
+			"const": "unece:DocumentCodeList#827",
+			"description": "Close of claim: 827."
+		},
+		{
+			"const": "unece:DocumentCodeList#828",
+			"description": "Refusal of claim: 828."
+		},
+		{
+			"const": "unece:DocumentCodeList#829",
+			"description": "Valuation report: 829."
+		},
+		{
+			"const": "unece:DocumentCodeList#83",
+			"description": "Credit note related to financial adjustments: 83."
+		},
+		{
+			"const": "unece:DocumentCodeList#830",
+			"description": "Goods declaration for exportation: 830."
+		},
+		{
+			"const": "unece:DocumentCodeList#831",
+			"description": "Claim history certificate: 831."
+		},
+		{
+			"const": "unece:DocumentCodeList#832",
+			"description": "Accounting statement: 832."
+		},
+		{
+			"const": "unece:DocumentCodeList#833",
+			"description": "Cargo declaration (departure): 833."
+		},
+		{
+			"const": "unece:DocumentCodeList#834",
+			"description": "Payment receipt confirmation: 834."
+		},
+		{
+			"const": "unece:DocumentCodeList#835",
+			"description": "Certificate of paid insurance premium: 835."
+		},
+		{
+			"const": "unece:DocumentCodeList#836",
+			"description": "Insured party payment report: 836."
+		},
+		{
+			"const": "unece:DocumentCodeList#837",
+			"description": "Third party payment report: 837."
+		},
+		{
+			"const": "unece:DocumentCodeList#838",
+			"description": "Direct debit authorisation: 838."
+		},
+		{
+			"const": "unece:DocumentCodeList#839",
+			"description": "Physician report: 839."
+		},
+		{
+			"const": "unece:DocumentCodeList#84",
+			"description": "Debit note related to financial adjustments: 84."
+		},
+		{
+			"const": "unece:DocumentCodeList#840",
+			"description": "Application for goods control certificate: 840."
+		},
+		{
+			"const": "unece:DocumentCodeList#841",
+			"description": "Goods control certificate: 841."
+		},
+		{
+			"const": "unece:DocumentCodeList#842",
+			"description": "Medical certificate: 842."
+		},
+		{
+			"const": "unece:DocumentCodeList#843",
+			"description": "Witness report: 843."
+		},
+		{
+			"const": "unece:DocumentCodeList#844",
+			"description": "Calculation note: 844."
+		},
+		{
+			"const": "unece:DocumentCodeList#845",
+			"description": "Communication from opposite party: 845."
+		},
+		{
+			"const": "unece:DocumentCodeList#846",
+			"description": "Amicable agreement: 846."
+		},
+		{
+			"const": "unece:DocumentCodeList#847",
+			"description": "Out of court settlement: 847."
+		},
+		{
+			"const": "unece:DocumentCodeList#848",
+			"description": "Legal action: 848."
+		},
+		{
+			"const": "unece:DocumentCodeList#849",
+			"description": "Summons: 849."
+		},
+		{
+			"const": "unece:DocumentCodeList#85",
+			"description": "Customs manifest: 85."
+		},
+		{
+			"const": "unece:DocumentCodeList#850",
+			"description": "Application for phytosanitary certificate: 850."
+		},
+		{
+			"const": "unece:DocumentCodeList#851",
+			"description": "Phytosanitary certificate: 851."
+		},
+		{
+			"const": "unece:DocumentCodeList#852",
+			"description": "Sanitary certificate: 852."
+		},
+		{
+			"const": "unece:DocumentCodeList#853",
+			"description": "Veterinary certificate: 853."
+		},
+		{
+			"const": "unece:DocumentCodeList#854",
+			"description": "Court judgment: 854."
+		},
+		{
+			"const": "unece:DocumentCodeList#855",
+			"description": "Application for inspection certificate: 855."
+		},
+		{
+			"const": "unece:DocumentCodeList#856",
+			"description": "Inspection certificate: 856."
+		},
+		{
+			"const": "unece:DocumentCodeList#857",
+			"description": "Vehicle aboard document: 857."
+		},
+		{
+			"const": "unece:DocumentCodeList#858",
+			"description": "Image: 858."
+		},
+		{
+			"const": "unece:DocumentCodeList#859",
+			"description": "Audio: 859."
+		},
+		{
+			"const": "unece:DocumentCodeList#86",
+			"description": "Vessel unpack report: 86."
+		},
+		{
+			"const": "unece:DocumentCodeList#860",
+			"description": "Certificate of origin, application for: 860."
+		},
+		{
+			"const": "unece:DocumentCodeList#861",
+			"description": "Certificate of origin: 861."
+		},
+		{
+			"const": "unece:DocumentCodeList#862",
+			"description": "Declaration of origin: 862."
+		},
+		{
+			"const": "unece:DocumentCodeList#863",
+			"description": "Regional appellation certificate: 863."
+		},
+		{
+			"const": "unece:DocumentCodeList#864",
+			"description": "Preference certificate of origin: 864."
+		},
+		{
+			"const": "unece:DocumentCodeList#865",
+			"description": "Certificate of origin form GSP: 865."
+		},
+		{
+			"const": "unece:DocumentCodeList#866",
+			"description": "Video: 866."
+		},
+		{
+			"const": "unece:DocumentCodeList#867",
+			"description": "Introductory letter: 867."
+		},
+		{
+			"const": "unece:DocumentCodeList#868",
+			"description": "Data protection regulations statement: 868."
+		},
+		{
+			"const": "unece:DocumentCodeList#869",
+			"description": "Exclusive brokerage mandate: 869."
+		},
+		{
+			"const": "unece:DocumentCodeList#87",
+			"description": "General cargo summary manifest report: 87."
+		},
+		{
+			"const": "unece:DocumentCodeList#870",
+			"description": "Consular invoice: 870."
+		},
+		{
+			"const": "unece:DocumentCodeList#871",
+			"description": "Inquiry mandate: 871."
+		},
+		{
+			"const": "unece:DocumentCodeList#872",
+			"description": "Risk analysis: 872."
+		},
+		{
+			"const": "unece:DocumentCodeList#873",
+			"description": "Transport equipment movement report, partial: 873."
+		},
+		{
+			"const": "unece:DocumentCodeList#874",
+			"description": "Conveyance declaration: 874."
+		},
+		{
+			"const": "unece:DocumentCodeList#875",
+			"description": "Partial construction invoice: 875."
+		},
+		{
+			"const": "unece:DocumentCodeList#876",
+			"description": "Partial final construction invoice: 876."
+		},
+		{
+			"const": "unece:DocumentCodeList#877",
+			"description": "Final construction invoice: 877."
+		},
+		{
+			"const": "unece:DocumentCodeList#878",
+			"description": "AEO Certificate of Security and/or Safety: 878."
+		},
+		{
+			"const": "unece:DocumentCodeList#879",
+			"description": "AEO Certificate of Conformity or Compliance: 879."
+		},
+		{
+			"const": "unece:DocumentCodeList#88",
+			"description": "Consignment unpack report: 88."
+		},
+		{
+			"const": "unece:DocumentCodeList#89",
+			"description": "Meat and meat by-products sanitary certificate: 89."
+		},
+		{
+			"const": "unece:DocumentCodeList#890",
+			"description": "Dangerous goods declaration: 890."
+		},
+		{
+			"const": "unece:DocumentCodeList#891",
+			"description": "AEO Certificate Full: 891."
+		},
+		{
+			"const": "unece:DocumentCodeList#892",
+			"description": "Purchase Order Financing Request: 892."
+		},
+		{
+			"const": "unece:DocumentCodeList#893",
+			"description": "Purchase Order Financing Request Status: 893."
+		},
+		{
+			"const": "unece:DocumentCodeList#894",
+			"description": "Purchase Order Financing Request Cancellation: 894."
+		},
+		{
+			"const": "unece:DocumentCodeList#895",
+			"description": "Statistical document, export: 895."
+		},
+		{
+			"const": "unece:DocumentCodeList#896",
+			"description": "INTRASTAT declaration: 896."
+		},
+		{
+			"const": "unece:DocumentCodeList#897",
+			"description": "Transit certificate of approval: 897."
+		},
+		{
+			"const": "unece:DocumentCodeList#898",
+			"description": "Pre-packed cross docking consignment order: 898."
+		},
+		{
+			"const": "unece:DocumentCodeList#899",
+			"description": "Traceability event declaration: 899."
+		},
+		{
+			"const": "unece:DocumentCodeList#9",
+			"description": "Price/sales catalogue: 9."
+		},
+		{
+			"const": "unece:DocumentCodeList#90",
+			"description": "Meat food products sanitary certificate: 90."
+		},
+		{
+			"const": "unece:DocumentCodeList#900",
+			"description": "Sustainability data request: 900."
+		},
+		{
+			"const": "unece:DocumentCodeList#901",
+			"description": "Delivery verification certificate: 901."
+		},
+		{
+			"const": "unece:DocumentCodeList#902",
+			"description": "Sustainability data response: 902."
+		},
+		{
+			"const": "unece:DocumentCodeList#903",
+			"description": "Sustainability Inspection request: 903."
+		},
+		{
+			"const": "unece:DocumentCodeList#904",
+			"description": "Sustainability Inspection response: 904."
+		},
+		{
+			"const": "unece:DocumentCodeList#905",
+			"description": "Transport Means Forecast Information Message: 905."
+		},
+		{
+			"const": "unece:DocumentCodeList#906",
+			"description": "Transport Means Actual Information Message: 906."
+		},
+		{
+			"const": "unece:DocumentCodeList#907",
+			"description": "Arrival Report Message: 907."
+		},
+		{
+			"const": "unece:DocumentCodeList#908",
+			"description": "Tally Message: 908."
+		},
+		{
+			"const": "unece:DocumentCodeList#909",
+			"description": "Goods Loading Message: 909."
+		},
+		{
+			"const": "unece:DocumentCodeList#91",
+			"description": "Poultry sanitary certificate: 91."
+		},
+		{
+			"const": "unece:DocumentCodeList#910",
+			"description": "Import licence, application for: 910."
+		},
+		{
+			"const": "unece:DocumentCodeList#911",
+			"description": "Import licence: 911."
+		},
+		{
+			"const": "unece:DocumentCodeList#912",
+			"description": "Transport Means and Goods Release Message.: 912."
+		},
+		{
+			"const": "unece:DocumentCodeList#913",
+			"description": "Customs declaration without commercial detail: 913."
+		},
+		{
+			"const": "unece:DocumentCodeList#914",
+			"description": "Customs declaration with commercial and item detail: 914."
+		},
+		{
+			"const": "unece:DocumentCodeList#915",
+			"description": "Customs declaration without item detail: 915."
+		},
+		{
+			"const": "unece:DocumentCodeList#916",
+			"description": "Related document: 916."
+		},
+		{
+			"const": "unece:DocumentCodeList#917",
+			"description": "Receipt (Customs): 917."
+		},
+		{
+			"const": "unece:DocumentCodeList#92",
+			"description": "Horsemeat sanitary certificate: 92."
+		},
+		{
+			"const": "unece:DocumentCodeList#925",
+			"description": "Application for exchange allocation: 925."
+		},
+		{
+			"const": "unece:DocumentCodeList#926",
+			"description": "Foreign exchange permit: 926."
+		},
+		{
+			"const": "unece:DocumentCodeList#927",
+			"description": "Exchange control declaration (import): 927."
+		},
+		{
+			"const": "unece:DocumentCodeList#929",
+			"description": "Goods declaration for importation: 929."
+		},
+		{
+			"const": "unece:DocumentCodeList#93",
+			"description": "Casing sanitary certificate: 93."
+		},
+		{
+			"const": "unece:DocumentCodeList#930",
+			"description": "Goods declaration for home use: 930."
+		},
+		{
+			"const": "unece:DocumentCodeList#931",
+			"description": "Customs immediate release declaration: 931."
+		},
+		{
+			"const": "unece:DocumentCodeList#932",
+			"description": "Customs delivery note: 932."
+		},
+		{
+			"const": "unece:DocumentCodeList#933",
+			"description": "Cargo declaration (arrival): 933."
+		},
+		{
+			"const": "unece:DocumentCodeList#934",
+			"description": "Value declaration: 934."
+		},
+		{
+			"const": "unece:DocumentCodeList#935",
+			"description": "Customs invoice: 935."
+		},
+		{
+			"const": "unece:DocumentCodeList#936",
+			"description": "Customs declaration (post parcels): 936."
+		},
+		{
+			"const": "unece:DocumentCodeList#937",
+			"description": "Tax declaration (value added tax): 937."
+		},
+		{
+			"const": "unece:DocumentCodeList#938",
+			"description": "Tax declaration (general): 938."
+		},
+		{
+			"const": "unece:DocumentCodeList#94",
+			"description": "Pharmaceutical sanitary certificate: 94."
+		},
+		{
+			"const": "unece:DocumentCodeList#940",
+			"description": "Tax demand: 940."
+		},
+		{
+			"const": "unece:DocumentCodeList#941",
+			"description": "Embargo permit: 941."
+		},
+		{
+			"const": "unece:DocumentCodeList#95",
+			"description": "Inedible sanitary certificate: 95."
+		},
+		{
+			"const": "unece:DocumentCodeList#950",
+			"description": "Goods declaration for Customs transit: 950."
+		},
+		{
+			"const": "unece:DocumentCodeList#951",
+			"description": "TIF form: 951."
+		},
+		{
+			"const": "unece:DocumentCodeList#952",
+			"description": "TIR carnet: 952."
+		},
+		{
+			"const": "unece:DocumentCodeList#953",
+			"description": "EC carnet: 953."
+		},
+		{
+			"const": "unece:DocumentCodeList#954",
+			"description": "EUR 1 certificate of origin: 954."
+		},
+		{
+			"const": "unece:DocumentCodeList#955",
+			"description": "ATA carnet: 955."
+		},
+		{
+			"const": "unece:DocumentCodeList#96",
+			"description": "Impending arrival: 96."
+		},
+		{
+			"const": "unece:DocumentCodeList#960",
+			"description": "Single administrative document: 960."
+		},
+		{
+			"const": "unece:DocumentCodeList#961",
+			"description": "General response (Customs): 961."
+		},
+		{
+			"const": "unece:DocumentCodeList#962",
+			"description": "Document response (Customs): 962."
+		},
+		{
+			"const": "unece:DocumentCodeList#963",
+			"description": "Error response (Customs): 963."
+		},
+		{
+			"const": "unece:DocumentCodeList#964",
+			"description": "Package response (Customs): 964."
+		},
+		{
+			"const": "unece:DocumentCodeList#965",
+			"description": "Tax calculation/confirmation response (Customs): 965."
+		},
+		{
+			"const": "unece:DocumentCodeList#966",
+			"description": "Quota prior allocation certificate: 966."
+		},
+		{
+			"const": "unece:DocumentCodeList#97",
+			"description": "Means of transport advice: 97."
+		},
+		{
+			"const": "unece:DocumentCodeList#970",
+			"description": "Wagon report: 970."
+		},
+		{
+			"const": "unece:DocumentCodeList#971",
+			"description": "Transit Conveyor Document: 971."
+		},
+		{
+			"const": "unece:DocumentCodeList#972",
+			"description": "Rail consignment note forwarder copy: 972."
+		},
+		{
+			"const": "unece:DocumentCodeList#974",
+			"description": "Duty suspended goods: 974."
+		},
+		{
+			"const": "unece:DocumentCodeList#975",
+			"description": "Proof of transit declaration: 975."
+		},
+		{
+			"const": "unece:DocumentCodeList#976",
+			"description": "Container transfer note: 976."
+		},
+		{
+			"const": "unece:DocumentCodeList#977",
+			"description": "NATO transit document: 977."
+		},
+		{
+			"const": "unece:DocumentCodeList#978",
+			"description": "Transfrontier waste shipment authorization: 978."
+		},
+		{
+			"const": "unece:DocumentCodeList#979",
+			"description": "Transfrontier waste shipment movement document: 979."
+		},
+		{
+			"const": "unece:DocumentCodeList#98",
+			"description": "Arrival information: 98."
+		},
+		{
+			"const": "unece:DocumentCodeList#99",
+			"description": "Cargo release notification: 99."
+		},
+		{
+			"const": "unece:DocumentCodeList#990",
+			"description": "End use authorization: 990."
+		},
+		{
+			"const": "unece:DocumentCodeList#991",
+			"description": "Government contract: 991."
+		},
+		{
+			"const": "unece:DocumentCodeList#995",
+			"description": "Statistical document, import: 995."
+		},
+		{
+			"const": "unece:DocumentCodeList#996",
+			"description": "Application for documentary credit: 996."
+		},
+		{
+			"const": "unece:DocumentCodeList#998",
+			"description": "Previous Customs document/message: 998."
+		}
 	]
 }

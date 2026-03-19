@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeTax",
+	"title": "UneceTradeTax",
 	"description": "A trade related fiscal levy or duty.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeTax",
 			"description": "JSON-LD Type."
 		},
@@ -85,11 +67,11 @@
 		},
 		"calculationMethodCode": {
 			"type": "string",
-			"description": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax calculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on grand total\"."
+			"description": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax\ncalculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on\ngrand total\"."
 		},
 		"calculationSequenceNumeric": {
 			"type": "string",
-			"description": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes are applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
+			"description": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes\nare applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
 		},
 		"categoryName": {
 			"type": "string",
@@ -101,11 +83,11 @@
 		},
 		"customsDutyRegimeTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceCustomsDutyRegimeTypeCodeList",
-			"description": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+			"description": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or\nduty, such as a preferential duty rate."
 		},
 		"customsProcedureGuaranteeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList",
-			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be\nfulfilled for this trade related tax, levy or duty."
 		},
 		"deductionAmount": {
 			"type": "array",
@@ -150,7 +132,7 @@
 		},
 		"guarantee": {
 			"type": "string",
-			"description": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+			"description": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be\nfulfilled for this trade related tax, levy or duty."
 		},
 		"identifier": {
 			"anyOf": [
@@ -231,14 +213,14 @@
 		},
 		"regimeType": {
 			"type": "string",
-			"description": "The type of regime, expressed as text, applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+			"description": "The type of regime, expressed as text, applicable to the assessment or calculation of this trade related tax, levy or\nduty, such as a preferential duty rate."
 		},
 		"selfAssessedBasisAmount": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+			"description": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment\nbasis."
 		},
 		"selfAssessedBasisQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
@@ -283,7 +265,7 @@
 		},
 		"taxCategoryCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceTaxCategoryCodeList",
-			"description": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
+			"description": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from\nTax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
 		},
 		"taxExemptionAuthorityId": {
 			"anyOf": [
@@ -313,7 +295,7 @@
 		},
 		"taxTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceTaxTypeCodeList",
-			"description": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
+			"description": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference\nUnited Nations Code List (UNCL) 5153]."
 		},
 		"timeReferenceDueDateTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceTimeReferenceCodeList",

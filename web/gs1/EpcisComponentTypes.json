@@ -1,22 +1,64 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisComponentTypes",
+	"title": "EpcisComponentTypes",
 	"description": "Supported EPCIS 2.0 `component` values.",
-	"type": "string",
-	"enum": [
-		"x",
-		"y",
-		"z",
-		"axial_distance",
-		"azimuth",
-		"height",
-		"spherical_radius",
-		"polar_angle",
-		"elevation_angle",
-		"easting",
-		"northing",
-		"latitude",
-		"longitude",
-		"altitude"
+	"oneOf": [
+		{
+			"const": "x",
+			"description": "Component or projection along the x axis in Cartesian coordinates (X, Y, Z)."
+		},
+		{
+			"const": "y",
+			"description": "Component or projection along the y axis in Cartesian coordinates (X, Y, Z)."
+		},
+		{
+			"const": "z",
+			"description": "Component or projection along the z axis in Cartesian coordinates (X, Y, Z)."
+		},
+		{
+			"const": "axial_distance",
+			"description": "Radial distance from the cylindrical axis in a cylindrical polar coordinate\nsystem."
+		},
+		{
+			"const": "azimuth",
+			"description": "Angle measured in the XY plane, anticlockwise from the X axis to the plane\ncontaining the vector and the Z axis."
+		},
+		{
+			"const": "height",
+			"description": "Height parallel to the cylindrical axis in a cylindrical polar coordinate\nsystem."
+		},
+		{
+			"const": "spherical_radius",
+			"description": "Radial distance from the centre of a sphere in a spherical polar coordinate\nsystem."
+		},
+		{
+			"const": "polar_angle",
+			"description": "Angle measured from the Z axis to the vector in a spherical polar coordinate\nsystem."
+		},
+		{
+			"const": "elevation_angle",
+			"description": "Angle measured from the XY plane to the vector in a spherical polar coordinate\nsystem."
+		},
+		{
+			"const": "easting",
+			"description": "Component or projection along an east-pointing axis in a geographic Cartesian\ncoordinate system."
+		},
+		{
+			"const": "northing",
+			"description": "Component or projection along a north-pointing axis in a geographic Cartesian\ncoordinate system."
+		},
+		{
+			"const": "latitude",
+			"description": "Angle of elevation from the equatorial plane in a geographic coordinate\nsystem."
+		},
+		{
+			"const": "longitude",
+			"description": "Angle, measured within the equatorial plane, east of the prime meridian in a\ngeographic coordinate system."
+		},
+		{
+			"const": "altitude",
+			"description": "Height above a defined surface (such as mean sea level) in a geographic\ncoordinate system."
+		}
 	]
 }

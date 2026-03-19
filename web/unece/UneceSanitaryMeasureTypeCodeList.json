@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSanitaryMeasureTypeCodeList",
+	"title": "UneceSanitaryMeasureTypeCodeList",
 	"description": "Values for UneceSanitaryMeasure typeCode property.",
-	"type": "string",
-	"const": "unece:appliedSanitaryMeasure"
+	"oneOf": [
+		{
+			"const": "unece:appliedSanitaryMeasure",
+			"description": "A sanitary measure applied for this MDH health indication."
+		}
+	]
 }

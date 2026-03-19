@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceIOTDeviceTypeCodeList",
+	"title": "UneceIOTDeviceTypeCodeList",
 	"description": "Values for UneceIOTDevice typeCode property.",
-	"type": "string",
-	"enum": ["unece:attachedIOTDevice", "unece:reportingIOTDevice"]
+	"oneOf": [
+		{
+			"const": "unece:attachedIOTDevice",
+			"description": "An IOT device attached to this logistics transport means.\nAn IOT device attached to this piece of logistics transport equipment."
+		},
+		{
+			"const": "unece:reportingIOTDevice",
+			"description": "An IOT device for this transport reporting event."
+		}
+	]
 }

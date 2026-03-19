@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceFinancialAccountTypeCodeList",
+	"title": "UneceFinancialAccountTypeCodeList",
 	"description": "A character string used to represent the type of financial account.",
-	"type": "string",
-	"enum": ["unece:FinancialAccountTypeCodeList#1", "unece:FinancialAccountTypeCodeList#2"]
+	"oneOf": [
+		{
+			"const": "unece:FinancialAccountTypeCodeList#1",
+			"description": "Saving: 1."
+		},
+		{
+			"const": "unece:FinancialAccountTypeCodeList#2",
+			"description": "Checking: 2."
+		}
+	]
 }

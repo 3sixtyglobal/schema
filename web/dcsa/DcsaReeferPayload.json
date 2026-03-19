@@ -1,43 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaReeferPayload",
+	"title": "DcsaReeferPayload",
 	"description": "Reefer payload.\n\nSource: `reeferPayload` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
-	"properties": {
-		"eventDateTime": {
-			"type": "string",
-			"description": "The local date and time when the event took place (or will take place). Format: ISO 8601 date-time."
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseEvent"
 		},
-		"eventClassifierCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCode",
-			"description": "Code for the event classifier.\n\nNote: allowed values depend on event type. Some event categories in the upstream spec constrain this to a subset (e.g. Shipment/IoT/Reefer are always ACT)."
-		},
-		"reeferEventTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferEventTypeCodes",
-			"description": "Reefer event type code."
-		},
-		"measurements": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferMeasurements",
-			"description": "Measured reefer values (conditioned by event type)."
-		},
-		"setpoints": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferSetpoint",
-			"description": "Reefer setpoint values (conditioned by event type)."
-		},
-		"geoLocation": {
-			"description": "Geo location.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
-		},
-		"equipmentReference": {
-			"type": "string",
-			"description": "Equipment reference."
-		},
-		"relatedDocumentReferences": {
-			"type": "array",
-			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
-			},
-			"description": "Related document references."
+		{
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseReeferEvent"
 		}
-	},
-	"required": ["equipmentReference", "eventClassifierCode", "eventDateTime", "reeferEventTypeCode"]
+	]
 }

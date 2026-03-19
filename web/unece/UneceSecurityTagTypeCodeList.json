@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSecurityTagTypeCodeList",
+	"title": "UneceSecurityTagTypeCodeList",
 	"description": "Values for UneceSecurityTag typeCode property.",
-	"type": "string",
-	"const": "unece:attachedSecurityTag"
+	"oneOf": [
+		{
+			"const": "unece:attachedSecurityTag",
+			"description": "A tag device attached to this trade product to provide protection from a peril such as theft."
+		}
+	]
 }

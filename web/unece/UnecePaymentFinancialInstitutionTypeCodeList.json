@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentFinancialInstitutionTypeCodeList",
+	"title": "UnecePaymentFinancialInstitutionTypeCodeList",
 	"description": "Values for UnecePaymentFinancialInstitution typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:creditorSpecifiedFinancialInstitution",
-		"unece:debtorSpecifiedFinancialInstitution",
-		"unece:specifiedPaymentFinancialInstitution"
+	"oneOf": [
+		{
+			"const": "unece:creditorSpecifiedFinancialInstitution",
+			"description": "A creditor financial institution specified for this trade settlement payment means."
+		},
+		{
+			"const": "unece:debtorSpecifiedFinancialInstitution",
+			"description": "A debtor financial institution specified for this trade settlement payment means."
+		},
+		{
+			"const": "unece:specifiedPaymentFinancialInstitution",
+			"description": "A financial institution specified for this trade settlement payment means."
+		}
 	]
 }

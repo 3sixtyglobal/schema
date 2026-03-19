@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaReeferEventTypeCodes",
-	"description": "DCSA reefer event type codes.\n\nSource: `reeferEventTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA reefer event type codes.",
-	"type": "string",
-	"enum": ["MEAS", "ADJU"]
+	"title": "DcsaReeferEventTypeCodes",
+	"description": "DCSA reefer event type codes.",
+	"oneOf": [
+		{
+			"const": "MEAS",
+			"description": "Measured."
+		},
+		{
+			"const": "ADJU",
+			"description": "Adjusted."
+		}
+	]
 }

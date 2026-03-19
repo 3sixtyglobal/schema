@@ -1,7 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisActionTypes",
-	"description": "GS1 EPCIS 2.0 action values capturing whether an event adds, observes, or removes associations.",
-	"type": "string",
-	"enum": ["ADD", "OBSERVE", "DELETE"]
+	"title": "EpcisActionTypes",
+	"description": "GS1 EPCIS 2.0 action values capturing whether an event adds, observes, or\nremoves associations.",
+	"oneOf": [
+		{
+			"const": "ADD",
+			"description": "Indicates that associations described by the event are created as of\neventTime."
+		},
+		{
+			"const": "OBSERVE",
+			"description": "Reports an observation of existing associations without changing them."
+		},
+		{
+			"const": "DELETE",
+			"description": "Indicates that associations described by the event no longer hold as of\neventTime."
+		}
+	]
 }

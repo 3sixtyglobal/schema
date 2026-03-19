@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceGroupedWorkItemTypeCodeList",
+	"title": "UneceGroupedWorkItemTypeCodeList",
 	"description": "Values for UneceGroupedWorkItem typeCode property.",
-	"type": "string",
-	"const": "unece:itemGroupedWorkItem"
+	"oneOf": [
+		{
+			"const": "unece:itemGroupedWorkItem",
+			"description": "A grouped work item in this valuation breakdown statement.\nA grouped work item within this grouped work item."
+		}
+	]
 }

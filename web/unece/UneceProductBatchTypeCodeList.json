@@ -1,17 +1,44 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceProductBatchTypeCodeList",
+	"title": "UneceProductBatchTypeCodeList",
 	"description": "Values for UneceProductBatch typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableBatch",
-		"unece:componentBatch",
-		"unece:includedBatch",
-		"unece:inputApplicableBatch",
-		"unece:outputApplicableBatch",
-		"unece:relatedBatch",
-		"unece:specifiedProductBatch",
-		"unece:substituteApplicableBatch",
-		"unece:substitutedApplicableBatch"
+	"oneOf": [
+		{
+			"const": "unece:applicableBatch",
+			"description": "A product batch applicable to this supply chain trade line item."
+		},
+		{
+			"const": "unece:componentBatch",
+			"description": "A product batch component of this product batch."
+		},
+		{
+			"const": "unece:includedBatch",
+			"description": "A product batch included in this supply chain inventory."
+		},
+		{
+			"const": "unece:inputApplicableBatch",
+			"description": "An input batch applicable to this production machine.\nAn input batch applicable to this specified production device.\nAn input product batch applicable to this facility production unit.\nAn input product batch applicable to this production process."
+		},
+		{
+			"const": "unece:outputApplicableBatch",
+			"description": "An output batch applicable to this specified production device.\nAn output product batch applicable to this facility production unit.\nAn output product batch applicable to this production machine.\nAn output product batch applicable to this production process."
+		},
+		{
+			"const": "unece:relatedBatch",
+			"description": "A product batch related to this trade party."
+		},
+		{
+			"const": "unece:specifiedProductBatch",
+			"description": "A product batch specified for this specified agricultural application."
+		},
+		{
+			"const": "unece:substituteApplicableBatch",
+			"description": "A substitute product batch applicable to this supply chain trade line item."
+		},
+		{
+			"const": "unece:substitutedApplicableBatch",
+			"description": "A substituted product batch applicable to this supply chain trade line item."
+		}
 	]
 }

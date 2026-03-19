@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceQuantityAnalysisTypeCodeList",
+	"title": "UneceQuantityAnalysisTypeCodeList",
 	"description": "Values for UneceQuantityAnalysis typeCode property.",
-	"type": "string",
-	"enum": ["unece:breakdownQuantityAnalysis", "unece:totalQuantityAnalysis"]
+	"oneOf": [
+		{
+			"const": "unece:breakdownQuantityAnalysis",
+			"description": "A quantity analysis breakdown of this work item quantity analysis."
+		},
+		{
+			"const": "unece:totalQuantityAnalysis",
+			"description": "An analysis of the total quantity for this basic work item."
+		}
+	]
 }

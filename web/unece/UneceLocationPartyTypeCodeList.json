@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLocationPartyTypeCodeList",
+	"title": "UneceLocationPartyTypeCodeList",
 	"description": "Values for UneceLocationParty typeCode property.",
-	"type": "string",
-	"const": "unece:servicingSpecifiedParty"
+	"oneOf": [
+		{
+			"const": "unece:servicingSpecifiedParty",
+			"description": "A servicing party specified for this logistics related location."
+		}
+	]
 }

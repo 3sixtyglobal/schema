@@ -1,97 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisTransactionEvent",
-	"description": "EPCIS 2.0 TransactionEvent relating objects or quantities to one or more business transactions, optionally with a parent identifier.",
+	"title": "EpcisTransactionEvent",
+	"description": "EPCIS 2.0 TransactionEvent relating objects or quantities to one or more\nbusiness transactions, optionally with a parent identifier.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://ref.gs1.org/epcis"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://ref.gs1.org/epcis"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
-		},
 		"type": {
-			"type": "string",
 			"const": "TransactionEvent",
 			"description": "Fixed to TransactionEvent."
-		},
-		"eventID": {
-			"type": "string",
-			"description": "URI identifier of a specific EPCIS event (alias of id in JSON or XML)."
-		},
-		"certificationInfo": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or Organizations mentioned in this Event."
-		},
-		"errorDeclaration": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
-			"description": "Error declaration."
-		},
-		"eventTime": {
-			"type": "string",
-			"description": "The date and time at which the EPCIS Capturing Applications asserts the event occurred."
-		},
-		"eventTimeZoneOffset": {
-			"type": "string",
-			"description": "The time zone offset in effect at the time and place the event occurred, expressed as an offset from UTC."
-		},
-		"recordTime": {
-			"type": "string",
-			"description": "(Optional) The date and time at which this event was recorded by an EPCIS Repository; ignored at capture and present on query results."
 		},
 		"bizTransactionList": {
 			"type": "array",
@@ -102,21 +18,21 @@
 		},
 		"parentID": {
 			"type": "string",
-			"description": "(Optional when action is OBSERVE, required otherwise) Identifier of the parent of the aggregation or association; use the pure identity URI when the parent is an EPC."
+			"description": "(Optional when action is OBSERVE, required otherwise) Identifier of the parent\nof the aggregation or association; use the pure identity URI when the parent is\nan EPC."
 		},
 		"epcList": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "(Optional) An unordered list of one or more EPCs naming specific objects to which the event pertained."
+			"description": "(Optional) An unordered list of one or more EPCs naming specific objects to\nwhich the event pertained."
 		},
 		"quantityList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
 			},
-			"description": "An unordered list of one or more QuantityElements identifying (at the class level) contained objects."
+			"description": "An unordered list of one or more QuantityElements identifying (at the class\nlevel) contained objects."
 		},
 		"action": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisActionTypes",
@@ -142,7 +58,7 @@
 					"type": "string"
 				}
 			],
-			"description": "(Optional) The business condition of the objects associated with the EPCs, presumed to hold true until contradicted by a subsequent event."
+			"description": "(Optional) The business condition of the objects associated with the EPCs,\npresumed to hold true until contradicted by a subsequent event."
 		},
 		"readPoint": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
@@ -150,21 +66,21 @@
 		},
 		"bizLocation": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
-			"description": "(Optional) The business location where the objects associated with the EPCs may be found, until contradicted by a subsequent event."
+			"description": "(Optional) The business location where the objects associated with the EPCs\nmay be found, until contradicted by a subsequent event."
 		},
 		"sourceList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSource"
 			},
-			"description": "(Optional) Unordered list of Source elements that provide context about the originating endpoint of a business transfer of which this event is a part."
+			"description": "(Optional) Unordered list of Source elements that provide context about the\noriginating endpoint of a business transfer of which this event is a part."
 		},
 		"destinationList": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDestination"
 			},
-			"description": "(Optional) Unordered list of Destination elements that provide context about the terminating endpoint of a business transfer of which this event is a part."
+			"description": "(Optional) Unordered list of Destination elements that provide context about the\nterminating endpoint of a business transfer of which this event is a part."
 		},
 		"sensorElementList": {
 			"type": "array",
@@ -174,12 +90,10 @@
 			"description": "(Optional) Connects event to one or more SensorElements."
 		}
 	},
-	"required": [
-		"@context",
-		"action",
-		"bizTransactionList",
-		"eventTime",
-		"eventTimeZoneOffset",
-		"type"
+	"required": ["type", "bizTransactionList", "action"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisEvent"
+		}
 	]
 }

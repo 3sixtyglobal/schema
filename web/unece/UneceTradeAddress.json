@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeAddress",
+	"title": "UneceTradeAddress",
 	"description": "The location at which a particular trade related organization or person may be found or reached.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeAddress",
 			"description": "JSON-LD Type."
 		},
@@ -44,7 +26,7 @@
 		},
 		"attentionOf": {
 			"type": "string",
-			"description": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN' for this trade address."
+			"description": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words\nsuch as 'for the attention of' or 'FAO' or 'ATTN' for this trade address."
 		},
 		"buildingName": {
 			"type": "string",
@@ -56,7 +38,7 @@
 		},
 		"careOf": {
 			"type": "string",
-			"description": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'."
+			"description": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with\nwords such as 'care of' or 'C/O'."
 		},
 		"cityId": {
 			"anyOf": [
@@ -156,7 +138,7 @@
 		},
 		"postOfficeBox": {
 			"type": "string",
-			"description": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address."
+			"description": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal\nservice location, assigned to a person or organization, where postal items may be kept for this trade address."
 		},
 		"postcodeCode": {
 			"type": "string",

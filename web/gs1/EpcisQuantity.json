@@ -1,20 +1,21 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisQuantity",
+	"title": "EpcisQuantity",
 	"description": "EPCIS 2.0 QuantityElement defining class-level identifiers and amounts.",
 	"type": "object",
 	"properties": {
 		"epcClass": {
 			"type": "string",
-			"description": "A class-level identifier for the class to which the specified quantity of objects belongs."
+			"description": "A class-level identifier for the class to which the specified quantity of\nobjects belongs."
 		},
 		"quantity": {
 			"type": "number",
-			"description": "(Optional) A number that specifies how many or how much of the specified EPCClass is denoted by this QuantityElement."
+			"description": "(Optional) A number that specifies how many or how much of the specified\nEPCClass is denoted by this QuantityElement."
 		},
 		"uom": {
 			"type": "string",
-			"description": "(Optional) Unit of measure by which the specified value(s) of the property specified by type should be interpreted."
+			"description": "(Optional) Unit of measure by which the specified value(s) of the property\nspecified by type should be interpreted."
 		}
 	},
 	"required": ["epcClass"]

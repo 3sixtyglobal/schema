@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceFoodChoiceTypeCodeList",
+	"title": "UneceFoodChoiceTypeCodeList",
 	"description": "Values for UneceFoodChoice typeCode property.",
-	"type": "string",
-	"const": "unece:notifiedFoodChoice"
+	"oneOf": [
+		{
+			"const": "unece:notifiedFoodChoice",
+			"description": "A food choice notified for this guest person."
+		}
+	]
 }

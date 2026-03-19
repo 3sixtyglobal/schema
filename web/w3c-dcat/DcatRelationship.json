@@ -1,83 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-dcat/DcatRelationship",
-	"description": "Interface for DCAT Relationship. An association class for attaching additional information to a relationship between DCAT Resources.",
+	"title": "DcatRelationship",
+	"description": "Interface for DCAT Relationship.\nAn association class for attaching additional information to a relationship\nbetween DCAT Resources.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The DCAT JSON-LD context type. Supports the DCAT context URL or arrays with additional context definitions.",
-			"type": "object",
-			"additionalProperties": {
-				"anyOf": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
-					},
-					{
-						"type": ["null", "string"]
-					}
-				]
-			},
-			"properties": {
-				"@base": {
-					"type": ["string", "null"]
-				},
-				"@direction": {
-					"type": ["string", "null"],
-					"enum": ["ltr", "rtl", null]
-				},
-				"@import": {
-					"type": "string"
-				},
-				"@language": {
-					"type": "string"
-				},
-				"@propagate": {
-					"type": "boolean"
-				},
-				"@protected": {
-					"type": "boolean"
-				},
-				"@type": {
-					"type": "object",
-					"properties": {
-						"@container": {
-							"type": "string",
-							"const": "@set"
-						},
-						"@protected": {
-							"type": "boolean"
-						}
-					},
-					"required": ["@container"]
-				},
-				"@version": {
-					"type": "string",
-					"const": "1.1"
-				},
-				"@vocab": {
-					"type": ["string", "null"]
-				},
-				"dcat": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/dcat#"
-				},
-				"dcterms": {
-					"type": "string",
-					"const": "http://purl.org/dc/terms/"
-				},
-				"odrl": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/odrl/2/"
-				},
-				"foaf": {
-					"type": "string",
-					"const": "https://xmlns.com/foaf/0.1/"
-				}
-			},
-			"required": ["dcat", "dcterms"]
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
 		},
 		"@type": {
-			"type": "string",
 			"const": "dcat:Relationship",
 			"description": "The type identifier, typically \"Relationship\"."
 		},

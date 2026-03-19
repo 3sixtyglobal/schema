@@ -1,33 +1,38 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/DataIntegrityProof",
-	"description": "Interface describing a did proof. https://www.w3.org/TR/vc-data-integrity/",
+	"title": "DataIntegrityProof",
+	"description": "Interface describing a did proof.\nhttps://www.w3.org/TR/vc-data-integrity/",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://w3id.org/security/data-integrity/v2"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://w3id.org/security/data-integrity/v2"
-						}
-					],
 					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+							},
+							{
+								"const": "https://w3id.org/security/data-integrity/v2"
+							}
+						]
+					},
+					"contains": {
+						"const": "https://w3id.org/security/data-integrity/v2"
+					},
+					"minContains": 1,
+					"maxContains": 1,
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DataIntegrityProof",
 			"description": "JSON-LD Type."
 		},
@@ -52,7 +57,7 @@
 		},
 		"proofValue": {
 			"type": "string",
-			"description": "Contains the base-encoded binary data necessary to verify the digital proof using the verificationMethod specified."
+			"description": "Contains the base-encoded binary data necessary to verify the\ndigital proof using the verificationMethod specified."
 		},
 		"verificationMethod": {
 			"type": "string",
@@ -96,11 +101,11 @@
 		},
 		"previousProof": {
 			"type": "string",
-			"description": "Identifies another data integrity proof that MUST verify before the current proof is processed"
+			"description": "Identifies another data integrity proof that MUST verify before\nthe current proof is processed"
 		},
 		"nonce": {
 			"type": "string",
-			"description": "Use of this field is to increase privacy by decreasing linkability that is the result of deterministically generated signatures."
+			"description": "Use of this field is to increase privacy by decreasing linkability\nthat is the result of deterministically generated signatures."
 		}
 	},
 	"required": ["type", "cryptosuite", "proofPurpose"]

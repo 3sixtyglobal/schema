@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLegalOrganization",
+	"title": "UneceLegalOrganization",
 	"description": "An organization set up on a legal basis as a business, government body, department, charity, or financial institution.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "LegalOrganization",
 			"description": "JSON-LD Type."
 		},
@@ -51,7 +33,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "A unique identifier of the district area regarded as a geographic or administrative unit within which this legally set up organization operates."
+			"description": "A unique identifier of the district area regarded as a geographic or administrative unit within which this legally set\nup organization operates."
 		},
 		"establishedDateTime": {
 			"type": "string",
@@ -71,7 +53,7 @@
 		},
 		"legalClassificationCode": {
 			"type": "string",
-			"description": "The code specifying the legal classification of this organization, such as Incorporated (Inc), Limited Liability Corporation (LLC) or non-profit."
+			"description": "The code specifying the legal classification of this organization, such as Incorporated (Inc), Limited Liability\nCorporation (LLC) or non-profit."
 		},
 		"name": {
 			"type": "string",

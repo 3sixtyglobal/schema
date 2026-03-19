@@ -1,7 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCropProduceBatchTypeCodeList",
+	"title": "UneceCropProduceBatchTypeCodeList",
 	"description": "Values for UneceCropProduceBatch typeCode property.",
-	"type": "string",
-	"enum": ["unece:harvestedBatch", "unece:inputSpecifiedBatch", "unece:outputSpecifiedBatch"]
+	"oneOf": [
+		{
+			"const": "unece:harvestedBatch",
+			"description": "A crop produce batch harvested in the crop production for this agricultural process."
+		},
+		{
+			"const": "unece:inputSpecifiedBatch",
+			"description": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
+		},
+		{
+			"const": "unece:outputSpecifiedBatch",
+			"description": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
+		}
+	]
 }

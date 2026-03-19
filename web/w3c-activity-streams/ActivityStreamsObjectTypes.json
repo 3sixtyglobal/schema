@@ -1,33 +1,112 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObjectTypes",
+	"title": "ActivityStreamsObjectTypes",
 	"description": "The object types concerning Activity Streams.",
-	"type": "string",
-	"enum": [
-		"Object",
-		"Activity",
-		"IntransitiveActivity",
-		"Collection",
-		"OrderedCollection",
-		"CollectionPage",
-		"OrderedCollectionPage",
-		"Actor",
-		"Application",
-		"Group",
-		"Organization",
-		"Person",
-		"Service",
-		"Article",
-		"Audio",
-		"Document",
-		"Event",
-		"Image",
-		"Note",
-		"Page",
-		"Place",
-		"Profile",
-		"Relationship",
-		"Tombstone",
-		"Video"
+	"oneOf": [
+		{
+			"const": "Object",
+			"description": "Object"
+		},
+		{
+			"const": "Activity",
+			"description": "Activity"
+		},
+		{
+			"const": "IntransitiveActivity",
+			"description": "IntransitiveActivity"
+		},
+		{
+			"const": "Collection",
+			"description": "Collection"
+		},
+		{
+			"const": "OrderedCollection",
+			"description": "OrderedCollection"
+		},
+		{
+			"const": "CollectionPage",
+			"description": "CollectionPage"
+		},
+		{
+			"const": "OrderedCollectionPage",
+			"description": "OrderedCollectionPage"
+		},
+		{
+			"const": "Actor",
+			"description": "Actor"
+		},
+		{
+			"const": "Application",
+			"description": "Application"
+		},
+		{
+			"const": "Group",
+			"description": "Group"
+		},
+		{
+			"const": "Organization",
+			"description": "Organization"
+		},
+		{
+			"const": "Person",
+			"description": "Person"
+		},
+		{
+			"const": "Service",
+			"description": "Service"
+		},
+		{
+			"const": "Article",
+			"description": "Article"
+		},
+		{
+			"const": "Audio",
+			"description": "Audio"
+		},
+		{
+			"const": "Document",
+			"description": "Document"
+		},
+		{
+			"const": "Event",
+			"description": "Event"
+		},
+		{
+			"const": "Image",
+			"description": "Image"
+		},
+		{
+			"const": "Note",
+			"description": "Note"
+		},
+		{
+			"const": "Page",
+			"description": "Page"
+		},
+		{
+			"const": "Question",
+			"description": "Question"
+		},
+		{
+			"const": "Place",
+			"description": "Place"
+		},
+		{
+			"const": "Profile",
+			"description": "Profile"
+		},
+		{
+			"const": "Relationship",
+			"description": "Relationship"
+		},
+		{
+			"const": "Tombstone",
+			"description": "Tombstone"
+		},
+		{
+			"const": "Video",
+			"description": "Video"
+		}
 	]
 }

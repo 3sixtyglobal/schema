@@ -1,63 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsMention",
-	"description": "A W3C Activity Streams Mention.\n\nA `Mention` is a specialised `Link` typically used to identify users or objects being mentioned within content.",
+	"title": "ActivityStreamsMention",
+	"description": "A W3C Activity Streams Mention.\n\nA `Mention` is a specialised `Link` typically used to identify users or\nobjects being mentioned within content.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"description": "The Activity Streams JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://www.w3.org/ns/activitystreams"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://www.w3.org/ns/activitystreams"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
-		},
 		"type": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "Mention"
 				},
 				{
@@ -66,82 +16,24 @@
 				{
 					"type": "array",
 					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "Mention type."
-		},
-		"href": {
-			"type": "string",
-			"description": "The target URI of the Link.",
-			"format": "uri"
-		},
-		"name": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-				}
-			],
-			"description": "A natural language name for the link."
-		},
-		"hreflang": {
-			"type": "string",
-			"description": "A language hint for the target resource."
-		},
-		"mediaType": {
-			"type": "string",
-			"description": "MIME media type of the referenced resource."
-		},
-		"rel": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			]
-		},
-		"height": {
-			"type": "number",
-			"description": "Desired rendered height."
-		},
-		"width": {
-			"type": "number",
-			"description": "Desired rendered width."
-		},
-		"preview": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
 						"anyOf": [
 							{
-								"type": "string"
+								"const": "Mention"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"type": "string"
 							}
 						]
 					}
 				}
-			]
+			],
+			"description": "Mention type."
 		}
 	},
-	"required": ["@context", "href", "type"]
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLink"
+		}
+	]
 }

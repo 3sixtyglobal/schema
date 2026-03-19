@@ -1,19 +1,33 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gaia-x-loire/GaiaXRegistrationNumber",
-	"description": "Registration Number as defined by the Gaia-X ontology. https://docs.gaia-x.eu/ontology/development/classes/RegistrationNumber/",
+	"title": "GaiaXRegistrationNumber",
+	"description": "Registration Number as defined by the Gaia-X ontology.\nhttps://docs.gaia-x.eu/ontology/development/classes/RegistrationNumber/",
 	"type": "object",
 	"properties": {
 		"type": {
-			"type": "string",
-			"enum": [
-				"RegistrationNumber",
-				"LocalRegistrationNumber",
-				"EORI",
-				"EUID",
-				"LeiCode",
-				"TaxID",
-				"VatID"
+			"anyOf": [
+				{
+					"const": "RegistrationNumber"
+				},
+				{
+					"const": "LocalRegistrationNumber"
+				},
+				{
+					"const": "EORI"
+				},
+				{
+					"const": "EUID"
+				},
+				{
+					"const": "LeiCode"
+				},
+				{
+					"const": "TaxID"
+				},
+				{
+					"const": "VatID"
+				}
 			],
 			"description": "JSON-LD Type."
 		},
@@ -27,7 +41,7 @@
 		},
 		"subdivisionCountryCode": {
 			"type": "string",
-			"description": "Subdivision country code. See https://docs.gaia-x.eu/ontology/development/enums/RegionCode/"
+			"description": "Subdivision country code.\nSee https://docs.gaia-x.eu/ontology/development/enums/RegionCode/"
 		},
 		"vatID": {
 			"type": "string",

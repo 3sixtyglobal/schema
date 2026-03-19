@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedFaultTypeCodeList",
+	"title": "UneceSpecifiedFaultTypeCodeList",
 	"description": "Values for UneceSpecifiedFault typeCode property.",
-	"type": "string",
-	"const": "unece:applicableFault"
+	"oneOf": [
+		{
+			"const": "unece:applicableFault",
+			"description": "A fault applicable to this trade product.\nA specified fault applicable to this product batch.\nA specified fault applicable to this production process."
+		}
+	]
 }

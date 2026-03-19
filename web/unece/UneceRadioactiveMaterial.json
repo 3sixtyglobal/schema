@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceRadioactiveMaterial",
-	"description": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of particles or gamma rays.",
+	"title": "UneceRadioactiveMaterial",
+	"description": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of\nparticles or gamma rays.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "RadioactiveMaterial",
 			"description": "JSON-LD Type."
 		},
@@ -48,7 +30,7 @@
 		},
 		"fissileCriticalitySafetyIndexNumeric": {
 			"type": "string",
-			"description": "The number (rounded up to the next tenth) assigned to and placed on the label of a fissile radioactive material package, to designate the degree of control of accumulation of packages, overpacks or freight containers containing fissile material during transportation."
+			"description": "The number (rounded up to the next tenth) assigned to and placed on the label of a fissile radioactive material package,\nto designate the degree of control of accumulation of packages, overpacks or freight containers containing fissile\nmaterial during transportation."
 		},
 		"fissileExceptionIndicator": {
 			"type": "boolean",

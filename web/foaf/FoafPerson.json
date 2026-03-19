@@ -1,102 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/foaf/FoafPerson",
+	"title": "FoafPerson",
 	"description": "A FOAF Person.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The FOAF JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://xmlns.com/foaf/0.1/"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://xmlns.com/foaf/0.1/"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://xmlns.com/foaf/0.1/"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
-		},
-		"@id": {
-			"type": "string",
-			"description": "The unique identifier for the FOAF object."
-		},
-		"name": {
-			"type": "string",
-			"description": "A name for some thing."
-		},
-		"title": {
-			"type": "string",
-			"description": "Title (Mr, Mrs, Ms, Dr. etc)"
-		},
-		"mbox": {
-			"type": "string",
-			"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox"
-		},
-		"homepage": {
-			"type": "string",
-			"description": "A homepage for some thing."
-		},
-		"depiction": {
-			"$ref": "https://schema.twindev.org/foaf/FoafImage",
-			"description": "A depiction of some thing."
+			"$ref": "https://schema.twindev.org/foaf/FoafContextType",
+			"description": "The LD Context."
 		},
 		"@type": {
-			"type": "string",
 			"const": "Person",
 			"description": "Type."
-		},
-		"age": {
-			"type": "number",
-			"description": "The age in years of some agent."
-		},
-		"made": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-					}
-				}
-			]
-		},
-		"weblog": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
-			"description": "A weblog of some thing (whether person, group, company etc.)."
-		},
-		"openid": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
-			"description": "An OpenID for an agent."
-		},
-		"interest": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
-			"description": "A page about a topic of interest to this person."
-		},
-		"topic_interest": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "A thing of interest to this person."
 		},
 		"familyName": {
 			"type": "string",
@@ -107,7 +22,6 @@
 			"description": "The given name of some person."
 		},
 		"knows": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"$ref": "https://schema.twindev.org/foaf/FoafAgent"
@@ -118,7 +32,8 @@
 						"$ref": "https://schema.twindev.org/foaf/FoafAgent"
 					}
 				}
-			]
+			],
+			"description": "A person known by this person (indicating some level of reciprocated interaction between the parties)."
 		},
 		"img": {
 			"$ref": "https://schema.twindev.org/foaf/FoafImage",
@@ -129,5 +44,10 @@
 			"description": "A short informal nickname characterizing an agent (includes login identifiers, IRC and other chat nicknames)."
 		}
 	},
-	"required": ["@type"]
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/foaf/FoafAgent"
+		}
+	]
 }

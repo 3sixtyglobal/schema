@@ -1,824 +1,3272 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDateTimePeriodFunctionCodeList",
+	"title": "UneceDateTimePeriodFunctionCodeList",
 	"description": "A character string used to represent the type of date time period function.",
-	"type": "string",
-	"enum": [
-		"unece:DateTimePeriodFunctionCodeList#1",
-		"unece:DateTimePeriodFunctionCodeList#10",
-		"unece:DateTimePeriodFunctionCodeList#100",
-		"unece:DateTimePeriodFunctionCodeList#101",
-		"unece:DateTimePeriodFunctionCodeList#102",
-		"unece:DateTimePeriodFunctionCodeList#103",
-		"unece:DateTimePeriodFunctionCodeList#104",
-		"unece:DateTimePeriodFunctionCodeList#105",
-		"unece:DateTimePeriodFunctionCodeList#106",
-		"unece:DateTimePeriodFunctionCodeList#107",
-		"unece:DateTimePeriodFunctionCodeList#108",
-		"unece:DateTimePeriodFunctionCodeList#109",
-		"unece:DateTimePeriodFunctionCodeList#11",
-		"unece:DateTimePeriodFunctionCodeList#110",
-		"unece:DateTimePeriodFunctionCodeList#111",
-		"unece:DateTimePeriodFunctionCodeList#112",
-		"unece:DateTimePeriodFunctionCodeList#113",
-		"unece:DateTimePeriodFunctionCodeList#114",
-		"unece:DateTimePeriodFunctionCodeList#115",
-		"unece:DateTimePeriodFunctionCodeList#116",
-		"unece:DateTimePeriodFunctionCodeList#117",
-		"unece:DateTimePeriodFunctionCodeList#118",
-		"unece:DateTimePeriodFunctionCodeList#119",
-		"unece:DateTimePeriodFunctionCodeList#12",
-		"unece:DateTimePeriodFunctionCodeList#120",
-		"unece:DateTimePeriodFunctionCodeList#121",
-		"unece:DateTimePeriodFunctionCodeList#122",
-		"unece:DateTimePeriodFunctionCodeList#123",
-		"unece:DateTimePeriodFunctionCodeList#124",
-		"unece:DateTimePeriodFunctionCodeList#125",
-		"unece:DateTimePeriodFunctionCodeList#126",
-		"unece:DateTimePeriodFunctionCodeList#127",
-		"unece:DateTimePeriodFunctionCodeList#128",
-		"unece:DateTimePeriodFunctionCodeList#129",
-		"unece:DateTimePeriodFunctionCodeList#13",
-		"unece:DateTimePeriodFunctionCodeList#130",
-		"unece:DateTimePeriodFunctionCodeList#131",
-		"unece:DateTimePeriodFunctionCodeList#132",
-		"unece:DateTimePeriodFunctionCodeList#133",
-		"unece:DateTimePeriodFunctionCodeList#134",
-		"unece:DateTimePeriodFunctionCodeList#135",
-		"unece:DateTimePeriodFunctionCodeList#136",
-		"unece:DateTimePeriodFunctionCodeList#137",
-		"unece:DateTimePeriodFunctionCodeList#138",
-		"unece:DateTimePeriodFunctionCodeList#139",
-		"unece:DateTimePeriodFunctionCodeList#14",
-		"unece:DateTimePeriodFunctionCodeList#140",
-		"unece:DateTimePeriodFunctionCodeList#141",
-		"unece:DateTimePeriodFunctionCodeList#142",
-		"unece:DateTimePeriodFunctionCodeList#143",
-		"unece:DateTimePeriodFunctionCodeList#144",
-		"unece:DateTimePeriodFunctionCodeList#145",
-		"unece:DateTimePeriodFunctionCodeList#146",
-		"unece:DateTimePeriodFunctionCodeList#147",
-		"unece:DateTimePeriodFunctionCodeList#148",
-		"unece:DateTimePeriodFunctionCodeList#149",
-		"unece:DateTimePeriodFunctionCodeList#15",
-		"unece:DateTimePeriodFunctionCodeList#150",
-		"unece:DateTimePeriodFunctionCodeList#151",
-		"unece:DateTimePeriodFunctionCodeList#152",
-		"unece:DateTimePeriodFunctionCodeList#153",
-		"unece:DateTimePeriodFunctionCodeList#154",
-		"unece:DateTimePeriodFunctionCodeList#155",
-		"unece:DateTimePeriodFunctionCodeList#156",
-		"unece:DateTimePeriodFunctionCodeList#157",
-		"unece:DateTimePeriodFunctionCodeList#158",
-		"unece:DateTimePeriodFunctionCodeList#159",
-		"unece:DateTimePeriodFunctionCodeList#16",
-		"unece:DateTimePeriodFunctionCodeList#160",
-		"unece:DateTimePeriodFunctionCodeList#161",
-		"unece:DateTimePeriodFunctionCodeList#162",
-		"unece:DateTimePeriodFunctionCodeList#163",
-		"unece:DateTimePeriodFunctionCodeList#164",
-		"unece:DateTimePeriodFunctionCodeList#165",
-		"unece:DateTimePeriodFunctionCodeList#166",
-		"unece:DateTimePeriodFunctionCodeList#167",
-		"unece:DateTimePeriodFunctionCodeList#168",
-		"unece:DateTimePeriodFunctionCodeList#169",
-		"unece:DateTimePeriodFunctionCodeList#17",
-		"unece:DateTimePeriodFunctionCodeList#170",
-		"unece:DateTimePeriodFunctionCodeList#171",
-		"unece:DateTimePeriodFunctionCodeList#172",
-		"unece:DateTimePeriodFunctionCodeList#173",
-		"unece:DateTimePeriodFunctionCodeList#174",
-		"unece:DateTimePeriodFunctionCodeList#175",
-		"unece:DateTimePeriodFunctionCodeList#176",
-		"unece:DateTimePeriodFunctionCodeList#177",
-		"unece:DateTimePeriodFunctionCodeList#178",
-		"unece:DateTimePeriodFunctionCodeList#179",
-		"unece:DateTimePeriodFunctionCodeList#18",
-		"unece:DateTimePeriodFunctionCodeList#180",
-		"unece:DateTimePeriodFunctionCodeList#181",
-		"unece:DateTimePeriodFunctionCodeList#182",
-		"unece:DateTimePeriodFunctionCodeList#183",
-		"unece:DateTimePeriodFunctionCodeList#184",
-		"unece:DateTimePeriodFunctionCodeList#185",
-		"unece:DateTimePeriodFunctionCodeList#186",
-		"unece:DateTimePeriodFunctionCodeList#187",
-		"unece:DateTimePeriodFunctionCodeList#188",
-		"unece:DateTimePeriodFunctionCodeList#189",
-		"unece:DateTimePeriodFunctionCodeList#19",
-		"unece:DateTimePeriodFunctionCodeList#190",
-		"unece:DateTimePeriodFunctionCodeList#191",
-		"unece:DateTimePeriodFunctionCodeList#192",
-		"unece:DateTimePeriodFunctionCodeList#193",
-		"unece:DateTimePeriodFunctionCodeList#194",
-		"unece:DateTimePeriodFunctionCodeList#195",
-		"unece:DateTimePeriodFunctionCodeList#196",
-		"unece:DateTimePeriodFunctionCodeList#197",
-		"unece:DateTimePeriodFunctionCodeList#198",
-		"unece:DateTimePeriodFunctionCodeList#199",
-		"unece:DateTimePeriodFunctionCodeList#2",
-		"unece:DateTimePeriodFunctionCodeList#20",
-		"unece:DateTimePeriodFunctionCodeList#200",
-		"unece:DateTimePeriodFunctionCodeList#201",
-		"unece:DateTimePeriodFunctionCodeList#202",
-		"unece:DateTimePeriodFunctionCodeList#203",
-		"unece:DateTimePeriodFunctionCodeList#204",
-		"unece:DateTimePeriodFunctionCodeList#205",
-		"unece:DateTimePeriodFunctionCodeList#206",
-		"unece:DateTimePeriodFunctionCodeList#207",
-		"unece:DateTimePeriodFunctionCodeList#208",
-		"unece:DateTimePeriodFunctionCodeList#209",
-		"unece:DateTimePeriodFunctionCodeList#21",
-		"unece:DateTimePeriodFunctionCodeList#210",
-		"unece:DateTimePeriodFunctionCodeList#211",
-		"unece:DateTimePeriodFunctionCodeList#212",
-		"unece:DateTimePeriodFunctionCodeList#213",
-		"unece:DateTimePeriodFunctionCodeList#214",
-		"unece:DateTimePeriodFunctionCodeList#215",
-		"unece:DateTimePeriodFunctionCodeList#216",
-		"unece:DateTimePeriodFunctionCodeList#217",
-		"unece:DateTimePeriodFunctionCodeList#218",
-		"unece:DateTimePeriodFunctionCodeList#219",
-		"unece:DateTimePeriodFunctionCodeList#22",
-		"unece:DateTimePeriodFunctionCodeList#220",
-		"unece:DateTimePeriodFunctionCodeList#221",
-		"unece:DateTimePeriodFunctionCodeList#222",
-		"unece:DateTimePeriodFunctionCodeList#223",
-		"unece:DateTimePeriodFunctionCodeList#224",
-		"unece:DateTimePeriodFunctionCodeList#225",
-		"unece:DateTimePeriodFunctionCodeList#226",
-		"unece:DateTimePeriodFunctionCodeList#227",
-		"unece:DateTimePeriodFunctionCodeList#228",
-		"unece:DateTimePeriodFunctionCodeList#229",
-		"unece:DateTimePeriodFunctionCodeList#23",
-		"unece:DateTimePeriodFunctionCodeList#230",
-		"unece:DateTimePeriodFunctionCodeList#231",
-		"unece:DateTimePeriodFunctionCodeList#232",
-		"unece:DateTimePeriodFunctionCodeList#233",
-		"unece:DateTimePeriodFunctionCodeList#234",
-		"unece:DateTimePeriodFunctionCodeList#235",
-		"unece:DateTimePeriodFunctionCodeList#236",
-		"unece:DateTimePeriodFunctionCodeList#237",
-		"unece:DateTimePeriodFunctionCodeList#238",
-		"unece:DateTimePeriodFunctionCodeList#239",
-		"unece:DateTimePeriodFunctionCodeList#24",
-		"unece:DateTimePeriodFunctionCodeList#240",
-		"unece:DateTimePeriodFunctionCodeList#241",
-		"unece:DateTimePeriodFunctionCodeList#242",
-		"unece:DateTimePeriodFunctionCodeList#243",
-		"unece:DateTimePeriodFunctionCodeList#244",
-		"unece:DateTimePeriodFunctionCodeList#245",
-		"unece:DateTimePeriodFunctionCodeList#246",
-		"unece:DateTimePeriodFunctionCodeList#247",
-		"unece:DateTimePeriodFunctionCodeList#248",
-		"unece:DateTimePeriodFunctionCodeList#249",
-		"unece:DateTimePeriodFunctionCodeList#250",
-		"unece:DateTimePeriodFunctionCodeList#251",
-		"unece:DateTimePeriodFunctionCodeList#252",
-		"unece:DateTimePeriodFunctionCodeList#253",
-		"unece:DateTimePeriodFunctionCodeList#254",
-		"unece:DateTimePeriodFunctionCodeList#255",
-		"unece:DateTimePeriodFunctionCodeList#256",
-		"unece:DateTimePeriodFunctionCodeList#257",
-		"unece:DateTimePeriodFunctionCodeList#258",
-		"unece:DateTimePeriodFunctionCodeList#259",
-		"unece:DateTimePeriodFunctionCodeList#260",
-		"unece:DateTimePeriodFunctionCodeList#261",
-		"unece:DateTimePeriodFunctionCodeList#262",
-		"unece:DateTimePeriodFunctionCodeList#263",
-		"unece:DateTimePeriodFunctionCodeList#264",
-		"unece:DateTimePeriodFunctionCodeList#265",
-		"unece:DateTimePeriodFunctionCodeList#266",
-		"unece:DateTimePeriodFunctionCodeList#267",
-		"unece:DateTimePeriodFunctionCodeList#268",
-		"unece:DateTimePeriodFunctionCodeList#269",
-		"unece:DateTimePeriodFunctionCodeList#270",
-		"unece:DateTimePeriodFunctionCodeList#271",
-		"unece:DateTimePeriodFunctionCodeList#272",
-		"unece:DateTimePeriodFunctionCodeList#273",
-		"unece:DateTimePeriodFunctionCodeList#274",
-		"unece:DateTimePeriodFunctionCodeList#275",
-		"unece:DateTimePeriodFunctionCodeList#276",
-		"unece:DateTimePeriodFunctionCodeList#277",
-		"unece:DateTimePeriodFunctionCodeList#278",
-		"unece:DateTimePeriodFunctionCodeList#279",
-		"unece:DateTimePeriodFunctionCodeList#280",
-		"unece:DateTimePeriodFunctionCodeList#281",
-		"unece:DateTimePeriodFunctionCodeList#282",
-		"unece:DateTimePeriodFunctionCodeList#283",
-		"unece:DateTimePeriodFunctionCodeList#284",
-		"unece:DateTimePeriodFunctionCodeList#285",
-		"unece:DateTimePeriodFunctionCodeList#286",
-		"unece:DateTimePeriodFunctionCodeList#287",
-		"unece:DateTimePeriodFunctionCodeList#288",
-		"unece:DateTimePeriodFunctionCodeList#289",
-		"unece:DateTimePeriodFunctionCodeList#290",
-		"unece:DateTimePeriodFunctionCodeList#291",
-		"unece:DateTimePeriodFunctionCodeList#292",
-		"unece:DateTimePeriodFunctionCodeList#293",
-		"unece:DateTimePeriodFunctionCodeList#294",
-		"unece:DateTimePeriodFunctionCodeList#295",
-		"unece:DateTimePeriodFunctionCodeList#296",
-		"unece:DateTimePeriodFunctionCodeList#297",
-		"unece:DateTimePeriodFunctionCodeList#298",
-		"unece:DateTimePeriodFunctionCodeList#299",
-		"unece:DateTimePeriodFunctionCodeList#3",
-		"unece:DateTimePeriodFunctionCodeList#300",
-		"unece:DateTimePeriodFunctionCodeList#301",
-		"unece:DateTimePeriodFunctionCodeList#302",
-		"unece:DateTimePeriodFunctionCodeList#303",
-		"unece:DateTimePeriodFunctionCodeList#304",
-		"unece:DateTimePeriodFunctionCodeList#305",
-		"unece:DateTimePeriodFunctionCodeList#306",
-		"unece:DateTimePeriodFunctionCodeList#307",
-		"unece:DateTimePeriodFunctionCodeList#308",
-		"unece:DateTimePeriodFunctionCodeList#309",
-		"unece:DateTimePeriodFunctionCodeList#310",
-		"unece:DateTimePeriodFunctionCodeList#311",
-		"unece:DateTimePeriodFunctionCodeList#312",
-		"unece:DateTimePeriodFunctionCodeList#313",
-		"unece:DateTimePeriodFunctionCodeList#314",
-		"unece:DateTimePeriodFunctionCodeList#315",
-		"unece:DateTimePeriodFunctionCodeList#316",
-		"unece:DateTimePeriodFunctionCodeList#317",
-		"unece:DateTimePeriodFunctionCodeList#318",
-		"unece:DateTimePeriodFunctionCodeList#319",
-		"unece:DateTimePeriodFunctionCodeList#320",
-		"unece:DateTimePeriodFunctionCodeList#321",
-		"unece:DateTimePeriodFunctionCodeList#322",
-		"unece:DateTimePeriodFunctionCodeList#323",
-		"unece:DateTimePeriodFunctionCodeList#324",
-		"unece:DateTimePeriodFunctionCodeList#325",
-		"unece:DateTimePeriodFunctionCodeList#326",
-		"unece:DateTimePeriodFunctionCodeList#327",
-		"unece:DateTimePeriodFunctionCodeList#328",
-		"unece:DateTimePeriodFunctionCodeList#329",
-		"unece:DateTimePeriodFunctionCodeList#330",
-		"unece:DateTimePeriodFunctionCodeList#331",
-		"unece:DateTimePeriodFunctionCodeList#332",
-		"unece:DateTimePeriodFunctionCodeList#333",
-		"unece:DateTimePeriodFunctionCodeList#334",
-		"unece:DateTimePeriodFunctionCodeList#335",
-		"unece:DateTimePeriodFunctionCodeList#336",
-		"unece:DateTimePeriodFunctionCodeList#337",
-		"unece:DateTimePeriodFunctionCodeList#338",
-		"unece:DateTimePeriodFunctionCodeList#339",
-		"unece:DateTimePeriodFunctionCodeList#340",
-		"unece:DateTimePeriodFunctionCodeList#341",
-		"unece:DateTimePeriodFunctionCodeList#342",
-		"unece:DateTimePeriodFunctionCodeList#343",
-		"unece:DateTimePeriodFunctionCodeList#344",
-		"unece:DateTimePeriodFunctionCodeList#345",
-		"unece:DateTimePeriodFunctionCodeList#346",
-		"unece:DateTimePeriodFunctionCodeList#347",
-		"unece:DateTimePeriodFunctionCodeList#348",
-		"unece:DateTimePeriodFunctionCodeList#349",
-		"unece:DateTimePeriodFunctionCodeList#35",
-		"unece:DateTimePeriodFunctionCodeList#350",
-		"unece:DateTimePeriodFunctionCodeList#351",
-		"unece:DateTimePeriodFunctionCodeList#352",
-		"unece:DateTimePeriodFunctionCodeList#353",
-		"unece:DateTimePeriodFunctionCodeList#354",
-		"unece:DateTimePeriodFunctionCodeList#355",
-		"unece:DateTimePeriodFunctionCodeList#356",
-		"unece:DateTimePeriodFunctionCodeList#357",
-		"unece:DateTimePeriodFunctionCodeList#358",
-		"unece:DateTimePeriodFunctionCodeList#359",
-		"unece:DateTimePeriodFunctionCodeList#36",
-		"unece:DateTimePeriodFunctionCodeList#360",
-		"unece:DateTimePeriodFunctionCodeList#361",
-		"unece:DateTimePeriodFunctionCodeList#362",
-		"unece:DateTimePeriodFunctionCodeList#363",
-		"unece:DateTimePeriodFunctionCodeList#364",
-		"unece:DateTimePeriodFunctionCodeList#365",
-		"unece:DateTimePeriodFunctionCodeList#366",
-		"unece:DateTimePeriodFunctionCodeList#367",
-		"unece:DateTimePeriodFunctionCodeList#368",
-		"unece:DateTimePeriodFunctionCodeList#369",
-		"unece:DateTimePeriodFunctionCodeList#37",
-		"unece:DateTimePeriodFunctionCodeList#370",
-		"unece:DateTimePeriodFunctionCodeList#371",
-		"unece:DateTimePeriodFunctionCodeList#372",
-		"unece:DateTimePeriodFunctionCodeList#373",
-		"unece:DateTimePeriodFunctionCodeList#374",
-		"unece:DateTimePeriodFunctionCodeList#375",
-		"unece:DateTimePeriodFunctionCodeList#376",
-		"unece:DateTimePeriodFunctionCodeList#377",
-		"unece:DateTimePeriodFunctionCodeList#378",
-		"unece:DateTimePeriodFunctionCodeList#379",
-		"unece:DateTimePeriodFunctionCodeList#38",
-		"unece:DateTimePeriodFunctionCodeList#380",
-		"unece:DateTimePeriodFunctionCodeList#381",
-		"unece:DateTimePeriodFunctionCodeList#382",
-		"unece:DateTimePeriodFunctionCodeList#383",
-		"unece:DateTimePeriodFunctionCodeList#384",
-		"unece:DateTimePeriodFunctionCodeList#385",
-		"unece:DateTimePeriodFunctionCodeList#386",
-		"unece:DateTimePeriodFunctionCodeList#387",
-		"unece:DateTimePeriodFunctionCodeList#388",
-		"unece:DateTimePeriodFunctionCodeList#389",
-		"unece:DateTimePeriodFunctionCodeList#39",
-		"unece:DateTimePeriodFunctionCodeList#390",
-		"unece:DateTimePeriodFunctionCodeList#391",
-		"unece:DateTimePeriodFunctionCodeList#392",
-		"unece:DateTimePeriodFunctionCodeList#393",
-		"unece:DateTimePeriodFunctionCodeList#394",
-		"unece:DateTimePeriodFunctionCodeList#395",
-		"unece:DateTimePeriodFunctionCodeList#396",
-		"unece:DateTimePeriodFunctionCodeList#397",
-		"unece:DateTimePeriodFunctionCodeList#398",
-		"unece:DateTimePeriodFunctionCodeList#399",
-		"unece:DateTimePeriodFunctionCodeList#4",
-		"unece:DateTimePeriodFunctionCodeList#40",
-		"unece:DateTimePeriodFunctionCodeList#400",
-		"unece:DateTimePeriodFunctionCodeList#401",
-		"unece:DateTimePeriodFunctionCodeList#402",
-		"unece:DateTimePeriodFunctionCodeList#403",
-		"unece:DateTimePeriodFunctionCodeList#404",
-		"unece:DateTimePeriodFunctionCodeList#405",
-		"unece:DateTimePeriodFunctionCodeList#406",
-		"unece:DateTimePeriodFunctionCodeList#407",
-		"unece:DateTimePeriodFunctionCodeList#408",
-		"unece:DateTimePeriodFunctionCodeList#409",
-		"unece:DateTimePeriodFunctionCodeList#41",
-		"unece:DateTimePeriodFunctionCodeList#410",
-		"unece:DateTimePeriodFunctionCodeList#411",
-		"unece:DateTimePeriodFunctionCodeList#412",
-		"unece:DateTimePeriodFunctionCodeList#413",
-		"unece:DateTimePeriodFunctionCodeList#414",
-		"unece:DateTimePeriodFunctionCodeList#415",
-		"unece:DateTimePeriodFunctionCodeList#416",
-		"unece:DateTimePeriodFunctionCodeList#417",
-		"unece:DateTimePeriodFunctionCodeList#418",
-		"unece:DateTimePeriodFunctionCodeList#419",
-		"unece:DateTimePeriodFunctionCodeList#42",
-		"unece:DateTimePeriodFunctionCodeList#420",
-		"unece:DateTimePeriodFunctionCodeList#421",
-		"unece:DateTimePeriodFunctionCodeList#422",
-		"unece:DateTimePeriodFunctionCodeList#423",
-		"unece:DateTimePeriodFunctionCodeList#424",
-		"unece:DateTimePeriodFunctionCodeList#425",
-		"unece:DateTimePeriodFunctionCodeList#426",
-		"unece:DateTimePeriodFunctionCodeList#427",
-		"unece:DateTimePeriodFunctionCodeList#428",
-		"unece:DateTimePeriodFunctionCodeList#429",
-		"unece:DateTimePeriodFunctionCodeList#43",
-		"unece:DateTimePeriodFunctionCodeList#430",
-		"unece:DateTimePeriodFunctionCodeList#431",
-		"unece:DateTimePeriodFunctionCodeList#432",
-		"unece:DateTimePeriodFunctionCodeList#433",
-		"unece:DateTimePeriodFunctionCodeList#434",
-		"unece:DateTimePeriodFunctionCodeList#435",
-		"unece:DateTimePeriodFunctionCodeList#436",
-		"unece:DateTimePeriodFunctionCodeList#437",
-		"unece:DateTimePeriodFunctionCodeList#438",
-		"unece:DateTimePeriodFunctionCodeList#439",
-		"unece:DateTimePeriodFunctionCodeList#44",
-		"unece:DateTimePeriodFunctionCodeList#440",
-		"unece:DateTimePeriodFunctionCodeList#441",
-		"unece:DateTimePeriodFunctionCodeList#442",
-		"unece:DateTimePeriodFunctionCodeList#443",
-		"unece:DateTimePeriodFunctionCodeList#444",
-		"unece:DateTimePeriodFunctionCodeList#445",
-		"unece:DateTimePeriodFunctionCodeList#446",
-		"unece:DateTimePeriodFunctionCodeList#447",
-		"unece:DateTimePeriodFunctionCodeList#448",
-		"unece:DateTimePeriodFunctionCodeList#449",
-		"unece:DateTimePeriodFunctionCodeList#45",
-		"unece:DateTimePeriodFunctionCodeList#450",
-		"unece:DateTimePeriodFunctionCodeList#451",
-		"unece:DateTimePeriodFunctionCodeList#452",
-		"unece:DateTimePeriodFunctionCodeList#453",
-		"unece:DateTimePeriodFunctionCodeList#454",
-		"unece:DateTimePeriodFunctionCodeList#455",
-		"unece:DateTimePeriodFunctionCodeList#456",
-		"unece:DateTimePeriodFunctionCodeList#457",
-		"unece:DateTimePeriodFunctionCodeList#458",
-		"unece:DateTimePeriodFunctionCodeList#459",
-		"unece:DateTimePeriodFunctionCodeList#46",
-		"unece:DateTimePeriodFunctionCodeList#460",
-		"unece:DateTimePeriodFunctionCodeList#461",
-		"unece:DateTimePeriodFunctionCodeList#462",
-		"unece:DateTimePeriodFunctionCodeList#463",
-		"unece:DateTimePeriodFunctionCodeList#464",
-		"unece:DateTimePeriodFunctionCodeList#465",
-		"unece:DateTimePeriodFunctionCodeList#466",
-		"unece:DateTimePeriodFunctionCodeList#467",
-		"unece:DateTimePeriodFunctionCodeList#468",
-		"unece:DateTimePeriodFunctionCodeList#469",
-		"unece:DateTimePeriodFunctionCodeList#47",
-		"unece:DateTimePeriodFunctionCodeList#470",
-		"unece:DateTimePeriodFunctionCodeList#471",
-		"unece:DateTimePeriodFunctionCodeList#472",
-		"unece:DateTimePeriodFunctionCodeList#473",
-		"unece:DateTimePeriodFunctionCodeList#474",
-		"unece:DateTimePeriodFunctionCodeList#475",
-		"unece:DateTimePeriodFunctionCodeList#476",
-		"unece:DateTimePeriodFunctionCodeList#477",
-		"unece:DateTimePeriodFunctionCodeList#478",
-		"unece:DateTimePeriodFunctionCodeList#479",
-		"unece:DateTimePeriodFunctionCodeList#48",
-		"unece:DateTimePeriodFunctionCodeList#480",
-		"unece:DateTimePeriodFunctionCodeList#481",
-		"unece:DateTimePeriodFunctionCodeList#482",
-		"unece:DateTimePeriodFunctionCodeList#483",
-		"unece:DateTimePeriodFunctionCodeList#484",
-		"unece:DateTimePeriodFunctionCodeList#485",
-		"unece:DateTimePeriodFunctionCodeList#486",
-		"unece:DateTimePeriodFunctionCodeList#487",
-		"unece:DateTimePeriodFunctionCodeList#488",
-		"unece:DateTimePeriodFunctionCodeList#489",
-		"unece:DateTimePeriodFunctionCodeList#49",
-		"unece:DateTimePeriodFunctionCodeList#490",
-		"unece:DateTimePeriodFunctionCodeList#491",
-		"unece:DateTimePeriodFunctionCodeList#492",
-		"unece:DateTimePeriodFunctionCodeList#493",
-		"unece:DateTimePeriodFunctionCodeList#494",
-		"unece:DateTimePeriodFunctionCodeList#495",
-		"unece:DateTimePeriodFunctionCodeList#496",
-		"unece:DateTimePeriodFunctionCodeList#497",
-		"unece:DateTimePeriodFunctionCodeList#498",
-		"unece:DateTimePeriodFunctionCodeList#499",
-		"unece:DateTimePeriodFunctionCodeList#5",
-		"unece:DateTimePeriodFunctionCodeList#50",
-		"unece:DateTimePeriodFunctionCodeList#500",
-		"unece:DateTimePeriodFunctionCodeList#501",
-		"unece:DateTimePeriodFunctionCodeList#502",
-		"unece:DateTimePeriodFunctionCodeList#503",
-		"unece:DateTimePeriodFunctionCodeList#504",
-		"unece:DateTimePeriodFunctionCodeList#505",
-		"unece:DateTimePeriodFunctionCodeList#506",
-		"unece:DateTimePeriodFunctionCodeList#507",
-		"unece:DateTimePeriodFunctionCodeList#508",
-		"unece:DateTimePeriodFunctionCodeList#51",
-		"unece:DateTimePeriodFunctionCodeList#510",
-		"unece:DateTimePeriodFunctionCodeList#511",
-		"unece:DateTimePeriodFunctionCodeList#512",
-		"unece:DateTimePeriodFunctionCodeList#513",
-		"unece:DateTimePeriodFunctionCodeList#514",
-		"unece:DateTimePeriodFunctionCodeList#515",
-		"unece:DateTimePeriodFunctionCodeList#516",
-		"unece:DateTimePeriodFunctionCodeList#517",
-		"unece:DateTimePeriodFunctionCodeList#518",
-		"unece:DateTimePeriodFunctionCodeList#519",
-		"unece:DateTimePeriodFunctionCodeList#52",
-		"unece:DateTimePeriodFunctionCodeList#520",
-		"unece:DateTimePeriodFunctionCodeList#521",
-		"unece:DateTimePeriodFunctionCodeList#522",
-		"unece:DateTimePeriodFunctionCodeList#523",
-		"unece:DateTimePeriodFunctionCodeList#524",
-		"unece:DateTimePeriodFunctionCodeList#525",
-		"unece:DateTimePeriodFunctionCodeList#526",
-		"unece:DateTimePeriodFunctionCodeList#527",
-		"unece:DateTimePeriodFunctionCodeList#528",
-		"unece:DateTimePeriodFunctionCodeList#529",
-		"unece:DateTimePeriodFunctionCodeList#53",
-		"unece:DateTimePeriodFunctionCodeList#530",
-		"unece:DateTimePeriodFunctionCodeList#531",
-		"unece:DateTimePeriodFunctionCodeList#532",
-		"unece:DateTimePeriodFunctionCodeList#533",
-		"unece:DateTimePeriodFunctionCodeList#534",
-		"unece:DateTimePeriodFunctionCodeList#535",
-		"unece:DateTimePeriodFunctionCodeList#536",
-		"unece:DateTimePeriodFunctionCodeList#537",
-		"unece:DateTimePeriodFunctionCodeList#538",
-		"unece:DateTimePeriodFunctionCodeList#539",
-		"unece:DateTimePeriodFunctionCodeList#54",
-		"unece:DateTimePeriodFunctionCodeList#540",
-		"unece:DateTimePeriodFunctionCodeList#541",
-		"unece:DateTimePeriodFunctionCodeList#542",
-		"unece:DateTimePeriodFunctionCodeList#543",
-		"unece:DateTimePeriodFunctionCodeList#544",
-		"unece:DateTimePeriodFunctionCodeList#545",
-		"unece:DateTimePeriodFunctionCodeList#546",
-		"unece:DateTimePeriodFunctionCodeList#547",
-		"unece:DateTimePeriodFunctionCodeList#548",
-		"unece:DateTimePeriodFunctionCodeList#549",
-		"unece:DateTimePeriodFunctionCodeList#55",
-		"unece:DateTimePeriodFunctionCodeList#550",
-		"unece:DateTimePeriodFunctionCodeList#551",
-		"unece:DateTimePeriodFunctionCodeList#552",
-		"unece:DateTimePeriodFunctionCodeList#553",
-		"unece:DateTimePeriodFunctionCodeList#554",
-		"unece:DateTimePeriodFunctionCodeList#555",
-		"unece:DateTimePeriodFunctionCodeList#556",
-		"unece:DateTimePeriodFunctionCodeList#557",
-		"unece:DateTimePeriodFunctionCodeList#558",
-		"unece:DateTimePeriodFunctionCodeList#559",
-		"unece:DateTimePeriodFunctionCodeList#56",
-		"unece:DateTimePeriodFunctionCodeList#560",
-		"unece:DateTimePeriodFunctionCodeList#561",
-		"unece:DateTimePeriodFunctionCodeList#562",
-		"unece:DateTimePeriodFunctionCodeList#563",
-		"unece:DateTimePeriodFunctionCodeList#564",
-		"unece:DateTimePeriodFunctionCodeList#565",
-		"unece:DateTimePeriodFunctionCodeList#566",
-		"unece:DateTimePeriodFunctionCodeList#567",
-		"unece:DateTimePeriodFunctionCodeList#568",
-		"unece:DateTimePeriodFunctionCodeList#569",
-		"unece:DateTimePeriodFunctionCodeList#57",
-		"unece:DateTimePeriodFunctionCodeList#570",
-		"unece:DateTimePeriodFunctionCodeList#571",
-		"unece:DateTimePeriodFunctionCodeList#572",
-		"unece:DateTimePeriodFunctionCodeList#573",
-		"unece:DateTimePeriodFunctionCodeList#574",
-		"unece:DateTimePeriodFunctionCodeList#575",
-		"unece:DateTimePeriodFunctionCodeList#576",
-		"unece:DateTimePeriodFunctionCodeList#577",
-		"unece:DateTimePeriodFunctionCodeList#578",
-		"unece:DateTimePeriodFunctionCodeList#579",
-		"unece:DateTimePeriodFunctionCodeList#58",
-		"unece:DateTimePeriodFunctionCodeList#580",
-		"unece:DateTimePeriodFunctionCodeList#581",
-		"unece:DateTimePeriodFunctionCodeList#582",
-		"unece:DateTimePeriodFunctionCodeList#583",
-		"unece:DateTimePeriodFunctionCodeList#584",
-		"unece:DateTimePeriodFunctionCodeList#585",
-		"unece:DateTimePeriodFunctionCodeList#586",
-		"unece:DateTimePeriodFunctionCodeList#587",
-		"unece:DateTimePeriodFunctionCodeList#588",
-		"unece:DateTimePeriodFunctionCodeList#589",
-		"unece:DateTimePeriodFunctionCodeList#59",
-		"unece:DateTimePeriodFunctionCodeList#590",
-		"unece:DateTimePeriodFunctionCodeList#591",
-		"unece:DateTimePeriodFunctionCodeList#592",
-		"unece:DateTimePeriodFunctionCodeList#593",
-		"unece:DateTimePeriodFunctionCodeList#594",
-		"unece:DateTimePeriodFunctionCodeList#595",
-		"unece:DateTimePeriodFunctionCodeList#596",
-		"unece:DateTimePeriodFunctionCodeList#597",
-		"unece:DateTimePeriodFunctionCodeList#598",
-		"unece:DateTimePeriodFunctionCodeList#599",
-		"unece:DateTimePeriodFunctionCodeList#6",
-		"unece:DateTimePeriodFunctionCodeList#60",
-		"unece:DateTimePeriodFunctionCodeList#600",
-		"unece:DateTimePeriodFunctionCodeList#601",
-		"unece:DateTimePeriodFunctionCodeList#602",
-		"unece:DateTimePeriodFunctionCodeList#603",
-		"unece:DateTimePeriodFunctionCodeList#604",
-		"unece:DateTimePeriodFunctionCodeList#605",
-		"unece:DateTimePeriodFunctionCodeList#606",
-		"unece:DateTimePeriodFunctionCodeList#607",
-		"unece:DateTimePeriodFunctionCodeList#608",
-		"unece:DateTimePeriodFunctionCodeList#609",
-		"unece:DateTimePeriodFunctionCodeList#61",
-		"unece:DateTimePeriodFunctionCodeList#610",
-		"unece:DateTimePeriodFunctionCodeList#611",
-		"unece:DateTimePeriodFunctionCodeList#612",
-		"unece:DateTimePeriodFunctionCodeList#613",
-		"unece:DateTimePeriodFunctionCodeList#614",
-		"unece:DateTimePeriodFunctionCodeList#615",
-		"unece:DateTimePeriodFunctionCodeList#616",
-		"unece:DateTimePeriodFunctionCodeList#617",
-		"unece:DateTimePeriodFunctionCodeList#618",
-		"unece:DateTimePeriodFunctionCodeList#619",
-		"unece:DateTimePeriodFunctionCodeList#62",
-		"unece:DateTimePeriodFunctionCodeList#620",
-		"unece:DateTimePeriodFunctionCodeList#621",
-		"unece:DateTimePeriodFunctionCodeList#622",
-		"unece:DateTimePeriodFunctionCodeList#623",
-		"unece:DateTimePeriodFunctionCodeList#624",
-		"unece:DateTimePeriodFunctionCodeList#625",
-		"unece:DateTimePeriodFunctionCodeList#626",
-		"unece:DateTimePeriodFunctionCodeList#627",
-		"unece:DateTimePeriodFunctionCodeList#628",
-		"unece:DateTimePeriodFunctionCodeList#629",
-		"unece:DateTimePeriodFunctionCodeList#63",
-		"unece:DateTimePeriodFunctionCodeList#630",
-		"unece:DateTimePeriodFunctionCodeList#631",
-		"unece:DateTimePeriodFunctionCodeList#632",
-		"unece:DateTimePeriodFunctionCodeList#633",
-		"unece:DateTimePeriodFunctionCodeList#634",
-		"unece:DateTimePeriodFunctionCodeList#635",
-		"unece:DateTimePeriodFunctionCodeList#636",
-		"unece:DateTimePeriodFunctionCodeList#637",
-		"unece:DateTimePeriodFunctionCodeList#638",
-		"unece:DateTimePeriodFunctionCodeList#639",
-		"unece:DateTimePeriodFunctionCodeList#64",
-		"unece:DateTimePeriodFunctionCodeList#640",
-		"unece:DateTimePeriodFunctionCodeList#641",
-		"unece:DateTimePeriodFunctionCodeList#642",
-		"unece:DateTimePeriodFunctionCodeList#643",
-		"unece:DateTimePeriodFunctionCodeList#644",
-		"unece:DateTimePeriodFunctionCodeList#645",
-		"unece:DateTimePeriodFunctionCodeList#646",
-		"unece:DateTimePeriodFunctionCodeList#647",
-		"unece:DateTimePeriodFunctionCodeList#648",
-		"unece:DateTimePeriodFunctionCodeList#649",
-		"unece:DateTimePeriodFunctionCodeList#65",
-		"unece:DateTimePeriodFunctionCodeList#650",
-		"unece:DateTimePeriodFunctionCodeList#651",
-		"unece:DateTimePeriodFunctionCodeList#652",
-		"unece:DateTimePeriodFunctionCodeList#653",
-		"unece:DateTimePeriodFunctionCodeList#654",
-		"unece:DateTimePeriodFunctionCodeList#655",
-		"unece:DateTimePeriodFunctionCodeList#656",
-		"unece:DateTimePeriodFunctionCodeList#657",
-		"unece:DateTimePeriodFunctionCodeList#658",
-		"unece:DateTimePeriodFunctionCodeList#659",
-		"unece:DateTimePeriodFunctionCodeList#66",
-		"unece:DateTimePeriodFunctionCodeList#660",
-		"unece:DateTimePeriodFunctionCodeList#661",
-		"unece:DateTimePeriodFunctionCodeList#662",
-		"unece:DateTimePeriodFunctionCodeList#663",
-		"unece:DateTimePeriodFunctionCodeList#664",
-		"unece:DateTimePeriodFunctionCodeList#665",
-		"unece:DateTimePeriodFunctionCodeList#666",
-		"unece:DateTimePeriodFunctionCodeList#667",
-		"unece:DateTimePeriodFunctionCodeList#668",
-		"unece:DateTimePeriodFunctionCodeList#669",
-		"unece:DateTimePeriodFunctionCodeList#67",
-		"unece:DateTimePeriodFunctionCodeList#670",
-		"unece:DateTimePeriodFunctionCodeList#671",
-		"unece:DateTimePeriodFunctionCodeList#672",
-		"unece:DateTimePeriodFunctionCodeList#673",
-		"unece:DateTimePeriodFunctionCodeList#674",
-		"unece:DateTimePeriodFunctionCodeList#675",
-		"unece:DateTimePeriodFunctionCodeList#676",
-		"unece:DateTimePeriodFunctionCodeList#677",
-		"unece:DateTimePeriodFunctionCodeList#678",
-		"unece:DateTimePeriodFunctionCodeList#679",
-		"unece:DateTimePeriodFunctionCodeList#68",
-		"unece:DateTimePeriodFunctionCodeList#680",
-		"unece:DateTimePeriodFunctionCodeList#681",
-		"unece:DateTimePeriodFunctionCodeList#682",
-		"unece:DateTimePeriodFunctionCodeList#683",
-		"unece:DateTimePeriodFunctionCodeList#684",
-		"unece:DateTimePeriodFunctionCodeList#685",
-		"unece:DateTimePeriodFunctionCodeList#686",
-		"unece:DateTimePeriodFunctionCodeList#687",
-		"unece:DateTimePeriodFunctionCodeList#688",
-		"unece:DateTimePeriodFunctionCodeList#689",
-		"unece:DateTimePeriodFunctionCodeList#69",
-		"unece:DateTimePeriodFunctionCodeList#690",
-		"unece:DateTimePeriodFunctionCodeList#691",
-		"unece:DateTimePeriodFunctionCodeList#692",
-		"unece:DateTimePeriodFunctionCodeList#693",
-		"unece:DateTimePeriodFunctionCodeList#694",
-		"unece:DateTimePeriodFunctionCodeList#695",
-		"unece:DateTimePeriodFunctionCodeList#696",
-		"unece:DateTimePeriodFunctionCodeList#697",
-		"unece:DateTimePeriodFunctionCodeList#698",
-		"unece:DateTimePeriodFunctionCodeList#699",
-		"unece:DateTimePeriodFunctionCodeList#7",
-		"unece:DateTimePeriodFunctionCodeList#70",
-		"unece:DateTimePeriodFunctionCodeList#700",
-		"unece:DateTimePeriodFunctionCodeList#701",
-		"unece:DateTimePeriodFunctionCodeList#702",
-		"unece:DateTimePeriodFunctionCodeList#703",
-		"unece:DateTimePeriodFunctionCodeList#704",
-		"unece:DateTimePeriodFunctionCodeList#705",
-		"unece:DateTimePeriodFunctionCodeList#706",
-		"unece:DateTimePeriodFunctionCodeList#707",
-		"unece:DateTimePeriodFunctionCodeList#708",
-		"unece:DateTimePeriodFunctionCodeList#709",
-		"unece:DateTimePeriodFunctionCodeList#71",
-		"unece:DateTimePeriodFunctionCodeList#710",
-		"unece:DateTimePeriodFunctionCodeList#711",
-		"unece:DateTimePeriodFunctionCodeList#712",
-		"unece:DateTimePeriodFunctionCodeList#713",
-		"unece:DateTimePeriodFunctionCodeList#714",
-		"unece:DateTimePeriodFunctionCodeList#715",
-		"unece:DateTimePeriodFunctionCodeList#716",
-		"unece:DateTimePeriodFunctionCodeList#717",
-		"unece:DateTimePeriodFunctionCodeList#718",
-		"unece:DateTimePeriodFunctionCodeList#719",
-		"unece:DateTimePeriodFunctionCodeList#72",
-		"unece:DateTimePeriodFunctionCodeList#720",
-		"unece:DateTimePeriodFunctionCodeList#721",
-		"unece:DateTimePeriodFunctionCodeList#722",
-		"unece:DateTimePeriodFunctionCodeList#723",
-		"unece:DateTimePeriodFunctionCodeList#724",
-		"unece:DateTimePeriodFunctionCodeList#725",
-		"unece:DateTimePeriodFunctionCodeList#726",
-		"unece:DateTimePeriodFunctionCodeList#727",
-		"unece:DateTimePeriodFunctionCodeList#728",
-		"unece:DateTimePeriodFunctionCodeList#729",
-		"unece:DateTimePeriodFunctionCodeList#73",
-		"unece:DateTimePeriodFunctionCodeList#730",
-		"unece:DateTimePeriodFunctionCodeList#731",
-		"unece:DateTimePeriodFunctionCodeList#732",
-		"unece:DateTimePeriodFunctionCodeList#733",
-		"unece:DateTimePeriodFunctionCodeList#734",
-		"unece:DateTimePeriodFunctionCodeList#735",
-		"unece:DateTimePeriodFunctionCodeList#736",
-		"unece:DateTimePeriodFunctionCodeList#737",
-		"unece:DateTimePeriodFunctionCodeList#738",
-		"unece:DateTimePeriodFunctionCodeList#739",
-		"unece:DateTimePeriodFunctionCodeList#74",
-		"unece:DateTimePeriodFunctionCodeList#740",
-		"unece:DateTimePeriodFunctionCodeList#741",
-		"unece:DateTimePeriodFunctionCodeList#742",
-		"unece:DateTimePeriodFunctionCodeList#743",
-		"unece:DateTimePeriodFunctionCodeList#744",
-		"unece:DateTimePeriodFunctionCodeList#745",
-		"unece:DateTimePeriodFunctionCodeList#746",
-		"unece:DateTimePeriodFunctionCodeList#747",
-		"unece:DateTimePeriodFunctionCodeList#748",
-		"unece:DateTimePeriodFunctionCodeList#749",
-		"unece:DateTimePeriodFunctionCodeList#75",
-		"unece:DateTimePeriodFunctionCodeList#750",
-		"unece:DateTimePeriodFunctionCodeList#751",
-		"unece:DateTimePeriodFunctionCodeList#752",
-		"unece:DateTimePeriodFunctionCodeList#753",
-		"unece:DateTimePeriodFunctionCodeList#754",
-		"unece:DateTimePeriodFunctionCodeList#755",
-		"unece:DateTimePeriodFunctionCodeList#756",
-		"unece:DateTimePeriodFunctionCodeList#757",
-		"unece:DateTimePeriodFunctionCodeList#758",
-		"unece:DateTimePeriodFunctionCodeList#759",
-		"unece:DateTimePeriodFunctionCodeList#76",
-		"unece:DateTimePeriodFunctionCodeList#760",
-		"unece:DateTimePeriodFunctionCodeList#761",
-		"unece:DateTimePeriodFunctionCodeList#762",
-		"unece:DateTimePeriodFunctionCodeList#763",
-		"unece:DateTimePeriodFunctionCodeList#764",
-		"unece:DateTimePeriodFunctionCodeList#765",
-		"unece:DateTimePeriodFunctionCodeList#766",
-		"unece:DateTimePeriodFunctionCodeList#767",
-		"unece:DateTimePeriodFunctionCodeList#768",
-		"unece:DateTimePeriodFunctionCodeList#769",
-		"unece:DateTimePeriodFunctionCodeList#77",
-		"unece:DateTimePeriodFunctionCodeList#770",
-		"unece:DateTimePeriodFunctionCodeList#771",
-		"unece:DateTimePeriodFunctionCodeList#772",
-		"unece:DateTimePeriodFunctionCodeList#773",
-		"unece:DateTimePeriodFunctionCodeList#774",
-		"unece:DateTimePeriodFunctionCodeList#775",
-		"unece:DateTimePeriodFunctionCodeList#776",
-		"unece:DateTimePeriodFunctionCodeList#777",
-		"unece:DateTimePeriodFunctionCodeList#778",
-		"unece:DateTimePeriodFunctionCodeList#779",
-		"unece:DateTimePeriodFunctionCodeList#78",
-		"unece:DateTimePeriodFunctionCodeList#780",
-		"unece:DateTimePeriodFunctionCodeList#781",
-		"unece:DateTimePeriodFunctionCodeList#782",
-		"unece:DateTimePeriodFunctionCodeList#783",
-		"unece:DateTimePeriodFunctionCodeList#784",
-		"unece:DateTimePeriodFunctionCodeList#785",
-		"unece:DateTimePeriodFunctionCodeList#786",
-		"unece:DateTimePeriodFunctionCodeList#787",
-		"unece:DateTimePeriodFunctionCodeList#788",
-		"unece:DateTimePeriodFunctionCodeList#789",
-		"unece:DateTimePeriodFunctionCodeList#79",
-		"unece:DateTimePeriodFunctionCodeList#790",
-		"unece:DateTimePeriodFunctionCodeList#791",
-		"unece:DateTimePeriodFunctionCodeList#792",
-		"unece:DateTimePeriodFunctionCodeList#793",
-		"unece:DateTimePeriodFunctionCodeList#794",
-		"unece:DateTimePeriodFunctionCodeList#795",
-		"unece:DateTimePeriodFunctionCodeList#796",
-		"unece:DateTimePeriodFunctionCodeList#797",
-		"unece:DateTimePeriodFunctionCodeList#798",
-		"unece:DateTimePeriodFunctionCodeList#799",
-		"unece:DateTimePeriodFunctionCodeList#8",
-		"unece:DateTimePeriodFunctionCodeList#80",
-		"unece:DateTimePeriodFunctionCodeList#800",
-		"unece:DateTimePeriodFunctionCodeList#801",
-		"unece:DateTimePeriodFunctionCodeList#802",
-		"unece:DateTimePeriodFunctionCodeList#803",
-		"unece:DateTimePeriodFunctionCodeList#804",
-		"unece:DateTimePeriodFunctionCodeList#805",
-		"unece:DateTimePeriodFunctionCodeList#806",
-		"unece:DateTimePeriodFunctionCodeList#807",
-		"unece:DateTimePeriodFunctionCodeList#808",
-		"unece:DateTimePeriodFunctionCodeList#809",
-		"unece:DateTimePeriodFunctionCodeList#81",
-		"unece:DateTimePeriodFunctionCodeList#810",
-		"unece:DateTimePeriodFunctionCodeList#811",
-		"unece:DateTimePeriodFunctionCodeList#812",
-		"unece:DateTimePeriodFunctionCodeList#813",
-		"unece:DateTimePeriodFunctionCodeList#814",
-		"unece:DateTimePeriodFunctionCodeList#815",
-		"unece:DateTimePeriodFunctionCodeList#816",
-		"unece:DateTimePeriodFunctionCodeList#817",
-		"unece:DateTimePeriodFunctionCodeList#818",
-		"unece:DateTimePeriodFunctionCodeList#819",
-		"unece:DateTimePeriodFunctionCodeList#82",
-		"unece:DateTimePeriodFunctionCodeList#820",
-		"unece:DateTimePeriodFunctionCodeList#821",
-		"unece:DateTimePeriodFunctionCodeList#822",
-		"unece:DateTimePeriodFunctionCodeList#823",
-		"unece:DateTimePeriodFunctionCodeList#824",
-		"unece:DateTimePeriodFunctionCodeList#825",
-		"unece:DateTimePeriodFunctionCodeList#826",
-		"unece:DateTimePeriodFunctionCodeList#83",
-		"unece:DateTimePeriodFunctionCodeList#84",
-		"unece:DateTimePeriodFunctionCodeList#85",
-		"unece:DateTimePeriodFunctionCodeList#86",
-		"unece:DateTimePeriodFunctionCodeList#87",
-		"unece:DateTimePeriodFunctionCodeList#88",
-		"unece:DateTimePeriodFunctionCodeList#89",
-		"unece:DateTimePeriodFunctionCodeList#9",
-		"unece:DateTimePeriodFunctionCodeList#90",
-		"unece:DateTimePeriodFunctionCodeList#91",
-		"unece:DateTimePeriodFunctionCodeList#92",
-		"unece:DateTimePeriodFunctionCodeList#93",
-		"unece:DateTimePeriodFunctionCodeList#94",
-		"unece:DateTimePeriodFunctionCodeList#95",
-		"unece:DateTimePeriodFunctionCodeList#96",
-		"unece:DateTimePeriodFunctionCodeList#97",
-		"unece:DateTimePeriodFunctionCodeList#98",
-		"unece:DateTimePeriodFunctionCodeList#99",
-		"unece:DateTimePeriodFunctionCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#1",
+			"description": "Service completion date/time, actual: 1."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#10",
+			"description": "Shipment date/time, requested: 10."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#100",
+			"description": "Product ageing period before delivery: 100."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#101",
+			"description": "Production date, no schedule established as of: 101."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#102",
+			"description": "Health problem period: 102."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#103",
+			"description": "Closing date/time for breakbulk STORO: 103."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#104",
+			"description": "Closing date/time for container RO-RO: 104."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#105",
+			"description": "Starting date/time for breakbulk STORO: 105."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#106",
+			"description": "Starting date/time for container RO-RO: 106."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#107",
+			"description": "Deposit date/time: 107."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#108",
+			"description": "Postmark date/time: 108."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#109",
+			"description": "Receive at lockbox date: 109."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#11",
+			"description": "Despatch date and or time: 11."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#110",
+			"description": "Ship date, originally scheduled: 110."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#111",
+			"description": "Manifest/ship notice date: 111."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#112",
+			"description": "First interest-bearing date: 112."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#113",
+			"description": "Sample required date: 113."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#114",
+			"description": "Tooling required date: 114."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#115",
+			"description": "Sample available date: 115."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#116",
+			"description": "Equipment return period, expected: 116."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#117",
+			"description": "Delivery date/time, first: 117."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#118",
+			"description": "Cargo booking confirmed date/time: 118."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#119",
+			"description": "Test completion date: 119."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#12",
+			"description": "Terms discount due date/time: 12."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#120",
+			"description": "Last interest-bearing date: 120."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#121",
+			"description": "Entry date: 121."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#122",
+			"description": "Contract completion date: 122."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#123",
+			"description": "Documentary credit expiry date/time: 123."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#124",
+			"description": "Despatch note document issue date time: 124."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#125",
+			"description": "Import permit issue date time: 125."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#126",
+			"description": "Contract document issue date time: 126."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#127",
+			"description": "Previous report date: 127."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#128",
+			"description": "Delivery date/time, last: 128."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#129",
+			"description": "Exportation date: 129."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#13",
+			"description": "Terms net due date: 13."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#130",
+			"description": "Current report date: 130."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#131",
+			"description": "Tax point date time: 131."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#132",
+			"description": "Transport means arrival date time, estimated: 132."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#133",
+			"description": "Transport means departure date/time, estimated: 133."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#134",
+			"description": "Rate of exchange date/time: 134."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#135",
+			"description": "Telex date: 135."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#136",
+			"description": "Transport means departure date time, actual: 136."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#137",
+			"description": "Document issue date time: 137."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#138",
+			"description": "Payment availability date time: 138."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#139",
+			"description": "Property mortgage date, start: 139."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#14",
+			"description": "Payment date/time, deferred: 14."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#140",
+			"description": "Payment due date: 140."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#141",
+			"description": "Customs declaration document lodgement date time: 141."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#142",
+			"description": "Labour wage determination date: 142."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#143",
+			"description": "Consignment acceptance date time, actual: 143."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#144",
+			"description": "Quota date: 144."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#145",
+			"description": "Event date: 145."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#146",
+			"description": "Entry date, estimated (Customs): 146."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#147",
+			"description": "Export permit effective end date time: 147."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#148",
+			"description": "Goods declaration document acceptance date time: 148."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#149",
+			"description": "Invoice date, required: 149."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#15",
+			"description": "Promotion start date/time: 15."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#150",
+			"description": "Declaration/presentation date: 150."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#151",
+			"description": "Importation date: 151."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#152",
+			"description": "Exportation date for textiles: 152."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#153",
+			"description": "Cancellation date/time, latest: 153."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#154",
+			"description": "Acceptance date of document: 154."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#155",
+			"description": "Accounting period start date: 155."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#156",
+			"description": "Accounting period end date: 156."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#157",
+			"description": "Validity start date: 157."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#158",
+			"description": "Horizon start date: 158."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#159",
+			"description": "Horizon end date: 159."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#16",
+			"description": "Promotion end date/time: 16."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#160",
+			"description": "Authorization date: 160."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#161",
+			"description": "Release date of customer: 161."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#162",
+			"description": "Release date of supplier: 162."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#163",
+			"description": "Processing start date/time: 163."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#164",
+			"description": "Processing end date/time: 164."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#165",
+			"description": "Tax period start date: 165."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#166",
+			"description": "Tax period end date: 166."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#167",
+			"description": "Charge period start date: 167."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#168",
+			"description": "Charge period end date: 168."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#169",
+			"description": "Lead time: 169."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#17",
+			"description": "Delivery date/time, estimated: 17."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#170",
+			"description": "Settlement due date: 170."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#171",
+			"description": "Reference date/time: 171."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#172",
+			"description": "Hired from date: 172."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#173",
+			"description": "Hired until date: 173."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#174",
+			"description": "Advise after date/time: 174."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#175",
+			"description": "Advise before date/time: 175."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#176",
+			"description": "Advise completed date/time: 176."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#177",
+			"description": "Advise on date/time: 177."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#178",
+			"description": "Transport means arrival date time, actual: 178."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#179",
+			"description": "Booking date/time: 179."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#18",
+			"description": "Installation date/time/period: 18."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#180",
+			"description": "Closing date/time: 180."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#181",
+			"description": "Positioning date/time of equipment: 181."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#182",
+			"description": "Issue date: 182."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#183",
+			"description": "Date, as at: 183."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#184",
+			"description": "Notification date/time: 184."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#185",
+			"description": "Commenced tank cleaning date/time: 185."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#186",
+			"description": "Transport means departure date/time, actual: 186."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#187",
+			"description": "Authentication date/time of document: 187."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#188",
+			"description": "Previous current account date: 188."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#189",
+			"description": "Transport means departure date/time, scheduled: 189."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#19",
+			"description": "Meat ageing period: 19."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#190",
+			"description": "Transhipment date/time: 190."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#191",
+			"description": "Delivery date/time, expected: 191."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#192",
+			"description": "Expiration date/time of customs document: 192."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#193",
+			"description": "Execution date: 193."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#194",
+			"description": "Start date/time: 194."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#195",
+			"description": "Import permit effective end date time: 195."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#196",
+			"description": "Transport means departure date/time, earliest: 196."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#197",
+			"description": "Lay-time first day: 197."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#198",
+			"description": "Lay-time last day: 198."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#199",
+			"description": "Positioning date/time of goods: 199."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#2",
+			"description": "Delivery date/time, requested: 2."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#20",
+			"description": "Cheque date/time: 20."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#200",
+			"description": "Cargo pick-up date / time: 200."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#201",
+			"description": "Equipment pick-up date / time: 201."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#202",
+			"description": "Posting date: 202."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#203",
+			"description": "Execution date/time, requested: 203."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#204",
+			"description": "Release date (Customs): 204."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#205",
+			"description": "Settlement date: 205."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#206",
+			"description": "End date/time: 206."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#207",
+			"description": "Commenced pumping ballast date/time: 207."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#208",
+			"description": "Transport means departure date/time, ultimate: 208."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#209",
+			"description": "Value date: 209."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#21",
+			"description": "Charge back date/time: 21."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#210",
+			"description": "Reinsurance current account period: 210."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#211",
+			"description": "360/30: 211."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#212",
+			"description": "360/28-31: 212."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#213",
+			"description": "365-6/30: 213."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#214",
+			"description": "365-6/28-31: 214."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#215",
+			"description": "365/28-31: 215."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#216",
+			"description": "365/30: 216."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#217",
+			"description": "From date of award to latest delivery: 217."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#218",
+			"description": "Authentication/validation date/time: 218."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#219",
+			"description": "Crossborder date/time: 219."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#22",
+			"description": "Freight bill date/time: 22."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#220",
+			"description": "Property mortgage scheduled date, end: 220."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#221",
+			"description": "Interest period: 221."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#222",
+			"description": "Presentation date, latest: 222."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#223",
+			"description": "Delivery date/time, deferred: 223."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#224",
+			"description": "Permit to admit date: 224."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#225",
+			"description": "Certification of weight date/time: 225."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#226",
+			"description": "Discrepancy date/time: 226."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#227",
+			"description": "Beneficiary's banks due date: 227."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#228",
+			"description": "Debit value date, requested: 228."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#229",
+			"description": "Hoses connected date/time: 229."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#23",
+			"description": "Equipment reconditioning date/time, actual: 23."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#230",
+			"description": "Hoses disconnected date/time: 230."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#231",
+			"description": "Transport means arrival date/time, earliest: 231."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#232",
+			"description": "Transport means arrival date/time, scheduled: 232."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#233",
+			"description": "Transport means arrival date/time, ultimate: 233."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#234",
+			"description": "Collection date/time, earliest: 234."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#235",
+			"description": "Collection date/time, latest: 235."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#236",
+			"description": "Completed pumping ballast date/time: 236."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#237",
+			"description": "Completed tank cleaning date/time: 237."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#238",
+			"description": "Tanks accepted date/time: 238."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#239",
+			"description": "Tanks inspected date/time: 239."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#24",
+			"description": "Transfer note acceptance date and time: 24."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#240",
+			"description": "Reinsurance accounting period: 240."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#241",
+			"description": "From date of award to earliest delivery: 241."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#242",
+			"description": "Preparation date/time of document: 242."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#243",
+			"description": "Transmission date/time of document: 243."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#244",
+			"description": "Settlement date, planned: 244."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#245",
+			"description": "Underwriting year: 245."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#246",
+			"description": "Accounting year: 246."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#247",
+			"description": "Year of occurrence: 247."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#248",
+			"description": "Loss: 248."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#249",
+			"description": "Cash call date: 249."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#250",
+			"description": "Re-exportation date: 250."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#251",
+			"description": "Re-importation date: 251."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#252",
+			"description": "Arrival date/time at initial port: 252."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#253",
+			"description": "Departure date/time from last port of call: 253."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#254",
+			"description": "Registration date of previous Customs declaration: 254."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#255",
+			"description": "Availability due date: 255."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#256",
+			"description": "From date of award to completion: 256."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#257",
+			"description": "Calculation date time: 257."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#258",
+			"description": "Guarantee date: 258."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#259",
+			"description": "Conveyance registration date: 259."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#260",
+			"description": "Valuation date (Customs): 260."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#261",
+			"description": "Release date/time: 261."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#262",
+			"description": "Closure date/time/period: 262."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#263",
+			"description": "Invoicing period: 263."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#264",
+			"description": "Release frequency: 264."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#265",
+			"description": "Due date: 265."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#266",
+			"description": "Validation date: 266."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#267",
+			"description": "Rate/price date/time: 267."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#268",
+			"description": "Transit time/limits: 268."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#269",
+			"description": "Discharge date/time, started: 269."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#270",
+			"description": "Ship during date: 270."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#271",
+			"description": "Ship on or about date: 271."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#272",
+			"description": "Documentary credit presentation period: 272."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#273",
+			"description": "Validity period: 273."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#274",
+			"description": "From date of order receipt to sample ready: 274."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#275",
+			"description": "From date of tooling authorization to sample ready: 275."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#276",
+			"description": "From date of receipt of tooling aids to sample ready: 276."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#277",
+			"description": "From date of sample approval to first product shipment: 277."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#278",
+			"description": "From date of order receipt to shipment: 278."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#279",
+			"description": "From date of order receipt to delivery: 279."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#280",
+			"description": "From last booked order to delivery: 280."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#281",
+			"description": "Date of order lead time: 281."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#282",
+			"description": "Confirmation date lead time: 282."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#283",
+			"description": "Arrival date/time of transport lead time: 283."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#284",
+			"description": "Before inventory is replenished based on stock check lead time: 284."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#285",
+			"description": "Invitation to tender date/time: 285."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#286",
+			"description": "Tender submission date/time: 286."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#287",
+			"description": "Contract award date/time: 287."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#288",
+			"description": "Price base date/time: 288."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#289",
+			"description": "Interest rate validity period: 289."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#290",
+			"description": "Contractual start date/time: 290."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#291",
+			"description": "Start date/time, planned: 291."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#292",
+			"description": "Works completion date/time, planned: 292."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#293",
+			"description": "Works completion date/time, actual: 293."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#294",
+			"description": "Hand over date/time, planned: 294."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#295",
+			"description": "Hand over date/time, actual: 295."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#296",
+			"description": "Retention release date/time: 296."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#297",
+			"description": "Retention release date/time, partial: 297."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#298",
+			"description": "Goods pick-up date / time, planned: 298."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#299",
+			"description": "Price adjustment start date: 299."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#3",
+			"description": "Invoice document issue date time: 3."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#300",
+			"description": "Price adjustment limit date: 300."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#301",
+			"description": "Value date of index: 301."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#302",
+			"description": "Publication date: 302."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#303",
+			"description": "Escalation date: 303."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#304",
+			"description": "Price adjustment date: 304."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#305",
+			"description": "Latest price adjustment date: 305."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#306",
+			"description": "Work period: 306."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#307",
+			"description": "Payment instruction date/time: 307."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#308",
+			"description": "Payment valuation presentation date/time: 308."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#309",
+			"description": "Banks' value date: 309."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#310",
+			"description": "Received date/time: 310."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#311",
+			"description": "On: 311."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#312",
+			"description": "Ship not before and not after date/time: 312."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#313",
+			"description": "Order to proceed date: 313."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#314",
+			"description": "Planned duration of works: 314."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#315",
+			"description": "Agreement to pay date: 315."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#316",
+			"description": "Valuation date/time: 316."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#317",
+			"description": "Reply date: 317."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#318",
+			"description": "Request date: 318."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#319",
+			"description": "Customer value date: 319."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#320",
+			"description": "Declaration reference period: 320."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#321",
+			"description": "Promotion date/period: 321."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#322",
+			"description": "Accounting period: 322."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#323",
+			"description": "Horizon period: 323."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#324",
+			"description": "Processing date/period: 324."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#325",
+			"description": "Tax period: 325."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#326",
+			"description": "Charge period: 326."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#327",
+			"description": "Instalment payment due date: 327."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#328",
+			"description": "Payroll deduction date/time: 328."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#329",
+			"description": "Person birth date time: 329."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#330",
+			"description": "Joined employer date: 330."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#331",
+			"description": "Contributions ceasing date/time: 331."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#332",
+			"description": "Contribution period end date/time: 332."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#333",
+			"description": "Part-time working change date/time: 333."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#334",
+			"description": "Status change date/time: 334."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#335",
+			"description": "Contribution period start date/time: 335."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#336",
+			"description": "Salary change effective date: 336."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#337",
+			"description": "Left employer date: 337."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#338",
+			"description": "Benefit change date/time: 338."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#339",
+			"description": "Category change date/time: 339."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#340",
+			"description": "Joined fund date/time: 340."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#341",
+			"description": "Waiting time: 341."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#342",
+			"description": "Consignment loading date time: 342."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#343",
+			"description": "Date/time of discount termination: 343."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#344",
+			"description": "Date/time of interest due: 344."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#345",
+			"description": "Days of operation: 345."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#346",
+			"description": "Latest check-in time: 346."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#347",
+			"description": "Slaughtering start date: 347."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#348",
+			"description": "Packing start date: 348."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#349",
+			"description": "Packing end date: 349."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#35",
+			"description": "Delivery date/time, actual: 35."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#350",
+			"description": "Test start date: 350."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#351",
+			"description": "Inspection date: 351."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#352",
+			"description": "Slaughtering end date: 352."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#353",
+			"description": "Accounting transaction date: 353."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#354",
+			"description": "Activity period date range: 354."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#355",
+			"description": "Contractual delivery date: 355."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#356",
+			"description": "Sales date, and or time, and or period: 356."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#357",
+			"description": "Cancel if not published by this date: 357."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#358",
+			"description": "Scheduled for delivery on or after: 358."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#359",
+			"description": "Scheduled for delivery on or before: 359."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#36",
+			"description": "Expiry date: 36."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#360",
+			"description": "Sell by date: 360."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#361",
+			"description": "Product best before date time: 361."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#362",
+			"description": "End availability date: 362."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#363",
+			"description": "Total shelf life period: 363."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#364",
+			"description": "Minimum shelf life remaining at time of despatch period: 364."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#365",
+			"description": "Packaging date: 365."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#366",
+			"description": "Inventory report date: 366."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#367",
+			"description": "Meter reading date, previous: 367."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#368",
+			"description": "Meter reading date, latest: 368."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#369",
+			"description": "Date and or time of handling, estimated: 369."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#37",
+			"description": "Ship not before date/time: 37."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#370",
+			"description": "Date when container equipment becomes domestic: 370."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#371",
+			"description": "Hydrotest date: 371."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#372",
+			"description": "Equipment pre-trip date: 372."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#373",
+			"description": "Mooring, date and time: 373."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#374",
+			"description": "Road fund tax expiry date: 374."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#375",
+			"description": "Date of first registration: 375."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#376",
+			"description": "Biannual terminal inspection date: 376."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#377",
+			"description": "Federal HighWay Administration (FHWA) inspection date: 377."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#378",
+			"description": "Container Safety Convention (CSC) inspection date: 378."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#379",
+			"description": "Periodic inspection date: 379."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#38",
+			"description": "Ship not later than date/time: 38."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#380",
+			"description": "Drawing revision date: 380."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#381",
+			"description": "Product lifespan at time of production: 381."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#382",
+			"description": "Earliest sale date: 382."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#383",
+			"description": "Cancel if not shipped by this date: 383."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#384",
+			"description": "Previous invoice date: 384."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#385",
+			"description": "Payment cancelled, violation of agreement: 385."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#386",
+			"description": "Payment cancelled due to administrative error: 386."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#387",
+			"description": "Repair turnaround time: 387."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#388",
+			"description": "Order amendment binding date: 388."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#389",
+			"description": "Cure time: 389."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#39",
+			"description": "Ship week of date: 39."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#390",
+			"description": "From date of award to delivery: 390."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#391",
+			"description": "From date of receipt of item to approval: 391."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#392",
+			"description": "Equipment pick-up date / time, earliest: 392."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#393",
+			"description": "Equipment pick-up date / time, planned: 393."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#394",
+			"description": "Equipment positioning date/time, actual: 394."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#395",
+			"description": "Equipment positioning date/time, estimated: 395."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#396",
+			"description": "Equipment positioning date/time, requested: 396."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#397",
+			"description": "Equipment positioning date/time, ultimate: 397."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#398",
+			"description": "Goods collection or pick-up date/time, planned: 398."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#399",
+			"description": "Goods positioning date/time, expected: 399."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#4",
+			"description": "Order document issue date time: 4."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#40",
+			"description": "Clinical information issue date and/or time: 40."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#400",
+			"description": "Cargo release date/time, ultimate: 400."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#401",
+			"description": "Container Safety Convention (CSC) plate expiration date: 401."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#402",
+			"description": "Document received date/time: 402."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#403",
+			"description": "Discharge date/time, actual: 403."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#404",
+			"description": "Transport means loading date/time, actual: 404."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#405",
+			"description": "Equipment pick-up date / time, actual: 405."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#406",
+			"description": "Goods positioning date/time, planned: 406."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#407",
+			"description": "Document requested date/time: 407."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#408",
+			"description": "Expected container hire from date/time: 408."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#409",
+			"description": "Order completion date/time, ultimate: 409."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#41",
+			"description": "Event duration, expected: 41."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#410",
+			"description": "Equipment repair ready date/time, ultimate: 410."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#411",
+			"description": "Container stuffing date/time, ultimate: 411."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#412",
+			"description": "Container stripping date/time, ultimate: 412."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#413",
+			"description": "Discharge and loading completed date/time: 413."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#414",
+			"description": "Equipment stock check date/time: 414."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#415",
+			"description": "Activity reporting date: 415."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#416",
+			"description": "Submission date: 416."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#417",
+			"description": "Previous booking date/time: 417."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#418",
+			"description": "Minimum shelf life remaining at time of receipt: 418."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#419",
+			"description": "Forecast period: 419."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#42",
+			"description": "Superseded date/time: 42."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#420",
+			"description": "Unloaded, date and time: 420."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#421",
+			"description": "Estimated acceptance date: 421."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#422",
+			"description": "Documentary credit issue date: 422."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#423",
+			"description": "First date of ordering: 423."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#424",
+			"description": "Last date of ordering: 424."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#425",
+			"description": "Original posting date: 425."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#426",
+			"description": "Reinsurance payment frequency: 426."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#427",
+			"description": "Adjusted age: 427."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#428",
+			"description": "Original issue age: 428."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#429",
+			"description": "Coverage duration: 429."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#43",
+			"description": "Event duration, intended: 43."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#430",
+			"description": "Coverage issue date: 430."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#431",
+			"description": "Flat extra period: 431."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#432",
+			"description": "Paid to date: 432."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#433",
+			"description": "Reinsurance coverage duration: 433."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#434",
+			"description": "Maturity date: 434."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#435",
+			"description": "Reinsurance issue age: 435."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#436",
+			"description": "Reinsurance paid-up date: 436."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#437",
+			"description": "Benefit period: 437."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#438",
+			"description": "Disability wait period: 438."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#439",
+			"description": "Deferred Period: 439."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#44",
+			"description": "Availability: 44."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#440",
+			"description": "Documentary credit amendment date: 440."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#441",
+			"description": "Last on hire date: 441."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#442",
+			"description": "Last off hire date: 442."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#443",
+			"description": "Direct interchange date: 443."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#444",
+			"description": "Approval date: 444."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#445",
+			"description": "Original estimate date: 445."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#446",
+			"description": "Revised estimate date: 446."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#447",
+			"description": "Creditor's requested value date: 447."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#448",
+			"description": "Referenced item creation date: 448."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#449",
+			"description": "Date for the last update: 449."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#45",
+			"description": "Compilation date and time: 45."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#450",
+			"description": "Opening date: 450."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#451",
+			"description": "Source document capture date: 451."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#452",
+			"description": "Trial balance period: 452."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#453",
+			"description": "Date of source document: 453."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#454",
+			"description": "Accounting value date: 454."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#455",
+			"description": "Expected value date: 455."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#456",
+			"description": "Chart of account period: 456."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#457",
+			"description": "Date of separation: 457."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#458",
+			"description": "Date of divorce: 458."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#459",
+			"description": "Date of marriage: 459."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#46",
+			"description": "Cancellation date: 46."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#460",
+			"description": "Wage period, start date: 460."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#461",
+			"description": "Wage period, end date: 461."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#462",
+			"description": "Working period, start date: 462."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#463",
+			"description": "Working period, end date: 463."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#464",
+			"description": "Embarkation date and time: 464."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#465",
+			"description": "Disembarkation date and time: 465."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#466",
+			"description": "Time now date: 466."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#467",
+			"description": "Holiday: 467."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#468",
+			"description": "Non working: 468."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#469",
+			"description": "Start date or time, earliest: 469."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#47",
+			"description": "Statistical time series date: 47."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#470",
+			"description": "Start date or time, latest: 470."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#471",
+			"description": "Finish date or time, earliest: 471."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#472",
+			"description": "Finish date or time, latest: 472."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#473",
+			"description": "Start date or time, mandatory: 473."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#474",
+			"description": "Finish date or time, mandatory: 474."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#475",
+			"description": "Start date or time, actual: 475."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#476",
+			"description": "Start date or time, estimated: 476."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#477",
+			"description": "Completion date or time, estimated: 477."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#478",
+			"description": "Start date or time, scheduled: 478."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#479",
+			"description": "Completion date or time, scheduled: 479."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#48",
+			"description": "Duration: 48."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#480",
+			"description": "Start date or time, not before: 480."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#481",
+			"description": "Start date or time, not after: 481."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#482",
+			"description": "Completion date or time, not before: 482."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#483",
+			"description": "Completion date or time, not after: 483."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#484",
+			"description": "Illness recovery date, expected: 484."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#485",
+			"description": "Period of illness, start date: 485."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#486",
+			"description": "Period of illness, end date: 486."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#487",
+			"description": "Decease date: 487."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#488",
+			"description": "Benefit period, start date: 488."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#489",
+			"description": "Benefit period, end date: 489."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#49",
+			"description": "Deliver not before and not after dates: 49."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#490",
+			"description": "Selection period, start date: 490."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#491",
+			"description": "Selection period, end date: 491."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#492",
+			"description": "Balance date/time/period: 492."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#493",
+			"description": "Benefit payments termination date: 493."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#494",
+			"description": "Covered income period: 494."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#495",
+			"description": "Current income period: 495."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#496",
+			"description": "Reinstatement date: 496."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#497",
+			"description": "Definition of disability duration: 497."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#498",
+			"description": "Previous termination date: 498."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#499",
+			"description": "Premium change period: 499."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#5",
+			"description": "Saleable stock demand cover period, expected: 5."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#50",
+			"description": "Goods receipt date/time: 50."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#500",
+			"description": "Off-hire survey date: 500."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#501",
+			"description": "In service survey date: 501."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#502",
+			"description": "On hire survey date: 502."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#503",
+			"description": "Production inspection date: 503."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#504",
+			"description": "Overtime, start date: 504."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#505",
+			"description": "Overtime, end date: 505."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#506",
+			"description": "Back order delivery date/time/period: 506."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#507",
+			"description": "Negotiations start date: 507."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#508",
+			"description": "Work effective start date: 508."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#51",
+			"description": "Cumulative quantity start date: 51."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#510",
+			"description": "Notification time limit: 510."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#511",
+			"description": "Time limit: 511."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#512",
+			"description": "Attendance date and or time and or period: 512."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#513",
+			"description": "Accident date and or time: 513."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#514",
+			"description": "Adoption date, actual: 514."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#515",
+			"description": "Reimbursement claim issue date and or time: 515."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#516",
+			"description": "Hospital admission date and or time: 516."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#517",
+			"description": "Hospital discharge date and or time: 517."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#518",
+			"description": "Period of care start date and or time: 518."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#519",
+			"description": "Period of care end date and or time: 519."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#52",
+			"description": "Cumulative quantity end date: 52."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#520",
+			"description": "Department admission date and or time: 520."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#521",
+			"description": "Department discharge date and or time: 521."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#522",
+			"description": "Childbirth date and or time, actual: 522."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#523",
+			"description": "Prescription issue date and or time: 523."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#524",
+			"description": "Prescription dispensing date and or time: 524."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#525",
+			"description": "Clinical examination date and or time: 525."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#526",
+			"description": "Death date and or time: 526."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#527",
+			"description": "Childbirth date, estimated: 527."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#528",
+			"description": "Last menstrual cycle, start date: 528."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#529",
+			"description": "Pregnancy duration, actual: 529."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#53",
+			"description": "Buyer's local time: 53."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#530",
+			"description": "Fumigation date and/or time: 530."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#531",
+			"description": "Payment period: 531."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#532",
+			"description": "Average delivery delay: 532."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#533",
+			"description": "Budget line application date: 533."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#534",
+			"description": "Date of repair or service: 534."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#535",
+			"description": "Date of product failure: 535."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#536",
+			"description": "Review date: 536."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#537",
+			"description": "International review cycle start date: 537."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#538",
+			"description": "International assessment approval for publication date: 538."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#539",
+			"description": "Status assignment date: 539."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#54",
+			"description": "Seller's local time: 54."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#540",
+			"description": "Instruction's original execution date: 540."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#541",
+			"description": "First published date: 541."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#542",
+			"description": "Last published date: 542."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#543",
+			"description": "Balance sheet date, latest: 543."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#544",
+			"description": "Security share price as of given date: 544."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#545",
+			"description": "Assigned date: 545."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#546",
+			"description": "Business opened date: 546."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#547",
+			"description": "Initial financial accounts filed date: 547."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#548",
+			"description": "Stop work as of given date: 548."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#549",
+			"description": "Completion date: 549."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#55",
+			"description": "Confirmed date/time: 55."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#550",
+			"description": "Lease term, start date: 550."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#551",
+			"description": "Lease term, end date: 551."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#552",
+			"description": "Start date, actual: 552."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#553",
+			"description": "Start date, estimated: 553."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#554",
+			"description": "Filed date: 554."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#555",
+			"description": "Return to work date: 555."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#556",
+			"description": "Purchased date: 556."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#557",
+			"description": "Returned date: 557."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#558",
+			"description": "Changed date: 558."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#559",
+			"description": "Terminated date: 559."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#56",
+			"description": "Original authorisation date and/or time: 56."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#560",
+			"description": "Evaluation date: 560."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#561",
+			"description": "Business termination date: 561."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#562",
+			"description": "Release from bankruptcy date: 562."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#563",
+			"description": "Placement date, initial: 563."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#564",
+			"description": "Signature date: 564."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#565",
+			"description": "Bankruptcy filed date: 565."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#566",
+			"description": "End date, scheduled: 566."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#567",
+			"description": "Report period: 567."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#568",
+			"description": "Suspended date: 568."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#569",
+			"description": "Renewal date: 569."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#57",
+			"description": "Precaution relevant period: 57."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#570",
+			"description": "Reported date: 570."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#571",
+			"description": "Checked date: 571."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#572",
+			"description": "Present residence, start date: 572."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#573",
+			"description": "Employment position, start date: 573."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#574",
+			"description": "Account closed date: 574."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#575",
+			"description": "Construction date, actual: 575."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#576",
+			"description": "Employment profession start date: 576."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#577",
+			"description": "Next review date: 577."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#578",
+			"description": "Meeting date: 578."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#579",
+			"description": "Administrator ordered date: 579."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#58",
+			"description": "Clearance date (Customs): 58."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#580",
+			"description": "Last date to file a claim: 580."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#581",
+			"description": "Convicted date: 581."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#582",
+			"description": "Interviewed date: 582."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#583",
+			"description": "Last visit date: 583."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#584",
+			"description": "Future period: 584."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#585",
+			"description": "Preceding period: 585."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#586",
+			"description": "Expected problem resolution date: 586."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#587",
+			"description": "Action date: 587."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#588",
+			"description": "Accountant's opinion date: 588."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#589",
+			"description": "Last activity date: 589."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#59",
+			"description": "Inbound movement authorization date: 59."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#590",
+			"description": "Resolved date: 590."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#591",
+			"description": "Recorded date: 591."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#592",
+			"description": "Date of birth, estimated: 592."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#593",
+			"description": "Last annual report date: 593."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#594",
+			"description": "Net worth date: 594."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#595",
+			"description": "Payment cancellation rejected: 595."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#596",
+			"description": "Profit period: 596."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#597",
+			"description": "Registration date: 597."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#598",
+			"description": "Consolidation date: 598."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#599",
+			"description": "Board of directors not authorised as of given date: 599."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#6",
+			"description": "Moved from location date: 6."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#60",
+			"description": "Engineering change level date: 60."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#600",
+			"description": "Board of directors not complete as of given date: 600."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#601",
+			"description": "Manager not registered as of given date: 601."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#602",
+			"description": "Citizenship change date: 602."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#603",
+			"description": "Participation date: 603."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#604",
+			"description": "Capitalisation date: 604."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#605",
+			"description": "Board of directors registration date: 605."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#606",
+			"description": "Operations ceased date: 606."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#607",
+			"description": "Satisfaction date: 607."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#608",
+			"description": "Legal settlement terms met date: 608."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#609",
+			"description": "Business control change date: 609."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#61",
+			"description": "Cancel if not delivered by this date: 61."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#610",
+			"description": "Court registration date: 610."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#611",
+			"description": "Annual report due date: 611."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#612",
+			"description": "Asset and liability schedule date: 612."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#613",
+			"description": "Annual report mailing date: 613."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#614",
+			"description": "Annual report filing date: 614."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#615",
+			"description": "Annual report delinquent on date: 615."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#616",
+			"description": "Accounting methodology change date: 616."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#617",
+			"description": "Closed until date: 617."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#618",
+			"description": "Conversion into holding company date: 618."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#619",
+			"description": "Deed not available as of given date: 619."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#62",
+			"description": "Excluded date: 62."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#620",
+			"description": "Detrimental information receipt date: 620."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#621",
+			"description": "Construction date, estimated: 621."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#622",
+			"description": "Financial information date: 622."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#623",
+			"description": "Graduation date: 623."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#624",
+			"description": "Insolvency discharge granted date: 624."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#625",
+			"description": "Incorporation date: 625."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#626",
+			"description": "Inactivity end date: 626."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#627",
+			"description": "Last check for balance sheet update date: 627."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#628",
+			"description": "Last capital change date: 628."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#629",
+			"description": "Letter of agreement date: 629."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#63",
+			"description": "Delivery date time, last: 63."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#630",
+			"description": "Letter of liability date: 630."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#631",
+			"description": "Liquidation date: 631."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#632",
+			"description": "Lowest activity period: 632."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#633",
+			"description": "Legal structure change date: 633."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#634",
+			"description": "Current name effective date: 634."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#635",
+			"description": "Not registered as of given date: 635."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#636",
+			"description": "Current authority control start date: 636."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#637",
+			"description": "Privilege details verification date: 637."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#638",
+			"description": "Current legal structure effective date: 638."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#639",
+			"description": "Peak activity period: 639."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#64",
+			"description": "Delivery date/time, earliest: 64."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#640",
+			"description": "Presentation to bankruptcy receivers date: 640."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#641",
+			"description": "Resignation date: 641."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#642",
+			"description": "Legal action closed date: 642."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#643",
+			"description": "Mail receipt date: 643."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#644",
+			"description": "Social security claims verification date: 644."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#645",
+			"description": "Sole directorship registration date: 645."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#646",
+			"description": "Trade style registration date: 646."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#647",
+			"description": "Trial start date, scheduled: 647."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#648",
+			"description": "Trial start date, actual: 648."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#649",
+			"description": "Value Added Tax (VAT) claims verification date: 649."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#65",
+			"description": "Delivery date/time, 1st schedule: 65."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#650",
+			"description": "Receivership result date: 650."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#651",
+			"description": "Investigation end date: 651."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#652",
+			"description": "Employee temporary laid-off period end date: 652."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#653",
+			"description": "Investigation start date: 653."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#654",
+			"description": "Income period: 654."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#655",
+			"description": "Criminal sentence duration: 655."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#656",
+			"description": "Age: 656."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#657",
+			"description": "Receivables collection period: 657."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#658",
+			"description": "Comparison period: 658."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#659",
+			"description": "Adjournment: 659."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#66",
+			"description": "Excluded period: 66."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#660",
+			"description": "Court dismissal date: 660."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#661",
+			"description": "Insufficient assets judgement date: 661."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#662",
+			"description": "Average payment period: 662."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#663",
+			"description": "Forecast period start: 663."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#664",
+			"description": "Period extended: 664."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#665",
+			"description": "Employee temporary laid-off period start date: 665."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#666",
+			"description": "Management available date: 666."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#667",
+			"description": "Withdrawn date: 667."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#668",
+			"description": "Claim incurred date: 668."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#669",
+			"description": "Financial coverage period: 669."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#67",
+			"description": "Delivery date/time, current schedule: 67."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#670",
+			"description": "Claim made date: 670."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#671",
+			"description": "Stop distribution date: 671."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#672",
+			"description": "Period assigned: 672."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#673",
+			"description": "Lease period: 673."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#674",
+			"description": "Forecast period end date: 674."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#675",
+			"description": "Judgement date: 675."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#676",
+			"description": "Period worked for the company: 676."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#677",
+			"description": "Transport equipment stuffing date and/or time: 677."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#678",
+			"description": "Transport equipment stripping date and/or time: 678."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#679",
+			"description": "Initial request date: 679."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#68",
+			"description": "Additional period: 68."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#680",
+			"description": "Period overdue: 680."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#681",
+			"description": "Implementation date/time/period: 681."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#682",
+			"description": "Refusal period: 682."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#683",
+			"description": "Suspension period: 683."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#684",
+			"description": "Deletion date: 684."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#685",
+			"description": "First sale date and/or time and/or period: 685."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#686",
+			"description": "Last sale date and/or time and/or period: 686."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#687",
+			"description": "Date ready for collection: 687."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#688",
+			"description": "Shipping date, no schedule established as of: 688."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#689",
+			"description": "Shipping date and/or time, current schedule: 689."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#69",
+			"description": "Delivery date time, promised before: 69."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#690",
+			"description": "Suppliers' average credit period: 690."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#691",
+			"description": "Advising date: 691."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#692",
+			"description": "Project over target baseline date: 692."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#693",
+			"description": "Established date: 693."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#694",
+			"description": "Latest filing period: 694."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#695",
+			"description": "Mailing date: 695."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#696",
+			"description": "Date/time of latest accounts filing at public registry: 696."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#697",
+			"description": "Date placed in disfavour: 697."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#698",
+			"description": "Employment position start date, estimated: 698."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#699",
+			"description": "Registered contractor number assignment date, original: 699."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#7",
+			"description": "Effective from date/time: 7."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#70",
+			"description": "Additional date: 70."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#700",
+			"description": "Ownership change date: 700."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#701",
+			"description": "Original duration: 701."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#702",
+			"description": "Period between changes: 702."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#703",
+			"description": "From date of notice to proceed to commencement of performance: 703."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#704",
+			"description": "From date of notice to proceed to completion: 704."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#705",
+			"description": "Period an event is late due to customer: 705."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#706",
+			"description": "File generation date and/or time: 706."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#707",
+			"description": "Endorsed certificate issue date: 707."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#708",
+			"description": "Patient first visit for condition: 708."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#709",
+			"description": "Admission date and/or time, expected: 709."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#71",
+			"description": "Delivery date/time, requested for (after and including): 71."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#710",
+			"description": "Symptoms onset, patient alleged: 710."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#711",
+			"description": "Accident benefit period: 711."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#712",
+			"description": "Accident benefit age limit: 712."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#713",
+			"description": "Accident lifetime benefit qualification age: 713."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#714",
+			"description": "Sickness benefit period: 714."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#715",
+			"description": "Sickness benefit age limit: 715."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#716",
+			"description": "Sickness lifetime benefit qualification age: 716."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#717",
+			"description": "Accident insurance elimination period: 717."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#718",
+			"description": "Sickness insurance elimination period: 718."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#719",
+			"description": "Provider signature date: 719."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#72",
+			"description": "Delivery date/time, promised for (after and including): 72."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#720",
+			"description": "Condition initial treatment date: 720."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#721",
+			"description": "Information release authorization date: 721."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#722",
+			"description": "Benefit release authorization date: 722."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#723",
+			"description": "Last seen date: 723."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#724",
+			"description": "Acute manifestation date: 724."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#725",
+			"description": "Similar illness onset date: 725."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#726",
+			"description": "Last X-ray date: 726."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#727",
+			"description": "Placement date, previous: 727."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#728",
+			"description": "Placement date: 728."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#729",
+			"description": "Temporary prosthesis date: 729."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#73",
+			"description": "Guarantee period: 73."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#730",
+			"description": "Orthodontic treatment period, remaining: 730."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#731",
+			"description": "Orthodontic treatment period, total: 731."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#732",
+			"description": "Maximum credit granted date: 732."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#733",
+			"description": "Last date of accounts filed at public register: 733."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#734",
+			"description": "Allowed renewal duration period: 734."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#735",
+			"description": "Offset from Coordinated Universal Time (UTC): 735."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#736",
+			"description": "Appointment expiry date: 736."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#737",
+			"description": "Earliest filing period: 737."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#738",
+			"description": "Original name change date: 738."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#739",
+			"description": "Education start date: 739."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#74",
+			"description": "Delivery date/time, requested for (prior to and including): 74."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#740",
+			"description": "Education end date: 740."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#741",
+			"description": "Receivership period: 741."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#742",
+			"description": "Financial information submission date/time: 742."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#743",
+			"description": "Purchase order latest possible change date: 743."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#744",
+			"description": "Investment number allocation date: 744."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#745",
+			"description": "Payment impossible: 745."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#746",
+			"description": "Record extraction period: 746."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#747",
+			"description": "Cost accounting value date: 747."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#748",
+			"description": "Open period: 748."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#749",
+			"description": "Period between issue date and maturity date: 749."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#75",
+			"description": "Delivery date/time, promised for (prior to and including): 75."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#750",
+			"description": "Before date: 750."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#751",
+			"description": "After date: 751."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#752",
+			"description": "Meter reading date, next scheduled: 752."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#753",
+			"description": "Maturity date, optimal: 753."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#754",
+			"description": "Product ageing duration, maximum: 754."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#755",
+			"description": "Product ageing duration, minimum: 755."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#756",
+			"description": "Ultimate documentation date/time for 24-hour rule regulation of CBP (United States Customs and Border Protection): 756."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#757",
+			"description": "Departure date/time from place of loading: 757."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#758",
+			"description": "Trade item ship date/time, earliest possible: 758."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#759",
+			"description": "Trade item ship date/time, latest possible: 759."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#76",
+			"description": "Delivery date/time, scheduled for: 76."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#760",
+			"description": "Start date/time, maximum buying quantity: 760."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#761",
+			"description": "Start date/time, minimum buying quantity: 761."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#762",
+			"description": "Marketing campaign end date/time, suggested: 762."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#763",
+			"description": "Marketing campaign start date/time, suggested: 763."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#764",
+			"description": "Start availability date: 764."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#765",
+			"description": "Seasonal availabilty calendar year: 765."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#766",
+			"description": "Goods pickup lead time: 766."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#767",
+			"description": "Change date/time, latest: 767."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#768",
+			"description": "End date/time, maximum buying quantity: 768."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#769",
+			"description": "End dat/time, minimum buying quantity: 769."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#77",
+			"description": "Specification revision date: 77."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#770",
+			"description": "End date/time of exclusivity: 770."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#771",
+			"description": "Data release date: 771."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#772",
+			"description": "Handling start date and/or time, actual: 772."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#773",
+			"description": "Handling end date and/or time, estimated: 773."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#774",
+			"description": "Handling end date and/or time, actual: 774."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#775",
+			"description": "Minimum product lifespan for consumer: 775."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#776",
+			"description": "Entry date, elected: 776."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#777",
+			"description": "Arrival date/time at initial port with the intent to unload: 777."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#778",
+			"description": "Conveyance port activity date/ time: 778."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#779",
+			"description": "Date and time of importation into port limits: 779."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#78",
+			"description": "Event date/time/period, actual: 78."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#780",
+			"description": "Free trade zone commodity status assignment date: 780."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#781",
+			"description": "Jurisdiction entry date/time, actual: 781."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#782",
+			"description": "Inspection start date/time: 782."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#783",
+			"description": "Inspection end date/time: 783."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#784",
+			"description": "Document/message rejection date/time: 784."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#785",
+			"description": "Government service date/time, requested: 785."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#786",
+			"description": "Crop year: 786."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#787",
+			"description": "Date of original manufacture: 787."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#788",
+			"description": "Model year: 788."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#789",
+			"description": "Opened trade item life span: 789."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#79",
+			"description": "Shipment date/time, promised for: 79."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#790",
+			"description": "Unmooring, date and time: 790."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#791",
+			"description": "First crane lift: 791."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#792",
+			"description": "Last crane lift: 792."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#793",
+			"description": "Reprocessing date/time: 793."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#794",
+			"description": "First returnable date/time: 794."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#795",
+			"description": "Community visibility date/time: 795."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#796",
+			"description": "Catch date/time: 796."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#797",
+			"description": "First freezing date: 797."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#798",
+			"description": "Verified gross mass determination date/time: 798."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#799",
+			"description": "Validity end date: 799."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#8",
+			"description": "Order received date/time: 8."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#80",
+			"description": "Planning end date and/or time, actual: 80."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#800",
+			"description": "Next status report date: 800."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#801",
+			"description": "Service connection date/time, actual: 801."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#802",
+			"description": "Service disconnection date/time, actual: 802."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#803",
+			"description": "Empty equipment required date/time/period: 803."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#804",
+			"description": "Product sterilisation date: 804."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#805",
+			"description": "Stock demand cover period, expected: 805."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#806",
+			"description": "Shipment date/time, expected: 806."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#807",
+			"description": "Slaughtering date/time: 807."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#808",
+			"description": "Animal birth date/time: 808."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#809",
+			"description": "Seasonal availability end date: 809."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#81",
+			"description": "Shipment date/time, requested for (after and including): 81."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#810",
+			"description": "Verified gross mass cut-off date/time: 810."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#811",
+			"description": "Dangerous goods acceptance cut-off date/time: 811."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#812",
+			"description": "Out of gauge or break bulk acceptance cut-off date/time: 812."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#813",
+			"description": "Reefer acceptance cut-off date/time: 813."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#814",
+			"description": "Laden transport equipment acceptance cut-off date/time: 814."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#815",
+			"description": "Transshipment booking acceptance cut-off date/time: 815."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#816",
+			"description": "Ordered labour team start time: 816."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#817",
+			"description": "Ordered labour team end time: 817."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#818",
+			"description": "Means of transport ready for cargo operations date/time: 818."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#819",
+			"description": "Means of transport ready for departure date/time: 819."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#82",
+			"description": "Medicine administration time: 82."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#820",
+			"description": "Vessel arrival at pilot area date/time, estimated: 820."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#821",
+			"description": "Vessel arrival at pilot area date/time, actual: 821."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#822",
+			"description": "Delivery place booking date/time: 822."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#823",
+			"description": "Pickup place booking date/time: 823."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#824",
+			"description": "Discharge date/time, ended: 824."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#825",
+			"description": "Loading date/time, ended: 825."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#826",
+			"description": "Loading date/time, started: 826."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#83",
+			"description": "Dispensing interval, minimum: 83."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#84",
+			"description": "Shipment date/time, requested for (prior to and including): 84."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#85",
+			"description": "Shipment date/time, promised for (prior to and including): 85."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#86",
+			"description": "Medication date/time, start: 86."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#87",
+			"description": "Travel service connection time: 87."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#88",
+			"description": "Summer time, start: 88."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#89",
+			"description": "Inquiry date: 89."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#9",
+			"description": "Processing date/time: 9."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#90",
+			"description": "Report start date: 90."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#91",
+			"description": "Report end date: 91."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#92",
+			"description": "Contract effective date: 92."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#93",
+			"description": "Contract expiry date: 93."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#94",
+			"description": "Production/manufacture date: 94."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#95",
+			"description": "Bill of lading date: 95."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#96",
+			"description": "Discharge date/time: 96."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#97",
+			"description": "Transaction creation date: 97."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#98",
+			"description": "Winter time, start: 98."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#99",
+			"description": "Quotation opening date: 99."
+		},
+		{
+			"const": "unece:DateTimePeriodFunctionCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

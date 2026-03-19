@@ -1,179 +1,23 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistribution",
-	"description": "Distribution interface compliant with Eclipse Data Space Protocol.\n\nThis interface extends IDistribution  and enforces DS Protocol-specific requirements by overriding properties with more specific types and constraints.\n\n**Requirements per DS Protocol:**\n- `@id` MUST be present for dataset identification (REQUIRED)\n- `odrl:hasPolicy` MIGHT be present as an array of ODRL Offers (OPTIONAL)\n- Array MUST contain at least one IOdrlOffer\n- Each Offer MUST have `@type`: \"Offer\"\n- `format` is REQUIRED.\n\n**Type System Design:**\n- W3C DCAT spec defines `odrl:hasPolicy` as optional singular `IOdrlPolicy`\n- DS Protocol requires it as a REQUIRED array of `IOdrlOffer`\n- Interface extension allows TypeScript to override inherited property types\n- Standards packages (@twin.org/standards-w3c-*) follow W3C specs exactly\n- DS Protocol-specific constraints are defined here\n\n**Future Compatibility:**\n- Currently only one Offer per dataset is supported\n- Array structure allows future support for multiple offers",
+	"title": "DataspaceProtocolDistribution",
+	"description": "Distribution interface compliant with Eclipse Data Space Protocol.\n\nThis interface extends IDistribution and enforces DS Protocol-specific requirements\nby overriding properties with more specific types and constraints.\n\n**Requirements per DS Protocol:**\n- `@id` MUST be present for dataset identification (REQUIRED)\n- `odrl:hasPolicy` MIGHT be present as an array of ODRL Offers (OPTIONAL)\n- Array MUST contain at least one IOdrlOffer\n- Each Offer MUST have `@type`: \"Offer\"\n- `format` is REQUIRED.\n\n**Type System Design:**\n- W3C DCAT spec defines `odrl:hasPolicy` as optional singular `IOdrlPolicy`\n- DS Protocol requires it as a REQUIRED array of `IOdrlOffer`\n- Interface extension allows TypeScript to override inherited property types\n- Standards packages (@twin.org/standards-w3c-*) follow W3C specs exactly\n- DS Protocol-specific constraints are defined here\n\n**Future Compatibility:**\n- Currently only one Offer per dataset is supported\n- Array structure allows future support for multiple offers",
 	"type": "object",
 	"properties": {
+		"@context": {
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "LD Context. Required per Eclipse Data Space Protocol."
+		},
 		"@id": {
 			"type": "string",
-			"description": "Unique identifier for the dataset. REQUIRED per Eclipse Data Space Protocol."
-		},
-		"dcterms:title": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatLiteralType",
-			"description": "A name given to the distribution."
-		},
-		"dcterms:description": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatLiteralType",
-			"description": "A free-text account of the distribution."
-		},
-		"dcterms:issued": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatDateTimeType",
-			"description": "Date of formal issuance of the distribution."
-		},
-		"dcterms:modified": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatDateTimeType",
-			"description": "Most recent date on which the distribution was changed, updated or modified."
-		},
-		"dcterms:license": {
-			"type": "string",
-			"description": "A legal document under which the distribution is made available."
-		},
-		"dcterms:accessRights": {
-			"type": "string",
-			"description": "Information about who can access the distribution."
-		},
-		"dcterms:rights": {
-			"type": "string",
-			"description": "Information about rights held in and over the distribution."
-		},
-		"dcat:accessURL": {
-			"type": "string",
-			"description": "A URL of the resource that gives access to a distribution of the dataset."
-		},
-		"dcat:accessService": {
-			"type": "string",
-			"description": "A data service that gives access to the distribution."
-		},
-		"dcat:downloadURL": {
-			"type": "string",
-			"description": "The URL of the downloadable file in a given format."
-		},
-		"dcat:byteSize": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatNonNegativeIntegerType",
-			"description": "The size of the distribution in bytes."
-		},
-		"dcat:spatialResolutionInMeters": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatDecimalType",
-			"description": "The minimum spatial separation resolvable in a distribution, measured in meters."
-		},
-		"dcat:temporalResolution": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DcatDurationType",
-			"description": "Minimum time period resolvable in the distribution."
-		},
-		"dcterms:conformsTo": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "An established standard to which the distribution conforms."
-		},
-		"dcat:mediaType": {
-			"type": "string",
-			"description": "The media type of the distribution as defined by IANA."
-		},
-		"dcat:compressFormat": {
-			"type": "string",
-			"description": "The compression format of the distribution."
-		},
-		"dcat:packageFormat": {
-			"type": "string",
-			"description": "The package format of the distribution."
-		},
-		"spdx:checksum": {
-			"type": "string",
-			"description": "The checksum property provides a mechanism to verify the data integrity."
-		},
-		"@context": {
-			"description": "The Dataspace Protocol JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://w3id.org/dspace/2025/1/context.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
-		},
-		"@type": {
-			"type": "string",
-			"const": "Distribution",
-			"description": "The type identifier for the Distribution. REQUIRED per Eclipse Data Space Protocol."
-		},
-		"hasPolicy": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferNoContext"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferNoContext"
-					}
-				}
-			],
-			"description": "Array of ODRL policies (Offers) as required by DS Protocol.\n\nREQUIRED per Eclipse Data Space Protocol spec. Must contain at least one IOdrlOffer. Currently only single offer is supported, but array structure allows for future multi-offer support."
-		},
-		"accessService": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceNoContext"
-				}
-			],
-			"description": "Access service. It can be a URI pointing to an access service or inline the access service itself"
-		},
-		"format": {
-			"type": "string",
-			"description": "Distribution format. REQUIRED per Eclipse Data Space Protocol."
+			"description": "Unique identifier for the distribution.\nREQUIRED on standalone Distribution objects per Eclipse Data Space Protocol."
 		}
 	},
-	"required": ["@context", "@type", "@id", "accessService", "format"]
+	"required": ["@context", "@id"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
+		}
+	]
 }

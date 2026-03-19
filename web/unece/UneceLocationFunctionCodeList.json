@@ -1,323 +1,1268 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+	"title": "UneceLocationFunctionCodeList",
 	"description": "A character string used to replace or represent a location function.",
-	"type": "string",
-	"enum": [
-		"unece:LocationFunctionCodeList#1",
-		"unece:LocationFunctionCodeList#10",
-		"unece:LocationFunctionCodeList#100",
-		"unece:LocationFunctionCodeList#101",
-		"unece:LocationFunctionCodeList#103",
-		"unece:LocationFunctionCodeList#104",
-		"unece:LocationFunctionCodeList#105",
-		"unece:LocationFunctionCodeList#106",
-		"unece:LocationFunctionCodeList#107",
-		"unece:LocationFunctionCodeList#108",
-		"unece:LocationFunctionCodeList#109",
-		"unece:LocationFunctionCodeList#11",
-		"unece:LocationFunctionCodeList#110",
-		"unece:LocationFunctionCodeList#111",
-		"unece:LocationFunctionCodeList#112",
-		"unece:LocationFunctionCodeList#113",
-		"unece:LocationFunctionCodeList#114",
-		"unece:LocationFunctionCodeList#115",
-		"unece:LocationFunctionCodeList#116",
-		"unece:LocationFunctionCodeList#117",
-		"unece:LocationFunctionCodeList#118",
-		"unece:LocationFunctionCodeList#119",
-		"unece:LocationFunctionCodeList#12",
-		"unece:LocationFunctionCodeList#120",
-		"unece:LocationFunctionCodeList#122",
-		"unece:LocationFunctionCodeList#123",
-		"unece:LocationFunctionCodeList#124",
-		"unece:LocationFunctionCodeList#125",
-		"unece:LocationFunctionCodeList#126",
-		"unece:LocationFunctionCodeList#127",
-		"unece:LocationFunctionCodeList#128",
-		"unece:LocationFunctionCodeList#129",
-		"unece:LocationFunctionCodeList#13",
-		"unece:LocationFunctionCodeList#130",
-		"unece:LocationFunctionCodeList#131",
-		"unece:LocationFunctionCodeList#132",
-		"unece:LocationFunctionCodeList#133",
-		"unece:LocationFunctionCodeList#134",
-		"unece:LocationFunctionCodeList#135",
-		"unece:LocationFunctionCodeList#136",
-		"unece:LocationFunctionCodeList#137",
-		"unece:LocationFunctionCodeList#138",
-		"unece:LocationFunctionCodeList#139",
-		"unece:LocationFunctionCodeList#14",
-		"unece:LocationFunctionCodeList#140",
-		"unece:LocationFunctionCodeList#141",
-		"unece:LocationFunctionCodeList#142",
-		"unece:LocationFunctionCodeList#143",
-		"unece:LocationFunctionCodeList#144",
-		"unece:LocationFunctionCodeList#145",
-		"unece:LocationFunctionCodeList#146",
-		"unece:LocationFunctionCodeList#147",
-		"unece:LocationFunctionCodeList#148",
-		"unece:LocationFunctionCodeList#149",
-		"unece:LocationFunctionCodeList#15",
-		"unece:LocationFunctionCodeList#150",
-		"unece:LocationFunctionCodeList#151",
-		"unece:LocationFunctionCodeList#152",
-		"unece:LocationFunctionCodeList#153",
-		"unece:LocationFunctionCodeList#154",
-		"unece:LocationFunctionCodeList#155",
-		"unece:LocationFunctionCodeList#156",
-		"unece:LocationFunctionCodeList#157",
-		"unece:LocationFunctionCodeList#158",
-		"unece:LocationFunctionCodeList#159",
-		"unece:LocationFunctionCodeList#16",
-		"unece:LocationFunctionCodeList#160",
-		"unece:LocationFunctionCodeList#161",
-		"unece:LocationFunctionCodeList#162",
-		"unece:LocationFunctionCodeList#163",
-		"unece:LocationFunctionCodeList#164",
-		"unece:LocationFunctionCodeList#165",
-		"unece:LocationFunctionCodeList#166",
-		"unece:LocationFunctionCodeList#167",
-		"unece:LocationFunctionCodeList#168",
-		"unece:LocationFunctionCodeList#169",
-		"unece:LocationFunctionCodeList#17",
-		"unece:LocationFunctionCodeList#170",
-		"unece:LocationFunctionCodeList#171",
-		"unece:LocationFunctionCodeList#172",
-		"unece:LocationFunctionCodeList#173",
-		"unece:LocationFunctionCodeList#174",
-		"unece:LocationFunctionCodeList#175",
-		"unece:LocationFunctionCodeList#176",
-		"unece:LocationFunctionCodeList#177",
-		"unece:LocationFunctionCodeList#178",
-		"unece:LocationFunctionCodeList#179",
-		"unece:LocationFunctionCodeList#18",
-		"unece:LocationFunctionCodeList#180",
-		"unece:LocationFunctionCodeList#181",
-		"unece:LocationFunctionCodeList#182",
-		"unece:LocationFunctionCodeList#183",
-		"unece:LocationFunctionCodeList#184",
-		"unece:LocationFunctionCodeList#185",
-		"unece:LocationFunctionCodeList#186",
-		"unece:LocationFunctionCodeList#187",
-		"unece:LocationFunctionCodeList#188",
-		"unece:LocationFunctionCodeList#189",
-		"unece:LocationFunctionCodeList#19",
-		"unece:LocationFunctionCodeList#190",
-		"unece:LocationFunctionCodeList#191",
-		"unece:LocationFunctionCodeList#192",
-		"unece:LocationFunctionCodeList#193",
-		"unece:LocationFunctionCodeList#194",
-		"unece:LocationFunctionCodeList#195",
-		"unece:LocationFunctionCodeList#196",
-		"unece:LocationFunctionCodeList#197",
-		"unece:LocationFunctionCodeList#198",
-		"unece:LocationFunctionCodeList#199",
-		"unece:LocationFunctionCodeList#2",
-		"unece:LocationFunctionCodeList#20",
-		"unece:LocationFunctionCodeList#200",
-		"unece:LocationFunctionCodeList#201",
-		"unece:LocationFunctionCodeList#202",
-		"unece:LocationFunctionCodeList#203",
-		"unece:LocationFunctionCodeList#204",
-		"unece:LocationFunctionCodeList#205",
-		"unece:LocationFunctionCodeList#206",
-		"unece:LocationFunctionCodeList#207",
-		"unece:LocationFunctionCodeList#208",
-		"unece:LocationFunctionCodeList#209",
-		"unece:LocationFunctionCodeList#21",
-		"unece:LocationFunctionCodeList#210",
-		"unece:LocationFunctionCodeList#211",
-		"unece:LocationFunctionCodeList#212",
-		"unece:LocationFunctionCodeList#213",
-		"unece:LocationFunctionCodeList#214",
-		"unece:LocationFunctionCodeList#215",
-		"unece:LocationFunctionCodeList#216",
-		"unece:LocationFunctionCodeList#217",
-		"unece:LocationFunctionCodeList#218",
-		"unece:LocationFunctionCodeList#219",
-		"unece:LocationFunctionCodeList#22",
-		"unece:LocationFunctionCodeList#220",
-		"unece:LocationFunctionCodeList#221",
-		"unece:LocationFunctionCodeList#222",
-		"unece:LocationFunctionCodeList#223",
-		"unece:LocationFunctionCodeList#224",
-		"unece:LocationFunctionCodeList#225",
-		"unece:LocationFunctionCodeList#226",
-		"unece:LocationFunctionCodeList#227",
-		"unece:LocationFunctionCodeList#228",
-		"unece:LocationFunctionCodeList#229",
-		"unece:LocationFunctionCodeList#23",
-		"unece:LocationFunctionCodeList#230",
-		"unece:LocationFunctionCodeList#231",
-		"unece:LocationFunctionCodeList#232",
-		"unece:LocationFunctionCodeList#233",
-		"unece:LocationFunctionCodeList#234",
-		"unece:LocationFunctionCodeList#235",
-		"unece:LocationFunctionCodeList#236",
-		"unece:LocationFunctionCodeList#237",
-		"unece:LocationFunctionCodeList#238",
-		"unece:LocationFunctionCodeList#239",
-		"unece:LocationFunctionCodeList#24",
-		"unece:LocationFunctionCodeList#240",
-		"unece:LocationFunctionCodeList#241",
-		"unece:LocationFunctionCodeList#242",
-		"unece:LocationFunctionCodeList#243",
-		"unece:LocationFunctionCodeList#244",
-		"unece:LocationFunctionCodeList#245",
-		"unece:LocationFunctionCodeList#246",
-		"unece:LocationFunctionCodeList#247",
-		"unece:LocationFunctionCodeList#248",
-		"unece:LocationFunctionCodeList#249",
-		"unece:LocationFunctionCodeList#25",
-		"unece:LocationFunctionCodeList#250",
-		"unece:LocationFunctionCodeList#251",
-		"unece:LocationFunctionCodeList#252",
-		"unece:LocationFunctionCodeList#253",
-		"unece:LocationFunctionCodeList#254",
-		"unece:LocationFunctionCodeList#255",
-		"unece:LocationFunctionCodeList#256",
-		"unece:LocationFunctionCodeList#257",
-		"unece:LocationFunctionCodeList#258",
-		"unece:LocationFunctionCodeList#259",
-		"unece:LocationFunctionCodeList#26",
-		"unece:LocationFunctionCodeList#260",
-		"unece:LocationFunctionCodeList#261",
-		"unece:LocationFunctionCodeList#262",
-		"unece:LocationFunctionCodeList#263",
-		"unece:LocationFunctionCodeList#264",
-		"unece:LocationFunctionCodeList#265",
-		"unece:LocationFunctionCodeList#266",
-		"unece:LocationFunctionCodeList#267",
-		"unece:LocationFunctionCodeList#268",
-		"unece:LocationFunctionCodeList#269",
-		"unece:LocationFunctionCodeList#27",
-		"unece:LocationFunctionCodeList#270",
-		"unece:LocationFunctionCodeList#271",
-		"unece:LocationFunctionCodeList#272",
-		"unece:LocationFunctionCodeList#273",
-		"unece:LocationFunctionCodeList#274",
-		"unece:LocationFunctionCodeList#275",
-		"unece:LocationFunctionCodeList#276",
-		"unece:LocationFunctionCodeList#277",
-		"unece:LocationFunctionCodeList#278",
-		"unece:LocationFunctionCodeList#279",
-		"unece:LocationFunctionCodeList#28",
-		"unece:LocationFunctionCodeList#280",
-		"unece:LocationFunctionCodeList#281",
-		"unece:LocationFunctionCodeList#282",
-		"unece:LocationFunctionCodeList#283",
-		"unece:LocationFunctionCodeList#284",
-		"unece:LocationFunctionCodeList#285",
-		"unece:LocationFunctionCodeList#286",
-		"unece:LocationFunctionCodeList#287",
-		"unece:LocationFunctionCodeList#288",
-		"unece:LocationFunctionCodeList#289",
-		"unece:LocationFunctionCodeList#29",
-		"unece:LocationFunctionCodeList#290",
-		"unece:LocationFunctionCodeList#291",
-		"unece:LocationFunctionCodeList#292",
-		"unece:LocationFunctionCodeList#293",
-		"unece:LocationFunctionCodeList#294",
-		"unece:LocationFunctionCodeList#295",
-		"unece:LocationFunctionCodeList#296",
-		"unece:LocationFunctionCodeList#297",
-		"unece:LocationFunctionCodeList#298",
-		"unece:LocationFunctionCodeList#299",
-		"unece:LocationFunctionCodeList#3",
-		"unece:LocationFunctionCodeList#30",
-		"unece:LocationFunctionCodeList#300",
-		"unece:LocationFunctionCodeList#301",
-		"unece:LocationFunctionCodeList#302",
-		"unece:LocationFunctionCodeList#303",
-		"unece:LocationFunctionCodeList#304",
-		"unece:LocationFunctionCodeList#305",
-		"unece:LocationFunctionCodeList#306",
-		"unece:LocationFunctionCodeList#307",
-		"unece:LocationFunctionCodeList#308",
-		"unece:LocationFunctionCodeList#309",
-		"unece:LocationFunctionCodeList#31",
-		"unece:LocationFunctionCodeList#310",
-		"unece:LocationFunctionCodeList#311",
-		"unece:LocationFunctionCodeList#312",
-		"unece:LocationFunctionCodeList#313",
-		"unece:LocationFunctionCodeList#314",
-		"unece:LocationFunctionCodeList#315",
-		"unece:LocationFunctionCodeList#316",
-		"unece:LocationFunctionCodeList#32",
-		"unece:LocationFunctionCodeList#33",
-		"unece:LocationFunctionCodeList#34",
-		"unece:LocationFunctionCodeList#35",
-		"unece:LocationFunctionCodeList#36",
-		"unece:LocationFunctionCodeList#37",
-		"unece:LocationFunctionCodeList#38",
-		"unece:LocationFunctionCodeList#39",
-		"unece:LocationFunctionCodeList#4",
-		"unece:LocationFunctionCodeList#40",
-		"unece:LocationFunctionCodeList#41",
-		"unece:LocationFunctionCodeList#42",
-		"unece:LocationFunctionCodeList#43",
-		"unece:LocationFunctionCodeList#44",
-		"unece:LocationFunctionCodeList#45",
-		"unece:LocationFunctionCodeList#46",
-		"unece:LocationFunctionCodeList#47",
-		"unece:LocationFunctionCodeList#48",
-		"unece:LocationFunctionCodeList#49",
-		"unece:LocationFunctionCodeList#5",
-		"unece:LocationFunctionCodeList#50",
-		"unece:LocationFunctionCodeList#51",
-		"unece:LocationFunctionCodeList#52",
-		"unece:LocationFunctionCodeList#53",
-		"unece:LocationFunctionCodeList#54",
-		"unece:LocationFunctionCodeList#55",
-		"unece:LocationFunctionCodeList#56",
-		"unece:LocationFunctionCodeList#57",
-		"unece:LocationFunctionCodeList#58",
-		"unece:LocationFunctionCodeList#59",
-		"unece:LocationFunctionCodeList#6",
-		"unece:LocationFunctionCodeList#60",
-		"unece:LocationFunctionCodeList#61",
-		"unece:LocationFunctionCodeList#62",
-		"unece:LocationFunctionCodeList#63",
-		"unece:LocationFunctionCodeList#64",
-		"unece:LocationFunctionCodeList#65",
-		"unece:LocationFunctionCodeList#66",
-		"unece:LocationFunctionCodeList#67",
-		"unece:LocationFunctionCodeList#68",
-		"unece:LocationFunctionCodeList#69",
-		"unece:LocationFunctionCodeList#7",
-		"unece:LocationFunctionCodeList#70",
-		"unece:LocationFunctionCodeList#71",
-		"unece:LocationFunctionCodeList#72",
-		"unece:LocationFunctionCodeList#73",
-		"unece:LocationFunctionCodeList#74",
-		"unece:LocationFunctionCodeList#75",
-		"unece:LocationFunctionCodeList#76",
-		"unece:LocationFunctionCodeList#77",
-		"unece:LocationFunctionCodeList#78",
-		"unece:LocationFunctionCodeList#79",
-		"unece:LocationFunctionCodeList#8",
-		"unece:LocationFunctionCodeList#80",
-		"unece:LocationFunctionCodeList#81",
-		"unece:LocationFunctionCodeList#82",
-		"unece:LocationFunctionCodeList#83",
-		"unece:LocationFunctionCodeList#84",
-		"unece:LocationFunctionCodeList#85",
-		"unece:LocationFunctionCodeList#86",
-		"unece:LocationFunctionCodeList#87",
-		"unece:LocationFunctionCodeList#88",
-		"unece:LocationFunctionCodeList#89",
-		"unece:LocationFunctionCodeList#9",
-		"unece:LocationFunctionCodeList#90",
-		"unece:LocationFunctionCodeList#91",
-		"unece:LocationFunctionCodeList#92",
-		"unece:LocationFunctionCodeList#93",
-		"unece:LocationFunctionCodeList#94",
-		"unece:LocationFunctionCodeList#95",
-		"unece:LocationFunctionCodeList#96",
-		"unece:LocationFunctionCodeList#97",
-		"unece:LocationFunctionCodeList#98",
-		"unece:LocationFunctionCodeList#99",
-		"unece:LocationFunctionCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:LocationFunctionCodeList#1",
+			"description": "Place of terms of delivery: 1."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#10",
+			"description": "Place of acceptance: 10."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#100",
+			"description": "Place/port of warehouse entry: 100."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#101",
+			"description": "Country of first sale: 101."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#103",
+			"description": "Place of transfer: 103."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#104",
+			"description": "Place of deconsolidation: 104."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#105",
+			"description": "Place of consumption: 105."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#106",
+			"description": "Region of origin: 106."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#107",
+			"description": "Place of consolidation: 107."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#108",
+			"description": "Rate combination point: 108."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#109",
+			"description": "Place of prolongation decision of delivery delay: 109."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#11",
+			"description": "Place of discharge: 11."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#110",
+			"description": "Recharging place/location: 110."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#111",
+			"description": "Customs office of despatch: 111."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#112",
+			"description": "Region of equipment availability: 112."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#113",
+			"description": "Country of despatch: 113."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#114",
+			"description": "Customs office of export: 114."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#115",
+			"description": "Free zone of export: 115."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#116",
+			"description": "Region of export/despatch: 116."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#117",
+			"description": "Place of collection: 117."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#118",
+			"description": "Customs office of departure: 118."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#119",
+			"description": "Transit guarantee customs office location: 119."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#12",
+			"description": "Port of discharge: 12."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#120",
+			"description": "Country of transhipment: 120."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#122",
+			"description": "Customs office of destination: 122."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#123",
+			"description": "Wagon-load railway station: 123."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#124",
+			"description": "Siding: 124."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#125",
+			"description": "Last place/port of call of conveyance: 125."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#126",
+			"description": "Country of previous Customs procedure: 126."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#127",
+			"description": "Customs office of registration of previous Customs declaration: 127."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#128",
+			"description": "Participant sender location: 128."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#129",
+			"description": "Wage negotiation district: 129."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#13",
+			"description": "Place of transhipment: 13."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#130",
+			"description": "Place of ultimate destination of conveyance: 130."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#131",
+			"description": "Place of loading of empty equipment: 131."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#132",
+			"description": "Place of discharge of empty equipment: 132."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#133",
+			"description": "Region of delivery: 133."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#134",
+			"description": "Petroleum warehouse: 134."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#135",
+			"description": "Place of entry (Customs): 135."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#136",
+			"description": "Living animals care place: 136."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#137",
+			"description": "Re-icing place: 137."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#138",
+			"description": "Weighting place: 138."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#139",
+			"description": "Marshalling yard: 139."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#14",
+			"description": "Goods item storage location: 14."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#140",
+			"description": "Stopping station: 140."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#141",
+			"description": "Loading dock: 141."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#142",
+			"description": "Port connection: 142."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#143",
+			"description": "Place of expiry: 143."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#144",
+			"description": "Place of negotiation: 144."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#145",
+			"description": "Claims payable place: 145."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#146",
+			"description": "Documentary credit available in: 146."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#147",
+			"description": "Transport means stowage location: 147."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#148",
+			"description": "For transportation to: 148."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#149",
+			"description": "Loading on board/despatch/taking in charge at/from: 149."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#15",
+			"description": "Place of transfer responsibility: 15."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#150",
+			"description": "Container stack position: 150."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#151",
+			"description": "Private box: 151."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#152",
+			"description": "Next port of discharge: 152."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#153",
+			"description": "Port of call: 153."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#154",
+			"description": "Place/location of on-hire: 154."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#155",
+			"description": "Place/location of off-hire: 155."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#156",
+			"description": "Other carriers terminal: 156."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#157",
+			"description": "Country of Value Added Tax (VAT) jurisdiction: 157."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#158",
+			"description": "Contact location: 158."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#159",
+			"description": "Additional internal destination: 159."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#16",
+			"description": "Place of transfer of ownership: 16."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#160",
+			"description": "Foreign port of call: 160."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#161",
+			"description": "Maintenance location: 161."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#162",
+			"description": "Place or location of sale: 162."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#163",
+			"description": "Direct investment country: 163."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#164",
+			"description": "Berth: 164."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#165",
+			"description": "Construction country: 165."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#166",
+			"description": "Donation acting country: 166."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#167",
+			"description": "Payment transaction country: 167."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#168",
+			"description": "Physical place of return of item: 168."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#169",
+			"description": "Relay port: 169."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#17",
+			"description": "Border crossing place: 17."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#170",
+			"description": "Final port of discharge: 170."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#171",
+			"description": "Place of destination for pre-stacking prior to stowage: 171."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#172",
+			"description": "Reporting location: 172."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#173",
+			"description": "Transport contract place of despatch: 173."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#174",
+			"description": "Place of residence: 174."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#175",
+			"description": "Activity location: 175."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#176",
+			"description": "Pick-up location: 176."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#177",
+			"description": "Construction site: 177."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#178",
+			"description": "Place of embarkation: 178."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#179",
+			"description": "Place of disembarkation: 179."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#18",
+			"description": "Warehouse: 18."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#180",
+			"description": "Person birth location: 180."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#181",
+			"description": "Registered office: 181."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#182",
+			"description": "Place of incorporation: 182."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#183",
+			"description": "Place of business: 183."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#184",
+			"description": "Physical location: 184."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#185",
+			"description": "Location to send mail: 185."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#186",
+			"description": "Foreign registration location: 186."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#187",
+			"description": "Tax filed from location: 187."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#188",
+			"description": "Filing location: 188."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#189",
+			"description": "Former location: 189."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#19",
+			"description": "Factory/plant: 19."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#190",
+			"description": "Head office: 190."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#191",
+			"description": "Property: 191."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#192",
+			"description": "Correct location: 192."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#193",
+			"description": "Branch location: 193."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#194",
+			"description": "Former registered location: 194."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#195",
+			"description": "Future location: 195."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#196",
+			"description": "Changed to location: 196."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#197",
+			"description": "Place of inquiry: 197."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#198",
+			"description": "Original location: 198."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#199",
+			"description": "Country of last source: 199."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#2",
+			"description": "Payment location: 2."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#20",
+			"description": "Place of ultimate destination of goods: 20."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#200",
+			"description": "Place of handling: 200."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#201",
+			"description": "Country of origin as defined by transportation agency: 201."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#202",
+			"description": "Terminal: 202."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#203",
+			"description": "Sample location: 203."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#204",
+			"description": "Hospital Advanced Dependency Unit (ADU): 204."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#205",
+			"description": "Hospital Neonatal Intensive Care Unit (NICU): 205."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#206",
+			"description": "Hospital Paediatric Care Unit (PCU): 206."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#207",
+			"description": "Hospital Intensive Care Unit (ICU): 207."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#208",
+			"description": "Hospital luxury room: 208."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#209",
+			"description": "Hospital shared room: 209."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#21",
+			"description": "Terms of sale place: 21."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#210",
+			"description": "Hospital private room: 210."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#211",
+			"description": "Bidding area: 211."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#212",
+			"description": "Price area: 212."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#213",
+			"description": "Country of destination of equipment: 213."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#214",
+			"description": "Aircraft airport stand: 214."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#215",
+			"description": "Airport passenger terminal: 215."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#216",
+			"description": "Previous berth: 216."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#217",
+			"description": "Next berth: 217."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#218",
+			"description": "Entity location: 218."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#219",
+			"description": "Goods depot: 219."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#22",
+			"description": "Customs clearance location: 22."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#220",
+			"description": "Disinfecting place: 220."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#221",
+			"description": "Harbour rail station: 221."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#222",
+			"description": "Place of live animal care: 222."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#223",
+			"description": "Phytosanitary control place: 223."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#224",
+			"description": "Place for re-icing or de-icing: 224."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#225",
+			"description": "Place of refuelling: 225."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#226",
+			"description": "Place of provision of an unexpected service: 226."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#227",
+			"description": "Private container terminal: 227."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#228",
+			"description": "Railway container terminal: 228."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#229",
+			"description": "Inspection site: 229."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#23",
+			"description": "Port of release: 23."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#230",
+			"description": "Request only stop: 230."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#231",
+			"description": "Grid area: 231."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#232",
+			"description": "Source power area: 232."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#233",
+			"description": "Sink power area: 233."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#234",
+			"description": "Scheduled berth: 234."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#235",
+			"description": "Scheduled berth, bow: 235."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#236",
+			"description": "Scheduled berth, stern: 236."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#237",
+			"description": "Balance settlement area: 237."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#238",
+			"description": "Market area: 238."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#239",
+			"description": "Metering grid area: 239."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#24",
+			"description": "Port of entry: 24."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#240",
+			"description": "Climate zone: 240."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#241",
+			"description": "Country of birth: 241."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#242",
+			"description": "Country of fattening: 242."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#243",
+			"description": "Country of slaughter: 243."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#244",
+			"description": "Country of meat cutting: 244."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#245",
+			"description": "Meat cutting location: 245."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#246",
+			"description": "Slaughterhouse: 246."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#247",
+			"description": "Country of meat mincing: 247."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#248",
+			"description": "Place of discharge and loading: 248."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#249",
+			"description": "Cargo facility location: 249."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#25",
+			"description": "Country: 25."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#250",
+			"description": "Tourist point of interest: 250."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#251",
+			"description": "Customs office of payment: 251."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#252",
+			"description": "Conveyance facility location at departure: 252."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#253",
+			"description": "Conveyance facility location at arrival: 253."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#254",
+			"description": "Bus station: 254."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#255",
+			"description": "Ferry terminal: 255."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#256",
+			"description": "Place of packing: 256."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#257",
+			"description": "Country of assembly: 257."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#258",
+			"description": "Town sales office: 258."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#259",
+			"description": "Travel agency: 259."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#26",
+			"description": "City: 26."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#260",
+			"description": "Inland clearance depot: 260."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#261",
+			"description": "Place of final production: 261."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#262",
+			"description": "Place of growth: 262."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#263",
+			"description": "Place of intermediate production: 263."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#264",
+			"description": "Place of nutrient origin: 264."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#265",
+			"description": "Place of package material production: 265."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#266",
+			"description": "Place of processing: 266."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#267",
+			"description": "Place of species origin: 267."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#268",
+			"description": "Place of catch: 268."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#269",
+			"description": "Government appeal office: 269."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#27",
+			"description": "Country of origin: 27."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#270",
+			"description": "Regulatory office of cross-border goods entry: 270."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#271",
+			"description": "Regulatory office of cross-border goods exit: 271."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#272",
+			"description": "Government approved establishment: 272."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#273",
+			"description": "Free trade zone: 273."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#274",
+			"description": "Place of physical examination: 274."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#275",
+			"description": "Permitted location: 275."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#276",
+			"description": "Landing location: 276."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#277",
+			"description": "Place of loading on final means of transport: 277."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#278",
+			"description": "Place of regulatory declaration review: 278."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#279",
+			"description": "Travel document issuing country or political entity: 279."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#28",
+			"description": "Country of destination of goods: 28."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#280",
+			"description": "Compliant facility, registered: 280."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#281",
+			"description": "Bonded warehouse: 281."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#282",
+			"description": "Goods destruction site, designated: 282."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#283",
+			"description": "Goods disposal location, designated: 283."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#284",
+			"description": "Incineration facility: 284."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#285",
+			"description": "Laboratory: 285."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#286",
+			"description": "Place of assembly: 286."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#287",
+			"description": "Processing site: 287."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#288",
+			"description": "Quarantine facility: 288."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#289",
+			"description": "Reclamation facility: 289."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#29",
+			"description": "Railway station: 29."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#290",
+			"description": "Refinery: 290."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#291",
+			"description": "Smelter: 291."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#292",
+			"description": "Prescribed treatment facility: 292."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#293",
+			"description": "Embassy: 293."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#294",
+			"description": "Region of source: 294."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#295",
+			"description": "Region of storage: 295."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#296",
+			"description": "Ship security incident location: 296."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#297",
+			"description": "Ship-to-ship activity location: 297."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#298",
+			"description": "Country of last processing: 298."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#299",
+			"description": "Fishing vessel: 299."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#3",
+			"description": "Tare check place: 3."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#30",
+			"description": "Country of source: 30."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#300",
+			"description": "Location of status: 300."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#301",
+			"description": "Location of meter: 301."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#302",
+			"description": "Country of provenance: 302."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#303",
+			"description": "Meat mincing plant: 303."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#304",
+			"description": "Place of fattening: 304."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#305",
+			"description": "Animal birth place: 305."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#306",
+			"description": "Global Good Agricultural Practice Number (GGN): 306."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#307",
+			"description": "Port of last waste delivery: 307."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#308",
+			"description": "Port of next waste delivery: 308."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#309",
+			"description": "Effluent Treatment Plant: 309."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#31",
+			"description": "Building: 31."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#310",
+			"description": "Farm: 310."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#311",
+			"description": "Manufacturing facility: 311."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#312",
+			"description": "Animal Farm: 312."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#313",
+			"description": "Tannery: 313."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#314",
+			"description": "Textile mill: 314."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#315",
+			"description": "Textile dyeing mill: 315."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#316",
+			"description": "Forest Management Unit: 316."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#32",
+			"description": "Beginning of chargeable section: 32."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#33",
+			"description": "Baseport of discharge: 33."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#34",
+			"description": "Baseport of loading: 34."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#35",
+			"description": "Exportation country: 35."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#36",
+			"description": "Country of ultimate destination: 36."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#37",
+			"description": "Consignment final exportation country: 37."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#38",
+			"description": "Consignment first destination country: 38."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#39",
+			"description": "Country of production: 39."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#4",
+			"description": "Goods receipt place: 4."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#40",
+			"description": "Country of trading: 40."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#41",
+			"description": "Consignment entry customs office location: 41."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#42",
+			"description": "Consignment exit customs office location: 42."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#43",
+			"description": "Place of Customs examination: 43."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#44",
+			"description": "Place of authentication of document: 44."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#45",
+			"description": "Customs office of destination (transit): 45."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#46",
+			"description": "Region of despatch: 46."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#47",
+			"description": "Region of destination: 47."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#48",
+			"description": "Region of production: 48."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#49",
+			"description": "Transit country: 49."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#5",
+			"description": "Place of departure: 5."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#50",
+			"description": "Transit customs office location: 50."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#51",
+			"description": "Country of invalid transit guarantee: 51."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#52",
+			"description": "Country of destination (transit): 52."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#53",
+			"description": "Charge and freight due from: 53."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#54",
+			"description": "Manufacturing department: 54."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#55",
+			"description": "Freight charge payable to location: 55."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#56",
+			"description": "End of chargeable section: 56."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#57",
+			"description": "Place of payment: 57."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#58",
+			"description": "Full track loading or unloading: 58."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#59",
+			"description": "Place of loss: 59."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#6",
+			"description": "Ward bed: 6."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#60",
+			"description": "Place of arrival: 60."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#61",
+			"description": "Next port of call: 61."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#62",
+			"description": "On-carriage port: 62."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#63",
+			"description": "Sub-project location: 63."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#64",
+			"description": "First optional place of discharge: 64."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#65",
+			"description": "Final port or place of discharge: 65."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#66",
+			"description": "Express railway station: 66."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#67",
+			"description": "Mixed cargo railway station: 67."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#68",
+			"description": "Second optional place of discharge: 68."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#69",
+			"description": "Next non-discharge port of call: 69."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#7",
+			"description": "Place of delivery: 7."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#70",
+			"description": "Third optional place of discharge: 70."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#71",
+			"description": "Reconsolidation point: 71."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#72",
+			"description": "Fourth optional place of discharge: 72."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#73",
+			"description": "Bill of lading release office: 73."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#74",
+			"description": "Transhipment excluding this place: 74."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#75",
+			"description": "Transhipment limited to this place: 75."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#76",
+			"description": "Original port of loading: 76."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#77",
+			"description": "First port of call - non-discharging: 77."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#78",
+			"description": "First port of call - discharging: 78."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#79",
+			"description": "Place/port of first entry: 79."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#8",
+			"description": "Place of destination: 8."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#80",
+			"description": "Place of despatch: 80."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#81",
+			"description": "Fifth optional place of discharge: 81."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#82",
+			"description": "Pre-carriage port: 82."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#83",
+			"description": "Place of delivery (by on carriage): 83."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#84",
+			"description": "Transport contract place of acceptance: 84."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#85",
+			"description": "Transport contract place of destination: 85."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#86",
+			"description": "Country of valid transit guarantee: 86."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#87",
+			"description": "Place/port of conveyance initial arrival: 87."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#88",
+			"description": "Place of receipt: 88."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#89",
+			"description": "Place of registration: 89."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#9",
+			"description": "Place of loading: 9."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#90",
+			"description": "Special treatment place: 90."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#91",
+			"description": "Place of document issue: 91."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#92",
+			"description": "Routing: 92."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#93",
+			"description": "Station of application of additional costs: 93."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#94",
+			"description": "Previous port of call: 94."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#95",
+			"description": "Sailing destination area: 95."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#96",
+			"description": "Place of lodgement of documents: 96."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#97",
+			"description": "Optional place of discharge: 97."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#98",
+			"description": "Place of empty equipment despatch: 98."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#99",
+			"description": "Place of empty equipment return: 99."
+		},
+		{
+			"const": "unece:LocationFunctionCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

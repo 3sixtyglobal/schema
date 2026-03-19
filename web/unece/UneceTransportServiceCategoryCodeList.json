@@ -1,31 +1,100 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportServiceCategoryCodeList",
+	"title": "UneceTransportServiceCategoryCodeList",
 	"description": "A character string used to represent a transport service category.",
-	"type": "string",
-	"enum": [
-		"unece:TransportServiceCategoryCodeList#1",
-		"unece:TransportServiceCategoryCodeList#10",
-		"unece:TransportServiceCategoryCodeList#11",
-		"unece:TransportServiceCategoryCodeList#12",
-		"unece:TransportServiceCategoryCodeList#13",
-		"unece:TransportServiceCategoryCodeList#14",
-		"unece:TransportServiceCategoryCodeList#15",
-		"unece:TransportServiceCategoryCodeList#16",
-		"unece:TransportServiceCategoryCodeList#17",
-		"unece:TransportServiceCategoryCodeList#19",
-		"unece:TransportServiceCategoryCodeList#2",
-		"unece:TransportServiceCategoryCodeList#20",
-		"unece:TransportServiceCategoryCodeList#21",
-		"unece:TransportServiceCategoryCodeList#22",
-		"unece:TransportServiceCategoryCodeList#23",
-		"unece:TransportServiceCategoryCodeList#24",
-		"unece:TransportServiceCategoryCodeList#3",
-		"unece:TransportServiceCategoryCodeList#4",
-		"unece:TransportServiceCategoryCodeList#5",
-		"unece:TransportServiceCategoryCodeList#6",
-		"unece:TransportServiceCategoryCodeList#7",
-		"unece:TransportServiceCategoryCodeList#8",
-		"unece:TransportServiceCategoryCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:TransportServiceCategoryCodeList#1",
+			"description": "All charges: 1."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#10",
+			"description": "Origin port charges: 10."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#11",
+			"description": "Origin haulage charges: 11."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#12",
+			"description": "Other charges: 12."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#13",
+			"description": "Specific amount payable: 13."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#14",
+			"description": "Transport costs (carriage charges): 14."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#15",
+			"description": "All costs up to a specified location: 15."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#16",
+			"description": "Weight/valuation charge: 16."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#17",
+			"description": "All costs: 17."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#19",
+			"description": "Supply of certificate of shipment: 19."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#2",
+			"description": "Additional charges: 2."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#20",
+			"description": "Supply of consular formalities or certificate of origin: 20."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#21",
+			"description": "Supply of non-categorised documentation in paper form: 21."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#22",
+			"description": "Supply of customs formalities, export: 22."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#23",
+			"description": "Supply of customs formalities, transit: 23."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#24",
+			"description": "Supply of customs formalities, import: 24."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#3",
+			"description": "Transport charges + additional charges: 3."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#4",
+			"description": "Basic freight: 4."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#5",
+			"description": "Destination haulage charges: 5."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#6",
+			"description": "Disbursement: 6."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#7",
+			"description": "Destination port charges: 7."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#8",
+			"description": "Miscellaneous charges: 8."
+		},
+		{
+			"const": "unece:TransportServiceCategoryCodeList#9",
+			"description": "Transport charges up to a specified location: 9."
+		}
 	]
 }

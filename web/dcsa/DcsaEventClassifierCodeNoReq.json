@@ -1,7 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaEventClassifierCodeNoReq",
-	"description": "DCSA event classifier codes.\n\nNote: Allowed values depend on event type. Source: `eventClassifierCode` schema in the DCSA Event Domain (v3.1.0).   DCSA event classifier codes.",
-	"type": "string",
-	"enum": ["ACT", "PLN", "EST"]
+	"title": "DcsaEventClassifierCodeNoReq",
+	"description": "DCSA event classifier codes.",
+	"oneOf": [
+		{
+			"const": "ACT",
+			"description": "Actual."
+		},
+		{
+			"const": "PLN",
+			"description": "Planned."
+		},
+		{
+			"const": "EST",
+			"description": "Estimated."
+		}
+	]
 }

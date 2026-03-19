@@ -1,27 +1,33 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-did/DidDocument",
-	"description": "Interface describing a DID Document. Spec https://www.w3.org/TR/did-core/#did-document-properties.",
+	"title": "DidDocument",
+	"description": "Interface describing a DID Document.\nSpec https://www.w3.org/TR/did-core/#did-document-properties.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://www.w3.org/ns/did/v1"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/did/v1"
-						}
-					],
 					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
+						"anyOf": [
+							{
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+							},
+							{
+								"const": "https://www.w3.org/ns/did/v1"
+							}
+						]
+					},
+					"contains": {
+						"const": "https://www.w3.org/ns/did/v1"
+					},
+					"minContains": 1,
+					"maxContains": 1,
+					"minItems": 1
 				}
 			],
 			"description": "The context for the document."

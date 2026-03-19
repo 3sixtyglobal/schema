@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecificationQueryTypeCodeList",
+	"title": "UneceSpecificationQueryTypeCodeList",
 	"description": "Values for UneceSpecificationQuery typeCode property.",
-	"type": "string",
-	"const": "unece:requestingQuery"
+	"oneOf": [
+		{
+			"const": "unece:requestingQuery",
+			"description": "A requesting specification query for this work item complex description."
+		}
+	]
 }

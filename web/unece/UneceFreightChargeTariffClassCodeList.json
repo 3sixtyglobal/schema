@@ -1,22 +1,64 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceFreightChargeTariffClassCodeList",
+	"title": "UneceFreightChargeTariffClassCodeList",
 	"description": "A character string used to represent the freight charge tariff class.",
-	"type": "string",
-	"enum": [
-		"unece:FreightChargeTariffClassCodeList#A",
-		"unece:FreightChargeTariffClassCodeList#B",
-		"unece:FreightChargeTariffClassCodeList#C",
-		"unece:FreightChargeTariffClassCodeList#D",
-		"unece:FreightChargeTariffClassCodeList#E",
-		"unece:FreightChargeTariffClassCodeList#F",
-		"unece:FreightChargeTariffClassCodeList#G",
-		"unece:FreightChargeTariffClassCodeList#H",
-		"unece:FreightChargeTariffClassCodeList#K",
-		"unece:FreightChargeTariffClassCodeList#M",
-		"unece:FreightChargeTariffClassCodeList#N",
-		"unece:FreightChargeTariffClassCodeList#Q",
-		"unece:FreightChargeTariffClassCodeList#R",
-		"unece:FreightChargeTariffClassCodeList#S"
+	"oneOf": [
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#A",
+			"description": "Senior person rate: A."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#B",
+			"description": "Basic: B."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#C",
+			"description": "Specific commodity rate: C."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#D",
+			"description": "Teenager rate: D."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#E",
+			"description": "Child rate: E."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#F",
+			"description": "Adult rate: F."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#G",
+			"description": "Export Subsidy Rate: G."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#H",
+			"description": "Subsidy Rate: H."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#K",
+			"description": "Rate per kilogram: K."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#M",
+			"description": "Minimum charge rate: M."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#N",
+			"description": "Normal rate: N."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#Q",
+			"description": "Quantity rate: Q."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#R",
+			"description": "Class rate (Reduction on normal rate): R."
+		},
+		{
+			"const": "unece:FreightChargeTariffClassCodeList#S",
+			"description": "Class rate (Surcharge on normal rate): S."
+		}
 	]
 }

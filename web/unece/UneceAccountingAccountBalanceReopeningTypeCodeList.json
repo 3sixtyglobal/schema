@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAccountBalanceReopeningTypeCodeList",
+	"title": "UneceAccountingAccountBalanceReopeningTypeCodeList",
 	"description": "A character string used to represent the type of accounting account balance reopening.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAccountBalanceReopeningTypeCodeList#1",
-		"unece:AccountingAccountBalanceReopeningTypeCodeList#2",
-		"unece:AccountingAccountBalanceReopeningTypeCodeList#3",
-		"unece:AccountingAccountBalanceReopeningTypeCodeList#4",
-		"unece:AccountingAccountBalanceReopeningTypeCodeList#5"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAccountBalanceReopeningTypeCodeList#1",
+			"description": "Balance carried over: 1."
+		},
+		{
+			"const": "unece:AccountingAccountBalanceReopeningTypeCodeList#2",
+			"description": "Reopening debit and credit total amounts of not matched entries only: 2."
+		},
+		{
+			"const": "unece:AccountingAccountBalanceReopeningTypeCodeList#3",
+			"description": "Reopening detailed of not matched entries only: 3."
+		},
+		{
+			"const": "unece:AccountingAccountBalanceReopeningTypeCodeList#4",
+			"description": "Reopening debit and credit total amounts: 4."
+		},
+		{
+			"const": "unece:AccountingAccountBalanceReopeningTypeCodeList#5",
+			"description": "No balance reopening: 5."
+		}
 	]
 }

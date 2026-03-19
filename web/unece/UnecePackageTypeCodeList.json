@@ -1,413 +1,1628 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePackageTypeCodeList",
+	"title": "UnecePackageTypeCodeList",
 	"description": "A character string used to replace or represent a type of package.",
-	"type": "string",
-	"enum": [
-		"unece:PackageTypeCodeList#1A",
-		"unece:PackageTypeCodeList#1B",
-		"unece:PackageTypeCodeList#1D",
-		"unece:PackageTypeCodeList#1F",
-		"unece:PackageTypeCodeList#1G",
-		"unece:PackageTypeCodeList#1W",
-		"unece:PackageTypeCodeList#2C",
-		"unece:PackageTypeCodeList#3A",
-		"unece:PackageTypeCodeList#3H",
-		"unece:PackageTypeCodeList#43",
-		"unece:PackageTypeCodeList#44",
-		"unece:PackageTypeCodeList#4A",
-		"unece:PackageTypeCodeList#4B",
-		"unece:PackageTypeCodeList#4C",
-		"unece:PackageTypeCodeList#4D",
-		"unece:PackageTypeCodeList#4F",
-		"unece:PackageTypeCodeList#4G",
-		"unece:PackageTypeCodeList#4H",
-		"unece:PackageTypeCodeList#5H",
-		"unece:PackageTypeCodeList#5L",
-		"unece:PackageTypeCodeList#5M",
-		"unece:PackageTypeCodeList#6H",
-		"unece:PackageTypeCodeList#6P",
-		"unece:PackageTypeCodeList#7A",
-		"unece:PackageTypeCodeList#7B",
-		"unece:PackageTypeCodeList#8A",
-		"unece:PackageTypeCodeList#8B",
-		"unece:PackageTypeCodeList#8C",
-		"unece:PackageTypeCodeList#AA",
-		"unece:PackageTypeCodeList#AB",
-		"unece:PackageTypeCodeList#AC",
-		"unece:PackageTypeCodeList#AD",
-		"unece:PackageTypeCodeList#AE",
-		"unece:PackageTypeCodeList#AF",
-		"unece:PackageTypeCodeList#AG",
-		"unece:PackageTypeCodeList#AH",
-		"unece:PackageTypeCodeList#AI",
-		"unece:PackageTypeCodeList#AJ",
-		"unece:PackageTypeCodeList#AL",
-		"unece:PackageTypeCodeList#AM",
-		"unece:PackageTypeCodeList#AP",
-		"unece:PackageTypeCodeList#AT",
-		"unece:PackageTypeCodeList#AV",
-		"unece:PackageTypeCodeList#B4",
-		"unece:PackageTypeCodeList#BA",
-		"unece:PackageTypeCodeList#BB",
-		"unece:PackageTypeCodeList#BC",
-		"unece:PackageTypeCodeList#BD",
-		"unece:PackageTypeCodeList#BE",
-		"unece:PackageTypeCodeList#BF",
-		"unece:PackageTypeCodeList#BG",
-		"unece:PackageTypeCodeList#BH",
-		"unece:PackageTypeCodeList#BI",
-		"unece:PackageTypeCodeList#BJ",
-		"unece:PackageTypeCodeList#BK",
-		"unece:PackageTypeCodeList#BL",
-		"unece:PackageTypeCodeList#BM",
-		"unece:PackageTypeCodeList#BN",
-		"unece:PackageTypeCodeList#BO",
-		"unece:PackageTypeCodeList#BP",
-		"unece:PackageTypeCodeList#BQ",
-		"unece:PackageTypeCodeList#BR",
-		"unece:PackageTypeCodeList#BS",
-		"unece:PackageTypeCodeList#BT",
-		"unece:PackageTypeCodeList#BU",
-		"unece:PackageTypeCodeList#BV",
-		"unece:PackageTypeCodeList#BW",
-		"unece:PackageTypeCodeList#BX",
-		"unece:PackageTypeCodeList#BY",
-		"unece:PackageTypeCodeList#BZ",
-		"unece:PackageTypeCodeList#CA",
-		"unece:PackageTypeCodeList#CB",
-		"unece:PackageTypeCodeList#CC",
-		"unece:PackageTypeCodeList#CD",
-		"unece:PackageTypeCodeList#CE",
-		"unece:PackageTypeCodeList#CF",
-		"unece:PackageTypeCodeList#CG",
-		"unece:PackageTypeCodeList#CH",
-		"unece:PackageTypeCodeList#CI",
-		"unece:PackageTypeCodeList#CJ",
-		"unece:PackageTypeCodeList#CK",
-		"unece:PackageTypeCodeList#CL",
-		"unece:PackageTypeCodeList#CM",
-		"unece:PackageTypeCodeList#CN",
-		"unece:PackageTypeCodeList#CO",
-		"unece:PackageTypeCodeList#CP",
-		"unece:PackageTypeCodeList#CQ",
-		"unece:PackageTypeCodeList#CR",
-		"unece:PackageTypeCodeList#CS",
-		"unece:PackageTypeCodeList#CT",
-		"unece:PackageTypeCodeList#CU",
-		"unece:PackageTypeCodeList#CV",
-		"unece:PackageTypeCodeList#CW",
-		"unece:PackageTypeCodeList#CX",
-		"unece:PackageTypeCodeList#CY",
-		"unece:PackageTypeCodeList#CZ",
-		"unece:PackageTypeCodeList#DA",
-		"unece:PackageTypeCodeList#DB",
-		"unece:PackageTypeCodeList#DC",
-		"unece:PackageTypeCodeList#DG",
-		"unece:PackageTypeCodeList#DH",
-		"unece:PackageTypeCodeList#DI",
-		"unece:PackageTypeCodeList#DJ",
-		"unece:PackageTypeCodeList#DK",
-		"unece:PackageTypeCodeList#DL",
-		"unece:PackageTypeCodeList#DM",
-		"unece:PackageTypeCodeList#DN",
-		"unece:PackageTypeCodeList#DP",
-		"unece:PackageTypeCodeList#DR",
-		"unece:PackageTypeCodeList#DS",
-		"unece:PackageTypeCodeList#DT",
-		"unece:PackageTypeCodeList#DU",
-		"unece:PackageTypeCodeList#DV",
-		"unece:PackageTypeCodeList#DW",
-		"unece:PackageTypeCodeList#DX",
-		"unece:PackageTypeCodeList#DY",
-		"unece:PackageTypeCodeList#EC",
-		"unece:PackageTypeCodeList#ED",
-		"unece:PackageTypeCodeList#EE",
-		"unece:PackageTypeCodeList#EF",
-		"unece:PackageTypeCodeList#EG",
-		"unece:PackageTypeCodeList#EH",
-		"unece:PackageTypeCodeList#EI",
-		"unece:PackageTypeCodeList#EN",
-		"unece:PackageTypeCodeList#FB",
-		"unece:PackageTypeCodeList#FC",
-		"unece:PackageTypeCodeList#FD",
-		"unece:PackageTypeCodeList#FE",
-		"unece:PackageTypeCodeList#FI",
-		"unece:PackageTypeCodeList#FL",
-		"unece:PackageTypeCodeList#FO",
-		"unece:PackageTypeCodeList#FP",
-		"unece:PackageTypeCodeList#FR",
-		"unece:PackageTypeCodeList#FT",
-		"unece:PackageTypeCodeList#FW",
-		"unece:PackageTypeCodeList#FX",
-		"unece:PackageTypeCodeList#GB",
-		"unece:PackageTypeCodeList#GI",
-		"unece:PackageTypeCodeList#GL",
-		"unece:PackageTypeCodeList#GR",
-		"unece:PackageTypeCodeList#GU",
-		"unece:PackageTypeCodeList#GY",
-		"unece:PackageTypeCodeList#GZ",
-		"unece:PackageTypeCodeList#HA",
-		"unece:PackageTypeCodeList#HB",
-		"unece:PackageTypeCodeList#HC",
-		"unece:PackageTypeCodeList#HG",
-		"unece:PackageTypeCodeList#HN",
-		"unece:PackageTypeCodeList#HR",
-		"unece:PackageTypeCodeList#IA",
-		"unece:PackageTypeCodeList#IB",
-		"unece:PackageTypeCodeList#IC",
-		"unece:PackageTypeCodeList#ID",
-		"unece:PackageTypeCodeList#IE",
-		"unece:PackageTypeCodeList#IF",
-		"unece:PackageTypeCodeList#IG",
-		"unece:PackageTypeCodeList#IH",
-		"unece:PackageTypeCodeList#IK",
-		"unece:PackageTypeCodeList#IL",
-		"unece:PackageTypeCodeList#IN",
-		"unece:PackageTypeCodeList#IZ",
-		"unece:PackageTypeCodeList#JB",
-		"unece:PackageTypeCodeList#JC",
-		"unece:PackageTypeCodeList#JG",
-		"unece:PackageTypeCodeList#JR",
-		"unece:PackageTypeCodeList#JT",
-		"unece:PackageTypeCodeList#JY",
-		"unece:PackageTypeCodeList#KG",
-		"unece:PackageTypeCodeList#KI",
-		"unece:PackageTypeCodeList#LE",
-		"unece:PackageTypeCodeList#LG",
-		"unece:PackageTypeCodeList#LT",
-		"unece:PackageTypeCodeList#LU",
-		"unece:PackageTypeCodeList#LV",
-		"unece:PackageTypeCodeList#LZ",
-		"unece:PackageTypeCodeList#MA",
-		"unece:PackageTypeCodeList#MB",
-		"unece:PackageTypeCodeList#MC",
-		"unece:PackageTypeCodeList#ME",
-		"unece:PackageTypeCodeList#MR",
-		"unece:PackageTypeCodeList#MS",
-		"unece:PackageTypeCodeList#MT",
-		"unece:PackageTypeCodeList#MW",
-		"unece:PackageTypeCodeList#MX",
-		"unece:PackageTypeCodeList#NA",
-		"unece:PackageTypeCodeList#NE",
-		"unece:PackageTypeCodeList#NF",
-		"unece:PackageTypeCodeList#NG",
-		"unece:PackageTypeCodeList#NS",
-		"unece:PackageTypeCodeList#NT",
-		"unece:PackageTypeCodeList#NU",
-		"unece:PackageTypeCodeList#NV",
-		"unece:PackageTypeCodeList#O1",
-		"unece:PackageTypeCodeList#O2",
-		"unece:PackageTypeCodeList#O3",
-		"unece:PackageTypeCodeList#O4",
-		"unece:PackageTypeCodeList#O5",
-		"unece:PackageTypeCodeList#O6",
-		"unece:PackageTypeCodeList#O7",
-		"unece:PackageTypeCodeList#O8",
-		"unece:PackageTypeCodeList#O9",
-		"unece:PackageTypeCodeList#OA",
-		"unece:PackageTypeCodeList#OB",
-		"unece:PackageTypeCodeList#OC",
-		"unece:PackageTypeCodeList#OD",
-		"unece:PackageTypeCodeList#OE",
-		"unece:PackageTypeCodeList#OF",
-		"unece:PackageTypeCodeList#OG",
-		"unece:PackageTypeCodeList#OH",
-		"unece:PackageTypeCodeList#OI",
-		"unece:PackageTypeCodeList#OJ",
-		"unece:PackageTypeCodeList#OK",
-		"unece:PackageTypeCodeList#OL",
-		"unece:PackageTypeCodeList#OM",
-		"unece:PackageTypeCodeList#ON",
-		"unece:PackageTypeCodeList#OP",
-		"unece:PackageTypeCodeList#OQ",
-		"unece:PackageTypeCodeList#OR",
-		"unece:PackageTypeCodeList#OS",
-		"unece:PackageTypeCodeList#OT",
-		"unece:PackageTypeCodeList#OU",
-		"unece:PackageTypeCodeList#OV",
-		"unece:PackageTypeCodeList#OW",
-		"unece:PackageTypeCodeList#OX",
-		"unece:PackageTypeCodeList#OY",
-		"unece:PackageTypeCodeList#OZ",
-		"unece:PackageTypeCodeList#P1",
-		"unece:PackageTypeCodeList#P2",
-		"unece:PackageTypeCodeList#P3",
-		"unece:PackageTypeCodeList#P4",
-		"unece:PackageTypeCodeList#PA",
-		"unece:PackageTypeCodeList#PB",
-		"unece:PackageTypeCodeList#PC",
-		"unece:PackageTypeCodeList#PD",
-		"unece:PackageTypeCodeList#PE",
-		"unece:PackageTypeCodeList#PF",
-		"unece:PackageTypeCodeList#PG",
-		"unece:PackageTypeCodeList#PH",
-		"unece:PackageTypeCodeList#PI",
-		"unece:PackageTypeCodeList#PJ",
-		"unece:PackageTypeCodeList#PK",
-		"unece:PackageTypeCodeList#PL",
-		"unece:PackageTypeCodeList#PN",
-		"unece:PackageTypeCodeList#PO",
-		"unece:PackageTypeCodeList#PP",
-		"unece:PackageTypeCodeList#PR",
-		"unece:PackageTypeCodeList#PT",
-		"unece:PackageTypeCodeList#PU",
-		"unece:PackageTypeCodeList#PV",
-		"unece:PackageTypeCodeList#PX",
-		"unece:PackageTypeCodeList#PY",
-		"unece:PackageTypeCodeList#PZ",
-		"unece:PackageTypeCodeList#QA",
-		"unece:PackageTypeCodeList#QB",
-		"unece:PackageTypeCodeList#QC",
-		"unece:PackageTypeCodeList#QD",
-		"unece:PackageTypeCodeList#QF",
-		"unece:PackageTypeCodeList#QG",
-		"unece:PackageTypeCodeList#QH",
-		"unece:PackageTypeCodeList#QJ",
-		"unece:PackageTypeCodeList#QK",
-		"unece:PackageTypeCodeList#QL",
-		"unece:PackageTypeCodeList#QM",
-		"unece:PackageTypeCodeList#QN",
-		"unece:PackageTypeCodeList#QP",
-		"unece:PackageTypeCodeList#QQ",
-		"unece:PackageTypeCodeList#QR",
-		"unece:PackageTypeCodeList#QS",
-		"unece:PackageTypeCodeList#RD",
-		"unece:PackageTypeCodeList#RG",
-		"unece:PackageTypeCodeList#RJ",
-		"unece:PackageTypeCodeList#RK",
-		"unece:PackageTypeCodeList#RL",
-		"unece:PackageTypeCodeList#RO",
-		"unece:PackageTypeCodeList#RT",
-		"unece:PackageTypeCodeList#RZ",
-		"unece:PackageTypeCodeList#SA",
-		"unece:PackageTypeCodeList#SB",
-		"unece:PackageTypeCodeList#SC",
-		"unece:PackageTypeCodeList#SD",
-		"unece:PackageTypeCodeList#SE",
-		"unece:PackageTypeCodeList#SH",
-		"unece:PackageTypeCodeList#SI",
-		"unece:PackageTypeCodeList#SK",
-		"unece:PackageTypeCodeList#SL",
-		"unece:PackageTypeCodeList#SM",
-		"unece:PackageTypeCodeList#SO",
-		"unece:PackageTypeCodeList#SP",
-		"unece:PackageTypeCodeList#SS",
-		"unece:PackageTypeCodeList#ST",
-		"unece:PackageTypeCodeList#SU",
-		"unece:PackageTypeCodeList#SV",
-		"unece:PackageTypeCodeList#SW",
-		"unece:PackageTypeCodeList#SY",
-		"unece:PackageTypeCodeList#SZ",
-		"unece:PackageTypeCodeList#T1",
-		"unece:PackageTypeCodeList#TB",
-		"unece:PackageTypeCodeList#TC",
-		"unece:PackageTypeCodeList#TD",
-		"unece:PackageTypeCodeList#TE",
-		"unece:PackageTypeCodeList#TG",
-		"unece:PackageTypeCodeList#TI",
-		"unece:PackageTypeCodeList#TK",
-		"unece:PackageTypeCodeList#TL",
-		"unece:PackageTypeCodeList#TN",
-		"unece:PackageTypeCodeList#TO",
-		"unece:PackageTypeCodeList#TR",
-		"unece:PackageTypeCodeList#TS",
-		"unece:PackageTypeCodeList#TT",
-		"unece:PackageTypeCodeList#TU",
-		"unece:PackageTypeCodeList#TV",
-		"unece:PackageTypeCodeList#TW",
-		"unece:PackageTypeCodeList#TY",
-		"unece:PackageTypeCodeList#TZ",
-		"unece:PackageTypeCodeList#UC",
-		"unece:PackageTypeCodeList#UN",
-		"unece:PackageTypeCodeList#VA",
-		"unece:PackageTypeCodeList#VG",
-		"unece:PackageTypeCodeList#VI",
-		"unece:PackageTypeCodeList#VK",
-		"unece:PackageTypeCodeList#VL",
-		"unece:PackageTypeCodeList#VN",
-		"unece:PackageTypeCodeList#VO",
-		"unece:PackageTypeCodeList#VP",
-		"unece:PackageTypeCodeList#VQ",
-		"unece:PackageTypeCodeList#VR",
-		"unece:PackageTypeCodeList#VS",
-		"unece:PackageTypeCodeList#VY",
-		"unece:PackageTypeCodeList#WA",
-		"unece:PackageTypeCodeList#WB",
-		"unece:PackageTypeCodeList#WC",
-		"unece:PackageTypeCodeList#WD",
-		"unece:PackageTypeCodeList#WF",
-		"unece:PackageTypeCodeList#WG",
-		"unece:PackageTypeCodeList#WH",
-		"unece:PackageTypeCodeList#WJ",
-		"unece:PackageTypeCodeList#WK",
-		"unece:PackageTypeCodeList#WL",
-		"unece:PackageTypeCodeList#WM",
-		"unece:PackageTypeCodeList#WN",
-		"unece:PackageTypeCodeList#WP",
-		"unece:PackageTypeCodeList#WQ",
-		"unece:PackageTypeCodeList#WR",
-		"unece:PackageTypeCodeList#WS",
-		"unece:PackageTypeCodeList#WT",
-		"unece:PackageTypeCodeList#WU",
-		"unece:PackageTypeCodeList#WV",
-		"unece:PackageTypeCodeList#WW",
-		"unece:PackageTypeCodeList#WX",
-		"unece:PackageTypeCodeList#WY",
-		"unece:PackageTypeCodeList#WZ",
-		"unece:PackageTypeCodeList#XA",
-		"unece:PackageTypeCodeList#XB",
-		"unece:PackageTypeCodeList#XC",
-		"unece:PackageTypeCodeList#XD",
-		"unece:PackageTypeCodeList#XF",
-		"unece:PackageTypeCodeList#XG",
-		"unece:PackageTypeCodeList#XH",
-		"unece:PackageTypeCodeList#XJ",
-		"unece:PackageTypeCodeList#XK",
-		"unece:PackageTypeCodeList#YA",
-		"unece:PackageTypeCodeList#YB",
-		"unece:PackageTypeCodeList#YC",
-		"unece:PackageTypeCodeList#YD",
-		"unece:PackageTypeCodeList#YF",
-		"unece:PackageTypeCodeList#YG",
-		"unece:PackageTypeCodeList#YH",
-		"unece:PackageTypeCodeList#YJ",
-		"unece:PackageTypeCodeList#YK",
-		"unece:PackageTypeCodeList#YL",
-		"unece:PackageTypeCodeList#YM",
-		"unece:PackageTypeCodeList#YN",
-		"unece:PackageTypeCodeList#YP",
-		"unece:PackageTypeCodeList#YQ",
-		"unece:PackageTypeCodeList#YR",
-		"unece:PackageTypeCodeList#YS",
-		"unece:PackageTypeCodeList#YT",
-		"unece:PackageTypeCodeList#YV",
-		"unece:PackageTypeCodeList#YW",
-		"unece:PackageTypeCodeList#YX",
-		"unece:PackageTypeCodeList#YY",
-		"unece:PackageTypeCodeList#YZ",
-		"unece:PackageTypeCodeList#ZA",
-		"unece:PackageTypeCodeList#ZB",
-		"unece:PackageTypeCodeList#ZC",
-		"unece:PackageTypeCodeList#ZD",
-		"unece:PackageTypeCodeList#ZF",
-		"unece:PackageTypeCodeList#ZG",
-		"unece:PackageTypeCodeList#ZH",
-		"unece:PackageTypeCodeList#ZJ",
-		"unece:PackageTypeCodeList#ZK",
-		"unece:PackageTypeCodeList#ZL",
-		"unece:PackageTypeCodeList#ZM",
-		"unece:PackageTypeCodeList#ZN",
-		"unece:PackageTypeCodeList#ZP",
-		"unece:PackageTypeCodeList#ZQ",
-		"unece:PackageTypeCodeList#ZR",
-		"unece:PackageTypeCodeList#ZS",
-		"unece:PackageTypeCodeList#ZT",
-		"unece:PackageTypeCodeList#ZU",
-		"unece:PackageTypeCodeList#ZV",
-		"unece:PackageTypeCodeList#ZW",
-		"unece:PackageTypeCodeList#ZX",
-		"unece:PackageTypeCodeList#ZY",
-		"unece:PackageTypeCodeList#ZZ"
+	"oneOf": [
+		{
+			"const": "unece:PackageTypeCodeList#1A",
+			"description": "Drum, steel: 1A."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#1B",
+			"description": "Drum, aluminium: 1B."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#1D",
+			"description": "Drum, plywood: 1D."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#1F",
+			"description": "Container, flexible: 1F."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#1G",
+			"description": "Drum, fibre: 1G."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#1W",
+			"description": "Drum, wooden: 1W."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#2C",
+			"description": "Barrel, wooden: 2C."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#3A",
+			"description": "Jerrican, steel: 3A."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#3H",
+			"description": "Jerrican, plastic: 3H."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#43",
+			"description": "Bag, super bulk: 43."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#44",
+			"description": "Bag, polybag: 44."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4A",
+			"description": "Box, steel: 4A."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4B",
+			"description": "Box, aluminium: 4B."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4C",
+			"description": "Box, natural wood: 4C."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4D",
+			"description": "Box, plywood: 4D."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4F",
+			"description": "Box, reconstituted wood: 4F."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4G",
+			"description": "Box, fibreboard: 4G."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#4H",
+			"description": "Box, plastic: 4H."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#5H",
+			"description": "Bag, woven plastic: 5H."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#5L",
+			"description": "Bag, textile: 5L."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#5M",
+			"description": "Bag, paper: 5M."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#6H",
+			"description": "Composite packaging, plastic receptacle: 6H."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#6P",
+			"description": "Composite packaging, glass receptacle: 6P."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#7A",
+			"description": "Case, car: 7A."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#7B",
+			"description": "Case, wooden: 7B."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#8A",
+			"description": "Pallet, wooden: 8A."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#8B",
+			"description": "Crate, wooden: 8B."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#8C",
+			"description": "Bundle, wooden: 8C."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AA",
+			"description": "Intermediate bulk container, rigid plastic: AA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AB",
+			"description": "Receptacle, fibre: AB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AC",
+			"description": "Receptacle, paper: AC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AD",
+			"description": "Receptacle, wooden: AD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AE",
+			"description": "Aerosol: AE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AF",
+			"description": "Pallet, modular, collars 80cms × 60cms: AF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AG",
+			"description": "Pallet, shrinkwrapped: AG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AH",
+			"description": "Pallet, 100cms × 110cms: AH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AI",
+			"description": "Clamshell: AI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AJ",
+			"description": "Cone: AJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AL",
+			"description": "Ball: AL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AM",
+			"description": "Ampoule, non-protected: AM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AP",
+			"description": "Ampoule, protected: AP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AT",
+			"description": "Atomizer: AT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#AV",
+			"description": "Capsule: AV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#B4",
+			"description": "Belt: B4."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BA",
+			"description": "Barrel: BA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BB",
+			"description": "Bobbin: BB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BC",
+			"description": "Bottlecrate / bottlerack: BC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BD",
+			"description": "Board: BD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BE",
+			"description": "Bundle: BE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BF",
+			"description": "Balloon, non-protected: BF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BG",
+			"description": "Bag: BG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BH",
+			"description": "Bunch: BH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BI",
+			"description": "Bin: BI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BJ",
+			"description": "Bucket: BJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BK",
+			"description": "Basket: BK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BL",
+			"description": "Bale, compressed: BL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BM",
+			"description": "Basin: BM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BN",
+			"description": "Bale, non-compressed: BN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BO",
+			"description": "Bottle, non-protected, cylindrical: BO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BP",
+			"description": "Balloon, protected: BP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BQ",
+			"description": "Bottle, protected cylindrical: BQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BR",
+			"description": "Bar: BR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BS",
+			"description": "Bottle, non-protected, bulbous: BS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BT",
+			"description": "Bolt: BT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BU",
+			"description": "Butt: BU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BV",
+			"description": "Bottle, protected bulbous: BV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BW",
+			"description": "Box, for liquids: BW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BX",
+			"description": "Box: BX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BY",
+			"description": "Board, in bundle/bunch/truss: BY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#BZ",
+			"description": "Bars, in bundle/bunch/truss: BZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CA",
+			"description": "Can, rectangular: CA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CB",
+			"description": "Crate, beer: CB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CC",
+			"description": "Churn: CC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CD",
+			"description": "Can, with handle and spout: CD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CE",
+			"description": "Creel: CE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CF",
+			"description": "Coffer: CF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CG",
+			"description": "Cage: CG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CH",
+			"description": "Chest: CH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CI",
+			"description": "Canister: CI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CJ",
+			"description": "Coffin: CJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CK",
+			"description": "Cask: CK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CL",
+			"description": "Coil: CL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CM",
+			"description": "Card: CM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CN",
+			"description": "Container, not otherwise specified as transport equipment: CN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CO",
+			"description": "Carboy, non-protected: CO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CP",
+			"description": "Carboy, protected: CP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CQ",
+			"description": "Cartridge: CQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CR",
+			"description": "Crate: CR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CS",
+			"description": "Case: CS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CT",
+			"description": "Carton: CT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CU",
+			"description": "Cup: CU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CV",
+			"description": "Cover: CV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CW",
+			"description": "Cage, roll: CW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CX",
+			"description": "Can, cylindrical: CX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CY",
+			"description": "Cylinder: CY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#CZ",
+			"description": "Canvas: CZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DA",
+			"description": "Crate, multiple layer, plastic: DA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DB",
+			"description": "Crate, multiple layer, wooden: DB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DC",
+			"description": "Crate, multiple layer, cardboard: DC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DG",
+			"description": "Cage, Commonwealth Handling Equipment Pool (CHEP): DG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DH",
+			"description": "Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox: DH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DI",
+			"description": "Drum, iron: DI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DJ",
+			"description": "Demijohn, non-protected: DJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DK",
+			"description": "Crate, bulk, cardboard: DK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DL",
+			"description": "Crate, bulk, plastic: DL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DM",
+			"description": "Crate, bulk, wooden: DM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DN",
+			"description": "Dispenser: DN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DP",
+			"description": "Demijohn, protected: DP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DR",
+			"description": "Drum: DR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DS",
+			"description": "Tray, one layer no cover, plastic: DS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DT",
+			"description": "Tray, one layer no cover, wooden: DT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DU",
+			"description": "Tray, one layer no cover, polystyrene: DU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DV",
+			"description": "Tray, one layer no cover, cardboard: DV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DW",
+			"description": "Tray, two layers no cover, plastic tray: DW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DX",
+			"description": "Tray, two layers no cover, wooden: DX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#DY",
+			"description": "Tray, two layers no cover, cardboard: DY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EC",
+			"description": "Bag, plastic: EC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ED",
+			"description": "Case, with pallet base: ED."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EE",
+			"description": "Case, with pallet base, wooden: EE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EF",
+			"description": "Case, with pallet base, cardboard: EF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EG",
+			"description": "Case, with pallet base, plastic: EG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EH",
+			"description": "Case, with pallet base, metal: EH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EI",
+			"description": "Case, isothermic: EI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#EN",
+			"description": "Envelope: EN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FB",
+			"description": "Flexibag: FB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FC",
+			"description": "Crate, fruit: FC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FD",
+			"description": "Crate, framed: FD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FE",
+			"description": "Flexitank: FE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FI",
+			"description": "Firkin: FI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FL",
+			"description": "Flask: FL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FO",
+			"description": "Footlocker: FO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FP",
+			"description": "Filmpack: FP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FR",
+			"description": "Frame: FR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FT",
+			"description": "Foodtainer: FT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FW",
+			"description": "Cart, flatbed: FW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#FX",
+			"description": "Bag, flexible container: FX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GB",
+			"description": "Bottle, gas: GB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GI",
+			"description": "Girder: GI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GL",
+			"description": "Container, gallon: GL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GR",
+			"description": "Receptacle, glass: GR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GU",
+			"description": "Tray, containing horizontally stacked flat items: GU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GY",
+			"description": "Bag, gunny: GY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#GZ",
+			"description": "Girders, in bundle/bunch/truss: GZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HA",
+			"description": "Basket, with handle, plastic: HA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HB",
+			"description": "Basket, with handle, wooden: HB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HC",
+			"description": "Basket, with handle, cardboard: HC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HG",
+			"description": "Hogshead: HG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HN",
+			"description": "Hanger: HN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#HR",
+			"description": "Hamper: HR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IA",
+			"description": "Package, display, wooden: IA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IB",
+			"description": "Package, display, cardboard: IB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IC",
+			"description": "Package, display, plastic: IC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ID",
+			"description": "Package, display, metal: ID."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IE",
+			"description": "Package, show: IE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IF",
+			"description": "Package, flow: IF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IG",
+			"description": "Package, paper wrapped: IG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IH",
+			"description": "Drum, plastic: IH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IK",
+			"description": "Package, cardboard, with bottle grip-holes: IK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IL",
+			"description": "Tray, rigid, lidded stackable (CEN TS 14482:2002): IL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IN",
+			"description": "Ingot: IN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#IZ",
+			"description": "Ingots, in bundle/bunch/truss: IZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JB",
+			"description": "Bag, jumbo: JB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JC",
+			"description": "Jerrican, rectangular: JC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JG",
+			"description": "Jug: JG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JR",
+			"description": "Jar: JR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JT",
+			"description": "Jutebag: JT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#JY",
+			"description": "Jerrican, cylindrical: JY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#KG",
+			"description": "Keg: KG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#KI",
+			"description": "Kit: KI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LE",
+			"description": "Luggage: LE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LG",
+			"description": "Log: LG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LT",
+			"description": "Lot: LT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LU",
+			"description": "Lug: LU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LV",
+			"description": "Liftvan: LV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#LZ",
+			"description": "Logs, in bundle/bunch/truss: LZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MA",
+			"description": "Crate, metal: MA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MB",
+			"description": "Bag, multiply: MB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MC",
+			"description": "Crate, milk: MC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ME",
+			"description": "Container, metal: ME."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MR",
+			"description": "Receptacle, metal: MR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MS",
+			"description": "Sack, multi-wall: MS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MT",
+			"description": "Mat: MT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MW",
+			"description": "Receptacle, plastic wrapped: MW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#MX",
+			"description": "Matchbox: MX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NA",
+			"description": "Not available: NA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NE",
+			"description": "Unpacked or unpackaged: NE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NF",
+			"description": "Unpacked or unpackaged, single unit: NF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NG",
+			"description": "Unpacked or unpackaged, multiple units: NG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NS",
+			"description": "Nest: NS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NT",
+			"description": "Net: NT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NU",
+			"description": "Net, tube, plastic: NU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#NV",
+			"description": "Net, tube, textile: NV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O1",
+			"description": "Two sided cage on wheels with fixing strap: O1."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O2",
+			"description": "Trolley: O2."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O3",
+			"description": "Oneway pallet ISO 0 - 1/2 EURO Pallet: O3."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O4",
+			"description": "Oneway pallet ISO 1 - 1/1 EURO Pallet: O4."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O5",
+			"description": "Oneway pallet ISO 2 - 2/1 EURO Pallet: O5."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O6",
+			"description": "Pallet with exceptional dimensions: O6."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O7",
+			"description": "Wooden pallet 40 cm x 80 cm: O7."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O8",
+			"description": "Plastic pallet SRS 60 cm x 80 cm: O8."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#O9",
+			"description": "Plastic pallet SRS 80 cm x 120 cm: O9."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OA",
+			"description": "Pallet, CHEP 40 cm x 60 cm: OA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OB",
+			"description": "Pallet, CHEP 80 cm x 120 cm: OB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OC",
+			"description": "Pallet, CHEP 100 cm x 120 cm: OC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OD",
+			"description": "Pallet, AS 4068-1993: OD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OE",
+			"description": "Pallet, ISO T11: OE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OF",
+			"description": "Platform, unspecified weight or dimension: OF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OG",
+			"description": "Pallet ISO 0 - 1/2 EURO Pallet: OG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OH",
+			"description": "Pallet ISO 1 - 1/1 EURO Pallet: OH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OI",
+			"description": "Pallet ISO 2 - 2/1 EURO Pallet: OI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OJ",
+			"description": "1/4 EURO Pallet: OJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OK",
+			"description": "Block: OK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OL",
+			"description": "1/8 EURO Pallet: OL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OM",
+			"description": "Synthetic pallet ISO 1: OM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ON",
+			"description": "Synthetic pallet ISO 2: ON."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OP",
+			"description": "Wholesaler pallet: OP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OQ",
+			"description": "Pallet 80 X 100 cm: OQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OR",
+			"description": "Pallet 60 X 100 cm: OR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OS",
+			"description": "Oneway pallet: OS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OT",
+			"description": "Octabin: OT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OU",
+			"description": "Container, outer: OU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OV",
+			"description": "Returnable pallet: OV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OW",
+			"description": "Large bag, pallet sized: OW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OX",
+			"description": "A wheeled pallet with raised rim (81 x 67 x 135): OX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OY",
+			"description": "A wheeled pallet with raised rim (81 x 72 x 135): OY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#OZ",
+			"description": "A wheeled pallet with raised rim (81 x 60 x 16): OZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#P1",
+			"description": "CHEP pallet 60 cm x 80 cm: P1."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#P2",
+			"description": "Pan: P2."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#P3",
+			"description": "LPR pallet 60 cm x 80 cm: P3."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#P4",
+			"description": "LPR pallet 80 cm x 120 cm: P4."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PA",
+			"description": "Packet: PA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PB",
+			"description": "Pallet, box: PB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PC",
+			"description": "Parcel: PC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PD",
+			"description": "Pallet, modular, collars 80cms * 100cms: PD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PE",
+			"description": "Pallet, modular, collars 80cms * 120cms: PE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PF",
+			"description": "Pen: PF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PG",
+			"description": "Plate: PG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PH",
+			"description": "Pitcher: PH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PI",
+			"description": "Pipe: PI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PJ",
+			"description": "Punnet: PJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PK",
+			"description": "Package: PK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PL",
+			"description": "Pail: PL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PN",
+			"description": "Plank: PN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PO",
+			"description": "Pouch: PO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PP",
+			"description": "Piece: PP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PR",
+			"description": "Receptacle, plastic: PR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PT",
+			"description": "Pot: PT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PU",
+			"description": "Tray pack: PU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PV",
+			"description": "Pipes, in bundle/bunch/truss: PV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PX",
+			"description": "Pallet: PX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PY",
+			"description": "Plates, in bundle/bunch/truss: PY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#PZ",
+			"description": "Planks, in bundle/bunch/truss: PZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QA",
+			"description": "Drum, steel, non-removable head: QA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QB",
+			"description": "Drum, steel, removable head: QB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QC",
+			"description": "Drum, aluminium, non-removable head: QC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QD",
+			"description": "Drum, aluminium, removable head: QD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QF",
+			"description": "Drum, plastic, non-removable head: QF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QG",
+			"description": "Drum, plastic, removable head: QG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QH",
+			"description": "Barrel, wooden, bung type: QH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QJ",
+			"description": "Barrel, wooden, removable head: QJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QK",
+			"description": "Jerrican, steel, non-removable head: QK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QL",
+			"description": "Jerrican, steel, removable head: QL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QM",
+			"description": "Jerrican, plastic, non-removable head: QM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QN",
+			"description": "Jerrican, plastic, removable head: QN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QP",
+			"description": "Box, wooden, natural wood, ordinary: QP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QQ",
+			"description": "Box, wooden, natural wood, with sift proof walls: QQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QR",
+			"description": "Box, plastic, expanded: QR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#QS",
+			"description": "Box, plastic, solid: QS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RD",
+			"description": "Rod: RD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RG",
+			"description": "Ring: RG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RJ",
+			"description": "Rack, clothing hanger: RJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RK",
+			"description": "Rack: RK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RL",
+			"description": "Reel: RL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RO",
+			"description": "Roll: RO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RT",
+			"description": "Rednet: RT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#RZ",
+			"description": "Rods, in bundle/bunch/truss: RZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SA",
+			"description": "Sack: SA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SB",
+			"description": "Slab: SB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SC",
+			"description": "Crate, shallow: SC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SD",
+			"description": "Spindle: SD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SE",
+			"description": "Sea-chest: SE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SH",
+			"description": "Sachet: SH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SI",
+			"description": "Skid: SI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SK",
+			"description": "Case, skeleton: SK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SL",
+			"description": "Slipsheet: SL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SM",
+			"description": "Sheetmetal: SM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SO",
+			"description": "Spool: SO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SP",
+			"description": "Sheet, plastic wrapping: SP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SS",
+			"description": "Case, steel: SS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ST",
+			"description": "Sheet: ST."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SU",
+			"description": "Suitcase: SU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SV",
+			"description": "Envelope, steel: SV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SW",
+			"description": "Shrinkwrapped: SW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SY",
+			"description": "Sleeve: SY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#SZ",
+			"description": "Sheets, in bundle/bunch/truss: SZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#T1",
+			"description": "Tablet: T1."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TB",
+			"description": "Tub: TB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TC",
+			"description": "Tea-chest: TC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TD",
+			"description": "Tube, collapsible: TD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TE",
+			"description": "Tyre: TE."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TG",
+			"description": "Tank container, generic: TG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TI",
+			"description": "Tierce TI: TI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TK",
+			"description": "Tank, rectangular: TK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TL",
+			"description": "Tub, with lid: TL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TN",
+			"description": "Tin: TN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TO",
+			"description": "Tun: TO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TR",
+			"description": "Trunk: TR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TS",
+			"description": "Truss: TS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TT",
+			"description": "Bag, tote: TT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TU",
+			"description": "Tube: TU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TV",
+			"description": "Tube, with nozzle: TV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TW",
+			"description": "Pallet, triwall: TW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TY",
+			"description": "Tank, cylindrical: TY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#TZ",
+			"description": "Tubes, in bundle/bunch/truss: TZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#UC",
+			"description": "Uncaged: UC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#UN",
+			"description": "Unit: UN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VA",
+			"description": "Vat: VA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VG",
+			"description": "Bulk, gas (at 1031 mbar and 15 degree C): VG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VI",
+			"description": "Vial: VI."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VK",
+			"description": "Vanpack: VK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VL",
+			"description": "Bulk, liquid: VL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VN",
+			"description": "Vehicle: VN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VO",
+			"description": "Bulk, solid, large particles (\"nodules\"): VO."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VP",
+			"description": "Vacuum-packed: VP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VQ",
+			"description": "Bulk, liquefied gas (at abnormal temperature/pressure): VQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VR",
+			"description": "Bulk, solid, granular particles (\"grains\"): VR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VS",
+			"description": "Bulk, scrap metal: VS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#VY",
+			"description": "Bulk, solid, fine particles (\"powders\"): VY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WA",
+			"description": "Intermediate bulk container: WA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WB",
+			"description": "Wickerbottle: WB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WC",
+			"description": "Intermediate bulk container, steel: WC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WD",
+			"description": "Intermediate bulk container, aluminium: WD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WF",
+			"description": "Intermediate bulk container, metal: WF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WG",
+			"description": "Intermediate bulk container, steel, pressurised &gt; 10 kpa: WG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WH",
+			"description": "Intermediate bulk container, aluminium, pressurised &gt; 10 kpa: WH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WJ",
+			"description": "Intermediate bulk container, metal, pressure 10 kpa: WJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WK",
+			"description": "Intermediate bulk container, steel, liquid: WK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WL",
+			"description": "Intermediate bulk container, aluminium, liquid: WL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WM",
+			"description": "Intermediate bulk container, metal, liquid: WM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WN",
+			"description": "Intermediate bulk container, woven plastic, without coat/liner: WN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WP",
+			"description": "Intermediate bulk container, woven plastic, coated: WP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WQ",
+			"description": "Intermediate bulk container, woven plastic, with liner: WQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WR",
+			"description": "Intermediate bulk container, woven plastic, coated and liner: WR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WS",
+			"description": "Intermediate bulk container, plastic film: WS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WT",
+			"description": "Intermediate bulk container, textile with out coat/liner: WT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WU",
+			"description": "Intermediate bulk container, natural wood, with inner liner: WU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WV",
+			"description": "Intermediate bulk container, textile, coated: WV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WW",
+			"description": "Intermediate bulk container, textile, with liner: WW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WX",
+			"description": "Intermediate bulk container, textile, coated and liner: WX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WY",
+			"description": "Intermediate bulk container, plywood, with inner liner: WY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#WZ",
+			"description": "Intermediate bulk container, reconstituted wood, with inner liner: WZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XA",
+			"description": "Bag, woven plastic, without inner coat/liner: XA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XB",
+			"description": "Bag, woven plastic, sift proof: XB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XC",
+			"description": "Bag, woven plastic, water resistant: XC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XD",
+			"description": "Bag, plastics film: XD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XF",
+			"description": "Bag, textile, without inner coat/liner: XF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XG",
+			"description": "Bag, textile, sift proof: XG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XH",
+			"description": "Bag, textile, water resistant: XH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XJ",
+			"description": "Bag, paper, multi-wall: XJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#XK",
+			"description": "Bag, paper, multi-wall, water resistant: XK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YA",
+			"description": "Composite packaging, plastic receptacle in steel drum: YA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YB",
+			"description": "Composite packaging, plastic receptacle in steel crate box: YB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YC",
+			"description": "Composite packaging, plastic receptacle in aluminium drum: YC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YD",
+			"description": "Composite packaging, plastic receptacle in aluminium crate: YD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YF",
+			"description": "Composite packaging, plastic receptacle in wooden box: YF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YG",
+			"description": "Composite packaging, plastic receptacle in plywood drum: YG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YH",
+			"description": "Composite packaging, plastic receptacle in plywood box: YH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YJ",
+			"description": "Composite packaging, plastic receptacle in fibre drum: YJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YK",
+			"description": "Composite packaging, plastic receptacle in fibreboard box: YK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YL",
+			"description": "Composite packaging, plastic receptacle in plastic drum: YL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YM",
+			"description": "Composite packaging, plastic receptacle in solid plastic box: YM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YN",
+			"description": "Composite packaging, glass receptacle in steel drum: YN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YP",
+			"description": "Composite packaging, glass receptacle in steel crate box: YP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YQ",
+			"description": "Composite packaging, glass receptacle in aluminium drum: YQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YR",
+			"description": "Composite packaging, glass receptacle in aluminium crate: YR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YS",
+			"description": "Composite packaging, glass receptacle in wooden box: YS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YT",
+			"description": "Composite packaging, glass receptacle in plywood drum: YT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YV",
+			"description": "Composite packaging, glass receptacle in wickerwork hamper: YV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YW",
+			"description": "Composite packaging, glass receptacle in fibre drum: YW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YX",
+			"description": "Composite packaging, glass receptacle in fibreboard box: YX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YY",
+			"description": "Composite packaging, glass receptacle in expandable plastic pack: YY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#YZ",
+			"description": "Composite packaging, glass receptacle in solid plastic pack: YZ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZA",
+			"description": "Intermediate bulk container, paper, multi-wall: ZA."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZB",
+			"description": "Bag, large: ZB."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZC",
+			"description": "Intermediate bulk container, paper, multi-wall, water resistant: ZC."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZD",
+			"description": "Intermediate bulk container, rigid plastic, with structural equipment, solids: ZD."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZF",
+			"description": "Intermediate bulk container, rigid plastic, freestanding, solids: ZF."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZG",
+			"description": "Intermediate bulk container, rigid plastic, with structural equipment, pressurised: ZG."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZH",
+			"description": "Intermediate bulk container, rigid plastic, freestanding, pressurised: ZH."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZJ",
+			"description": "Intermediate bulk container, rigid plastic, with structural equipment, liquids: ZJ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZK",
+			"description": "Intermediate bulk container, rigid plastic, freestanding, liquids: ZK."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZL",
+			"description": "Intermediate bulk container, composite, rigid plastic, solids: ZL."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZM",
+			"description": "Intermediate bulk container, composite, flexible plastic, solids: ZM."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZN",
+			"description": "Intermediate bulk container, composite, rigid plastic, pressurised: ZN."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZP",
+			"description": "Intermediate bulk container, composite, flexible plastic, pressurised: ZP."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZQ",
+			"description": "Intermediate bulk container, composite, rigid plastic, liquids: ZQ."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZR",
+			"description": "Intermediate bulk container, composite, flexible plastic, liquids: ZR."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZS",
+			"description": "Intermediate bulk container, composite: ZS."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZT",
+			"description": "Intermediate bulk container, fibreboard: ZT."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZU",
+			"description": "Intermediate bulk container, flexible: ZU."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZV",
+			"description": "Intermediate bulk container, metal, other than steel: ZV."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZW",
+			"description": "Intermediate bulk container, natural wood: ZW."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZX",
+			"description": "Intermediate bulk container, plywood: ZX."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZY",
+			"description": "Intermediate bulk container, reconstituted wood: ZY."
+		},
+		{
+			"const": "unece:PackageTypeCodeList#ZZ",
+			"description": "Mutually defined: ZZ."
+		}
 	]
 }

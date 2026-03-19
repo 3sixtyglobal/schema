@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
-	"description": "EPCIS 2.0 ErrorDeclaration describing corrections to previously captured events.",
+	"title": "EpcisErrorDeclaration",
+	"description": "EPCIS 2.0 ErrorDeclaration describing corrections to previously captured\nevents.",
 	"type": "object",
 	"properties": {
 		"declarationTime": {
@@ -17,14 +18,14 @@
 					"type": "string"
 				}
 			],
-			"description": "Reason for the error.\n\nUse  {@link  EpcisErrorReasonTypes }  for known values."
+			"description": "Reason for the error.\n\nUse {@link EpcisErrorReasonTypes} for known values."
 		},
 		"correctiveEventIDs": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "(Optional) If present, indicates that the events having the specified URIs as the value of their eventID fields are to be considered as \"corrections\" to the event declared erroneous by this event."
+			"description": "(Optional) If present, indicates that the events having the specified URIs as\nthe value of their eventID fields are to be considered as \"corrections\" to\nthe event declared erroneous by this event."
 		}
 	},
 	"required": ["declarationTime"]

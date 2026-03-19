@@ -1,142 +1,544 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList",
+	"title": "UneceTransportMeansTypeCodeList",
 	"description": "A character string used to represent the transport means type.",
-	"type": "string",
-	"enum": [
-		"unece:TransportMeansTypeCodeList#1501",
-		"unece:TransportMeansTypeCodeList#1502",
-		"unece:TransportMeansTypeCodeList#1503",
-		"unece:TransportMeansTypeCodeList#1504",
-		"unece:TransportMeansTypeCodeList#1505",
-		"unece:TransportMeansTypeCodeList#1506",
-		"unece:TransportMeansTypeCodeList#1511",
-		"unece:TransportMeansTypeCodeList#1512",
-		"unece:TransportMeansTypeCodeList#1513",
-		"unece:TransportMeansTypeCodeList#1514",
-		"unece:TransportMeansTypeCodeList#1515",
-		"unece:TransportMeansTypeCodeList#1516",
-		"unece:TransportMeansTypeCodeList#1517",
-		"unece:TransportMeansTypeCodeList#1518",
-		"unece:TransportMeansTypeCodeList#1519",
-		"unece:TransportMeansTypeCodeList#1521",
-		"unece:TransportMeansTypeCodeList#1522",
-		"unece:TransportMeansTypeCodeList#1523",
-		"unece:TransportMeansTypeCodeList#1524",
-		"unece:TransportMeansTypeCodeList#1525",
-		"unece:TransportMeansTypeCodeList#1531",
-		"unece:TransportMeansTypeCodeList#1532",
-		"unece:TransportMeansTypeCodeList#1533",
-		"unece:TransportMeansTypeCodeList#1534",
-		"unece:TransportMeansTypeCodeList#1541",
-		"unece:TransportMeansTypeCodeList#1542",
-		"unece:TransportMeansTypeCodeList#1543",
-		"unece:TransportMeansTypeCodeList#1551",
-		"unece:TransportMeansTypeCodeList#1552",
-		"unece:TransportMeansTypeCodeList#1553",
-		"unece:TransportMeansTypeCodeList#1591",
-		"unece:TransportMeansTypeCodeList#1592",
-		"unece:TransportMeansTypeCodeList#1593",
-		"unece:TransportMeansTypeCodeList#1594",
-		"unece:TransportMeansTypeCodeList#1601",
-		"unece:TransportMeansTypeCodeList#1602",
-		"unece:TransportMeansTypeCodeList#1603",
-		"unece:TransportMeansTypeCodeList#1604",
-		"unece:TransportMeansTypeCodeList#1605",
-		"unece:TransportMeansTypeCodeList#1606",
-		"unece:TransportMeansTypeCodeList#1607",
-		"unece:TransportMeansTypeCodeList#1711",
-		"unece:TransportMeansTypeCodeList#1712",
-		"unece:TransportMeansTypeCodeList#1721",
-		"unece:TransportMeansTypeCodeList#1723",
-		"unece:TransportMeansTypeCodeList#1724",
-		"unece:TransportMeansTypeCodeList#1725",
-		"unece:TransportMeansTypeCodeList#1726",
-		"unece:TransportMeansTypeCodeList#1727",
-		"unece:TransportMeansTypeCodeList#1728",
-		"unece:TransportMeansTypeCodeList#1729",
-		"unece:TransportMeansTypeCodeList#1751",
-		"unece:TransportMeansTypeCodeList#1752",
-		"unece:TransportMeansTypeCodeList#1753",
-		"unece:TransportMeansTypeCodeList#1761",
-		"unece:TransportMeansTypeCodeList#1762",
-		"unece:TransportMeansTypeCodeList#1763",
-		"unece:TransportMeansTypeCodeList#1764",
-		"unece:TransportMeansTypeCodeList#1765",
-		"unece:TransportMeansTypeCodeList#1766",
-		"unece:TransportMeansTypeCodeList#1781",
-		"unece:TransportMeansTypeCodeList#1782",
-		"unece:TransportMeansTypeCodeList#2201",
-		"unece:TransportMeansTypeCodeList#2202",
-		"unece:TransportMeansTypeCodeList#2203",
-		"unece:TransportMeansTypeCodeList#2301",
-		"unece:TransportMeansTypeCodeList#2302",
-		"unece:TransportMeansTypeCodeList#2303",
-		"unece:TransportMeansTypeCodeList#2304",
-		"unece:TransportMeansTypeCodeList#2305",
-		"unece:TransportMeansTypeCodeList#3100",
-		"unece:TransportMeansTypeCodeList#3101",
-		"unece:TransportMeansTypeCodeList#3102",
-		"unece:TransportMeansTypeCodeList#3103",
-		"unece:TransportMeansTypeCodeList#3104",
-		"unece:TransportMeansTypeCodeList#3105",
-		"unece:TransportMeansTypeCodeList#3106",
-		"unece:TransportMeansTypeCodeList#3107",
-		"unece:TransportMeansTypeCodeList#3108",
-		"unece:TransportMeansTypeCodeList#3109",
-		"unece:TransportMeansTypeCodeList#3110",
-		"unece:TransportMeansTypeCodeList#3111",
-		"unece:TransportMeansTypeCodeList#3112",
-		"unece:TransportMeansTypeCodeList#3113",
-		"unece:TransportMeansTypeCodeList#3114",
-		"unece:TransportMeansTypeCodeList#3115",
-		"unece:TransportMeansTypeCodeList#3116",
-		"unece:TransportMeansTypeCodeList#3117",
-		"unece:TransportMeansTypeCodeList#3118",
-		"unece:TransportMeansTypeCodeList#3119",
-		"unece:TransportMeansTypeCodeList#3120",
-		"unece:TransportMeansTypeCodeList#3121",
-		"unece:TransportMeansTypeCodeList#3122",
-		"unece:TransportMeansTypeCodeList#3123",
-		"unece:TransportMeansTypeCodeList#3124",
-		"unece:TransportMeansTypeCodeList#3125",
-		"unece:TransportMeansTypeCodeList#3126",
-		"unece:TransportMeansTypeCodeList#3127",
-		"unece:TransportMeansTypeCodeList#3128",
-		"unece:TransportMeansTypeCodeList#3129",
-		"unece:TransportMeansTypeCodeList#3130",
-		"unece:TransportMeansTypeCodeList#3131",
-		"unece:TransportMeansTypeCodeList#3132",
-		"unece:TransportMeansTypeCodeList#3133",
-		"unece:TransportMeansTypeCodeList#3134",
-		"unece:TransportMeansTypeCodeList#3135",
-		"unece:TransportMeansTypeCodeList#3136",
-		"unece:TransportMeansTypeCodeList#3137",
-		"unece:TransportMeansTypeCodeList#3138",
-		"unece:TransportMeansTypeCodeList#3201",
-		"unece:TransportMeansTypeCodeList#3301",
-		"unece:TransportMeansTypeCodeList#3302",
-		"unece:TransportMeansTypeCodeList#3303",
-		"unece:TransportMeansTypeCodeList#3304",
-		"unece:TransportMeansTypeCodeList#4000",
-		"unece:TransportMeansTypeCodeList#5000",
-		"unece:TransportMeansTypeCodeList#8021",
-		"unece:TransportMeansTypeCodeList#8022",
-		"unece:TransportMeansTypeCodeList#8023",
-		"unece:TransportMeansTypeCodeList#8161",
-		"unece:TransportMeansTypeCodeList#8162",
-		"unece:TransportMeansTypeCodeList#8163",
-		"unece:TransportMeansTypeCodeList#8441",
-		"unece:TransportMeansTypeCodeList#8442",
-		"unece:TransportMeansTypeCodeList#8443",
-		"unece:TransportMeansTypeCodeList#8444",
-		"unece:TransportMeansTypeCodeList#8445",
-		"unece:TransportMeansTypeCodeList#8446",
-		"unece:TransportMeansTypeCodeList#8447",
-		"unece:TransportMeansTypeCodeList#8448",
-		"unece:TransportMeansTypeCodeList#8451",
-		"unece:TransportMeansTypeCodeList#8452",
-		"unece:TransportMeansTypeCodeList#8453",
-		"unece:TransportMeansTypeCodeList#8454"
+	"oneOf": [
+		{
+			"const": "unece:TransportMeansTypeCodeList#1501",
+			"description": "Grain vessel: 1501."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1502",
+			"description": "Timber/log carrier: 1502."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1503",
+			"description": "Wood chips vessel: 1503."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1504",
+			"description": "Steel products vessel: 1504."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1505",
+			"description": "Carrier, general cargo/container: 1505."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1506",
+			"description": "Temperature controlled cargo vessels: 1506."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1511",
+			"description": "Full container ship/cellular vessel: 1511."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1512",
+			"description": "RoRo vessel: 1512."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1513",
+			"description": "Car carrier: 1513."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1514",
+			"description": "Livestock carrier: 1514."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1515",
+			"description": "Barge carrier - Lash ship: 1515."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1516",
+			"description": "Chemical carrier: 1516."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1517",
+			"description": "Irradiated fuel carrier: 1517."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1518",
+			"description": "Heavy cargo vessel: 1518."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1519",
+			"description": "RoRo/Container vessel: 1519."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1521",
+			"description": "Dry bulk carrier: 1521."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1522",
+			"description": "Ore carrier: 1522."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1523",
+			"description": "Cement carrier: 1523."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1524",
+			"description": "Gravel carrier: 1524."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1525",
+			"description": "Coal carrier: 1525."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1531",
+			"description": "Crude oil tanker: 1531."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1532",
+			"description": "Chemical tanker, coaster: 1532."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1533",
+			"description": "Chemical tanker, deep sea: 1533."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1534",
+			"description": "Oil and other derivatives tanker: 1534."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1541",
+			"description": "LPG tanker: 1541."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1542",
+			"description": "LNG tanker: 1542."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1543",
+			"description": "LNG/LPG tanker: 1543."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1551",
+			"description": "Asphalt/bitumen tanker: 1551."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1552",
+			"description": "Molasses tanker: 1552."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1553",
+			"description": "Vegetable oil tanker: 1553."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1591",
+			"description": "Cruise ship: 1591."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1592",
+			"description": "Ferry: 1592."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1593",
+			"description": "Other passenger ship: 1593."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1594",
+			"description": "Passenger ship, sailing: 1594."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1601",
+			"description": "Tug, without tow: 1601."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1602",
+			"description": "Tug, with tow: 1602."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1603",
+			"description": "Salvage vessel: 1603."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1604",
+			"description": "Rescue vessel: 1604."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1605",
+			"description": "Oil combat vessel: 1605."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1606",
+			"description": "Oil rig: 1606."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1607",
+			"description": "Hospital vessel: 1607."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1711",
+			"description": "Pilot boat: 1711."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1712",
+			"description": "Patrol/measure ship: 1712."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1721",
+			"description": "Supply vessel: 1721."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1723",
+			"description": "Offshore support vessel: 1723."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1724",
+			"description": "Pontoon: 1724."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1725",
+			"description": "Stone dumping vessel: 1725."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1726",
+			"description": "Cable layer: 1726."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1727",
+			"description": "Buoyage vessel: 1727."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1728",
+			"description": "Icebreaker: 1728."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1729",
+			"description": "Pipelaying vessel: 1729."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1751",
+			"description": "Trawler: 1751."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1752",
+			"description": "Cutter: 1752."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1753",
+			"description": "Factory ship: 1753."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1761",
+			"description": "Fishery research vessel: 1761."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1762",
+			"description": "Climate registration vessel: 1762."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1763",
+			"description": "Ship for environmental measurement: 1763."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1764",
+			"description": "Scientific vessel: 1764."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1765",
+			"description": "Sailing school ship: 1765."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1766",
+			"description": "Training vessel: 1766."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1781",
+			"description": "Crane, floating: 1781."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#1782",
+			"description": "Dock, floating: 1782."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2201",
+			"description": "Train, super express: 2201."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2202",
+			"description": "Train, sleeper: 2202."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2203",
+			"description": "Train, passenger, hired group: 2203."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2301",
+			"description": "Blocktrain: 2301."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2302",
+			"description": "Train, container: 2302."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2303",
+			"description": "Train, with one wagon: 2303."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2304",
+			"description": "Train, with more than one and less than 20 wagons: 2304."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#2305",
+			"description": "Train, with more than 20 wagons: 2305."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3100",
+			"description": "Truck, tautliner with removal trailer: 3100."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3101",
+			"description": "Truck, tautliner with removable roof and removal trailer: 3101."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3102",
+			"description": "Car, with caravan: 3102."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3103",
+			"description": "Truck, tautliner, 25 tonne: 3103."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3104",
+			"description": "Truck, tautliner, 25 tonne with removable roof: 3104."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3105",
+			"description": "Lorry, articulated, flat bed, 25 tonne: 3105."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3106",
+			"description": "Lorry, articulated, flat bed, 24 tonne, with 10 metre crane: 3106."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3107",
+			"description": "Lorry, articulated, flat bed, 24 tonne, with 15 metre crane: 3107."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3108",
+			"description": "Lorry, articulated, flat bed, 24 tonne, with 18 metre crane: 3108."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3109",
+			"description": "Lorry, articulated, flat bed, 10 tonne: 3109."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3110",
+			"description": "Truck, tautliner, 25 tonne, with 90 cubic metre trailer: 3110."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3111",
+			"description": "Truck, tautliner, 25 tonne, with 120 cubic metre trailer: 3111."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3112",
+			"description": "Lorry, flat with trailer and 10 metre crane: 3112."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3113",
+			"description": "Lorry, articulated with tank: 3113."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3114",
+			"description": "Lorry, flat, 15 tonne: 3114."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3115",
+			"description": "Lorry, flat, 15 tonne with crane: 3115."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3116",
+			"description": "Truck, isothermic: 3116."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3117",
+			"description": "Truck, refrigerated: 3117."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3118",
+			"description": "Van, freezer: 3118."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3119",
+			"description": "Van, isothermic: 3119."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3120",
+			"description": "Van, refrigerated: 3120."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3121",
+			"description": "Truck, bulk: 3121."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3122",
+			"description": "Truck, tip-up: 3122."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3123",
+			"description": "Truck, articulated, tip-up: 3123."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3124",
+			"description": "Truck, rigid, with tank: 3124."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3125",
+			"description": "Truck, tautliner: 3125."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3126",
+			"description": "Truck, tautliner, with removable roof: 3126."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3127",
+			"description": "Truck, with opening floor: 3127."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3128",
+			"description": "Truck, freezer: 3128."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3129",
+			"description": "Truck, with crane for moving goods, without trailer: 3129."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3130",
+			"description": "Truck, with crane for moving goods, with trailer: 3130."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3131",
+			"description": "Truck, with crane for lifting goods, without trailer: 3131."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3132",
+			"description": "Truck, with crane for lifting goods, with trailer: 3132."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3133",
+			"description": "Taxi cab: 3133."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3134",
+			"description": "Truck, furniture: 3134."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3135",
+			"description": "Truck, hydrant: 3135."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3136",
+			"description": "Car: 3136."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3137",
+			"description": "Truck, with tail-lift: 3137."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3138",
+			"description": "Armoured vehicle: 3138."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3201",
+			"description": "Car, elevator: 3201."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3301",
+			"description": "Bus, with trailer: 3301."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3302",
+			"description": "Bus, highway: 3302."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3303",
+			"description": "Bus, sightseeing: 3303."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#3304",
+			"description": "Bus, airport/city: 3304."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#4000",
+			"description": "Aircraft, type unknown: 4000."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#5000",
+			"description": "Mail, type unknown: 5000."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8021",
+			"description": "Motor tanker, liquid cargo, type N: 8021."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8022",
+			"description": "Motor tanker, liquid cargo, type C: 8022."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8023",
+			"description": "Motor tanker, dry cargo: 8023."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8161",
+			"description": "Tank barge, liquid cargo, type N: 8161."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8162",
+			"description": "Tank barge, liquid cargo, type C: 8162."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8163",
+			"description": "Tank barge, dry cargo: 8163."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8441",
+			"description": "Ferry: 8441."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8442",
+			"description": "Red cross ship: 8442."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8443",
+			"description": "Cruise ship: 8443."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8444",
+			"description": "Passenger ship without accommodation: 8444."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8445",
+			"description": "Day-trip high speed vessel: 8445."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8446",
+			"description": "Day-trip hydrofoil vessel: 8446."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8447",
+			"description": "Sailing cruise ship: 8447."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8448",
+			"description": "Sailing passenger ship without accommodation: 8448."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8451",
+			"description": "Service vessel: 8451."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8452",
+			"description": "Police patrol vessel: 8452."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8453",
+			"description": "Port service vessel: 8453."
+		},
+		{
+			"const": "unece:TransportMeansTypeCodeList#8454",
+			"description": "Navigation surveillance vessel: 8454."
+		}
 	]
 }

@@ -1,92 +1,344 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentMeansCodeList",
+	"title": "UnecePaymentMeansCodeList",
 	"description": "A character string used to represent a payment means.",
-	"type": "string",
-	"enum": [
-		"unece:PaymentMeansCodeList#1",
-		"unece:PaymentMeansCodeList#10",
-		"unece:PaymentMeansCodeList#11",
-		"unece:PaymentMeansCodeList#12",
-		"unece:PaymentMeansCodeList#13",
-		"unece:PaymentMeansCodeList#14",
-		"unece:PaymentMeansCodeList#15",
-		"unece:PaymentMeansCodeList#16",
-		"unece:PaymentMeansCodeList#17",
-		"unece:PaymentMeansCodeList#18",
-		"unece:PaymentMeansCodeList#19",
-		"unece:PaymentMeansCodeList#2",
-		"unece:PaymentMeansCodeList#20",
-		"unece:PaymentMeansCodeList#21",
-		"unece:PaymentMeansCodeList#22",
-		"unece:PaymentMeansCodeList#23",
-		"unece:PaymentMeansCodeList#24",
-		"unece:PaymentMeansCodeList#25",
-		"unece:PaymentMeansCodeList#26",
-		"unece:PaymentMeansCodeList#27",
-		"unece:PaymentMeansCodeList#28",
-		"unece:PaymentMeansCodeList#29",
-		"unece:PaymentMeansCodeList#3",
-		"unece:PaymentMeansCodeList#30",
-		"unece:PaymentMeansCodeList#31",
-		"unece:PaymentMeansCodeList#32",
-		"unece:PaymentMeansCodeList#33",
-		"unece:PaymentMeansCodeList#34",
-		"unece:PaymentMeansCodeList#35",
-		"unece:PaymentMeansCodeList#36",
-		"unece:PaymentMeansCodeList#37",
-		"unece:PaymentMeansCodeList#38",
-		"unece:PaymentMeansCodeList#39",
-		"unece:PaymentMeansCodeList#4",
-		"unece:PaymentMeansCodeList#40",
-		"unece:PaymentMeansCodeList#41",
-		"unece:PaymentMeansCodeList#42",
-		"unece:PaymentMeansCodeList#43",
-		"unece:PaymentMeansCodeList#44",
-		"unece:PaymentMeansCodeList#45",
-		"unece:PaymentMeansCodeList#46",
-		"unece:PaymentMeansCodeList#47",
-		"unece:PaymentMeansCodeList#48",
-		"unece:PaymentMeansCodeList#49",
-		"unece:PaymentMeansCodeList#5",
-		"unece:PaymentMeansCodeList#50",
-		"unece:PaymentMeansCodeList#51",
-		"unece:PaymentMeansCodeList#52",
-		"unece:PaymentMeansCodeList#53",
-		"unece:PaymentMeansCodeList#54",
-		"unece:PaymentMeansCodeList#55",
-		"unece:PaymentMeansCodeList#56",
-		"unece:PaymentMeansCodeList#57",
-		"unece:PaymentMeansCodeList#58",
-		"unece:PaymentMeansCodeList#59",
-		"unece:PaymentMeansCodeList#6",
-		"unece:PaymentMeansCodeList#60",
-		"unece:PaymentMeansCodeList#61",
-		"unece:PaymentMeansCodeList#62",
-		"unece:PaymentMeansCodeList#63",
-		"unece:PaymentMeansCodeList#64",
-		"unece:PaymentMeansCodeList#65",
-		"unece:PaymentMeansCodeList#66",
-		"unece:PaymentMeansCodeList#67",
-		"unece:PaymentMeansCodeList#68",
-		"unece:PaymentMeansCodeList#69",
-		"unece:PaymentMeansCodeList#7",
-		"unece:PaymentMeansCodeList#70",
-		"unece:PaymentMeansCodeList#74",
-		"unece:PaymentMeansCodeList#75",
-		"unece:PaymentMeansCodeList#76",
-		"unece:PaymentMeansCodeList#77",
-		"unece:PaymentMeansCodeList#78",
-		"unece:PaymentMeansCodeList#8",
-		"unece:PaymentMeansCodeList#9",
-		"unece:PaymentMeansCodeList#91",
-		"unece:PaymentMeansCodeList#92",
-		"unece:PaymentMeansCodeList#93",
-		"unece:PaymentMeansCodeList#94",
-		"unece:PaymentMeansCodeList#95",
-		"unece:PaymentMeansCodeList#96",
-		"unece:PaymentMeansCodeList#97",
-		"unece:PaymentMeansCodeList#98",
-		"unece:PaymentMeansCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:PaymentMeansCodeList#1",
+			"description": "Instrument not defined: 1."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#10",
+			"description": "In cash: 10."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#11",
+			"description": "ACH savings credit reversal: 11."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#12",
+			"description": "ACH savings debit reversal: 12."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#13",
+			"description": "ACH savings credit: 13."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#14",
+			"description": "ACH savings debit: 14."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#15",
+			"description": "Bookentry credit: 15."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#16",
+			"description": "Bookentry debit: 16."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#17",
+			"description": "ACH demand cash concentration/disbursement (CCD) credit: 17."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#18",
+			"description": "ACH demand cash concentration/disbursement (CCD) debit: 18."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#19",
+			"description": "ACH demand corporate trade payment (CTP) credit: 19."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#2",
+			"description": "Automated clearing house credit: 2."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#20",
+			"description": "Cheque: 20."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#21",
+			"description": "Banker's draft: 21."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#22",
+			"description": "Certified banker's draft: 22."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#23",
+			"description": "Bank cheque (issued by a banking or similar establishment): 23."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#24",
+			"description": "Bill of exchange awaiting acceptance: 24."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#25",
+			"description": "Certified cheque: 25."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#26",
+			"description": "Local cheque: 26."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#27",
+			"description": "ACH demand corporate trade payment (CTP) debit: 27."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#28",
+			"description": "ACH demand corporate trade exchange (CTX) credit: 28."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#29",
+			"description": "ACH demand corporate trade exchange (CTX) debit: 29."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#3",
+			"description": "Automated clearing house debit: 3."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#30",
+			"description": "Credit transfer: 30."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#31",
+			"description": "Debit transfer: 31."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#32",
+			"description": "ACH demand cash concentration/disbursement plus (CCD+) credit: 32."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#33",
+			"description": "ACH demand cash concentration/disbursement plus (CCD+) debit: 33."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#34",
+			"description": "ACH prearranged payment and deposit (PPD): 34."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#35",
+			"description": "ACH savings cash concentration/disbursement (CCD) credit: 35."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#36",
+			"description": "ACH savings cash concentration/disbursement (CCD) debit: 36."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#37",
+			"description": "ACH savings corporate trade payment (CTP) credit: 37."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#38",
+			"description": "ACH savings corporate trade payment (CTP) debit: 38."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#39",
+			"description": "ACH savings corporate trade exchange (CTX) credit: 39."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#4",
+			"description": "ACH demand debit reversal: 4."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#40",
+			"description": "ACH savings corporate trade exchange (CTX) debit: 40."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#41",
+			"description": "ACH savings cash concentration/disbursement plus (CCD+) credit: 41."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#42",
+			"description": "Payment to bank account: 42."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#43",
+			"description": "ACH savings cash concentration/disbursement plus (CCD+) debit: 43."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#44",
+			"description": "Accepted bill of exchange: 44."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#45",
+			"description": "Referenced home-banking credit transfer: 45."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#46",
+			"description": "Interbank debit transfer: 46."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#47",
+			"description": "Home-banking debit transfer: 47."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#48",
+			"description": "Bank card: 48."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#49",
+			"description": "Direct debit: 49."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#5",
+			"description": "ACH demand credit reversal: 5."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#50",
+			"description": "Payment by postgiro: 50."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#51",
+			"description": "FR, norme 6 97-Telereglement CFONB (French Organisation for Banking Standards) - Option A: 51."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#52",
+			"description": "Urgent commercial payment: 52."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#53",
+			"description": "Urgent Treasury Payment: 53."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#54",
+			"description": "Credit card: 54."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#55",
+			"description": "Debit card: 55."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#56",
+			"description": "Bankgiro: 56."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#57",
+			"description": "Standing agreement: 57."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#58",
+			"description": "SEPA credit transfer: 58."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#59",
+			"description": "SEPA direct debit: 59."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#6",
+			"description": "ACH demand credit: 6."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#60",
+			"description": "Promissory note: 60."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#61",
+			"description": "Promissory note signed by the debtor: 61."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#62",
+			"description": "Promissory note signed by the debtor and endorsed by a bank: 62."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#63",
+			"description": "Promissory note signed by the debtor and endorsed by a third party: 63."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#64",
+			"description": "Promissory note signed by a bank: 64."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#65",
+			"description": "Promissory note signed by a bank and endorsed by another bank: 65."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#66",
+			"description": "Promissory note signed by a third party: 66."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#67",
+			"description": "Promissory note signed by a third party and endorsed by a bank: 67."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#68",
+			"description": "Online payment service: 68."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#69",
+			"description": "Transfer Advice: 69."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#7",
+			"description": "ACH demand debit: 7."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#70",
+			"description": "Bill drawn by the creditor on the debtor: 70."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#74",
+			"description": "Bill drawn by the creditor on a bank: 74."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#75",
+			"description": "Bill drawn by the creditor, endorsed by another bank: 75."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#76",
+			"description": "Bill drawn by the creditor on a bank and endorsed by a third party: 76."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#77",
+			"description": "Bill drawn by the creditor on a third party: 77."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#78",
+			"description": "Bill drawn by creditor on third party, accepted and endorsed by bank: 78."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#8",
+			"description": "Hold: 8."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#9",
+			"description": "National or regional clearing: 9."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#91",
+			"description": "Not transferable banker's draft: 91."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#92",
+			"description": "Not transferable local cheque: 92."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#93",
+			"description": "Reference giro: 93."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#94",
+			"description": "Urgent giro: 94."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#95",
+			"description": "Free format giro: 95."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#96",
+			"description": "Requested method for payment was not used: 96."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#97",
+			"description": "Clearing between partners: 97."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#98",
+			"description": "JP, Electronically Recorded Monetary Claims: 98."
+		},
+		{
+			"const": "unece:PaymentMeansCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

@@ -1,21 +1,60 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDeliveryTermsCodeList",
+	"title": "UneceDeliveryTermsCodeList",
 	"description": "A character string used to represent delivery terms.",
-	"type": "string",
-	"enum": [
-		"unece:DeliveryTermsCodeList#1",
-		"unece:DeliveryTermsCodeList#2",
-		"unece:DeliveryTermsCodeList#CFR",
-		"unece:DeliveryTermsCodeList#CIF",
-		"unece:DeliveryTermsCodeList#CIP",
-		"unece:DeliveryTermsCodeList#CPT",
-		"unece:DeliveryTermsCodeList#DAP",
-		"unece:DeliveryTermsCodeList#DDP",
-		"unece:DeliveryTermsCodeList#DPU",
-		"unece:DeliveryTermsCodeList#EXW",
-		"unece:DeliveryTermsCodeList#FAS",
-		"unece:DeliveryTermsCodeList#FCA",
-		"unece:DeliveryTermsCodeList#FOB"
+	"oneOf": [
+		{
+			"const": "unece:DeliveryTermsCodeList#1",
+			"description": "Delivery arranged by the supplier: 1."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#2",
+			"description": "Delivery arranged by logistic service provider: 2."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#CFR",
+			"description": "Cost and Freight (insert named port of destination): CFR."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#CIF",
+			"description": "Cost, Insurance and Freight (insert named port of destination): CIF."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#CIP",
+			"description": "Carriage and Insurance Paid to (insert named place of destination): CIP."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#CPT",
+			"description": "Carriage Paid To (insert named place of destination): CPT."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#DAP",
+			"description": "Delivered At Place (insert named place of destination): DAP."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#DDP",
+			"description": "Delivered Duty Paid (insert named place of destination): DDP."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#DPU",
+			"description": "Delivered At Place Unloaded (insert named place of destination): DPU."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#EXW",
+			"description": "Ex Works (insert named place of delivery): EXW."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#FAS",
+			"description": "Free Alongside Ship (insert named port of shipment): FAS."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#FCA",
+			"description": "Free Carrier (insert named place of delivery): FCA."
+		},
+		{
+			"const": "unece:DeliveryTermsCodeList#FOB",
+			"description": "Free On Board (insert named port of shipment): FOB."
+		}
 	]
 }

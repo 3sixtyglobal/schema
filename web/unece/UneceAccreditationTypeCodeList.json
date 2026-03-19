@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccreditationTypeCodeList",
+	"title": "UneceAccreditationTypeCodeList",
 	"description": "Values for UneceAccreditation typeCode property.",
-	"type": "string",
-	"const": "unece:specificAccreditation"
+	"oneOf": [
+		{
+			"const": "unece:specificAccreditation",
+			"description": "A certified accreditation specific to this transport person."
+		}
+	]
 }

@@ -1,14 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePackagingLevelCodeList",
+	"title": "UnecePackagingLevelCodeList",
 	"description": "A character string used to represent the packaging level.",
-	"type": "string",
-	"enum": [
-		"unece:PackagingLevelCodeList#1",
-		"unece:PackagingLevelCodeList#2",
-		"unece:PackagingLevelCodeList#3",
-		"unece:PackagingLevelCodeList#4",
-		"unece:PackagingLevelCodeList#5",
-		"unece:PackagingLevelCodeList#6"
+	"oneOf": [
+		{
+			"const": "unece:PackagingLevelCodeList#1",
+			"description": "Inner: 1."
+		},
+		{
+			"const": "unece:PackagingLevelCodeList#2",
+			"description": "Intermediate: 2."
+		},
+		{
+			"const": "unece:PackagingLevelCodeList#3",
+			"description": "Outer: 3."
+		},
+		{
+			"const": "unece:PackagingLevelCodeList#4",
+			"description": "No packaging hierarchy: 4."
+		},
+		{
+			"const": "unece:PackagingLevelCodeList#5",
+			"description": "Shipment level: 5."
+		},
+		{
+			"const": "unece:PackagingLevelCodeList#6",
+			"description": "Highest: 6."
+		}
 	]
 }

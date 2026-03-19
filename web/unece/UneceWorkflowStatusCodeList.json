@@ -1,32 +1,104 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceWorkflowStatusCodeList",
+	"title": "UneceWorkflowStatusCodeList",
 	"description": "A character string used to represent a workflow status.",
-	"type": "string",
-	"enum": [
-		"unece:WorkflowStatusCodeList#1",
-		"unece:WorkflowStatusCodeList#108",
-		"unece:WorkflowStatusCodeList#109",
-		"unece:WorkflowStatusCodeList#111",
-		"unece:WorkflowStatusCodeList#112",
-		"unece:WorkflowStatusCodeList#121",
-		"unece:WorkflowStatusCodeList#17",
-		"unece:WorkflowStatusCodeList#2",
-		"unece:WorkflowStatusCodeList#28",
-		"unece:WorkflowStatusCodeList#3",
-		"unece:WorkflowStatusCodeList#35",
-		"unece:WorkflowStatusCodeList#36",
-		"unece:WorkflowStatusCodeList#38",
-		"unece:WorkflowStatusCodeList#39",
-		"unece:WorkflowStatusCodeList#40",
-		"unece:WorkflowStatusCodeList#41",
-		"unece:WorkflowStatusCodeList#42",
-		"unece:WorkflowStatusCodeList#43",
-		"unece:WorkflowStatusCodeList#44",
-		"unece:WorkflowStatusCodeList#70",
-		"unece:WorkflowStatusCodeList#73",
-		"unece:WorkflowStatusCodeList#85",
-		"unece:WorkflowStatusCodeList#95",
-		"unece:WorkflowStatusCodeList#97"
+	"oneOf": [
+		{
+			"const": "unece:WorkflowStatusCodeList#1",
+			"description": "To be done: 1."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#108",
+			"description": "Instructed to start: 108."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#109",
+			"description": "Instructed to stop: 109."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#111",
+			"description": "Inactive: 111."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#112",
+			"description": "Active: 112."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#121",
+			"description": "Complete: 121."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#17",
+			"description": "Requested: 17."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#2",
+			"description": "Done: 2."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#28",
+			"description": "Transaction expected to be executed: 28."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#3",
+			"description": "Passed on: 3."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#35",
+			"description": "Started: 35."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#36",
+			"description": "Revised: 36."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#38",
+			"description": "Assigned: 38."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#39",
+			"description": "Approved: 39."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#40",
+			"description": "Withdrawn: 40."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#41",
+			"description": "Rejected: 41."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#42",
+			"description": "Approval pending: 42."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#43",
+			"description": "Postponed: 43."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#44",
+			"description": "Replaced: 44."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#70",
+			"description": "Issued: 70."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#73",
+			"description": "Confirmed: 73."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#85",
+			"description": "Updated: 85."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#95",
+			"description": "Unchanged: 95."
+		},
+		{
+			"const": "unece:WorkflowStatusCodeList#97",
+			"description": "Pending: 97."
+		}
 	]
 }

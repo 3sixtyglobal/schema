@@ -1,16 +1,40 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingDocumentTypeCodeList",
+	"title": "UneceAccountingDocumentTypeCodeList",
 	"description": "A character string used to represent the type of accounting document.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingDocumentTypeCodeList#BC",
-		"unece:AccountingDocumentTypeCodeList#COA",
-		"unece:AccountingDocumentTypeCodeList#DB",
-		"unece:AccountingDocumentTypeCodeList#JL",
-		"unece:AccountingDocumentTypeCodeList#JN",
-		"unece:AccountingDocumentTypeCodeList#LG",
-		"unece:AccountingDocumentTypeCodeList#RP",
-		"unece:AccountingDocumentTypeCodeList#TR"
+	"oneOf": [
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#BC",
+			"description": "Bundle collection: BC."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#COA",
+			"description": "Accounting account classification: COA."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#DB",
+			"description": "Day book: DB."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#JL",
+			"description": "Journal List: JL."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#JN",
+			"description": "Journal: JN."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#LG",
+			"description": "Ledger: LG."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#RP",
+			"description": "Reporting: RP."
+		},
+		{
+			"const": "unece:AccountingDocumentTypeCodeList#TR",
+			"description": "Trial balance: TR."
+		}
 	]
 }

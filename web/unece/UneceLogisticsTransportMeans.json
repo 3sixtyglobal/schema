@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLogisticsTransportMeans",
+	"title": "UneceLogisticsTransportMeans",
 	"description": "The devices used to convey goods or other objects from place to place during logistics cargo movements.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "LogisticsTransportMeans",
 			"description": "JSON-LD Type."
 		},
@@ -132,7 +114,7 @@
 		},
 		"iSPSSecurityLevelCode": {
 			"type": "string",
-			"description": "The code specifying the International Ship and Port facility Security (ISPS) level assigned to this logistics means of transport."
+			"description": "The code specifying the International Ship and Port facility Security (ISPS) level assigned to this logistics means of\ntransport."
 		},
 		"iSSCDocument": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocument",
@@ -140,7 +122,7 @@
 		},
 		"iSSCIssuingAuthorityParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-			"description": "The trade party authorized to issue the International Ship Security Certificate (ISSC) for this logistics means of transport."
+			"description": "The trade party authorized to issue the International Ship Security Certificate (ISSC) for this logistics means of\ntransport."
 		},
 		"identifier": {
 			"anyOf": [
@@ -170,7 +152,7 @@
 		},
 		"loadedCargoMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-			"description": "The measure of the cargo loaded onto this logistics means of transport, such as the number of barrels of oil or other quantity of breakbulk cargo."
+			"description": "The measure of the cargo loaded onto this logistics means of transport, such as the number of barrels of oil or other\nquantity of breakbulk cargo."
 		},
 		"logisticsTransportMeansPowerTypeCode": {
 			"type": "string",
@@ -254,7 +236,7 @@
 		},
 		"sanitationControlReInspectionRequiredIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not a Sanitation Control Exemption or Certificate re-inspection is required for this logistics transport means."
+			"description": "The indication of whether or not a Sanitation Control Exemption or Certificate re-inspection is required for this\nlogistics transport means."
 		},
 		"sequenceNumeric": {
 			"type": "string",
@@ -305,7 +287,7 @@
 		},
 		"validSanitationControlIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not there is a valid Sanitation Control Exemption or Certificate onboard this logistics transport means."
+			"description": "The indication of whether or not there is a valid Sanitation Control Exemption or Certificate onboard this logistics\ntransport means."
 		},
 		"wasteReportingExemptionIndicator": {
 			"type": "boolean",
@@ -313,7 +295,7 @@
 		},
 		"weightUnitCargoGrossWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
-			"description": "The measure of the total gross weight (mass) of all cargo loaded onto this logistics means of transport, including packaging but excluding any associated transport equipment."
+			"description": "The measure of the total gross weight (mass) of all cargo loaded onto this logistics means of transport, including\npackaging but excluding any associated transport equipment."
 		},
 		"weightUnitDeadweightTonnageMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
@@ -321,15 +303,15 @@
 		},
 		"weightUnitGrossWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
-			"description": "The measure of the gross weight (mass) of this logistics means of transport including cargo, such as the measure of the overall size of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
+			"description": "The measure of the gross weight (mass) of this logistics means of transport including cargo, such as the measure of the\noverall size of a vessel determined in accordance with the provisions of the International Convention on Tonnage\nMeasurement of Ships, 1969."
 		},
 		"weightUnitNetWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
-			"description": "The measure of the net weight (mass) of this logistics means of transport, such as the net tonnage of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
+			"description": "The measure of the net weight (mass) of this logistics means of transport, such as the net tonnage of a vessel\ndetermined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
 		},
 		"weightUnitTareWeightMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
-			"description": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
+			"description": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including\npermanent equipment but excluding goods and loose accessories."
 		}
 	},
 	"required": ["type"]

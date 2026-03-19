@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceServiceCharge",
+	"title": "UneceServiceCharge",
 	"description": "A charge made for a logistics related service.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ServiceCharge",
 			"description": "JSON-LD Type."
 		},
@@ -108,7 +90,7 @@
 		},
 		"freightChargeTariffClassCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceFreightChargeTariffClassCodeList",
-			"description": "The code specifying the tariff class for this logistics service charge which represents an entry in a table of fixed charges [Reference United Nations Code List (UNCL) 5243]."
+			"description": "The code specifying the tariff class for this logistics service charge which represents an entry in a table of fixed\ncharges [Reference United Nations Code List (UNCL) 5243]."
 		},
 		"freightChargeTypeId": {
 			"anyOf": [
@@ -192,7 +174,7 @@
 		},
 		"transportServicePaymentArrangementCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceTransportServicePaymentArrangementCodeList",
-			"description": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
+			"description": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL)\n4237]."
 		},
 		"unitCalculationBasisAreaMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType",

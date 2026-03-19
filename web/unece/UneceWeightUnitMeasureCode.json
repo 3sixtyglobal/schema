@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceWeightUnitMeasureCode",
+	"title": "UneceWeightUnitMeasureCode",
 	"description": "RDF Class for WeightUnitMeasureType unit code type to define unit code values.",
-	"type": "string",
-	"enum": [
-		"unece:WeightUnitMeasureCode#GRM",
-		"unece:WeightUnitMeasureCode#KGM",
-		"unece:WeightUnitMeasureCode#TNE"
+	"oneOf": [
+		{
+			"const": "unece:WeightUnitMeasureCode#GRM",
+			"description": "gram: GRM."
+		},
+		{
+			"const": "unece:WeightUnitMeasureCode#KGM",
+			"description": "kilogram: KGM."
+		},
+		{
+			"const": "unece:WeightUnitMeasureCode#TNE",
+			"description": "tonne (metric ton): TNE."
+		}
 	]
 }

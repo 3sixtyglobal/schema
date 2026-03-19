@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCropProtectionTreatmentTypeCodeList",
+	"title": "UneceCropProtectionTreatmentTypeCodeList",
 	"description": "Values for UneceCropProtectionTreatment typeCode property.",
-	"type": "string",
-	"const": "unece:appliedCropProtectionTreatment"
+	"oneOf": [
+		{
+			"const": "unece:appliedCropProtectionTreatment",
+			"description": "A crop protection treatment applied during this production process."
+		}
+	]
 }

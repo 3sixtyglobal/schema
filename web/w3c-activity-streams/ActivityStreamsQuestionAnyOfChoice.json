@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsQuestionAnyOfChoice",
+	"title": "ActivityStreamsQuestionAnyOfChoice",
+	"description": "Represents a Question with an inclusive list of possible answers, but not an exclusive list.",
+	"type": "object",
+	"properties": {
+		"anyOf": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					}
+				}
+			],
+			"description": "Specifies an inclusive list of possible answers."
+		},
+		"oneOf": {
+			"not": {},
+			"description": "Specifies an exclusive list of possible answers."
+		}
+	},
+	"required": ["anyOf"]
+}

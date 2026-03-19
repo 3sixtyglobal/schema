@@ -1,74 +1,272 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportServiceRequirementCodeList",
+	"title": "UneceTransportServiceRequirementCodeList",
 	"description": "A character string used to represent a transport service requirement.",
-	"type": "string",
-	"enum": [
-		"unece:TransportServiceRequirementCodeList#1",
-		"unece:TransportServiceRequirementCodeList#10",
-		"unece:TransportServiceRequirementCodeList#11",
-		"unece:TransportServiceRequirementCodeList#12",
-		"unece:TransportServiceRequirementCodeList#13",
-		"unece:TransportServiceRequirementCodeList#14",
-		"unece:TransportServiceRequirementCodeList#15",
-		"unece:TransportServiceRequirementCodeList#16",
-		"unece:TransportServiceRequirementCodeList#17",
-		"unece:TransportServiceRequirementCodeList#18",
-		"unece:TransportServiceRequirementCodeList#19",
-		"unece:TransportServiceRequirementCodeList#2",
-		"unece:TransportServiceRequirementCodeList#20",
-		"unece:TransportServiceRequirementCodeList#21",
-		"unece:TransportServiceRequirementCodeList#22",
-		"unece:TransportServiceRequirementCodeList#23",
-		"unece:TransportServiceRequirementCodeList#24",
-		"unece:TransportServiceRequirementCodeList#25",
-		"unece:TransportServiceRequirementCodeList#26",
-		"unece:TransportServiceRequirementCodeList#27",
-		"unece:TransportServiceRequirementCodeList#28",
-		"unece:TransportServiceRequirementCodeList#29",
-		"unece:TransportServiceRequirementCodeList#3",
-		"unece:TransportServiceRequirementCodeList#30",
-		"unece:TransportServiceRequirementCodeList#31",
-		"unece:TransportServiceRequirementCodeList#32",
-		"unece:TransportServiceRequirementCodeList#33",
-		"unece:TransportServiceRequirementCodeList#34",
-		"unece:TransportServiceRequirementCodeList#35",
-		"unece:TransportServiceRequirementCodeList#36",
-		"unece:TransportServiceRequirementCodeList#37",
-		"unece:TransportServiceRequirementCodeList#38",
-		"unece:TransportServiceRequirementCodeList#39",
-		"unece:TransportServiceRequirementCodeList#4",
-		"unece:TransportServiceRequirementCodeList#40",
-		"unece:TransportServiceRequirementCodeList#41",
-		"unece:TransportServiceRequirementCodeList#42",
-		"unece:TransportServiceRequirementCodeList#43",
-		"unece:TransportServiceRequirementCodeList#44",
-		"unece:TransportServiceRequirementCodeList#45",
-		"unece:TransportServiceRequirementCodeList#46",
-		"unece:TransportServiceRequirementCodeList#47",
-		"unece:TransportServiceRequirementCodeList#48",
-		"unece:TransportServiceRequirementCodeList#49",
-		"unece:TransportServiceRequirementCodeList#5",
-		"unece:TransportServiceRequirementCodeList#50",
-		"unece:TransportServiceRequirementCodeList#51",
-		"unece:TransportServiceRequirementCodeList#52",
-		"unece:TransportServiceRequirementCodeList#53",
-		"unece:TransportServiceRequirementCodeList#54",
-		"unece:TransportServiceRequirementCodeList#55",
-		"unece:TransportServiceRequirementCodeList#56",
-		"unece:TransportServiceRequirementCodeList#57",
-		"unece:TransportServiceRequirementCodeList#58",
-		"unece:TransportServiceRequirementCodeList#59",
-		"unece:TransportServiceRequirementCodeList#6",
-		"unece:TransportServiceRequirementCodeList#60",
-		"unece:TransportServiceRequirementCodeList#61",
-		"unece:TransportServiceRequirementCodeList#62",
-		"unece:TransportServiceRequirementCodeList#63",
-		"unece:TransportServiceRequirementCodeList#64",
-		"unece:TransportServiceRequirementCodeList#65",
-		"unece:TransportServiceRequirementCodeList#66",
-		"unece:TransportServiceRequirementCodeList#7",
-		"unece:TransportServiceRequirementCodeList#8",
-		"unece:TransportServiceRequirementCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:TransportServiceRequirementCodeList#1",
+			"description": "Carrier loads: 1."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#10",
+			"description": "Partial shipment not allowed: 10."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#11",
+			"description": "Partial shipment and/or drawing allowed: 11."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#12",
+			"description": "Partial shipment and/or drawing not allowed: 12."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#13",
+			"description": "Carrier unloads: 13."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#14",
+			"description": "Shipper unloads: 14."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#15",
+			"description": "Consignee unloads: 15."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#16",
+			"description": "Consignee loads: 16."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#17",
+			"description": "Exclusive usage of equipment: 17."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#18",
+			"description": "Non exclusive usage of equipment: 18."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#19",
+			"description": "Direct delivery: 19."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#2",
+			"description": "Full loads: 2."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#20",
+			"description": "Direct pick-up: 20."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#21",
+			"description": "Request for delivery advice services: 21."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#22",
+			"description": "Do not arrange customs clearance: 22."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#23",
+			"description": "Arrange customs clearance: 23."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#24",
+			"description": "Check container condition: 24."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#25",
+			"description": "Damaged containers allowed: 25."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#26",
+			"description": "Dirty containers allowed: 26."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#27",
+			"description": "Fork lift holes not required: 27."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#28",
+			"description": "Fork lift holes required: 28."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#29",
+			"description": "Insure goods during transport: 29."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#3",
+			"description": "Less than full loads: 3."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#30",
+			"description": "Arrange main-carriage: 30."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#31",
+			"description": "Arrange on-carriage: 31."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#32",
+			"description": "Arrange pre-carriage: 32."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#33",
+			"description": "Report container safety convention information: 33."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#34",
+			"description": "Check seals: 34."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#35",
+			"description": "Container must be clean: 35."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#36",
+			"description": "Request for proof of delivery: 36."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#37",
+			"description": "Request for Customs procedure: 37."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#38",
+			"description": "Request for administration services: 38."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#39",
+			"description": "Transport insulated under Intercontainer INTERFRIGO conditions: 39."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#4",
+			"description": "Shipper loads: 4."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#40",
+			"description": "Transport mechanically refrigerated under Intercontainer INTERFRIGO conditions: 40."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#41",
+			"description": "Cool or freeze service, not under Intercontainer INTERFRIGO conditions: 41."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#42",
+			"description": "Transhipment overseas: 42."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#43",
+			"description": "Station delivery: 43."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#44",
+			"description": "Non station delivery: 44."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#45",
+			"description": "Cleaning or disinfecting: 45."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#46",
+			"description": "Close ventilation valve: 46."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#47",
+			"description": "Consignment held for pick-up: 47."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#48",
+			"description": "Refrigeration unit check: 48."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#49",
+			"description": "Customs clearance at arrival country by carrier: 49."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#5",
+			"description": "To be delivered: 5."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#50",
+			"description": "Customs clearance at departure country by carrier: 50."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#51",
+			"description": "Heating for live animals: 51."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#52",
+			"description": "Goods humidification: 52."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#53",
+			"description": "Ensure load is secure: 53."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#54",
+			"description": "Open ventilation valve: 54."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#55",
+			"description": "Phytosanitary control: 55."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#56",
+			"description": "Tare check by carrier: 56."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#57",
+			"description": "Temperature check: 57."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#58",
+			"description": "Weighing of goods: 58."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#59",
+			"description": "Escort: 59."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#6",
+			"description": "To be kept: 6."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#60",
+			"description": "No escort: 60."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#61",
+			"description": "Request for berthing services: 61."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#62",
+			"description": "Request for planned berth consideration: 62."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#63",
+			"description": "Request for inbound passing services through port area: 63."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#64",
+			"description": "Request for outbound passing services through port area: 64."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#65",
+			"description": "Neutral delivery: 65."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#66",
+			"description": "Early delivery: 66."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#7",
+			"description": "Transhipment allowed: 7."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#8",
+			"description": "Transhipment not allowed: 8."
+		},
+		{
+			"const": "unece:TransportServiceRequirementCodeList#9",
+			"description": "Partial shipment allowed: 9."
+		}
 	]
 }

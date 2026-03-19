@@ -1,409 +1,1612 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSubjectCodeList",
+	"title": "UneceSubjectCodeList",
 	"description": "A character string used to represent a subject code.",
-	"type": "string",
-	"enum": [
-		"unece:SubjectCodeList#AAA",
-		"unece:SubjectCodeList#AAB",
-		"unece:SubjectCodeList#AAC",
-		"unece:SubjectCodeList#AAD",
-		"unece:SubjectCodeList#AAE",
-		"unece:SubjectCodeList#AAF",
-		"unece:SubjectCodeList#AAG",
-		"unece:SubjectCodeList#AAI",
-		"unece:SubjectCodeList#AAJ",
-		"unece:SubjectCodeList#AAK",
-		"unece:SubjectCodeList#AAL",
-		"unece:SubjectCodeList#AAM",
-		"unece:SubjectCodeList#AAN",
-		"unece:SubjectCodeList#AAO",
-		"unece:SubjectCodeList#AAP",
-		"unece:SubjectCodeList#AAQ",
-		"unece:SubjectCodeList#AAR",
-		"unece:SubjectCodeList#AAS",
-		"unece:SubjectCodeList#AAT",
-		"unece:SubjectCodeList#AAU",
-		"unece:SubjectCodeList#AAV",
-		"unece:SubjectCodeList#AAW",
-		"unece:SubjectCodeList#AAX",
-		"unece:SubjectCodeList#AAY",
-		"unece:SubjectCodeList#AAZ",
-		"unece:SubjectCodeList#ABA",
-		"unece:SubjectCodeList#ABB",
-		"unece:SubjectCodeList#ABC",
-		"unece:SubjectCodeList#ABD",
-		"unece:SubjectCodeList#ABE",
-		"unece:SubjectCodeList#ABF",
-		"unece:SubjectCodeList#ABG",
-		"unece:SubjectCodeList#ABH",
-		"unece:SubjectCodeList#ABI",
-		"unece:SubjectCodeList#ABJ",
-		"unece:SubjectCodeList#ABK",
-		"unece:SubjectCodeList#ABL",
-		"unece:SubjectCodeList#ABM",
-		"unece:SubjectCodeList#ABN",
-		"unece:SubjectCodeList#ABO",
-		"unece:SubjectCodeList#ABP",
-		"unece:SubjectCodeList#ABQ",
-		"unece:SubjectCodeList#ABR",
-		"unece:SubjectCodeList#ABS",
-		"unece:SubjectCodeList#ABT",
-		"unece:SubjectCodeList#ABU",
-		"unece:SubjectCodeList#ABV",
-		"unece:SubjectCodeList#ABW",
-		"unece:SubjectCodeList#ABX",
-		"unece:SubjectCodeList#ABZ",
-		"unece:SubjectCodeList#ACA",
-		"unece:SubjectCodeList#ACB",
-		"unece:SubjectCodeList#ACC",
-		"unece:SubjectCodeList#ACD",
-		"unece:SubjectCodeList#ACE",
-		"unece:SubjectCodeList#ACF",
-		"unece:SubjectCodeList#ACG",
-		"unece:SubjectCodeList#ACH",
-		"unece:SubjectCodeList#ACI",
-		"unece:SubjectCodeList#ACJ",
-		"unece:SubjectCodeList#ACK",
-		"unece:SubjectCodeList#ACL",
-		"unece:SubjectCodeList#ACM",
-		"unece:SubjectCodeList#ACN",
-		"unece:SubjectCodeList#ACO",
-		"unece:SubjectCodeList#ACP",
-		"unece:SubjectCodeList#ACQ",
-		"unece:SubjectCodeList#ACR",
-		"unece:SubjectCodeList#ACS",
-		"unece:SubjectCodeList#ACT",
-		"unece:SubjectCodeList#ACU",
-		"unece:SubjectCodeList#ACV",
-		"unece:SubjectCodeList#ACW",
-		"unece:SubjectCodeList#ACX",
-		"unece:SubjectCodeList#ACY",
-		"unece:SubjectCodeList#ACZ",
-		"unece:SubjectCodeList#ADA",
-		"unece:SubjectCodeList#ADB",
-		"unece:SubjectCodeList#ADC",
-		"unece:SubjectCodeList#ADD",
-		"unece:SubjectCodeList#ADE",
-		"unece:SubjectCodeList#ADF",
-		"unece:SubjectCodeList#ADG",
-		"unece:SubjectCodeList#ADH",
-		"unece:SubjectCodeList#ADI",
-		"unece:SubjectCodeList#ADJ",
-		"unece:SubjectCodeList#ADK",
-		"unece:SubjectCodeList#ADL",
-		"unece:SubjectCodeList#ADM",
-		"unece:SubjectCodeList#ADN",
-		"unece:SubjectCodeList#ADO",
-		"unece:SubjectCodeList#ADP",
-		"unece:SubjectCodeList#ADQ",
-		"unece:SubjectCodeList#ADR",
-		"unece:SubjectCodeList#ADS",
-		"unece:SubjectCodeList#ADT",
-		"unece:SubjectCodeList#ADU",
-		"unece:SubjectCodeList#ADV",
-		"unece:SubjectCodeList#ADW",
-		"unece:SubjectCodeList#ADX",
-		"unece:SubjectCodeList#ADY",
-		"unece:SubjectCodeList#ADZ",
-		"unece:SubjectCodeList#AEA",
-		"unece:SubjectCodeList#AEB",
-		"unece:SubjectCodeList#AEC",
-		"unece:SubjectCodeList#AED",
-		"unece:SubjectCodeList#AEE",
-		"unece:SubjectCodeList#AEF",
-		"unece:SubjectCodeList#AEG",
-		"unece:SubjectCodeList#AEH",
-		"unece:SubjectCodeList#AEI",
-		"unece:SubjectCodeList#AEJ",
-		"unece:SubjectCodeList#AEK",
-		"unece:SubjectCodeList#AEL",
-		"unece:SubjectCodeList#AEM",
-		"unece:SubjectCodeList#AEN",
-		"unece:SubjectCodeList#AEO",
-		"unece:SubjectCodeList#AEP",
-		"unece:SubjectCodeList#AEQ",
-		"unece:SubjectCodeList#AER",
-		"unece:SubjectCodeList#AES",
-		"unece:SubjectCodeList#AET",
-		"unece:SubjectCodeList#AEU",
-		"unece:SubjectCodeList#AEV",
-		"unece:SubjectCodeList#AEW",
-		"unece:SubjectCodeList#AEX",
-		"unece:SubjectCodeList#AEY",
-		"unece:SubjectCodeList#AEZ",
-		"unece:SubjectCodeList#AFA",
-		"unece:SubjectCodeList#AFB",
-		"unece:SubjectCodeList#AFC",
-		"unece:SubjectCodeList#AFD",
-		"unece:SubjectCodeList#AFE",
-		"unece:SubjectCodeList#AFF",
-		"unece:SubjectCodeList#AFG",
-		"unece:SubjectCodeList#AFH",
-		"unece:SubjectCodeList#AFI",
-		"unece:SubjectCodeList#AFJ",
-		"unece:SubjectCodeList#AFK",
-		"unece:SubjectCodeList#AFL",
-		"unece:SubjectCodeList#AFM",
-		"unece:SubjectCodeList#AFN",
-		"unece:SubjectCodeList#AFO",
-		"unece:SubjectCodeList#AFP",
-		"unece:SubjectCodeList#AFQ",
-		"unece:SubjectCodeList#AFR",
-		"unece:SubjectCodeList#AFS",
-		"unece:SubjectCodeList#AFT",
-		"unece:SubjectCodeList#AFU",
-		"unece:SubjectCodeList#AFV",
-		"unece:SubjectCodeList#AFW",
-		"unece:SubjectCodeList#AFX",
-		"unece:SubjectCodeList#AFY",
-		"unece:SubjectCodeList#AFZ",
-		"unece:SubjectCodeList#AGA",
-		"unece:SubjectCodeList#AGB",
-		"unece:SubjectCodeList#AGC",
-		"unece:SubjectCodeList#AGD",
-		"unece:SubjectCodeList#AGE",
-		"unece:SubjectCodeList#AGF",
-		"unece:SubjectCodeList#AGG",
-		"unece:SubjectCodeList#AGH",
-		"unece:SubjectCodeList#AGI",
-		"unece:SubjectCodeList#AGJ",
-		"unece:SubjectCodeList#AGK",
-		"unece:SubjectCodeList#AGL",
-		"unece:SubjectCodeList#AGM",
-		"unece:SubjectCodeList#AGN",
-		"unece:SubjectCodeList#AGO",
-		"unece:SubjectCodeList#AGP",
-		"unece:SubjectCodeList#AGQ",
-		"unece:SubjectCodeList#AGR",
-		"unece:SubjectCodeList#AGS",
-		"unece:SubjectCodeList#AGT",
-		"unece:SubjectCodeList#AGU",
-		"unece:SubjectCodeList#AGV",
-		"unece:SubjectCodeList#AGW",
-		"unece:SubjectCodeList#AGX",
-		"unece:SubjectCodeList#AGY",
-		"unece:SubjectCodeList#AGZ",
-		"unece:SubjectCodeList#AHA",
-		"unece:SubjectCodeList#AHB",
-		"unece:SubjectCodeList#AHC",
-		"unece:SubjectCodeList#AHD",
-		"unece:SubjectCodeList#AHE",
-		"unece:SubjectCodeList#AHF",
-		"unece:SubjectCodeList#AHG",
-		"unece:SubjectCodeList#AHH",
-		"unece:SubjectCodeList#AHI",
-		"unece:SubjectCodeList#AHJ",
-		"unece:SubjectCodeList#AHK",
-		"unece:SubjectCodeList#AHL",
-		"unece:SubjectCodeList#AHM",
-		"unece:SubjectCodeList#AHN",
-		"unece:SubjectCodeList#AHO",
-		"unece:SubjectCodeList#AHP",
-		"unece:SubjectCodeList#AHQ",
-		"unece:SubjectCodeList#AHR",
-		"unece:SubjectCodeList#AHS",
-		"unece:SubjectCodeList#AHT",
-		"unece:SubjectCodeList#AHU",
-		"unece:SubjectCodeList#AHV",
-		"unece:SubjectCodeList#AHW",
-		"unece:SubjectCodeList#AHX",
-		"unece:SubjectCodeList#AHY",
-		"unece:SubjectCodeList#AHZ",
-		"unece:SubjectCodeList#AIA",
-		"unece:SubjectCodeList#AIB",
-		"unece:SubjectCodeList#AIC",
-		"unece:SubjectCodeList#AID",
-		"unece:SubjectCodeList#AIE",
-		"unece:SubjectCodeList#AIF",
-		"unece:SubjectCodeList#AIG",
-		"unece:SubjectCodeList#AIH",
-		"unece:SubjectCodeList#AII",
-		"unece:SubjectCodeList#AIJ",
-		"unece:SubjectCodeList#AIK",
-		"unece:SubjectCodeList#AIL",
-		"unece:SubjectCodeList#AIM",
-		"unece:SubjectCodeList#AIN",
-		"unece:SubjectCodeList#AIO",
-		"unece:SubjectCodeList#AIP",
-		"unece:SubjectCodeList#AIQ",
-		"unece:SubjectCodeList#AIR",
-		"unece:SubjectCodeList#AIS",
-		"unece:SubjectCodeList#AIT",
-		"unece:SubjectCodeList#AIU",
-		"unece:SubjectCodeList#AIV",
-		"unece:SubjectCodeList#AIW",
-		"unece:SubjectCodeList#AIX",
-		"unece:SubjectCodeList#AIY",
-		"unece:SubjectCodeList#AIZ",
-		"unece:SubjectCodeList#AJA",
-		"unece:SubjectCodeList#AJB",
-		"unece:SubjectCodeList#ALC",
-		"unece:SubjectCodeList#ALD",
-		"unece:SubjectCodeList#ALE",
-		"unece:SubjectCodeList#ALF",
-		"unece:SubjectCodeList#ALG",
-		"unece:SubjectCodeList#ALH",
-		"unece:SubjectCodeList#ALI",
-		"unece:SubjectCodeList#ALJ",
-		"unece:SubjectCodeList#ALK",
-		"unece:SubjectCodeList#ALL",
-		"unece:SubjectCodeList#ALM",
-		"unece:SubjectCodeList#ALN",
-		"unece:SubjectCodeList#ALO",
-		"unece:SubjectCodeList#ALP",
-		"unece:SubjectCodeList#ALQ",
-		"unece:SubjectCodeList#ARR",
-		"unece:SubjectCodeList#ARS",
-		"unece:SubjectCodeList#AUT",
-		"unece:SubjectCodeList#AUU",
-		"unece:SubjectCodeList#AUV",
-		"unece:SubjectCodeList#AUW",
-		"unece:SubjectCodeList#AUX",
-		"unece:SubjectCodeList#AUY",
-		"unece:SubjectCodeList#AUZ",
-		"unece:SubjectCodeList#AVA",
-		"unece:SubjectCodeList#AVB",
-		"unece:SubjectCodeList#AVC",
-		"unece:SubjectCodeList#AVD",
-		"unece:SubjectCodeList#AVE",
-		"unece:SubjectCodeList#AVF",
-		"unece:SubjectCodeList#BAG",
-		"unece:SubjectCodeList#BAH",
-		"unece:SubjectCodeList#BAI",
-		"unece:SubjectCodeList#BAJ",
-		"unece:SubjectCodeList#BAK",
-		"unece:SubjectCodeList#BAL",
-		"unece:SubjectCodeList#BAM",
-		"unece:SubjectCodeList#BAN",
-		"unece:SubjectCodeList#BAO",
-		"unece:SubjectCodeList#BAP",
-		"unece:SubjectCodeList#BAQ",
-		"unece:SubjectCodeList#BAR",
-		"unece:SubjectCodeList#BAS",
-		"unece:SubjectCodeList#BAT",
-		"unece:SubjectCodeList#BAU",
-		"unece:SubjectCodeList#BAV",
-		"unece:SubjectCodeList#BAW",
-		"unece:SubjectCodeList#BAX",
-		"unece:SubjectCodeList#BAY",
-		"unece:SubjectCodeList#BAZ",
-		"unece:SubjectCodeList#BBA",
-		"unece:SubjectCodeList#BBB",
-		"unece:SubjectCodeList#BLC",
-		"unece:SubjectCodeList#BLD",
-		"unece:SubjectCodeList#BLE",
-		"unece:SubjectCodeList#BLF",
-		"unece:SubjectCodeList#BLG",
-		"unece:SubjectCodeList#BLH",
-		"unece:SubjectCodeList#BLI",
-		"unece:SubjectCodeList#BLJ",
-		"unece:SubjectCodeList#BLK",
-		"unece:SubjectCodeList#BLL",
-		"unece:SubjectCodeList#BLM",
-		"unece:SubjectCodeList#BLN",
-		"unece:SubjectCodeList#BLO",
-		"unece:SubjectCodeList#BLP",
-		"unece:SubjectCodeList#BLQ",
-		"unece:SubjectCodeList#BLR",
-		"unece:SubjectCodeList#BLS",
-		"unece:SubjectCodeList#BLT",
-		"unece:SubjectCodeList#BLU",
-		"unece:SubjectCodeList#BLV",
-		"unece:SubjectCodeList#BLW",
-		"unece:SubjectCodeList#BLX",
-		"unece:SubjectCodeList#BLY",
-		"unece:SubjectCodeList#BLZ",
-		"unece:SubjectCodeList#BMA",
-		"unece:SubjectCodeList#BMB",
-		"unece:SubjectCodeList#BMC",
-		"unece:SubjectCodeList#BMD",
-		"unece:SubjectCodeList#BME",
-		"unece:SubjectCodeList#BMF",
-		"unece:SubjectCodeList#BMG",
-		"unece:SubjectCodeList#BMH",
-		"unece:SubjectCodeList#CCI",
-		"unece:SubjectCodeList#CCJ",
-		"unece:SubjectCodeList#CCK",
-		"unece:SubjectCodeList#CCL",
-		"unece:SubjectCodeList#CCM",
-		"unece:SubjectCodeList#CCN",
-		"unece:SubjectCodeList#CCO",
-		"unece:SubjectCodeList#CEX",
-		"unece:SubjectCodeList#CHG",
-		"unece:SubjectCodeList#CIP",
-		"unece:SubjectCodeList#CLP",
-		"unece:SubjectCodeList#CLR",
-		"unece:SubjectCodeList#COI",
-		"unece:SubjectCodeList#CUR",
-		"unece:SubjectCodeList#CUS",
-		"unece:SubjectCodeList#DAR",
-		"unece:SubjectCodeList#DCL",
-		"unece:SubjectCodeList#DEL",
-		"unece:SubjectCodeList#DIN",
-		"unece:SubjectCodeList#DOC",
-		"unece:SubjectCodeList#DUT",
-		"unece:SubjectCodeList#EUR",
-		"unece:SubjectCodeList#FBC",
-		"unece:SubjectCodeList#GBL",
-		"unece:SubjectCodeList#GEN",
-		"unece:SubjectCodeList#GS7",
-		"unece:SubjectCodeList#HAN",
-		"unece:SubjectCodeList#HAZ",
-		"unece:SubjectCodeList#ICN",
-		"unece:SubjectCodeList#IIN",
-		"unece:SubjectCodeList#IMI",
-		"unece:SubjectCodeList#IND",
-		"unece:SubjectCodeList#INS",
-		"unece:SubjectCodeList#INV",
-		"unece:SubjectCodeList#IRP",
-		"unece:SubjectCodeList#ITR",
-		"unece:SubjectCodeList#ITS",
-		"unece:SubjectCodeList#LAN",
-		"unece:SubjectCodeList#LIN",
-		"unece:SubjectCodeList#LOI",
-		"unece:SubjectCodeList#MCO",
-		"unece:SubjectCodeList#MDH",
-		"unece:SubjectCodeList#MKS",
-		"unece:SubjectCodeList#ORI",
-		"unece:SubjectCodeList#OSI",
-		"unece:SubjectCodeList#PAC",
-		"unece:SubjectCodeList#PAI",
-		"unece:SubjectCodeList#PAY",
-		"unece:SubjectCodeList#PKG",
-		"unece:SubjectCodeList#PKT",
-		"unece:SubjectCodeList#PMD",
-		"unece:SubjectCodeList#PMT",
-		"unece:SubjectCodeList#PRD",
-		"unece:SubjectCodeList#PRF",
-		"unece:SubjectCodeList#PRI",
-		"unece:SubjectCodeList#PUR",
-		"unece:SubjectCodeList#QIN",
-		"unece:SubjectCodeList#QQD",
-		"unece:SubjectCodeList#QUT",
-		"unece:SubjectCodeList#RAH",
-		"unece:SubjectCodeList#REG",
-		"unece:SubjectCodeList#RET",
-		"unece:SubjectCodeList#REV",
-		"unece:SubjectCodeList#RQR",
-		"unece:SubjectCodeList#SAF",
-		"unece:SubjectCodeList#SIC",
-		"unece:SubjectCodeList#SIN",
-		"unece:SubjectCodeList#SLR",
-		"unece:SubjectCodeList#SPA",
-		"unece:SubjectCodeList#SPG",
-		"unece:SubjectCodeList#SPH",
-		"unece:SubjectCodeList#SPP",
-		"unece:SubjectCodeList#SPT",
-		"unece:SubjectCodeList#SRN",
-		"unece:SubjectCodeList#SSR",
-		"unece:SubjectCodeList#SUR",
-		"unece:SubjectCodeList#TCA",
-		"unece:SubjectCodeList#TDT",
-		"unece:SubjectCodeList#TRA",
-		"unece:SubjectCodeList#TRR",
-		"unece:SubjectCodeList#TXD",
-		"unece:SubjectCodeList#WHI",
-		"unece:SubjectCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:SubjectCodeList#AAA",
+			"description": "Goods item description: AAA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAB",
+			"description": "Payment term: AAB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAC",
+			"description": "Dangerous goods additional information: AAC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAD",
+			"description": "Dangerous goods technical name: AAD."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAE",
+			"description": "Acknowledgement description: AAE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAF",
+			"description": "Rate additional information: AAF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAG",
+			"description": "Party instructions: AAG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAI",
+			"description": "General information: AAI."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAJ",
+			"description": "Additional conditions of sale/purchase: AAJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAK",
+			"description": "Price conditions: AAK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAL",
+			"description": "Goods dimensions in characters: AAL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAM",
+			"description": "Equipment re-usage restrictions: AAM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAN",
+			"description": "Handling restriction: AAN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAO",
+			"description": "Error description (free text): AAO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAP",
+			"description": "Response (free text): AAP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAQ",
+			"description": "Package content's description: AAQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAR",
+			"description": "Terms of delivery: AAR."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAS",
+			"description": "Bill of lading remarks: AAS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAT",
+			"description": "Mode of settlement information: AAT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAU",
+			"description": "Consignment invoice information: AAU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAV",
+			"description": "Clearance invoice information: AAV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAW",
+			"description": "Letter of credit information: AAW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAX",
+			"description": "License information: AAX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAY",
+			"description": "Certification statements: AAY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AAZ",
+			"description": "Additional export information: AAZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABA",
+			"description": "Tariff statements: ABA."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABB",
+			"description": "Medical history: ABB."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABC",
+			"description": "Conditions of sale or purchase: ABC."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABD",
+			"description": "Contract document type: ABD."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABE",
+			"description": "Additional terms and/or conditions (documentary credit): ABE."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABF",
+			"description": "Instructions or information about standby documentary credit: ABF."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABG",
+			"description": "Instructions or information about partial shipment(s): ABG."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABH",
+			"description": "Instructions or information about transhipment(s): ABH."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABI",
+			"description": "Additional handling instructions documentary credit: ABI."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABJ",
+			"description": "Domestic routing information: ABJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABK",
+			"description": "Chargeable category of equipment: ABK."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABL",
+			"description": "Government information: ABL."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABM",
+			"description": "Onward routing information: ABM."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABN",
+			"description": "Accounting information: ABN."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABO",
+			"description": "Discrepancy information: ABO."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABP",
+			"description": "Confirmation instructions: ABP."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABQ",
+			"description": "Method of issuance: ABQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABR",
+			"description": "Documents delivery instructions: ABR."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABS",
+			"description": "Additional conditions: ABS."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABT",
+			"description": "Information/instructions about additional amounts covered: ABT."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABU",
+			"description": "Deferred payment termed additional: ABU."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABV",
+			"description": "Acceptance terms additional: ABV."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABW",
+			"description": "Negotiation terms additional: ABW."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABX",
+			"description": "Document name and documentary requirements: ABX."
+		},
+		{
+			"const": "unece:SubjectCodeList#ABZ",
+			"description": "Instructions/information about revolving documentary credit: ABZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACA",
+			"description": "Documentary requirements: ACA."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACB",
+			"description": "Additional information: ACB."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACC",
+			"description": "Factor assignment clause: ACC."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACD",
+			"description": "Reason: ACD."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACE",
+			"description": "Dispute: ACE."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACF",
+			"description": "Additional attribute information: ACF."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACG",
+			"description": "Absence declaration: ACG."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACH",
+			"description": "Aggregation statement: ACH."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACI",
+			"description": "Compilation statement: ACI."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACJ",
+			"description": "Definitional exception: ACJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACK",
+			"description": "Privacy statement: ACK."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACL",
+			"description": "Quality statement: ACL."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACM",
+			"description": "Statistical description: ACM."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACN",
+			"description": "Statistical definition: ACN."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACO",
+			"description": "Statistical name: ACO."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACP",
+			"description": "Statistical title: ACP."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACQ",
+			"description": "Off-dimension information: ACQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACR",
+			"description": "Unexpected stops information: ACR."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACS",
+			"description": "Principles: ACS."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACT",
+			"description": "Terms and definition: ACT."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACU",
+			"description": "Segment name: ACU."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACV",
+			"description": "Simple data element name: ACV."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACW",
+			"description": "Scope: ACW."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACX",
+			"description": "Message type name: ACX."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACY",
+			"description": "Introduction: ACY."
+		},
+		{
+			"const": "unece:SubjectCodeList#ACZ",
+			"description": "Glossary: ACZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADA",
+			"description": "Functional definition: ADA."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADB",
+			"description": "Examples: ADB."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADC",
+			"description": "Cover page: ADC."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADD",
+			"description": "Dependency (syntax) notes: ADD."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADE",
+			"description": "Code value name: ADE."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADF",
+			"description": "Code list name: ADF."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADG",
+			"description": "Clarification of usage: ADG."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADH",
+			"description": "Composite data element name: ADH."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADI",
+			"description": "Field of application: ADI."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADJ",
+			"description": "Type of assets and liabilities: ADJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADK",
+			"description": "Promotion information: ADK."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADL",
+			"description": "Meter condition: ADL."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADM",
+			"description": "Meter reading information: ADM."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADN",
+			"description": "Type of transaction reason: ADN."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADO",
+			"description": "Type of survey question: ADO."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADP",
+			"description": "Carrier's agent counter information: ADP."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADQ",
+			"description": "Description of work item on equipment: ADQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADR",
+			"description": "Message definition: ADR."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADS",
+			"description": "Booked item information: ADS."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADT",
+			"description": "Source of document: ADT."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADU",
+			"description": "Note: ADU."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADV",
+			"description": "Fixed part of segment clarification text: ADV."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADW",
+			"description": "Characteristics of goods: ADW."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADX",
+			"description": "Additional discharge instructions: ADX."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADY",
+			"description": "Container stripping instructions: ADY."
+		},
+		{
+			"const": "unece:SubjectCodeList#ADZ",
+			"description": "CSC (Container Safety Convention) plate information: ADZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEA",
+			"description": "Cargo remarks: AEA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEB",
+			"description": "Temperature control instructions: AEB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEC",
+			"description": "Text refers to expected data: AEC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AED",
+			"description": "Text refers to received data: AED."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEE",
+			"description": "Section clarification text: AEE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEF",
+			"description": "Information to the beneficiary: AEF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEG",
+			"description": "Information to the applicant: AEG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEH",
+			"description": "Instructions to the beneficiary: AEH."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEI",
+			"description": "Instructions to the applicant: AEI."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEJ",
+			"description": "Controlled atmosphere: AEJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEK",
+			"description": "Take off annotation: AEK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEL",
+			"description": "Price variation narrative: AEL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEM",
+			"description": "Documentary credit amendment instructions: AEM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEN",
+			"description": "Standard method narrative: AEN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEO",
+			"description": "Project narrative: AEO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEP",
+			"description": "Radioactive goods, additional information: AEP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEQ",
+			"description": "Bank-to-bank information: AEQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AER",
+			"description": "Reimbursement instructions: AER."
+		},
+		{
+			"const": "unece:SubjectCodeList#AES",
+			"description": "Reason for amending a message: AES."
+		},
+		{
+			"const": "unece:SubjectCodeList#AET",
+			"description": "Instructions to the paying and/or accepting and/or negotiating bank: AET."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEU",
+			"description": "Interest instructions: AEU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEV",
+			"description": "Agent commission: AEV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEW",
+			"description": "Remitting bank instructions: AEW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEX",
+			"description": "Instructions to the collecting bank: AEX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEY",
+			"description": "Collection amount instructions: AEY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AEZ",
+			"description": "Internal auditing information: AEZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFA",
+			"description": "Constraint: AFA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFB",
+			"description": "Comment: AFB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFC",
+			"description": "Semantic note: AFC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFD",
+			"description": "Help text: AFD."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFE",
+			"description": "Legend: AFE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFF",
+			"description": "Batch code structure: AFF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFG",
+			"description": "Product application: AFG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFH",
+			"description": "Customer complaint: AFH."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFI",
+			"description": "Probable cause of fault: AFI."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFJ",
+			"description": "Defect description: AFJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFK",
+			"description": "Repair description: AFK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFL",
+			"description": "Review comments: AFL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFM",
+			"description": "Title: AFM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFN",
+			"description": "Description of amount: AFN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFO",
+			"description": "Responsibilities: AFO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFP",
+			"description": "Supplier: AFP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFQ",
+			"description": "Purchase region: AFQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFR",
+			"description": "Affiliation: AFR."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFS",
+			"description": "Borrower: AFS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFT",
+			"description": "Line of business: AFT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFU",
+			"description": "Financial institution: AFU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFV",
+			"description": "Business founder: AFV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFW",
+			"description": "Business history: AFW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFX",
+			"description": "Banking arrangements: AFX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFY",
+			"description": "Business origin: AFY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AFZ",
+			"description": "Brand names' description: AFZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGA",
+			"description": "Business financing details: AGA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGB",
+			"description": "Competition: AGB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGC",
+			"description": "Construction process details: AGC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGD",
+			"description": "Construction specialty: AGD."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGE",
+			"description": "Contract information: AGE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGF",
+			"description": "Corporate filing: AGF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGG",
+			"description": "Customer information: AGG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGH",
+			"description": "Copyright notice: AGH."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGI",
+			"description": "Contingent debt: AGI."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGJ",
+			"description": "Conviction details: AGJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGK",
+			"description": "Equipment: AGK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGL",
+			"description": "Workforce description: AGL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGM",
+			"description": "Exemption: AGM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGN",
+			"description": "Future plans: AGN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGO",
+			"description": "Interviewee conversation information: AGO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGP",
+			"description": "Intangible asset: AGP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGQ",
+			"description": "Inventory: AGQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGR",
+			"description": "Investment: AGR."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGS",
+			"description": "Intercompany relations information: AGS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGT",
+			"description": "Joint venture: AGT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGU",
+			"description": "Loan: AGU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGV",
+			"description": "Long term debt: AGV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGW",
+			"description": "Location: AGW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGX",
+			"description": "Current legal structure: AGX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGY",
+			"description": "Marital contract: AGY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AGZ",
+			"description": "Marketing activities: AGZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHA",
+			"description": "Merger: AHA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHB",
+			"description": "Marketable securities: AHB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHC",
+			"description": "Business debt: AHC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHD",
+			"description": "Original legal structure: AHD."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHE",
+			"description": "Employee sharing arrangements: AHE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHF",
+			"description": "Organization details: AHF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHG",
+			"description": "Public record details: AHG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHH",
+			"description": "Price range: AHH."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHI",
+			"description": "Qualifications: AHI."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHJ",
+			"description": "Registered activity: AHJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHK",
+			"description": "Criminal sentence: AHK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHL",
+			"description": "Sales method: AHL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHM",
+			"description": "Educational institution information: AHM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHN",
+			"description": "Status details: AHN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHO",
+			"description": "Sales: AHO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHP",
+			"description": "Spouse information: AHP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHQ",
+			"description": "Educational degree information: AHQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHR",
+			"description": "Shareholding information: AHR."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHS",
+			"description": "Sales territory: AHS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHT",
+			"description": "Accountant's comments: AHT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHU",
+			"description": "Exemption law location: AHU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHV",
+			"description": "Share classifications: AHV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHW",
+			"description": "Forecast: AHW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHX",
+			"description": "Event location: AHX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHY",
+			"description": "Facility occupancy: AHY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AHZ",
+			"description": "Import and export details: AHZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIA",
+			"description": "Additional facility information: AIA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIB",
+			"description": "Inventory value: AIB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIC",
+			"description": "Education: AIC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AID",
+			"description": "Event: AID."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIE",
+			"description": "Agent: AIE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIF",
+			"description": "Domestically agreed financial statement details: AIF."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIG",
+			"description": "Other current asset description: AIG."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIH",
+			"description": "Other current liability description: AIH."
+		},
+		{
+			"const": "unece:SubjectCodeList#AII",
+			"description": "Former business activity: AII."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIJ",
+			"description": "Trade name use: AIJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIK",
+			"description": "Signing authority: AIK."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIL",
+			"description": "Guarantee: AIL."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIM",
+			"description": "Holding company operation: AIM."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIN",
+			"description": "Consignment routing: AIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIO",
+			"description": "Letter of protest: AIO."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIP",
+			"description": "Question: AIP."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIQ",
+			"description": "Party information: AIQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIR",
+			"description": "Area boundaries description: AIR."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIS",
+			"description": "Advertisement information: AIS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIT",
+			"description": "Financial statement details: AIT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIU",
+			"description": "Access instructions: AIU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIV",
+			"description": "Liquidity: AIV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIW",
+			"description": "Credit line: AIW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIX",
+			"description": "Warranty terms: AIX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIY",
+			"description": "Division description: AIY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AIZ",
+			"description": "Reporting instruction: AIZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AJA",
+			"description": "Examination result: AJA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AJB",
+			"description": "Laboratory result: AJB."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALC",
+			"description": "Allowance/charge information: ALC."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALD",
+			"description": "X-ray result: ALD."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALE",
+			"description": "Pathology result: ALE."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALF",
+			"description": "Intervention description: ALF."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALG",
+			"description": "Summary of admittance: ALG."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALH",
+			"description": "Medical treatment course detail: ALH."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALI",
+			"description": "Prognosis: ALI."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALJ",
+			"description": "Instruction to patient: ALJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALK",
+			"description": "Instruction to physician: ALK."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALL",
+			"description": "All documents: ALL."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALM",
+			"description": "Medicine treatment: ALM."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALN",
+			"description": "Medicine dosage and administration: ALN."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALO",
+			"description": "Availability of patient: ALO."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALP",
+			"description": "Reason for service request: ALP."
+		},
+		{
+			"const": "unece:SubjectCodeList#ALQ",
+			"description": "Purpose of service: ALQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ARR",
+			"description": "Arrival conditions: ARR."
+		},
+		{
+			"const": "unece:SubjectCodeList#ARS",
+			"description": "Service requester's comment: ARS."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUT",
+			"description": "Authentication: AUT."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUU",
+			"description": "Requested location description: AUU."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUV",
+			"description": "Medicine administration condition: AUV."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUW",
+			"description": "Patient information: AUW."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUX",
+			"description": "Precautionary measure: AUX."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUY",
+			"description": "Service characteristic: AUY."
+		},
+		{
+			"const": "unece:SubjectCodeList#AUZ",
+			"description": "Planned event comment: AUZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVA",
+			"description": "Expected delay comment: AVA."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVB",
+			"description": "Transport requirements comment: AVB."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVC",
+			"description": "Temporary approval condition: AVC."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVD",
+			"description": "Customs Valuation Information: AVD."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVE",
+			"description": "Value Added Tax (VAT) margin scheme: AVE."
+		},
+		{
+			"const": "unece:SubjectCodeList#AVF",
+			"description": "Maritime Declaration of Health: AVF."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAG",
+			"description": "Passenger baggage information: BAG."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAH",
+			"description": "Maritime Declaration of Health: BAH."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAI",
+			"description": "Additional product information address: BAI."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAJ",
+			"description": "Information to be printed on despatch advice: BAJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAK",
+			"description": "Missing goods remarks: BAK."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAL",
+			"description": "Non-acceptance information: BAL."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAM",
+			"description": "Returns information: BAM."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAN",
+			"description": "Sub-line item information: BAN."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAO",
+			"description": "Test information: BAO."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAP",
+			"description": "External link: BAP."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAQ",
+			"description": "VAT exemption reason: BAQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAR",
+			"description": "Processing Instructions: BAR."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAS",
+			"description": "Relay Instructions: BAS."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAT",
+			"description": "SIMA applicable: BAT."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAU",
+			"description": "Appeals program code: BAU."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAV",
+			"description": "SIMA subject: BAV."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAW",
+			"description": "Surtax applicable: BAW."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAX",
+			"description": "SIMA security bond: BAX."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAY",
+			"description": "Surtax subject: BAY."
+		},
+		{
+			"const": "unece:SubjectCodeList#BAZ",
+			"description": "Safeguard applicable: BAZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BBA",
+			"description": "Safeguard applicable: BBA."
+		},
+		{
+			"const": "unece:SubjectCodeList#BBB",
+			"description": "Safeguard subject: BBB."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLC",
+			"description": "Transport contract document clause: BLC."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLD",
+			"description": "Instruction to prepare the patient: BLD."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLE",
+			"description": "Medicine treatment comment: BLE."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLF",
+			"description": "Examination result comment: BLF."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLG",
+			"description": "Service request comment: BLG."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLH",
+			"description": "Prescription reason: BLH."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLI",
+			"description": "Prescription comment: BLI."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLJ",
+			"description": "Clinical investigation comment: BLJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLK",
+			"description": "Medicinal specification comment: BLK."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLL",
+			"description": "Economic contribution comment: BLL."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLM",
+			"description": "Status of a plan: BLM."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLN",
+			"description": "Random sample test information: BLN."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLO",
+			"description": "Period of time: BLO."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLP",
+			"description": "Legislation: BLP."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLQ",
+			"description": "Security measures requested: BLQ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLR",
+			"description": "Transport contract document remark: BLR."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLS",
+			"description": "Previous port of call security information: BLS."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLT",
+			"description": "Security information: BLT."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLU",
+			"description": "Waste information: BLU."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLV",
+			"description": "B2C marketing information, short description: BLV."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLW",
+			"description": "B2B marketing information, long description: BLW."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLX",
+			"description": "B2C marketing information, long description: BLX."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLY",
+			"description": "Product ingredients: BLY."
+		},
+		{
+			"const": "unece:SubjectCodeList#BLZ",
+			"description": "Location short name: BLZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMA",
+			"description": "Packaging material information: BMA."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMB",
+			"description": "Filler material information: BMB."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMC",
+			"description": "Ship-to-ship activity information: BMC."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMD",
+			"description": "Package material description: BMD."
+		},
+		{
+			"const": "unece:SubjectCodeList#BME",
+			"description": "Consumer level package marking: BME."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMF",
+			"description": "SIMA measure in force: BMF."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMG",
+			"description": "Pre-CARM: BMG."
+		},
+		{
+			"const": "unece:SubjectCodeList#BMH",
+			"description": "SIMA measure type: BMH."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCI",
+			"description": "Customs clearance instructions: CCI."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCJ",
+			"description": "Sub Type Code: CCJ."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCK",
+			"description": "SIMA information: CCK."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCL",
+			"description": "Time limit end: CCL."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCM",
+			"description": "Time limit start: CCM."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCN",
+			"description": "Warehouse time limit: CCN."
+		},
+		{
+			"const": "unece:SubjectCodeList#CCO",
+			"description": "Value for duty information: CCO."
+		},
+		{
+			"const": "unece:SubjectCodeList#CEX",
+			"description": "Customs clearance instructions export: CEX."
+		},
+		{
+			"const": "unece:SubjectCodeList#CHG",
+			"description": "Change information: CHG."
+		},
+		{
+			"const": "unece:SubjectCodeList#CIP",
+			"description": "Customs clearance instruction import: CIP."
+		},
+		{
+			"const": "unece:SubjectCodeList#CLP",
+			"description": "Clearance place requested: CLP."
+		},
+		{
+			"const": "unece:SubjectCodeList#CLR",
+			"description": "Loading remarks: CLR."
+		},
+		{
+			"const": "unece:SubjectCodeList#COI",
+			"description": "Order information: COI."
+		},
+		{
+			"const": "unece:SubjectCodeList#CUR",
+			"description": "Customer remarks: CUR."
+		},
+		{
+			"const": "unece:SubjectCodeList#CUS",
+			"description": "Customs declaration information: CUS."
+		},
+		{
+			"const": "unece:SubjectCodeList#DAR",
+			"description": "Damage remarks: DAR."
+		},
+		{
+			"const": "unece:SubjectCodeList#DCL",
+			"description": "Document issuer declaration: DCL."
+		},
+		{
+			"const": "unece:SubjectCodeList#DEL",
+			"description": "Delivery information: DEL."
+		},
+		{
+			"const": "unece:SubjectCodeList#DIN",
+			"description": "Delivery instructions: DIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#DOC",
+			"description": "Documentation instructions: DOC."
+		},
+		{
+			"const": "unece:SubjectCodeList#DUT",
+			"description": "Duty declaration: DUT."
+		},
+		{
+			"const": "unece:SubjectCodeList#EUR",
+			"description": "Effective used routing: EUR."
+		},
+		{
+			"const": "unece:SubjectCodeList#FBC",
+			"description": "First block to be printed on the transport contract: FBC."
+		},
+		{
+			"const": "unece:SubjectCodeList#GBL",
+			"description": "Government bill of lading information: GBL."
+		},
+		{
+			"const": "unece:SubjectCodeList#GEN",
+			"description": "Entire transaction set: GEN."
+		},
+		{
+			"const": "unece:SubjectCodeList#GS7",
+			"description": "Further information concerning GGVS par. 7: GS7."
+		},
+		{
+			"const": "unece:SubjectCodeList#HAN",
+			"description": "Consignment handling instruction: HAN."
+		},
+		{
+			"const": "unece:SubjectCodeList#HAZ",
+			"description": "Hazard information: HAZ."
+		},
+		{
+			"const": "unece:SubjectCodeList#ICN",
+			"description": "Consignment information for consignee: ICN."
+		},
+		{
+			"const": "unece:SubjectCodeList#IIN",
+			"description": "Insurance instructions: IIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#IMI",
+			"description": "Invoice mailing instructions: IMI."
+		},
+		{
+			"const": "unece:SubjectCodeList#IND",
+			"description": "Commercial invoice item description: IND."
+		},
+		{
+			"const": "unece:SubjectCodeList#INS",
+			"description": "Insurance information: INS."
+		},
+		{
+			"const": "unece:SubjectCodeList#INV",
+			"description": "Invoice instruction: INV."
+		},
+		{
+			"const": "unece:SubjectCodeList#IRP",
+			"description": "Information for railway purpose: IRP."
+		},
+		{
+			"const": "unece:SubjectCodeList#ITR",
+			"description": "Inland transport details: ITR."
+		},
+		{
+			"const": "unece:SubjectCodeList#ITS",
+			"description": "Testing instructions: ITS."
+		},
+		{
+			"const": "unece:SubjectCodeList#LAN",
+			"description": "Location Alias: LAN."
+		},
+		{
+			"const": "unece:SubjectCodeList#LIN",
+			"description": "Line item: LIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#LOI",
+			"description": "Loading instruction: LOI."
+		},
+		{
+			"const": "unece:SubjectCodeList#MCO",
+			"description": "Miscellaneous charge order: MCO."
+		},
+		{
+			"const": "unece:SubjectCodeList#MDH",
+			"description": "Maritime Declaration of Health: MDH."
+		},
+		{
+			"const": "unece:SubjectCodeList#MKS",
+			"description": "Additional marks/numbers information: MKS."
+		},
+		{
+			"const": "unece:SubjectCodeList#ORI",
+			"description": "Order instruction: ORI."
+		},
+		{
+			"const": "unece:SubjectCodeList#OSI",
+			"description": "Other service information: OSI."
+		},
+		{
+			"const": "unece:SubjectCodeList#PAC",
+			"description": "Packing/marking information: PAC."
+		},
+		{
+			"const": "unece:SubjectCodeList#PAI",
+			"description": "Payment instructions information: PAI."
+		},
+		{
+			"const": "unece:SubjectCodeList#PAY",
+			"description": "Payables information: PAY."
+		},
+		{
+			"const": "unece:SubjectCodeList#PKG",
+			"description": "Packaging information: PKG."
+		},
+		{
+			"const": "unece:SubjectCodeList#PKT",
+			"description": "Packaging terms information: PKT."
+		},
+		{
+			"const": "unece:SubjectCodeList#PMD",
+			"description": "Payment detail/remittance information: PMD."
+		},
+		{
+			"const": "unece:SubjectCodeList#PMT",
+			"description": "Payment information: PMT."
+		},
+		{
+			"const": "unece:SubjectCodeList#PRD",
+			"description": "Product information: PRD."
+		},
+		{
+			"const": "unece:SubjectCodeList#PRF",
+			"description": "Price calculation formula: PRF."
+		},
+		{
+			"const": "unece:SubjectCodeList#PRI",
+			"description": "Priority information: PRI."
+		},
+		{
+			"const": "unece:SubjectCodeList#PUR",
+			"description": "Purchasing information: PUR."
+		},
+		{
+			"const": "unece:SubjectCodeList#QIN",
+			"description": "Quarantine instructions: QIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#QQD",
+			"description": "Quality demands/requirements: QQD."
+		},
+		{
+			"const": "unece:SubjectCodeList#QUT",
+			"description": "Quotation instruction/information: QUT."
+		},
+		{
+			"const": "unece:SubjectCodeList#RAH",
+			"description": "Risk and handling information: RAH."
+		},
+		{
+			"const": "unece:SubjectCodeList#REG",
+			"description": "Regulatory information: REG."
+		},
+		{
+			"const": "unece:SubjectCodeList#RET",
+			"description": "Return to origin information: RET."
+		},
+		{
+			"const": "unece:SubjectCodeList#REV",
+			"description": "Receivables: REV."
+		},
+		{
+			"const": "unece:SubjectCodeList#RQR",
+			"description": "Consignment route: RQR."
+		},
+		{
+			"const": "unece:SubjectCodeList#SAF",
+			"description": "Safety information: SAF."
+		},
+		{
+			"const": "unece:SubjectCodeList#SIC",
+			"description": "Consignment documentary instruction: SIC."
+		},
+		{
+			"const": "unece:SubjectCodeList#SIN",
+			"description": "Special instructions: SIN."
+		},
+		{
+			"const": "unece:SubjectCodeList#SLR",
+			"description": "Ship line requested: SLR."
+		},
+		{
+			"const": "unece:SubjectCodeList#SPA",
+			"description": "Special permission for transport, generally: SPA."
+		},
+		{
+			"const": "unece:SubjectCodeList#SPG",
+			"description": "Special permission concerning the goods to be transported: SPG."
+		},
+		{
+			"const": "unece:SubjectCodeList#SPH",
+			"description": "Special handling: SPH."
+		},
+		{
+			"const": "unece:SubjectCodeList#SPP",
+			"description": "Special permission concerning package: SPP."
+		},
+		{
+			"const": "unece:SubjectCodeList#SPT",
+			"description": "Special permission concerning transport means: SPT."
+		},
+		{
+			"const": "unece:SubjectCodeList#SRN",
+			"description": "Subsidiary risk number (IATA/DGR): SRN."
+		},
+		{
+			"const": "unece:SubjectCodeList#SSR",
+			"description": "Special service request: SSR."
+		},
+		{
+			"const": "unece:SubjectCodeList#SUR",
+			"description": "Supplier remarks: SUR."
+		},
+		{
+			"const": "unece:SubjectCodeList#TCA",
+			"description": "Consignment tariff: TCA."
+		},
+		{
+			"const": "unece:SubjectCodeList#TDT",
+			"description": "Consignment transport: TDT."
+		},
+		{
+			"const": "unece:SubjectCodeList#TRA",
+			"description": "Transportation information: TRA."
+		},
+		{
+			"const": "unece:SubjectCodeList#TRR",
+			"description": "Requested tariff: TRR."
+		},
+		{
+			"const": "unece:SubjectCodeList#TXD",
+			"description": "Tax declaration: TXD."
+		},
+		{
+			"const": "unece:SubjectCodeList#WHI",
+			"description": "Warehouse instruction/information: WHI."
+		},
+		{
+			"const": "unece:SubjectCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

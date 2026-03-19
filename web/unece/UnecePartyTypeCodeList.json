@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePartyTypeCodeList",
+	"title": "UnecePartyTypeCodeList",
 	"description": "A character string used to represent the type of a party.",
-	"type": "string",
-	"enum": [
-		"unece:PartyTypeCodeList#BRA",
-		"unece:PartyTypeCodeList#DEP",
-		"unece:PartyTypeCodeList#DIR",
-		"unece:PartyTypeCodeList#SEC",
-		"unece:PartyTypeCodeList#SER"
+	"oneOf": [
+		{
+			"const": "unece:PartyTypeCodeList#BRA",
+			"description": "Branch: BRA."
+		},
+		{
+			"const": "unece:PartyTypeCodeList#DEP",
+			"description": "Department: DEP."
+		},
+		{
+			"const": "unece:PartyTypeCodeList#DIR",
+			"description": "Direction: DIR."
+		},
+		{
+			"const": "unece:PartyTypeCodeList#SEC",
+			"description": "Section: SEC."
+		},
+		{
+			"const": "unece:PartyTypeCodeList#SER",
+			"description": "Service: SER."
+		}
 	]
 }

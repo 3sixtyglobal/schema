@@ -1,12 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingPerquisiteCodeList",
+	"title": "UneceAccountingPerquisiteCodeList",
 	"description": "A character string used to represent the type of an accounting perquisite.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingPerquisiteCodeList#1",
-		"unece:AccountingPerquisiteCodeList#2",
-		"unece:AccountingPerquisiteCodeList#3",
-		"unece:AccountingPerquisiteCodeList#4"
+	"oneOf": [
+		{
+			"const": "unece:AccountingPerquisiteCodeList#1",
+			"description": "Food: 1."
+		},
+		{
+			"const": "unece:AccountingPerquisiteCodeList#2",
+			"description": "Accommodation: 2."
+		},
+		{
+			"const": "unece:AccountingPerquisiteCodeList#3",
+			"description": "Car: 3."
+		},
+		{
+			"const": "unece:AccountingPerquisiteCodeList#4",
+			"description": "Other perquisite: 4."
+		}
 	]
 }

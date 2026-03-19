@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeParty",
+	"title": "UneceTradeParty",
 	"description": "An individual, a group, or a body having a role in a trade business function.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeParty",
 			"description": "JSON-LD Type."
 		},
@@ -159,7 +141,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
-			"description": "A trade party associated with this trade party to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN'."
+			"description": "A trade party associated with this trade party to whom incoming mail is marked with words such as 'for the attention of'\nor 'FAO' or 'ATTN'."
 		},
 		"availableExperienceItem": {
 			"type": "array",

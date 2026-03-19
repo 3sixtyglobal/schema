@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCustomsDutyRegimeTypeCodeList",
+	"title": "UneceCustomsDutyRegimeTypeCodeList",
 	"description": "A character string used to represent the type of customs duty regime.",
-	"type": "string",
-	"enum": [
-		"unece:CustomsDutyRegimeTypeCodeList#1",
-		"unece:CustomsDutyRegimeTypeCodeList#2",
-		"unece:CustomsDutyRegimeTypeCodeList#3",
-		"unece:CustomsDutyRegimeTypeCodeList#8",
-		"unece:CustomsDutyRegimeTypeCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:CustomsDutyRegimeTypeCodeList#1",
+			"description": "Origin subject to EC/EFTA preference: 1."
+		},
+		{
+			"const": "unece:CustomsDutyRegimeTypeCodeList#2",
+			"description": "Origin subject to other preference agreement: 2."
+		},
+		{
+			"const": "unece:CustomsDutyRegimeTypeCodeList#3",
+			"description": "No preference origin: 3."
+		},
+		{
+			"const": "unece:CustomsDutyRegimeTypeCodeList#8",
+			"description": "Excluded origin: 8."
+		},
+		{
+			"const": "unece:CustomsDutyRegimeTypeCodeList#9",
+			"description": "Imposed origin: 9."
+		}
 	]
 }

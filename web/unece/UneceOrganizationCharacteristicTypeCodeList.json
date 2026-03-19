@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceOrganizationCharacteristicTypeCodeList",
+	"title": "UneceOrganizationCharacteristicTypeCodeList",
 	"description": "Values for UneceOrganizationCharacteristic typeCode property.",
-	"type": "string",
-	"const": "unece:applicableOrganizationCharacteristic"
+	"oneOf": [
+		{
+			"const": "unece:applicableOrganizationCharacteristic",
+			"description": "A characteristic applicable to this organization certificate."
+		}
+	]
 }

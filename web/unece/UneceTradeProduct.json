@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeProduct",
+	"title": "UneceTradeProduct",
 	"description": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeProduct",
 			"description": "JSON-LD Type."
 		},
@@ -262,7 +244,7 @@
 		},
 		"cancellationAnnouncedLaunchDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value of the cancellation of the announced launch of this trade product.",
+			"description": "The formatted date, time, date time, or other date time value of the cancellation of the announced launch of this trade\nproduct.",
 			"format": "date-time"
 		},
 		"careSpecifiedLabel": {
@@ -358,7 +340,7 @@
 		},
 		"contentVariableMeasureIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not instances of this trade product have a content variable measure, such as weight, length or volume."
+			"description": "The indication of whether or not instances of this trade product have a content variable measure, such as weight, length\nor volume."
 		},
 		"criticalityTypeCode": {
 			"type": "string",
@@ -633,7 +615,7 @@
 		},
 		"latestProductDataChangeDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product.",
+			"description": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade\nproduct.",
 			"format": "date-time"
 		},
 		"legalRightsOwnerParty": {
@@ -908,7 +890,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "An identifier assigned to indicate conformity with a regulation or standard for this trade product, such as \"CE\" which declares that the product conforms with the essential requirements of the applicable EC directives."
+			"description": "An identifier assigned to indicate conformity with a regulation or standard for this trade product, such as \"CE\" which\ndeclares that the product conforms with the essential requirements of the applicable EC directives."
 		},
 		"rejectionReasonCode": {
 			"type": "string",
@@ -1218,7 +1200,7 @@
 		},
 		"variableMeasureIndicator": {
 			"type": "boolean",
-			"description": "The indication of whether or not instances of this trade product have a variable measure, such as weight, length or volume."
+			"description": "The indication of whether or not instances of this trade product have a variable measure, such as weight, length or\nvolume."
 		},
 		"variantDescription": {
 			"type": "string",

@@ -1,114 +1,432 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAdditionalPostponementCodeList",
+	"title": "UneceAdditionalPostponementCodeList",
 	"description": "A character string used to represent the type of additional postponement.",
-	"type": "string",
-	"enum": [
-		"unece:AdditionalPostponementCodeList#00",
-		"unece:AdditionalPostponementCodeList#01",
-		"unece:AdditionalPostponementCodeList#02",
-		"unece:AdditionalPostponementCodeList#03",
-		"unece:AdditionalPostponementCodeList#04",
-		"unece:AdditionalPostponementCodeList#05",
-		"unece:AdditionalPostponementCodeList#06",
-		"unece:AdditionalPostponementCodeList#07",
-		"unece:AdditionalPostponementCodeList#08",
-		"unece:AdditionalPostponementCodeList#09",
-		"unece:AdditionalPostponementCodeList#10",
-		"unece:AdditionalPostponementCodeList#11",
-		"unece:AdditionalPostponementCodeList#12",
-		"unece:AdditionalPostponementCodeList#120M00",
-		"unece:AdditionalPostponementCodeList#120M05",
-		"unece:AdditionalPostponementCodeList#120M10",
-		"unece:AdditionalPostponementCodeList#120M15",
-		"unece:AdditionalPostponementCodeList#120M20",
-		"unece:AdditionalPostponementCodeList#120M25",
-		"unece:AdditionalPostponementCodeList#13",
-		"unece:AdditionalPostponementCodeList#14",
-		"unece:AdditionalPostponementCodeList#15",
-		"unece:AdditionalPostponementCodeList#150M00",
-		"unece:AdditionalPostponementCodeList#150M05",
-		"unece:AdditionalPostponementCodeList#150M10",
-		"unece:AdditionalPostponementCodeList#150M15",
-		"unece:AdditionalPostponementCodeList#150M20",
-		"unece:AdditionalPostponementCodeList#150M25",
-		"unece:AdditionalPostponementCodeList#16",
-		"unece:AdditionalPostponementCodeList#17",
-		"unece:AdditionalPostponementCodeList#18",
-		"unece:AdditionalPostponementCodeList#180M00",
-		"unece:AdditionalPostponementCodeList#180M05",
-		"unece:AdditionalPostponementCodeList#180M10",
-		"unece:AdditionalPostponementCodeList#180M15",
-		"unece:AdditionalPostponementCodeList#180M20",
-		"unece:AdditionalPostponementCodeList#180M25",
-		"unece:AdditionalPostponementCodeList#19",
-		"unece:AdditionalPostponementCodeList#1D",
-		"unece:AdditionalPostponementCodeList#20",
-		"unece:AdditionalPostponementCodeList#21",
-		"unece:AdditionalPostponementCodeList#210M00",
-		"unece:AdditionalPostponementCodeList#210M05",
-		"unece:AdditionalPostponementCodeList#210M10",
-		"unece:AdditionalPostponementCodeList#210M15",
-		"unece:AdditionalPostponementCodeList#210M20",
-		"unece:AdditionalPostponementCodeList#210M25",
-		"unece:AdditionalPostponementCodeList#22",
-		"unece:AdditionalPostponementCodeList#23",
-		"unece:AdditionalPostponementCodeList#24",
-		"unece:AdditionalPostponementCodeList#240M00",
-		"unece:AdditionalPostponementCodeList#240M05",
-		"unece:AdditionalPostponementCodeList#240M10",
-		"unece:AdditionalPostponementCodeList#240M15",
-		"unece:AdditionalPostponementCodeList#240M20",
-		"unece:AdditionalPostponementCodeList#240M25",
-		"unece:AdditionalPostponementCodeList#25",
-		"unece:AdditionalPostponementCodeList#26",
-		"unece:AdditionalPostponementCodeList#27",
-		"unece:AdditionalPostponementCodeList#270M00",
-		"unece:AdditionalPostponementCodeList#270M05",
-		"unece:AdditionalPostponementCodeList#270M10",
-		"unece:AdditionalPostponementCodeList#270M15",
-		"unece:AdditionalPostponementCodeList#270M20",
-		"unece:AdditionalPostponementCodeList#270M25",
-		"unece:AdditionalPostponementCodeList#28",
-		"unece:AdditionalPostponementCodeList#29",
-		"unece:AdditionalPostponementCodeList#2D",
-		"unece:AdditionalPostponementCodeList#30",
-		"unece:AdditionalPostponementCodeList#300M00",
-		"unece:AdditionalPostponementCodeList#300M05",
-		"unece:AdditionalPostponementCodeList#300M10",
-		"unece:AdditionalPostponementCodeList#300M15",
-		"unece:AdditionalPostponementCodeList#300M20",
-		"unece:AdditionalPostponementCodeList#300M25",
-		"unece:AdditionalPostponementCodeList#30M00",
-		"unece:AdditionalPostponementCodeList#30M05",
-		"unece:AdditionalPostponementCodeList#30M10",
-		"unece:AdditionalPostponementCodeList#30M15",
-		"unece:AdditionalPostponementCodeList#30M20",
-		"unece:AdditionalPostponementCodeList#30M25",
-		"unece:AdditionalPostponementCodeList#330M00",
-		"unece:AdditionalPostponementCodeList#330M05",
-		"unece:AdditionalPostponementCodeList#330M10",
-		"unece:AdditionalPostponementCodeList#330M15",
-		"unece:AdditionalPostponementCodeList#330M20",
-		"unece:AdditionalPostponementCodeList#330M25",
-		"unece:AdditionalPostponementCodeList#360M00",
-		"unece:AdditionalPostponementCodeList#360M05",
-		"unece:AdditionalPostponementCodeList#360M10",
-		"unece:AdditionalPostponementCodeList#360M15",
-		"unece:AdditionalPostponementCodeList#360M20",
-		"unece:AdditionalPostponementCodeList#360M25",
-		"unece:AdditionalPostponementCodeList#3D",
-		"unece:AdditionalPostponementCodeList#60M00",
-		"unece:AdditionalPostponementCodeList#60M05",
-		"unece:AdditionalPostponementCodeList#60M10",
-		"unece:AdditionalPostponementCodeList#60M15",
-		"unece:AdditionalPostponementCodeList#60M20",
-		"unece:AdditionalPostponementCodeList#60M25",
-		"unece:AdditionalPostponementCodeList#90M00",
-		"unece:AdditionalPostponementCodeList#90M05",
-		"unece:AdditionalPostponementCodeList#90M10",
-		"unece:AdditionalPostponementCodeList#90M15",
-		"unece:AdditionalPostponementCodeList#90M20",
-		"unece:AdditionalPostponementCodeList#90M25"
+	"oneOf": [
+		{
+			"const": "unece:AdditionalPostponementCodeList#00",
+			"description": "Cash: 00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#01",
+			"description": "1 day: 01."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#02",
+			"description": "2 days: 02."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#03",
+			"description": "3 days: 03."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#04",
+			"description": "4 days: 04."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#05",
+			"description": "5 days: 05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#06",
+			"description": "6 days: 06."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#07",
+			"description": "7 days: 07."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#08",
+			"description": "8 days: 08."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#09",
+			"description": "9 days: 09."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#10",
+			"description": "10 days: 10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#11",
+			"description": "11 days: 11."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#12",
+			"description": "12 days: 12."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M00",
+			"description": "120 days end of month: 120M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M05",
+			"description": "120 days end of month postponed on the 05: 120M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M10",
+			"description": "120 days end of month postponed on the 10: 120M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M15",
+			"description": "120 days end of month postponed on the 15: 120M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M20",
+			"description": "120 days end of month postponed on the 20: 120M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#120M25",
+			"description": "120 days end of month postponed on the 25: 120M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#13",
+			"description": "13 days: 13."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#14",
+			"description": "14 days: 14."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#15",
+			"description": "15 days: 15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M00",
+			"description": "150 days end of month: 150M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M05",
+			"description": "150 days end of month postponed on the 05: 150M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M10",
+			"description": "150 days end of month postponed on the 10: 150M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M15",
+			"description": "150 days end of month postponed on the 15: 150M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M20",
+			"description": "150 days end of month postponed on the 20: 150M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#150M25",
+			"description": "150 days end of month postponed on the 25: 150M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#16",
+			"description": "16 days: 16."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#17",
+			"description": "17 days: 17."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#18",
+			"description": "18 days: 18."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M00",
+			"description": "180 days end of month: 180M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M05",
+			"description": "180 days end of month postponed on the 05: 180M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M10",
+			"description": "180 days end of month postponed on the 10: 180M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M15",
+			"description": "180 days end of month postponed on the 15: 180M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M20",
+			"description": "180 days end of month postponed on the 20: 180M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#180M25",
+			"description": "180 days end of month postponed on the 25: 180M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#19",
+			"description": "19 days: 19."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#1D",
+			"description": "End of the next first day decade: 1D."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#20",
+			"description": "20 days: 20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#21",
+			"description": "21 days: 21."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M00",
+			"description": "210 days end of month: 210M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M05",
+			"description": "210 days end of month postponed on the 05: 210M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M10",
+			"description": "210 days end of month postponed on the 10: 210M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M15",
+			"description": "210 days end of month postponed on the 15: 210M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M20",
+			"description": "210 days end of month postponed on the 20: 210M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#210M25",
+			"description": "210 days end of month postponed on the 25: 210M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#22",
+			"description": "22 days: 22."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#23",
+			"description": "23 days: 23."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#24",
+			"description": "24 days: 24."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M00",
+			"description": "240 days end of month: 240M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M05",
+			"description": "240 days end of month postponed on the 05: 240M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M10",
+			"description": "240 days end of month postponed on the 10: 240M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M15",
+			"description": "240 days end of month postponed on the 15: 240M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M20",
+			"description": "240 days end of month postponed on the 20: 240M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#240M25",
+			"description": "240 days end of month postponed on the 25: 240M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#25",
+			"description": "25 days: 25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#26",
+			"description": "26 days: 26."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#27",
+			"description": "27 days: 27."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M00",
+			"description": "270 days end of month: 270M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M05",
+			"description": "270 days end of month postponed on the 05: 270M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M10",
+			"description": "270 days end of month postponed on the 10: 270M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M15",
+			"description": "270 days end of month postponed on the 15: 270M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M20",
+			"description": "270 days end of month postponed on the 20: 270M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#270M25",
+			"description": "270 days end of month postponed on the 25: 270M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#28",
+			"description": "28 days: 28."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#29",
+			"description": "29 days: 29."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#2D",
+			"description": "End of the next second day decade: 2D."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30",
+			"description": "30 days: 30."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M00",
+			"description": "300 days end of month: 300M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M05",
+			"description": "300 days end of month postponed on the 05: 300M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M10",
+			"description": "300 days end of month postponed on the 10: 300M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M15",
+			"description": "300 days end of month postponed on the 15: 300M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M20",
+			"description": "300 days end of month postponed on the 20: 300M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#300M25",
+			"description": "300 days end of month postponed on the 25: 300M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M00",
+			"description": "30 days end of month: 30M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M05",
+			"description": "30 days end of month postponed on the 05: 30M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M10",
+			"description": "30 days end of month postponed on the 10: 30M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M15",
+			"description": "30 days end of month postponed on the 15: 30M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M20",
+			"description": "30 days end of month postponed on the 20: 30M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#30M25",
+			"description": "30 days end of month postponed on the 25: 30M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M00",
+			"description": "330 days end of month: 330M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M05",
+			"description": "330 days end of month postponed on the 05: 330M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M10",
+			"description": "330 days end of month postponed on the 10: 330M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M15",
+			"description": "330 days end of month postponed on the 15: 330M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M20",
+			"description": "330 days end of month postponed on the 20: 330M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#330M25",
+			"description": "330 days end of month postponed on the 25: 330M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M00",
+			"description": "360 days end of month: 360M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M05",
+			"description": "360 days end of month postponed on the 05: 360M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M10",
+			"description": "360 days end of month postponed on the 10: 360M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M15",
+			"description": "360 days end of month postponed on the 15: 360M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M20",
+			"description": "360 days end of month postponed on the 20: 360M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#360M25",
+			"description": "360 days end of month postponed on the 25: 360M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#3D",
+			"description": "End of the next third day decade: 3D."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M00",
+			"description": "60 days end of month: 60M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M05",
+			"description": "60 days end of month postponed on the 05: 60M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M10",
+			"description": "60 days end of month postponed on the 10: 60M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M15",
+			"description": "60 days end of month postponed on the 15: 60M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M20",
+			"description": "60 days end of month postponed on the 20: 60M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#60M25",
+			"description": "60 days end of month postponed on the 25: 60M25."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M00",
+			"description": "90 days end of month: 90M00."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M05",
+			"description": "90 days end of month postponed on the 05: 90M05."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M10",
+			"description": "90 days end of month postponed on the 10: 90M10."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M15",
+			"description": "90 days end of month postponed on the 15: 90M15."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M20",
+			"description": "90 days end of month postponed on the 20: 90M20."
+		},
+		{
+			"const": "unece:AdditionalPostponementCodeList#90M25",
+			"description": "90 days end of month postponed on the 25: 90M25."
+		}
 	]
 }

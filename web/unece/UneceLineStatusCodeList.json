@@ -1,127 +1,484 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLineStatusCodeList",
+	"title": "UneceLineStatusCodeList",
 	"description": "A character string used to represent a line status.",
-	"type": "string",
-	"enum": [
-		"unece:LineStatusCodeList#1",
-		"unece:LineStatusCodeList#10",
-		"unece:LineStatusCodeList#100",
-		"unece:LineStatusCodeList#101",
-		"unece:LineStatusCodeList#102",
-		"unece:LineStatusCodeList#103",
-		"unece:LineStatusCodeList#104",
-		"unece:LineStatusCodeList#105",
-		"unece:LineStatusCodeList#106",
-		"unece:LineStatusCodeList#107",
-		"unece:LineStatusCodeList#108",
-		"unece:LineStatusCodeList#109",
-		"unece:LineStatusCodeList#11",
-		"unece:LineStatusCodeList#110",
-		"unece:LineStatusCodeList#111",
-		"unece:LineStatusCodeList#112",
-		"unece:LineStatusCodeList#113",
-		"unece:LineStatusCodeList#114",
-		"unece:LineStatusCodeList#115",
-		"unece:LineStatusCodeList#116",
-		"unece:LineStatusCodeList#117",
-		"unece:LineStatusCodeList#118",
-		"unece:LineStatusCodeList#119",
-		"unece:LineStatusCodeList#12",
-		"unece:LineStatusCodeList#13",
-		"unece:LineStatusCodeList#14",
-		"unece:LineStatusCodeList#15",
-		"unece:LineStatusCodeList#16",
-		"unece:LineStatusCodeList#17",
-		"unece:LineStatusCodeList#18",
-		"unece:LineStatusCodeList#19",
-		"unece:LineStatusCodeList#2",
-		"unece:LineStatusCodeList#20",
-		"unece:LineStatusCodeList#21",
-		"unece:LineStatusCodeList#22",
-		"unece:LineStatusCodeList#23",
-		"unece:LineStatusCodeList#24",
-		"unece:LineStatusCodeList#25",
-		"unece:LineStatusCodeList#26",
-		"unece:LineStatusCodeList#27",
-		"unece:LineStatusCodeList#28",
-		"unece:LineStatusCodeList#29",
-		"unece:LineStatusCodeList#3",
-		"unece:LineStatusCodeList#30",
-		"unece:LineStatusCodeList#31",
-		"unece:LineStatusCodeList#32",
-		"unece:LineStatusCodeList#33",
-		"unece:LineStatusCodeList#34",
-		"unece:LineStatusCodeList#35",
-		"unece:LineStatusCodeList#36",
-		"unece:LineStatusCodeList#37",
-		"unece:LineStatusCodeList#38",
-		"unece:LineStatusCodeList#39",
-		"unece:LineStatusCodeList#4",
-		"unece:LineStatusCodeList#40",
-		"unece:LineStatusCodeList#41",
-		"unece:LineStatusCodeList#42",
-		"unece:LineStatusCodeList#43",
-		"unece:LineStatusCodeList#44",
-		"unece:LineStatusCodeList#45",
-		"unece:LineStatusCodeList#46",
-		"unece:LineStatusCodeList#47",
-		"unece:LineStatusCodeList#48",
-		"unece:LineStatusCodeList#49",
-		"unece:LineStatusCodeList#5",
-		"unece:LineStatusCodeList#50",
-		"unece:LineStatusCodeList#51",
-		"unece:LineStatusCodeList#52",
-		"unece:LineStatusCodeList#53",
-		"unece:LineStatusCodeList#54",
-		"unece:LineStatusCodeList#55",
-		"unece:LineStatusCodeList#56",
-		"unece:LineStatusCodeList#57",
-		"unece:LineStatusCodeList#58",
-		"unece:LineStatusCodeList#59",
-		"unece:LineStatusCodeList#6",
-		"unece:LineStatusCodeList#60",
-		"unece:LineStatusCodeList#61",
-		"unece:LineStatusCodeList#62",
-		"unece:LineStatusCodeList#63",
-		"unece:LineStatusCodeList#64",
-		"unece:LineStatusCodeList#65",
-		"unece:LineStatusCodeList#66",
-		"unece:LineStatusCodeList#67",
-		"unece:LineStatusCodeList#68",
-		"unece:LineStatusCodeList#69",
-		"unece:LineStatusCodeList#7",
-		"unece:LineStatusCodeList#70",
-		"unece:LineStatusCodeList#71",
-		"unece:LineStatusCodeList#72",
-		"unece:LineStatusCodeList#73",
-		"unece:LineStatusCodeList#74",
-		"unece:LineStatusCodeList#75",
-		"unece:LineStatusCodeList#76",
-		"unece:LineStatusCodeList#77",
-		"unece:LineStatusCodeList#78",
-		"unece:LineStatusCodeList#79",
-		"unece:LineStatusCodeList#8",
-		"unece:LineStatusCodeList#80",
-		"unece:LineStatusCodeList#81",
-		"unece:LineStatusCodeList#82",
-		"unece:LineStatusCodeList#83",
-		"unece:LineStatusCodeList#84",
-		"unece:LineStatusCodeList#85",
-		"unece:LineStatusCodeList#86",
-		"unece:LineStatusCodeList#87",
-		"unece:LineStatusCodeList#88",
-		"unece:LineStatusCodeList#89",
-		"unece:LineStatusCodeList#9",
-		"unece:LineStatusCodeList#90",
-		"unece:LineStatusCodeList#91",
-		"unece:LineStatusCodeList#92",
-		"unece:LineStatusCodeList#93",
-		"unece:LineStatusCodeList#94",
-		"unece:LineStatusCodeList#95",
-		"unece:LineStatusCodeList#96",
-		"unece:LineStatusCodeList#97",
-		"unece:LineStatusCodeList#98",
-		"unece:LineStatusCodeList#99"
+	"oneOf": [
+		{
+			"const": "unece:LineStatusCodeList#1",
+			"description": "Added: 1."
+		},
+		{
+			"const": "unece:LineStatusCodeList#10",
+			"description": "Not found: 10."
+		},
+		{
+			"const": "unece:LineStatusCodeList#100",
+			"description": "Final response: 100."
+		},
+		{
+			"const": "unece:LineStatusCodeList#101",
+			"description": "Debit advice requested: 101."
+		},
+		{
+			"const": "unece:LineStatusCodeList#102",
+			"description": "Transaction not impacted: 102."
+		},
+		{
+			"const": "unece:LineStatusCodeList#103",
+			"description": "Patient to be notified: 103."
+		},
+		{
+			"const": "unece:LineStatusCodeList#104",
+			"description": "Healthcare provider to be notified: 104."
+		},
+		{
+			"const": "unece:LineStatusCodeList#105",
+			"description": "Usual general practitioner to be notified: 105."
+		},
+		{
+			"const": "unece:LineStatusCodeList#106",
+			"description": "Advice without details: 106."
+		},
+		{
+			"const": "unece:LineStatusCodeList#107",
+			"description": "Advice with details: 107."
+		},
+		{
+			"const": "unece:LineStatusCodeList#108",
+			"description": "Amendment requested: 108."
+		},
+		{
+			"const": "unece:LineStatusCodeList#109",
+			"description": "For information: 109."
+		},
+		{
+			"const": "unece:LineStatusCodeList#11",
+			"description": "Not amended: 11."
+		},
+		{
+			"const": "unece:LineStatusCodeList#110",
+			"description": "Withdraw: 110."
+		},
+		{
+			"const": "unece:LineStatusCodeList#111",
+			"description": "Delivery date change: 111."
+		},
+		{
+			"const": "unece:LineStatusCodeList#112",
+			"description": "Quantity change: 112."
+		},
+		{
+			"const": "unece:LineStatusCodeList#113",
+			"description": "Resale and claim: 113."
+		},
+		{
+			"const": "unece:LineStatusCodeList#114",
+			"description": "Resale: 114."
+		},
+		{
+			"const": "unece:LineStatusCodeList#115",
+			"description": "Prior addition: 115."
+		},
+		{
+			"const": "unece:LineStatusCodeList#116",
+			"description": "Expired: 116."
+		},
+		{
+			"const": "unece:LineStatusCodeList#117",
+			"description": "Hold: 117."
+		},
+		{
+			"const": "unece:LineStatusCodeList#118",
+			"description": "Open: 118."
+		},
+		{
+			"const": "unece:LineStatusCodeList#119",
+			"description": "Observe: 119."
+		},
+		{
+			"const": "unece:LineStatusCodeList#12",
+			"description": "Line item numbers changed: 12."
+		},
+		{
+			"const": "unece:LineStatusCodeList#13",
+			"description": "Buyer has deducted amount: 13."
+		},
+		{
+			"const": "unece:LineStatusCodeList#14",
+			"description": "Buyer claims against invoice: 14."
+		},
+		{
+			"const": "unece:LineStatusCodeList#15",
+			"description": "Charge back by seller: 15."
+		},
+		{
+			"const": "unece:LineStatusCodeList#16",
+			"description": "Seller will issue credit note: 16."
+		},
+		{
+			"const": "unece:LineStatusCodeList#17",
+			"description": "Terms changed for new terms: 17."
+		},
+		{
+			"const": "unece:LineStatusCodeList#18",
+			"description": "Abide outcome of negotiations: 18."
+		},
+		{
+			"const": "unece:LineStatusCodeList#19",
+			"description": "Seller rejects dispute: 19."
+		},
+		{
+			"const": "unece:LineStatusCodeList#2",
+			"description": "Deleted: 2."
+		},
+		{
+			"const": "unece:LineStatusCodeList#20",
+			"description": "Settlement: 20."
+		},
+		{
+			"const": "unece:LineStatusCodeList#21",
+			"description": "No delivery: 21."
+		},
+		{
+			"const": "unece:LineStatusCodeList#22",
+			"description": "Call-off delivery: 22."
+		},
+		{
+			"const": "unece:LineStatusCodeList#23",
+			"description": "Proposed amendment: 23."
+		},
+		{
+			"const": "unece:LineStatusCodeList#24",
+			"description": "Accepted with amendment, no confirmation required: 24."
+		},
+		{
+			"const": "unece:LineStatusCodeList#25",
+			"description": "Equipment provisionally repaired: 25."
+		},
+		{
+			"const": "unece:LineStatusCodeList#26",
+			"description": "Included: 26."
+		},
+		{
+			"const": "unece:LineStatusCodeList#27",
+			"description": "Upon receipt and verification of documents we shall cover you when due as per your instructions: 27."
+		},
+		{
+			"const": "unece:LineStatusCodeList#28",
+			"description": "Upon receipt and verification of documents we shall authorize you to debit our account with you when due: 28."
+		},
+		{
+			"const": "unece:LineStatusCodeList#29",
+			"description": "On receipt of your authenticated advice we shall cover you when due as per your instructions: 29."
+		},
+		{
+			"const": "unece:LineStatusCodeList#3",
+			"description": "Changed: 3."
+		},
+		{
+			"const": "unece:LineStatusCodeList#30",
+			"description": "On receipt of your authenticated advice we shall authorize you to debit our account with you when due: 30."
+		},
+		{
+			"const": "unece:LineStatusCodeList#31",
+			"description": "On receipt of your authenticated advice we shall credit your account with us when due: 31."
+		},
+		{
+			"const": "unece:LineStatusCodeList#32",
+			"description": "Credit advice requested for direct debit: 32."
+		},
+		{
+			"const": "unece:LineStatusCodeList#33",
+			"description": "Credit advice and acknowledgement for direct debit: 33."
+		},
+		{
+			"const": "unece:LineStatusCodeList#34",
+			"description": "Inquiry: 34."
+		},
+		{
+			"const": "unece:LineStatusCodeList#35",
+			"description": "Checked: 35."
+		},
+		{
+			"const": "unece:LineStatusCodeList#36",
+			"description": "Not checked: 36."
+		},
+		{
+			"const": "unece:LineStatusCodeList#37",
+			"description": "Cancelled: 37."
+		},
+		{
+			"const": "unece:LineStatusCodeList#38",
+			"description": "Replaced: 38."
+		},
+		{
+			"const": "unece:LineStatusCodeList#39",
+			"description": "New: 39."
+		},
+		{
+			"const": "unece:LineStatusCodeList#4",
+			"description": "No action: 4."
+		},
+		{
+			"const": "unece:LineStatusCodeList#40",
+			"description": "Agreed: 40."
+		},
+		{
+			"const": "unece:LineStatusCodeList#41",
+			"description": "Proposed: 41."
+		},
+		{
+			"const": "unece:LineStatusCodeList#42",
+			"description": "Already delivered: 42."
+		},
+		{
+			"const": "unece:LineStatusCodeList#43",
+			"description": "Additional subordinate structures will follow: 43."
+		},
+		{
+			"const": "unece:LineStatusCodeList#44",
+			"description": "Additional subordinate structures will not follow: 44."
+		},
+		{
+			"const": "unece:LineStatusCodeList#45",
+			"description": "Result opposed: 45."
+		},
+		{
+			"const": "unece:LineStatusCodeList#46",
+			"description": "Auction held: 46."
+		},
+		{
+			"const": "unece:LineStatusCodeList#47",
+			"description": "Legal action pursued: 47."
+		},
+		{
+			"const": "unece:LineStatusCodeList#48",
+			"description": "Meeting held: 48."
+		},
+		{
+			"const": "unece:LineStatusCodeList#49",
+			"description": "Result set aside: 49."
+		},
+		{
+			"const": "unece:LineStatusCodeList#5",
+			"description": "Accepted without amendment: 5."
+		},
+		{
+			"const": "unece:LineStatusCodeList#50",
+			"description": "Result disputed: 50."
+		},
+		{
+			"const": "unece:LineStatusCodeList#51",
+			"description": "Countersued: 51."
+		},
+		{
+			"const": "unece:LineStatusCodeList#52",
+			"description": "Pending: 52."
+		},
+		{
+			"const": "unece:LineStatusCodeList#53",
+			"description": "Court action dismissed: 53."
+		},
+		{
+			"const": "unece:LineStatusCodeList#54",
+			"description": "Referred item, accepted: 54."
+		},
+		{
+			"const": "unece:LineStatusCodeList#55",
+			"description": "Referred item, rejected: 55."
+		},
+		{
+			"const": "unece:LineStatusCodeList#56",
+			"description": "Debit advice statement line: 56."
+		},
+		{
+			"const": "unece:LineStatusCodeList#57",
+			"description": "Credit advice statement line: 57."
+		},
+		{
+			"const": "unece:LineStatusCodeList#58",
+			"description": "Grouped credit advices: 58."
+		},
+		{
+			"const": "unece:LineStatusCodeList#59",
+			"description": "Grouped debit advices: 59."
+		},
+		{
+			"const": "unece:LineStatusCodeList#6",
+			"description": "Accepted with amendment: 6."
+		},
+		{
+			"const": "unece:LineStatusCodeList#60",
+			"description": "Registered: 60."
+		},
+		{
+			"const": "unece:LineStatusCodeList#61",
+			"description": "Payment denied: 61."
+		},
+		{
+			"const": "unece:LineStatusCodeList#62",
+			"description": "Approved as amended: 62."
+		},
+		{
+			"const": "unece:LineStatusCodeList#63",
+			"description": "Approved as submitted: 63."
+		},
+		{
+			"const": "unece:LineStatusCodeList#64",
+			"description": "Cancelled, no activity: 64."
+		},
+		{
+			"const": "unece:LineStatusCodeList#65",
+			"description": "Under investigation: 65."
+		},
+		{
+			"const": "unece:LineStatusCodeList#66",
+			"description": "Initial claim received: 66."
+		},
+		{
+			"const": "unece:LineStatusCodeList#67",
+			"description": "Not in process: 67."
+		},
+		{
+			"const": "unece:LineStatusCodeList#68",
+			"description": "Rejected, duplicate: 68."
+		},
+		{
+			"const": "unece:LineStatusCodeList#69",
+			"description": "Rejected, resubmit with corrections: 69."
+		},
+		{
+			"const": "unece:LineStatusCodeList#7",
+			"description": "Not accepted: 7."
+		},
+		{
+			"const": "unece:LineStatusCodeList#70",
+			"description": "Pending, incomplete: 70."
+		},
+		{
+			"const": "unece:LineStatusCodeList#71",
+			"description": "Under field office investigation: 71."
+		},
+		{
+			"const": "unece:LineStatusCodeList#72",
+			"description": "Pending, awaiting additional material: 72."
+		},
+		{
+			"const": "unece:LineStatusCodeList#73",
+			"description": "Pending, awaiting review: 73."
+		},
+		{
+			"const": "unece:LineStatusCodeList#74",
+			"description": "Reopened: 74."
+		},
+		{
+			"const": "unece:LineStatusCodeList#75",
+			"description": "Processed by primary, forwarded to additional payer(s): 75."
+		},
+		{
+			"const": "unece:LineStatusCodeList#76",
+			"description": "Processed by secondary, forwarded to additional payer(s): 76."
+		},
+		{
+			"const": "unece:LineStatusCodeList#77",
+			"description": "Processed by tertiary, forwarded to additional payer(s): 77."
+		},
+		{
+			"const": "unece:LineStatusCodeList#78",
+			"description": "Previous payment decision reversed: 78."
+		},
+		{
+			"const": "unece:LineStatusCodeList#79",
+			"description": "Not our claim, forwarded to another payer(s): 79."
+		},
+		{
+			"const": "unece:LineStatusCodeList#8",
+			"description": "Schedule only: 8."
+		},
+		{
+			"const": "unece:LineStatusCodeList#80",
+			"description": "Transferred to correct insurance carrier: 80."
+		},
+		{
+			"const": "unece:LineStatusCodeList#81",
+			"description": "Not paid, predetermination pricing only: 81."
+		},
+		{
+			"const": "unece:LineStatusCodeList#82",
+			"description": "Documentation claim: 82."
+		},
+		{
+			"const": "unece:LineStatusCodeList#83",
+			"description": "Reviewed: 83."
+		},
+		{
+			"const": "unece:LineStatusCodeList#84",
+			"description": "Repriced: 84."
+		},
+		{
+			"const": "unece:LineStatusCodeList#85",
+			"description": "Audited: 85."
+		},
+		{
+			"const": "unece:LineStatusCodeList#86",
+			"description": "Conditionally paid: 86."
+		},
+		{
+			"const": "unece:LineStatusCodeList#87",
+			"description": "On appeal: 87."
+		},
+		{
+			"const": "unece:LineStatusCodeList#88",
+			"description": "Closed: 88."
+		},
+		{
+			"const": "unece:LineStatusCodeList#89",
+			"description": "Reaudited: 89."
+		},
+		{
+			"const": "unece:LineStatusCodeList#9",
+			"description": "Amendments: 9."
+		},
+		{
+			"const": "unece:LineStatusCodeList#90",
+			"description": "Reissued: 90."
+		},
+		{
+			"const": "unece:LineStatusCodeList#91",
+			"description": "Closed after reopening: 91."
+		},
+		{
+			"const": "unece:LineStatusCodeList#92",
+			"description": "Redetermined: 92."
+		},
+		{
+			"const": "unece:LineStatusCodeList#93",
+			"description": "Processed as primary: 93."
+		},
+		{
+			"const": "unece:LineStatusCodeList#94",
+			"description": "Processed as secondary: 94."
+		},
+		{
+			"const": "unece:LineStatusCodeList#95",
+			"description": "Processed as tertiary: 95."
+		},
+		{
+			"const": "unece:LineStatusCodeList#96",
+			"description": "Correction of error: 96."
+		},
+		{
+			"const": "unece:LineStatusCodeList#97",
+			"description": "Single credit item of a group: 97."
+		},
+		{
+			"const": "unece:LineStatusCodeList#98",
+			"description": "Single debit item of a group: 98."
+		},
+		{
+			"const": "unece:LineStatusCodeList#99",
+			"description": "Interim response: 99."
+		}
 	]
 }

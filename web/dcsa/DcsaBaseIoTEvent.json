@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaBaseIoTEvent",
+	"title": "DcsaBaseIoTEvent",
 	"description": "Base IoT event attributes.\n\nSource: `baseIoTEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
@@ -9,7 +10,6 @@
 			"description": "Local date-time when the event happened."
 		},
 		"eventClassifierCode": {
-			"type": "string",
 			"const": "ACT",
 			"description": "IoT events are always \"ACT\"."
 		},

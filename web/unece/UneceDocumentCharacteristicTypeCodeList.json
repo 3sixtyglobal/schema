@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDocumentCharacteristicTypeCodeList",
+	"title": "UneceDocumentCharacteristicTypeCodeList",
 	"description": "Values for UneceDocumentCharacteristic typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedDocumentCharacteristic"
+	"oneOf": [
+		{
+			"const": "unece:specifiedDocumentCharacteristic",
+			"description": "A document characteristic specified for this document status."
+		}
+	]
 }

@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCashTypeCodeList",
+	"title": "UneceCashTypeCodeList",
 	"description": "Values for UneceCash typeCode property.",
-	"type": "string",
-	"const": "unece:identifiedCash"
+	"oneOf": [
+		{
+			"const": "unece:identifiedCash",
+			"description": "A cash payment identified for this trade settlement payment means."
+		}
+	]
 }

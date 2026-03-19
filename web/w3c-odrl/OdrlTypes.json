@@ -1,24 +1,72 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlTypes",
+	"title": "OdrlTypes",
 	"description": "The types for ODRL.",
-	"type": "string",
-	"enum": [
-		"Policy",
-		"Set",
-		"Offer",
-		"Agreement",
-		"Asset",
-		"AssetCollection",
-		"Party",
-		"PartyCollection",
-		"Action",
-		"Rule",
-		"Permission",
-		"Prohibition",
-		"Duty",
-		"Constraint",
-		"LogicalConstraint",
-		"LogicalConstraintOperand"
+	"oneOf": [
+		{
+			"const": "Policy",
+			"description": "Policy type."
+		},
+		{
+			"const": "Set",
+			"description": "Set type (subclass of Policy)."
+		},
+		{
+			"const": "Offer",
+			"description": "Offer type (subclass of Policy)."
+		},
+		{
+			"const": "Agreement",
+			"description": "Agreement type (subclass of Policy)."
+		},
+		{
+			"const": "Asset",
+			"description": "Asset type."
+		},
+		{
+			"const": "AssetCollection",
+			"description": "AssetCollection type."
+		},
+		{
+			"const": "Party",
+			"description": "Party type."
+		},
+		{
+			"const": "PartyCollection",
+			"description": "PartyCollection type."
+		},
+		{
+			"const": "Action",
+			"description": "Action type."
+		},
+		{
+			"const": "Rule",
+			"description": "Rule type."
+		},
+		{
+			"const": "Permission",
+			"description": "Permission type (subclass of Rule)."
+		},
+		{
+			"const": "Prohibition",
+			"description": "Prohibition type (subclass of Rule)."
+		},
+		{
+			"const": "Duty",
+			"description": "Duty type (subclass of Rule)."
+		},
+		{
+			"const": "Constraint",
+			"description": "Constraint type."
+		},
+		{
+			"const": "LogicalConstraint",
+			"description": "LogicalConstraint type."
+		},
+		{
+			"const": "LogicalConstraintOperand",
+			"description": "LogicalConstraintOperand type."
+		}
 	]
 }

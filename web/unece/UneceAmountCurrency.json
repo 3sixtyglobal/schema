@@ -1,187 +1,724 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAmountCurrency",
+	"title": "UneceAmountCurrency",
 	"description": "RDF Class for AmountType amount type to define currency codes.",
-	"type": "string",
-	"enum": [
-		"unece:AmountCurrency#AED",
-		"unece:AmountCurrency#AFN",
-		"unece:AmountCurrency#ALL",
-		"unece:AmountCurrency#AMD",
-		"unece:AmountCurrency#ANG",
-		"unece:AmountCurrency#AOA",
-		"unece:AmountCurrency#ARS",
-		"unece:AmountCurrency#AUD",
-		"unece:AmountCurrency#AWG",
-		"unece:AmountCurrency#AZN",
-		"unece:AmountCurrency#BAM",
-		"unece:AmountCurrency#BBD",
-		"unece:AmountCurrency#BDT",
-		"unece:AmountCurrency#BGN",
-		"unece:AmountCurrency#BHD",
-		"unece:AmountCurrency#BIF",
-		"unece:AmountCurrency#BMD",
-		"unece:AmountCurrency#BND",
-		"unece:AmountCurrency#BOB",
-		"unece:AmountCurrency#BOV",
-		"unece:AmountCurrency#BRL",
-		"unece:AmountCurrency#BSD",
-		"unece:AmountCurrency#BTN",
-		"unece:AmountCurrency#BWP",
-		"unece:AmountCurrency#BYN",
-		"unece:AmountCurrency#BZD",
-		"unece:AmountCurrency#CAD",
-		"unece:AmountCurrency#CDF",
-		"unece:AmountCurrency#CHE",
-		"unece:AmountCurrency#CHF",
-		"unece:AmountCurrency#CHW",
-		"unece:AmountCurrency#CLF",
-		"unece:AmountCurrency#CLP",
-		"unece:AmountCurrency#CNY",
-		"unece:AmountCurrency#COP",
-		"unece:AmountCurrency#COU",
-		"unece:AmountCurrency#CRC",
-		"unece:AmountCurrency#CUC",
-		"unece:AmountCurrency#CUP",
-		"unece:AmountCurrency#CVE",
-		"unece:AmountCurrency#CZK",
-		"unece:AmountCurrency#DJF",
-		"unece:AmountCurrency#DKK",
-		"unece:AmountCurrency#DOP",
-		"unece:AmountCurrency#DZD",
-		"unece:AmountCurrency#EGP",
-		"unece:AmountCurrency#ERN",
-		"unece:AmountCurrency#ETB",
-		"unece:AmountCurrency#EUR",
-		"unece:AmountCurrency#FJD",
-		"unece:AmountCurrency#FKP",
-		"unece:AmountCurrency#GBP",
-		"unece:AmountCurrency#GEL",
-		"unece:AmountCurrency#GHS",
-		"unece:AmountCurrency#GIP",
-		"unece:AmountCurrency#GMD",
-		"unece:AmountCurrency#GNF",
-		"unece:AmountCurrency#GTQ",
-		"unece:AmountCurrency#GYD",
-		"unece:AmountCurrency#HKD",
-		"unece:AmountCurrency#HNL",
-		"unece:AmountCurrency#HTG",
-		"unece:AmountCurrency#HUF",
-		"unece:AmountCurrency#IDR",
-		"unece:AmountCurrency#ILS",
-		"unece:AmountCurrency#INR",
-		"unece:AmountCurrency#IQD",
-		"unece:AmountCurrency#IRR",
-		"unece:AmountCurrency#ISK",
-		"unece:AmountCurrency#JMD",
-		"unece:AmountCurrency#JOD",
-		"unece:AmountCurrency#JPY",
-		"unece:AmountCurrency#KES",
-		"unece:AmountCurrency#KGS",
-		"unece:AmountCurrency#KHR",
-		"unece:AmountCurrency#KMF",
-		"unece:AmountCurrency#KPW",
-		"unece:AmountCurrency#KRW",
-		"unece:AmountCurrency#KWD",
-		"unece:AmountCurrency#KYD",
-		"unece:AmountCurrency#KZT",
-		"unece:AmountCurrency#LAK",
-		"unece:AmountCurrency#LBP",
-		"unece:AmountCurrency#LKR",
-		"unece:AmountCurrency#LRD",
-		"unece:AmountCurrency#LSL",
-		"unece:AmountCurrency#LYD",
-		"unece:AmountCurrency#MAD",
-		"unece:AmountCurrency#MDL",
-		"unece:AmountCurrency#MGA",
-		"unece:AmountCurrency#MKD",
-		"unece:AmountCurrency#MMK",
-		"unece:AmountCurrency#MNT",
-		"unece:AmountCurrency#MOP",
-		"unece:AmountCurrency#MRU",
-		"unece:AmountCurrency#MUR",
-		"unece:AmountCurrency#MVR",
-		"unece:AmountCurrency#MWK",
-		"unece:AmountCurrency#MXN",
-		"unece:AmountCurrency#MXV",
-		"unece:AmountCurrency#MYR",
-		"unece:AmountCurrency#MZN",
-		"unece:AmountCurrency#NAD",
-		"unece:AmountCurrency#NGN",
-		"unece:AmountCurrency#NIO",
-		"unece:AmountCurrency#NOK",
-		"unece:AmountCurrency#NPR",
-		"unece:AmountCurrency#NZD",
-		"unece:AmountCurrency#OMR",
-		"unece:AmountCurrency#PAB",
-		"unece:AmountCurrency#PEN",
-		"unece:AmountCurrency#PGK",
-		"unece:AmountCurrency#PHP",
-		"unece:AmountCurrency#PKR",
-		"unece:AmountCurrency#PLN",
-		"unece:AmountCurrency#PYG",
-		"unece:AmountCurrency#QAR",
-		"unece:AmountCurrency#RON",
-		"unece:AmountCurrency#RSD",
-		"unece:AmountCurrency#RUB",
-		"unece:AmountCurrency#RWF",
-		"unece:AmountCurrency#SAR",
-		"unece:AmountCurrency#SBD",
-		"unece:AmountCurrency#SCR",
-		"unece:AmountCurrency#SDG",
-		"unece:AmountCurrency#SEK",
-		"unece:AmountCurrency#SGD",
-		"unece:AmountCurrency#SHP",
-		"unece:AmountCurrency#SLE",
-		"unece:AmountCurrency#SOS",
-		"unece:AmountCurrency#SRD",
-		"unece:AmountCurrency#SSP",
-		"unece:AmountCurrency#STN",
-		"unece:AmountCurrency#SVC",
-		"unece:AmountCurrency#SYP",
-		"unece:AmountCurrency#SZL",
-		"unece:AmountCurrency#THB",
-		"unece:AmountCurrency#TJS",
-		"unece:AmountCurrency#TMT",
-		"unece:AmountCurrency#TND",
-		"unece:AmountCurrency#TOP",
-		"unece:AmountCurrency#TRY",
-		"unece:AmountCurrency#TTD",
-		"unece:AmountCurrency#TWD",
-		"unece:AmountCurrency#TZS",
-		"unece:AmountCurrency#UAH",
-		"unece:AmountCurrency#UGX",
-		"unece:AmountCurrency#USD",
-		"unece:AmountCurrency#USN",
-		"unece:AmountCurrency#UYI",
-		"unece:AmountCurrency#UYU",
-		"unece:AmountCurrency#UYW",
-		"unece:AmountCurrency#UZS",
-		"unece:AmountCurrency#VED",
-		"unece:AmountCurrency#VES",
-		"unece:AmountCurrency#VND",
-		"unece:AmountCurrency#VUV",
-		"unece:AmountCurrency#WST",
-		"unece:AmountCurrency#XAF",
-		"unece:AmountCurrency#XAG",
-		"unece:AmountCurrency#XAU",
-		"unece:AmountCurrency#XBA",
-		"unece:AmountCurrency#XBB",
-		"unece:AmountCurrency#XBC",
-		"unece:AmountCurrency#XBD",
-		"unece:AmountCurrency#XCD",
-		"unece:AmountCurrency#XDR",
-		"unece:AmountCurrency#XOF",
-		"unece:AmountCurrency#XPD",
-		"unece:AmountCurrency#XPF",
-		"unece:AmountCurrency#XPT",
-		"unece:AmountCurrency#XSU",
-		"unece:AmountCurrency#XTS",
-		"unece:AmountCurrency#XUA",
-		"unece:AmountCurrency#XXX",
-		"unece:AmountCurrency#YER",
-		"unece:AmountCurrency#ZAR",
-		"unece:AmountCurrency#ZMW",
-		"unece:AmountCurrency#ZWL"
+	"oneOf": [
+		{
+			"const": "unece:AmountCurrency#AED",
+			"description": "Dirham: AED."
+		},
+		{
+			"const": "unece:AmountCurrency#AFN",
+			"description": "Afghani: AFN."
+		},
+		{
+			"const": "unece:AmountCurrency#ALL",
+			"description": "Lek: ALL."
+		},
+		{
+			"const": "unece:AmountCurrency#AMD",
+			"description": "Dram: AMD."
+		},
+		{
+			"const": "unece:AmountCurrency#ANG",
+			"description": "Netherlands Antillian Guilder: ANG."
+		},
+		{
+			"const": "unece:AmountCurrency#AOA",
+			"description": "Kwanza: AOA."
+		},
+		{
+			"const": "unece:AmountCurrency#ARS",
+			"description": "Argentine Peso: ARS."
+		},
+		{
+			"const": "unece:AmountCurrency#AUD",
+			"description": "Australian Dollar: AUD."
+		},
+		{
+			"const": "unece:AmountCurrency#AWG",
+			"description": "Aruban Florin: AWG."
+		},
+		{
+			"const": "unece:AmountCurrency#AZN",
+			"description": "Azerbaijan Manat: AZN."
+		},
+		{
+			"const": "unece:AmountCurrency#BAM",
+			"description": "Convertible Mark: BAM."
+		},
+		{
+			"const": "unece:AmountCurrency#BBD",
+			"description": "Barbados Dollar: BBD."
+		},
+		{
+			"const": "unece:AmountCurrency#BDT",
+			"description": "Taka: BDT."
+		},
+		{
+			"const": "unece:AmountCurrency#BGN",
+			"description": "Bulgarian Lev: BGN."
+		},
+		{
+			"const": "unece:AmountCurrency#BHD",
+			"description": "Bahraini Dinar: BHD."
+		},
+		{
+			"const": "unece:AmountCurrency#BIF",
+			"description": "Burundi Franc: BIF."
+		},
+		{
+			"const": "unece:AmountCurrency#BMD",
+			"description": "Bermudian Dollar (customarily: Bermuda Dollar): BMD."
+		},
+		{
+			"const": "unece:AmountCurrency#BND",
+			"description": "Brunei Dollar: BND."
+		},
+		{
+			"const": "unece:AmountCurrency#BOB",
+			"description": "Boliviano: BOB."
+		},
+		{
+			"const": "unece:AmountCurrency#BOV",
+			"description": "Mvdol: BOV."
+		},
+		{
+			"const": "unece:AmountCurrency#BRL",
+			"description": "Brazilian Real: BRL."
+		},
+		{
+			"const": "unece:AmountCurrency#BSD",
+			"description": "Bahamian Dollar: BSD."
+		},
+		{
+			"const": "unece:AmountCurrency#BTN",
+			"description": "Ngultrum: BTN."
+		},
+		{
+			"const": "unece:AmountCurrency#BWP",
+			"description": "Pula: BWP."
+		},
+		{
+			"const": "unece:AmountCurrency#BYN",
+			"description": "Belarussian Ruble: BYN."
+		},
+		{
+			"const": "unece:AmountCurrency#BZD",
+			"description": "Belize Dollar: BZD."
+		},
+		{
+			"const": "unece:AmountCurrency#CAD",
+			"description": "Canadian Dollar: CAD."
+		},
+		{
+			"const": "unece:AmountCurrency#CDF",
+			"description": "Franc Congolais: CDF."
+		},
+		{
+			"const": "unece:AmountCurrency#CHE",
+			"description": "WIR Euro: CHE."
+		},
+		{
+			"const": "unece:AmountCurrency#CHF",
+			"description": "Swiss Franc: CHF."
+		},
+		{
+			"const": "unece:AmountCurrency#CHW",
+			"description": "WIR Franc: CHW."
+		},
+		{
+			"const": "unece:AmountCurrency#CLF",
+			"description": "Unidad de Fomento: CLF."
+		},
+		{
+			"const": "unece:AmountCurrency#CLP",
+			"description": "Chilean Peso: CLP."
+		},
+		{
+			"const": "unece:AmountCurrency#CNY",
+			"description": "Yuan Renminbi: CNY."
+		},
+		{
+			"const": "unece:AmountCurrency#COP",
+			"description": "Colombian Peso: COP."
+		},
+		{
+			"const": "unece:AmountCurrency#COU",
+			"description": "Unidad de Valor Real: COU."
+		},
+		{
+			"const": "unece:AmountCurrency#CRC",
+			"description": "Costa Rican Colon: CRC."
+		},
+		{
+			"const": "unece:AmountCurrency#CUC",
+			"description": "Peso Convertible: CUC."
+		},
+		{
+			"const": "unece:AmountCurrency#CUP",
+			"description": "Cuban Peso: CUP."
+		},
+		{
+			"const": "unece:AmountCurrency#CVE",
+			"description": "Cabo Verde Escudo: CVE."
+		},
+		{
+			"const": "unece:AmountCurrency#CZK",
+			"description": "Czech Koruna: CZK."
+		},
+		{
+			"const": "unece:AmountCurrency#DJF",
+			"description": "Djibouti Franc: DJF."
+		},
+		{
+			"const": "unece:AmountCurrency#DKK",
+			"description": "Danish Krone: DKK."
+		},
+		{
+			"const": "unece:AmountCurrency#DOP",
+			"description": "Dominican Peso: DOP."
+		},
+		{
+			"const": "unece:AmountCurrency#DZD",
+			"description": "Algerian Dinar: DZD."
+		},
+		{
+			"const": "unece:AmountCurrency#EGP",
+			"description": "Egyptian Pound: EGP."
+		},
+		{
+			"const": "unece:AmountCurrency#ERN",
+			"description": "Nakfa: ERN."
+		},
+		{
+			"const": "unece:AmountCurrency#ETB",
+			"description": "Ethopian Birr: ETB."
+		},
+		{
+			"const": "unece:AmountCurrency#EUR",
+			"description": "Euro: EUR."
+		},
+		{
+			"const": "unece:AmountCurrency#FJD",
+			"description": "Fiji Dollar: FJD."
+		},
+		{
+			"const": "unece:AmountCurrency#FKP",
+			"description": "Falkland Islands Pound: FKP."
+		},
+		{
+			"const": "unece:AmountCurrency#GBP",
+			"description": "Pound Sterling: GBP."
+		},
+		{
+			"const": "unece:AmountCurrency#GEL",
+			"description": "Lari: GEL."
+		},
+		{
+			"const": "unece:AmountCurrency#GHS",
+			"description": "Ghana Cedi: GHS."
+		},
+		{
+			"const": "unece:AmountCurrency#GIP",
+			"description": "Gibraltar Pound: GIP."
+		},
+		{
+			"const": "unece:AmountCurrency#GMD",
+			"description": "Dalasi: GMD."
+		},
+		{
+			"const": "unece:AmountCurrency#GNF",
+			"description": "Guinean Franc: GNF."
+		},
+		{
+			"const": "unece:AmountCurrency#GTQ",
+			"description": "Quetzal: GTQ."
+		},
+		{
+			"const": "unece:AmountCurrency#GYD",
+			"description": "Guyana Dollar: GYD."
+		},
+		{
+			"const": "unece:AmountCurrency#HKD",
+			"description": "Honk Kong Dollar: HKD."
+		},
+		{
+			"const": "unece:AmountCurrency#HNL",
+			"description": "Lempira: HNL."
+		},
+		{
+			"const": "unece:AmountCurrency#HTG",
+			"description": "Gourde: HTG."
+		},
+		{
+			"const": "unece:AmountCurrency#HUF",
+			"description": "Forint: HUF."
+		},
+		{
+			"const": "unece:AmountCurrency#IDR",
+			"description": "Rupiah: IDR."
+		},
+		{
+			"const": "unece:AmountCurrency#ILS",
+			"description": "New Israeli Sheqel: ILS."
+		},
+		{
+			"const": "unece:AmountCurrency#INR",
+			"description": "Indian Rupee: INR."
+		},
+		{
+			"const": "unece:AmountCurrency#IQD",
+			"description": "Iraqi Dinar: IQD."
+		},
+		{
+			"const": "unece:AmountCurrency#IRR",
+			"description": "Iranian Rial: IRR."
+		},
+		{
+			"const": "unece:AmountCurrency#ISK",
+			"description": "Iceland Krona: ISK."
+		},
+		{
+			"const": "unece:AmountCurrency#JMD",
+			"description": "Jamaican Dollar: JMD."
+		},
+		{
+			"const": "unece:AmountCurrency#JOD",
+			"description": "Jordanian Dinar: JOD."
+		},
+		{
+			"const": "unece:AmountCurrency#JPY",
+			"description": "Yen: JPY."
+		},
+		{
+			"const": "unece:AmountCurrency#KES",
+			"description": "Kenyan Shilling: KES."
+		},
+		{
+			"const": "unece:AmountCurrency#KGS",
+			"description": "Som: KGS."
+		},
+		{
+			"const": "unece:AmountCurrency#KHR",
+			"description": "Riel: KHR."
+		},
+		{
+			"const": "unece:AmountCurrency#KMF",
+			"description": "Comorian Franc: KMF."
+		},
+		{
+			"const": "unece:AmountCurrency#KPW",
+			"description": "North Korean Won: KPW."
+		},
+		{
+			"const": "unece:AmountCurrency#KRW",
+			"description": "Won: KRW."
+		},
+		{
+			"const": "unece:AmountCurrency#KWD",
+			"description": "Kuwaiti Dinar: KWD."
+		},
+		{
+			"const": "unece:AmountCurrency#KYD",
+			"description": "Cayman Islands Dollar: KYD."
+		},
+		{
+			"const": "unece:AmountCurrency#KZT",
+			"description": "Tenge: KZT."
+		},
+		{
+			"const": "unece:AmountCurrency#LAK",
+			"description": "Lao Kip: LAK."
+		},
+		{
+			"const": "unece:AmountCurrency#LBP",
+			"description": "Lebanese Pound: LBP."
+		},
+		{
+			"const": "unece:AmountCurrency#LKR",
+			"description": "Sri Lanka Rupee: LKR."
+		},
+		{
+			"const": "unece:AmountCurrency#LRD",
+			"description": "Liberian Dollar: LRD."
+		},
+		{
+			"const": "unece:AmountCurrency#LSL",
+			"description": "Loti: LSL."
+		},
+		{
+			"const": "unece:AmountCurrency#LYD",
+			"description": "Libyan Dinar: LYD."
+		},
+		{
+			"const": "unece:AmountCurrency#MAD",
+			"description": "Morrocan Dirham: MAD."
+		},
+		{
+			"const": "unece:AmountCurrency#MDL",
+			"description": "Moldovan Leu: MDL."
+		},
+		{
+			"const": "unece:AmountCurrency#MGA",
+			"description": "Ariary: MGA."
+		},
+		{
+			"const": "unece:AmountCurrency#MKD",
+			"description": "Denar: MKD."
+		},
+		{
+			"const": "unece:AmountCurrency#MMK",
+			"description": "Kyat: MMK."
+		},
+		{
+			"const": "unece:AmountCurrency#MNT",
+			"description": "Tugrik: MNT."
+		},
+		{
+			"const": "unece:AmountCurrency#MOP",
+			"description": "Pataca: MOP."
+		},
+		{
+			"const": "unece:AmountCurrency#MRU",
+			"description": "Ouguiya: MRU."
+		},
+		{
+			"const": "unece:AmountCurrency#MUR",
+			"description": "Mauritius Rupee: MUR."
+		},
+		{
+			"const": "unece:AmountCurrency#MVR",
+			"description": "Rufiyaa: MVR."
+		},
+		{
+			"const": "unece:AmountCurrency#MWK",
+			"description": "Malawi Kwacha: MWK."
+		},
+		{
+			"const": "unece:AmountCurrency#MXN",
+			"description": "Mexican Peso: MXN."
+		},
+		{
+			"const": "unece:AmountCurrency#MXV",
+			"description": "Mexican Unidad de Inversion (UDI): MXV."
+		},
+		{
+			"const": "unece:AmountCurrency#MYR",
+			"description": "Malaysian Ringgit: MYR."
+		},
+		{
+			"const": "unece:AmountCurrency#MZN",
+			"description": "Mozambique Metical: MZN."
+		},
+		{
+			"const": "unece:AmountCurrency#NAD",
+			"description": "Namibia Dollar: NAD."
+		},
+		{
+			"const": "unece:AmountCurrency#NGN",
+			"description": "Naira: NGN."
+		},
+		{
+			"const": "unece:AmountCurrency#NIO",
+			"description": "Cordoba Oro: NIO."
+		},
+		{
+			"const": "unece:AmountCurrency#NOK",
+			"description": "Norwegian Krone: NOK."
+		},
+		{
+			"const": "unece:AmountCurrency#NPR",
+			"description": "Nepalese Rupee: NPR."
+		},
+		{
+			"const": "unece:AmountCurrency#NZD",
+			"description": "New Zealand Dollar: NZD."
+		},
+		{
+			"const": "unece:AmountCurrency#OMR",
+			"description": "Rial Omani: OMR."
+		},
+		{
+			"const": "unece:AmountCurrency#PAB",
+			"description": "Balboa: PAB."
+		},
+		{
+			"const": "unece:AmountCurrency#PEN",
+			"description": "Sol: PEN."
+		},
+		{
+			"const": "unece:AmountCurrency#PGK",
+			"description": "Kina: PGK."
+		},
+		{
+			"const": "unece:AmountCurrency#PHP",
+			"description": "Philippine Piso: PHP."
+		},
+		{
+			"const": "unece:AmountCurrency#PKR",
+			"description": "Pakistan Rupee: PKR."
+		},
+		{
+			"const": "unece:AmountCurrency#PLN",
+			"description": "Zloty: PLN."
+		},
+		{
+			"const": "unece:AmountCurrency#PYG",
+			"description": "Guarani: PYG."
+		},
+		{
+			"const": "unece:AmountCurrency#QAR",
+			"description": "Qatari Rial: QAR."
+		},
+		{
+			"const": "unece:AmountCurrency#RON",
+			"description": "Romanian Leu: RON."
+		},
+		{
+			"const": "unece:AmountCurrency#RSD",
+			"description": "Serbian Dinar: RSD."
+		},
+		{
+			"const": "unece:AmountCurrency#RUB",
+			"description": "Russian Ruble: RUB."
+		},
+		{
+			"const": "unece:AmountCurrency#RWF",
+			"description": "Rwanda Franc: RWF."
+		},
+		{
+			"const": "unece:AmountCurrency#SAR",
+			"description": "Saudi Riyal: SAR."
+		},
+		{
+			"const": "unece:AmountCurrency#SBD",
+			"description": "Solomon Islands Dollar: SBD."
+		},
+		{
+			"const": "unece:AmountCurrency#SCR",
+			"description": "Seychelles Rupee: SCR."
+		},
+		{
+			"const": "unece:AmountCurrency#SDG",
+			"description": "Sudanese Pound: SDG."
+		},
+		{
+			"const": "unece:AmountCurrency#SEK",
+			"description": "Swedish Krona: SEK."
+		},
+		{
+			"const": "unece:AmountCurrency#SGD",
+			"description": "Singapore Dollar: SGD."
+		},
+		{
+			"const": "unece:AmountCurrency#SHP",
+			"description": "St. Helena Pound: SHP."
+		},
+		{
+			"const": "unece:AmountCurrency#SLE",
+			"description": "Leone: SLE."
+		},
+		{
+			"const": "unece:AmountCurrency#SOS",
+			"description": "Somali Shilling: SOS."
+		},
+		{
+			"const": "unece:AmountCurrency#SRD",
+			"description": "Suriname Dollar: SRD."
+		},
+		{
+			"const": "unece:AmountCurrency#SSP",
+			"description": "South Sudanese Pound: SSP."
+		},
+		{
+			"const": "unece:AmountCurrency#STN",
+			"description": "Dobra: STN."
+		},
+		{
+			"const": "unece:AmountCurrency#SVC",
+			"description": "El Salvador Colon: SVC."
+		},
+		{
+			"const": "unece:AmountCurrency#SYP",
+			"description": "Syrian Pound: SYP."
+		},
+		{
+			"const": "unece:AmountCurrency#SZL",
+			"description": "Lilangeni: SZL."
+		},
+		{
+			"const": "unece:AmountCurrency#THB",
+			"description": "Baht: THB."
+		},
+		{
+			"const": "unece:AmountCurrency#TJS",
+			"description": "Somoni: TJS."
+		},
+		{
+			"const": "unece:AmountCurrency#TMT",
+			"description": "Turkmenistan New Manat: TMT."
+		},
+		{
+			"const": "unece:AmountCurrency#TND",
+			"description": "Tunisian Dinar: TND."
+		},
+		{
+			"const": "unece:AmountCurrency#TOP",
+			"description": "Pa'anga: TOP."
+		},
+		{
+			"const": "unece:AmountCurrency#TRY",
+			"description": "Turkish Lira: TRY."
+		},
+		{
+			"const": "unece:AmountCurrency#TTD",
+			"description": "Trinidad and Tobago Dollar: TTD."
+		},
+		{
+			"const": "unece:AmountCurrency#TWD",
+			"description": "New Taiwan Dollar: TWD."
+		},
+		{
+			"const": "unece:AmountCurrency#TZS",
+			"description": "Tanzanian Shilling: TZS."
+		},
+		{
+			"const": "unece:AmountCurrency#UAH",
+			"description": "Hryvnia: UAH."
+		},
+		{
+			"const": "unece:AmountCurrency#UGX",
+			"description": "Uganda Shilling: UGX."
+		},
+		{
+			"const": "unece:AmountCurrency#USD",
+			"description": "US Dollar: USD."
+		},
+		{
+			"const": "unece:AmountCurrency#USN",
+			"description": "US Dollar (Next day): USN."
+		},
+		{
+			"const": "unece:AmountCurrency#UYI",
+			"description": "Uruguayo Peso en Unidades: UYI."
+		},
+		{
+			"const": "unece:AmountCurrency#UYU",
+			"description": "Peso Uruguayo: UYU."
+		},
+		{
+			"const": "unece:AmountCurrency#UYW",
+			"description": "Unidad Previsional: UYW."
+		},
+		{
+			"const": "unece:AmountCurrency#UZS",
+			"description": "Uzbekistan Sum: UZS."
+		},
+		{
+			"const": "unece:AmountCurrency#VED",
+			"description": "Bolívar Soberano: VED."
+		},
+		{
+			"const": "unece:AmountCurrency#VES",
+			"description": "Bolívar Soberano: VES."
+		},
+		{
+			"const": "unece:AmountCurrency#VND",
+			"description": "Dong: VND."
+		},
+		{
+			"const": "unece:AmountCurrency#VUV",
+			"description": "Vatu: VUV."
+		},
+		{
+			"const": "unece:AmountCurrency#WST",
+			"description": "Tala: WST."
+		},
+		{
+			"const": "unece:AmountCurrency#XAF",
+			"description": "CFA Franc: XAF."
+		},
+		{
+			"const": "unece:AmountCurrency#XAG",
+			"description": "Silver: XAG."
+		},
+		{
+			"const": "unece:AmountCurrency#XAU",
+			"description": "Gold: XAU."
+		},
+		{
+			"const": "unece:AmountCurrency#XBA",
+			"description": "Bond Markets Units European Composite Unit (EURCO): XBA."
+		},
+		{
+			"const": "unece:AmountCurrency#XBB",
+			"description": "European Monetary Unit (E.M.U.-6): XBB."
+		},
+		{
+			"const": "unece:AmountCurrency#XBC",
+			"description": "European Unit of Account 9 (E.U.A.-9): XBC."
+		},
+		{
+			"const": "unece:AmountCurrency#XBD",
+			"description": "European Unit of Account 17 (E.U.A.-17): XBD."
+		},
+		{
+			"const": "unece:AmountCurrency#XCD",
+			"description": "East Carribean Dollar: XCD."
+		},
+		{
+			"const": "unece:AmountCurrency#XDR",
+			"description": "SDR: XDR."
+		},
+		{
+			"const": "unece:AmountCurrency#XOF",
+			"description": "CFA Franc: XOF."
+		},
+		{
+			"const": "unece:AmountCurrency#XPD",
+			"description": "Palladium: XPD."
+		},
+		{
+			"const": "unece:AmountCurrency#XPF",
+			"description": "CFP Franc: XPF."
+		},
+		{
+			"const": "unece:AmountCurrency#XPT",
+			"description": "Platinum: XPT."
+		},
+		{
+			"const": "unece:AmountCurrency#XSU",
+			"description": "Sucre: XSU."
+		},
+		{
+			"const": "unece:AmountCurrency#XTS",
+			"description": "Codes specifically reserved for testing purposes: XTS."
+		},
+		{
+			"const": "unece:AmountCurrency#XUA",
+			"description": "ADB Unit of Account: XUA."
+		},
+		{
+			"const": "unece:AmountCurrency#XXX",
+			"description": "The codes assigned for transactions where no currency is involved: XXX."
+		},
+		{
+			"const": "unece:AmountCurrency#YER",
+			"description": "Yemeni Rial: YER."
+		},
+		{
+			"const": "unece:AmountCurrency#ZAR",
+			"description": "Rand: ZAR."
+		},
+		{
+			"const": "unece:AmountCurrency#ZMW",
+			"description": "Zambian Kwacha: ZMW."
+		},
+		{
+			"const": "unece:AmountCurrency#ZWL",
+			"description": "Zimbabwe Dollar: ZWL."
+		}
 	]
 }

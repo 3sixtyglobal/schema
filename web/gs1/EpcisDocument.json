@@ -1,65 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisDocument",
+	"title": "EpcisDocument",
 	"description": "EPCIS 2.0 capture document containing header metadata and an event list.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1 context root and optionally augmented with custom entries.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://ref.gs1.org/epcis"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://ref.gs1.org/epcis"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://ref.gs1.org/epcis"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisContextType",
+			"description": "The"
 		},
 		"id": {
 			"type": "string",
 			"description": "The JSON-LD document id."
 		},
 		"type": {
-			"type": "string",
 			"const": "EPCISDocument",
 			"description": "JSON-LD Type."
 		},

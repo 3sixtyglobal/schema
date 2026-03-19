@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeProductFeatureTypeCodeList",
+	"title": "UneceTradeProductFeatureTypeCodeList",
 	"description": "Values for UneceTradeProductFeature typeCode property.",
-	"type": "string",
-	"const": "unece:marketingFeature"
+	"oneOf": [
+		{
+			"const": "unece:marketingFeature",
+			"description": "A marketing feature of this trade product."
+		}
+	]
 }

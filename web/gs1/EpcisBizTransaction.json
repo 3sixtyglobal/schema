@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisBizTransaction",
+	"title": "EpcisBizTransaction",
 	"description": "EPCIS 2.0 BizTransaction element identifying a business document and its type.",
 	"type": "object",
 	"properties": {
@@ -13,11 +14,11 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier that indicates the type of BizTransaction document (e.g. Purchase Order, Despatch Advice).\n\nUse  {@link  EpcisBizTransactionTypes }  for known values."
+			"description": "Identifier that indicates the type of BizTransaction document (e.g. Purchase\nOrder, Despatch Advice).\n\nUse {@link EpcisBizTransactionTypes} for known values."
 		},
 		"bizTransaction": {
 			"type": "string",
-			"description": "URI identifier of the specific business transaction document (alias of id in JSON or XML)."
+			"description": "URI identifier of the specific business transaction document (alias of id in\nJSON or XML)."
 		}
 	},
 	"required": ["bizTransaction"]

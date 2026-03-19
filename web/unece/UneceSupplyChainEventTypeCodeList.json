@@ -1,41 +1,140 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainEventTypeCodeList",
+	"title": "UneceSupplyChainEventTypeCodeList",
 	"description": "Values for UneceSupplyChainEvent typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:acceptanceEvent",
-		"unece:actualDeliveryEvent",
-		"unece:actualDespatchEvent",
-		"unece:actualLoadingEvent",
-		"unece:actualPickUpEvent",
-		"unece:actualReceiptEvent",
-		"unece:actualUnloadingEvent",
-		"unece:confirmedDeliveryEvent",
-		"unece:confirmedDespatchEvent",
-		"unece:confirmedPickUpEvent",
-		"unece:confirmedReleaseEvent",
-		"unece:deliverySupplyChainEvent",
-		"unece:estimatedDeliveryEvent",
-		"unece:inspectionEvent",
-		"unece:occurrenceEvent",
-		"unece:packagingEvent",
-		"unece:plannedDeliveryEvent",
-		"unece:plannedDespatchEvent",
-		"unece:plannedPickUpEvent",
-		"unece:plannedReleaseEvent",
-		"unece:plannedShipFromDeliveryEvent",
-		"unece:plannedShipToDeliveryEvent",
-		"unece:previousDeliverySupplyChainEvent",
-		"unece:processingEvent",
-		"unece:productionEvent",
-		"unece:reclassificationEvent",
-		"unece:reportedSupplyChainEvent",
-		"unece:reportingIOTDeviceSupplyChainEvent",
-		"unece:requestedDeliveryEvent",
-		"unece:requestedDespatchEvent",
-		"unece:scheduledDeliveryEvent",
-		"unece:specifiedSupplyChainEvent",
-		"unece:ultimateShipToDeliveryEvent"
+	"oneOf": [
+		{
+			"const": "unece:acceptanceEvent",
+			"description": "An acceptance delivery event, at header level, for this trade delivery.\nAn acceptance delivery event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualDeliveryEvent",
+			"description": "An actual delivery event for this subordinate line trade delivery.\nAn actual delivery event, at header level, for this trade delivery.\nAn actual delivery event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualDespatchEvent",
+			"description": "An actual despatch event, at header level, for this trade delivery.\nAn actual despatch event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualLoadingEvent",
+			"description": "The actual loading event, at header level, for this trade delivery.\nThe actual loading event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualPickUpEvent",
+			"description": "The actual pick-up event, at header level, for this trade delivery.\nThe actual pick-up event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualReceiptEvent",
+			"description": "The actual receipt event, at header level, for this trade delivery.\nThe actual receipt event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:actualUnloadingEvent",
+			"description": "The actual unloading event, at header level, for this trade delivery.\nThe actual unloading event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:confirmedDeliveryEvent",
+			"description": "A confirmed delivery event in this supply chain supply plan.\nThe confirmed delivery event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:confirmedDespatchEvent",
+			"description": "The despatch event, at header level, confirmed for this trade delivery.\nThe despatch event, at line level, confirmed for this trade delivery."
+		},
+		{
+			"const": "unece:confirmedPickUpEvent",
+			"description": "The pick-up event, at header level, confirmed for this trade delivery.\nThe pick-up event, at line level, confirmed for this trade delivery."
+		},
+		{
+			"const": "unece:confirmedReleaseEvent",
+			"description": "The confirmed release event, at header level, for this trade delivery.\nThe release event, at line level, confirmed for this trade delivery."
+		},
+		{
+			"const": "unece:deliverySupplyChainEvent",
+			"description": "A delivery event for this supply chain supply plan."
+		},
+		{
+			"const": "unece:estimatedDeliveryEvent",
+			"description": "An estimated delivery event for this trade delivery header."
+		},
+		{
+			"const": "unece:inspectionEvent",
+			"description": "A supply chain inspection event at this logistics location.\nThe inspection event for this trade product instance."
+		},
+		{
+			"const": "unece:occurrenceEvent",
+			"description": "An occurrence of an event for this production process."
+		},
+		{
+			"const": "unece:packagingEvent",
+			"description": "The packaging event for this trade product instance."
+		},
+		{
+			"const": "unece:plannedDeliveryEvent",
+			"description": "A delivery event, at header level, planned for this trade delivery.\nA delivery event, at line level, planned for this trade delivery."
+		},
+		{
+			"const": "unece:plannedDespatchEvent",
+			"description": "A despatch event, at header level, planned for this trade delivery.\nA despatch event, at line level, planned for this trade delivery."
+		},
+		{
+			"const": "unece:plannedPickUpEvent",
+			"description": "The pick-up event, at header level, planned for this trade delivery.\nThe pick-up event, at line level, planned for this trade delivery."
+		},
+		{
+			"const": "unece:plannedReleaseEvent",
+			"description": "The release event, at header level, planned for this trade delivery."
+		},
+		{
+			"const": "unece:plannedShipFromDeliveryEvent",
+			"description": "The event of the planned ship from delivery, at header level, for this trade delivery."
+		},
+		{
+			"const": "unece:plannedShipToDeliveryEvent",
+			"description": "The planned ship to delivery event, at header level, for this trade delivery.\nThe planned ship to delivery event, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:previousDeliverySupplyChainEvent",
+			"description": "A previous delivery event, at header level, for this trade delivery."
+		},
+		{
+			"const": "unece:processingEvent",
+			"description": "The processing event for this trade product instance."
+		},
+		{
+			"const": "unece:productionEvent",
+			"description": "The production event for this trade product instance."
+		},
+		{
+			"const": "unece:reclassificationEvent",
+			"description": "A reclassification supply chain event for this trade product instance."
+		},
+		{
+			"const": "unece:reportedSupplyChainEvent",
+			"description": "A supply chain event reported for this logistics status."
+		},
+		{
+			"const": "unece:reportingIOTDeviceSupplyChainEvent",
+			"description": "An IOT (Internet of Things) device or scanning device reporting event for this production machine.\nAn IOT (Internet of Things) or other scanning device reporting event for this specified production device."
+		},
+		{
+			"const": "unece:requestedDeliveryEvent",
+			"description": "A delivery event, at header level, requested for this trade delivery.\nA delivery event, at line level, requested for this trade delivery."
+		},
+		{
+			"const": "unece:requestedDespatchEvent",
+			"description": "A despatch event, at header level, requested for this trade delivery.\nA despatch event, at line level, requested for this trade delivery."
+		},
+		{
+			"const": "unece:scheduledDeliveryEvent",
+			"description": "A scheduled delivery event in this supply chain supply plan."
+		},
+		{
+			"const": "unece:specifiedSupplyChainEvent",
+			"description": "A supply chain event specified for this product batch.\nA supply chain event specified for this production facility.\nA supply chain event specified for this referenced location.\nA supply chain event specified for this supply chain inventory.\nA supply chain event specified for this sustainability characteristic.\nA supply chain event specified for this technical characteristic.\nA supply chain event specified for this trade product.\nA supply chain event, at header level, specified for this trade delivery.\nAn event specified for this supply chain supply plan."
+		},
+		{
+			"const": "unece:ultimateShipToDeliveryEvent",
+			"description": "The ultimate ship to delivery event, at header level, for this trade delivery."
+		}
 	]
 }

@@ -1,418 +1,1648 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCodeListResponsibleAgencyCodeList",
+	"title": "UneceCodeListResponsibleAgencyCodeList",
 	"description": "A code specifying the organization responsible for a code or identifier list.",
-	"type": "string",
-	"enum": [
-		"unece:CodeListResponsibleAgencyCodeList#1",
-		"unece:CodeListResponsibleAgencyCodeList#10",
-		"unece:CodeListResponsibleAgencyCodeList#100",
-		"unece:CodeListResponsibleAgencyCodeList#101",
-		"unece:CodeListResponsibleAgencyCodeList#102",
-		"unece:CodeListResponsibleAgencyCodeList#103",
-		"unece:CodeListResponsibleAgencyCodeList#104",
-		"unece:CodeListResponsibleAgencyCodeList#105",
-		"unece:CodeListResponsibleAgencyCodeList#106",
-		"unece:CodeListResponsibleAgencyCodeList#107",
-		"unece:CodeListResponsibleAgencyCodeList#108",
-		"unece:CodeListResponsibleAgencyCodeList#109",
-		"unece:CodeListResponsibleAgencyCodeList#11",
-		"unece:CodeListResponsibleAgencyCodeList#110",
-		"unece:CodeListResponsibleAgencyCodeList#111",
-		"unece:CodeListResponsibleAgencyCodeList#112",
-		"unece:CodeListResponsibleAgencyCodeList#113",
-		"unece:CodeListResponsibleAgencyCodeList#114",
-		"unece:CodeListResponsibleAgencyCodeList#116",
-		"unece:CodeListResponsibleAgencyCodeList#117",
-		"unece:CodeListResponsibleAgencyCodeList#118",
-		"unece:CodeListResponsibleAgencyCodeList#119",
-		"unece:CodeListResponsibleAgencyCodeList#12",
-		"unece:CodeListResponsibleAgencyCodeList#120",
-		"unece:CodeListResponsibleAgencyCodeList#121",
-		"unece:CodeListResponsibleAgencyCodeList#122",
-		"unece:CodeListResponsibleAgencyCodeList#123",
-		"unece:CodeListResponsibleAgencyCodeList#124",
-		"unece:CodeListResponsibleAgencyCodeList#125",
-		"unece:CodeListResponsibleAgencyCodeList#126",
-		"unece:CodeListResponsibleAgencyCodeList#127",
-		"unece:CodeListResponsibleAgencyCodeList#128",
-		"unece:CodeListResponsibleAgencyCodeList#129",
-		"unece:CodeListResponsibleAgencyCodeList#13",
-		"unece:CodeListResponsibleAgencyCodeList#130",
-		"unece:CodeListResponsibleAgencyCodeList#131",
-		"unece:CodeListResponsibleAgencyCodeList#132",
-		"unece:CodeListResponsibleAgencyCodeList#133",
-		"unece:CodeListResponsibleAgencyCodeList#134",
-		"unece:CodeListResponsibleAgencyCodeList#135",
-		"unece:CodeListResponsibleAgencyCodeList#136",
-		"unece:CodeListResponsibleAgencyCodeList#137",
-		"unece:CodeListResponsibleAgencyCodeList#138",
-		"unece:CodeListResponsibleAgencyCodeList#139",
-		"unece:CodeListResponsibleAgencyCodeList#14",
-		"unece:CodeListResponsibleAgencyCodeList#140",
-		"unece:CodeListResponsibleAgencyCodeList#141",
-		"unece:CodeListResponsibleAgencyCodeList#142",
-		"unece:CodeListResponsibleAgencyCodeList#143",
-		"unece:CodeListResponsibleAgencyCodeList#144",
-		"unece:CodeListResponsibleAgencyCodeList#145",
-		"unece:CodeListResponsibleAgencyCodeList#146",
-		"unece:CodeListResponsibleAgencyCodeList#147",
-		"unece:CodeListResponsibleAgencyCodeList#148",
-		"unece:CodeListResponsibleAgencyCodeList#149",
-		"unece:CodeListResponsibleAgencyCodeList#15",
-		"unece:CodeListResponsibleAgencyCodeList#150",
-		"unece:CodeListResponsibleAgencyCodeList#151",
-		"unece:CodeListResponsibleAgencyCodeList#152",
-		"unece:CodeListResponsibleAgencyCodeList#153",
-		"unece:CodeListResponsibleAgencyCodeList#154",
-		"unece:CodeListResponsibleAgencyCodeList#155",
-		"unece:CodeListResponsibleAgencyCodeList#156",
-		"unece:CodeListResponsibleAgencyCodeList#157",
-		"unece:CodeListResponsibleAgencyCodeList#158",
-		"unece:CodeListResponsibleAgencyCodeList#159",
-		"unece:CodeListResponsibleAgencyCodeList#16",
-		"unece:CodeListResponsibleAgencyCodeList#160",
-		"unece:CodeListResponsibleAgencyCodeList#161",
-		"unece:CodeListResponsibleAgencyCodeList#162",
-		"unece:CodeListResponsibleAgencyCodeList#163",
-		"unece:CodeListResponsibleAgencyCodeList#164",
-		"unece:CodeListResponsibleAgencyCodeList#165",
-		"unece:CodeListResponsibleAgencyCodeList#166",
-		"unece:CodeListResponsibleAgencyCodeList#167",
-		"unece:CodeListResponsibleAgencyCodeList#168",
-		"unece:CodeListResponsibleAgencyCodeList#169",
-		"unece:CodeListResponsibleAgencyCodeList#17",
-		"unece:CodeListResponsibleAgencyCodeList#170",
-		"unece:CodeListResponsibleAgencyCodeList#171",
-		"unece:CodeListResponsibleAgencyCodeList#172",
-		"unece:CodeListResponsibleAgencyCodeList#173",
-		"unece:CodeListResponsibleAgencyCodeList#174",
-		"unece:CodeListResponsibleAgencyCodeList#175",
-		"unece:CodeListResponsibleAgencyCodeList#176",
-		"unece:CodeListResponsibleAgencyCodeList#177",
-		"unece:CodeListResponsibleAgencyCodeList#178",
-		"unece:CodeListResponsibleAgencyCodeList#179",
-		"unece:CodeListResponsibleAgencyCodeList#18",
-		"unece:CodeListResponsibleAgencyCodeList#180",
-		"unece:CodeListResponsibleAgencyCodeList#181",
-		"unece:CodeListResponsibleAgencyCodeList#182",
-		"unece:CodeListResponsibleAgencyCodeList#183",
-		"unece:CodeListResponsibleAgencyCodeList#184",
-		"unece:CodeListResponsibleAgencyCodeList#185",
-		"unece:CodeListResponsibleAgencyCodeList#186",
-		"unece:CodeListResponsibleAgencyCodeList#187",
-		"unece:CodeListResponsibleAgencyCodeList#188",
-		"unece:CodeListResponsibleAgencyCodeList#189",
-		"unece:CodeListResponsibleAgencyCodeList#19",
-		"unece:CodeListResponsibleAgencyCodeList#190",
-		"unece:CodeListResponsibleAgencyCodeList#191",
-		"unece:CodeListResponsibleAgencyCodeList#192",
-		"unece:CodeListResponsibleAgencyCodeList#193",
-		"unece:CodeListResponsibleAgencyCodeList#194",
-		"unece:CodeListResponsibleAgencyCodeList#195",
-		"unece:CodeListResponsibleAgencyCodeList#196",
-		"unece:CodeListResponsibleAgencyCodeList#197",
-		"unece:CodeListResponsibleAgencyCodeList#198",
-		"unece:CodeListResponsibleAgencyCodeList#199",
-		"unece:CodeListResponsibleAgencyCodeList#2",
-		"unece:CodeListResponsibleAgencyCodeList#20",
-		"unece:CodeListResponsibleAgencyCodeList#200",
-		"unece:CodeListResponsibleAgencyCodeList#201",
-		"unece:CodeListResponsibleAgencyCodeList#202",
-		"unece:CodeListResponsibleAgencyCodeList#203",
-		"unece:CodeListResponsibleAgencyCodeList#204",
-		"unece:CodeListResponsibleAgencyCodeList#205",
-		"unece:CodeListResponsibleAgencyCodeList#206",
-		"unece:CodeListResponsibleAgencyCodeList#207",
-		"unece:CodeListResponsibleAgencyCodeList#208",
-		"unece:CodeListResponsibleAgencyCodeList#209",
-		"unece:CodeListResponsibleAgencyCodeList#21",
-		"unece:CodeListResponsibleAgencyCodeList#210",
-		"unece:CodeListResponsibleAgencyCodeList#211",
-		"unece:CodeListResponsibleAgencyCodeList#212",
-		"unece:CodeListResponsibleAgencyCodeList#213",
-		"unece:CodeListResponsibleAgencyCodeList#214",
-		"unece:CodeListResponsibleAgencyCodeList#215",
-		"unece:CodeListResponsibleAgencyCodeList#216",
-		"unece:CodeListResponsibleAgencyCodeList#217",
-		"unece:CodeListResponsibleAgencyCodeList#218",
-		"unece:CodeListResponsibleAgencyCodeList#219",
-		"unece:CodeListResponsibleAgencyCodeList#22",
-		"unece:CodeListResponsibleAgencyCodeList#220",
-		"unece:CodeListResponsibleAgencyCodeList#221",
-		"unece:CodeListResponsibleAgencyCodeList#222",
-		"unece:CodeListResponsibleAgencyCodeList#223",
-		"unece:CodeListResponsibleAgencyCodeList#224",
-		"unece:CodeListResponsibleAgencyCodeList#225",
-		"unece:CodeListResponsibleAgencyCodeList#226",
-		"unece:CodeListResponsibleAgencyCodeList#227",
-		"unece:CodeListResponsibleAgencyCodeList#228",
-		"unece:CodeListResponsibleAgencyCodeList#229",
-		"unece:CodeListResponsibleAgencyCodeList#23",
-		"unece:CodeListResponsibleAgencyCodeList#230",
-		"unece:CodeListResponsibleAgencyCodeList#231",
-		"unece:CodeListResponsibleAgencyCodeList#232",
-		"unece:CodeListResponsibleAgencyCodeList#233",
-		"unece:CodeListResponsibleAgencyCodeList#234",
-		"unece:CodeListResponsibleAgencyCodeList#235",
-		"unece:CodeListResponsibleAgencyCodeList#236",
-		"unece:CodeListResponsibleAgencyCodeList#237",
-		"unece:CodeListResponsibleAgencyCodeList#238",
-		"unece:CodeListResponsibleAgencyCodeList#239",
-		"unece:CodeListResponsibleAgencyCodeList#24",
-		"unece:CodeListResponsibleAgencyCodeList#240",
-		"unece:CodeListResponsibleAgencyCodeList#241",
-		"unece:CodeListResponsibleAgencyCodeList#244",
-		"unece:CodeListResponsibleAgencyCodeList#245",
-		"unece:CodeListResponsibleAgencyCodeList#246",
-		"unece:CodeListResponsibleAgencyCodeList#247",
-		"unece:CodeListResponsibleAgencyCodeList#248",
-		"unece:CodeListResponsibleAgencyCodeList#249",
-		"unece:CodeListResponsibleAgencyCodeList#25",
-		"unece:CodeListResponsibleAgencyCodeList#250",
-		"unece:CodeListResponsibleAgencyCodeList#251",
-		"unece:CodeListResponsibleAgencyCodeList#252",
-		"unece:CodeListResponsibleAgencyCodeList#253",
-		"unece:CodeListResponsibleAgencyCodeList#254",
-		"unece:CodeListResponsibleAgencyCodeList#255",
-		"unece:CodeListResponsibleAgencyCodeList#256",
-		"unece:CodeListResponsibleAgencyCodeList#257",
-		"unece:CodeListResponsibleAgencyCodeList#258",
-		"unece:CodeListResponsibleAgencyCodeList#259",
-		"unece:CodeListResponsibleAgencyCodeList#26",
-		"unece:CodeListResponsibleAgencyCodeList#260",
-		"unece:CodeListResponsibleAgencyCodeList#261",
-		"unece:CodeListResponsibleAgencyCodeList#262",
-		"unece:CodeListResponsibleAgencyCodeList#263",
-		"unece:CodeListResponsibleAgencyCodeList#264",
-		"unece:CodeListResponsibleAgencyCodeList#265",
-		"unece:CodeListResponsibleAgencyCodeList#266",
-		"unece:CodeListResponsibleAgencyCodeList#267",
-		"unece:CodeListResponsibleAgencyCodeList#268",
-		"unece:CodeListResponsibleAgencyCodeList#269",
-		"unece:CodeListResponsibleAgencyCodeList#27",
-		"unece:CodeListResponsibleAgencyCodeList#270",
-		"unece:CodeListResponsibleAgencyCodeList#271",
-		"unece:CodeListResponsibleAgencyCodeList#272",
-		"unece:CodeListResponsibleAgencyCodeList#273",
-		"unece:CodeListResponsibleAgencyCodeList#274",
-		"unece:CodeListResponsibleAgencyCodeList#275",
-		"unece:CodeListResponsibleAgencyCodeList#276",
-		"unece:CodeListResponsibleAgencyCodeList#277",
-		"unece:CodeListResponsibleAgencyCodeList#278",
-		"unece:CodeListResponsibleAgencyCodeList#279",
-		"unece:CodeListResponsibleAgencyCodeList#28",
-		"unece:CodeListResponsibleAgencyCodeList#280",
-		"unece:CodeListResponsibleAgencyCodeList#281",
-		"unece:CodeListResponsibleAgencyCodeList#282",
-		"unece:CodeListResponsibleAgencyCodeList#283",
-		"unece:CodeListResponsibleAgencyCodeList#284",
-		"unece:CodeListResponsibleAgencyCodeList#285",
-		"unece:CodeListResponsibleAgencyCodeList#286",
-		"unece:CodeListResponsibleAgencyCodeList#287",
-		"unece:CodeListResponsibleAgencyCodeList#288",
-		"unece:CodeListResponsibleAgencyCodeList#289",
-		"unece:CodeListResponsibleAgencyCodeList#29",
-		"unece:CodeListResponsibleAgencyCodeList#290",
-		"unece:CodeListResponsibleAgencyCodeList#291",
-		"unece:CodeListResponsibleAgencyCodeList#292",
-		"unece:CodeListResponsibleAgencyCodeList#293",
-		"unece:CodeListResponsibleAgencyCodeList#294",
-		"unece:CodeListResponsibleAgencyCodeList#295",
-		"unece:CodeListResponsibleAgencyCodeList#296",
-		"unece:CodeListResponsibleAgencyCodeList#297",
-		"unece:CodeListResponsibleAgencyCodeList#298",
-		"unece:CodeListResponsibleAgencyCodeList#299",
-		"unece:CodeListResponsibleAgencyCodeList#3",
-		"unece:CodeListResponsibleAgencyCodeList#30",
-		"unece:CodeListResponsibleAgencyCodeList#300",
-		"unece:CodeListResponsibleAgencyCodeList#301",
-		"unece:CodeListResponsibleAgencyCodeList#302",
-		"unece:CodeListResponsibleAgencyCodeList#303",
-		"unece:CodeListResponsibleAgencyCodeList#304",
-		"unece:CodeListResponsibleAgencyCodeList#305",
-		"unece:CodeListResponsibleAgencyCodeList#306",
-		"unece:CodeListResponsibleAgencyCodeList#307",
-		"unece:CodeListResponsibleAgencyCodeList#309",
-		"unece:CodeListResponsibleAgencyCodeList#31",
-		"unece:CodeListResponsibleAgencyCodeList#310",
-		"unece:CodeListResponsibleAgencyCodeList#311",
-		"unece:CodeListResponsibleAgencyCodeList#312",
-		"unece:CodeListResponsibleAgencyCodeList#313",
-		"unece:CodeListResponsibleAgencyCodeList#314",
-		"unece:CodeListResponsibleAgencyCodeList#315",
-		"unece:CodeListResponsibleAgencyCodeList#316",
-		"unece:CodeListResponsibleAgencyCodeList#317",
-		"unece:CodeListResponsibleAgencyCodeList#318",
-		"unece:CodeListResponsibleAgencyCodeList#319",
-		"unece:CodeListResponsibleAgencyCodeList#32",
-		"unece:CodeListResponsibleAgencyCodeList#320",
-		"unece:CodeListResponsibleAgencyCodeList#321",
-		"unece:CodeListResponsibleAgencyCodeList#322",
-		"unece:CodeListResponsibleAgencyCodeList#323",
-		"unece:CodeListResponsibleAgencyCodeList#324",
-		"unece:CodeListResponsibleAgencyCodeList#325",
-		"unece:CodeListResponsibleAgencyCodeList#326",
-		"unece:CodeListResponsibleAgencyCodeList#327",
-		"unece:CodeListResponsibleAgencyCodeList#328",
-		"unece:CodeListResponsibleAgencyCodeList#329",
-		"unece:CodeListResponsibleAgencyCodeList#33",
-		"unece:CodeListResponsibleAgencyCodeList#330",
-		"unece:CodeListResponsibleAgencyCodeList#331",
-		"unece:CodeListResponsibleAgencyCodeList#332",
-		"unece:CodeListResponsibleAgencyCodeList#333",
-		"unece:CodeListResponsibleAgencyCodeList#334",
-		"unece:CodeListResponsibleAgencyCodeList#335",
-		"unece:CodeListResponsibleAgencyCodeList#336",
-		"unece:CodeListResponsibleAgencyCodeList#337",
-		"unece:CodeListResponsibleAgencyCodeList#338",
-		"unece:CodeListResponsibleAgencyCodeList#339",
-		"unece:CodeListResponsibleAgencyCodeList#34",
-		"unece:CodeListResponsibleAgencyCodeList#340",
-		"unece:CodeListResponsibleAgencyCodeList#341",
-		"unece:CodeListResponsibleAgencyCodeList#342",
-		"unece:CodeListResponsibleAgencyCodeList#343",
-		"unece:CodeListResponsibleAgencyCodeList#344",
-		"unece:CodeListResponsibleAgencyCodeList#345",
-		"unece:CodeListResponsibleAgencyCodeList#346",
-		"unece:CodeListResponsibleAgencyCodeList#347",
-		"unece:CodeListResponsibleAgencyCodeList#348",
-		"unece:CodeListResponsibleAgencyCodeList#349",
-		"unece:CodeListResponsibleAgencyCodeList#35",
-		"unece:CodeListResponsibleAgencyCodeList#350",
-		"unece:CodeListResponsibleAgencyCodeList#351",
-		"unece:CodeListResponsibleAgencyCodeList#352",
-		"unece:CodeListResponsibleAgencyCodeList#353",
-		"unece:CodeListResponsibleAgencyCodeList#354",
-		"unece:CodeListResponsibleAgencyCodeList#355",
-		"unece:CodeListResponsibleAgencyCodeList#356",
-		"unece:CodeListResponsibleAgencyCodeList#357",
-		"unece:CodeListResponsibleAgencyCodeList#358",
-		"unece:CodeListResponsibleAgencyCodeList#359",
-		"unece:CodeListResponsibleAgencyCodeList#36",
-		"unece:CodeListResponsibleAgencyCodeList#360",
-		"unece:CodeListResponsibleAgencyCodeList#361",
-		"unece:CodeListResponsibleAgencyCodeList#362",
-		"unece:CodeListResponsibleAgencyCodeList#363",
-		"unece:CodeListResponsibleAgencyCodeList#364",
-		"unece:CodeListResponsibleAgencyCodeList#365",
-		"unece:CodeListResponsibleAgencyCodeList#366",
-		"unece:CodeListResponsibleAgencyCodeList#367",
-		"unece:CodeListResponsibleAgencyCodeList#368",
-		"unece:CodeListResponsibleAgencyCodeList#369",
-		"unece:CodeListResponsibleAgencyCodeList#37",
-		"unece:CodeListResponsibleAgencyCodeList#370",
-		"unece:CodeListResponsibleAgencyCodeList#371",
-		"unece:CodeListResponsibleAgencyCodeList#372",
-		"unece:CodeListResponsibleAgencyCodeList#373",
-		"unece:CodeListResponsibleAgencyCodeList#374",
-		"unece:CodeListResponsibleAgencyCodeList#375",
-		"unece:CodeListResponsibleAgencyCodeList#376",
-		"unece:CodeListResponsibleAgencyCodeList#377",
-		"unece:CodeListResponsibleAgencyCodeList#378",
-		"unece:CodeListResponsibleAgencyCodeList#379",
-		"unece:CodeListResponsibleAgencyCodeList#38",
-		"unece:CodeListResponsibleAgencyCodeList#380",
-		"unece:CodeListResponsibleAgencyCodeList#381",
-		"unece:CodeListResponsibleAgencyCodeList#382",
-		"unece:CodeListResponsibleAgencyCodeList#383",
-		"unece:CodeListResponsibleAgencyCodeList#384",
-		"unece:CodeListResponsibleAgencyCodeList#385",
-		"unece:CodeListResponsibleAgencyCodeList#386",
-		"unece:CodeListResponsibleAgencyCodeList#387",
-		"unece:CodeListResponsibleAgencyCodeList#388",
-		"unece:CodeListResponsibleAgencyCodeList#389",
-		"unece:CodeListResponsibleAgencyCodeList#39",
-		"unece:CodeListResponsibleAgencyCodeList#390",
-		"unece:CodeListResponsibleAgencyCodeList#391",
-		"unece:CodeListResponsibleAgencyCodeList#392",
-		"unece:CodeListResponsibleAgencyCodeList#393",
-		"unece:CodeListResponsibleAgencyCodeList#394",
-		"unece:CodeListResponsibleAgencyCodeList#395",
-		"unece:CodeListResponsibleAgencyCodeList#396",
-		"unece:CodeListResponsibleAgencyCodeList#397",
-		"unece:CodeListResponsibleAgencyCodeList#398",
-		"unece:CodeListResponsibleAgencyCodeList#399",
-		"unece:CodeListResponsibleAgencyCodeList#4",
-		"unece:CodeListResponsibleAgencyCodeList#40",
-		"unece:CodeListResponsibleAgencyCodeList#400",
-		"unece:CodeListResponsibleAgencyCodeList#401",
-		"unece:CodeListResponsibleAgencyCodeList#402",
-		"unece:CodeListResponsibleAgencyCodeList#403",
-		"unece:CodeListResponsibleAgencyCodeList#404",
-		"unece:CodeListResponsibleAgencyCodeList#405",
-		"unece:CodeListResponsibleAgencyCodeList#406",
-		"unece:CodeListResponsibleAgencyCodeList#407",
-		"unece:CodeListResponsibleAgencyCodeList#408",
-		"unece:CodeListResponsibleAgencyCodeList#409",
-		"unece:CodeListResponsibleAgencyCodeList#41",
-		"unece:CodeListResponsibleAgencyCodeList#410",
-		"unece:CodeListResponsibleAgencyCodeList#411",
-		"unece:CodeListResponsibleAgencyCodeList#412",
-		"unece:CodeListResponsibleAgencyCodeList#413",
-		"unece:CodeListResponsibleAgencyCodeList#42",
-		"unece:CodeListResponsibleAgencyCodeList#43",
-		"unece:CodeListResponsibleAgencyCodeList#44",
-		"unece:CodeListResponsibleAgencyCodeList#45",
-		"unece:CodeListResponsibleAgencyCodeList#46",
-		"unece:CodeListResponsibleAgencyCodeList#47",
-		"unece:CodeListResponsibleAgencyCodeList#48",
-		"unece:CodeListResponsibleAgencyCodeList#49",
-		"unece:CodeListResponsibleAgencyCodeList#5",
-		"unece:CodeListResponsibleAgencyCodeList#50",
-		"unece:CodeListResponsibleAgencyCodeList#51",
-		"unece:CodeListResponsibleAgencyCodeList#52",
-		"unece:CodeListResponsibleAgencyCodeList#53",
-		"unece:CodeListResponsibleAgencyCodeList#54",
-		"unece:CodeListResponsibleAgencyCodeList#55",
-		"unece:CodeListResponsibleAgencyCodeList#56",
-		"unece:CodeListResponsibleAgencyCodeList#57",
-		"unece:CodeListResponsibleAgencyCodeList#58",
-		"unece:CodeListResponsibleAgencyCodeList#59",
-		"unece:CodeListResponsibleAgencyCodeList#6",
-		"unece:CodeListResponsibleAgencyCodeList#60",
-		"unece:CodeListResponsibleAgencyCodeList#61",
-		"unece:CodeListResponsibleAgencyCodeList#62",
-		"unece:CodeListResponsibleAgencyCodeList#63",
-		"unece:CodeListResponsibleAgencyCodeList#64",
-		"unece:CodeListResponsibleAgencyCodeList#65",
-		"unece:CodeListResponsibleAgencyCodeList#66",
-		"unece:CodeListResponsibleAgencyCodeList#67",
-		"unece:CodeListResponsibleAgencyCodeList#68",
-		"unece:CodeListResponsibleAgencyCodeList#69",
-		"unece:CodeListResponsibleAgencyCodeList#7",
-		"unece:CodeListResponsibleAgencyCodeList#70",
-		"unece:CodeListResponsibleAgencyCodeList#71",
-		"unece:CodeListResponsibleAgencyCodeList#72",
-		"unece:CodeListResponsibleAgencyCodeList#73",
-		"unece:CodeListResponsibleAgencyCodeList#74",
-		"unece:CodeListResponsibleAgencyCodeList#75",
-		"unece:CodeListResponsibleAgencyCodeList#76",
-		"unece:CodeListResponsibleAgencyCodeList#77",
-		"unece:CodeListResponsibleAgencyCodeList#78",
-		"unece:CodeListResponsibleAgencyCodeList#79",
-		"unece:CodeListResponsibleAgencyCodeList#8",
-		"unece:CodeListResponsibleAgencyCodeList#80",
-		"unece:CodeListResponsibleAgencyCodeList#81",
-		"unece:CodeListResponsibleAgencyCodeList#82",
-		"unece:CodeListResponsibleAgencyCodeList#83",
-		"unece:CodeListResponsibleAgencyCodeList#84",
-		"unece:CodeListResponsibleAgencyCodeList#85",
-		"unece:CodeListResponsibleAgencyCodeList#86",
-		"unece:CodeListResponsibleAgencyCodeList#87",
-		"unece:CodeListResponsibleAgencyCodeList#88",
-		"unece:CodeListResponsibleAgencyCodeList#89",
-		"unece:CodeListResponsibleAgencyCodeList#9",
-		"unece:CodeListResponsibleAgencyCodeList#90",
-		"unece:CodeListResponsibleAgencyCodeList#91",
-		"unece:CodeListResponsibleAgencyCodeList#92",
-		"unece:CodeListResponsibleAgencyCodeList#93",
-		"unece:CodeListResponsibleAgencyCodeList#94",
-		"unece:CodeListResponsibleAgencyCodeList#95",
-		"unece:CodeListResponsibleAgencyCodeList#96",
-		"unece:CodeListResponsibleAgencyCodeList#97",
-		"unece:CodeListResponsibleAgencyCodeList#98",
-		"unece:CodeListResponsibleAgencyCodeList#99",
-		"unece:CodeListResponsibleAgencyCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#1",
+			"description": "CCC (Customs Co-operation Council): 1."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#10",
+			"description": "ODETTE: 10."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#100",
+			"description": "CH, Entreprise des PTT: 100."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#101",
+			"description": "CH, Carbura: 101."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#102",
+			"description": "CH, Centrale suisse pour l'importation du charbon: 102."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#103",
+			"description": "CH, Office fiduciaire des importateurs de denrees alimentaires: 103."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#104",
+			"description": "CH, Association suisse code des articles: 104."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#105",
+			"description": "DK, Ministry of taxation, Central Customs and Tax Administration: 105."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#106",
+			"description": "FR, Direction generale des douanes et droits indirects: 106."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#107",
+			"description": "FR, INSEE: 107."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#108",
+			"description": "FR, Banque de France: 108."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#109",
+			"description": "GB, H.M. Customs & Excise: 109."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#11",
+			"description": "Lloyd's register of shipping: 11."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#110",
+			"description": "IE, Revenue Commissioners, Customs AEP project: 110."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#111",
+			"description": "US, U.S. Customs Service: 111."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#112",
+			"description": "US, U.S. Census Bureau: 112."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#113",
+			"description": "GS1 US: 113."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#114",
+			"description": "US, ABA (American Bankers Association): 114."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#116",
+			"description": "US, ANSI ASC X12: 116."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#117",
+			"description": "AT, Geldausgabeautomaten-Service Gesellschaft m.b.H.: 117."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#118",
+			"description": "SE, Svenska Bankfoereningen: 118."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#119",
+			"description": "IT, Associazione Bancaria Italiana: 119."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#12",
+			"description": "UIC (International union of railways): 12."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#120",
+			"description": "IT, Socieata' Interbancaria per l'Automazione: 120."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#121",
+			"description": "CH, Telekurs AG: 121."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#122",
+			"description": "CH, Swiss Securities Clearing Corporation: 122."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#123",
+			"description": "NO, Norwegian Interbank Research Organization: 123."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#124",
+			"description": "NO, Norwegian Bankers' Association: 124."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#125",
+			"description": "FI, The Finnish Bankers' Association: 125."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#126",
+			"description": "US, NCCMA (Account Analysis Codes): 126."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#127",
+			"description": "DE, ARE (AbRechnungs Einheit): 127."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#128",
+			"description": "BE, Belgian Bankers' Association: 128."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#129",
+			"description": "BE, Belgian Ministry of Finance: 129."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#13",
+			"description": "ICAO (International Civil Aviation Organization): 13."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#130",
+			"description": "DK, Danish Bankers Association: 130."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#131",
+			"description": "DE, German Bankers Association: 131."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#132",
+			"description": "GB, BACS Limited: 132."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#133",
+			"description": "GB, Association for Payment Clearing Services: 133."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#134",
+			"description": "GB, APACS (Association of payment clearing services): 134."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#135",
+			"description": "GB, The Clearing House: 135."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#136",
+			"description": "GS1 UK: 136."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#137",
+			"description": "AT, Verband oesterreichischer Banken und Bankiers: 137."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#138",
+			"description": "FR, CFONB (Comite francais d'organ. et de normalisation bancaires): 138."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#139",
+			"description": "Universal Postal Union (UPU): 139."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#14",
+			"description": "ICS (International Chamber of Shipping): 14."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#140",
+			"description": "CEC (Commission of the European Communities), DG/XXI-01: 140."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#141",
+			"description": "CEC (Commission of the European Communities), DG/XXI-B-1: 141."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#142",
+			"description": "CEC (Commission of the European Communities), DG/XXXIV: 142."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#143",
+			"description": "NZ, New Zealand Customs: 143."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#144",
+			"description": "NL, Netherlands Customs: 144."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#145",
+			"description": "SE, Swedish Customs: 145."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#146",
+			"description": "DE, German Customs: 146."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#147",
+			"description": "BE, Belgian Customs: 147."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#148",
+			"description": "ES, Spanish Customs: 148."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#149",
+			"description": "IL, Israel Customs: 149."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#15",
+			"description": "RINET (Reinsurance and Insurance Network): 15."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#150",
+			"description": "HK, Hong Kong Customs: 150."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#151",
+			"description": "JP, Japan Customs: 151."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#152",
+			"description": "SA, Saudi Arabia Customs: 152."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#153",
+			"description": "IT, Italian Customs: 153."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#154",
+			"description": "GR, Greek Customs: 154."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#155",
+			"description": "PT, Portuguese Customs: 155."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#156",
+			"description": "LU, Luxembourg Customs: 156."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#157",
+			"description": "NO, Norwegian Customs: 157."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#158",
+			"description": "FI, Finnish Customs: 158."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#159",
+			"description": "IS, Iceland Customs: 159."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#16",
+			"description": "US, D&B (Dun & Bradstreet Corporation): 16."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#160",
+			"description": "LI, Liechtenstein authority: 160."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#161",
+			"description": "UNCTAD (United Nations - Conference on Trade And Development): 161."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#162",
+			"description": "CEC (Commission of the European Communities), DG/XIII-D-5: 162."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#163",
+			"description": "US, FMC (Federal Maritime Commission): 163."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#164",
+			"description": "US, DEA (Drug Enforcement Agency): 164."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#165",
+			"description": "US, DCI (Distribution Codes, INC.): 165."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#166",
+			"description": "US, National Motor Freight Classification Association: 166."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#167",
+			"description": "US, AIAG (Automotive Industry Action Group): 167."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#168",
+			"description": "US, FIPS (Federal Information Publishing Standard): 168."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#169",
+			"description": "CA, SCC (Standards Council of Canada): 169."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#17",
+			"description": "S.W.I.F.T.: 17."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#170",
+			"description": "CA, CPA (Canadian Payment Association): 170."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#171",
+			"description": "NL, Interpay Girale Services: 171."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#172",
+			"description": "NL, Interpay Debit Card Services: 172."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#173",
+			"description": "NO, NORPRO: 173."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#174",
+			"description": "DE, DIN (Deutsches Institut fuer Normung): 174."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#175",
+			"description": "FCI (Factors Chain International): 175."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#176",
+			"description": "BR, Banco Central do Brazil: 176."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#177",
+			"description": "AU, LIFA (Life Insurance Federation of Australia): 177."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#178",
+			"description": "AU, SAA (Standards Association of Australia): 178."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#179",
+			"description": "US, Air transport association of America: 179."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#18",
+			"description": "Conventions on SAD and transit (EC and EFTA): 18."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#180",
+			"description": "DE, BIA (Berufsgenossenschaftliches Institut fuer Arbeitssicherheit): 180."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#181",
+			"description": "Edibuild: 181."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#182",
+			"description": "US, Standard Carrier Alpha Code (Motor): 182."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#183",
+			"description": "US, American Petroleum Institute: 183."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#184",
+			"description": "AU, ACOS (Australian Chamber of Shipping): 184."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#185",
+			"description": "DE, BDI (Bundesverband der Deutschen Industrie e.V.): 185."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#186",
+			"description": "US, GSA (General Services Administration): 186."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#187",
+			"description": "US, DLMSO (Defense Logistics Management Standards Office): 187."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#188",
+			"description": "US, NIST (National Institute of Standards and Technology): 188."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#189",
+			"description": "US, DoD (Department of Defense): 189."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#19",
+			"description": "FRRC (Federal Reserve Routing Code): 19."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#190",
+			"description": "US, VA (Department of Veterans Affairs): 190."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#191",
+			"description": "IAPSO (United Nations Inter-Agency Procurement Services Office): 191."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#192",
+			"description": "Shipper's association: 192."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#193",
+			"description": "EU, European Telecommunications Informatics Services (ETIS): 193."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#194",
+			"description": "AU, AQIS (Australian Quarantine and Inspection Service): 194."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#195",
+			"description": "CO, DIAN (Direccion de Impuestos y Aduanas Nacionales): 195."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#196",
+			"description": "US, COPAS (Council of Petroleum Accounting Society): 196."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#197",
+			"description": "US, DISA (Data Interchange Standards Association): 197."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#198",
+			"description": "CO, Superintendencia Bancaria De Colombia: 198."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#199",
+			"description": "FR, Direction de la Comptabilite Publique: 199."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#2",
+			"description": "CEC (Commission of the European Communities): 2."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#20",
+			"description": "BIC (Bureau International des Containeurs): 20."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#200",
+			"description": "GS1 Netherlands: 200."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#201",
+			"description": "US, WSSA(Wine and Spirits Shippers Association): 201."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#202",
+			"description": "PT, Banco de Portugal: 202."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#203",
+			"description": "FR, GALIA (Groupement pour l'Amelioration des Liaisons dans l'Industrie Automobile): 203."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#204",
+			"description": "DE, VDA (Verband der Automobilindustrie E.V.): 204."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#205",
+			"description": "IT, ODETTE Italy: 205."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#206",
+			"description": "NL, ODETTE Netherlands: 206."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#207",
+			"description": "ES, ODETTE Spain: 207."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#208",
+			"description": "SE, ODETTE Sweden: 208."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#209",
+			"description": "GB, ODETTE United Kingdom: 209."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#21",
+			"description": "Assigned by transport company: 21."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#210",
+			"description": "EU, EDI for financial, informational, cost, accounting, auditing and social areas (EDIFICAS) - Europe: 210."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#211",
+			"description": "FR, EDI for financial, informational, cost, accounting, auditing and social areas (EDIFICAS) - France: 211."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#212",
+			"description": "DE, Deutsch Telekom AG: 212."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#213",
+			"description": "JP, NACCS Center (Nippon Automated Cargo And Port Consolidated System, Inc.): 213."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#214",
+			"description": "US, AISI (American Iron and Steel Institute): 214."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#215",
+			"description": "AU, APCA (Australian Payments Clearing Association): 215."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#216",
+			"description": "US, Department of Labor: 216."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#217",
+			"description": "US, N.A.I.C. (National Association of Insurance Commissioners): 217."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#218",
+			"description": "GB, The Association of British Insurers: 218."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#219",
+			"description": "FR, d'ArvA: 219."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#22",
+			"description": "US, ISA (Information Systems Agreement): 22."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#220",
+			"description": "FI, Finnish tax board: 220."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#221",
+			"description": "FR, CNAMTS (Caisse Nationale de l'Assurance Maladie des Travailleurs Salaries): 221."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#222",
+			"description": "DK, Danish National Board of Health: 222."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#223",
+			"description": "DK, Danish Ministry of Home Affairs: 223."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#224",
+			"description": "US, Aluminum Association: 224."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#225",
+			"description": "US, CIDX (Chemical Industry Data Exchange): 225."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#226",
+			"description": "US, Carbide Manufacturers: 226."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#227",
+			"description": "US, NWDA (National Wholesale Druggist Association): 227."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#228",
+			"description": "US, EIA (Electronic Industry Association): 228."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#229",
+			"description": "US, American Paper Institute: 229."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#23",
+			"description": "FR, EDITRANSPORT: 23."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#230",
+			"description": "US, VICS (Voluntary Inter-Industry Commerce Standards): 230."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#231",
+			"description": "Copper and Brass Fabricators Council: 231."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#232",
+			"description": "GB, Inland Revenue: 232."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#233",
+			"description": "US, OMB (Office of Management and Budget): 233."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#234",
+			"description": "DE, Siemens AG: 234."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#235",
+			"description": "AU, Tradegate (Electronic Commerce Australia): 235."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#236",
+			"description": "US, United States Postal Service (USPS): 236."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#237",
+			"description": "US, United States health industry: 237."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#238",
+			"description": "US, TDCC (Transportation Data Coordinating Committee): 238."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#239",
+			"description": "US, HL7 (Health Level 7): 239."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#24",
+			"description": "AU, ROA (Railways of Australia): 24."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#240",
+			"description": "US, CHIPS (Clearing House Interbank Payment Systems): 240."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#241",
+			"description": "PT, SIBS (Sociedade Interbancaria de Servicos): 241."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#244",
+			"description": "US, Department of Health and Human Services: 244."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#245",
+			"description": "GS1 Denmark: 245."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#246",
+			"description": "GS1 Germany: 246."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#247",
+			"description": "US, HBICC (Health Industry Business Communication Council): 247."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#248",
+			"description": "US, ASTM (American Society of Testing and Materials): 248."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#249",
+			"description": "IP (Institute of Petroleum): 249."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#25",
+			"description": "EDITEX (Europe): 25."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#250",
+			"description": "US, UOP (Universal Oil Products): 250."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#251",
+			"description": "AU, HIC (Health Insurance Commission): 251."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#252",
+			"description": "AU, AIHW (Australian Institute of Health and Welfare): 252."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#253",
+			"description": "AU, NCCH (National Centre for Classification in Health): 253."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#254",
+			"description": "AU, DOH (Australian Department of Health): 254."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#255",
+			"description": "AU, ADA (Australian Dental Association): 255."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#256",
+			"description": "US, AAR (Association of American Railroads): 256."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#257",
+			"description": "ECCMA (Electronic Commerce Code Management Association): 257."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#258",
+			"description": "JP, Japanese Ministry of Transport: 258."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#259",
+			"description": "JP, Japanese Maritime Safety Agency: 259."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#26",
+			"description": "NL, Foundation Uniform Transport Code: 26."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#260",
+			"description": "ebIX (European forum for energy Business Information eXchange): 260."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#261",
+			"description": "EEG7, European Expert Group 7 (Insurance): 261."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#262",
+			"description": "DE, GDV (Gesamtverband der Deutschen Versicherungswirtschaft e.V.): 262."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#263",
+			"description": "CA, CSIO (Centre for Study of Insurance Operations): 263."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#264",
+			"description": "FR, AGF (Assurances Generales de France): 264."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#265",
+			"description": "SE, Central bank: 265."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#266",
+			"description": "US, DoA (Department of Agriculture): 266."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#267",
+			"description": "RU, Central Bank of Russia: 267."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#268",
+			"description": "FR, DGI (Direction Generale des Impots): 268."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#269",
+			"description": "GRE (Reference Group of Experts): 269."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#27",
+			"description": "US, FDA (Food and Drug Administration): 27."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#270",
+			"description": "Concord EDI group: 270."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#271",
+			"description": "InterContainer InterFrigo: 271."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#272",
+			"description": "Joint Automotive Industry agency: 272."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#273",
+			"description": "CH, SCC (Swiss Chambers of Commerce): 273."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#274",
+			"description": "ITIGG (International Transport Implementation Guidelines Group): 274."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#275",
+			"description": "ES, Banco de España: 275."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#276",
+			"description": "Assigned by Port Community: 276."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#277",
+			"description": "BIGNet (Business Information Group Network): 277."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#278",
+			"description": "Eurogate: 278."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#279",
+			"description": "NL, Graydon: 279."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#28",
+			"description": "EDITEUR (European book sector electronic data interchange group): 28."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#280",
+			"description": "FR, Euler: 280."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#281",
+			"description": "GS1 Belgium and Luxembourg: 281."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#282",
+			"description": "DE, Creditreform International e.V.: 282."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#283",
+			"description": "DE, Hermes Kreditversicherungs AG: 283."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#284",
+			"description": "TW, Taiwanese Bankers' Association: 284."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#285",
+			"description": "ES, Asociación Española de Banca: 285."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#286",
+			"description": "SE, TCO (Tjänstemännes Central Organisation): 286."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#287",
+			"description": "DE, FORTRAS (Forschungs- und Entwicklungsgesellschaft für Transportwesen GMBH): 287."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#288",
+			"description": "OSJD (Organizacija Sotrudnichestva Zeleznih Dorog): 288."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#289",
+			"description": "JP.JIPDEC: 289."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#29",
+			"description": "GB, FLEETNET: 29."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#290",
+			"description": "JP, JAMA: 290."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#291",
+			"description": "JP, JAPIA: 291."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#292",
+			"description": "FI, TIEKE The Information Technology Development Centre of Finland: 292."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#293",
+			"description": "DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.): 293."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#294",
+			"description": "GS1 Austria: 294."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#295",
+			"description": "AU, Australian Therapeutic Goods Administration: 295."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#296",
+			"description": "ITU (International Telecommunication Union): 296."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#297",
+			"description": "IT, Ufficio IVA: 297."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#298",
+			"description": "GS1 Spain: 298."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#299",
+			"description": "BE, Seagha: 299."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#3",
+			"description": "IATA (International Air Transport Association): 3."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#30",
+			"description": "GB, ABTA (Association of British Travel Agencies): 30."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#300",
+			"description": "SE, Swedish International Freight Association: 300."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#301",
+			"description": "DE, BauDatenbank GmbH: 301."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#302",
+			"description": "DE, Bundesverband des Deutschen Textileinzelhandels e.V.: 302."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#303",
+			"description": "GB, Trade Service Information Ltd (TSI): 303."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#304",
+			"description": "DE, Bundesverband Deutscher Heimwerker-, Bau- und Gartenfachmaerkte e.V.: 304."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#305",
+			"description": "ETSO (European Transmission System Operator): 305."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#306",
+			"description": "SMDG (Ship-planning Message Design Group): 306."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#307",
+			"description": "JP, Ministry of Justice: 307."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#309",
+			"description": "JP, JASTPRO (Japan Association for Simplification of International Trade Procedures): 309."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#31",
+			"description": "FI, Finish State Railway: 31."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#310",
+			"description": "DE, SAP AG (Systeme, Anwendungen und Produkte): 310."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#311",
+			"description": "JP, TDB (Teikoku Databank, Ltd.): 311."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#312",
+			"description": "FR, AGRO EDI EUROPE: 312."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#313",
+			"description": "FR, Groupement National Interprofessionnel des Semences et Plants: 313."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#314",
+			"description": "OAGi (Open Applications Group, Incorporated): 314."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#315",
+			"description": "US, STAR (Standards for Technology in Automotive Retail): 315."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#316",
+			"description": "GS1 Finland: 316."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#317",
+			"description": "GS1 Brazil: 317."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#318",
+			"description": "IETF (Internet Engineering Task Force): 318."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#319",
+			"description": "FR, GTF: 319."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#32",
+			"description": "PL, Polish State Railway: 32."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#320",
+			"description": "DK, Danish National IT and Telcom Agency (ITA): 320."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#321",
+			"description": "EASEE-Gas (European Association for the Streamlining of Energy Exchange for gas): 321."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#322",
+			"description": "IS, ICEPRO: 322."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#323",
+			"description": "PROTECT: 323."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#324",
+			"description": "GS1 Ireland: 324."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#325",
+			"description": "GS1 Russia: 325."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#326",
+			"description": "GS1 Poland: 326."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#327",
+			"description": "GS1 Estonia: 327."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#328",
+			"description": "Assigned by ultimate recipient of the message: 328."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#329",
+			"description": "Assigned by loading dock operator: 329."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#33",
+			"description": "BG, Bulgaria State Railway: 33."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#330",
+			"description": "Nordic Ediel Group: 330."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#331",
+			"description": "US, Agricultural Marketing Service (AMS): 331."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#332",
+			"description": "DE, DVGW Service & Consult GmbH: 332."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#333",
+			"description": "US, Animal and Plant Health Inspection Service (APHIS): 333."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#334",
+			"description": "US, Bureau of Labor Statistics (BLS): 334."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#335",
+			"description": "US, Bureau of Transportation Statistics (BTS): 335."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#336",
+			"description": "US, Customs and Border Protection (CBP): 336."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#337",
+			"description": "US, Center for Disease Control (CDC): 337."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#338",
+			"description": "US, Consumer Product Safety Commission (CPSC): 338."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#339",
+			"description": "US, Directorate of Defense Trade Controls (DDTC): 339."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#34",
+			"description": "RO, Rumanian State Railway: 34."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#340",
+			"description": "US, Environmental Protection Agency (EPA): 340."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#341",
+			"description": "US, Federal Aviation Administration (FAA): 341."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#342",
+			"description": "US, Foreign Agriculture Service (FAS): 342."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#343",
+			"description": "US, Federal Motor Carrier Safety Administration (FMCSA): 343."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#344",
+			"description": "US, Food Safety Inspection Service (FSIS): 344."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#345",
+			"description": "US, Foreign Trade Zones Board (FTZB): 345."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#346",
+			"description": "US, The Grain Inspection, Packers and Stockyards Administration (GIPSA): 346."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#347",
+			"description": "US, Import Administration (IA): 347."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#348",
+			"description": "US, Internal Revenue Service (IRS): 348."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#349",
+			"description": "US, International Trade Commission (ITC): 349."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#35",
+			"description": "CZ, Tchechian State Railway: 35."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#350",
+			"description": "US, National Highway Traffic Safety Administration (NHTSA): 350."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#351",
+			"description": "US, National Marine Fisheries Service (NMFS): 351."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#352",
+			"description": "US, Office of Fossil Energy (OFE): 352."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#353",
+			"description": "US, Office of Foreign Missions (OFM): 353."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#354",
+			"description": "US, Bureau of Oceans and International Environmental and Scientific Affairs (OES): 354."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#355",
+			"description": "US, Office of Naval Intelligence (ONI): 355."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#356",
+			"description": "US, Pipeline and Hazardous Materials Safety Administration (PHMSA): 356."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#357",
+			"description": "US, Alcohol and Tobacco Tax and Trade Bureau (TTB): 357."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#358",
+			"description": "US, Army Corp of Engineers (USACE): 358."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#359",
+			"description": "US, Agency for International Development (USAID): 359."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#36",
+			"description": "HU, Hungarian State Railway: 36."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#360",
+			"description": "US, Coast Guard (USCG): 360."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#361",
+			"description": "US, Office of the United States Trade Representative (USTR): 361."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#362",
+			"description": "International Commission for the Conservation of Atlantic Tunas (ICCAT): 362."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#363",
+			"description": "Inter-American Tropical Tuna Commission (IATTC): 363."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#364",
+			"description": "Commission for the Conservation of Southern Bluefin Tuna (CCSBT): 364."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#365",
+			"description": "Indian Ocean Tuna Commission (IOTC): 365."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#366",
+			"description": "International Botanical Congress: 366."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#367",
+			"description": "International Commission on Zoological Nomenclature: 367."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#368",
+			"description": "International Society for Horticulture Science: 368."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#369",
+			"description": "Chemical Abstract Service (CAS): 369."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#37",
+			"description": "GB, British Railways: 37."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#370",
+			"description": "Social Security Administration (SSA): 370."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#371",
+			"description": "INMARSAT: 371."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#372",
+			"description": "Agent of ship at the intended port of arrival: 372."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#373",
+			"description": "US Air Force: 373."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#374",
+			"description": "US, Bureau of Explosives: 374."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#375",
+			"description": "Basel Convention Secretariat: 375."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#376",
+			"description": "PANTONE: 376."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#377",
+			"description": "IS, National Registry of Iceland: 377."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#378",
+			"description": "IS, Internal Revenue Directorate of Iceland: 378."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#379",
+			"description": "IANA (Internet Assigned Numbers Authority): 379."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#38",
+			"description": "ES, Spanish National Railway: 38."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#380",
+			"description": "Korea Customs Service: 380."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#381",
+			"description": "Israel Tax Authority: 381."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#382",
+			"description": "Israeli Ministry of Interior: 382."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#383",
+			"description": "FR, LUMD (Logistique Urbaine Mutualisée Durable): 383."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#384",
+			"description": "DE, BiPRO (Brancheninitiative Prozessoptimierung): 384."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#385",
+			"description": "JO, Jordan Ministry of Agriculture: 385."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#386",
+			"description": "JO, Jordan Customs: 386."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#387",
+			"description": "JO, Jordan Food & Drug Administration: 387."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#388",
+			"description": "JO, Jordan Institution for Standards and Metrology: 388."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#389",
+			"description": "JO, Jordan Telecommunication Regulatory Commission: 389."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#39",
+			"description": "SE, Swedish State Railway: 39."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#390",
+			"description": "JO, Jordan Nuclear Regulatory Commission: 390."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#391",
+			"description": "JO, Jordan Ministry of Environment: 391."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#392",
+			"description": "Hazardous waste collector: 392."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#393",
+			"description": "Hazardous waste generator: 393."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#394",
+			"description": "Marketing agent: 394."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#395",
+			"description": "BE, TELEBIB Centre: 395."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#396",
+			"description": "BE, BNB: 396."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#397",
+			"description": "BE, FSMA: 397."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#398",
+			"description": "FR, PHAST: 398."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#399",
+			"description": "EXIS (Exis Technologies Ltd.): 399."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#4",
+			"description": "ICC (International Chamber of Commerce): 4."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#40",
+			"description": "NO, Norwegian State Railway: 40."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#400",
+			"description": "FAO (Food and Agriculture Organisation): 400."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#401",
+			"description": "CH, Spedlogswiss: 401."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#402",
+			"description": "JP, National Tax Agency: 402."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#403",
+			"description": "Comite Européen de Normalisation: 403."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#404",
+			"description": "Assigned by logistics service provider: 404."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#405",
+			"description": "Assigned by transport ministry: 405."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#406",
+			"description": "AR, Customs Administration of Argentina: 406."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#407",
+			"description": "BO, Customs Administration of Bolivia: 407."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#408",
+			"description": "BR, Customs Administration of Brazil: 408."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#409",
+			"description": "PY, Customs Administration of Paraguay: 409."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#41",
+			"description": "DE, German Railway: 41."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#410",
+			"description": "UY, Customs Administration of Uruguay: 410."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#411",
+			"description": "VE, Customs Administration of Venezuela: 411."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#412",
+			"description": "IN, Customs Administration of India: 412."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#413",
+			"description": "JP, JEC (UN/CEFACT Japan Committee): 413."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#42",
+			"description": "AT, Austrian Federal Railways: 42."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#43",
+			"description": "LU, Luxembourg National Railway Company: 43."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#44",
+			"description": "IT, Italian State Railways: 44."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#45",
+			"description": "NL, Netherlands Railways: 45."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#46",
+			"description": "CH, Swiss Federal Railways: 46."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#47",
+			"description": "DK, Danish State Railways: 47."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#48",
+			"description": "FR, French National Railway Company: 48."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#49",
+			"description": "BE, Belgian National Railway Company: 49."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#5",
+			"description": "ISO (International Organization for Standardization): 5."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#50",
+			"description": "PT, Portuguese Railways: 50."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#51",
+			"description": "SK, Slovakian State Railways: 51."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#52",
+			"description": "IE, Irish Transport Company: 52."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#53",
+			"description": "FIATA (International Federation of Freight Forwarders Associations): 53."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#54",
+			"description": "IMO (International Maritime Organisation): 54."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#55",
+			"description": "US, DOT (United States Department of Transportation): 55."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#56",
+			"description": "TW, Trade-van: 56."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#57",
+			"description": "TW, Chinese Taipei Customs: 57."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#58",
+			"description": "EUROFER: 58."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#59",
+			"description": "DE, EDIBAU: 59."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#6",
+			"description": "UN/ECE (United Nations - Economic Commission for Europe): 6."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#60",
+			"description": "Assigned by national trade agency: 60."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#61",
+			"description": "Association Europeenne des Constructeurs de Materiel Aerospatial (AECMA): 61."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#62",
+			"description": "US, DIstilled Spirits Council of the United States (DISCUS): 62."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#63",
+			"description": "North Atlantic Treaty Organization (NATO): 63."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#64",
+			"description": "FR, CLEEP: 64."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#65",
+			"description": "GS1 France: 65."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#66",
+			"description": "MY, Malaysian Customs and Excise: 66."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#67",
+			"description": "MY, Malaysia Central Bank: 67."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#68",
+			"description": "GS1 Italy: 68."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#69",
+			"description": "US, National Alcohol Beverage Control Association (NABCA): 69."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#7",
+			"description": "CEFIC (Conseil Europeen des Federations de l'Industrie Chimique): 7."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#70",
+			"description": "MY, Dagang.Net: 70."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#71",
+			"description": "US, FCC (Federal Communications Commission): 71."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#72",
+			"description": "US, MARAD (Maritime Administration): 72."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#73",
+			"description": "US, DSAA (Defense Security Assistance Agency): 73."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#74",
+			"description": "US, NRC (Nuclear Regulatory Commission): 74."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#75",
+			"description": "US, ODTC (Office of Defense Trade Controls): 75."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#76",
+			"description": "US, ATF (Bureau of Alcohol, Tobacco and Firearms): 76."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#77",
+			"description": "US, BXA (Bureau of Export Administration): 77."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#78",
+			"description": "US, FWS (Fish and Wildlife Service): 78."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#79",
+			"description": "US, OFAC (Office of Foreign Assets Control): 79."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#8",
+			"description": "EDIFICE: 8."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#80",
+			"description": "BRMA/RAA - LIMNET - RINET Joint Venture: 80."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#81",
+			"description": "RU, (SFT) Society for Financial Telecommunications: 81."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#82",
+			"description": "NO, Enhetsregisteret ved Bronnoysundregisterne: 82."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#83",
+			"description": "US, National Retail Federation: 83."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#84",
+			"description": "DE, BRD (Gesetzgeber der Bundesrepublik Deutschland): 84."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#85",
+			"description": "North America, Telecommunications Industry Forum: 85."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#86",
+			"description": "Assigned by party originating the message: 86."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#87",
+			"description": "Assigned by carrier: 87."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#88",
+			"description": "Assigned by owner of operation: 88."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#89",
+			"description": "Assigned by distributor: 89."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#9",
+			"description": "GS1: 9."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#90",
+			"description": "Assigned by manufacturer: 90."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#91",
+			"description": "Assigned by seller or seller's agent: 91."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#92",
+			"description": "Assigned by buyer or buyer's agent: 92."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#93",
+			"description": "AT, Austrian Customs: 93."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#94",
+			"description": "AT, Austrian PTT: 94."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#95",
+			"description": "AU, Australian Customs Service: 95."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#96",
+			"description": "CA, Revenue Canada, Customs and Excise: 96."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#97",
+			"description": "CH, Administration federale des contributions: 97."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#98",
+			"description": "CH, Direction generale des douanes: 98."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#99",
+			"description": "CH, Division des importations et exportations, OFAEE: 99."
+		},
+		{
+			"const": "unece:CodeListResponsibleAgencyCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

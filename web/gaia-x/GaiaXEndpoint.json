@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gaia-x-loire/GaiaXEndpoint",
-	"description": "Endpoint as defined by the Gaia-X ontology. https://docs.gaia-x.eu/ontology/development/classes/Endpoint",
+	"title": "GaiaXEndpoint",
+	"description": "Endpoint as defined by the Gaia-X ontology.\nhttps://docs.gaia-x.eu/ontology/development/classes/Endpoint",
 	"type": "object",
 	"properties": {
 		"type": {
-			"type": "string",
 			"const": "Endpoint",
 			"description": "The type of JSON-LD node. In this case it is allowed to be omitted as it is usually a child node."
 		},
@@ -22,5 +22,5 @@
 			"description": "Standards conformity"
 		}
 	},
-	"required": ["endpointURL"]
+	"required": ["type", "endpointURL"]
 }

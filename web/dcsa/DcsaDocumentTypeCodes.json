@@ -1,31 +1,100 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaDocumentTypeCodes",
-	"description": "DCSA document type codes.\n\nSource: `documentTypeCode` enum in the DCSA Event Domain (v3.1.0).   DCSA document type codes.",
-	"type": "string",
-	"enum": [
-		"CBR",
-		"BKG",
-		"SHI",
-		"TRD",
-		"DEI",
-		"DEO",
-		"TRO",
-		"CRO",
-		"ARN",
-		"VGM",
-		"CAS",
-		"CUC",
-		"DGD",
-		"OOG",
-		"CQU",
-		"INV",
-		"HCE",
-		"PCE",
-		"VCE",
-		"FCE",
-		"ICE",
-		"CEA",
-		"CEO"
+	"title": "DcsaDocumentTypeCodes",
+	"description": "DCSA document type codes.",
+	"oneOf": [
+		{
+			"const": "CBR",
+			"description": "Carrier Booking Request."
+		},
+		{
+			"const": "BKG",
+			"description": "Booking."
+		},
+		{
+			"const": "SHI",
+			"description": "Shipping Instruction."
+		},
+		{
+			"const": "TRD",
+			"description": "Transport Document."
+		},
+		{
+			"const": "DEI",
+			"description": "Delivery Instructions."
+		},
+		{
+			"const": "DEO",
+			"description": "Delivery Order."
+		},
+		{
+			"const": "TRO",
+			"description": "Transport Order."
+		},
+		{
+			"const": "CRO",
+			"description": "Container Release Order."
+		},
+		{
+			"const": "ARN",
+			"description": "Arrival Notice."
+		},
+		{
+			"const": "VGM",
+			"description": "Verified Gross Mass."
+		},
+		{
+			"const": "CAS",
+			"description": "Cargo Survey."
+		},
+		{
+			"const": "CUC",
+			"description": "Customs Clearance."
+		},
+		{
+			"const": "DGD",
+			"description": "Dangerous Goods Declaration."
+		},
+		{
+			"const": "OOG",
+			"description": "Out of Gauge."
+		},
+		{
+			"const": "CQU",
+			"description": "Contract Quotation."
+		},
+		{
+			"const": "INV",
+			"description": "Invoice."
+		},
+		{
+			"const": "HCE",
+			"description": "Health Certificate."
+		},
+		{
+			"const": "PCE",
+			"description": "Phytosanitary Certificate."
+		},
+		{
+			"const": "VCE",
+			"description": "Veterinary Certificate."
+		},
+		{
+			"const": "FCE",
+			"description": "Fumigation Certificate."
+		},
+		{
+			"const": "ICE",
+			"description": "Inspection Certificate."
+		},
+		{
+			"const": "CEA",
+			"description": "Certificate of Analysis."
+		},
+		{
+			"const": "CEO",
+			"description": "Certificate of Origin."
+		}
 	]
 }

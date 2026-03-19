@@ -1,18 +1,25 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gaia-x-loire/GaiaXAddress",
-	"description": "Address as defined by Gaia-X https://docs.gaia-x.eu/ontology/development/classes/Address/",
+	"title": "GaiaXAddress",
+	"description": "Address as defined by Gaia-X\nhttps://docs.gaia-x.eu/ontology/development/classes/Address/",
 	"type": "object",
 	"properties": {
 		"type": {
-			"type": "string",
 			"const": "Address",
 			"description": "JSON-LD @ type. In this case it is allowed to be omitted as it is usually a child node."
 		},
 		"countryCode": {
-			"type": ["string", "number"],
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "number"
+				}
+			],
 			"description": "Country code in ISO 3166-1 alpha2, alpha-3 or numeric format"
 		}
 	},
-	"required": ["countryCode"]
+	"required": ["type", "countryCode"]
 }

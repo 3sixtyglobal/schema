@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaReference",
-	"description": "A generic reference (shipper/forwarder references).\n\nThe OpenAPI references a shared `referenceType` enum from DCSA_DOMAIN; this package does not model it yet, so `type` is left as a string.",
+	"title": "DcsaReference",
+	"description": "A generic reference (shipper/forwarder references).\n\nThe OpenAPI references a shared `referenceType` enum from DCSA_DOMAIN; this\npackage does not model it yet, so `type` is left as a string.",
 	"type": "object",
 	"properties": {
 		"type": {

@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceChequeTypeCodeList",
+	"title": "UneceChequeTypeCodeList",
 	"description": "Values for UneceCheque typeCode property.",
-	"type": "string",
-	"const": "unece:identifiedCheque"
+	"oneOf": [
+		{
+			"const": "unece:identifiedCheque",
+			"description": "A cheque payment identified for this trade settlement payment means."
+		}
+	]
 }

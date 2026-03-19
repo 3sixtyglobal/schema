@@ -1,12 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAlternateCurrencyAmountTypeCodeList",
+	"title": "UneceAlternateCurrencyAmountTypeCodeList",
 	"description": "A character string used to represent the type of an alternate currency amount.",
-	"type": "string",
-	"enum": [
-		"unece:AlternateCurrencyAmountTypeCodeList#1",
-		"unece:AlternateCurrencyAmountTypeCodeList#2",
-		"unece:AlternateCurrencyAmountTypeCodeList#3",
-		"unece:AlternateCurrencyAmountTypeCodeList#4"
+	"oneOf": [
+		{
+			"const": "unece:AlternateCurrencyAmountTypeCodeList#1",
+			"description": "Payment Amount: 1."
+		},
+		{
+			"const": "unece:AlternateCurrencyAmountTypeCodeList#2",
+			"description": "Reporting Amount: 2."
+		},
+		{
+			"const": "unece:AlternateCurrencyAmountTypeCodeList#3",
+			"description": "Consolidation Amount: 3."
+		},
+		{
+			"const": "unece:AlternateCurrencyAmountTypeCodeList#4",
+			"description": "Euro Transition Amount: 4."
+		}
 	]
 }

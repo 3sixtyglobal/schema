@@ -1,58 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLink",
-	"description": "A W3C Activity Streams Link.\n\nA `Link` is used to reference a resource by URI (via `href`) and can include optional presentation metadata such as `name`, `mediaType`, `height`, and `width`.",
+	"title": "ActivityStreamsLink",
+	"description": "A W3C Activity Streams Link.\n\nA `Link` is used to reference a resource by URI (via `href`) and can include\noptional presentation metadata such as `name`, `mediaType`, `height`, and `width`.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The Activity Streams JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://www.w3.org/ns/activitystreams"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://www.w3.org/ns/activitystreams"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+			"description": "The LD Context."
 		},
 		"type": {
 			"anyOf": [
@@ -103,7 +58,6 @@
 			"description": "MIME media type of the referenced resource."
 		},
 		"rel": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -114,7 +68,8 @@
 						"type": "string"
 					}
 				}
-			]
+			],
+			"description": "Link relation value(s)."
 		},
 		"height": {
 			"type": "number",
@@ -125,7 +80,6 @@
 			"description": "Desired rendered width."
 		},
 		"preview": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -146,7 +100,8 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Preview of the link."
 		}
 	},
 	"required": ["@context", "type", "href"]

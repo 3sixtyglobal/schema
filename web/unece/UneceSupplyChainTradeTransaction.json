@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction",
+	"title": "UneceSupplyChainTradeTransaction",
 	"description": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "SupplyChainTradeTransaction",
 			"description": "JSON-LD Type."
 		},
@@ -61,7 +43,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
-			"description": "A referenced document associated with this supply chain trade transaction, such as the purchase order, invoice or packing list."
+			"description": "A referenced document associated with this supply chain trade transaction, such as the purchase order, invoice or\npacking list."
 		},
 		"associatedDocumentLineDocument": {
 			"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument",
@@ -179,7 +161,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
+			"description": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply\nchain trade transaction."
 		},
 		"specifiedPackage": {
 			"type": "array",

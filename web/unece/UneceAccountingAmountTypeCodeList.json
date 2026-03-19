@@ -1,14 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAmountTypeCodeList",
+	"title": "UneceAccountingAmountTypeCodeList",
 	"description": "A character string used to represent the type of accounting amount.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAmountTypeCodeList#1",
-		"unece:AccountingAmountTypeCodeList#2",
-		"unece:AccountingAmountTypeCodeList#3",
-		"unece:AccountingAmountTypeCodeList#4",
-		"unece:AccountingAmountTypeCodeList#5",
-		"unece:AccountingAmountTypeCodeList#6"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAmountTypeCodeList#1",
+			"description": "Allowance Charge Amount: 1."
+		},
+		{
+			"const": "unece:AccountingAmountTypeCodeList#2",
+			"description": "Insurance Charge Amount: 2."
+		},
+		{
+			"const": "unece:AccountingAmountTypeCodeList#3",
+			"description": "Taxable Transport Charge Amount: 3."
+		},
+		{
+			"const": "unece:AccountingAmountTypeCodeList#4",
+			"description": "Adjustment Amount: 4."
+		},
+		{
+			"const": "unece:AccountingAmountTypeCodeList#5",
+			"description": "Taxable Amount: 5."
+		},
+		{
+			"const": "unece:AccountingAmountTypeCodeList#6",
+			"description": "Tax Amount: 6."
+		}
 	]
 }

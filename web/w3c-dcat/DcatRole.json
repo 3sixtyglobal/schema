@@ -1,83 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-dcat/DcatRole",
-	"description": "Interface for DCAT Role. A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.",
+	"title": "DcatRole",
+	"description": "Interface for DCAT Role.\nA role is the function of a resource or agent with respect to another resource,\nin the context of resource attribution or resource relationships.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The DCAT JSON-LD context type. Supports the DCAT context URL or arrays with additional context definitions.",
-			"type": "object",
-			"additionalProperties": {
-				"anyOf": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
-					},
-					{
-						"type": ["null", "string"]
-					}
-				]
-			},
-			"properties": {
-				"@base": {
-					"type": ["string", "null"]
-				},
-				"@direction": {
-					"type": ["string", "null"],
-					"enum": ["ltr", "rtl", null]
-				},
-				"@import": {
-					"type": "string"
-				},
-				"@language": {
-					"type": "string"
-				},
-				"@propagate": {
-					"type": "boolean"
-				},
-				"@protected": {
-					"type": "boolean"
-				},
-				"@type": {
-					"type": "object",
-					"properties": {
-						"@container": {
-							"type": "string",
-							"const": "@set"
-						},
-						"@protected": {
-							"type": "boolean"
-						}
-					},
-					"required": ["@container"]
-				},
-				"@version": {
-					"type": "string",
-					"const": "1.1"
-				},
-				"@vocab": {
-					"type": ["string", "null"]
-				},
-				"dcat": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/dcat#"
-				},
-				"dcterms": {
-					"type": "string",
-					"const": "http://purl.org/dc/terms/"
-				},
-				"odrl": {
-					"type": "string",
-					"const": "http://www.w3.org/ns/odrl/2/"
-				},
-				"foaf": {
-					"type": "string",
-					"const": "https://xmlns.com/foaf/0.1/"
-				}
-			},
-			"required": ["dcat", "dcterms"]
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
 		},
 		"@type": {
-			"type": "string",
 			"const": "dcat:Role",
 			"description": "The type identifier, typically \"Role\"."
 		},
@@ -86,7 +18,17 @@
 			"description": "The unique identifier for the role object."
 		},
 		"dcterms:title": {
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatLiteralType",
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
 			"description": "A name given to the role."
 		}
 	},

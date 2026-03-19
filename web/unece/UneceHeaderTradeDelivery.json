@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceHeaderTradeDelivery",
+	"title": "UneceHeaderTradeDelivery",
 	"description": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "HeaderTradeDelivery",
 			"description": "JSON-LD Type."
 		},
@@ -174,7 +156,7 @@
 		},
 		"goodsOwnershipChangeDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value, at header level, when the goods ownership of this trade delivery changed.",
+			"description": "The date, time, date time, or other date time value, at header level, when the goods ownership of this trade delivery\nchanged.",
 			"format": "date-time"
 		},
 		"goodsReceiptNoteDocument": {
@@ -250,7 +232,7 @@
 		},
 		"pickUpAvailabilityDateTime": {
 			"type": "string",
-			"description": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up.",
+			"description": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available\nfor pick-up.",
 			"format": "date-time"
 		},
 		"plannedConsignment": {
@@ -401,7 +383,7 @@
 		},
 		"ultimateShipToDeliveryDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party.",
+			"description": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the\nultimate ship to party.",
 			"format": "date-time"
 		},
 		"ultimateShipToDeliveryEvent": {

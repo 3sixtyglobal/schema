@@ -1,0 +1,281 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase",
+	"title": "DataspaceProtocolDataServiceBase",
+	"description": "Data Service interface compliant with Eclipse Data Space Protocol.\n\nThis interface extends IDataService and enforces DS Protocol-specific requirements\nby overriding properties with more specific types and constraints.\n\n**Requirements per DS Protocol:**\n- `@id` MUST be present for dataset identification (REQUIRED)\n- endpointURL MUST be present (REQUIRED)\n\n**Type System Design:**\n- Interface extension allows TypeScript to override inherited property types\n- Standards packages (@twin.org/standards-w3c-*) follow W3C specs exactly\n- DS Protocol-specific constraints are defined here",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "DataService",
+			"description": "The type identifier for the Data Service.\nREQUIRED per Eclipse Data Space Protocol."
+		},
+		"@id": {
+			"type": "string",
+			"description": "Unique identifier for the dataset.\nREQUIRED per Eclipse Data Space Protocol."
+		},
+		"endpointURL": {
+			"type": "string",
+			"description": "Endpoint URL."
+		},
+		"servesDataset": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
+					}
+				}
+			],
+			"description": "Datasets served."
+		}
+	},
+	"required": ["@type", "@id", "endpointURL"],
+	"allOf": [
+		{
+			"description": "Base interface for DCAT Data Service without JSON-LD context.\nThis is the context-free variant of IDcatDataService, intended for embedding\ndata service objects inline within other objects where the context is provided by the enclosing document.",
+			"type": "object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"description": "The unique identifier for the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:title": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A name given to the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:description": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A free-text account of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:identifier": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A unique identifier of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:issued": {
+					"type": "string",
+					"description": "Date of formal issuance (publication) of the resource.",
+					"format": "date-time",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:modified": {
+					"type": "string",
+					"description": "Most recent date on which the resource was changed, updated or modified.",
+					"format": "date-time",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:language": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A language of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:publisher": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/dataspace-protocol/FoafAgentWithAliases"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "An entity responsible for making the resource available.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:creator": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/dataspace-protocol/FoafAgentWithAliases"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "An entity responsible for producing the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:accessRights": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Information about who can access the resource or an indication of its security status.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:license": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "A legal document under which the resource is made available.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:rights": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Information about rights held in and over the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:conformsTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "An established standard to which the resource conforms.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:type": {
+					"type": "string",
+					"description": "The nature or genre of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:contactPoint": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Relevant contact information for the catalogued resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:keyword": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A keyword or tag describing the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:theme": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A main category of the resource. A resource can have multiple themes.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:landingPage": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A Web page that can be navigated to gain access to the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:qualifiedRelation": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/dataspace-protocol/DcatRelationship"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Link to a description of a relationship with another resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"odrl:hasPolicy": {
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy",
+					"description": "An ODRL conformant policy expressing the rights associated with the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:endpointDescription": {
+					"type": "string",
+					"description": "A description of the services available via the end-points, including their\noperations, parameters, etc.",
+					"$comment": "Inherited from DcatDataServiceBase"
+				}
+			},
+			"$comment": "Inlined utility base type DcatDataServiceBase so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
+}

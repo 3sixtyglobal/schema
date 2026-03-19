@@ -1,19 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorElement",
-	"description": "EPCIS 2.0 SensorElement grouping metadata and one or more SensorReport entries.",
+	"title": "EpcisSensorElement",
+	"description": "EPCIS 2.0 SensorElement grouping metadata and one or more SensorReport\nentries.",
 	"type": "object",
 	"properties": {
 		"sensorMetadata": {
 			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSensorMetadata",
-			"description": "(Optional) Element containing metadata attributes applicable to all sensorReport entries within this sensorElement."
+			"description": "(Optional) Element containing metadata attributes applicable to all\nsensorReport entries within this sensorElement."
 		},
 		"sensorReport": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSensorReport"
 			},
-			"description": "An element containing one or several attributes that pertain to a specific sensor observation."
+			"description": "An element containing one or several attributes that pertain to a specific\nsensor observation."
 		}
 	},
 	"required": ["sensorReport"]

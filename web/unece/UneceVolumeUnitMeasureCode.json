@@ -1,13 +1,28 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureCode",
+	"title": "UneceVolumeUnitMeasureCode",
 	"description": "RDF Class for VolumeUnitMeasureType unit code type to define unit code values.",
-	"type": "string",
-	"enum": [
-		"unece:VolumeUnitMeasureCode#CMQ",
-		"unece:VolumeUnitMeasureCode#FTQ",
-		"unece:VolumeUnitMeasureCode#LTR",
-		"unece:VolumeUnitMeasureCode#MMQ",
-		"unece:VolumeUnitMeasureCode#MTQ"
+	"oneOf": [
+		{
+			"const": "unece:VolumeUnitMeasureCode#CMQ",
+			"description": "cubic centimetre: CMQ."
+		},
+		{
+			"const": "unece:VolumeUnitMeasureCode#FTQ",
+			"description": "cubic foot: FTQ."
+		},
+		{
+			"const": "unece:VolumeUnitMeasureCode#LTR",
+			"description": "litre: LTR."
+		},
+		{
+			"const": "unece:VolumeUnitMeasureCode#MMQ",
+			"description": "cubic millimetre: MMQ."
+		},
+		{
+			"const": "unece:VolumeUnitMeasureCode#MTQ",
+			"description": "cubic metre: MTQ."
+		}
 	]
 }

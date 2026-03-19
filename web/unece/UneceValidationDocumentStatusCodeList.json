@@ -1,8 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceValidationDocumentStatusCodeList",
-	"description": "A character string used to represent the document status condition of a validation document. Deprecated since version D23B.",
-	"type": "string",
-	"enum": ["unece:ValidationDocumentStatusCodeList#1", "unece:ValidationDocumentStatusCodeList#42"],
-	"deprecated": true
+	"title": "UneceValidationDocumentStatusCodeList",
+	"description": "A character string used to represent the document status condition of a validation document.\nDeprecated since version D23B.",
+	"oneOf": [
+		{
+			"const": "unece:ValidationDocumentStatusCodeList#1",
+			"description": "Accepted: 1.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:ValidationDocumentStatusCodeList#42",
+			"description": "In error: 42.\nDeprecated since version D23B."
+		}
+	]
 }

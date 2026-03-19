@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentTradeSettlement",
-	"description": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice.",
+	"title": "UnecePaymentTradeSettlement",
+	"description": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle,\nfor example a commercial invoice.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "PaymentTradeSettlement",
 			"description": "JSON-LD Type."
 		},
@@ -40,7 +22,7 @@
 		},
 		"additionalDescription": {
 			"type": "string",
-			"description": "A description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
+			"description": "A description, expressed as text, of additional information supplied to enable the matching of an entry with the items\nthat the payment is intended to settle."
 		},
 		"applicableTax": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeTax",
@@ -64,7 +46,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
+			"description": "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier\nassigned by the creditor to reference the financial transaction."
 		},
 		"creditorReferenceIssuerId": {
 			"anyOf": [
@@ -83,7 +65,7 @@
 		},
 		"discountAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-			"description": "The monetary value of the payment that is the discount for this trade settlement, such as from the application of an agreed discount to the amount due."
+			"description": "The monetary value of the payment that is the discount for this trade settlement, such as from the application of an\nagreed discount to the amount due."
 		},
 		"dueDateTime": {
 			"type": "string",
@@ -92,7 +74,7 @@
 		},
 		"duePayableAmount": {
 			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-			"description": "The monetary value of the payment that is the exact amount due and payable for this trade settlement, such as the amount due to the creditor."
+			"description": "The monetary value of the payment that is the exact amount due and payable for this trade settlement, such as the amount\ndue to the creditor."
 		},
 		"identifiedGuarantee": {
 			"$ref": "https://schema.twindev.org/unece/UneceGuarantee",

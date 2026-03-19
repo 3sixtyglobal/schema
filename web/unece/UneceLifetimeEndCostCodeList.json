@@ -1,19 +1,52 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceLifetimeEndCostCodeList",
+	"title": "UneceLifetimeEndCostCodeList",
 	"description": "A character string used to represent the type of a lifetime end cost.",
-	"type": "string",
-	"enum": [
-		"unece:LifetimeEndCostCodeList#1",
-		"unece:LifetimeEndCostCodeList#10",
-		"unece:LifetimeEndCostCodeList#11",
-		"unece:LifetimeEndCostCodeList#2",
-		"unece:LifetimeEndCostCodeList#3",
-		"unece:LifetimeEndCostCodeList#4",
-		"unece:LifetimeEndCostCodeList#5",
-		"unece:LifetimeEndCostCodeList#6",
-		"unece:LifetimeEndCostCodeList#7",
-		"unece:LifetimeEndCostCodeList#8",
-		"unece:LifetimeEndCostCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:LifetimeEndCostCodeList#1",
+			"description": "Cost of restoration of site: 1."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#10",
+			"description": "Cost of the reduction of the sound broadcasts: 10."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#11",
+			"description": "Cost of the protection of the biodiversity and the landscape: 11."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#2",
+			"description": "Cost of dismantling of site: 2."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#3",
+			"description": "Cost of discontinuation of fixed asset: 3."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#4",
+			"description": "Cost of stake in the rubbish of fixed asset: 4."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#5",
+			"description": "Cost of compensation in third parties: 5."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#6",
+			"description": "Previsional cost of the damage caused to the environment: 6."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#7",
+			"description": "Cost of elimination of the waste and the efforts undertaken to limit its quantity: 7."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#8",
+			"description": "Cost of wrestling against the soil pollution, waters of surface and some subterranean waters: 8."
+		},
+		{
+			"const": "unece:LifetimeEndCostCodeList#9",
+			"description": "Cost of conservation of the air quality and the climate: 9."
+		}
 	]
 }

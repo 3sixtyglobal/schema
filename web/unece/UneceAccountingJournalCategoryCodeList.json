@@ -1,19 +1,52 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingJournalCategoryCodeList",
+	"title": "UneceAccountingJournalCategoryCodeList",
 	"description": "A character string used to represent the type of an accounting journal category.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingJournalCategoryCodeList#1",
-		"unece:AccountingJournalCategoryCodeList#10",
-		"unece:AccountingJournalCategoryCodeList#11",
-		"unece:AccountingJournalCategoryCodeList#2",
-		"unece:AccountingJournalCategoryCodeList#3",
-		"unece:AccountingJournalCategoryCodeList#4",
-		"unece:AccountingJournalCategoryCodeList#5",
-		"unece:AccountingJournalCategoryCodeList#6",
-		"unece:AccountingJournalCategoryCodeList#7",
-		"unece:AccountingJournalCategoryCodeList#8",
-		"unece:AccountingJournalCategoryCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#1",
+			"description": "Bank: 1."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#10",
+			"description": "Amortization: 10."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#11",
+			"description": "Depreciation: 11."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#2",
+			"description": "Cash: 2."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#3",
+			"description": "Others: 3."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#4",
+			"description": "Purchase: 4."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#5",
+			"description": "Sales: 5."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#6",
+			"description": "Bank cheques remit: 6."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#7",
+			"description": "Miscellaneous: 7."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#8",
+			"description": "Payroll: 8."
+		},
+		{
+			"const": "unece:AccountingJournalCategoryCodeList#9",
+			"description": "Investments: 9."
+		}
 	]
 }

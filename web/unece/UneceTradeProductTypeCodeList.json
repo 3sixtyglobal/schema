@@ -1,15 +1,36 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeProductTypeCodeList",
+	"title": "UneceTradeProductTypeCodeList",
 	"description": "Values for UneceTradeProduct typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableProduct",
-		"unece:componentProduct",
-		"unece:includedTradeProduct",
-		"unece:inputApplicableProduct",
-		"unece:outputApplicableProduct",
-		"unece:requisitionerSpecifiedProduct",
-		"unece:specifiedTradeProduct"
+	"oneOf": [
+		{
+			"const": "unece:applicableProduct",
+			"description": "A product applicable for this subordinate trade line item."
+		},
+		{
+			"const": "unece:componentProduct",
+			"description": "A trade product component of this product batch."
+		},
+		{
+			"const": "unece:includedTradeProduct",
+			"description": "A product included in this supply chain inventory.\nA product included in this trade product group.\nA trade product included in this line trade transaction.\nA trade product included in this supply chain trade transaction."
+		},
+		{
+			"const": "unece:inputApplicableProduct",
+			"description": "An input product applicable to this facility production unit.\nAn input product applicable to this production machine.\nAn input product applicable to this production process.\nAn input product applicable to this specified production device."
+		},
+		{
+			"const": "unece:outputApplicableProduct",
+			"description": "An output product applicable to this facility production unit.\nAn output product applicable to this production machine.\nAn output product applicable to this production process.\nAn output product applicable to this specified production device."
+		},
+		{
+			"const": "unece:requisitionerSpecifiedProduct",
+			"description": "The product specified by the requisitioner for this supply chain trade line item."
+		},
+		{
+			"const": "unece:specifiedTradeProduct",
+			"description": "A product specified for this supply chain trade line item.\nA product specified for this trade party."
+		}
 	]
 }

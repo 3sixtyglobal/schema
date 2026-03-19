@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceNegotiationContextTypeCodeList",
+	"title": "UneceNegotiationContextTypeCodeList",
 	"description": "Values for UneceNegotiationContext typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedContext"
+	"oneOf": [
+		{
+			"const": "unece:specifiedContext",
+			"description": "A context specified for this electronic negotiation exchange."
+		}
+	]
 }

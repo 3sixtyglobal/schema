@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePrintTypeCodeList",
+	"title": "UnecePrintTypeCodeList",
 	"description": "Values for UnecePrint typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedPrint"
+	"oneOf": [
+		{
+			"const": "unece:specifiedPrint",
+			"description": "A product print specified for this trade product."
+		}
+	]
 }

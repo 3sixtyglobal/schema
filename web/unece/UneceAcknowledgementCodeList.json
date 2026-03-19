@@ -1,16 +1,40 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAcknowledgementCodeList",
+	"title": "UneceAcknowledgementCodeList",
 	"description": "A character string used to represent a type of acknowledgment.",
-	"type": "string",
-	"enum": [
-		"unece:AcknowledgementCodeList#18",
-		"unece:AcknowledgementCodeList#31",
-		"unece:AcknowledgementCodeList#35",
-		"unece:AcknowledgementCodeList#43",
-		"unece:AcknowledgementCodeList#5",
-		"unece:AcknowledgementCodeList#6",
-		"unece:AcknowledgementCodeList#7",
-		"unece:AcknowledgementCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:AcknowledgementCodeList#18",
+			"description": "Reissue: 18."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#31",
+			"description": "Copy: 31."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#35",
+			"description": "Retransmission: 35."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#43",
+			"description": "Additional transmission: 43."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#5",
+			"description": "Replace: 5."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#6",
+			"description": "Confirmation: 6."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#7",
+			"description": "Duplicate: 7."
+		},
+		{
+			"const": "unece:AcknowledgementCodeList#9",
+			"description": "Original: 9."
+		}
 	]
 }

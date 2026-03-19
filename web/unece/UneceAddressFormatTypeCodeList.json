@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAddressFormatTypeCodeList",
+	"title": "UneceAddressFormatTypeCodeList",
 	"description": "A character string used to represent the type of format address.",
-	"type": "string",
-	"enum": [
-		"unece:AddressFormatTypeCodeList#1",
-		"unece:AddressFormatTypeCodeList#2",
-		"unece:AddressFormatTypeCodeList#3"
+	"oneOf": [
+		{
+			"const": "unece:AddressFormatTypeCodeList#1",
+			"description": "Fiscal Format: 1."
+		},
+		{
+			"const": "unece:AddressFormatTypeCodeList#2",
+			"description": "Legal Format: 2."
+		},
+		{
+			"const": "unece:AddressFormatTypeCodeList#3",
+			"description": "Postal Format: 3."
+		}
 	]
 }

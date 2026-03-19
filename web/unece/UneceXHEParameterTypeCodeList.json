@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceXHEParameterTypeCodeList",
+	"title": "UneceXHEParameterTypeCodeList",
 	"description": "Values for UneceXHEParameter typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedParameter"
+	"oneOf": [
+		{
+			"const": "unece:specifiedParameter",
+			"description": "A parameter specified for this XHE context."
+		}
+	]
 }

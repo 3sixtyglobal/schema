@@ -1,12 +1,24 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCalibratedMeasurementTypeCodeList",
+	"title": "UneceCalibratedMeasurementTypeCodeList",
 	"description": "Values for UneceCalibratedMeasurement typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:actualReportedMeasurement",
-		"unece:precisionMeasurement",
-		"unece:scheduledReportedMeasurement",
-		"unece:specifiedMeasurement"
+	"oneOf": [
+		{
+			"const": "unece:actualReportedMeasurement",
+			"description": "An actual calibrated measurement reported for this monitoring sensor."
+		},
+		{
+			"const": "unece:precisionMeasurement",
+			"description": "A calibrated measurement of precision for this monitoring sensor."
+		},
+		{
+			"const": "unece:scheduledReportedMeasurement",
+			"description": "A scheduled calibrated measurement reported for this monitoring sensor."
+		},
+		{
+			"const": "unece:specifiedMeasurement",
+			"description": "A calibrated measurement specified for this specified condition."
+		}
 	]
 }

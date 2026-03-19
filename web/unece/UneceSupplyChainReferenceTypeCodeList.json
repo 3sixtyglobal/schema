@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainReferenceTypeCodeList",
+	"title": "UneceSupplyChainReferenceTypeCodeList",
 	"description": "Values for UneceSupplyChainReference typeCode property.",
-	"type": "string",
-	"enum": ["unece:associatedReference", "unece:specifiedSupplyChainReference"]
+	"oneOf": [
+		{
+			"const": "unece:associatedReference",
+			"description": "A reference associated with this supply chain event."
+		},
+		{
+			"const": "unece:specifiedSupplyChainReference",
+			"description": "A reference specified for this supply chain consignment."
+		}
+	]
 }

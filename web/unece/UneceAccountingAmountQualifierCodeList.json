@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAmountQualifierCodeList",
+	"title": "UneceAccountingAmountQualifierCodeList",
 	"description": "A character string used to qualify an accounting amount.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAmountQualifierCodeList#EN",
-		"unece:AccountingAmountQualifierCodeList#SB",
-		"unece:AccountingAmountQualifierCodeList#SE"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAmountQualifierCodeList#EN",
+			"description": "Entries: EN."
+		},
+		{
+			"const": "unece:AccountingAmountQualifierCodeList#SB",
+			"description": "Open balance: SB."
+		},
+		{
+			"const": "unece:AccountingAmountQualifierCodeList#SE",
+			"description": "End balance: SE."
+		}
 	]
 }

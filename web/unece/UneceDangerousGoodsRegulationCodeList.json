@@ -1,32 +1,104 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDangerousGoodsRegulationCodeList",
+	"title": "UneceDangerousGoodsRegulationCodeList",
 	"description": "A character string used to represent the dangerous goods regulation.",
-	"type": "string",
-	"enum": [
-		"unece:DangerousGoodsRegulationCodeList#ADR",
-		"unece:DangerousGoodsRegulationCodeList#ADS",
-		"unece:DangerousGoodsRegulationCodeList#ADT",
-		"unece:DangerousGoodsRegulationCodeList#ADU",
-		"unece:DangerousGoodsRegulationCodeList#ADV",
-		"unece:DangerousGoodsRegulationCodeList#ADW",
-		"unece:DangerousGoodsRegulationCodeList#ADX",
-		"unece:DangerousGoodsRegulationCodeList#ADY",
-		"unece:DangerousGoodsRegulationCodeList#ADZ",
-		"unece:DangerousGoodsRegulationCodeList#AEA",
-		"unece:DangerousGoodsRegulationCodeList#AEB",
-		"unece:DangerousGoodsRegulationCodeList#AGS",
-		"unece:DangerousGoodsRegulationCodeList#ANR",
-		"unece:DangerousGoodsRegulationCodeList#ARD",
-		"unece:DangerousGoodsRegulationCodeList#CFR",
-		"unece:DangerousGoodsRegulationCodeList#COM",
-		"unece:DangerousGoodsRegulationCodeList#GVE",
-		"unece:DangerousGoodsRegulationCodeList#GVS",
-		"unece:DangerousGoodsRegulationCodeList#ICA",
-		"unece:DangerousGoodsRegulationCodeList#IMD",
-		"unece:DangerousGoodsRegulationCodeList#RGE",
-		"unece:DangerousGoodsRegulationCodeList#RID",
-		"unece:DangerousGoodsRegulationCodeList#UI",
-		"unece:DangerousGoodsRegulationCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADR",
+			"description": "European agreement on the international carriage of dangerous goods on road (ADR): ADR."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADS",
+			"description": "NDR European agreement for the transport of dangerous goods on the river Rhine: ADS."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADT",
+			"description": "CA, Transport Canada's dangerous goods requirements: ADT."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADU",
+			"description": "JP, Japanese maritime safety agency dangerous goods regulation code: ADU."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADV",
+			"description": "MARPOL 73/78: ADV."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADW",
+			"description": "GHS regulation: ADW."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADX",
+			"description": "Transport emergency (TREM) card: ADX."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADY",
+			"description": "IBC Code: ADY."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ADZ",
+			"description": "IGC Code: ADZ."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#AEA",
+			"description": "IMSBC Code: AEA."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#AEB",
+			"description": "MARPOL Annex I: AEB."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#AGS",
+			"description": "DE, ADR and GGVS combined regulations for combined transport: AGS."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ANR",
+			"description": "ADNR, Autorisation de transport de matieres Dangereuses pour la Navigation sur le Rhin: ANR."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ARD",
+			"description": "DE, ARD and RID - Combined regulations for combined transport: ARD."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#CFR",
+			"description": "US, 49 Code of federal regulations: CFR."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#COM",
+			"description": "DE, ADR, RID, GGVS and GGVE - Combined regulations for combined transport: COM."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#GVE",
+			"description": "DE, GGVE (Gefahrgutverordnung Eisenbahn): GVE."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#GVS",
+			"description": "DE, GGVS (Gefahrgutverordnung Strasse): GVS."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ICA",
+			"description": "IATA ICAO: ICA."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#IMD",
+			"description": "IMO IMDG code: IMD."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#RGE",
+			"description": "DE, RID and GGVE, Combined regulations for combined transport on rails: RGE."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#RID",
+			"description": "Railroad dangerous goods book (RID): RID."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#UI",
+			"description": "UK IMO book: UI."
+		},
+		{
+			"const": "unece:DangerousGoodsRegulationCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

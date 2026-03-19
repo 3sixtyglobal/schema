@@ -1,58 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObject",
-	"description": "A W3C Activity Streams Object.\n\nThis is the base type for most ActivityStreams entities. It supports natural language values (e.g. `name`, `summary`, `content`) as either plain strings or language maps.",
+	"title": "ActivityStreamsObject",
+	"description": "A W3C Activity Streams Object.\n\nThis is the base type for most ActivityStreams entities. It supports natural language\nvalues (e.g. `name`, `summary`, `content`) as either plain strings or language maps.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The Activity Streams JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://www.w3.org/ns/activitystreams"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string",
-						"const": "https://www.w3.org/ns/activitystreams"
-					},
-					"minItems": 1,
-					"maxItems": 1
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						},
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				},
-				{
-					"type": "array",
-					"minItems": 2,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/activitystreams"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+			"description": "The LD Context."
 		},
 		"type": {
 			"anyOf": [
@@ -129,7 +84,6 @@
 			"description": "Natural language content map."
 		},
 		"url": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -150,10 +104,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "A link to the representation of the object.\n\nThe value can be a URI or an embedded node object."
 		},
 		"image": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -174,10 +128,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "A graphical representation of the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object."
 		},
 		"icon": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -198,7 +152,8 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "An icon for the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object."
 		},
 		"published": {
 			"type": "string",
@@ -226,7 +181,6 @@
 			"format": "duration"
 		},
 		"generator": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -247,10 +201,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "The generator of the object."
 		},
 		"attachment": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -271,10 +225,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Attachments."
 		},
 		"attributedTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -295,10 +249,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Objects attributed to."
 		},
 		"audience": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -319,10 +273,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Audience."
 		},
 		"context": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -343,10 +297,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Context."
 		},
 		"location": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -367,10 +321,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Location."
 		},
 		"tag": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -391,10 +345,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Tag."
 		},
 		"inReplyTo": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -415,14 +369,14 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "In reply to."
 		},
 		"replies": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -443,10 +397,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "Preview."
 		},
 		"to": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -467,10 +421,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "To."
 		},
 		"bto": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -491,10 +445,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "BTo."
 		},
 		"cc": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -515,10 +469,10 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "CC."
 		},
 		"bcc": {
-			"description": "Object or array data type",
 			"anyOf": [
 				{
 					"type": "string"
@@ -539,7 +493,8 @@
 						]
 					}
 				}
-			]
+			],
+			"description": "BCC."
 		},
 		"mediaType": {
 			"type": "string",

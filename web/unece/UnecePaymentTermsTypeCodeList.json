@@ -1,87 +1,324 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList",
+	"title": "UnecePaymentTermsTypeCodeList",
 	"description": "A character string used to represent the payment terms type.",
-	"type": "string",
-	"enum": [
-		"unece:PaymentTermsTypeCodeList#1",
-		"unece:PaymentTermsTypeCodeList#10",
-		"unece:PaymentTermsTypeCodeList#11",
-		"unece:PaymentTermsTypeCodeList#12",
-		"unece:PaymentTermsTypeCodeList#13",
-		"unece:PaymentTermsTypeCodeList#14",
-		"unece:PaymentTermsTypeCodeList#15",
-		"unece:PaymentTermsTypeCodeList#16",
-		"unece:PaymentTermsTypeCodeList#17",
-		"unece:PaymentTermsTypeCodeList#18",
-		"unece:PaymentTermsTypeCodeList#19",
-		"unece:PaymentTermsTypeCodeList#2",
-		"unece:PaymentTermsTypeCodeList#20",
-		"unece:PaymentTermsTypeCodeList#21",
-		"unece:PaymentTermsTypeCodeList#22",
-		"unece:PaymentTermsTypeCodeList#23",
-		"unece:PaymentTermsTypeCodeList#24",
-		"unece:PaymentTermsTypeCodeList#25",
-		"unece:PaymentTermsTypeCodeList#26",
-		"unece:PaymentTermsTypeCodeList#27",
-		"unece:PaymentTermsTypeCodeList#28",
-		"unece:PaymentTermsTypeCodeList#29",
-		"unece:PaymentTermsTypeCodeList#3",
-		"unece:PaymentTermsTypeCodeList#30",
-		"unece:PaymentTermsTypeCodeList#31",
-		"unece:PaymentTermsTypeCodeList#32",
-		"unece:PaymentTermsTypeCodeList#33",
-		"unece:PaymentTermsTypeCodeList#34",
-		"unece:PaymentTermsTypeCodeList#35",
-		"unece:PaymentTermsTypeCodeList#36",
-		"unece:PaymentTermsTypeCodeList#37",
-		"unece:PaymentTermsTypeCodeList#38",
-		"unece:PaymentTermsTypeCodeList#39",
-		"unece:PaymentTermsTypeCodeList#4",
-		"unece:PaymentTermsTypeCodeList#40",
-		"unece:PaymentTermsTypeCodeList#41",
-		"unece:PaymentTermsTypeCodeList#42",
-		"unece:PaymentTermsTypeCodeList#43",
-		"unece:PaymentTermsTypeCodeList#44",
-		"unece:PaymentTermsTypeCodeList#45",
-		"unece:PaymentTermsTypeCodeList#46",
-		"unece:PaymentTermsTypeCodeList#47",
-		"unece:PaymentTermsTypeCodeList#48",
-		"unece:PaymentTermsTypeCodeList#49",
-		"unece:PaymentTermsTypeCodeList#5",
-		"unece:PaymentTermsTypeCodeList#50",
-		"unece:PaymentTermsTypeCodeList#51",
-		"unece:PaymentTermsTypeCodeList#52",
-		"unece:PaymentTermsTypeCodeList#53",
-		"unece:PaymentTermsTypeCodeList#54",
-		"unece:PaymentTermsTypeCodeList#55",
-		"unece:PaymentTermsTypeCodeList#56",
-		"unece:PaymentTermsTypeCodeList#57",
-		"unece:PaymentTermsTypeCodeList#58",
-		"unece:PaymentTermsTypeCodeList#59",
-		"unece:PaymentTermsTypeCodeList#6",
-		"unece:PaymentTermsTypeCodeList#60",
-		"unece:PaymentTermsTypeCodeList#61",
-		"unece:PaymentTermsTypeCodeList#62",
-		"unece:PaymentTermsTypeCodeList#63",
-		"unece:PaymentTermsTypeCodeList#64",
-		"unece:PaymentTermsTypeCodeList#65",
-		"unece:PaymentTermsTypeCodeList#66",
-		"unece:PaymentTermsTypeCodeList#67",
-		"unece:PaymentTermsTypeCodeList#68",
-		"unece:PaymentTermsTypeCodeList#69",
-		"unece:PaymentTermsTypeCodeList#7",
-		"unece:PaymentTermsTypeCodeList#70",
-		"unece:PaymentTermsTypeCodeList#71",
-		"unece:PaymentTermsTypeCodeList#72",
-		"unece:PaymentTermsTypeCodeList#73",
-		"unece:PaymentTermsTypeCodeList#74",
-		"unece:PaymentTermsTypeCodeList#75",
-		"unece:PaymentTermsTypeCodeList#76",
-		"unece:PaymentTermsTypeCodeList#77",
-		"unece:PaymentTermsTypeCodeList#78",
-		"unece:PaymentTermsTypeCodeList#8",
-		"unece:PaymentTermsTypeCodeList#9",
-		"unece:PaymentTermsTypeCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:PaymentTermsTypeCodeList#1",
+			"description": "Basic: 1."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#10",
+			"description": "Instant: 10."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#11",
+			"description": "Elective: 11."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#12",
+			"description": "10 days after end of month: 12."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#13",
+			"description": "Seller to advise buyer: 13."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#14",
+			"description": "Paid against statement: 14."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#15",
+			"description": "No charge: 15."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#16",
+			"description": "Not yet defined: 16."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#17",
+			"description": "Ultimo: 17."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#18",
+			"description": "Previously agreed upon: 18."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#19",
+			"description": "United States funds: 19."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#2",
+			"description": "End of month: 2."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#20",
+			"description": "Penalty terms: 20."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#21",
+			"description": "Payment by instalment: 21."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#22",
+			"description": "Discount: 22."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#23",
+			"description": "Available by sight payment: 23."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#24",
+			"description": "Available by deferred payment: 24."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#25",
+			"description": "Available by acceptance: 25."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#26",
+			"description": "Available by negotiation with any bank: 26."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#27",
+			"description": "Available by negotiation with any bank in ...: 27."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#28",
+			"description": "Available by negotiation by named bank: 28."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#29",
+			"description": "Available by negotiation: 29."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#3",
+			"description": "Fixed date: 3."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#30",
+			"description": "Adjustment payment: 30."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#31",
+			"description": "Late payment: 31."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#32",
+			"description": "Advanced payment: 32."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#33",
+			"description": "Payment by instalments according to progress (as agreed): 33."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#34",
+			"description": "Payment by instalments according to progress (to be agreed): 34."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#35",
+			"description": "Nonstandard: 35."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#36",
+			"description": "Tenor payment terms: 36."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#37",
+			"description": "Complete payment: 37."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#38",
+			"description": "Payment terms defined in consolidated invoice: 38."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#39",
+			"description": "Payment upon completion: 39."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#4",
+			"description": "Deferred: 4."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#40",
+			"description": "Partial advance: 40."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#41",
+			"description": "Consignment: 41."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#42",
+			"description": "Inter-company account: 42."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#43",
+			"description": "Sell by note: 43."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#44",
+			"description": "Supplier floor plan: 44."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#45",
+			"description": "Contract basis: 45."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#46",
+			"description": "Credit controlled: 46."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#47",
+			"description": "Dating given: 47."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#48",
+			"description": "Trade acceptance: 48."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#49",
+			"description": "Cost plus: 49."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#5",
+			"description": "Discount not applicable: 5."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#50",
+			"description": "Letter of credit: 50."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#51",
+			"description": "Lease agreement: 51."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#52",
+			"description": "Cash On Delivery (COD): 52."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#53",
+			"description": "Cash by state law: 53."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#54",
+			"description": "Bank transfer: 54."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#55",
+			"description": "Cash on arrival: 55."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#56",
+			"description": "Cash: 56."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#57",
+			"description": "Cash discount terms apply: 57."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#58",
+			"description": "Cash with order: 58."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#59",
+			"description": "Cash per vendor request: 59."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#6",
+			"description": "Mixed: 6."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#60",
+			"description": "Irrevocable letter of credit: 60."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#61",
+			"description": "Documents against acceptance: 61."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#62",
+			"description": "Charge card: 62."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#63",
+			"description": "Documents against payment: 63."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#64",
+			"description": "Usance bill: 64."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#65",
+			"description": "Letter of credit at sight: 65."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#66",
+			"description": "Secured account: 66."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#67",
+			"description": "Basic commission terms: 67."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#68",
+			"description": "Deposit required: 68."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#69",
+			"description": "Discount with prompt pay: 69."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#7",
+			"description": "Extended: 7."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#70",
+			"description": "Discount with advance payment: 70."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#71",
+			"description": "Certified cheque: 71."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#72",
+			"description": "Cash against documents: 72."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#73",
+			"description": "Bill of exchange: 73."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#74",
+			"description": "Progressive discount: 74."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#75",
+			"description": "Lump sum: 75."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#76",
+			"description": "Fixed fee: 76."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#77",
+			"description": "Promissory note: 77."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#78",
+			"description": "Factoring: 78."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#8",
+			"description": "Basic discount offered: 8."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#9",
+			"description": "Proximo: 9."
+		},
+		{
+			"const": "unece:PaymentTermsTypeCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

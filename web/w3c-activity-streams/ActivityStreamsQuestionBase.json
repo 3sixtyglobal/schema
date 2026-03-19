@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsQuestionBase",
+	"title": "ActivityStreamsQuestionBase",
+	"description": "A W3C Activity Streams Question base.\n\nA `Question` represents a question being asked. Use `oneOf` for exclusive\nchoices, `anyOf` for inclusive choices, and `closed` to indicate when the question\nis closed.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Question"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Question"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Question type."
+		},
+		"closed": {
+			"anyOf": [
+				{
+					"type": "boolean"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Indicates that the Question has been closed."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsIntransitiveActivity"
+		}
+	]
+}

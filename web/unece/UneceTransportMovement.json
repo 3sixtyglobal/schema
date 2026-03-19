@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportMovement",
+	"title": "UneceTransportMovement",
 	"description": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TransportMovement",
 			"description": "JSON-LD Type."
 		},
@@ -120,7 +102,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceTransportMeans"
 			},
-			"description": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
+			"description": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO)\nferry."
 		},
 		"carrierAgentParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -135,7 +117,7 @@
 		},
 		"closingDateTime": {
 			"type": "string",
-			"description": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the departure of this logistics transport movement.",
+			"description": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the\ndeparture of this logistics transport movement.",
 			"format": "date-time"
 		},
 		"commodityConsolidatorAgentParty": {
@@ -268,7 +250,7 @@
 		},
 		"loadingEvent": {
 			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-			"description": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
+			"description": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this\nlogistics transport movement."
 		},
 		"loadingInspectionParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -413,7 +395,7 @@
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
-			"description": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as stated in a schedule."
+			"description": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as\nstated in a schedule."
 		},
 		"sequenceNumeric": {
 			"type": "string",
@@ -603,7 +585,7 @@
 		},
 		"unloadingEvent": {
 			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-			"description": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+			"description": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics\ntransport movement."
 		},
 		"unloadingInspectionParty": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",

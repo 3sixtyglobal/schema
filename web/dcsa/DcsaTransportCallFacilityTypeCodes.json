@@ -1,7 +1,44 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaTransportCallFacilityTypeCodes",
-	"description": "Facility type codes used on a TransportCall.\n\nSource: inline `facilityTypeCode` enum in the `transportCall` schema in the DCSA Event Domain (v3.1.0).   Facility type codes used on a TransportCall.",
-	"type": "string",
-	"enum": ["BOCR", "CLOC", "COFS", "OFFD", "DEPO", "INTE", "POTE", "RAMP", "WAYP"]
+	"title": "DcsaTransportCallFacilityTypeCodes",
+	"description": "Facility type codes used on a TransportCall.",
+	"oneOf": [
+		{
+			"const": "BOCR",
+			"description": "Border."
+		},
+		{
+			"const": "CLOC",
+			"description": "Customer location."
+		},
+		{
+			"const": "COFS",
+			"description": "Container freight station."
+		},
+		{
+			"const": "OFFD",
+			"description": "Off dock storage."
+		},
+		{
+			"const": "DEPO",
+			"description": "Depot."
+		},
+		{
+			"const": "INTE",
+			"description": "Inland terminal."
+		},
+		{
+			"const": "POTE",
+			"description": "Port terminal."
+		},
+		{
+			"const": "RAMP",
+			"description": "Ramp."
+		},
+		{
+			"const": "WAYP",
+			"description": "Waypoint."
+		}
+	]
 }

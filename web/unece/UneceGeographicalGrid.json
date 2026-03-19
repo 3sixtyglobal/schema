@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceGeographicalGrid",
-	"description": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+	"title": "UneceGeographicalGrid",
+	"description": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on\nthe surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "GeographicalGrid",
 			"description": "JSON-LD Type."
 		},
@@ -56,7 +38,7 @@
 		},
 		"highLimit": {
 			"type": "string",
-			"description": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally opposing corner of each axis."
+			"description": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally\nopposing corner of each axis."
 		},
 		"identifier": {
 			"anyOf": [
@@ -71,11 +53,11 @@
 		},
 		"lowLimit": {
 			"type": "string",
-			"description": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of each axis."
+			"description": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of\neach axis."
 		},
 		"offsetVectorNumeric": {
 			"type": "string",
-			"description": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical grid."
+			"description": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical\ngrid."
 		},
 		"originAssociatedDirectPositionList": {
 			"type": "string",

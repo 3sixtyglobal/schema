@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dcsa/DcsaBaseEquipmentEvent",
-	"description": "Base equipment event attributes.\n\nNote: In the upstream OpenAPI, `equipmentPayload` is defined as `baseEvent` + `baseEquipmentEvent`. In this package, those are already represented by `IDcsaEquipmentPayload` extending `IDcsaBaseEvent`.\n\nSource: `baseEquipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
+	"title": "DcsaBaseEquipmentEvent",
+	"description": "Base equipment event attributes.\n\nNote: In the upstream OpenAPI, `equipmentPayload` is defined as `baseEvent` +\n`baseEquipmentEvent`. In this package, those are already represented by\n`IDcsaEquipmentPayload` extending `IDcsaBaseEvent`.\n\nSource: `baseEquipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"$ref": "https://schema.twindev.org/dcsa/DcsaEquipmentPayload"
 }

@@ -1,16 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAsset",
-	"description": "Interface for ODRL Assets. https://www.w3.org/TR/odrl-model/#asset",
+	"title": "OdrlAsset",
+	"description": "Interface for ODRL Assets.\nhttps://www.w3.org/TR/odrl-model/#asset",
 	"type": "object",
 	"properties": {
 		"uid": {
 			"type": "string",
-			"description": "The unique identifier for the asset. Should be an IRI."
+			"description": "The unique identifier for the asset.\nShould be an IRI."
 		},
 		"@type": {
 			"type": "string",
-			"description": "The type of the asset. Can be used to specify additional type information."
+			"description": "The type of the asset.\nCan be used to specify additional type information."
 		},
 		"partOf": {
 			"anyOf": [
@@ -34,7 +35,7 @@
 					}
 				}
 			],
-			"description": "Reference to the asset collection this asset is part of. Used to identify an AssetCollection that this Asset is a member of."
+			"description": "Reference to the asset collection this asset is part of.\nUsed to identify an AssetCollection that this Asset is a member of."
 		},
 		"hasPolicy": {
 			"anyOf": [
@@ -48,7 +49,7 @@
 					}
 				}
 			],
-			"description": "Reference to the policy that governs this asset. Used to identify the Policy that governs this Asset."
+			"description": "Reference to the policy that governs this asset.\nUsed to identify the Policy that governs this Asset."
 		}
 	}
 }

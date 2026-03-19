@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList",
+	"title": "UneceCargoCommodityCategoryCodeList",
 	"description": "A character string used to represent a cargo commodity category.",
-	"type": "string",
-	"const": "unece:CargoCommodityCategoryCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:CargoCommodityCategoryCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
 }

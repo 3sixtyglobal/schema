@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceBasicWorkItemTypeCodeList",
+	"title": "UneceBasicWorkItemTypeCodeList",
 	"description": "Values for UneceBasicWorkItem typeCode property.",
-	"type": "string",
-	"const": "unece:itemBasicWorkItem"
+	"oneOf": [
+		{
+			"const": "unece:itemBasicWorkItem",
+			"description": "A basic work item in this basic work item.\nA basic work item in this valuation breakdown statement.\nA basic work item within this grouped work item."
+		}
+	]
 }

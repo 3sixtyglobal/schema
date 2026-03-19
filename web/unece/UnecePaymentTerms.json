@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UnecePaymentTerms",
+	"title": "UnecePaymentTerms",
 	"description": "Terms and conditions by which payment has been or will be made for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "PaymentTerms",
 			"description": "JSON-LD Type."
 		},
@@ -61,14 +43,14 @@
 		},
 		"durationUnitDurationMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
-			"description": "The measure of a length of time duration specified for these trade payment terms, such as 12 hours, 15 days, 2 weeks, 3 months, 5 years."
+			"description": "The measure of a length of time duration specified for these trade payment terms, such as 12 hours, 15 days, 2 weeks, 3\nmonths, 5 years."
 		},
 		"equivalentAmount": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "An equivalent monetary value to be transferred between debtor and creditor before deduction of charges for these trade payment terms, expressed in the currency of the debtor's account which is different from the currency in which it is to be transferred."
+			"description": "An equivalent monetary value to be transferred between debtor and creditor before deduction of charges for these trade\npayment terms, expressed in the currency of the debtor's account which is different from the currency in which it is to\nbe transferred."
 		},
 		"information": {
 			"type": "string",
@@ -79,7 +61,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value that has been instructed to be transferred between debtor and creditor for these trade payment terms before deduction of charges."
+			"description": "A monetary value that has been instructed to be transferred between debtor and creditor for these trade payment terms\nbefore deduction of charges."
 		},
 		"instructionCode": {
 			"type": "string",
@@ -127,7 +109,7 @@
 		},
 		"settlementPeriodMeasure": {
 			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
+			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date,\nsuch as 30 days, 3 months."
 		},
 		"tradePaymentTermsDirectDebitMandateId": {
 			"anyOf": [

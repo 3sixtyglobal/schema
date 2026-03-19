@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceClassificationTypeCodeList",
+	"title": "UneceClassificationTypeCodeList",
 	"description": "Values for UneceClassification typeCode property.",
-	"type": "string",
-	"enum": ["unece:applicableClassification", "unece:designatedClassification"]
+	"oneOf": [
+		{
+			"const": "unece:applicableClassification",
+			"description": "A product classification applicable to this trade product instance."
+		},
+		{
+			"const": "unece:designatedClassification",
+			"description": "A product classification designated for this trade product."
+		}
+	]
 }

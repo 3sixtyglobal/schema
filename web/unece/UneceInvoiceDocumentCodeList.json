@@ -1,26 +1,76 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceInvoiceDocumentCodeList",
-	"description": "A character string used to represent a type of invoice document. Deprecated since version D23B.",
-	"type": "string",
-	"enum": [
-		"unece:InvoiceDocumentCodeList#261",
-		"unece:InvoiceDocumentCodeList#262",
-		"unece:InvoiceDocumentCodeList#325",
-		"unece:InvoiceDocumentCodeList#380",
-		"unece:InvoiceDocumentCodeList#381",
-		"unece:InvoiceDocumentCodeList#383",
-		"unece:InvoiceDocumentCodeList#384",
-		"unece:InvoiceDocumentCodeList#385",
-		"unece:InvoiceDocumentCodeList#386",
-		"unece:InvoiceDocumentCodeList#389",
-		"unece:InvoiceDocumentCodeList#395",
-		"unece:InvoiceDocumentCodeList#396",
-		"unece:InvoiceDocumentCodeList#80",
-		"unece:InvoiceDocumentCodeList#81",
-		"unece:InvoiceDocumentCodeList#82",
-		"unece:InvoiceDocumentCodeList#83",
-		"unece:InvoiceDocumentCodeList#84"
-	],
-	"deprecated": true
+	"title": "UneceInvoiceDocumentCodeList",
+	"description": "A character string used to represent a type of invoice document.\nDeprecated since version D23B.",
+	"oneOf": [
+		{
+			"const": "unece:InvoiceDocumentCodeList#261",
+			"description": "Self billed credit note: 261.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#262",
+			"description": "Consolidated credit note - goods and services: 262.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#325",
+			"description": "Proforma invoice: 325.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#380",
+			"description": "Commercial invoice: 380.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#381",
+			"description": "Credit note: 381.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#383",
+			"description": "Debit note: 383.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#384",
+			"description": "Corrected invoice: 384.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#385",
+			"description": "Consolidated invoice: 385.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#386",
+			"description": "Prepayment invoice: 386.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#389",
+			"description": "Self-billed invoice: 389.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#395",
+			"description": "Consignment invoice: 395.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#396",
+			"description": "Factored credit note: 396.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#80",
+			"description": "Debit note related to goods or services: 80.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#81",
+			"description": "Credit note related to goods or services: 81.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#82",
+			"description": "Metered services invoice: 82.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#83",
+			"description": "Credit note related to financial adjustments: 83.\nDeprecated since version D23B."
+		},
+		{
+			"const": "unece:InvoiceDocumentCodeList#84",
+			"description": "Debit note related to financial adjustments: 84.\nDeprecated since version D23B."
+		}
+	]
 }

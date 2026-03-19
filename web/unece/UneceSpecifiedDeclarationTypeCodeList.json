@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedDeclarationTypeCodeList",
+	"title": "UneceSpecifiedDeclarationTypeCodeList",
 	"description": "Values for UneceSpecifiedDeclaration typeCode property.",
-	"type": "string",
-	"const": "unece:applicableDeclaration"
+	"oneOf": [
+		{
+			"const": "unece:applicableDeclaration",
+			"description": "A specified declaration applicable to this production process.\nA specified declaration applicable to this referenced standard.\nA specified declaration applicable to this trade party.\nA specified declaration applicable to this trade product."
+		}
+	]
 }

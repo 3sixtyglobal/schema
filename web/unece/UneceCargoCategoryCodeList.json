@@ -1,17 +1,44 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCargoCategoryCodeList",
+	"title": "UneceCargoCategoryCodeList",
 	"description": "A character string used to represent the cargo category.",
-	"type": "string",
-	"enum": [
-		"unece:CargoCategoryCodeList#0",
-		"unece:CargoCategoryCodeList#1",
-		"unece:CargoCategoryCodeList#2",
-		"unece:CargoCategoryCodeList#3",
-		"unece:CargoCategoryCodeList#4",
-		"unece:CargoCategoryCodeList#5",
-		"unece:CargoCategoryCodeList#6",
-		"unece:CargoCategoryCodeList#7",
-		"unece:CargoCategoryCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:CargoCategoryCodeList#0",
+			"description": "Liquid Bulk: 0."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#1",
+			"description": "Solid Bulk: 1."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#2",
+			"description": "Large Freight Container (20 feet or more in length): 2."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#3",
+			"description": "Other Freight Container (Less than 20 feet in length): 3."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#4",
+			"description": "Palletized: 4."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#5",
+			"description": "Pre-slung: 5."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#6",
+			"description": "Mobile self-propelled: 6."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#7",
+			"description": "Other mobile units: 7."
+		},
+		{
+			"const": "unece:CargoCategoryCodeList#9",
+			"description": "Other types of cargo: 9."
+		}
 	]
 }

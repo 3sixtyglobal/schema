@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSpecifiedFeatureTypeCodeList",
+	"title": "UneceSpecifiedFeatureTypeCodeList",
 	"description": "Values for UneceSpecifiedFeature typeCode property.",
-	"type": "string",
-	"const": "unece:distinctiveFeature"
+	"oneOf": [
+		{
+			"const": "unece:distinctiveFeature",
+			"description": "A distinctive feature of this experience product.\nA distinctive feature specified for this experience event."
+		}
+	]
 }

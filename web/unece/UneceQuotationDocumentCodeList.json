@@ -1,26 +1,80 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceQuotationDocumentCodeList",
+	"title": "UneceQuotationDocumentCodeList",
 	"description": "A character string used to represent a quotation document type.",
-	"type": "string",
-	"enum": [
-		"unece:QuotationDocumentCodeList#310",
-		"unece:QuotationDocumentCodeList#311",
-		"unece:QuotationDocumentCodeList#312",
-		"unece:QuotationDocumentCodeList#360",
-		"unece:QuotationDocumentCodeList#361",
-		"unece:QuotationDocumentCodeList#362",
-		"unece:QuotationDocumentCodeList#363",
-		"unece:QuotationDocumentCodeList#364",
-		"unece:QuotationDocumentCodeList#365",
-		"unece:QuotationDocumentCodeList#366",
-		"unece:QuotationDocumentCodeList#367",
-		"unece:QuotationDocumentCodeList#368",
-		"unece:QuotationDocumentCodeList#369",
-		"unece:QuotationDocumentCodeList#442",
-		"unece:QuotationDocumentCodeList#443",
-		"unece:QuotationDocumentCodeList#444",
-		"unece:QuotationDocumentCodeList#445",
-		"unece:QuotationDocumentCodeList#446"
+	"oneOf": [
+		{
+			"const": "unece:QuotationDocumentCodeList#310",
+			"description": "Offer / quotation: 310."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#311",
+			"description": "Request for quote: 311."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#312",
+			"description": "Acknowledgement message: 312."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#360",
+			"description": "Request for price quote: 360."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#361",
+			"description": "Price quote: 361."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#362",
+			"description": "Delivery quote: 362."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#363",
+			"description": "Price and delivery quote: 363."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#364",
+			"description": "Contract price quote: 364."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#365",
+			"description": "Contract price and delivery quote: 365."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#366",
+			"description": "Price quote, specified end-customer: 366."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#367",
+			"description": "Price and delivery quote, specified end-customer: 367."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#368",
+			"description": "Price quote, ship and debit: 368."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#369",
+			"description": "Price and delivery quote, ship and debit: 369."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#442",
+			"description": "Request for delivery quote: 442."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#443",
+			"description": "Request for price and delivery quote: 443."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#444",
+			"description": "Request for contract price quote: 444."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#445",
+			"description": "Request for contract price and delivery quote: 445."
+		},
+		{
+			"const": "unece:QuotationDocumentCodeList#446",
+			"description": "Request for price quote, specified end-customer: 446."
+		}
 	]
 }

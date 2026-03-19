@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItemTypeCodeList",
+	"title": "UneceSupplyChainTradeLineItemTypeCodeList",
 	"description": "Values for UneceSupplyChainTradeLineItem typeCode property.",
-	"type": "string",
-	"enum": ["unece:includedSupplyChainTradeLineItem", "unece:specifiedTradeLineItem"]
+	"oneOf": [
+		{
+			"const": "unece:includedSupplyChainTradeLineItem",
+			"description": "A supply chain trade line item included in this logistics package.\nA supply chain trade line item which is included in this trade product group.\nA trade line item included in this referenced supply chain consignment item.\nA trade line item included in this supply chain consignment item.\nA trade line item included in this supply chain trade transaction."
+		},
+		{
+			"const": "unece:specifiedTradeLineItem",
+			"description": "A trade line item specified for this forecast delivery schedule."
+		}
+	]
 }

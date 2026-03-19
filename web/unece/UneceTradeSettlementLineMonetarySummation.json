@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTradeSettlementLineMonetarySummation",
+	"title": "UneceTradeSettlementLineMonetarySummation",
 	"description": "A collection of monetary amount totals, specified at line level, for a trade settlement.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "TradeSettlementLineMonetarySummation",
 			"description": "JSON-LD Type."
 		},
@@ -50,21 +32,21 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value that is an amount due and payable for this trade settlement line monetary summation, such as the amount due to the creditor."
+			"description": "A monetary value that is an amount due and payable for this trade settlement line monetary summation, such as the amount\ndue to the creditor."
 		},
 		"grandTotalAmount": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the grand total of this trade settlement line monetary summation, to include addition and subtraction of individual summation amounts."
+			"description": "A monetary value of the grand total of this trade settlement line monetary summation, to include addition and\nsubtraction of individual summation amounts."
 		},
 		"grossLineTotalAmount": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the total of all line amounts, excluding line level allowances and charges and taxes, being reported in this trade settlement line monetary summation."
+			"description": "A monetary value of the total of all line amounts, excluding line level allowances and charges and taxes, being reported\nin this trade settlement line monetary summation."
 		},
 		"includingTaxesLineTotalAmount": {
 			"type": "array",
@@ -92,14 +74,14 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement line monetary summation."
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level\ntaxes, being reported in this trade settlement line monetary summation."
 		},
 		"netLineTotalAmount": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level taxes, being reported in this trade settlement line monetary summation."
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level\ntaxes, being reported in this trade settlement line monetary summation."
 		},
 		"paymentTotalAmount": {
 			"type": "array",
@@ -113,7 +95,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value of the loss of weight of a product, such as fresh goods, stated for information purposes in this trade settlement line monetary summation."
+			"description": "A monetary value of the loss of weight of a product, such as fresh goods, stated for information purposes in this trade\nsettlement line monetary summation."
 		},
 		"taxBasisTotalAmount": {
 			"type": "array",
@@ -141,7 +123,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
-			"description": "A monetary value which constitutes the total retail value stated for information purposes in this trade settlement line monetary summation."
+			"description": "A monetary value which constitutes the total retail value stated for information purposes in this trade settlement line\nmonetary summation."
 		}
 	},
 	"required": ["type"]

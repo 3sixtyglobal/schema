@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlRule",
-	"description": "Base interface for ODRL Rules. https://www.w3.org/TR/odrl-model/#rule",
+	"title": "OdrlRule",
+	"description": "Base interface for ODRL Rules.\nhttps://www.w3.org/TR/odrl-model/#rule",
 	"type": "object",
 	"properties": {
 		"uid": {
@@ -154,7 +155,7 @@
 		},
 		"summary": {
 			"type": "string",
-			"description": "Additional relation sub-properties as defined in ODRL profiles. For example, 'summary' in profile \"http://example.com/odrl:profile:03\" indicates where the output should be stored."
+			"description": "Additional relation sub-properties as defined in ODRL profiles.\nFor example, 'summary' in profile \"http://example.com/odrl:profile:03\"\nindicates where the output should be stored."
 		}
 	}
 }

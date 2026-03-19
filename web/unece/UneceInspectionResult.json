@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceInspectionResult",
+	"title": "UneceInspectionResult",
 	"description": "Results obtained by performing an inspection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "InspectionResult",
 			"description": "JSON-LD Type."
 		},
@@ -90,11 +72,11 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
 			},
-			"description": "An expected value for the inspection characteristic to be acquired by using the type of inspection applicable to this specified inspection result."
+			"description": "An expected value for the inspection characteristic to be acquired by using the type of inspection applicable to this\nspecified inspection result."
 		},
 		"generalCharacteristic": {
 			"type": "string",
-			"description": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result."
+			"description": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this\nspecified inspection result."
 		},
 		"identifier": {
 			"anyOf": [
@@ -138,21 +120,21 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
 			},
-			"description": "A maximum standard value for the inspection characteristic observed or measured by using the type of inspection applicable to this specified inspection result."
+			"description": "A maximum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
 		},
 		"minimumStandardValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
 			},
-			"description": "A minimum standard value for the inspection characteristic observed or measured by using the type of inspection applicable to this specified inspection result."
+			"description": "A minimum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
 		},
 		"observedValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
 			},
-			"description": "An observed value for the inspection characteristic acquired by using the type of inspection applicable to this specified inspection result."
+			"description": "An observed value for the inspection characteristic acquired by using the type of inspection applicable to this\nspecified inspection result."
 		},
 		"obtainedAssertion": {
 			"type": "array",

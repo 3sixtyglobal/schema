@@ -1,11 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceFinancialCardTypeCodeList",
+	"title": "UneceFinancialCardTypeCodeList",
 	"description": "Values for UneceFinancialCard typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableFinancialCard",
-		"unece:identifiedFinancialCard",
-		"unece:specifiedFinancialCard"
+	"oneOf": [
+		{
+			"const": "unece:applicableFinancialCard",
+			"description": "A financial card applicable to this trade settlement payment means."
+		},
+		{
+			"const": "unece:identifiedFinancialCard",
+			"description": "A financial card identified for this trade settlement payment means."
+		},
+		{
+			"const": "unece:specifiedFinancialCard",
+			"description": "A financial card specified in this header trade settlement.\nA financial card specified in this line trade settlement."
+		}
 	]
 }

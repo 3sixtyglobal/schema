@@ -1,82 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection",
-	"description": "Interface for ODRL Party Collections. A PartyCollection identifies a collection of entities and is a subclass of Party. https://www.w3.org/TR/odrl-model/#party",
+	"title": "OdrlPartyCollection",
+	"description": "Interface for ODRL Party Collections.\nA PartyCollection identifies a collection of entities and is a subclass of Party.\nhttps://www.w3.org/TR/odrl-model/#party",
 	"type": "object",
 	"properties": {
-		"uid": {
-			"type": "string",
-			"description": "The unique identifier for the party. Must be an IRI."
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "The type of the party. Can be used to specify additional type information (e.g., \"Party\", \"vcard:Organization\", \"vcard:Individual\")."
-		},
-		"partOf": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
-							}
-						]
-					}
-				}
-			],
-			"description": "Reference to the party collection this party is part of. Used to identify a PartyCollection that a Party entity is a member of."
-		},
-		"assigneeOf": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "Reference to a policy where this party is an assignee. When assigneeOf is asserted, the Party MUST be inferred to undertake the assignee functional role of all the Rules of that Policy."
-		},
-		"assignerOf": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			],
-			"description": "Reference to a policy where this party is an assigner. When assignerOf is asserted, the Party MUST be inferred to undertake the assigner functional role of all the Rules of that Policy."
-		},
 		"source": {
 			"type": "string",
-			"description": "Reference to the source of the party collection. Used to identify the origin or location of the collection."
+			"description": "Reference to the source of the party collection.\nUsed to identify the origin or location of the collection."
 		},
 		"refinement": {
 			"anyOf": [
@@ -100,8 +31,13 @@
 					}
 				}
 			],
-			"description": "Refinements applied to the party collection. Used to specify constraints that apply to all members of the collection."
+			"description": "Refinements applied to the party collection.\nUsed to specify constraints that apply to all members of the collection."
 		}
 	},
-	"required": ["source"]
+	"required": ["source"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+		}
+	]
 }

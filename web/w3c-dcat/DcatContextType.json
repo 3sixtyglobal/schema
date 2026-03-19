@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatContextType",
+	"title": "DcatContextType",
+	"description": "The DCAT JSON-LD context type.\nSupports the DCAT context URL or arrays with additional context definitions.",
+	"type": "object",
+	"properties": {
+		"dcat": {
+			"const": "http://www.w3.org/ns/dcat#"
+		},
+		"dcterms": {
+			"const": "http://purl.org/dc/terms/"
+		},
+		"odrl": {
+			"const": "http://www.w3.org/ns/odrl/2/"
+		},
+		"foaf": {
+			"const": "https://xmlns.com/foaf/0.1/"
+		}
+	},
+	"required": ["dcat", "dcterms"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinition"
+		}
+	]
+}

@@ -1,10 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristicTypeCodeList",
+	"title": "UneceAgriculturalCharacteristicTypeCodeList",
 	"description": "Values for UneceAgriculturalCharacteristic typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:applicableAgriculturalCharacteristic",
-		"unece:specifiedAgriculturalCharacteristic"
+	"oneOf": [
+		{
+			"const": "unece:applicableAgriculturalCharacteristic",
+			"description": "An agricultural characteristic applicable to this agricultural zone area."
+		},
+		{
+			"const": "unece:specifiedAgriculturalCharacteristic",
+			"description": "An agricultural characteristic specified for this crop plot.\nAn agricultural characteristic specified for this crop produce batch.\nAn agricultural characteristic specified for this field crop.\nAn agricultural characteristic specified for this product batch."
+		}
 	]
 }

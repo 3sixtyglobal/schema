@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSource",
+	"title": "EpcisSource",
 	"description": "EPCIS 2.0 Source element identifying the origin of a business transfer.",
 	"type": "object",
 	"properties": {
@@ -13,11 +14,11 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier indicating the role of SourceOrDestination in a transfer (Owning Party, Possessing Party, or Location).\n\nUse  {@link  EpcisSourceDestTypes }  for known values."
+			"description": "Identifier indicating the role of SourceOrDestination in a transfer (Owning\nParty, Possessing Party, or Location).\n\nUse {@link EpcisSourceDestTypes} for known values."
 		},
 		"source": {
 			"type": "string",
-			"description": "Identifier that denotes the specific source or destination of a business transfer; must correlate with the selected type."
+			"description": "Identifier that denotes the specific source or destination of a business\ntransfer; must correlate with the selected type."
 		}
 	},
 	"required": ["type", "source"]

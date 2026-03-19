@@ -1,16 +1,40 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDeliveryTermsFunctionCodeList",
+	"title": "UneceDeliveryTermsFunctionCodeList",
 	"description": "A character string used to represent a function for delivery terms.",
-	"type": "string",
-	"enum": [
-		"unece:DeliveryTermsFunctionCodeList#1",
-		"unece:DeliveryTermsFunctionCodeList#2",
-		"unece:DeliveryTermsFunctionCodeList#3",
-		"unece:DeliveryTermsFunctionCodeList#4",
-		"unece:DeliveryTermsFunctionCodeList#5",
-		"unece:DeliveryTermsFunctionCodeList#6",
-		"unece:DeliveryTermsFunctionCodeList#7",
-		"unece:DeliveryTermsFunctionCodeList#8"
+	"oneOf": [
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#1",
+			"description": "Price condition: 1."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#2",
+			"description": "Despatch condition: 2."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#3",
+			"description": "Price and despatch condition: 3."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#4",
+			"description": "Collected by customer: 4."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#5",
+			"description": "Transport condition: 5."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#6",
+			"description": "Delivery condition: 6."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#7",
+			"description": "Delivered by supplier: 7."
+		},
+		{
+			"const": "unece:DeliveryTermsFunctionCodeList#8",
+			"description": "Delivery arranged by logistic service provider: 8."
+		}
 	]
 }

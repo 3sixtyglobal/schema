@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAnimalCertification",
-	"description": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations.",
+	"title": "UneceAnimalCertification",
+	"description": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification\nrequirements as stipulated in regulations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AnimalCertification",
 			"description": "JSON-LD Type."
 		},
@@ -37,7 +19,7 @@
 		},
 		"assertionCode": {
 			"type": "string",
-			"description": "The code specifying the assertion, such as a claim that the process is free from child labour, for this animal certification."
+			"description": "The code specifying the assertion, such as a claim that the process is free from child labour, for this animal\ncertification."
 		},
 		"relatedLocation": {
 			"type": "array",

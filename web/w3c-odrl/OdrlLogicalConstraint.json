@@ -1,28 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint",
-	"description": "Interface for ODRL Logical Constraints. A Logical Constraint compares two or more existing Constraints by one logical operator. If the comparison returns a logical match, then the Logical Constraint is satisfied. https://www.w3.org/TR/odrl-model/#constraint-logical",
+	"title": "OdrlLogicalConstraint",
+	"description": "Interface for ODRL Logical Constraints.\nA Logical Constraint compares two or more existing Constraints by one logical operator.\nIf the comparison returns a logical match, then the Logical Constraint is satisfied.\nhttps://www.w3.org/TR/odrl-model/#constraint-logical",
 	"type": "object",
 	"properties": {
 		"uid": {
 			"type": "string",
-			"description": "Optional unique identifier for the logical constraint. Must be an IRI."
+			"description": "Optional unique identifier for the logical constraint.\nMust be an IRI.",
+			"format": "uri"
 		},
 		"and": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
-			"description": "AND operator - all constraints must be satisfied. Exactly one logical operator must be present."
+			"description": "AND operator - all constraints must be satisfied.\nExactly one logical operator must be present."
 		},
 		"or": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
-			"description": "OR operator - at least one constraint must be satisfied. Exactly one logical operator must be present."
+			"description": "OR operator - at least one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"xone": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
-			"description": "XOR operator - exactly one constraint must be satisfied. Exactly one logical operator must be present."
+			"description": "XOR operator - exactly one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"andSequence": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
-			"description": "AND Sequence operator - all constraints must be satisfied in order. Exactly one logical operator must be present."
+			"description": "AND Sequence operator - all constraints must be satisfied in order.\nExactly one logical operator must be present."
 		}
 	}
 }

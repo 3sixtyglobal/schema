@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/foaf/FoafContextType",
+	"title": "FoafContextType",
+	"description": "The FOAF JSON-LD context type.",
+	"anyOf": [
+		{
+			"const": "https://xmlns.com/foaf/0.1/"
+		},
+		{
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+					},
+					{
+						"const": "https://xmlns.com/foaf/0.1/"
+					}
+				]
+			},
+			"contains": {
+				"const": "https://xmlns.com/foaf/0.1/"
+			},
+			"minContains": 1,
+			"maxContains": 1,
+			"minItems": 1
+		}
+	]
+}

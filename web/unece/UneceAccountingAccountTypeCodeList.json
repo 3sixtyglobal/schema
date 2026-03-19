@@ -1,15 +1,36 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAccountTypeCodeList",
+	"title": "UneceAccountingAccountTypeCodeList",
 	"description": "A character string used to represent the type of an accounting account.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingAccountTypeCodeList#1",
-		"unece:AccountingAccountTypeCodeList#2",
-		"unece:AccountingAccountTypeCodeList#3",
-		"unece:AccountingAccountTypeCodeList#4",
-		"unece:AccountingAccountTypeCodeList#5",
-		"unece:AccountingAccountTypeCodeList#6",
-		"unece:AccountingAccountTypeCodeList#7"
+	"oneOf": [
+		{
+			"const": "unece:AccountingAccountTypeCodeList#1",
+			"description": "Financial: 1."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#2",
+			"description": "Subsidiary: 2."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#3",
+			"description": "Budget: 3."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#4",
+			"description": "Cost Accounting: 4."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#5",
+			"description": "Receivable: 5."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#6",
+			"description": "Payable: 6."
+		},
+		{
+			"const": "unece:AccountingAccountTypeCodeList#7",
+			"description": "Job Cost Accounting: 7."
+		}
 	]
 }

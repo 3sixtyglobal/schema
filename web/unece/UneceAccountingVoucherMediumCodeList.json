@@ -1,18 +1,48 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingVoucherMediumCodeList",
+	"title": "UneceAccountingVoucherMediumCodeList",
 	"description": "A character string used to represent a medium containing an accounting voucher.",
-	"type": "string",
-	"enum": [
-		"unece:AccountingVoucherMediumCodeList#1",
-		"unece:AccountingVoucherMediumCodeList#10",
-		"unece:AccountingVoucherMediumCodeList#2",
-		"unece:AccountingVoucherMediumCodeList#3",
-		"unece:AccountingVoucherMediumCodeList#4",
-		"unece:AccountingVoucherMediumCodeList#5",
-		"unece:AccountingVoucherMediumCodeList#6",
-		"unece:AccountingVoucherMediumCodeList#7",
-		"unece:AccountingVoucherMediumCodeList#8",
-		"unece:AccountingVoucherMediumCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#1",
+			"description": "Photocopy: 1."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#10",
+			"description": "USB Key: 10."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#2",
+			"description": "Microfiche: 2."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#3",
+			"description": "Microfilm: 3."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#4",
+			"description": "DVD: 4."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#5",
+			"description": "HDD: 5."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#6",
+			"description": "FDD 3.5\": 6."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#7",
+			"description": "FDD 5.25\": 7."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#8",
+			"description": "DSP: 8."
+		},
+		{
+			"const": "unece:AccountingVoucherMediumCodeList#9",
+			"description": "FDD 8\": 9."
+		}
 	]
 }

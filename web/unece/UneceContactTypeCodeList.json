@@ -1,112 +1,424 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceContactTypeCodeList",
+	"title": "UneceContactTypeCodeList",
 	"description": "A character string used to represent a contact type.",
-	"type": "string",
-	"enum": [
-		"unece:ContactTypeCodeList#AA",
-		"unece:ContactTypeCodeList#AB",
-		"unece:ContactTypeCodeList#AC",
-		"unece:ContactTypeCodeList#AD",
-		"unece:ContactTypeCodeList#AE",
-		"unece:ContactTypeCodeList#AF",
-		"unece:ContactTypeCodeList#AG",
-		"unece:ContactTypeCodeList#AH",
-		"unece:ContactTypeCodeList#AI",
-		"unece:ContactTypeCodeList#AJ",
-		"unece:ContactTypeCodeList#AK",
-		"unece:ContactTypeCodeList#AL",
-		"unece:ContactTypeCodeList#AM",
-		"unece:ContactTypeCodeList#AN",
-		"unece:ContactTypeCodeList#AO",
-		"unece:ContactTypeCodeList#AP",
-		"unece:ContactTypeCodeList#AQ",
-		"unece:ContactTypeCodeList#AR",
-		"unece:ContactTypeCodeList#AS",
-		"unece:ContactTypeCodeList#AT",
-		"unece:ContactTypeCodeList#AU",
-		"unece:ContactTypeCodeList#AV",
-		"unece:ContactTypeCodeList#AW",
-		"unece:ContactTypeCodeList#AX",
-		"unece:ContactTypeCodeList#AY",
-		"unece:ContactTypeCodeList#AZ",
-		"unece:ContactTypeCodeList#BA",
-		"unece:ContactTypeCodeList#BB",
-		"unece:ContactTypeCodeList#BC",
-		"unece:ContactTypeCodeList#BD",
-		"unece:ContactTypeCodeList#BE",
-		"unece:ContactTypeCodeList#BF",
-		"unece:ContactTypeCodeList#BG",
-		"unece:ContactTypeCodeList#BH",
-		"unece:ContactTypeCodeList#BI",
-		"unece:ContactTypeCodeList#BJ",
-		"unece:ContactTypeCodeList#BK",
-		"unece:ContactTypeCodeList#BL",
-		"unece:ContactTypeCodeList#BM",
-		"unece:ContactTypeCodeList#BN",
-		"unece:ContactTypeCodeList#BO",
-		"unece:ContactTypeCodeList#BP",
-		"unece:ContactTypeCodeList#BQ",
-		"unece:ContactTypeCodeList#BR",
-		"unece:ContactTypeCodeList#BS",
-		"unece:ContactTypeCodeList#BT",
-		"unece:ContactTypeCodeList#BU",
-		"unece:ContactTypeCodeList#CA",
-		"unece:ContactTypeCodeList#CB",
-		"unece:ContactTypeCodeList#CC",
-		"unece:ContactTypeCodeList#CD",
-		"unece:ContactTypeCodeList#CE",
-		"unece:ContactTypeCodeList#CF",
-		"unece:ContactTypeCodeList#CG",
-		"unece:ContactTypeCodeList#CN",
-		"unece:ContactTypeCodeList#CO",
-		"unece:ContactTypeCodeList#CP",
-		"unece:ContactTypeCodeList#CR",
-		"unece:ContactTypeCodeList#CW",
-		"unece:ContactTypeCodeList#DE",
-		"unece:ContactTypeCodeList#DI",
-		"unece:ContactTypeCodeList#DL",
-		"unece:ContactTypeCodeList#EB",
-		"unece:ContactTypeCodeList#EC",
-		"unece:ContactTypeCodeList#ED",
-		"unece:ContactTypeCodeList#EX",
-		"unece:ContactTypeCodeList#GR",
-		"unece:ContactTypeCodeList#HE",
-		"unece:ContactTypeCodeList#HG",
-		"unece:ContactTypeCodeList#HM",
-		"unece:ContactTypeCodeList#IC",
-		"unece:ContactTypeCodeList#IN",
-		"unece:ContactTypeCodeList#LB",
-		"unece:ContactTypeCodeList#LO",
-		"unece:ContactTypeCodeList#MC",
-		"unece:ContactTypeCodeList#MD",
-		"unece:ContactTypeCodeList#MH",
-		"unece:ContactTypeCodeList#MR",
-		"unece:ContactTypeCodeList#MS",
-		"unece:ContactTypeCodeList#NT",
-		"unece:ContactTypeCodeList#OC",
-		"unece:ContactTypeCodeList#PA",
-		"unece:ContactTypeCodeList#PD",
-		"unece:ContactTypeCodeList#PE",
-		"unece:ContactTypeCodeList#PM",
-		"unece:ContactTypeCodeList#PP",
-		"unece:ContactTypeCodeList#QA",
-		"unece:ContactTypeCodeList#QC",
-		"unece:ContactTypeCodeList#RD",
-		"unece:ContactTypeCodeList#RP",
-		"unece:ContactTypeCodeList#SA",
-		"unece:ContactTypeCodeList#SC",
-		"unece:ContactTypeCodeList#SD",
-		"unece:ContactTypeCodeList#SR",
-		"unece:ContactTypeCodeList#SU",
-		"unece:ContactTypeCodeList#TA",
-		"unece:ContactTypeCodeList#TD",
-		"unece:ContactTypeCodeList#TI",
-		"unece:ContactTypeCodeList#TR",
-		"unece:ContactTypeCodeList#WH",
-		"unece:ContactTypeCodeList#WI",
-		"unece:ContactTypeCodeList#WJ",
-		"unece:ContactTypeCodeList#WK",
-		"unece:ContactTypeCodeList#ZZZ"
+	"oneOf": [
+		{
+			"const": "unece:ContactTypeCodeList#AA",
+			"description": "Insurance contact: AA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AB",
+			"description": "Workshop contact: AB."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AC",
+			"description": "Accepting contact: AC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AD",
+			"description": "Accounting contact: AD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AE",
+			"description": "Contract contact: AE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AF",
+			"description": "Land registry contact: AF."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AG",
+			"description": "Agent: AG."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AH",
+			"description": "Coordination contact: AH."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AI",
+			"description": "Project management contact: AI."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AJ",
+			"description": "Investment contact: AJ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AK",
+			"description": "Works management contact: AK."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AL",
+			"description": "Personnel contact: AL."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AM",
+			"description": "Claims contact: AM."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AN",
+			"description": "Laboratory contact: AN."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AO",
+			"description": "Plant/equipment contact: AO."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AP",
+			"description": "Accounts payable contact: AP."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AQ",
+			"description": "Quantity surveyor contact: AQ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AR",
+			"description": "Accounts receivable contact: AR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AS",
+			"description": "Public relations contact: AS."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AT",
+			"description": "Technical contact: AT."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AU",
+			"description": "City works authority contact: AU."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AV",
+			"description": "Maintenance contact: AV."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AW",
+			"description": "Town planning contact: AW."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AX",
+			"description": "Traffic authority contact: AX."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AY",
+			"description": "Electricity supply contact: AY."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#AZ",
+			"description": "Gas supply contact: AZ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BA",
+			"description": "Water supply contact: BA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BB",
+			"description": "Telecommunications network contact: BB."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BC",
+			"description": "Banking contact: BC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BD",
+			"description": "New developments contact: BD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BE",
+			"description": "Transport infrastructure authority: BE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BF",
+			"description": "Service contact: BF."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BG",
+			"description": "Auditing contact: BG."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BH",
+			"description": "Legal auditing contact: BH."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BI",
+			"description": "Software house contact: BI."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BJ",
+			"description": "Department or person responsible for processing purchase order: BJ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BK",
+			"description": "Electronic data interchange coordinator: BK."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BL",
+			"description": "Waiver contact: BL."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BM",
+			"description": "Automated clearing house (ACH) contact: BM."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BN",
+			"description": "Certification contact: BN."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BO",
+			"description": "After business hours contact: BO."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BP",
+			"description": "Company Security Officer’s 24-hour contact: BP."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BQ",
+			"description": "Agent of ship at the intended port of arrival: BQ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BR",
+			"description": "Cook: BR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BS",
+			"description": "Customer contact: BS."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BT",
+			"description": "Meter access contact: BT."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#BU",
+			"description": "Ultimate consignee: BU."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CA",
+			"description": "Carrier: CA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CB",
+			"description": "Changed by: CB."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CC",
+			"description": "Responsible person for information production: CC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CD",
+			"description": "Responsible person for information dissemination: CD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CE",
+			"description": "Head of unit for computer data processing: CE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CF",
+			"description": "Head of unit for information production: CF."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CG",
+			"description": "Head of unit for information dissemination: CG."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CN",
+			"description": "Consignee: CN."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CO",
+			"description": "Consignor: CO."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CP",
+			"description": "Responsible person for computer data processing: CP."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CR",
+			"description": "Customer relations: CR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#CW",
+			"description": "Confirmed with: CW."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#DE",
+			"description": "Department/employee to execute export procedures: DE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#DI",
+			"description": "Department/employee to execute import procedures: DI."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#DL",
+			"description": "Delivery contact: DL."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#EB",
+			"description": "Entered by: EB."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#EC",
+			"description": "Education coordinator: EC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#ED",
+			"description": "Engineering contact: ED."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#EX",
+			"description": "Expeditor: EX."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#GR",
+			"description": "Goods receiving contact: GR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#HE",
+			"description": "Emergency dangerous goods contact: HE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#HG",
+			"description": "Dangerous goods contact: HG."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#HM",
+			"description": "Hazardous material contact: HM."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#IC",
+			"description": "Information contact: IC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#IN",
+			"description": "Insurer contact: IN."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#LB",
+			"description": "Place of delivery contact: LB."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#LO",
+			"description": "Place of collection contact: LO."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#MC",
+			"description": "Material control contact: MC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#MD",
+			"description": "Material disposition contact: MD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#MH",
+			"description": "Material handling contact: MH."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#MR",
+			"description": "Message recipient contact: MR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#MS",
+			"description": "Message sender contact: MS."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#NT",
+			"description": "Notification contact: NT."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#OC",
+			"description": "Order contact: OC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#PA",
+			"description": "Prototype coordinator: PA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#PD",
+			"description": "Purchasing contact: PD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#PE",
+			"description": "Payee contact: PE."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#PM",
+			"description": "Product management contact: PM."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#PP",
+			"description": "Prescribing physician: PP."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#QA",
+			"description": "Quality assurance contact: QA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#QC",
+			"description": "Quality coordinator contact: QC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#RD",
+			"description": "Receiving dock contact: RD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#RP",
+			"description": "Authorized responsible person: RP."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#SA",
+			"description": "Sales administration: SA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#SC",
+			"description": "Schedule contact: SC."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#SD",
+			"description": "Shipping contact: SD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#SR",
+			"description": "Sales representative or department: SR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#SU",
+			"description": "Supplier contact: SU."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#TA",
+			"description": "Traffic administrator: TA."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#TD",
+			"description": "Test contact: TD."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#TI",
+			"description": "Technical documentation recipient: TI."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#TR",
+			"description": "Transport contact: TR."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#WH",
+			"description": "Warehouse: WH."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#WI",
+			"description": "Alternate contact: WI."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#WJ",
+			"description": "Office Manager: WJ."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#WK",
+			"description": "Chartered accountant contact: WK."
+		},
+		{
+			"const": "unece:ContactTypeCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
 	]
 }

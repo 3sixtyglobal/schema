@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorReport",
-	"description": "EPCIS 2.0 SensorReport containing measurement values and related sensor observation details.",
+	"title": "EpcisSensorReport",
+	"description": "EPCIS 2.0 SensorReport containing measurement values and related sensor\nobservation details.",
 	"type": "object",
 	"properties": {
 		"type": {
@@ -13,7 +14,7 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier indicating what kind of measurement the SensorReport pertains to (e.g. Length, Mass, Temperature).\n\nUse  {@link  EpcisMeasurementTypes }  for known values."
+			"description": "Identifier indicating what kind of measurement the SensorReport pertains to\n(e.g. Length, Mass, Temperature).\n\nUse {@link EpcisMeasurementTypes} for known values."
 		},
 		"exception": {
 			"anyOf": [
@@ -24,7 +25,7 @@
 					"type": "string"
 				}
 			],
-			"description": "A sensor alert value (alarm condition or error condition); extra details may be provided via booleanValue or uriValue.\n\nUse  {@link  EpcisSensorAlertTypes }  for known values."
+			"description": "A sensor alert value (alarm condition or error condition); extra details may\nbe provided via booleanValue or uriValue.\n\nUse {@link EpcisSensorAlertTypes} for known values."
 		},
 		"deviceID": {
 			"type": "string",
@@ -32,39 +33,39 @@
 		},
 		"deviceMetadata": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating metadata of the device from which the sensor data originates."
+			"description": "(Optional) Storage location of an electronic document accommodating metadata\nof the device from which the sensor data originates."
 		},
 		"rawData": {
 			"type": "string",
-			"description": "(Optional) Storage/service location of the raw sensor data on which the aggregated/business-oriented data contained in the sensorElement is based."
+			"description": "(Optional) Storage/service location of the raw sensor data on which the\naggregated/business-oriented data contained in the sensorElement is based."
 		},
 		"dataProcessingMethod": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating the data processing method of the contained sensor data, if applicable."
+			"description": "(Optional) Storage location of an electronic document accommodating the data\nprocessing method of the contained sensor data, if applicable."
 		},
 		"bizRules": {
 			"type": "string",
-			"description": "(Optional) Storage location of an electronic document accommodating product- or application-specific business rules on which basis the EPCIS event was triggered."
+			"description": "(Optional) Storage location of an electronic document accommodating product- or\napplication-specific business rules on which basis the EPCIS event was\ntriggered."
 		},
 		"time": {
 			"type": "string",
-			"description": "(Optional) The actual point in time of an observation as transmitted by a sensor device."
+			"description": "(Optional) The actual point in time of an observation as transmitted by a\nsensor device."
 		},
 		"microorganism": {
 			"type": "string",
-			"description": "(Optional) Identifies a specific microorganism species; SHALL NOT be present if chemicalSubstance is included."
+			"description": "(Optional) Identifies a specific microorganism species; SHALL NOT be present\nif chemicalSubstance is included."
 		},
 		"chemicalSubstance": {
 			"type": "string",
-			"description": "(Optional) Identifies a specific chemical substance; SHALL NOT be present together with microorganism."
+			"description": "(Optional) Identifies a specific chemical substance; SHALL NOT be present\ntogether with microorganism."
 		},
 		"coordinateReferenceSystem": {
 			"type": "string",
-			"description": "(Optional) A URI identifying the Coordinate Reference System; if omitted, WGS-84 is assumed."
+			"description": "(Optional) A URI identifying the Coordinate Reference System; if omitted,\nWGS-84 is assumed."
 		},
 		"value": {
 			"type": "number",
-			"description": "(Optional) Value of the property specified by the type; if a time field is present, it pertains to that time, otherwise to the eventTime."
+			"description": "(Optional) Value of the property specified by the type; if a time field is\npresent, it pertains to that time, otherwise to the eventTime."
 		},
 		"component": {
 			"anyOf": [
@@ -75,11 +76,11 @@
 					"type": "string"
 				}
 			],
-			"description": "(Optional) Vector component identifier for measurements with magnitude and direction (e.g. force, pressure); repeat SensorReport per component."
+			"description": "(Optional) Vector component identifier for measurements with magnitude and\ndirection (e.g. force, pressure); repeat SensorReport per component."
 		},
 		"stringValue": {
 			"type": "string",
-			"description": "(Optional) The String value of the property specified by the type as part of the sensorReport element."
+			"description": "(Optional) The String value of the property specified by the type as part of\nthe sensorReport element."
 		},
 		"booleanValue": {
 			"type": "boolean",
@@ -95,7 +96,7 @@
 		},
 		"minValue": {
 			"type": "number",
-			"description": "(Optional) Minimum quantitative value of the property specified by type, as part of the sensorReport element."
+			"description": "(Optional) Minimum quantitative value of the property specified by type, as\npart of the sensorReport element."
 		},
 		"maxValue": {
 			"type": "number",
@@ -103,23 +104,23 @@
 		},
 		"meanValue": {
 			"type": "number",
-			"description": "(Optional) The arithmetic mean of the values of the property specified by the type as part of the sensorReport element."
+			"description": "(Optional) The arithmetic mean of the values of the property specified by the\ntype as part of the sensorReport element."
 		},
 		"sDev": {
 			"type": "number",
-			"description": "(Optional) Standard deviation of the values of the property specified by type, as part of the sensorReport element."
+			"description": "(Optional) Standard deviation of the values of the property specified by type,\nas part of the sensorReport element."
 		},
 		"percRank": {
 			"type": "number",
-			"description": "(Optional) Percentile rank, signifying the percentage of observations in a frequency distribution that are equal to or lower than it."
+			"description": "(Optional) Percentile rank, signifying the percentage of observations in a\nfrequency distribution that are equal to or lower than it."
 		},
 		"percValue": {
 			"type": "number",
-			"description": "(Optional) The percentile value, at or below which a given percentage of observations may be found."
+			"description": "(Optional) The percentile value, at or below which a given percentage of\nobservations may be found."
 		},
 		"uom": {
 			"type": "string",
-			"description": "(Optional) Unit of measure by which the specified value(s) of the property specified by type should be interpreted."
+			"description": "(Optional) Unit of measure by which the specified value(s) of the property\nspecified by type should be interpreted."
 		}
 	},
 	"required": ["type"]

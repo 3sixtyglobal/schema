@@ -1,41 +1,140 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceTransportContractMovementCodeList",
+	"title": "UneceTransportContractMovementCodeList",
 	"description": "A character string used to represent the transport contract movement type.",
-	"type": "string",
-	"enum": [
-		"unece:TransportContractMovementCodeList#1",
-		"unece:TransportContractMovementCodeList#10",
-		"unece:TransportContractMovementCodeList#11",
-		"unece:TransportContractMovementCodeList#12",
-		"unece:TransportContractMovementCodeList#13",
-		"unece:TransportContractMovementCodeList#14",
-		"unece:TransportContractMovementCodeList#15",
-		"unece:TransportContractMovementCodeList#16",
-		"unece:TransportContractMovementCodeList#17",
-		"unece:TransportContractMovementCodeList#18",
-		"unece:TransportContractMovementCodeList#19",
-		"unece:TransportContractMovementCodeList#2",
-		"unece:TransportContractMovementCodeList#20",
-		"unece:TransportContractMovementCodeList#21",
-		"unece:TransportContractMovementCodeList#22",
-		"unece:TransportContractMovementCodeList#23",
-		"unece:TransportContractMovementCodeList#3",
-		"unece:TransportContractMovementCodeList#31",
-		"unece:TransportContractMovementCodeList#32",
-		"unece:TransportContractMovementCodeList#33",
-		"unece:TransportContractMovementCodeList#4",
-		"unece:TransportContractMovementCodeList#41",
-		"unece:TransportContractMovementCodeList#42",
-		"unece:TransportContractMovementCodeList#43",
-		"unece:TransportContractMovementCodeList#44",
-		"unece:TransportContractMovementCodeList#45",
-		"unece:TransportContractMovementCodeList#46",
-		"unece:TransportContractMovementCodeList#47",
-		"unece:TransportContractMovementCodeList#5",
-		"unece:TransportContractMovementCodeList#6",
-		"unece:TransportContractMovementCodeList#7",
-		"unece:TransportContractMovementCodeList#8",
-		"unece:TransportContractMovementCodeList#9"
+	"oneOf": [
+		{
+			"const": "unece:TransportContractMovementCodeList#1",
+			"description": "Breakbulk: 1."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#10",
+			"description": "Private parcel service: 10."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#11",
+			"description": "House to house: 11."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#12",
+			"description": "House to terminal: 12."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#13",
+			"description": "House to pier: 13."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#14",
+			"description": "Air charter: 14."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#15",
+			"description": "Air express: 15."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#16",
+			"description": "Geographic grouped transport: 16."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#17",
+			"description": "Less than truck load: 17."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#18",
+			"description": "Pooled piggyback: 18."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#19",
+			"description": "Consignee transportation provided: 19."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#2",
+			"description": "LCL/LCL: 2."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#20",
+			"description": "Rail: 20."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#21",
+			"description": "Terminal to house: 21."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#22",
+			"description": "Terminal to terminal: 22."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#23",
+			"description": "Terminal to pier: 23."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#3",
+			"description": "FCL/FCL: 3."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#31",
+			"description": "Pier to house: 31."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#32",
+			"description": "Pier to terminal: 32."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#33",
+			"description": "Pier to pier: 33."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#4",
+			"description": "FCL/LCL: 4."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#41",
+			"description": "Station to station: 41."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#42",
+			"description": "House to warehouse: 42."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#43",
+			"description": "Warehouse to house: 43."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#44",
+			"description": "Station to house: 44."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#45",
+			"description": "Geographic grouped transport, multiple origins, multiple destinations: 45."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#46",
+			"description": "Geographic grouped transport, multiple origins, single destination: 46."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#47",
+			"description": "Geographic receiving: 47."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#5",
+			"description": "LCL/FCL: 5."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#6",
+			"description": "Consolidation: 6."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#7",
+			"description": "Parcel post: 7."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#8",
+			"description": "Expedited truck: 8."
+		},
+		{
+			"const": "unece:TransportContractMovementCodeList#9",
+			"description": "Consignor determined means: 9."
+		}
 	]
 }

@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceRemittanceDocumentCodeList",
+	"title": "UneceRemittanceDocumentCodeList",
 	"description": "A character string used to represent a remittance document type.",
-	"type": "string",
-	"const": "unece:RemittanceDocumentCodeList#481"
+	"oneOf": [
+		{
+			"const": "unece:RemittanceDocumentCodeList#481",
+			"description": "Remittance advice: 481."
+		}
+	]
 }

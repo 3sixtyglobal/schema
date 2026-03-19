@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainPackaging",
+	"title": "UneceSupplyChainPackaging",
 	"description": "Any material with which supply chain goods are packaged, such as a box or bubble wrap.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "SupplyChainPackaging",
 			"description": "JSON-LD Type."
 		},
@@ -77,11 +59,11 @@
 		},
 		"contentLayerQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-			"description": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+			"description": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers\nof product on a pallet."
 		},
 		"customerFacingTotalUnitQuantity": {
 			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-			"description": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging is placed on a retail shelf."
+			"description": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging\nis placed on a retail shelf."
 		},
 		"description": {
 			"type": "string",
@@ -152,7 +134,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceMarking"
 			},
-			"description": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin."
+			"description": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership,\nquality, manufacture or origin."
 		},
 		"supplyChainPackagingLevelCode": {
 			"type": "string",

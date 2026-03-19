@@ -1,17 +1,44 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceMDHHealthIndicationTypeCodeList",
+	"title": "UneceMDHHealthIndicationTypeCodeList",
 	"description": "Values for UneceMDHHealthIndication typeCode property.",
-	"type": "string",
-	"enum": [
-		"unece:diedOnboardHealthIndication",
-		"unece:diseaseOnboardHealthIndication",
-		"unece:illPersonNowOnboardHealthIndication",
-		"unece:medicalPractitionerConsultedHealthIndication",
-		"unece:moreIllOnboardHealthIndication",
-		"unece:onboardInfectionConditionHealthIndication",
-		"unece:sanitaryMeasureAppliedHealthIndication",
-		"unece:sickAnimalOnboardHealthIndication",
-		"unece:stowawayFoundOnboardHealthIndication"
+	"oneOf": [
+		{
+			"const": "unece:diedOnboardHealthIndication",
+			"description": "A died onboard indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:diseaseOnboardHealthIndication",
+			"description": "A disease onboard indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:illPersonNowOnboardHealthIndication",
+			"description": "An ill person or persons now onboard indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:medicalPractitionerConsultedHealthIndication",
+			"description": "A medical practitioner consulted indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:moreIllOnboardHealthIndication",
+			"description": "A more ill onboard indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:onboardInfectionConditionHealthIndication",
+			"description": "An onboard infection condition indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:sanitaryMeasureAppliedHealthIndication",
+			"description": "An applied sanitary measure indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:sickAnimalOnboardHealthIndication",
+			"description": "A sick animal or animals onboard indication for this MDH transportation health."
+		},
+		{
+			"const": "unece:stowawayFoundOnboardHealthIndication",
+			"description": "A stowaway or stowaways found onboard indication for this MDH transportation health."
+		}
 	]
 }

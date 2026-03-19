@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceDocument",
+	"title": "UneceDocument",
 	"description": "Written, printed or electronic matter that is referenced.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Document",
 			"description": "JSON-LD Type."
 		},
@@ -308,7 +290,7 @@
 		},
 		"referenceRelationshipTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
-			"description": "The code specifying the type of relationship between this referenced document and another artefact, such as a replacement of an original document."
+			"description": "The code specifying the type of relationship between this referenced document and another artefact, such as a\nreplacement of an original document."
 		},
 		"referenceTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",

@@ -1,7 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceObjectTypeCodeList",
+	"title": "UneceObjectTypeCodeList",
 	"description": "Values for UneceObject typeCode property.",
-	"type": "string",
-	"enum": ["unece:assessedObject", "unece:certifiedObject", "unece:verifiedObject"]
+	"oneOf": [
+		{
+			"const": "unece:assessedObject",
+			"description": "An object assessed for this specified assessment."
+		},
+		{
+			"const": "unece:certifiedObject",
+			"description": "An object certified by this specified certificate."
+		},
+		{
+			"const": "unece:verifiedObject",
+			"description": "An object verified for this specified declaration.\nAn object verified for this specified licence."
+		}
+	]
 }

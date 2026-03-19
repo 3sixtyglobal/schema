@@ -1,33 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceAccountingAccount",
+	"title": "UneceAccountingAccount",
 	"description": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"description": "The UNECE JSON-LD context type.",
-			"anyOf": [
-				{
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				},
-				{
-					"type": "array",
-					"minItems": 1,
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-						}
-					],
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
-				}
-			]
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AccountingAccount",
 			"description": "JSON-LD Type."
 		},
@@ -37,7 +19,7 @@
 		},
 		"accountingAccountTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceAccountingAccountTypeCodeList",
-			"description": "The code specifying the type of trade accounting account, such as general (main), secondary, cost accounting or budget account."
+			"description": "The code specifying the type of trade accounting account, such as general (main), secondary, cost accounting or budget\naccount."
 		},
 		"accountingAmountTypeAmountTypeCode": {
 			"$ref": "https://schema.twindev.org/unece/UneceAccountingAmountTypeCodeList",
@@ -48,7 +30,7 @@
 			"items": {
 				"$ref": "https://schema.twindev.org/unece/UneceAccountingDocumentCodeList"
 			},
-			"description": "A code specifying a set trigger for this trade accounting account to be used in response to a specific event or a set of events."
+			"description": "A code specifying a set trigger for this trade accounting account to be used in response to a specific event or a set of\nevents."
 		},
 		"costReferenceDimensionPattern": {
 			"type": "string",

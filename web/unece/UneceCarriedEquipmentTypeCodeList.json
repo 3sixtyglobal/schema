@@ -1,7 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/unece/UneceCarriedEquipmentTypeCodeList",
+	"title": "UneceCarriedEquipmentTypeCodeList",
 	"description": "Values for UneceCarriedEquipment typeCode property.",
-	"type": "string",
-	"const": "unece:specifiedCarriedEquipment"
+	"oneOf": [
+		{
+			"const": "unece:specifiedCarriedEquipment",
+			"description": "Carried equipment specified for this guest person."
+		}
+	]
 }
