@@ -21,7 +21,7 @@
 					"description": "The context for the policy.\nMust include \"https://www.w3.org/ns/odrl.jsonld\""
 				},
 				"@type": {
-					"$ref": "https://schema.twindev.org/w3c-odrl/PolicyTypePolicyType",
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicyType",
 					"description": "The type of policy.\nMust be one of: \"Set\", \"Offer\", \"Agreement\""
 				},
 				"profile": {
@@ -131,7 +131,7 @@
 				"action": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 						},
 						{
 							"type": "string"
@@ -144,7 +144,7 @@
 							"items": {
 								"anyOf": [
 									{
-										"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 									},
 									{
 										"type": "string"
@@ -173,7 +173,7 @@
 					"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies)."
 				},
 				"conflict": {
-					"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyTypeConflictStrategyType",
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConflictStrategyType",
 					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
 				},
 				"permission": {

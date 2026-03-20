@@ -99,7 +99,7 @@
 				"action": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 						},
 						{
 							"type": "string"
@@ -112,7 +112,7 @@
 							"items": {
 								"anyOf": [
 									{
-										"$ref": "https://schema.twindev.org/w3c-odrl/ActionTypeActionType"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 									},
 									{
 										"type": "string"
@@ -143,7 +143,7 @@
 					"$comment": "Inherited from OdrlPolicy"
 				},
 				"conflict": {
-					"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyTypeConflictStrategyType",
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConflictStrategyType",
 					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)",
 					"$comment": "Inherited from OdrlPolicy"
 				},
