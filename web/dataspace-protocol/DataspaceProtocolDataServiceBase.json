@@ -18,18 +18,12 @@
 			"description": "Endpoint URL."
 		},
 		"servesDataset": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
-					}
-				}
-			],
-			"description": "Datasets served."
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
+			},
+			"description": "Datasets served.",
+			"minItems": 1
 		}
 	},
 	"required": ["@type", "@id", "endpointURL"],

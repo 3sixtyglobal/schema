@@ -14,32 +14,20 @@
 			"description": "Unique identifier for the dataset.\nREQUIRED per Eclipse Data Space Protocol."
 		},
 		"hasPolicy": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
-					}
-				}
-			],
-			"description": "Array of ODRL policies (Offers) as required by DS Protocol.\n\nREQUIRED per Eclipse Data Space Protocol spec.\nMust contain at least one IOdrlOffer.\nCurrently only single offer is supported, but array structure\nallows for future multi-offer support."
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
+			},
+			"description": "Array of ODRL policies (Offers) as required by DS Protocol.\n\nREQUIRED per Eclipse Data Space Protocol spec.\nMust contain at least one IOdrlOffer.\nCurrently only single offer is supported, but array structure\nallows for future multi-offer support.",
+			"minItems": 1
 		},
 		"distribution": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
-					}
-				}
-			],
-			"description": "Distribution of the dataset.\nREQUIRED per Eclipse Data Space Protocol."
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
+			},
+			"description": "Distribution of the dataset.\nREQUIRED per Eclipse Data Space Protocol.",
+			"minItems": 1
 		}
 	},
 	"required": ["@type", "@id", "hasPolicy", "distribution"],

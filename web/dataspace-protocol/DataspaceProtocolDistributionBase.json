@@ -14,18 +14,12 @@
 			"description": "Unique identifier for the distribution.\nOPTIONAL for embedded distributions (may use JSON-LD blank nodes).\nREQUIRED on standalone Distribution objects per Eclipse Data Space Protocol."
 		},
 		"hasPolicy": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
-					}
-				}
-			],
-			"description": "Array of ODRL policies (Offers) as required by DS Protocol.\n\nREQUIRED per Eclipse Data Space Protocol spec.\nMust contain at least one IOdrlOffer.\nCurrently only single offer is supported, but array structure\nallows for future multi-offer support."
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
+			},
+			"description": "Array of ODRL policies (Offers) as required by DS Protocol.\n\nREQUIRED per Eclipse Data Space Protocol spec.\nMust contain at least one IOdrlOffer.\nCurrently only single offer is supported, but array structure\nallows for future multi-offer support.",
+			"minItems": 1
 		},
 		"accessService": {
 			"anyOf": [
