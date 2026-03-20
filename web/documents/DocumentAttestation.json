@@ -1,31 +1,29 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/documents/DocumentAttestation",
+	"title": "DocumentAttestation",
 	"description": "Interface describing a document attestation.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "https://schema.org"
-					},
-					{
-						"type": "string",
-						"const": "https://schema.twindev.org/documents/"
-					},
-					{
-						"type": "string",
-						"const": "https://schema.twindev.org/common/"
-					}
-				]
-			},
+			"prefixItems": [
+				{
+					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.twindev.org/documents/"
+				},
+				{
+					"const": "https://schema.twindev.org/common/"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3,
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DocumentAttestation",
 			"description": "JSON-LD Type."
 		},

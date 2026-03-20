@@ -1,25 +1,669 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace/DataspaceActivity",
-	"description": "Activity Streams Activity expected by the Dataspace Data Plane",
 	"title": "DataspaceActivity",
+	"description": "A dataspace activity that restricts an activity so that it can be handled by a Dataspace Data Plane",
+	"type": "object",
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsActivity"
-		},
-		{
+			"description": "A W3C Activity from Activity Streams.\n\nAn `Activity` describes an action performed by an `actor` on an `object`, and\ncan optionally include a `target`, `result`, `origin`, or `instrument`.",
 			"type": "object",
 			"properties": {
-				"object": {
-					"type": "object",
-					"required": ["@context", "type"]
+				"@context": {
+					"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsContextType",
+					"description": "The LD Context.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"type": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsTypes"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsTypes"
+									},
+									{
+										"type": "string"
+									}
+								]
+							}
+						}
+					],
+					"description": "Activity Type.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"id": {
+					"type": "string",
+					"description": "Global identifier.",
+					"format": "uri",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"name": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Natural language name.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"nameMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language name map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"summary": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Summary of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"summaryMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language summary map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"content": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Natural language content.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"contentMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language content map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"url": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "A link to the representation of the object.\n\nThe value can be a URI or an embedded node object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"image": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "A graphical representation of the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"icon": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "An icon for the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"published": {
+					"type": "string",
+					"description": "Published date-time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"updated": {
+					"type": "string",
+					"description": "Updated date-time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"startTime": {
+					"type": "string",
+					"description": "Start time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"endTime": {
+					"type": "string",
+					"description": "End time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"duration": {
+					"type": "string",
+					"description": "Duration.",
+					"format": "duration",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"generator": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "The generator of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"attachment": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Attachments.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"attributedTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Objects attributed to.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"audience": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Audience.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"context": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Context.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"location": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Location.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"tag": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Tag.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"inReplyTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "In reply to.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"replies": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+					"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"preview": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Preview.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"to": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "To.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"bto": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "BTo.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"cc": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "CC.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"bcc": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "BCC.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"mediaType": {
+					"type": "string",
+					"description": "MIME media type of the referenced resource.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"actor": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "The Actor behind the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
 				},
 				"target": {
-					"type": "object",
-					"required": ["@context", "type"]
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "The target of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"result": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Result of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"origin": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Activity's origin.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"instrument": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Instrument used in the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
 				}
 			},
-			"required": ["object"]
+			"required": ["@context", "type"],
+			"$comment": "Inlined utility base type ActivityStreamsActivity so utility transformations can operate on concrete properties instead of a $ref."
 		}
 	]
 }

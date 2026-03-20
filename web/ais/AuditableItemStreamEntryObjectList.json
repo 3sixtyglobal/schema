@@ -1,45 +1,42 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/ais/AuditableItemStreamEntryObjectList",
+	"title": "AuditableItemStreamEntryObjectList",
 	"description": "Interface describing an auditable item stream entries object list.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/ais/"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "ItemList"
-					},
-					{
-						"type": "string",
-						"const": "AuditableItemStreamEntryObjectList"
-					}
-				]
-			},
+			"prefixItems": [
+				{
+					"const": "ItemList"
+				},
+				{
+					"const": "AuditableItemStreamEntryObjectList"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
 			"description": "JSON-LD Type."
 		},
 		"itemListElement": {

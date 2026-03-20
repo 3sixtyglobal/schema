@@ -1,39 +1,55 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation",
+	"title": "AuditableItemGraphPatchOperation",
 	"description": "The patch operation for JSON diffs.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/aig/"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
 					"prefixItems": [
 						{
-							"type": "string",
 							"const": "https://schema.twindev.org/aig/"
 						}
 					],
 					"items": {
 						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
+					},
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AuditableItemGraphPatchOperation",
 			"description": "JSON-LD Type."
 		},
 		"patchOperation": {
-			"type": "string",
-			"enum": ["add", "remove", "replace", "move", "copy", "test"],
+			"anyOf": [
+				{
+					"const": "add"
+				},
+				{
+					"const": "remove"
+				},
+				{
+					"const": "replace"
+				},
+				{
+					"const": "move"
+				},
+				{
+					"const": "copy"
+				},
+				{
+					"const": "test"
+				}
+			],
 			"description": "The operation that was performed on the item."
 		},
 		"patchPath": {

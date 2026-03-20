@@ -1,27 +1,26 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProof",
+	"title": "ImmutableProof",
 	"description": "Interface describing an immutable proof state.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "https://schema.twindev.org/immutable-proof/"
-					},
-					{
-						"type": "string",
-						"const": "https://schema.twindev.org/common/"
-					}
-				]
-			},
+			"prefixItems": [
+				{
+					"const": "https://schema.twindev.org/immutable-proof/"
+				},
+				{
+					"const": "https://schema.twindev.org/common/"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ImmutableProof",
 			"description": "JSON-LD Type."
 		},

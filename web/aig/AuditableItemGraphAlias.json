@@ -1,49 +1,35 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/aig/AuditableItemGraphAlias",
+	"title": "AuditableItemGraphAlias",
 	"description": "Interface describing an alias for a vertex.",
 	"type": "object",
 	"properties": {
-		"id": {
-			"type": "string",
-			"description": "The id of the element."
-		},
-		"dateCreated": {
-			"type": "string",
-			"description": "The date/time of when the element was created."
-		},
-		"dateModified": {
-			"type": "string",
-			"description": "The date/time of when the element was modified."
-		},
-		"dateDeleted": {
-			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items."
-		},
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/aig/"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
 					"prefixItems": [
 						{
-							"type": "string",
 							"const": "https://schema.twindev.org/aig/"
 						}
 					],
 					"items": {
 						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					}
+					},
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
-		"type": {
+		"id": {
 			"type": "string",
+			"description": "The id of the element."
+		},
+		"type": {
 			"const": "AuditableItemGraphAlias",
 			"description": "JSON-LD Type."
 		},
@@ -56,5 +42,10 @@
 			"description": "The format of the id in the alias."
 		}
 	},
-	"required": ["@context", "id", "type"]
+	"required": ["@context", "id", "type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditedElement"
+		}
+	]
 }

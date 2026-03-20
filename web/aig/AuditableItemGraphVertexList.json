@@ -1,41 +1,39 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertexList",
+	"title": "AuditableItemGraphVertexList",
 	"description": "Interface describing an auditable item graph vertex list.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/aig/"
 				}
 			],
 			"items": {
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "ItemList"
-					},
-					{
-						"type": "string",
-						"const": "AuditableItemGraphVertexList"
-					}
-				]
-			},
+			"prefixItems": [
+				{
+					"const": "ItemList"
+				},
+				{
+					"const": "AuditableItemGraphVertexList"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
 			"description": "JSON-LD Type."
 		},
 		"itemListElement": {

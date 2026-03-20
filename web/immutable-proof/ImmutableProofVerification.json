@@ -1,16 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+	"title": "ImmutableProofVerification",
 	"description": "Interface describing an immutable proof verification.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"type": "string",
 			"const": "https://schema.twindev.org/immutable-proof/",
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ImmutableProofVerification",
 			"description": "JSON-LD Type."
 		},

@@ -1,33 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/documents/DocumentList",
+	"title": "DocumentList",
 	"description": "Interface describing a list of document entries.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/documents/"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ItemList",
 			"description": "JSON-LD Type."
 		},

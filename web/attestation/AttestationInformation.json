@@ -1,33 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/attestation/AttestationInformation",
+	"title": "AttestationInformation",
 	"description": "Interface describing the collated attestation information.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/attestation/"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Information",
 			"description": "JSON-LD Type."
 		},

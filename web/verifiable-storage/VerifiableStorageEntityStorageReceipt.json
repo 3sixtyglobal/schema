@@ -1,16 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/verifiable-storage/VerifiableStorageEntityStorageReceipt",
+	"title": "VerifiableStorageEntityStorageReceipt",
 	"description": "Receipt for the entity storage Verifiable Storage connector.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"type": "string",
 			"const": "https://schema.twindev.org/verifiable-storage/",
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "VerifiableStorageEntityStorageReceipt",
 			"description": "JSON-LD Type."
 		},

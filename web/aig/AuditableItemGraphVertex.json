@@ -1,45 +1,31 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertex",
+	"title": "AuditableItemGraphVertex",
 	"description": "Interface describing an auditable item graph vertex.",
 	"type": "object",
 	"properties": {
-		"id": {
-			"type": "string",
-			"description": "The id of the element."
-		},
-		"dateCreated": {
-			"type": "string",
-			"description": "The date/time of when the element was created."
-		},
-		"dateModified": {
-			"type": "string",
-			"description": "The date/time of when the element was modified."
-		},
-		"dateDeleted": {
-			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items."
-		},
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/aig/"
 				},
 				{
-					"type": "string",
 					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			}
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
+		},
+		"id": {
+			"type": "string",
+			"description": "The id of the element."
 		},
 		"type": {
-			"type": "string",
 			"const": "AuditableItemGraphVertex",
 			"description": "JSON-LD Type."
 		},
@@ -77,5 +63,30 @@
 			"description": "Is the vertex verified, will only be populated when verification is requested."
 		}
 	},
-	"required": ["@context", "id", "type"]
+	"required": ["@context", "id", "type"],
+	"allOf": [
+		{
+			"description": "Interface describing the base properties for auditable elements.",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "The id of the element."
+				},
+				"dateCreated": {
+					"type": "string",
+					"description": "The date/time of when the element was created."
+				},
+				"dateModified": {
+					"type": "string",
+					"description": "The date/time of when the element was modified."
+				},
+				"dateDeleted": {
+					"type": "string",
+					"description": "The date/time of when the element was deleted, as we never actually remove items."
+				}
+			},
+			"$comment": "Inlined utility base type AuditableItemGraphAuditedElement so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
 }
