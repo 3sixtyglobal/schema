@@ -1,85 +1,117 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdValueObject",
-	"description": "A value object is used to explicitly associate a type or a language with a value to create a typed value or a language-tagged string and possibly associate a base direction.",
-	"anyOf": [
+	"title": "JsonLdValueObject",
+	"description": "A value object is used to explicitly associate a type or a language with a value\nto create a typed value or a language-tagged string and possibly associate a base direction.",
+	"allOf": [
 		{
 			"type": "object",
 			"properties": {
-				"@value": {
-					"type": ["null", "boolean", "number", "string"]
-				},
-				"@language": {
-					"type": "string"
-				},
-				"@direction": {
-					"type": ["string", "null"],
-					"enum": ["ltr", "rtl", null]
-				},
 				"@index": {
 					"type": "string"
 				},
 				"@context": {
 					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
 				}
-			},
-			"required": ["@value"]
+			}
 		},
 		{
-			"type": "object",
-			"properties": {
-				"@value": {
-					"type": ["null", "boolean", "number", "string"]
-				},
-				"@type": {
-					"type": "string"
-				},
-				"@index": {
-					"type": "string"
-				},
-				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-				}
-			},
-			"required": ["@type", "@value"]
-		},
-		{
-			"type": "object",
-			"properties": {
-				"@value": {
-					"anyOf": [
-						{
-							"type": "null"
+			"anyOf": [
+				{
+					"type": "object",
+					"properties": {
+						"@value": {
+							"anyOf": [
+								{
+									"type": "null"
+								},
+								{
+									"type": "boolean"
+								},
+								{
+									"type": "number"
+								},
+								{
+									"type": "string"
+								}
+							]
 						},
-						{
-							"type": "boolean"
-						},
-						{
-							"type": "number"
-						},
-						{
+						"@language": {
 							"type": "string"
 						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonArray"
+						"@direction": {
+							"anyOf": [
+								{
+									"const": "ltr"
+								},
+								{
+									"const": "rtl"
+								},
+								{
+									"type": "null"
+								}
+							]
 						}
-					]
+					},
+					"required": ["@value"]
 				},
-				"@type": {
-					"type": "string",
-					"const": "@json"
+				{
+					"type": "object",
+					"properties": {
+						"@value": {
+							"anyOf": [
+								{
+									"type": "null"
+								},
+								{
+									"type": "boolean"
+								},
+								{
+									"type": "number"
+								},
+								{
+									"type": "string"
+								}
+							]
+						},
+						"@type": {
+							"type": "string"
+						}
+					},
+					"required": ["@value", "@type"]
 				},
-				"@index": {
-					"type": "string"
-				},
-				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+				{
+					"type": "object",
+					"properties": {
+						"@value": {
+							"anyOf": [
+								{
+									"type": "null"
+								},
+								{
+									"type": "boolean"
+								},
+								{
+									"type": "number"
+								},
+								{
+									"type": "string"
+								},
+								{
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+								},
+								{
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonArray"
+								}
+							]
+						},
+						"@type": {
+							"const": "@json"
+						}
+					},
+					"required": ["@value", "@type"]
 				}
-			},
-			"required": ["@type", "@value"]
+			]
 		}
 	]
 }

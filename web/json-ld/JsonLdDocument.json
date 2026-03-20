@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdDocument",
-	"description": "A JSON-LD document MUST be valid JSON text as described in [RFC8259], or some format that can be represented in the JSON-LD internal representation that is equivalent to valid JSON text.",
+	"title": "JsonLdDocument",
+	"description": "A JSON-LD document MUST be valid JSON text as described in [RFC8259],\nor some format that can be represented in the JSON-LD internal representation\nthat is equivalent to valid JSON text.",
 	"anyOf": [
 		{
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"

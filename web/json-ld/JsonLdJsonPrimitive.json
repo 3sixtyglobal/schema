@@ -1,6 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdJsonPrimitive",
+	"title": "JsonLdJsonPrimitive",
 	"description": "JSON Primitive.",
-	"type": ["string", "number", "boolean", "null"]
+	"anyOf": [
+		{
+			"type": "string"
+		},
+		{
+			"type": "number"
+		},
+		{
+			"type": "boolean"
+		},
+		{
+			"type": "null"
+		}
+	]
 }

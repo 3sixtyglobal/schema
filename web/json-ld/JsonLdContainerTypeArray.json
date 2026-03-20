@@ -1,179 +1,166 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray",
+	"title": "JsonLdContainerTypeArray",
 	"description": "JSON-LD container type array.",
 	"anyOf": [
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@graph"
-					},
-					{
-						"type": "string",
-						"const": "@id"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@id"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@id"
-					},
-					{
-						"type": "string",
-						"const": "@graph"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@graph"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@set"
-					},
-					{
-						"type": "string",
-						"const": "@graph"
-					},
-					{
-						"type": "string",
-						"const": "@id"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@set"
+				},
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@id"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@set"
-					},
-					{
-						"type": "string",
-						"const": "@id"
-					},
-					{
-						"type": "string",
-						"const": "@graph"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@set"
+				},
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@graph"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@graph"
-					},
-					{
-						"type": "string",
-						"const": "@set"
-					},
-					{
-						"type": "string",
-						"const": "@id"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@set"
+				},
+				{
+					"const": "@id"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@id"
-					},
-					{
-						"type": "string",
-						"const": "@set"
-					},
-					{
-						"type": "string",
-						"const": "@graph"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@set"
+				},
+				{
+					"const": "@graph"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@graph"
-					},
-					{
-						"type": "string",
-						"const": "@id"
-					},
-					{
-						"type": "string",
-						"const": "@set"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@set"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@id"
-					},
-					{
-						"type": "string",
-						"const": "@graph"
-					},
-					{
-						"type": "string",
-						"const": "@set"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@set"
+				}
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"type": "string",
-						"const": "@set"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"const": "@set"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2
 		},
 		{
 			"type": "array",
-			"items": {
-				"allOf": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-					},
-					{
-						"type": "string",
-						"const": "@set"
-					}
-				]
-			}
+			"prefixItems": [
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+				},
+				{
+					"const": "@set"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2
 		}
 	]
 }

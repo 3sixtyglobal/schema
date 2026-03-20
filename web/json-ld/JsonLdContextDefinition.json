@@ -1,15 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdContextDefinition",
+	"title": "JsonLdContextDefinition",
 	"description": "A context definition defines a local context in a node object.",
 	"type": "object",
 	"properties": {
 		"@base": {
-			"type": ["string", "null"]
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "null"
+				}
+			]
 		},
 		"@direction": {
-			"type": ["string", "null"],
-			"enum": ["ltr", "rtl", null]
+			"anyOf": [
+				{
+					"const": "ltr"
+				},
+				{
+					"const": "rtl"
+				},
+				{
+					"type": "null"
+				}
+			]
 		},
 		"@import": {
 			"type": "string"
@@ -27,7 +44,6 @@
 			"type": "object",
 			"properties": {
 				"@container": {
-					"type": "string",
 					"const": "@set"
 				},
 				"@protected": {
@@ -37,11 +53,17 @@
 			"required": ["@container"]
 		},
 		"@version": {
-			"type": "string",
 			"const": "1.1"
 		},
 		"@vocab": {
-			"type": ["string", "null"]
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "null"
+				}
+			]
 		}
 	},
 	"additionalProperties": {
@@ -54,6 +76,54 @@
 			},
 			{
 				"$ref": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition"
+			},
+			{
+				"anyOf": [
+					{
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					{
+						"anyOf": [
+							{
+								"const": "ltr"
+							},
+							{
+								"const": "rtl"
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					{
+						"type": "string"
+					},
+					{
+						"type": "boolean"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"@container": {
+								"const": "@set"
+							},
+							"@protected": {
+								"type": "boolean"
+							}
+						},
+						"required": ["@container"]
+					},
+					{
+						"const": "1.1"
+					}
+				]
 			}
 		]
 	}

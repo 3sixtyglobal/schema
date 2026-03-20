@@ -1,7 +1,23 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/json-ld/JsonLdContainerType",
+	"title": "JsonLdContainerType",
 	"description": "JSON-LD container types.",
-	"type": "string",
-	"enum": ["@language", "@index", "@id", "@graph", "@type"]
+	"anyOf": [
+		{
+			"const": "@language"
+		},
+		{
+			"const": "@index"
+		},
+		{
+			"const": "@id"
+		},
+		{
+			"const": "@graph"
+		},
+		{
+			"const": "@type"
+		}
+	]
 }
