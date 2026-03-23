@@ -110,3 +110,122 @@ export async function isSymbolicLink(item) {
 		return false;
 	}
 }
+
+/**
+ * Strip interface prefix if there is one.
+ * @param input The input to strip.
+ * @returns The input with any interface prefix stripped.
+ */
+export function stripPrefix(input) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (/^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return output;
+	}
+
+	return '';
+}
+
+/**
+ * Split a string into words.
+ * @param input The input to split.
+ * @returns The string split into words.
+ */
+export function words(input) {
+	if (!(typeof input === 'string' && input.length > 0)) {
+		return [];
+	}
+
+	const normalized = input
+		.replace(/([\da-z])([A-Z])/g, '$1 $2')
+		.replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
+		.replace(/[._-]+/g, ' ');
+
+	return (
+		normalized
+			.trim()
+			.match(/[^\u0000-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007F]+/g) ?? []
+	);
+}
+
+/**
+ * Convert the input string to kebab case.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The kebab case version of the input.
+ */
+export function kebabCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output).join('-').toLowerCase();
+	}
+
+	return '';
+}
+
+/**
+ * Convert the input string to snake case.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The snake case version of the input.
+ */
+export function snakeCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output).join('_').toLowerCase();
+	}
+
+	return '';
+}
+
+/**
+ * Pascal case all the words.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The pascal case version of the input.
+ */
+export function pascalCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output)
+			.map(w => `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`)
+			.join('');
+	}
+
+	return '';
+}
+
+/**
+ * Camel case all the words.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The camel case version of the input.
+ */
+export function camelCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		const splitWords = words(output);
+		return splitWords.length === 0
+			? ''
+			: `${splitWords[0].toLowerCase()}${splitWords
+					.slice(1)
+					.map(w => `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`)
+					.join('')}`;
+	}
+
+	return '';
+}
