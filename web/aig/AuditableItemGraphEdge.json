@@ -49,7 +49,7 @@
 			"description": "The relationships between the two vertices."
 		}
 	},
-	"required": ["@context", "targetId", "type", "edgeRelationships"],
+	"required": ["targetId", "type", "edgeRelationships"],
 	"allOf": [
 		{
 			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditedElement"

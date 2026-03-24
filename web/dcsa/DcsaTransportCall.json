@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/dcsa/DcsaTransportCall",
 	"title": "DcsaTransportCall",
 	"description": "Transport call.\n\nDiscriminator: `modeOfTransport`.\n\nSource: `transportCall` schema in the DCSA Event Domain (v3.1.0).",
-	"anyOf": [
+	"oneOf": [
 		{
 			"$ref": "https://schema.twindev.org/dcsa/DcsaVesselTransportCall"
 		},

@@ -8,18 +8,16 @@
 			"type": "object",
 			"properties": {
 				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "TRANSPORT"
+						}
+					},
+					"required": ["eventType"],
 					"allOf": [
 						{
 							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive"
-						},
-						{
-							"type": "object",
-							"properties": {
-								"eventType": {
-									"const": "TRANSPORT"
-								}
-							},
-							"required": ["eventType"]
 						}
 					],
 					"description": "Event metadata (eventType = TRANSPORT)."

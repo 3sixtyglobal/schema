@@ -40,9 +40,13 @@
 		"aliasFormat": {
 			"type": "string",
 			"description": "The format of the id in the alias."
+		},
+		"unique": {
+			"type": "boolean",
+			"description": "Whether the alias should be unique across the graph, meaning that no other vertex can have the same alias. Defaults to false."
 		}
 	},
-	"required": ["@context", "id", "type"],
+	"required": ["id", "type"],
 	"allOf": [
 		{
 			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditedElement"

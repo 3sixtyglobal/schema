@@ -4,20 +4,101 @@
 	"title": "DataspaceActivity",
 	"description": "A dataspace activity that restricts an activity so that it can be handled by a Dataspace Data Plane",
 	"type": "object",
+	"properties": {
+		"object": {
+			"anyOf": [
+				{
+					"properties": {
+						"type": {
+							"anyOf": [
+								{
+									"type": "string"
+								},
+								{
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							]
+						},
+						"@context": {
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+						}
+					},
+					"required": ["type", "@context"],
+					"type": "object",
+					"$comment": "Inlined utility base type O & { type: ObjectOrArray<string> } so utility transformations can operate on concrete properties instead of a $ref."
+				},
+				{
+					"type": "array",
+					"items": {
+						"properties": {
+							"type": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								]
+							},
+							"@context": {
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+							}
+						},
+						"required": ["type", "@context"],
+						"type": "object",
+						"$comment": "Inlined utility base type O & { type: ObjectOrArray<string> } so utility transformations can operate on concrete properties instead of a $ref."
+					}
+				}
+			],
+			"description": "Activity's Object"
+		},
+		"target": {
+			"properties": {
+				"type": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"@context": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+				}
+			},
+			"required": ["type", "@context"],
+			"type": "object",
+			"$comment": "Inlined utility base type T & { type: ObjectOrArray<string> } so utility transformations can operate on concrete properties instead of a $ref.",
+			"description": "Activity's target"
+		}
+	},
+	"required": ["object"],
 	"allOf": [
 		{
 			"description": "A W3C Activity from Activity Streams.\n\nAn `Activity` describes an action performed by an `actor` on an `object`, and\ncan optionally include a `target`, `result`, `origin`, or `instrument`.",
 			"type": "object",
 			"properties": {
 				"@context": {
-					"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsContextType",
+					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
 					"description": "The LD Context.",
 					"$comment": "Inherited from ActivityStreamsActivity"
 				},
 				"type": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsTypes"
+							"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
 						},
 						{
 							"type": "string"
@@ -27,7 +108,7 @@
 							"items": {
 								"anyOf": [
 									{
-										"$ref": "https://schema.twindev.org/dataspace/ActivityStreamsTypes"
+										"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
 									},
 									{
 										"type": "string"
@@ -559,31 +640,6 @@
 						}
 					],
 					"description": "The Actor behind the Activity.",
-					"$comment": "Inherited from ActivityStreamsActivity"
-				},
-				"target": {
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						},
-						{
-							"type": "array",
-							"items": {
-								"anyOf": [
-									{
-										"type": "string"
-									},
-									{
-										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-									}
-								]
-							}
-						}
-					],
-					"description": "The target of the Activity.",
 					"$comment": "Inherited from ActivityStreamsActivity"
 				},
 				"result": {
