@@ -10,7 +10,7 @@
 	"license": "Apache-2.0",
 	"scripts": {
 		"format": "prettier --write .",
-		"lint:format": "prettier --config .prettierrc --check .",
+		"lint:format": "prettier --config prettier.config.mjs --check .",
 		"lint:markdown": "markdownlint **/*.md --ignore **/node_modules/** --ignore **/docs/reference/**",
 		"lint:spell": "cspell ** --no-progress",
 		"lint": "npm run lint:format && npm run lint:markdown && npm run lint:spell",

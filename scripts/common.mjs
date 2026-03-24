@@ -143,11 +143,7 @@ export function words(input) {
 		.replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
 		.replace(/[._-]+/g, ' ');
 
-	return (
-		normalized
-			.trim()
-			.match(/[^\u0000-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007F]+/g) ?? []
-	);
+	return normalized.trim().match(/[^\u0000-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007F]+/g) ?? [];
 }
 
 /**
@@ -199,7 +195,12 @@ export function pascalCase(input, stripInterfacePrefix = true) {
 			output = output.slice(1);
 		}
 		return words(output)
-			.map(w => `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`)
+			.map(w => {
+				if (w.length > 1 && w === w.toUpperCase()) {
+					return w;
+				}
+				return `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`;
+			})
 			.join('');
 	}
 
@@ -223,9 +224,33 @@ export function camelCase(input, stripInterfacePrefix = true) {
 			? ''
 			: `${splitWords[0].toLowerCase()}${splitWords
 					.slice(1)
-					.map(w => `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`)
+					.map(w => {
+						if (w.length > 1 && w === w.toUpperCase()) {
+							return w;
+						}
+						return `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`;
+					})
 					.join('')}`;
 	}
 
 	return '';
+}
+
+/**
+ * Convert a string to uppercase.
+ * @param input The input to convert.
+ * @returns The uppercase version of the input.
+ */
+export function upperCase(input) {
+	return input?.toUpperCase() ?? '';
+}
+
+/**
+ * Convert a string to interface case (PascalCase with I prefix).
+ * @param input The input to convert.
+ * @returns The interface case version of the input.
+ */
+export function interfaceCase(input) {
+	const pascal = pascalCase(input, false);
+	return pascal ? `I${pascal}` : '';
 }
