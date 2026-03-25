@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/ais/AuditableItemStreamBase",
+	"title": "AuditableItemStreamBase",
+	"description": "Interface describing an auditable item stream.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.twindev.org/ais/"
+				},
+				{
+					"const": "https://schema.twindev.org/common/"
+				}
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AuditableItemStream",
+			"description": "JSON-LD Type."
+		},
+		"annotationObject": {
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"description": "The object to associate with the entry as JSON-LD."
+		},
+		"entries": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"const": "ItemList"
+				},
+				"itemListElement": {
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntryBase"
+					}
+				}
+			},
+			"required": ["type", "itemListElement"],
+			"description": "Entries in the stream."
+		},
+		"immutableInterval": {
+			"type": "number",
+			"description": "After how many entries do we add immutable checks, defaults to service configured value.\nA value of 0 will disable immutable checks, 1 will be every item, or any other integer for an interval."
+		}
+	},
+	"required": ["@context", "type"]
+}

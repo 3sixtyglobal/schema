@@ -21,10 +21,6 @@
 			"minItems": 2,
 			"description": "JSON-LD Context."
 		},
-		"type": {
-			"const": "AuditableItemStreamEntry",
-			"description": "JSON-LD Type."
-		},
 		"id": {
 			"type": "string",
 			"description": "The id of the entry."
@@ -45,10 +41,6 @@
 			"type": "string",
 			"description": "The identity of the user which added the entry to the stream."
 		},
-		"entryObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The object to associate with the entry as JSON-LD."
-		},
 		"index": {
 			"type": "number",
 			"description": "The index of the entry in the stream."
@@ -62,5 +54,10 @@
 			"description": "The verification of the entry."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "entryObject", "index"]
+	"required": ["id", "dateCreated", "index"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntryBase"
+		}
+	]
 }
