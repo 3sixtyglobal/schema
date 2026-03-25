@@ -36,7 +36,14 @@
 			"description": "A trade party who is an operator of this product handling process."
 		},
 		"processTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceProcessTypeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceProcessTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of product handling process."
 		}
 	},

@@ -25,7 +25,14 @@
 			"description": "The unique identifier for this subordinate of a subordinate location, such as a United Nations Location Code (UNLOCODE)\nor GS1 Global Location Number (GLN)."
 		},
 		"locationFunctionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of subordinate of a subordinate location."
 		},
 		"name": {

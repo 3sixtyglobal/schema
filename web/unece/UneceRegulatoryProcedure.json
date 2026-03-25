@@ -79,7 +79,14 @@
 			"description": "The indication of whether or not the start date of a control has been confirmed for this cross-border regulatory\nprocedure."
 		},
 		"crossBorderRegulatoryProcedurePaymentMethodCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the payment method for this cross-border regulatory procedure, such as by deferred payment method."
 		},
 		"crossBorderRegulatoryProcedureTypeCode": {
@@ -87,7 +94,14 @@
 			"description": "A code specifying a type of cross-border regulatory procedure."
 		},
 		"customsProcedureGuaranteeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be\nfulfilled for this cross-border regulatory procedure."
 		},
 		"declarantAssignedDeclarationId": {

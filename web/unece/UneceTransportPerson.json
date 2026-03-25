@@ -166,7 +166,14 @@
 		"partyRoleCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePartyRoleCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UnecePartyRoleCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code specifying a role of this transport person."
 		},

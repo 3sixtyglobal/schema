@@ -97,11 +97,25 @@
 			"description": "The debtor financial institution of the payer party specified for this trade settlement payment means."
 		},
 		"paymentGuaranteeMeansGuaranteeMethodCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentGuaranteeMeansCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentGuaranteeMeansCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the method of guarantee for this trade settlement payment means."
 		},
 		"paymentMeansChannelPaymentChannelCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansChannelCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansChannelCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the payment channel through which this trade settlement payment is to be processed (Reference United\nNations Code List (UNCL) 4435)."
 		},
 		"paymentMeansType": {
@@ -109,7 +123,14 @@
 			"description": "The type of trade settlement payment means, expressed as text."
 		},
 		"paymentMeansTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentMeansCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of trade settlement payment means, such as cash or check."
 		},
 		"paymentMethodCode": {

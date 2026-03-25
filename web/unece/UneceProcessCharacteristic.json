@@ -51,7 +51,14 @@
 			"description": "The measure of the maximum value for this process characteristic."
 		},
 		"measuredAttributeTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasuredAttributeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceMeasuredAttributeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of this process characteristic."
 		},
 		"minimumValueMeasure": {

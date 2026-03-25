@@ -25,7 +25,14 @@
 			"description": "The name, expressed as text, of the authorized person for this trade contact."
 		},
 		"contactTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceContactTypeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceContactTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of trade contact."
 		},
 		"departmentName": {

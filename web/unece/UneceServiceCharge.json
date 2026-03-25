@@ -120,7 +120,14 @@
 			"description": "The measure of the distance used as the basis for the calculation of this logistics service charge."
 		},
 		"logisticsChargeCalculationBasisCalculationBasisCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsChargeCalculationBasisCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLogisticsChargeCalculationBasisCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
 		},
 		"logisticsServiceChargeTransportPaymentMethodCode": {

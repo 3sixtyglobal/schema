@@ -18,7 +18,14 @@
 			"description": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
 		},
 		"cargoCommodityCategoryStatisticalClassificationCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a statistical classification for this transport cargo."
 		},
 		"cargoOperationalCategoryCode": {

@@ -30,7 +30,14 @@
 			"description": "The actual quantity added or subtracted as a result of this delivery adjustment."
 		},
 		"adjustmentReasonCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAdjustmentReasonCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAdjustmentReasonCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a reason for this delivery adjustment."
 		},
 		"reason": {

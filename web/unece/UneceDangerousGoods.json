@@ -64,7 +64,14 @@
 			"description": "The code specifying the level of danger that the packaging of these dangerous goods must cover for transport purposes."
 		},
 		"dangerousGoodsRegulationCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDangerousGoodsRegulationCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceDangerousGoodsRegulationCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a regulation applicable to these transported dangerous goods."
 		},
 		"densityMeasure": {

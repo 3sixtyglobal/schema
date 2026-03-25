@@ -36,7 +36,14 @@
 			"description": "The identifier for this TT location."
 		},
 		"locationFunctionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of TT location."
 		},
 		"name": {

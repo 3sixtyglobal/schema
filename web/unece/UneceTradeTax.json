@@ -86,7 +86,14 @@
 			"description": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or\nduty, such as a preferential duty rate."
 		},
 		"customsProcedureGuaranteeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceCustomsProcedureGuaranteeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be\nfulfilled for this trade related tax, levy or duty."
 		},
 		"deductionAmount": {
@@ -298,7 +305,14 @@
 			"description": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference\nUnited Nations Code List (UNCL) 5153]."
 		},
 		"timeReferenceDueDateTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTimeReferenceCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceTimeReferenceCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying a type of due date for this trade tax."
 		},
 		"tradeTaxCurrencyCode": {
@@ -310,7 +324,14 @@
 			"description": "A code specifying the function of this trade tax."
 		},
 		"tradeTaxPaymentMethodCode": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentMethodCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the payment method for this trade related tax, levy or duty."
 		},
 		"unitBasisAmount": {

@@ -36,7 +36,14 @@
 			"description": "The unique identifier for this trade country sub-division."
 		},
 		"locationFunctionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the function type of this trade country sub-division."
 		},
 		"name": {

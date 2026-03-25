@@ -160,11 +160,25 @@
 			"description": "A global identifier for this supply chain consignment item."
 		},
 		"goodsTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of referenced supply chain consignment item."
 		},
 		"goodsTypeExtensionTypeExtensionCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code used as an extension to the type code for further specifying the type of referenced supply chain consignment\nitem."
 		},
 		"goodsUnitQuantity": {

@@ -25,13 +25,27 @@
 			"description": "The code specifying the category of this subordinate trade line item."
 		},
 		"goodsTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of subordinate trade line item."
 		},
 		"goodsTypeExtensionTypeExtensionCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code used as an extension to the type code for further specifying this subordinate trade line item."
 		},

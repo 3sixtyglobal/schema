@@ -103,7 +103,14 @@
 		"paymentTermsTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code specifying the type of trade payment terms."
 		},

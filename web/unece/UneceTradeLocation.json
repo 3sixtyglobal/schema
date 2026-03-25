@@ -46,7 +46,14 @@
 		"locationFunctionTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code specifying the type of trade location."
 		},

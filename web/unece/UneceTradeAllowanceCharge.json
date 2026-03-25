@@ -29,7 +29,14 @@
 			"description": "The code specifying the type of this trade allowance charge."
 		},
 		"allowanceChargeReasonCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeReasonCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeReasonCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the reason for this trade allowance charge."
 		},
 		"appliedDateTime": {

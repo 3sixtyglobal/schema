@@ -289,11 +289,25 @@
 			"format": "date-time"
 		},
 		"referenceRelationshipTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the type of relationship between this referenced document and another artefact, such as a\nreplacement of an original document."
 		},
 		"referenceTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the reference type of this referenced document."
 		},
 		"remarks": {

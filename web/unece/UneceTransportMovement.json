@@ -550,7 +550,14 @@
 			"description": "The number of pieces of transport equipment for this logistics transport movement."
 		},
 		"transportMeansDirectionTransitDirectionCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportMeansDirectionCodeList",
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/unece/UneceTransportMeansDirectionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
 			"description": "The code specifying the transit direction of this logistics transport movement."
 		},
 		"transportMeansSecurityOfficerPerson": {

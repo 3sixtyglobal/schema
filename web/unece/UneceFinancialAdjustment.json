@@ -40,7 +40,14 @@
 		"financialAdjustmentReasonCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustmentReasonCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustmentReasonCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code specifying a reason for this financial adjustment."
 		},

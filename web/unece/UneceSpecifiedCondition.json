@@ -44,7 +44,14 @@
 		"subjectTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
+				"anyOf": [
+					{
+						"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
 			},
 			"description": "A code specifying a subject type for this specified condition."
 		},
