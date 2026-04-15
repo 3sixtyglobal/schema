@@ -12,6 +12,10 @@
 		"AuditableItemStreamList": "twin-ais:AuditableItemStreamList",
 		"AuditableItemStreamEntryList": "twin-ais:AuditableItemStreamEntryList",
 		"AuditableItemStreamEntryObjectList": "twin-ais:AuditableItemStreamEntryObjectList",
+		"closed": {
+			"@id": "twin-ais:closed",
+			"@type": "sch:Boolean"
+		},
 		"entries": {
 			"@id": "twin-ais:entries",
 			"@container": "@set"
@@ -27,6 +31,10 @@
 		"index": {
 			"@id": "twin-ais:index",
 			"@type": "sch:Integer"
+		},
+		"mode": {
+			"@id": "twin-ais:mode",
+			"@type": "sch:Text"
 		},
 		"numberOfItems": {
 			"@id": "sch:numberOfItems"
