@@ -113,7 +113,7 @@ async function generateTypesPage(schema, types) {
 	} else {
 		template = template.replace(
 			/\${repo}/g,
-			`Repo: <a href="https://github.com/twinfoundation/${schema.repo}" target="_blank">https://github.com/twinfoundation/${schema.repo}</a><br /><br /><hr /><br />`
+			`Repo: <a href="https://github.com/iotaledger/twin-${schema.repo}" target="_blank">https://github.com/iotaledger/twin-${schema.repo}</a><br /><br /><hr /><br />`
 		);
 	}
 
