@@ -19,7 +19,7 @@ permissions:
 
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_SCHEMA }}
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  TWIN_VERCEL_ORG_ID: ${{ secrets.TWIN_VERCEL_ORG_ID }}
 
 jobs:
   deploy:
@@ -63,8 +63,8 @@ jobs:
         id: deploy
         run: |
           DEPLOYMENT_URL=$(vercel deploy \
-          --token=${{ secrets.VERCEL_TOKEN }} \
-          --scope=${{ secrets.VERCEL_SCOPE }} \
+          --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
+          --scope=${{ secrets.TWIN_VERCEL_SCOPE }} \
           --target=${{ steps.set-branch.outputs.branch == 'main' && 'production' || 'dev' }} \
           --force)
           echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
@@ -75,5 +75,5 @@ jobs:
           vercel alias set \
           ${{ steps.deploy.outputs.deployment-url }} \
           ${{ steps.set-branch.outputs.branch == 'main' && secrets.DOMAIN_SCHEMA_PROD || secrets.DOMAIN_SCHEMA_DEV }} \
-          --token=${{ secrets.VERCEL_TOKEN }} \
-          --scope=${{ secrets.VERCEL_SCOPE }}
+          --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
+          --scope=${{ secrets.TWIN_VERCEL_SCOPE }}

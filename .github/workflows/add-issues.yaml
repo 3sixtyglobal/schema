@@ -18,4 +18,4 @@ jobs:
       - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/orgs/twinfoundation/projects/3
-          github-token: ${{ secrets.GHA_RELEASE_TOKEN }}
+          github-token: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
