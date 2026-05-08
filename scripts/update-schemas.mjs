@@ -45,7 +45,9 @@ async function run() {
 					await unlink(filePath);
 				}
 				for (const pkg of packages) {
-					const packagePath = path.resolve(path.join('../', schema.repo, 'packages', pkg));
+					const packagePath = path.resolve(
+						path.join('../../twin-workspace', schema.repo, 'packages', pkg)
+					);
 					process.stdout.write(`   Package: ${packagePath}\n`);
 					const tsToSchema = await loadJson(path.join(packagePath, 'ts-to-schema.json'));
 					types.push(...tsToSchema.types.map(t => typeSourceToType(t)));
@@ -113,7 +115,7 @@ async function generateTypesPage(schema, types) {
 	} else {
 		template = template.replace(
 			/\${repo}/g,
-			`Repo: <a href="https://github.com/iotaledger/twin-${schema.repo}" target="_blank">https://github.com/iotaledger/twin-${schema.repo}</a><br /><br /><hr /><br />`
+			`Repo: <a href="https://github.com/iotaledger/${schema.repo}" target="_blank">https://github.com/iotaledger/${schema.repo}</a><br /><br /><hr /><br />`
 		);
 	}
 

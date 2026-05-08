@@ -50,7 +50,7 @@ What should be produced as a result of this spike?
 - [ ] Comparison analysis
 - [ ] Recommendation report
 - [ ] Architecture diagram
-- [ ] Other: ___________
+- [ ] Other: \***\*\_\_\_\*\***
 
 ## 📄 Additional Context
 
