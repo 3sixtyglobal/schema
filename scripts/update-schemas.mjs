@@ -7,7 +7,7 @@
  */
 import path from 'node:path';
 import FastGlob from 'fast-glob';
-import { fileExists, loadJson, saveJson } from './common.mjs';
+import { directoryExists, fileExists, loadJson, saveJson } from './common.mjs';
 import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises';
 
 /**
@@ -49,39 +49,52 @@ async function run() {
 						path.join('../../twin-workspace', schema.repo, 'packages', pkg)
 					);
 					process.stdout.write(`   Package: ${packagePath}\n`);
-					const tsToSchema = await loadJson(path.join(packagePath, 'ts-to-schema.json'));
-					types.push(...tsToSchema.types.map(t => typeSourceToType(t)));
 
-					process.stdout.write(`      Copying types\n`);
-					for (const typeSource of tsToSchema.types) {
-						const type = typeSourceToType(typeSource);
+					if (!(await directoryExists(packagePath))) {
+						process.stdout.write(`   Warning: Package does not exist: ${packagePath}\n`);
+						continue;
+					} else {
+						const tsToSchema = await loadJson(path.join(packagePath, 'ts-to-schema.json'));
+						types.push(...tsToSchema.types.map(t => typeSourceToType(t)));
 
-						const sourcePath = path.join(
+						process.stdout.write(`      Copying types\n`);
+						for (const typeSource of tsToSchema.types) {
+							const type = typeSourceToType(typeSource);
+
+							const sourcePath = path.join(
+								packagePath,
+								'src',
+								'schemas',
+								`${stripInterface(type)}.json`
+							);
+							process.stdout.write(`         Copying type: ${sourcePath}\n`);
+
+							const typeContent = await loadJson(sourcePath);
+							const typeOutputPath = path.join(outputPath, `${stripInterface(type)}.json`);
+							await saveJson(typeOutputPath, typeContent);
+						}
+
+						const jsonLdContextSourcePath = path.join(
 							packagePath,
 							'src',
 							'schemas',
-							`${stripInterface(type)}.json`
+							`types.jsonld`
 						);
-						process.stdout.write(`         Copying type: ${sourcePath}\n`);
 
-						const typeContent = await loadJson(sourcePath);
-						const typeOutputPath = path.join(outputPath, `${stripInterface(type)}.json`);
-						await saveJson(typeOutputPath, typeContent);
-					}
-
-					const jsonLdContextSourcePath = path.join(packagePath, 'src', 'schemas', `types.jsonld`);
-
-					if (await fileExists(jsonLdContextSourcePath)) {
-						const jsonLdContextContent = await loadJson(jsonLdContextSourcePath);
-						combinedJsonLd = {
-							['@context']: {
-								...combinedJsonLd?.['@context'],
-								...jsonLdContextContent?.['@context']
-							}
-						};
-						const jsonLdContextOutputPath = path.join(outputPath, `types.jsonld`);
-						process.stdout.write(`         Copying JSON-LD context: ${jsonLdContextSourcePath}\n`);
-						await saveJson(jsonLdContextOutputPath, combinedJsonLd);
+						if (await fileExists(jsonLdContextSourcePath)) {
+							const jsonLdContextContent = await loadJson(jsonLdContextSourcePath);
+							combinedJsonLd = {
+								['@context']: {
+									...combinedJsonLd?.['@context'],
+									...jsonLdContextContent?.['@context']
+								}
+							};
+							const jsonLdContextOutputPath = path.join(outputPath, `types.jsonld`);
+							process.stdout.write(
+								`         Copying JSON-LD context: ${jsonLdContextSourcePath}\n`
+							);
+							await saveJson(jsonLdContextOutputPath, combinedJsonLd);
+						}
 					}
 				}
 			}
