@@ -45,14 +45,19 @@ async function run() {
 					await unlink(filePath);
 				}
 				for (const pkg of packages) {
-					const packagePath = path.resolve(
-						path.join('../../twin-workspace', schema.repo, 'packages', pkg)
+					const packagePathCandidates = [
+						path.resolve(path.join('../../twin-workspace', schema.repo, 'packages', pkg)),
+						path.resolve(path.join('..', schema.repo, 'packages', pkg))
+					];
+					const packagePathExists = await Promise.all(
+						packagePathCandidates.map(p => directoryExists(p))
 					);
+					const foundIdx = packagePathExists.findIndex(Boolean);
+					const packagePath = packagePathCandidates[foundIdx >= 0 ? foundIdx : 0];
 					process.stdout.write(`   Package: ${packagePath}\n`);
 
 					if (!(await directoryExists(packagePath))) {
 						process.stdout.write(`   Warning: Package does not exist: ${packagePath}\n`);
-						continue;
 					} else {
 						const tsToSchema = await loadJson(path.join(packagePath, 'ts-to-schema.json'));
 						types.push(...tsToSchema.types.map(t => typeSourceToType(t)));
