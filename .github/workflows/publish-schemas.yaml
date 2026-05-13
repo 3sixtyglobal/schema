@@ -19,7 +19,7 @@ permissions:
 
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_SCHEMA }}
-  TWIN_VERCEL_ORG_ID: ${{ secrets.TWIN_VERCEL_ORG_ID }}
+  VERCEL_ORG_ID: ${{ secrets.TWIN_VERCEL_ORG_ID }}
 
 jobs:
   deploy:
