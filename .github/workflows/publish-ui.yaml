@@ -23,7 +23,9 @@ env:
 
 jobs:
   deploy:
-    runs-on: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+    runs-on:
+      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+      group: ${{ github.event.repository.private && 'twin' || 'default' }}
 
     steps:
       # Set branch variable based on release type
