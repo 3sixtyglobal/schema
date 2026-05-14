@@ -1,0 +1,94 @@
+# Sync main branch to match next branch by creating a new branch from next and opening a PR to main.
+name: Sync main with next (PR)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-main:
+    runs-on:
+      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+
+    steps:
+      - name: Checkout next branch
+        uses: actions/checkout@v6
+        with:
+          ref: next
+          fetch-depth: 0
+
+      - name: Import GPG key
+        run: |
+          # Import the GPG private key from secrets, which should be base64 encoded
+          echo "$TWIN_GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+          echo "TWIN_GPG_KEY_ID=$TWIN_GPG_KEY_ID" >> $GITHUB_ENV
+        env:
+          TWIN_GPG_PRIVATE_KEY: ${{ secrets.TWIN_GPG_PRIVATE_KEY }} # Base64 encoded private key
+          TWIN_GPG_KEY_ID: ${{ secrets.TWIN_GPG_KEY_ID }} # GPG key ID
+
+      - name: Set up Git user
+        run: |
+          git config user.name "TWIN GitHub Bot"
+          git config user.email "github@twindev.org"
+          git config --global user.signingkey "$TWIN_GPG_KEY_ID"
+          git config --global commit.gpgsign true
+          git config --global tag.gpgsign true
+
+      - name: Create overwrite branch from next
+        id: create_branch
+        run: |
+          BRANCH=chore/overwrite-main-$(date +%s)
+          git checkout -b "$BRANCH"
+          # Merge main into this branch, but keep all content from next
+          git fetch origin main:main
+          git merge -s ours main -m "chore: merge main into $BRANCH (ours strategy)"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Push overwrite branch
+        run: |
+          git push --set-upstream origin ${{ steps.create_branch.outputs.branch }}
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      - name: Create Pull Request to main
+        id: create_pr
+        run: |
+          OUTPUT=$(gh pr create -B main -H ${{ steps.create_branch.outputs.branch }} --title 'chore: overwrite main with next' --body 'Automated PR to make main match next (all content from next).')
+          PR_NUMBER=$(echo "$OUTPUT" | grep -o '[0-9]\+$')
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Approve Pull Request
+        if: steps.create_pr.outputs.pr_number != ''
+        run: |
+          gh pr review ${{ steps.create_pr.outputs.pr_number }} --approve
+        env:
+          # This token must be from a different user with write access to the repository
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Optionally, auto-merge the PR (if allowed by repo settings)
+      - name: Merge Pull Request
+        if: steps.create_pr.outputs.pr_number != ''
+        run: |
+          gh pr merge ${{ steps.create_pr.outputs.pr_number }} --squash --admin --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Cleanup: Remove the imported GPG key
+      - name: Cleanup GPG key
+        if: always()
+        run: |
+          FINGERPRINT=$(gpg --list-secret-keys --with-colons "$TWIN_GPG_KEY_ID" | awk -F: '/fpr:/ {print $10}' | head -1)
+          if [ -n "$FINGERPRINT" ]; then
+            gpg --batch --yes --delete-secret-keys "$FINGERPRINT" || true
+            gpg --batch --yes --delete-keys "$FINGERPRINT" || true
+          fi
