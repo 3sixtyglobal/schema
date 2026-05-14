@@ -1,0 +1,138 @@
+# Promotes the next branch to main by creating an intermediate branch from next,
+# merging main into it using the "ours" strategy (keeping all content from next),
+# then opening, approving, and squash-merging a PR to main.
+# Triggered manually via workflow_dispatch only — never runs automatically.
+name: Promote next to main
+
+on:
+  workflow_dispatch:
+
+# Prevent concurrent runs for the same branch to avoid race conditions on the
+# intermediate branch name (which includes a timestamp).
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Minimal permissions: write access to create branches/commits and open PRs.
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-main:
+    # Use self-hosted runners for private repos (labelled 'twin'); fall back to
+    # ubuntu-latest for public repos so the workflow is portable.
+    runs-on:
+      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+
+    steps:
+      # Full clone (fetch-depth: 0) is required so that the subsequent merge
+      # step has the full history of both next and main available.
+      - name: Checkout next branch
+        uses: actions/checkout@v6
+        with:
+          ref: next
+          fetch-depth: 0
+
+      # Imports the bot's GPG private key so that the merge commit created in the
+      # next step is signed. Required by branch protection rules that enforce
+      # signed commits on next/main.
+      - name: Import GPG key
+        run: |
+          # Import the GPG private key from secrets, which should be base64 encoded
+          echo "$TWIN_GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+          # Export the key ID into the environment so later steps can reference it
+          echo "TWIN_GPG_KEY_ID=$TWIN_GPG_KEY_ID" >> $GITHUB_ENV
+        env:
+          TWIN_GPG_PRIVATE_KEY: ${{ secrets.TWIN_GPG_PRIVATE_KEY }} # Base64 encoded private key
+          TWIN_GPG_KEY_ID: ${{ secrets.TWIN_GPG_KEY_ID }} # GPG key ID used to sign commits/tags
+
+      # Configures the bot identity and enables GPG signing for all subsequent
+      # git operations in this job. Must run after the key is imported.
+      - name: Set up Git user
+        run: |
+          # Identity used for the merge commit created in the next step
+          git config user.name "TWIN GitHub Bot"
+          git config user.email "github@twindev.org"
+          # Sign all commits and tags with the imported GPG key
+          git config --global user.signingkey "$TWIN_GPG_KEY_ID"
+          git config --global commit.gpgsign true
+          git config --global tag.gpgsign true
+
+      # Creates a short-lived intermediate branch off next, then merges main into
+      # it using the "ours" strategy so that next's file tree is preserved exactly.
+      # This branch becomes the head of the PR opened against main.
+      - name: Promote next to main by creating a new branch and PR
+        id: create_branch
+        run: |
+          # Timestamp suffix avoids name collisions if the workflow is re-run
+          BRANCH=chore/promote-next-to-main-$(date +%s)
+          git checkout -b "$BRANCH"
+          # Fetch main so we can merge it; the "ours" strategy discards all of
+          # main's content and keeps next's tree intact — this is intentional.
+          # The merge commit exists only to tell Git that main's history has been
+          # "seen", preventing conflicts when the PR is merged back to main.
+          git fetch origin main:main
+          git merge -s ours main -m "chore: merge main into $BRANCH (ours strategy)"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      # Pushes the intermediate branch to origin so it can be used as the PR head.
+      # Uses TWIN_GHA_RELEASE_TOKEN to satisfy branch protection push restrictions.
+      - name: Push promote-next-to-main branch
+        run: |
+          # TWIN_GHA_RELEASE_TOKEN is used instead of GITHUB_TOKEN so that
+          # branch protection rules allowing only certain actors to push are satisfied.
+          git push --set-upstream origin ${{ steps.create_branch.outputs.branch }}
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Opens a PR from the intermediate branch into main and captures the PR
+      # number as a step output so the approve and merge steps can reference it.
+      - name: Create Pull Request to main
+        id: create_pr
+        run: |
+          # Open the PR and capture the URL; extract the PR number for later steps
+          OUTPUT=$(gh pr create -B main -H ${{ steps.create_branch.outputs.branch }} --title 'chore: promote next to main' --body 'Automated PR to make main match next (all content from next).')
+          PR_NUMBER=$(echo "$OUTPUT" | grep -o '[0-9]\+$')
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Approves the PR using the release token (a different actor from the one
+      # that opened it) to satisfy required-reviewer rules on the main branch.
+      - name: Approve Pull Request
+        # Only run if a PR was actually created (pr_number will be empty on failure)
+        if: steps.create_pr.outputs.pr_number != ''
+        run: |
+          gh pr review ${{ steps.create_pr.outputs.pr_number }} --approve
+        env:
+          # Approval must come from a different token/user than the one that opened
+          # the PR; TWIN_GHA_RELEASE_TOKEN satisfies this requirement.
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Squash-merges the PR into main and deletes the intermediate branch.
+      # --admin bypasses any required status checks that would otherwise block the merge.
+      - name: Merge Pull Request
+        # Only run if a PR was actually created (pr_number will be empty on failure)
+        if: steps.create_pr.outputs.pr_number != ''
+        run: |
+          # --squash produces a single commit on main; --admin bypasses required
+          # status checks; --delete-branch removes the intermediate branch afterwards.
+          gh pr merge ${{ steps.create_pr.outputs.pr_number }} --squash --admin --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Removes the imported GPG private key from the runner's keyring to prevent
+      # it lingering on the runner between jobs (especially important on self-hosted runners).
+      - name: Cleanup GPG key
+        # Always run so the private key is removed even if earlier steps failed
+        if: always()
+        run: |
+          # Resolve the full fingerprint from the key ID before deletion;
+          # gpg requires the fingerprint (not the key ID) for --delete-secret-keys.
+          FINGERPRINT=$(gpg --list-secret-keys --with-colons "$TWIN_GPG_KEY_ID" | awk -F: '/fpr:/ {print $10}' | head -1)
+          if [ -n "$FINGERPRINT" ]; then
+            gpg --batch --yes --delete-secret-keys "$FINGERPRINT" || true
+            gpg --batch --yes --delete-keys "$FINGERPRINT" || true
+          fi
