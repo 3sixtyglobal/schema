@@ -42,17 +42,17 @@ jobs:
           git config --global commit.gpgsign true
           git config --global tag.gpgsign true
 
-      - name: Create overwrite branch from next
+      - name: Promote next to main by creating a new branch and PR
         id: create_branch
         run: |
-          BRANCH=chore/overwrite-main-$(date +%s)
+          BRANCH=chore/promote-next-to-main-$(date +%s)
           git checkout -b "$BRANCH"
           # Merge main into this branch, but keep all content from next
           git fetch origin main:main
           git merge -s ours main -m "chore: merge main into $BRANCH (ours strategy)"
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
-      - name: Push overwrite branch
+      - name: Push promote-next-to-main branch
         run: |
           git push --set-upstream origin ${{ steps.create_branch.outputs.branch }}
         env:
@@ -61,7 +61,7 @@ jobs:
       - name: Create Pull Request to main
         id: create_pr
         run: |
-          OUTPUT=$(gh pr create -B main -H ${{ steps.create_branch.outputs.branch }} --title 'chore: overwrite main with next' --body 'Automated PR to make main match next (all content from next).')
+          OUTPUT=$(gh pr create -B main -H ${{ steps.create_branch.outputs.branch }} --title 'chore: promote next to main' --body 'Automated PR to make main match next (all content from next).')
           PR_NUMBER=$(echo "$OUTPUT" | grep -o '[0-9]\+$')
           echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
         env:
