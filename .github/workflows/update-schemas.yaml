@@ -1,0 +1,143 @@
+# Read schemas.json, clone each sibling repository that has a `repo` field,
+# run update-schemas to regenerate web assets, then open a PR with the changes.
+name: Create a PR with updated Schemas
+
+on:
+  workflow_dispatch:
+
+# Only one run at a time per branch; if a newer dispatch arrives, cancel the in-flight one
+# so we never merge stale schemas on top of a more recent run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-schemas:
+    # Private repos route to the self-hosted 'twin' runner group; public repos fall back to
+    # GitHub-hosted ubuntu-latest so the workflow works in open-source forks without secrets.
+    runs-on:
+      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
+      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      # Clone each source repository beside this checkout because update-schemas.mjs
+      # resolves repositories from the parent workspace, the same way it does locally.
+      - name: Checkout sibling repositories
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+        run: |
+          # Exit immediately on error, treat unset variables as errors, and propagate pipe failures.
+          set -euo pipefail
+
+          # Clones must live one level up so update-schemas.mjs finds them as workspace siblings,
+          # matching the local directory layout expected by the tool.
+          WORKSPACE_ROOT="$(cd .. && pwd)"
+
+          # Extract unique repo names from schemas.json, skipping entries without a repo field.
+          REPOS=$(jq -r '.[].repo | select(. != null)' schemas.json | sort -u)
+
+          # Truncate the tracking file so the cleanup step knows exactly which repos to remove,
+          # even if this step is re-run or partially succeeds.
+          : > "$RUNNER_TEMP/imported-repos.txt"
+
+          for repo_name in $REPOS; do
+            target_path="$WORKSPACE_ROOT/$repo_name"
+
+            echo "Cloning $repo_name into $target_path"
+            echo "$repo_name" >> "$RUNNER_TEMP/imported-repos.txt"
+
+            rm -rf "$target_path"
+            # Shallow clone on the same branch so cross-package API references resolve correctly
+            # without pulling full history (not needed for schema generation).
+            git clone \
+              --depth 1 \
+              --branch "${{ github.ref_name }}" \
+              "https://x-access-token:${GH_TOKEN}@github.com/twinfoundation/${repo_name}.git" \
+              "$target_path"
+          done
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update schemas
+        run: npm run update-schemas
+
+      # Import GPG key for signing commits
+      - name: Import GPG key
+        run: |
+          echo "$TWIN_GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+          echo "TWIN_GPG_KEY_ID=$TWIN_GPG_KEY_ID" >> $GITHUB_ENV
+        env:
+          TWIN_GPG_PRIVATE_KEY: ${{ secrets.TWIN_GPG_PRIVATE_KEY }}
+          TWIN_GPG_KEY_ID: ${{ secrets.TWIN_GPG_KEY_ID }}
+
+      # Set git config once for all subsequent steps
+      - name: Configure Git
+        run: |
+          git config --global user.email "github@twindev.org"
+          git config --global user.name "TWIN GitHub Bot"
+          git config --global user.signingkey "$TWIN_GPG_KEY_ID"
+          git config --global commit.gpgsign true
+          git config --global tag.gpgsign true
+
+      # Push the generated schema changes to a fresh branch and open a PR back to the source branch.
+      - name: Create Pull Request
+        id: create-pr
+        run: |
+          git checkout -b chore/schemas-update-${{ github.ref_name }}-${{ github.sha }}
+          git add .
+          # -S creates a GPG-signed commit using the key configured in the previous step.
+          git commit -S -m "chore: update schemas"
+          git push --set-upstream origin chore/schemas-update-${{ github.ref_name }}-${{ github.sha }}
+          OUTPUT=$(gh pr create -B ${{ github.ref_name }} -H chore/schemas-update-${{ github.ref_name }}-${{ github.sha }} --title 'chore: merge updated schemas into ${{ github.ref_name }}' --body 'Merges the updated schemas into ${{ github.ref_name }}')
+          PR_NUMBER=$(echo "$OUTPUT" | grep -o '[0-9]\+$')
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Automatically approve the PR to speed up the merge process
+      - name: Approve Pull Request
+        if: steps.create-pr.outputs.pr_number != ''
+        run: |
+          gh pr review ${{ steps.create-pr.outputs.pr_number }} --approve
+        env:
+          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+
+      # Always remove sibling clones so self-hosted runners do not accumulate stale repositories.
+      # `if: always()` ensures this runs even when earlier steps fail.
+      - name: Cleanup sibling repositories
+        if: always()
+        run: |
+          set -euo pipefail
+
+          WORKSPACE_ROOT="$(cd .. && pwd)"
+
+          if [ -f "$RUNNER_TEMP/imported-repos.txt" ]; then
+            while IFS= read -r repo_name; do
+              rm -rf "$WORKSPACE_ROOT/$repo_name"
+            done < "$RUNNER_TEMP/imported-repos.txt"
+          fi
+
+      # Remove the imported GPG key so the private key does not persist on the runner between jobs.
+      - name: Cleanup GPG key
+        if: always()
+        run: |
+          FINGERPRINT=$(gpg --list-secret-keys --with-colons "$TWIN_GPG_KEY_ID" | awk -F: '/fpr:/ {print $10}' | head -1)
+          if [ -n "$FINGERPRINT" ]; then
+            gpg --batch --yes --delete-secret-keys "$FINGERPRINT" || true
+            gpg --batch --yes --delete-keys "$FINGERPRINT" || true
+          fi
