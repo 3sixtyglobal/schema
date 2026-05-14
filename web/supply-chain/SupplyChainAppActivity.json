@@ -1,2523 +1,700 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/supply-chain/SupplyChainAppActivity",
-	"description": "Mobius V2 activity payload.\n\nOmit should be removed once there is more flexibility in Activity Streams declaration.",
+	"title": "SupplyChainAppActivity",
+	"description": "Supply Chain App Activity.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsContextType",
-			"description": "The LD Context."
-		},
-		"type": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsTypes"
-				},
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsTypes"
-							},
-							{
-								"type": "string"
-							}
-						]
-					}
-				}
-			]
-		},
-		"generator": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
 		"actor": {
-			"type": "object",
-			"properties": {
-				"type": {
-					"type": "string",
-					"const": "TradeParty"
-				},
-				"identifier": {
-					"type": "object",
-					"properties": {
-						"@type": {
-							"type": "string"
-						},
-						"@value": {
-							"type": "string"
-						}
-					},
-					"required": ["@type", "@value"]
-				},
-				"@context": {
-					"type": "string",
-					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
-				}
-			},
-			"required": ["type", "@context"],
-			"description": "Actor information."
+			"$ref": "https://schema.twindev.org/supply-chain/SupplyChainAppActor",
+			"description": "The actor responsible for the activity."
 		},
 		"target": {
 			"type": "object",
 			"properties": {
+				"@context": {
+					"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
+				},
 				"type": {
-					"type": "string",
 					"const": "Consignment"
+				},
+				"identifier": {
+					"type": "string"
 				},
 				"globalId": {
 					"type": "string"
 				}
 			},
-			"required": ["type", "globalId"],
+			"required": ["@context", "type", "identifier", "globalId"],
 			"description": "Target information."
-		},
-		"summary": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-				}
-			],
-			"description": "Summary of the Activity."
-		},
-		"result": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"origin": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"instrument": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"updated": {
-			"type": "string",
-			"description": "The date and time at which the object was updated."
-		},
-		"id": {
-			"type": "string",
-			"description": "Global identifier."
-		},
-		"name": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-				}
-			],
-			"description": "Natural language name."
-		},
-		"nameMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
-			"description": "Natural language name map."
-		},
-		"summaryMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
-			"description": "Natural language summary map."
-		},
-		"content": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-				}
-			],
-			"description": "Natural language content."
-		},
-		"contentMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
-			"description": "Natural language content map."
-		},
-		"url": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"image": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"icon": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"published": {
-			"type": "string",
-			"description": "Published date-time."
-		},
-		"startTime": {
-			"type": "string",
-			"description": "Start time."
-		},
-		"endTime": {
-			"type": "string",
-			"description": "End time."
-		},
-		"duration": {
-			"type": "string",
-			"description": "Duration."
-		},
-		"attachment": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"attributedTo": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"audience": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"context": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"location": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"tag": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"inReplyTo": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"replies": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
-		},
-		"preview": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"to": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"bto": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"cc": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"bcc": {
-			"description": "Object or array data type",
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": {
-						"anyOf": [
-							{
-								"type": "string"
-							},
-							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-							}
-						]
-					}
-				}
-			]
-		},
-		"mediaType": {
-			"type": "string",
-			"description": "MIME media type of the referenced resource."
-		},
-		"object": {
-			"anyOf": [
-				{
-					"type": "object",
-					"properties": {
-						"@context": {
-							"$ref": "https://schema.twindev.org/supply-chain/UneceContextType",
-							"description": "JSON-LD Context."
-						},
-						"type": {
-							"type": "string",
-							"const": "Consignment",
-							"description": "JSON-LD Type."
-						},
-						"applicableAllowanceCharge": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge"
-							},
-							"description": "An allowance or charge applicable to this supply chain consignment."
-						},
-						"applicableCargoInsurance": {
-							"$ref": "https://schema.twindev.org/unece/UneceCargoInsurance",
-							"description": "The cargo insurance applicable to this supply chain consignment."
-						},
-						"applicableCurrencyExchange": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-							},
-							"description": "A currency exchange applicable to this supply chain consignment."
-						},
-						"applicableCustomsValuation": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCustomsValuation"
-							},
-							"description": "A cross-border customs valuation applicable to this supply chain consignment."
-						},
-						"applicableDangerousGoods": {
-							"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods",
-							"description": "Dangerous goods applicable to the transport of this supply chain consignment."
-						},
-						"applicableRegulatoryProcedure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceRegulatoryProcedure"
-							},
-							"description": "A cross-border regulatory procedure applicable to this supply chain consignment."
-						},
-						"applicableServiceCharge": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
-							},
-							"description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
-						},
-						"associatedDocument": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDocument"
-							},
-							"description": "A referenced document associated with this supply chain consignment, such as the certificate of origin or dangerous goods note."
-						},
-						"associatedInvoiceAmount": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-							},
-							"description": "A monetary value of an invoice associated with this supply chain consignment."
-						},
-						"associatedInvoiceDiscountAmount": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-							},
-							"description": "A monetary value of the discount on an invoice associated with this supply chain consignment."
-						},
-						"associatedInvoiceDiscountPercent": {
-							"type": "string",
-							"description": "A percent that is a discount on an invoice amount associated with this supply chain consignment."
-						},
-						"associatedParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A trade party associated with this supply chain consignment."
-						},
-						"atArrivalTransportMovement": {
-							"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
-							"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport arrives in a country or at a regional border."
-						},
-						"atDepartureTransportMovement": {
-							"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
-							"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport departs a country or regional border."
-						},
-						"availabilityDueDateTime": {
-							"type": "string",
-							"description": "The date, time, date time or other date time value when this supply chain consignment is due to be available."
-						},
-						"bondedWarehouseStorageEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "A bonded warehouse storage event for this supply chain consignment."
-						},
-						"borderCrossingTransportMovement": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-							},
-							"description": "A border crossing logistics transport movement for this supply chain consignment."
-						},
-						"cODAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of the COD (Cash On Delivery) amount to be collected by the carrier upon delivery of this supply chain consignment."
-						},
-						"cargoInsuranceInstructionsInformation": {
-							"type": "string",
-							"description": "Cargo insurance instructions, expressed as text, for this supply chain consignment."
-						},
-						"cargoToleranceInformation": {
-							"type": "string",
-							"description": "Cargo tolerance information, expressed as text, for this supply chain consignment."
-						},
-						"carrierAcceptanceDateTime": {
-							"type": "string",
-							"description": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
-						},
-						"carrierAcceptanceLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The location where this supply chain consignment will be, or has been, accepted by the carrier."
-						},
-						"carrierAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party acting as the agent of the carrier for this supply chain consignment."
-						},
-						"carrierAssignedId": {
-							"type": "string",
-							"description": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
-						},
-						"carrierParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The carrier party for this supply chain consignment."
-						},
-						"carrierProvidedInformation": {
-							"type": "string",
-							"description": "Information, expressed as text, provided by the carrier for this supply chain consignment."
-						},
-						"chargeableTransportationStageQuantity": {
-							"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-							"description": "The number of separately chargeable transportation stages to be covered by this supply chain consignment."
-						},
-						"classificationDocument": {
-							"$ref": "https://schema.twindev.org/unece/UneceDocument",
-							"description": "The referenced classification document for this supply chain consignment."
-						},
-						"connectingCarrierParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A connecting carrier party for this supply chain consignment."
-						},
-						"consigneeAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
-						},
-						"consigneeAssignedId": {
-							"type": "string",
-							"description": "The unique identifier assigned by the consignee to this referenced supply chain consignment."
-						},
-						"consigneeParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The consignee party for this supply chain consignment."
-						},
-						"consigneeReceiptLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The location at which this supply chain consignment will be or has been received by the consignee."
-						},
-						"consignorAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
-						},
-						"consignorAssignedId": {
-							"type": "string",
-							"description": "The unique identifier assigned by the consignor to this referenced supply chain consignment."
-						},
-						"consignorParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The consignor party for this supply chain consignment."
-						},
-						"consignorProvidedBorderClearanceInstructions": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
-							},
-							"description": "Border clearance instructions provided by the consignor for this supply chain consignment."
-						},
-						"consignorProvidedInformation": {
-							"type": "string",
-							"description": "Information, expressed as text, provided by the consignor for this supply chain consignment."
-						},
-						"consolidatorParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party responsible for the consolidation of this supply chain consignment."
-						},
-						"containerizationIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not this supply chain consignment is to be transported in a container or containers."
-						},
-						"contractId": {
-							"type": "string",
-							"description": "A contract identifier for this supply chain consignment."
-						},
-						"contractTermsInformation": {
-							"type": "string",
-							"description": "Information related to contract terms and conditions, expressed as text, for this supply chain consignment."
-						},
-						"currencyServiceChargeCurrencyCode": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/supply-chain/UneceCurrencyCodeList"
-							},
-							"description": "A code specifying a service charge currency for this supply chain consignment."
-						},
-						"currencyServiceTariffCurrencyCode": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/supply-chain/UneceCurrencyCodeList"
-							},
-							"description": "A code specifying a service tariff currency for this supply chain consignment."
-						},
-						"customsExportAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this supply chain consignment."
-						},
-						"customsId": {
-							"type": "string",
-							"description": "A unique identifier, for customs purposes, for this consignment."
-						},
-						"customsImportAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party acting as an agent for, or on behalf of, the consignee with respect to the customs import procedures for this supply chain consignment."
-						},
-						"customsRequiredInvoiceDocument": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDocument"
-							},
-							"description": "A referenced invoice document required by customs for this supply chain consignment."
-						},
-						"customsTransitAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party acting as an agent for, or on behalf of, the consignor with respect to customs transit procedures for this supply chain consignment."
-						},
-						"dangerousGoodsNotifierParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party responsible for providing the dangerous goods notification in accordance with the dangerous goods regulations relevant for this supply chain consignment."
-						},
-						"declaredForCustomsLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The location of this supply chain consignment as declared for customs."
-						},
-						"declaredValueForCarriageAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery."
-						},
-						"declaredValueForCustomsAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value declared for customs purposes for this supply chain consignment."
-						},
-						"deconsolidatorParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party responsible for the deconsolidation of this supply chain consignment."
-						},
-						"deliveryInformation": {
-							"type": "string",
-							"description": "The delivery information, expressed as text, for this supply chain consignment."
-						},
-						"deliveryInstructions": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDeliveryInstructions"
-							},
-							"description": "Delivery instructions for this supply chain consignment."
-						},
-						"deliveryParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party to whom this supply chain consignment will be, or has been, delivered."
-						},
-						"deliveryTransportEvent": {
-							"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-							"description": "The delivery event for this supply chain consignment."
-						},
-						"demurrageInformation": {
-							"type": "string",
-							"description": "Demurrage information, expressed as text, for this supply chain consignment."
-						},
-						"despatchParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party from whom this supply chain consignment will be or has been despatched."
-						},
-						"destinationCountry": {
-							"$ref": "https://schema.twindev.org/unece/UneceCountry",
-							"description": "The destination country for this supply chain consignment."
-						},
-						"devanningEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
-						},
-						"estimatedApplicableServiceCharge": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
-							},
-							"description": "An estimated logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
-						},
-						"examinationEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "An examination event for this supply chain consignment."
-						},
-						"exportCountry": {
-							"$ref": "https://schema.twindev.org/unece/UneceCountry",
-							"description": "The export country for this supply chain consignment."
-						},
-						"exportExitDateTime": {
-							"type": "string",
-							"description": "The date, time, date time or other date time value when this supply chain consignment will exit, or has exited from the last port, airport, or border post of the country of export."
-						},
-						"exportGeopoliticalRegion": {
-							"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
-							"description": "The geopolitical region of export for this supply chain consignment."
-						},
-						"exporterParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party who exports this supply chain consignment."
-						},
-						"fOBAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value that has to be, or has been, paid for this supply chain consignment as calculated under FOB (Free on Board) delivery terms."
-						},
-						"finalDestinationCountry": {
-							"$ref": "https://schema.twindev.org/unece/UneceCountry",
-							"description": "The final destination country for this supply chain consignment."
-						},
-						"finalDestinationLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The final destination location for this supply chain consignment."
-						},
-						"freightForwarderAssignedId": {
-							"type": "string",
-							"description": "The unique identifier assigned by the freight forwarder to this referenced supply chain consignment."
-						},
-						"freightForwarderParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The freight forwarder party for this supply chain consignment."
-						},
-						"globalId": {
-							"type": "string",
-							"description": "Global identifier."
-						},
-						"goodsReleaseRestriction": {
-							"type": "string",
-							"description": "A goods release restriction, expressed as text, for this supply chain consignment."
-						},
-						"groupingCentreParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A grouping centre party for this supply chain consignment."
-						},
-						"handlingInstructions": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
-							},
-							"description": "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
-						},
-						"haulageInstructions": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceHaulageInstructions"
-							},
-							"description": "Haulage instructions for this supply chain consignment."
-						},
-						"identifier": {
-							"type": "string",
-							"description": "Identifier."
-						},
-						"importCountry": {
-							"$ref": "https://schema.twindev.org/unece/UneceCountry",
-							"description": "The import country for this supply chain consignment."
-						},
-						"importerParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party who imports this supply chain consignment."
-						},
-						"includedConsignment": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"@context": {
-										"$ref": "https://schema.twindev.org/supply-chain/UneceContextType",
-										"description": "JSON-LD Context."
-									},
-									"type": {
-										"type": "string",
-										"const": "Consignment",
-										"description": "JSON-LD Type."
-									},
-									"applicableAllowanceCharge": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge"
-										},
-										"description": "An allowance or charge applicable to this supply chain consignment."
-									},
-									"applicableCargoInsurance": {
-										"$ref": "https://schema.twindev.org/unece/UneceCargoInsurance",
-										"description": "The cargo insurance applicable to this supply chain consignment."
-									},
-									"applicableCurrencyExchange": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-										},
-										"description": "A currency exchange applicable to this supply chain consignment."
-									},
-									"applicableCustomsValuation": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCustomsValuation"
-										},
-										"description": "A cross-border customs valuation applicable to this supply chain consignment."
-									},
-									"applicableDangerousGoods": {
-										"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods",
-										"description": "Dangerous goods applicable to the transport of this supply chain consignment."
-									},
-									"applicableRegulatoryProcedure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceRegulatoryProcedure"
-										},
-										"description": "A cross-border regulatory procedure applicable to this supply chain consignment."
-									},
-									"applicableServiceCharge": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
-										},
-										"description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
-									},
-									"associatedDocument": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDocument"
-										},
-										"description": "A referenced document associated with this supply chain consignment, such as the certificate of origin or dangerous goods note."
-									},
-									"associatedInvoiceAmount": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-										},
-										"description": "A monetary value of an invoice associated with this supply chain consignment."
-									},
-									"associatedInvoiceDiscountAmount": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceAmountType"
-										},
-										"description": "A monetary value of the discount on an invoice associated with this supply chain consignment."
-									},
-									"associatedInvoiceDiscountPercent": {
-										"type": "string",
-										"description": "A percent that is a discount on an invoice amount associated with this supply chain consignment."
-									},
-									"associatedParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A trade party associated with this supply chain consignment."
-									},
-									"atArrivalTransportMovement": {
-										"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
-										"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport arrives in a country or at a regional border."
-									},
-									"atDepartureTransportMovement": {
-										"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
-										"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport departs a country or regional border."
-									},
-									"availabilityDueDateTime": {
-										"type": "string",
-										"description": "The date, time, date time or other date time value when this supply chain consignment is due to be available."
-									},
-									"bondedWarehouseStorageEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "A bonded warehouse storage event for this supply chain consignment."
-									},
-									"borderCrossingTransportMovement": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-										},
-										"description": "A border crossing logistics transport movement for this supply chain consignment."
-									},
-									"cODAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of the COD (Cash On Delivery) amount to be collected by the carrier upon delivery of this supply chain consignment."
-									},
-									"cargoInsuranceInstructionsInformation": {
-										"type": "string",
-										"description": "Cargo insurance instructions, expressed as text, for this supply chain consignment."
-									},
-									"cargoToleranceInformation": {
-										"type": "string",
-										"description": "Cargo tolerance information, expressed as text, for this supply chain consignment."
-									},
-									"carrierAcceptanceDateTime": {
-										"type": "string",
-										"description": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
-									},
-									"carrierAcceptanceLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The location where this supply chain consignment will be, or has been, accepted by the carrier."
-									},
-									"carrierAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party acting as the agent of the carrier for this supply chain consignment."
-									},
-									"carrierAssignedId": {
-										"type": "string",
-										"description": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
-									},
-									"carrierParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The carrier party for this supply chain consignment."
-									},
-									"carrierProvidedInformation": {
-										"type": "string",
-										"description": "Information, expressed as text, provided by the carrier for this supply chain consignment."
-									},
-									"chargeableTransportationStageQuantity": {
-										"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-										"description": "The number of separately chargeable transportation stages to be covered by this supply chain consignment."
-									},
-									"classificationDocument": {
-										"$ref": "https://schema.twindev.org/unece/UneceDocument",
-										"description": "The referenced classification document for this supply chain consignment."
-									},
-									"connectingCarrierParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A connecting carrier party for this supply chain consignment."
-									},
-									"consigneeAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
-									},
-									"consigneeAssignedId": {
-										"type": "string",
-										"description": "The unique identifier assigned by the consignee to this referenced supply chain consignment."
-									},
-									"consigneeParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The consignee party for this supply chain consignment."
-									},
-									"consigneeReceiptLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The location at which this supply chain consignment will be or has been received by the consignee."
-									},
-									"consignmentItemQuantity": {
-										"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-										"description": "The number of consignment items separately defined for transport or customs purposes within this supply chain consignment."
-									},
-									"consignorAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
-									},
-									"consignorAssignedId": {
-										"type": "string",
-										"description": "The unique identifier assigned by the consignor to this referenced supply chain consignment."
-									},
-									"consignorParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The consignor party for this supply chain consignment."
-									},
-									"consignorProvidedBorderClearanceInstructions": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
-										},
-										"description": "Border clearance instructions provided by the consignor for this supply chain consignment."
-									},
-									"consignorProvidedInformation": {
-										"type": "string",
-										"description": "Information, expressed as text, provided by the consignor for this supply chain consignment."
-									},
-									"consolidatorParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party responsible for the consolidation of this supply chain consignment."
-									},
-									"containerizationIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not this supply chain consignment is to be transported in a container or containers."
-									},
-									"contractId": {
-										"type": "string",
-										"description": "A contract identifier for this supply chain consignment."
-									},
-									"contractTermsInformation": {
-										"type": "string",
-										"description": "Information related to contract terms and conditions, expressed as text, for this supply chain consignment."
-									},
-									"currencyServiceChargeCurrencyCode": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/supply-chain/UneceCurrencyCodeList"
-										},
-										"description": "A code specifying a service charge currency for this supply chain consignment."
-									},
-									"currencyServiceTariffCurrencyCode": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/supply-chain/UneceCurrencyCodeList"
-										},
-										"description": "A code specifying a service tariff currency for this supply chain consignment."
-									},
-									"customsExportAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this supply chain consignment."
-									},
-									"customsId": {
-										"type": "string",
-										"description": "A unique identifier, for customs purposes, for this consignment."
-									},
-									"customsImportAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party acting as an agent for, or on behalf of, the consignee with respect to the customs import procedures for this supply chain consignment."
-									},
-									"customsRequiredInvoiceDocument": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDocument"
-										},
-										"description": "A referenced invoice document required by customs for this supply chain consignment."
-									},
-									"customsTransitAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party acting as an agent for, or on behalf of, the consignor with respect to customs transit procedures for this supply chain consignment."
-									},
-									"dangerousGoodsNotifierParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party responsible for providing the dangerous goods notification in accordance with the dangerous goods regulations relevant for this supply chain consignment."
-									},
-									"declaredForCustomsLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The location of this supply chain consignment as declared for customs."
-									},
-									"declaredValueForCarriageAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery."
-									},
-									"declaredValueForCustomsAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value declared for customs purposes for this supply chain consignment."
-									},
-									"deconsolidatorParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party responsible for the deconsolidation of this supply chain consignment."
-									},
-									"deliveryInformation": {
-										"type": "string",
-										"description": "The delivery information, expressed as text, for this supply chain consignment."
-									},
-									"deliveryInstructions": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDeliveryInstructions"
-										},
-										"description": "Delivery instructions for this supply chain consignment."
-									},
-									"deliveryParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party to whom this supply chain consignment will be, or has been, delivered."
-									},
-									"deliveryTransportEvent": {
-										"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-										"description": "The delivery event for this supply chain consignment."
-									},
-									"demurrageInformation": {
-										"type": "string",
-										"description": "Demurrage information, expressed as text, for this supply chain consignment."
-									},
-									"despatchParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party from whom this supply chain consignment will be or has been despatched."
-									},
-									"destinationCountry": {
-										"$ref": "https://schema.twindev.org/unece/UneceCountry",
-										"description": "The destination country for this supply chain consignment."
-									},
-									"devanningEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
-									},
-									"estimatedApplicableServiceCharge": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
-										},
-										"description": "An estimated logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
-									},
-									"examinationEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "An examination event for this supply chain consignment."
-									},
-									"exportCountry": {
-										"$ref": "https://schema.twindev.org/unece/UneceCountry",
-										"description": "The export country for this supply chain consignment."
-									},
-									"exportExitDateTime": {
-										"type": "string",
-										"description": "The date, time, date time or other date time value when this supply chain consignment will exit, or has exited from the last port, airport, or border post of the country of export."
-									},
-									"exportGeopoliticalRegion": {
-										"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
-										"description": "The geopolitical region of export for this supply chain consignment."
-									},
-									"exporterParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party who exports this supply chain consignment."
-									},
-									"fOBAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value that has to be, or has been, paid for this supply chain consignment as calculated under FOB (Free on Board) delivery terms."
-									},
-									"finalDestinationCountry": {
-										"$ref": "https://schema.twindev.org/unece/UneceCountry",
-										"description": "The final destination country for this supply chain consignment."
-									},
-									"finalDestinationLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The final destination location for this supply chain consignment."
-									},
-									"freightForwarderAssignedId": {
-										"type": "string",
-										"description": "The unique identifier assigned by the freight forwarder to this referenced supply chain consignment."
-									},
-									"freightForwarderParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The freight forwarder party for this supply chain consignment."
-									},
-									"globalId": {
-										"type": "string",
-										"description": "A global identifier of this supply chain consignment."
-									},
-									"goodsReleaseRestriction": {
-										"type": "string",
-										"description": "A goods release restriction, expressed as text, for this supply chain consignment."
-									},
-									"groupingCentreParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A grouping centre party for this supply chain consignment."
-									},
-									"handlingInstructions": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
-										},
-										"description": "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
-									},
-									"haulageInstructions": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceHaulageInstructions"
-										},
-										"description": "Haulage instructions for this supply chain consignment."
-									},
-									"identifier": {
-										"type": "string",
-										"description": "A unique identifier for this referenced supply chain consignment."
-									},
-									"importCountry": {
-										"$ref": "https://schema.twindev.org/unece/UneceCountry",
-										"description": "The import country for this supply chain consignment."
-									},
-									"importerParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party who imports this supply chain consignment."
-									},
-									"includedConsignment": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceConsignment"
-										},
-										"description": "A referenced consignment included in this supply chain consignment."
-									},
-									"includedConsignmentItem": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem"
-										},
-										"description": "A referenced consignment item included in this referenced supply chain consignment."
-									},
-									"includedTareGrossWeightMeasure": {
-										"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-										"description": "The measure of the gross weight (mass) including the tare weight of this supply chain consignment."
-									},
-									"information": {
-										"type": "string",
-										"description": "Information, expressed as text, for this supply chain consignment."
-									},
-									"insuranceApplicableCurrencyExchange": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-										},
-										"description": "A currency exchange applicable to an insurance charge for this supply chain consignment."
-									},
-									"insurancePremiumAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of the insurance premium for this supply chain consignment."
-									},
-									"insuranceValueAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of this supply chain consignment as covered by an insurance policy."
-									},
-									"intermediateConsigneeParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A party that is an intermediate consignee for this supply chain consignment."
-									},
-									"invoiceApplicableCurrencyExchange": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-										},
-										"description": "A currency exchange applicable to the invoice for this supply chain consignment."
-									},
-									"invoiceeAssociatedParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "An invoicee trade party associated with this supply chain consignment."
-									},
-									"linearUnitLoadingLengthMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-										},
-										"description": "A measure of the loading length which is the length along a means of transport over which the complete width and height is needed for loading all the goods items in this supply chain consignment."
-									},
-									"loadingBaseportLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract."
-									},
-									"loadingInformation": {
-										"type": "string",
-										"description": "Loading information, expressed as text, for this supply chain consignment, such as advice and instructions."
-									},
-									"loadingInstructions": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
-										},
-										"description": "Loading instructions for this supply chain consignment."
-									},
-									"loadingListQuantity": {
-										"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-										"description": "The number of loading lists, manifests or similar documents for this supply chain consignment."
-									},
-									"loadingLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The logistics location where the supply chain consignment is loaded."
-									},
-									"loadingSequenceNumeric": {
-										"type": "string",
-										"description": "The loading sequence number for this supply chain consignment."
-									},
-									"localConsigneeAgentParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The local party authorized to act for or on behalf of the consignee for this supply chain consignment."
-									},
-									"mainCarriageTransportMovement": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-										},
-										"description": "A main carriage logistics transport movement for this supply chain consignment."
-									},
-									"manifestAssociatedDocument": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDocument"
-										},
-										"description": "A referenced manifest document associated to this supply chain consignment."
-									},
-									"natureIdentificationCargo": {
-										"$ref": "https://schema.twindev.org/unece/UneceCargo",
-										"description": "Transport cargo details of this supply chain consignment sufficient to identify its nature for customs, statistical or transport purposes."
-									},
-									"nilCarriageValueIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not this supply chain consignment has a nil value for carriage."
-									},
-									"nilCustomsValueIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not this supply chain consignment has a nil value for customs."
-									},
-									"nilInsuranceValueIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not this supply chain consignment has a nil value for insurance."
-									},
-									"notifiedParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A party who has been or will be notified about this supply chain consignment."
-									},
-									"onCarriageTransportMovement": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-										},
-										"description": "An on-carriage logistics transport movement for this supply chain consignment."
-									},
-									"onwardRoutingLocation": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-										},
-										"description": "An onward routing location for this supply chain consignment."
-									},
-									"originCountry": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCountry"
-										},
-										"description": "A country of origin for this supply chain consignment."
-									},
-									"originGeopoliticalRegion": {
-										"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
-										"description": "The geopolitical region of origin for this supply chain consignment."
-									},
-									"originalDespatchLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The location from which this supply chain consignment was originally despatched."
-									},
-									"packageQuantity": {
-										"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-										"description": "The number of packages within this supply chain consignment."
-									},
-									"packageType": {
-										"type": "string",
-										"description": "A type of package, expressed as text, for this supply chain consignment."
-									},
-									"physicalShippingMarks": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceShippingMarks"
-										},
-										"description": "Physical logistics shipping marks and barcoding information related to this supply chain consignment."
-									},
-									"pickUpEvent": {
-										"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-										"description": "The pick-up event for this supply chain consignment."
-									},
-									"pickUpParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The pick-up trade party for this supply chain consignment."
-									},
-									"preCarriageTransportMovement": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-										},
-										"description": "A pre-carriage logistics transport movement for this supply chain consignment."
-									},
-									"previousAdministrativeDocument": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDocument"
-										},
-										"description": "A previous administrative referenced document for this supply chain consignment."
-									},
-									"reExportCountry": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCountry"
-										},
-										"description": "A re-export country for this supply chain consignment."
-									},
-									"relatedBookingType": {
-										"type": "string",
-										"description": "The type of booking, expressed as text, related to this supply chain consignment."
-									},
-									"relatedTradeTransaction": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
-										},
-										"description": "A trade transaction related to this supply chain consignment."
-									},
-									"reportedLogisticsStatus": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
-										},
-										"description": "A logistics status reported for this supply chain consignment."
-									},
-									"riskFactorCode": {
-										"type": "string",
-										"description": "The code specifying a risk factor for this supply chain consignment."
-									},
-									"sequenceNumeric": {
-										"type": "string",
-										"description": "The sequence number for this referenced supply chain consignment."
-									},
-									"serviceChargeApplicableCurrencyExchange": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-										},
-										"description": "A currency exchange applicable to a service charge for this supply chain consignment."
-									},
-									"shipFromParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The ship from party for this supply chain consignment."
-									},
-									"shipStoresIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not this supply chain consignment is for ship stores, such as for consumption on the means of transport."
-									},
-									"shipToParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The ship to party for this supply chain consignment."
-									},
-									"shippedOnboardDateTime": {
-										"type": "string",
-										"description": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard."
-									},
-									"specifiedDeliveryTerms": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceDeliveryTerms"
-										},
-										"description": "Delivery terms specified for this supply chain consignment."
-									},
-									"specifiedInspectionEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
-										},
-										"description": "An inspection event specified for this supply chain consignment."
-									},
-									"specifiedLogisticsStatus": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
-										},
-										"description": "Logistics status information specified for this supply chain consignment."
-									},
-									"specifiedRiskAnalysisResult": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceRiskAnalysisResult"
-										},
-										"description": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
-									},
-									"specifiedSupplyChainReference": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceSupplyChainReference"
-										},
-										"description": "A reference specified for this supply chain consignment."
-									},
-									"specifiedTransportMovement": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-										},
-										"description": "A logistics transport movement specified for this supply chain consignment."
-									},
-									"statementNote": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceNote"
-										},
-										"description": "A statement note for this referenced supply chain consignment."
-									},
-									"storageEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "A storage event for this supply chain consignment."
-									},
-									"summaryDescription": {
-										"type": "string",
-										"description": "A textual summary description of this supply chain consignment."
-									},
-									"totalAllowanceChargeAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The total monetary value of all allowances and charges for this supply chain consignment."
-									},
-									"totalChargeAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The total monetary value of all freight and other service charges for this supply chain consignment."
-									},
-									"totalCollectChargeAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The total monetary value of all freight and other service charges which are to be collected from the consignee at or after delivery for this supply chain consignment."
-									},
-									"totalDisbursementAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of total disbursement for this supply chain consignment, such as the amount to be collected by the carrier according to the order given by the consignor."
-									},
-									"totalExportExitToImportEntryChargeAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain consignment calculated from the export exit location to the import entry location."
-									},
-									"totalPrepaidChargeAmount": {
-										"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-										"description": "The total monetary value of all freight and other service charges which have been paid in advance for this supply chain consignment."
-									},
-									"totalTareWeightMeasure": {
-										"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-										"description": "The measure of the total tare weight (mass) of this supply chain consignment."
-									},
-									"tradedParcelId": {
-										"type": "string",
-										"description": "A traded parcel identifier for this supply chain consignment."
-									},
-									"transitCountry": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceCountry"
-										},
-										"description": "A transit country for this supply chain consignment."
-									},
-									"transitLocation": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-										},
-										"description": "A location of transit for this supply chain consignment."
-									},
-									"transportContractDocument": {
-										"$ref": "https://schema.twindev.org/unece/UneceDocument",
-										"description": "The referenced transport contract document for this supply chain consignment, such as an airwaybill or a seawaybill."
-									},
-									"transportEquipmentQuantity": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-										},
-										"description": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
-									},
-									"transportEquipmentSplitGoodsIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not the goods in this supply chain consignment are split across more than one piece of transport equipment."
-									},
-									"transportEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "An event occurring during the transport of this supply chain consignment."
-									},
-									"transportPackage": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UnecePackage"
-										},
-										"description": "Transport packages for this supply chain consignment."
-									},
-									"transportService": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceService"
-										},
-										"description": "A transport service for this supply chain consignment."
-									},
-									"transportServicePaymentArrangementCode": {
-										"$ref": "https://schema.twindev.org/supply-chain/UneceTransportServicePaymentArrangementCodeList",
-										"description": "The code specifying the payment arrangements for this supply chain consignment."
-									},
-									"transportServicesBuyerParty": {
-										"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-										"description": "The party which is the buyer of the transport services for this supply chain consignment."
-									},
-									"transportSplitDescription": {
-										"type": "string",
-										"description": "The textual description of the transport split of this referenced supply chain consignment across different transport means or transport equipment."
-									},
-									"transshipmentLocation": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-										},
-										"description": "A transshipment location for this supply chain consignment."
-									},
-									"transshipmentPermissionIndicator": {
-										"type": "boolean",
-										"description": "The indication of whether or not transshipment is permitted for this supply chain consignment."
-									},
-									"unloadingBaseportLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract."
-									},
-									"unloadingLocation": {
-										"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-										"description": "The logistics location where the supply chain consignment is unloaded."
-									},
-									"unloadingSequenceNumeric": {
-										"type": "string",
-										"description": "The unloading sequence number for this supply chain consignment."
-									},
-									"utilizedTransportEquipment": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
-										},
-										"description": "Logistics transport equipment utilized for this supply chain consignment."
-									},
-									"vanningEvent": {
-										"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-										"description": "The vanning event for this supply chain consignment, i.e. the loading of this consignment at the place of original despatch."
-									},
-									"volumeUnitGrossVolumeMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
-										},
-										"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment."
-									},
-									"volumeUnitNetVolumeMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
-										},
-										"description": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
-									},
-									"warehouseArrivalDateTime": {
-										"type": "string",
-										"description": "The date, time, date time or other date time value of the arrival of this supply chain consignment at a warehouse."
-									},
-									"warehouseDepositorParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A party depositing goods in a warehouse for this supply chain consignment."
-									},
-									"warehouseKeeperParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A party taking responsibility for goods stored in a warehouse for this supply chain consignment."
-									},
-									"warehouseOperatorParty": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-										},
-										"description": "A party that operates a warehouse in which goods are stored for this supply chain consignment."
-									},
-									"warehouseStorageEvent": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-										},
-										"description": "A warehouse storage event for this referenced supply chain consignment."
-									},
-									"weightUnitChargeableWeightMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-										},
-										"description": "A measure of a chargeable weight of this supply chain consignment."
-									},
-									"weightUnitGrossWeightMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-										},
-										"description": "A measure of the gross weight (mass) of this supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
-									},
-									"weightUnitNetWeightMeasure": {
-										"type": "array",
-										"items": {
-											"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-										},
-										"description": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
-									}
-								},
-								"required": [
-									"atArrivalTransportMovement",
-									"atDepartureTransportMovement",
-									"consigneeParty",
-									"consignorParty",
-									"exporterParty",
-									"identifier",
-									"importerParty",
-									"includedConsignmentItem",
-									"type"
-								],
-								"additionalProperties": false,
-								"description": "Included consignment"
-							},
-							"description": "A referenced consignment included in this supply chain consignment."
-						},
-						"includedConsignmentItem": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem"
-							},
-							"description": "A referenced consignment item included in this referenced supply chain consignment."
-						},
-						"includedTareGrossWeightMeasure": {
-							"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-							"description": "The measure of the gross weight (mass) including the tare weight of this supply chain consignment."
-						},
-						"information": {
-							"type": "string",
-							"description": "Information, expressed as text, for this supply chain consignment."
-						},
-						"insuranceApplicableCurrencyExchange": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-							},
-							"description": "A currency exchange applicable to an insurance charge for this supply chain consignment."
-						},
-						"insurancePremiumAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of the insurance premium for this supply chain consignment."
-						},
-						"insuranceValueAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of this supply chain consignment as covered by an insurance policy."
-						},
-						"intermediateConsigneeParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A party that is an intermediate consignee for this supply chain consignment."
-						},
-						"invoiceApplicableCurrencyExchange": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-							},
-							"description": "A currency exchange applicable to the invoice for this supply chain consignment."
-						},
-						"invoiceeAssociatedParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "An invoicee trade party associated with this supply chain consignment."
-						},
-						"linearUnitLoadingLengthMeasure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
-							},
-							"description": "A measure of the loading length which is the length along a means of transport over which the complete width and height is needed for loading all the goods items in this supply chain consignment."
-						},
-						"loadingBaseportLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract."
-						},
-						"loadingInformation": {
-							"type": "string",
-							"description": "Loading information, expressed as text, for this supply chain consignment, such as advice and instructions."
-						},
-						"loadingInstructions": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
-							},
-							"description": "Loading instructions for this supply chain consignment."
-						},
-						"loadingListQuantity": {
-							"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
-							"description": "The number of loading lists, manifests or similar documents for this supply chain consignment."
-						},
-						"loadingLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The logistics location where the supply chain consignment is loaded."
-						},
-						"loadingSequenceNumeric": {
-							"type": "string",
-							"description": "The loading sequence number for this supply chain consignment."
-						},
-						"localConsigneeAgentParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The local party authorized to act for or on behalf of the consignee for this supply chain consignment."
-						},
-						"mainCarriageTransportMovement": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-							},
-							"description": "A main carriage logistics transport movement for this supply chain consignment."
-						},
-						"manifestAssociatedDocument": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDocument"
-							},
-							"description": "A referenced manifest document associated to this supply chain consignment."
-						},
-						"natureIdentificationCargo": {
-							"$ref": "https://schema.twindev.org/unece/UneceCargo",
-							"description": "Transport cargo details of this supply chain consignment sufficient to identify its nature for customs, statistical or transport purposes."
-						},
-						"nilCarriageValueIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not this supply chain consignment has a nil value for carriage."
-						},
-						"nilCustomsValueIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not this supply chain consignment has a nil value for customs."
-						},
-						"nilInsuranceValueIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not this supply chain consignment has a nil value for insurance."
-						},
-						"notifiedParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A party who has been or will be notified about this supply chain consignment."
-						},
-						"onCarriageTransportMovement": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-							},
-							"description": "An on-carriage logistics transport movement for this supply chain consignment."
-						},
-						"onwardRoutingLocation": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-							},
-							"description": "An onward routing location for this supply chain consignment."
-						},
-						"originCountry": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCountry"
-							},
-							"description": "A country of origin for this supply chain consignment."
-						},
-						"originGeopoliticalRegion": {
-							"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
-							"description": "The geopolitical region of origin for this supply chain consignment."
-						},
-						"originalDespatchLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The location from which this supply chain consignment was originally despatched."
-						},
-						"packageType": {
-							"type": "string",
-							"description": "A type of package, expressed as text, for this supply chain consignment."
-						},
-						"physicalShippingMarks": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceShippingMarks"
-							},
-							"description": "Physical logistics shipping marks and barcoding information related to this supply chain consignment."
-						},
-						"pickUpEvent": {
-							"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-							"description": "The pick-up event for this supply chain consignment."
-						},
-						"pickUpParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The pick-up trade party for this supply chain consignment."
-						},
-						"preCarriageTransportMovement": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-							},
-							"description": "A pre-carriage logistics transport movement for this supply chain consignment."
-						},
-						"previousAdministrativeDocument": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDocument"
-							},
-							"description": "A previous administrative referenced document for this supply chain consignment."
-						},
-						"reExportCountry": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCountry"
-							},
-							"description": "A re-export country for this supply chain consignment."
-						},
-						"relatedBookingType": {
-							"type": "string",
-							"description": "The type of booking, expressed as text, related to this supply chain consignment."
-						},
-						"relatedTradeTransaction": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
-							},
-							"description": "A trade transaction related to this supply chain consignment."
-						},
-						"reportedLogisticsStatus": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
-							},
-							"description": "A logistics status reported for this supply chain consignment."
-						},
-						"riskFactorCode": {
-							"type": "string",
-							"description": "The code specifying a risk factor for this supply chain consignment."
-						},
-						"sequenceNumeric": {
-							"type": "string",
-							"description": "The sequence number for this referenced supply chain consignment."
-						},
-						"serviceChargeApplicableCurrencyExchange": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
-							},
-							"description": "A currency exchange applicable to a service charge for this supply chain consignment."
-						},
-						"shipFromParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The ship from party for this supply chain consignment."
-						},
-						"shipStoresIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not this supply chain consignment is for ship stores, such as for consumption on the means of transport."
-						},
-						"shipToParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The ship to party for this supply chain consignment."
-						},
-						"shippedOnboardDateTime": {
-							"type": "string",
-							"description": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard."
-						},
-						"specifiedDeliveryTerms": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceDeliveryTerms"
-							},
-							"description": "Delivery terms specified for this supply chain consignment."
-						},
-						"specifiedInspectionEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
-							},
-							"description": "An inspection event specified for this supply chain consignment."
-						},
-						"specifiedLogisticsStatus": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
-							},
-							"description": "Logistics status information specified for this supply chain consignment."
-						},
-						"specifiedRiskAnalysisResult": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceRiskAnalysisResult"
-							},
-							"description": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
-						},
-						"specifiedSupplyChainReference": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceSupplyChainReference"
-							},
-							"description": "A reference specified for this supply chain consignment."
-						},
-						"specifiedTransportMovement": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
-							},
-							"description": "A logistics transport movement specified for this supply chain consignment."
-						},
-						"statementNote": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceNote"
-							},
-							"description": "A statement note for this referenced supply chain consignment."
-						},
-						"storageEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "A storage event for this supply chain consignment."
-						},
-						"summaryDescription": {
-							"type": "string",
-							"description": "A textual summary description of this supply chain consignment."
-						},
-						"totalAllowanceChargeAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The total monetary value of all allowances and charges for this supply chain consignment."
-						},
-						"totalChargeAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The total monetary value of all freight and other service charges for this supply chain consignment."
-						},
-						"totalCollectChargeAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The total monetary value of all freight and other service charges which are to be collected from the consignee at or after delivery for this supply chain consignment."
-						},
-						"totalDisbursementAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of total disbursement for this supply chain consignment, such as the amount to be collected by the carrier according to the order given by the consignor."
-						},
-						"totalExportExitToImportEntryChargeAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain consignment calculated from the export exit location to the import entry location."
-						},
-						"totalPrepaidChargeAmount": {
-							"$ref": "https://schema.twindev.org/unece/UneceAmountType",
-							"description": "The total monetary value of all freight and other service charges which have been paid in advance for this supply chain consignment."
-						},
-						"totalTareWeightMeasure": {
-							"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
-							"description": "The measure of the total tare weight (mass) of this supply chain consignment."
-						},
-						"tradedParcelId": {
-							"type": "string",
-							"description": "A traded parcel identifier for this supply chain consignment."
-						},
-						"transitCountry": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceCountry"
-							},
-							"description": "A transit country for this supply chain consignment."
-						},
-						"transitLocation": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-							},
-							"description": "A location of transit for this supply chain consignment."
-						},
-						"transportContractDocument": {
-							"$ref": "https://schema.twindev.org/unece/UneceDocument",
-							"description": "The referenced transport contract document for this supply chain consignment, such as an airwaybill or a seawaybill."
-						},
-						"transportEquipmentQuantity": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
-							},
-							"description": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
-						},
-						"transportEquipmentSplitGoodsIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not the goods in this supply chain consignment are split across more than one piece of transport equipment."
-						},
-						"transportEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "An event occurring during the transport of this supply chain consignment."
-						},
-						"transportPackage": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UnecePackage"
-							},
-							"description": "Transport packages for this supply chain consignment."
-						},
-						"transportService": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceService"
-							},
-							"description": "A transport service for this supply chain consignment."
-						},
-						"transportServicePaymentArrangementCode": {
-							"$ref": "https://schema.twindev.org/supply-chain/UneceTransportServicePaymentArrangementCodeList",
-							"description": "The code specifying the payment arrangements for this supply chain consignment."
-						},
-						"transportServicesBuyerParty": {
-							"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-							"description": "The party which is the buyer of the transport services for this supply chain consignment."
-						},
-						"transportSplitDescription": {
-							"type": "string",
-							"description": "The textual description of the transport split of this referenced supply chain consignment across different transport means or transport equipment."
-						},
-						"transshipmentLocation": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
-							},
-							"description": "A transshipment location for this supply chain consignment."
-						},
-						"transshipmentPermissionIndicator": {
-							"type": "boolean",
-							"description": "The indication of whether or not transshipment is permitted for this supply chain consignment."
-						},
-						"unloadingBaseportLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract."
-						},
-						"unloadingLocation": {
-							"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
-							"description": "The logistics location where the supply chain consignment is unloaded."
-						},
-						"unloadingSequenceNumeric": {
-							"type": "string",
-							"description": "The unloading sequence number for this supply chain consignment."
-						},
-						"utilizedTransportEquipment": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
-							},
-							"description": "Logistics transport equipment utilized for this supply chain consignment."
-						},
-						"vanningEvent": {
-							"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
-							"description": "The vanning event for this supply chain consignment, i.e. the loading of this consignment at the place of original despatch."
-						},
-						"volumeUnitGrossVolumeMeasure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
-							},
-							"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment."
-						},
-						"volumeUnitNetVolumeMeasure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
-							},
-							"description": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
-						},
-						"warehouseArrivalDateTime": {
-							"type": "string",
-							"description": "The date, time, date time or other date time value of the arrival of this supply chain consignment at a warehouse."
-						},
-						"warehouseDepositorParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A party depositing goods in a warehouse for this supply chain consignment."
-						},
-						"warehouseKeeperParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A party taking responsibility for goods stored in a warehouse for this supply chain consignment."
-						},
-						"warehouseOperatorParty": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
-							},
-							"description": "A party that operates a warehouse in which goods are stored for this supply chain consignment."
-						},
-						"warehouseStorageEvent": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
-							},
-							"description": "A warehouse storage event for this referenced supply chain consignment."
-						},
-						"weightUnitChargeableWeightMeasure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-							},
-							"description": "A measure of a chargeable weight of this supply chain consignment."
-						},
-						"weightUnitGrossWeightMeasure": {
-							"type": "array",
-							"items": {
-								"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
-							},
-							"description": "A measure of the gross weight (mass) of this supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
-						},
-						"weightUnitNetWeightMeasure": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"@context": {
-										"$ref": "https://schema.twindev.org/supply-chain/UneceContextType",
-										"description": "JSON-LD Context."
-									},
-									"type": {
-										"type": "string",
-										"const": "WeightUnitMeasureType",
-										"description": "JSON-LD Type."
-									},
-									"WeightUnitMeasureTypeValue": {
-										"type": "string",
-										"description": "The numeric value."
-									},
-									"WeightUnitMeasureTypeCode": {
-										"$ref": "https://schema.twindev.org/supply-chain/UneceWeightUnitMeasureCode",
-										"description": "The unit code."
-									},
-									"unece:WeightUnitMeasureTypeValue": {
-										"type": "string"
-									},
-									"unece:WeightUnitMeasureTypeCode": {
-										"type": "string"
-									}
-								},
-								"required": [
-									"type",
-									"unece:WeightUnitMeasureTypeCode",
-									"unece:WeightUnitMeasureTypeValue"
-								],
-								"additionalProperties": false
-							},
-							"description": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
-						},
-						"consignmentItemQuantity": {
-							"$ref": "https://schema.twindev.org/supply-chain/ValidWrappedQuantity",
-							"description": "Wrapped quantity structures."
-						},
-						"packageQuantity": {
-							"$ref": "https://schema.twindev.org/supply-chain/ValidWrappedQuantity",
-							"description": "Wrapped package quantity."
-						},
-						"transportModeCode": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					"required": [
-						"atArrivalTransportMovement",
-						"atDepartureTransportMovement",
-						"carrierParty",
-						"consignmentItemQuantity",
-						"globalId",
-						"identifier",
-						"includedConsignment",
-						"packageQuantity",
-						"transportModeCode",
-						"type",
-						"utilizedTransportEquipment",
-						"weightUnitNetWeightMeasure"
-					],
-					"description": "Mobius V2 consignment (D23B context)."
-				},
-				{
-					"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
-				}
-			],
-			"description": "Consignment object."
 		}
 	},
-	"required": ["@context", "object", "type"]
+	"required": ["actor"],
+	"allOf": [
+		{
+			"description": "A dataspace activity that restricts an activity so that it can be handled by a Dataspace Data Plane",
+			"type": "object",
+			"properties": {
+				"@context": {
+					"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsContextType",
+					"description": "The LD Context.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"type": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsTypes"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.twindev.org/supply-chain/ActivityStreamsTypes"
+									},
+									{
+										"type": "string"
+									}
+								]
+							}
+						}
+					],
+					"description": "Activity Type.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"id": {
+					"type": "string",
+					"description": "Global identifier.",
+					"format": "uri",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"name": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Natural language name.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"nameMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language name map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"summary": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Summary of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"summaryMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language summary map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"content": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+						}
+					],
+					"description": "Natural language content.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"contentMap": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+					"description": "Natural language content map.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"url": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "A link to the representation of the object.\n\nThe value can be a URI or an embedded node object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"image": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "A graphical representation of the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"icon": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "An icon for the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"published": {
+					"type": "string",
+					"description": "Published date-time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"updated": {
+					"type": "string",
+					"description": "Updated date-time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"startTime": {
+					"type": "string",
+					"description": "Start time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"endTime": {
+					"type": "string",
+					"description": "End time.",
+					"format": "date-time",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"duration": {
+					"type": "string",
+					"description": "Duration.",
+					"format": "duration",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"generator": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "The generator of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"attachment": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Attachments.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"attributedTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Objects attributed to.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"audience": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Audience.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"context": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Context.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"location": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Location.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"tag": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Tag.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"inReplyTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "In reply to.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"replies": {
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+					"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"preview": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Preview.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"to": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "To.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"bto": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "BTo.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"cc": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "CC.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"bcc": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "BCC.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"mediaType": {
+					"type": "string",
+					"description": "MIME media type of the referenced resource.",
+					"$comment": "Inherited from ActivityStreamsObject"
+				},
+				"result": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Result of the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"origin": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Activity's origin.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"instrument": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
+						}
+					],
+					"description": "Instrument used in the Activity.",
+					"$comment": "Inherited from ActivityStreamsActivity"
+				},
+				"object": {
+					"anyOf": [
+						{
+							"properties": {
+								"type": {
+									"anyOf": [
+										{
+											"type": "string"
+										},
+										{
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										}
+									]
+								},
+								"@context": {
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+								}
+							},
+							"required": ["type", "@context"],
+							"type": "object",
+							"$comment": "Inlined utility base type O & {\n        type: ObjectOrArray<string>;\n    } so utility transformations can operate on concrete properties instead of a $ref."
+						},
+						{
+							"type": "array",
+							"items": {
+								"properties": {
+									"type": {
+										"anyOf": [
+											{
+												"type": "string"
+											},
+											{
+												"type": "array",
+												"items": {
+													"type": "string"
+												}
+											}
+										]
+									},
+									"@context": {
+										"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+									}
+								},
+								"required": ["type", "@context"],
+								"type": "object",
+								"$comment": "Inlined utility base type O & {\n        type: ObjectOrArray<string>;\n    } so utility transformations can operate on concrete properties instead of a $ref."
+							}
+						}
+					],
+					"description": "Activity's Object",
+					"$comment": "Inherited from DataspaceActivity"
+				}
+			},
+			"required": ["@context", "type", "object"],
+			"$comment": "Inlined utility base type DataspaceActivity so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
 }

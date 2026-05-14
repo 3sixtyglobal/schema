@@ -1,13 +1,23 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/supply-chain/WrappedQuantity",
+	"title": "WrappedQuantity",
 	"description": "Wrapped UNECE quantity structure (D23B).",
 	"type": "object",
 	"properties": {
 		"unece:QuantityTypeValue": {
-			"type": "number",
+			"type": "string",
 			"description": "Quantity numeric value."
+		},
+		"unece:QuantityTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityCode",
+			"description": "Unit of measure code."
 		}
 	},
-	"required": ["unece:QuantityTypeValue"]
+	"required": ["unece:QuantityTypeValue"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+		}
+	]
 }

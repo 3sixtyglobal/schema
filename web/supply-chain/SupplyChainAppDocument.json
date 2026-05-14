@@ -1,0 +1,73 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/supply-chain/SupplyChainAppDocument",
+	"title": "SupplyChainAppDocument",
+	"description": "Supply Chain App Document.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Document",
+			"description": "JSON-LD Type."
+		},
+		"documentTypeCode": {
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"description": "The code specifying the type of referenced document."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this referenced document."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The formatted date or date time for the issuance of this referenced document.",
+			"format": "date-time"
+		},
+		"uRIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
+		},
+		"versionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for the version of this referenced document."
+		}
+	},
+	"required": [
+		"@context",
+		"type",
+		"documentTypeCode",
+		"identifier",
+		"issueDateTime",
+		"uRIId",
+		"versionId"
+	],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/unece/UneceDocument"
+		}
+	]
+}

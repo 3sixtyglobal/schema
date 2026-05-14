@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/supply-chain/ConsignmentOverview",
+	"title": "ConsignmentOverview",
 	"description": "Consignment overview interface for listing operations (supports both v1 and v2 payloads).",
 	"type": "object",
 	"properties": {
@@ -38,7 +39,7 @@
 		},
 		"firstConsignor": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
-			"description": "The first consignor of the consignment which is the party that initially sent the goods."
+			"description": "The first consignor of the consignment, which is the party that initially sent the goods."
 		},
 		"lastConsignee": {
 			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
@@ -105,22 +106,5 @@
 			"description": "Payload version (v1 for Consignment, v2 for GoodsLoad)."
 		}
 	},
-	"required": [
-		"id",
-		"identifier",
-		"transportId",
-		"dateOfEntry",
-		"portOfEntry",
-		"portOfExit",
-		"firstConsignor",
-		"lastConsignee",
-		"tradeParty",
-		"carrierParty",
-		"commodities",
-		"reference",
-		"transportModeCode",
-		"transportMeans",
-		"latestStatus",
-		"dateCreated"
-	]
+	"required": ["id", "identifier", "latestStatus", "dateCreated"]
 }

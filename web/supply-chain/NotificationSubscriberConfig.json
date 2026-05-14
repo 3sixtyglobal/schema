@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/supply-chain/NotificationSubscriberConfig",
+	"title": "NotificationSubscriberConfig",
 	"description": "Configuration for a notification subscriber.",
 	"type": "object",
 	"properties": {
@@ -12,7 +13,7 @@
 			"type": "object",
 			"properties": {
 				"method": {
-					"$ref": "https://schema.twindev.org/supply-chain/HttpMethod",
+					"$ref": "https://schema.twindev.org/supply-chain/SubscriberHttpMethod",
 					"description": "The type of authentication to use."
 				},
 				"security": {
@@ -28,13 +29,11 @@
 						},
 						"name": {
 							"type": "string",
-							"description": "The name of the header, query parameter, or cookie to be used.",
-							"examples": ["Authorization"]
+							"description": "The name of the header, query parameter, or cookie to be used."
 						},
 						"scheme": {
 							"type": "string",
-							"description": "The HTTP authentication scheme to be used.",
-							"examples": ["bearer"]
+							"description": "The HTTP authentication scheme to be used."
 						}
 					},
 					"description": "Security scheme details."
@@ -43,19 +42,31 @@
 					"type": "object",
 					"properties": {
 						"algorithm": {
-							"type": "string",
-							"enum": ["RS256", "HS256"],
+							"anyOf": [
+								{
+									"const": "RS256"
+								},
+								{
+									"const": "HS256"
+								}
+							],
 							"description": "JWT token configuration."
 						},
 						"privateKey": {
 							"type": "string",
-							"description": "Private key for signing JWT tokens.",
-							"examples": ["your-private-key"]
+							"description": "Private key for signing JWT tokens."
 						},
 						"accessToken": {
 							"type": "string",
-							"description": "Access token for authentication.",
-							"examples": ["jwt-access-token"]
+							"description": "Access token for authentication."
+						},
+						"username": {
+							"type": "string",
+							"description": "Username for HTTP Basic authentication."
+						},
+						"password": {
+							"type": "string",
+							"description": "Password for HTTP Basic authentication."
 						}
 					},
 					"description": "Credentials and token information."
@@ -76,13 +87,11 @@
 				},
 				"path": {
 					"type": "string",
-					"description": "Optional path to append to the base endpoint.",
-					"examples": ["/login"]
+					"description": "Optional path to append to the base endpoint."
 				},
 				"responseTokenPath": {
 					"type": "string",
-					"description": "Optional path to extract the token from the authentication response.",
-					"examples": ["$.access_token"]
+					"description": "Optional path to extract the token from the authentication response."
 				}
 			},
 			"description": "Authentication and request details for sending notifications."
@@ -91,13 +100,12 @@
 			"type": "object",
 			"properties": {
 				"method": {
-					"$ref": "https://schema.twindev.org/supply-chain/HttpMethod",
+					"$ref": "https://schema.twindev.org/supply-chain/SubscriberHttpMethod",
 					"description": "The type of authentication to use."
 				},
 				"path": {
 					"type": "string",
-					"description": "Optional path to append to the base endpoint.",
-					"examples": ["/data"]
+					"description": "Optional path to append to the base endpoint."
 				},
 				"headers": {
 					"type": "object",

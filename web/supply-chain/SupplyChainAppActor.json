@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/supply-chain/SupplyChainAppActor",
+	"title": "SupplyChainAppActor",
+	"type": "object",
+	"properties": {
+		"type": {
+			"const": "TradeParty",
+			"description": "Actor information."
+		},
+		"registeredId": {
+			"type": "object",
+			"properties": {
+				"@type": {
+					"type": "string"
+				},
+				"@value": {
+					"type": "string"
+				}
+			},
+			"required": ["@type", "@value"],
+			"description": "Registered identifier for the actor."
+		},
+		"@context": {
+			"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld",
+			"description": "Context for the actor."
+		}
+	},
+	"required": ["type", "registeredId", "@context"],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+		}
+	]
+}
