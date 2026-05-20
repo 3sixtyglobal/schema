@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceTaxCategoryCodeList",
 	"title": "UneceTaxCategoryCodeList",
 	"description": "A character string used to represent a duty or tax category.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:TaxCategoryCodeList#A",
 			"description": "Mixed tax rate: A."

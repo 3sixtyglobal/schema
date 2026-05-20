@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceInvoiceDocumentCodeList",
 	"title": "UneceInvoiceDocumentCodeList",
 	"description": "A character string used to represent a type of invoice document.\nDeprecated since version D23B.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:InvoiceDocumentCodeList#261",
 			"description": "Self billed credit note: 261.\nDeprecated since version D23B."

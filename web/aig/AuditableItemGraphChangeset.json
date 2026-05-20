@@ -51,6 +51,10 @@
 		"verification": {
 			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
 			"description": "The verification for the changeset."
+		},
+		"version": {
+			"type": "number",
+			"description": "The version number of the vertex after this changeset was applied.\nMaps to https://schema.org/version."
 		}
 	},
 	"required": ["type", "id", "dateCreated", "patches"]

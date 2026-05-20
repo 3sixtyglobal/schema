@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlActionType",
 	"title": "OdrlActionType",
 	"description": "The types for ODRL Actions.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "use",
 			"description": "The act of using an asset, covering any general usage where ownership does not change.\nThis is the parent term for most permissions and prohibitions."

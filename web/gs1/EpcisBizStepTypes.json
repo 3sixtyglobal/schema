@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisBizStepTypes",
 	"title": "EpcisBizStepTypes",
 	"description": "Supported EPCIS 2.0 `bizStep` values.\n\nThese values come from the GS1 EPCIS / CBV (Core Business Vocabulary).\nUse the union type `EpcisBizStepTypes` when you want to restrict a field to known CBV values.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "accepting",
 			"description": "Activity where an object changes possession and/or ownership."

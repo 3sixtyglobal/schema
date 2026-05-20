@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceCountrySubDivisionTypeCodeList",
 	"title": "UneceCountrySubDivisionTypeCodeList",
 	"description": "Values for UneceCountrySubDivision typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:subordinateCountrySubDivision",
 			"description": "A subordinate country sub-division within this trade country sub-division.\nA trade country sub-division that is subordinate to this trade country, such as a state, a county, a canton, a province."

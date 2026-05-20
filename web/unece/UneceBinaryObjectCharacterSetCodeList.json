@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceBinaryObjectCharacterSetCodeList",
 	"title": "UneceBinaryObjectCharacterSetCodeList",
 	"description": "A code specifying the character set of the binary object if the mime type is text.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:BinaryObjectCharacterSetCodeList#10",
 			"description": "ISO_8859-7:1987: 10."

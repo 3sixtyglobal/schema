@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisMeasurementTypes",
 	"title": "EpcisMeasurementTypes",
 	"description": "Supported EPCIS 2.0 `measurementType` values.\n\nThese values come from the GS1 EPCIS JSON Schema enumeration.\nUse the union type `EpcisMeasurementTypes` when you want to restrict a field to known values.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "AbsoluteHumidity",
 			"description": "Measurement type \"AbsoluteHumidity\"."

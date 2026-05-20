@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItemTypeCodeList",
 	"title": "UneceSupplyChainTradeLineItemTypeCodeList",
 	"description": "Values for UneceSupplyChainTradeLineItem typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:includedSupplyChainTradeLineItem",
 			"description": "A supply chain trade line item included in this logistics package.\nA supply chain trade line item which is included in this trade product group.\nA trade line item included in this referenced supply chain consignment item.\nA trade line item included in this supply chain consignment item.\nA trade line item included in this supply chain trade transaction."

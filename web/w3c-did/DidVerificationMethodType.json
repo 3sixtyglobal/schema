@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/w3c-did/DidVerificationMethodType",
 	"title": "DidVerificationMethodType",
 	"description": "The types of verification method.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "verificationMethod",
 			"description": "VerificationMethod."

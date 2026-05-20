@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/synchronised-storage/SyncChangeOperation",
 	"title": "SyncChangeOperation",
 	"description": "The operations for a change",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "set",
 			"description": "An item was set in the storage."

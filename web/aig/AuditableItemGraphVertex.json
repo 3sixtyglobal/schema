@@ -61,6 +61,10 @@
 		"verified": {
 			"type": "boolean",
 			"description": "Is the vertex verified, will only be populated when verification is requested."
+		},
+		"version": {
+			"type": "number",
+			"description": "The version of the vertex, populated only when getting a specific version.\nMaps to https://schema.org/version."
 		}
 	},
 	"required": ["@context", "id", "type"],

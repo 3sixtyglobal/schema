@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisErrorReasonTypes",
 	"title": "EpcisErrorReasonTypes",
 	"description": "Supported EPCIS 2.0 `error-reason` values from the GS1 EPCIS JSON Schema.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "did_not_occur",
 			"description": "Prior event is erroneous because it did not actually occur; no corrective\nevents exist."

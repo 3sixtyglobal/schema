@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainEventTypeCodeList",
 	"title": "UneceSupplyChainEventTypeCodeList",
 	"description": "Values for UneceSupplyChainEvent typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:acceptanceEvent",
 			"description": "An acceptance delivery event, at header level, for this trade delivery.\nAn acceptance delivery event, at line level, for this trade delivery."

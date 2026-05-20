@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransactionTypeCodeList",
 	"title": "UneceSupplyChainTradeTransactionTypeCodeList",
 	"description": "Values for UneceSupplyChainTradeTransaction typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:relatedTradeTransaction",
 			"description": "A supply chain trade transaction related to this specified assessment.\nA supply chain trade transaction related to this specified certificate.\nA supply chain trade transaction related to this trade product.\nA trade transaction related to this referenced supply chain consignment.\nA trade transaction related to this supply chain consignment."

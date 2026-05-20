@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UnecePaymentTermsEventTimeReferenceCodeList",
 	"title": "UnecePaymentTermsEventTimeReferenceCodeList",
 	"description": "A character string used to represent a time reference for a payment terms event.\nDeprecated since version D23B.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:PaymentTermsEventTimeReferenceCodeList#24",
 			"description": "Date ex-works: 24.\nDeprecated since version D23B."

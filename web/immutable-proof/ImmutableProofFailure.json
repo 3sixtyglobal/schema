@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProofFailure",
 	"title": "ImmutableProofFailure",
 	"description": "The failure reason of the proof.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "notIssued",
 			"description": "Proof not yet issued."

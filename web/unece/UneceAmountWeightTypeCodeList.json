@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceAmountWeightTypeCodeList",
 	"title": "UneceAmountWeightTypeCodeList",
 	"description": "A character string used to represent the type of amount weight.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:AmountWeightTypeCodeList#D",
 			"description": "Decimalized amount: D."

@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/w3c-did/DidCryptoSuites",
 	"title": "DidCryptoSuites",
 	"description": "The types for DID Proof crypto suites.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "eddsa-jcs-2022",
 			"description": "The type for EdDSA crypto suite for JSON Canonicalization Scheme [RFC8785].\nhttps://www.w3.org/TR/vc-di-eddsa/#eddsa-jcs-2022"

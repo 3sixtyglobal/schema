@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisComponentTypes",
 	"title": "EpcisComponentTypes",
 	"description": "Supported EPCIS 2.0 `component` values.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "x",
 			"description": "Component or projection along the x axis in Cartesian coordinates (X, Y, Z)."

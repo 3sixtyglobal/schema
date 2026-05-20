@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisEventTypes",
 	"title": "EpcisEventTypes",
 	"description": "EPCIS 2.0 event type identifiers used in EPCIS JSON and XML documents.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "ObjectEvent",
 			"description": "Event that observes one or more instance- or class-level objects."

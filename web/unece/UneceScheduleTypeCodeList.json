@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceScheduleTypeCodeList",
 	"title": "UneceScheduleTypeCodeList",
 	"description": "Values for UneceSchedule typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:consumptionSchedule",
 			"description": "A supply chain consumption schedule, at line level, for this trade delivery."

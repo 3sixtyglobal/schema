@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceAssessmentTypeCodeList",
 	"title": "UneceAssessmentTypeCodeList",
 	"description": "Values for UneceAssessment typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:applicableAssessment",
 			"description": "A specified assessment applicable to this referenced standard.\nAn assessment applicable for this specified material.\nAn assessment applicable to this product batch.\nAn assessment applicable to this production facility.\nAn assessment applicable to this production process.\nAn assessment applicable to this trade party.\nAn assessment applicable to this trade product."

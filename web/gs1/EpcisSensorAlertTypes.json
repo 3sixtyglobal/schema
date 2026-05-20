@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSensorAlertTypes",
 	"title": "EpcisSensorAlertTypes",
 	"description": "Supported EPCIS 2.0 `sensorAlertType` values for sensor-generated alarms or\nerrors.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "ALARM_CONDITION",
 			"description": "Sensor alert indicating an alarm condition."

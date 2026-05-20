@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisSourceDestTypes",
 	"title": "EpcisSourceDestTypes",
 	"description": "Supported EPCIS 2.0 `source-dest-type` values describing the role of a party\nor location in a transfer.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "owning_party",
 			"description": "Identifier denotes the party who owns (or will own) the objects at the\nbusiness transfer endpoint."

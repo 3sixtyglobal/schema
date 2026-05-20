@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisBizTransactionTypes",
 	"title": "EpcisBizTransactionTypes",
 	"description": "Supported EPCIS 2.0 `bizTransaction-type` values.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "bol",
 			"description": "A document issued by a carrier to a shipper, listing and acknowledging receipt\nof goods for transport and specifying terms of delivery."

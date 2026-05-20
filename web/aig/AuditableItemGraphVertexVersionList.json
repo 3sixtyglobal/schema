@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertexVersionList",
+	"title": "AuditableItemGraphVertexVersionList",
+	"description": "Interface describing a list of auditable item graph vertex version numbers.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.twindev.org/aig/"
+				}
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"const": "ItemList"
+				},
+				{
+					"const": "AuditableItemGraphVertexVersionList"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Type."
+		},
+		"itemListElement": {
+			"type": "array",
+			"items": {
+				"type": "number"
+			},
+			"description": "The list of version numbers."
+		}
+	},
+	"required": ["@context", "type", "itemListElement"]
+}

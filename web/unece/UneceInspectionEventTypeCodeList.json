@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceInspectionEventTypeCodeList",
 	"title": "UneceInspectionEventTypeCodeList",
 	"description": "Values for UneceInspectionEvent typeCode property.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:specifiedInspectionEvent",
 			"description": "A specified inspection event for this sustainability inspection.\nAn inspection event for this specified inspection.\nAn inspection event specified for this logistics location.\nAn inspection event specified for this supply chain consignment item.\nAn inspection event specified for this supply chain consignment.\nThe inspection event specified for this procuring project."

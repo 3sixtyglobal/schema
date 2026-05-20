@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/blob-storage/BlobStorageCompressionType",
 	"title": "BlobStorageCompressionType",
 	"description": "The types of compression for blob storage data.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "gzip",
 			"description": "Gzip."

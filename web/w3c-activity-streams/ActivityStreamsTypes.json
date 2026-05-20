@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes",
 	"title": "ActivityStreamsTypes",
 	"description": "The types concerning Activity.\nSection 3.1 Activity Types: https://www.w3.org/TR/activitystreams-vocabulary/#activity-types",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "Activity",
 			"description": "Activity.\n\nGeneric base type for activities (actions) in Activity Streams."

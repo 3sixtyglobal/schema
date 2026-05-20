@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisActionTypes",
 	"title": "EpcisActionTypes",
 	"description": "GS1 EPCIS 2.0 action values capturing whether an event adds, observes, or\nremoves associations.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "ADD",
 			"description": "Indicates that associations described by the event are created as of\neventTime."

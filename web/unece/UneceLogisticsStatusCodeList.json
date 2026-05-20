@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/unece/UneceLogisticsStatusCodeList",
 	"title": "UneceLogisticsStatusCodeList",
 	"description": "A character string used to represent the logistics status condition or reason.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "unece:LogisticsStatusCodeList#1",
 			"description": "Arrival, completed: 1."

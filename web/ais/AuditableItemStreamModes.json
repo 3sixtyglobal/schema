@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/ais/AuditableItemStreamModes",
 	"title": "AuditableItemStreamModes",
 	"description": "The modes for auditable item stream behaviour.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "default",
 			"description": "Default mode allows full entry lifecycle operations."

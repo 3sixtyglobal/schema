@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/w3c-odrl/OdrlRightOperandType",
 	"title": "OdrlRightOperandType",
 	"description": "The types for ODRL Right Operand Types.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "odrl:policyUsage",
 			"description": "Reference to policy usage events"

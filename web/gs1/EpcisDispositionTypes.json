@@ -3,7 +3,7 @@
 	"$id": "https://schema.twindev.org/gs1-epcis/EpcisDispositionTypes",
 	"title": "EpcisDispositionTypes",
 	"description": "Supported EPCIS 2.0 `disposition` values from the GS1 Core Business\nVocabulary (CBV).\n\nUse the union type `EpcisDispositionTypes` to restrict a field to known CBV\nvalues.",
-	"oneOf": [
+	"anyOf": [
 		{
 			"const": "active",
 			"description": "A commissioned object has just been introduced into the supply chain."
