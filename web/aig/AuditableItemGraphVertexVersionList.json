@@ -39,9 +39,18 @@
 		"itemListElement": {
 			"type": "array",
 			"items": {
-				"type": "number"
+				"type": "object",
+				"properties": {
+					"version": {
+						"type": "number"
+					},
+					"dateCreated": {
+						"type": "string"
+					}
+				},
+				"required": ["version", "dateCreated"]
 			},
-			"description": "The list of version numbers."
+			"description": "The list of versions."
 		}
 	},
 	"required": ["@context", "type", "itemListElement"]

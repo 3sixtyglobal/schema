@@ -38,15 +38,11 @@
 		},
 		"dateTransferred": {
 			"type": "string",
-			"description": "Transferred date/time of the attestation in ISO format, can be blank if holder identity is owner."
+			"description": "Transferred date/time of the attestation in ISO format, can be blank if not yet transferred."
 		},
 		"ownerIdentity": {
 			"type": "string",
 			"description": "The identity of the owner."
-		},
-		"holderIdentity": {
-			"type": "string",
-			"description": "The identity of the current holder, can be undefined if owner is still the holder."
 		},
 		"attestationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
