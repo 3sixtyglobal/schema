@@ -76,6 +76,6 @@ jobs:
         run: |
           vercel alias set \
           ${{ steps.deploy.outputs.deployment-url }} \
-          ${{ steps.set-branch.outputs.branch == 'main' && secrets.DOMAIN_SCHEMA_PROD || secrets.DOMAIN_SCHEMA_DEV }} \
+          ${{ steps.set-branch.outputs.branch == 'main' && secrets.DOMAIN_SCHEMA_PROD || secrets.DOMAIN_SCHEMA_PREVIEW }} \
           --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
           --scope=${{ secrets.TWIN_VERCEL_SCOPE }}
