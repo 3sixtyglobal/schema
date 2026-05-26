@@ -67,7 +67,7 @@ jobs:
           DEPLOYMENT_URL=$(vercel deploy \
           --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
           --scope=${{ secrets.TWIN_VERCEL_SCOPE }} \
-          --target=${{ steps.set-branch.outputs.branch == 'main' && 'production' || 'dev' }} \
+          --target=${{ steps.set-branch.outputs.branch == 'main' && 'production' || 'next' }} \
           --force)
           echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
 
