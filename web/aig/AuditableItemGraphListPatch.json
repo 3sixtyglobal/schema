@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphListPatch",
+	"title": "AuditableItemGraphListPatch",
+	"description": "PATCH operations for a sub-list on a vertex.",
+	"type": "object",
+	"properties": {
+		"add": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
+					},
+					{
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
+					},
+					{
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
+					}
+				]
+			},
+			"description": "Items to add or update in the active set."
+		},
+		"remove": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "Identifiers of items to remove from the active set (soft-delete)."
+		}
+	}
+}

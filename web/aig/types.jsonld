@@ -12,9 +12,15 @@
 		"AuditableItemGraphChangesetList": "twin-aig:AuditableItemGraphChangesetList",
 		"AuditableItemGraphEdge": "twin-aig:AuditableItemGraphEdge",
 		"AuditableItemGraphResource": "twin-aig:AuditableItemGraphResource",
+		"AuditableItemGraphListPatch": "twin-aig:AuditableItemGraphListPatch",
 		"AuditableItemGraphVertex": "twin-aig:AuditableItemGraphVertex",
+		"AuditableItemGraphPartialVertex": "twin-aig:AuditableItemGraphPartialVertex",
 		"AuditableItemGraphVertexList": "twin-aig:AuditableItemGraphVertexList",
 		"AuditableItemGraphVertexVersionList": "twin-aig:AuditableItemGraphVertexVersionList",
+		"add": {
+			"@id": "twin-aig:add",
+			"@container": "@set"
+		},
 		"aliases": {
 			"@id": "twin-aig:aliases",
 			"@container": "@set"
@@ -22,6 +28,12 @@
 		"aliasFormat": {
 			"@id": "twin-aig:aliasFormat",
 			"@type": "sch:Text"
+		},
+		"aliasPatches": {
+			"@id": "twin-aig:aliasPatches"
+		},
+		"edgePatches": {
+			"@id": "twin-aig:edgePatches"
 		},
 		"edgeRelationships": {
 			"@id": "twin-aig:edgeRelationships",
@@ -55,9 +67,16 @@
 			"@id": "twin-aig:proofId",
 			"@type": "sch:identifier"
 		},
+		"remove": {
+			"@id": "twin-aig:remove",
+			"@container": "@set"
+		},
 		"resourceObject": {
 			"@id": "twin-aig:resourceObject",
 			"@type": "@json"
+		},
+		"resourcePatches": {
+			"@id": "twin-aig:resourcePatches"
 		},
 		"resources": {
 			"@id": "twin-aig:resources",
