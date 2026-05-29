@@ -6,10 +6,14 @@
 		"id": "@id",
 		"type": "@type",
 		"ImmutableProof": "twin-immutable-proof:ImmutableProof",
+		"ImmutableProofDataIntegrity": "twin-immutable-proof:ImmutableProofDataIntegrity",
 		"ImmutableProofVerification": "twin-immutable-proof:ImmutableProofVerification",
 		"failure": {
 			"@id": "twin-immutable-proof:failure",
 			"@type": "schema:Text"
+		},
+		"notarizationId": {
+			"@id": "twin-immutable-proof:notarizationId"
 		}
 	}
 }
