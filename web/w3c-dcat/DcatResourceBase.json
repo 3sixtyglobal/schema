@@ -98,7 +98,7 @@
 		"dcterms:publisher": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdObjectWithAliases"
 				},
 				{
 					"type": "string"
@@ -109,7 +109,7 @@
 		"dcterms:creator": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/FoafAgentWithAliases"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdObjectWithAliases"
 				},
 				{
 					"type": "string"
@@ -233,8 +233,219 @@
 			"description": "Link to a description of a relationship with another resource."
 		},
 		"odrl:hasPolicy": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy",
-			"description": "An ODRL conformant policy expressing the rights associated with the resource."
+			"description": "An ODRL conformant policy expressing the rights associated with the resource.",
+			"type": "object",
+			"properties": {
+				"@type": {
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicyType",
+					"description": "The type of policy.\nMust be one of: \"Set\", \"Offer\", \"Agreement\""
+				},
+				"uid": {
+					"type": "string",
+					"description": "The unique identifier for the policy.\nMust be an IRI.",
+					"format": "uri"
+				},
+				"profile": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The profile(s) this policy conforms to.\nIRIs identifying the ODRL Profile(s)."
+				},
+				"assigner": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The assigner of the policy.\nApplies to all rules unless overridden at rule level."
+				},
+				"assignee": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The assignee of the policy.\nApplies to all rules unless overridden at rule level."
+				},
+				"target": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The target asset for the rule."
+				},
+				"action": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
+									},
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+									}
+								]
+							}
+						}
+					],
+					"description": "The action associated with the rule."
+				},
+				"inheritFrom": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies)."
+				},
+				"conflict": {
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConflictStrategyType",
+					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
+				},
+				"permission": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+							}
+						}
+					],
+					"description": "The permissions in the policy.\nAt least one of permission, prohibition, or obligation must be present."
+				},
+				"prohibition": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+							}
+						}
+					],
+					"description": "The prohibitions in the policy.\nAt least one of permission, prohibition, or obligation must be present."
+				},
+				"obligation": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+							}
+						}
+					],
+					"description": "The obligations in the policy.\nAt least one of permission, prohibition, or obligation must be present."
+				},
+				"@context": {
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
+					"description": "The context for the policy.\nMust include \"https://www.w3.org/ns/odrl.jsonld\""
+				}
+			},
+			"required": ["@type", "uid"],
+			"$comment": "Inlined utility base type OdrlPolicy so utility transformations can operate on concrete properties instead of a $ref."
 		}
 	},
 	"required": ["@type"]
