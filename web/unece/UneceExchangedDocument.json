@@ -53,7 +53,8 @@
 		},
 		"attachmentBinaryObject": {
 			"type": "string",
-			"description": "A binary object that is attached or otherwise appended to this exchanged document."
+			"description": "A binary object that is attached or otherwise appended to this exchanged document.",
+			"contentEncoding": "base64"
 		},
 		"buyerSignatoryAuthentication": {
 			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
