@@ -251,7 +251,7 @@ async function createRewriteRules(schemas) {
 		if (hasTypes) {
 			rewrites.push({
 				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with no header`,
-				source: `/${rewriteName}/:path*`,
+				source: `/${rewriteName}/:path([^.]+)*`,
 				missing: [
 					{
 						type: 'header',
@@ -263,7 +263,7 @@ async function createRewriteRules(schemas) {
 			});
 			rewrites.push({
 				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with 'application/json' header`,
-				source: `/${rewriteName}/:path*`,
+				source: `/${rewriteName}/:path([^.]+)*`,
 				missing: [
 					{
 						type: 'header',

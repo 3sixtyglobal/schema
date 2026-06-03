@@ -60,7 +60,7 @@
 			"destination": "https://schema.twindev.org/aig/types.jsonld"
 		},
 		{
-			"source": "/aig/:path*",
+			"source": "/aig/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -71,7 +71,7 @@
 			"destination": "https://schema.twindev.org/aig/:path*.json"
 		},
 		{
-			"source": "/aig/:path*",
+			"source": "/aig/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -104,7 +104,7 @@
 			"destination": "https://schema.twindev.org/ais/types.jsonld"
 		},
 		{
-			"source": "/ais/:path*",
+			"source": "/ais/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -115,7 +115,7 @@
 			"destination": "https://schema.twindev.org/ais/:path*.json"
 		},
 		{
-			"source": "/ais/:path*",
+			"source": "/ais/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -148,7 +148,7 @@
 			"destination": "https://schema.twindev.org/attestation/types.jsonld"
 		},
 		{
-			"source": "/attestation/:path*",
+			"source": "/attestation/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -159,7 +159,7 @@
 			"destination": "https://schema.twindev.org/attestation/:path*.json"
 		},
 		{
-			"source": "/attestation/:path*",
+			"source": "/attestation/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -192,7 +192,7 @@
 			"destination": "https://schema.twindev.org/blob-storage/types.jsonld"
 		},
 		{
-			"source": "/blob-storage/:path*",
+			"source": "/blob-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -203,7 +203,7 @@
 			"destination": "https://schema.twindev.org/blob-storage/:path*.json"
 		},
 		{
-			"source": "/blob-storage/:path*",
+			"source": "/blob-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -236,7 +236,7 @@
 			"destination": "https://schema.twindev.org/documents/types.jsonld"
 		},
 		{
-			"source": "/documents/:path*",
+			"source": "/documents/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -247,7 +247,7 @@
 			"destination": "https://schema.twindev.org/documents/:path*.json"
 		},
 		{
-			"source": "/documents/:path*",
+			"source": "/documents/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -280,7 +280,7 @@
 			"destination": "https://schema.twindev.org/synchronised-storage/types.jsonld"
 		},
 		{
-			"source": "/synchronised-storage/:path*",
+			"source": "/synchronised-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -291,7 +291,7 @@
 			"destination": "https://schema.twindev.org/synchronised-storage/:path*.json"
 		},
 		{
-			"source": "/synchronised-storage/:path*",
+			"source": "/synchronised-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -324,7 +324,7 @@
 			"destination": "https://schema.twindev.org/immutable-proof/types.jsonld"
 		},
 		{
-			"source": "/immutable-proof/:path*",
+			"source": "/immutable-proof/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -335,7 +335,7 @@
 			"destination": "https://schema.twindev.org/immutable-proof/:path*.json"
 		},
 		{
-			"source": "/immutable-proof/:path*",
+			"source": "/immutable-proof/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -368,7 +368,7 @@
 			"destination": "https://schema.twindev.org/verifiable-storage/types.jsonld"
 		},
 		{
-			"source": "/verifiable-storage/:path*",
+			"source": "/verifiable-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -379,7 +379,7 @@
 			"destination": "https://schema.twindev.org/verifiable-storage/:path*.json"
 		},
 		{
-			"source": "/verifiable-storage/:path*",
+			"source": "/verifiable-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -412,7 +412,7 @@
 			"destination": "https://schema.twindev.org/framework/types.jsonld"
 		},
 		{
-			"source": "/framework/:path*",
+			"source": "/framework/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -423,7 +423,7 @@
 			"destination": "https://schema.twindev.org/framework/:path*.json"
 		},
 		{
-			"source": "/framework/:path*",
+			"source": "/framework/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -456,7 +456,7 @@
 			"destination": "https://schema.twindev.org/json-ld/types.jsonld"
 		},
 		{
-			"source": "/json-ld/:path*",
+			"source": "/json-ld/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -467,7 +467,7 @@
 			"destination": "https://schema.twindev.org/json-ld/:path*.json"
 		},
 		{
-			"source": "/json-ld/:path*",
+			"source": "/json-ld/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -489,7 +489,7 @@
 			"destination": "https://schema.twindev.org/dataspace/types.html"
 		},
 		{
-			"source": "/dataspace/:path*",
+			"source": "/dataspace/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -500,7 +500,7 @@
 			"destination": "https://schema.twindev.org/dataspace/:path*.json"
 		},
 		{
-			"source": "/dataspace/:path*",
+			"source": "/dataspace/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -533,7 +533,7 @@
 			"destination": "https://schema.twindev.org/w3c-did/types.jsonld"
 		},
 		{
-			"source": "/w3c-did/:path*",
+			"source": "/w3c-did/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -544,7 +544,7 @@
 			"destination": "https://schema.twindev.org/w3c-did/:path*.json"
 		},
 		{
-			"source": "/w3c-did/:path*",
+			"source": "/w3c-did/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -566,7 +566,7 @@
 			"destination": "https://schema.twindev.org/w3c-odrl/types.html"
 		},
 		{
-			"source": "/w3c-odrl/:path*",
+			"source": "/w3c-odrl/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -577,7 +577,7 @@
 			"destination": "https://schema.twindev.org/w3c-odrl/:path*.json"
 		},
 		{
-			"source": "/w3c-odrl/:path*",
+			"source": "/w3c-odrl/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -599,7 +599,7 @@
 			"destination": "https://schema.twindev.org/w3c-activity-streams/types.html"
 		},
 		{
-			"source": "/w3c-activity-streams/:path*",
+			"source": "/w3c-activity-streams/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -610,7 +610,7 @@
 			"destination": "https://schema.twindev.org/w3c-activity-streams/:path*.json"
 		},
 		{
-			"source": "/w3c-activity-streams/:path*",
+			"source": "/w3c-activity-streams/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -632,7 +632,7 @@
 			"destination": "https://schema.twindev.org/w3c-dcat/types.html"
 		},
 		{
-			"source": "/w3c-dcat/:path*",
+			"source": "/w3c-dcat/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -643,7 +643,7 @@
 			"destination": "https://schema.twindev.org/w3c-dcat/:path*.json"
 		},
 		{
-			"source": "/w3c-dcat/:path*",
+			"source": "/w3c-dcat/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -665,7 +665,7 @@
 			"destination": "https://schema.twindev.org/gaia-x/types.html"
 		},
 		{
-			"source": "/gaia-x/:path*",
+			"source": "/gaia-x/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -676,7 +676,7 @@
 			"destination": "https://schema.twindev.org/gaia-x/:path*.json"
 		},
 		{
-			"source": "/gaia-x/:path*",
+			"source": "/gaia-x/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -698,7 +698,7 @@
 			"destination": "https://schema.twindev.org/unece/types.html"
 		},
 		{
-			"source": "/unece/:path*",
+			"source": "/unece/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -709,7 +709,7 @@
 			"destination": "https://schema.twindev.org/unece/:path*.json"
 		},
 		{
-			"source": "/unece/:path*",
+			"source": "/unece/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -764,7 +764,7 @@
 			"destination": "https://schema.twindev.org/dataspace-protocol/types.html"
 		},
 		{
-			"source": "/dataspace-protocol/:path*",
+			"source": "/dataspace-protocol/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -775,7 +775,7 @@
 			"destination": "https://schema.twindev.org/dataspace-protocol/:path*.json"
 		},
 		{
-			"source": "/dataspace-protocol/:path*",
+			"source": "/dataspace-protocol/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -808,7 +808,7 @@
 			"destination": "https://schema.twindev.org/gaia-x-loire/types.jsonld"
 		},
 		{
-			"source": "/gaia-x-loire/:path*",
+			"source": "/gaia-x-loire/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -819,7 +819,7 @@
 			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
 		},
 		{
-			"source": "/gaia-x-loire/:path*",
+			"source": "/gaia-x-loire/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -852,7 +852,7 @@
 			"destination": "https://schema.twindev.org/foaf/types.jsonld"
 		},
 		{
-			"source": "/foaf/:path*",
+			"source": "/foaf/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -863,7 +863,7 @@
 			"destination": "https://schema.twindev.org/foaf/:path*.json"
 		},
 		{
-			"source": "/foaf/:path*",
+			"source": "/foaf/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -885,7 +885,7 @@
 			"destination": "https://schema.twindev.org/dcsa/types.html"
 		},
 		{
-			"source": "/dcsa/:path*",
+			"source": "/dcsa/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -896,7 +896,7 @@
 			"destination": "https://schema.twindev.org/dcsa/:path*.json"
 		},
 		{
-			"source": "/dcsa/:path*",
+			"source": "/dcsa/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -918,7 +918,7 @@
 			"destination": "https://schema.twindev.org/gs1/types.html"
 		},
 		{
-			"source": "/gs1/:path*",
+			"source": "/gs1/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -929,7 +929,7 @@
 			"destination": "https://schema.twindev.org/gs1/:path*.json"
 		},
 		{
-			"source": "/gs1/:path*",
+			"source": "/gs1/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -1028,7 +1028,7 @@
 			"destination": "https://schema.twindev.org/supply-chain/types.jsonld"
 		},
 		{
-			"source": "/supply-chain/:path*",
+			"source": "/supply-chain/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -1039,7 +1039,7 @@
 			"destination": "https://schema.twindev.org/supply-chain/:path*.json"
 		},
 		{
-			"source": "/supply-chain/:path*",
+			"source": "/supply-chain/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
