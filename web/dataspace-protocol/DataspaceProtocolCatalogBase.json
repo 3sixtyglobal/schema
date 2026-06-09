@@ -18,59 +18,31 @@
 			"description": "Participant Id"
 		},
 		"catalog": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogBase"
-					}
-				}
-			],
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogBase"
+			},
 			"description": "Other concerned catalogs"
 		},
 		"dataset": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
-					}
-				}
-			],
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
+			},
 			"description": "Datasets registered"
 		},
 		"distribution": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
-					}
-				}
-			],
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
+			},
 			"description": "Catalog's distributions"
 		},
 		"service": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
-				},
-				{
-					"type": "array",
-					"items": {
-						"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
-					}
-				}
-			],
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
+			},
 			"description": "Data services registered-"
 		}
 	},
