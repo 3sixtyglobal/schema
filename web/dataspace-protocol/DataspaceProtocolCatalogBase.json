@@ -132,7 +132,108 @@
 				"dcterms:publisher": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdObjectWithAliases"
+							"description": "A FOAF Agent.",
+							"type": "object",
+							"properties": {
+								"@context": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafContextType",
+									"description": "The LD Context.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"@id": {
+									"type": "string",
+									"description": "The unique identifier for the FOAF object.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:name": {
+									"type": "string",
+									"description": "A name for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:title": {
+									"type": "string",
+									"description": "Title (Mr, Mrs, Ms, Dr. etc)",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:mbox": {
+									"type": "string",
+									"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:homepage": {
+									"type": "string",
+									"description": "A homepage for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:depiction": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafImage",
+									"description": "A depiction of some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"@type": {
+									"anyOf": [
+										{
+											"const": "Agent"
+										},
+										{
+											"const": "Person"
+										},
+										{
+											"const": "Organization"
+										},
+										{
+											"const": "Group"
+										},
+										{
+											"type": "string"
+										}
+									],
+									"description": "Type.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:age": {
+									"type": "number",
+									"description": "The age in years of some agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:made": {
+									"anyOf": [
+										{
+											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+										},
+										{
+											"type": "array",
+											"items": {
+												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+											}
+										}
+									],
+									"description": "Something that was made by this agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:weblog": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "A weblog of some thing (whether person, group, company etc.).",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:openid": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "An OpenID for an agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:interest": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "A page about a topic of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:topic_interest": {
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+									"description": "A thing of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								}
+							},
+							"required": ["@type"],
+							"$comment": "Inlined utility base type FoafAgent so utility transformations can operate on concrete properties instead of a $ref."
 						},
 						{
 							"type": "string"
@@ -144,7 +245,108 @@
 				"dcterms:creator": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdObjectWithAliases"
+							"description": "A FOAF Agent.",
+							"type": "object",
+							"properties": {
+								"@context": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafContextType",
+									"description": "The LD Context.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"@id": {
+									"type": "string",
+									"description": "The unique identifier for the FOAF object.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:name": {
+									"type": "string",
+									"description": "A name for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:title": {
+									"type": "string",
+									"description": "Title (Mr, Mrs, Ms, Dr. etc)",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:mbox": {
+									"type": "string",
+									"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:homepage": {
+									"type": "string",
+									"description": "A homepage for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:depiction": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafImage",
+									"description": "A depiction of some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"@type": {
+									"anyOf": [
+										{
+											"const": "Agent"
+										},
+										{
+											"const": "Person"
+										},
+										{
+											"const": "Organization"
+										},
+										{
+											"const": "Group"
+										},
+										{
+											"type": "string"
+										}
+									],
+									"description": "Type.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:age": {
+									"type": "number",
+									"description": "The age in years of some agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:made": {
+									"anyOf": [
+										{
+											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+										},
+										{
+											"type": "array",
+											"items": {
+												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+											}
+										}
+									],
+									"description": "Something that was made by this agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:weblog": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "A weblog of some thing (whether person, group, company etc.).",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:openid": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "An OpenID for an agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:interest": {
+									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"description": "A page about a topic of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:topic_interest": {
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+									"description": "A thing of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								}
+							},
+							"required": ["@type"],
+							"$comment": "Inlined utility base type FoafAgent so utility transformations can operate on concrete properties instead of a $ref."
 						},
 						{
 							"type": "string"
