@@ -2,27 +2,27 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataAddress",
 	"title": "DataspaceProtocolDataAddress",
-	"description": "Interface for Dataspace Protocol Transfer Messages.\nhttps://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#lower-level-types",
+	"description": "Interface for a Dataspace Protocol data address.",
 	"type": "object",
 	"properties": {
 		"@type": {
 			"const": "DataAddress",
-			"description": "LD Type"
+			"description": "The JSON-LD type."
 		},
 		"endpointType": {
 			"type": "string",
-			"description": "The type of endpoint of this data address."
+			"description": "The endpoint type identifier."
 		},
 		"endpoint": {
 			"type": "string",
-			"description": "The endpoint of the data address"
+			"description": "The endpoint URL or address."
 		},
 		"endpointProperties": {
 			"type": "array",
 			"items": {
 				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolEndpointProperty"
 			},
-			"description": "Properties associated to the endpoint which might depend on the endpoint type."
+			"description": "Transport-specific endpoint properties."
 		}
 	},
 	"required": ["@type", "endpointType"]

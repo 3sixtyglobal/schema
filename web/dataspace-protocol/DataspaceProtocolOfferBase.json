@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase",
 	"title": "DataspaceProtocolOfferBase",
-	"description": "Offer interface compliant with Eclipse Data Space Protocol without JSON-LD context.\nThis is the context-free variant of IDataspaceProtocolOffer, intended for embedding\noffers inline within other objects where the context is provided by the enclosing document.\n\nExtends IOdrlOffer with DS Protocol-specific constraints:\n- '@id' is REQUIRED (used as the primary offer identifier in DS Protocol)\n- '@context' is omitted (context is inherited from the parent object)",
+	"description": "Context-free offer interface compliant with Eclipse Data Space Protocol, for embedding within parent documents.",
 	"type": "object",
 	"properties": {
 		"@id": {

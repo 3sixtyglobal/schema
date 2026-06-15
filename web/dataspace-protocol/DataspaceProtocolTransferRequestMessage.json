@@ -2,16 +2,16 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferRequestMessage",
 	"title": "DataspaceProtocolTransferRequestMessage",
-	"description": "Interface for Dataspace Protocol Transfer Messages.\nhttps://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-request-message",
+	"description": "Interface for the Dataspace Protocol transfer request message.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
-			"description": "LD Context"
+			"description": "The JSON-LD context."
 		},
 		"@type": {
 			"const": "TransferRequestMessage",
-			"description": "LD Type"
+			"description": "The JSON-LD type."
 		},
 		"agreementId": {
 			"type": "string",

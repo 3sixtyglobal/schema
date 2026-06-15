@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOffer",
 	"title": "DataspaceProtocolOffer",
-	"description": "Offer interface compliant with Eclipse Data Space Protocol.\n\nExtends IOdrlOffer with DS Protocol-specific constraints:\n- `@id` is REQUIRED (used as the primary offer identifier in DS Protocol)\n- `@context` is omitted (inherited from the parent Dataset/Distribution)",
+	"description": "Offer interface compliant with Eclipse Data Space Protocol, requiring an id and context.",
 	"type": "object",
 	"properties": {
 		"@id": {
@@ -11,7 +11,7 @@
 		},
 		"@context": {
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
-			"description": "LD Context."
+			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@id", "@context"],

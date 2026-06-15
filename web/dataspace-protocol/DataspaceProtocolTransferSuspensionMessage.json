@@ -2,16 +2,16 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferSuspensionMessage",
 	"title": "DataspaceProtocolTransferSuspensionMessage",
-	"description": "Interface for Dataspace Protocol Transfer Messages.\nhttps://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/#transfer-suspension-message",
+	"description": "Interface for the Dataspace Protocol transfer suspension message.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
-			"description": "LD Context"
+			"description": "The JSON-LD context."
 		},
 		"@type": {
 			"const": "TransferSuspensionMessage",
-			"description": "LD Type"
+			"description": "The JSON-LD type."
 		},
 		"consumerPid": {
 			"type": "string",

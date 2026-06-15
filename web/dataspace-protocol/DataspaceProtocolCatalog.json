@@ -2,12 +2,12 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalog",
 	"title": "DataspaceProtocolCatalog",
-	"description": "Catalog interface compliant with Eclipse Data Space Protocol.\n\nThis interface extends ICatalog and enforces DS Protocol-specific requirements\nby overriding properties with more specific types and constraints.\n\n**Requirements per DS Protocol:**\n- `@id` MUST be present for dataset identification (REQUIRED)\n- participantId MUST be present (REQUIRED)\n\n**Type System Design:**\n- Interface extension allows TypeScript to override inherited property types\n- Standards packages (@twin.org/standards-w3c-*) follow W3C specs exactly\n- DS Protocol-specific constraints are defined here",
+	"description": "Catalog compliant with Eclipse Data Space Protocol, requiring a context, id, and participantId.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
-			"description": "LD Context. Required per Eclipse Data Space Protocol."
+			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@context"],

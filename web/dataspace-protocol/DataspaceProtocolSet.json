@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolSet",
 	"title": "DataspaceProtocolSet",
-	"description": "Set interface compliant with Eclipse Data Space Protocol.\n\nExtends IOdrlSet with DS Protocol-specific constraints:\n- `@id` is REQUIRED (used as the primary set identifier in DS Protocol)\n- `@context` is omitted (inherited from the parent Dataset/Distribution)",
+	"description": "Set interface compliant with Eclipse Data Space Protocol, requiring an id and omitting context.",
 	"type": "object",
 	"properties": {
 		"@id": {

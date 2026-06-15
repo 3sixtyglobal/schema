@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolPolicy",
 	"title": "DataspaceProtocolPolicy",
-	"description": "Policy interface compliant with Eclipse Data Space Protocol.\n\nExtends IOdrlPolicy with DS Protocol-specific constraints:\n- `@id` is REQUIRED (used as the primary policy identifier in DS Protocol)\n- `@context` is omitted (inherited from the parent Dataset/Distribution)",
+	"description": "Policy interface compliant with Eclipse Data Space Protocol, requiring an id and omitting context.",
 	"type": "object",
 	"properties": {
 		"@id": {

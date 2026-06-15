@@ -2,12 +2,12 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataset",
 	"title": "DataspaceProtocolDataset",
-	"description": "Dataset interface compliant with Eclipse Data Space Protocol.\n\nThis interface extends IDataset and enforces DS Protocol-specific requirements\nby overriding properties with more specific types and constraints.\n\n**Requirements per DS Protocol:**\n- `@id` MUST be present for dataset identification (REQUIRED)\n- `odrl:hasPolicy` MUST be present as an array of ODRL Offers (REQUIRED)\n- Array MUST contain at least one IOdrlOffer\n- Each Offer MUST have `@type`: \"Offer\"\n- Each Offer MUST have `@id`\n- `dcat:distribution` MUST be present (REQUIRED)\n\n**Type System Design:**\n- W3C DCAT spec defines `odrl:hasPolicy` as optional singular `IOdrlPolicy`\n- DS Protocol requires it as a REQUIRED array of `IOdrlOffer`\n- Interface extension allows TypeScript to override inherited property types\n- Standards packages (@twin.org/standards-w3c-*) follow W3C specs exactly\n- DS Protocol-specific constraints are defined here\n\n**Future Compatibility:**\n- Currently only one Offer per dataset is supported\n- Array structure allows future support for multiple offers",
+	"description": "Dataset compliant with Eclipse Data Space Protocol, requiring an id, hasPolicy, and distribution.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
-			"description": "LD Context. Required per Eclipse Data Space Protocol."
+			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@context"],
