@@ -654,39 +654,6 @@
 			"destination": "https://schema.twindev.org/w3c-dcat/:path*.json"
 		},
 		{
-			"source": "/gaia-x/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "text/html.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x/types.html"
-		},
-		{
-			"source": "/gaia-x/:path([^.]+)*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x/:path*.json"
-		},
-		{
-			"source": "/gaia-x/:path([^.]+)*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/json"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x/:path*.json"
-		},
-		{
 			"source": "/unece/",
 			"has": [
 				{
@@ -784,50 +751,6 @@
 				}
 			],
 			"destination": "https://schema.twindev.org/dataspace-protocol/:path*.json"
-		},
-		{
-			"source": "/gaia-x-loire/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "text/html.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x-loire/types.html"
-		},
-		{
-			"source": "/gaia-x-loire/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x-loire/types.jsonld"
-		},
-		{
-			"source": "/gaia-x-loire/:path([^.]+)*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
-		},
-		{
-			"source": "/gaia-x-loire/:path([^.]+)*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/json"
-				}
-			],
-			"destination": "https://schema.twindev.org/gaia-x-loire/:path*.json"
 		},
 		{
 			"source": "/foaf/",
@@ -1132,11 +1055,6 @@
 			"permanent": true
 		},
 		{
-			"source": "/gaia-x",
-			"destination": "https://schema.twindev.org/gaia-x/",
-			"permanent": true
-		},
-		{
 			"source": "/unece",
 			"destination": "https://schema.twindev.org/unece/",
 			"permanent": true
@@ -1149,11 +1067,6 @@
 		{
 			"source": "/dataspace-protocol",
 			"destination": "https://schema.twindev.org/dataspace-protocol/",
-			"permanent": true
-		},
-		{
-			"source": "/gaia-x-loire",
-			"destination": "https://schema.twindev.org/gaia-x-loire/",
 			"permanent": true
 		},
 		{
