@@ -32,25 +32,9 @@
 			"type": "string",
 			"description": "The full id of the document."
 		},
-		"documentId": {
-			"type": "string",
-			"description": "The id of the document."
-		},
-		"documentIdFormat": {
-			"type": "string",
-			"description": "The format of the document id."
-		},
-		"documentCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
-			"description": "The code for the document type."
-		},
 		"documentRevision": {
 			"type": "number",
 			"description": "The revision of the document as a 0 based index."
-		},
-		"annotationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Additional annotation information for the document."
 		},
 		"blobStorageId": {
 			"type": "string",
@@ -60,20 +44,9 @@
 			"type": "string",
 			"description": "The integrity of the blob data."
 		},
-		"blobStorageEntry": {
-			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
-			"description": "The additional JSON-LD for blob storage if it was requested."
-		},
-		"extractedData": {
-			"description": "The data extracted from the document using data extraction services."
-		},
 		"attestationId": {
 			"type": "string",
 			"description": "The attestation for the document if one was created."
-		},
-		"attestationInformation": {
-			"$ref": "https://schema.twindev.org/attestation/AttestationInformation",
-			"description": "The additional JSON-LD for attestation storage if it was requested."
 		},
 		"dateCreated": {
 			"type": "string",
@@ -100,11 +73,14 @@
 		"@context",
 		"type",
 		"id",
-		"documentId",
-		"documentCode",
 		"documentRevision",
 		"blobStorageId",
 		"integrity",
 		"dateCreated"
+	],
+	"allOf": [
+		{
+			"$ref": "https://schema.twindev.org/documents/DocumentBase"
+		}
 	]
 }
