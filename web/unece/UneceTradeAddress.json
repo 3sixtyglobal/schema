@@ -155,6 +155,9 @@
 		"tradeAddressCountryId": {
 			"anyOf": [
 				{
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+				},
+				{
 					"type": "string"
 				},
 				{

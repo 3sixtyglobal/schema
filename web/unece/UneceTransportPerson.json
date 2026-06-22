@@ -209,6 +209,9 @@
 		"transportPersonLanguageId": {
 			"anyOf": [
 				{
+					"$ref": "https://schema.twindev.org/unece/UneceLanguageId"
+				},
+				{
 					"type": "string"
 				},
 				{

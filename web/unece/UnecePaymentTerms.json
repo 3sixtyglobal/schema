@@ -92,6 +92,9 @@
 		"paymentTermsId": {
 			"anyOf": [
 				{
+					"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsId"
+				},
+				{
 					"type": "string"
 				},
 				{

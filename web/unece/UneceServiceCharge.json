@@ -95,6 +95,9 @@
 		"freightChargeTypeId": {
 			"anyOf": [
 				{
+					"$ref": "https://schema.twindev.org/unece/UneceFreightChargeTypeId"
+				},
+				{
 					"type": "string"
 				},
 				{
