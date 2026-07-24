@@ -7,7 +7,7 @@
 	"properties": {
 		"source": {
 			"type": "string",
-			"description": "Reference to the source of the party collection.\nUsed to identify the origin or location of the collection."
+			"description": "Reference to the source of the party collection.\nUsed to identify the origin or location of the collection.\nOmit to scope the collection entirely by its refinement instead."
 		},
 		"refinement": {
 			"anyOf": [
@@ -34,7 +34,6 @@
 			"description": "Refinements applied to the party collection.\nUsed to specify constraints that apply to all members of the collection."
 		}
 	},
-	"required": ["source"],
 	"allOf": [
 		{
 			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"

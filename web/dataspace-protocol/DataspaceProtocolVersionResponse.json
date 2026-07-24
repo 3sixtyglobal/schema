@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolVersionResponse",
+	"title": "DataspaceProtocolVersionResponse",
+	"description": "Interface for the response from the GET /.well-known/dspace-version discovery endpoint.\nThis endpoint MUST be unversioned and unauthenticated per RFC 8615.",
+	"type": "object",
+	"properties": {
+		"protocolVersions": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolVersion"
+				}
+			],
+			"items": {
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolVersion"
+			},
+			"minItems": 1,
+			"description": "The list of Dataspace Protocol versions supported by this connector. Must contain at least\none entry."
+		}
+	},
+	"required": ["protocolVersions"]
+}
