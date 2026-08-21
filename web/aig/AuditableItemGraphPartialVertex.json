@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://schema.twindev.org/aig/AuditableItemGraphPartialVertex",
 	"title": "AuditableItemGraphPartialVertex",
-	"description": "Partial vertex payload for updatePartial (PATCH — requires id).\nSub-lists use explicit `{ add, remove }` patches; bare arrays are not supported.",
+	"description": "Partial vertex payload for updatePartial.\nSub-lists use explicit `{ add, remove }` patches; bare arrays are not supported.",
 	"type": "object",
 	"properties": {
 		"id": {
