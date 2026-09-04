@@ -33,6 +33,10 @@
 			"type": "string",
 			"description": "The identity of the organization which controls the vertex."
 		},
+		"auditMode": {
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditMode",
+			"description": "How the mutations of the vertex are recorded, when absent the vertex behaves as audited.\nOnce a vertex is set to bypass it can not be returned to audited."
+		},
 		"annotationObject": {
 			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "The JSON-LD annotation object for the vertex."
@@ -60,11 +64,11 @@
 		},
 		"verified": {
 			"type": "boolean",
-			"description": "Is the vertex verified, will only be populated when verification is requested."
+			"description": "Is the vertex verified, will only be populated when verification is requested.\nAlways undefined when the vertex is in bypass mode."
 		},
 		"version": {
 			"type": "number",
-			"description": "The version of the vertex, populated only when getting a specific version.\nMaps to https://schema.org/version."
+			"description": "The version of the vertex, populated only when getting a specific version.\nAlways undefined when the vertex is in bypass mode.\nMaps to https://schema.org/version."
 		}
 	},
 	"required": ["@context", "id", "type"],
