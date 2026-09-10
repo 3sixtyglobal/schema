@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/w3c-did/DidVerifiablePresentationCommon",
+	"title": "DidVerifiablePresentationCommon",
+	"description": "Interface describing a verifiable presentation.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Provide a unique identifier for the presentation."
+		},
+		"type": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The types of the data stored in the verifiable credential."
+		},
+		"holder": {
+			"type": "string",
+			"description": "The entity generating the presentation."
+		},
+		"proof": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.twindev.org/w3c-did/Proof"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.twindev.org/w3c-did/Proof"
+					}
+				}
+			],
+			"description": "Proofs that the verifiable presentation is valid.\nOptional if a different proof method is used, such as JWT."
+		}
+	},
+	"required": ["type"]
+}

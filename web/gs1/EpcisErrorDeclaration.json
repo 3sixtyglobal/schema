@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisErrorDeclaration",
+	"$id": "https://schema.twindev.org/gs1/EpcisErrorDeclaration",
 	"title": "EpcisErrorDeclaration",
 	"description": "EPCIS 2.0 ErrorDeclaration describing corrections to previously captured\nevents.",
 	"type": "object",
@@ -12,7 +12,7 @@
 		"reason": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisErrorReasonTypes"
+					"$ref": "https://schema.twindev.org/gs1/EpcisErrorReasonTypes"
 				},
 				{
 					"type": "string"

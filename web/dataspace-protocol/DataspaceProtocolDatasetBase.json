@@ -120,7 +120,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafContextType",
+									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -150,7 +150,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafImage",
+									"$ref": "https://schema.twindev.org/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -196,17 +196,17 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -233,7 +233,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafContextType",
+									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -263,7 +263,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafImage",
+									"$ref": "https://schema.twindev.org/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -309,17 +309,17 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.twindev.org/dataspace-protocol/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -455,7 +455,7 @@
 				"dcat:qualifiedRelation": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/dataspace-protocol/DcatRelationship"
+							"$ref": "https://schema.twindev.org/w3c-dcat/DcatRelationship"
 						},
 						{
 							"type": "string"
@@ -498,7 +498,7 @@
 					"$comment": "Inherited from DcatDatasetBase"
 				},
 				"dcterms:temporal": {
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DublinCorePeriodOfTime",
+					"$ref": "https://schema.twindev.org/dublin-core/DublinCorePeriodOfTime",
 					"description": "The temporal period that the dataset covers.",
 					"$comment": "Inherited from DcatDatasetBase"
 				},

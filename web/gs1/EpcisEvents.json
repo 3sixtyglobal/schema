@@ -1,26 +1,26 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisEvents",
+	"$id": "https://schema.twindev.org/gs1/EpcisEvents",
 	"title": "EpcisEvents",
 	"description": "Discriminated union covering all EPCIS 2.0 event interfaces used in this\npackage.",
 	"anyOf": [
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisObjectEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisObjectEvent"
 		},
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisAssociationEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisAssociationEvent"
 		},
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisAggregationEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisAggregationEvent"
 		},
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisTransactionEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisTransactionEvent"
 		},
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisTransformationEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisTransformationEvent"
 		},
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisEvent"
 		}
 	]
 }

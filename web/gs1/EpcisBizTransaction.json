@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisBizTransaction",
+	"$id": "https://schema.twindev.org/gs1/EpcisBizTransaction",
 	"title": "EpcisBizTransaction",
 	"description": "EPCIS 2.0 BizTransaction element identifying a business document and its type.",
 	"type": "object",
@@ -8,7 +8,7 @@
 		"type": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizTransactionTypes"
+					"$ref": "https://schema.twindev.org/gs1/EpcisBizTransactionTypes"
 				},
 				{
 					"type": "string"

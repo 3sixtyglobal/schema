@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisHeader",
+	"$id": "https://schema.twindev.org/gs1/EpcisHeader",
 	"title": "EpcisHeader",
 	"description": "EPCIS 2.0 Header carrying optional master data alongside an EPCIS document.",
 	"type": "object",
@@ -16,7 +16,7 @@
 						"vocabularyList": {
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.twindev.org/gs1-epcis/EpcisVocabulary"
+								"$ref": "https://schema.twindev.org/gs1/EpcisVocabulary"
 							},
 							"description": "Vocabulary list."
 						}

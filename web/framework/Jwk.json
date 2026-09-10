@@ -1,0 +1,136 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.twindev.org/framework/Jwk",
+	"title": "Jwk",
+	"description": "The fields in a JSON Web Key.",
+	"type": "object",
+	"properties": {
+		"kty": {
+			"type": "string",
+			"description": "The key type parameter, identifies the cryptographic algorithm family used with the key, such as EC, RSA, oct, OKP or AKP."
+		},
+		"use": {
+			"type": "string",
+			"description": "The public key use parameter, identifies the intended use of the public key, either sig or enc."
+		},
+		"key_ops": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "The key operations parameter, identifies the operations the key is intended to be used for, such as sign, verify, encrypt, decrypt, wrapKey, unwrapKey, deriveKey or deriveBits."
+		},
+		"alg": {
+			"type": "string",
+			"description": "The algorithm parameter, identifies the algorithm intended for use with the key."
+		},
+		"kid": {
+			"type": "string",
+			"description": "The key id parameter, used to match a specific key."
+		},
+		"x5u": {
+			"type": "string",
+			"format": "uri",
+			"description": "The X.509 URL parameter, a URI referring to a resource for an X.509 public key certificate or certificate chain."
+		},
+		"x5c": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "The X.509 certificate chain parameter, a chain of one or more base64 encoded PKIX certificates."
+		},
+		"x5t": {
+			"type": "string",
+			"description": "The X.509 certificate SHA-1 thumbprint parameter, the base64url encoded SHA-1 digest of the DER encoding of an X.509 certificate."
+		},
+		"x5t#S256": {
+			"type": "string",
+			"description": "The X.509 certificate SHA-256 thumbprint parameter, the base64url encoded SHA-256 digest of the DER encoding of an X.509 certificate."
+		},
+		"ext": {
+			"type": "boolean",
+			"description": "Whether the key is extractable, as used by the Web Crypto API."
+		},
+		"crv": {
+			"type": "string",
+			"description": "The curve parameter for EC keys, or the subtype of key pair for OKP keys."
+		},
+		"x": {
+			"type": "string",
+			"description": "The x coordinate for EC keys, or the public key for OKP keys."
+		},
+		"y": {
+			"type": "string",
+			"description": "The y coordinate for EC keys."
+		},
+		"d": {
+			"type": "string",
+			"description": "The private exponent for RSA keys, the ECC private key for EC keys, or the private key for OKP keys."
+		},
+		"n": {
+			"type": "string",
+			"description": "The modulus for RSA keys."
+		},
+		"e": {
+			"type": "string",
+			"description": "The exponent for RSA keys."
+		},
+		"p": {
+			"type": "string",
+			"description": "The first prime factor for private RSA keys."
+		},
+		"q": {
+			"type": "string",
+			"description": "The second prime factor for private RSA keys."
+		},
+		"dp": {
+			"type": "string",
+			"description": "The first factor CRT exponent for private RSA keys."
+		},
+		"dq": {
+			"type": "string",
+			"description": "The second factor CRT exponent for private RSA keys."
+		},
+		"qi": {
+			"type": "string",
+			"description": "The first CRT coefficient for private RSA keys."
+		},
+		"oth": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"r": {
+						"type": "string",
+						"description": "The prime factor."
+					},
+					"d": {
+						"type": "string",
+						"description": "The factor CRT exponent."
+					},
+					"t": {
+						"type": "string",
+						"description": "The factor CRT coefficient."
+					}
+				},
+				"description": "The other prime info for a private RSA key."
+			},
+			"description": "The other primes info parameter for private RSA keys with more than two primes."
+		},
+		"k": {
+			"type": "string",
+			"description": "The key value for oct keys."
+		},
+		"pub": {
+			"type": "string",
+			"description": "The public key for AKP keys."
+		},
+		"priv": {
+			"type": "string",
+			"description": "The private key for AKP keys."
+		}
+	},
+	"required": ["kty"],
+	"$comment": "Additional members are permitted, the JSON Web Key specification allows both registered and private parameter names."
+}

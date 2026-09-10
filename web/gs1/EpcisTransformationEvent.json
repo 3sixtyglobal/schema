@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisTransformationEvent",
+	"$id": "https://schema.twindev.org/gs1/EpcisTransformationEvent",
 	"title": "EpcisTransformationEvent",
 	"description": "EPCIS 2.0 TransformationEvent describing how inputs are transformed into\noutputs during a business process.",
 	"type": "object",
@@ -19,7 +19,7 @@
 		"inputQuantityList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
+				"$ref": "https://schema.twindev.org/gs1/EpcisQuantity"
 			},
 			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level inputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
 		},
@@ -33,7 +33,7 @@
 		"outputQuantityList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQuantity"
+				"$ref": "https://schema.twindev.org/gs1/EpcisQuantity"
 			},
 			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level outputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
 		},
@@ -44,7 +44,7 @@
 		"bizStep": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizStepTypes"
+					"$ref": "https://schema.twindev.org/gs1/EpcisBizStepTypes"
 				},
 				{
 					"type": "string"
@@ -55,7 +55,7 @@
 		"disposition": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDispositionTypes"
+					"$ref": "https://schema.twindev.org/gs1/EpcisDispositionTypes"
 				},
 				{
 					"type": "string"
@@ -64,54 +64,54 @@
 			"description": "(Optional) The business condition of the objects associated with the EPCs,\npresumed to hold true until contradicted by a subsequent event."
 		},
 		"persistentDisposition": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisPersistentDisposition",
+			"$ref": "https://schema.twindev.org/gs1/EpcisPersistentDisposition",
 			"description": "Persistent disposition."
 		},
 		"readPoint": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
+			"$ref": "https://schema.twindev.org/gs1/EpcisLocation",
 			"description": "(Optional) The read point at which the event took place."
 		},
 		"bizLocation": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisLocation",
+			"$ref": "https://schema.twindev.org/gs1/EpcisLocation",
 			"description": "(Optional) The business location where the objects associated with the EPCs\nmay be found, until contradicted by a subsequent event."
 		},
 		"bizTransactionList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisBizTransaction"
+				"$ref": "https://schema.twindev.org/gs1/EpcisBizTransaction"
 			},
 			"description": "An unordered list of business transactions that define the context of this\nevent."
 		},
 		"sourceList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSource"
+				"$ref": "https://schema.twindev.org/gs1/EpcisSource"
 			},
 			"description": "(Optional) Unordered list of Source elements that provide context about the\noriginating endpoint of a business transfer of which this event is a part."
 		},
 		"destinationList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisDestination"
+				"$ref": "https://schema.twindev.org/gs1/EpcisDestination"
 			},
 			"description": "(Optional) Unordered list of Destination elements that provide context about\nthe terminating endpoint of a business transfer of which this event is a part."
 		},
 		"sensorElementList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1-epcis/EpcisSensorElement"
+				"$ref": "https://schema.twindev.org/gs1/EpcisSensorElement"
 			},
 			"description": "(Optional) Connects event to one or more SensorElements."
 		},
 		"ilmd": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisIlmd",
+			"$ref": "https://schema.twindev.org/gs1/EpcisIlmd",
 			"description": "(Optional) Instance/Lot master data that describes the objects created during\nthis event."
 		}
 	},
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisEvent"
+			"$ref": "https://schema.twindev.org/gs1/EpcisEvent"
 		}
 	]
 }

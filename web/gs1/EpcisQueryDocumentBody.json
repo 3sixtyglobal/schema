@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1-epcis/EpcisQueryDocumentBody",
+	"$id": "https://schema.twindev.org/gs1/EpcisQueryDocumentBody",
 	"title": "EpcisQueryDocumentBody",
 	"description": "EPCIS 2.0 QueryDocumentBody wrapper that carries query results.",
 	"type": "object",
 	"properties": {
 		"queryResults": {
-			"$ref": "https://schema.twindev.org/gs1-epcis/EpcisQueryResults",
+			"$ref": "https://schema.twindev.org/gs1/EpcisQueryResults",
 			"description": "The results of the query."
 		}
 	},
