@@ -57,14 +57,11 @@ jobs:
         with:
           node-version: 24
 
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-
       # Deploy To vercel and output the deployment URL as a GitHub output from the step
       - name: Deploy to Vercel
         id: deploy
         run: |
-          DEPLOYMENT_URL=$(vercel deploy \
+          DEPLOYMENT_URL=$(npx --yes vercel deploy \
           --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
           --scope=${{ secrets.TWIN_VERCEL_SCOPE }} \
           --target=${{ steps.set-branch.outputs.branch == 'main' && 'production' || 'next' }} \
@@ -74,7 +71,7 @@ jobs:
       # Use the deployment URL to set an alias for the deployment
       - name: Set Alias
         run: |
-          vercel alias set \
+          npx --yes vercel alias set \
           ${{ steps.deploy.outputs.deployment-url }} \
           ${{ steps.set-branch.outputs.branch == 'main' && secrets.DOMAIN_SCHEMA_PROD || secrets.DOMAIN_SCHEMA_PREVIEW }} \
           --token=${{ secrets.TWIN_VERCEL_TOKEN }} \

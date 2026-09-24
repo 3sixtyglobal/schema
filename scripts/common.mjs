@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0.
 import { exec, spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 
 /**
  * Load a JSON file.
@@ -253,4 +254,80 @@ export function upperCase(input) {
 export function interfaceCase(input) {
 	const pascal = pascalCase(input, false);
 	return pascal ? `I${pascal}` : '';
+}
+
+/**
+ * Load the prerelease manifest from the next branch on origin, falling back to
+ * the local copy when the ref cannot be fetched. The local copy on main can be
+ * stale: it only refreshes when next is merged in, which hotfix releases skip.
+ * @param manifestFilename The path of the prerelease manifest.
+ * @returns The parsed manifest.
+ */
+export async function loadNextPrereleaseManifest(manifestFilename) {
+	try {
+		await execAsync('git fetch --no-tags --depth=1 origin next');
+		const content = await execAsync(`git show "FETCH_HEAD:${manifestFilename}"`);
+		return JSON.parse(content);
+	} catch {
+		process.stdout.write(
+			`Could not read ${manifestFilename} from origin/next, using the local copy\n`
+		);
+		return loadJson(manifestFilename);
+	}
+}
+
+/**
+ * Load the workspace package directories for a repository, in dependency order so
+ * that a package always appears after the packages it depends on.
+ * pnpm is asked for the project list, falling back to the npm workspaces field so
+ * repositories which have not moved to pnpm can still be read.
+ * @param rootDir The root directory of the repository, defaults to the current directory.
+ * @returns The package directories relative to the root, in dependency order.
+ */
+export async function loadWorkspaceDirs(rootDir = '.') {
+	return (await loadPnpmWorkspaceDirs(rootDir)) ?? loadNpmWorkspaceDirs(rootDir);
+}
+
+/**
+ * Ask pnpm for the projects in the workspace. pnpm walks them in dependency order,
+ * and running one at a time keeps the output in that order. The dependencies have
+ * to be installed first, otherwise pnpm installs them before running the command.
+ * @param rootDir The root directory of the repository.
+ * @returns The package directories, or undefined if this is not a pnpm workspace.
+ */
+async function loadPnpmWorkspaceDirs(rootDir) {
+	const resolvedRoot = path.resolve(rootDir);
+
+	if (await fileExists(path.join(resolvedRoot, 'pnpm-workspace.yaml'))) {
+		const output = await execAsync(
+			`pnpm --dir "${resolvedRoot}" --recursive --workspace-concurrency=1 exec node -e "console.log(process.cwd())"`
+		);
+
+		// The workspace root is not one of the packages, so it drops out as the only
+		// entry with an empty relative path.
+		return output
+			.split(/\r?\n/)
+			.map(line => path.relative(resolvedRoot, line.trim()).split(path.sep).join('/'))
+			.filter(workspaceDir => workspaceDir.length > 0);
+	}
+}
+
+/**
+ * Read the workspaces field from the root package.json, which is how the
+ * repositories still on npm describe their packages. The entries are already
+ * maintained in dependency order.
+ * @param rootDir The root directory of the repository.
+ * @returns The package directories, or an empty array if there are none.
+ */
+async function loadNpmWorkspaceDirs(rootDir) {
+	const packageJsonFilename = path.join(rootDir, 'package.json');
+
+	if (await fileExists(packageJsonFilename)) {
+		const packageJson = await loadJson(packageJsonFilename);
+		if (Array.isArray(packageJson.workspaces)) {
+			return packageJson.workspaces;
+		}
+	}
+
+	return [];
 }

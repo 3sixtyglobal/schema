@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+if [ "$branch" = "next" ]; then
+	exit 0
+fi
+
+valid=1
+
+# The branch must start with one of the permitted prefixes followed by at least one character.
+case "$branch" in
+	feature/?* | bugfix/?* | hotfix/?* | release/?* | chore/?*) ;;
+	*) valid=0 ;;
+esac
+
+# The name after the prefix may only contain lowercase letters, numbers, hyphens and dots.
+case "${branch#*/}" in
+	*[!a-z0-9.-]*) valid=0 ;;
+esac
+
+if [ "$valid" -eq 0 ]; then
+	echo "ERROR: Branch name '$branch' doesn't match the required pattern." >&2
+	echo "Branch names should start: feature/, bugfix/, hotfix/, release/ or chore/" >&2
+	echo "and the name should consist of lowercase letters, numbers, hyphens and dots." >&2
+	exit 1
+fi
