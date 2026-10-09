@@ -65,11 +65,15 @@ jobs:
             rm -rf "$target_path"
             # Shallow clone on the same branch so cross-package API references resolve correctly
             # without pulling full history (not needed for schema generation).
-            git clone \
+            # A missing repo or branch is skipped, update-schemas.mjs skips packages it cannot find.
+            if ! git clone \
               --depth 1 \
               --branch "${{ github.ref_name }}" \
               "https://x-access-token:${GH_TOKEN}@github.com/3sixtyglobal/${repo_name}.git" \
-              "$target_path"
+              "$target_path"; then
+              echo "::warning::Skipping $repo_name, unable to clone branch ${{ github.ref_name }}"
+              rm -rf "$target_path"
+            fi
           done
 
       # Setup pnpm after checkout so it can read the packageManager version from package.json.
