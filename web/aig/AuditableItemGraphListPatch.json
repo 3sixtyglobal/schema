@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphListPatch",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphListPatch",
 	"title": "AuditableItemGraphListPatch",
 	"description": "PATCH operations for a sub-list on a vertex.",
 	"type": "object",
@@ -10,13 +10,13 @@
 			"items": {
 				"oneOf": [
 					{
-						"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphEdge"
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
 					},
 					{
-						"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAlias"
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
 					},
 					{
-						"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphResource"
+						"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
 					}
 				]
 			},

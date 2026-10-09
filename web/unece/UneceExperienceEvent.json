@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceExperienceEvent",
+	"$id": "https://schema.twindev.org/unece/UneceExperienceEvent",
 	"title": "UneceExperienceEvent",
 	"description": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing,\nmeditation, holiday trip, dinner, theme park visit, could be experienced.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableSpecifiedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedNote"
 			},
 			"description": "A specified note applicable for this experience event."
 		},
@@ -32,7 +32,7 @@
 		"calculatedPrice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+				"$ref": "https://schema.twindev.org/unece/UneceTradePrice"
 			},
 			"description": "A calculated price for this experience event."
 		},
@@ -51,7 +51,7 @@
 		"distinctiveFeature": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFeature"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFeature"
 			},
 			"description": "A distinctive feature specified for this experience event."
 		},
@@ -61,7 +61,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this experience event."
@@ -90,26 +90,26 @@
 		"operationalPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
 			},
 			"description": "An operational period specified for this experience event."
 		},
 		"providedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A specified certificate provided for this experience event."
 		},
 		"providedRequirement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRequirement"
+				"$ref": "https://schema.twindev.org/unece/UneceRequirement"
 			},
 			"description": "A specified requirement provided for this experience event."
 		},
 		"requiredUsageCondition": {
-			"$ref": "https://schema.3sixty.global/unece/UneceUsageCondition",
+			"$ref": "https://schema.twindev.org/unece/UneceUsageCondition",
 			"description": "The specified usage condition required for this experience event."
 		},
 		"reservationGuarantee": {
@@ -123,7 +123,7 @@
 		"specifiedTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party specified for this experience event."
 		}

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePortMovementEvent",
+	"$id": "https://schema.twindev.org/unece/UnecePortMovementEvent",
 	"title": "UnecePortMovementEvent",
 	"description": "A movement of a vessel during a port call.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -21,7 +21,7 @@
 		"arrivalRelatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
 			},
 			"description": "An arrival location related to this port movement event."
 		},
@@ -40,7 +40,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this port movement event."

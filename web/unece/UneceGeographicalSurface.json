@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGeographicalSurface",
+	"$id": "https://schema.twindev.org/unece/UneceGeographicalSurface",
 	"title": "UneceGeographicalSurface",
 	"description": "A figure on the Earth having only two dimensions (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,11 +14,11 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical surface."
 		},
 		"includedPolygon": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePolygon",
+			"$ref": "https://schema.twindev.org/unece/UnecePolygon",
 			"description": "The polygon included in this geographical surface."
 		}
 	},

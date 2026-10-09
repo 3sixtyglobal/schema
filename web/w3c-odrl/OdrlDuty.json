@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlDuty",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlDuty",
 	"title": "OdrlDuty",
 	"description": "Interface for Duty Rules.\nA Duty is the obligation to exercise an action, with all refinements satisfied.\nA Duty is fulfilled if all constraints are satisfied and if its action has been exercised.\nhttps://www.w3.org/TR/odrl-model/#duty",
 	"type": "object",
@@ -16,12 +16,12 @@
 		"consequence": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 					}
 				}
 			],
@@ -34,7 +34,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlRule"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlRule"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase",
 	"title": "DataspaceProtocolOfferBase",
 	"description": "Context-free offer interface compliant with Eclipse Data Space Protocol, for embedding within parent documents.",
 	"type": "object",
@@ -42,7 +42,7 @@
 							"type": "string"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 						}
 					],
 					"description": "The assigner of the offer.\nRequired for Offer policies.",
@@ -54,10 +54,10 @@
 							"type": "string"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 						},
 						{
 							"type": "array",
@@ -67,10 +67,10 @@
 										"type": "string"
 									},
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 									},
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 									}
 								]
 							}
@@ -85,10 +85,10 @@
 							"type": "string"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 						},
 						{
 							"type": "array",
@@ -98,10 +98,10 @@
 										"type": "string"
 									},
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 									},
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 									}
 								]
 							}
@@ -113,26 +113,26 @@
 				"action": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 						},
 						{
 							"type": "string"
 						},
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 						},
 						{
 							"type": "array",
 							"items": {
 								"anyOf": [
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 									},
 									{
 										"type": "string"
 									},
 									{
-										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 									}
 								]
 							}
@@ -157,19 +157,19 @@
 					"$comment": "Inherited from OdrlPolicy"
 				},
 				"conflict": {
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConflictStrategyType",
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConflictStrategyType",
 					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)",
 					"$comment": "Inherited from OdrlPolicy"
 				},
 				"permission": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
 							}
 						}
 					],
@@ -179,12 +179,12 @@
 				"prohibition": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
 							}
 						}
 					],
@@ -194,12 +194,12 @@
 				"obligation": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 							}
 						}
 					],

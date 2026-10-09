@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/synchronised-storage/SyncChange",
+	"$id": "https://schema.twindev.org/synchronised-storage/SyncChange",
 	"title": "SyncChange",
 	"description": "The object definition for a sync change.",
 	"type": "object",
 	"properties": {
 		"operation": {
-			"$ref": "https://schema.3sixty.global/synchronised-storage/SyncChangeOperation",
+			"$ref": "https://schema.twindev.org/synchronised-storage/SyncChangeOperation",
 			"description": "Operation."
 		},
 		"id": {
@@ -14,7 +14,7 @@
 			"description": "The item id."
 		},
 		"entity": {
-			"$ref": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntityCore",
+			"$ref": "https://schema.twindev.org/synchronised-storage/SynchronisedEntityCore",
 			"description": "The entity to set."
 		}
 	},

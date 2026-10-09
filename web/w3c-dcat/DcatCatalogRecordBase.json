@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase",
 	"title": "DcatCatalogRecordBase",
 	"description": "Base interface for DCAT Catalog Record without JSON-LD context.\nThis is the context-free variant of IDcatCatalogRecord, intended for embedding\ncatalog record objects inline within catalogs where the context is provided by the enclosing document.",
 	"type": "object",
@@ -66,7 +66,7 @@
 			"description": "An established standard to which the catalog record conforms."
 		},
 		"foaf:primaryTopic": {
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource",
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource",
 			"description": "The dataset or data service described in the catalog record."
 		}
 	},

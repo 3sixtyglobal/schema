@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaIotEventMetadataActive",
+	"$id": "https://schema.twindev.org/dcsa/DcsaIotEventMetadataActive",
 	"title": "DcsaIotEventMetadataActive",
 	"description": "IoT event metadata (active event).\n\nSource: `iotEvent` metadata allOf in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -14,11 +14,11 @@
 			"description": "Timestamp of when the event was created by the publisher.\nFormat: ISO 8601 date-time."
 		},
 		"publisher": {
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaPublisher",
+			"$ref": "https://schema.twindev.org/dcsa/DcsaPublisher",
 			"description": "The party publishing this event."
 		},
 		"publisherRole": {
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaTntPublisherRole",
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTntPublisherRole",
 			"description": "Publisher role (context of the publisher)."
 		},
 		"eventType": {

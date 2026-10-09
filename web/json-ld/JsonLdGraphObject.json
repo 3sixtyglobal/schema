@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdGraphObject",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdGraphObject",
 	"title": "JsonLdGraphObject",
 	"description": "A graph object represents a named graph, which MAY include an explicit graph name.",
 	"type": "object",
@@ -8,12 +8,12 @@
 		"@graph": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 					}
 				}
 			]
@@ -35,7 +35,7 @@
 			]
 		},
 		"@context": {
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionRoot"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
 		}
 	},
 	"required": ["@graph"]

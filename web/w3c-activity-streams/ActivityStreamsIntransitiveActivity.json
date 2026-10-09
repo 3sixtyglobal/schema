@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsIntransitiveActivity",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsIntransitiveActivity",
 	"title": "ActivityStreamsIntransitiveActivity",
 	"description": "A W3C Activity Streams IntransitiveActivity.\n\n`IntransitiveActivity` objects do not have an `object` property.",
 	"type": "object",
@@ -11,7 +11,7 @@
 					"const": "IntransitiveActivity"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
 				},
 				{
 					"type": "string"
@@ -24,7 +24,7 @@
 								"const": "IntransitiveActivity"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+								"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsTypes"
 							},
 							{
 								"type": "string"
@@ -41,7 +41,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -51,7 +51,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -65,7 +65,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -75,7 +75,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -89,7 +89,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -99,7 +99,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -113,7 +113,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -123,7 +123,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -137,7 +137,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -147,7 +147,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -159,7 +159,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObject"
 		}
 	]
 }

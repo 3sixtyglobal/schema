@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceDocumentContextParameter",
+	"$id": "https://schema.twindev.org/unece/UneceDocumentContextParameter",
 	"title": "UneceDocumentContextParameter",
 	"description": "A feature that is fixed for a particular document context.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,13 +19,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this document context parameter."
 		},
 		"specifiedVersion": {
-			"$ref": "https://schema.3sixty.global/unece/UneceVersion",
+			"$ref": "https://schema.twindev.org/unece/UneceVersion",
 			"description": "The document version specified for this document context parameter."
 		},
 		"value": {

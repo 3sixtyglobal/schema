@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaEquipmentEvent",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEquipmentEvent",
 	"title": "DcsaEquipmentEvent",
 	"description": "The `EquipmentEvent` is a specialized event to handle all events related to equipment (containers).\n\nSource: `equipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"oneOf": [
@@ -17,13 +17,13 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive"
 						}
 					],
 					"description": "Event metadata (eventType = EQUIPMENT)."
 				},
 				"payload": {
-					"$ref": "https://schema.3sixty.global/dcsa/DcsaEquipmentPayload",
+					"$ref": "https://schema.twindev.org/dcsa/DcsaEquipmentPayload",
 					"description": "Business attributes related to the `EquipmentEvent`."
 				}
 			},
@@ -42,7 +42,7 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction"
+							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction"
 						}
 					],
 					"description": "Retraction metadata (eventType = EQUIPMENT)."

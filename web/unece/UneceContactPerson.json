@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceContactPerson",
+	"$id": "https://schema.twindev.org/unece/UneceContactPerson",
 	"title": "UneceContactPerson",
 	"description": "An individual human being in a position to give assistance or information.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -33,13 +33,13 @@
 		"countryResidenceCountryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the residence country of this contact person."
@@ -47,7 +47,7 @@
 		"emailURICommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "An email Uniform Resource Identifier (URI) communication for this contact person."
 		},
@@ -62,7 +62,7 @@
 		"faxCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "Facsimile communication information for this contact person."
 		},
@@ -77,7 +77,7 @@
 		"instantMessagingCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "An instant messaging communication for this contact person."
 		},
@@ -94,38 +94,38 @@
 			"description": "A role, expressed as text, for this contact person."
 		},
 		"specifiedBirthAddress": {
-			"$ref": "https://schema.3sixty.global/unece/UneceBirthAddress",
+			"$ref": "https://schema.twindev.org/unece/UneceBirthAddress",
 			"description": "The birth address specified for this contact person."
 		},
 		"specifiedCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "A universal communication specified for this contact person."
 		},
 		"specifiedEmployerIdentity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceEmployerIdentity"
+				"$ref": "https://schema.twindev.org/unece/UneceEmployerIdentity"
 			},
 			"description": "An employer identity specified for this contact person."
 		},
 		"specifiedPersonIdentity": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePersonIdentity",
+			"$ref": "https://schema.twindev.org/unece/UnecePersonIdentity",
 			"description": "The person identity specified for this contact person."
 		},
 		"specifiedTaxRegistration": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTaxRegistration"
+				"$ref": "https://schema.twindev.org/unece/UneceTaxRegistration"
 			},
 			"description": "A tax registration specified for this contact person."
 		},
 		"telephoneCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "Telephone communication information for this contact person."
 		},
@@ -136,7 +136,7 @@
 		"websiteURICommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "A website Uniform Resource Identifier (URI) communication for this contact person."
 		}

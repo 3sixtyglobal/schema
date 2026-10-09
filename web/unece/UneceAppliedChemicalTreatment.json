@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAppliedChemicalTreatment",
+	"$id": "https://schema.twindev.org/unece/UneceAppliedChemicalTreatment",
 	"title": "UneceAppliedChemicalTreatment",
 	"description": "A process of applying a chemical, physical, or biological agent to an object.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,20 +14,20 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableSpecifiedTemperature": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedTemperature",
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedTemperature",
 			"description": "The specified temperature applicable for this applied chemical treatment."
 		},
 		"appliedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A period during which this chemical treatment is applied."
 		},
 		"chemicalConcentrationMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the chemical concentration of this applied chemical treatment."
 		},
@@ -45,24 +45,24 @@
 			"format": "date-time"
 		},
 		"resultAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The authentication of the results of this applied chemical treatment."
 		},
 		"resultNote": {
-			"$ref": "https://schema.3sixty.global/unece/UneceNote",
+			"$ref": "https://schema.twindev.org/unece/UneceNote",
 			"description": "The note describing the results of this applied chemical treatment."
 		},
 		"unitChemicalConcentrationMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceUnitMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType"
 			},
 			"description": "A measure of the chemical concentration of this applied chemical treatment."
 		},
 		"usedChemical": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceChemical"
+				"$ref": "https://schema.twindev.org/unece/UneceChemical"
 			},
 			"description": "A chemical used during this applied chemical treatment."
 		}

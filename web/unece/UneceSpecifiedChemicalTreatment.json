@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatment",
 	"title": "UneceSpecifiedChemicalTreatment",
 	"description": "Any substance such as dyestuffs, chrome oxide, acids, sulphate, surfactant or other chemicals applied to an agricultural\nfield, substrate, plant, animal product, material or product.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this specified chemical treatment."
 		},
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this specified chemical treatment."
@@ -38,14 +38,14 @@
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate for this specified chemical treatment."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatmentTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatmentTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -56,7 +56,7 @@
 		"usedChemical": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceChemical"
+				"$ref": "https://schema.twindev.org/unece/UneceChemical"
 			},
 			"description": "A distinct chemical used for this specified chemical treatment."
 		}

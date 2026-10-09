@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductionFacility",
+	"$id": "https://schema.twindev.org/unece/UneceProductionFacility",
 	"title": "UneceProductionFacility",
 	"description": "A man made physical structure, such as a building, in which something is produced.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,49 +16,49 @@
 		"applicableAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
 			},
 			"description": "An assessment applicable to this production facility."
 		},
 		"applicableSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate applicable to this production facility."
 		},
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
 			},
 			"description": "A specified inspection applicable to this production facility."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this production facility."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this production facility."
 		},
 		"bufferCapacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the buffer capacity for this production facility."
 		},
 		"capacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the capacity of this production facility."
 		},
@@ -80,7 +80,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The digital platform assigned identifier for this production facility."
@@ -95,7 +95,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global identifier of this production facility."
@@ -106,7 +106,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this production facility."
@@ -114,7 +114,7 @@
 		"inputCapacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the input capacity for this production facility."
 		},
@@ -129,14 +129,14 @@
 		"outputCapacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the output capacity for this production facility."
 		},
 		"physicalLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
 			},
 			"description": "A physical location referenced for this production facility."
 		},
@@ -159,7 +159,7 @@
 		"relatedProductionUnit": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionUnit"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionUnit"
 			},
 			"description": "A production unit related to this production facility."
 		},
@@ -174,91 +174,91 @@
 		"specifiedAnimalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAnimalCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertificate"
 			},
 			"description": "An animal certificate specified for this production facility."
 		},
 		"specifiedAnimalCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAnimalCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertification"
 			},
 			"description": "An animal certification specified for this production facility."
 		},
 		"specifiedOrganizationalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertificate"
 			},
 			"description": "An organizational certificate specified for this production facility."
 		},
 		"specifiedOrganizationalCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertification"
 			},
 			"description": "An organizational certification specified for this production facility."
 		},
 		"specifiedProcess": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionProcess"
 			},
 			"description": "A production process specified for this production facility."
 		},
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate specified for this production facility."
 		},
 		"specifiedProcessCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertification"
 			},
 			"description": "A process certification specified for this production facility."
 		},
 		"specifiedProductBatchCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCertificate"
 			},
 			"description": "A product batch certificate specified for this production facility."
 		},
 		"specifiedProductBatchCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCertification"
 			},
 			"description": "A product batch certification specified for this production facility."
 		},
 		"specifiedProductCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
 			},
 			"description": "A product certificate specified for this production facility."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this production facility."
 		},
 		"specifiedTradeProductCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification"
 			},
 			"description": "A trade product certification specified for this production facility."
 		},
 		"subordinateFacility": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionFacility"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionFacility"
 			},
 			"description": "A production facility subordinate to this production facility."
 		}

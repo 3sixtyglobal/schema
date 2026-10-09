@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/gs1/EpcisQueryResults",
+	"$id": "https://schema.twindev.org/gs1/EpcisQueryResults",
 	"title": "EpcisQueryResults",
 	"description": "EPCIS 2.0 QueryResults payload returned from a repository query.",
 	"type": "object",
@@ -14,7 +14,7 @@
 			"description": "The concerned query."
 		},
 		"resultsBody": {
-			"$ref": "https://schema.3sixty.global/gs1/EpcisQueryResultsBody",
+			"$ref": "https://schema.twindev.org/gs1/EpcisQueryResultsBody",
 			"description": "The query results payload."
 		}
 	},

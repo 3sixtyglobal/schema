@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsQuestionOneOfChoice",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsQuestionOneOfChoice",
 	"title": "ActivityStreamsQuestionOneOfChoice",
 	"description": "Represents a Question with an exclusive list of possible answers, but not an inclusive list.",
 	"type": "object",
@@ -12,12 +12,12 @@
 		"oneOf": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 					}
 				}
 			],

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAuthentication",
+	"$id": "https://schema.twindev.org/unece/UneceAuthentication",
 	"title": "UneceAuthentication",
 	"description": "A proof that a document is genuine.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 			"description": "A code specifying a category for this document authentication."
 		},
 		"governmentActionTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGovernmentActionCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceGovernmentActionCodeList",
 			"description": "The code specifying the type of document authentication."
 		},
 		"identifier": {
@@ -32,7 +32,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this document authentication."
@@ -40,7 +40,7 @@
 		"includedClause": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceClause"
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
 			},
 			"description": "A document clause included in this document authentication."
 		},
@@ -49,19 +49,19 @@
 			"description": "Information, expressed as text, for this document authentication."
 		},
 		"issueLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location of issue of this document authentication."
 		},
 		"issueLogisticsLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The issue location for this document authentication."
 		},
 		"locationProviderParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party providing the location for this document authentication."
 		},
 		"providerParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party providing this document authentication."
 		},
 		"representationTypeCode": {
@@ -91,7 +91,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a transport means for this document authentication."

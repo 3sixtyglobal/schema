@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceObservationResult",
+	"$id": "https://schema.twindev.org/unece/UneceObservationResult",
 	"title": "UneceObservationResult",
 	"description": "A collection of diagnostic data, visual or technical, and processing data, performed on a sample.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -26,19 +26,19 @@
 		"applicableMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
 			},
 			"description": "A specified method applicable to this sample observation result."
 		},
 		"attachedLaboratoryObservationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationNote"
+				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationNote"
 			},
 			"description": "A note attached to the laboratory observation results with additional observations and or conclusions."
 		},
 		"authorizationParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationParty",
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty",
 			"description": "The laboratory observation party who authorized this sample observation result."
 		},
 		"emergencyObservationIndicator": {
@@ -48,7 +48,7 @@
 		"expectedValueSpecifiedObservationResultCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObservationResultCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceObservationResultCharacteristic"
 			},
 			"description": "An expected value for the characteristic, to be observed or measured according to the specified type of observation for\nthis sample observation result."
 		},
@@ -62,7 +62,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this sample observation result."
@@ -70,14 +70,14 @@
 		"interpretationResultApplicableParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObservationObjectiveParameter"
+				"$ref": "https://schema.twindev.org/unece/UneceObservationObjectiveParameter"
 			},
 			"description": "An applicable observation objective parameter of the interpretation result for this sample observation result."
 		},
 		"laboratoryAnalysisRequestSpecifiedReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationReference"
+				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationReference"
 			},
 			"description": "A laboratory observation analysis request reference specified for this sample observation result."
 		},
@@ -92,14 +92,14 @@
 		"maximumStandardValueSpecifiedObservationResultCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObservationResultCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceObservationResultCharacteristic"
 			},
 			"description": "A maximum standard value of the values for the characteristic observed or measured by using the specified type of\nobservation for this sample observation result."
 		},
 		"minimumStandardValueSpecifiedObservationResultCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObservationResultCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceObservationResultCharacteristic"
 			},
 			"description": "A minimum standard value of the values for the characteristic observed or measured by using the specified type of\nobservation for this sample observation result."
 		},
@@ -118,12 +118,12 @@
 		"observedValueSpecifiedObservationResultCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObservationResultCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceObservationResultCharacteristic"
 			},
 			"description": "An observed value for the characteristic, acquired by observing or measuring according to the specified type of\nobservation for this sample observation result."
 		},
 		"outsourcedLaboratoryParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationParty",
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty",
 			"description": "The outsourced laboratory party who performed this sample observation result."
 		},
 		"outsourcedObservationIndicator": {
@@ -137,21 +137,21 @@
 		"specifiedLaboratoryObservationInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationInstructions"
 			},
 			"description": "A set of laboratory observation instructions specified for this sample observation result."
 		},
 		"specifiedLaboratoryObservationReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationReference"
+				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationReference"
 			},
 			"description": "A laboratory observation reference specified for this sample observation result."
 		},
 		"usedMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationAnalysisMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationAnalysisMethod"
 			},
 			"description": "A laboratory observation analysis method used for this sample observation result."
 		}

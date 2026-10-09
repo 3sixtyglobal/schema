@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphChangeset",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphChangeset",
 	"title": "AuditableItemGraphChangeset",
 	"description": "Interface describing a set of changes to the vertex.",
 	"type": "object",
@@ -9,14 +9,14 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				},
 				{
-					"const": "https://schema.3sixty.global/common/"
+					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -40,7 +40,7 @@
 		"patches": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphPatchOperation"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation"
 			},
 			"description": "The patches in the changeset."
 		},
@@ -49,7 +49,7 @@
 			"description": "The immutable proof id which contains the signature for this changeset."
 		},
 		"verification": {
-			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
+			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
 			"description": "The verification for the changeset."
 		},
 		"version": {

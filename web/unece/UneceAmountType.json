@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAmountType",
+	"$id": "https://schema.twindev.org/unece/UneceAmountType",
 	"title": "UneceAmountType",
 	"description": "A number of monetary units specified in a currency where the unit of the currency is explicit or implied.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "A number of monetary units."
 		},
 		"AmountTypeCurrency": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountCurrency",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountCurrency",
 			"description": "An amount currency code."
 		}
 	},

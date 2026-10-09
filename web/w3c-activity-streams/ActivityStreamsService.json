@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsService",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsService",
 	"title": "ActivityStreamsService",
 	"description": "A W3C Activity Streams Service.\n\nA `Service` represents a service of any kind.",
 	"type": "object",
@@ -33,7 +33,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActor"
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsActor"
 		}
 	]
 }

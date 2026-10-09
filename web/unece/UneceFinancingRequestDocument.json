@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceFinancingRequestDocument",
+	"$id": "https://schema.twindev.org/unece/UneceFinancingRequestDocument",
 	"title": "UneceFinancingRequestDocument",
 	"description": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"additionalInformationIncludedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "An additional information note included for this financing request document."
 		},
@@ -35,7 +35,7 @@
 		"contractualClause": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceClause"
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
 			},
 			"description": "A contractual document clause specified for this financing request document."
 		},
@@ -49,11 +49,11 @@
 			"format": "date-time"
 		},
 		"financingRequestDocumentCurrencyCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the currency in this financing request document."
 		},
 		"firstAgentSpecifiedFinancialInstitution": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCreditorFinancialInstitution",
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution",
 			"description": "The creditor financial institution specified as the first agent in this financing request document."
 		},
 		"groupId": {
@@ -62,39 +62,39 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The group identifier in this financing request document."
 		},
 		"groupedTransactionSpecifiedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of grouped transactions specified in this financing request document."
 		},
 		"groupedTransactionTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A total monetary value of grouped transactions in this financing request document."
 		},
 		"intermediarySpecifiedFinancialInstitution": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCreditorFinancialInstitution",
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialInstitution",
 			"description": "The creditor financial institution specified as the intermediary in this financing request document."
 		},
 		"specifiedCancellationStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCancellationStatus"
+				"$ref": "https://schema.twindev.org/unece/UneceCancellationStatus"
 			},
 			"description": "A status of a cancellation specified for this financing request document, such as accepted."
 		},
 		"specifiedRequestingParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceRequestingParty",
+			"$ref": "https://schema.twindev.org/unece/UneceRequestingParty",
 			"description": "The requesting party specified in this financing request document."
 		},
 		"specifiedValidationStatus": {
-			"$ref": "https://schema.3sixty.global/unece/UneceValidationStatus",
+			"$ref": "https://schema.twindev.org/unece/UneceValidationStatus",
 			"description": "The status of the validation specified for this financing request document, such as error."
 		}
 	},

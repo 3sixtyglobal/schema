@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdListObject",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdListObject",
 	"title": "JsonLdListObject",
 	"description": "A list represents an ordered set of values.",
 	"type": "object",
@@ -8,12 +8,12 @@
 		"@list": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdListOrSetItem"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdListOrSetItem"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdListOrSetItem"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdListOrSetItem"
 					}
 				}
 			]

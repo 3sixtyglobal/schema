@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAssessment",
+	"$id": "https://schema.twindev.org/unece/UneceAssessment",
 	"title": "UneceAssessment",
 	"description": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or\ncondition.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,32 +16,32 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this specified assessment."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this specified assessment."
 		},
 		"assessedObject": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+				"$ref": "https://schema.twindev.org/unece/UneceObject"
 			},
 			"description": "An object assessed for this specified assessment."
 		},
 		"assessorParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The assessor party for this specified assessment."
 		},
 		"associatedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file associated with this specified assessment."
 		},
@@ -65,7 +65,7 @@
 		"relatedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
 			},
 			"description": "A supply chain trade transaction related to this specified assessment."
 		},
@@ -80,7 +80,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The report identifier for this specified assessment."
@@ -101,7 +101,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceAssessmentTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceAssessmentTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -116,7 +116,7 @@
 		"verifierParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A verifier party for this specified assessment."
 		}

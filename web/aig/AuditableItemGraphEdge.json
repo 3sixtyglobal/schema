@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphEdge",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphEdge",
 	"title": "AuditableItemGraphEdge",
 	"description": "Interface describing an edge between two vertices in an auditable item graph.",
 	"type": "object",
@@ -8,17 +8,17 @@
 		"@context": {
 			"anyOf": [
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				},
 				{
 					"type": "array",
 					"prefixItems": [
 						{
-							"const": "https://schema.3sixty.global/aig/"
+							"const": "https://schema.twindev.org/aig/"
 						}
 					],
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					},
 					"minItems": 1
 				}
@@ -38,7 +38,7 @@
 			"description": "JSON-LD Type."
 		},
 		"annotationObject": {
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "The JSON-LD annotation object for the edge."
 		},
 		"edgeRelationships": {
@@ -52,7 +52,7 @@
 	"required": ["targetId", "type", "edgeRelationships"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAuditedElement"
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditedElement"
 		}
 	]
 }

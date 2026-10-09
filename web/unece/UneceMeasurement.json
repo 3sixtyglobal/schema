@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceMeasurement",
+	"$id": "https://schema.twindev.org/unece/UneceMeasurement",
 	"title": "UneceMeasurement",
 	"description": "An amount, size, or extent as established by measuring.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"actualMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "An actual measure for this measurement."
 		},
@@ -27,7 +27,7 @@
 		"conditionMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a condition for this measurement."
 		},
@@ -42,7 +42,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceMeasurementTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceMeasurementTypeCodeList"
 				},
 				{
 					"type": "string"

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceTTParty",
+	"$id": "https://schema.twindev.org/unece/UneceTTParty",
 	"title": "UneceTTParty",
 	"description": "An individual, group, or body related to a Track and Trace (TT) process.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this TT party."
@@ -27,7 +27,7 @@
 		"managedCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristic"
 			},
 			"description": "A technical characteristic managed by this TT party."
 		},
@@ -38,7 +38,7 @@
 		"partyTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePartyTypeCodeList"
+				"$ref": "https://schema.twindev.org/unece/UnecePartyTypeCodeList"
 			},
 			"description": "A code specifying the type of TT party."
 		},
@@ -48,7 +48,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a\ncorporation has its place of incorporation."
@@ -56,14 +56,14 @@
 		"specifiedTTAnimal": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTTAnimal"
+				"$ref": "https://schema.twindev.org/unece/UneceTTAnimal"
 			},
 			"description": "A tracking animal specified for this TT party."
 		},
 		"specifiedTTLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTTLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
 			},
 			"description": "A location specified for this TT party."
 		},
@@ -77,7 +77,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the type for this TT party."

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAccreditation",
+	"$id": "https://schema.twindev.org/unece/UneceAccreditation",
 	"title": "UneceAccreditation",
 	"description": "A certified recognition that provides evidence of a level of competency in a given area, such as certifying a level of\nskill in a trade.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -40,7 +40,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this certified accreditation."
@@ -53,7 +53,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceAccreditationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceAccreditationTypeCodeList"
 				},
 				{
 					"type": "string"

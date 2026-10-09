@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaIotEvent",
+	"$id": "https://schema.twindev.org/dcsa/DcsaIotEvent",
 	"title": "DcsaIotEvent",
 	"description": "IoT event.\n\nSource: `iotEvent` schema in the DCSA Event Domain (v3.1.0).\n\nRetraction rule: if `metadata.retractedEventID` is set, `payload` MUST NOT be present.",
 	"oneOf": [
@@ -8,11 +8,11 @@
 			"type": "object",
 			"properties": {
 				"metadata": {
-					"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventMetadataActive",
+					"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventMetadataActive",
 					"description": "Event metadata."
 				},
 				"payload": {
-					"$ref": "https://schema.3sixty.global/dcsa/DcsaIotPayload",
+					"$ref": "https://schema.twindev.org/dcsa/DcsaIotPayload",
 					"description": "Event payload."
 				}
 			},
@@ -22,7 +22,7 @@
 			"type": "object",
 			"properties": {
 				"metadata": {
-					"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventMetadataRetraction",
+					"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventMetadataRetraction",
 					"description": "Retraction metadata."
 				},
 				"payload": {

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceColour",
+	"$id": "https://schema.twindev.org/unece/UneceColour",
 	"title": "UneceColour",
 	"description": "A colour of a product.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,42 +16,42 @@
 		"applicableMachine": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+				"$ref": "https://schema.twindev.org/unece/UneceMachine"
 			},
 			"description": "A production machine applicable to this product colour."
 		},
 		"applicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Specified material applicable to this product colour."
 		},
 		"applicableMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
 			},
 			"description": "A specified method applicable to this product colour."
 		},
 		"applicableProductionDevice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionDevice"
 			},
 			"description": "A production device applicable to this product colour."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this product colour."
 		},
 		"applicableTechnicalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristic"
 			},
 			"description": "A technical characteristic applicable to this product colour."
 		},
@@ -65,7 +65,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this product colour."
@@ -81,14 +81,14 @@
 		"relatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A trade party related to this product colour."
 		},
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this product colour."
 		},
@@ -99,7 +99,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceColourTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceColourTypeCodeList"
 				},
 				{
 					"type": "string"

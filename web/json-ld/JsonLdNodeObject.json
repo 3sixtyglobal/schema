@@ -1,40 +1,40 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 	"title": "JsonLdNodeObject",
 	"description": "A node object represents zero or more properties of a node\nin the graph serialized by the JSON-LD document.",
 	"type": "object",
 	"additionalProperties": {
 		"anyOf": [
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodePrimitive"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
 			},
 			{
 				"type": "array",
 				"items": {
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodePrimitive"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
 				}
 			},
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
 			},
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdIndexMap"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
 			},
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdIncludedBlock"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
 			},
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdIdMap"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
 			},
 			{
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdTypeMap"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
 			}
 		]
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdObject"
 		}
 	]
 }

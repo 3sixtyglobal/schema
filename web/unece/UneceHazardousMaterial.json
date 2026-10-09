@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceHazardousMaterial",
+	"$id": "https://schema.twindev.org/unece/UneceHazardousMaterial",
 	"title": "UneceHazardousMaterial",
 	"description": "Material which exhibits adverse effects on living organisms.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,21 +16,21 @@
 		"applicableProductCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
 			},
 			"description": "A product certificate applicable to this toxicological hazardous material."
 		},
 		"applicableProductCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
 			},
 			"description": "A product characteristic applicable to this toxicological hazardous material."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this toxicological hazardous material."
 		},

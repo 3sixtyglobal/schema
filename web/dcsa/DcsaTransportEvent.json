@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportEvent",
+	"$id": "https://schema.twindev.org/dcsa/DcsaTransportEvent",
 	"title": "DcsaTransportEvent",
 	"description": "The `TransportEvent` is a specialized event to handle all events related to transportation.\n\nSource: `transportEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"oneOf": [
@@ -17,13 +17,13 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive"
 						}
 					],
 					"description": "Event metadata (eventType = TRANSPORT)."
 				},
 				"payload": {
-					"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportPayload",
+					"$ref": "https://schema.twindev.org/dcsa/DcsaTransportPayload",
 					"description": "Business attributes related to the `TransportEvent`."
 				}
 			},
@@ -42,7 +42,7 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction"
+							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction"
 						}
 					],
 					"description": "Retraction metadata (eventType = TRANSPORT)."

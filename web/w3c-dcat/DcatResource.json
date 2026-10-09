@@ -1,19 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatResource",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatResource",
 	"title": "DcatResource",
 	"description": "Interface for DCAT catalogued resources.\nThis is the parent class of dcat:Dataset, dcat:DataService, and dcat:Catalog.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatContextType",
 			"description": "The JSON-LD context for the resource."
 		}
 	},
 	"required": ["@context"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResourceBase"
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResourceBase"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatDataServiceBase",
 	"title": "DcatDataServiceBase",
 	"description": "Base interface for DCAT Data Service without JSON-LD context.\nThis is the context-free variant of IDcatDataService, intended for embedding\ndata service objects inline within other objects where the context is provided by the enclosing document.",
 	"type": "object",
@@ -35,7 +35,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResourceBase"
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResourceBase"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphVertexList",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertexList",
 	"title": "AuditableItemGraphVertexList",
 	"description": "Interface describing an auditable item graph vertex list.",
 	"type": "object",
@@ -12,11 +12,11 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -39,7 +39,7 @@
 		"itemListElement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphVertex"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
 			},
 			"description": "The list of vertices."
 		}

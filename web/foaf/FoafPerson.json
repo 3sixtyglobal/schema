@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/foaf/FoafPerson",
+	"$id": "https://schema.twindev.org/foaf/FoafPerson",
 	"title": "FoafPerson",
 	"description": "A FOAF Person.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 			"description": "The LD Context."
 		},
 		"@type": {
@@ -24,19 +24,19 @@
 		"knows": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+					"$ref": "https://schema.twindev.org/foaf/FoafAgent"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+						"$ref": "https://schema.twindev.org/foaf/FoafAgent"
 					}
 				}
 			],
 			"description": "A person known by this person (indicating some level of reciprocated interaction between the parties)."
 		},
 		"img": {
-			"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+			"$ref": "https://schema.twindev.org/foaf/FoafImage",
 			"description": "An image that can be used to represent some thing."
 		},
 		"nick": {
@@ -47,7 +47,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+			"$ref": "https://schema.twindev.org/foaf/FoafAgent"
 		}
 	]
 }

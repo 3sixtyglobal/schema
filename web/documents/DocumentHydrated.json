@@ -1,25 +1,25 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/documents/DocumentHydrated",
+	"$id": "https://schema.twindev.org/documents/DocumentHydrated",
 	"title": "DocumentHydrated",
 	"description": "Interface describing a hydrated document which includes additional information that can be optionally requested when retrieving a document.",
 	"type": "object",
 	"properties": {
 		"blobStorageEntry": {
-			"$ref": "https://schema.3sixty.global/blob-storage/BlobStorageEntry",
+			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
 			"description": "The additional JSON-LD for blob storage if it was requested."
 		},
 		"extractedData": {
 			"description": "The data extracted from the document using data extraction services."
 		},
 		"attestationInformation": {
-			"$ref": "https://schema.3sixty.global/attestation/AttestationInformation",
+			"$ref": "https://schema.twindev.org/attestation/AttestationInformation",
 			"description": "The additional JSON-LD for attestation storage if it was requested."
 		}
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/documents/Document"
+			"$ref": "https://schema.twindev.org/documents/Document"
 		}
 	]
 }

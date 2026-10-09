@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristic",
+	"$id": "https://schema.twindev.org/unece/UneceOrganizationCharacteristic",
 	"title": "UneceOrganizationCharacteristic",
 	"description": "A prominent attribute or aspect of an organization.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this organization characteristic."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this organization characteristic."
 		},
@@ -41,7 +41,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this organization characteristic."
@@ -53,7 +53,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristicTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceOrganizationCharacteristicTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -66,7 +66,7 @@
 			"description": "A value, expressed as text, for this organization characteristic."
 		},
 		"valueAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this organization characteristic."
 		},
 		"valueDateTime": {
@@ -81,14 +81,14 @@
 		"valueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a value for this organization characteristic."
 		},
 		"valueMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
 			},
 			"description": "A method specified for the value of this organization characteristic."
 		},
@@ -99,21 +99,21 @@
 		"valueParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
 			},
 			"description": "A parameter specified for the value of this organization characteristic."
 		},
 		"valueRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
 			},
 			"description": "A range specified for the value of this organization characteristic."
 		},
 		"valueTolerance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
 			},
 			"description": "A tolerance specified for the value of this organization characteristic."
 		}

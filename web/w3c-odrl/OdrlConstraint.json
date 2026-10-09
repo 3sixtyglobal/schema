@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlConstraint",
 	"title": "OdrlConstraint",
 	"description": "Interface for ODRL Constraints.\nhttps://www.w3.org/TR/odrl-model/#constraint",
 	"type": "object",
@@ -15,13 +15,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLeftOperandType"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLeftOperandType"
 				}
 			],
 			"description": "The left operand of the constraint."
 		},
 		"operator": {
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlOperatorType",
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlOperatorType",
 			"description": "The operator of the constraint."
 		},
 		"rightOperand": {
@@ -107,7 +107,7 @@
 			"description": "The unit for the right operand value."
 		},
 		"status": {
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlStatusType",
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlStatusType",
 			"description": "The status value for comparison."
 		}
 	},

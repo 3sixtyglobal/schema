@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGeographicalFeature",
+	"$id": "https://schema.twindev.org/unece/UneceGeographicalFeature",
 	"title": "UneceGeographicalFeature",
 	"description": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings,\nroads, rivers, forests and lakes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the coordinate reference system for this geographical feature."
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this specified geographical feature."
@@ -46,40 +46,40 @@
 		"includedCircle": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCircle"
+				"$ref": "https://schema.twindev.org/unece/UneceCircle"
 			},
 			"description": "A circle included in this specified geographical feature."
 		},
 		"includedGeographicalGrid": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalGrid",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalGrid",
 			"description": "The geographical grid included in this geographical feature."
 		},
 		"includedGeographicalLine": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalLine",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalLine",
 			"description": "The geographical line included in this geographical feature."
 		},
 		"includedGeographicalMultiCurve": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalMultiCurve",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiCurve",
 			"description": "The geographical multi-curve included in this geographical feature."
 		},
 		"includedGeographicalMultiPoint": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalMultiPoint",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiPoint",
 			"description": "The geographical multi-point included in this geographical feature."
 		},
 		"includedGeographicalMultiSurface": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalMultiSurface",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalMultiSurface",
 			"description": "The geographical multi-surface included in this geographical feature."
 		},
 		"includedGeographicalPoint": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalPoint",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint",
 			"description": "The geographical point included in this geographical feature."
 		},
 		"includedGeographicalSurface": {
-			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalSurface",
+			"$ref": "https://schema.twindev.org/unece/UneceGeographicalSurface",
 			"description": "The geographical surface included in this geographical feature."
 		},
 		"includedPolygon": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePolygon",
+			"$ref": "https://schema.twindev.org/unece/UnecePolygon",
 			"description": "The polygon included in this geographical feature."
 		},
 		"name": {
@@ -87,11 +87,11 @@
 			"description": "The name, expressed as text, of this specified geographical feature."
 		},
 		"usedCoordinateReferenceSystem": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCoordinateReferenceSystem",
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
 			"description": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
 		},
 		"usedCoordinateSourceSystem": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCoordinateSourceSystem",
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem",
 			"description": "The geographical coordinate source system used for this specified geographical feature."
 		}
 	},

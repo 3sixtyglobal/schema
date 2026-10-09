@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/synchronised-storage/SyncChangeSet",
+	"$id": "https://schema.twindev.org/synchronised-storage/SyncChangeSet",
 	"title": "SyncChangeSet",
 	"description": "The object definition for a sync change set.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"const": "https://schema.3sixty.global/synchronised-storage/",
+			"const": "https://schema.twindev.org/synchronised-storage/",
 			"description": "The LD Context for the change set."
 		},
 		"type": {
@@ -36,7 +36,7 @@
 		"changes": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/synchronised-storage/SyncChange"
+				"$ref": "https://schema.twindev.org/synchronised-storage/SyncChange"
 			},
 			"description": "The changes to apply after a snapshot."
 		}

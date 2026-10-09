@@ -1,19 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataService",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataService",
 	"title": "DataspaceProtocolDataService",
 	"description": "Data service compliant with Eclipse Data Space Protocol, requiring an id and endpointURL.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@context"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataServiceBase"
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
 		}
 	]
 }

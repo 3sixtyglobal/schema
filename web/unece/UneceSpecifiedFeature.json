@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedFeature",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedFeature",
 	"title": "UneceSpecifiedFeature",
 	"description": "A distinctive or characteristic part of something.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -32,7 +32,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFeatureTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFeatureTypeCodeList"
 				},
 				{
 					"type": "string"

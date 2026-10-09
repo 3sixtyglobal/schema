@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceMDHHealthIndication",
+	"$id": "https://schema.twindev.org/unece/UneceMDHHealthIndication",
 	"title": "UneceMDHHealthIndication",
 	"description": "Information related to a specific transportation indication to be reported on a WHO MDH (Maritime Declaration of\nHealth).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"appliedSanitaryMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSanitaryMeasure"
+				"$ref": "https://schema.twindev.org/unece/UneceSanitaryMeasure"
 			},
 			"description": "A sanitary measure applied for this MDH health indication."
 		},
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of a location for this MDH health indication."
@@ -47,7 +47,7 @@
 		"reportedQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
 			},
 			"description": "A reported quantity for this MDH health indication."
 		},
@@ -58,7 +58,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndicationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndicationTypeCodeList"
 				},
 				{
 					"type": "string"

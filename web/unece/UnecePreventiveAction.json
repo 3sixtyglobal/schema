@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePreventiveAction",
+	"$id": "https://schema.twindev.org/unece/UnecePreventiveAction",
 	"title": "UnecePreventiveAction",
 	"description": "An adjustment, such as a change to an organization's processes or products, taken to prevent non-conformities or other\nundesirable situations, possibly as a result of a risk analysis.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UnecePreventiveActionTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UnecePreventiveActionTypeCodeList"
 				},
 				{
 					"type": "string"

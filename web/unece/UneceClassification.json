@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceClassification",
+	"$id": "https://schema.twindev.org/unece/UneceClassification",
 	"title": "UneceClassification",
 	"description": "A systematic arrangement of products in classes or categories according to established criteria.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableStandard": {
-			"$ref": "https://schema.3sixty.global/unece/UneceStandard",
+			"$ref": "https://schema.twindev.org/unece/UneceStandard",
 			"description": "The referenced standard that is applicable to this product classification."
 		},
 		"classCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
 			},
 			"description": "A product class characteristic for this product classification."
 		},
@@ -54,7 +54,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the classification system for this product classification."
@@ -66,7 +66,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceClassificationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceClassificationTypeCodeList"
 				},
 				{
 					"type": "string"

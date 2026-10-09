@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractNegotiation",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContractNegotiation",
 	"title": "DataspaceProtocolContractNegotiation",
 	"description": "Interface for the Dataspace Protocol contract negotiation acknowledgment.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		},
 		"@type": {
@@ -22,7 +22,7 @@
 			"description": "The consumer id for the contract."
 		},
 		"state": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractNegotiationStateType",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContractNegotiationStateType",
 			"description": "The current state of the contract negotiation."
 		}
 	},

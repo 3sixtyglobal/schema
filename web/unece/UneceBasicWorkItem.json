@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceBasicWorkItem",
+	"$id": "https://schema.twindev.org/unece/UneceBasicWorkItem",
 	"title": "UneceBasicWorkItem",
 	"description": "A basic item of work.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"actualComplexDescription": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceComplexDescription"
+				"$ref": "https://schema.twindev.org/unece/UneceComplexDescription"
 			},
 			"description": "An actual complex description for this basic work item."
 		},
@@ -27,14 +27,14 @@
 		"binaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A specified binary file referenced by this basic work item."
 		},
 		"changedStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRecordedStatus"
+				"$ref": "https://schema.twindev.org/unece/UneceRecordedStatus"
 			},
 			"description": "A changed recorded status for this basic work item."
 		},
@@ -52,7 +52,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this basic work item."
@@ -64,7 +64,7 @@
 		"itemBasicWorkItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItem"
+				"$ref": "https://schema.twindev.org/unece/UneceBasicWorkItem"
 			},
 			"description": "A basic work item in this basic work item."
 		},
@@ -74,7 +74,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a price list item for this basic work item."
@@ -89,7 +89,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of another work item referenced by this basic work item."
@@ -101,18 +101,18 @@
 		"totalPrice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
+				"$ref": "https://schema.twindev.org/unece/UneceCalculatedPrice"
 			},
 			"description": "A total calculated price for this basic work item."
 		},
 		"totalQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total quantity for this basic work item."
 		},
 		"totalQuantityAnalysis": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceQuantityAnalysis"
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityAnalysis"
 			},
 			"description": "An analysis of the total quantity for this basic work item."
 		},
@@ -123,7 +123,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItemTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceBasicWorkItemTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -134,7 +134,7 @@
 		"unitPrice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
+				"$ref": "https://schema.twindev.org/unece/UneceCalculatedPrice"
 			},
 			"description": "A unit calculated price for this basic work item."
 		}

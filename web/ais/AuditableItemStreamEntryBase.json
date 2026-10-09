@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/ais/AuditableItemStreamEntryBase",
+	"$id": "https://schema.twindev.org/ais/AuditableItemStreamEntryBase",
 	"title": "AuditableItemStreamEntryBase",
 	"description": "Interface describing an entry for the stream.",
 	"type": "object",
@@ -10,7 +10,7 @@
 			"description": "JSON-LD Type."
 		},
 		"entryObject": {
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "The object to associate with the entry as JSON-LD."
 		}
 	},

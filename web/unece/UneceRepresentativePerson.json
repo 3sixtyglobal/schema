@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceRepresentativePerson",
+	"$id": "https://schema.twindev.org/unece/UneceRepresentativePerson",
 	"title": "UneceRepresentativePerson",
 	"description": "An individual human being acting as a representative.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this representative person."
@@ -32,7 +32,7 @@
 		"nationalityCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
 			},
 			"description": "A country that constitutes a nationality by origin, birth, or naturalization for this representative person."
 		},

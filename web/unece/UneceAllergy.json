@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAllergy",
+	"$id": "https://schema.twindev.org/unece/UneceAllergy",
 	"title": "UneceAllergy",
 	"description": "A guest condition of the abnormal reaction of the body to a previously encountered substance introduced by inhalation,\ningestion, injection, or skin contact.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -28,7 +28,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceAllergyTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceAllergyTypeCodeList"
 				},
 				{
 					"type": "string"

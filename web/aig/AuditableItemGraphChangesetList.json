@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphChangesetList",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphChangesetList",
 	"title": "AuditableItemGraphChangesetList",
 	"description": "Interface describing an auditable item graph changeset list.",
 	"type": "object",
@@ -12,11 +12,11 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -39,7 +39,7 @@
 		"itemListElement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphChangeset"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphChangeset"
 			},
 			"description": "The list of changesets."
 		}

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceDocumentStatus",
+	"$id": "https://schema.twindev.org/unece/UneceDocumentStatus",
 	"title": "UneceDocumentStatus",
 	"description": "The information relevant to a condition related to a document.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -22,7 +22,7 @@
 			"description": "The textual description of this document status."
 		},
 		"documentStatusConditionCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocumentStatusCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
 			"description": "The code specifying the condition of this document status."
 		},
 		"documentStatusProcessConditionCode": {
@@ -36,7 +36,7 @@
 		"includedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "A note included for this document status."
 		},
@@ -92,7 +92,7 @@
 		"specifiedDocumentCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocumentCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentCharacteristic"
 			},
 			"description": "A document characteristic specified for this document status."
 		},
@@ -103,7 +103,7 @@
 		"validityPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A specified validity period for this document status."
 		}

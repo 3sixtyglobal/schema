@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceHeaderTradeDelivery",
+	"$id": "https://schema.twindev.org/unece/UneceHeaderTradeDelivery",
 	"title": "UneceHeaderTradeDelivery",
 	"description": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,49 +16,49 @@
 		"acceptanceEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "An acceptance delivery event, at header level, for this trade delivery."
 		},
 		"actualDeliveryEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "An actual delivery event, at header level, for this trade delivery."
 		},
 		"actualDespatchEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "An actual despatch event, at header level, for this trade delivery."
 		},
 		"actualLoadingEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The actual loading event, at header level, for this trade delivery."
 		},
 		"actualPickUpEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The actual pick-up event, at header level, for this trade delivery."
 		},
 		"actualReceiptEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The actual receipt event, at header level, for this trade delivery."
 		},
 		"actualUnloadingEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The actual unloading event, at header level, for this trade delivery."
 		},
 		"additionalDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "An additional document, at header level, referenced for this trade delivery."
 		},
 		"agreedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity, at header level, agreed for this trade delivery."
 		},
 		"buyerOrderDateTime": {
@@ -67,60 +67,60 @@
 			"format": "date-time"
 		},
 		"classificationDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The referenced classification document, at header level, for this trade delivery."
 		},
 		"confirmedDespatchEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The despatch event, at header level, confirmed for this trade delivery."
 		},
 		"confirmedPickUpEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The pick-up event, at header level, confirmed for this trade delivery."
 		},
 		"confirmedReleaseEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The confirmed release event, at header level, for this trade delivery."
 		},
 		"consumptionReportDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The consumption report document, at header level, referenced for this trade delivery."
 		},
 		"deliveryNoteDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The delivery note document, at header level, referenced for this trade delivery."
 		},
 		"despatchAdviceDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The despatch advice document, at header level, referenced for this trade delivery."
 		},
 		"despatchedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity, at header level, despatched in this trade delivery."
 		},
 		"disposalParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A disposal party, at header level, for this trade delivery."
 		},
 		"dueInAvailableQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The due in available quantity, at header level, for this trade delivery."
 		},
 		"dueInForecastedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The due in forecasted quantity, at header level, for this trade delivery."
 		},
 		"dueInRequestedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The due in requested quantity, at header level, for this trade delivery."
 		},
 		"estimatedDeliveryEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "An estimated delivery event for this trade delivery header."
 		},
@@ -129,13 +129,13 @@
 			"description": "The indication, at header level, of whether or not this trade delivery is the final delivery."
 		},
 		"finalDestinationCountry": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"$ref": "https://schema.twindev.org/unece/UneceCountry",
 			"description": "The country of final destination, at header level, for this header trade delivery."
 		},
 		"freightForwarderParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A freight forwarder party, at header level, for this trade delivery."
 		},
@@ -149,7 +149,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global identifier, at header level, for this trade delivery."
@@ -162,7 +162,7 @@
 		"goodsReceiptNoteDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A goods receipt note document, at header level, referenced for this trade delivery."
 		},
@@ -188,7 +188,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier, at header level, for this trade delivery."
@@ -196,26 +196,26 @@
 		"includedPackaging": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging"
 			},
 			"description": "Packaging, at header level, included in this trade delivery."
 		},
 		"informationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "A note with information, at header level, for this trade delivery."
 		},
 		"inventoryManagerParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "An inventory manager party, at header level, for this trade delivery."
 		},
 		"modificationForecastedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The modification of a previously forecasted quantity, at header level, for this trade delivery."
 		},
 		"overDeliveryAllowedIndicator": {
@@ -223,7 +223,7 @@
 			"description": "The indication, at header level, of whether or not over delivery is allowed for this trade delivery."
 		},
 		"packingListDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The packing list document, at header level, referenced for this trade delivery."
 		},
 		"partialDeliveryAllowedIndicator": {
@@ -238,44 +238,44 @@
 		"plannedConsignment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceConsignment"
+				"$ref": "https://schema.twindev.org/unece/UneceConsignment"
 			},
 			"description": "A consignment, at header level, planned for this trade delivery."
 		},
 		"plannedDeliveryEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A delivery event, at header level, planned for this trade delivery."
 		},
 		"plannedDespatchEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A despatch event, at header level, planned for this trade delivery."
 		},
 		"plannedPickUpEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The pick-up event, at header level, planned for this trade delivery."
 		},
 		"plannedReleaseEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The release event, at header level, planned for this trade delivery."
 		},
 		"plannedShipFromDeliveryEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The event of the planned ship from delivery, at header level, for this trade delivery."
 		},
 		"plannedShipToDeliveryEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The planned ship to delivery event, at header level, for this trade delivery."
 		},
 		"previousDeliverySupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A previous delivery event, at header level, for this trade delivery."
 		},
@@ -286,83 +286,83 @@
 		"receivingAdviceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A receiving advice document, at header level, referenced for this trade delivery."
 		},
 		"relatedConsignment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceConsignment"
+				"$ref": "https://schema.twindev.org/unece/UneceConsignment"
 			},
 			"description": "A consignment, at header level, related to this trade delivery."
 		},
 		"relatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A trade party, at header level, related to this trade delivery."
 		},
 		"remainingRequestedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The remaining quantity, at header level, requested for this trade delivery."
 		},
 		"requestedDeliveryEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A delivery event, at header level, requested for this trade delivery."
 		},
 		"requestedDespatchEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A despatch event, at header level, requested for this trade delivery."
 		},
 		"requestedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity, at header level, requested for this trade delivery."
 		},
 		"shipFromParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The ship from party, at header level, for this trade delivery."
 		},
 		"shipToParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The ship to party, at header level, for this trade delivery."
 		},
 		"shipmentScheduleDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The shipment schedule document, referenced at header level, for this trade delivery."
 		},
 		"specifiedDeliveryInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDeliveryInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceDeliveryInstructions"
 			},
 			"description": "Delivery instructions, at header level, specified for this trade delivery."
 		},
 		"specifiedHandlingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceHandlingInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
 			},
 			"description": "Handling instructions, at header level, specified for this trade delivery."
 		},
 		"specifiedSchedule": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+				"$ref": "https://schema.twindev.org/unece/UneceSchedule"
 			},
 			"description": "A supply chain schedule, at header level, specified for this trade delivery."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event, at header level, specified for this trade delivery."
 		},
@@ -376,7 +376,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A subordinate identifier, at header level, for this trade delivery."
@@ -387,22 +387,22 @@
 			"format": "date-time"
 		},
 		"ultimateShipToDeliveryEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent",
 			"description": "The ultimate ship to delivery event, at header level, for this trade delivery."
 		},
 		"ultimateShipToParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The ultimate ship to party, at header level, for this trade delivery."
 		},
 		"utilizedTransportEquipment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
 			},
 			"description": "Logistics transport equipment utilized for this header trade delivery."
 		},
 		"weightUnitTareWeightMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The measure of the tare weight for this header trade delivery."
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaTruckTransportCall",
+	"$id": "https://schema.twindev.org/dcsa/DcsaTruckTransportCall",
 	"title": "DcsaTruckTransportCall",
 	"description": "Truck transport call details.\n\nSource: `truckTransportCall` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -21,7 +21,7 @@
 	"required": ["modeOfTransport"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase"
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallBase"
 		}
 	]
 }

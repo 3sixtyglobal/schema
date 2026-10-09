@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCropProduceBatch",
+	"$id": "https://schema.twindev.org/unece/UneceCropProduceBatch",
 	"title": "UneceCropProduceBatch",
 	"description": "A group of crop produce considered or dealt with together.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -33,7 +33,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this crop produce batch."
@@ -47,38 +47,38 @@
 			"description": "The product name, expressed as text, for this crop produce batch."
 		},
 		"sizeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The size, expressed as a measure, for this crop produce batch."
 		},
 		"specifiedAgriculturalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCertificate"
 			},
 			"description": "An agricultural certificate specified for this crop produce batch."
 		},
 		"specifiedAgriculturalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic"
 			},
 			"description": "An agricultural characteristic specified for this crop produce batch."
 		},
 		"specifiedProduce": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProduce"
+				"$ref": "https://schema.twindev.org/unece/UneceProduce"
 			},
 			"description": "A crop produce specified for this crop produce batch."
 		},
 		"specifiedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity specified for this crop produce batch."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatchTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceCropProduceBatchTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -87,7 +87,7 @@
 			"description": "The code specifying the type of crop produce batch."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units, expressed as a quantity, for this crop produce batch."
 		}
 	},

@@ -1,19 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataset",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataset",
 	"title": "DataspaceProtocolDataset",
 	"description": "Dataset compliant with Eclipse Data Space Protocol, requiring an id, hasPolicy, and distribution.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@context"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDatasetBase"
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
 		}
 	]
 }

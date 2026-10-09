@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdContainerTypeArray",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray",
 	"title": "JsonLdContainerTypeArray",
 	"description": "JSON-LD container type array.",
 	"anyOf": [
@@ -141,7 +141,7 @@
 					"const": "@set"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
 				}
 			],
 			"items": false,
@@ -152,7 +152,7 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
 				},
 				{
 					"const": "@set"

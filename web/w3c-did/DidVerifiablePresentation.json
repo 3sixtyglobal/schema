@@ -1,14 +1,14 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-did/DidVerifiablePresentation",
+	"$id": "https://schema.twindev.org/w3c-did/DidVerifiablePresentation",
 	"title": "DidVerifiablePresentation",
 	"description": "Interface describing a verifiable presentation.",
 	"anyOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-did/DidVerifiablePresentationV1"
+			"$ref": "https://schema.twindev.org/w3c-did/DidVerifiablePresentationV1"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/w3c-did/DidVerifiablePresentationV2"
+			"$ref": "https://schema.twindev.org/w3c-did/DidVerifiablePresentationV2"
 		}
 	]
 }

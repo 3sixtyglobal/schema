@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCommunication",
+	"$id": "https://schema.twindev.org/unece/UneceCommunication",
 	"title": "UneceCommunication",
 	"description": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour\nbetween persons and/or organizations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -22,7 +22,7 @@
 			"description": "The code specifying the area number for this universal communication."
 		},
 		"communicationChannelCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCommunicationChannelCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceCommunicationChannelCodeList",
 			"description": "The code specifying the channel or manner in which a universal communication can be made, such as telephone or email."
 		},
 		"completeNumber": {
@@ -43,7 +43,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The Uniform Resource Identifier (URI) of the email for this universal communication."
@@ -70,7 +70,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The Uniform Resource Identifier (URI), such as a web or an email address, for this universal communication."
@@ -85,7 +85,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The Uniform Resource Identifier (URI) of the website for this universal communication."

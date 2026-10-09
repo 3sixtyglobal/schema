@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-did/DataIntegrityProof",
+	"$id": "https://schema.twindev.org/w3c-did/DataIntegrityProof",
 	"title": "DataIntegrityProof",
 	"description": "Interface describing a did proof.\nhttps://www.w3.org/TR/vc-data-integrity/",
 	"type": "object",
@@ -15,7 +15,7 @@
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 							},
 							{
 								"const": "https://w3id.org/security/data-integrity/v2"
@@ -39,7 +39,7 @@
 		"cryptosuite": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-did/DidCryptoSuites"
+					"$ref": "https://schema.twindev.org/w3c-did/DidCryptoSuites"
 				},
 				{
 					"type": "string"

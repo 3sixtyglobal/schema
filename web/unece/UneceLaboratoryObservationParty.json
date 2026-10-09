@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationParty",
+	"$id": "https://schema.twindev.org/unece/UneceLaboratoryObservationParty",
 	"title": "UneceLaboratoryObservationParty",
 	"description": "An individual, group, or body having a role in laboratory observations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this laboratory observation party."
@@ -29,15 +29,15 @@
 			"description": "The name, expressed as text, of this laboratory observation party."
 		},
 		"officeAddress": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
 			"description": "The office address of this laboratory observation party."
 		},
 		"personDefinedContact": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationContact",
+			"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationContact",
 			"description": "The person defined as the contact for this laboratory observation party."
 		},
 		"postalAddress": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
 			"description": "The postal address of this laboratory observation party."
 		},
 		"thirdPartyIssuedId": {
@@ -46,7 +46,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An alternate identifier issued by a third party for this laboratory observation party."
@@ -56,7 +56,7 @@
 			"description": "A third party issued identifier, expressed as text, for this laboratory observation party."
 		},
 		"websiteURICommunication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
+			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
 			"description": "The website URI (Uniform Resource Identifier) of this laboratory observation party."
 		}
 	},

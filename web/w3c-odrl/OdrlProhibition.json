@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlProhibition",
 	"title": "OdrlProhibition",
 	"description": "Interface for Prohibition Rules.\nhttps://www.w3.org/TR/odrl-model/#prohibition",
 	"type": "object",
@@ -8,12 +8,12 @@
 		"remedy": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
 					}
 				}
 			],
@@ -22,7 +22,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlRule"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlRule"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceFieldCrop",
+	"$id": "https://schema.twindev.org/unece/UneceFieldCrop",
 	"title": "UneceFieldCrop",
 	"description": "A field with one or more cultivated plants or produce from one or more botanical species or varieties.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicableAgriculturalProcess": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalProcess"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalProcess"
 			},
 			"description": "An agricultural process crop production applicable for this field crop."
 		},
 		"appliedAgriculturalApplication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
 			},
 			"description": "An agricultural application applied to this field crop."
 		},
@@ -56,13 +56,13 @@
 			"description": "The textual description for this field crop."
 		},
 		"grownPlot": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePlot",
+			"$ref": "https://schema.twindev.org/unece/UnecePlot",
 			"description": "The plot where this field crop is grown."
 		},
 		"grownPreviousCrop": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceFieldCrop"
+				"$ref": "https://schema.twindev.org/unece/UneceFieldCrop"
 			},
 			"description": "A field crop grown previous to this field crop."
 		},
@@ -74,7 +74,7 @@
 		"harvestedProduce": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProduce"
+				"$ref": "https://schema.twindev.org/unece/UneceProduce"
 			},
 			"description": "Produce harvested from this field crop."
 		},
@@ -105,14 +105,14 @@
 		"specifiedAgriculturalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic"
 			},
 			"description": "An agricultural characteristic specified for this field crop."
 		},
 		"specifiedCropMixtureConstituent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCropMixtureConstituent"
+				"$ref": "https://schema.twindev.org/unece/UneceCropMixtureConstituent"
 			},
 			"description": "A field crop mixture constituent specified for this field crop."
 		}

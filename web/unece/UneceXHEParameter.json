@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceXHEParameter",
+	"$id": "https://schema.twindev.org/unece/UneceXHEParameter",
 	"title": "UneceXHEParameter",
 	"description": "A feature that is fixed for an XHE (Exchange Header Envelope) but may be different in other cases.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceXHEParameterTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceXHEParameterTypeCodeList"
 				},
 				{
 					"type": "string"

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductBatchCharacteristic",
+	"$id": "https://schema.twindev.org/unece/UneceProductBatchCharacteristic",
 	"title": "UneceProductBatchCharacteristic",
 	"description": "A prominent attribute or aspect of a group of products considered or dealt with together.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicableCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
 			},
 			"description": "A country applicable to this product batch characteristic."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this product batch characteristic."
 		},
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this product batch characteristic."
@@ -53,7 +53,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCharacteristicTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceProductBatchCharacteristicTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -66,7 +66,7 @@
 			"description": "A value, expressed as text, for this product batch characteristic."
 		},
 		"valueAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this product batch characteristic."
 		},
 		"valueDateTime": {
@@ -81,14 +81,14 @@
 		"valueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a value for this product batch characteristic."
 		},
 		"valueMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
 			},
 			"description": "A method specified for a value of this product batch characteristic."
 		},
@@ -99,21 +99,21 @@
 		"valueParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
 			},
 			"description": "A parameter specified for a value of this product batch characteristic."
 		},
 		"valueRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
 			},
 			"description": "A range specified for a value of this product batch characteristic."
 		},
 		"valueTolerance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
 			},
 			"description": "A tolerance specified for a value of this product batch characteristic."
 		}

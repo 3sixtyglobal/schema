@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceInspectionEvent",
+	"$id": "https://schema.twindev.org/unece/UneceInspectionEvent",
 	"title": "UneceInspectionEvent",
 	"description": "A significant occurrence or happening related to an inspection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,13 +23,13 @@
 			"format": "date-time"
 		},
 		"occurrenceLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLocation",
 			"description": "The referenced location where this inspection event will occur or has occurred."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceInspectionEventTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceInspectionEventTypeCodeList"
 				},
 				{
 					"type": "string"

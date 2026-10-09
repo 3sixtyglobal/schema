@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/foaf/FoafBaseObject",
+	"$id": "https://schema.twindev.org/foaf/FoafBaseObject",
 	"title": "FoafBaseObject",
 	"description": "Core FOAF Properties",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 			"description": "The LD Context."
 		},
 		"@id": {
@@ -30,7 +30,7 @@
 			"description": "A homepage for some thing."
 		},
 		"depiction": {
-			"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+			"$ref": "https://schema.twindev.org/foaf/FoafImage",
 			"description": "A depiction of some thing."
 		}
 	}

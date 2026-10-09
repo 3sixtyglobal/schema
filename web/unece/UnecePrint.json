@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePrint",
+	"$id": "https://schema.twindev.org/unece/UnecePrint",
 	"title": "UnecePrint",
 	"description": "Any text or pattern put on the surface of a product using a specific material such as dye.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,28 +16,28 @@
 		"applicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Material applicable to this product print."
 		},
 		"applicableMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
 			},
 			"description": "A specified method applicable to this product print."
 		},
 		"applicableProductionDevice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionDevice"
 			},
 			"description": "A production device applicable to this product print."
 		},
 		"applicableTechnicalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristic"
 			},
 			"description": "A technical characteristic applicable to this product print."
 		},
@@ -63,7 +63,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this product print."
@@ -75,7 +75,7 @@
 		"relatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A trade party related to this product print."
 		},
@@ -90,14 +90,14 @@
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this product print."
 		},
 		"specifiedMachine": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+				"$ref": "https://schema.twindev.org/unece/UneceMachine"
 			},
 			"description": "A production machine specified for this product print."
 		},
@@ -112,7 +112,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UnecePrintTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UnecePrintTypeCodeList"
 				},
 				{
 					"type": "string"

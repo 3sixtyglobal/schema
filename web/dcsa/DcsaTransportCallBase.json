@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase",
+	"$id": "https://schema.twindev.org/dcsa/DcsaTransportCallBase",
 	"title": "DcsaTransportCallBase",
 	"description": "Transport call common attributes.\n\nSource: `transportCall` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -17,7 +17,7 @@
 			"description": "Location of the transport call.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
 		},
 		"facilityTypeCode": {
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallFacilityTypeCodes",
+			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallFacilityTypeCodes",
 			"description": "Facility type code."
 		}
 	},

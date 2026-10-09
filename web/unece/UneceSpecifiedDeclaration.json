@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedDeclaration",
 	"title": "UneceSpecifiedDeclaration",
 	"description": "An act of notification by formal documentation or action, in any form prescribed or accepted, such as a\nself-declaration.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"associatedStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard associated with this specified declaration."
 		},
@@ -34,7 +34,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this specified declaration."
@@ -47,7 +47,7 @@
 		"issuerParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party that issues this specified declaration."
 		},
@@ -60,7 +60,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+						"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
 					},
 					{
 						"type": "string"
@@ -72,7 +72,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclarationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclarationTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -83,7 +83,7 @@
 		"verifiedObject": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+				"$ref": "https://schema.twindev.org/unece/UneceObject"
 			},
 			"description": "An object verified for this specified declaration."
 		}

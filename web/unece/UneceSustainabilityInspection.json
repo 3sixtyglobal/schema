@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSustainabilityInspection",
+	"$id": "https://schema.twindev.org/unece/UneceSustainabilityInspection",
 	"title": "UneceSustainabilityInspection",
 	"description": "The process of performing documented checks of sustainability characteristics, with a focus on discovering deviations,\nrelated to documented sustainability requirements.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,27 +14,27 @@
 			"description": "JSON-LD Type."
 		},
 		"applicableInspectionResult": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionResult",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
 			"description": "The specified inspection result applicable to this sustainability inspection."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this sustainability inspection."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A characteristic applicable to this sustainability inspection."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached for this sustainability inspection."
 		},
@@ -43,11 +43,11 @@
 			"description": "A textual description of this sustainability inspection."
 		},
 		"executionParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party responsible for the execution of this sustainability inspection."
 		},
 		"executionPerson": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionPerson",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson",
 			"description": "The inspector responsible for the execution of this sustainability inspection."
 		},
 		"identifier": {
@@ -56,7 +56,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this sustainability inspection."
@@ -72,25 +72,25 @@
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this sustainability inspection."
 		},
 		"specifiedInspectionEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
 			},
 			"description": "A specified inspection event for this sustainability inspection."
 		},
 		"specifiedInspectionStatus": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionStatus",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus",
 			"description": "The inspection status specified for this sustainability inspection."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspectionTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspectionTypeCodeList"
 				},
 				{
 					"type": "string"

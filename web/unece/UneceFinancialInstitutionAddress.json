@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceFinancialInstitutionAddress",
+	"$id": "https://schema.twindev.org/unece/UneceFinancialInstitutionAddress",
 	"title": "UneceFinancialInstitutionAddress",
 	"description": "The location at which a financial institution may be found or reached.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the city for this financial institution address, such as United Nations Location Code\n(UNLOCODE)."
@@ -35,13 +35,13 @@
 		"countryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a country for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
@@ -56,7 +56,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE\nRec 3)."
