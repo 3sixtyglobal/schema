@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePaymentPenaltyTerms",
+	"$id": "https://schema.twindev.org/unece/UnecePaymentPenaltyTerms",
 	"title": "UnecePaymentPenaltyTerms",
 	"description": "Trade terms and conditions by which a penalty is or can be applied to a payable amount.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"actualPenaltyAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the actual penalty in these trade payment penalty terms."
 		},
 		"basisAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value used as a basis to calculate these trade payment penalty terms."
 		},
@@ -33,7 +33,7 @@
 			"format": "date-time"
 		},
 		"basisPeriodMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the period used as a basis to calculate these trade payment penalty terms."
 		},
 		"calculationPercent": {

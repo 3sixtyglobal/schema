@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCash",
+	"$id": "https://schema.twindev.org/unece/UneceCash",
 	"title": "UneceCash",
 	"description": "Coins, banknotes paid by the recipient of goods or services to the provider.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -28,7 +28,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCashTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceCashTypeCodeList"
 				},
 				{
 					"type": "string"

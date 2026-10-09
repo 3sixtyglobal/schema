@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsCollectionPage",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsCollectionPage",
 	"title": "ActivityStreamsCollectionPage",
 	"description": "A W3C Activity Streams CollectionPage.\n\nA `CollectionPage` represents a single page of items from a larger `Collection`.\nUse `partOf` to reference the parent collection, and `next`/`prev` for paging links.",
 	"type": "object",
@@ -35,7 +35,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				}
 			],
 			"description": "Parent collection."
@@ -46,7 +46,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				}
 			],
 			"description": "Next page."
@@ -57,7 +57,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				}
 			],
 			"description": "Previous page."
@@ -66,7 +66,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsCollection"
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsCollection"
 		}
 	]
 }

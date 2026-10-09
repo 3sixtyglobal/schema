@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod",
+	"$id": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod",
 	"title": "DidDocumentVerificationMethod",
 	"description": "Interface describing a DID document verification method.",
 	"type": "object",
@@ -24,10 +24,10 @@
 		"publicKeyJwk": {
 			"allOf": [
 				{
-					"$ref": "https://schema.3sixty.global/framework/Jwk"
+					"$ref": "https://schema.twindev.org/framework/Jwk"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				}
 			],
 			"description": "The public key for the entry as a JWK.\nSpec https://datatracker.ietf.org/doc/html/rfc7517 ."

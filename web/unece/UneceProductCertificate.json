@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductCertificate",
+	"$id": "https://schema.twindev.org/unece/UneceProductCertificate",
 	"title": "UneceProductCertificate",
 	"description": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about\nthe product.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -21,7 +21,7 @@
 		"applicableAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion applicable to this product certificate."
 		},
@@ -32,39 +32,39 @@
 		"applicableProductCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
 			},
 			"description": "A product characteristic applicable to this product certificate."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this product certificate."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this product certificate."
 		},
 		"applicableTradeProductCertification": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification",
 			"description": "The trade product certification applicable to this product certificate."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this product certificate."
 		},
 		"certificateTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList"
+				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
 			},
 			"description": "A code specifying the type of product certificate."
 		},
@@ -83,7 +83,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this product certificate."
@@ -103,7 +103,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the party issuing this product certificate."

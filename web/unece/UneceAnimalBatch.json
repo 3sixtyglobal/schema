@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAnimalBatch",
+	"$id": "https://schema.twindev.org/unece/UneceAnimalBatch",
 	"title": "UneceAnimalBatch",
 	"description": "A group of animals dealt with together.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -29,7 +29,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A Fisheries Language for Universal eXchange (FLUX) identifier for this animal batch."
@@ -40,17 +40,17 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this animal batch."
 		},
 		"maximumSizeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The maximum size, expressed as a measure, of the animals for this animal batch."
 		},
 		"minimumSizeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The minimum size, expressed as a measure, of the animals for this animal batch."
 		},
 		"saleDateTime": {
@@ -64,25 +64,25 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the sales note for this animal batch."
 		},
 		"specifiedDelimitedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 			"description": "The delimited period specified for this animal batch."
 		},
 		"specifiedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 			"description": "The delimited period specified for this animal batch."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units, expressed as a quantity, for this animal batch."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The weight, expressed as a measure, for this animal batch."
 		}
 	},

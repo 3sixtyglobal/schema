@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceVoucher",
+	"$id": "https://schema.twindev.org/unece/UneceVoucher",
 	"title": "UneceVoucher",
 	"description": "A printed piece of paper or an electronic document that can be used instead of money to pay for an experience, such as a\ntour, a trip or a meal in a restaurant.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"faceAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value shown on the face of this experience item voucher."
 		},
@@ -34,7 +34,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this experience item voucher."
@@ -51,7 +51,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceVoucherTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceVoucherTypeCodeList"
 				},
 				{
 					"type": "string"

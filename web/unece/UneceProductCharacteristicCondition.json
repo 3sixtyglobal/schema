@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductCharacteristicCondition",
+	"$id": "https://schema.twindev.org/unece/UneceProductCharacteristicCondition",
 	"title": "UneceProductCharacteristicCondition",
 	"description": "A state that applies to a product characteristic.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristicConditionTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristicConditionTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -29,7 +29,7 @@
 			"description": "The code specifying the type of product characteristic condition."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the value for this product characteristic condition."
 		}
 	},

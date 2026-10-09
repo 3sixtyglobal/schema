@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceTTTransformationEvent",
+	"$id": "https://schema.twindev.org/unece/UneceTTTransformationEvent",
 	"title": "UneceTTTransformationEvent",
 	"description": "Information about an event that captures the relationship between one or more physical or digital objects identified by\nidentifiers, such as an EPC (Electronic Product Code) or EPC class, that are fully or partially consumed as inputs or as\noutputs.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"businessRelatedLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "The business location related to this TT transformation event."
 		},
 		"businessStepCode": {
@@ -24,7 +24,7 @@
 		"destinationRelatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
 			},
 			"description": "A destination related party for this TT transformation event."
 		},
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this TT transformation event."
@@ -49,7 +49,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An instance identifier for an input object of this TT transformation event."
@@ -57,7 +57,7 @@
 		"inputQuantitySpecifiedEventElement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceEventElement"
+				"$ref": "https://schema.twindev.org/unece/UneceEventElement"
 			},
 			"description": "A quantity event element specified for an input of this TT transformation event."
 		},
@@ -72,7 +72,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An instance identifier for an output object of this TT transformation event."
@@ -80,12 +80,12 @@
 		"outputQuantitySpecifiedEventElement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceEventElement"
+				"$ref": "https://schema.twindev.org/unece/UneceEventElement"
 			},
 			"description": "A quantity event element specified for an output of this TT transformation event."
 		},
 		"readPointRelatedLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
 			"description": "The read point related location of this TT transformation event."
 		},
 		"recordedDateTime": {
@@ -96,28 +96,28 @@
 		"relatedCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertification"
 			},
 			"description": "A certification related to this TT transformation event."
 		},
 		"sourceRelatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
 			},
 			"description": "A source related party for this TT transformation event."
 		},
 		"specifiedError": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceError"
+				"$ref": "https://schema.twindev.org/unece/UneceError"
 			},
 			"description": "A declared error specified for this TT transformation event."
 		},
 		"specifiedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTTTradeTransaction"
+				"$ref": "https://schema.twindev.org/unece/UneceTTTradeTransaction"
 			},
 			"description": "A trade transaction specified for this TT transformation event."
 		},
@@ -127,7 +127,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The transformation identifier for this TT transformation event."

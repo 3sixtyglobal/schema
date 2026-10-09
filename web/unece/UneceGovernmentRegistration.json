@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGovernmentRegistration",
+	"$id": "https://schema.twindev.org/unece/UneceGovernmentRegistration",
 	"title": "UneceGovernmentRegistration",
 	"description": "The recording of items or details for a governmental purpose.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,13 +20,13 @@
 		"countryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the country for this government registration."
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the country sub-division for this registration."
@@ -48,7 +48,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this government registration."
@@ -64,7 +64,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a licence for this government registration."
@@ -76,7 +76,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceGovernmentRegistrationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceGovernmentRegistrationTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -85,7 +85,7 @@
 			"description": "A code specifying a type of government registration."
 		},
 		"validityPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The period of time during which this government registration is valid."
 		},
 		"versionId": {
@@ -94,7 +94,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the version of this government registration."

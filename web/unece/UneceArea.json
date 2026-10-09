@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceArea",
+	"$id": "https://schema.twindev.org/unece/UneceArea",
 	"title": "UneceArea",
 	"description": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform\nagricultural treatment.\nDeprecated since version D23B. Use `unece:AgriculturalZoneArea` property instead.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {

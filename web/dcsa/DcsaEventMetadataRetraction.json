@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction",
+	"$id": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction",
 	"title": "DcsaEventMetadataRetraction",
 	"description": "Retraction event metadata.\n\nIf `retractedEventID` is provided, the event MUST NOT include a payload.",
 	"type": "object",
@@ -13,7 +13,7 @@
 	"required": ["retractedEventID"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataBase"
+			"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataBase"
 		}
 	]
 }

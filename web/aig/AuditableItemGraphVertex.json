@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphVertex",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertex",
 	"title": "AuditableItemGraphVertex",
 	"description": "Interface describing an auditable item graph vertex.",
 	"type": "object",
@@ -9,14 +9,14 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				},
 				{
-					"const": "https://schema.3sixty.global/common/"
+					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -34,31 +34,31 @@
 			"description": "The identity of the organization which controls the vertex."
 		},
 		"auditMode": {
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAuditMode",
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditMode",
 			"description": "How the mutations of the vertex are recorded, when absent the vertex behaves as audited.\nOnce a vertex is set to bypass it can not be returned to audited."
 		},
 		"annotationObject": {
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "The JSON-LD annotation object for the vertex."
 		},
 		"aliases": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAlias"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAlias"
 			},
 			"description": "Alternative aliases that can be used to identify the vertex."
 		},
 		"resources": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphResource"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphResource"
 			},
 			"description": "The resources attached to the vertex."
 		},
 		"edges": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphEdge"
+				"$ref": "https://schema.twindev.org/aig/AuditableItemGraphEdge"
 			},
 			"description": "Edges connected to the vertex."
 		},

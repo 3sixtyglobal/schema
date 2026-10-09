@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsNote",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsNote",
 	"title": "ActivityStreamsNote",
 	"description": "A W3C Activity Streams Note.\n\nA `Note` is a short written work.",
 	"type": "object",
@@ -33,7 +33,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObject"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceRequestingParty",
+	"$id": "https://schema.twindev.org/unece/UneceRequestingParty",
 	"title": "UneceRequestingParty",
 	"description": "An individual, a group, or a body having a role as a requestor.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"accessRightsTypeAccessRightsCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAccessRightsTypeCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceAccessRightsTypeCodeList",
 			"description": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
 		},
 		"bEIId": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier\nCodes) for this requesting party."
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this requesting party."
@@ -48,7 +48,7 @@
 			"description": "A code specifying a language for this requesting party."
 		},
 		"lineOfCreditSpecifiedFinancialAccount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceFinancingFinancialAccount",
+			"$ref": "https://schema.twindev.org/unece/UneceFinancingFinancialAccount",
 			"description": "The financing financial account, used for managing the line of credit, specified for this requesting party."
 		},
 		"name": {
@@ -56,17 +56,17 @@
 			"description": "The name, expressed as text, for this requesting party."
 		},
 		"partyTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePartyTypeCodeList",
+			"$ref": "https://schema.twindev.org/unece/UnecePartyTypeCodeList",
 			"description": "The code specifying the type of requesting party."
 		},
 		"specifiedCreditorFinancialAccount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCreditorFinancialAccount",
+			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount",
 			"description": "The creditor financial account, used for crediting, specified for this requesting party."
 		},
 		"specifiedProprietaryIdentity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProprietaryIdentity"
+				"$ref": "https://schema.twindev.org/unece/UneceProprietaryIdentity"
 			},
 			"description": "A proprietary identity specified for this requesting party."
 		}

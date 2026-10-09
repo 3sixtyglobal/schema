@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdValueObject",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdValueObject",
 	"title": "JsonLdValueObject",
 	"description": "A value object is used to explicitly associate a type or a language with a value\nto create a typed value or a language-tagged string and possibly associate a base direction.",
 	"allOf": [
@@ -11,7 +11,7 @@
 					"type": "string"
 				},
 				"@context": {
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionRoot"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
 				}
 			}
 		},
@@ -98,10 +98,10 @@
 									"type": "string"
 								},
 								{
-									"$ref": "https://schema.3sixty.global/json-ld/JsonLdJsonObject"
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
 								},
 								{
-									"$ref": "https://schema.3sixty.global/json-ld/JsonLdJsonArray"
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonArray"
 								}
 							]
 						},

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceOperationalParameter",
+	"$id": "https://schema.twindev.org/unece/UneceOperationalParameter",
 	"title": "UneceOperationalParameter",
 	"description": "A set of measurable factors that specifies the conditions within which an entity operates correctly.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"definedRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
 			},
 			"description": "A defined range specified for this operational parameter."
 		},
@@ -34,7 +34,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this operational parameter."
@@ -50,7 +50,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceOperationalParameterTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceOperationalParameterTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -67,7 +67,7 @@
 			"description": "The indication of whether or not this operational parameter value is allowed."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure value for this operational parameter."
 		}
 	},

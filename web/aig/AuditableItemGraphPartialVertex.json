@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphPartialVertex",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphPartialVertex",
 	"title": "AuditableItemGraphPartialVertex",
 	"description": "Partial vertex payload for updatePartial.\nSub-lists use explicit `{ add, remove }` patches; bare arrays are not supported.",
 	"type": "object",
@@ -13,14 +13,14 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				},
 				{
-					"const": "https://schema.3sixty.global/common/"
+					"const": "https://schema.twindev.org/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -30,15 +30,15 @@
 			"description": "JSON-LD Type."
 		},
 		"aliasPatches": {
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphListPatch",
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphListPatch",
 			"description": "Patch operations for aliases."
 		},
 		"resourcePatches": {
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphListPatch",
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphListPatch",
 			"description": "Patch operations for resources."
 		},
 		"edgePatches": {
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphListPatch",
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphListPatch",
 			"description": "Patch operations for edges."
 		}
 	},
@@ -64,14 +64,14 @@
 					"type": "array",
 					"prefixItems": [
 						{
-							"const": "https://schema.3sixty.global/aig/"
+							"const": "https://schema.twindev.org/aig/"
 						},
 						{
-							"const": "https://schema.3sixty.global/common/"
+							"const": "https://schema.twindev.org/common/"
 						}
 					],
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					},
 					"minItems": 2,
 					"description": "JSON-LD Context.",
@@ -83,12 +83,12 @@
 					"$comment": "Inherited from AuditableItemGraphVertex"
 				},
 				"auditMode": {
-					"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAuditMode",
+					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditMode",
 					"description": "How the mutations of the vertex are recorded, when absent the vertex behaves as audited.\nOnce a vertex is set to bypass it can not be returned to audited.",
 					"$comment": "Inherited from AuditableItemGraphVertex"
 				},
 				"annotationObject": {
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 					"description": "The JSON-LD annotation object for the vertex.",
 					"$comment": "Inherited from AuditableItemGraphVertex"
 				},

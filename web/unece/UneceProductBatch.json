@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductBatch",
+	"$id": "https://schema.twindev.org/unece/UneceProductBatch",
 	"title": "UneceProductBatch",
 	"description": "A group of products considered or dealt with together.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,91 +16,91 @@
 		"applicableAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
 			},
 			"description": "An assessment applicable to this product batch."
 		},
 		"applicableDisposalInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
 			},
 			"description": "Disposal instructions applicable to this product batch."
 		},
 		"applicableFault": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFault"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFault"
 			},
 			"description": "A specified fault applicable to this product batch."
 		},
 		"applicablePeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A specified period applicable to this product batch."
 		},
 		"applicableProductBatchCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertification"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCertification"
 			},
 			"description": "A certification applicable to this product batch."
 		},
 		"applicableProductBatchCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCharacteristic"
 			},
 			"description": "A product batch characteristic applicable to this product batch."
 		},
 		"applicableSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate applicable to this product batch."
 		},
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
 			},
 			"description": "A specified inspection applicable to this product batch."
 		},
 		"applicableSupplyChainPackaging": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging"
 			},
 			"description": "Packaging applicable for use with this product batch."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this product batch."
 		},
 		"appliedAgriculturalApplication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
 			},
 			"description": "A specified agricultural application applied to this product batch."
 		},
 		"appliedChemicalTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatment"
 			},
 			"description": "A chemical treatment applied to this product batch."
 		},
 		"appliedProductFinishingTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductFinishingTreatment"
+				"$ref": "https://schema.twindev.org/unece/UneceProductFinishingTreatment"
 			},
 			"description": "A product finishing treatment applied to this product batch."
 		},
@@ -114,7 +114,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A buyer assigned identifier of this product batch."
@@ -122,21 +122,21 @@
 		"componentBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
 			},
 			"description": "A product batch component of this product batch."
 		},
 		"componentMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "A specified material component of this product batch."
 		},
 		"componentProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
 			},
 			"description": "A trade product component of this product batch."
 		},
@@ -151,7 +151,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The DNA marker identifier of this product batch."
@@ -170,7 +170,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global identifier of this product batch."
@@ -178,14 +178,14 @@
 		"grossVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the gross volume of this product batch."
 		},
 		"grossWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the gross weight of this product batch."
 		},
@@ -195,7 +195,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this product batch."
@@ -206,7 +206,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A manufacturer assigned identifier of this product batch."
@@ -214,28 +214,28 @@
 		"massMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the mass of this product batch."
 		},
 		"massRatioMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A mass measure of this product batch expressed as a ratio to another mass, such as the total mass."
 		},
 		"maximumSizeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the maximum size of this product batch."
 		},
 		"minimumSizeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the minimum size of this product batch."
 		},
@@ -246,14 +246,14 @@
 		"netVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the net volume of this product batch."
 		},
 		"netWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the net weight of this product batch."
 		},
@@ -271,89 +271,89 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A seller assigned identifier of this product batch."
 		},
 		"sizeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The size, expressed as a measure, for this product batch."
 		},
 		"specifiedAgriculturalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCertificate"
 			},
 			"description": "An agricultural certificate specified for this product batch."
 		},
 		"specifiedAgriculturalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic"
 			},
 			"description": "An agricultural characteristic specified for this product batch."
 		},
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this product batch."
 		},
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this product batch."
 		},
 		"specifiedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
 			},
 			"description": "A referenced location specified for this product batch."
 		},
 		"specifiedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "A note specified for this product batch."
 		},
 		"specifiedPicture": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePicture"
+				"$ref": "https://schema.twindev.org/unece/UnecePicture"
 			},
 			"description": "A photographic picture specified for this product batch."
 		},
 		"specifiedProcess": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionProcess"
 			},
 			"description": "A production process specified for this product batch."
 		},
 		"specifiedProductBatchCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCertificate"
 			},
 			"description": "A certificate specified for this product batch."
 		},
 		"specifiedProductBatchCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCharacteristic"
 			},
 			"description": "A product batch characteristic specified for this product batch."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this product batch."
 		},
@@ -364,7 +364,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceProductBatchTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceProductBatchTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -373,11 +373,11 @@
 			"description": "The code specifying the type of product batch."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units, expressed as a quantity, for this product batch."
 		},
 		"weightMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The weight, expressed as a measure, for this product batch."
 		}
 	},

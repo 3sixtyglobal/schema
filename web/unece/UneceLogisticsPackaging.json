@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceLogisticsPackaging",
+	"$id": "https://schema.twindev.org/unece/UneceLogisticsPackaging",
 	"title": "UneceLogisticsPackaging",
 	"description": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicablePackagingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePackagingInstructions"
+				"$ref": "https://schema.twindev.org/unece/UnecePackagingInstructions"
 			},
 			"description": "Instructions applicable to this logistics packaging."
 		},
 		"capacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a capacity of this logistics packaging."
 		},
@@ -38,14 +38,14 @@
 		"containedPackage": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
+				"$ref": "https://schema.twindev.org/unece/UnecePackage"
 			},
 			"description": "A package contained in this logistics packaging."
 		},
 		"contentLayerQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
 			},
 			"description": "A number of content layers in this logistics packaging."
 		},
@@ -63,7 +63,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this logistics packaging."
@@ -83,7 +83,7 @@
 		"linearDimension": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension"
+				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
 			},
 			"description": "A linear dimension or a set of linear dimensions of this logistics packaging."
 		},
@@ -92,7 +92,7 @@
 			"description": "The code specifying the level of this logistics packaging."
 		},
 		"maximumStackabilityQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this type of logistics packaging which can be stacked on top of each other."
 		},
 		"methodDescription": {
@@ -114,25 +114,25 @@
 		"specifiedMarking": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMarking"
+				"$ref": "https://schema.twindev.org/unece/UneceMarking"
 			},
 			"description": "A marking specified for this logistics packaging."
 		},
 		"totalUnitQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
 			},
 			"description": "A total number of units contained in this logistics packaging."
 		},
 		"transportMaximumStackabilityQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this type of logistics packaging which can be stacked vertically for transport operations."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceLogisticsPackagingTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceLogisticsPackagingTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -143,12 +143,12 @@
 		"weightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a weight (mass) of this logistics packaging."
 		},
 		"weightUnitLoadBearingCapabilityMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The measure of load bearing capability of this logistics packaging."
 		}
 	},

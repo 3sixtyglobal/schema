@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCustomsValuation",
+	"$id": "https://schema.twindev.org/unece/UneceCustomsValuation",
 	"title": "UneceCustomsValuation",
 	"description": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"addedAdjustmentAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the adjustment added for this cross-border customs valuation."
 		},
 		"addedAdjustmentPercent": {
@@ -22,7 +22,7 @@
 			"description": "The adjustment added, expressed as a percentage, for this cross-border customs valuation."
 		},
 		"applicableCurrencyExchange": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
+			"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange",
 			"description": "The trade related currency exchange applicable to this cross-border customs valuation."
 		},
 		"buyerSellerRelationshipIndicator": {
@@ -38,7 +38,7 @@
 			"description": "The code specifying the method of the apportion of charges for this cross-border customs valuation."
 		},
 		"deductedAdjustmentAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the adjustment deducted for this cross-border customs valuation."
 		},
 		"deductedAdjustmentPercent": {
@@ -52,7 +52,7 @@
 		"otherChargeAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value added or subtracted from the total invoice price not previously taken into account for this\ncross-border customs valuation."
 		},
@@ -75,7 +75,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCustomsValuationTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceCustomsValuationTypeCodeList"
 				},
 				{
 					"type": "string"

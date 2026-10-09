@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolVersion",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolVersion",
 	"title": "DataspaceProtocolVersion",
 	"description": "Interface for a single supported Dataspace Protocol version entry.",
 	"type": "object",
@@ -14,7 +14,7 @@
 			"description": "The URL path prefix at which the versioned endpoints are served (e.g. \"/dsp/2025-1\")."
 		},
 		"binding": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolVersionBindingType",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolVersionBindingType",
 			"description": "The transport binding for this version's endpoints."
 		},
 		"serviceId": {
@@ -26,7 +26,7 @@
 			"description": "Participant identifier scheme (e.g. \"did:web\", \"D-U-N-S\")."
 		},
 		"auth": {
-			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolAuth",
+			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolAuth",
 			"description": "Authentication descriptor for the versioned endpoints."
 		}
 	},

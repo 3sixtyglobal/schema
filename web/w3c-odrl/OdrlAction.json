@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAction",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAction",
 	"title": "OdrlAction",
 	"description": "Interface for ODRL Actions.\nhttps://www.w3.org/TR/odrl-model/#action",
 	"type": "object",
@@ -22,20 +22,20 @@
 		"refinement": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 							}
 						]
 					}
@@ -46,7 +46,7 @@
 		"includedIn": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 				},
 				{
 					"type": "string"
@@ -59,7 +59,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+						"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 					},
 					{
 						"type": "string"

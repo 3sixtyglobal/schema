@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePolicy",
+	"$id": "https://schema.twindev.org/unece/UnecePolicy",
 	"title": "UnecePolicy",
 	"description": "A plan of action agreed or chosen in order to obey rules or requests made by people in authority and designed to prevent\nand detect violations of applicable law, regulations, rules and ethical standards by employees, agents and others.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this compliance policy."
 		},
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this compliance policy."

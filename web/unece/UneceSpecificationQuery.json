@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecificationQuery",
+	"$id": "https://schema.twindev.org/unece/UneceSpecificationQuery",
 	"title": "UneceSpecificationQuery",
 	"description": "A formally raised question or request for information about this specification.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this specification query."
@@ -35,7 +35,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecificationQueryTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecificationQueryTypeCodeList"
 				},
 				{
 					"type": "string"

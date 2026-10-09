@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceAdvancePayment",
+	"$id": "https://schema.twindev.org/unece/UneceAdvancePayment",
 	"title": "UneceAdvancePayment",
 	"description": "A prepaid discharge of obligations in respect of funds or securities transferred between two or more parties.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"identifiedPaymentTerms": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePaymentTerms",
+			"$ref": "https://schema.twindev.org/unece/UnecePaymentTerms",
 			"description": "The payment terms identified for this advance payment."
 		},
 		"identifier": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this advance payment."
@@ -31,19 +31,19 @@
 		"includedTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
 			},
 			"description": "A tax included in this advance payment."
 		},
 		"invoiceSpecifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "An invoice document referenced by this advance payment."
 		},
 		"paidAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value of the funds or securities paid in this advance payment."
 		},
 		"receivedDateTime": {

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlParty",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlParty",
 	"title": "OdrlParty",
 	"description": "Interface for ODRL Parties.\nhttps://www.w3.org/TR/odrl-model/#party",
 	"type": "object",
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 				},
 				{
 					"type": "array",
@@ -40,7 +40,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 							}
 						]
 					}

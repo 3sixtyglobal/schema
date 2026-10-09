@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceBirthAddress",
+	"$id": "https://schema.twindev.org/unece/UneceBirthAddress",
 	"title": "UneceBirthAddress",
 	"description": "The place of birth.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,13 +16,13 @@
 		"birthAddressCountryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a country for this birth address."

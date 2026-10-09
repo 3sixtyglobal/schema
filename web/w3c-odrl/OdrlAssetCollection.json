@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection",
 	"title": "OdrlAssetCollection",
 	"description": "Interface for ODRL Asset Collections.\nAn AssetCollection is a single resource representing a set of member resources,\nwhere all members of the set will be the subject of the Rule.\nhttps://www.w3.org/TR/odrl-model/#asset",
 	"type": "object",
@@ -13,20 +13,20 @@
 		"refinement": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 							}
 						]
 					}
@@ -37,7 +37,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 		}
 	]
 }

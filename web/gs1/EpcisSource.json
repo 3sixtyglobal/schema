@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/gs1/EpcisSource",
+	"$id": "https://schema.twindev.org/gs1/EpcisSource",
 	"title": "EpcisSource",
 	"description": "EPCIS 2.0 Source element identifying the origin of a business transfer.",
 	"type": "object",
@@ -8,7 +8,7 @@
 		"type": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/gs1/EpcisSourceDestTypes"
+					"$ref": "https://schema.twindev.org/gs1/EpcisSourceDestTypes"
 				},
 				{
 					"type": "string"

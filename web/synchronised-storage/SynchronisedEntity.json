@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntity",
+	"$id": "https://schema.twindev.org/synchronised-storage/SynchronisedEntity",
 	"title": "SynchronisedEntity",
 	"description": "The base definition for synchronised entries.",
 	"type": "object",
@@ -17,7 +17,7 @@
 	"required": ["id", "nodeIdentity"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntityCore"
+			"$ref": "https://schema.twindev.org/synchronised-storage/SynchronisedEntityCore"
 		}
 	]
 }

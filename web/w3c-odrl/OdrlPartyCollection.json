@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection",
 	"title": "OdrlPartyCollection",
 	"description": "Interface for ODRL Party Collections.\nA PartyCollection identifies a collection of entities and is a subclass of Party.\nhttps://www.w3.org/TR/odrl-model/#party",
 	"type": "object",
@@ -12,20 +12,20 @@
 		"refinement": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 							}
 						]
 					}
@@ -36,7 +36,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 		}
 	]
 }

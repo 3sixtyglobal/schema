@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceRadioactiveMaterial",
+	"$id": "https://schema.twindev.org/unece/UneceRadioactiveMaterial",
 	"title": "UneceRadioactiveMaterial",
 	"description": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of\nparticles or gamma rays.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableRadioactiveIsotope": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRadioactiveIsotope"
+				"$ref": "https://schema.twindev.org/unece/UneceRadioactiveIsotope"
 			},
 			"description": "An isotope applicable to this radioactive material."
 		},
@@ -59,7 +59,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceRadioactiveMaterialTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceRadioactiveMaterialTypeCodeList"
 				},
 				{
 					"type": "string"

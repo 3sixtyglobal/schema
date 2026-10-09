@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlRule",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlRule",
 	"title": "OdrlRule",
 	"description": "Base interface for ODRL Rules.\nhttps://www.w3.org/TR/odrl-model/#rule",
 	"type": "object",
@@ -12,26 +12,26 @@
 		"action": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
 							},
 							{
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
 							}
 						]
 					}
@@ -45,10 +45,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 				},
 				{
 					"type": "array",
@@ -58,10 +58,10 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
 							}
 						]
 					}
@@ -75,10 +75,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 				},
 				{
 					"type": "array",
@@ -88,10 +88,10 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 							}
 						]
 					}
@@ -105,10 +105,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 				},
 				{
 					"type": "array",
@@ -118,10 +118,10 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
 							}
 						]
 					}
@@ -132,20 +132,20 @@
 		"constraint": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 				},
 				{
 					"type": "array",
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
 							},
 							{
-								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint"
 							}
 						]
 					}

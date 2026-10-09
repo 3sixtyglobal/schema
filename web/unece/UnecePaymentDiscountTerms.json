@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePaymentDiscountTerms",
+	"$id": "https://schema.twindev.org/unece/UnecePaymentDiscountTerms",
 	"title": "UnecePaymentDiscountTerms",
 	"description": "Trade terms and conditions by which a discount is or can be applied to a payable amount.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"actualDiscountAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the actual discount in these trade payment discount terms."
 		},
 		"basisAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
 		},
@@ -33,7 +33,7 @@
 			"format": "date-time"
 		},
 		"basisPeriodMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the basis period for these trade payment discount terms."
 		},
 		"calculationPercent": {

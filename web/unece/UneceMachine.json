@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceMachine",
+	"$id": "https://schema.twindev.org/unece/UneceMachine",
 	"title": "UneceMachine",
 	"description": "An apparatus specified to be used to perform an activity to produce something.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"combinedMachine": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+				"$ref": "https://schema.twindev.org/unece/UneceMachine"
 			},
 			"description": "A production machine combined with this production machine."
 		},
 		"combinedProductionDevice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionDevice"
 			},
 			"description": "A production device combined with this production machine."
 		},
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this production machine."
@@ -45,28 +45,28 @@
 		"inputApplicableBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
 			},
 			"description": "An input batch applicable to this production machine."
 		},
 		"inputApplicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Input material applicable to this production machine."
 		},
 		"inputApplicableProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
 			},
 			"description": "An input product applicable to this production machine."
 		},
 		"inputCapacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the input capacity of this production machine."
 		},
@@ -77,63 +77,63 @@
 		"operationalApplicableParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
 			},
 			"description": "An operational parameter applicable to this production machine."
 		},
 		"outputApplicableBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
 			},
 			"description": "An output product batch applicable to this production machine."
 		},
 		"outputApplicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Output material applicable to this production machine."
 		},
 		"outputApplicableProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
 			},
 			"description": "An output product applicable to this production machine."
 		},
 		"outputCapacityMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the output capacity of this production machine."
 		},
 		"reportingIOTDeviceSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
 		},
 		"requestedOperationalApplicableParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
 			},
 			"description": "A requested operational parameter applicable to this production machine."
 		},
 		"specifiedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLocation"
 			},
 			"description": "A referenced location specified for this production machine."
 		},
 		"specifiedProductionUnit": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductionUnit"
+				"$ref": "https://schema.twindev.org/unece/UneceProductionUnit"
 			},
 			"description": "A facility production unit specified for this production machine."
 		},
@@ -144,7 +144,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceMachineTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceMachineTypeCodeList"
 				},
 				{
 					"type": "string"

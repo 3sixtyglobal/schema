@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceInstructedTemperature",
+	"$id": "https://schema.twindev.org/unece/UneceInstructedTemperature",
 	"title": "UneceInstructedTemperature",
 	"description": "Temperature settings instructed for storage or movement of goods.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,11 +18,11 @@
 			"description": "The code specifying the control of this instructed temperature, such as normal or chilled."
 		},
 		"maximumValueMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum value of this instructed temperature."
 		},
 		"minimumValueMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum value of this instructed temperature."
 		}
 	},

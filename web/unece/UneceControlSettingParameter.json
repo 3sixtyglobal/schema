@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceControlSettingParameter",
+	"$id": "https://schema.twindev.org/unece/UneceControlSettingParameter",
 	"title": "UneceControlSettingParameter",
 	"description": "A set of measurable factors that specifies the conditions of its operation within a specific context.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this control setting parameter."
@@ -39,7 +39,7 @@
 		"requestedRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+				"$ref": "https://schema.twindev.org/unece/UneceRange"
 			},
 			"description": "A requested range specified for this control setting parameter."
 		},
@@ -50,7 +50,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceControlSettingParameterTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceControlSettingParameterTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -67,7 +67,7 @@
 			"description": "The indication of whether or not this control setting parameter value is allowed."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure value for this control setting parameter."
 		}
 	},

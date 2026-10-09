@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/foaf/FoafOrganization",
+	"$id": "https://schema.twindev.org/foaf/FoafOrganization",
 	"title": "FoafOrganization",
 	"description": "A FOAF Organization.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 			"description": "The LD Context."
 		},
 		"@type": {
@@ -17,7 +17,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+			"$ref": "https://schema.twindev.org/foaf/FoafAgent"
 		}
 	]
 }

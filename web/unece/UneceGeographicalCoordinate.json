@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGeographicalCoordinate",
+	"$id": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
 	"title": "UneceGeographicalCoordinate",
 	"description": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An alternative source system identifier for this geographical coordinate."
@@ -35,13 +35,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the system used for measuring the altitude."
 		},
 		"altitudeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this geographical\ncoordinate (Reference ISO 6709)."
 		},
 		"identifier": {
@@ -50,7 +50,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this geographical coordinate."
@@ -60,7 +60,7 @@
 			"description": "The indication of whether the latitude compass direction from the Equator meridian to the meridian of a specific place\nis North (+) or South (-) (Reference ISO 6709)."
 		},
 		"latitudeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a\nspecific place for this geographical coordinate (Reference ISO 6709)."
 		},
 		"longitudeDirectionIndicator": {
@@ -68,7 +68,7 @@
 			"description": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific\nplace is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
 		},
 		"longitudeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a\nspecific place (Reference ISO 6709)."
 		},
 		"systemId": {
@@ -77,7 +77,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the reference system used for measuring a geographical coordinate."
@@ -96,11 +96,11 @@
 			"format": "date-time"
 		},
 		"usedCoordinateReferenceSystem": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCoordinateReferenceSystem",
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
 			"description": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
 		},
 		"usedCoordinateSourceSystem": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCoordinateSourceSystem",
+			"$ref": "https://schema.twindev.org/unece/UneceCoordinateSourceSystem",
 			"description": "The geographical coordinate source system used for this geographical coordinate."
 		}
 	},

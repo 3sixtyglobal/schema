@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase",
 	"title": "DcatDatasetBase",
 	"description": "Base interface for DCAT Dataset without JSON-LD context.\nThis is the context-free variant of IDcatDataset, intended for embedding\ndataset objects inline within other objects where the context is provided by the enclosing document.",
 	"type": "object",
@@ -22,12 +22,12 @@
 		"dcat:distribution": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDistributionBase"
+					"$ref": "https://schema.twindev.org/w3c-dcat/DcatDistributionBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDistributionBase"
+						"$ref": "https://schema.twindev.org/w3c-dcat/DcatDistributionBase"
 					}
 				}
 			],
@@ -44,7 +44,7 @@
 		"dcterms:spatial": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "string"
@@ -63,7 +63,7 @@
 			"description": "Minimum spatial separation resolvable in a dataset, measured in meters."
 		},
 		"dcterms:temporal": {
-			"$ref": "https://schema.3sixty.global/dublin-core/DublinCorePeriodOfTime",
+			"$ref": "https://schema.twindev.org/dublin-core/DublinCorePeriodOfTime",
 			"description": "The temporal period that the dataset covers."
 		},
 		"dcat:temporalResolution": {
@@ -74,7 +74,7 @@
 		"prov:wasGeneratedBy": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "string"
@@ -86,7 +86,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResourceBase"
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatResourceBase"
 		}
 	]
 }

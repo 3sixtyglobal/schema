@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+	"$id": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 	"title": "UneceDelimitedPeriod",
 	"description": "A period of time from a start date time onwards up to an end date time.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"durationMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the length of time for this delimited period such as hours, days, weeks, months or years."
 		},
 		"endDateTime": {

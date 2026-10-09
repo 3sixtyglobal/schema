@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSecurityTag",
+	"$id": "https://schema.twindev.org/unece/UneceSecurityTag",
 	"title": "UneceSecurityTag",
 	"description": "A product tag device to provide protection from a peril such as theft.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSecurityTagTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSecurityTagTypeCodeList"
 				},
 				{
 					"type": "string"

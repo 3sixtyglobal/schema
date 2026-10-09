@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceNegotiationExchange",
+	"$id": "https://schema.twindev.org/unece/UneceNegotiationExchange",
 	"title": "UneceNegotiationExchange",
 	"description": "An offer exchanged between parties for an electronic negotiation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -32,7 +32,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the session for this electronic negotiation exchange."
@@ -40,14 +40,14 @@
 		"specifiedContext": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNegotiationContext"
+				"$ref": "https://schema.twindev.org/unece/UneceNegotiationContext"
 			},
 			"description": "A context specified for this electronic negotiation exchange."
 		},
 		"specifiedIssue": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceIssue"
+				"$ref": "https://schema.twindev.org/unece/UneceIssue"
 			},
 			"description": "A target issue specified for this electronic negotiation exchange."
 		},

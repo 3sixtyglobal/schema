@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceStandard",
+	"$id": "https://schema.twindev.org/unece/UneceStandard",
 	"title": "UneceStandard",
 	"description": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in\nengineering or technical areas.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the agency for this referenced standard."
@@ -27,49 +27,49 @@
 		"applicableAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
 			},
 			"description": "A specified assessment applicable to this referenced standard."
 		},
 		"applicableCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
 			},
 			"description": "A country where this referenced standard is applicable."
 		},
 		"applicableDeclaration": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclaration"
 			},
 			"description": "A specified declaration applicable to this referenced standard."
 		},
 		"applicableLicence": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLicence"
+				"$ref": "https://schema.twindev.org/unece/UneceLicence"
 			},
 			"description": "A specified licence applicable to this referenced standard."
 		},
 		"applicableMetricCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic"
 			},
 			"description": "A metric characteristic applicable to this referenced standard."
 		},
 		"applicableSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A specified certificate applicable to this referenced standard."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this referenced standard."
 		},
@@ -83,7 +83,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the version of a specific element within the referenced standard, such as the version of a data\nelement."
@@ -94,7 +94,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this referenced standard."
@@ -109,7 +109,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a part of this referenced standard, such as a section or topic."
@@ -117,21 +117,21 @@
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this referenced standard."
 		},
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this referenced standard."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceStandardTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceStandardTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -145,7 +145,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The Uniform Resource Identifier (URI) for this referenced standard."
@@ -156,7 +156,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the version of this referenced standard."

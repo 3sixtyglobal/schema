@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceForecastTerms",
+	"$id": "https://schema.twindev.org/unece/UneceForecastTerms",
 	"title": "UneceForecastTerms",
 	"description": "A set of terms and conditions by which a supply chain forecast has been or will be made.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"supplyChainForecastTermsCommitmentLevelCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommitmentLevelCodeList"
+				"$ref": "https://schema.twindev.org/unece/UneceCommitmentLevelCodeList"
 			},
 			"description": "A code specifying a commitment level in these supply chain forecast terms."
 		},

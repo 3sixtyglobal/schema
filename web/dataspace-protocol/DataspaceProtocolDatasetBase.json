@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDatasetBase",
+	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase",
 	"title": "DataspaceProtocolDatasetBase",
 	"description": "Base dataset interface compliant with Eclipse Data Space Protocol, requiring an id, hasPolicy, and distribution.",
 	"type": "object",
@@ -16,7 +16,7 @@
 		"hasPolicy": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase"
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
 			},
 			"description": "Array of ODRL offers; must contain at least one entry.",
 			"minItems": 1
@@ -24,7 +24,7 @@
 		"distribution": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDistributionBase"
+				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
 			},
 			"description": "Distributions of this dataset; must contain at least one entry.",
 			"minItems": 1
@@ -120,7 +120,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -150,7 +150,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+									"$ref": "https://schema.twindev.org/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -183,12 +183,12 @@
 								"foaf:made": {
 									"anyOf": [
 										{
-											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 										},
 										{
 											"type": "array",
 											"items": {
-												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 											}
 										}
 									],
@@ -196,22 +196,22 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:topic_interest": {
-									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 									"description": "A thing of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								}
@@ -233,7 +233,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -263,7 +263,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+									"$ref": "https://schema.twindev.org/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -296,12 +296,12 @@
 								"foaf:made": {
 									"anyOf": [
 										{
-											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 										},
 										{
 											"type": "array",
 											"items": {
-												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 											}
 										}
 									],
@@ -309,22 +309,22 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:topic_interest": {
-									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 									"description": "A thing of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								}
@@ -342,7 +342,7 @@
 				"dcterms:accessRights": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -354,7 +354,7 @@
 				"dcterms:license": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -366,7 +366,7 @@
 				"dcterms:rights": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -398,7 +398,7 @@
 				"dcat:contactPoint": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -455,7 +455,7 @@
 				"dcat:qualifiedRelation": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatRelationship"
+							"$ref": "https://schema.twindev.org/w3c-dcat/DcatRelationship"
 						},
 						{
 							"type": "string"
@@ -477,7 +477,7 @@
 				"dcterms:spatial": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -498,7 +498,7 @@
 					"$comment": "Inherited from DcatDatasetBase"
 				},
 				"dcterms:temporal": {
-					"$ref": "https://schema.3sixty.global/dublin-core/DublinCorePeriodOfTime",
+					"$ref": "https://schema.twindev.org/dublin-core/DublinCorePeriodOfTime",
 					"description": "The temporal period that the dataset covers.",
 					"$comment": "Inherited from DcatDatasetBase"
 				},
@@ -511,7 +511,7 @@
 				"prov:wasGeneratedBy": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"

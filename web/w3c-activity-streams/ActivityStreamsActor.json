@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActor",
+	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsActor",
 	"title": "ActivityStreamsActor",
 	"description": "A W3C Activity Streams Actor.\n\nAn `Actor` is a specialised `Object` that represents the entity performing\nan `Activity` (for example a `Person`, `Group`, `Organization`, `Application`, or `Service`).",
 	"type": "object",
@@ -62,7 +62,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObject"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCarriedEquipment",
+	"$id": "https://schema.twindev.org/unece/UneceCarriedEquipment",
 	"title": "UneceCarriedEquipment",
 	"description": "A tool or device carried by a guest for an activity.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -28,14 +28,14 @@
 		"specificationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedNote"
 			},
 			"description": "A specification note for this guest carried equipment."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCarriedEquipmentTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceCarriedEquipmentTypeCodeList"
 				},
 				{
 					"type": "string"

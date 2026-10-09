@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSupplyChainInventory",
+	"$id": "https://schema.twindev.org/unece/UneceSupplyChainInventory",
 	"title": "UneceSupplyChainInventory",
 	"description": "Supply chain goods and materials held in stock.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -22,7 +22,7 @@
 			"description": "The indication of whether or not this supply chain inventory is available."
 		},
 		"averageDemandQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The average demand quantity for this supply chain inventory."
 		},
 		"averageDurationDateTime": {
@@ -38,45 +38,45 @@
 		"dispositionDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A disposition document referenced in this supply chain inventory."
 		},
 		"includedBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
 			},
 			"description": "A product batch included in this supply chain inventory."
 		},
 		"includedMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Material included in this supply chain inventory."
 		},
 		"includedTradeProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
 			},
 			"description": "A product included in this supply chain inventory."
 		},
 		"maximumStockLevelMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum stock level for this supply chain inventory."
 		},
 		"maximumStockQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum stock quantity in this CI supply chain inventory."
 		},
 		"minimumStockLevelMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the minimum stock level for this supply chain inventory."
 		},
 		"minimumStockQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum stock quantity in this CI supply chain inventory."
 		},
 		"plannedStockCalculationDateTime": {
@@ -85,31 +85,31 @@
 			"format": "date-time"
 		},
 		"plannedStockQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The planned stock quantity for this supply chain inventory."
 		},
 		"remarkNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "A note containing a remark for this supply chain inventory."
 		},
 		"specifiedLogisticsLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The location specified for this supply chain inventory."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this supply chain inventory."
 		},
 		"specifiedTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A trade party specified for this supply chain inventory."
 		},
@@ -118,7 +118,7 @@
 			"description": "The code specifying a status for this supply chain inventory."
 		},
 		"stockQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The quantity of stock in this supply chain inventory."
 		}
 	},

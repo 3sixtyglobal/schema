@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceEquipment",
+	"$id": "https://schema.twindev.org/unece/UneceEquipment",
 	"title": "UneceEquipment",
 	"description": "Hardware or software typically marketed by a company other than the original manufacturer.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,13 +19,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this OEM equipment."
 		},
 		"manufacturerParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The manufacturer party for this OEM equipment."
 		},
 		"pollingCapabilityIndicator": {
@@ -33,13 +33,13 @@
 			"description": "The indication of whether or not this OEM equipment has a polling capability."
 		},
 		"pollingRateMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the polling rate for this OEM equipment."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceEquipmentTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceEquipmentTypeCodeList"
 				},
 				{
 					"type": "string"

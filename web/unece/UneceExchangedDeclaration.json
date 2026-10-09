@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceExchangedDeclaration",
+	"$id": "https://schema.twindev.org/unece/UneceExchangedDeclaration",
 	"title": "UneceExchangedDeclaration",
 	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two parties as a\nformal declaration.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,18 +16,18 @@
 		"additionalStatementNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "An additional statement note for this exchanged declaration."
 		},
 		"applicableCustomsValuation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCustomsValuation",
+			"$ref": "https://schema.twindev.org/unece/UneceCustomsValuation",
 			"description": "Customs valuation information applicable to this exchanged declaration."
 		},
 		"associatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document associated with this exchanged declaration."
 		},
@@ -36,23 +36,23 @@
 			"description": "The rate of currency exchange in this exchanged declaration."
 		},
 		"customsValueSpecifiedAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value specified for customs purposes in this exchanged declaration."
 		},
 		"declarantAgentParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party acting as an agent for the declarant for this exchanged declaration."
 		},
 		"declarantParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The trade party acting as the declarant for this exchanged declaration."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of this exchanged declaration."
 		},
 		"grossWeightSpecifiedMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The gross weight measure specified in this exchanged declaration."
 		},
 		"identifier": {
@@ -61,7 +61,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this exchanged declaration."
@@ -79,14 +79,14 @@
 		"previousDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A previous document referenced for this exchanged declaration."
 		},
 		"principalAssociatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A principal trade party associated with this exchanged declaration."
 		},
@@ -99,19 +99,19 @@
 			"description": "The code specifying a specific circumstance in this exchanged declaration."
 		},
 		"statisticalValueSpecifiedAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The monetary value specified for statistical purposes in this exchanged declaration."
 		},
 		"submissionLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The submission location for this exchanged declaration."
 		},
 		"totalInvoiceSpecifiedAmount": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
 			"description": "The total invoice monetary value specified in this exchanged declaration."
 		},
 		"totalPackageSpecifiedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total package quantity specified in this exchanged declaration."
 		},
 		"versionId": {
@@ -120,7 +120,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the version of this exchanged declaration."

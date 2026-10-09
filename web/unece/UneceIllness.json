@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceIllness",
+	"$id": "https://schema.twindev.org/unece/UneceIllness",
 	"title": "UneceIllness",
 	"description": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"evacuationLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics evacuation location for this MDH illness."
 		},

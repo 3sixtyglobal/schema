@@ -1,16 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionRoot",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot",
 	"title": "JsonLdContextDefinitionRoot",
 	"description": "A context definition root is used to define the root of a context definition.",
 	"anyOf": [
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 		},
 		{
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 			}
 		}
 	]

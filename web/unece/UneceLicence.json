@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceLicence",
+	"$id": "https://schema.twindev.org/unece/UneceLicence",
 	"title": "UneceLicence",
 	"description": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"associatedStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+				"$ref": "https://schema.twindev.org/unece/UneceStandard"
 			},
 			"description": "A referenced standard associated to this specified licence."
 		},
@@ -36,7 +36,7 @@
 		"grantedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party granted this specified licence."
 		},
@@ -46,7 +46,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this specified licence."
@@ -57,7 +57,7 @@
 			"format": "date-time"
 		},
 		"issuerParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party that issues this specified licence."
 		},
 		"name": {
@@ -69,7 +69,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+						"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
 					},
 					{
 						"type": "string"
@@ -81,7 +81,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceLicenceTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceLicenceTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -96,7 +96,7 @@
 		"verifiedObject": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+				"$ref": "https://schema.twindev.org/unece/UneceObject"
 			},
 			"description": "An object verified for this specified licence."
 		}

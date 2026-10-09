@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedCondition",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedCondition",
 	"title": "UneceSpecifiedCondition",
 	"description": "A state, such as of a specified person or thing.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -29,7 +29,7 @@
 		"specifiedMeasurement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement"
+				"$ref": "https://schema.twindev.org/unece/UneceCalibratedMeasurement"
 			},
 			"description": "A calibrated measurement specified for this specified condition."
 		},
@@ -46,7 +46,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+						"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
 					},
 					{
 						"type": "string"
@@ -58,7 +58,7 @@
 		"valueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of a value for this specified condition."
 		}

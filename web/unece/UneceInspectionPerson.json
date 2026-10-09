@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceInspectionPerson",
+	"$id": "https://schema.twindev.org/unece/UneceInspectionPerson",
 	"title": "UneceInspectionPerson",
 	"description": "An individual human being who conducts an inspection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"attainedSpecifiedQualification": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedQualification",
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedQualification",
 			"description": "The specified qualification attained by this inspection person."
 		},
 		"inspectionPersonName": {

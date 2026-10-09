@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAgreement",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAgreement",
 	"title": "OdrlAgreement",
 	"description": "Interface representing an ODRL Agreement.\nAn Agreement requires both an assigner and assignee (both agreeing parties).\nhttps://www.w3.org/TR/odrl-model/#policy-agreement",
 	"type": "object",
@@ -15,7 +15,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				}
 			],
 			"description": "The assigner of the agreement.\nRequired for Agreement policies."
@@ -26,7 +26,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
 				}
 			],
 			"description": "The assignee of the agreement.\nRequired for Agreement policies."
@@ -35,7 +35,7 @@
 	"required": ["@type", "assigner", "assignee"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPolicy"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy"
 		}
 	]
 }

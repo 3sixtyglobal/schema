@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceTradeProductFeature",
+	"$id": "https://schema.twindev.org/unece/UneceTradeProductFeature",
 	"title": "UneceTradeProductFeature",
 	"description": "Distinctive or characteristic parts of a trade product.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this trade product feature."
@@ -31,7 +31,7 @@
 		"marketingMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A marketing measure for this trade product feature."
 		},
@@ -46,7 +46,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceTradeProductFeatureTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceTradeProductFeatureTypeCodeList"
 				},
 				{
 					"type": "string"

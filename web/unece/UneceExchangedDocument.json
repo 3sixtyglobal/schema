@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceExchangedDocument",
+	"$id": "https://schema.twindev.org/unece/UneceExchangedDocument",
 	"title": "UneceExchangedDocument",
 	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An additional identifier of this exchanged document."
@@ -32,7 +32,7 @@
 		"agentParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party representing another party for this exchanged document."
 		},
@@ -41,13 +41,13 @@
 			"description": "An amendment purpose, expressed in text, for this exchanged document."
 		},
 		"approverSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The approver signature that authenticates this exchanged document."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this exchanged document."
 		},
@@ -57,7 +57,7 @@
 			"contentEncoding": "base64"
 		},
 		"buyerSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The buyer signature that authenticates this exchanged document."
 		},
 		"cancellationDateTime": {
@@ -72,7 +72,7 @@
 		"contractualClause": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceClause"
+				"$ref": "https://schema.twindev.org/unece/UneceClause"
 			},
 			"description": "A contractual clause of this exchanged document."
 		},
@@ -85,11 +85,11 @@
 			"description": "The indication of whether or not this exchanged document is a copy."
 		},
 		"copyIssuedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of copies issued of this exchanged document."
 		},
 		"copyRequiredQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of copies required of this exchanged document."
 		},
 		"creationDateTime": {
@@ -103,7 +103,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier, for customs purposes, for this exchanged document."
@@ -119,20 +119,20 @@
 		"documentResponseDocumentTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList"
+				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
 			},
 			"description": "A code specifying a type of response document for this exchanged document, such as a requested or required response\ndocument type."
 		},
 		"documentStatusCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocumentStatusCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
 			"description": "The code specifying the status of this exchanged document."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of exchanged document."
 		},
 		"effectiveSpecifiedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The specified period within which this exchanged document is effective."
 		},
 		"electronicPresentationIndicator": {
@@ -146,12 +146,12 @@
 		"exchangedDocumentResponseTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceResponseTypeCodeList"
+				"$ref": "https://schema.twindev.org/unece/UneceResponseTypeCodeList"
 			},
 			"description": "A code specifying a type of response requested for this exchanged document."
 		},
 		"firstSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The first or primary signature that authenticates this exchanged document."
 		},
 		"firstVersionIssueDateTime": {
@@ -160,7 +160,7 @@
 			"format": "date-time"
 		},
 		"fourthSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"globalId": {
@@ -169,7 +169,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique global identifier for this exchanged document."
@@ -184,7 +184,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this exchanged document."
@@ -192,7 +192,7 @@
 		"includedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+				"$ref": "https://schema.twindev.org/unece/UneceNote"
 			},
 			"description": "A note included in this exchanged document."
 		},
@@ -206,11 +206,11 @@
 			"format": "date-time"
 		},
 		"issueLogisticsLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The location where this exchanged document has been issued."
 		},
 		"issuerParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party that issues this exchanged document."
 		},
 		"itemIdentificationId": {
@@ -219,7 +219,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a specific item in this exchanged document."
@@ -230,7 +230,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for a language used in this exchanged document."
@@ -240,17 +240,17 @@
 			"description": "The count of the number of lines in this exchanged document."
 		},
 		"lineItemQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of line items in this exchanged document."
 		},
 		"lodgementLocation": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
 			"description": "The location where this exchanged document has been lodged."
 		},
 		"messageFunctionPurposeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMessageFunctionCodeList"
+				"$ref": "https://schema.twindev.org/unece/UneceMessageFunctionCodeList"
 			},
 			"description": "A code specifying the purpose of this exchanged document, such as request or reminder."
 		},
@@ -263,15 +263,15 @@
 			"description": "A status of an offset processing, expressed as text, for this exchanged document, such as the process offsetted by this\ndocument."
 		},
 		"originalIssuedQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of originals issued of this exchanged document."
 		},
 		"originalRequiredQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of originals required of this exchanged document."
 		},
 		"ownerParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party that owns this exchanged document."
 		},
 		"pageId": {
@@ -280,7 +280,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a specific page of this exchanged document."
@@ -288,7 +288,7 @@
 		"platformProviderParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A platform provider party specified for this exchanged document."
 		},
@@ -298,7 +298,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the previous revision of this exchanged document."
@@ -313,7 +313,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique recipient assigned identifier for this exchanged document."
@@ -321,14 +321,14 @@
 		"recipientTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A trade party that receives this exchanged document."
 		},
 		"referenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "Other documents referenced by this exchanged document."
 		},
@@ -361,13 +361,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of the revision of this exchanged document."
 		},
 		"secondSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"senderAssignedId": {
@@ -376,19 +376,19 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique sender assigned identifier for this exchanged document."
 		},
 		"senderTradeParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party that sends this exchanged document."
 		},
 		"signatoryAuthentication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAuthentication"
+				"$ref": "https://schema.twindev.org/unece/UneceAuthentication"
 			},
 			"description": "A signatory document authentication for this exchanged document."
 		},
@@ -407,7 +407,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique suffix identifier for this exchanged document."
@@ -417,11 +417,11 @@
 			"description": "Summary information, expressed as text, for this exchanged document."
 		},
 		"thirdSignatoryAuthentication": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAuthentication",
+			"$ref": "https://schema.twindev.org/unece/UneceAuthentication",
 			"description": "The third signature, also known as the second counter signature, that has been authenticated on this exchanged document\nindicating where appropriate the authentication party."
 		},
 		"totalPageQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total number of pages for this exchanged document."
 		},
 		"traderAssignedId": {
@@ -430,7 +430,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique trader assigned identifier for this exchanged document."
@@ -449,7 +449,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for the version of this exchanged document."

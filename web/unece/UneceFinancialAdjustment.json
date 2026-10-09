@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceFinancialAdjustment",
+	"$id": "https://schema.twindev.org/unece/UneceFinancialAdjustment",
 	"title": "UneceFinancialAdjustment",
 	"description": "A correction or modification to reflect actual financial conditions.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"accountingDebitCreditStatusDirectionCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceAccountingDebitCreditStatusCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceAccountingDebitCreditStatusCodeList",
 			"description": "The code specifying whether the financial adjustment must be subtracted or added."
 		},
 		"actualAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "An actual monetary value added or subtracted as a result of this financial adjustment."
 		},
@@ -30,11 +30,11 @@
 			"format": "date-time"
 		},
 		"actualQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The actual quantity added or subtracted as a result of this financial adjustment."
 		},
 		"claimRelatedParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The claim related party for this financial adjustment."
 		},
 		"financialAdjustmentReasonCode": {
@@ -42,7 +42,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.3sixty.global/unece/UneceFinancialAdjustmentReasonCodeList"
+						"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustmentReasonCodeList"
 					},
 					{
 						"type": "string"
@@ -52,7 +52,7 @@
 			"description": "A code specifying a reason for this financial adjustment."
 		},
 		"invoiceReferenceDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The invoice document referenced for this financial adjustment."
 		},
 		"reason": {
@@ -62,7 +62,7 @@
 		"relatedTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
 			},
 			"description": "A trade tax related to this financial adjustment."
 		}

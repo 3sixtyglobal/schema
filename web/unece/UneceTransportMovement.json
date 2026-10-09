@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceTransportMovement",
+	"$id": "https://schema.twindev.org/unece/UneceTransportMovement",
 	"title": "UneceTransportMovement",
 	"description": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,53 +14,53 @@
 			"description": "JSON-LD Type."
 		},
 		"administrativeMedicalPersonnelOnboardQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of administrative medical personnel onboard this logistics transport movement."
 		},
 		"applicableRegulatoryProcedure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRegulatoryProcedure"
+				"$ref": "https://schema.twindev.org/unece/UneceRegulatoryProcedure"
 			},
 			"description": "A cross-border regulatory procedure applicable to this logistics transport movement."
 		},
 		"applicableServiceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceServiceCharge"
+				"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
 			},
 			"description": "A service charge, such as a freight charge, applicable to this logistics transport movement."
 		},
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
 			},
 			"description": "A specified inspection applicable to this logistics transport movement."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this logistics transport movement."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this logistics transport movement."
 		},
 		"arrivalEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "An arrival event for this logistics transport movement."
 		},
 		"associatedConvoy": {
-			"$ref": "https://schema.3sixty.global/unece/UneceConvoy",
+			"$ref": "https://schema.twindev.org/unece/UneceConvoy",
 			"description": "The convoy associated with this logistics transport movement."
 		},
 		"borderCrossingDateTime": {
@@ -71,14 +71,14 @@
 		"borderCrossingEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A border crossing event for this logistics transport movement."
 		},
 		"callEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A call event for this logistics transport movement."
 		},
@@ -93,25 +93,25 @@
 		"carriedGoodsCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristic"
 			},
 			"description": "Material characteristics of goods carried during this logistics transport movement."
 		},
 		"carriedInactiveTransportMeans": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportMeans"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportMeans"
 			},
 			"description": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO)\nferry."
 		},
 		"carrierAgentParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The carrier agent trade party for this logistics transport movement."
 		},
 		"carrierParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A carrier party for this logistics transport movement."
 		},
@@ -121,51 +121,51 @@
 			"format": "date-time"
 		},
 		"commodityConsolidatorAgentParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The commodity consolidator agent party for this logistics transport movement."
 		},
 		"commodityConsolidatorParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The commodity consolidator party for this logistics transport movement."
 		},
 		"consignmentQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of consignments in this logistics transport movement."
 		},
 		"consortiumCarrierParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A consortium carrier party for this logistics transport movement."
 		},
 		"crewListRelatedDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The crew list document related to this logistics transport movement."
 		},
 		"crewNationalityCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
 			},
 			"description": "Crew nationality details for this logistics transport movement."
 		},
 		"crewPerson": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportPerson"
 			},
 			"description": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
 		},
 		"crewPersonalEffects": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePersonalEffects"
+				"$ref": "https://schema.twindev.org/unece/UnecePersonalEffects"
 			},
 			"description": "Personal effects of an individual member of the crew for this logistics transport movement."
 		},
 		"crewQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of crew members for this logistics transport movement."
 		},
 		"cycle": {
@@ -175,7 +175,7 @@
 		"damageEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A damage event for this logistics transport movement."
 		},
@@ -186,30 +186,30 @@
 		"departureEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A departure event during this logistics transport movement."
 		},
 		"documentaryInstructionsNotifiedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party to be notified of the documentary instructions for this logistics transport movement."
 		},
 		"excessTransportService": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceService"
+				"$ref": "https://schema.twindev.org/unece/UneceService"
 			},
 			"description": "An excess transport service for this logistics transport movement."
 		},
 		"firstArrivalEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
 			"description": "The first arrival event for this logistics transport movement."
 		},
 		"iSPSRelatedDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
 		},
 		"identifier": {
@@ -218,7 +218,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number."
@@ -230,38 +230,38 @@
 		"inspectionParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "An inspection party for this logistics transport movement."
 		},
 		"itineraryRoute": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportRoute"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportRoute"
 			},
 			"description": "A route in the itinerary of this logistics transport movement."
 		},
 		"liftingInstructionsRelatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced lifting instructions document related to this logistics transport movement."
 		},
 		"loadingEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
 			"description": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this\nlogistics transport movement."
 		},
 		"loadingInspectionParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The loading inspection party for this logistics transport movement."
 		},
 		"loadingInspectionSpecifiedInstructions": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions",
 			"description": "Loading inspection instructions specified for this logistics transport movement."
 		},
 		"logisticsTransportMovementStatusCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceStatusCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList",
 			"description": "The code specifying a status for the logistics transport movement, such as estimated or final."
 		},
 		"manifestOnboardIndicator": {
@@ -271,12 +271,12 @@
 		"manifestRelatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced manifest document related to this transport movement."
 		},
 		"masterResponsiblePerson": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportPerson",
 			"description": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
 		},
 		"mode": {
@@ -286,7 +286,7 @@
 		"nVOCCCarrierParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A Non-Vessel Operating Common Carrier (NVOCC) carrier party for this logistics transport movement."
 		},
@@ -297,45 +297,45 @@
 		"notifiedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party to be notified about this logistics transport movement."
 		},
 		"onboardInventory": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceStoresItemInventory"
+				"$ref": "https://schema.twindev.org/unece/UneceStoresItemInventory"
 			},
 			"description": "A stores inventory item held onboard for this logistics transport movement."
 		},
 		"onboardPerson": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportPerson"
 			},
 			"description": "A person onboard this logistics transport movement."
 		},
 		"onboardPersonQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of onboard persons for this logistics transport movement."
 		},
 		"packageQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of packages in this logistics transport movement."
 		},
 		"passengerListRelatedDocument": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"$ref": "https://schema.twindev.org/unece/UneceDocument",
 			"description": "The passenger list document related to this logistics transport movement."
 		},
 		"passengerNationalityCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+				"$ref": "https://schema.twindev.org/unece/UneceCountry"
 			},
 			"description": "Passenger nationality details for this logistics transport movement."
 		},
 		"passengerQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of passengers for this logistics transport movement."
 		},
 		"pilotageExemptionId": {
@@ -344,13 +344,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a pilotage exemption for this logistics transport movement."
 		},
 		"professionalMedicalPersonnelOnboardQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of professional medical personnel onboard this logistics transport movement."
 		},
 		"reasonCode": {
@@ -364,14 +364,14 @@
 		"reportedTransportationHealth": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportationHealth"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportationHealth"
 			},
 			"description": "MDH (Maritime Declaration of Health) transportation health information reported for this logistics transport movement."
 		},
 		"reportedTransportationWasteMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportationWasteMaterial"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportationWasteMaterial"
 			},
 			"description": "Transportation waste material reported for this logistics transport movement."
 		},
@@ -382,7 +382,7 @@
 		"sailingAdviceNotifiedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party to be notified of the sailing advice for this logistics transport movement."
 		},
@@ -392,7 +392,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as\nstated in a schedule."
@@ -412,63 +412,63 @@
 		"shipToShipEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A ship to ship event for this logistics transport movement."
 		},
 		"specialSpecifiedInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
 			},
 			"description": "Special transport instructions specified for this logistics transport movement."
 		},
 		"specifiedEmission": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceEmission"
+				"$ref": "https://schema.twindev.org/unece/UneceEmission"
 			},
 			"description": "A calculated emission specified for this logistics transport movement."
 		},
 		"specifiedHandlingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceHandlingInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
 			},
 			"description": "Handling instructions specified for this logistics transport movement."
 		},
 		"specifiedLogisticsStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatus"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
 			},
 			"description": "A status specified for this logistics transport movement."
 		},
 		"specifiedOrganizationalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertificate"
 			},
 			"description": "An organizational certificate specified for this logistics transport movement."
 		},
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate specified for this logistics transport movement."
 		},
 		"specifiedRiskAnalysisResult": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRiskAnalysisResult"
+				"$ref": "https://schema.twindev.org/unece/UneceRiskAnalysisResult"
 			},
 			"description": "A result of a logistics risk analysis calculation specified for this transport movement."
 		},
 		"specifiedTransportEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A transport event specified for this logistics transport movement."
 		},
@@ -482,7 +482,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a stay in a port, airport or other place of service for this logistics transport movement."
@@ -490,7 +490,7 @@
 		"stevedoreParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A stevedore party for this logistics transport movement."
 		},
@@ -500,7 +500,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this logistics transport movement as assigned by a terminal operator."
@@ -508,19 +508,19 @@
 		"terminalOperatorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A terminal operator party for this logistics transport movement."
 		},
 		"towingVesselRelatedTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
 			},
 			"description": "A towing vessel transport movement related to this logistics transport movement."
 		},
 		"tradedParcelQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of traded parcels of cargo being transported in this logistics transport movement."
 		},
 		"tradingConsolidatorAssignedId": {
@@ -529,30 +529,30 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this logistics transport movement as assigned by the trading consolidator."
 		},
 		"trainedMedicalPersonnelOnboardQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of trained medical personnel onboard this logistics transport movement."
 		},
 		"transportContractRelatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A transport contract document related to this logistics transport movement."
 		},
 		"transportEquipmentQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of pieces of transport equipment for this logistics transport movement."
 		},
 		"transportMeansDirectionTransitDirectionCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceTransportMeansDirectionCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceTransportMeansDirectionCodeList"
 				},
 				{
 					"type": "string"
@@ -561,15 +561,15 @@
 			"description": "The code specifying the transit direction of this logistics transport movement."
 		},
 		"transportMeansSecurityOfficerPerson": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportPerson",
 			"description": "The officer responsible for the security of the means of transport used for this logistics transport movement."
 		},
 		"transportModeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportModeCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportModeCodeList",
 			"description": "The code specifying the mode, such as by air, sea, rail, road or inland waterway, for this logistics transport movement."
 		},
 		"transportMovementStageCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportMovementStageCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportMovementStageCodeList",
 			"description": "The code specifying the stage of this logistics transport movement."
 		},
 		"transportMovementType": {
@@ -579,34 +579,34 @@
 		"transportWasteSpecifiedInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
 			},
 			"description": "Transport waste disposal instructions specified for this logistics transport movement."
 		},
 		"transshipmentIntermediateEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
 			},
 			"description": "A transshipment intermediate event during this logistics transport movement."
 		},
 		"unloadingEvent": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
+			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
 			"description": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics\ntransport movement."
 		},
 		"unloadingInspectionParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The inspection party for the unloading of this logistics transport movement."
 		},
 		"unloadingInspectionSpecifiedInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
 			},
 			"description": "Unloading inspection instructions specified for this logistics transport movement."
 		},
 		"usedTransportMeans": {
-			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportMeans",
+			"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportMeans",
 			"description": "The means of transport used for this logistics transport movement."
 		}
 	},

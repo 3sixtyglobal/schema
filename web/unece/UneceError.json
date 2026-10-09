@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceError",
+	"$id": "https://schema.twindev.org/unece/UneceError",
 	"title": "UneceError",
 	"description": "A notification that an error has occurred.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"associatedEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCorrectiveEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceCorrectiveEvent"
 			},
 			"description": "A corrective event associated with this declared error."
 		},

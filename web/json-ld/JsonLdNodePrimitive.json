@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/json-ld/JsonLdNodePrimitive",
+	"$id": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive",
 	"title": "JsonLdNodePrimitive",
 	"description": "A node primitive is a JSON-LD value which is not one of the defined NodeObject properties.",
 	"anyOf": [
@@ -17,19 +17,19 @@
 			"type": "string"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdGraphObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdGraphObject"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdListObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdListObject"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdSetObject"
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdSetObject"
 		}
 	]
 }

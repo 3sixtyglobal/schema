@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/gs1/EpcisEvent",
+	"$id": "https://schema.twindev.org/gs1/EpcisEvent",
 	"title": "EpcisEvent",
 	"description": "Base EPCIS 2.0 Event carrying shared fields across all event types.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/gs1/EpcisContextType",
+			"$ref": "https://schema.twindev.org/gs1/EpcisContextType",
 			"description": "JSON-LD"
 		},
 		"type": {
@@ -32,7 +32,7 @@
 			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or\nOrganizations mentioned in this Event."
 		},
 		"errorDeclaration": {
-			"$ref": "https://schema.3sixty.global/gs1/EpcisErrorDeclaration",
+			"$ref": "https://schema.twindev.org/gs1/EpcisErrorDeclaration",
 			"description": "Error declaration."
 		},
 		"eventTime": {

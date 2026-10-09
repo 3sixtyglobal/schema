@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceCargo",
+	"$id": "https://schema.twindev.org/unece/UneceCargo",
 	"title": "UneceCargo",
 	"description": "Information about goods being transported identifying their nature for customs, statistical or transport purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"cargoCategoryTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCargoCategoryCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceCargoCategoryCodeList",
 			"description": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
 		},
 		"cargoCommodityCategoryStatisticalClassificationCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCargoCommodityCategoryCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceCargoCommodityCategoryCodeList"
 				},
 				{
 					"type": "string"
@@ -29,7 +29,7 @@
 			"description": "The code specifying a statistical classification for this transport cargo."
 		},
 		"cargoOperationalCategoryCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceCargoOperationalCategoryCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceCargoOperationalCategoryCodeList",
 			"description": "The code specifying the operational category for this transport cargo, such as obnoxious or military."
 		},
 		"identification": {

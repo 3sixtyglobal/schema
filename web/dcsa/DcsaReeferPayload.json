@@ -1,15 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/dcsa/DcsaReeferPayload",
+	"$id": "https://schema.twindev.org/dcsa/DcsaReeferPayload",
 	"title": "DcsaReeferPayload",
 	"description": "Reefer payload.\n\nSource: `reeferPayload` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseEvent"
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseEvent"
 		},
 		{
-			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseReeferEvent"
+			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseReeferEvent"
 		}
 	]
 }

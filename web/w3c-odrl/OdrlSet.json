@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlSet",
+	"$id": "https://schema.twindev.org/w3c-odrl/OdrlSet",
 	"title": "OdrlSet",
 	"description": "Interface representing an ODRL Set.\nA Set is a basic policy type with no specific party requirements.\nhttps://www.w3.org/TR/odrl-model/#policy-set",
 	"type": "object",
@@ -13,7 +13,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPolicy"
+			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UnecePayloadInstance",
+	"$id": "https://schema.twindev.org/unece/UnecePayloadInstance",
 	"title": "UnecePayloadInstance",
 	"description": "An individual set of transmitted data in an XHE (Exchange Header Envelope).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,17 +23,17 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The customization identifier for this XHE payload instance."
 		},
 		"decryptionKeyReference": {
-			"$ref": "https://schema.3sixty.global/unece/UneceXHEReference",
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the decryption key for this XHE payload instance."
 		},
 		"decryptionReference": {
-			"$ref": "https://schema.3sixty.global/unece/UneceXHEReference",
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the decryption for this XHE payload instance."
 		},
 		"description": {
@@ -41,7 +41,7 @@
 			"description": "A textual description of this XHE payload instance."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
 			"description": "The code specifying the document type for this XHE payload instance."
 		},
 		"encryptedIndicator": {
@@ -66,7 +66,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The handling service identifier for this XHE payload instance."
@@ -77,13 +77,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this XHE payload instance."
 		},
 		"payloadReference": {
-			"$ref": "https://schema.3sixty.global/unece/UneceXHEReference",
+			"$ref": "https://schema.twindev.org/unece/UneceXHEReference",
 			"description": "The reference to the payload for this XHE payload instance."
 		},
 		"profileExecutionId": {
@@ -92,7 +92,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The profile execution identifier for this XHE payload instance."
@@ -103,7 +103,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The profile identifier for this XHE payload instance."
@@ -111,7 +111,7 @@
 		"relevantReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceXHEReference"
+				"$ref": "https://schema.twindev.org/unece/UneceXHEReference"
 			},
 			"description": "A reference relevant to this XHE payload instance."
 		},
@@ -125,7 +125,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The validation version identifier for this XHE payload instance."

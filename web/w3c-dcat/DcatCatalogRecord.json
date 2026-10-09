@@ -1,19 +1,19 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecord",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecord",
 	"title": "DcatCatalogRecord",
 	"description": "Interface for DCAT Catalog Record.\nA record in a catalog, describing the registration of a single dataset or data\nservice.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatContextType",
 			"description": "The JSON-LD context for the resource."
 		}
 	},
 	"required": ["@context"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
 		}
 	]
 }

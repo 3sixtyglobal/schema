@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphResource",
+	"$id": "https://schema.twindev.org/aig/AuditableItemGraphResource",
 	"title": "AuditableItemGraphResource",
 	"description": "Interface describing an auditable item graph vertex resource.",
 	"type": "object",
@@ -8,17 +8,17 @@
 		"@context": {
 			"anyOf": [
 				{
-					"const": "https://schema.3sixty.global/aig/"
+					"const": "https://schema.twindev.org/aig/"
 				},
 				{
 					"type": "array",
 					"prefixItems": [
 						{
-							"const": "https://schema.3sixty.global/aig/"
+							"const": "https://schema.twindev.org/aig/"
 						}
 					],
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					},
 					"minItems": 1
 				}
@@ -30,14 +30,14 @@
 			"description": "JSON-LD Type."
 		},
 		"resourceObject": {
-			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
 			"description": "The JSON-LD object for the resource."
 		}
 	},
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAuditedElement"
+			"$ref": "https://schema.twindev.org/aig/AuditableItemGraphAuditedElement"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGuarantee",
+	"$id": "https://schema.twindev.org/unece/UneceGuarantee",
 	"title": "UneceGuarantee",
 	"description": "An official promise or assurance to fulfil a financial obligation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -22,13 +22,13 @@
 			"description": "A textual description of this financial guarantee."
 		},
 		"effectiveDelimitedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 			"description": "The period within which this financial guarantee is effective."
 		},
 		"liabilityAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value of a liability in this financial guarantee."
 		}

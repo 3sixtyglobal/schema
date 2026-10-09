@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceGuestPerson",
+	"$id": "https://schema.twindev.org/unece/UneceGuestPerson",
 	"title": "UneceGuestPerson",
 	"description": "An individual guest.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"accompanyingAnimal": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePetAnimal"
+				"$ref": "https://schema.twindev.org/unece/UnecePetAnimal"
 			},
 			"description": "A pet animal accompanying this guest person."
 		},
 		"applicableSpecifiedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedNote"
 			},
 			"description": "A note applicable to this guest person."
 		},
@@ -35,14 +35,14 @@
 		"carriedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate carried by this guest person."
 		},
 		"claimedLanguageProficiency": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLanguageProficiency"
+				"$ref": "https://schema.twindev.org/unece/UneceLanguageProficiency"
 			},
 			"description": "Personal language proficiency skills claimed by this guest person."
 		},
@@ -51,7 +51,7 @@
 			"description": "A textual description of this guest person."
 		},
 		"durationUnitAgeMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the age of this guest person."
 		},
 		"genderCode": {
@@ -64,7 +64,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this guest."
@@ -75,7 +75,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the language of this guest."
@@ -87,49 +87,49 @@
 		"notifiedAllergy": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAllergy"
+				"$ref": "https://schema.twindev.org/unece/UneceAllergy"
 			},
 			"description": "An allergy notified for this guest person."
 		},
 		"notifiedDisability": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDisability"
+				"$ref": "https://schema.twindev.org/unece/UneceDisability"
 			},
 			"description": "A disability notified for this guest person."
 		},
 		"notifiedFoodChoice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceFoodChoice"
+				"$ref": "https://schema.twindev.org/unece/UneceFoodChoice"
 			},
 			"description": "A food choice notified for this guest person."
 		},
 		"notifiedGuestArrival": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceGuestArrival"
+				"$ref": "https://schema.twindev.org/unece/UneceGuestArrival"
 			},
 			"description": "An arrival notified for this guest person."
 		},
 		"notifiedHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceGuestHealthIndication"
+				"$ref": "https://schema.twindev.org/unece/UneceGuestHealthIndication"
 			},
 			"description": "A health indication notified for this guest person."
 		},
 		"notifiedPreference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePreference"
+				"$ref": "https://schema.twindev.org/unece/UnecePreference"
 			},
 			"description": "An experience item preference notified for this guest person."
 		},
 		"notifiedProtectionMeans": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProtectionMeans"
+				"$ref": "https://schema.twindev.org/unece/UneceProtectionMeans"
 			},
 			"description": "A disease protection means notified for this guest person."
 		},
@@ -139,7 +139,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the passport of this guest."
@@ -147,7 +147,7 @@
 		"raisedQuery": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecialQuery"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecialQuery"
 			},
 			"description": "A special query raised for this guest person."
 		},
@@ -157,7 +157,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the residence country of this guest person."
@@ -169,14 +169,14 @@
 		"specifiedCarriedEquipment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCarriedEquipment"
+				"$ref": "https://schema.twindev.org/unece/UneceCarriedEquipment"
 			},
 			"description": "Carried equipment specified for this guest person."
 		},
 		"specifiedPaymentMeans": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePaymentMeans"
+				"$ref": "https://schema.twindev.org/unece/UnecePaymentMeans"
 			},
 			"description": "A trade settlement payment means specified for this guest person."
 		},
@@ -191,14 +191,14 @@
 		"travelInsuranceCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A travel insurance certificate for this guest person."
 		},
 		"usedCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "A universal communication used by this guest."
 		}

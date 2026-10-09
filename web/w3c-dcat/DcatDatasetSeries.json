@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDatasetSeries",
+	"$id": "https://schema.twindev.org/w3c-dcat/DcatDatasetSeries",
 	"title": "DcatDatasetSeries",
 	"description": "Interface for DCAT Dataset Series.\nA collection of datasets that are published separately, but share some common\ncharacteristics that enable them to be grouped together.",
 	"type": "object",
@@ -34,12 +34,12 @@
 		"dcat:dataset": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+					"$ref": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+						"$ref": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase"
 					}
 				}
 			],
@@ -49,7 +49,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataset"
+			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDataset"
 		}
 	]
 }

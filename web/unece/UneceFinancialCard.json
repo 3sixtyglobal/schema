@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceFinancialCard",
+	"$id": "https://schema.twindev.org/unece/UneceFinancialCard",
 	"title": "UneceFinancialCard",
 	"description": "A card used to represent a financial account for a trade settlement.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,14 +24,14 @@
 		"creditAvailableAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the credit available for this trade settlement financial card."
 		},
 		"creditLimitAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the credit limit for this trade settlement financial card."
 		},
@@ -54,7 +54,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier, commonly known as the card number, of this trade settlement financial card."
@@ -74,7 +74,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceFinancialCardTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceFinancialCardTypeCodeList"
 				},
 				{
 					"type": "string"

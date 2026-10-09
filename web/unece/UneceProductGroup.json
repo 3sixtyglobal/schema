@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductGroup",
+	"$id": "https://schema.twindev.org/unece/UneceProductGroup",
 	"title": "UneceProductGroup",
 	"description": "A grouping of trade products.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this trade product group."
@@ -27,14 +27,14 @@
 		"includedSupplyChainTradeLineItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeLineItem"
+				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItem"
 			},
 			"description": "A supply chain trade line item which is included in this trade product group."
 		},
 		"includedTradeProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
 			},
 			"description": "A product included in this trade product group."
 		},
@@ -45,14 +45,14 @@
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this trade product group."
 		},
 		"subordinateProductGroup": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProductGroup"
+				"$ref": "https://schema.twindev.org/unece/UneceProductGroup"
 			},
 			"description": "A product group subordinate to this trade product group."
 		}

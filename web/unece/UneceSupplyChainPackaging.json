@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging",
+	"$id": "https://schema.twindev.org/unece/UneceSupplyChainPackaging",
 	"title": "UneceSupplyChainPackaging",
 	"description": "Any material with which supply chain goods are packaged, such as a box or bubble wrap.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,33 +24,33 @@
 		"applicableDisposalInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
 			},
 			"description": "Disposal instructions for this supply chain packaging."
 		},
 		"applicableGoodsCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic"
+				"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristic"
 			},
 			"description": "Material goods characteristic applicable to this supply chain packaging."
 		},
 		"applicablePackagingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UnecePackagingInstructions"
+				"$ref": "https://schema.twindev.org/unece/UnecePackagingInstructions"
 			},
 			"description": "Packaging instructions applicable to this supply chain packaging."
 		},
 		"applicableReturnableAssetInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceReturnableAssetInstructions"
+				"$ref": "https://schema.twindev.org/unece/UneceReturnableAssetInstructions"
 			},
 			"description": "Returnable asset instructions for this supply chain packaging."
 		},
 		"capacityMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the capacity of this supply chain packaging."
 		},
 		"conditionCode": {
@@ -58,11 +58,11 @@
 			"description": "A code specifying the condition of this supply chain packaging."
 		},
 		"contentLayerQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers\nof product on a pallet."
 		},
 		"customerFacingTotalUnitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging\nis placed on a retail shelf."
 		},
 		"description": {
@@ -78,31 +78,31 @@
 			"description": "A code specifying an instruction for this supply chain packaging."
 		},
 		"layerTotalUnitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The total number of units in a layer of this supply chain packaging."
 		},
 		"linearDimension": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension",
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "The linear spatial dimensions of this supply chain packaging."
 		},
 		"maximumLinearDimension": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension",
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "The maximum linear spatial dimensions of this supply chain packaging."
 		},
 		"maximumStackabilityQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this type of supply chain packaging which can be stacked on top of each other."
 		},
 		"maximumStackabilityWeightMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
 			"description": "The measure of the maximum stackability weight of this supply chain packaging."
 		},
 		"minimumLinearDimension": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension",
+			"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension",
 			"description": "The minimum linear spatial dimensions of this supply chain packaging."
 		},
 		"packageTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UnecePackageTypeCodeList",
+			"$ref": "https://schema.twindev.org/unece/UnecePackageTypeCodeList",
 			"description": "The code specifying the type of supply chain packaging."
 		},
 		"packagingType": {
@@ -132,7 +132,7 @@
 		"specifiedMarking": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMarking"
+				"$ref": "https://schema.twindev.org/unece/UneceMarking"
 			},
 			"description": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership,\nquality, manufacture or origin."
 		},
@@ -143,23 +143,23 @@
 		"totalUnitQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
 			},
 			"description": "A total number of units contained in this supply chain packaging."
 		},
 		"transportMaximumStackabilityQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of units of this type of supply chain packaging which can be stacked vertically for transport operations."
 		},
 		"weightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the weight of this supply chain packaging."
 		},
 		"weightUnitLoadBearingCapabilityMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
 			"description": "The load bearing capability measure for this supply chain packaging."
 		}
 	},

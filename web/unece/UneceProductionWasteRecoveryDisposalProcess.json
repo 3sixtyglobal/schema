@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceProductionWasteRecoveryDisposalProcess",
+	"$id": "https://schema.twindev.org/unece/UneceProductionWasteRecoveryDisposalProcess",
 	"title": "UneceProductionWasteRecoveryDisposalProcess",
 	"description": "A process of either regaining waste substances in usable form, or of getting rid of waste substances resulting from\nproduction.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate specified for this production waste recovery disposal process."
 		}

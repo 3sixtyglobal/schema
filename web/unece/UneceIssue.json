@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceIssue",
+	"$id": "https://schema.twindev.org/unece/UneceIssue",
 	"title": "UneceIssue",
 	"description": "A targeted topic for debate or resolution.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,27 +19,27 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this target issue."
 		},
 		"maximumSpecifiedCharacteristic": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristic",
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The maximum metric characteristic specified for this target issue."
 		},
 		"minimumSpecifiedCharacteristic": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristic",
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The minimum metric characteristic specified for this target issue."
 		},
 		"specifiedMetricCharacteristic": {
-			"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristic",
+			"$ref": "https://schema.twindev.org/unece/UneceMetricCharacteristic",
 			"description": "The metric characteristic specified for this target issue."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceIssueTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceIssueTypeCodeList"
 				},
 				{
 					"type": "string"

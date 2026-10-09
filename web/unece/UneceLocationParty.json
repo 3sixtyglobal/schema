@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceLocationParty",
+	"$id": "https://schema.twindev.org/unece/UneceLocationParty",
 	"title": "UneceLocationParty",
 	"description": "An individual, a group, or a body having a role related to a location.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,13 +16,13 @@
 		"countryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique country identifier for this location party."
@@ -30,7 +30,7 @@
 		"definedContact": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeContact"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeContact"
 			},
 			"description": "A trade contact defined for this location party."
 		},
@@ -41,7 +41,7 @@
 		"faxCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "Fax communication information for this location party."
 		},
@@ -51,7 +51,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier of this location party."
@@ -67,42 +67,42 @@
 		"postalAddress": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
 			},
 			"description": "A postal address for this location party."
 		},
 		"providedService": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceService"
+				"$ref": "https://schema.twindev.org/unece/UneceService"
 			},
 			"description": "A transport service provided by this location party."
 		},
 		"specifiedLogisticsLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics location or place specified for this party."
 		},
 		"specifiedTransportPerson": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson"
+				"$ref": "https://schema.twindev.org/unece/UneceTransportPerson"
 			},
 			"description": "A transport related person specified for this location party."
 		},
 		"telephoneCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "Telephone communication information for this location party."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceLocationPartyTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceLocationPartyTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -113,7 +113,7 @@
 		"uRICommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
 			},
 			"description": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
 		}

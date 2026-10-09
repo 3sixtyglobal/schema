@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceExperienceProduct",
+	"$id": "https://schema.twindev.org/unece/UneceExperienceProduct",
 	"title": "UneceExperienceProduct",
 	"description": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business\nactivity experience.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"applicableSpecifiedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedNote"
 			},
 			"description": "A note applicable for this experience product."
 		},
@@ -31,7 +31,7 @@
 		"calculatedPrice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+				"$ref": "https://schema.twindev.org/unece/UneceTradePrice"
 			},
 			"description": "A calculated price for this experience product."
 		},
@@ -50,7 +50,7 @@
 		"distinctiveFeature": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFeature"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFeature"
 			},
 			"description": "A distinctive feature of this experience product."
 		},
@@ -60,7 +60,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this experience product."
@@ -68,7 +68,7 @@
 		"includedEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceExperienceEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceExperienceEvent"
 			},
 			"description": "An event included within this experience product."
 		},
@@ -85,11 +85,11 @@
 			"description": "A location, expressed as text, specified for this experience product."
 		},
 		"maximumUnitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The maximum number of units of this experience product."
 		},
 		"minimumUnitQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The minimum number of units of this experience product."
 		},
 		"name": {
@@ -103,28 +103,28 @@
 		"operationalPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A operational period for this experience product."
 		},
 		"optionalProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceExperienceProduct"
+				"$ref": "https://schema.twindev.org/unece/UneceExperienceProduct"
 			},
 			"description": "An optional product for this experience product."
 		},
 		"providedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate provided for this experience product."
 		},
 		"providedRequirement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceRequirement"
+				"$ref": "https://schema.twindev.org/unece/UneceRequirement"
 			},
 			"description": "A requirement provided for this experience product."
 		},
@@ -135,7 +135,7 @@
 		"requiredUsageCondition": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceUsageCondition"
+				"$ref": "https://schema.twindev.org/unece/UneceUsageCondition"
 			},
 			"description": "A required usage condition for this experience product."
 		},
@@ -146,7 +146,7 @@
 		"specifiedTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
 			},
 			"description": "A party specified for this experience product."
 		},

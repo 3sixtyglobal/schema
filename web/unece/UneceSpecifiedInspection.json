@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedInspection",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedInspection",
 	"title": "UneceSpecifiedInspection",
 	"description": "The process of performing documented checks, such as on materials or processes, with a focus on discovering deviations,\nerrors or faults related to documented requirements.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this specified inspection."
 		},
@@ -25,11 +25,11 @@
 			"description": "A textual description of this specified inspection."
 		},
 		"executionParty": {
-			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
 			"description": "The party executing this specified inspection."
 		},
 		"executionPerson": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionPerson",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionPerson",
 			"description": "The inspector executing this specified inspection."
 		},
 		"identifier": {
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this specified inspection."
@@ -52,31 +52,31 @@
 			"description": "The indication of whether or not this specified inspection is outsourced."
 		},
 		"reportedInspectionResult": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionResult",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionResult",
 			"description": "The result reported for this specified inspection."
 		},
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "A referenced document for this specified inspection."
 		},
 		"specifiedInspectionEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
+				"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
 			},
 			"description": "An inspection event for this specified inspection."
 		},
 		"specifiedInspectionStatus": {
-			"$ref": "https://schema.3sixty.global/unece/UneceInspectionStatus",
+			"$ref": "https://schema.twindev.org/unece/UneceInspectionStatus",
 			"description": "The status for this specified inspection."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspectionTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspectionTypeCodeList"
 				},
 				{
 					"type": "string"

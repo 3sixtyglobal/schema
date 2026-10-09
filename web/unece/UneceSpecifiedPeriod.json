@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 	"title": "UneceSpecifiedPeriod",
 	"description": "A specified period of time.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 			"description": "The indication of whether or not this specified period is continuous."
 		},
 		"dayQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of days in this specified period."
 		},
 		"description": {
@@ -37,7 +37,7 @@
 		"durationMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
 			},
 			"description": "A measure of the length of time for this specified time period such as hours, days, weeks, months, years."
 		},
@@ -56,7 +56,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this specified period."
@@ -66,11 +66,11 @@
 			"description": "The indication of whether or not the start and end dates are included in this specified period."
 		},
 		"maximumDurationMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the maximum length of time for this specified period, such as hours, days, weeks, months, years."
 		},
 		"minimumDurationMeasure": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the minimum length of time for this specified period, such as hours, days, weeks, months, years."
 		},
 		"name": {
@@ -78,7 +78,7 @@
 			"description": "A name, expressed as text, of this specified period."
 		},
 		"nightQuantity": {
-			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
 			"description": "The number of nights in this specified period."
 		},
 		"openIndicator": {
@@ -113,7 +113,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriodTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriodTypeCodeList"
 				},
 				{
 					"type": "string"

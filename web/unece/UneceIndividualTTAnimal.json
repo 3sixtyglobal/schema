@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceIndividualTTAnimal",
+	"$id": "https://schema.twindev.org/unece/UneceIndividualTTAnimal",
 	"title": "UneceIndividualTTAnimal",
 	"description": "A Track and Trace (TT) animal, such as one kept or raised on a farm, ranch.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -29,17 +29,17 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this TT animal, such as the number appearing on an animal ear tag."
 		},
 		"specifiedDelimitedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 			"description": "The delimited period specified for this individual TT animal."
 		},
 		"specifiedPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod",
 			"description": "The delimited period specified for this individual TT animal."
 		}
 	},

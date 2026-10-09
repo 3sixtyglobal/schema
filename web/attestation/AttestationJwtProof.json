@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/attestation/AttestationJwtProof",
+	"$id": "https://schema.twindev.org/attestation/AttestationJwtProof",
 	"title": "AttestationJwtProof",
 	"description": "Interface describing an attestation proof.",
 	"type": "object",
@@ -8,17 +8,17 @@
 		"@context": {
 			"anyOf": [
 				{
-					"const": "https://schema.3sixty.global/attestation/"
+					"const": "https://schema.twindev.org/attestation/"
 				},
 				{
 					"type": "array",
 					"prefixItems": [
 						{
-							"const": "https://schema.3sixty.global/attestation/"
+							"const": "https://schema.twindev.org/attestation/"
 						}
 					],
 					"items": {
-						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
 					},
 					"minItems": 1
 				}

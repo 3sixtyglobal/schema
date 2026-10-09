@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceResponse",
+	"$id": "https://schema.twindev.org/unece/UneceResponse",
 	"title": "UneceResponse",
 	"description": "A response to a specification query.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this specification response."
@@ -38,13 +38,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for the query to which this response refers."
 		},
 		"responseTypeCode": {
-			"$ref": "https://schema.3sixty.global/unece/UneceResponseTypeCodeList",
+			"$ref": "https://schema.twindev.org/unece/UneceResponseTypeCodeList",
 			"description": "The code specifying the type of this specification response."
 		}
 	},

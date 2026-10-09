@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeSettlement",
+	"$id": "https://schema.twindev.org/unece/UneceSubordinateLineTradeSettlement",
 	"title": "UneceSubordinateLineTradeSettlement",
 	"description": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the\nitem(s) that the financial transaction is intended to settle, for example a commercial invoice.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,39 +20,39 @@
 		"applicableTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
 			},
 			"description": "A tax applicable to this subordinate line trade settlement."
 		},
 		"billingPeriod": {
-			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
 			"description": "The billing period specified for the subordinate line of this trade settlement."
 		},
 		"invoiceReferencedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+				"$ref": "https://schema.twindev.org/unece/UneceDocument"
 			},
 			"description": "An invoice document referenced for this subordinate line trade settlement."
 		},
 		"purchaseSpecifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
+				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
 			},
 			"description": "A purchase accounting account specified for the subordinate line of this trade settlement."
 		},
 		"specifiedAllowanceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge"
+				"$ref": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge"
 			},
 			"description": "An allowance or charge specified for this subordinate line trade settlement."
 		},
 		"specifiedFinancialAdjustment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.3sixty.global/unece/UneceFinancialAdjustment"
+				"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustment"
 			},
 			"description": "A financial adjustment specified for this subordinate line trade settlement."
 		}

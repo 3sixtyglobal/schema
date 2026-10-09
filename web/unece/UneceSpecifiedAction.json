@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedAction",
+	"$id": "https://schema.twindev.org/unece/UneceSpecifiedAction",
 	"title": "UneceSpecifiedAction",
 	"description": "The process of doing something in order to make something happen or to deal with a situation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"$ref": "https://schema.twindev.org/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedActionTypeCodeList"
+					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedActionTypeCodeList"
 				},
 				{
 					"type": "string"
