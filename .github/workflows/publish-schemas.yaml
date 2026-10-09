@@ -9,8 +9,8 @@ permissions:
   deployments: write
 
 env:
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_SCHEMA }}
-  VERCEL_ORG_ID: ${{ secrets.ORG_VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_SCHEMA_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
 
 jobs:
   deploy:
@@ -35,8 +35,8 @@ jobs:
         id: deploy
         run: |
           DEPLOYMENT_URL=$(npx --yes vercel deploy \
-          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
-          --scope=${{ secrets.ORG_VERCEL_SCOPE }} \
+          --token=${{ secrets.VERCEL_TOKEN }} \
+          --scope=${{ secrets.VERCEL_SCOPE }} \
           --target=production \
           --force)
           echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
@@ -47,5 +47,5 @@ jobs:
           npx --yes vercel alias set \
           ${{ steps.deploy.outputs.deployment-url }} \
           ${{ secrets.DOMAIN_SCHEMA_PROD }} \
-          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
-          --scope=${{ secrets.ORG_VERCEL_SCOPE }}
+          --token=${{ secrets.VERCEL_TOKEN }} \
+          --scope=${{ secrets.VERCEL_SCOPE }}
