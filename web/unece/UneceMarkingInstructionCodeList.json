@@ -1,0 +1,208 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMarkingInstructionCodeList",
+	"title": "UneceMarkingInstructionCodeList",
+	"description": "A character string used to represent the marking instruction.",
+	"anyOf": [
+		{
+			"const": "unece:MarkingInstructionCodeList#1",
+			"description": "Do not mark suppliers company name: 1."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#10",
+			"description": "Mark batch number: 10."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#11",
+			"description": "Mark article number customer: 11."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#12",
+			"description": "Mark running number of packages: 12."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#13",
+			"description": "Mark date of production: 13."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#14",
+			"description": "Mark expiry date: 14."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#15",
+			"description": "Mark supplier number: 15."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#16",
+			"description": "Buyer's instructions: 16."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#17",
+			"description": "Seller's instructions: 17."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#18",
+			"description": "Carrier's instructions: 18."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#19",
+			"description": "Legal requirements: 19."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#2",
+			"description": "Mark customers company name: 2."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#20",
+			"description": "Industry instructions: 20."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#21",
+			"description": "Line item only: 21."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#22",
+			"description": "Pre-marked by buyer: 22."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#23",
+			"description": "Entire shipment: 23."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#24",
+			"description": "Shipper assigned: 24."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#25",
+			"description": "Shipper assigned roll number: 25."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#26",
+			"description": "Shipper assigned skid number: 26."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#27",
+			"description": "Uniform Code Council (UCC) format: 27."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#28",
+			"description": "Mark free text: 28."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#29",
+			"description": "Mark case number: 29."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#3",
+			"description": "Mark customers references: 3."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#30",
+			"description": "Mark serial shipping container code: 30."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#31",
+			"description": "Marked with ISO 10374 (permanent container tag): 31."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#32",
+			"description": "Mark date of packaging: 32."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#33",
+			"description": "Mark reference to source entity: 33."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#34",
+			"description": "Marked GS1 Global Individual Asset Identifier: 34."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#35",
+			"description": "Marked with a product serial number: 35."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#36",
+			"description": "Marked with a GS1 Global Identification Number for Consignment (GINC): 36."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#37",
+			"description": "Marked with a GS1 Global Shipment Identification Number (GSIN): 37."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#38",
+			"description": "Marked price: 38."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#39",
+			"description": "Marked with Serial Shipping Container Code (SSCC): 39."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#4",
+			"description": "Mark additionally customers article description: 4."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#40",
+			"description": "Marked with first freezing date: 40."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#41",
+			"description": "Marked with batch number: 41."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#42",
+			"description": "Marked with production date: 42."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#43",
+			"description": "Marked with expiry date: 43."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#44",
+			"description": "Marked with best before date: 44."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#45",
+			"description": "Marked with net weight: 45."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#46",
+			"description": "Marked with packaging date: 46."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#47",
+			"description": "Marked with GS1 Global Returnable Asset Identifier (GRAI): 47."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#48",
+			"description": "Marked with a greeting message: 48."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#49",
+			"description": "Price per unit of measure marked on product: 49."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#5",
+			"description": "Mark exclusively customers article description: 5."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#6",
+			"description": "Mark packages dimensions: 6."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#7",
+			"description": "Mark net weight: 7."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#8",
+			"description": "Mark gross weight: 8."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#9",
+			"description": "Mark tare weight: 9."
+		},
+		{
+			"const": "unece:MarkingInstructionCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

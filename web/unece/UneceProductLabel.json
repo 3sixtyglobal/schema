@@ -1,0 +1,98 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductLabel",
+	"title": "UneceProductLabel",
+	"description": "A label, such as a garment label or a radio frequency tag, used for identifying a product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductLabel",
+			"description": "JSON-LD Type."
+		},
+		"attachmentDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value, for the attachment of this product label.",
+			"format": "date-time"
+		},
+		"barcodeId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The barcode identifier of this product label."
+		},
+		"brandName": {
+			"type": "string",
+			"description": "The brand name, expressed as text, on this product label."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of this product label."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this product label."
+		},
+		"includedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion included on this product label."
+		},
+		"layoutTypeCode": {
+			"type": "string",
+			"description": "The code specifying the layout type of this product label."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as a text, of this product label."
+		},
+		"seriesEndId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the end of a series of product labels."
+		},
+		"seriesStartId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the start of a series of product labels."
+		},
+		"sizeCode": {
+			"type": "string",
+			"description": "The code specifying the size of this product label."
+		},
+		"tagTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of tag for this product label."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,33 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/attestation/AttestationInformation",
+	"$id": "https://schema.3sixty.global/attestation/AttestationInformation",
+	"title": "AttestationInformation",
 	"description": "Interface describing the collated attestation information.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/attestation/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				},
-				{
-					"type": "string",
 					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.3sixty.global/attestation/"
+				},
+				{
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Information",
 			"description": "JSON-LD Type."
 		},
@@ -41,22 +38,18 @@
 		},
 		"dateTransferred": {
 			"type": "string",
-			"description": "Transferred date/time of the attestation in ISO format, can be blank if holder identity is owner."
+			"description": "Transferred date/time of the attestation in ISO format, can be blank if not yet transferred."
 		},
 		"ownerIdentity": {
 			"type": "string",
 			"description": "The identity of the owner."
 		},
-		"holderIdentity": {
-			"type": "string",
-			"description": "The identity of the current holder, can be undefined if owner is still the holder."
-		},
 		"attestationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The data that was attested."
 		},
 		"proof": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The proof for the attested data."
 		},
 		"verified": {
@@ -68,6 +61,5 @@
 			"description": "The verification failure message."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "ownerIdentity", "attestationObject"],
-	"additionalProperties": false
+	"required": ["@context", "type", "id", "dateCreated", "ownerIdentity", "attestationObject"]
 }

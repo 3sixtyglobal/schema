@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaPortCallServiceTypeCodes",
+	"title": "DcsaPortCallServiceTypeCodes",
+	"description": "Port call service type codes.",
+	"anyOf": [
+		{
+			"const": "PILO",
+			"description": "Pilotage."
+		},
+		{
+			"const": "MOOR",
+			"description": "Mooring."
+		},
+		{
+			"const": "CRGO",
+			"description": "Cargo operations."
+		},
+		{
+			"const": "TOWG",
+			"description": "Towage."
+		},
+		{
+			"const": "BUNK",
+			"description": "Bunkering."
+		},
+		{
+			"const": "LASH",
+			"description": "Lashing."
+		},
+		{
+			"const": "SAFE",
+			"description": "Safety."
+		},
+		{
+			"const": "FAST",
+			"description": "Fastening."
+		},
+		{
+			"const": "GWAY",
+			"description": "Gangway."
+		},
+		{
+			"const": "ANCO",
+			"description": "Anchorage."
+		},
+		{
+			"const": "SLUG",
+			"description": "Sludge."
+		},
+		{
+			"const": "SHPW",
+			"description": "Ship waste."
+		},
+		{
+			"const": "LCRO",
+			"description": "Loading cargo."
+		},
+		{
+			"const": "DCRO",
+			"description": "Discharge cargo."
+		},
+		{
+			"const": "VRDY",
+			"description": "Vessel ready."
+		}
+	]
+}

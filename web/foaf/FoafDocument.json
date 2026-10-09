@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/foaf/FoafDocument",
+	"title": "FoafDocument",
+	"description": "A FOAF Document",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"description": "The LD Context."
+		},
+		"@type": {
+			"anyOf": [
+				{
+					"const": "Document"
+				},
+				{
+					"const": "Image"
+				}
+			],
+			"description": "Type."
+		},
+		"topic": {
+			"type": "string",
+			"description": "A topic of some page or document."
+		},
+		"primaryTopic": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					}
+				}
+			],
+			"description": "The primary topic of some page or document."
+		},
+		"sha1": {
+			"type": "string",
+			"description": "A sha1sum hash, in hex."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/foaf/FoafBaseObject"
+		}
+	]
+}

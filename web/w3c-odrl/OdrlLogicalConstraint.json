@@ -1,212 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint",
-	"description": "Interface for ODRL Logical Constraints. A Logical Constraint compares two or more existing Constraints by one logical operator. If the comparison returns a logical match, then the Logical Constraint is satisfied.",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint",
+	"title": "OdrlLogicalConstraint",
+	"description": "Interface for ODRL Logical Constraints.\nA Logical Constraint compares two or more existing Constraints by one logical operator.\nIf the comparison returns a logical match, then the Logical Constraint is satisfied.\nhttps://www.w3.org/TR/odrl-model/#constraint-logical",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"uid": {
 			"type": "string",
-			"description": "Optional unique identifier for the logical constraint. Must be an IRI."
+			"description": "Optional unique identifier for the logical constraint.\nMust be an IRI.",
+			"format": "uri"
 		},
 		"and": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "AND operator - all constraints must be satisfied."
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "AND operator - all constraints must be satisfied.\nExactly one logical operator must be present."
 		},
 		"or": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "OR operator - at least one constraint must be satisfied."
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "OR operator - at least one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"xone": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "XOR operator - exactly one constraint must be satisfied."
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "XOR operator - exactly one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"andSequence": {
-			"type": "object",
-			"properties": {
-				"@list": {
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "object",
-							"properties": {
-								"@id": {
-									"type": "string"
-								}
-							},
-							"required": ["@id"],
-							"additionalProperties": false
-						}
-					]
-				}
-			},
-			"required": ["@list"],
-			"additionalProperties": false,
-			"description": "AND Sequence operator - all constraints must be satisfied in order."
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
+			"description": "AND Sequence operator - all constraints must be satisfied in order.\nExactly one logical operator must be present."
 		}
-	},
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
 	}
 }

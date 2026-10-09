@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceQuarantineInstructions",
+	"title": "UneceQuarantineInstructions",
+	"description": "Instructions for a period of imposed isolation or detention.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "QuarantineInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of these quarantine instructions."
+		},
+		"quarantineInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying the description of these quarantine instructions."
+		}
+	},
+	"required": ["type"]
+}

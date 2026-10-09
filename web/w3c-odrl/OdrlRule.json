@@ -1,88 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlRule",
-	"description": "Base interface for ODRL Rules.",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlRule",
+	"title": "OdrlRule",
+	"description": "Base interface for ODRL Rules.\nhttps://www.w3.org/TR/odrl-model/#rule",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"uid": {
 			"type": "string",
 			"description": "Optional unique identifier for the rule."
@@ -90,26 +12,29 @@
 		"action": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+							},
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+							}
+						]
+					}
 				}
 			],
 			"description": "The action associated with the rule."
@@ -120,23 +45,26 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-								}
-							]
-						}
-					]
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "The target asset for the rule."
@@ -147,7 +75,26 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "The assigner of the rule."
@@ -158,49 +105,57 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+							}
+						]
+					}
 				}
 			],
 			"description": "The assignee of the rule."
 		},
 		"constraint": {
-			"type": "array",
-			"items": false,
-			"description": "Constraints applied to the rule.",
-			"prefixItems": [
+			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+							}
+						]
+					}
 				}
-			]
+			],
+			"description": "Constraints applied to the rule."
 		},
 		"summary": {
 			"type": "string",
-			"description": "Additional relation sub-properties as defined in ODRL profiles. For example, 'summary' in profile \"http://example.com/odrl:profile:03\" indicates where the output should be stored."
+			"description": "Additional relation sub-properties as defined in ODRL profiles.\nFor example, 'summary' in profile \"http://example.com/odrl:profile:03\"\nindicates where the output should be stored."
 		}
-	},
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
 	}
 }

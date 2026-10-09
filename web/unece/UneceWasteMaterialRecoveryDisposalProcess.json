@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceWasteMaterialRecoveryDisposalProcess",
+	"title": "UneceWasteMaterialRecoveryDisposalProcess",
+	"description": "A process of either regaining substances in usable form, or of getting rid of substances regarding waste material, such\nas production waste.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "WasteMaterialRecoveryDisposalProcess",
+			"description": "JSON-LD Type."
+		},
+		"applicableProcessCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+			},
+			"description": "A process certificate applicable to this waste material recovery disposal process."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of a waste material recovery disposal process."
+		},
+		"wasteMaterialRecoveryDisposalProcessTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of waste material recovery disposal process."
+		}
+	},
+	"required": ["type"]
+}

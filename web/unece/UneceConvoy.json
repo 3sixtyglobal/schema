@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceConvoy",
+	"title": "UneceConvoy",
+	"description": "A number of means of transport following each other with a common logistics purpose.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Convoy",
+			"description": "JSON-LD Type."
+		},
+		"maximumWidthMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
+			"description": "The maximum width measure for this logistics convoy."
+		},
+		"overallLengthMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
+			"description": "The overall length measure of this logistics convoy."
+		},
+		"powerActiveTransportMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportMeans"
+			},
+			"description": "A means of transport actively powering this logistics convoy."
+		},
+		"powerInactiveTransportMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportMeans"
+			},
+			"description": "A means of transport not actively powering this logistics convoy."
+		},
+		"transportMeansQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of means of transport in this logistics convoy."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,67 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceXHEDocument",
+	"title": "UneceXHEDocument",
+	"description": "A collection of data for electronic matter that provides XHE (Exchange Header Envelope) information or evidence.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "XHEDocument",
+			"description": "JSON-LD Type."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the creation of this XHE document.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this XHE document."
+		},
+		"recipientXHEParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceXHEParty"
+			},
+			"description": "A recipient party for this XHE document."
+		},
+		"scopeContext": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceXHEContext"
+			},
+			"description": "A context scope for this XHE document."
+		},
+		"senderXHEParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceXHEParty",
+			"description": "The sender party for this XHE document."
+		},
+		"testIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this XHE document is a test ."
+		},
+		"uUIDId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The UUID (Universally Unique IDentifier) of this XHE document."
+		}
+	},
+	"required": ["type", "creationDateTime", "identifier", "recipientXHEParty"]
+}

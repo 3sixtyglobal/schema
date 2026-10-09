@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationNote",
+	"title": "UneceLaboratoryObservationNote",
+	"description": "Notes and conclusions related to a laboratory observation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LaboratoryObservationNote",
+			"description": "JSON-LD Type."
+		},
+		"content": {
+			"type": "string",
+			"description": "The content, expressed as text, of this laboratory observation note."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the creation of this laboratory observation note.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type", "content", "creationDateTime"]
+}

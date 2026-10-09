@@ -1,0 +1,19 @@
+name: Add issues to project
+
+# GHA_RELEASE_TOKEN requires
+# org->project: read/write
+# repos->issues: read
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    runs-on: ${{ github.event.repository.private && fromJSON('{"group":"3sixty","labels":"self-hosted"}') || 'ubuntu-latest' }}
+
+    steps:
+      - uses: actions/add-to-project@v2.0.0
+        with:
+          project-url: https://github.com/orgs/3sixtyglobal/projects/1
+          github-token: ${{ secrets.ORG_GHA_RELEASE_TOKEN }}

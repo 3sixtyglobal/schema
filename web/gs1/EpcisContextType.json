@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisContextType",
+	"title": "EpcisContextType",
+	"description": "Allowed shapes for an EPCIS 2.0 JSON-LD `@context`, anchored on the GS1\ncontext root and optionally augmented with custom entries.",
+	"anyOf": [
+		{
+			"const": "https://ref.gs1.org/epcis"
+		},
+		{
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					{
+						"const": "https://ref.gs1.org/epcis"
+					}
+				]
+			},
+			"contains": {
+				"const": "https://ref.gs1.org/epcis"
+			},
+			"minContains": 1,
+			"maxContains": 1,
+			"minItems": 1
+		}
+	]
+}

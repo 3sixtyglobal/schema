@@ -1,0 +1,89 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLegalRegistration",
+	"title": "UneceLegalRegistration",
+	"description": "The recording of items or details for a specific legal purpose.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LegalRegistration",
+			"description": "JSON-LD Type."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying the category of this legal registration."
+		},
+		"countryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of the country in which this legal registration is valid."
+		},
+		"countrySubDivisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of the country sub-division for this legal registration."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this legal registration."
+		},
+		"lastRegisteredYearDateTime": {
+			"type": "string",
+			"description": "The last year in which this legal registration was registered.",
+			"format": "date-time"
+		},
+		"licenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a licence for this legal registration."
+		},
+		"recordedDate": {
+			"type": "string",
+			"description": "A date when this legal registration was recorded."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLegalRegistrationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying the type of this legal registration."
+		}
+	},
+	"required": ["type"]
+}

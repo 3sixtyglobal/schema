@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMetricCharacteristicTypeCodeList",
+	"title": "UneceMetricCharacteristicTypeCodeList",
+	"description": "Values for UneceMetricCharacteristic typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableMetricCharacteristic",
+			"description": "A metric characteristic applicable to this referenced standard."
+		},
+		{
+			"const": "unece:maximumSpecifiedCharacteristic",
+			"description": "The maximum metric characteristic specified for this target issue."
+		},
+		{
+			"const": "unece:minimumSpecifiedCharacteristic",
+			"description": "The minimum metric characteristic specified for this target issue."
+		},
+		{
+			"const": "unece:specifiedMetricCharacteristic",
+			"description": "The metric characteristic specified for this target issue."
+		}
+	]
+}

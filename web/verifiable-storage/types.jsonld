@@ -1,36 +1,35 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-verifiable-storage": "https://schema.twindev.org/verifiable-storage/",
+		"twin-verifiable-storage": "https://schema.3sixty.global/verifiable-storage/",
 		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"VerifiableStorageIotaReceipt": "https://schema.twindev.org/verifiable-storage/VerifiableStorageIotaReceipt",
-		"VerifiableStorageEntityStorageReceipt": "https://schema.twindev.org/verifiable-storage/VerifiableStorageEntityStorageReceipt",
-		"transactionId": {
-			"@id": "twin-verifiable-storage:transactionId",
-			"@type": "schema:identifier"
-		},
-		"network": {
-			"@id": "twin-verifiable-storage:network",
-			"@type": "schema:identifier"
-		},
-		"entityStorageId": {
-			"@id": "twin-verifiable-storage:entityStorageId",
-			"@type": "schema:identifier"
-		},
-		"verifiableStorageId": {
-			"@id": "twin-verifiable-storage:verifiableStorageId",
-			"@type": "schema:identifier"
-		},
-		"epoch": {
-			"@id": "twin-verifiable-storage:epoch",
-			"@type": "schema:Text"
-		},
+		"VerifiableStorageIotaReceipt2026": "twin-verifiable-storage:VerifiableStorageIotaReceipt2026",
 		"digest": {
 			"@id": "twin-verifiable-storage:digest",
 			"@type": "schema:Text"
+		},
+		"epoch": {
+			"@id": "twin-verifiable-storage:epoch",
+			"@type": "schema:Integer"
+		},
+		"network": {
+			"@id": "twin-verifiable-storage:network",
+			"@type": "schema:Text"
+		},
+		"objectId": {
+			"@id": "twin-verifiable-storage:objectId",
+			"@type": "schema:Text"
+		},
+		"smartContractId": {
+			"@id": "twin-verifiable-storage:smartContractId",
+			"@type": "schema:Text"
+		},
+		"VerifiableStorageEntityStorageReceipt": "twin-verifiable-storage:VerifiableStorageEntityStorageReceipt",
+		"entityStorageId": {
+			"@id": "twin-verifiable-storage:entityStorageId",
+			"@type": "schema:identifier"
 		}
 	}
 }

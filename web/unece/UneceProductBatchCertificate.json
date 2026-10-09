@@ -1,0 +1,119 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductBatchCertificate",
+	"title": "UneceProductBatchCertificate",
+	"description": "A piece of written, printed or electronic matter that provides information or evidence that a product batch has met\nrequired criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductBatchCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this product batch certificate.",
+			"format": "date-time"
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this product batch certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object for which this product batch certificate is applicable."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this product batch certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this product batch certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this product batch certificate."
+		},
+		"applicableTradeProductCertification": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification",
+			"description": "The trade product certification applicable to this product batch certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this product batch certificate."
+		},
+		"certificateTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
+			"description": "The code specifying the type of product batch certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product batch certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this product batch certificate expires.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this product batch certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this product batch certificate was issued.",
+			"format": "date-time"
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why this product batch certificate was issued."
+		},
+		"issuingPartyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the party issuing this product batch certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "A code specifying a purpose of this product batch certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this product batch certificate.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

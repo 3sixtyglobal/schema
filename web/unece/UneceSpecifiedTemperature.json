@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedTemperature",
+	"title": "UneceSpecifiedTemperature",
+	"description": "A specified temperature value or range of values.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedTemperature",
+			"description": "JSON-LD Type."
+		},
+		"maximumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the highest value of a range for this specified temperature, such as a maximum temperature value of\nfourteen degrees Celsius."
+		},
+		"minimumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the lowest value of a range for this specified temperature, such as a minimum temperature value of four\ndegrees Celsius."
+		},
+		"temperatureUnitValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTemperatureUnitMeasureType",
+			"description": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
+		}
+	},
+	"required": ["type"]
+}

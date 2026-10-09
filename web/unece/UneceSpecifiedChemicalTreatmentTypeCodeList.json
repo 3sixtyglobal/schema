@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatmentTypeCodeList",
+	"title": "UneceSpecifiedChemicalTreatmentTypeCodeList",
+	"description": "Values for UneceSpecifiedChemicalTreatment typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:appliedChemicalTreatment",
+			"description": "A chemical treatment applied during this production process.\nA chemical treatment applied to this product batch.\nA chemical treatment applied to this trade product.\nA specified chemical treatment applied to this agricultural application."
+		}
+	]
+}

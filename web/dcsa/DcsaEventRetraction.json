@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEventRetraction",
+	"title": "DcsaEventRetraction",
+	"description": "Retraction event.",
+	"type": "object",
+	"properties": {
+		"metadata": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction",
+			"description": "Retraction metadata."
+		},
+		"payload": {
+			"not": {},
+			"description": "Retractions do not carry payloads."
+		}
+	},
+	"required": ["metadata"]
+}

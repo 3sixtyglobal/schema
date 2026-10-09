@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGovernmentActionCodeList",
+	"title": "UneceGovernmentActionCodeList",
+	"description": "A character string used to replace or represent a government action.",
+	"anyOf": [
+		{
+			"const": "unece:GovernmentActionCodeList#1",
+			"description": "Clearance: 1."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#10",
+			"description": "Export certificate not required: 10."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#2",
+			"description": "Detention: 2."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#3",
+			"description": "Fumigation: 3."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#4",
+			"description": "Inspection: 4."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#5",
+			"description": "Security: 5."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#6",
+			"description": "Means of transport admittance: 6."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#7",
+			"description": "Cargo hold inspection: 7."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#8",
+			"description": "Container inspection: 8."
+		},
+		{
+			"const": "unece:GovernmentActionCodeList#9",
+			"description": "Cargo packaging inspection: 9."
+		}
+	]
+}

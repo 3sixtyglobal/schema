@@ -1,0 +1,144 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBreakdownStatement",
+	"title": "UneceBreakdownStatement",
+	"description": "A detailed statement of work, prices, and dimensions for this valuation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "BreakdownStatement",
+			"description": "JSON-LD Type."
+		},
+		"binaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A specified binary file referenced by this valuation breakdown statement."
+		},
+		"changedStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRecordedStatus"
+			},
+			"description": "A changed recorded status for this valuation breakdown statement."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text, for this valuation breakdown statement."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this valuation breakdown statement."
+		},
+		"creationBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A specified binary file used to create this valuation breakdown statement."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement.",
+			"format": "date-time"
+		},
+		"defaultCurrencyCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the default currency for this valuation breakdown statement."
+		},
+		"defaultLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the default language for this valuation breakdown statement."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this valuation breakdown statement."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this valuation breakdown statement."
+		},
+		"itemBasicWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItem"
+			},
+			"description": "A basic work item in this valuation breakdown statement."
+		},
+		"itemGroupedWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGroupedWorkItem"
+			},
+			"description": "A grouped work item in this valuation breakdown statement."
+		},
+		"measurementMethodId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of a method of measurement for this valuation breakdown statement."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this valuation breakdown statement."
+		},
+		"priceListId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of a price list for this valuation breakdown statement."
+		},
+		"readerBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A specified binary file used to read this valuation breakdown statement."
+		},
+		"requestedActionCode": {
+			"type": "string",
+			"description": "A code specifying the requested action for this valuation breakdown statement."
+		},
+		"totalPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
+			},
+			"description": "A total calculated price for this valuation breakdown statement."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying the type of valuation breakdown statement."
+		}
+	},
+	"required": [
+		"type",
+		"creationDateTime",
+		"defaultCurrencyCode",
+		"defaultLanguageCode",
+		"identifier",
+		"name"
+	]
+}

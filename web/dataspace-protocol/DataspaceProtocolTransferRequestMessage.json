@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferRequestMessage",
+	"title": "DataspaceProtocolTransferRequestMessage",
+	"description": "Interface for the Dataspace Protocol transfer request message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "TransferRequestMessage",
+			"description": "The JSON-LD type."
+		},
+		"agreementId": {
+			"type": "string",
+			"description": "MUST refer to an existing Agreement between the Consumer and Provider."
+		},
+		"callbackAddress": {
+			"type": "string",
+			"description": "MUST be a URI indicating where messages to the Consumer SHOULD be sent."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"format": {
+			"type": "string",
+			"description": "The format property is a format specified by a Distribution for the Dataset associated with the Agreement.\nThis is generally obtained from the Provider's Catalog."
+		},
+		"dataAddress": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataAddress",
+			"description": "If defined MUST contain a transport-specific set of properties for pushing the data.\nIt MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
+		}
+	},
+	"required": ["@context", "@type", "agreementId", "callbackAddress", "consumerPid", "format"]
+}

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBargeTransportCall",
+	"title": "DcsaBargeTransportCall",
+	"description": "Barge transport call details.\n\nSource: `bargeTransportCall` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"modeOfTransport": {
+			"const": "BARGE",
+			"description": "Discriminator for the transport mode."
+		},
+		"barge": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBarge",
+			"description": "Barge."
+		},
+		"portVisitReference": {
+			"type": "string",
+			"description": "Port visit reference."
+		},
+		"carrierServiceCode": {
+			"type": "string",
+			"description": "Carrier service code."
+		},
+		"universalServiceReference": {
+			"type": "string",
+			"description": "Universal service reference."
+		},
+		"carrierExportVoyageNumber": {
+			"type": "string",
+			"description": "Carrier export voyage number."
+		},
+		"universalExportVoyageReference": {
+			"type": "string",
+			"description": "Universal export voyage reference."
+		},
+		"carrierImportVoyageNumber": {
+			"type": "string",
+			"description": "Carrier import voyage number."
+		},
+		"universalImportVoyageReference": {
+			"type": "string",
+			"description": "Universal import voyage reference."
+		}
+	},
+	"required": ["modeOfTransport"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingAccountNatureTypeCodeList",
+	"title": "UneceAccountingAccountNatureTypeCodeList",
+	"description": "A character string used to represent the type of accounting account nature.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingAccountNatureTypeCodeList#1",
+			"description": "Receivable Third: 1."
+		},
+		{
+			"const": "unece:AccountingAccountNatureTypeCodeList#2",
+			"description": "Payable Third: 2."
+		},
+		{
+			"const": "unece:AccountingAccountNatureTypeCodeList#3",
+			"description": "Expense: 3."
+		},
+		{
+			"const": "unece:AccountingAccountNatureTypeCodeList#4",
+			"description": "Income: 4."
+		},
+		{
+			"const": "unece:AccountingAccountNatureTypeCodeList#5",
+			"description": "Assets: 5."
+		}
+	]
+}

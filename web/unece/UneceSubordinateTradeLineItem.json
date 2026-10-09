@@ -1,0 +1,99 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSubordinateTradeLineItem",
+	"title": "UneceSubordinateTradeLineItem",
+	"description": "A collection of information specific to a subordinate item being used or reported on for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SubordinateTradeLineItem",
+			"description": "JSON-LD Type."
+		},
+		"applicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "A product applicable for this subordinate trade line item."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of this subordinate trade line item."
+		},
+		"goodsTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of subordinate trade line item."
+		},
+		"goodsTypeExtensionTypeExtensionCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeExtensionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code used as an extension to the type code for further specifying this subordinate trade line item."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this subordinate trade line item."
+		},
+		"includedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note included in this subordinate trade line item."
+		},
+		"requestedResponseTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of response requested for this subordinate trade line item."
+		},
+		"responseReasonCode": {
+			"type": "string",
+			"description": "The code specifying the response reason of this subordinate trade line item."
+		},
+		"specifiedProduct": {
+			"$ref": "https://schema.3sixty.global/unece/UneceProduct",
+			"description": "The referenced product specified for this subordinate trade line item."
+		},
+		"specifiedSubordinateLineTradeAgreement": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeAgreement",
+			"description": "The trade agreement specified for this subordinate trade line item."
+		},
+		"specifiedSubordinateLineTradeDelivery": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeDelivery",
+			"description": "The delivery specified for this subordinate trade line item."
+		},
+		"specifiedSubordinateLineTradeSettlement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeSettlement"
+			},
+			"description": "A trade settlement specified for this subordinate trade line item."
+		}
+	},
+	"required": ["type"]
+}

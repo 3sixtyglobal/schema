@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalCertification",
+	"title": "UneceAnimalCertification",
+	"description": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification\nrequirements as stipulated in regulations.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AnimalCertification",
+			"description": "JSON-LD Type."
+		},
+		"assertion": {
+			"type": "string",
+			"description": "An assertion, expressed as text, for this animal certification."
+		},
+		"assertionCode": {
+			"type": "string",
+			"description": "The code specifying the assertion, such as a claim that the process is free from child labour, for this animal\ncertification."
+		},
+		"relatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+			},
+			"description": "A referenced location related to this animal certification."
+		},
+		"responsibleAgency": {
+			"type": "string",
+			"description": "An agency, expressed as text, responsible for this animal certification."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion specified for this animal certification."
+		},
+		"standard": {
+			"type": "string",
+			"description": "A standard, expressed as text, used for this animal certification."
+		}
+	},
+	"required": ["type"]
+}

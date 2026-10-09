@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceIdentifiedFault",
+	"title": "UneceIdentifiedFault",
+	"description": "An identified defect or fault.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "IdentifiedFault",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this identified fault."
+		},
+		"identificationCode": {
+			"type": "string",
+			"description": "A code specifying an identified fault."
+		}
+	},
+	"required": ["type"]
+}

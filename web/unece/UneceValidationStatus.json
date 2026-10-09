@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceValidationStatus",
+	"title": "UneceValidationStatus",
+	"description": "Information relevant to a condition of a validation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ValidationStatus",
+			"description": "JSON-LD Type."
+		},
+		"additionalReason": {
+			"type": "string",
+			"description": "Information, expressed as text, related to the reason for this validation status."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this validation status."
+		},
+		"validationDocumentStatusConditionCode": {
+			"type": "string",
+			"description": "The code specifying the condition of this validation status."
+		},
+		"validationStatusReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for this validation status."
+		}
+	},
+	"required": ["type"]
+}

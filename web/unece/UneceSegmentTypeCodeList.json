@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSegmentTypeCodeList",
+	"title": "UneceSegmentTypeCodeList",
+	"description": "Values for UneceSegment typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:includedSegment",
+			"description": "A segment included in this label section."
+		}
+	]
+}

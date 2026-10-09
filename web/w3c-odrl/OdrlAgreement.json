@@ -1,98 +1,13 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAgreement",
-	"description": "Interface representing an ODRL Agreement. An Agreement requires both an assigner and assignee (both agreeing parties).",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAgreement",
+	"title": "OdrlAgreement",
+	"description": "Interface representing an ODRL Agreement.\nAn Agreement requires both an assigner and assignee (both agreeing parties).\nhttps://www.w3.org/TR/odrl-model/#policy-agreement",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
-			"description": "The context for the policy. Must include \"https://www.w3.org/ns/odrl.jsonld\""
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
-		},
 		"@type": {
-			"type": "string",
 			"const": "Agreement",
 			"description": "The type must be \"Agreement\"."
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
-		"uid": {
-			"type": "string",
-			"description": "The unique identifier for the policy. Must be an IRI."
-		},
-		"profile": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			],
-			"description": "The profile(s) this policy conforms to. IRIs identifying the ODRL Profile(s)."
 		},
 		"assigner": {
 			"anyOf": [
@@ -100,10 +15,10 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 				}
 			],
-			"description": "The assigner of the agreement. Required for Agreement policies."
+			"description": "The assigner of the agreement.\nRequired for Agreement policies."
 		},
 		"assignee": {
 			"anyOf": [
@@ -111,141 +26,16 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 				}
 			],
-			"description": "The assignee of the agreement. Required for Agreement policies."
-		},
-		"target": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"type": "string"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
-								}
-							]
-						}
-					]
-				}
-			],
-			"description": "The target asset for the rule."
-		},
-		"action": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"anyOf": [
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/ActionType"
-								},
-								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
-								}
-							]
-						}
-					]
-				}
-			],
-			"description": "The action associated with the rule."
-		},
-		"inheritFrom": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			],
-			"description": "The parent policy(ies) this policy inherits from. IRIs identifying the parent Policy(ies)."
-		},
-		"conflict": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/ConflictStrategyType",
-			"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
-		},
-		"permission": {
-			"type": "array",
-			"items": false,
-			"description": "The permissions in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
-				}
-			]
-		},
-		"prohibition": {
-			"type": "array",
-			"items": false,
-			"description": "The prohibitions in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
-				}
-			]
-		},
-		"obligation": {
-			"type": "array",
-			"items": false,
-			"description": "The obligations in the policy. At least one of permission, prohibition, or obligation must be present.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
-				}
-			]
+			"description": "The assignee of the agreement.\nRequired for Agreement policies."
 		}
 	},
-	"required": ["@context", "@type", "assignee", "assigner", "uid"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["@type", "assigner", "assignee"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPolicy"
+		}
+	]
 }

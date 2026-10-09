@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceResponse",
+	"title": "UneceResponse",
+	"description": "A response to a specification query.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Response",
+			"description": "JSON-LD Type."
+		},
+		"content": {
+			"type": "string",
+			"description": "The content, expressed as text, of this specification response."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this specification response."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this specification response."
+		},
+		"queryId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for the query to which this response refers."
+		},
+		"responseTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceResponseTypeCodeList",
+			"description": "The code specifying the type of this specification response."
+		}
+	},
+	"required": ["type", "content", "identifier"]
+}

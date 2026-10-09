@@ -1,0 +1,37 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCorrectiveAction",
+	"title": "UneceCorrectiveAction",
+	"description": "Improvements taken to eliminate causes of non-conformities or other undesirable situations, such as to an organization's\nprocesses or products.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CorrectiveAction",
+			"description": "JSON-LD Type."
+		},
+		"actionType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this corrective action."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this corrective action."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCorrectiveActionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of corrective action."
+		}
+	},
+	"required": ["type"]
+}

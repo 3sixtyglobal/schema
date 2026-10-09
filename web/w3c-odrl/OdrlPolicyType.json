@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlPolicyType",
+	"title": "OdrlPolicyType",
+	"description": "The types for ODRL Policies.",
+	"anyOf": [
+		{
+			"const": "Policy",
+			"description": "Policy type."
+		},
+		{
+			"const": "Set",
+			"description": "Set type."
+		},
+		{
+			"const": "Offer",
+			"description": "Offer type."
+		},
+		{
+			"const": "Agreement",
+			"description": "Agreement type."
+		}
+	]
+}

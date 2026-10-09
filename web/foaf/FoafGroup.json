@@ -1,0 +1,37 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/foaf/FoafGroup",
+	"title": "FoafGroup",
+	"description": "A FOAF Group.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"description": "The LD Context."
+		},
+		"@type": {
+			"const": "Group",
+			"description": "Type."
+		},
+		"member": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+					}
+				}
+			],
+			"description": "Indicates a member of a Group"
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+		}
+	]
+}

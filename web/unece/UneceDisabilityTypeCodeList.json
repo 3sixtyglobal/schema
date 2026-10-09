@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDisabilityTypeCodeList",
+	"title": "UneceDisabilityTypeCodeList",
+	"description": "Values for UneceDisability typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:notifiedDisability",
+			"description": "A disability notified for this guest person."
+		}
+	]
+}

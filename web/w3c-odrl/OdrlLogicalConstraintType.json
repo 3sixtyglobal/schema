@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintType",
+	"title": "OdrlLogicalConstraintType",
+	"description": "The types for ODRL Logical Constraints.",
+	"anyOf": [
+		{
+			"const": "and",
+			"description": "And type."
+		},
+		{
+			"const": "or",
+			"description": "Or type."
+		},
+		{
+			"const": "xone",
+			"description": "Xone type."
+		},
+		{
+			"const": "andSequence",
+			"description": "And sequence type."
+		}
+	]
+}

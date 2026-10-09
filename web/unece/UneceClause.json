@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceClause",
+	"title": "UneceClause",
+	"description": "A distinct article or provision in a document, which requires compliance.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Clause",
+			"description": "JSON-LD Type."
+		},
+		"associatedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasurement"
+			},
+			"description": "A measurement associated with this document clause."
+		},
+		"associatedPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A period of time associated with this document clause."
+		},
+		"content": {
+			"type": "string",
+			"description": "Content, expressed as text, of this document clause."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of this document clause."
+		},
+		"uRLId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Uniform Resource Locator (URL) for this document clause."
+		}
+	},
+	"required": ["type"]
+}

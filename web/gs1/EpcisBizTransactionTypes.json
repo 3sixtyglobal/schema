@@ -1,0 +1,60 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisBizTransactionTypes",
+	"title": "EpcisBizTransactionTypes",
+	"description": "Supported EPCIS 2.0 `bizTransaction-type` values.",
+	"anyOf": [
+		{
+			"const": "bol",
+			"description": "A document issued by a carrier to a shipper, listing and acknowledging receipt\nof goods for transport and specifying terms of delivery."
+		},
+		{
+			"const": "cert",
+			"description": "A document confirming certain characteristics of an object, person, or\norganisation, typically issued by a third party."
+		},
+		{
+			"const": "desadv",
+			"description": "A document/message by which the seller or consignor informs the consignee\nabout the despatch of goods (Advanced Shipment Notice)."
+		},
+		{
+			"const": "inv",
+			"description": "A document/message claiming payment for goods or services supplied under agreed\nconditions."
+		},
+		{
+			"const": "pedigree",
+			"description": "A record that traces the ownership or custody and transactions of a product as\nit moves among trading partners."
+		},
+		{
+			"const": "po",
+			"description": "A document/message that specifies details for goods and services ordered under\nagreed conditions."
+		},
+		{
+			"const": "poc",
+			"description": "A document that provides confirmation from an external supplier to the request\nof a purchaser to deliver a specified quantity/service."
+		},
+		{
+			"const": "prodorder",
+			"description": "An organisation-internal document or message issued by a producer that\ninitiates a manufacturing process of goods."
+		},
+		{
+			"const": "recadv",
+			"description": "A document/message that lets the receiver inform the shipper of actual goods\nreceived compared to what was advised."
+		},
+		{
+			"const": "rma",
+			"description": "A document issued by the seller that authorises a buyer to return merchandise\nfor credit determination."
+		},
+		{
+			"const": "testprd",
+			"description": "A document that provides a formal specification of a sequence of instructions\nfor verifying one or several criteria."
+		},
+		{
+			"const": "testres",
+			"description": "A document that includes the outcome of the execution of a given test\nprocedure."
+		},
+		{
+			"const": "upevt",
+			"description": "Event ID URI(s) of event(s) provided by an upstream supplier, such as packing\nand shipping events."
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsProfile",
+	"title": "ActivityStreamsProfile",
+	"description": "A W3C Activity Streams Profile.\n\nA `Profile` is a content object that describes another `Object`.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Profile"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Profile"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Profile type."
+		},
+		"describes": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				}
+			],
+			"description": "The object being described.\n\nThis is the target entity that the `Profile` is about."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

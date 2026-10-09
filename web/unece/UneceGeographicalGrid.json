@@ -1,0 +1,83 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalGrid",
+	"title": "UneceGeographicalGrid",
+	"description": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on\nthe surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GeographicalGrid",
+			"description": "JSON-LD Type."
+		},
+		"associatedGeographicalObjectCharacteristic": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
+			"description": "The geographical object characteristic associated with this geographical grid."
+		},
+		"associatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location associated with this specified geographical grid."
+		},
+		"axisName": {
+			"type": "string",
+			"description": "An axis name, expressed as text, for this geographical grid."
+		},
+		"cell": {
+			"type": "string",
+			"description": "The cell value, expressed as text, for this geographical grid."
+		},
+		"dimensionNumeric": {
+			"type": "string",
+			"description": "The dimension, expressed as a number, of this geographical grid."
+		},
+		"highLimit": {
+			"type": "string",
+			"description": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally\nopposing corner of each axis."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this geographical grid."
+		},
+		"lowLimit": {
+			"type": "string",
+			"description": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of\neach axis."
+		},
+		"offsetVectorNumeric": {
+			"type": "string",
+			"description": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical\ngrid."
+		},
+		"originAssociatedDirectPositionList": {
+			"type": "string",
+			"description": "The direct position list associated with the origin of this geographical grid."
+		},
+		"specifiedPlot": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePlot"
+			},
+			"description": "A crop plot specified for this geographical grid."
+		}
+	},
+	"required": [
+		"type",
+		"associatedGeographicalObjectCharacteristic",
+		"axisName",
+		"cell",
+		"highLimit",
+		"lowLimit",
+		"originAssociatedDirectPositionList"
+	]
+}

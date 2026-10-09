@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference",
+	"title": "DcsaRelatedDocumentReference",
+	"description": "A related document reference.\n\nSource: `relatedDocumentReferences` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"type": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaDocumentTypeCodes",
+			"description": "Document type code."
+		},
+		"value": {
+			"type": "string",
+			"description": "Document reference value."
+		}
+	},
+	"required": ["type", "value"]
+}

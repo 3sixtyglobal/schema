@@ -1,0 +1,124 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge",
+	"title": "UneceTradeAllowanceCharge",
+	"description": "A component of pricing, such as an allowance or charge for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TradeAllowanceCharge",
+			"description": "JSON-LD Type."
+		},
+		"actualAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "An actual monetary value of the trade allowance charge."
+		},
+		"actualCurrencyExchange": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
+			"description": "The actual trade currency exchange for this trade allowance charge."
+		},
+		"allowanceChargeIdTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAllowanceChargeIdCodeList",
+			"description": "The code specifying the type of this trade allowance charge."
+		},
+		"allowanceChargeReasonCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAllowanceChargeReasonCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the reason for this trade allowance charge."
+		},
+		"appliedDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value applied to the trade allowance charge.",
+			"format": "date-time"
+		},
+		"basisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value that is the basis on which this trade allowance charge is calculated."
+		},
+		"basisQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity on which this trade allowance charge is based."
+		},
+		"calculationPercent": {
+			"type": "string",
+			"description": "The percentage applied to calculate this trade allowance charge."
+		},
+		"categoryTradeTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+			},
+			"description": "A tax category of this trade allowance charge."
+		},
+		"chargeIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the trade allowance charge is a charge."
+		},
+		"deductionAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value to be deducted from this trade allowance charge."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade allowance charge."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this trade allowance charge."
+		},
+		"prepaidIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this trade allowance charge is prepaid."
+		},
+		"reason": {
+			"type": "string",
+			"description": "The reason, expressed as text, for this trade allowance charge."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for applying this trade allowance charge."
+		},
+		"specifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
+			},
+			"description": "An accounting account specified for this trade allowance charge."
+		},
+		"unitBasisAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the unit basis on which the allowance or charge is calculated."
+		},
+		"validityPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The specified period for which this trade allowance charge is valid."
+		}
+	},
+	"required": ["type"]
+}

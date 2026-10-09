@@ -1,0 +1,3276 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceReferenceCodeList",
+	"title": "UneceReferenceCodeList",
+	"description": "A character string used to represent a reference.",
+	"anyOf": [
+		{
+			"const": "unece:ReferenceCodeList#AAA",
+			"description": "Order acknowledgement document identifier: AAA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAB",
+			"description": "Proforma invoice document identifier: AAB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAC",
+			"description": "Documentary credit identifier: AAC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAD",
+			"description": "Contract document addendum identifier: AAD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAE",
+			"description": "Goods declaration number: AAE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAF",
+			"description": "Debit card number: AAF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAG",
+			"description": "Offer number: AAG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAH",
+			"description": "Bank's batch interbank transaction reference number: AAH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAI",
+			"description": "Bank's individual interbank transaction reference number: AAI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAJ",
+			"description": "Delivery order number: AAJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAK",
+			"description": "Despatch advice number: AAK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAL",
+			"description": "Drawing number: AAL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAM",
+			"description": "Waybill number: AAM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAN",
+			"description": "Delivery schedule number: AAN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAO",
+			"description": "Consignment identifier, consignee assigned: AAO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAP",
+			"description": "Partial shipment identifier: AAP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAQ",
+			"description": "Transport equipment identifier: AAQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAR",
+			"description": "Municipality assigned business registry number: AAR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAS",
+			"description": "Transport contract document identifier: AAS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAT",
+			"description": "Master label number: AAT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAU",
+			"description": "Despatch note document identifier: AAU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAV",
+			"description": "Enquiry number: AAV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAW",
+			"description": "Docket number: AAW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAX",
+			"description": "Civil action number: AAX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAY",
+			"description": "Carrier's agent reference number: AAY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AAZ",
+			"description": "Standard Carrier Alpha Code (SCAC) number: AAZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABA",
+			"description": "Customs valuation decision number: ABA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABB",
+			"description": "End use authorization number: ABB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABC",
+			"description": "Anti-dumping case number: ABC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABD",
+			"description": "Customs tariff number: ABD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABE",
+			"description": "Declarant's reference number: ABE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABF",
+			"description": "Repair estimate number: ABF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABG",
+			"description": "Customs decision request number: ABG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABH",
+			"description": "Sub-house bill of lading number: ABH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABI",
+			"description": "Tax payment identifier: ABI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABJ",
+			"description": "Quota number: ABJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABK",
+			"description": "Transit (onward carriage) guarantee (bond) number: ABK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABL",
+			"description": "Customs guarantee number: ABL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABM",
+			"description": "Replacing part number: ABM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABN",
+			"description": "Seller's catalogue number: ABN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABO",
+			"description": "Originator's reference: ABO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABP",
+			"description": "Declarant's Customs identity number: ABP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABQ",
+			"description": "Importer reference number: ABQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABR",
+			"description": "Export clearance instruction reference number: ABR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABS",
+			"description": "Import clearance instruction reference number: ABS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABT",
+			"description": "Goods declaration document identifier, Customs: ABT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABU",
+			"description": "Article number: ABU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABV",
+			"description": "Intra-plant routing: ABV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABW",
+			"description": "Stock keeping unit number: ABW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABX",
+			"description": "Text Element Identifier deletion reference: ABX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABY",
+			"description": "Allotment identification (Air): ABY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ABZ",
+			"description": "Vehicle licence number: ABZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AC",
+			"description": "Air cargo transfer manifest: AC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACA",
+			"description": "Cargo acceptance order reference number: ACA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACB",
+			"description": "US government agency number: ACB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACC",
+			"description": "Shipping unit identification: ACC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACD",
+			"description": "Additional reference number: ACD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACE",
+			"description": "Related document number: ACE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACF",
+			"description": "Addressee reference: ACF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACG",
+			"description": "ATA carnet number: ACG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACH",
+			"description": "Packaging unit identification: ACH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACI",
+			"description": "Outerpackaging unit identification: ACI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACJ",
+			"description": "Customer material specification number: ACJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACK",
+			"description": "Bank reference: ACK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACL",
+			"description": "Principal reference number: ACL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACN",
+			"description": "Collection advice document identifier: ACN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACO",
+			"description": "Iron charge number: ACO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACP",
+			"description": "Hot roll number: ACP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACQ",
+			"description": "Cold roll number: ACQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACR",
+			"description": "Railway wagon number: ACR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACT",
+			"description": "Unique claims reference number of the sender: ACT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACU",
+			"description": "Loss/event number: ACU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACV",
+			"description": "Estimate order reference number: ACV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACW",
+			"description": "Reference number to previous message: ACW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACX",
+			"description": "Banker's acceptance: ACX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACY",
+			"description": "Duty memo number: ACY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ACZ",
+			"description": "Equipment transport charge number: ACZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADA",
+			"description": "Buyer's item number: ADA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADB",
+			"description": "Matured certificate of deposit: ADB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADC",
+			"description": "Loan: ADC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADD",
+			"description": "Analysis number/test number: ADD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADE",
+			"description": "Account number: ADE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADF",
+			"description": "Treaty number: ADF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADG",
+			"description": "Catastrophe number: ADG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADI",
+			"description": "Bureau signing (statement reference): ADI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADJ",
+			"description": "Company / syndicate reference 1: ADJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADK",
+			"description": "Company / syndicate reference 2: ADK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADL",
+			"description": "Ordering customer consignment reference number: ADL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADM",
+			"description": "Shipowner's authorization number: ADM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADN",
+			"description": "Inland transport order number: ADN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADO",
+			"description": "Container work order reference number: ADO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADP",
+			"description": "Statement number: ADP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADQ",
+			"description": "Unique market reference: ADQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADT",
+			"description": "Group accounting: ADT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADU",
+			"description": "Broker reference 1: ADU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADV",
+			"description": "Broker reference 2: ADV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADW",
+			"description": "Lloyd's claims office reference: ADW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADX",
+			"description": "Secure delivery terms and conditions agreement reference: ADX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADY",
+			"description": "Report number: ADY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ADZ",
+			"description": "Trader account number: ADZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AE",
+			"description": "Authorization for expense (AFE) number: AE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEA",
+			"description": "Government agency reference number: AEA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEB",
+			"description": "Assembly number: AEB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEC",
+			"description": "Symbol number: AEC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AED",
+			"description": "Commodity number: AED."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEE",
+			"description": "Eur 1 certificate number: AEE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEF",
+			"description": "Customer process specification number: AEF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEG",
+			"description": "Customer specification number: AEG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEH",
+			"description": "Applicable instructions or standards: AEH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEI",
+			"description": "Registration number of previous Customs declaration: AEI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEJ",
+			"description": "Post-entry reference: AEJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEK",
+			"description": "Payment order number: AEK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEL",
+			"description": "Delivery number (transport): AEL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEM",
+			"description": "Transport route: AEM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEN",
+			"description": "Customer's unit inventory number: AEN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEO",
+			"description": "Product reservation number: AEO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEP",
+			"description": "Project number: AEP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEQ",
+			"description": "Drawing list number: AEQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AER",
+			"description": "Project specification number: AER."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AES",
+			"description": "Primary reference: AES."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AET",
+			"description": "Request for cancellation number: AET."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEU",
+			"description": "Supplier's control number: AEU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEV",
+			"description": "Shipping note number: AEV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEW",
+			"description": "Empty container bill number: AEW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEX",
+			"description": "Non-negotiable maritime transport document number: AEX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEY",
+			"description": "Substitute air waybill number: AEY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AEZ",
+			"description": "Despatch note (post parcels) number: AEZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AF",
+			"description": "Airlines flight identification number: AF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFA",
+			"description": "Through bill of lading number: AFA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFB",
+			"description": "Cargo manifest number: AFB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFC",
+			"description": "Bordereau number: AFC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFD",
+			"description": "Customs item number: AFD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFE",
+			"description": "Export Control Commodity number (ECCN): AFE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFF",
+			"description": "Marking/label reference: AFF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFG",
+			"description": "Tariff number: AFG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFH",
+			"description": "Replenishment purchase order number: AFH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFI",
+			"description": "Immediate transportation no. for in bond movement: AFI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFJ",
+			"description": "Transportation exportation no. for in bond movement: AFJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFK",
+			"description": "Immediate exportation no. for in bond movement: AFK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFL",
+			"description": "Associated invoices: AFL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFM",
+			"description": "Secondary Customs reference: AFM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFN",
+			"description": "Account party's reference: AFN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFO",
+			"description": "Beneficiary's reference: AFO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFP",
+			"description": "Second beneficiary's reference: AFP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFQ",
+			"description": "Applicant's bank reference: AFQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFR",
+			"description": "Issuing bank's reference: AFR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFS",
+			"description": "Beneficiary's bank reference: AFS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFT",
+			"description": "Direct payment valuation number: AFT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFU",
+			"description": "Direct payment valuation request number: AFU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFV",
+			"description": "Quantity valuation number: AFV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFW",
+			"description": "Quantity valuation request number: AFW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFX",
+			"description": "Bill of quantities number: AFX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFY",
+			"description": "Payment valuation number: AFY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AFZ",
+			"description": "Situation number: AFZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGA",
+			"description": "Agreement to pay number: AGA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGB",
+			"description": "Contract party reference number: AGB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGC",
+			"description": "Account party's bank reference: AGC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGD",
+			"description": "Agent's bank reference: AGD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGE",
+			"description": "Agent's reference: AGE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGF",
+			"description": "Applicant's reference: AGF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGG",
+			"description": "Dispute number: AGG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGH",
+			"description": "Credit rating agency's reference number: AGH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGI",
+			"description": "Request number: AGI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGJ",
+			"description": "Single transaction sequence number: AGJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGK",
+			"description": "Application reference number: AGK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGL",
+			"description": "Delivery verification certificate: AGL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGM",
+			"description": "Number of temporary importation document: AGM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGN",
+			"description": "Reference number quoted on statement: AGN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGO",
+			"description": "Sender's reference to the original message: AGO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGP",
+			"description": "Company issued equipment ID: AGP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGQ",
+			"description": "Domestic flight number: AGQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGR",
+			"description": "International flight number: AGR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGS",
+			"description": "Employer identification number of service bureau: AGS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGT",
+			"description": "Service group identification number: AGT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGU",
+			"description": "Member number: AGU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGV",
+			"description": "Previous member number: AGV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGW",
+			"description": "Scheme/plan number: AGW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGX",
+			"description": "Previous scheme/plan number: AGX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGY",
+			"description": "Receiving party's member identification: AGY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AGZ",
+			"description": "Payroll number: AGZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHA",
+			"description": "Packaging specification number: AHA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHB",
+			"description": "Authority issued equipment identification: AHB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHC",
+			"description": "Training flight number: AHC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHD",
+			"description": "Fund code number: AHD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHE",
+			"description": "Signal code number: AHE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHF",
+			"description": "Major force program number: AHF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHG",
+			"description": "Nomination number: AHG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHH",
+			"description": "Laboratory registration number: AHH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHI",
+			"description": "Transport contract reference number: AHI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHJ",
+			"description": "Payee's reference number: AHJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHK",
+			"description": "Payer's reference number: AHK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHL",
+			"description": "Creditor's reference number: AHL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHM",
+			"description": "Debtor's reference number: AHM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHN",
+			"description": "Joint venture reference number: AHN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHO",
+			"description": "Chamber of Commerce registration number: AHO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHP",
+			"description": "Tax registration number: AHP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHQ",
+			"description": "Wool identification number: AHQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHR",
+			"description": "Wool tax reference number: AHR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHS",
+			"description": "Meat processing establishment registration number: AHS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHT",
+			"description": "Quarantine/treatment status reference number: AHT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHU",
+			"description": "Request for quote number: AHU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHV",
+			"description": "Manual processing authority number: AHV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHX",
+			"description": "Rate note number: AHX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHY",
+			"description": "Freight Forwarder number: AHY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AHZ",
+			"description": "Customs release code: AHZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIA",
+			"description": "Compliance code number: AIA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIB",
+			"description": "Department of transportation bond number: AIB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIC",
+			"description": "Export establishment number: AIC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AID",
+			"description": "Certificate of conformity: AID."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIE",
+			"description": "Ministerial certificate of homologation: AIE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIF",
+			"description": "Previous delivery instruction number: AIF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIG",
+			"description": "Passport number: AIG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIH",
+			"description": "Common transaction reference number: AIH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AII",
+			"description": "Bank's common transaction reference number: AII."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIJ",
+			"description": "Customer's individual transaction reference number: AIJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIK",
+			"description": "Bank's individual transaction reference number: AIK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIL",
+			"description": "Customer's common transaction reference number: AIL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIM",
+			"description": "Individual transaction reference number: AIM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIN",
+			"description": "Product sourcing agreement number: AIN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIO",
+			"description": "Customs transhipment number: AIO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIP",
+			"description": "Customs preference inquiry number: AIP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIQ",
+			"description": "Packing plant number: AIQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIR",
+			"description": "Original certificate number: AIR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIS",
+			"description": "Processing plant number: AIS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIT",
+			"description": "Slaughter plant number: AIT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIU",
+			"description": "Charge card account number: AIU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIV",
+			"description": "Event reference number: AIV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIW",
+			"description": "Transport section reference number: AIW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIX",
+			"description": "Referred product for mechanical analysis: AIX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIY",
+			"description": "Referred product for chemical analysis: AIY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AIZ",
+			"description": "Consolidated invoice number: AIZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJA",
+			"description": "Part reference indicator in a drawing: AJA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJB",
+			"description": "U.S. Code of Federal Regulations (CFR): AJB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJC",
+			"description": "Purchasing activity clause number: AJC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJD",
+			"description": "U.S. Defense Federal Acquisition Regulation Supplement: AJD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJE",
+			"description": "Agency clause number: AJE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJF",
+			"description": "Circular publication number: AJF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJG",
+			"description": "U.S. Federal Acquisition Regulation: AJG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJH",
+			"description": "U.S. General Services Administration Regulation: AJH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJI",
+			"description": "U.S. Federal Information Resources Management Regulation: AJI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJJ",
+			"description": "Paragraph: AJJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJK",
+			"description": "Special instructions number: AJK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJL",
+			"description": "Site specific procedures, terms, and conditions number: AJL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJM",
+			"description": "Master solicitation procedures, terms, and conditions number: AJM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJN",
+			"description": "U.S. Department of Veterans Affairs Acquisition Regulation: AJN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJO",
+			"description": "Military Interdepartmental Purchase Request (MIPR) number: AJO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJP",
+			"description": "Foreign military sales number: AJP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJQ",
+			"description": "Defense priorities allocation system priority rating: AJQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJR",
+			"description": "Wage determination number: AJR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJS",
+			"description": "Agreement number: AJS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJT",
+			"description": "Standard Industry Classification (SIC) number: AJT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJU",
+			"description": "End item number: AJU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJV",
+			"description": "Federal supply schedule item number: AJV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJW",
+			"description": "Technical document number: AJW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJX",
+			"description": "Technical order number: AJX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJY",
+			"description": "Suffix: AJY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AJZ",
+			"description": "Transportation account number: AJZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKA",
+			"description": "Container disposition order reference number: AKA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKB",
+			"description": "Container prefix: AKB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKC",
+			"description": "Transport equipment return reference: AKC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKD",
+			"description": "Transport equipment survey reference: AKD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKE",
+			"description": "Transport equipment survey report number: AKE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKF",
+			"description": "Transport equipment stuffing order: AKF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKG",
+			"description": "Vehicle Identification Number (VIN): AKG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKH",
+			"description": "Government bill of lading: AKH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKI",
+			"description": "Ordering customer's second reference number: AKI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKJ",
+			"description": "Direct debit reference: AKJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKK",
+			"description": "Meter reading at the beginning of the delivery: AKK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKL",
+			"description": "Meter reading at the end of delivery: AKL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKM",
+			"description": "Replenishment purchase order range start number: AKM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKN",
+			"description": "Third bank's reference: AKN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKO",
+			"description": "Action authorization number: AKO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKP",
+			"description": "Appropriation number: AKP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKQ",
+			"description": "Product change authority number: AKQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKR",
+			"description": "General cargo consignment reference number: AKR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKS",
+			"description": "Catalogue sequence number: AKS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKT",
+			"description": "Forwarding order number: AKT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKU",
+			"description": "Transport equipment survey reference number: AKU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKV",
+			"description": "Lease contract reference: AKV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKW",
+			"description": "Transport costs reference number: AKW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKX",
+			"description": "Transport equipment stripping order: AKX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKY",
+			"description": "Prior policy number: AKY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AKZ",
+			"description": "Policy number: AKZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALA",
+			"description": "Procurement budget number: ALA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALB",
+			"description": "Domestic inventory management code: ALB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALC",
+			"description": "Customer reference number assigned to previous balance of payment information: ALC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALD",
+			"description": "Previous credit advice reference number: ALD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALE",
+			"description": "Reporting form number: ALE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALF",
+			"description": "Authorization number for exception to dangerous goods regulations: ALF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALG",
+			"description": "Dangerous goods security number: ALG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALH",
+			"description": "Dangerous goods transport licence number: ALH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALI",
+			"description": "Previous rental agreement number: ALI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALJ",
+			"description": "Next rental agreement reason number: ALJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALK",
+			"description": "Consignee's invoice number: ALK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALL",
+			"description": "Message batch number: ALL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALM",
+			"description": "Previous delivery schedule number: ALM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALN",
+			"description": "Physical inventory recount reference number: ALN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALO",
+			"description": "Receiving advice number: ALO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALP",
+			"description": "Returnable container reference number: ALP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALQ",
+			"description": "Returns notice number: ALQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALR",
+			"description": "Sales forecast number: ALR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALS",
+			"description": "Sales report number: ALS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALT",
+			"description": "Previous tax control number: ALT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALU",
+			"description": "AGERD (Aerospace Ground Equipment Requirement Data) number: ALU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALV",
+			"description": "Registered capital reference: ALV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALW",
+			"description": "Standard number of inspection document: ALW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALX",
+			"description": "Model: ALX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALY",
+			"description": "Financial management reference: ALY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ALZ",
+			"description": "NOTIfication for COLlection number (NOTICOL): ALZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMA",
+			"description": "Previous request for metered reading reference number: AMA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMB",
+			"description": "Next rental agreement number: AMB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMC",
+			"description": "Reference number of a request for metered reading: AMC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMD",
+			"description": "Hastening number: AMD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AME",
+			"description": "Repair data request number: AME."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMF",
+			"description": "Consumption data request number: AMF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMG",
+			"description": "Profile number: AMG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMH",
+			"description": "Case number: AMH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMI",
+			"description": "Government quality assurance and control level Number: AMI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMJ",
+			"description": "Payment plan reference: AMJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMK",
+			"description": "Replaced meter unit number: AMK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AML",
+			"description": "Replenishment purchase order range end number: AML."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMM",
+			"description": "Insurer assigned reference number: AMM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMN",
+			"description": "Canadian excise entry number: AMN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMO",
+			"description": "Premium rate table: AMO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMP",
+			"description": "Advise through bank's reference: AMP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMQ",
+			"description": "US, Department of Transportation bond surety code: AMQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMR",
+			"description": "US, Food and Drug Administration establishment indicator: AMR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMS",
+			"description": "US, Federal Communications Commission (FCC) import condition number: AMS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMT",
+			"description": "Goods and Services Tax identification number: AMT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMU",
+			"description": "Integrated logistic support cross reference number: AMU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMV",
+			"description": "Department number: AMV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMW",
+			"description": "Buyer's catalogue number: AMW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMX",
+			"description": "Financial settlement party's reference number: AMX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMY",
+			"description": "Standard's version number: AMY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AMZ",
+			"description": "Pipeline number: AMZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANA",
+			"description": "Account servicing bank's reference number: ANA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANB",
+			"description": "Completed units payment request reference: ANB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANC",
+			"description": "Payment in advance request reference: ANC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AND",
+			"description": "Parent file: AND."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANE",
+			"description": "Sub file: ANE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANF",
+			"description": "CAD file layer convention: ANF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANG",
+			"description": "Technical regulation: ANG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANH",
+			"description": "Plot file: ANH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANI",
+			"description": "File conversion journal: ANI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANJ",
+			"description": "Authorization number: ANJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANK",
+			"description": "Reference number assigned by third party: ANK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANL",
+			"description": "Deposit reference number: ANL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANM",
+			"description": "Named bank's reference: ANM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANN",
+			"description": "Drawee's reference: ANN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANO",
+			"description": "Case of need party's reference: ANO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANP",
+			"description": "Collecting bank's reference: ANP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANQ",
+			"description": "Remitting bank's reference: ANQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANR",
+			"description": "Principal's bank reference: ANR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANS",
+			"description": "Presenting bank's reference: ANS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANT",
+			"description": "Consignee's reference: ANT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANU",
+			"description": "Financial transaction reference number: ANU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANV",
+			"description": "Credit reference number: ANV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANW",
+			"description": "Receiving bank's authorization number: ANW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANX",
+			"description": "Clearing reference: ANX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ANY",
+			"description": "Sending bank's reference number: ANY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOA",
+			"description": "Documentary payment reference: AOA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOD",
+			"description": "Accounting file reference: AOD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOE",
+			"description": "Sender's file reference number: AOE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOF",
+			"description": "Receiver's file reference number: AOF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOG",
+			"description": "Source document internal reference: AOG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOH",
+			"description": "Principal's reference: AOH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOI",
+			"description": "Debit reference number: AOI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOJ",
+			"description": "Calendar: AOJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOK",
+			"description": "Work shift: AOK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOL",
+			"description": "Work breakdown structure: AOL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOM",
+			"description": "Organisation breakdown structure: AOM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AON",
+			"description": "Work task charge number: AON."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOO",
+			"description": "Functional work group: AOO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOP",
+			"description": "Work team: AOP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOQ",
+			"description": "Department: AOQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOR",
+			"description": "Statement of work: AOR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOS",
+			"description": "Work package: AOS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOT",
+			"description": "Planning package: AOT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOU",
+			"description": "Cost account: AOU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOV",
+			"description": "Work order: AOV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOW",
+			"description": "Transportation Control Number (TCN): AOW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOX",
+			"description": "Constraint notation: AOX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOY",
+			"description": "ETERMS reference: AOY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AOZ",
+			"description": "Implementation version number: AOZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AP",
+			"description": "Accounts receivable number: AP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APA",
+			"description": "Incorporated legal reference: APA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APB",
+			"description": "Payment instalment reference number: APB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APC",
+			"description": "Equipment owner reference number: APC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APD",
+			"description": "Cedent's claim number: APD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APE",
+			"description": "Reinsurer's claim number: APE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APF",
+			"description": "Price/sales catalogue response reference number: APF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APG",
+			"description": "General purpose message reference number: APG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APH",
+			"description": "Invoicing data sheet reference number: APH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#API",
+			"description": "Inventory report reference number: API."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APJ",
+			"description": "Ceiling formula reference number: APJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APK",
+			"description": "Price variation formula reference number: APK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APL",
+			"description": "Reference to account servicing bank's message: APL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APM",
+			"description": "Party sequence number: APM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APN",
+			"description": "Purchaser's request reference: APN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APO",
+			"description": "Contractor request reference: APO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APP",
+			"description": "Accident reference number: APP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APQ",
+			"description": "Commercial account summary reference number: APQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APR",
+			"description": "Contract breakdown reference: APR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APS",
+			"description": "Contractor registration number: APS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APT",
+			"description": "Applicable coefficient identification number: APT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APU",
+			"description": "Special budget account number: APU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APV",
+			"description": "Authorisation for repair reference: APV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APW",
+			"description": "Manufacturer defined repair rates reference: APW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APX",
+			"description": "Original submitter log number: APX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APY",
+			"description": "Original submitter, parent Data Maintenance Request (DMR) log number: APY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#APZ",
+			"description": "Original submitter, child Data Maintenance Request (DMR) log number: APZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQA",
+			"description": "Entry point assessment log number: AQA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQB",
+			"description": "Entry point assessment log number, parent DMR: AQB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQC",
+			"description": "Entry point assessment log number, child DMR: AQC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQD",
+			"description": "Data structure tag: AQD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQE",
+			"description": "Central secretariat log number: AQE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQF",
+			"description": "Central secretariat log number, parent Data Maintenance Request (DMR): AQF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQG",
+			"description": "Central secretariat log number, child Data Maintenance Request (DMR): AQG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQH",
+			"description": "International assessment log number: AQH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQI",
+			"description": "International assessment log number, parent Data Maintenance Request (DMR): AQI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQJ",
+			"description": "International assessment log number, child Data Maintenance Request (DMR): AQJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQK",
+			"description": "Status report number: AQK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQL",
+			"description": "Message design group number: AQL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQM",
+			"description": "US Customs Service (USCS) entry code: AQM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQN",
+			"description": "Beginning job sequence number: AQN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQO",
+			"description": "Sender's clause number: AQO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQP",
+			"description": "Dun and Bradstreet Canada's 8 digit Standard Industrial Classification (SIC) code: AQP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQQ",
+			"description": "Activite Principale Exercee (APE) identifier: AQQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQR",
+			"description": "Dun and Bradstreet US 8 digit Standard Industrial Classification (SIC) code: AQR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQS",
+			"description": "Nomenclature Activity Classification Economy (NACE) identifier: AQS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQT",
+			"description": "Norme Activite Francaise (NAF) identifier: AQT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQU",
+			"description": "Registered contractor activity type: AQU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQV",
+			"description": "Statistic Bundes Amt (SBA) identifier: AQV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQW",
+			"description": "State or province assigned entity identification: AQW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQX",
+			"description": "Institute of Security and Future Market Development (ISFMD) serial number: AQX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQY",
+			"description": "File identification number: AQY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AQZ",
+			"description": "Bankruptcy procedure number: AQZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARA",
+			"description": "National government business identification number: ARA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARB",
+			"description": "Prior Data Universal Number System (DUNS) number: ARB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARC",
+			"description": "Companies Registry Office (CRO) number: ARC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARD",
+			"description": "Costa Rican judicial number: ARD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARE",
+			"description": "Numero de Identificacion Tributaria (NIT): ARE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARF",
+			"description": "Patron number: ARF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARG",
+			"description": "Registro Informacion Fiscal (RIF) number: ARG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARH",
+			"description": "Registro Unico de Contribuyente (RUC) number: ARH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARI",
+			"description": "Tokyo SHOKO Research (TSR) business identifier: ARI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARJ",
+			"description": "Personal identity card number: ARJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARK",
+			"description": "Systeme Informatique pour le Repertoire des ENtreprises (SIREN) number: ARK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARL",
+			"description": "Systeme Informatique pour le Repertoire des ETablissements (SIRET) number: ARL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARM",
+			"description": "Publication issue number: ARM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARN",
+			"description": "Original filing number: ARN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARO",
+			"description": "Document page identifier: ARO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARP",
+			"description": "Public filing registration number: ARP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARQ",
+			"description": "Regiristo Federal de Contribuyentes: ARQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARR",
+			"description": "Social security number: ARR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARS",
+			"description": "Document volume number: ARS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ART",
+			"description": "Book number: ART."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARU",
+			"description": "Stock exchange company identifier: ARU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARV",
+			"description": "Imputation account: ARV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARW",
+			"description": "Financial phase reference: ARW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARX",
+			"description": "Technical phase reference: ARX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARY",
+			"description": "Prior contractor registration number: ARY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ARZ",
+			"description": "Stock adjustment number: ARZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASA",
+			"description": "Dispensation reference: ASA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASB",
+			"description": "Investment reference number: ASB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASC",
+			"description": "Assuming company: ASC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASD",
+			"description": "Budget chapter: ASD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASE",
+			"description": "Duty free products security number: ASE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASF",
+			"description": "Duty free products receipt authorisation number: ASF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASG",
+			"description": "Party information message reference: ASG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASH",
+			"description": "Formal statement reference: ASH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASI",
+			"description": "Proof of delivery reference number: ASI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASJ",
+			"description": "Supplier's credit claim reference number: ASJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASK",
+			"description": "Picture of actual product: ASK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASL",
+			"description": "Picture of a generic product: ASL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASM",
+			"description": "Trading partner identification number: ASM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASN",
+			"description": "Prior trading partner identification number: ASN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASO",
+			"description": "Password: ASO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASP",
+			"description": "Formal report number: ASP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASQ",
+			"description": "Fund account number: ASQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASR",
+			"description": "Safe custody number: ASR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASS",
+			"description": "Master account number: ASS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AST",
+			"description": "Group reference number: AST."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASU",
+			"description": "Accounting transmission number: ASU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASV",
+			"description": "Product data file number: ASV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASW",
+			"description": "Cadastro Geral do Contribuinte (CGC): ASW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASX",
+			"description": "Foreign resident identification number: ASX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASY",
+			"description": "CD-ROM: ASY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ASZ",
+			"description": "Physical medium: ASZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATA",
+			"description": "Financial cancellation reference number: ATA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATB",
+			"description": "Purchase for export Customs agreement number: ATB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATC",
+			"description": "Judgment number: ATC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATD",
+			"description": "Secretariat number: ATD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATE",
+			"description": "Previous banking status message reference: ATE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATF",
+			"description": "Last received banking status message reference: ATF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATG",
+			"description": "Bank's documentary procedure reference: ATG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATH",
+			"description": "Customer's documentary procedure reference: ATH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATI",
+			"description": "Safe deposit box number: ATI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATJ",
+			"description": "Receiving Bankgiro number: ATJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATK",
+			"description": "Sending Bankgiro number: ATK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATL",
+			"description": "Bankgiro reference: ATL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATM",
+			"description": "Guarantee number: ATM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATN",
+			"description": "Collection instrument number: ATN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATO",
+			"description": "Converted Postgiro number: ATO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATP",
+			"description": "Cost centre alignment number: ATP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATQ",
+			"description": "Kamer Van Koophandel (KVK) number: ATQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATR",
+			"description": "Institut Belgo-Luxembourgeois de Codification (IBLC) number: ATR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATS",
+			"description": "External object reference: ATS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATT",
+			"description": "Exceptional transport authorisation number: ATT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATU",
+			"description": "Clave Unica de Identificacion Tributaria (CUIT): ATU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATV",
+			"description": "Registro Unico Tributario (RUT): ATV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATW",
+			"description": "Flat rack container bundle identification number: ATW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATX",
+			"description": "Transport equipment acceptance order reference: ATX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATY",
+			"description": "Transport equipment release order reference: ATY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ATZ",
+			"description": "Ship's stay reference number: ATZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AU",
+			"description": "Authorization to meet competition number: AU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUA",
+			"description": "Place of positioning reference: AUA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUB",
+			"description": "Party reference: AUB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUC",
+			"description": "Issued prescription identification: AUC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUD",
+			"description": "Collection reference: AUD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUE",
+			"description": "Travel service: AUE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUF",
+			"description": "Consignment stock contract: AUF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUG",
+			"description": "Importer's letter of credit reference: AUG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUH",
+			"description": "Performed prescription identification: AUH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUI",
+			"description": "Image reference: AUI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUJ",
+			"description": "Proposed purchase order reference number: AUJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUK",
+			"description": "Application for financial support reference number: AUK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUL",
+			"description": "Manufacturing quality agreement number: AUL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUM",
+			"description": "Software editor reference: AUM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUN",
+			"description": "Software reference: AUN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUO",
+			"description": "Software quality reference: AUO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUP",
+			"description": "Consolidated orders' reference: AUP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUQ",
+			"description": "Customs binding ruling number: AUQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUR",
+			"description": "Customs non-binding ruling number: AUR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUS",
+			"description": "Delivery route reference: AUS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUT",
+			"description": "Net area supplier reference: AUT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUU",
+			"description": "Time series reference: AUU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUV",
+			"description": "Connecting point to central grid: AUV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUW",
+			"description": "Marketing plan identification number (MPIN): AUW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUX",
+			"description": "Entity reference number, previous: AUX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUY",
+			"description": "International Standard Industrial Classification (ISIC) code: AUY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AUZ",
+			"description": "Customs pre-approval ruling number: AUZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AV",
+			"description": "Account payable number: AV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVA",
+			"description": "First financial institution's transaction reference: AVA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVB",
+			"description": "Product characteristics directory: AVB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVC",
+			"description": "Supplier's customer reference number: AVC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVD",
+			"description": "Inventory report request number: AVD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVE",
+			"description": "Metering point: AVE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVF",
+			"description": "Passenger reservation number: AVF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVG",
+			"description": "Slaughterhouse approval number: AVG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVH",
+			"description": "Meat cutting plant approval number: AVH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVI",
+			"description": "Customer travel service identifier: AVI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVJ",
+			"description": "Export control classification number: AVJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVK",
+			"description": "Broker reference 3: AVK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVL",
+			"description": "Consignment information: AVL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVM",
+			"description": "Goods item information: AVM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVN",
+			"description": "Dangerous Goods information: AVN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVO",
+			"description": "Pilotage services exemption number: AVO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVP",
+			"description": "Person registration number: AVP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVQ",
+			"description": "Place of packing approval number: AVQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVR",
+			"description": "Original Mandate Reference: AVR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVS",
+			"description": "Mandate Reference: AVS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVT",
+			"description": "Reservation station indentifier: AVT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVU",
+			"description": "Unique goods shipment identifier: AVU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVV",
+			"description": "Framework Agreement Number: AVV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVW",
+			"description": "Hash value: AVW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVX",
+			"description": "Movement reference number: AVX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVY",
+			"description": "Economic Operators Registration and Identification Number (EORI): AVY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AVZ",
+			"description": "Local Reference Number: AVZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWA",
+			"description": "Rate code number: AWA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWB",
+			"description": "Air waybill number: AWB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWC",
+			"description": "Documentary credit amendment number: AWC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWD",
+			"description": "Advising bank's reference: AWD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWE",
+			"description": "Cost centre: AWE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWF",
+			"description": "Work item quantity determination: AWF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWG",
+			"description": "Internal data process number: AWG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWH",
+			"description": "Category of work reference: AWH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWI",
+			"description": "Policy form number: AWI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWJ",
+			"description": "Net area: AWJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWK",
+			"description": "Service provider: AWK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWL",
+			"description": "Error position: AWL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWM",
+			"description": "Service category reference: AWM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWN",
+			"description": "Connected location: AWN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWO",
+			"description": "Related party: AWO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWP",
+			"description": "Latest accounting entry record reference: AWP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWQ",
+			"description": "Accounting entry: AWQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWR",
+			"description": "Document reference, original: AWR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWS",
+			"description": "Hygienic Certificate number, national: AWS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWT",
+			"description": "Administrative Reference Code: AWT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWU",
+			"description": "Pick-up sheet number: AWU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWV",
+			"description": "Phone number: AWV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWW",
+			"description": "Buyer's fund number: AWW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWX",
+			"description": "Company trading account number: AWX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWY",
+			"description": "Reserved goods identifier: AWY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AWZ",
+			"description": "Handling and movement reference number: AWZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXA",
+			"description": "Instruction to despatch reference number: AXA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXB",
+			"description": "Instruction for returns number: AXB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXC",
+			"description": "Metered services consumption report number: AXC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXD",
+			"description": "Order status enquiry number: AXD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXE",
+			"description": "Firm booking reference number: AXE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXF",
+			"description": "Product inquiry number: AXF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXG",
+			"description": "Split delivery number: AXG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXH",
+			"description": "Service relation number: AXH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXI",
+			"description": "Serial shipping container code: AXI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXJ",
+			"description": "Test specification number: AXJ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXK",
+			"description": "Transport status report number: AXK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXL",
+			"description": "Tooling contract number: AXL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXM",
+			"description": "Formula reference number: AXM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXN",
+			"description": "Pre-agreement number: AXN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXO",
+			"description": "Product certification number: AXO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXP",
+			"description": "Consignment contract number: AXP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXQ",
+			"description": "Product specification reference number: AXQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXR",
+			"description": "Payroll deduction advice reference: AXR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#AXS",
+			"description": "TRACES party identification: AXS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BA",
+			"description": "Beginning meter reading actual: BA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BC",
+			"description": "Buyer's contract number: BC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BD",
+			"description": "Bid number: BD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BE",
+			"description": "Beginning meter reading estimated: BE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BH",
+			"description": "House bill of lading number: BH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BM",
+			"description": "Bill of lading number: BM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BN",
+			"description": "Consignment identifier, carrier assigned: BN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BO",
+			"description": "Blanket order number: BO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BR",
+			"description": "Broker or sales office number: BR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BT",
+			"description": "Batch number/lot number: BT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BTP",
+			"description": "Battery and accumulator producer registration number: BTP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#BW",
+			"description": "Blended with number: BW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAS",
+			"description": "IATA Cargo Agent CASS Address number: CAS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAT",
+			"description": "Matching of entries, balanced: CAT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAU",
+			"description": "Entry flagging: CAU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAV",
+			"description": "Matching of entries, unbalanced: CAV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAW",
+			"description": "Document reference, internal: CAW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAX",
+			"description": "European Value Added Tax identification: CAX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAY",
+			"description": "Cost accounting document: CAY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CAZ",
+			"description": "Grid operator's customer reference number: CAZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CBA",
+			"description": "Ticket control number: CBA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CBB",
+			"description": "Order shipment grouping reference: CBB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CD",
+			"description": "Credit note number: CD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CEC",
+			"description": "Ceding company: CEC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CED",
+			"description": "Debit letter number: CED."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CFE",
+			"description": "Consignee's further order: CFE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CFF",
+			"description": "Animal farm licence number: CFF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CFO",
+			"description": "Consignor's further order: CFO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CG",
+			"description": "Consignee's order number: CG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CH",
+			"description": "Customer catalogue number: CH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CK",
+			"description": "Cheque number: CK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CKN",
+			"description": "Checking number: CKN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CM",
+			"description": "Credit memo number: CM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CMR",
+			"description": "Road consignment note number: CMR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CN",
+			"description": "Carrier's reference number: CN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CNO",
+			"description": "Charges note document attachment indicator: CNO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#COF",
+			"description": "Call off order number: COF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CP",
+			"description": "Condition of purchase document number: CP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CR",
+			"description": "Customer reference number: CR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CRN",
+			"description": "Transport means journey identifier: CRN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CS",
+			"description": "Condition of sale document number: CS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CST",
+			"description": "Team assignment number: CST."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CT",
+			"description": "Contract number: CT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CU",
+			"description": "Consignment identifier, consignor assigned: CU."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CV",
+			"description": "Container operators reference number: CV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CW",
+			"description": "Package number: CW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#CZ",
+			"description": "Cooperation contract number: CZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DA",
+			"description": "Deferment approval number: DA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DAN",
+			"description": "Debit account number: DAN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DB",
+			"description": "Buyer's debtor number: DB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DI",
+			"description": "Distributor invoice number: DI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DL",
+			"description": "Debit note number: DL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DM",
+			"description": "Document identifier: DM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DQ",
+			"description": "Delivery note number: DQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#DR",
+			"description": "Dock receipt number: DR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EA",
+			"description": "Ending meter reading actual: EA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EB",
+			"description": "Embargo permit number: EB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ED",
+			"description": "Export declaration: ED."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EE",
+			"description": "Ending meter reading estimated: EE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EEP",
+			"description": "Electrical and electronic equipment producer registration number: EEP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EI",
+			"description": "Employer's identification number: EI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EN",
+			"description": "Embargo number: EN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EQ",
+			"description": "Equipment number: EQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ER",
+			"description": "Container/equipment receipt number: ER."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ERN",
+			"description": "Exporter's reference number: ERN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ET",
+			"description": "Excess transportation number: ET."
+		},
+		{
+			"const": "unece:ReferenceCodeList#EX",
+			"description": "Export permit identifier: EX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FC",
+			"description": "Fiscal number: FC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FF",
+			"description": "Consignment identifier, freight forwarder assigned: FF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FI",
+			"description": "File line identifier: FI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FLW",
+			"description": "Flow reference number: FLW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FN",
+			"description": "Freight bill number: FN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FO",
+			"description": "Foreign exchange: FO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FS",
+			"description": "Final sequence number: FS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FT",
+			"description": "Free zone identifier: FT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FV",
+			"description": "File version number: FV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#FX",
+			"description": "Foreign exchange contract number: FX."
+		},
+		{
+			"const": "unece:ReferenceCodeList#GA",
+			"description": "Standard's number: GA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#GC",
+			"description": "Government contract number: GC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#GD",
+			"description": "Standard's code number: GD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#GDN",
+			"description": "General declaration number: GDN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#GN",
+			"description": "Government reference number: GN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#HS",
+			"description": "Harmonised system number: HS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#HWB",
+			"description": "House waybill number: HWB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IA",
+			"description": "Internal vendor number: IA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IB",
+			"description": "In bond number: IB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ICA",
+			"description": "IATA cargo agent code number: ICA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ICE",
+			"description": "Insurance certificate reference number: ICE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ICO",
+			"description": "Insurance contract reference number: ICO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#II",
+			"description": "Initial sample inspection report number: II."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IL",
+			"description": "Internal order number: IL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#INB",
+			"description": "Intermediary broker: INB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#INN",
+			"description": "Interchange number new: INN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#INO",
+			"description": "Interchange number old: INO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IP",
+			"description": "Import permit identifier: IP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IS",
+			"description": "Invoice number suffix: IS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IT",
+			"description": "Internal customer number: IT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#IV",
+			"description": "Invoice document identifier: IV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#JB",
+			"description": "Job number: JB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#JE",
+			"description": "Ending job sequence number: JE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LA",
+			"description": "Shipping label serial number: LA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LAN",
+			"description": "Loading authorisation identifier: LAN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LAR",
+			"description": "Lower number in range: LAR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LB",
+			"description": "Lockbox: LB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LC",
+			"description": "Letter of credit number: LC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LI",
+			"description": "Document line identifier: LI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LO",
+			"description": "Load planning number: LO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LRC",
+			"description": "Reservation office identifier: LRC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#LS",
+			"description": "Bar coded label serial number: LS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MA",
+			"description": "Ship notice/manifest number: MA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MB",
+			"description": "Master bill of lading number: MB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MF",
+			"description": "Manufacturer's part number: MF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MG",
+			"description": "Meter unit number: MG."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MH",
+			"description": "Manufacturing order number: MH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MR",
+			"description": "Message recipient: MR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MRN",
+			"description": "Mailing reference number: MRN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MS",
+			"description": "Message sender: MS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MSS",
+			"description": "Manufacturer's material safety data sheet number: MSS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#MWB",
+			"description": "Master air waybill number: MWB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#NA",
+			"description": "North American hazardous goods classification number: NA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#NF",
+			"description": "Nota Fiscal: NF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#OH",
+			"description": "Current invoice number: OH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#OI",
+			"description": "Previous invoice number: OI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ON",
+			"description": "Order document identifier, buyer assigned: ON."
+		},
+		{
+			"const": "unece:ReferenceCodeList#OP",
+			"description": "Original purchase order: OP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#OR",
+			"description": "General order number: OR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PB",
+			"description": "Payer's financial institution account number: PB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PC",
+			"description": "Production code: PC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PD",
+			"description": "Promotion deal number: PD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PE",
+			"description": "Plant number: PE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PF",
+			"description": "Prime contractor contract number: PF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PI",
+			"description": "Price list version number: PI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PK",
+			"description": "Packing list number: PK."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PL",
+			"description": "Price list number: PL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#POR",
+			"description": "Purchase order response number: POR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PP",
+			"description": "Purchase order change number: PP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PQ",
+			"description": "Payment reference: PQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PR",
+			"description": "Price quote number: PR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PS",
+			"description": "Purchase order number suffix: PS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PW",
+			"description": "Prior purchase order number: PW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#PY",
+			"description": "Payee's financial institution account number: PY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RA",
+			"description": "Remittance advice number: RA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RC",
+			"description": "Rail/road routing code: RC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RCN",
+			"description": "Railway consignment note number: RCN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RE",
+			"description": "Release number: RE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#REN",
+			"description": "Consignment receipt identifier: REN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RF",
+			"description": "Export reference number: RF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RR",
+			"description": "Payer's financial institution transit routing No.(ACH transfers): RR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#RT",
+			"description": "Payee's financial institution transit routing No.: RT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SA",
+			"description": "Sales person number: SA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SB",
+			"description": "Sales region number: SB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SD",
+			"description": "Sales department number: SD."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SE",
+			"description": "Serial number: SE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SEA",
+			"description": "Allocated seat: SEA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SF",
+			"description": "Ship from: SF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SH",
+			"description": "Previous highest schedule number: SH."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SI",
+			"description": "SID (Shipper's identifying number for shipment): SI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SM",
+			"description": "Sales office number: SM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SN",
+			"description": "Transport equipment seal identifier: SN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SP",
+			"description": "Scan line: SP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SQ",
+			"description": "Equipment sequence number: SQ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SRN",
+			"description": "Shipment reference number: SRN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SS",
+			"description": "Sellers reference number: SS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#STA",
+			"description": "Station reference number: STA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SW",
+			"description": "Swap order number: SW."
+		},
+		{
+			"const": "unece:ReferenceCodeList#SZ",
+			"description": "Specification number: SZ."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TB",
+			"description": "Trucker's bill of lading: TB."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TCR",
+			"description": "Terminal operator's consignment reference: TCR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TE",
+			"description": "Telex message number: TE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TF",
+			"description": "Transfer number: TF."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TI",
+			"description": "TIR carnet number: TI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TIN",
+			"description": "Transport instruction number: TIN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TL",
+			"description": "Tax exemption licence number: TL."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TN",
+			"description": "Transaction reference number: TN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#TP",
+			"description": "Test report number: TP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#UAR",
+			"description": "Upper number of range: UAR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#UC",
+			"description": "Ultimate customer's reference number: UC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#UCN",
+			"description": "Unique consignment reference number: UCN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#UN",
+			"description": "United Nations Dangerous Goods identifier: UN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#UO",
+			"description": "Ultimate customer's order number: UO."
+		},
+		{
+			"const": "unece:ReferenceCodeList#URI",
+			"description": "Uniform Resource Identifier: URI."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VA",
+			"description": "VAT registration number: VA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VC",
+			"description": "Vendor contract number: VC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VGR",
+			"description": "Transport equipment gross mass verification reference number: VGR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VM",
+			"description": "Vessel identifier: VM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VN",
+			"description": "Order number (vendor): VN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VON",
+			"description": "Voyage number: VON."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VOR",
+			"description": "Transport equipment gross mass verification order reference: VOR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VP",
+			"description": "Vendor product number: VP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VR",
+			"description": "Vendor ID number: VR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VS",
+			"description": "Vendor order number suffix: VS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VT",
+			"description": "Motor vehicle identification number: VT."
+		},
+		{
+			"const": "unece:ReferenceCodeList#VV",
+			"description": "Voucher number: VV."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WE",
+			"description": "Warehouse entry number: WE."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WM",
+			"description": "Weight agreement number: WM."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WN",
+			"description": "Well number: WN."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WR",
+			"description": "Warehouse receipt number: WR."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WS",
+			"description": "Warehouse storage location number: WS."
+		},
+		{
+			"const": "unece:ReferenceCodeList#WY",
+			"description": "Rail waybill number: WY."
+		},
+		{
+			"const": "unece:ReferenceCodeList#XA",
+			"description": "Company/place registration number: XA."
+		},
+		{
+			"const": "unece:ReferenceCodeList#XC",
+			"description": "Cargo control number: XC."
+		},
+		{
+			"const": "unece:ReferenceCodeList#XP",
+			"description": "Previous cargo control number: XP."
+		},
+		{
+			"const": "unece:ReferenceCodeList#ZZZ",
+			"description": "Mutually defined reference number: ZZZ."
+		}
+	]
+}

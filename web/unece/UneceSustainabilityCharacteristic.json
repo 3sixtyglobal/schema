@@ -1,0 +1,170 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic",
+	"title": "UneceSustainabilityCharacteristic",
+	"description": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without\ncompromising the ability of future generations to meet their own needs.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SustainabilityCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"applicableInspectionResult": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResult"
+			},
+			"description": "A specified inspection result applicable to this sustainability characteristic."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this sustainability characteristic."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of this sustainability characteristic."
+		},
+		"contentTypeCode": {
+			"type": "string",
+			"description": "The code specifying the content type of this sustainability characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this sustainability characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this sustainability characteristic."
+		},
+		"maximumValueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a maximum value for this sustainability characteristic."
+		},
+		"measurementMethodCode": {
+			"type": "string",
+			"description": "The code specifying the measurement method for this sustainability characteristic."
+		},
+		"minimumValueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a minimum value for this sustainability characteristic."
+		},
+		"shareableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this sustainability characteristic is shareable."
+		},
+		"specifiedSupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A supply chain event specified for this sustainability characteristic."
+		},
+		"subordinateCategoryCode": {
+			"type": "string",
+			"description": "The subordinate category for this sustainability characteristic."
+		},
+		"subordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type of sustainability characteristic."
+		},
+		"sustainabilityCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this sustainability characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of sustainability characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this sustainability characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The value, expressed as an amount, for this sustainability characteristic."
+		},
+		"valueBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A value, expressed in a binary file, for this sustainability characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value, expressed as a date, time, date time, or other date time value, for this sustainability characteristic.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value, expressed as an indicator, for this sustainability characteristic."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this sustainability characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this sustainability characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for the value of this sustainability characteristic."
+		},
+		"valuePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A period specified for the value of this sustainability characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for the value of this sustainability characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for the value of this sustainability characteristic."
+		}
+	},
+	"required": ["type"]
+}

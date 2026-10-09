@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRefundMethodCodeList",
+	"title": "UneceRefundMethodCodeList",
+	"description": "A character string used to represent the type of a refund method.",
+	"anyOf": [
+		{
+			"const": "unece:RefundMethodCodeList#1",
+			"description": "Contractual allowance: 1."
+		},
+		{
+			"const": "unece:RefundMethodCodeList#2",
+			"description": "Refunding: 2."
+		},
+		{
+			"const": "unece:RefundMethodCodeList#3",
+			"description": "Entity Reimbursement: 3."
+		}
+	]
+}

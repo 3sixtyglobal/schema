@@ -1,63 +1,51 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/ais/AuditableItemStreamList",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStreamList",
+	"title": "AuditableItemStreamList",
 	"description": "Interface describing an auditable item stream list.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/ais/"
+					"const": "https://schema.3sixty.global/ais/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"description": "JSON-LD Type.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "ItemList"
 				},
 				{
-					"type": "string",
 					"const": "AuditableItemStreamList"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Type."
 		},
 		"itemListElement": {
 			"type": "array",
-			"items": false,
-			"description": "The item streams.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/ais/AuditableItemStream"
-				}
-			]
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "Cursor for the next chunk of streams."
+			"items": {
+				"$ref": "https://schema.3sixty.global/ais/AuditableItemStream"
+			},
+			"description": "The item streams."
 		}
 	},
-	"required": ["@context", "type", "itemListElement"],
-	"additionalProperties": false
+	"required": ["@context", "type", "itemListElement"]
 }

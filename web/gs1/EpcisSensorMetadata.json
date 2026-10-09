@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisSensorMetadata",
+	"title": "EpcisSensorMetadata",
+	"description": "EPCIS 2.0 SensorMetadata describing timing, device, and processing details for\nsensor observations.",
+	"type": "object",
+	"properties": {
+		"time": {
+			"type": "string",
+			"description": "(Optional) The actual point in time of an observation as transmitted by a\nsensor device."
+		},
+		"deviceID": {
+			"type": "string",
+			"description": "(Optional) Device from which the sensor data originates."
+		},
+		"deviceMetadata": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating metadata\nof the device from which the sensor data originates."
+		},
+		"rawData": {
+			"type": "string",
+			"description": "(Optional) Storage/service location of the raw sensor data on which the\naggregated/business-oriented data contained in the sensorElement is based."
+		},
+		"startTime": {
+			"type": "string",
+			"description": "(Optional) The lowest (earliest) value of a given observation period as\ntransmitted by a sensor device."
+		},
+		"endTime": {
+			"type": "string",
+			"description": "(Optional) The highest (most recent) value of a given observation period, as\ntransmitted by a sensor device."
+		},
+		"dataProcessingMethod": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating the data\nprocessing method of the contained sensor data, if applicable."
+		},
+		"bizRules": {
+			"type": "string",
+			"description": "(Optional) Storage location of an electronic document accommodating product- or\napplication-specific business rules on which basis the EPCIS event was\ntriggered."
+		}
+	}
+}

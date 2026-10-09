@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBaseIoTEvent",
+	"title": "DcsaBaseIoTEvent",
+	"description": "Base IoT event attributes.\n\nSource: `baseIoTEvent` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"eventDateTime": {
+			"type": "string",
+			"description": "Local date-time when the event happened."
+		},
+		"eventClassifierCode": {
+			"const": "ACT",
+			"description": "IoT events are always \"ACT\"."
+		},
+		"iotEventTypeCode": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventTypeCodes",
+			"description": "IoT event type code."
+		},
+		"iotEventCode": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventCode",
+			"description": "IoT event code."
+		},
+		"geoLocation": {
+			"description": "Geo location.\n\nKept as unknown since the authoritative schema references LOCATION_DOMAIN types."
+		},
+		"equipmentReference": {
+			"type": "string",
+			"description": "Equipment reference."
+		},
+		"relatedDocumentReferences": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
+			},
+			"description": "Related document references."
+		}
+	},
+	"required": [
+		"eventDateTime",
+		"eventClassifierCode",
+		"iotEventTypeCode",
+		"iotEventCode",
+		"equipmentReference"
+	]
+}

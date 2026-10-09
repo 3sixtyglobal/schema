@@ -1,0 +1,125 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAssessment",
+	"title": "UneceAssessment",
+	"description": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or\ncondition.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Assessment",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this specified assessment."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this specified assessment."
+		},
+		"assessedObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+			},
+			"description": "An object assessed for this specified assessment."
+		},
+		"assessorParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The assessor party for this specified assessment."
+		},
+		"associatedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file associated with this specified assessment."
+		},
+		"assuranceLevelCode": {
+			"type": "string",
+			"description": "The code specifying the assurance level, such as verified by second party or third party, for this specified assessment."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category for this specified assessment."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the end of this specified assessment.",
+			"format": "date-time"
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified assessment."
+		},
+		"relatedTradeTransaction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction"
+			},
+			"description": "A supply chain trade transaction related to this specified assessment."
+		},
+		"reportDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the report of this specified assessment.",
+			"format": "date-time"
+		},
+		"reportId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The report identifier for this specified assessment."
+		},
+		"selfAssessedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified assessment is self assessed."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the start of this specified assessment.",
+			"format": "date-time"
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this specified assessment."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAssessmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of specified assessment."
+		},
+		"verifiedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified assessment is verified."
+		},
+		"verifierParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A verifier party for this specified assessment."
+		}
+	},
+	"required": ["type"]
+}

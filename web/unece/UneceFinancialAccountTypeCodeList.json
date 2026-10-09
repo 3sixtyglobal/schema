@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancialAccountTypeCodeList",
+	"title": "UneceFinancialAccountTypeCodeList",
+	"description": "A character string used to represent the type of financial account.",
+	"anyOf": [
+		{
+			"const": "unece:FinancialAccountTypeCodeList#1",
+			"description": "Saving: 1."
+		},
+		{
+			"const": "unece:FinancialAccountTypeCodeList#2",
+			"description": "Checking: 2."
+		}
+	]
+}

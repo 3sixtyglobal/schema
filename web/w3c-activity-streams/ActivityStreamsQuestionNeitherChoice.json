@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsQuestionNeitherChoice",
+	"title": "ActivityStreamsQuestionNeitherChoice",
+	"description": "Represents a Question with neither anyOf nor oneOf.",
+	"type": "object",
+	"properties": {
+		"anyOf": {
+			"not": {},
+			"description": "Specifies an inclusive list of possible answers."
+		},
+		"oneOf": {
+			"not": {},
+			"description": "Specifies an exclusive list of possible answers."
+		}
+	}
+}

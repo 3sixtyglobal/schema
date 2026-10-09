@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancialCardTypeCodeList",
+	"title": "UneceFinancialCardTypeCodeList",
+	"description": "Values for UneceFinancialCard typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableFinancialCard",
+			"description": "A financial card applicable to this trade settlement payment means."
+		},
+		{
+			"const": "unece:identifiedFinancialCard",
+			"description": "A financial card identified for this trade settlement payment means."
+		},
+		{
+			"const": "unece:specifiedFinancialCard",
+			"description": "A financial card specified in this header trade settlement.\nA financial card specified in this line trade settlement."
+		}
+	]
+}

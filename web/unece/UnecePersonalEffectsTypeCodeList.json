@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePersonalEffectsTypeCodeList",
+	"title": "UnecePersonalEffectsTypeCodeList",
+	"description": "Values for UnecePersonalEffects typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:crewPersonalEffects",
+			"description": "Personal effects of an individual member of the crew for this logistics transport movement."
+		},
+		{
+			"const": "unece:declaredPersonalEffects",
+			"description": "Personal effects use declared by a transport person."
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMeasurement",
+	"title": "UneceMeasurement",
+	"description": "An amount, size, or extent as established by measuring.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Measurement",
+			"description": "JSON-LD Type."
+		},
+		"actualMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "An actual measure for this measurement."
+		},
+		"comparisonOperatorCode": {
+			"type": "string",
+			"description": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
+		},
+		"conditionMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a condition for this measurement."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this measurement."
+		},
+		"method": {
+			"type": "string",
+			"description": "A measurement method expressed as text."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceMeasurementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of measurement."
+		}
+	},
+	"required": ["type"]
+}

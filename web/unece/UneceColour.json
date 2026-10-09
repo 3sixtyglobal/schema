@@ -1,0 +1,120 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceColour",
+	"title": "UneceColour",
+	"description": "A colour of a product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Colour",
+			"description": "JSON-LD Type."
+		},
+		"applicableMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+			},
+			"description": "A production machine applicable to this product colour."
+		},
+		"applicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Specified material applicable to this product colour."
+		},
+		"applicableMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A specified method applicable to this product colour."
+		},
+		"applicableProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+			},
+			"description": "A production device applicable to this product colour."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this product colour."
+		},
+		"applicableTechnicalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+			},
+			"description": "A technical characteristic applicable to this product colour."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product colour."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this product colour."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this product colour."
+		},
+		"presencePercent": {
+			"type": "string",
+			"description": "The percentage of the presence of this product colour."
+		},
+		"relatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party related to this product colour."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this product colour."
+		},
+		"testIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this product colour is a test."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceColourTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of product colour."
+		},
+		"usedLightSourceCode": {
+			"type": "string",
+			"description": "The code specifying the light source used for this product colour."
+		},
+		"variationMeasureCoefficientNumeric": {
+			"type": "string",
+			"description": "The measure of the variation coefficient number for this product colour."
+		}
+	},
+	"required": ["type"]
+}

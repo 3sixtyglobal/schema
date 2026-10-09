@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedQualification",
+	"title": "UneceSpecifiedQualification",
+	"description": "A specified condition that must be fulfilled.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedQualification",
+			"description": "JSON-LD Type."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this specified qualification."
+		}
+	},
+	"required": ["type", "name"]
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportInstructions",
+	"title": "UneceTransportInstructions",
+	"description": "Transport information of an instructive nature.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these transport instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "A type, expressed as text, for these transport instructions."
+		},
+		"transportInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of these transport instructions."
+		}
+	},
+	"required": ["type"]
+}

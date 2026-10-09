@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportCallFacilityTypeCodes",
+	"title": "DcsaTransportCallFacilityTypeCodes",
+	"description": "Facility type codes used on a TransportCall.",
+	"anyOf": [
+		{
+			"const": "BOCR",
+			"description": "Border."
+		},
+		{
+			"const": "CLOC",
+			"description": "Customer location."
+		},
+		{
+			"const": "COFS",
+			"description": "Container freight station."
+		},
+		{
+			"const": "OFFD",
+			"description": "Off dock storage."
+		},
+		{
+			"const": "DEPO",
+			"description": "Depot."
+		},
+		{
+			"const": "INTE",
+			"description": "Inland terminal."
+		},
+		{
+			"const": "POTE",
+			"description": "Port terminal."
+		},
+		{
+			"const": "RAMP",
+			"description": "Ramp."
+		},
+		{
+			"const": "WAYP",
+			"description": "Waypoint."
+		}
+	]
+}

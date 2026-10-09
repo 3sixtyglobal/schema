@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaReeferEventTypeCodes",
+	"title": "DcsaReeferEventTypeCodes",
+	"description": "DCSA reefer event type codes.",
+	"anyOf": [
+		{
+			"const": "MEAS",
+			"description": "Measured."
+		},
+		{
+			"const": "ADJU",
+			"description": "Adjusted."
+		}
+	]
+}

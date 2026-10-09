@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTemperatureSettingInstructions",
+	"title": "UneceTemperatureSettingInstructions",
+	"description": "Temperature setting related information of an instructive nature.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TemperatureSettingInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these temperature setting instructions."
+		},
+		"procedure": {
+			"type": "string",
+			"description": "A procedure, expressed as text, for these temperature setting instructions."
+		},
+		"temperatureSettingInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of these temperature setting instructions."
+		}
+	},
+	"required": ["type"]
+}

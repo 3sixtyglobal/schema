@@ -1,0 +1,60 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedLocation",
+	"title": "UneceSpecifiedLocation",
+	"description": "A specified physical location or place.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedLocation",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this specified location."
+		},
+		"directions": {
+			"type": "string",
+			"description": "Directions, expressed as text, for this specified location."
+		},
+		"geopoliticalRegionCode": {
+			"type": "string",
+			"description": "The code specifying the geopolitical region for this specified location."
+		},
+		"geopoliticalRegionName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the geopolitical region for this specified location."
+		},
+		"mapURIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of a URI (Uniform Resource Identifier) for a map of this specified location."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified location."
+		},
+		"specifiedLocationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of this specified location."
+		},
+		"specifiedTradeAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
+			},
+			"description": "A address specified for this location."
+		}
+	},
+	"required": ["type"]
+}

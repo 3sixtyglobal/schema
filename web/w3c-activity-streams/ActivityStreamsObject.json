@@ -1,0 +1,505 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject",
+	"title": "ActivityStreamsObject",
+	"description": "A W3C Activity Streams Object.\n\nThis is the base type for most ActivityStreams entities. It supports natural language\nvalues (e.g. `name`, `summary`, `content`) as either plain strings or language maps.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
+			"description": "The LD Context."
+		},
+		"type": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObjectTypes"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObjectTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Object type.\n\nThe value can be a single type or an array of types."
+		},
+		"id": {
+			"type": "string",
+			"description": "Global identifier.",
+			"format": "uri"
+		},
+		"name": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "Natural language name."
+		},
+		"nameMap": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
+			"description": "Natural language name map."
+		},
+		"summary": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "Natural language summary."
+		},
+		"summaryMap": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
+			"description": "Natural language summary map."
+		},
+		"content": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "Natural language content."
+		},
+		"contentMap": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
+			"description": "Natural language content map."
+		},
+		"url": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "A link to the representation of the object.\n\nThe value can be a URI or an embedded node object."
+		},
+		"image": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "A graphical representation of the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object."
+		},
+		"icon": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "An icon for the object.\n\nThe value can be a URI or an embedded `Image`/`Link` object."
+		},
+		"published": {
+			"type": "string",
+			"description": "Published date-time.",
+			"format": "date-time"
+		},
+		"updated": {
+			"type": "string",
+			"description": "Updated date-time.",
+			"format": "date-time"
+		},
+		"startTime": {
+			"type": "string",
+			"description": "Start time.",
+			"format": "date-time"
+		},
+		"endTime": {
+			"type": "string",
+			"description": "End time.",
+			"format": "date-time"
+		},
+		"duration": {
+			"type": "string",
+			"description": "Duration.",
+			"format": "duration"
+		},
+		"generator": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The generator of the object."
+		},
+		"attachment": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Attachments."
+		},
+		"attributedTo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Objects attributed to."
+		},
+		"audience": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Audience."
+		},
+		"context": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Context."
+		},
+		"location": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Location."
+		},
+		"tag": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Tag."
+		},
+		"inReplyTo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "In reply to."
+		},
+		"replies": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
+		},
+		"preview": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Preview."
+		},
+		"to": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "To."
+		},
+		"bto": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "BTo."
+		},
+		"cc": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "CC."
+		},
+		"bcc": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "BCC."
+		},
+		"mediaType": {
+			"type": "string",
+			"description": "MIME media type of the referenced resource."
+		}
+	},
+	"required": ["@context"]
+}

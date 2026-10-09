@@ -1,0 +1,110 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancialInstitutionAddress",
+	"title": "UneceFinancialInstitutionAddress",
+	"description": "The location at which a financial institution may be found or reached.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FinancialInstitutionAddress",
+			"description": "JSON-LD Type."
+		},
+		"buildingNumber": {
+			"type": "string",
+			"description": "The number, expressed as text, of the building on a street for this financial institution address."
+		},
+		"cityId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the city for this financial institution address, such as United Nations Location Code\n(UNLOCODE)."
+		},
+		"cityName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the city, town or village of this financial institution address."
+		},
+		"countryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a country for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
+		},
+		"countryName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the country within this financial institution address."
+		},
+		"countrySubDivisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE\nRec 3)."
+		},
+		"countrySubDivisionName": {
+			"type": "string",
+			"description": "The name, expressed as text, of a country sub-division within this financial institution address."
+		},
+		"departmentName": {
+			"type": "string",
+			"description": "The name, expressed as text, of a department within this financial institution address."
+		},
+		"financialInstitutionAddressTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of financial institution address."
+		},
+		"lineFive": {
+			"type": "string",
+			"description": "The fifth free form line, expressed as text, of this financial institution address."
+		},
+		"lineFour": {
+			"type": "string",
+			"description": "The fourth free form line, expressed as text, of this financial institution address."
+		},
+		"lineOne": {
+			"type": "string",
+			"description": "The first free form line, expressed as text, of this financial institution address."
+		},
+		"lineThree": {
+			"type": "string",
+			"description": "The third free form line, expressed as text, of this financial institution address."
+		},
+		"lineTwo": {
+			"type": "string",
+			"description": "The second free form line, expressed as text, of this financial institution address."
+		},
+		"postOfficeBox": {
+			"type": "string",
+			"description": "The post office box, expressed as text, for this financial institution address."
+		},
+		"postcodeCode": {
+			"type": "string",
+			"description": "The code specifying the postcode for this financial institution address."
+		},
+		"streetName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the street or thoroughfare for this financial institution address."
+		}
+	},
+	"required": ["type"]
+}

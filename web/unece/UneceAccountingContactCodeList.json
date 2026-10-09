@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingContactCodeList",
+	"title": "UneceAccountingContactCodeList",
+	"description": "A character string used to represent the type of an accounting contact.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingContactCodeList#1",
+			"description": "Accountant: 1."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#2",
+			"description": "Chartered accountant: 2."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#3",
+			"description": "Certified Public Accountant (CPA): 3."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#4",
+			"description": "Auditor: 4."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#5",
+			"description": "Accounting Firm: 5."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#6",
+			"description": "Legal Auditor: 6."
+		},
+		{
+			"const": "unece:AccountingContactCodeList#7",
+			"description": "Agreed organisation: 7."
+		}
+	]
+}

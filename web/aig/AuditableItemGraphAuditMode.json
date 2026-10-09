@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphAuditMode",
+	"title": "AuditableItemGraphAuditMode",
+	"description": "How the mutations of a vertex are recorded.",
+	"anyOf": [
+		{
+			"const": "audited",
+			"description": "Every mutation appends a new version entry and maintains a full audit trail."
+		},
+		{
+			"const": "bypass",
+			"description": "Mutations overwrite the stored state in place, with no version chain or audit entries."
+		}
+	]
+}

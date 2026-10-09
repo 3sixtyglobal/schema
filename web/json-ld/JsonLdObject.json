@@ -1,11 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdObject",
-	"description": "An object represents the pre-defined properties of the node object in the graph serialized by the JSON-LD document.",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdObject",
+	"title": "JsonLdObject",
+	"description": "An object represents the pre-defined properties of the node object\nin the graph serialized by the JSON-LD document.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionRoot"
 		},
 		"@id": {
 			"anyOf": [
@@ -14,47 +15,38 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
 		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdIncludedBlock"
 		},
 		"@graph": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+					}
 				}
 			]
 		},
 		"@nest": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdJsonObject"
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdJsonObject"
+					}
 				}
 			]
 		},
@@ -65,12 +57,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			]
 		},
@@ -83,6 +72,5 @@
 		"@index": {
 			"type": "string"
 		}
-	},
-	"additionalProperties": false
+	}
 }

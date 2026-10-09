@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAuthoritativeSignatoryPerson",
+	"title": "UneceAuthoritativeSignatoryPerson",
+	"description": "A person who is authorized to sign a document, such as a customs officer or other government official.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AuthoritativeSignatoryPerson",
+			"description": "JSON-LD Type."
+		},
+		"attainedAcademicQualification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAcademicQualification"
+			},
+			"description": "An academic qualification attained by this authoritative signatory person."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this authoritative signatory person."
+		}
+	},
+	"required": ["type"]
+}

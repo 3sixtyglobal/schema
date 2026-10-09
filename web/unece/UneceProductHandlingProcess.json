@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductHandlingProcess",
+	"title": "UneceProductHandlingProcess",
+	"description": "A naturally occurring or designed sequence of operations or events that create, transform, or touch a product, such as\nmanufacturing, treating, packaging, and storing.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductHandlingProcess",
+			"description": "JSON-LD Type."
+		},
+		"applicableProcessCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCharacteristic"
+			},
+			"description": "A process characteristic applicable to this product handling process."
+		},
+		"completionPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The specified period of completion for this product handling process."
+		},
+		"operationCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The trade country where the operation of this product handling process occurs."
+		},
+		"operatorParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party who is an operator of this product handling process."
+		},
+		"processTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProcessTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of product handling process."
+		}
+	},
+	"required": ["type"]
+}

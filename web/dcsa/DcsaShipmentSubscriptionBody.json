@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaShipmentSubscriptionBody",
+	"title": "DcsaShipmentSubscriptionBody",
+	"description": "Shipment subscription filters.\n\nSource: `shipmentSubscriptionBody` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"shipmentEventTypeCodes": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentEventTypeCodes"
+			},
+			"description": "Shipment event type codes to filter by."
+		},
+		"documentTypeCodes": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaDocumentTypeCodes"
+			},
+			"description": "Document type codes to filter by."
+		},
+		"documentReference": {
+			"type": "string",
+			"description": "Document reference to filter by."
+		},
+		"equipmentReference": {
+			"type": "string",
+			"description": "Equipment reference to filter by."
+		}
+	}
+}

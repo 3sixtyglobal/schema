@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePersonalEffects",
+	"title": "UnecePersonalEffects",
+	"description": "Specified privately owned articles for personal use by an individual.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PersonalEffects",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these specified personal effects."
+		},
+		"onboardQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "An onboard number of these specified personal effects."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "A sequence number for these specified personal effects."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UnecePersonalEffectsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of specified personal effects."
+		}
+	},
+	"required": ["type"]
+}

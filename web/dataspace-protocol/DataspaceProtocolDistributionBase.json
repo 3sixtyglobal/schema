@@ -1,0 +1,160 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDistributionBase",
+	"title": "DataspaceProtocolDistributionBase",
+	"description": "Base distribution interface compliant with Eclipse Data Space Protocol, requiring a format and accessService.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "Distribution",
+			"description": "The type identifier for the Distribution.\nREQUIRED per Eclipse Data Space Protocol."
+		},
+		"@id": {
+			"type": "string",
+			"description": "Unique identifier for the distribution; optional for embedded distributions."
+		},
+		"hasPolicy": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase"
+			},
+			"description": "Optional array of ODRL offers; when present, must contain at least one entry.",
+			"minItems": 1
+		},
+		"accessService": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataServiceBase"
+				}
+			],
+			"description": "Access service URI or inline access service definition."
+		},
+		"format": {
+			"type": "string",
+			"description": "Distribution format identifier."
+		}
+	},
+	"required": ["@type", "accessService", "format"],
+	"allOf": [
+		{
+			"description": "Base interface for DCAT Distribution without JSON-LD context.\nThis is the context-free variant of IDcatDistribution, intended for embedding\ndistribution objects inline within datasets where the context is provided by the enclosing document.",
+			"type": "object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"description": "The unique identifier for the distribution object."
+				},
+				"dcterms:title": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A name given to the distribution."
+				},
+				"dcterms:description": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A free-text account of the distribution."
+				},
+				"dcterms:issued": {
+					"type": "string",
+					"description": "Date of formal issuance of the distribution.",
+					"format": "date-time"
+				},
+				"dcterms:modified": {
+					"type": "string",
+					"description": "Most recent date on which the distribution was changed, updated or modified.",
+					"format": "date-time"
+				},
+				"dcterms:license": {
+					"type": "string",
+					"description": "A legal document under which the distribution is made available."
+				},
+				"dcterms:accessRights": {
+					"type": "string",
+					"description": "Information about who can access the distribution."
+				},
+				"dcterms:rights": {
+					"type": "string",
+					"description": "Information about rights held in and over the distribution."
+				},
+				"dcat:accessURL": {
+					"type": "string",
+					"description": "A URL of the resource that gives access to a distribution of the dataset."
+				},
+				"dcat:accessService": {
+					"type": "string",
+					"description": "A data service that gives access to the distribution."
+				},
+				"dcat:downloadURL": {
+					"type": "string",
+					"description": "The URL of the downloadable file in a given format."
+				},
+				"dcat:byteSize": {
+					"type": "number",
+					"description": "The size of the distribution in bytes.",
+					"minimum": 0
+				},
+				"dcat:spatialResolutionInMeters": {
+					"type": "number",
+					"description": "The minimum spatial separation resolvable in a distribution, measured in meters."
+				},
+				"dcat:temporalResolution": {
+					"type": "string",
+					"description": "Minimum time period resolvable in the distribution.",
+					"format": "duration"
+				},
+				"dcterms:conformsTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "An established standard to which the distribution conforms."
+				},
+				"dcat:mediaType": {
+					"type": "string",
+					"description": "The media type of the distribution as defined by IANA."
+				},
+				"dcat:compressFormat": {
+					"type": "string",
+					"description": "The compression format of the distribution."
+				},
+				"dcat:packageFormat": {
+					"type": "string",
+					"description": "The package format of the distribution."
+				},
+				"spdx:checksum": {
+					"type": "string",
+					"description": "The checksum property provides a mechanism to verify the data integrity."
+				}
+			},
+			"$comment": "Inlined utility base type DcatDistributionBase so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
+}

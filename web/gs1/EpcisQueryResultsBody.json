@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisQueryResultsBody",
+	"title": "EpcisQueryResultsBody",
+	"description": "EPCIS 2.0 QueryResultsBody containing events and optional master data.",
+	"type": "object",
+	"properties": {
+		"eventList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisEvents"
+			},
+			"description": "The list of events."
+		},
+		"vocabularyList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisVocabulary"
+			},
+			"description": "Optional master data."
+		}
+	},
+	"required": ["eventList"]
+}

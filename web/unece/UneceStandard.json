@@ -1,0 +1,166 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceStandard",
+	"title": "UneceStandard",
+	"description": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in\nengineering or technical areas.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Standard",
+			"description": "JSON-LD Type."
+		},
+		"agencyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the agency for this referenced standard."
+		},
+		"applicableAssessment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+			},
+			"description": "A specified assessment applicable to this referenced standard."
+		},
+		"applicableCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A country where this referenced standard is applicable."
+		},
+		"applicableDeclaration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration"
+			},
+			"description": "A specified declaration applicable to this referenced standard."
+		},
+		"applicableLicence": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLicence"
+			},
+			"description": "A specified licence applicable to this referenced standard."
+		},
+		"applicableMetricCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristic"
+			},
+			"description": "A metric characteristic applicable to this referenced standard."
+		},
+		"applicableSpecifiedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A specified certificate applicable to this referenced standard."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this referenced standard."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this referenced standard."
+		},
+		"elementVersionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the version of a specific element within the referenced standard, such as the version of a data\nelement."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this referenced standard."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this referenced standard."
+		},
+		"partId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of a part of this referenced standard, such as a section or topic."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion specified for this referenced standard."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this referenced standard."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceStandardTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of referenced standard."
+		},
+		"uRIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Uniform Resource Identifier (URI) for this referenced standard."
+		},
+		"versionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the version of this referenced standard."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMembership",
+	"title": "UneceMembership",
+	"description": "The state of belonging to a group, such as a club or trade association.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Membership",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified membership."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the end of this specified membership.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this specified membership."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified membership."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the start of this specified membership.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

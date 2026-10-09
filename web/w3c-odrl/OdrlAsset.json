@@ -1,79 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAsset",
-	"description": "Interface for ODRL Assets.",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAsset",
+	"title": "OdrlAsset",
+	"description": "Interface for ODRL Assets.\nhttps://www.w3.org/TR/odrl-model/#asset",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
+		"uid": {
+			"type": "string",
+			"description": "The unique identifier for the asset.\nShould be an IRI."
 		},
 		"@type": {
 			"type": "string",
-			"description": "The type of the asset. Can be used to specify additional type information."
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
-		"uid": {
-			"type": "string",
-			"description": "The unique identifier for the asset. Should be an IRI."
+			"description": "The type of the asset.\nCan be used to specify additional type information."
 		},
 		"partOf": {
 			"anyOf": [
@@ -81,39 +19,37 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+							}
+						]
+					}
 				}
 			],
-			"description": "Reference to the asset collection this asset is part of. Used to identify an AssetCollection that this Asset is a member of."
+			"description": "Reference to the asset collection this asset is part of.\nUsed to identify an AssetCollection that this Asset is a member of."
 		},
 		"hasPolicy": {
-			"type": "string",
-			"description": "Reference to the policy that governs this asset. Used to identify the Policy that governs this Asset."
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "Reference to the policy that governs this asset.\nUsed to identify the Policy that governs this Asset."
 		}
-	},
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
 	}
 }

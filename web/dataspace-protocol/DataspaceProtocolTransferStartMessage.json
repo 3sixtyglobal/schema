@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferStartMessage",
+	"title": "DataspaceProtocolTransferStartMessage",
+	"description": "Interface for the Dataspace Protocol transfer start message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "TransferStartMessage",
+			"description": "The JSON-LD type."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Provider side."
+		},
+		"dataAddress": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataAddress",
+			"description": "MUST be provided if the current transfer is a pull transfer and\ncontains a transport-specific endpoint address for obtaining the data."
+		}
+	},
+	"required": ["@context", "@type", "consumerPid", "providerPid"]
+}

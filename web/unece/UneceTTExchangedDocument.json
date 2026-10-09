@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTTExchangedDocument",
+	"title": "UneceTTExchangedDocument",
+	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties\nfor Track and Trace (TT) purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TTExchangedDocument",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this TT exchanged document."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this TT exchanged document."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the issuance of this TT exchanged document.",
+			"format": "date-time"
+		},
+		"receiverSpecifiedParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
+			"description": "The receiving party specified for this TT exchanged document."
+		},
+		"senderSpecifiedParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
+			"description": "The sending party specified for this TT exchanged document."
+		},
+		"tTExchangedDocumentPurposeCode": {
+			"type": "string",
+			"description": "The code specifying a purpose of this TT exchanged document."
+		},
+		"tTExchangedDocumentStatusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this TT exchanged document."
+		},
+		"tTExchangedDocumentTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of TT exchanged document."
+		}
+	},
+	"required": ["type", "identifier", "receiverSpecifiedParty", "senderSpecifiedParty"]
+}

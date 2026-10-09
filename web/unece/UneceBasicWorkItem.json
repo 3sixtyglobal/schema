@@ -1,0 +1,143 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBasicWorkItem",
+	"title": "UneceBasicWorkItem",
+	"description": "A basic item of work.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "BasicWorkItem",
+			"description": "JSON-LD Type."
+		},
+		"actualComplexDescription": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceComplexDescription"
+			},
+			"description": "An actual complex description for this basic work item."
+		},
+		"alternativeClassificationCode": {
+			"type": "string",
+			"description": "A code specifying an alternative classification for this basic work item."
+		},
+		"binaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A specified binary file referenced by this basic work item."
+		},
+		"changedStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRecordedStatus"
+			},
+			"description": "A changed recorded status for this basic work item."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text, for this basic work item."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this basic work item."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this basic work item."
+		},
+		"index": {
+			"type": "string",
+			"description": "The index, expressed as text, to be used for this basic work item."
+		},
+		"itemBasicWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItem"
+			},
+			"description": "A basic work item in this basic work item."
+		},
+		"priceListItemId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a price list item for this basic work item."
+		},
+		"primaryClassificationCode": {
+			"type": "string",
+			"description": "A code specifying the primary classification for this basic work item."
+		},
+		"referenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of another work item referenced by this basic work item."
+		},
+		"requestedActionCode": {
+			"type": "string",
+			"description": "A code specifying a requested action for this basic work item."
+		},
+		"totalPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
+			},
+			"description": "A total calculated price for this basic work item."
+		},
+		"totalQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The total quantity for this basic work item."
+		},
+		"totalQuantityAnalysis": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityAnalysis"
+			},
+			"description": "An analysis of the total quantity for this basic work item."
+		},
+		"totalQuantityClassificationCode": {
+			"type": "string",
+			"description": "The code specifying the classification of the total quantity for this basic work item."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying the type of basic work item."
+		},
+		"unitPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
+			},
+			"description": "A unit calculated price for this basic work item."
+		}
+	},
+	"required": ["type", "identifier"]
+}

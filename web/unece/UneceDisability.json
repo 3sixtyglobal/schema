@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDisability",
+	"title": "UneceDisability",
+	"description": "A physical or mental condition that limits a guest's movements, senses, or activities.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Disability",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this guest disability."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this guest disability."
+		},
+		"registeredDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this guest disability has been registered.",
+			"format": "date-time"
+		},
+		"requiredSupportingDevice": {
+			"type": "string",
+			"description": "A supporting device, expressed as text, for this required guest disability."
+		},
+		"restriction": {
+			"type": "string",
+			"description": "A restriction, expressed as text, for this guest disability."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceDisabilityTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of guest disability."
+		}
+	},
+	"required": ["type"]
+}

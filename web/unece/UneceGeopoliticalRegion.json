@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGeopoliticalRegion",
+	"title": "UneceGeopoliticalRegion",
+	"description": "A collection of countries and/or economies united for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GeopoliticalRegion",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this trade geopolitical region."
+		},
+		"includedCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A country included in this trade geopolitical region."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this trade geopolitical region."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGeopoliticalRegionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of trade geopolitical region."
+		}
+	},
+	"required": ["type"]
+}

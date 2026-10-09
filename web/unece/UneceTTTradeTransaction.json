@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTTTradeTransaction",
+	"title": "UneceTTTradeTransaction",
+	"description": "An agreement, contract, exchange, understanding, or transfer of cash or property related to a Track and Trace (TT)\nprocess.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TTTradeTransaction",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this TT trade transaction."
+		},
+		"typeId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for the type of TT trade transaction."
+		},
+		"uRIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Uniform Resource Identifier (URI) for this TT trade transaction."
+		}
+	},
+	"required": ["type", "identifier"]
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFoodChoice",
+	"title": "UneceFoodChoice",
+	"description": "A guest's decision which food to buy or eat.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FoodChoice",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this guest food choice."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this guest food choice."
+		},
+		"restriction": {
+			"type": "string",
+			"description": "A restriction, expressed as text, for this guest food choice."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceFoodChoiceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of guest food choice."
+		}
+	},
+	"required": ["type"]
+}

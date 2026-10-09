@@ -1,59 +1,48 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertexList",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphVertexList",
+	"title": "AuditableItemGraphVertexList",
 	"description": "Interface describing an auditable item graph vertex list.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/aig/"
+					"const": "https://schema.3sixty.global/aig/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"description": "JSON-LD Type.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "ItemList"
 				},
 				{
-					"type": "string",
 					"const": "AuditableItemGraphVertexList"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Type."
 		},
 		"itemListElement": {
 			"type": "array",
-			"items": false,
-			"description": "The list of vertices.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphVertex"
-				}
-			]
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "The cursor to get the next chunk of vertices."
+			"items": {
+				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphVertex"
+			},
+			"description": "The list of vertices."
 		}
 	},
-	"required": ["@context", "type", "itemListElement"],
-	"additionalProperties": false
+	"required": ["@context", "type", "itemListElement"]
 }

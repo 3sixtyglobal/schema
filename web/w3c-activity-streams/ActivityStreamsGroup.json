@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsGroup",
+	"title": "ActivityStreamsGroup",
+	"description": "A W3C Activity Streams Group.\n\nA `Group` represents a group of individuals.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Group"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Group"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Group type."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActor"
+		}
+	]
+}

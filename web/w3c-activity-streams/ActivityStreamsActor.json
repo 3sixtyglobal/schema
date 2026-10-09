@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActor",
+	"title": "ActivityStreamsActor",
+	"description": "A W3C Activity Streams Actor.\n\nAn `Actor` is a specialised `Object` that represents the entity performing\nan `Activity` (for example a `Person`, `Group`, `Organization`, `Application`, or `Service`).",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Actor"
+				},
+				{
+					"const": "Application"
+				},
+				{
+					"const": "Group"
+				},
+				{
+					"const": "Organization"
+				},
+				{
+					"const": "Person"
+				},
+				{
+					"const": "Service"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Actor"
+							},
+							{
+								"const": "Application"
+							},
+							{
+								"const": "Group"
+							},
+							{
+								"const": "Organization"
+							},
+							{
+								"const": "Person"
+							},
+							{
+								"const": "Service"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Actor type."
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

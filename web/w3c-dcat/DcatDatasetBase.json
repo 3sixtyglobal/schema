@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase",
+	"title": "DcatDatasetBase",
+	"description": "Base interface for DCAT Dataset without JSON-LD context.\nThis is the context-free variant of IDcatDataset, intended for embedding\ndataset objects inline within other objects where the context is provided by the enclosing document.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"anyOf": [
+				{
+					"const": "dcat:Dataset"
+				},
+				{
+					"const": "dcat:Catalog"
+				},
+				{
+					"const": "dcat:DatasetSeries"
+				}
+			],
+			"description": "The type identifier, typically \"Dataset\".\nCan also be \"Catalog\" or \"DatasetSeries\" for subclasses."
+		},
+		"dcat:distribution": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDistributionBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDistributionBase"
+					}
+				}
+			],
+			"description": "An available distribution of the dataset."
+		},
+		"dcterms:accrualPeriodicity": {
+			"type": "string",
+			"description": "The frequency at which the dataset is published."
+		},
+		"dcat:inSeries": {
+			"type": "string",
+			"description": "A dataset series of which the dataset is part."
+		},
+		"dcterms:spatial": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The geographical area covered by the dataset."
+		},
+		"dcat:spatialResolutionInMeters": {
+			"type": "number",
+			"description": "Minimum spatial separation resolvable in a dataset, measured in meters."
+		},
+		"dcterms:temporal": {
+			"$ref": "https://schema.3sixty.global/dublin-core/DublinCorePeriodOfTime",
+			"description": "The temporal period that the dataset covers."
+		},
+		"dcat:temporalResolution": {
+			"type": "string",
+			"description": "Minimum time period resolvable in the dataset.",
+			"format": "duration"
+		},
+		"prov:wasGeneratedBy": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "An activity that generated, or provides the business context for, the creation of the dataset."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResourceBase"
+		}
+	]
+}

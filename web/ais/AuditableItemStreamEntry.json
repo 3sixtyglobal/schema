@@ -1,31 +1,25 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/ais/AuditableItemStreamEntry",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStreamEntry",
+	"title": "AuditableItemStreamEntry",
 	"description": "Interface describing an entry for the stream.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/ais/"
+					"const": "https://schema.3sixty.global/ais/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
-		},
-		"type": {
-			"type": "string",
-			"const": "AuditableItemStreamEntry",
-			"description": "JSON-LD Type."
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"id": {
 			"type": "string",
@@ -47,10 +41,6 @@
 			"type": "string",
 			"description": "The identity of the user which added the entry to the stream."
 		},
-		"entryObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The object to associate with the entry as JSON-LD."
-		},
 		"index": {
 			"type": "number",
 			"description": "The index of the entry in the stream."
@@ -60,10 +50,14 @@
 			"description": "The id of the immutable proof."
 		},
 		"verification": {
-			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
 			"description": "The verification of the entry."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "entryObject", "index"],
-	"additionalProperties": false
+	"required": ["id", "dateCreated", "index"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/ais/AuditableItemStreamEntryBase"
+		}
+	]
 }

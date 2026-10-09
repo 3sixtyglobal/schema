@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDataService",
+	"title": "DcatDataService",
+	"description": "Interface for DCAT Data Service.\nA collection of operations that provides access to one or more datasets or data\nprocessing functions.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
+		}
+	},
+	"required": ["@context"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase"
+		}
+	]
+}

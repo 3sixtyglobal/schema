@@ -1,0 +1,65 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsRelationship",
+	"title": "ActivityStreamsRelationship",
+	"description": "A W3C Activity Streams Relationship.\n\nA `Relationship` can be used to describe a relationship between two entities.\nIt is commonly used as a reified statement, using `subject` (subject), `relationship`\n(predicate), and `object` (object).",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Relationship"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Relationship"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Relationship type."
+		},
+		"subject": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				}
+			],
+			"description": "Subject of the relationship."
+		},
+		"object": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"description": "Object of the relationship."
+		},
+		"relationship": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				}
+			],
+			"description": "The relationship predicate.\n\nFor example, a URI identifying the relationship type."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

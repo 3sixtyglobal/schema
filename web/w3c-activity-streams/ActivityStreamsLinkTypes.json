@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLinkTypes",
+	"title": "ActivityStreamsLinkTypes",
+	"description": "The link types concerning Activity Streams.",
+	"anyOf": [
+		{
+			"const": "Link",
+			"description": "Link"
+		},
+		{
+			"const": "Mention",
+			"description": "Mention"
+		}
+	]
+}

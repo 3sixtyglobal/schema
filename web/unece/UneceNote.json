@@ -1,0 +1,54 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceNote",
+	"title": "UneceNote",
+	"description": "A textual or coded description, such as a remark or additional information.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Note",
+			"description": "JSON-LD Type."
+		},
+		"content": {
+			"type": "string",
+			"description": "A content, expressed as text, of this note."
+		},
+		"contentCode": {
+			"type": "string",
+			"description": "A code specifying the content of this note."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the creation of this note.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this note."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this note."
+		},
+		"noteSubjectCode": {
+			"type": "string",
+			"description": "A code specifying the subject of this note."
+		},
+		"subject": {
+			"type": "string",
+			"description": "The subject, expressed as text, of this note."
+		}
+	},
+	"required": ["type"]
+}

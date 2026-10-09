@@ -1,0 +1,112 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMetricCharacteristic",
+	"title": "UneceMetricCharacteristic",
+	"description": "A prominent attribute or aspect of a metric (a standard of measurement).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "MetricCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"contentTypeCode": {
+			"type": "string",
+			"description": "The code specifying the content type of this metric characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this metric characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this metric characteristic."
+		},
+		"metricCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this metric characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceMetricCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of metric characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this metric characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value for this metric characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value for this metric characteristic, expressed as a date, time, date time, or other date time value.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value for this metric characteristic expressed as an indicator."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this metric characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for a value of this metric characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this metric characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for a value for this metric characteristic."
+		},
+		"valueQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The value, expressed as a quantity, for this metric characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for a value of this metric characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for a value of this metric characteristic."
+		}
+	},
+	"required": ["type"]
+}

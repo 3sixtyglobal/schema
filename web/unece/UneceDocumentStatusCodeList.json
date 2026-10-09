@@ -1,0 +1,212 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDocumentStatusCodeList",
+	"title": "UneceDocumentStatusCodeList",
+	"description": "A character string used to represent or replace a document status.",
+	"anyOf": [
+		{
+			"const": "unece:DocumentStatusCodeList#1",
+			"description": "Accepted: 1."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#10",
+			"description": "Document currently valid: 10."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#11",
+			"description": "Document not available: 11."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#12",
+			"description": "Document exhausted by declaration and attached: 12."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#13",
+			"description": "Document not exhausted by declaration and attached: 13."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#14",
+			"description": "Document exhausted by declaration and previously lodged: 14."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#15",
+			"description": "Document not exhausted by declaration and previously lodged: 15."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#16",
+			"description": "Document not attached: 16."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#17",
+			"description": "Document with the goods: 17."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#18",
+			"description": "Document attached, to be returned after endorsement: 18."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#19",
+			"description": "Document applied for: 19."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#2",
+			"description": "Accompanying goods: 2."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#20",
+			"description": "Received for shipment: 20."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#21",
+			"description": "Shipped on board: 21."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#22",
+			"description": "Status 0: 22."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#23",
+			"description": "Status 1: 23."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#24",
+			"description": "Status 2: 24."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#25",
+			"description": "Message under development: 25."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#26",
+			"description": "Document not freighted: 26."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#27",
+			"description": "Document freighted: 27."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#28",
+			"description": "Archived: 28."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#29",
+			"description": "Provisional: 29."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#3",
+			"description": "Conditionally accepted: 3."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#30",
+			"description": "Documents enclosed in the first transmission: 30."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#31",
+			"description": "Documents enclosed in the second transmission: 31."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#32",
+			"description": "Document not required, waiver issued: 32."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#33",
+			"description": "Already on file with receiver of this message: 33."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#34",
+			"description": "Retained by sender of this message, or by sender's agent or representative: 34."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#35",
+			"description": "Document incomplete: 35."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#36",
+			"description": "Document previously submitted: 36."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#37",
+			"description": "Document complete: 37."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#38",
+			"description": "Final: 38."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#39",
+			"description": "On hold: 39."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#4",
+			"description": "To arrive by separate EDI message: 4."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#40",
+			"description": "Validity suspended: 40."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#41",
+			"description": "Validity revoked: 41."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#42",
+			"description": "In error: 42."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#43",
+			"description": "Received: 43."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#44",
+			"description": "Accepted with warnings: 44."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#45",
+			"description": "In process: 45."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#46",
+			"description": "Under query: 46."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#47",
+			"description": "Paid: 47."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#48",
+			"description": "Acknowledged: 48."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#49",
+			"description": "Conditionally accepted: 49."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#5",
+			"description": "Information only: 5."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#50",
+			"description": "Rejected, no further processing: 50."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#51",
+			"description": "To arrive by electronic means: 51."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#6",
+			"description": "To arrive by manual means: 6."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#7",
+			"description": "To be raised and sent: 7."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#8",
+			"description": "Rejected: 8."
+		},
+		{
+			"const": "unece:DocumentStatusCodeList#9",
+			"description": "To be printed: 9."
+		}
+	]
+}

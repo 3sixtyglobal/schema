@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceOrganizationalCertification",
+	"title": "UneceOrganizationalCertification",
+	"description": "The process of certifying organizational performance or qualification requirements as stipulated in regulations.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "OrganizationalCertification",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this organizational certification."
+		},
+		"assertion": {
+			"type": "string",
+			"description": "An assertion, expressed as text, for this organizational certification."
+		},
+		"assertionCode": {
+			"type": "string",
+			"description": "The code specifying the assertion, such as a claim that an organization does not practise child labour, of this\norganizational certification."
+		},
+		"relatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+			},
+			"description": "A referenced location related to this organizational certification."
+		},
+		"responsibleAgency": {
+			"type": "string",
+			"description": "An agency, expressed as text, responsible for this organizational certification."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion specified for this organizational certification."
+		},
+		"standard": {
+			"type": "string",
+			"description": "A standard, expressed as text, used for this organizational certification."
+		}
+	},
+	"required": ["type"]
+}

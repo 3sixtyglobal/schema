@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/synchronised-storage/SyncChangeOperation",
+	"title": "SyncChangeOperation",
+	"description": "The operations for a change",
+	"anyOf": [
+		{
+			"const": "set",
+			"description": "An item was set in the storage."
+		},
+		{
+			"const": "delete",
+			"description": "An item was deleted from the storage."
+		}
+	]
+}

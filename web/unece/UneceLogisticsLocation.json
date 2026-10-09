@@ -1,0 +1,159 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+	"title": "UneceLogisticsLocation",
+	"description": "A logistics related physical location or place.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LogisticsLocation",
+			"description": "JSON-LD Type."
+		},
+		"associatedGeographicalFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
+			},
+			"description": "A geographical feature associated with this logistics location."
+		},
+		"countryName": {
+			"type": "string",
+			"description": "A country name, expressed as text, of this logistics location."
+		},
+		"countrySubDivisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the country sub-division for this logistics related location."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this logistics related location."
+		},
+		"facilityLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+			},
+			"description": "A facility location referenced for this logistics location."
+		},
+		"healthAffectedAreaIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this logistics location is in a health affected area."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this logistics related location, such as a United Nations Location Code (UNLOCODE) or GS1 Global\nLocation Number (GLN)."
+		},
+		"inspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A supply chain inspection event at this logistics location."
+		},
+		"locationFunctionTypeCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceLocationFunctionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying the type of this logistics related location."
+		},
+		"logisticsLocationCountryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a country for this logistics location."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this logistics related location."
+		},
+		"physicalGeographicalCoordinate": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalCoordinate",
+			"description": "Geographical coordinate information for this logistics related location."
+		},
+		"postalAddress": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress",
+			"description": "The postal trade address information for this logistics related location."
+		},
+		"previousAssociatedGeographicalFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
+			},
+			"description": "A geographical feature previously associated with this logistics location."
+		},
+		"servicingSpecifiedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocationParty"
+			},
+			"description": "A servicing party specified for this logistics related location."
+		},
+		"specifiedInspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
+			},
+			"description": "An inspection event specified for this logistics location."
+		},
+		"stayPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A period of stay at this logistics location."
+		},
+		"subordinateRelatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location subordinate to this logistics location."
+		},
+		"subordinateSubordinateLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLocation"
+			},
+			"description": "A location subordinate to this logistics related location."
+		},
+		"uTCOffsetNumeric": {
+			"type": "string",
+			"description": "The time offset value from the Universal Time Coordinate (UTC) for this logistics related location."
+		}
+	},
+	"required": ["type"]
+}

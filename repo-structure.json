@@ -1,0 +1,116 @@
+{
+	"structure": {
+		".": {
+			"**/": "kebab",
+			"**/README.md": "upper",
+			"**/CONTRIBUTING.md": "upper",
+			"**/LICENSE": "upper",
+			"/packages|/apps": {
+				"**/": "kebab",
+				"*": {
+					"case": "kebab"
+				},
+				"**/src": {
+					"**/": "camel",
+					"**/I[A-Z]*.ts": "interface",
+					"**/*.ts": "camel",
+					"**/*.tsx": "pascal"
+				},
+				"**/tests": {
+					"**/": "camel",
+					"**/I[A-Z]*.ts": {
+						"case": "interface",
+						"ignoreSegments": ["spec"]
+					},
+					"**/*.ts": {
+						"case": "camel",
+						"ignoreSegments": ["spec"]
+					},
+					"**/*.tsx": "pascal",
+					"**/*.js": "camel",
+					"**/*.json": "camel",
+					"**/*.txt": "camel",
+					"**/*.rest": "camel"
+				},
+				"**/docs": {
+					"**/": "kebab",
+					"**/*.md": "kebab"
+				},
+				"**/locales": {
+					"**/*.json": "kebab"
+				},
+				"**/bin": {
+					"index.js": "kebab"
+				}
+			},
+			"/release": {
+				"**/*.patch": "^[a-zA-Z0-9._+\\-]+$",
+				"*": {
+					"case": "kebab",
+					"ignoreSegments": ["prerelease", "prod"]
+				}
+			},
+			"/scripts": {
+				"*.mjs": "kebab",
+				"*.sh": "kebab",
+				"*.js": "kebab"
+			},
+			"/docs": {
+				"**/*.md": "kebab",
+				"**/*.mdx": "kebab",
+				"**/*.jsx": "kebab"
+			},
+			"/.github": {
+				"**/": "kebab",
+				"**/*": {
+					"case": "kebab",
+					"ignoreSegments": ["json"]
+				}
+			}
+		}
+	},
+	"ignorePatterns": [
+		"**/debug_info",
+		"**/docs/reference",
+		"**/fixtures",
+		"**/src-data",
+		"**/testData",
+		"**/test_contract",
+		"*-env",
+		"*smart-contract-deployments.json",
+		".dockerignore",
+		".env*",
+		".git",
+		".gitignore",
+		".husky",
+		".local-data",
+		".markdownlint-cli2.jsonc",
+		".markdownlint.json",
+		".prettierignore",
+		".tmp",
+		".updatable-packages",
+		".validate-ignore",
+		".vscode",
+		".vercel",
+		"commitlint.config.mjs",
+		"coverage",
+		"cspell.json",
+		"dist",
+		"dockerfile",
+		"eslint.config-custom.js",
+		"eslint.config.js",
+		"node_modules",
+		"nodemon.json",
+		"package.json",
+		"pnpm-lock.yaml",
+		"prettier.config.mjs",
+		"repo-structure.json",
+		"ts-to-openapi.json",
+		"ts-to-schema.json",
+		"tsconfig.eslint.json",
+		"tsconfig.json",
+		"typedoc.config.mjs",
+		"vitest.config.ts",
+		"vitest.config.ts.timestamp*"
+	]
+}

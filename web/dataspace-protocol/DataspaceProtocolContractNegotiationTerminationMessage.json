@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractNegotiationTerminationMessage",
+	"title": "DataspaceProtocolContractNegotiationTerminationMessage",
+	"description": "Interface for the Dataspace Protocol contract negotiation termination message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "ContractNegotiationTerminationMessage",
+			"description": "The type of the message."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "The provider id for the contract."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "The consumer id for the contract."
+		},
+		"code": {
+			"type": "string",
+			"description": "The termination code."
+		},
+		"reason": {
+			"type": "array",
+			"items": {},
+			"description": "The termination reason(s)."
+		}
+	},
+	"required": ["@context", "@type", "providerPid", "consumerPid"]
+}

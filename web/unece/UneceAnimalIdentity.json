@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalIdentity",
+	"title": "UneceAnimalIdentity",
+	"description": "Information about an animal which uniquely identifies it.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AnimalIdentity",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this animal identity."
+		},
+		"identifierLengthNumeric": {
+			"type": "string",
+			"description": "The length, expressed as the number of characters, of the identifier in this animal identity."
+		},
+		"issuerPartyName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the party issuing this animal identity."
+		},
+		"legalBasis": {
+			"type": "string",
+			"description": "The legal basis, expressed as text, for this animal identity."
+		},
+		"versionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the version of this animal identity."
+		}
+	},
+	"required": ["type", "identifier", "identifierLengthNumeric", "issuerPartyName", "legalBasis"]
+}

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTntPublisherRole",
+	"title": "DcsaTntPublisherRole",
+	"description": "Publisher role as used by the Track & Trace (T&T) event hubs.",
+	"anyOf": [
+		{
+			"const": "CA"
+		},
+		{
+			"const": "AG"
+		},
+		{
+			"const": "VSP"
+		},
+		{
+			"const": "SVP"
+		}
+	]
+}

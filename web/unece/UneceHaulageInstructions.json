@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceHaulageInstructions",
+	"title": "UneceHaulageInstructions",
+	"description": "Instructions related to the action or process of conveyance.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "HaulageInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of these haulage instructions."
+		},
+		"haulageInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying the description of these haulage instructions."
+		}
+	},
+	"required": ["type"]
+}

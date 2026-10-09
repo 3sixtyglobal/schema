@@ -1,0 +1,222 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActivity",
+	"title": "ActivityStreamsActivity",
+	"description": "A W3C Activity from Activity Streams.\n\nAn `Activity` describes an action performed by an `actor` on an `object`, and\ncan optionally include a `target`, `result`, `origin`, or `instrument`.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
+			"description": "The LD Context."
+		},
+		"type": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Activity Type."
+		},
+		"generator": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The generator of the Activity."
+		},
+		"actor": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The Actor behind the Activity."
+		},
+		"object": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The object affected by the Activity."
+		},
+		"target": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The target of the Activity."
+		},
+		"summary": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "Summary of the Activity."
+		},
+		"result": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Result of the Activity."
+		},
+		"origin": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Activity's origin."
+		},
+		"instrument": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Instrument used in the Activity."
+		}
+	},
+	"required": ["@context", "type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

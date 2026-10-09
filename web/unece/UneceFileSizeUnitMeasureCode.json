@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFileSizeUnitMeasureCode",
+	"title": "UneceFileSizeUnitMeasureCode",
+	"description": "RDF Class for FileSizeUnitMeasureType unit code type to define unit code values.",
+	"anyOf": [
+		{
+			"const": "unece:FileSizeUnitMeasureCode#4L",
+			"description": "megabyte: 4L."
+		},
+		{
+			"const": "unece:FileSizeUnitMeasureCode#E34",
+			"description": "gigabyte: E34."
+		},
+		{
+			"const": "unece:FileSizeUnitMeasureCode#E35",
+			"description": "terabyte: E35."
+		}
+	]
+}

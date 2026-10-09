@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristicTypeCodeList",
+	"title": "UneceOrganizationCharacteristicTypeCodeList",
+	"description": "Values for UneceOrganizationCharacteristic typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableOrganizationCharacteristic",
+			"description": "A characteristic applicable to this organization certificate."
+		}
+	]
+}

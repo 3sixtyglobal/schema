@@ -1,134 +1,43 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection",
-	"description": "Interface for ODRL Asset Collections. An AssetCollection is a single resource representing a set of member resources, where all members of the set will be the subject of the Rule.",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection",
+	"title": "OdrlAssetCollection",
+	"description": "Interface for ODRL Asset Collections.\nAn AssetCollection is a single resource representing a set of member resources,\nwhere all members of the set will be the subject of the Rule.\nhttps://www.w3.org/TR/odrl-model/#asset",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
-		},
-		"@type": {
-			"type": "string",
-			"description": "The type of the asset. Can be used to specify additional type information."
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
-		"uid": {
-			"type": "string",
-			"description": "The unique identifier for the asset. Should be an IRI."
-		},
-		"partOf": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
-				}
-			],
-			"description": "Reference to the asset collection this asset is part of. Used to identify an AssetCollection that this Asset is a member of."
-		},
-		"hasPolicy": {
-			"type": "string",
-			"description": "Reference to the policy that governs this asset. Used to identify the Policy that governs this Asset."
-		},
 		"source": {
 			"type": "string",
-			"description": "Reference to the source of the asset collection. Must be an IRI that references the AssetCollection."
+			"description": "Reference to the source of the asset collection.\nMust be an IRI that references the AssetCollection.\nOmit to scope the collection entirely by its refinement instead.",
+			"format": "uri"
 		},
 		"refinement": {
-			"type": "array",
-			"items": false,
-			"description": "Refinements applied to the asset collection. Used to specify the refinement context under which to identify individual Asset(s) of the complete collection. The refinement applies to the characteristics of each member of the collection (not the resource as a whole).",
-			"prefixItems": [
+			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConstraint"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConstraint"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint"
+							}
+						]
+					}
 				}
-			]
+			],
+			"description": "Refinements applied to the asset collection.\nUsed to specify the refinement context under which to identify individual Asset(s)\nof the complete collection. The refinement applies to the characteristics of each\nmember of the collection (not the resource as a whole)."
 		}
 	},
-	"required": ["source"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+		}
+	]
 }

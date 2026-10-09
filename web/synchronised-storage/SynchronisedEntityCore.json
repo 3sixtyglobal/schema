@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntityCore",
+	"title": "SynchronisedEntityCore",
+	"description": "The base definition for synchronised entries.",
+	"type": "object",
+	"properties": {
+		"dateModified": {
+			"type": "string",
+			"description": "The date the entry was modified."
+		}
+	},
+	"required": ["dateModified"]
+}

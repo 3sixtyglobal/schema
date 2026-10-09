@@ -1,0 +1,231 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePackage",
+	"title": "UnecePackage",
+	"description": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a\nbarrel which can be filled, partially filled or empty.\nA referenced self-contained wrapping or container within which goods can be contained for logistics purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Package",
+			"description": "JSON-LD Type."
+		},
+		"additionalLevelCode": {
+			"type": "string",
+			"description": "The code specifying the additional level of this logistics package."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document associated with this logistics package."
+		},
+		"colourCode": {
+			"type": "string",
+			"description": "The code specifying the colour of this referenced logistics package."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this logistics package."
+		},
+		"despatchNoteAssociatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A despatch note associated with this logistics package."
+		},
+		"globalId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique global identifier for this logistics package."
+		},
+		"grossVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the gross volume of this logistics package."
+		},
+		"grossWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the gross weight (mass) of this logistics package and its contents."
+		},
+		"hierarchicalLevelId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The level identifier for this logistics package."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this logistics package."
+		},
+		"includedSupplyChainTradeLineItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeLineItem"
+			},
+			"description": "A supply chain trade line item included in this logistics package."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this logistics package."
+		},
+		"itemQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of logistics packages at this level."
+		},
+		"linearDimension": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension",
+			"description": "The linear spatial dimensions of this logistics package."
+		},
+		"logisticsPackageAdditionalLevelCode": {
+			"type": "string",
+			"description": "The code specifying the additional level of this logistics package."
+		},
+		"netVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a net volume of this logistics package."
+		},
+		"netWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the net weight of this logistics package, i.e. the weight (mass) of the contents."
+		},
+		"nominalGrossVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the nominal gross volume of this logistics package."
+		},
+		"nominalGrossWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+		},
+		"packageType": {
+			"type": "string",
+			"description": "A type, expressed as text, of this logistics package."
+		},
+		"packageTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackageTypeCodeList"
+			},
+			"description": "A code specifying the type of logistics package."
+		},
+		"packagingLevelCode": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePackagingLevelCodeList",
+			"description": "The code specifying the level of this logistics package."
+		},
+		"parentId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique parent identifier for this logistics package."
+		},
+		"perPackageUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A number of units per package in this logistics package."
+		},
+		"physicalShippingMarks": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceShippingMarks"
+			},
+			"description": "Physical shipping marks and barcode information for this logistics package."
+		},
+		"returnableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this logistics package is returnable."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number of this logistics package."
+		},
+		"seriesEndId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the end of a series of packages within this logistics package."
+		},
+		"seriesStartId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique start identifier of a series of packages within this logistics package."
+		},
+		"specifiedLineTradeDelivery": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLineTradeDelivery",
+			"description": "The line trade delivery specified for this logistics package."
+		},
+		"statedCondition": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCondition"
+			},
+			"description": "A stated condition of this logistics package."
+		},
+		"usedPackaging": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
+			},
+			"description": "Supply chain packaging used for this logistics package."
+		},
+		"volumeUnitGrossVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType",
+			"description": "The measure of the gross volume of this referenced logistics package."
+		},
+		"weightUnitGrossWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure of the gross weight (mass) of this referenced logistics package and its contents."
+		},
+		"weightUnitNetWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure of the net weight (mass) of the contents of this referenced logistics package."
+		},
+		"weightUnitTareWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure of the tare weight of this logistics package."
+		}
+	},
+	"required": ["type"]
+}

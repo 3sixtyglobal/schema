@@ -1,0 +1,207 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGuestPerson",
+	"title": "UneceGuestPerson",
+	"description": "An individual guest.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GuestPerson",
+			"description": "JSON-LD Type."
+		},
+		"accompanyingAnimal": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePetAnimal"
+			},
+			"description": "A pet animal accompanying this guest person."
+		},
+		"applicableSpecifiedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+			},
+			"description": "A note applicable to this guest person."
+		},
+		"birthDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value which specifies the birth date for this guest.",
+			"format": "date-time"
+		},
+		"carriedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A certificate carried by this guest person."
+		},
+		"claimedLanguageProficiency": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLanguageProficiency"
+			},
+			"description": "Personal language proficiency skills claimed by this guest person."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this guest person."
+		},
+		"durationUnitAgeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"description": "The measure of the age of this guest person."
+		},
+		"genderCode": {
+			"type": "string",
+			"description": "The code specifying the gender of this guest, such as male, female."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this guest."
+		},
+		"languageId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the language of this guest."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, by which this guest person is known."
+		},
+		"notifiedAllergy": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAllergy"
+			},
+			"description": "An allergy notified for this guest person."
+		},
+		"notifiedDisability": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDisability"
+			},
+			"description": "A disability notified for this guest person."
+		},
+		"notifiedFoodChoice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceFoodChoice"
+			},
+			"description": "A food choice notified for this guest person."
+		},
+		"notifiedGuestArrival": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGuestArrival"
+			},
+			"description": "An arrival notified for this guest person."
+		},
+		"notifiedHealthIndication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGuestHealthIndication"
+			},
+			"description": "A health indication notified for this guest person."
+		},
+		"notifiedPreference": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePreference"
+			},
+			"description": "An experience item preference notified for this guest person."
+		},
+		"notifiedProtectionMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProtectionMeans"
+			},
+			"description": "A disease protection means notified for this guest person."
+		},
+		"passportId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the passport of this guest."
+		},
+		"raisedQuery": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecialQuery"
+			},
+			"description": "A special query raised for this guest person."
+		},
+		"residenceCountryId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the residence country of this guest person."
+		},
+		"roleCode": {
+			"type": "string",
+			"description": "The code specifying the role of this guest person."
+		},
+		"specifiedCarriedEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCarriedEquipment"
+			},
+			"description": "Carried equipment specified for this guest person."
+		},
+		"specifiedPaymentMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentMeans"
+			},
+			"description": "A trade settlement payment means specified for this guest person."
+		},
+		"title": {
+			"type": "string",
+			"description": "A title, expressed as text, associated with this guest person, such as Doctor, Mr., Mrs., Ms."
+		},
+		"titleCode": {
+			"type": "string",
+			"description": "The code specifying the title of this guest person."
+		},
+		"travelInsuranceCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A travel insurance certificate for this guest person."
+		},
+		"usedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "A universal communication used by this guest."
+		}
+	},
+	"required": ["type"]
+}

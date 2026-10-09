@@ -1,0 +1,86 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLegalOrganization",
+	"title": "UneceLegalOrganization",
+	"description": "An organization set up on a legal basis as a business, government body, department, charity, or financial institution.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LegalOrganization",
+			"description": "JSON-LD Type."
+		},
+		"authorizedRegistration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLegalRegistration"
+			},
+			"description": "A legal registration authorized for this legally set up organization."
+		},
+		"businessTypeCode": {
+			"type": "string",
+			"description": "A code specifying the type of business of this legally set up organization."
+		},
+		"districtId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of the district area regarded as a geographic or administrative unit within which this legally set\nup organization operates."
+		},
+		"establishedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this legally set up organization was established.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this legally set up organization."
+		},
+		"legalClassificationCode": {
+			"type": "string",
+			"description": "The code specifying the legal classification of this organization, such as Incorporated (Inc), Limited Liability\nCorporation (LLC) or non-profit."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this legally set up organization."
+		},
+		"postalAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
+			},
+			"description": "A postal address for this legally set up organization."
+		},
+		"tradingBusinessName": {
+			"type": "string",
+			"description": "The trading business name, expressed as text, of this legally set up organization."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLegalOrganizationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of legally set up organization."
+		}
+	},
+	"required": ["type"]
+}

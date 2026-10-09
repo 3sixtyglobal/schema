@@ -1,0 +1,145 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductCharacteristic",
+	"title": "UneceProductCharacteristic",
+	"description": "A prominent attribute or aspect of a product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"applicableCondition": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristicCondition"
+			},
+			"description": "A condition applicable to this product characteristic."
+		},
+		"applicableCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A country applicable to this product characteristic."
+		},
+		"applicableStandard": {
+			"$ref": "https://schema.3sixty.global/unece/UneceStandard",
+			"description": "The referenced standard that is applicable to this product characteristic."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this product characteristic."
+		},
+		"contentTypeCode": {
+			"type": "string",
+			"description": "A code specifying the content type of this product characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this product characteristic."
+		},
+		"measurementMethodCode": {
+			"type": "string",
+			"description": "A code specifying a measurement method for this product characteristic."
+		},
+		"productCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this product characteristic."
+		},
+		"targetMarketDescription": {
+			"type": "string",
+			"description": "A textual description of a target market for this product characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of product characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this product characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The value, expressed as an amount, for this product characteristic."
+		},
+		"valueBinaryFile": {
+			"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile",
+			"description": "The value for this product characteristic expressed in a binary file."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value for this product characteristic expressed as a date, time, date time, or other date time value.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value for this product characteristic expressed as an indicator."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this product characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for a value of this product characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this product characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for a value of this product characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for a value of this product characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for a value of this product characteristic."
+		}
+	},
+	"required": ["type"]
+}

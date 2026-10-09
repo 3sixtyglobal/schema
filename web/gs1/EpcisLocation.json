@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisLocation",
+	"title": "EpcisLocation",
+	"description": "EPCIS 2.0 Location reference (readPoint/bizLocation) that wraps a location\nidentifier.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "The location identifier (URI/IRI per EPCIS schema and SHACL)."
+		}
+	},
+	"required": ["id"]
+}

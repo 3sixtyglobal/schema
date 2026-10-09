@@ -1,16 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+	"$id": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
+	"title": "ImmutableProofVerification",
 	"description": "Interface describing an immutable proof verification.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"type": "string",
-			"const": "https://schema.twindev.org/immutable-proof/",
+			"const": "https://schema.3sixty.global/immutable-proof/",
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ImmutableProofVerification",
 			"description": "JSON-LD Type."
 		},
@@ -19,10 +18,9 @@
 			"description": "Was the verification successful."
 		},
 		"failure": {
-			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofFailure",
+			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofFailure",
 			"description": "If the verification was unsuccessful the failure reason."
 		}
 	},
-	"required": ["@context", "type", "verified"],
-	"additionalProperties": false
+	"required": ["@context", "type", "verified"]
 }

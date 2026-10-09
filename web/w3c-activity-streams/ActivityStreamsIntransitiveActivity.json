@@ -1,0 +1,165 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsIntransitiveActivity",
+	"title": "ActivityStreamsIntransitiveActivity",
+	"description": "A W3C Activity Streams IntransitiveActivity.\n\n`IntransitiveActivity` objects do not have an `object` property.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "IntransitiveActivity"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "IntransitiveActivity"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Intransitive activity type."
+		},
+		"actor": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The Actor behind the Activity."
+		},
+		"target": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "The target of the Activity."
+		},
+		"result": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Result of the Activity."
+		},
+		"origin": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Activity's origin."
+		},
+		"instrument": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Instrument used in the Activity."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

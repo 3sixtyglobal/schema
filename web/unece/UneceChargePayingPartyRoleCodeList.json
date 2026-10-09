@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceChargePayingPartyRoleCodeList",
+	"title": "UneceChargePayingPartyRoleCodeList",
+	"description": "A character string used to represent the charge paying party role.",
+	"anyOf": [
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AB",
+			"description": "Buyer's agent/representative: AB."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AE",
+			"description": "Declarant's agent/representative: AE."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AF",
+			"description": "Transit principal: AF."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AH",
+			"description": "Transit principal's agent/representative: AH."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AQ",
+			"description": "Approved consignor: AQ."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AR",
+			"description": "Authorized exporter: AR."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AT",
+			"description": "Authorized importer: AT."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#AU",
+			"description": "Authorized trader (transit): AU."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CA",
+			"description": "Carrier: CA."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CG",
+			"description": "Carrier's agent: CG."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CN",
+			"description": "Consignee: CN."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CPD",
+			"description": "Charges payer at destination: CPD."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CX",
+			"description": "Consignee's agent: CX."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#CZ",
+			"description": "Consignor: CZ."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#DGB",
+			"description": "Invoice processing party: DGB."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#EX",
+			"description": "Exporter: EX."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#FW",
+			"description": "Freight forwarder: FW."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#GS",
+			"description": "Consignor's representative: GS."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#IM",
+			"description": "Importer: IM."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#IV",
+			"description": "Invoicee: IV."
+		},
+		{
+			"const": "unece:ChargePayingPartyRoleCodeList#PE",
+			"description": "Payee: PE."
+		}
+	]
+}

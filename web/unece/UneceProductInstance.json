@@ -1,0 +1,322 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductInstance",
+	"title": "UneceProductInstance",
+	"description": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural\nprocess.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductInstance",
+			"description": "JSON-LD Type."
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The actual quantity of items in this trade product instance."
+		},
+		"ammunitionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique ammunition identifier for this trade product instance."
+		},
+		"applicableClassification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceClassification"
+			},
+			"description": "A product classification applicable to this trade product instance."
+		},
+		"applicableGoodsCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic"
+			},
+			"description": "A distinguishing material feature applicable to this trade product instance."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this trade product instance."
+		},
+		"appliedProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductHandlingProcess"
+			},
+			"description": "A product handling process applied to this trade product instance, such as manufacturing or storage."
+		},
+		"batchId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique batch identifier for this trade product instance."
+		},
+		"bestBeforeDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade\nproduct instance.",
+			"format": "date-time"
+		},
+		"brandNameAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "An additional brand name information note for this trade product instance."
+		},
+		"ceramicCapacitorId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The ceramic capacitor identifier of this trade product instance."
+		},
+		"certificationEvidenceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document providing evidence of certification for this trade product instance."
+		},
+		"commonName": {
+			"type": "string",
+			"description": "A common name, expressed as text, for this trade product instance."
+		},
+		"dNAMarkerId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The DNA marker identifier of this trade product instance."
+		},
+		"disposalReasonCode": {
+			"type": "string",
+			"description": "A code specifying a disposal reason for this trade product instance."
+		},
+		"ePCId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The EPC (Electronic Product Code) identifier of this trade product instance."
+		},
+		"equipmentId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique equipment identifier for this trade product instance."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of expiry of the items contained in the trade product instance.",
+			"format": "date-time"
+		},
+		"globalSerialId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique global serial identifier for this trade product instance."
+		},
+		"iUIDId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique Department of Defense Item Unique Identifier (IUID) for this trade product instance."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this trade product instance."
+		},
+		"ingredientAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing additional ingredient information for this trade product instance."
+		},
+		"inspectionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced inspection document for this trade product instance."
+		},
+		"inspectionEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The inspection event for this trade product instance."
+		},
+		"intendedUse": {
+			"type": "string",
+			"description": "An intended use, expressed as text, for this trade product instance."
+		},
+		"kanbanId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique kanban identifier for this trade product instance."
+		},
+		"lotId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique lot identifier for this trade product instance."
+		},
+		"manufacturerAssignedSerialId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique manufacturer assigned serial identifier for this trade product instance."
+		},
+		"originLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A location of origin for this supply chain product instance."
+		},
+		"packagingEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The packaging event for this trade product instance."
+		},
+		"processingEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The processing event for this trade product instance."
+		},
+		"productCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic for this trade product instance."
+		},
+		"productionEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The production event for this trade product instance."
+		},
+		"qualityGradeAdditionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing additional quality grade information for this trade product instance."
+		},
+		"reclassificationEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A reclassification supply chain event for this trade product instance."
+		},
+		"registrationId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique registration identifier, such as a vehicle licence plate identification, for this trade product instance."
+		},
+		"scientificName": {
+			"type": "string",
+			"description": "A scientific name, expressed as text, for this trade product instance."
+		},
+		"sellByDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value by after which the items contained in the trade product instance\nshould not be sold.",
+			"format": "date-time"
+		},
+		"serialId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique serial identifier for this trade product instance."
+		},
+		"supplierAssignedSerialId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique supplier assigned serial identifier for this trade product instance."
+		},
+		"usedPackaging": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging",
+			"description": "Packaging used for this trade product instance."
+		}
+	},
+	"required": ["type"]
+}

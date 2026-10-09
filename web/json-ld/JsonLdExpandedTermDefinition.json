@@ -1,78 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition",
-	"description": "An expanded term definition is used to describe the mapping between a term and its expanded identifier, as well as other properties of the value associated with the term when it is used as key in a node object.",
-	"anyOf": [
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdExpandedTermDefinition",
+	"title": "JsonLdExpandedTermDefinition",
+	"description": "An expanded term definition is used to describe the mapping between a term\nand its expanded identifier, as well as other properties of the value\nassociated with the term when it is used as key in a node object.",
+	"allOf": [
 		{
 			"type": "object",
-			"additionalProperties": false,
 			"properties": {
-				"@id": {
+				"@type": {
 					"anyOf": [
+						{
+							"const": "@id"
+						},
+						{
+							"const": "@json"
+						},
+						{
+							"const": "@none"
+						},
+						{
+							"const": "@vocab"
+						},
 						{
 							"type": "string"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
-						},
-						{
-							"type": "null"
 						}
 					]
-				},
-				"@nest": {
-					"type": "string"
-				},
-				"@container": {
-					"anyOf": [
-						{
-							"type": "string",
-							"const": "@list"
-						},
-						{
-							"type": "string",
-							"const": "@set"
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"anyOf": [
-										{
-											"type": "string",
-											"const": "@list"
-										},
-										{
-											"type": "string",
-											"const": "@set"
-										},
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-										}
-									]
-								}
-							]
-						},
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray"
-						},
-						{
-							"type": "null"
-						}
-					]
-				},
-				"@type": {
-					"type": "string"
 				},
 				"@language": {
 					"type": "string"
@@ -81,7 +33,7 @@
 					"type": "string"
 				},
 				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinition"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinition"
 				},
 				"@prefix": {
 					"type": "boolean"
@@ -95,39 +47,100 @@
 			}
 		},
 		{
-			"type": "object",
-			"additionalProperties": false,
-			"properties": {
-				"@reverse": {
-					"type": "string"
+			"anyOf": [
+				{
+					"type": "object",
+					"properties": {
+						"@id": {
+							"anyOf": [
+								{
+									"type": "string"
+								},
+								{
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								{
+									"type": "null"
+								}
+							]
+						},
+						"@nest": {
+							"anyOf": [
+								{
+									"const": "@nest"
+								},
+								{
+									"type": "string"
+								}
+							]
+						},
+						"@container": {
+							"anyOf": [
+								{
+									"anyOf": [
+										{
+											"const": "@list"
+										},
+										{
+											"const": "@set"
+										},
+										{
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
+										}
+									]
+								},
+								{
+									"type": "array",
+									"items": {
+										"anyOf": [
+											{
+												"const": "@list"
+											},
+											{
+												"const": "@set"
+											},
+											{
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
+											}
+										]
+									}
+								},
+								{
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerTypeArray"
+								},
+								{
+									"type": "null"
+								}
+							]
+						}
+					}
 				},
-				"@container": {
-					"type": ["string", "null"],
-					"enum": ["@set", "@index", null]
-				},
-				"@type": {
-					"type": "string"
-				},
-				"@language": {
-					"type": "string"
-				},
-				"@index": {
-					"type": "string"
-				},
-				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinition"
-				},
-				"@prefix": {
-					"type": "boolean"
-				},
-				"@propagate": {
-					"type": "boolean"
-				},
-				"@protected": {
-					"type": "boolean"
+				{
+					"type": "object",
+					"properties": {
+						"@reverse": {
+							"type": "string"
+						},
+						"@container": {
+							"anyOf": [
+								{
+									"const": "@set"
+								},
+								{
+									"const": "@index"
+								},
+								{
+									"type": "null"
+								}
+							]
+						}
+					},
+					"required": ["@reverse"]
 				}
-			},
-			"required": ["@reverse"]
+			]
 		}
 	]
 }

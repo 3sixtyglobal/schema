@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCustomsValuation",
+	"title": "UneceCustomsValuation",
+	"description": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CustomsValuation",
+			"description": "JSON-LD Type."
+		},
+		"addedAdjustmentAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the adjustment added for this cross-border customs valuation."
+		},
+		"addedAdjustmentPercent": {
+			"type": "string",
+			"description": "The adjustment added, expressed as a percentage, for this cross-border customs valuation."
+		},
+		"applicableCurrencyExchange": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
+			"description": "The trade related currency exchange applicable to this cross-border customs valuation."
+		},
+		"buyerSellerRelationshipIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is a relationship between the buyer and the seller, such as a financial\nrelationship, for this cross-border customs valuation."
+		},
+		"buyerSellerRelationshipPriceInfluenceIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the buyer seller relationship influences the price of the goods for this cross-border\ncustoms valuation."
+		},
+		"chargeApportionMethodCode": {
+			"type": "string",
+			"description": "The code specifying the method of the apportion of charges for this cross-border customs valuation."
+		},
+		"deductedAdjustmentAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the adjustment deducted for this cross-border customs valuation."
+		},
+		"deductedAdjustmentPercent": {
+			"type": "string",
+			"description": "The adjustment deducted, expressed as a percentage, for this cross-border customs valuation."
+		},
+		"methodCode": {
+			"type": "string",
+			"description": "The code specifying the method by which this cross-border customs valuation is determined."
+		},
+		"otherChargeAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value added or subtracted from the total invoice price not previously taken into account for this\ncross-border customs valuation."
+		},
+		"royaltyLicenseFeeIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is a royalty or licence fee related to the goods for this cross-border customs\nvaluation."
+		},
+		"salePriceConditionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is a condition imposed on the sale price of the goods for this cross-border\ncustoms valuation."
+		},
+		"saleRestriction": {
+			"type": "string",
+			"description": "A restriction, expressed as text, imposed on the sale of the goods for this cross-border customs valuation."
+		},
+		"saleRestrictionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs\nvaluation."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCustomsValuationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of cross-border customs valuation."
+		},
+		"wTOAdditionCode": {
+			"type": "string",
+			"description": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the\nassessment of this cross-border customs valuation."
+		}
+	},
+	"required": ["type"]
+}

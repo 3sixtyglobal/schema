@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportEventTypeCodes",
+	"title": "DcsaTransportEventTypeCodes",
+	"description": "DCSA transport event type codes.",
+	"anyOf": [
+		{
+			"const": "ARRI",
+			"description": "Arrived."
+		},
+		{
+			"const": "DEPA",
+			"description": "Departed."
+		}
+	]
+}

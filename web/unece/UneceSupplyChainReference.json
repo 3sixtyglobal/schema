@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSupplyChainReference",
+	"title": "UneceSupplyChainReference",
+	"description": "The identification of related information in a supply chain context.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SupplyChainReference",
+			"description": "JSON-LD Type."
+		},
+		"abbreviation": {
+			"type": "string",
+			"description": "An abbreviation, expressed as text, for this supply chain reference."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text, for this supply chain reference."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this supply chain reference."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this supply chain reference."
+		},
+		"propertyReferenceCode": {
+			"type": "string",
+			"description": "A code specifying a property reference for this supply chain reference."
+		},
+		"status": {
+			"type": "string",
+			"description": "A status, expressed as text, for this supply chain reference."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainReferenceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of supply chain reference."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this supply chain reference."
+		},
+		"valueCode": {
+			"type": "string",
+			"description": "A value, expressed as a code, for this supply chain reference."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceShippingMarks",
+	"title": "UneceShippingMarks",
+	"description": "Physical markings or labels on individual packages or transport units for logistics purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ShippingMarks",
+			"description": "JSON-LD Type."
+		},
+		"barcodeLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "A barcode label that is a part of these logistics shipping marks."
+		},
+		"logisticsShippingMarksMarkingInstructionCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceMarkingInstructionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a marking instruction for these logistics shipping marks."
+		},
+		"logisticsShippingMarksPackageCategoryCode": {
+			"type": "string",
+			"description": "The code specifying the package category for these logistics shipping marks."
+		},
+		"marking": {
+			"type": "string",
+			"description": "Marking, expressed as text, for these logistics shipping marks."
+		},
+		"rFIDLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
+		},
+		"radioactiveLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "Radioactive labelling that is a part of these logistics shipping marks."
+		},
+		"vINLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
+		}
+	},
+	"required": ["type"]
+}

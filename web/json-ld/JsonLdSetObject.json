@@ -1,22 +1,20 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdSetObject",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdSetObject",
+	"title": "JsonLdSetObject",
 	"description": "A set represents an unordered set of values.",
 	"type": "object",
 	"properties": {
 		"@set": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdListOrSetItem"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdListOrSetItem"
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdListOrSetItem"
-						}
-					]
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdListOrSetItem"
+					}
 				}
 			]
 		},
@@ -24,6 +22,5 @@
 			"type": "string"
 		}
 	},
-	"required": ["@set"],
-	"additionalProperties": false
+	"required": ["@set"]
 }

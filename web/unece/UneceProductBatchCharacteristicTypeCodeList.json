@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductBatchCharacteristicTypeCodeList",
+	"title": "UneceProductBatchCharacteristicTypeCodeList",
+	"description": "Values for UneceProductBatchCharacteristic typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableProductBatchCharacteristic",
+			"description": "A product batch characteristic applicable to this product batch."
+		},
+		{
+			"const": "unece:specifiedProductBatchCharacteristic",
+			"description": "A product batch characteristic specified for this product batch."
+		}
+	]
+}

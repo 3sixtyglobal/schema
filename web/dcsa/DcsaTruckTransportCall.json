@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTruckTransportCall",
+	"title": "DcsaTruckTransportCall",
+	"description": "Truck transport call details.\n\nSource: `truckTransportCall` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"modeOfTransport": {
+			"const": "TRUCK",
+			"description": "Discriminator for the transport mode."
+		},
+		"licencePlate": {
+			"type": "string",
+			"description": "Truck license plate."
+		},
+		"chassisLicencePlate": {
+			"type": "string",
+			"description": "Chassis license plate."
+		}
+	},
+	"required": ["modeOfTransport"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase"
+		}
+	]
+}

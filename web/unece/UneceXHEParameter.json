@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceXHEParameter",
+	"title": "UneceXHEParameter",
+	"description": "A feature that is fixed for an XHE (Exchange Header Envelope) but may be different in other cases.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "XHEParameter",
+			"description": "JSON-LD Type."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceXHEParameterTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of XHE parameter."
+		},
+		"value": {
+			"type": "string",
+			"description": "The value, expressed as text, of this XHE parameter."
+		}
+	},
+	"required": ["type", "typeCode", "value"]
+}

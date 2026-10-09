@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatRelationship",
+	"title": "DcatRelationship",
+	"description": "Interface for DCAT Relationship.\nAn association class for attaching additional information to a relationship\nbetween DCAT Resources.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
+		},
+		"@type": {
+			"const": "dcat:Relationship",
+			"description": "The type identifier, typically \"Relationship\"."
+		},
+		"dcterms:relation": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The link to a related resource."
+		},
+		"dcat:hadRole": {
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatRole",
+			"description": "The function of an entity or agent with respect to another resource."
+		}
+	},
+	"required": ["@context", "@type"]
+}

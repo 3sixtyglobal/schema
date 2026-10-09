@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDeliveryAdjustment",
+	"title": "UneceDeliveryAdjustment",
+	"description": "A correction or modification to reflect actual delivery conditions.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "DeliveryAdjustment",
+			"description": "JSON-LD Type."
+		},
+		"actualAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "An actual monetary value added or subtracted as a result of this delivery adjustment."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of this delivery adjustment.",
+			"format": "date-time"
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The actual quantity added or subtracted as a result of this delivery adjustment."
+		},
+		"adjustmentReasonCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAdjustmentReasonCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying a reason for this delivery adjustment."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this delivery adjustment."
+		}
+	},
+	"required": ["type"]
+}

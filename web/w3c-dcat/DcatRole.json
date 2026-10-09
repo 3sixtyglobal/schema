@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatRole",
+	"title": "DcatRole",
+	"description": "Interface for DCAT Role.\nA role is the function of a resource or agent with respect to another resource,\nin the context of resource attribution or resource relationships.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
+			"description": "The JSON-LD context for the resource."
+		},
+		"@type": {
+			"const": "dcat:Role",
+			"description": "The type identifier, typically \"Role\"."
+		},
+		"@id": {
+			"type": "string",
+			"description": "The unique identifier for the role object."
+		},
+		"dcterms:title": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A name given to the role."
+		}
+	},
+	"required": ["@context", "@type"]
+}

@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeProductFeature",
+	"title": "UneceTradeProductFeature",
+	"description": "Distinctive or characteristic parts of a trade product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TradeProductFeature",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this trade product feature."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this trade product feature."
+		},
+		"marketingMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A marketing measure for this trade product feature."
+		},
+		"marketingPhrase": {
+			"type": "string",
+			"description": "A catch phrase, expressed as text, for marketing of this trade product feature."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this trade product feature."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceTradeProductFeatureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of trade product feature."
+		}
+	},
+	"required": ["type"]
+}

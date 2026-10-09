@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceEmissionTypeCodeList",
+	"title": "UneceEmissionTypeCodeList",
+	"description": "Values for UneceEmission typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:certifiedEmission",
+			"description": "A certified level of pollution calculated for an emission from this logistics transport means."
+		},
+		{
+			"const": "unece:specifiedEmission",
+			"description": "A calculated emission specified for this logistics transport means.\nA calculated emission specified for this logistics transport movement."
+		}
+	]
+}

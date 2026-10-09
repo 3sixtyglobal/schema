@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceObservationObjectiveParameter",
+	"title": "UneceObservationObjectiveParameter",
+	"description": "A feature that is fixed for the case in question but may be different in other cases for this observation objective.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ObservationObjectiveParameter",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this observation objective parameter."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this observation objective parameter."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this observation objective parameter."
+		},
+		"parameterType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this observation objective parameter."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this observation objective parameter."
+		},
+		"statusValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the status value for this observation objective parameter."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceObservationObjectiveParameterTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of observation objective parameter, such as retailer, country, toxic standard or\nexamination type."
+		},
+		"value": {
+			"type": "string",
+			"description": "The value, expressed as text, of this observation objective parameter."
+		},
+		"valueAllowedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this value is allowed for this parameter observation objective."
+		},
+		"valueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the value for this observation objective parameter."
+		}
+	},
+	"required": ["type"]
+}

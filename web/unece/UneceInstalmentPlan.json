@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInstalmentPlan",
+	"title": "UneceInstalmentPlan",
+	"description": "A plan for paying a total sum of money by several payments made over a period of time.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InstalmentPlan",
+			"description": "JSON-LD Type."
+		},
+		"specifiedInstalmentPayment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInstalmentPayment"
+			},
+			"description": "An instalment payment specified for this instalment plan."
+		}
+	},
+	"required": ["type", "specifiedInstalmentPayment"]
+}

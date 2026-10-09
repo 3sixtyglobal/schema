@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePairing",
+	"title": "UnecePairing",
+	"description": "The process by which two potentially communicating entities are linked.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Pairing",
+			"description": "JSON-LD Type."
+		},
+		"matchingEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunicationEvent"
+			},
+			"description": "A matching event for this communication pairing."
+		},
+		"methodCode": {
+			"type": "string",
+			"description": "The code specifying the method of this communication pairing."
+		},
+		"pairedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the entity is paired in this communication pairing."
+		},
+		"targetEntityId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the target entity for this communication pairing."
+		}
+	},
+	"required": ["type"]
+}

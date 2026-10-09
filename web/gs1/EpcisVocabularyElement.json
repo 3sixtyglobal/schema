@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisVocabularyElement",
+	"title": "EpcisVocabularyElement",
+	"description": "EPCIS 2.0 VocabularyElement representing a master data entity with\nattributes and optional children.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Element id."
+		},
+		"attributes": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisAttribute"
+			},
+			"description": "Attributes."
+		},
+		"children": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "Children."
+		}
+	},
+	"required": ["id"]
+}

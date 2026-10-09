@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaReeferEvent",
+	"title": "DcsaReeferEvent",
+	"description": "Reefer event.\n\nSource: `reeferEvent` schema in the DCSA Event Domain (v3.1.0).\n\nRetraction rule: if `metadata.retractedEventID` is set, `payload` MUST NOT be present.",
+	"oneOf": [
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferEventMetadataActive",
+					"description": "Event metadata."
+				},
+				"payload": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferPayload",
+					"description": "Event payload."
+				}
+			},
+			"required": ["metadata", "payload"]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferEventMetadataRetraction",
+					"description": "Retraction metadata."
+				},
+				"payload": {
+					"not": {},
+					"description": "Must not be present for retractions."
+				}
+			},
+			"required": ["metadata"]
+		}
+	]
+}

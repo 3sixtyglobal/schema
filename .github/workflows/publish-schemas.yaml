@@ -1,0 +1,51 @@
+name: Publish Schemas
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  deployments: write
+
+env:
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_SCHEMA }}
+  VERCEL_ORG_ID: ${{ secrets.ORG_VERCEL_ORG_ID }}
+
+jobs:
+  deploy:
+    runs-on: ${{ github.event.repository.private && fromJSON('{"group":"3sixty","labels":"self-hosted"}') || 'ubuntu-latest' }}
+
+    steps:
+      # Clone the main branch to the runner
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Using GITHUB_TOKEN makes actions run as github-actions bot
+          ref: main
+          fetch-depth: 0 # Needed for merge operations
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      # Deploy To vercel and output the deployment URL as a GitHub output from the step
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          DEPLOYMENT_URL=$(npx --yes vercel deploy \
+          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
+          --scope=${{ secrets.ORG_VERCEL_SCOPE }} \
+          --target=production \
+          --force)
+          echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+
+      # Use the deployment URL to set an alias for the deployment
+      - name: Set Alias
+        run: |
+          npx --yes vercel alias set \
+          ${{ steps.deploy.outputs.deployment-url }} \
+          ${{ secrets.DOMAIN_SCHEMA_PROD }} \
+          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
+          --scope=${{ secrets.ORG_VERCEL_SCOPE }}

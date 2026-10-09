@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceStandardTypeCodeList",
+	"title": "UneceStandardTypeCodeList",
+	"description": "Values for UneceStandard typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableStandard",
+			"description": "A referenced standard applicable to this agricultural certificate.\nA referenced standard applicable to this animal certificate.\nA referenced standard applicable to this compliance policy.\nA referenced standard applicable to this organization characteristic.\nA referenced standard applicable to this organizational certificate.\nA referenced standard applicable to this organizational certification.\nA referenced standard applicable to this process certificate.\nA referenced standard applicable to this process certification.\nA referenced standard applicable to this process characteristic.\nA referenced standard applicable to this product batch certificate.\nA referenced standard applicable to this product batch certification.\nA referenced standard applicable to this product batch characteristic.\nA referenced standard applicable to this product certificate.\nA referenced standard applicable to this product colour.\nA referenced standard applicable to this specified assessment.\nA referenced standard applicable to this specified certificate.\nA referenced standard applicable to this sustainability assertion.\nA referenced standard applicable to this sustainability characteristic.\nA referenced standard applicable to this sustainability inspection.\nA referenced standard applicable to this technical characteristic.\nA referenced standard applicable to this trade product certification.\nThe referenced standard that is applicable to this product characteristic.\nThe referenced standard that is applicable to this product classification."
+		},
+		{
+			"const": "unece:associatedStandard",
+			"description": "A referenced standard associated to this specified licence.\nA referenced standard associated with this production process.\nA referenced standard associated with this specified declaration.\nA referenced standard associated with this supply chain trade transaction."
+		},
+		{
+			"const": "unece:inspectionStandard",
+			"description": "A referenced inspection standard for this specified inspection result."
+		},
+		{
+			"const": "unece:relatedStandard",
+			"description": "A referenced standard related to this specified certification."
+		}
+	]
+}

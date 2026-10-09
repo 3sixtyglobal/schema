@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
+	"title": "UneceCurrencyExchange",
+	"description": "The conversion of one currency to another for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CurrencyExchange",
+			"description": "JSON-LD Type."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An associated document referenced for this trade related currency exchange."
+		},
+		"conversionRate": {
+			"type": "string",
+			"description": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
+		},
+		"conversionRateDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange.",
+			"format": "date-time"
+		},
+		"currencySourceCurrencyCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the source currency of a trade related currency conversion."
+		},
+		"currencyTargetCurrencyCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the target currency of a trade related currency conversion."
+		},
+		"document": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A document referenced for this trade related currency exchange."
+		},
+		"sourceUnitBasisNumeric": {
+			"type": "string",
+			"description": "The numeric unit basis of the source currency used in this trade related currency exchange rate calculation."
+		},
+		"targetUnitBaseNumeric": {
+			"type": "string",
+			"description": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
+		},
+		"tradeCurrencyExchangeMarketId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+		}
+	},
+	"required": ["type"]
+}

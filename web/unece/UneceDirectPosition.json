@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDirectPosition",
+	"title": "UneceDirectPosition",
+	"description": "A specified physical location described within a coordinate reference system.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "DirectPosition",
+			"description": "JSON-LD Type."
+		},
+		"axisLabelList": {
+			"type": "string",
+			"description": "An ordered list of axis labels, expressed as text, for this specified direct position."
+		},
+		"coordinateReferenceDimension": {
+			"type": "string",
+			"description": "A coordinate reference dimension, expressed as text, for this specified direct position."
+		},
+		"countNumeric": {
+			"type": "string",
+			"description": "A count for this specified direct position."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of the reference for this specified direct position."
+		},
+		"uOMLabelList": {
+			"type": "string",
+			"description": "An ordered list of Unit Of Measure (UOM) labels, expressed as text, for this specified direct position."
+		}
+	},
+	"required": ["type"]
+}

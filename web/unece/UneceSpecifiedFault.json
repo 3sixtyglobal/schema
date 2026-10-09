@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedFault",
+	"title": "UneceSpecifiedFault",
+	"description": "An unattractive or unsatisfactory characteristic.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedFault",
+			"description": "JSON-LD Type."
+		},
+		"actualSpecifiedPercent": {
+			"type": "string",
+			"description": "The actual percentage of this specified fault."
+		},
+		"actualSpecifiedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The actual total quantity of this specified fault."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category for this fault."
+		},
+		"classificationCode": {
+			"type": "string",
+			"description": "The code specifying the classification for this fault."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified fault."
+		},
+		"estimatedSpecifiedPercent": {
+			"type": "string",
+			"description": "The estimated percentage of this specified fault."
+		},
+		"faultType": {
+			"type": "string",
+			"description": "A type, expressed as text, of this specified fault."
+		},
+		"operationalApplicableTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "An applicable operational tolerance of this specified fault."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFaultTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of fault."
+		}
+	},
+	"required": ["type"]
+}

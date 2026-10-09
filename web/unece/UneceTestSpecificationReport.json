@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTestSpecificationReport",
+	"title": "UneceTestSpecificationReport",
+	"description": "A report that specifies a certification test and its attributes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TestSpecificationReport",
+			"description": "JSON-LD Type."
+		},
+		"result": {
+			"type": "string",
+			"description": "A result, expressed as text, reported in this certification test specification report."
+		},
+		"standardName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the standard applicable for this certification test specification report."
+		},
+		"testName": {
+			"type": "string",
+			"description": "A test name, expressed as text, for this certification test specification report."
+		}
+	},
+	"required": ["type"]
+}

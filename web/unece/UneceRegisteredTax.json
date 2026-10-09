@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRegisteredTax",
+	"title": "UneceRegisteredTax",
+	"description": "A registered tax or duty system pertaining to an authority.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "RegisteredTax",
+			"description": "JSON-LD Type."
+		},
+		"currencyCode": {
+			"type": "string",
+			"description": "The code specifying the currency for this registered tax."
+		},
+		"customsDutyIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this registered tax is a customs duty."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this registered tax."
+		},
+		"exemptionReason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for exemption from this registered tax."
+		},
+		"exemptionReasonCode": {
+			"type": "string",
+			"description": "The code specifying the exemption reason for this registered tax."
+		},
+		"jurisdiction": {
+			"type": "string",
+			"description": "A jurisdiction, expressed as text, for this registered tax."
+		},
+		"registeredTaxTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of registered tax."
+		}
+	},
+	"required": ["type"]
+}

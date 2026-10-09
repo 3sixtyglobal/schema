@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/foaf/FoafPerson",
+	"title": "FoafPerson",
+	"description": "A FOAF Person.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"description": "The LD Context."
+		},
+		"@type": {
+			"const": "Person",
+			"description": "Type."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "The family name of some person."
+		},
+		"givenName": {
+			"type": "string",
+			"description": "The given name of some person."
+		},
+		"knows": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+					}
+				}
+			],
+			"description": "A person known by this person (indicating some level of reciprocated interaction between the parties)."
+		},
+		"img": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+			"description": "An image that can be used to represent some thing."
+		},
+		"nick": {
+			"type": "string",
+			"description": "A short informal nickname characterizing an agent (includes login identifiers, IRC and other chat nicknames)."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/foaf/FoafAgent"
+		}
+	]
+}

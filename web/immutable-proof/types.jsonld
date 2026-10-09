@@ -1,30 +1,19 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-immutable-proof": "https://schema.twindev.org/immutable-proof/",
-		"twin-common": "https://schema.twindev.org/common/",
+		"twin-immutable-proof": "https://schema.3sixty.global/immutable-proof/",
+		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"ImmutableProof": "https://schema.twindev.org/immutable-proof/ImmutableProof",
-		"ImmutableProofVerification": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
-		"proofObjectId": {
-			"@id": "twin-immutable-proof:proofObjectId",
-			"@type": "schema:Text"
-		},
-		"proofObjectHash": {
-			"@id": "twin-immutable-proof:proofObjectHash",
-			"@type": "schema:Text"
-		},
-		"proof": {
-			"@id": "twin-immutable-proof:proof"
-		},
-		"immutableReceipt": {
-			"@id": "twin-immutable-proof:immutableReceipt"
-		},
+		"ImmutableProof": "twin-immutable-proof:ImmutableProof",
+		"ImmutableProofDataIntegrity": "twin-immutable-proof:ImmutableProofDataIntegrity",
+		"ImmutableProofVerification": "twin-immutable-proof:ImmutableProofVerification",
 		"failure": {
 			"@id": "twin-immutable-proof:failure",
 			"@type": "schema:Text"
+		},
+		"notarizationId": {
+			"@id": "twin-immutable-proof:notarizationId"
 		}
 	}
 }

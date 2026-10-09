@@ -1,0 +1,243 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportPerson",
+	"title": "UneceTransportPerson",
+	"description": "A transport related person, such as a member of a crew or a passenger.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportPerson",
+			"description": "JSON-LD Type."
+		},
+		"attainedAcademicQualification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAcademicQualification"
+			},
+			"description": "An academic qualification attained by this transport person."
+		},
+		"birthCountryId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the birth country of this transport person."
+		},
+		"birthDateTime": {
+			"type": "string",
+			"description": "The birth date of this transport person.",
+			"format": "date-time"
+		},
+		"birthplaceName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the place where this transport person was born."
+		},
+		"bookingId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A booking identifier for this transport person."
+		},
+		"cabinId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A cabin identifier for this transport person."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying a category for this transport person, such as a member of crew or passenger."
+		},
+		"declaredPersonalEffects": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePersonalEffects"
+			},
+			"description": "Personal effects use declared by a transport person."
+		},
+		"disembarkationDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value that this person disembarked from a means of transport.",
+			"format": "date-time"
+		},
+		"disembarkationLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A disembarkation location for this transport person."
+		},
+		"emailURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "The email URI (Uniform Resource Identifier) communication for this transport person."
+		},
+		"embarkationDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value that this person embarked upon a means of transport.",
+			"format": "date-time"
+		},
+		"embarkationLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "An embarkation location for this transport person."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "A family name, expressed as text, for this transport person."
+		},
+		"genderCode": {
+			"type": "string",
+			"description": "A code specifying the gender of this transport person."
+		},
+		"givenName": {
+			"type": "string",
+			"description": "A given name, expressed as text, for this transport person."
+		},
+		"identifiedStowaway": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStowaway"
+			},
+			"description": "A transport person identified as a found stowaway."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this transport person."
+		},
+		"inTransitIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this transport person is in transit."
+		},
+		"landlineTelephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Landline telephone communication information for this transport person."
+		},
+		"mobileTelephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Mobile telephone communication information for this transport person."
+		},
+		"nationalityCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
+		},
+		"onboardIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this person is onboard a means of transport."
+		},
+		"partyRoleCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UnecePartyRoleCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a role of this transport person."
+		},
+		"passengerId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A passenger identifier for this transport person."
+		},
+		"reportedIllness": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceIllness"
+			},
+			"description": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
+		},
+		"role": {
+			"type": "string",
+			"description": "A role, expressed as text, of this transport person."
+		},
+		"specificAccreditation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAccreditation"
+			},
+			"description": "A certified accreditation specific to this transport person."
+		},
+		"transportPersonLanguageId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLanguageId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+		},
+		"transportPersonName": {
+			"type": "string",
+			"description": "The name or set of names, expressed as text, by which this transport person is known."
+		},
+		"travelIdentityDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced travel identity document for this transport person."
+		},
+		"travelVisaDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced travel visa document for this transport person."
+		}
+	},
+	"required": ["type"]
+}

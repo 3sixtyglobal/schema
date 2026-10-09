@@ -1,0 +1,101 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAuthentication",
+	"title": "UneceAuthentication",
+	"description": "A proof that a document is genuine.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Authentication",
+			"description": "JSON-LD Type."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of this document authentication.",
+			"format": "date-time"
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying a category for this document authentication."
+		},
+		"governmentActionTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGovernmentActionCodeList",
+			"description": "The code specifying the type of document authentication."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this document authentication."
+		},
+		"includedClause": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceClause"
+			},
+			"description": "A document clause included in this document authentication."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this document authentication."
+		},
+		"issueLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
+			"description": "The referenced location of issue of this document authentication."
+		},
+		"issueLogisticsLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"description": "The issue location for this document authentication."
+		},
+		"locationProviderParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The trade party providing the location for this document authentication."
+		},
+		"providerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The trade party providing this document authentication."
+		},
+		"representationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of representation of this document authentication, such as direct or indirect."
+		},
+		"signatory": {
+			"type": "string",
+			"description": "The signatory, expressed as text, for this document authentication."
+		},
+		"signatoryImageBinaryObject": {
+			"type": "string",
+			"description": "The signatory image, expressed as a binary object, for this document authentication.",
+			"contentEncoding": "base64"
+		},
+		"statement": {
+			"type": "string",
+			"description": "The statement, expressed as text, for this document authentication."
+		},
+		"statementCode": {
+			"type": "string",
+			"description": "The code specifying the statement for this document authentication."
+		},
+		"transportMeansId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of a transport means for this document authentication."
+		}
+	},
+	"required": ["type"]
+}

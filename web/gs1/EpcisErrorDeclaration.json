@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisErrorDeclaration",
+	"title": "EpcisErrorDeclaration",
+	"description": "EPCIS 2.0 ErrorDeclaration describing corrections to previously captured\nevents.",
+	"type": "object",
+	"properties": {
+		"declarationTime": {
+			"type": "string",
+			"description": "The date and time at which the declaration of error is made."
+		},
+		"reason": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/gs1/EpcisErrorReasonTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "Reason for the error.\n\nUse {@link EpcisErrorReasonTypes} for known values."
+		},
+		"correctiveEventIDs": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "(Optional) If present, indicates that the events having the specified URIs as\nthe value of their eventID fields are to be considered as \"corrections\" to\nthe event declared erroneous by this event."
+		}
+	},
+	"required": ["declarationTime"]
+}

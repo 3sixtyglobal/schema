@@ -1,0 +1,119 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProcessCertificate",
+	"title": "UneceProcessCertificate",
+	"description": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required\ncriteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProcessCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this process certificate.",
+			"format": "date-time"
+		},
+		"applicableAssertion": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAssertion",
+			"description": "The sustainability assertion applicable to this process certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object for which this process certificate is applicable."
+		},
+		"applicableProcessCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertification"
+			},
+			"description": "A process certification applicable to this process certificate."
+		},
+		"applicableProcessCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCharacteristic"
+			},
+			"description": "A process characteristic applicable to this process certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this process certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this process certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this process certificate."
+		},
+		"certificateTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
+			"description": "The code specifying the type of process certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this process certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this process certificate expires.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this process certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the issuance of this process certificate.",
+			"format": "date-time"
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for the issue of this process certificate."
+		},
+		"issuingPartyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of the party issuing this process certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "The code specifying the purpose of this process certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this process certificate.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

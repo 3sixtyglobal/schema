@@ -1,36 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
+	"title": "ActivityStreamsContextType",
 	"description": "The Activity Streams JSON-LD context type.",
 	"anyOf": [
 		{
-			"type": "string",
 			"const": "https://www.w3.org/ns/activitystreams"
 		},
 		{
 			"type": "array",
-			"items": false,
-			"minItems": 1,
-			"maxItems": 1,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "https://www.w3.org/ns/activitystreams"
-				}
-			]
-		},
-		{
-			"type": "array",
-			"minItems": 1,
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					{
+						"const": "https://www.w3.org/ns/activitystreams"
+					}
+				]
 			},
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "https://www.w3.org/ns/activitystreams"
-				}
-			]
+			"contains": {
+				"const": "https://www.w3.org/ns/activitystreams"
+			},
+			"minContains": 1,
+			"maxContains": 1,
+			"minItems": 1
 		}
 	]
 }

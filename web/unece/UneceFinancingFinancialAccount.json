@@ -1,0 +1,78 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancingFinancialAccount",
+	"title": "UneceFinancingFinancialAccount",
+	"description": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FinancingFinancialAccount",
+			"description": "JSON-LD Type."
+		},
+		"accountName": {
+			"type": "string",
+			"description": "The account name, expressed as text, of this financing financial account."
+		},
+		"bBANId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this\nfinancing financial account."
+		},
+		"cashAccountTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of financing financial account."
+		},
+		"financingFinancialAccountCurrencyCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the currency of this financing financial account."
+		},
+		"iBANId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique International Bank Account Number (IBAN) identifier for this financing financial account."
+		},
+		"proprietaryId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The proprietary identifier for this financing financial account."
+		},
+		"proprietaryType": {
+			"type": "string",
+			"description": "The proprietary type, expressed as text, of this financing financial account, such as the nature or use."
+		},
+		"uPICId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this\nfinancing financial account."
+		}
+	},
+	"required": ["type"]
+}

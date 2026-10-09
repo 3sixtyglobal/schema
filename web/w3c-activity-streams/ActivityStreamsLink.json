@@ -1,0 +1,108 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLink",
+	"title": "ActivityStreamsLink",
+	"description": "A W3C Activity Streams Link.\n\nA `Link` is used to reference a resource by URI (via `href`) and can include\noptional presentation metadata such as `name`, `mediaType`, `height`, and `width`.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
+			"description": "The LD Context."
+		},
+		"type": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLinkTypes"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLinkTypes"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Link type."
+		},
+		"href": {
+			"type": "string",
+			"description": "The target URI of the Link.",
+			"format": "uri"
+		},
+		"name": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
+				}
+			],
+			"description": "A natural language name for the link."
+		},
+		"hreflang": {
+			"type": "string",
+			"description": "A language hint for the target resource."
+		},
+		"mediaType": {
+			"type": "string",
+			"description": "MIME media type of the referenced resource."
+		},
+		"rel": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "Link relation value(s)."
+		},
+		"height": {
+			"type": "number",
+			"description": "Desired rendered height."
+		},
+		"width": {
+			"type": "number",
+			"description": "Desired rendered width."
+		},
+		"preview": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							},
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+							}
+						]
+					}
+				}
+			],
+			"description": "Preview of the link."
+		}
+	},
+	"required": ["@context", "type", "href"]
+}

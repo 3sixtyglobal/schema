@@ -2,54 +2,76 @@
 // SPDX-License-Identifier: Apache-2.0.
 /**
  * This script is used to perform actions across the whole repo.
- * It is much like using the --workspaces option for npm commands,
+ * It is much like using the --recursive option for pnpm commands,
  * but it fails fast when there is an error.
  */
 import path from 'node:path';
 import FastGlob from 'fast-glob';
-import { loadJson, saveJson } from './common.mjs';
+import { directoryExists, fileExists, loadJson, saveJson } from './common.mjs';
 import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises';
 
 /**
  * Execute the process.
  */
 async function run() {
-	process.stdout.write('Update Schemas\n');
-	process.stdout.write('==========\n');
+	const startTime = Date.now();
+	const stats = { schemas: 0, skipped: 0, types: 0, contexts: 0, deleted: 0, warnings: 0 };
+
+	process.stdout.write('📚 Update Schemas\n');
 	process.stdout.write('\n');
-	process.stdout.write(`Platform: ${process.platform}\n`);
+	process.stdout.write(`💻 Platform: ${process.platform}\n`);
 	process.stdout.write('\n');
 
 	const schemas = await loadJson('schemas.json');
 
 	for (const schema of schemas) {
+		stats.schemas++;
 		const packages = schema.packages ?? [];
 		let types = schema.types ?? [];
+		let combinedJsonLd;
 
 		const hasTypes = types.length > 0 || packages.length > 0;
 
 		const outputPath = path.join('web', schema.namespace);
-		process.stdout.write(`Schema: ${schema.title}\n`);
+		process.stdout.write(`📦 ${schema.title} (${schema.namespace})\n`);
 
 		await mkdir(outputPath, { recursive: true });
 
 		if (hasTypes) {
 			if (types.length === 0) {
-				process.stdout.write(`   Cleanup existing types\n`);
+				const packagePaths = await Promise.all(
+					packages.map(pkg => resolvePackagePath(schema.repo, pkg))
+				);
+				const missingPackages = packages.filter((pkg, idx) => !packagePaths[idx]);
+
+				// Keep the existing content when a package is missing, otherwise its types would be lost.
+				if (missingPackages.length > 0) {
+					for (const pkg of missingPackages) {
+						process.stdout.write(`   ⚠️  Package does not exist: ${schema.repo}/packages/${pkg}\n`);
+						stats.warnings++;
+					}
+					process.stdout.write(`   ⏭️  Skipping, existing content has been kept\n`);
+					process.stdout.write('\n');
+					stats.skipped++;
+					continue;
+				}
+
+				process.stdout.write(`   🧹 Cleaning up existing types\n`);
 				const existingFiles = await FastGlob(`*.json`, { cwd: outputPath });
 
 				for (const file of existingFiles) {
 					const filePath = path.join(outputPath, file);
-					process.stdout.write(`      Deleting: ${filePath}\n`);
+					process.stdout.write(`      🗑️  ${filePath}\n`);
 					await unlink(filePath);
+					stats.deleted++;
 				}
-				for (const pkg of packages) {
-					const packagePath = path.resolve(path.join('../', schema.repo, 'packages', pkg));
-					process.stdout.write(`   Package: ${packagePath}\n`);
+				for (const packagePath of packagePaths) {
+					process.stdout.write(`   📁 Package: ${path.relative(process.cwd(), packagePath)}\n`);
+
 					const tsToSchema = await loadJson(path.join(packagePath, 'ts-to-schema.json'));
 					types.push(...tsToSchema.types.map(t => typeSourceToType(t)));
 
-					process.stdout.write(`      Copying types\n`);
+					process.stdout.write(`      📋 Copying ${tsToSchema.types.length} types\n`);
 					for (const typeSource of tsToSchema.types) {
 						const type = typeSourceToType(typeSource);
 
@@ -59,25 +81,51 @@ async function run() {
 							'schemas',
 							`${stripInterface(type)}.json`
 						);
-						process.stdout.write(`         Copying type: ${sourcePath}\n`);
+						process.stdout.write(`         📄 ${stripInterface(type)}\n`);
 
 						const typeContent = await loadJson(sourcePath);
 						const typeOutputPath = path.join(outputPath, `${stripInterface(type)}.json`);
 						await saveJson(typeOutputPath, typeContent);
+						stats.types++;
+					}
+
+					const jsonLdContextSourcePath = path.join(packagePath, 'src', 'schemas', `types.jsonld`);
+
+					if (await fileExists(jsonLdContextSourcePath)) {
+						const jsonLdContextContent = await loadJson(jsonLdContextSourcePath);
+						combinedJsonLd = {
+							['@context']: {
+								...combinedJsonLd?.['@context'],
+								...jsonLdContextContent?.['@context']
+							}
+						};
+						const jsonLdContextOutputPath = path.join(outputPath, `types.jsonld`);
+						process.stdout.write(`      🔗 Merging JSON-LD context\n`);
+						await saveJson(jsonLdContextOutputPath, combinedJsonLd);
+						stats.contexts++;
 					}
 				}
 			}
 		}
 		const typesPage = await generateTypesPage(schema, types);
 
-		process.stdout.write(`   Generate types page\n`);
+		process.stdout.write(`   🌐 Generating types page\n`);
 		await writeFile(path.join(outputPath, 'types.html'), typesPage, 'utf-8');
 		process.stdout.write('\n');
 	}
 
 	await createRewriteRules(schemas);
 
-	process.stdout.write('Done\n');
+	const elapsedSeconds = ((Date.now() - startTime) / 1000).toFixed(1);
+	process.stdout.write('📊 Summary\n');
+	process.stdout.write(`   Schemas:          ${stats.schemas}\n`);
+	process.stdout.write(`   Schemas skipped:  ${stats.skipped}\n`);
+	process.stdout.write(`   Types copied:     ${stats.types}\n`);
+	process.stdout.write(`   JSON-LD contexts: ${stats.contexts}\n`);
+	process.stdout.write(`   Files deleted:    ${stats.deleted}\n`);
+	process.stdout.write(`   Warnings:         ${stats.warnings}\n`);
+	process.stdout.write('\n');
+	process.stdout.write(`✅ Done in ${elapsedSeconds}s\n`);
 }
 
 /**
@@ -97,7 +145,7 @@ async function generateTypesPage(schema, types) {
 	} else {
 		template = template.replace(
 			/\${repo}/g,
-			`Repo: <a href="https://github.com/twinfoundation/${schema.repo}" target="_blank">https://github.com/twinfoundation/${schema.repo}</a><br /><br /><hr /><br />`
+			`Repo: <a href="https://github.com/3sixtyglobal/${schema.repo}" target="_blank">https://github.com/3sixtyglobal/${schema.repo}</a><br /><br /><hr /><br />`
 		);
 	}
 
@@ -119,7 +167,7 @@ async function generateTypesPage(schema, types) {
 			<br />
 			<p>
 				<b>Root namespace:</b>
-				https://schema.twindev.org/${schema.namespace}/
+				https://schema.3sixty.global/${schema.namespace}/
 			</p>
 			<br /><ul>${typesList}</ul><br /><hr /><br /><br />`;
 
@@ -133,7 +181,7 @@ async function generateTypesPage(schema, types) {
 		const jsonLdList = allTypes
 			.map(
 				t =>
-					`<li><a href="./${t}.jsonld">https://schema.twindev.org/${schema.namespace}/${t}.jsonld</a></li>`
+					`<li><a href="./${t}.jsonld">https://schema.3sixty.global/${schema.namespace}/${t}.jsonld</a></li>`
 			)
 			.join('');
 
@@ -151,11 +199,11 @@ async function generateTypesPage(schema, types) {
  * @param schemas The schemas to include in the rewrites.
  */
 async function createRewriteRules(schemas) {
-	process.stdout.write('Write rewrites file\n');
-	process.stdout.write('\n');
+	process.stdout.write('🔀 Writing rewrites file\n');
 
-	const allSchemas = [{ namespace: 'common' }, ...schemas];
+	const allSchemas = schemas;
 	const rewrites = [];
+	const redirects = [];
 
 	for (const schema of allSchemas) {
 		const rewriteName = schema.namespace;
@@ -165,7 +213,13 @@ async function createRewriteRules(schemas) {
 		const hasTypes = types.length > 0 || packages.length > 0;
 		const jsonLdTypes = schema.jsonLdTypes;
 
+		redirects.push({
+			source: `/${rewriteName}`,
+			destination: `https://schema.3sixty.global/${rewriteName}/`,
+			permanent: true
+		});
 		rewrites.push({
+			// description: `HTML: '${rewriteName}/' returns '${rewriteName}/types.html' when requested with 'text/html' header`,
 			source: `/${rewriteName}/`,
 			has: [
 				{
@@ -174,11 +228,12 @@ async function createRewriteRules(schemas) {
 					value: 'text/html.*'
 				}
 			],
-			destination: `https://schema.twindev.org/${rewriteName}/types.html`
+			destination: `https://schema.3sixty.global/${rewriteName}/types.html`
 		});
 		if (Array.isArray(jsonLdTypes)) {
 			for (const type of jsonLdTypes) {
 				rewrites.push({
+					// description: `JSON-LD: '${rewriteName}/${type}.jsonld' returns '${rewriteName}/${type}.jsonld' when requested with 'application/ld+json' header`,
 					source: `/${rewriteName}/${type}.jsonld`,
 					has: [
 						{
@@ -187,11 +242,12 @@ async function createRewriteRules(schemas) {
 							value: 'application/ld\\+json.*'
 						}
 					],
-					destination: `https://schema.twindev.org/${rewriteName}/${type}.jsonld`
+					destination: `https://schema.3sixty.global/${rewriteName}/${type}.jsonld`
 				});
 			}
 		} else {
 			rewrites.push({
+				// description: `JSON-LD: '${rewriteName}/' returns '${rewriteName}/types.jsonld' when requested with 'application/ld+json' header`,
 				source: `/${rewriteName}/`,
 				has: [
 					{
@@ -200,12 +256,13 @@ async function createRewriteRules(schemas) {
 						value: 'application/ld\\+json.*'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/types.jsonld`
+				destination: `https://schema.3sixty.global/${rewriteName}/types.jsonld`
 			});
 		}
 		if (hasTypes) {
 			rewrites.push({
-				source: `/${rewriteName}/:path*`,
+				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with no header`,
+				source: `/${rewriteName}/:path([^.]+)*`,
 				missing: [
 					{
 						type: 'header',
@@ -213,10 +270,11 @@ async function createRewriteRules(schemas) {
 						value: 'application/ld\\+json.*'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/:path*.json`
+				destination: `https://schema.3sixty.global/${rewriteName}/:path*.json`
 			});
 			rewrites.push({
-				source: `/${rewriteName}/:path*`,
+				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with 'application/json' header`,
+				source: `/${rewriteName}/:path([^.]+)*`,
 				missing: [
 					{
 						type: 'header',
@@ -224,11 +282,15 @@ async function createRewriteRules(schemas) {
 						value: 'application/json'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/:path*.json`
+				destination: `https://schema.3sixty.global/${rewriteName}/:path*.json`
 			});
 		}
 	}
 	const rewritesPath = path.join('web', 'vercel.json');
+	process.stdout.write(
+		`   ${rewrites.length} rewrites, ${redirects.length} redirects: ${rewritesPath}\n`
+	);
+	process.stdout.write('\n');
 	await saveJson(rewritesPath, {
 		headers: [
 			{
@@ -239,8 +301,28 @@ async function createRewriteRules(schemas) {
 				]
 			}
 		],
-		rewrites
+		rewrites,
+		redirects
 	});
+}
+
+/**
+ * Find the package directory in the workspace or sibling layout.
+ * @param repo The repository containing the package.
+ * @param pkg The package name.
+ * @returns The package path, or undefined if it does not exist.
+ */
+async function resolvePackagePath(repo, pkg) {
+	const candidates = [
+		path.resolve(path.join('../../workspace-core', repo, 'packages', pkg)),
+		path.resolve(path.join('..', repo, 'packages', pkg))
+	];
+
+	for (const candidate of candidates) {
+		if (await directoryExists(candidate)) {
+			return candidate;
+		}
+	}
 }
 
 /**
@@ -249,7 +331,7 @@ async function createRewriteRules(schemas) {
  * @returns The string without the "I" at the start.
  */
 function stripInterface(typeString) {
-	if (/I[A-Z]/.test(typeString)) {
+	if (/^I[A-Z]/.test(typeString)) {
 		return typeString.slice(1);
 	}
 
@@ -268,7 +350,7 @@ function typeSourceToType(typeSource) {
 }
 
 run().catch(err => {
-	process.stderr.write(`${err}\n`);
+	process.stderr.write(`❌ ${err}\n`);
 	// eslint-disable-next-line unicorn/no-process-exit
 	process.exit(1);
 });

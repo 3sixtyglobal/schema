@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLineTradeTransaction",
+	"title": "UneceLineTradeTransaction",
+	"description": "A group of trade line items, trade line agreement, trade line delivery and trade line settlement details.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LineTradeTransaction",
+			"description": "JSON-LD Type."
+		},
+		"applicableLineTradeAgreement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLineTradeAgreement"
+			},
+			"description": "A trade agreement applicable to this line trade transaction, such as payment or delivery terms."
+		},
+		"applicableLineTradeDelivery": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLineTradeDelivery"
+			},
+			"description": "A trade delivery applicable to this line trade transaction."
+		},
+		"includedTradeProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "A trade product included in this line trade transaction."
+		}
+	},
+	"required": ["type"]
+}

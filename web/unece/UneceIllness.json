@@ -1,0 +1,54 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceIllness",
+	"title": "UneceIllness",
+	"description": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Illness",
+			"description": "JSON-LD Type."
+		},
+		"caseDispositionCode": {
+			"type": "string",
+			"description": "A code specifying a case disposition of this MDH illness."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text for this MDH illness."
+		},
+		"evacuationLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics evacuation location for this MDH illness."
+		},
+		"healthStatusCode": {
+			"type": "string",
+			"description": "A code specifying a health status of this MDH illness."
+		},
+		"healthStatusReportedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the health status has been reported for this MDH illness."
+		},
+		"nature": {
+			"type": "string",
+			"description": "A nature, expressed as text, of this MDH illness."
+		},
+		"symptomOnsetDateTime": {
+			"type": "string",
+			"description": "A symptom onset date, time, date time or other date time value for this MDH illness.",
+			"format": "date-time"
+		},
+		"treatment": {
+			"type": "string",
+			"description": "A treatment, expressed as text, for this MDH illness."
+		}
+	},
+	"required": ["type"]
+}

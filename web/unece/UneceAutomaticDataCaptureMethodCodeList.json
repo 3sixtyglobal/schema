@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAutomaticDataCaptureMethodCodeList",
+	"title": "UneceAutomaticDataCaptureMethodCodeList",
+	"description": "A character string used to represent an automatic data capturing method.",
+	"anyOf": [
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#50",
+			"description": "Package barcoded EAN-13 or EAN-8: 50."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#51",
+			"description": "Package barcoded ITF-14 or ITF-6: 51."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#52",
+			"description": "Package barcoded UCC or EAN-128: 52."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#64",
+			"description": "Package never EPC tagged: 64."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#65",
+			"description": "Package sometimes EPC tagged: 65."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#67",
+			"description": "Tagging/bar code instructions: 67."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#78",
+			"description": "Package bar-coded and EPC tagged: 78."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#79",
+			"description": "Package EPC tagged only: 79."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#81",
+			"description": "Package marked with a variable measure barcode: 81."
+		},
+		{
+			"const": "unece:AutomaticDataCaptureMethodCodeList#82",
+			"description": "Package marked with fixed measure barcode.: 82."
+		}
+	]
+}

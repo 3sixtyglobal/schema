@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/synchronised-storage/SyncRequest",
+	"title": "SyncRequest",
+	"description": "The object definition for a sync request.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"const": "https://schema.3sixty.global/synchronised-storage/",
+			"description": "The LD Context for the request."
+		},
+		"type": {
+			"const": "SyncRequest",
+			"description": "The LD Type for the request."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The identity of the node that created the request."
+		}
+	},
+	"required": ["@context", "type", "nodeIdentity"]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportEquipmentLegalStatusCodeList",
+	"title": "UneceTransportEquipmentLegalStatusCodeList",
+	"description": "A character string used to represent the transport equipment legal status.",
+	"anyOf": [
+		{
+			"const": "unece:TransportEquipmentLegalStatusCodeList#7",
+			"description": "Shortlanded: 7."
+		},
+		{
+			"const": "unece:TransportEquipmentLegalStatusCodeList#8",
+			"description": "Overlanded: 8."
+		}
+	]
+}

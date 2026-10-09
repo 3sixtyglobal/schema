@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/synchronised-storage/SyncChange",
+	"title": "SyncChange",
+	"description": "The object definition for a sync change.",
+	"type": "object",
+	"properties": {
+		"operation": {
+			"$ref": "https://schema.3sixty.global/synchronised-storage/SyncChangeOperation",
+			"description": "Operation."
+		},
+		"id": {
+			"type": "string",
+			"description": "The item id."
+		},
+		"entity": {
+			"$ref": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntityCore",
+			"description": "The entity to set."
+		}
+	},
+	"required": ["operation", "id"]
+}

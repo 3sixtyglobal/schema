@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceNegotiationContextTypeCodeList",
+	"title": "UneceNegotiationContextTypeCodeList",
+	"description": "Values for UneceNegotiationContext typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:specifiedContext",
+			"description": "A context specified for this electronic negotiation exchange."
+		}
+	]
+}

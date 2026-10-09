@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLegalRegistrationTypeCodeList",
+	"title": "UneceLegalRegistrationTypeCodeList",
+	"description": "Values for UneceLegalRegistration typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:authorizedRegistration",
+			"description": "A legal registration authorized for this legally set up organization."
+		}
+	]
+}

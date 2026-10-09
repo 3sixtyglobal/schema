@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSegment",
+	"title": "UneceSegment",
+	"description": "The parts into which a segment is or may be divided.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Segment",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this section segment."
+		},
+		"imageBinaryObject": {
+			"type": "string",
+			"description": "The image, expressed as a binary object, for this section segment.",
+			"contentEncoding": "base64"
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, in this section segment."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSegmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of section segment."
+		}
+	},
+	"required": ["type"]
+}

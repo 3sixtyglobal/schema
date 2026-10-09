@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSubordinateLocation",
+	"title": "UneceSubordinateLocation",
+	"description": "A physical location or place which is a subordinate location of a location.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SubordinateLocation",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global\nLocation Number (GLN)."
+		},
+		"locationFunctionTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLocationFunctionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of subordinate location."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this subordinate location."
+		},
+		"physicalGeographicalCoordinate": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalCoordinate",
+			"description": "Physical geographical coordinate information for this subordinate location."
+		},
+		"subordinateSubordinateSubordinateLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSubordinateSubordinateLocation",
+			"description": "The location subordinate to this subordinate location."
+		}
+	},
+	"required": ["type"]
+}

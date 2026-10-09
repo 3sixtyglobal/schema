@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePolygon",
+	"title": "UnecePolygon",
+	"description": "A planar surface, defined by one exterior boundary and zero or more interior boundaries. Each interior boundary defines\na hole in the polygon.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Polygon",
+			"description": "JSON-LD Type."
+		},
+		"associatedGeographicalObjectCharacteristic": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
+			"description": "The geographical object characteristic associated with this specified polygon."
+		},
+		"associatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location associated with this specified polygon."
+		},
+		"exteriorLinearRing": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearRing",
+			"description": "The exterior linear specified ring for this polygon."
+		},
+		"interiorLinearRing": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLinearRing"
+			},
+			"description": "An interior linear ring specified for this polygon."
+		}
+	},
+	"required": ["type", "exteriorLinearRing"]
+}

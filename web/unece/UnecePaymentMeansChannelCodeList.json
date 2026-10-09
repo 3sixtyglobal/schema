@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentMeansChannelCodeList",
+	"title": "UnecePaymentMeansChannelCodeList",
+	"description": "A character string used to represent the payment means channel.",
+	"anyOf": [
+		{
+			"const": "unece:PaymentMeansChannelCodeList#1",
+			"description": "Ordinary post: 1."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#10",
+			"description": "Registered air mail: 10."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#11",
+			"description": "Registered mail: 11."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#12",
+			"description": "Courier: 12."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#13",
+			"description": "Messenger: 13."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#14",
+			"description": "National ACH: 14."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#15",
+			"description": "Other ACH: 15."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#2",
+			"description": "Air mail: 2."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#3",
+			"description": "Telegraph: 3."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#4",
+			"description": "Telex: 4."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#5",
+			"description": "S.W.I.F.T.: 5."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#6",
+			"description": "Other transmission networks: 6."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#7",
+			"description": "Networks not defined: 7."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#8",
+			"description": "Fedwire: 8."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#9",
+			"description": "Personal (face-to-face): 9."
+		},
+		{
+			"const": "unece:PaymentMeansChannelCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

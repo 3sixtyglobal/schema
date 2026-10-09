@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportSettingTemperature",
+	"title": "UneceTransportSettingTemperature",
+	"description": "Temperature settings for a transport movement, such as a required storage temperature range.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportSettingTemperature",
+			"description": "JSON-LD Type."
+		},
+		"informationInstructions": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTemperatureSettingInstructions",
+			"description": "Informational instructions for achieving, maintaining, using or responding to this transport setting temperature."
+		},
+		"maximumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen\ndegrees Celsius."
+		},
+		"minimumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four\ndegrees Celsius."
+		},
+		"temperatureTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTemperatureTypeCodeList",
+			"description": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
+		},
+		"temperatureUnitValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTemperatureUnitMeasureType",
+			"description": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedMaterialTypeCodeList",
+	"title": "UneceSpecifiedMaterialTypeCodeList",
+	"description": "Values for UneceSpecifiedMaterial typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableMaterial",
+			"description": "Material applicable for this supply chain trade line item.\nMaterial applicable to this product print.\nSpecified material applicable to this product colour."
+		},
+		{
+			"const": "unece:appliedMaterial",
+			"description": "Specified material applied to this agricultural application."
+		},
+		{
+			"const": "unece:componentMaterial",
+			"description": "A material component of this trade product.\nA specified material component of this product batch.\nA specified material component of this technical characteristic.\nComponent material for this specified material."
+		},
+		{
+			"const": "unece:includedMaterial",
+			"description": "Material included in this supply chain inventory."
+		},
+		{
+			"const": "unece:inputApplicableMaterial",
+			"description": "Input material applicable to this facility production unit.\nInput material applicable to this production machine.\nInput material applicable to this production process.\nInput material applicable to this specified production device."
+		},
+		{
+			"const": "unece:outputApplicableMaterial",
+			"description": "Output material applicable to this facility production unit.\nOutput material applicable to this production machine.\nOutput material applicable to this production process.\nOutput material applicable to this specified production device."
+		},
+		{
+			"const": "unece:relatedMaterial",
+			"description": "Material related to this trade party."
+		},
+		{
+			"const": "unece:substituteApplicableMaterial",
+			"description": "Substitute material applicable for this supply chain trade line item."
+		},
+		{
+			"const": "unece:substitutedApplicableMaterial",
+			"description": "Substituted material applicable for this supply chain trade line item."
+		},
+		{
+			"const": "unece:usedMaterial",
+			"description": "Material used for this specified crop protection treatment.\nMaterial used for this specified product finishing treatment."
+		}
+	]
+}

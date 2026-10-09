@@ -1,0 +1,67 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedCondition",
+	"title": "UneceSpecifiedCondition",
+	"description": "A state, such as of a specified person or thing.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedCondition",
+			"description": "JSON-LD Type."
+		},
+		"actionCode": {
+			"type": "string",
+			"description": "A code specifying an action for this specified condition."
+		},
+		"actionDateTime": {
+			"type": "string",
+			"description": "A date, time, date time or other date time value of an action for this specified condition.",
+			"format": "date-time"
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified condition."
+		},
+		"specifiedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement"
+			},
+			"description": "A calibrated measurement specified for this specified condition."
+		},
+		"statement": {
+			"type": "string",
+			"description": "A statement, expressed as text, for this specified condition."
+		},
+		"statementCode": {
+			"type": "string",
+			"description": "A code specifying a statement for this specified condition."
+		},
+		"subjectTypeCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a subject type for this specified condition."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this specified condition."
+		}
+	},
+	"required": ["type"]
+}

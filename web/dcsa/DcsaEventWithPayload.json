@@ -1,0 +1,83 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEventWithPayload",
+	"title": "DcsaEventWithPayload",
+	"description": "Event with payload (i.e., not a retraction).",
+	"anyOf": [
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "SHIPMENT"
+						}
+					},
+					"required": ["eventType"],
+					"allOf": [
+						{
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+						}
+					],
+					"description": "Event metadata (eventType = SHIPMENT)."
+				},
+				"payload": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload",
+					"description": "Event payload."
+				}
+			},
+			"required": ["metadata", "payload"]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "EQUIPMENT"
+						}
+					},
+					"required": ["eventType"],
+					"allOf": [
+						{
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+						}
+					],
+					"description": "Event metadata (eventType = EQUIPMENT)."
+				},
+				"payload": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaEquipmentPayload",
+					"description": "Event payload."
+				}
+			},
+			"required": ["metadata", "payload"]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "TRANSPORT"
+						}
+					},
+					"required": ["eventType"],
+					"allOf": [
+						{
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+						}
+					],
+					"description": "Event metadata (eventType = TRANSPORT)."
+				},
+				"payload": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportPayload",
+					"description": "Event payload."
+				}
+			},
+			"required": ["metadata", "payload"]
+		}
+	]
+}

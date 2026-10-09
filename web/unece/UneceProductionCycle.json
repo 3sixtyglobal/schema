@@ -1,0 +1,73 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionCycle",
+	"title": "UneceProductionCycle",
+	"description": "A series of activities associated with the processing of a product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductionCycle",
+			"description": "JSON-LD Type."
+		},
+		"applicableProductionProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
+			},
+			"description": "A process applicable to this specified production cycle."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the end of this specified production cycle.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified production cycle."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this specified production cycle."
+		},
+		"processSpecifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A process document referenced for this specified production cycle."
+		},
+		"productionYearDateTime": {
+			"type": "string",
+			"description": "The production year for this specified production cycle.",
+			"format": "date-time"
+		},
+		"relatedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file related to this specified production cycle."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for this specified production cycle."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the start of this specified production cycle.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

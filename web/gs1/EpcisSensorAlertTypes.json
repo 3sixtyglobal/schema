@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisSensorAlertTypes",
+	"title": "EpcisSensorAlertTypes",
+	"description": "Supported EPCIS 2.0 `sensorAlertType` values for sensor-generated alarms or\nerrors.",
+	"anyOf": [
+		{
+			"const": "ALARM_CONDITION",
+			"description": "Sensor alert indicating an alarm condition."
+		},
+		{
+			"const": "ERROR_CONDITION",
+			"description": "Sensor alert indicating an error condition."
+		}
+	]
+}

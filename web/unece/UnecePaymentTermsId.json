@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentTermsId",
+	"title": "UnecePaymentTermsId",
+	"description": "A character string used to represent a payment terms.",
+	"anyOf": [
+		{
+			"const": "unece:PaymentTermsId#1",
+			"description": "Draft(s) drawn on issuing bank: 1."
+		},
+		{
+			"const": "unece:PaymentTermsId#2",
+			"description": "Draft(s) drawn on advising bank: 2."
+		},
+		{
+			"const": "unece:PaymentTermsId#3",
+			"description": "Draft(s) drawn on reimbursing bank: 3."
+		},
+		{
+			"const": "unece:PaymentTermsId#4",
+			"description": "Draft(s) drawn on applicant: 4."
+		},
+		{
+			"const": "unece:PaymentTermsId#5",
+			"description": "Draft(s) drawn on any other drawee: 5."
+		},
+		{
+			"const": "unece:PaymentTermsId#6",
+			"description": "No drafts: 6."
+		},
+		{
+			"const": "unece:PaymentTermsId#7",
+			"description": "Payment means specified in commercial account summary: 7."
+		}
+	]
+}

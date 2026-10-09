@@ -1,0 +1,216 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentMethodCodeList",
+	"title": "UnecePaymentMethodCodeList",
+	"description": "A character string used to represent a payment method.",
+	"anyOf": [
+		{
+			"const": "unece:PaymentMethodCodeList#1",
+			"description": "Direct payment: 1."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#10",
+			"description": "Irrevocable documentary credit: 10."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#11",
+			"description": "Transferable irrevocable documentary credit: 11."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#12",
+			"description": "Confirmed irrevocable documentary credit: 12."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#13",
+			"description": "Transferable confirmed irrevocable documentary credit: 13."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#14",
+			"description": "Revocable documentary credit: 14."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#15",
+			"description": "Irrevocable letter of credit-confirmed: 15."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#16",
+			"description": "Letter of guarantee: 16."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#17",
+			"description": "Revocable letter of credit: 17."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#18",
+			"description": "Standby letter of credit: 18."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#19",
+			"description": "Irrevocable letter of credit unconfirmed: 19."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#2",
+			"description": "Automatic clearing house credit: 2."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#20",
+			"description": "Clean collection (ICC): 20."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#21",
+			"description": "Documentary collection (ICC): 21."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#22",
+			"description": "Documentary sight collection (ICC): 22."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#23",
+			"description": "Documentary collection with date of expiry (ICC): 23."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#24",
+			"description": "Documentary collection: bill of exchange against acceptance: 24."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#25",
+			"description": "Documentary collection: bill of exchange against payment: 25."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#26",
+			"description": "Collection subject to buyer's approval (ICC): 26."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#27",
+			"description": "Collection by a bank consignee for the goods (ICC): 27."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#3",
+			"description": "Automatic clearing house debit: 3."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#34",
+			"description": "Seller to advise buyer: 34."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#35",
+			"description": "Documents through banks: 35."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#36",
+			"description": "Charging (to account): 36."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#37",
+			"description": "Available with issuing bank: 37."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#38",
+			"description": "Available with advising bank: 38."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#39",
+			"description": "Available with named bank: 39."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#4",
+			"description": "Automatic clearing house credit-savings account: 4."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#40",
+			"description": "Available with any bank: 40."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#41",
+			"description": "Available with any bank in ...: 41."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#42",
+			"description": "Indirect payment: 42."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#43",
+			"description": "Reassignment: 43."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#44",
+			"description": "Offset: 44."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#45",
+			"description": "Special entries: 45."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#46",
+			"description": "Instalment payment: 46."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#47",
+			"description": "Instalment payment with draft: 47."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#48",
+			"description": "Available with advise through bank: 48."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#49",
+			"description": "General conditions of sale: 49."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#5",
+			"description": "Automatic clearing house debit-demand account: 5."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#50",
+			"description": "Special payment: 50."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#6",
+			"description": "Bank book transfer (credit): 6."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#61",
+			"description": "Set-off by exchange of documents: 61."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#62",
+			"description": "Set-off by reciprocal credits: 62."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#64",
+			"description": "Set-off by exchange of goods: 64."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#65",
+			"description": "Reverse factoring: 65."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#69",
+			"description": "Other set-off: 69."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#7",
+			"description": "Bank book transfer (debit): 7."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#70",
+			"description": "Supplier to invoice: 70."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#71",
+			"description": "Recipient to self bill: 71."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#8",
+			"description": "Doc collection via 3rd party with bill of EX: 8."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#9",
+			"description": "Doc collection via 3rd party no bill of EX: 9."
+		},
+		{
+			"const": "unece:PaymentMethodCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

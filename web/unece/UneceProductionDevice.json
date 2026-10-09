@@ -1,0 +1,157 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionDevice",
+	"title": "UneceProductionDevice",
+	"description": "An object, especially a piece of mechanical or electronic equipment, made or adapted in order to perform a production\nactivity.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductionDevice",
+			"description": "JSON-LD Type."
+		},
+		"applicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter applicable to this specified production device."
+		},
+		"combinedMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+			},
+			"description": "A production machine combined with this specified production device."
+		},
+		"combinedProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+			},
+			"description": "A production device combined with this specified production device."
+		},
+		"functionDescription": {
+			"type": "string",
+			"description": "A textual description of a function of this specified production device."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified production device."
+		},
+		"inputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+			},
+			"description": "An input batch applicable to this specified production device."
+		},
+		"inputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Input material applicable to this specified production device."
+		},
+		"inputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "An input product applicable to this specified production device."
+		},
+		"inputCapacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the input capacity of this specified production device, such as maximum reach or average per month."
+		},
+		"outputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+			},
+			"description": "An output batch applicable to this specified production device."
+		},
+		"outputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Output material applicable to this specified production device."
+		},
+		"outputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "An output product applicable to this specified production device."
+		},
+		"outputCapacityMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the output capacity of this specified production device, such as maximum reach or average per month."
+		},
+		"productionDeviceType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this specified production device."
+		},
+		"reportingIOTDeviceSupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An IOT (Internet of Things) or other scanning device reporting event for this specified production device."
+		},
+		"requestedOperationalApplicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "An operational parameter requested for this specified production device."
+		},
+		"specifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+			},
+			"description": "A referenced location specified for this production device."
+		},
+		"specifiedProductionUnit": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionUnit"
+			},
+			"description": "A facility production unit for this specified production device."
+		},
+		"subordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type for this production device."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProductionDeviceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of production device."
+		}
+	},
+	"required": ["type"]
+}

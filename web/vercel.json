@@ -24,7 +24,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/common/types.html"
+			"destination": "https://schema.3sixty.global/common/types.html"
 		},
 		{
 			"source": "/common/",
@@ -35,7 +35,7 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/common/types.jsonld"
+			"destination": "https://schema.3sixty.global/common/types.jsonld"
 		},
 		{
 			"source": "/aig/",
@@ -46,7 +46,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/aig/types.html"
+			"destination": "https://schema.3sixty.global/aig/types.html"
 		},
 		{
 			"source": "/aig/",
@@ -57,10 +57,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/aig/types.jsonld"
+			"destination": "https://schema.3sixty.global/aig/types.jsonld"
 		},
 		{
-			"source": "/aig/:path*",
+			"source": "/aig/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -68,10 +68,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/aig/:path*.json"
+			"destination": "https://schema.3sixty.global/aig/:path*.json"
 		},
 		{
-			"source": "/aig/:path*",
+			"source": "/aig/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -79,7 +79,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/aig/:path*.json"
+			"destination": "https://schema.3sixty.global/aig/:path*.json"
 		},
 		{
 			"source": "/ais/",
@@ -90,7 +90,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/ais/types.html"
+			"destination": "https://schema.3sixty.global/ais/types.html"
 		},
 		{
 			"source": "/ais/",
@@ -101,10 +101,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/ais/types.jsonld"
+			"destination": "https://schema.3sixty.global/ais/types.jsonld"
 		},
 		{
-			"source": "/ais/:path*",
+			"source": "/ais/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -112,10 +112,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/ais/:path*.json"
+			"destination": "https://schema.3sixty.global/ais/:path*.json"
 		},
 		{
-			"source": "/ais/:path*",
+			"source": "/ais/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -123,7 +123,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/ais/:path*.json"
+			"destination": "https://schema.3sixty.global/ais/:path*.json"
 		},
 		{
 			"source": "/attestation/",
@@ -134,7 +134,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/attestation/types.html"
+			"destination": "https://schema.3sixty.global/attestation/types.html"
 		},
 		{
 			"source": "/attestation/",
@@ -145,10 +145,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/attestation/types.jsonld"
+			"destination": "https://schema.3sixty.global/attestation/types.jsonld"
 		},
 		{
-			"source": "/attestation/:path*",
+			"source": "/attestation/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -156,10 +156,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/attestation/:path*.json"
+			"destination": "https://schema.3sixty.global/attestation/:path*.json"
 		},
 		{
-			"source": "/attestation/:path*",
+			"source": "/attestation/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -167,7 +167,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/attestation/:path*.json"
+			"destination": "https://schema.3sixty.global/attestation/:path*.json"
 		},
 		{
 			"source": "/blob-storage/",
@@ -178,7 +178,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/blob-storage/types.html"
+			"destination": "https://schema.3sixty.global/blob-storage/types.html"
 		},
 		{
 			"source": "/blob-storage/",
@@ -189,10 +189,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/blob-storage/types.jsonld"
+			"destination": "https://schema.3sixty.global/blob-storage/types.jsonld"
 		},
 		{
-			"source": "/blob-storage/:path*",
+			"source": "/blob-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -200,10 +200,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/blob-storage/:path*.json"
+			"destination": "https://schema.3sixty.global/blob-storage/:path*.json"
 		},
 		{
-			"source": "/blob-storage/:path*",
+			"source": "/blob-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -211,7 +211,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/blob-storage/:path*.json"
+			"destination": "https://schema.3sixty.global/blob-storage/:path*.json"
 		},
 		{
 			"source": "/documents/",
@@ -222,7 +222,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/documents/types.html"
+			"destination": "https://schema.3sixty.global/documents/types.html"
 		},
 		{
 			"source": "/documents/",
@@ -233,10 +233,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/documents/types.jsonld"
+			"destination": "https://schema.3sixty.global/documents/types.jsonld"
 		},
 		{
-			"source": "/documents/:path*",
+			"source": "/documents/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -244,10 +244,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/documents/:path*.json"
+			"destination": "https://schema.3sixty.global/documents/:path*.json"
 		},
 		{
-			"source": "/documents/:path*",
+			"source": "/documents/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -255,7 +255,51 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/documents/:path*.json"
+			"destination": "https://schema.3sixty.global/documents/:path*.json"
+		},
+		{
+			"source": "/synchronised-storage/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/synchronised-storage/types.html"
+		},
+		{
+			"source": "/synchronised-storage/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/synchronised-storage/types.jsonld"
+		},
+		{
+			"source": "/synchronised-storage/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/synchronised-storage/:path*.json"
+		},
+		{
+			"source": "/synchronised-storage/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/synchronised-storage/:path*.json"
 		},
 		{
 			"source": "/immutable-proof/",
@@ -266,7 +310,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/immutable-proof/types.html"
+			"destination": "https://schema.3sixty.global/immutable-proof/types.html"
 		},
 		{
 			"source": "/immutable-proof/",
@@ -277,10 +321,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/immutable-proof/types.jsonld"
+			"destination": "https://schema.3sixty.global/immutable-proof/types.jsonld"
 		},
 		{
-			"source": "/immutable-proof/:path*",
+			"source": "/immutable-proof/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -288,10 +332,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/immutable-proof/:path*.json"
+			"destination": "https://schema.3sixty.global/immutable-proof/:path*.json"
 		},
 		{
-			"source": "/immutable-proof/:path*",
+			"source": "/immutable-proof/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -299,7 +343,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/immutable-proof/:path*.json"
+			"destination": "https://schema.3sixty.global/immutable-proof/:path*.json"
 		},
 		{
 			"source": "/verifiable-storage/",
@@ -310,7 +354,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/verifiable-storage/types.html"
+			"destination": "https://schema.3sixty.global/verifiable-storage/types.html"
 		},
 		{
 			"source": "/verifiable-storage/",
@@ -321,10 +365,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/verifiable-storage/types.jsonld"
+			"destination": "https://schema.3sixty.global/verifiable-storage/types.jsonld"
 		},
 		{
-			"source": "/verifiable-storage/:path*",
+			"source": "/verifiable-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -332,10 +376,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/verifiable-storage/:path*.json"
+			"destination": "https://schema.3sixty.global/verifiable-storage/:path*.json"
 		},
 		{
-			"source": "/verifiable-storage/:path*",
+			"source": "/verifiable-storage/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -343,51 +387,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/verifiable-storage/:path*.json"
-		},
-		{
-			"source": "/federated-catalogue/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "text/html.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/types.html"
-		},
-		{
-			"source": "/federated-catalogue/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/types.jsonld"
-		},
-		{
-			"source": "/federated-catalogue/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/:path*.json"
-		},
-		{
-			"source": "/federated-catalogue/:path*",
-			"missing": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/json"
-				}
-			],
-			"destination": "https://schema.twindev.org/federated-catalogue/:path*.json"
+			"destination": "https://schema.3sixty.global/verifiable-storage/:path*.json"
 		},
 		{
 			"source": "/framework/",
@@ -398,7 +398,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/framework/types.html"
+			"destination": "https://schema.3sixty.global/framework/types.html"
 		},
 		{
 			"source": "/framework/",
@@ -409,10 +409,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/framework/types.jsonld"
+			"destination": "https://schema.3sixty.global/framework/types.jsonld"
 		},
 		{
-			"source": "/framework/:path*",
+			"source": "/framework/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -420,10 +420,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/framework/:path*.json"
+			"destination": "https://schema.3sixty.global/framework/:path*.json"
 		},
 		{
-			"source": "/framework/:path*",
+			"source": "/framework/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -431,7 +431,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/framework/:path*.json"
+			"destination": "https://schema.3sixty.global/framework/:path*.json"
 		},
 		{
 			"source": "/json-ld/",
@@ -442,7 +442,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/json-ld/types.html"
+			"destination": "https://schema.3sixty.global/json-ld/types.html"
 		},
 		{
 			"source": "/json-ld/",
@@ -453,10 +453,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/json-ld/types.jsonld"
+			"destination": "https://schema.3sixty.global/json-ld/types.jsonld"
 		},
 		{
-			"source": "/json-ld/:path*",
+			"source": "/json-ld/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -464,10 +464,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/json-ld/:path*.json"
+			"destination": "https://schema.3sixty.global/json-ld/:path*.json"
 		},
 		{
-			"source": "/json-ld/:path*",
+			"source": "/json-ld/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -475,7 +475,40 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/json-ld/:path*.json"
+			"destination": "https://schema.3sixty.global/json-ld/:path*.json"
+		},
+		{
+			"source": "/dataspace/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace/types.html"
+		},
+		{
+			"source": "/dataspace/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace/:path*.json"
+		},
+		{
+			"source": "/dataspace/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace/:path*.json"
 		},
 		{
 			"source": "/w3c-did/",
@@ -486,7 +519,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-did/types.html"
+			"destination": "https://schema.3sixty.global/w3c-did/types.html"
 		},
 		{
 			"source": "/w3c-did/",
@@ -497,10 +530,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-did/types.jsonld"
+			"destination": "https://schema.3sixty.global/w3c-did/types.jsonld"
 		},
 		{
-			"source": "/w3c-did/:path*",
+			"source": "/w3c-did/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -508,10 +541,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-did/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-did/:path*.json"
 		},
 		{
-			"source": "/w3c-did/:path*",
+			"source": "/w3c-did/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -519,7 +552,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-did/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-did/:path*.json"
 		},
 		{
 			"source": "/w3c-odrl/",
@@ -530,10 +563,10 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-odrl/types.html"
+			"destination": "https://schema.3sixty.global/w3c-odrl/types.html"
 		},
 		{
-			"source": "/w3c-odrl/:path*",
+			"source": "/w3c-odrl/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -541,10 +574,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-odrl/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-odrl/:path*.json"
 		},
 		{
-			"source": "/w3c-odrl/:path*",
+			"source": "/w3c-odrl/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -552,7 +585,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-odrl/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-odrl/:path*.json"
 		},
 		{
 			"source": "/w3c-activity-streams/",
@@ -563,21 +596,10 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-activity-streams/types.html"
+			"destination": "https://schema.3sixty.global/w3c-activity-streams/types.html"
 		},
 		{
-			"source": "/w3c-activity-streams/",
-			"has": [
-				{
-					"type": "header",
-					"key": "Accept",
-					"value": "application/ld\\+json.*"
-				}
-			],
-			"destination": "https://schema.twindev.org/w3c-activity-streams/types.jsonld"
-		},
-		{
-			"source": "/w3c-activity-streams/:path*",
+			"source": "/w3c-activity-streams/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -585,10 +607,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-activity-streams/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-activity-streams/:path*.json"
 		},
 		{
-			"source": "/w3c-activity-streams/:path*",
+			"source": "/w3c-activity-streams/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -596,10 +618,10 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/w3c-activity-streams/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-activity-streams/:path*.json"
 		},
 		{
-			"source": "/gaia-x/",
+			"source": "/w3c-dcat/",
 			"has": [
 				{
 					"type": "header",
@@ -607,10 +629,10 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/gaia-x/types.html"
+			"destination": "https://schema.3sixty.global/w3c-dcat/types.html"
 		},
 		{
-			"source": "/gaia-x/:path*",
+			"source": "/w3c-dcat/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -618,10 +640,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/gaia-x/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-dcat/:path*.json"
 		},
 		{
-			"source": "/gaia-x/:path*",
+			"source": "/w3c-dcat/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -629,7 +651,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/gaia-x/:path*.json"
+			"destination": "https://schema.3sixty.global/w3c-dcat/:path*.json"
 		},
 		{
 			"source": "/unece/",
@@ -640,10 +662,10 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/unece/types.html"
+			"destination": "https://schema.3sixty.global/unece/types.html"
 		},
 		{
-			"source": "/unece/:path*",
+			"source": "/unece/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -651,10 +673,10 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/unece/:path*.json"
+			"destination": "https://schema.3sixty.global/unece/:path*.json"
 		},
 		{
-			"source": "/unece/:path*",
+			"source": "/unece/:path([^.]+)*",
 			"missing": [
 				{
 					"type": "header",
@@ -662,7 +684,7 @@
 					"value": "application/json"
 				}
 			],
-			"destination": "https://schema.twindev.org/unece/:path*.json"
+			"destination": "https://schema.3sixty.global/unece/:path*.json"
 		},
 		{
 			"source": "/dublin-core/",
@@ -673,7 +695,7 @@
 					"value": "text/html.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/dublin-core/types.html"
+			"destination": "https://schema.3sixty.global/dublin-core/types.html"
 		},
 		{
 			"source": "/dublin-core/terms.jsonld",
@@ -684,7 +706,7 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/dublin-core/terms.jsonld"
+			"destination": "https://schema.3sixty.global/dublin-core/terms.jsonld"
 		},
 		{
 			"source": "/dublin-core/dcmitype.jsonld",
@@ -695,7 +717,392 @@
 					"value": "application/ld\\+json.*"
 				}
 			],
-			"destination": "https://schema.twindev.org/dublin-core/dcmitype.jsonld"
+			"destination": "https://schema.3sixty.global/dublin-core/dcmitype.jsonld"
+		},
+		{
+			"source": "/dataspace-protocol/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace-protocol/types.html"
+		},
+		{
+			"source": "/dataspace-protocol/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace-protocol/:path*.json"
+		},
+		{
+			"source": "/dataspace-protocol/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dataspace-protocol/:path*.json"
+		},
+		{
+			"source": "/foaf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/foaf/types.html"
+		},
+		{
+			"source": "/foaf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/foaf/types.jsonld"
+		},
+		{
+			"source": "/foaf/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/foaf/:path*.json"
+		},
+		{
+			"source": "/foaf/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/foaf/:path*.json"
+		},
+		{
+			"source": "/dcsa/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dcsa/types.html"
+		},
+		{
+			"source": "/dcsa/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dcsa/:path*.json"
+		},
+		{
+			"source": "/dcsa/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dcsa/:path*.json"
+		},
+		{
+			"source": "/gs1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/gs1/types.html"
+		},
+		{
+			"source": "/gs1/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/gs1/:path*.json"
+		},
+		{
+			"source": "/gs1/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/gs1/:path*.json"
+		},
+		{
+			"source": "/w3c-rdf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/w3c-rdf/types.html"
+		},
+		{
+			"source": "/w3c-rdf/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/w3c-rdf/types.jsonld"
+		},
+		{
+			"source": "/dspace/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dspace/v1/types.html"
+		},
+		{
+			"source": "/dspace/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/dspace/v1/types.jsonld"
+		},
+		{
+			"source": "/odrl/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/odrl/v1/types.html"
+		},
+		{
+			"source": "/odrl/v1/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/odrl/v1/types.jsonld"
+		},
+		{
+			"source": "/supply-chain/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "text/html.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/supply-chain/types.html"
+		},
+		{
+			"source": "/supply-chain/",
+			"has": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/supply-chain/types.jsonld"
+		},
+		{
+			"source": "/supply-chain/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/ld\\+json.*"
+				}
+			],
+			"destination": "https://schema.3sixty.global/supply-chain/:path*.json"
+		},
+		{
+			"source": "/supply-chain/:path([^.]+)*",
+			"missing": [
+				{
+					"type": "header",
+					"key": "Accept",
+					"value": "application/json"
+				}
+			],
+			"destination": "https://schema.3sixty.global/supply-chain/:path*.json"
+		}
+	],
+	"redirects": [
+		{
+			"source": "/common",
+			"destination": "https://schema.3sixty.global/common/",
+			"permanent": true
+		},
+		{
+			"source": "/aig",
+			"destination": "https://schema.3sixty.global/aig/",
+			"permanent": true
+		},
+		{
+			"source": "/ais",
+			"destination": "https://schema.3sixty.global/ais/",
+			"permanent": true
+		},
+		{
+			"source": "/attestation",
+			"destination": "https://schema.3sixty.global/attestation/",
+			"permanent": true
+		},
+		{
+			"source": "/blob-storage",
+			"destination": "https://schema.3sixty.global/blob-storage/",
+			"permanent": true
+		},
+		{
+			"source": "/documents",
+			"destination": "https://schema.3sixty.global/documents/",
+			"permanent": true
+		},
+		{
+			"source": "/synchronised-storage",
+			"destination": "https://schema.3sixty.global/synchronised-storage/",
+			"permanent": true
+		},
+		{
+			"source": "/immutable-proof",
+			"destination": "https://schema.3sixty.global/immutable-proof/",
+			"permanent": true
+		},
+		{
+			"source": "/verifiable-storage",
+			"destination": "https://schema.3sixty.global/verifiable-storage/",
+			"permanent": true
+		},
+		{
+			"source": "/framework",
+			"destination": "https://schema.3sixty.global/framework/",
+			"permanent": true
+		},
+		{
+			"source": "/json-ld",
+			"destination": "https://schema.3sixty.global/json-ld/",
+			"permanent": true
+		},
+		{
+			"source": "/dataspace",
+			"destination": "https://schema.3sixty.global/dataspace/",
+			"permanent": true
+		},
+		{
+			"source": "/w3c-did",
+			"destination": "https://schema.3sixty.global/w3c-did/",
+			"permanent": true
+		},
+		{
+			"source": "/w3c-odrl",
+			"destination": "https://schema.3sixty.global/w3c-odrl/",
+			"permanent": true
+		},
+		{
+			"source": "/w3c-activity-streams",
+			"destination": "https://schema.3sixty.global/w3c-activity-streams/",
+			"permanent": true
+		},
+		{
+			"source": "/w3c-dcat",
+			"destination": "https://schema.3sixty.global/w3c-dcat/",
+			"permanent": true
+		},
+		{
+			"source": "/unece",
+			"destination": "https://schema.3sixty.global/unece/",
+			"permanent": true
+		},
+		{
+			"source": "/dublin-core",
+			"destination": "https://schema.3sixty.global/dublin-core/",
+			"permanent": true
+		},
+		{
+			"source": "/dataspace-protocol",
+			"destination": "https://schema.3sixty.global/dataspace-protocol/",
+			"permanent": true
+		},
+		{
+			"source": "/foaf",
+			"destination": "https://schema.3sixty.global/foaf/",
+			"permanent": true
+		},
+		{
+			"source": "/dcsa",
+			"destination": "https://schema.3sixty.global/dcsa/",
+			"permanent": true
+		},
+		{
+			"source": "/gs1",
+			"destination": "https://schema.3sixty.global/gs1/",
+			"permanent": true
+		},
+		{
+			"source": "/w3c-rdf",
+			"destination": "https://schema.3sixty.global/w3c-rdf/",
+			"permanent": true
+		},
+		{
+			"source": "/dspace/v1",
+			"destination": "https://schema.3sixty.global/dspace/v1/",
+			"permanent": true
+		},
+		{
+			"source": "/odrl/v1",
+			"destination": "https://schema.3sixty.global/odrl/v1/",
+			"permanent": true
+		},
+		{
+			"source": "/supply-chain",
+			"destination": "https://schema.3sixty.global/supply-chain/",
+			"permanent": true
 		}
 	]
 }

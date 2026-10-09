@@ -1,0 +1,388 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionProcess",
+	"title": "UneceProductionProcess",
+	"description": "A naturally occurring or designed sequence of operations or events in order to produce something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductionProcess",
+			"description": "JSON-LD Type."
+		},
+		"additionalInformationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "An additional information note for this production process."
+		},
+		"allocatedMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+			},
+			"description": "A machine allocated to this production process."
+		},
+		"allocatedProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+			},
+			"description": "A production device allocated to this production process."
+		},
+		"applicableAssessment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+			},
+			"description": "An assessment applicable to this production process."
+		},
+		"applicableDeclaration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration"
+			},
+			"description": "A specified declaration applicable to this production process."
+		},
+		"applicableFault": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFault"
+			},
+			"description": "A specified fault applicable to this production process."
+		},
+		"applicableLicence": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLicence"
+			},
+			"description": "A specified licence applicable to this production process."
+		},
+		"applicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A specified parameter applicable to this production process."
+		},
+		"applicablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A period applicable to this production process."
+		},
+		"applicableProductionCycle": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionCycle"
+			},
+			"description": "A specified production cycle applicable to this production process."
+		},
+		"applicableSpecifiedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A certificate applicable to this production process."
+		},
+		"applicableSpecifiedInspection": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
+			},
+			"description": "A specified inspection applicable to this production process."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this production process."
+		},
+		"applicableSustainabilityInspection": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
+			},
+			"description": "A sustainability inspection applicable to this production process."
+		},
+		"appliedChemicalTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment"
+			},
+			"description": "A chemical treatment applied during this production process."
+		},
+		"appliedCropProtectionTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProtectionTreatment"
+			},
+			"description": "A crop protection treatment applied during this production process."
+		},
+		"appliedProductFinishingTreatment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductFinishingTreatment"
+			},
+			"description": "A product finishing treatment applied during this production process."
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard associated with this production process."
+		},
+		"criticalIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this production process is critical."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this production process."
+		},
+		"disclosureLevelCode": {
+			"type": "string",
+			"description": "A code specifying a disclosure level for this production process."
+		},
+		"finalIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this production process is a final one."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this production process."
+		},
+		"inputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+			},
+			"description": "An input product batch applicable to this production process."
+		},
+		"inputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Input material applicable to this production process."
+		},
+		"inputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "An input product applicable to this production process."
+		},
+		"inventoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the inventory type for this production process."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A manufacturer party for this production process."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this production process."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the occurrence of this production process.",
+			"format": "date-time"
+		},
+		"occurrenceEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An occurrence of an event for this production process."
+		},
+		"operationReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the operation reference for this production process."
+		},
+		"operationTechnologyCode": {
+			"type": "string",
+			"description": "The code specifying the operation technology for this production process."
+		},
+		"outputApplicableBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
+			},
+			"description": "An output product batch applicable to this production process."
+		},
+		"outputApplicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Output material applicable to this production process."
+		},
+		"outputApplicableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "An output product applicable to this production process."
+		},
+		"performedWorkItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessWorkItem"
+			},
+			"description": "A work item performed for this production process."
+		},
+		"productionProcessInventoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the inventory type for this production process."
+		},
+		"productionProcessSubordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type of production process."
+		},
+		"productionProcessTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of production process."
+		},
+		"productionWasteInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
+			},
+			"description": "Disposal instructions for the waste resulting from this production process."
+		},
+		"recyclingIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this is a recycling production process."
+		},
+		"relatedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file related to this production process."
+		},
+		"reportedProductionWasteMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterial"
+			},
+			"description": "Waste material reported for this production process."
+		},
+		"specificationDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A specification document referenced for this production process."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion specified for this production process."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this production process."
+		},
+		"specifiedFacility": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionFacility"
+			},
+			"description": "A production facility specified for this production process."
+		},
+		"specifiedOrganizationalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
+			},
+			"description": "An organizational certificate specified for this production process."
+		},
+		"specifiedOrganizationalCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertification"
+			},
+			"description": "An organizational certification specified for this production process."
+		},
+		"specifiedProcessCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+			},
+			"description": "A process certificate specified for this production process."
+		},
+		"specifiedProcessCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertification"
+			},
+			"description": "A process certification specified for this production process."
+		},
+		"specifiedProductBatchCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertification"
+			},
+			"description": "A product batch certification specified for this production process."
+		},
+		"specifiedTradeProductCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification"
+			},
+			"description": "A trade product certification specified for this production process."
+		},
+		"status": {
+			"type": "string",
+			"description": "A status, expressed as text, of this production process."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this production process."
+		},
+		"stepCode": {
+			"type": "string",
+			"description": "The code specifying the step in this production process."
+		},
+		"subcontractorParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A subcontractor party specified for this production process."
+		},
+		"subordinateProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
+			},
+			"description": "A subordinate process of this production process."
+		}
+	},
+	"required": ["type"]
+}

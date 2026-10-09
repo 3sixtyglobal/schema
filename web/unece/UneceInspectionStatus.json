@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionStatus",
+	"title": "UneceInspectionStatus",
+	"description": "The information relevant to a condition related to an inspection.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InspectionStatus",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this inspection status."
+		},
+		"inspectionStatusConditionCode": {
+			"type": "string",
+			"description": "The code specifying this inspection status condition."
+		}
+	},
+	"required": ["type"]
+}

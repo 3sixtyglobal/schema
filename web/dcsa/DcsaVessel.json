@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaVessel",
+	"title": "DcsaVessel",
+	"description": "Vessel.\n\nSource: `vessel` schema in the DCSA Event Domain (v3.1.0).\n\nNote: Most properties are defined in DCSA_DOMAIN; this package models them as strings.",
+	"type": "object",
+	"properties": {
+		"vesselIMONumber": {
+			"type": "string",
+			"description": "Vessel IMO number."
+		},
+		"name": {
+			"type": "string",
+			"description": "Vessel name."
+		},
+		"flag": {
+			"type": "string",
+			"description": "Vessel flag."
+		},
+		"callSign": {
+			"type": "string",
+			"description": "Vessel call sign."
+		},
+		"operatorCarrierCode": {
+			"type": "string",
+			"description": "Carrier code of the vessel operator."
+		},
+		"operatorCarrierCodeListProvider": {
+			"type": "string",
+			"description": "Provider of the operator carrier code list."
+		}
+	},
+	"required": ["vesselIMONumber"]
+}

@@ -1,0 +1,122 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductCertificate",
+	"title": "UneceProductCertificate",
+	"description": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about\nthe product.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this product certificate.",
+			"format": "date-time"
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this product certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object, such as item, animal, person or organization applicable for this product certificate."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this product certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this product certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this product certificate."
+		},
+		"applicableTradeProductCertification": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification",
+			"description": "The trade product certification applicable to this product certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this product certificate."
+		},
+		"certificateTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList"
+			},
+			"description": "A code specifying the type of product certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this product certificate expires.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this product certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this product certificate was issued.",
+			"format": "date-time"
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why this product certificate was issued."
+		},
+		"issuingPartyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for the party issuing this product certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "A code specifying the purpose of this product certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this product certificate.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStreamModes",
+	"title": "AuditableItemStreamModes",
+	"description": "The modes for auditable item stream behaviour.",
+	"anyOf": [
+		{
+			"const": "default",
+			"description": "Default mode allows full entry lifecycle operations."
+		},
+		{
+			"const": "append-only",
+			"description": "Append-only mode allows adding entries but disallows updates and removals."
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedRoute",
+	"title": "UneceSpecifiedRoute",
+	"description": "A specified way or course taken from one location to another.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedRoute",
+			"description": "JSON-LD Type."
+		},
+		"departurePoint": {
+			"type": "string",
+			"description": "A departure point, expressed as text, for this specified route."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified route."
+		},
+		"linearUnitDistanceMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
+			"description": "The measure of the distance of this specified route."
+		},
+		"mapURIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Uniform Resource Identifier (URI) of the map of this specified route."
+		},
+		"routeType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this specified route."
+		},
+		"securityLevelCode": {
+			"type": "string",
+			"description": "The code specifying the security level of this specified route."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this specified route."
+		},
+		"transportMeans": {
+			"type": "string",
+			"description": "A transport means, expressed as text, for this specified route."
+		}
+	},
+	"required": ["type"]
+}

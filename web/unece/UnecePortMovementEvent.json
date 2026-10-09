@@ -1,0 +1,76 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePortMovementEvent",
+	"title": "UnecePortMovementEvent",
+	"description": "A movement of a vessel during a port call.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PortMovementEvent",
+			"description": "JSON-LD Type."
+		},
+		"actualOccurrenceDateTime": {
+			"type": "string",
+			"description": "An actual date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
+		},
+		"arrivalRelatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "An arrival location related to this port movement event."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this port movement event."
+		},
+		"estimatedOccurrenceDateTime": {
+			"type": "string",
+			"description": "An estimated date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this port movement event."
+		},
+		"maritimeAnchorageIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this port movement event involves a maritime anchorage."
+		},
+		"pilotBoardingPlace": {
+			"type": "string",
+			"description": "A pilot boarding place, expressed as text, for this port movement event."
+		},
+		"requestedOccurrenceDateTime": {
+			"type": "string",
+			"description": "A requested date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
+		},
+		"scheduledOccurrenceDateTime": {
+			"type": "string",
+			"description": "A scheduled date, time, date time, or other date time value of the occurrence of this port movement event.",
+			"format": "date-time"
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for this port movement event."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "A code specifying a type of port movement event."
+		}
+	},
+	"required": ["type"]
+}

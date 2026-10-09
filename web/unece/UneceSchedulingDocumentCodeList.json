@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSchedulingDocumentCodeList",
+	"title": "UneceSchedulingDocumentCodeList",
+	"description": "A character string used to represent a scheduling document type.",
+	"anyOf": [
+		{
+			"const": "unece:SchedulingDocumentCodeList#240",
+			"description": "Delivery instructions: 240."
+		},
+		{
+			"const": "unece:SchedulingDocumentCodeList#241",
+			"description": "Delivery schedule: 241."
+		},
+		{
+			"const": "unece:SchedulingDocumentCodeList#242",
+			"description": "Delivery just-in-time: 242."
+		},
+		{
+			"const": "unece:SchedulingDocumentCodeList#245",
+			"description": "Delivery release: 245."
+		},
+		{
+			"const": "unece:SchedulingDocumentCodeList#288",
+			"description": "Kanban schedule: 288."
+		},
+		{
+			"const": "unece:SchedulingDocumentCodeList#291",
+			"description": "Delivery schedule response: 291."
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancingRequestResultDocument",
+	"title": "UneceFinancingRequestResultDocument",
+	"description": "A collection of data that reports the result of a financing request.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FinancingRequestResultDocument",
+			"description": "JSON-LD Type."
+		},
+		"financedRatePercent": {
+			"type": "string",
+			"description": "The financed rate, expressed as a percentage, in this financing request result document."
+		},
+		"financedTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the financed total amount in this financing request result document."
+		},
+		"specifiedFinancingStatus": {
+			"$ref": "https://schema.3sixty.global/unece/UneceFinancingStatus",
+			"description": "The financing status specified in this financing request result document."
+		}
+	},
+	"required": ["type"]
+}

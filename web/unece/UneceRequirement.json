@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRequirement",
+	"title": "UneceRequirement",
+	"description": "Common conditions contained in a contract or agreement applicable between trading partners.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Requirement",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified requirement."
+		},
+		"rule": {
+			"type": "string",
+			"description": "A rule, expressed as text, for this specified requirement."
+		},
+		"specifiedPaymentTradeSettlement": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlement",
+			"description": "The payment trade settlement for this specified requirement."
+		},
+		"specifyingParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party specifying this specified requirement."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceRequirementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of specified requirement."
+		}
+	},
+	"required": ["type"]
+}

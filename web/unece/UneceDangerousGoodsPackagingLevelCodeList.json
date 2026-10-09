@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDangerousGoodsPackagingLevelCodeList",
+	"title": "UneceDangerousGoodsPackagingLevelCodeList",
+	"description": "A character string used to represent the dangerous goods packaging level.",
+	"anyOf": [
+		{
+			"const": "unece:DangerousGoodsPackagingLevelCodeList#1",
+			"description": "Great danger: 1."
+		},
+		{
+			"const": "unece:DangerousGoodsPackagingLevelCodeList#2",
+			"description": "Medium danger: 2."
+		},
+		{
+			"const": "unece:DangerousGoodsPackagingLevelCodeList#3",
+			"description": "Minor danger: 3."
+		},
+		{
+			"const": "unece:DangerousGoodsPackagingLevelCodeList#4",
+			"description": "Not assigned: 4."
+		}
+	]
+}

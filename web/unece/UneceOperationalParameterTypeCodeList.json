@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceOperationalParameterTypeCodeList",
+	"title": "UneceOperationalParameterTypeCodeList",
+	"description": "Values for UneceOperationalParameter typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:definedOperationalParameter",
+			"description": "An operational parameter defined for this monitoring sensor."
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProcessWorkItem",
+	"title": "UneceProcessWorkItem",
+	"description": "A distinct operation or task that is part of a process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProcessWorkItem",
+			"description": "JSON-LD Type."
+		},
+		"alternativeClassificationCode": {
+			"type": "string",
+			"description": "The code specifying an alternative classification for this process work item."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this process work item."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this process work item."
+		},
+		"primaryClassificationCode": {
+			"type": "string",
+			"description": "The code specifying the primary classification for this process work item."
+		},
+		"totalQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The total quantity for this process work item."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProcessWorkItemTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of process work item."
+		}
+	},
+	"required": ["type", "identifier"]
+}

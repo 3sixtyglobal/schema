@@ -1,0 +1,37 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceForecastTerms",
+	"title": "UneceForecastTerms",
+	"description": "A set of terms and conditions by which a supply chain forecast has been or will be made.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ForecastTerms",
+			"description": "JSON-LD Type."
+		},
+		"dateTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of date in these supply chain forecast terms."
+		},
+		"forecastTypeCode": {
+			"type": "string",
+			"description": "The code specifying the forecast type in these supply chain forecast terms."
+		},
+		"supplyChainForecastTermsCommitmentLevelCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommitmentLevelCodeList"
+			},
+			"description": "A code specifying a commitment level in these supply chain forecast terms."
+		},
+		"supplyChainForecastTermsFrequencyCode": {
+			"type": "string",
+			"description": "A code specifying a frequency in these supply chain forecast terms."
+		}
+	},
+	"required": ["type"]
+}

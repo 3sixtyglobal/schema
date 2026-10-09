@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceChequeTypeCodeList",
+	"title": "UneceChequeTypeCodeList",
+	"description": "Values for UneceCheque typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:identifiedCheque",
+			"description": "A cheque payment identified for this trade settlement payment means."
+		}
+	]
+}

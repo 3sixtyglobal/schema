@@ -1,0 +1,54 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportServiceLocation",
+	"title": "UneceTransportServiceLocation",
+	"description": "A location where a transport service takes place.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportServiceLocation",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this transport service location, such as a United Nations Location Code (UNLOCODE) or GS1 Global\nLocation Number (GLN)."
+		},
+		"locationFunctionTypeCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceLocationFunctionCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying the type of transport service location."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this transport service location."
+		},
+		"physicalGeographicalCoordinate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalCoordinate"
+			},
+			"description": "Geographical coordinate information for this physical transport service location."
+		}
+	},
+	"required": ["type"]
+}

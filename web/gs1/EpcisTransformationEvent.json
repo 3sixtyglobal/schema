@@ -1,0 +1,117 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisTransformationEvent",
+	"title": "EpcisTransformationEvent",
+	"description": "EPCIS 2.0 TransformationEvent describing how inputs are transformed into\noutputs during a business process.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"const": "TransformationEvent",
+			"description": "Fixed to TransformationEvent."
+		},
+		"inputEPCList": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "(Optional) Unordered list of one or more EPCs identifying (at the instance\nlevel) objects that were inputs to the transformation."
+		},
+		"inputQuantityList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisQuantity"
+			},
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level inputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
+		},
+		"outputEPCList": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"description": "(Optional) Unordered list of one or more EPCs naming (at the instance level)\nobjects that were outputs from the transformation."
+		},
+		"outputQuantityList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisQuantity"
+			},
+			"description": "(Optional) Unordered list of one or more QuantityElements identifying\nclass-level outputs; may be omitted subject to the EPCIS quantity-list\nconstraints."
+		},
+		"transformationID": {
+			"type": "string",
+			"description": "A unique identifier linking TransformationEvents; shared values connect inputs\nand outputs across those events."
+		},
+		"bizStep": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/gs1/EpcisBizStepTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "(Optional) The business step of which this event was a part."
+		},
+		"disposition": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/gs1/EpcisDispositionTypes"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "(Optional) The business condition of the objects associated with the EPCs,\npresumed to hold true until contradicted by a subsequent event."
+		},
+		"persistentDisposition": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisPersistentDisposition",
+			"description": "Persistent disposition."
+		},
+		"readPoint": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisLocation",
+			"description": "(Optional) The read point at which the event took place."
+		},
+		"bizLocation": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisLocation",
+			"description": "(Optional) The business location where the objects associated with the EPCs\nmay be found, until contradicted by a subsequent event."
+		},
+		"bizTransactionList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisBizTransaction"
+			},
+			"description": "An unordered list of business transactions that define the context of this\nevent."
+		},
+		"sourceList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisSource"
+			},
+			"description": "(Optional) Unordered list of Source elements that provide context about the\noriginating endpoint of a business transfer of which this event is a part."
+		},
+		"destinationList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisDestination"
+			},
+			"description": "(Optional) Unordered list of Destination elements that provide context about\nthe terminating endpoint of a business transfer of which this event is a part."
+		},
+		"sensorElementList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisSensorElement"
+			},
+			"description": "(Optional) Connects event to one or more SensorElements."
+		},
+		"ilmd": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisIlmd",
+			"description": "(Optional) Instance/Lot master data that describes the objects created during\nthis event."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisEvent"
+		}
+	]
+}

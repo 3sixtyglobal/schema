@@ -1,48 +1,52 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-documents": "https://schema.twindev.org/documents/",
+		"twin-documents": "https://schema.3sixty.global/documents/",
 		"schema": "http://schema.org/",
-		"twin-aig": "https://schema.twindev.org/aig/",
 		"id": "@id",
 		"type": "@type",
+		"DocumentBase": "twin-documents:DocumentBase",
 		"Document": "twin-documents:Document",
 		"DocumentAttestation": "twin-documents:DocumentAttestation",
+		"DocumentHydrated": "twin-documents:DocumentHydrated",
 		"DocumentList": "twin-documents:DocumentList",
-		"documentIdFormat": {
-			"@id": "twin-documents:documentIdFormat",
-			"@type": "schema:Text"
-		},
-		"documentCode": {
-			"@id": "twin-documents:documentCode",
+		"attestationId": {
+			"@id": "twin-documents:attestationId",
 			"@type": "schema:identifier"
 		},
-		"documentRevision": {
-			"@id": "twin-documents:documentRevision",
-			"@type": "schema:Integer"
+		"attestationInformation": {
+			"@id": "twin-documents:attestationInformation"
+		},
+		"blobStorageEntry": {
+			"@id": "twin-documents:blobStorageEntry"
 		},
 		"blobStorageId": {
 			"@id": "twin-documents:blobStorageId",
 			"@type": "schema:identifier"
 		},
-		"blobStorageEntry": {
-			"@id": "twin-documents:blobStorageEntry"
-		},
-		"attestationInformation": {
-			"@id": "twin-documents:attestationInformation"
-		},
-		"attestationId": {
-			"@id": "twin-documents:attestationId",
+		"documentCode": {
+			"@id": "twin-documents:documentCode",
 			"@type": "schema:identifier"
+		},
+		"documentId": {
+			"@id": "twin-documents:documentId",
+			"@type": "schema:identifier"
+		},
+		"documentIdFormat": {
+			"@id": "twin-documents:documentIdFormat",
+			"@type": "schema:Text"
+		},
+		"documentRevision": {
+			"@id": "twin-documents:documentRevision",
+			"@type": "schema:Integer"
+		},
+		"edges": {
+			"@id": "twin-documents:edges",
+			"@container": "@set"
 		},
 		"extractedData": {
 			"@id": "twin-documents:extractedData",
 			"@type": "@json"
-		},
-		"edges": {
-			"@id": "twin-aig:edges",
-			"@container": "@set"
 		}
 	}
 }

@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisEvents",
+	"title": "EpcisEvents",
+	"description": "Discriminated union covering all EPCIS 2.0 event interfaces used in this\npackage.",
+	"anyOf": [
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisObjectEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisAssociationEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisAggregationEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisTransactionEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisTransformationEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/gs1/EpcisEvent"
+		}
+	]
+}

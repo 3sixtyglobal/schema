@@ -1,29 +1,27 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/aig/AuditableItemGraphChangeset",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphChangeset",
+	"title": "AuditableItemGraphChangeset",
 	"description": "Interface describing a set of changes to the vertex.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/aig/"
+					"const": "https://schema.3sixty.global/aig/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AuditableItemGraphChangeset",
 			"description": "JSON-LD Type."
 		},
@@ -41,23 +39,23 @@
 		},
 		"patches": {
 			"type": "array",
-			"items": false,
-			"description": "The patches in the changeset.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphPatchOperation"
+			},
+			"description": "The patches in the changeset."
 		},
 		"proofId": {
 			"type": "string",
 			"description": "The immutable proof id which contains the signature for this changeset."
 		},
 		"verification": {
-			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
 			"description": "The verification for the changeset."
+		},
+		"version": {
+			"type": "number",
+			"description": "The version number of the vertex after this changeset was applied.\nMaps to https://schema.org/version."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "userIdentity", "patches"],
-	"additionalProperties": false
+	"required": ["type", "id", "dateCreated", "patches"]
 }

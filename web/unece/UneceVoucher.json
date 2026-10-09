@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceVoucher",
+	"title": "UneceVoucher",
+	"description": "A printed piece of paper or an electronic document that can be used instead of money to pay for an experience, such as a\ntour, a trip or a meal in a restaurant.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Voucher",
+			"description": "JSON-LD Type."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this experience item voucher is applicable."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this experience item voucher."
+		},
+		"faceAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value shown on the face of this experience item voucher."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this experience item voucher."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date or date time of the issuance of this experience item voucher.",
+			"format": "date-time"
+		},
+		"issuingCompanyName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the company issuing this experience item voucher."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceVoucherTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of experience item voucher."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceQuantityAnalysisTypeCodeList",
+	"title": "UneceQuantityAnalysisTypeCodeList",
+	"description": "Values for UneceQuantityAnalysis typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:breakdownQuantityAnalysis",
+			"description": "A quantity analysis breakdown of this work item quantity analysis."
+		},
+		{
+			"const": "unece:totalQuantityAnalysis",
+			"description": "An analysis of the total quantity for this basic work item."
+		}
+	]
+}

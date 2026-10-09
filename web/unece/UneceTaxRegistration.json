@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTaxRegistration",
+	"title": "UneceTaxRegistration",
+	"description": "Registration with a specific tax authority.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TaxRegistration",
+			"description": "JSON-LD Type."
+		},
+		"associatedTax": {
+			"$ref": "https://schema.3sixty.global/unece/UneceRegisteredTax",
+			"description": "The registered tax associated with this tax registration."
+		},
+		"iOSSId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Import One Stop Shop (IOSS) identifier for this tax registration."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this tax registration."
+		}
+	},
+	"required": ["type"]
+}

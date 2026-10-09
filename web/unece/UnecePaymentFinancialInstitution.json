@@ -1,0 +1,121 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentFinancialInstitution",
+	"title": "UnecePaymentFinancialInstitution",
+	"description": "An institution that provides financial services and financial transactions for payment.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PaymentFinancialInstitution",
+			"description": "JSON-LD Type."
+		},
+		"bEIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Business Entity Identifier (BEI) as defined in ISO 9362 for this payment financial institution."
+		},
+		"bICId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
+		},
+		"branchName": {
+			"type": "string",
+			"description": "A branch name, expressed as text, for this payment financial institution."
+		},
+		"branchNameId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the branch name for this payment financial institution."
+		},
+		"gLNId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Global Location Number (GLN) as defined by GS1 for this payment financial institution."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this payment financial institution."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this payment financial institution."
+		},
+		"nameId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the name for this payment financial institution."
+		},
+		"roleCode": {
+			"type": "string",
+			"description": "The code specifying the role for this payment financial institution, such as intermediary or settlement agent."
+		},
+		"specifiedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "A communication specified for this payment financial institution."
+		},
+		"specifiedPaymentFinancialAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentFinancialAccount"
+			},
+			"description": "A payment financial account specified for this payment financial institution."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UnecePaymentFinancialInstitutionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of payment financial institution."
+		}
+	},
+	"required": ["type"]
+}

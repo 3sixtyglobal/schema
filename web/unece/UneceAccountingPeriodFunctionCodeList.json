@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingPeriodFunctionCodeList",
+	"title": "UneceAccountingPeriodFunctionCodeList",
+	"description": "A character string used to represent the function of an accounting period.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#246",
+			"description": "Accounting year: 246."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#263",
+			"description": "Invoicing period: 263."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#322",
+			"description": "Accounting period: 322."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#325",
+			"description": "Tax period: 325."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#452",
+			"description": "Trial balance period: 452."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#456",
+			"description": "Chart of account period: 456."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#492",
+			"description": "Balance data/time/period: 492."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#567",
+			"description": "Report period: 567."
+		},
+		{
+			"const": "unece:AccountingPeriodFunctionCodeList#E001",
+			"description": "Fiscal consideration period: E001."
+		}
+	]
+}

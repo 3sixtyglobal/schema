@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceStoresItemInventory",
+	"title": "UneceStoresItemInventory",
+	"description": "A stores item, such as for onboard use during a journey.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "StoresItemInventory",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this stores inventory item."
+		},
+		"onboardQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "An onboard quantity for this stores inventory item."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "A sequence number for this stores inventory item."
+		},
+		"specifiedLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A location specified for this stores inventory item."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceStoresItemInventoryTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying the type of stores inventory item."
+		}
+	},
+	"required": ["type"]
+}

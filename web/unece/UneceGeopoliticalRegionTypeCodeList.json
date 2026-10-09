@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGeopoliticalRegionTypeCodeList",
+	"title": "UneceGeopoliticalRegionTypeCodeList",
+	"description": "Values for UneceGeopoliticalRegion typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:exportGeopoliticalRegion",
+			"description": "The geopolitical region of export for this supply chain consignment item.\nThe geopolitical region of export for this supply chain consignment."
+		},
+		{
+			"const": "unece:originGeopoliticalRegion",
+			"description": "The geopolitical region of origin for this supply chain consignment item.\nThe geopolitical region of origin for this supply chain consignment."
+		}
+	]
+}

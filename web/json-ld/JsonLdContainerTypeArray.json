@@ -1,189 +1,166 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdContainerTypeArray",
+	"title": "JsonLdContainerTypeArray",
 	"description": "JSON-LD container type array.",
 	"anyOf": [
 		{
 			"type": "array",
+			"prefixItems": [
+				{
+					"const": "@graph"
+				},
+				{
+					"const": "@id"
+				}
+			],
+			"items": false,
 			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@graph"
-				},
-				{
-					"type": "string",
-					"const": "@id"
-				}
-			]
+			"maxItems": 2
 		},
 		{
 			"type": "array",
+			"prefixItems": [
+				{
+					"const": "@id"
+				},
+				{
+					"const": "@graph"
+				}
+			],
+			"items": false,
 			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@id"
-				},
-				{
-					"type": "string",
-					"const": "@graph"
-				}
-			]
+			"maxItems": 2
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@set"
 				},
 				{
-					"type": "string",
 					"const": "@graph"
 				},
 				{
-					"type": "string",
 					"const": "@id"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@set"
 				},
 				{
-					"type": "string",
 					"const": "@id"
 				},
 				{
-					"type": "string",
 					"const": "@graph"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@graph"
 				},
 				{
-					"type": "string",
 					"const": "@set"
 				},
 				{
-					"type": "string",
 					"const": "@id"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@id"
 				},
 				{
-					"type": "string",
 					"const": "@set"
 				},
 				{
-					"type": "string",
 					"const": "@graph"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@graph"
 				},
 				{
-					"type": "string",
 					"const": "@id"
 				},
 				{
-					"type": "string",
 					"const": "@set"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "@id"
 				},
 				{
-					"type": "string",
 					"const": "@graph"
 				},
 				{
-					"type": "string",
 					"const": "@set"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3
 		},
 		{
 			"type": "array",
+			"prefixItems": [
+				{
+					"const": "@set"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
+				}
+			],
+			"items": false,
 			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "@set"
-				},
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
-				}
-			]
+			"maxItems": 2
 		},
 		{
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
 			"prefixItems": [
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
 				},
 				{
-					"type": "string",
 					"const": "@set"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2
 		}
 	]
 }

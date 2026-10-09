@@ -1,63 +1,51 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/ais/AuditableItemStreamEntryObjectList",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStreamEntryObjectList",
+	"title": "AuditableItemStreamEntryObjectList",
 	"description": "Interface describing an auditable item stream entries object list.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "https://schema.org"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/ais/"
+					"const": "https://schema.3sixty.global/ais/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
 			"type": "array",
-			"minItems": 2,
-			"items": false,
-			"maxItems": 2,
-			"description": "JSON-LD Type.",
 			"prefixItems": [
 				{
-					"type": "string",
 					"const": "ItemList"
 				},
 				{
-					"type": "string",
 					"const": "AuditableItemStreamEntryObjectList"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Type."
 		},
 		"itemListElement": {
 			"type": "array",
-			"items": false,
-			"description": "The entry objects in the stream.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				}
-			]
-		},
-		"nextItem": {
-			"type": "string",
-			"description": "Cursor for the next chunk of entry objects."
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+			},
+			"description": "The entry objects in the stream."
 		}
 	},
-	"required": ["@context", "type", "itemListElement"],
-	"additionalProperties": false
+	"required": ["@context", "type", "itemListElement"]
 }

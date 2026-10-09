@@ -1,0 +1,123 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTTAggregationEvent",
+	"title": "UneceTTAggregationEvent",
+	"description": "A Track and Trace (TT) event where objects or processes are grouped.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TTAggregationEvent",
+			"description": "JSON-LD Type."
+		},
+		"actionCode": {
+			"type": "string",
+			"description": "The code specifying the action for this TT aggregation event."
+		},
+		"businessStepCode": {
+			"type": "string",
+			"description": "The code specifying the business step for this TT aggregation event."
+		},
+		"childObjectInstanceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An instance identifier for a child object of this TT aggregation event."
+		},
+		"childQuantitySpecifiedEventElement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceEventElement"
+			},
+			"description": "A quantity event element specified for a child of this TT aggregation event."
+		},
+		"destinationRelatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+			},
+			"description": "A destination related party for this TT aggregation event."
+		},
+		"dispositionCode": {
+			"type": "string",
+			"description": "The code specifying the disposition related to this TT aggregation event."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this TT aggregation event."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value at which this TT aggregation event occurred.",
+			"format": "date-time"
+		},
+		"parentObjectId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the parent object for this TT aggregation event."
+		},
+		"readPointRelatedLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"description": "The read point related location of this TT aggregation event."
+		},
+		"recordedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value at which this TT aggregation event was recorded.",
+			"format": "date-time"
+		},
+		"relatedCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertification"
+			},
+			"description": "A certification related to this TT aggregation event."
+		},
+		"relatedTTLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"description": "The location related to this TT aggregation event."
+		},
+		"sourceRelatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+			},
+			"description": "A source related party for this TT aggregation event."
+		},
+		"specifiedError": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceError"
+			},
+			"description": "A declared error specified for this TT aggregation event."
+		},
+		"specifiedTradeTransaction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTTradeTransaction"
+			},
+			"description": "A trade transaction specified for this TT aggregation event."
+		}
+	},
+	"required": ["type", "actionCode", "occurrenceDateTime", "recordedDateTime"]
+}

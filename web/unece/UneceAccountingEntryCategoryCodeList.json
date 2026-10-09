@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingEntryCategoryCodeList",
+	"title": "UneceAccountingEntryCategoryCodeList",
+	"description": "A character string used to represent the category of an accounting entry.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#1",
+			"description": "Financial: 1."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#2",
+			"description": "Budget: 2."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#3",
+			"description": "Comparison: 3."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#4",
+			"description": "Standard: 4."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#5",
+			"description": "Recurrent: 5."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#6",
+			"description": "Reordered: 6."
+		},
+		{
+			"const": "unece:AccountingEntryCategoryCodeList#7",
+			"description": "Defined by user: 7."
+		}
+	]
+}

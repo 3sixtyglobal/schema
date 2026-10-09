@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBooking",
+	"title": "UneceBooking",
+	"description": "A result of a financial transaction recorded within a financial account.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Booking",
+			"description": "JSON-LD Type."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "An actual date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
+		},
+		"creditDateTime": {
+			"type": "string",
+			"description": "The credit date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
+		},
+		"debitDateTime": {
+			"type": "string",
+			"description": "The debit date, time, date time, or other date time value of this financial booking.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

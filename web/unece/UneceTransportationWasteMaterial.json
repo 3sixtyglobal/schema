@@ -1,0 +1,110 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportationWasteMaterial",
+	"title": "UneceTransportationWasteMaterial",
+	"description": "Any materials unused and rejected as unwanted resulting from transportation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportationWasteMaterial",
+			"description": "JSON-LD Type."
+		},
+		"applicableProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate applicable to this transportation waste material."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this transportation waste material."
+		},
+		"applicableTransportationWasteRecoveryDisposalProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportationWasteRecoveryDisposalProcess"
+			},
+			"description": "A transportation waste recovery disposal process applicable to this transportation waste material."
+		},
+		"completeDeliveryIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not a transportation waste material delivery is complete."
+		},
+		"includedTransportationWasteMaterialComponent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportationWasteMaterialComponent"
+			},
+			"description": "A material component included in this transportation waste."
+		},
+		"nextDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A next delivery event for this transportation waste material."
+		},
+		"portReceptionFacilityParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A port reception facility party for this transportation waste material."
+		},
+		"previousDeliveryTransportEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A previous delivery event for this transportation waste material."
+		},
+		"receptionFacilityContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeContact"
+			},
+			"description": "A reception facility contact for this transportation waste material."
+		},
+		"treatmentFacilityParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A material treatment facility party for this transportation waste material."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceTransportationWasteMaterialTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of transportation waste material."
+		},
+		"volumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the volume of this transportation waste material."
+		},
+		"weightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the weight of this transportation waste material."
+		}
+	},
+	"required": ["type"]
+}

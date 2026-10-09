@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProject",
+	"title": "UneceProject",
+	"description": "An endeavour carefully planned to achieve a procurement of goods, works and service.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Project",
+			"description": "JSON-LD Type."
+		},
+		"constraintIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the project is constrained by an authority such as the World Trade Organization (WTO)\nfor this procuring project."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this procuring project."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of this procuring project."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this procuring project."
+		},
+		"netBudgetAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the net budget for this procuring project."
+		},
+		"specifiedInspectionEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent",
+			"description": "The inspection event specified for this procuring project."
+		},
+		"subWorksTypeCode": {
+			"type": "string",
+			"description": "A code specifying the type of sub works, such as land surveying or information technology consulting, for this procuring\nproject."
+		},
+		"totalBudgetAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this\nprocuring project."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProjectTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of procuring project, such as goods, works and service."
+		},
+		"worksTypeCode": {
+			"type": "string",
+			"description": "A code specifying the type of work, such as surveying or consulting, for this procuring project."
+		}
+	},
+	"required": ["type", "identifier", "name"]
+}

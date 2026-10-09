@@ -1,0 +1,71 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionWasteMaterial",
+	"title": "UneceProductionWasteMaterial",
+	"description": "Any materials unused and rejected as unwanted during a production process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductionWasteMaterial",
+			"description": "JSON-LD Type."
+		},
+		"applicableProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate applicable to this production waste material."
+		},
+		"applicableProductionWasteRecoveryDisposalProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteRecoveryDisposalProcess"
+			},
+			"description": "A production waste recovery disposal process applicable to this production waste material."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this production waste material."
+		},
+		"includedProductionWasteMaterialComponent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterialComponent"
+			},
+			"description": "A production waste material component included in this production waste material."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterialTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of production waste material."
+		},
+		"volumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the volume of this production waste material."
+		},
+		"weightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the weight of this production waste material."
+		}
+	},
+	"required": ["type"]
+}

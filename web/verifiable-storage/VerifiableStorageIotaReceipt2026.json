@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/verifiable-storage/VerifiableStorageIotaReceipt2026",
+	"title": "VerifiableStorageIotaReceipt2026",
+	"description": "Receipt for the IOTA Verifiable Storage connector.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"const": "https://schema.3sixty.global/verifiable-storage/",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "VerifiableStorageIotaReceipt2026",
+			"description": "JSON-LD Type."
+		},
+		"epoch": {
+			"type": "number",
+			"description": "The epoch of the transaction."
+		},
+		"digest": {
+			"type": "string",
+			"description": "The digest of the transaction."
+		},
+		"network": {
+			"type": "string",
+			"description": "The network of the transaction."
+		},
+		"objectId": {
+			"type": "string",
+			"description": "The object id of the transaction."
+		},
+		"smartContractId": {
+			"type": "string",
+			"description": "The smart contract id of the transaction."
+		}
+	},
+	"required": ["@context", "type", "epoch", "digest", "network", "objectId", "smartContractId"]
+}

@@ -1,0 +1,76 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAmortizationMethodCodeList",
+	"title": "UneceAmortizationMethodCodeList",
+	"description": "A character string used to represent the type of an amortization method.",
+	"anyOf": [
+		{
+			"const": "unece:AmortizationMethodCodeList#11",
+			"description": "Variable amortization: 11."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#12",
+			"description": "Amortization at constant rate: 12."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#14",
+			"description": "Amortization after basic allowance: 14."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#20",
+			"description": "Amortization with not budgeted constant cost: 20."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#21",
+			"description": "Amortization with budgeted constant cost: 21."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#22",
+			"description": "Amortization with unit budgeted constant cost: 22."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#300",
+			"description": "Accelerated amortization (Acquired and made fixed asset between 4-12-2008 and 31-12-2009): 300."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#301",
+			"description": "Accelerated amortization (Acquired and made fixed asset since 1-1-2010): 301."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#31",
+			"description": "Softy amortization: 31."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#32",
+			"description": "Exponential amortization: 32."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#33",
+			"description": "Amortization at lessening rate: 33."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#40",
+			"description": "Normal progressive amortization: 40."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#41",
+			"description": "Amortization in arithmetic progression: 41."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#42",
+			"description": "Amortization in geometric progression: 42."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#43",
+			"description": "Financial amortization: 43."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#44",
+			"description": "Amortization at increasing rate: 44."
+		},
+		{
+			"const": "unece:AmortizationMethodCodeList#45",
+			"description": "Amortization with logistic progression: 45."
+		}
+	]
+}

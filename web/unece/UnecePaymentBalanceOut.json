@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentBalanceOut",
+	"title": "UnecePaymentBalanceOut",
+	"description": "Offset information to ensure that debits and credits are equal for a transaction.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PaymentBalanceOut",
+			"description": "JSON-LD Type."
+		},
+		"calculatedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value calculated for this payment balance out."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this payment balance out."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this payment balance out."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of an occurrence of this payment balance out.",
+			"format": "date-time"
+		},
+		"reasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for this payment balance out."
+		},
+		"reasonDescription": {
+			"type": "string",
+			"description": "A textual description of the reason for this payment balance out."
+		}
+	},
+	"required": ["type"]
+}

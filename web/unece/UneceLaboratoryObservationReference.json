@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationReference",
+	"title": "UneceLaboratoryObservationReference",
+	"description": "The direction to related information for this laboratory observation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LaboratoryObservationReference",
+			"description": "JSON-LD Type."
+		},
+		"abbreviation": {
+			"type": "string",
+			"description": "The shortened text string to identify this laboratory observation reference."
+		},
+		"comment": {
+			"type": "string",
+			"description": "The comment, expressed as text, for this laboratory observation reference."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this laboratory observation reference."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this laboratory observation reference."
+		},
+		"propertyReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the property reference of this laboratory observation reference."
+		},
+		"status": {
+			"type": "string",
+			"description": "The status, expressed as text, for this laboratory observation reference."
+		},
+		"value": {
+			"type": "string",
+			"description": "The value, expressed as text, for this laboratory observation reference."
+		},
+		"valueCode": {
+			"type": "string",
+			"description": "The value, expressed as a code, for this laboratory observation reference."
+		}
+	},
+	"required": ["type"]
+}

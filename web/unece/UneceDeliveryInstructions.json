@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDeliveryInstructions",
+	"title": "UneceDeliveryInstructions",
+	"description": "Delivery information of an instructive nature.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "DeliveryInstructions",
+			"description": "JSON-LD Type."
+		},
+		"deliveryInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of these delivery instructions."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these delivery instructions."
+		},
+		"handling": {
+			"type": "string",
+			"description": "Delivery handling instructions expressed as text."
+		},
+		"handlingCode": {
+			"type": "string",
+			"description": "A code specifying delivery handling instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "A type, expressed as text, for these delivery instructions."
+		},
+		"itemName": {
+			"type": "string",
+			"description": "A name, expressed as text, of an item included in these delivery instructions."
+		},
+		"procedure": {
+			"type": "string",
+			"description": "A procedure, expressed as text, for these delivery instructions."
+		},
+		"requirementIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not a requirement exists for these delivery instructions."
+		}
+	},
+	"required": ["type"]
+}

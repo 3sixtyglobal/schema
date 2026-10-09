@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCoordinateSourceSystem",
+	"title": "UneceCoordinateSourceSystem",
+	"description": "Properties defining a geographical coordinate source system used in different places around the world to identify\nlocations on the earth.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CoordinateSourceSystem",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this geographical coordinate source system."
+		},
+		"signalSourceAvailableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity of signal source available for this geographical coordinate source system."
+		},
+		"sourceTypeCode": {
+			"type": "string",
+			"description": "The code specifying a type of source for this geographical coordinate source system."
+		},
+		"toleranceMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the tolerance of this geographical coordinate source system."
+		},
+		"usedSignalSourceQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity of the used signal source of this geographical coordinate source system."
+		}
+	},
+	"required": ["type"]
+}

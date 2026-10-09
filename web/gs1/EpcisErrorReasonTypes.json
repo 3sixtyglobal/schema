@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisErrorReasonTypes",
+	"title": "EpcisErrorReasonTypes",
+	"description": "Supported EPCIS 2.0 `error-reason` values from the GS1 EPCIS JSON Schema.",
+	"anyOf": [
+		{
+			"const": "did_not_occur",
+			"description": "Prior event is erroneous because it did not actually occur; no corrective\nevents exist."
+		},
+		{
+			"const": "incorrect_data",
+			"description": "Prior event has incorrect data and may be corrected by subsequent linked\nevents."
+		}
+	]
+}

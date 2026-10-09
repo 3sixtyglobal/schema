@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingJournalCodeList",
+	"title": "UneceAccountingJournalCodeList",
+	"description": "A character string used to represent the type of an accounting journal.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingJournalCodeList#1",
+			"description": "Subsidiary journal: 1."
+		},
+		{
+			"const": "unece:AccountingJournalCodeList#2",
+			"description": "Budget journal: 2."
+		},
+		{
+			"const": "unece:AccountingJournalCodeList#3",
+			"description": "Cost journal: 3."
+		},
+		{
+			"const": "unece:AccountingJournalCodeList#4",
+			"description": "Journal: 4."
+		}
+	]
+}

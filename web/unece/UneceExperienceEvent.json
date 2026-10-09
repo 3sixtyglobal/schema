@@ -1,0 +1,132 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceExperienceEvent",
+	"title": "UneceExperienceEvent",
+	"description": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing,\nmeditation, holiday trip, dinner, theme park visit, could be experienced.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ExperienceEvent",
+			"description": "JSON-LD Type."
+		},
+		"applicableSpecifiedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+			},
+			"description": "A specified note applicable for this experience event."
+		},
+		"basicObjective": {
+			"type": "string",
+			"description": "A basic objective, expressed as text, for this experience event."
+		},
+		"breakUpDateTime": {
+			"type": "string",
+			"description": "The break up date, time, date time, or other date time value for this experience event.",
+			"format": "date-time"
+		},
+		"calculatedPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "A calculated price for this experience event."
+		},
+		"choiceAllowedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not a choice is allowed for this experience event."
+		},
+		"dateSequenceNumeric": {
+			"type": "string",
+			"description": "The date sequence number for this experience event."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this experience event."
+		},
+		"distinctiveFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFeature"
+			},
+			"description": "A distinctive feature specified for this experience event."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this experience event."
+		},
+		"indemnityClause": {
+			"type": "string",
+			"description": "An indemnity clause, expressed as text, for this experience event."
+		},
+		"instruction": {
+			"type": "string",
+			"description": "An instruction, expressed as text, for this experience event."
+		},
+		"location": {
+			"type": "string",
+			"description": "A location, expressed as text, for this experience event."
+		},
+		"meetingDateTime": {
+			"type": "string",
+			"description": "The meeting date, time, date time, or other date time value for this experience event.",
+			"format": "date-time"
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this experience event."
+		},
+		"operationalPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An operational period specified for this experience event."
+		},
+		"providedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A specified certificate provided for this experience event."
+		},
+		"providedRequirement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRequirement"
+			},
+			"description": "A specified requirement provided for this experience event."
+		},
+		"requiredUsageCondition": {
+			"$ref": "https://schema.3sixty.global/unece/UneceUsageCondition",
+			"description": "The specified usage condition required for this experience event."
+		},
+		"reservationGuarantee": {
+			"type": "string",
+			"description": "A reservation guarantee, expressed as text, for this experience event."
+		},
+		"reservationRequiredIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not a reservation is required for this experience event."
+		},
+		"specifiedTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party specified for this experience event."
+		}
+	},
+	"required": ["type"]
+}

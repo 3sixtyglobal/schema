@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsOrderedCollectionPage",
+	"title": "ActivityStreamsOrderedCollectionPage",
+	"description": "A W3C Activity Streams OrderedCollectionPage.\n\nAn `OrderedCollectionPage` is a page from an `OrderedCollection`. When\n`orderedItems` are present, `startIndex` can be used as an offset for the first\nitem in the page.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "OrderedCollectionPage"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "OrderedCollectionPage"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "OrderedCollectionPage type."
+		},
+		"startIndex": {
+			"type": "number",
+			"description": "Relative index position of the first item in this page."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsCollectionPage"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsOrderedCollection"
+		}
+	]
+}

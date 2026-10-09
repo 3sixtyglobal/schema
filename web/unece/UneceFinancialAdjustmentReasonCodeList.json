@@ -1,0 +1,332 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancialAdjustmentReasonCodeList",
+	"title": "UneceFinancialAdjustmentReasonCodeList",
+	"description": "A character string used to represent a financial adjustment reason.",
+	"anyOf": [
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#1",
+			"description": "Agreed settlement: 1."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#10",
+			"description": "Costs for draft: 10."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#100",
+			"description": "Incorrect product identification: 100."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#11",
+			"description": "Bank charges: 11."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#12",
+			"description": "Agent commission: 12."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#13",
+			"description": "Counter claim: 13."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#19",
+			"description": "Trade discount: 19."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#20",
+			"description": "Deduction for late delivery: 20."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#21",
+			"description": "Advertising costs: 21."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#22",
+			"description": "Customs duties: 22."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#23",
+			"description": "Telephone and postal costs: 23."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#24",
+			"description": "Repair costs: 24."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#25",
+			"description": "Attorney fees: 25."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#26",
+			"description": "Taxes: 26."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#27",
+			"description": "Reclaimed deduction: 27."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#30",
+			"description": "Direct payment to seller: 30."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#34",
+			"description": "Quoted as paid to you: 34."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#36",
+			"description": "Invoice not received: 36."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#37",
+			"description": "Credit note to debtor/not to us: 37."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#38",
+			"description": "Deducted bonus: 38."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#39",
+			"description": "Deducted discount: 39."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#40",
+			"description": "Deducted freight costs: 40."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#41",
+			"description": "Deduction against other invoices: 41."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#42",
+			"description": "Credit balance(s): 42."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#43",
+			"description": "Reason unknown: 43."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#44",
+			"description": "Awaiting message from seller: 44."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#45",
+			"description": "Debit note to seller: 45."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#46",
+			"description": "Discount beyond terms: 46."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#47",
+			"description": "See buyer's letter: 47."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#48",
+			"description": "Allowance/charge error: 48."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#5",
+			"description": "Price query: 5."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#50",
+			"description": "Terms of sale error: 50."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#52",
+			"description": "Wrong invoice: 52."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#53",
+			"description": "Duplicate invoice: 53."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#54",
+			"description": "Weight error: 54."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#55",
+			"description": "Additional charge not authorized: 55."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#56",
+			"description": "Incorrect discount: 56."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#57",
+			"description": "Price change: 57."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#58",
+			"description": "Variation: 58."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#59",
+			"description": "Chargeback: 59."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#60",
+			"description": "Offset: 60."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#61",
+			"description": "Indirect payment: 61."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#62",
+			"description": "Financial reassignment: 62."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#63",
+			"description": "Reinstatement of chargeback/offset: 63."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#64",
+			"description": "Expecting new terms: 64."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#65",
+			"description": "Settlement to agent: 65."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#66",
+			"description": "Cash discount: 66."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#67",
+			"description": "Delcredere costs: 67."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#68",
+			"description": "Early payment allowance adjustment: 68."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#69",
+			"description": "Incorrect due date for monetary amount: 69."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#7",
+			"description": "Payment on account: 7."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#70",
+			"description": "Wrong monetary amount resulting from incorrect free goods quantity: 70."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#73",
+			"description": "Difference in tax rate: 73."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#74",
+			"description": "Quantity discount: 74."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#75",
+			"description": "Promotion discount: 75."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#77",
+			"description": "Pricing discount: 77."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#78",
+			"description": "Volume discount: 78."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#79",
+			"description": "Sundry discount: 79."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#8",
+			"description": "Returnable container charge included: 8."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#80",
+			"description": "Card holder signature missing: 80."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#81",
+			"description": "Card expiry date missing: 81."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#82",
+			"description": "Card number error: 82."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#83",
+			"description": "Card expired: 83."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#84",
+			"description": "Test card transaction: 84."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#85",
+			"description": "Permission limit exceeded: 85."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#86",
+			"description": "Wrong authorisation code: 86."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#87",
+			"description": "Wrong authorised amount: 87."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#88",
+			"description": "Authorisation failed: 88."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#89",
+			"description": "Card acceptor data error: 89."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#9",
+			"description": "Invoice error: 9."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#90",
+			"description": "Treasury management service charge: 90."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#91",
+			"description": "Agreed discount: 91."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#92",
+			"description": "Expediting fee: 92."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#93",
+			"description": "Invoicing fee: 93."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#94",
+			"description": "Freight charge: 94."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#95",
+			"description": "Small order processing service charge: 95."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#96",
+			"description": "Currency exchange differences: 96."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#97",
+			"description": "Insolvency: 97."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#98",
+			"description": "Incorrect references: 98."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#99",
+			"description": "Incorrect identification of the buyer: 99."
+		},
+		{
+			"const": "unece:FinancialAdjustmentReasonCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceObservation",
+	"title": "UneceObservation",
+	"description": "A specified act or instance of viewing or noting a fact or occurrence for some scientific or other special purpose.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Observation",
+			"description": "JSON-LD Type."
+		},
+		"applicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing information applicable to this specified observation."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description for this specified observation."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this specified observation."
+		},
+		"relatedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file related to this specified observation."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionUnitTypeCodeList",
+	"title": "UneceProductionUnitTypeCodeList",
+	"description": "Values for UneceProductionUnit typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:relatedProductionUnit",
+			"description": "A facility production unit related to this referenced location.\nA production unit related to this production facility."
+		},
+		{
+			"const": "unece:specifiedProductionUnit",
+			"description": "A facility production unit for this specified production device.\nA facility production unit specified for this production machine."
+		},
+		{
+			"const": "unece:subordinateProductionUnit",
+			"description": "A production unit subordinate to this facility production unit."
+		}
+	]
+}

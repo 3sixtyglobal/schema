@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBillingDocumentCodeList",
+	"title": "UneceBillingDocumentCodeList",
+	"description": "A character string used to represent a type of billing document.",
+	"anyOf": [
+		{
+			"const": "unece:BillingDocumentCodeList#261",
+			"description": "Self billed credit note: 261."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#262",
+			"description": "Consolidated credit note - goods and services: 262."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#265",
+			"description": "Transport equipment movement report: 265."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#296",
+			"description": "Credit note for price variation: 296."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#324",
+			"description": "Transport emergency card: 324."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#326",
+			"description": "Partial invoice: 326."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#380",
+			"description": "Commercial invoice: 380."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#381",
+			"description": "Credit note: 381."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#383",
+			"description": "Debit note: 383."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#385",
+			"description": "Consolidated invoice: 385."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#386",
+			"description": "Prepayment invoice: 386."
+		},
+		{
+			"const": "unece:BillingDocumentCodeList#389",
+			"description": "Self-billed invoice: 389."
+		}
+	]
+}

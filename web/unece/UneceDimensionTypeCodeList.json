@@ -1,0 +1,104 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDimensionTypeCodeList",
+	"title": "UneceDimensionTypeCodeList",
+	"description": "A character string used to represent the dimension type.",
+	"anyOf": [
+		{
+			"const": "unece:DimensionTypeCodeList#1",
+			"description": "Gross dimensions: 1."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#10",
+			"description": "External equipment dimension: 10."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#11",
+			"description": "Internal equipment dimensions: 11."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#12",
+			"description": "Damage dimensions: 12."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#13",
+			"description": "Off-standard dimensions height: 13."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#14",
+			"description": "Equipment door dimensions: 14."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#15",
+			"description": "Off-standard dimension width: 15."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#16",
+			"description": "Off-standard dimension length: 16."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#17",
+			"description": "Bundled equipment total height: 17."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#18",
+			"description": "Equipment off-standard dimension height, actual: 18."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#19",
+			"description": "Folded equipment height: 19."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#2",
+			"description": "Package dimensions (including goods): 2."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#20",
+			"description": "Adjustable equipment height: 20."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#21",
+			"description": "Equipment floor height: 21."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#22",
+			"description": "Container off-standard dimension width at corner posts: 22."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#23",
+			"description": "Container off-standard dimension width of body: 23."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#24",
+			"description": "Transport unit gross dimensions: 24."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#3",
+			"description": "Pallet dimensions (excluding goods): 3."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#4",
+			"description": "Pallet dimensions (including goods): 4."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#5",
+			"description": "Off-standard dimension front: 5."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#6",
+			"description": "Off-standard dimension back: 6."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#7",
+			"description": "Off-standard dimension right: 7."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#8",
+			"description": "Off-standard dimension left: 8."
+		},
+		{
+			"const": "unece:DimensionTypeCodeList#9",
+			"description": "Off-standard dimension general: 9."
+		}
+	]
+}

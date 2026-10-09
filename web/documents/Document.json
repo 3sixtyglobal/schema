@@ -1,33 +1,30 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/documents/Document",
+	"$id": "https://schema.3sixty.global/documents/Document",
+	"title": "Document",
 	"description": "Interface describing a document.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/documents/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				},
-				{
-					"type": "string",
 					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.3sixty.global/documents/"
+				},
+				{
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "Document",
 			"description": "JSON-LD Type."
 		},
@@ -35,48 +32,21 @@
 			"type": "string",
 			"description": "The full id of the document."
 		},
-		"documentId": {
-			"type": "string",
-			"description": "The id of the document."
-		},
-		"documentIdFormat": {
-			"type": "string",
-			"description": "The format of the document id."
-		},
-		"documentCode": {
-			"$ref": "https://vocabulary.uncefact.org/DocumentCodeList",
-			"description": "The code for the document type."
-		},
 		"documentRevision": {
 			"type": "number",
 			"description": "The revision of the document as a 0 based index."
-		},
-		"annotationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "Additional annotation information for the document."
 		},
 		"blobStorageId": {
 			"type": "string",
 			"description": "The blob storage id for the document."
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the blob data."
-		},
-		"blobStorageEntry": {
-			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
-			"description": "The additional JSON-LD for blob storage if it was requested."
-		},
-		"extractedData": {
-			"description": "The data extracted from the document using data extraction services."
+			"description": "The integrity of the blob data."
 		},
 		"attestationId": {
 			"type": "string",
 			"description": "The attestation for the document if one was created."
-		},
-		"attestationInformation": {
-			"$ref": "https://schema.twindev.org/attestation/AttestationInformation",
-			"description": "The additional JSON-LD for attestation storage if it was requested."
 		},
 		"dateCreated": {
 			"type": "string",
@@ -90,9 +60,9 @@
 			"type": "string",
 			"description": "The date/time of when the document was deleted, as we never actually remove items."
 		},
-		"nodeIdentity": {
+		"organizationIdentity": {
 			"type": "string",
-			"description": "The node which added the document to the graph."
+			"description": "The organization which added the document to the graph."
 		},
 		"userIdentity": {
 			"type": "string",
@@ -103,14 +73,14 @@
 		"@context",
 		"type",
 		"id",
-		"documentId",
-		"documentCode",
 		"documentRevision",
 		"blobStorageId",
-		"blobHash",
-		"dateCreated",
-		"nodeIdentity",
-		"userIdentity"
+		"integrity",
+		"dateCreated"
 	],
-	"additionalProperties": false
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/documents/DocumentBase"
+		}
+	]
 }

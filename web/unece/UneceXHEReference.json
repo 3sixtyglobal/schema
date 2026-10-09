@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceXHEReference",
+	"title": "UneceXHEReference",
+	"description": "Information related to an XHE (Exchange Header Envelope).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "XHEReference",
+			"description": "JSON-LD Type."
+		},
+		"endAvailabilityDateTime": {
+			"type": "string",
+			"description": "The end date, time, date time, or other date time value for the availability of this XHE reference.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this XHE reference."
+		},
+		"login": {
+			"type": "string",
+			"description": "The login, expressed as text, for this XHE reference."
+		},
+		"password": {
+			"type": "string",
+			"description": "The password, expressed as text, for this XHE reference."
+		},
+		"startAvailabilityDateTime": {
+			"type": "string",
+			"description": "The start date, time, date time, or other date time value for the availability of this XHE reference.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type", "identifier"]
+}

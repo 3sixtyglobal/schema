@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePriorityDescriptionCodeList",
+	"title": "UnecePriorityDescriptionCodeList",
+	"description": "A character string used to represent a priority.",
+	"anyOf": [
+		{
+			"const": "unece:PriorityDescriptionCodeList#1",
+			"description": "Immediate: 1."
+		},
+		{
+			"const": "unece:PriorityDescriptionCodeList#2",
+			"description": "Urgent: 2."
+		},
+		{
+			"const": "unece:PriorityDescriptionCodeList#3",
+			"description": "Normal: 3."
+		},
+		{
+			"const": "unece:PriorityDescriptionCodeList#4",
+			"description": "Scheduled: 4."
+		},
+		{
+			"const": "unece:PriorityDescriptionCodeList#5",
+			"description": "Category A: 5."
+		},
+		{
+			"const": "unece:PriorityDescriptionCodeList#6",
+			"description": "Category B: 6."
+		}
+	]
+}

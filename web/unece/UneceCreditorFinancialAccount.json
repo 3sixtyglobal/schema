@@ -1,0 +1,78 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCreditorFinancialAccount",
+	"title": "UneceCreditorFinancialAccount",
+	"description": "A specific business arrangement whereby credits arising from transactions are recorded.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CreditorFinancialAccount",
+			"description": "JSON-LD Type."
+		},
+		"accountName": {
+			"type": "string",
+			"description": "The account name, expressed as text, of this creditor financial account."
+		},
+		"bBANId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this\ncreditor financial account."
+		},
+		"creditorFinancialAccountTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of creditor financial account."
+		},
+		"currencyCode": {
+			"type": "string",
+			"description": "The code specifying the currency of this creditor financial account (Reference ISO 4217 codes)."
+		},
+		"iBANId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
+		},
+		"proprietaryId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique proprietary identifier for this creditor financial account."
+		},
+		"proprietaryType": {
+			"type": "string",
+			"description": "The proprietary type, expressed as text, of this creditor financial account, such as the nature or use of the creditor\naccount."
+		},
+		"uPICId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor\nfinancial account."
+		}
+	},
+	"required": ["type"]
+}

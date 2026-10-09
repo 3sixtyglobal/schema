@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceExperienceProgramAction",
+	"title": "UneceExperienceProgramAction",
+	"description": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure\nexperience, a business experience, or a wellness experience.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ExperienceProgramAction",
+			"description": "JSON-LD Type."
+		},
+		"actionType": {
+			"type": "string",
+			"description": "A type, expressed as text, of experience program action."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this experience program action."
+		},
+		"specifiedTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party specified for this experience program action."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this experience program action."
+		},
+		"typeCode": {
+			"type": "string",
+			"description": "The code specifying the type of experience program action."
+		}
+	},
+	"required": ["type"]
+}

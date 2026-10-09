@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidService",
+	"$id": "https://schema.3sixty.global/w3c-did/DidService",
+	"title": "DidService",
 	"description": "Interface describing a did document service.",
 	"type": "object",
 	"properties": {
@@ -15,12 +16,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The type of the service."
@@ -32,17 +30,13 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The endpoint for the service."
 		}
 	},
-	"required": ["id", "type", "serviceEndpoint"],
-	"additionalProperties": false
+	"required": ["id", "type", "serviceEndpoint"]
 }

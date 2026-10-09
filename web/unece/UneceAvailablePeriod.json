@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAvailablePeriod",
+	"title": "UneceAvailablePeriod",
+	"description": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or\nup to an end date for which something is available.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AvailablePeriod",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this available period."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the end of this available period of time.",
+			"format": "date-time"
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the start of this available period of time.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolCatalogError",
+	"title": "DataspaceProtocolCatalogError",
+	"description": "Interface for the Dataspace Protocol catalog error response.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "CatalogError",
+			"description": "The type of the message."
+		},
+		"code": {
+			"type": "string",
+			"description": "The error code."
+		},
+		"reason": {
+			"type": "array",
+			"items": {},
+			"description": "The error reason(s)."
+		}
+	},
+	"required": ["@context", "@type", "code"]
+}

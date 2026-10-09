@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDatasetRequestMessage",
+	"title": "DataspaceProtocolDatasetRequestMessage",
+	"description": "Interface for the Dataspace Protocol dataset request message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "DatasetRequestMessage",
+			"description": "The type of the message."
+		},
+		"dataset": {
+			"type": "string",
+			"description": "The identifier of the dataset."
+		}
+	},
+	"required": ["@context", "@type", "dataset"]
+}

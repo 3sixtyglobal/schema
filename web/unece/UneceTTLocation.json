@@ -1,0 +1,77 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTTLocation",
+	"title": "UneceTTLocation",
+	"description": "A physical place related to a Track and Trace (TT) process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TTLocation",
+			"description": "JSON-LD Type."
+		},
+		"applicableTechnicalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+			},
+			"description": "A technical characteristic applicable to this TT location."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this TT location."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this TT location."
+		},
+		"locationFunctionTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLocationFunctionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of TT location."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this TT location."
+		},
+		"responsibleTTParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
+			"description": "The party responsible for this TT location."
+		},
+		"specifiedAnimalHoldingEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalHoldingEvent"
+			},
+			"description": "An animal holding event specified for this TT location."
+		},
+		"specifiedGeographicalArea": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalArea",
+			"description": "The geographical area specified for this TT location."
+		},
+		"specifiedTTAnimal": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTAnimal"
+			},
+			"description": "An animal specified for this TT location."
+		}
+	},
+	"required": ["type"]
+}

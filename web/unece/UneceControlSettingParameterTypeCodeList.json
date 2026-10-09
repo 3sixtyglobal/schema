@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceControlSettingParameterTypeCodeList",
+	"title": "UneceControlSettingParameterTypeCodeList",
+	"description": "Values for UneceControlSettingParameter typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:definedControlSettingParameter",
+			"description": "A control setting parameter defined for this monitoring sensor."
+		}
+	]
+}

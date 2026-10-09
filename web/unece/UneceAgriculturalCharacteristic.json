@@ -1,0 +1,101 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic",
+	"title": "UneceAgriculturalCharacteristic",
+	"description": "A prominent attribute or aspect of an agricultural object.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AgriculturalCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"agriculturalCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this agricultural characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this agricultural characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this agricultural characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of agricultural characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "The value, expressed as text, for this agricultural characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The value, expressed as an amount, for this agricultural characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value, expressed as a date, time, date time, or other date time value, of this agricultural characteristic.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value, expressed as an indicator, for this agricultural characteristic."
+		},
+		"valueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of a value for this agricultural characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for the value of this agricultural characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this agricultural characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for the value of this agricultural characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for the value of this agricultural characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for the value of this agricultural characteristic."
+		}
+	},
+	"required": ["type"]
+}

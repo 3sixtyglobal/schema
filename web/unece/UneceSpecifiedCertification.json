@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedCertification",
+	"title": "UneceSpecifiedCertification",
+	"description": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification\nrequirements stipulated in a standard or regulation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedCertification",
+			"description": "JSON-LD Type."
+		},
+		"assertion": {
+			"type": "string",
+			"description": "An assertion, expressed as text, for this specified certification."
+		},
+		"assertionCode": {
+			"type": "string",
+			"description": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous\nchemicals."
+		},
+		"auditDateTime": {
+			"type": "string",
+			"description": "An audit date, time, date time or other date time value for this specified certification.",
+			"format": "date-time"
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The end date value for this specified certification.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this specified certification."
+		},
+		"relatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
+			},
+			"description": "A referenced location related to this specified certification."
+		},
+		"relatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard related to this specified certification."
+		},
+		"responsibleAgency": {
+			"type": "string",
+			"description": "A responsible agency, expressed as text, for this specified certification."
+		},
+		"specifiedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion for this specified certification."
+		},
+		"standard": {
+			"type": "string",
+			"description": "A standard, expressed as text, for this specified certification."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The start date value for this specified certification.",
+			"format": "date-time"
+		},
+		"uRIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A Uniform Resource Identifier (URI) for this specified certification."
+		}
+	},
+	"required": ["type"]
+}

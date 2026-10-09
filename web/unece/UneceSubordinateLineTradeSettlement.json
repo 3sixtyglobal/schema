@@ -1,0 +1,61 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeSettlement",
+	"title": "UneceSubordinateLineTradeSettlement",
+	"description": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the\nitem(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SubordinateLineTradeSettlement",
+			"description": "JSON-LD Type."
+		},
+		"amountDirectionCode": {
+			"type": "string",
+			"description": "The code, specifying the direction, either an addition or subtraction, for the amount of this subordinate line trade\nsettlement."
+		},
+		"applicableTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+			},
+			"description": "A tax applicable to this subordinate line trade settlement."
+		},
+		"billingPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The billing period specified for the subordinate line of this trade settlement."
+		},
+		"invoiceReferencedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An invoice document referenced for this subordinate line trade settlement."
+		},
+		"purchaseSpecifiedAccountingAccount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
+			},
+			"description": "A purchase accounting account specified for the subordinate line of this trade settlement."
+		},
+		"specifiedAllowanceCharge": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge"
+			},
+			"description": "An allowance or charge specified for this subordinate line trade settlement."
+		},
+		"specifiedFinancialAdjustment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceFinancialAdjustment"
+			},
+			"description": "A financial adjustment specified for this subordinate line trade settlement."
+		}
+	},
+	"required": ["type"]
+}

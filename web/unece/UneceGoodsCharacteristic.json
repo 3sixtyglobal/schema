@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic",
+	"title": "UneceGoodsCharacteristic",
+	"description": "A distinctive feature of a material contained within physical goods.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GoodsCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"absolutePresenceVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The volume measure of the absolute presence of this material goods characteristic."
+		},
+		"absolutePresenceWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The weight measure of the absolute presence of this material goods characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this material goods characteristic."
+		},
+		"proportionalConstituentPercent": {
+			"type": "string",
+			"description": "The percentage presence of the material within the goods for this material goods characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of material goods characteristic."
+		}
+	},
+	"required": ["type"]
+}

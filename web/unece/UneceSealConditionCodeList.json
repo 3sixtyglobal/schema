@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSealConditionCodeList",
+	"title": "UneceSealConditionCodeList",
+	"description": "A character string used to represent the seal condition.",
+	"anyOf": [
+		{
+			"const": "unece:SealConditionCodeList#1",
+			"description": "In right condition: 1."
+		},
+		{
+			"const": "unece:SealConditionCodeList#2",
+			"description": "Damaged: 2."
+		},
+		{
+			"const": "unece:SealConditionCodeList#3",
+			"description": "Missing: 3."
+		},
+		{
+			"const": "unece:SealConditionCodeList#4",
+			"description": "Broken: 4."
+		},
+		{
+			"const": "unece:SealConditionCodeList#5",
+			"description": "Faulty electronic seal: 5."
+		}
+	]
+}

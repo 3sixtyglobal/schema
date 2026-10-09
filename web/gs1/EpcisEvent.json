@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisEvent",
+	"title": "EpcisEvent",
+	"description": "Base EPCIS 2.0 Event carrying shared fields across all event types.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisContextType",
+			"description": "JSON-LD"
+		},
+		"type": {
+			"type": "string",
+			"description": "Type of Event."
+		},
+		"eventID": {
+			"type": "string",
+			"description": "URI identifier of a specific EPCIS event (alias of id in JSON or XML)."
+		},
+		"certificationInfo": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "(Optional) CertificationDetails relevant for Objects, Places and/or\nOrganizations mentioned in this Event."
+		},
+		"errorDeclaration": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisErrorDeclaration",
+			"description": "Error declaration."
+		},
+		"eventTime": {
+			"type": "string",
+			"description": "The date and time at which the EPCIS Capturing Applications asserts the event\noccurred."
+		},
+		"eventTimeZoneOffset": {
+			"type": "string",
+			"description": "The time zone offset in effect at the time and place the event occurred,\nexpressed as an offset from UTC."
+		},
+		"recordTime": {
+			"type": "string",
+			"description": "(Optional) The date and time at which this event was recorded by an EPCIS\nRepository; ignored at capture and present on query results."
+		}
+	},
+	"required": ["@context", "type", "eventTime", "eventTimeZoneOffset"]
+}

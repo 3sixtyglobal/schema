@@ -1,0 +1,63 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsPlace",
+	"title": "ActivityStreamsPlace",
+	"description": "A W3C Activity Streams Place.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Place"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Place"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Place type."
+		},
+		"latitude": {
+			"type": "number",
+			"description": "The latitude of the Place.\n\nThe Activity Streams vocabulary defines this as an `xsd:float`."
+		},
+		"longitude": {
+			"type": "number",
+			"description": "The longitude of the Place.\n\nThe Activity Streams vocabulary defines this as an `xsd:float`."
+		},
+		"altitude": {
+			"type": "number",
+			"description": "The altitude of the Place.\n\nMeasurement units are specified using the `units` property. If `units` is not specified,\nthe default is assumed to be \"m\" (meters)."
+		},
+		"accuracy": {
+			"type": "number",
+			"description": "The accuracy of the Place.\n\nIndicates the accuracy of position coordinates on a Place objects.\nExpressed in properties of percentage. e.g. \"94.0\" means \"94.0% accurate\"."
+		},
+		"radius": {
+			"type": "number",
+			"description": "The radius from the given `latitude` and `longitude`.\n\nMeasurement units are specified using the `units` property. If `units` is not specified,\nthe default is assumed to be \"m\" (meters)."
+		},
+		"units": {
+			"type": "string",
+			"description": "Measurement units for the `radius` and `altitude` properties.\n\nIf not specified, the default is assumed to be \"m\" (meters). The Activity Streams\nvocabulary allows values such as \"cm\", \"feet\", \"inches\", \"km\", \"m\", \"miles\", or any\nother unit expressed as a URI."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

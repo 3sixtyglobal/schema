@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaShipmentEvent",
+	"title": "DcsaShipmentEvent",
+	"description": "The `ShipmentEvent` is a specialized event to handle all events related to documentation.\n\nSource: `shipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
+	"oneOf": [
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "SHIPMENT"
+						}
+					},
+					"required": ["eventType"],
+					"allOf": [
+						{
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
+						}
+					],
+					"description": "Event metadata (eventType = SHIPMENT)."
+				},
+				"payload": {
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload",
+					"description": "Business attributes related to the `ShipmentEvent`."
+				}
+			},
+			"required": ["metadata", "payload"]
+		},
+		{
+			"type": "object",
+			"properties": {
+				"metadata": {
+					"type": "object",
+					"properties": {
+						"eventType": {
+							"const": "SHIPMENT"
+						}
+					},
+					"required": ["eventType"],
+					"allOf": [
+						{
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction"
+						}
+					],
+					"description": "Retraction metadata (eventType = SHIPMENT)."
+				},
+				"payload": {
+					"not": {},
+					"description": "Retractions do not carry payloads."
+				}
+			},
+			"required": ["metadata"]
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalLine",
+	"title": "UneceGeographicalLine",
+	"description": "A connection between two points on the surface of the Earth (reference ISO 19136).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GeographicalLine",
+			"description": "JSON-LD Type."
+		},
+		"associatedDirectPositionList": {
+			"type": "string",
+			"description": "The direct position list associated with this geographical line."
+		},
+		"associatedGeographicalObjectCharacteristic": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
+			"description": "The geographical object characteristic associated with this geographical line."
+		},
+		"associatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location associated with this specified geographical line."
+		}
+	},
+	"required": ["type", "associatedDirectPositionList", "associatedGeographicalObjectCharacteristic"]
+}

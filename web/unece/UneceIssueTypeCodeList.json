@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceIssueTypeCodeList",
+	"title": "UneceIssueTypeCodeList",
+	"description": "Values for UneceIssue typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:specifiedIssue",
+			"description": "A target issue specified for this electronic negotiation exchange."
+		}
+	]
+}

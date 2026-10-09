@@ -1,0 +1,42 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGuestArrival",
+	"title": "UneceGuestArrival",
+	"description": "The act of coming to or reaching a place by a specified guest.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GuestArrival",
+			"description": "JSON-LD Type."
+		},
+		"carrierId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the carrier for this specified guest arrival."
+		},
+		"carrierName": {
+			"type": "string",
+			"description": "A carrier's name, expressed as text, related to this specified guest arrival."
+		},
+		"expectedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this specified guest arrival is expected.",
+			"format": "date-time"
+		},
+		"transportModeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportModeCodeList",
+			"description": "The code specifying the transport mode of this specified guest arrival."
+		}
+	},
+	"required": ["type"]
+}

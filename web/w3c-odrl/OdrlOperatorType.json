@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlOperatorType",
+	"title": "OdrlOperatorType",
+	"description": "The types for ODRL Operators.",
+	"anyOf": [
+		{
+			"const": "eq",
+			"description": "Equal type."
+		},
+		{
+			"const": "gt",
+			"description": "Greater than type."
+		},
+		{
+			"const": "gteq",
+			"description": "Greater than or equal to type."
+		},
+		{
+			"const": "lt",
+			"description": "Less than type."
+		},
+		{
+			"const": "lteq",
+			"description": "Less than or equal to type."
+		},
+		{
+			"const": "neq",
+			"description": "Not equal to type."
+		},
+		{
+			"const": "isA",
+			"description": "Is a type."
+		},
+		{
+			"const": "hasPart",
+			"description": "Has part type."
+		},
+		{
+			"const": "isPartOf",
+			"description": "Is part of type."
+		},
+		{
+			"const": "isAllOf",
+			"description": "Is all of type."
+		},
+		{
+			"const": "isAnyOf",
+			"description": "Is any of type."
+		},
+		{
+			"const": "isNoneOf",
+			"description": "Is none of type."
+		},
+		{
+			"const": "locTimeEq",
+			"description": "Location time equal to type."
+		},
+		{
+			"const": "locTimeGteq",
+			"description": "Location time greater than or equal to type."
+		}
+	]
+}

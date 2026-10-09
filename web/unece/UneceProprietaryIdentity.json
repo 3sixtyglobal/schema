@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProprietaryIdentity",
+	"title": "UneceProprietaryIdentity",
+	"description": "Proprietary information which uniquely identifies a person or organization.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProprietaryIdentity",
+			"description": "JSON-LD Type."
+		},
+		"identificationType": {
+			"type": "string",
+			"description": "An identifier type, expressed as text, for this proprietary identity."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A proprietary identifier."
+		}
+	},
+	"required": ["type"]
+}

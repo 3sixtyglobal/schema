@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBirthAddress",
+	"title": "UneceBirthAddress",
+	"description": "The place of birth.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "BirthAddress",
+			"description": "JSON-LD Type."
+		},
+		"birthAddressCountryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of a country for this birth address."
+		},
+		"cityName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the city, town or village of this birth address."
+		},
+		"countrySubDivisionName": {
+			"type": "string",
+			"description": "The name, expressed as text, of the sub-division of a country for this birth address."
+		}
+	},
+	"required": ["type"]
+}

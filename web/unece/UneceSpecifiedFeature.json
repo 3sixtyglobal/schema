@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedFeature",
+	"title": "UneceSpecifiedFeature",
+	"description": "A distinctive or characteristic part of something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedFeature",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified feature."
+		},
+		"keywordMarketingPhrase": {
+			"type": "string",
+			"description": "A keyword marketing phrase, expressed as text, for this feature."
+		},
+		"marketingPhrase": {
+			"type": "string",
+			"description": "A marketing phrase, expressed as text, for this specified feature."
+		},
+		"objective": {
+			"type": "string",
+			"description": "An objective, expressed as text, for this specified feature."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFeatureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of feature."
+		},
+		"usageCode": {
+			"type": "string",
+			"description": "The code specifying the usage for this specified feature."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,182 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceService",
+	"title": "UneceService",
+	"description": "A service associated with a transport movement.\nA referenced service associated with a specified event during transport movement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Service",
+			"description": "JSON-LD Type."
+		},
+		"actualPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An actual period of performance for this referenced transport service."
+		},
+		"chargeAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the charge for this transport service."
+		},
+		"contractId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The contract identifier of this referenced transport service."
+		},
+		"deliverySpecifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location specified for a delivery by this referenced transport service."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this transport service."
+		},
+		"effectiveSpecifiedPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The specified period during which this transport service is effective."
+		},
+		"estimatedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An estimated period of performance for this referenced transport service."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of this transport service."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this transport service."
+		},
+		"itemQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A quantity of items for this referenced transport service."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this transport service."
+		},
+		"plannedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A planned period of performance for this referenced transport service."
+		},
+		"preplannedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this referenced transport service has been planned in advance of its execution."
+		},
+		"reasonCode": {
+			"type": "string",
+			"description": "A code specifying a reason for this transport service."
+		},
+		"relatedSpecifiedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A related logistics location specified for this referenced transport service."
+		},
+		"requestedPerformancePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A requested period of performance for this referenced transport service."
+		},
+		"requesterParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party requesting this referenced transport service."
+		},
+		"responsibleParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party responsible for this transport service."
+		},
+		"responsibleTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party responsible for this transport service."
+		},
+		"specifiedRoute": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportRoute"
+			},
+			"description": "A transport route specified for this transport service."
+		},
+		"transportContractMovementContractMovementTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportContractMovementCodeList"
+			},
+			"description": "A code specifying a contract movement type of this transport service."
+		},
+		"transportServiceCategoryTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of category for this transport service."
+		},
+		"transportServiceConditionTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportServiceConditionCodeList"
+			},
+			"description": "A code specifying a type of condition for this transport service, such as a contract or carriage condition."
+		},
+		"transportServicePaymentArrangementCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportServicePaymentArrangementCodeList",
+			"description": "The code specifying the payment arrangement for this transport service."
+		},
+		"transportServicePriorityCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportServicePriorityCodeList",
+			"description": "The code specifying the priority of this transport service."
+		},
+		"transportServiceRequirementCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportServiceRequirementCodeList"
+			},
+			"description": "A code specifying a service requirement for this transport service."
+		},
+		"uRICommunication": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
+			"description": "The Uniform Resource Identifier (URI) communication for this transport service, such as its website or email address."
+		}
+	},
+	"required": ["type"]
+}

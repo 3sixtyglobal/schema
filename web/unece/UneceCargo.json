@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCargo",
+	"title": "UneceCargo",
+	"description": "Information about goods being transported identifying their nature for customs, statistical or transport purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Cargo",
+			"description": "JSON-LD Type."
+		},
+		"cargoCategoryTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCargoCategoryCodeList",
+			"description": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
+		},
+		"cargoCommodityCategoryStatisticalClassificationCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCargoCommodityCategoryCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying a statistical classification for this transport cargo."
+		},
+		"cargoOperationalCategoryCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCargoOperationalCategoryCodeList",
+			"description": "The code specifying the operational category for this transport cargo, such as obnoxious or military."
+		},
+		"identification": {
+			"type": "string",
+			"description": "Identification, expressed as text, of this transport cargo that is sufficient to identify it for customs, statistical or\ntransport purposes."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFuel",
+	"title": "UneceFuel",
+	"description": "Any specified material that is burnt or altered in order to obtain energy.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Fuel",
+			"description": "JSON-LD Type."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceFuelTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of specified fuel."
+		},
+		"volumeUnitVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "A measure of a weight (mass) for this specified fuel."
+		},
+		"weightUnitWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "A measure of a volume for this specified fuel."
+		},
+		"workingPressureMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceUnitMeasureType"
+			},
+			"description": "A working pressure measure for this specified fuel."
+		}
+	},
+	"required": ["type"]
+}

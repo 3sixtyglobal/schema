@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeProductFeatureTypeCodeList",
+	"title": "UneceTradeProductFeatureTypeCodeList",
+	"description": "Values for UneceTradeProductFeature typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:marketingFeature",
+			"description": "A marketing feature of this trade product."
+		}
+	]
+}

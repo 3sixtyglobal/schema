@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRadionuclide",
+	"title": "UneceRadionuclide",
+	"description": "A radionuclide atom that has excess nuclear energy, making it unstable.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Radionuclide",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this radioactive radionuclide."
+		},
+		"lowDispersibleStatusIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this radioactive radionuclide has a low dispersible status."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name or symbol, expressed as text, of a radioactive radionuclide."
+		},
+		"specialFormIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this radioactive radionuclide has a special form."
+		}
+	},
+	"required": ["type"]
+}

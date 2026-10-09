@@ -1,0 +1,122 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristic",
+	"title": "UneceOrganizationCharacteristic",
+	"description": "A prominent attribute or aspect of an organization.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "OrganizationCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this organization characteristic."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this organization characteristic."
+		},
+		"condition": {
+			"type": "string",
+			"description": "A condition or status, expressed as text, of this organization characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this organization characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this organization characteristic."
+		},
+		"organizationCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this organization characteristic."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristicTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of organization characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this organization characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The value, expressed as an amount, for this organization characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value for this organization characteristic expressed as a date, time, date time, or other date time value.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value for this organization characteristic expressed as an indicator."
+		},
+		"valueMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of a value for this organization characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for the value of this organization characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The value, expressed as a number, for this organization characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for the value of this organization characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for the value of this organization characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for the value of this organization characteristic."
+		}
+	},
+	"required": ["type"]
+}

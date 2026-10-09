@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBaseShipmentEvent",
+	"title": "DcsaBaseShipmentEvent",
+	"description": "Base shipment event attributes.\n\nNote: In the upstream OpenAPI, `shipmentPayload` is defined as `baseEvent` +\n`baseShipmentEvent`. In this package, those are already represented by\n`IDcsaShipmentPayload` extending `IDcsaBaseEvent`.\n\nSource: `baseShipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
+	"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload"
+}

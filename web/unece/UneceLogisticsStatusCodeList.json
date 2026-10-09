@@ -1,0 +1,1352 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLogisticsStatusCodeList",
+	"title": "UneceLogisticsStatusCodeList",
+	"description": "A character string used to represent the logistics status condition or reason.",
+	"anyOf": [
+		{
+			"const": "unece:LogisticsStatusCodeList#1",
+			"description": "Arrival, completed: 1."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#10",
+			"description": "Cleared, by agriculture, food or fisheries authorities: 10."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#100",
+			"description": "Transshipment: 100."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#101",
+			"description": "Delayed in transit: 101."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#102",
+			"description": "Unknown: 102."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#103",
+			"description": "Equipment, unplugged: 103."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#104",
+			"description": "Delivery refused, to be re-arranged: 104."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#105",
+			"description": "Delivery, postponed: 105."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#106",
+			"description": "Delivery refused: 106."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#107",
+			"description": "Anomaly on arrival: 107."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#108",
+			"description": "Delivery claim: 108."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#109",
+			"description": "Delivery, impossible, delivery notice left: 109."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#11",
+			"description": "Cleared, by port authority: 11."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#110",
+			"description": "Delivery, impossible, no delivery notice left: 110."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#111",
+			"description": "Transport terminated: 111."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#112",
+			"description": "Held, at consignee's disposal: 112."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#113",
+			"description": "Delivery, in progress: 113."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#114",
+			"description": "Delivery, accepted subject to further inspection: 114."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#115",
+			"description": "Discrepancy: 115."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#116",
+			"description": "Export inhibited: 116."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#117",
+			"description": "Missing: 117."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#118",
+			"description": "Stowed on deck: 118."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#119",
+			"description": "Unable to be located: 119."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#12",
+			"description": "Cleared, by customs: 12."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#120",
+			"description": "Unacceptable condition: 120."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#121",
+			"description": "Stowed under deck: 121."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#123",
+			"description": "Accompanying documents delivered: 123."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#124",
+			"description": "For transfer: 124."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#125",
+			"description": "No status: 125."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#126",
+			"description": "Customs clearance, in progress: 126."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#127",
+			"description": "Departed, completed on a means of transport: 127."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#128",
+			"description": "Awaiting customs import release: 128."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#129",
+			"description": "In-bond movement: 129."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#13",
+			"description": "Collection/pick-up, completed: 13."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#130",
+			"description": "Consignment received from shipper: 130."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#131",
+			"description": "For transfer, to another carrier: 131."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#132",
+			"description": "Loading, in progress: 132."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#133",
+			"description": "Special loading operations: 133."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#134",
+			"description": "Embarking passengers: 134."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#135",
+			"description": "Unloading, in progress: 135."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#136",
+			"description": "Special unloading: 136."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#137",
+			"description": "Disembarking passengers: 137."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#138",
+			"description": "Relocation of a means of transport: 138."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#139",
+			"description": "Manoeuvring operations, entering port: 139."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#14",
+			"description": "Process, completed: 14."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#140",
+			"description": "Manoeuvring operations, leaving port: 140."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#141",
+			"description": "Manoeuvring operations, within the port: 141."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#142",
+			"description": "Means of transport, under preparation: 142."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#143",
+			"description": "Ballast loading: 143."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#144",
+			"description": "Ballast unloading: 144."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#145",
+			"description": "Cargo space under preparation: 145."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#146",
+			"description": "Provisioning: 146."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#147",
+			"description": "Provisioning, fuel: 147."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#148",
+			"description": "Provisioning, water: 148."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#149",
+			"description": "Provisioning, oil: 149."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#15",
+			"description": "Consolidated: 15."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#150",
+			"description": "Provisioning, food: 150."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#151",
+			"description": "Sanitary operations: 151."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#152",
+			"description": "Fumigation operations: 152."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#153",
+			"description": "Disinfestation operations: 153."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#154",
+			"description": "Deratization operations: 154."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#155",
+			"description": "Degasation operations: 155."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#156",
+			"description": "Crew recruitment operation: 156."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#157",
+			"description": "Training operations: 157."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#158",
+			"description": "Salvage operations: 158."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#159",
+			"description": "Loading, alongside: 159."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#16",
+			"description": "Crossed border: 16."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#161",
+			"description": "Loading, at anchor: 161."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#162",
+			"description": "Unloading, at wharf: 162."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#163",
+			"description": "Unloading on board: 163."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#164",
+			"description": "Unloading, at anchor: 164."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#165",
+			"description": "Loading and unloading, simultaneously: 165."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#166",
+			"description": "Idle time operations: 166."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#167",
+			"description": "Technical operations: 167."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#168",
+			"description": "Compass calibration: 168."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#169",
+			"description": "Document, clearance operation: 169."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#17",
+			"description": "Customs clearance, refused: 17."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#170",
+			"description": "Customs formalities operation: 170."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#171",
+			"description": "Medical control operations: 171."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#172",
+			"description": "Loading, preparation for: 172."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#174",
+			"description": "Unloading, preparation for: 174."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#175",
+			"description": "Unloading, polluted ballast: 175."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#176",
+			"description": "Obtaining documents from shipping register: 176."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#177",
+			"description": "Obtaining wreckage documentation: 177."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#178",
+			"description": "Waiting, to enter or leave: 178."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#179",
+			"description": "Waiting, for a pilot: 179."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#18",
+			"description": "Damaged in the course of transportation: 18."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#180",
+			"description": "Waiting, for a tug: 180."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#181",
+			"description": "Waiting, for day light: 181."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#182",
+			"description": "Waiting, due to meteorological circumstances: 182."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#183",
+			"description": "Waiting, to form a convoy: 183."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#184",
+			"description": "Waiting, for action by authorities: 184."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#185",
+			"description": "Waiting, due to a ban: 185."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#186",
+			"description": "Waiting, for entry permission: 186."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#187",
+			"description": "Waiting, due to an action taken by authorities: 187."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#188",
+			"description": "Waiting, due to the terms of charter: 188."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#189",
+			"description": "Waiting, for a location: 189."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#19",
+			"description": "Equipment, damage quoted for: 19."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#190",
+			"description": "Waiting, for cargo: 190."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#191",
+			"description": "Waiting, for workers: 191."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#192",
+			"description": "Waiting, for storage area: 192."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#193",
+			"description": "Waiting, for equipment: 193."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#194",
+			"description": "Waiting, for other means of transport: 194."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#195",
+			"description": "Waiting, for handling equipment: 195."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#196",
+			"description": "Waiting, for on board handling equipment: 196."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#197",
+			"description": "Waiting, for cargo to be ready for loading: 197."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#198",
+			"description": "Waiting, for means of transport to be ready: 198."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#199",
+			"description": "Waiting, due to damaged cargo: 199."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#2",
+			"description": "Loading, authorized: 2."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#20",
+			"description": "Delayed, in the course of transportation: 20."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#200",
+			"description": "Waiting, for operational periods: 200."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#201",
+			"description": "Waiting, for repair and/or maintenance of the means of transport: 201."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#202",
+			"description": "Waiting, for repair and/or maintenance of handling equipment: 202."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#203",
+			"description": "Embarking passengers from tender: 203."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#204",
+			"description": "Waiting, for a counter convoy to pass: 204."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#205",
+			"description": "Delivery address outside delivery area: 205."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#206",
+			"description": "Arrival, after means of transport departed: 206."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#207",
+			"description": "Delivery refused, agent: 207."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#208",
+			"description": "Seals, replaced: 208."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#209",
+			"description": "Delivery, scheduled: 209."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#21",
+			"description": "Delivery, completed: 21."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#210",
+			"description": "Delivery, unsuccessful attempt: 210."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#211",
+			"description": "Delivery not completed, business closed: 211."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#212",
+			"description": "Delivery, changed schedule: 212."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#213",
+			"description": "Delivery, further address needed: 213."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#214",
+			"description": "Computer system not in operation: 214."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#215",
+			"description": "Delivery, awaiting credit approval: 215."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#216",
+			"description": "Delivery, awaiting customer arrangements: 216."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#218",
+			"description": "Damaged: 218."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#219",
+			"description": "Delivery pending, awaiting specified dates/times/periods: 219."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#22",
+			"description": "Delivery, completed as per instruction: 22."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#220",
+			"description": "Destination incorrect: 220."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#222",
+			"description": "Derailment: 222."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#224",
+			"description": "Delivery, industrial dispute: 224."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#225",
+			"description": "Operation affected by customer action: 225."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#227",
+			"description": "Delivery, equipment failure: 227."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#228",
+			"description": "Inspection required by authority: 228."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#229",
+			"description": "Export suspended: 229."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#23",
+			"description": "Delivery, not completed: 23."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#231",
+			"description": "Missing, goods item: 231."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#232",
+			"description": "Import suspended: 232."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#233",
+			"description": "Incorrect picklist: 233."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#234",
+			"description": "Incorrect address: 234."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#235",
+			"description": "Industrial dispute: 235."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#236",
+			"description": "Waiting, for instructions: 236."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#238",
+			"description": "Means of transport, damaged: 238."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#239",
+			"description": "Mechanical breakdown: 239."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#24",
+			"description": "Departure, completed: 24."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#240",
+			"description": "Mechanical inspection required: 240."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#241",
+			"description": "Missing, document: 241."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#242",
+			"description": "New delivery arrangements advised: 242."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#243",
+			"description": "No recipient contact information: 243."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#247",
+			"description": "Collection/pick-up, package not available: 247."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#248",
+			"description": "Tracking number unknown: 248."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#25",
+			"description": "Departure, delayed: 25."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#250",
+			"description": "Transport payment not received: 250."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#251",
+			"description": "Refused, non-payment by payer: 251."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#253",
+			"description": "Refused, no reason given: 253."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#254",
+			"description": "Delivery, scheduled past cut-off time: 254."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#255",
+			"description": "Shunted to siding: 255."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#256",
+			"description": "Signature not required: 256."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#258",
+			"description": "Special service required: 258."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#26",
+			"description": "Deramped: 26."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#260",
+			"description": "Tracking information unavailable: 260."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#265",
+			"description": "Reason unknown: 265."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#266",
+			"description": "Delivery delayed, adverse weather conditions: 266."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#267",
+			"description": "Free storage time expired: 267."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#269",
+			"description": "Delivery, consignee absent: 269."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#27",
+			"description": "Despatch, completed: 27."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#270",
+			"description": "Delayed operation, local circumstances: 270."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#271",
+			"description": "Delayed operation, consignee's instructions: 271."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#272",
+			"description": "Delayed operation, consignor's instructions: 272."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#273",
+			"description": "Delayed operation: 273."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#274",
+			"description": "Incomplete address: 274."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#275",
+			"description": "Delivery refused, purchase order cancelled: 275."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#276",
+			"description": "Delivery refused, return to the consignor: 276."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#277",
+			"description": "Delivery refused, inconsistent with purchase order: 277."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#278",
+			"description": "Delivery refused, incorrect delivery date: 278."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#279",
+			"description": "Delivery refused, automatic return: 279."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#28",
+			"description": "Stripped: 28."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#280",
+			"description": "Delivery refused, duplicate delivery: 280."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#281",
+			"description": "Delivery refused, instructions requested: 281."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#282",
+			"description": "Delivery refused, consignee's condition: 282."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#283",
+			"description": "Delivery refused, delivery incomplete: 283."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#284",
+			"description": "Delivery refused, not ordered: 284."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#285",
+			"description": "Delivery refused, remainder not accepted: 285."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#286",
+			"description": "Delivery refused, spoilt state: 286."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#287",
+			"description": "Missing, contents: 287."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#288",
+			"description": "Not on package list: 288."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#29",
+			"description": "Unloaded: 29."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#291",
+			"description": "Delivery refused, collect freight charges not paid: 291."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#292",
+			"description": "Delivery refused, reimbursement not paid: 292."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#295",
+			"description": "Delivery refused, opened: 295."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#297",
+			"description": "Delivery refused, commercial dispute: 297."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#298",
+			"description": "Delivery refused, error on product or packaging: 298."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#299",
+			"description": "Delivery refused, delivery date/time changed: 299."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#3",
+			"description": "Arrival, in defective condition: 3."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#30",
+			"description": "Empty on inspection: 30."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#300",
+			"description": "Document, received without goods: 300."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#301",
+			"description": "Goods, received without documentation: 301."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#302",
+			"description": "Overcarried consignment: 302."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#306",
+			"description": "Document, found: 306."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#307",
+			"description": "Damaged but deliverable: 307."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#308",
+			"description": "Spoilt: 308."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#309",
+			"description": "Packaging/equipment opened: 309."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#31",
+			"description": "En route: 31."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#310",
+			"description": "Processed as contractually agreed: 310."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#311",
+			"description": "Claim folder opened: 311."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#312",
+			"description": "Moved, completed: 312."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#313",
+			"description": "Returned by recipient: 313."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#314",
+			"description": "Delayed, at origin: 314."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#315",
+			"description": "Held, by logistic service provider: 315."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#316",
+			"description": "Incident occurred but accepted by ordering party: 316."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#317",
+			"description": "Delivery party' premises closed during normal hours: 317."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#318",
+			"description": "Delivery incomplete, time shortage: 318."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#319",
+			"description": "Despatch, preparation error: 319."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#32",
+			"description": "Equipment, returned from repair: 32."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#320",
+			"description": "Undefined incident attributed to logistic server provider: 320."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#321",
+			"description": "Instruction to despatch, received: 321."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#322",
+			"description": "Despatch, under preparation: 322."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#323",
+			"description": "Return in progress: 323."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#324",
+			"description": "Instruction to despatch, cancelled: 324."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#325",
+			"description": "Delivery refused, by recipient: 325."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#326",
+			"description": "Goods, held by third party on instruction from owner: 326."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#327",
+			"description": "Weight or volume loss: 327."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#328",
+			"description": "Moved, internally: 328."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#329",
+			"description": "Consignment partially stolen: 329."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#33",
+			"description": "Equipment, sent for repair: 33."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#330",
+			"description": "Consignment partially lost or missing: 330."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#331",
+			"description": "Destroyed: 331."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#332",
+			"description": "Action by logistics service provider: 332."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#333",
+			"description": "Action by logistics service provider on instruction by owner: 333."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#334",
+			"description": "Document, refused: 334."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#335",
+			"description": "Seals, damaged: 335."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#336",
+			"description": "Seals, broken: 336."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#337",
+			"description": "Seals, tampered: 337."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#338",
+			"description": "Collection/pick-up, business closed: 338."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#339",
+			"description": "Collection/pick-up, changed schedule: 339."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#34",
+			"description": "Equipment, repaired: 34."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#340",
+			"description": "Collection/pick-up, further address needed: 340."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#341",
+			"description": "Collection/pick-up, industrial dispute: 341."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#342",
+			"description": "Collection/pick-up, equipment failure: 342."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#343",
+			"description": "Document, incorrect: 343."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#344",
+			"description": "Collection/pick-up, scheduled past cut-off time: 344."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#345",
+			"description": "Collection/pick-up, adverse weather conditions: 345."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#346",
+			"description": "Unloading, completed from a means of transport: 346."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#347",
+			"description": "Deliverable: 347."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#348",
+			"description": "Not deliverable: 348."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#349",
+			"description": "Handed over: 349."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#35",
+			"description": "Forwarded to destination: 35."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#350",
+			"description": "Signature required: 350."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#351",
+			"description": "Defined incident attributed to logistic server provider: 351."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#352",
+			"description": "Delivery not completed, business closed, inventory count: 352."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#353",
+			"description": "Delivery not completed, business closed on Saturday: 353."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#354",
+			"description": "Delivery not completed, business closed on national holiday: 354."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#355",
+			"description": "En route, via local route: 355."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#356",
+			"description": "En route, via national route: 356."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#357",
+			"description": "En route, via international route: 357."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#358",
+			"description": "Transport terminated, mail not received: 358."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#359",
+			"description": "Bill of Lading issued: 359."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#36",
+			"description": "Not found: 36."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#360",
+			"description": "Cleared, by logistics service provider: 360."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#361",
+			"description": "Delivery, expected: 361."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#362",
+			"description": "Measured: 362."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#363",
+			"description": "Loading, ready: 363."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#364",
+			"description": "Arrival, at yard: 364."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#365",
+			"description": "Departure, from yard: 365."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#366",
+			"description": "Accepted at interchange point: 366."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#367",
+			"description": "Alerted, no action taken: 367."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#368",
+			"description": "Transshipment to another wagon: 368."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#369",
+			"description": "Trip plan revised manually: 369."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#37",
+			"description": "Found: 37."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#370",
+			"description": "Special wagon handling arranged: 370."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#38",
+			"description": "Freight paid: 38."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#39",
+			"description": "Released from bond: 39."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#4",
+			"description": "Defective equipment returned to service: 4."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#40",
+			"description": "Arrival, at port: 40."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#41",
+			"description": "Handed over under continued responsibility: 41."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#44",
+			"description": "Misrouted consignment corrected: 44."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#45",
+			"description": "Arrival, consignee informed: 45."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#46",
+			"description": "Moved, into bond: 46."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#47",
+			"description": "Moved, into packing depot: 47."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#48",
+			"description": "Loading, completed onto a means of transport: 48."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#49",
+			"description": "Lost: 49."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#5",
+			"description": "Process, begun: 5."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#50",
+			"description": "Manifested: 50."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#51",
+			"description": "Onloaded from a means of transport: 51."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#53",
+			"description": "Collection/pick-up, not completed: 53."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#54",
+			"description": "Unidentifiable: 54."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#57",
+			"description": "Not loaded onto a means of transport: 57."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#58",
+			"description": "Equipment, off hire: 58."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#59",
+			"description": "Premature onloading: 59."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#6",
+			"description": "Booking, completed: 6."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#60",
+			"description": "Equipment, on hire: 60."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#61",
+			"description": "Outstanding claims settled: 61."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#62",
+			"description": "Overlanded: 62."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#63",
+			"description": "Not available for collection/pick-up: 63."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#64",
+			"description": "Collection/pick-up, awaited: 64."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#65",
+			"description": "Equipment, plugged-in: 65."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#66",
+			"description": "Plundered: 66."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#67",
+			"description": "Positioned: 67."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#68",
+			"description": "Pre-informed: 68."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#69",
+			"description": "Disposed of: 69."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#7",
+			"description": "Booking, cancelled: 7."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#70",
+			"description": "Ramped equipment: 70."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#71",
+			"description": "Ready for transportation: 71."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#72",
+			"description": "Receipt of goods fully acknowledged: 72."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#73",
+			"description": "Receipt of goods partially acknowledged: 73."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#74",
+			"description": "Received: 74."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#75",
+			"description": "Consignee changed: 75."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#76",
+			"description": "Transport re-arranged: 76."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#77",
+			"description": "Refused, action: 77."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#78",
+			"description": "Released: 78."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#79",
+			"description": "Reloaded onto a means of transport: 79."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#8",
+			"description": "Cleared, import restrictions: 8."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#80",
+			"description": "Returned as instructed: 80."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#81",
+			"description": "Returned wrecked: 81."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#82",
+			"description": "Returned: 82."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#83",
+			"description": "Sealed equipment: 83."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#84",
+			"description": "Service ordered: 84."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#85",
+			"description": "Short landed: 85."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#86",
+			"description": "Short shipped: 86."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#87",
+			"description": "Despatched, completed via a wrong route: 87."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#88",
+			"description": "Split consignment: 88."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#89",
+			"description": "Steam cleaned: 89."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#9",
+			"description": "Cleared, export restrictions: 9."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#90",
+			"description": "Movement stopped: 90."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#91",
+			"description": "Stored: 91."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#92",
+			"description": "Stowed: 92."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#93",
+			"description": "Stuffed: 93."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#94",
+			"description": "Stuffed and sealed: 94."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#95",
+			"description": "Sub-lease notice in: 95."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#96",
+			"description": "Sub-lease notice out: 96."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#97",
+			"description": "Damage surveyed: 97."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#98",
+			"description": "Transferred in: 98."
+		},
+		{
+			"const": "unece:LogisticsStatusCodeList#99",
+			"description": "Transferred out: 99."
+		}
+	]
+}

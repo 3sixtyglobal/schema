@@ -1,0 +1,110 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/supply-chain/ConsignmentOverview",
+	"title": "ConsignmentOverview",
+	"description": "Consignment overview interface for listing operations (supports both v1 and v2 payloads).",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "A unique record id for this supply chain consignment in AIG."
+		},
+		"aigId": {
+			"type": "string",
+			"description": "The AIG vertex id for this consignment."
+		},
+		"identifier": {
+			"type": "string",
+			"description": "Unique identifier representing the consignment in supply chain."
+		},
+		"globalId": {
+			"type": "string",
+			"description": "Unique globalId identifier representing the consignment in supply chain."
+		},
+		"transportId": {
+			"type": "string",
+			"description": "Transport id for the consignment"
+		},
+		"dateOfEntry": {
+			"type": "string",
+			"description": "Entry date of the consignment"
+		},
+		"portOfEntry": {
+			"type": "string",
+			"description": "Entry location of the consignment"
+		},
+		"portOfExit": {
+			"type": "string",
+			"description": "Exit location of the consignment"
+		},
+		"firstConsignor": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The first consignor of the consignment, which is the party that initially sent the goods."
+		},
+		"lastConsignee": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The last consignee of the consignment"
+		},
+		"tradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "The import and exporter of the consignment"
+		},
+		"carrierParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The carrier party responsible for the consignment"
+		},
+		"commodities": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignmentItem"
+			},
+			"description": "Commodities in the consignment"
+		},
+		"reference": {
+			"type": "string",
+			"description": "Reference field for the goods load (v2)."
+		},
+		"transportModeCode": {
+			"type": "string",
+			"description": "Transport mode code."
+		},
+		"transportMeans": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
+			},
+			"description": "Details of the transport means used for the consignment"
+		},
+		"latestStatus": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string",
+					"description": "Status name."
+				},
+				"date": {
+					"type": "string",
+					"description": "Status date."
+				}
+			},
+			"required": ["name", "date"],
+			"description": "Latest status information e.g. Planned."
+		},
+		"dateCreated": {
+			"type": "string",
+			"description": "The date when this entry was created."
+		},
+		"dateUpdated": {
+			"type": "string",
+			"description": "The date when this entry was updated."
+		},
+		"payloadVersion": {
+			"type": "string",
+			"description": "Payload version (v1 for Consignment, v2 for GoodsLoad)."
+		}
+	},
+	"required": ["id", "identifier", "latestStatus", "dateCreated"]
+}

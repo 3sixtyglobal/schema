@@ -1,0 +1,238 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolSet",
+	"title": "DataspaceProtocolSet",
+	"description": "Set interface compliant with Eclipse Data Space Protocol, requiring an id and omitting context.",
+	"type": "object",
+	"properties": {
+		"@id": {
+			"type": "string",
+			"description": "Unique identifier for the set."
+		}
+	},
+	"required": ["@id"],
+	"allOf": [
+		{
+			"description": "Interface representing an ODRL Set.\nA Set is a basic policy type with no specific party requirements.\nhttps://www.w3.org/TR/odrl-model/#policy-set",
+			"type": "object",
+			"properties": {
+				"@context": {
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlContextType",
+					"description": "The context for the policy.\nMust include \"https://www.w3.org/ns/odrl.jsonld\"",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"@type": {
+					"const": "Set",
+					"description": "The type must be \"Set\".",
+					"$comment": "Inherited from OdrlSet"
+				},
+				"profile": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The profile(s) this policy conforms to.\nIRIs identifying the ODRL Profile(s).",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"assigner": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The assigner of the policy.\nApplies to all rules unless overridden at rule level.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"assignee": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The assignee of the policy.\nApplies to all rules unless overridden at rule level.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"target": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
+									}
+								]
+							}
+						}
+					],
+					"description": "The target asset for the rule.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"action": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+						},
+						{
+							"type": "array",
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
+									},
+									{
+										"type": "string"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
+									}
+								]
+							}
+						}
+					],
+					"description": "The action associated with the rule.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"inheritFrom": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies).",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"conflict": {
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConflictStrategyType",
+					"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"permission": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
+							}
+						}
+					],
+					"description": "The permissions in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"prohibition": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
+							}
+						}
+					],
+					"description": "The prohibitions in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				},
+				"obligation": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+						},
+						{
+							"type": "array",
+							"items": {
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
+							}
+						}
+					],
+					"description": "The obligations in the policy.\nAt least one of permission, prohibition, or obligation must be present.",
+					"$comment": "Inherited from OdrlPolicy"
+				}
+			},
+			"required": ["@context", "@type"],
+			"$comment": "Inlined utility base type OdrlSet so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
+}

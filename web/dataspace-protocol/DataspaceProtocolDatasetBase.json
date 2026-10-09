@@ -1,0 +1,527 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDatasetBase",
+	"title": "DataspaceProtocolDatasetBase",
+	"description": "Base dataset interface compliant with Eclipse Data Space Protocol, requiring an id, hasPolicy, and distribution.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "Dataset",
+			"description": "The type identifier for the dataset.\nREQUIRED per Eclipse Data Space Protocol."
+		},
+		"@id": {
+			"type": "string",
+			"description": "Unique identifier for the dataset.\nREQUIRED per Eclipse Data Space Protocol."
+		},
+		"hasPolicy": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase"
+			},
+			"description": "Array of ODRL offers; must contain at least one entry.",
+			"minItems": 1
+		},
+		"distribution": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDistributionBase"
+			},
+			"description": "Distributions of this dataset; must contain at least one entry.",
+			"minItems": 1
+		}
+	},
+	"required": ["@type", "@id", "hasPolicy", "distribution"],
+	"allOf": [
+		{
+			"description": "Base interface for DCAT Dataset without JSON-LD context.\nThis is the context-free variant of IDcatDataset, intended for embedding\ndataset objects inline within other objects where the context is provided by the enclosing document.",
+			"type": "object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"description": "The unique identifier for the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:title": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A name given to the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:description": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A free-text account of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:identifier": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A unique identifier of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:issued": {
+					"type": "string",
+					"description": "Date of formal issuance (publication) of the resource.",
+					"format": "date-time",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:modified": {
+					"type": "string",
+					"description": "Most recent date on which the resource was changed, updated or modified.",
+					"format": "date-time",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:language": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A language of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:publisher": {
+					"anyOf": [
+						{
+							"description": "A FOAF Agent.",
+							"type": "object",
+							"properties": {
+								"@context": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+									"description": "The LD Context.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"@id": {
+									"type": "string",
+									"description": "The unique identifier for the FOAF object.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:name": {
+									"type": "string",
+									"description": "A name for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:title": {
+									"type": "string",
+									"description": "Title (Mr, Mrs, Ms, Dr. etc)",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:mbox": {
+									"type": "string",
+									"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:homepage": {
+									"type": "string",
+									"description": "A homepage for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:depiction": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+									"description": "A depiction of some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"@type": {
+									"anyOf": [
+										{
+											"const": "Agent"
+										},
+										{
+											"const": "Person"
+										},
+										{
+											"const": "Organization"
+										},
+										{
+											"const": "Group"
+										},
+										{
+											"type": "string"
+										}
+									],
+									"description": "Type.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:age": {
+									"type": "number",
+									"description": "The age in years of some agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:made": {
+									"anyOf": [
+										{
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+										},
+										{
+											"type": "array",
+											"items": {
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+											}
+										}
+									],
+									"description": "Something that was made by this agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:weblog": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "A weblog of some thing (whether person, group, company etc.).",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:openid": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "An OpenID for an agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:interest": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "A page about a topic of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:topic_interest": {
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+									"description": "A thing of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								}
+							},
+							"required": ["@type"],
+							"$comment": "Inlined utility base type FoafAgent so utility transformations can operate on concrete properties instead of a $ref."
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "An entity responsible for making the resource available.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:creator": {
+					"anyOf": [
+						{
+							"description": "A FOAF Agent.",
+							"type": "object",
+							"properties": {
+								"@context": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+									"description": "The LD Context.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"@id": {
+									"type": "string",
+									"description": "The unique identifier for the FOAF object.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:name": {
+									"type": "string",
+									"description": "A name for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:title": {
+									"type": "string",
+									"description": "Title (Mr, Mrs, Ms, Dr. etc)",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:mbox": {
+									"type": "string",
+									"description": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:homepage": {
+									"type": "string",
+									"description": "A homepage for some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"foaf:depiction": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+									"description": "A depiction of some thing.",
+									"$comment": "Inherited from FoafBaseObject"
+								},
+								"@type": {
+									"anyOf": [
+										{
+											"const": "Agent"
+										},
+										{
+											"const": "Person"
+										},
+										{
+											"const": "Organization"
+										},
+										{
+											"const": "Group"
+										},
+										{
+											"type": "string"
+										}
+									],
+									"description": "Type.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:age": {
+									"type": "number",
+									"description": "The age in years of some agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:made": {
+									"anyOf": [
+										{
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+										},
+										{
+											"type": "array",
+											"items": {
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+											}
+										}
+									],
+									"description": "Something that was made by this agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:weblog": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "A weblog of some thing (whether person, group, company etc.).",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:openid": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "An OpenID for an agent.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:interest": {
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
+									"description": "A page about a topic of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								},
+								"foaf:topic_interest": {
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+									"description": "A thing of interest to this person.",
+									"$comment": "Inherited from FoafAgent"
+								}
+							},
+							"required": ["@type"],
+							"$comment": "Inlined utility base type FoafAgent so utility transformations can operate on concrete properties instead of a $ref."
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "An entity responsible for producing the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:accessRights": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Information about who can access the resource or an indication of its security status.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:license": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "A legal document under which the resource is made available.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:rights": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Information about rights held in and over the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:conformsTo": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "An established standard to which the resource conforms.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:type": {
+					"type": "string",
+					"description": "The nature or genre of the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:contactPoint": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Relevant contact information for the catalogued resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:keyword": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A keyword or tag describing the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:theme": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A main category of the resource. A resource can have multiple themes.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:landingPage": {
+					"anyOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "A Web page that can be navigated to gain access to the resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcat:qualifiedRelation": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatRelationship"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "Link to a description of a relationship with another resource.",
+					"$comment": "Inherited from DcatResourceBase"
+				},
+				"dcterms:accrualPeriodicity": {
+					"type": "string",
+					"description": "The frequency at which the dataset is published.",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"dcat:inSeries": {
+					"type": "string",
+					"description": "A dataset series of which the dataset is part.",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"dcterms:spatial": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					],
+					"description": "The geographical area covered by the dataset.",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"dcat:spatialResolutionInMeters": {
+					"type": "number",
+					"description": "Minimum spatial separation resolvable in a dataset, measured in meters.",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"dcterms:temporal": {
+					"$ref": "https://schema.3sixty.global/dublin-core/DublinCorePeriodOfTime",
+					"description": "The temporal period that the dataset covers.",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"dcat:temporalResolution": {
+					"type": "string",
+					"description": "Minimum time period resolvable in the dataset.",
+					"format": "duration",
+					"$comment": "Inherited from DcatDatasetBase"
+				},
+				"prov:wasGeneratedBy": {
+					"anyOf": [
+						{
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+						},
+						{
+							"type": "string"
+						}
+					],
+					"description": "An activity that generated, or provides the business context for, the creation of the dataset.",
+					"$comment": "Inherited from DcatDatasetBase"
+				}
+			},
+			"$comment": "Inlined utility base type DcatDatasetBase so utility transformations can operate on concrete properties instead of a $ref."
+		}
+	]
+}

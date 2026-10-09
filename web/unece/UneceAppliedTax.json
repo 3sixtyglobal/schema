@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAppliedTax",
+	"title": "UneceAppliedTax",
+	"description": "A total levy or payment for the support of a government that is required of persons, groups, or businesses within the\ndomain of that government.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AppliedTax",
+			"description": "JSON-LD Type."
+		},
+		"appliedTaxTypeCode": {
+			"type": "string",
+			"description": "The code specifying the applied tax type such as VAT."
+		},
+		"basisAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value used as the basis in calculating the applied tax."
+		},
+		"calculatedAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value resulting from the calculation of the applied tax."
+		},
+		"calculatedRate": {
+			"type": "string",
+			"description": "The rate used to calculate the applied tax."
+		},
+		"taxPointDate": {
+			"type": "string",
+			"description": "The date of the tax point when taxes, such as VAT, are to be applied."
+		}
+	},
+	"required": ["type"]
+}

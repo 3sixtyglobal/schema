@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRadioactiveMaterial",
+	"title": "UneceRadioactiveMaterial",
+	"description": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of\nparticles or gamma rays.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "RadioactiveMaterial",
+			"description": "JSON-LD Type."
+		},
+		"applicableRadioactiveIsotope": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRadioactiveIsotope"
+			},
+			"description": "An isotope applicable to this radioactive material."
+		},
+		"compositionDescription": {
+			"type": "string",
+			"description": "The textual description of the composition of this radioactive material."
+		},
+		"criticalitySafetyIndexNumeric": {
+			"type": "string",
+			"description": "The criticality safety index number of this radioactive material."
+		},
+		"fissileCriticalitySafetyIndexNumeric": {
+			"type": "string",
+			"description": "The number (rounded up to the next tenth) assigned to and placed on the label of a fissile radioactive material package,\nto designate the degree of control of accumulation of packages, overpacks or freight containers containing fissile\nmaterial during transportation."
+		},
+		"fissileExceptionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this radioactive material is a fissile exception."
+		},
+		"lowDispersibleInformation": {
+			"type": "string",
+			"description": "Information, expressed as text, describing the low dispersion properties of this radioactive material."
+		},
+		"radioactivePackageTransportIndexCode": {
+			"type": "string",
+			"description": "A code specifying a package transport index for this radioactive material."
+		},
+		"radionuclideName": {
+			"type": "string",
+			"description": "The name of the radionuclide, expressed as text, of this radioactive material."
+		},
+		"specialFormInformation": {
+			"type": "string",
+			"description": "Information, expressed as text, describing the special form for this radioactive material."
+		},
+		"transportIndexNumeric": {
+			"type": "string",
+			"description": "The transport index number of this radioactive material."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceRadioactiveMaterialTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of this radioactive material."
+		}
+	},
+	"required": ["type"]
+}

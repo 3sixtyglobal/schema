@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCountry",
+	"title": "UneceCountry",
+	"description": "The area of land that belongs to a nation together with its properties, such as population, political organization,\netc., used or referenced for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Country",
+			"description": "JSON-LD Type."
+		},
+		"countryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this trade country."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this trade country."
+		},
+		"specifiedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A quantity specified for this trade country."
+		},
+		"subordinateCountrySubDivision": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountrySubDivision"
+			},
+			"description": "A trade country sub-division that is subordinate to this trade country, such as a state, a county, a canton, a province."
+		}
+	},
+	"required": ["type"]
+}

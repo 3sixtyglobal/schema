@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceEquipmentTypeCodeList",
+	"title": "UneceEquipmentTypeCodeList",
+	"description": "Values for UneceEquipment typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:interfaceEquipment",
+			"description": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
+		}
+	]
+}

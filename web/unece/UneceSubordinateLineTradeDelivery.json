@@ -1,0 +1,51 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeDelivery",
+	"title": "UneceSubordinateLineTradeDelivery",
+	"description": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SubordinateLineTradeDelivery",
+			"description": "JSON-LD Type."
+		},
+		"actualDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An actual delivery event for this subordinate line trade delivery."
+		},
+		"billedQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A billed quantity of this subordinate line trade delivery."
+		},
+		"includedPackaging": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
+			},
+			"description": "Packaging included in this subordinate line trade delivery."
+		},
+		"packageQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of packages in this subordinate line trade delivery."
+		},
+		"perPackageUnitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units per package in this subordinate line trade delivery."
+		},
+		"productUnitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of product units in this subordinate line trade delivery."
+		}
+	},
+	"required": ["type"]
+}

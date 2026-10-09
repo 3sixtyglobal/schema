@@ -1,0 +1,127 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProcessCharacteristic",
+	"title": "UneceProcessCharacteristic",
+	"description": "A prominent attribute or aspect of a process.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProcessCharacteristic",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this process characteristic."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this process characteristic."
+		},
+		"condition": {
+			"type": "string",
+			"description": "A condition or status, expressed as text, for this process characteristic."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this process characteristic."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this process characteristic."
+		},
+		"maximumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the maximum value for this process characteristic."
+		},
+		"measuredAttributeTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceMeasuredAttributeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of this process characteristic."
+		},
+		"minimumValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the minimum value for this process characteristic."
+		},
+		"processCharacteristicValueCode": {
+			"type": "string",
+			"description": "The code specifying the value of this process characteristic."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this process characteristic."
+		},
+		"valueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The value, expressed as an amount, for this process characteristic."
+		},
+		"valueDateTime": {
+			"type": "string",
+			"description": "The value, expressed as a date, time, date time, or other date time value, for this process characteristic.",
+			"format": "date-time"
+		},
+		"valueIndicator": {
+			"type": "boolean",
+			"description": "The value, expressed as an indicator, for this process characteristic."
+		},
+		"valueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the value for this process characteristic."
+		},
+		"valueMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method specified for the value of this process characteristic."
+		},
+		"valueNumeric": {
+			"type": "string",
+			"description": "The measure of the value, expressed as a number, for this process characteristic."
+		},
+		"valueParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter specified for the value of this process characteristic."
+		},
+		"valueRange": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
+			},
+			"description": "A range specified for the value of this process characteristic."
+		},
+		"valueTolerance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
+			},
+			"description": "A tolerance specified for the value of this process characteristic."
+		}
+	},
+	"required": ["type"]
+}

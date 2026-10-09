@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancingStatus",
+	"title": "UneceFinancingStatus",
+	"description": "Information relevant to a condition of financing.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FinancingStatus",
+			"description": "JSON-LD Type."
+		},
+		"financingStatusConditionCode": {
+			"type": "string",
+			"description": "The code specifying the condition of this financing status."
+		},
+		"financingStatusReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for this financing status."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this financing status."
+		},
+		"reasonInformation": {
+			"type": "string",
+			"description": "Information, expressed as text, related to the reason for this financing status."
+		}
+	},
+	"required": ["type"]
+}

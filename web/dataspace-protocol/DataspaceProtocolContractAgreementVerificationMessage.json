@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractAgreementVerificationMessage",
+	"title": "DataspaceProtocolContractAgreementVerificationMessage",
+	"description": "Interface for the Dataspace Protocol contract agreement verification message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "ContractAgreementVerificationMessage",
+			"description": "The type of the message."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "The provider id for the contract."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "The consumer id for the contract."
+		}
+	},
+	"required": ["@context", "@type", "providerPid", "consumerPid"]
+}

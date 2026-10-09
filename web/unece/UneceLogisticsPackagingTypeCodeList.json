@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLogisticsPackagingTypeCodeList",
+	"title": "UneceLogisticsPackagingTypeCodeList",
+	"description": "Values for UneceLogisticsPackaging typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableLogisticsPackaging",
+			"description": "Logistics packaging applicable to this trade product."
+		}
+	]
+}

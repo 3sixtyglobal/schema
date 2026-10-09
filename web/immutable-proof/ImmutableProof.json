@@ -1,65 +1,37 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProof",
+	"$id": "https://schema.3sixty.global/immutable-proof/ImmutableProof",
+	"title": "ImmutableProof",
 	"description": "Interface describing an immutable proof state.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/immutable-proof/"
+					"const": "https://schema.3sixty.global/immutable-proof/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "ImmutableProof",
 			"description": "JSON-LD Type."
 		},
 		"id": {
 			"type": "string",
-			"description": "The id of the proof."
-		},
-		"nodeIdentity": {
-			"type": "string",
-			"description": "The id of the node who created the proof."
-		},
-		"userIdentity": {
-			"type": "string",
-			"description": "The id of the user who created the proof."
-		},
-		"proofObjectId": {
-			"type": "string",
 			"description": "The id of the object associated with the proof."
 		},
-		"proofObjectHash": {
+		"proofIntegrity": {
 			"type": "string",
-			"description": "The hash of the object associated with the proof."
-		},
-		"verifiableStorageId": {
-			"type": "string",
-			"description": "The verifiable storage id for where the proof is stored."
-		},
-		"proof": {
-			"$ref": "https://schema.twindev.org/w3c-did/DataIntegrityProof",
-			"description": "The proof which can be undefined if it has not yet been issued."
-		},
-		"immutableReceipt": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The immutable receipt detail for where the proof is stored."
+			"description": "The integrity hash of the object associated with the proof."
 		}
 	},
-	"required": ["@context", "type", "id", "nodeIdentity", "userIdentity", "proofObjectHash"],
-	"additionalProperties": false
+	"required": ["proofIntegrity"]
 }

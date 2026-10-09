@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAllergy",
+	"title": "UneceAllergy",
+	"description": "A guest condition of the abnormal reaction of the body to a previously encountered substance introduced by inhalation,\ningestion, injection, or skin contact.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Allergy",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this guest allergy."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this guest allergy."
+		},
+		"restriction": {
+			"type": "string",
+			"description": "A restriction, expressed as text, related to this guest allergy."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAllergyTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of guest allergy."
+		}
+	},
+	"required": ["type"]
+}

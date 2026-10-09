@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphVertexVersionList",
+	"title": "AuditableItemGraphVertexVersionList",
+	"description": "Interface describing a list of auditable item graph vertex version numbers.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.3sixty.global/aig/"
+				}
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"type": "array",
+			"prefixItems": [
+				{
+					"const": "ItemList"
+				},
+				{
+					"const": "AuditableItemGraphVertexVersionList"
+				}
+			],
+			"items": false,
+			"minItems": 2,
+			"maxItems": 2,
+			"description": "JSON-LD Type."
+		},
+		"itemListElement": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"version": {
+						"type": "number"
+					},
+					"dateCreated": {
+						"type": "string"
+					}
+				},
+				"required": ["version", "dateCreated"]
+			},
+			"description": "The list of versions."
+		}
+	},
+	"required": ["@context", "type", "itemListElement"]
+}

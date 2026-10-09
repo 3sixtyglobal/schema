@@ -1,0 +1,164 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedPeriodTypeCodeList",
+	"title": "UneceSpecifiedPeriodTypeCodeList",
+	"description": "Values for UneceSpecifiedPeriod typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:acceptablePeriod",
+			"description": "The specified period within which this referenced document may be accepted."
+		},
+		{
+			"const": "unece:accessAvailabilityPeriod",
+			"description": "The specified period when access to this binary file is available."
+		},
+		{
+			"const": "unece:actualOccurrencePeriod",
+			"description": "The actual period of time during which this transport event occurred."
+		},
+		{
+			"const": "unece:actualPerformancePeriod",
+			"description": "An actual period of performance for this referenced transport service."
+		},
+		{
+			"const": "unece:applicablePeriod",
+			"description": "A period applicable to this cross-border regulatory procedure.\nA period applicable to this production process.\nA period applicable to this supply chain trade transaction.\nA specified period applicable to this product batch.\nA specified period applicable to this trade product.\nAn applicable period for this specified experience item.\nThe period applicable for this supply chain supply plan."
+		},
+		{
+			"const": "unece:appliedPeriod",
+			"description": "A period during which this chemical treatment is applied."
+		},
+		{
+			"const": "unece:associatedPeriod",
+			"description": "A period of time associated with this document clause."
+		},
+		{
+			"const": "unece:availablePeriod",
+			"description": "An available period for this specified experience item."
+		},
+		{
+			"const": "unece:billingPeriod",
+			"description": "A billing period specified for this header trade settlement.\nA billing period specified for this line trade settlement.\nThe billing period specified for the subordinate line of this trade settlement."
+		},
+		{
+			"const": "unece:completionPeriod",
+			"description": "The specified period of completion for this product handling process."
+		},
+		{
+			"const": "unece:delayOccurrencePeriod",
+			"description": "A specified period of time during which this transport event is delayed."
+		},
+		{
+			"const": "unece:depositValueValidityPeriod",
+			"description": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
+		},
+		{
+			"const": "unece:discretePeriod",
+			"description": "A discrete period specified for this supply chain event."
+		},
+		{
+			"const": "unece:effectiveSpecifiedPeriod",
+			"description": "The period within which this document line is effective.\nThe specified period during which this transport service is effective.\nThe specified period within which this exchanged document is effective.\nThe specified period within which this referenced document is effective."
+		},
+		{
+			"const": "unece:estimatedPerformancePeriod",
+			"description": "An estimated period of performance for this referenced transport service."
+		},
+		{
+			"const": "unece:exclusivityPeriod",
+			"description": "The exclusivity period specified in this line trade agreement."
+		},
+		{
+			"const": "unece:frequencyEffectivePeriod",
+			"description": "A specified period of time for which a frequency is effective for this transport route."
+		},
+		{
+			"const": "unece:guaranteedProductLifeSpanPeriod",
+			"description": "The guaranteed product life span specified in this line trade agreement."
+		},
+		{
+			"const": "unece:laycanOccurrencePeriod",
+			"description": "The specified period of laycan time during which this transport event occurs."
+		},
+		{
+			"const": "unece:maximumOrderQuantityOrderingPeriod",
+			"description": "The maximum order quantity ordering period specified in this line trade agreement."
+		},
+		{
+			"const": "unece:minimumOrderQuantityOrderingPeriod",
+			"description": "The minimum order quantity ordering period specified in this line trade agreement."
+		},
+		{
+			"const": "unece:occurrencePeriod",
+			"description": "A specified period of time during which this supply chain event occurs.\nA specified period of time during which this transport event occurs.\nA specified period of time for the occurrence of this referenced transport event."
+		},
+		{
+			"const": "unece:operationalApplicablePeriod",
+			"description": "An operational period applicable for this trade price."
+		},
+		{
+			"const": "unece:operationalPeriod",
+			"description": "A operational period for this experience product.\nAn operational period specified for this experience event."
+		},
+		{
+			"const": "unece:orderingSpecifiedPeriod",
+			"description": "The ordering period specified in this line trade agreement."
+		},
+		{
+			"const": "unece:plannedPerformancePeriod",
+			"description": "A planned period of performance for this referenced transport service."
+		},
+		{
+			"const": "unece:projectedSpecifiedPeriod",
+			"description": "A specified period projected for this supply chain supply plan."
+		},
+		{
+			"const": "unece:requestedPerformancePeriod",
+			"description": "A requested period of performance for this referenced transport service."
+		},
+		{
+			"const": "unece:resalePeriod",
+			"description": "The resale period specified in this line trade agreement."
+		},
+		{
+			"const": "unece:scheduledOccurrencePeriod",
+			"description": "The scheduled period of time specified for the occurrence of this transport event."
+		},
+		{
+			"const": "unece:scheduledPeriod",
+			"description": "The specified period during which this transport route is scheduled."
+		},
+		{
+			"const": "unece:seasonalApplicablePeriod",
+			"description": "A seasonal period applicable for this trade price."
+		},
+		{
+			"const": "unece:shippingPeriod",
+			"description": "The shipping period specified in this header trade agreement."
+		},
+		{
+			"const": "unece:specifiedSpecifiedPeriod",
+			"description": "The period specified for this supply chain supply plan."
+		},
+		{
+			"const": "unece:stayPeriod",
+			"description": "A period of stay at this logistics location."
+		},
+		{
+			"const": "unece:transportMeansStayOccurrencePeriod",
+			"description": "The specified period during which the transport means is held at a location."
+		},
+		{
+			"const": "unece:validityPeriod",
+			"description": "A period of validity specified for this referenced document.\nA specific validity period for this logistics status.\nA specified period for which this trade price is valid.\nA specified validity period for this document status.\nThe period of time during which this government registration is valid.\nThe specified period for which this trade allowance charge is valid.\nThe validity period specified of this binary file."
+		},
+		{
+			"const": "unece:valuePeriod",
+			"description": "A period specified for the value of this sustainability characteristic."
+		},
+		{
+			"const": "unece:visitingPeriod",
+			"description": "A visiting period for this specified experience item."
+		}
+	]
+}

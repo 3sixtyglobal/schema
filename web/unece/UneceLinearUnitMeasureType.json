@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
+	"title": "UneceLinearUnitMeasureType",
+	"description": "The numeric value determined by linear measuring.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LinearUnitMeasureType",
+			"description": "JSON-LD Type."
+		},
+		"LinearUnitMeasureTypeValue": {
+			"type": "string",
+			"description": "The numeric value."
+		},
+		"LinearUnitMeasureTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureCode",
+			"description": "The unit code."
+		}
+	},
+	"required": ["type"]
+}

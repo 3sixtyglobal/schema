@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceQuantityType",
+	"title": "UneceQuantityType",
+	"description": "Missing description.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "QuantityType",
+			"description": "JSON-LD Type."
+		},
+		"QuantityTypeValue": {
+			"type": "string",
+			"description": "The numeric value."
+		},
+		"QuantityTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityCode",
+			"description": "The unit code."
+		}
+	},
+	"required": ["type"]
+}

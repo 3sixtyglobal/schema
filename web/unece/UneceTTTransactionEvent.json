@@ -1,0 +1,129 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTTTransactionEvent",
+	"title": "UneceTTTransactionEvent",
+	"description": "Information about an event declaring that certain objects have been associated or disassociated with one or more Track\nand Trace (TT) trade transactions.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TTTransactionEvent",
+			"description": "JSON-LD Type."
+		},
+		"actionCode": {
+			"type": "string",
+			"description": "The code specifying the action for this TT transaction event."
+		},
+		"businessRelatedLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"description": "The business location related to this TT transaction event."
+		},
+		"businessStepCode": {
+			"type": "string",
+			"description": "The code specifying the business step for this TT transaction event."
+		},
+		"destinationRelatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+			},
+			"description": "A destination related party for this TT transaction event."
+		},
+		"dispositionCode": {
+			"type": "string",
+			"description": "The code specifying the disposition related to this TT transaction event."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this TT transaction event."
+		},
+		"objectInstanceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An instance identifier for an object of this TT transaction event."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value at which this TT transaction event occurred.",
+			"format": "date-time"
+		},
+		"parentObjectId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the parent object for this TT transaction event."
+		},
+		"quantitySpecifiedEventElement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceEventElement"
+			},
+			"description": "A quantity event element specified for this TT transaction event."
+		},
+		"readPointRelatedLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
+			"description": "The read point related location of this TT transaction event."
+		},
+		"recordedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value at which this TT transaction event was recorded.",
+			"format": "date-time"
+		},
+		"relatedCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertification"
+			},
+			"description": "A certification related to this TT transaction event."
+		},
+		"sourceRelatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
+			},
+			"description": "A source related party for this TT transaction event."
+		},
+		"specifiedError": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceError"
+			},
+			"description": "A declared error specified for this TT transaction event."
+		},
+		"specifiedTradeTransaction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTTradeTransaction"
+			},
+			"description": "A trade transaction specified for this TT transaction event."
+		}
+	},
+	"required": [
+		"type",
+		"actionCode",
+		"occurrenceDateTime",
+		"recordedDateTime",
+		"specifiedTradeTransaction"
+	]
+}

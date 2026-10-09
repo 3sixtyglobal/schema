@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeSettlementPayment",
+	"title": "UneceTradeSettlementPayment",
+	"description": "The specific discharge obligations in respect of funds or securities transferred between two or more parties as part of\na trade settlement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TradeSettlementPayment",
+			"description": "JSON-LD Type."
+		},
+		"closingBookDueDateTime": {
+			"type": "string",
+			"description": "A date, time, date time or other date time value of a closing book due date for this trade settlement payment.",
+			"format": "date-time"
+		},
+		"endToEndId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for the end-to-end processing of this trade settlement payment, such as an identifier assigned by\nan initiating party to unambiguously identify the transaction."
+		},
+		"instructionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the instruction for this trade settlement payment."
+		},
+		"requestedExecutionDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the requested execution of this trade settlement payment.",
+			"format": "date-time"
+		},
+		"specifiedPaymentTradeSettlement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlement"
+			},
+			"description": "A trade settlement payment specified for this trade settlement payment."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/foaf/FoafImage",
+	"title": "FoafImage",
+	"description": "A FOAF image.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
+			"description": "The LD Context."
+		},
+		"@type": {
+			"const": "Image",
+			"description": "Type."
+		},
+		"depicts": {
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
+			"description": "A thing depicted in this representation."
+		},
+		"thumbnail": {
+			"$ref": "https://schema.3sixty.global/foaf/FoafImage",
+			"description": "A derived thumbnail image."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/foaf/FoafDocument"
+		}
+	]
+}

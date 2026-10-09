@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportEquipmentSupplierPartyRoleCodeList",
+	"title": "UneceTransportEquipmentSupplierPartyRoleCodeList",
+	"description": "A character string used to represent the transport equipment supplier party role.",
+	"anyOf": [
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#1",
+			"description": "Shipper supplied: 1."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#2",
+			"description": "Carrier supplied: 2."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#3",
+			"description": "Consolidator supplied: 3."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#4",
+			"description": "Deconsolidator supplied: 4."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#5",
+			"description": "Third party supplied: 5."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#6",
+			"description": "Forwarder supplied from a leasing company: 6."
+		},
+		{
+			"const": "unece:TransportEquipmentSupplierPartyRoleCodeList#7",
+			"description": "Forwarder supplied from the railways' pool: 7."
+		}
+	]
+}

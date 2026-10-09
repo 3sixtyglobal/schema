@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFileSizeUnitMeasureType",
+	"title": "UneceFileSizeUnitMeasureType",
+	"description": "A numeric value determined by measuring a file size.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FileSizeUnitMeasureType",
+			"description": "JSON-LD Type."
+		},
+		"FileSizeUnitMeasureTypeValue": {
+			"type": "string",
+			"description": "The numeric value."
+		},
+		"FileSizeUnitMeasureTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceFileSizeUnitMeasureCode",
+			"description": "The unit code."
+		}
+	},
+	"required": ["type"]
+}

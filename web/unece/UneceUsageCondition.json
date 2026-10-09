@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceUsageCondition",
+	"title": "UneceUsageCondition",
+	"description": "The particular state of something, affected by use, that should be respected.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "UsageCondition",
+			"description": "JSON-LD Type."
+		},
+		"ageLimitation": {
+			"type": "string",
+			"description": "An age limitation, expressed as text, for this specified usage condition."
+		},
+		"appropriateClothing": {
+			"type": "string",
+			"description": "Appropriate clothing, expressed as text, for this specified usage condition."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified usage condition."
+		},
+		"duration": {
+			"type": "string",
+			"description": "A duration, expressed as text, for this specified usage condition."
+		},
+		"genderLimitation": {
+			"type": "string",
+			"description": "A gender limitation, expressed as text, for this specified usage condition."
+		},
+		"occupancy": {
+			"type": "string",
+			"description": "Occupancy, expressed as text, for this specified usage condition."
+		},
+		"requiringParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party requiring this specified usage condition."
+		}
+	},
+	"required": ["type"]
+}

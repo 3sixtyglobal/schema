@@ -1,32 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/ais/AuditableItemStream",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStream",
+	"title": "AuditableItemStream",
 	"description": "Interface describing an auditable item stream.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
-			"prefixItems": [
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/ais/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				}
-			]
-		},
-		"type": {
-			"type": "string",
-			"const": "AuditableItemStream",
-			"description": "JSON-LD Type."
-		},
 		"id": {
 			"type": "string",
 			"description": "The id of the stream."
@@ -39,53 +17,47 @@
 			"type": "string",
 			"description": "The date/time of when the stream was modified."
 		},
-		"nodeIdentity": {
+		"organizationIdentity": {
 			"type": "string",
-			"description": "The identity of the node which controls the stream."
+			"description": "The identity of the organization which controls the stream."
 		},
 		"userIdentity": {
 			"type": "string",
 			"description": "The identity of the user who created the stream."
 		},
-		"annotationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
-			"description": "The object to associate with the entry as JSON-LD."
-		},
 		"proofId": {
 			"type": "string",
 			"description": "The id of the immutable proof for the stream."
 		},
-		"immutableInterval": {
+		"numberOfItems": {
 			"type": "number",
-			"description": "After how many entries do we add immutable checks."
+			"description": "How many entries are in the stream."
 		},
 		"entries": {
-			"type": "array",
-			"items": false,
-			"description": "Entries in the stream.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
+			"type": "object",
+			"properties": {
+				"type": {
+					"const": "ItemList"
+				},
+				"itemListElement": {
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/ais/AuditableItemStreamEntry"
+					}
 				}
-			]
-		},
-		"cursor": {
-			"type": "string",
-			"description": "The cursor for the stream entries."
+			},
+			"required": ["type", "itemListElement"],
+			"description": "Entries in the stream."
 		},
 		"verification": {
-			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
 			"description": "The verification of the stream."
 		}
 	},
-	"required": [
-		"@context",
-		"type",
-		"id",
-		"dateCreated",
-		"nodeIdentity",
-		"userIdentity",
-		"immutableInterval"
-	],
-	"additionalProperties": false
+	"required": ["id", "dateCreated"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/ais/AuditableItemStreamBase"
+		}
+	]
 }

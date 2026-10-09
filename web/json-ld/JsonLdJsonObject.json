@@ -1,16 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdJsonObject",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdJsonObject",
+	"title": "JsonLdJsonObject",
 	"description": "JSON Type for object.",
 	"type": "object",
 	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonValue"
-			},
-			{
-				"not": {}
-			}
-		]
+		"$ref": "https://schema.3sixty.global/json-ld/JsonLdJsonValue"
 	}
 }

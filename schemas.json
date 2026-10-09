@@ -1,5 +1,10 @@
 [
 	{
+		"title": "Common",
+		"namespace": "common",
+		"description": "The JSON-LD Context that defines common terms used across TWIN schemas."
+	},
+	{
 		"repo": "auditable-item-graph",
 		"packages": ["auditable-item-graph-models"],
 		"title": "Auditable Item Graph",
@@ -30,6 +35,12 @@
 		"namespace": "documents"
 	},
 	{
+		"repo": "synchronised-storage",
+		"packages": ["synchronised-storage-models"],
+		"title": "Synchronised Storage",
+		"namespace": "synchronised-storage"
+	},
+	{
 		"repo": "immutable-proof",
 		"packages": ["immutable-proof-models"],
 		"title": "Immutable Proof",
@@ -45,15 +56,8 @@
 		"namespace": "verifiable-storage"
 	},
 	{
-		"repo": "federated-catalogue",
-		"packages": ["federated-catalogue-models"],
-		"title": "Federated Catalogue",
-		"namespace": "federated-catalogue",
-		"description": "Defines terms not covered by the Gaia-X, IDSA or other Vocabularies."
-	},
-	{
 		"repo": "framework",
-		"types": ["TimestampMilliseconds", "TimestampSeconds", "URN"],
+		"types": ["Jwk", "TimestampMilliseconds", "TimestampSeconds", "URN"],
 		"title": "Framework",
 		"namespace": "framework"
 	},
@@ -62,6 +66,13 @@
 		"packages": ["data-json-ld"],
 		"title": "JSON-LD",
 		"namespace": "json-ld"
+	},
+	{
+		"repo": "dataspace",
+		"packages": ["dataspace-models"],
+		"title": "Dataspace",
+		"namespace": "dataspace",
+		"jsonLdTypes": []
 	},
 	{
 		"repo": "standards",
@@ -81,28 +92,81 @@
 		"repo": "standards",
 		"packages": ["standards-w3c-activity-streams"],
 		"title": "W3C Activity Streams",
-		"namespace": "w3c-activity-streams"
+		"namespace": "w3c-activity-streams",
+		"jsonLdTypes": []
 	},
 	{
 		"repo": "standards",
-		"packages": ["standards-gaia-x"],
-		"title": "Gaia-X",
-		"namespace": "gaia-x",
-		"jsonLdTypes": [],
-		"jsonLdLink": "https://w3id.org/gaia-x/development"
+		"packages": ["standards-w3c-dcat"],
+		"title": "W3C DCAT",
+		"namespace": "w3c-dcat",
+		"jsonLdTypes": []
 	},
 	{
 		"repo": "standards",
+		"description": "The UNECE Standards for BSP (Buy-Ship-Pay) <a target='_blank' href='https://vocabulary.uncefact.org/about'>https://vocabulary.uncefact.org/about</a>",
 		"packages": ["standards-unece"],
 		"title": "UNECE",
 		"namespace": "unece",
 		"jsonLdTypes": [],
-		"jsonLdLink": "https://vocabulary.uncefact.org/"
+		"jsonLdLink": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
 	},
 	{
 		"title": "Dublin Core",
 		"namespace": "dublin-core",
 		"jsonLdTypes": ["terms", "dcmitype"],
 		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the DCMI body itself."
+	},
+	{
+		"title": "Dataspace Protocol",
+		"description": "This document outlines the key elements of the <a target='_blank' href='https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/'>Contract Negotiation Protocol</a>",
+		"repo": "standards",
+		"packages": ["standards-dataspace-protocol"],
+		"namespace": "dataspace-protocol",
+		"jsonLdTypes": [],
+		"jsonLdLink": "https://w3id.org/dspace/2025/1/context.jsonld"
+	},
+	{
+		"title": "FOAF (Friend Of A Friend)",
+		"namespace": "foaf",
+		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the FOAF body itself. <a target='_blank' href='http://xmlns.com/foaf/spec/'>FOAF Schema</a>",
+		"repo": "standards",
+		"packages": ["standards-foaf"]
+	},
+	{
+		"title": "DCSA (Digital Container Shipping Association)",
+		"repo": "standards",
+		"packages": ["standards-dcsa"],
+		"namespace": "dcsa",
+		"jsonLdTypes": []
+	},
+	{
+		"title": "GS1",
+		"repo": "standards",
+		"packages": ["standards-gs1"],
+		"namespace": "gs1",
+		"jsonLdTypes": []
+	},
+	{
+		"title": "W3C RDF Schema",
+		"namespace": "w3c-rdf",
+		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the RDF body itself. <a target='_blank' href='https://www.w3.org/TR/rdf-schema/'>RDF Schema</a>"
+	},
+	{
+		"title": "TWIN Data Space Protocol",
+		"namespace": "dspace/v1",
+		"description": "The JSON-LD Context that defines the terms of the TWIN Data Space Protocol Profile"
+	},
+	{
+		"title": "TWIN ODRL",
+		"namespace": "odrl/v1",
+		"description": "The JSON-LD Context that defines the terms of the TWIN ODRL Profile"
+	},
+	{
+		"title": "Supply Chain Application",
+		"repo": "supply-chain",
+		"packages": ["supply-chain-models"],
+		"namespace": "supply-chain",
+		"description": "The JSON-LD Context that defines terms specific to the supply chain application"
 	}
 ]

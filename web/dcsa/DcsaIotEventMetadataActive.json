@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaIotEventMetadataActive",
+	"title": "DcsaIotEventMetadataActive",
+	"description": "IoT event metadata (active event).\n\nSource: `iotEvent` metadata allOf in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"eventID": {
+			"type": "string",
+			"description": "Unique identifier of this event."
+		},
+		"eventCreatedDateTime": {
+			"type": "string",
+			"description": "Timestamp of when the event was created by the publisher.\nFormat: ISO 8601 date-time."
+		},
+		"publisher": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaPublisher",
+			"description": "The party publishing this event."
+		},
+		"publisherRole": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTntPublisherRole",
+			"description": "Publisher role (context of the publisher)."
+		},
+		"eventType": {
+			"const": "IOT",
+			"description": "Event type discriminator."
+		},
+		"retractedEventID": {
+			"type": "null",
+			"description": "Must be `null` (or omitted) for non-retraction events.\nThe upstream schema defines a default of `null`."
+		}
+	},
+	"required": ["eventID", "eventCreatedDateTime", "publisher", "publisherRole", "eventType"]
+}

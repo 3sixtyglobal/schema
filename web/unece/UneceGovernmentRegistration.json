@@ -1,0 +1,104 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGovernmentRegistration",
+	"title": "UneceGovernmentRegistration",
+	"description": "The recording of items or details for a governmental purpose.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "GovernmentRegistration",
+			"description": "JSON-LD Type."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "A code specifying a category of this government registration."
+		},
+		"countryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the country for this government registration."
+		},
+		"countrySubDivisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the country sub-division for this registration."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this government registration."
+		},
+		"lastRegisteredYearDateTime": {
+			"type": "string",
+			"description": "The last registered year of this government registration.",
+			"format": "date-time"
+		},
+		"licenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of a licence for this government registration."
+		},
+		"recordedDate": {
+			"type": "string",
+			"description": "The date that this government registration was recorded."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGovernmentRegistrationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of government registration."
+		},
+		"validityPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The period of time during which this government registration is valid."
+		},
+		"versionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the version of this government registration."
+		}
+	},
+	"required": ["type"]
+}

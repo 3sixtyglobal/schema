@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaOperationsEventTypeCodes",
+	"title": "DcsaOperationsEventTypeCodes",
+	"description": "DCSA operations event type codes.",
+	"anyOf": [
+		{
+			"const": "STRT",
+			"description": "Started."
+		},
+		{
+			"const": "CMPL",
+			"description": "Completed."
+		},
+		{
+			"const": "ARRI",
+			"description": "Arrived."
+		},
+		{
+			"const": "DEPA",
+			"description": "Departed."
+		},
+		{
+			"const": "OMIT",
+			"description": "Omitted."
+		},
+		{
+			"const": "CANC",
+			"description": "Cancelled."
+		}
+	]
+}

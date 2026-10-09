@@ -1,0 +1,284 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportEvent",
+	"title": "UneceTransportEvent",
+	"description": "A significant occurrence or happening during transport.\nA referenced significant occurrence or happening during transport.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TransportEvent",
+			"description": "JSON-LD Type."
+		},
+		"actualArrivalRelatedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the actual arrival related to this transport event.",
+			"format": "date-time"
+		},
+		"actualDepartureRelatedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the actual departure related to this transport event.",
+			"format": "date-time"
+		},
+		"actualOccurrenceDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
+		},
+		"actualOccurrencePeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The actual period of time during which this transport event occurred."
+		},
+		"additionalSecurityMeasuresApplicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing additional security measures applicable to this transport event."
+		},
+		"anchorageDescription": {
+			"type": "string",
+			"description": "A textual description of an anchorage for this transport event."
+		},
+		"anchorageExpectedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this anchorage transport event is or was expected."
+		},
+		"applicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing information applicable to this transport event."
+		},
+		"arrivalRelatedDateTime": {
+			"type": "string",
+			"description": "An arrival date, time, date time, or other date time value related to this transport event.",
+			"format": "date-time"
+		},
+		"associatedGeographicalFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
+			},
+			"description": "A geographical feature associated with this transport event."
+		},
+		"cargoFacilityRelatedLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"description": "The location of a cargo facility related to this transport event."
+		},
+		"certifyingParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A certifying party for this transport event."
+		},
+		"conveyanceFacilityRelatedLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A location of a conveyance facility related to this transport event."
+		},
+		"delayOccurrencePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A specified period of time during which this transport event is delayed."
+		},
+		"delaySpecifiedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A delay specified for this referenced transport event."
+		},
+		"departureRelatedDateTime": {
+			"type": "string",
+			"description": "A departure date, time, date time, or other date time value related to this transport event.",
+			"format": "date-time"
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this transport event."
+		},
+		"estimatedOccurrenceDateTime": {
+			"type": "string",
+			"description": "The estimated date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
+		},
+		"estimatedTransportMeansArrivalOccurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this\ntransport event is estimated to occur.",
+			"format": "date-time"
+		},
+		"expectedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this transport event is or was expected."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this transport event."
+		},
+		"laycanOccurrencePeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The specified period of laycan time during which this transport event occurs."
+		},
+		"maritimeAnchorageIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this transport event is a maritime anchorage."
+		},
+		"occurrenceLogisticsLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"description": "The logistics location where this transport event occurs."
+		},
+		"occurrencePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A specified period of time during which this transport event occurs."
+		},
+		"pilotBoardingPlace": {
+			"type": "string",
+			"description": "A pilot boarding place, expressed as text, for this transport event."
+		},
+		"preTranshipmentTransportEquipmentApplicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing pre-transhipment transport equipment information applicable to this transport event."
+		},
+		"previousAssociatedGeographicalFeature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
+			},
+			"description": "A geographical feature previously associated with this transport event."
+		},
+		"reasonTypeCode": {
+			"type": "string",
+			"description": "The code specifying the reason type for this referenced transport event."
+		},
+		"receivedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when information related to this transport event was received, from\nthe perspective of the receiver.",
+			"format": "date-time"
+		},
+		"relatedObservation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceObservation"
+			},
+			"description": "An observation related to this transport event."
+		},
+		"relatedRoute": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportRoute",
+			"description": "The route related to this transport event."
+		},
+		"reportedConditionTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatusCodeList",
+			"description": "The code specifying the type of reported condition for this transport event."
+		},
+		"reportingIOTDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceIOTDevice"
+			},
+			"description": "An IOT device for this transport reporting event."
+		},
+		"requestedOccurrenceDateTime": {
+			"type": "string",
+			"description": "The requested date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
+		},
+		"requestedRelatedService": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceService"
+			},
+			"description": "A requested service related to this transport event."
+		},
+		"scheduledArrivalRelatedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event.",
+			"format": "date-time"
+		},
+		"scheduledDepartureRelatedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value of the scheduled departure related to this referenced transport\nevent.",
+			"format": "date-time"
+		},
+		"scheduledOccurrenceDateTime": {
+			"type": "string",
+			"description": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event.",
+			"format": "date-time"
+		},
+		"scheduledOccurrencePeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The scheduled period of time specified for the occurrence of this transport event."
+		},
+		"securityLevelCode": {
+			"type": "string",
+			"description": "A security level code for this transport event."
+		},
+		"specifiedTransportInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
+			},
+			"description": "An instruction or a set of instructions specified for this transport event."
+		},
+		"staySpecifiedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A stay specified for this referenced transport event."
+		},
+		"transportInformationApplicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing transport information applicable to this transport event."
+		},
+		"transportMeansStayOccurrencePeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The specified period during which the transport means is held at a location."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceTransportEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of transport event."
+		},
+		"unitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units for this transport event."
+		},
+		"unitValueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceUnitMeasureType",
+			"description": "The measure of a value for this transport event."
+		}
+	},
+	"required": ["type"]
+}

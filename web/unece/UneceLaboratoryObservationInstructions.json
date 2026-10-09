@@ -1,0 +1,66 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationInstructions",
+	"title": "UneceLaboratoryObservationInstructions",
+	"description": "Information of an instructive nature that describes how to conduct this laboratory observation.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LaboratoryObservationInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this set of laboratory observation instructions."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this set of laboratory observation instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "The type, expressed as text, of this set of laboratory observation instructions."
+		},
+		"interpretationCode": {
+			"type": "string",
+			"description": "The code specifying the interpretation for this laboratory instruction."
+		},
+		"laboratoryObservationInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of a laboratory observation instruction or a set of instructions."
+		},
+		"latestUpdateDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the latest update of this set of laboratory observation\ninstructions.",
+			"format": "date-time"
+		},
+		"procedure": {
+			"type": "string",
+			"description": "The procedure, expressed as text, for a set of laboratory observation Instructions."
+		},
+		"propertyReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the property reference of this laboratory observation instruction."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number of this set of laboratory observation instructions."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this set of laboratory observation instructions."
+		}
+	},
+	"required": ["type"]
+}

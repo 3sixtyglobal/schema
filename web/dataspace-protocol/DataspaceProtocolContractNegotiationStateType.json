@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractNegotiationStateType",
+	"title": "DataspaceProtocolContractNegotiationStateType",
+	"description": "The types for Dataspace Protocol Contract Negotiation States.",
+	"anyOf": [
+		{
+			"const": "REQUESTED",
+			"description": "Requested."
+		},
+		{
+			"const": "OFFERED",
+			"description": "Offered."
+		},
+		{
+			"const": "ACCEPTED",
+			"description": "Accepted."
+		},
+		{
+			"const": "AGREED",
+			"description": "Agreed."
+		},
+		{
+			"const": "VERIFIED",
+			"description": "Verified."
+		},
+		{
+			"const": "FINALIZED",
+			"description": "Finalized."
+		},
+		{
+			"const": "TERMINATED",
+			"description": "Terminated."
+		}
+	]
+}

@@ -1,0 +1,186 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction",
+	"title": "UneceSupplyChainTradeTransaction",
+	"description": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SupplyChainTradeTransaction",
+			"description": "JSON-LD Type."
+		},
+		"applicableHeaderTradeAgreement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceHeaderTradeAgreement"
+			},
+			"description": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
+		},
+		"applicableHeaderTradeDelivery": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceHeaderTradeDelivery"
+			},
+			"description": "A trade delivery header applicable to this supply chain trade transaction."
+		},
+		"applicablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A period applicable to this supply chain trade transaction."
+		},
+		"applicableTradeSettlement": {
+			"$ref": "https://schema.3sixty.global/unece/UneceHeaderTradeSettlement",
+			"description": "The trade settlement header applicable to this supply chain trade transaction."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document associated with this supply chain trade transaction, such as the purchase order, invoice or\npacking list."
+		},
+		"associatedDocumentLineDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentLineDocument",
+			"description": "The document line associated with this supply chain trade transaction."
+		},
+		"associatedFinancingRequestResultDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceFinancingRequestResultDocument",
+			"description": "The financing request result document associated with this supply chain trade transaction."
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard associated with this supply chain trade transaction."
+		},
+		"documentURLId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this supply chain trade transaction."
+		},
+		"includedDeliverySchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDeliverySchedule"
+			},
+			"description": "Delivery scheduling details included in a defined forecast period for this supply chain trade transaction."
+		},
+		"includedNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note included in this supply chain trade transaction."
+		},
+		"includedProductGroup": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductGroup"
+			},
+			"description": "A product group included in this supply chain trade transaction."
+		},
+		"includedSupplyChainTradeLineItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeLineItem"
+			},
+			"description": "A trade line item included in this supply chain trade transaction."
+		},
+		"includedTradeProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
+			},
+			"description": "A trade product included in this supply chain trade transaction."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this supply chain trade transaction."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the issuance of this supply chain trade transaction.",
+			"format": "date-time"
+		},
+		"lineItemQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of line items for this supply chain trade transaction."
+		},
+		"salesAgentAssignedId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier assigned by the sales agent to identify this supply chain trade transaction."
+		},
+		"senderRecipientSequenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The sender-recipient sequence identifier for this supply chain trade transaction."
+		},
+		"shipmentId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply\nchain trade transaction."
+		},
+		"specifiedPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
+			},
+			"description": "A logistics package specified for this supply chain trade transaction."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransactionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of supply chain trade transaction."
+		}
+	},
+	"required": ["type"]
+}

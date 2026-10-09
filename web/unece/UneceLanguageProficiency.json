@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLanguageProficiency",
+	"title": "UneceLanguageProficiency",
+	"description": "Skills in any principal method of human communication, consisting of words used in a structured and conventional way and\nconveyed by speech, writing, or gesture.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LanguageProficiency",
+			"description": "JSON-LD Type."
+		},
+		"languageName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the language for which this language proficiency is defined."
+		},
+		"personalLanguageProficiencyLanguageCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLanguageCodeList",
+			"description": "The code specifying the language for this personal language proficiency."
+		},
+		"personalLanguageProficiencyLanguageId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLanguageId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the language for which this personal language proficiency is defined."
+		},
+		"readingLevelCode": {
+			"type": "string",
+			"description": "The code specifying the personal reading proficiency level in this language."
+		},
+		"speakingLevelCode": {
+			"type": "string",
+			"description": "The code specifying the personal speaking proficiency level in this language."
+		},
+		"writingLevelCode": {
+			"type": "string",
+			"description": "The code specifying the personal writing proficiency level in this language."
+		}
+	},
+	"required": ["type"]
+}

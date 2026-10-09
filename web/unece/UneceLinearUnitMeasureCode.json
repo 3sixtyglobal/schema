@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureCode",
+	"title": "UneceLinearUnitMeasureCode",
+	"description": "RDF Class for LinearUnitMeasureType unit code type to define unit code values.",
+	"anyOf": [
+		{
+			"const": "unece:LinearUnitMeasureCode#CMT",
+			"description": "centimetre: CMT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#FOT",
+			"description": "foot: FOT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#INH",
+			"description": "inch: INH."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#KMT",
+			"description": "kilometre: KMT."
+		},
+		{
+			"const": "unece:LinearUnitMeasureCode#MTR",
+			"description": "metre: MTR."
+		}
+	]
+}

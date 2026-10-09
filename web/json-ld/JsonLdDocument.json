@@ -1,54 +1,48 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdDocument",
-	"description": "A JSON-LD document MUST be valid JSON text as described in [RFC8259], or some format that can be represented in the JSON-LD internal representation that is equivalent to valid JSON text.",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdDocument",
+	"title": "JsonLdDocument",
+	"description": "A JSON-LD document MUST be valid JSON text as described in [RFC8259],\nor some format that can be represented in the JSON-LD internal representation\nthat is equivalent to valid JSON text.",
 	"anyOf": [
 		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 		},
 		{
 			"type": "array",
-			"items": false,
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+			}
 		},
 		{
 			"type": "object",
 			"properties": {
 				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionRoot"
 				},
 				"@graph": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 						},
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"anyOf": [
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
-										},
-										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-										}
-									]
-								}
-							]
+							"items": {
+								"anyOf": [
+									{
+										"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+									},
+									{
+										"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
+									}
+								]
+							}
 						}
 					]
 				}
-			},
-			"additionalProperties": false
+			}
 		}
 	]
 }

@@ -1,0 +1,7320 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceUnitMeasureCode",
+	"title": "UneceUnitMeasureCode",
+	"description": "RDF Class for UnitMeasureType unit code type to define unit code values.",
+	"anyOf": [
+		{
+			"const": "unece:UnitMeasureCode#10",
+			"description": "group: 10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#11",
+			"description": "outfit: 11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#13",
+			"description": "ration: 13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#14",
+			"description": "shot: 14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#15",
+			"description": "stick, military: 15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#1I",
+			"description": "fixed rate: 1I."
+		},
+		{
+			"const": "unece:UnitMeasureCode#20",
+			"description": "twenty foot container: 20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#21",
+			"description": "forty foot container: 21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#22",
+			"description": "decilitre per gram: 22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#23",
+			"description": "gram per cubic centimetre: 23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#24",
+			"description": "theoretical pound: 24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#25",
+			"description": "gram per square centimetre: 25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#27",
+			"description": "theoretical ton: 27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#28",
+			"description": "kilogram per square metre: 28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2A",
+			"description": "radian per second: 2A."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2B",
+			"description": "radian per second squared: 2B."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2C",
+			"description": "roentgen: 2C."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2G",
+			"description": "volt AC: 2G."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2H",
+			"description": "volt DC: 2H."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2I",
+			"description": "British thermal unit (international table) per hour: 2I."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2J",
+			"description": "cubic centimetre per second: 2J."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2K",
+			"description": "cubic foot per hour: 2K."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2L",
+			"description": "cubic foot per minute: 2L."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2M",
+			"description": "centimetre per second: 2M."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2N",
+			"description": "decibel: 2N."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2P",
+			"description": "kilobyte: 2P."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2Q",
+			"description": "kilobecquerel: 2Q."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2R",
+			"description": "kilocurie: 2R."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2U",
+			"description": "megagram: 2U."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2X",
+			"description": "metre per minute: 2X."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2Y",
+			"description": "milliroentgen: 2Y."
+		},
+		{
+			"const": "unece:UnitMeasureCode#2Z",
+			"description": "millivolt: 2Z."
+		},
+		{
+			"const": "unece:UnitMeasureCode#33",
+			"description": "kilopascal square metre per gram: 33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#34",
+			"description": "kilopascal per millimetre: 34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#35",
+			"description": "millilitre per square centimetre second: 35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#37",
+			"description": "ounce per square foot: 37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#38",
+			"description": "ounce per square foot per 0,01inch: 38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#3B",
+			"description": "megajoule: 3B."
+		},
+		{
+			"const": "unece:UnitMeasureCode#3C",
+			"description": "manmonth: 3C."
+		},
+		{
+			"const": "unece:UnitMeasureCode#40",
+			"description": "millilitre per second: 40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#41",
+			"description": "millilitre per minute: 41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4C",
+			"description": "centistokes: 4C."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4G",
+			"description": "microlitre: 4G."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4H",
+			"description": "micrometre (micron): 4H."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4K",
+			"description": "milliampere: 4K."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4L",
+			"description": "megabyte: 4L."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4M",
+			"description": "milligram per hour: 4M."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4N",
+			"description": "megabecquerel: 4N."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4O",
+			"description": "microfarad: 4O."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4P",
+			"description": "newton per metre: 4P."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4Q",
+			"description": "ounce inch: 4Q."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4R",
+			"description": "ounce foot: 4R."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4T",
+			"description": "picofarad: 4T."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4U",
+			"description": "pound per hour: 4U."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4W",
+			"description": "ton (US) per hour: 4W."
+		},
+		{
+			"const": "unece:UnitMeasureCode#4X",
+			"description": "kilolitre per hour: 4X."
+		},
+		{
+			"const": "unece:UnitMeasureCode#56",
+			"description": "sitas: 56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#57",
+			"description": "mesh: 57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#58",
+			"description": "net kilogram: 58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#59",
+			"description": "part per million: 59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#5A",
+			"description": "barrel (US) per minute: 5A."
+		},
+		{
+			"const": "unece:UnitMeasureCode#5B",
+			"description": "batch: 5B."
+		},
+		{
+			"const": "unece:UnitMeasureCode#5E",
+			"description": "MMSCF/day: 5E."
+		},
+		{
+			"const": "unece:UnitMeasureCode#5J",
+			"description": "hydraulic horse power: 5J."
+		},
+		{
+			"const": "unece:UnitMeasureCode#60",
+			"description": "percent weight: 60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#61",
+			"description": "part per billion (US): 61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#64",
+			"description": "pound per square inch, gauge: 64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#66",
+			"description": "oersted: 66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#74",
+			"description": "millipascal: 74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#76",
+			"description": "gauss: 76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#77",
+			"description": "milli-inch: 77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#78",
+			"description": "kilogauss: 78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#80",
+			"description": "pound per square inch absolute: 80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#81",
+			"description": "henry: 81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#84",
+			"description": "kilopound-force per square inch: 84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#85",
+			"description": "foot pound-force: 85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#87",
+			"description": "pound per cubic foot: 87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#89",
+			"description": "poise: 89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#91",
+			"description": "stokes: 91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A1",
+			"description": "15 °C calorie: A1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A10",
+			"description": "ampere square metre per joule second: A10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A11",
+			"description": "angstrom: A11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A12",
+			"description": "astronomical unit: A12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A13",
+			"description": "attojoule: A13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A14",
+			"description": "barn: A14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A15",
+			"description": "barn per electronvolt: A15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A16",
+			"description": "barn per steradian electronvolt: A16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A17",
+			"description": "barn per steradian: A17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A18",
+			"description": "becquerel per kilogram: A18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A19",
+			"description": "becquerel per cubic metre: A19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A2",
+			"description": "ampere per centimetre: A2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A20",
+			"description": "British thermal unit (international table) per second square foot degree Rankine: A20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A21",
+			"description": "British thermal unit (international table) per pound degree Rankine: A21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A22",
+			"description": "British thermal unit (international table) per second foot degree Rankine: A22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A23",
+			"description": "British thermal unit (international table) per hour square foot degree Rankine: A23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A24",
+			"description": "candela per square metre: A24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A25",
+			"description": "cheval vapeur: A25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A26",
+			"description": "coulomb metre: A26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A27",
+			"description": "coulomb metre squared per volt: A27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A28",
+			"description": "coulomb per cubic centimetre: A28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A29",
+			"description": "coulomb per cubic metre: A29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A3",
+			"description": "ampere per millimetre: A3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A30",
+			"description": "coulomb per cubic millimetre: A30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A31",
+			"description": "coulomb per kilogram second: A31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A32",
+			"description": "coulomb per mole: A32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A33",
+			"description": "coulomb per square centimetre: A33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A34",
+			"description": "coulomb per square metre: A34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A35",
+			"description": "coulomb per square millimetre: A35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A36",
+			"description": "cubic centimetre per mole: A36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A37",
+			"description": "cubic decimetre per mole: A37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A38",
+			"description": "cubic metre per coulomb: A38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A39",
+			"description": "cubic metre per kilogram: A39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A4",
+			"description": "ampere per square centimetre: A4."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A40",
+			"description": "cubic metre per mole: A40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A41",
+			"description": "ampere per square metre: A41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A42",
+			"description": "curie per kilogram: A42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A43",
+			"description": "deadweight tonnage: A43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A44",
+			"description": "decalitre: A44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A45",
+			"description": "decametre: A45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A47",
+			"description": "decitex: A47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A48",
+			"description": "degree Rankine: A48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A49",
+			"description": "denier: A49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A5",
+			"description": "ampere square metre: A5."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A50",
+			"description": "dyne second per cubic centimetre: A50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A51",
+			"description": "dyne second per centimetre: A51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A52",
+			"description": "dyne second per centimetre to the fifth power: A52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A53",
+			"description": "electronvolt: A53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A54",
+			"description": "electronvolt per metre: A54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A55",
+			"description": "electronvolt square metre: A55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A56",
+			"description": "electronvolt square metre per kilogram: A56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A57",
+			"description": "erg: A57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A58",
+			"description": "erg per centimetre: A58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A59",
+			"description": "8-part cloud cover: A59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A6",
+			"description": "ampere per square metre kelvin squared: A6."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A60",
+			"description": "erg per cubic centimetre: A60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A61",
+			"description": "erg per gram: A61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A62",
+			"description": "erg per gram second: A62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A63",
+			"description": "erg per second: A63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A64",
+			"description": "erg per second square centimetre: A64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A65",
+			"description": "erg per square centimetre second: A65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A66",
+			"description": "erg square centimetre: A66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A67",
+			"description": "erg square centimetre per gram: A67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A68",
+			"description": "exajoule: A68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A69",
+			"description": "farad per metre: A69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A7",
+			"description": "ampere per square millimetre: A7."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A70",
+			"description": "femtojoule: A70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A71",
+			"description": "femtometre: A71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A73",
+			"description": "foot per second squared: A73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A74",
+			"description": "foot pound-force per second: A74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A75",
+			"description": "freight ton: A75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A76",
+			"description": "gal: A76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A77",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of displacement: A77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A78",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of electric current: A78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A79",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of electric charge: A79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A8",
+			"description": "ampere second: A8."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A80",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of electric field strength: A80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A81",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of electric polarization: A81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A82",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of electric potential: A82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A83",
+			"description": "Gaussian CGS (Centimetre-Gram-Second system) unit of magnetization: A83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A84",
+			"description": "gigacoulomb per cubic metre: A84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A85",
+			"description": "gigaelectronvolt: A85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A86",
+			"description": "gigahertz: A86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A87",
+			"description": "gigaohm: A87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A88",
+			"description": "gigaohm metre: A88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A89",
+			"description": "gigapascal: A89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A9",
+			"description": "rate: A9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A90",
+			"description": "gigawatt: A90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A91",
+			"description": "gon: A91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A93",
+			"description": "gram per cubic metre: A93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A94",
+			"description": "gram per mole: A94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A95",
+			"description": "gray: A95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A96",
+			"description": "gray per second: A96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A97",
+			"description": "hectopascal: A97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A98",
+			"description": "henry per metre: A98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#A99",
+			"description": "bit: A99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AA",
+			"description": "ball: AA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AB",
+			"description": "bulk pack: AB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ACR",
+			"description": "acre: ACR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ACT",
+			"description": "activity: ACT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AD",
+			"description": "byte: AD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AE",
+			"description": "ampere per metre: AE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AH",
+			"description": "additional minute: AH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AI",
+			"description": "average minute per call: AI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AK",
+			"description": "fathom: AK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AL",
+			"description": "access line: AL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AMH",
+			"description": "ampere hour: AMH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AMP",
+			"description": "ampere: AMP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ANN",
+			"description": "year: ANN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#APZ",
+			"description": "troy ounce or apothecary ounce: APZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AQ",
+			"description": "anti-hemophilic factor (AHF) unit: AQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ARE",
+			"description": "are: ARE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AS",
+			"description": "assortment: AS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ASM",
+			"description": "alcoholic strength by mass: ASM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ASU",
+			"description": "alcoholic strength by volume: ASU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ATM",
+			"description": "standard atmosphere: ATM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ATT",
+			"description": "technical atmosphere: ATT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AWG",
+			"description": "american wire gauge: AWG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AY",
+			"description": "assembly: AY."
+		},
+		{
+			"const": "unece:UnitMeasureCode#AZ",
+			"description": "British thermal unit (international table) per pound: AZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B1",
+			"description": "barrel (US) per day: B1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B10",
+			"description": "bit per second: B10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B11",
+			"description": "joule per kilogram kelvin: B11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B12",
+			"description": "joule per metre: B12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B13",
+			"description": "joule per square metre: B13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B14",
+			"description": "joule per metre to the fourth power: B14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B15",
+			"description": "joule per mole: B15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B16",
+			"description": "joule per mole kelvin: B16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B17",
+			"description": "credit: B17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B18",
+			"description": "joule second: B18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B19",
+			"description": "digit: B19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B20",
+			"description": "joule square metre per kilogram: B20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B21",
+			"description": "kelvin per watt: B21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B22",
+			"description": "kiloampere: B22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B23",
+			"description": "kiloampere per square metre: B23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B24",
+			"description": "kiloampere per metre: B24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B25",
+			"description": "kilobecquerel per kilogram: B25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B26",
+			"description": "kilocoulomb: B26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B27",
+			"description": "kilocoulomb per cubic metre: B27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B28",
+			"description": "kilocoulomb per square metre: B28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B29",
+			"description": "kiloelectronvolt: B29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B3",
+			"description": "batting pound: B3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B30",
+			"description": "gibibit: B30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B31",
+			"description": "kilogram metre per second: B31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B32",
+			"description": "kilogram metre squared: B32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B33",
+			"description": "kilogram metre squared per second: B33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B34",
+			"description": "kilogram per cubic decimetre: B34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B35",
+			"description": "kilogram per litre: B35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B36",
+			"description": "calorie (thermochemical) per gram: B36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B37",
+			"description": "kilogram-force: B37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B38",
+			"description": "kilogram-force metre: B38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B39",
+			"description": "kilogram-force metre per second: B39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B4",
+			"description": "barrel, imperial: B4."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B40",
+			"description": "kilogram-force per square metre: B40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B41",
+			"description": "kilojoule per kelvin: B41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B42",
+			"description": "kilojoule per kilogram: B42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B43",
+			"description": "kilojoule per kilogram kelvin: B43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B44",
+			"description": "kilojoule per mole: B44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B45",
+			"description": "kilomole: B45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B46",
+			"description": "kilomole per cubic metre: B46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B47",
+			"description": "kilonewton: B47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B48",
+			"description": "kilonewton metre: B48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B49",
+			"description": "kiloohm: B49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B50",
+			"description": "kiloohm metre: B50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B51",
+			"description": "kilopond: B51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B52",
+			"description": "kilosecond: B52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B53",
+			"description": "kilosiemens: B53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B54",
+			"description": "kilosiemens per metre: B54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B55",
+			"description": "kilovolt per metre: B55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B56",
+			"description": "kiloweber per metre: B56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B57",
+			"description": "light year: B57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B58",
+			"description": "litre per mole: B58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B59",
+			"description": "lumen hour: B59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B60",
+			"description": "lumen per square metre: B60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B61",
+			"description": "lumen per watt: B61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B62",
+			"description": "lumen second: B62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B63",
+			"description": "lux hour: B63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B64",
+			"description": "lux second: B64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B65",
+			"description": "maxwell: B65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B66",
+			"description": "megaampere per square metre: B66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B67",
+			"description": "megabecquerel per kilogram: B67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B68",
+			"description": "gigabit: B68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B69",
+			"description": "megacoulomb per cubic metre: B69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B7",
+			"description": "cycle: B7."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B70",
+			"description": "megacoulomb per square metre: B70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B71",
+			"description": "megaelectronvolt: B71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B72",
+			"description": "megagram per cubic metre: B72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B73",
+			"description": "meganewton: B73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B74",
+			"description": "meganewton metre: B74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B75",
+			"description": "megaohm: B75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B76",
+			"description": "megaohm metre: B76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B77",
+			"description": "megasiemens per metre: B77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B78",
+			"description": "megavolt: B78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B79",
+			"description": "megavolt per metre: B79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B8",
+			"description": "joule per cubic metre: B8."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B80",
+			"description": "gigabit per second: B80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B81",
+			"description": "reciprocal metre squared reciprocal second: B81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B82",
+			"description": "inch per linear foot: B82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B83",
+			"description": "metre to the fourth power: B83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B84",
+			"description": "microampere: B84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B85",
+			"description": "microbar: B85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B86",
+			"description": "microcoulomb: B86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B87",
+			"description": "microcoulomb per cubic metre: B87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B88",
+			"description": "microcoulomb per square metre: B88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B89",
+			"description": "microfarad per metre: B89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B90",
+			"description": "microhenry: B90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B91",
+			"description": "microhenry per metre: B91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B92",
+			"description": "micronewton: B92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B93",
+			"description": "micronewton metre: B93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B94",
+			"description": "microohm: B94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B95",
+			"description": "microohm metre: B95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B96",
+			"description": "micropascal: B96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B97",
+			"description": "microradian: B97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B98",
+			"description": "microsecond: B98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#B99",
+			"description": "microsiemens: B99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BAR",
+			"description": "bar [unit of pressure]: BAR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BB",
+			"description": "base box: BB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BFT",
+			"description": "board foot: BFT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BHP",
+			"description": "brake horse power: BHP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BIL",
+			"description": "billion (EUR): BIL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BLD",
+			"description": "dry barrel (US): BLD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BLL",
+			"description": "barrel (US): BLL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BP",
+			"description": "hundred board foot: BP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BPM",
+			"description": "beats per minute: BPM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BQL",
+			"description": "becquerel: BQL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BTU",
+			"description": "British thermal unit (international table): BTU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BUA",
+			"description": "bushel (US): BUA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#BUI",
+			"description": "bushel (UK): BUI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C0",
+			"description": "call: C0."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C10",
+			"description": "millifarad: C10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C11",
+			"description": "milligal: C11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C12",
+			"description": "milligram per metre: C12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C13",
+			"description": "milligray: C13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C14",
+			"description": "millihenry: C14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C15",
+			"description": "millijoule: C15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C16",
+			"description": "millimetre per second: C16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C17",
+			"description": "millimetre squared per second: C17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C18",
+			"description": "millimole: C18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C19",
+			"description": "mole per kilogram: C19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C20",
+			"description": "millinewton: C20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C21",
+			"description": "kibibit: C21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C22",
+			"description": "millinewton per metre: C22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C23",
+			"description": "milliohm metre: C23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C24",
+			"description": "millipascal second: C24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C25",
+			"description": "milliradian: C25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C26",
+			"description": "millisecond: C26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C27",
+			"description": "millisiemens: C27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C28",
+			"description": "millisievert: C28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C29",
+			"description": "millitesla: C29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C3",
+			"description": "microvolt per metre: C3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C30",
+			"description": "millivolt per metre: C30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C31",
+			"description": "milliwatt: C31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C32",
+			"description": "milliwatt per square metre: C32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C33",
+			"description": "milliweber: C33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C34",
+			"description": "mole: C34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C35",
+			"description": "mole per cubic decimetre: C35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C36",
+			"description": "mole per cubic metre: C36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C37",
+			"description": "kilobit: C37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C38",
+			"description": "mole per litre: C38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C39",
+			"description": "nanoampere: C39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C40",
+			"description": "nanocoulomb: C40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C41",
+			"description": "nanofarad: C41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C42",
+			"description": "nanofarad per metre: C42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C43",
+			"description": "nanohenry: C43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C44",
+			"description": "nanohenry per metre: C44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C45",
+			"description": "nanometre: C45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C46",
+			"description": "nanoohm metre: C46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C47",
+			"description": "nanosecond: C47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C48",
+			"description": "nanotesla: C48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C49",
+			"description": "nanowatt: C49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C50",
+			"description": "neper: C50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C51",
+			"description": "neper per second: C51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C52",
+			"description": "picometre: C52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C53",
+			"description": "newton metre second: C53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C54",
+			"description": "newton metre squared per kilogram squared: C54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C55",
+			"description": "newton per square metre: C55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C56",
+			"description": "newton per square millimetre: C56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C57",
+			"description": "newton second: C57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C58",
+			"description": "newton second per metre: C58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C59",
+			"description": "octave: C59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C60",
+			"description": "ohm centimetre: C60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C61",
+			"description": "ohm metre: C61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C62",
+			"description": "one: C62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C63",
+			"description": "parsec: C63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C64",
+			"description": "pascal per kelvin: C64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C65",
+			"description": "pascal second: C65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C66",
+			"description": "pascal second per cubic metre: C66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C67",
+			"description": "pascal second per metre: C67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C68",
+			"description": "petajoule: C68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C69",
+			"description": "phon: C69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C7",
+			"description": "centipoise: C7."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C70",
+			"description": "picoampere: C70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C71",
+			"description": "picocoulomb: C71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C72",
+			"description": "picofarad per metre: C72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C73",
+			"description": "picohenry: C73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C74",
+			"description": "kilobit per second: C74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C75",
+			"description": "picowatt: C75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C76",
+			"description": "picowatt per square metre: C76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C78",
+			"description": "pound-force: C78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C79",
+			"description": "kilovolt ampere hour: C79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C8",
+			"description": "millicoulomb per kilogram: C8."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C80",
+			"description": "rad: C80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C81",
+			"description": "radian: C81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C82",
+			"description": "radian square metre per mole: C82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C83",
+			"description": "radian square metre per kilogram: C83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C84",
+			"description": "radian per metre: C84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C85",
+			"description": "reciprocal angstrom: C85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C86",
+			"description": "reciprocal cubic metre: C86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C87",
+			"description": "reciprocal cubic metre per second: C87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C88",
+			"description": "reciprocal electron volt per cubic metre: C88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C89",
+			"description": "reciprocal henry: C89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C9",
+			"description": "coil group: C9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C90",
+			"description": "reciprocal joule per cubic metre: C90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C91",
+			"description": "reciprocal kelvin or kelvin to the power minus one: C91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C92",
+			"description": "reciprocal metre: C92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C93",
+			"description": "reciprocal square metre: C93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C94",
+			"description": "reciprocal minute: C94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C95",
+			"description": "reciprocal mole: C95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C96",
+			"description": "reciprocal pascal or pascal to the power minus one: C96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C97",
+			"description": "reciprocal second: C97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#C99",
+			"description": "reciprocal second per metre squared: C99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CCT",
+			"description": "carrying capacity in metric ton: CCT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CDL",
+			"description": "candela: CDL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CEL",
+			"description": "degree Celsius: CEL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CEN",
+			"description": "hundred: CEN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CF3",
+			"description": "Colony Forming Units per milliliter: CF3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CG",
+			"description": "card: CG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CGM",
+			"description": "centigram: CGM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CKG",
+			"description": "coulomb per kilogram: CKG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CLF",
+			"description": "hundred leave: CLF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CLT",
+			"description": "centilitre: CLT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CMK",
+			"description": "square centimetre: CMK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CMQ",
+			"description": "cubic centimetre: CMQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CMT",
+			"description": "centimetre: CMT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CNP",
+			"description": "hundred pack: CNP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CNT",
+			"description": "cental (UK): CNT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#COU",
+			"description": "coulomb: COU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CTG",
+			"description": "content gram: CTG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CTM",
+			"description": "metric carat: CTM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CTN",
+			"description": "content ton (metric): CTN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CUR",
+			"description": "curie: CUR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CWA",
+			"description": "hundred pound (cwt) / hundred weight (US): CWA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#CWI",
+			"description": "hundred weight (UK): CWI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D03",
+			"description": "kilowatt hour per hour: D03."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D04",
+			"description": "lot [unit of weight]: D04."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D1",
+			"description": "reciprocal second per steradian: D1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D10",
+			"description": "siemens per metre: D10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D11",
+			"description": "mebibit: D11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D12",
+			"description": "siemens square metre per mole: D12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D13",
+			"description": "sievert: D13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D15",
+			"description": "sone: D15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D16",
+			"description": "square centimetre per erg: D16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D17",
+			"description": "square centimetre per steradian erg: D17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D18",
+			"description": "metre kelvin: D18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D19",
+			"description": "square metre kelvin per watt: D19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D2",
+			"description": "reciprocal second per steradian metre squared: D2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D20",
+			"description": "square metre per joule: D20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D21",
+			"description": "square metre per kilogram: D21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D22",
+			"description": "square metre per mole: D22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D23",
+			"description": "pen gram (protein): D23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D24",
+			"description": "square metre per steradian: D24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D25",
+			"description": "square metre per steradian joule: D25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D26",
+			"description": "square metre per volt second: D26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D27",
+			"description": "steradian: D27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D29",
+			"description": "terahertz: D29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D30",
+			"description": "terajoule: D30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D31",
+			"description": "terawatt: D31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D32",
+			"description": "terawatt hour: D32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D33",
+			"description": "tesla: D33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D34",
+			"description": "tex: D34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D35",
+			"description": "calorie (thermochemical): D35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D36",
+			"description": "megabit: D36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D37",
+			"description": "calorie (thermochemical) per gram kelvin: D37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D38",
+			"description": "calorie (thermochemical) per second centimetre kelvin: D38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D39",
+			"description": "calorie (thermochemical) per second square centimetre kelvin: D39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D41",
+			"description": "tonne per cubic metre: D41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D42",
+			"description": "tropical year: D42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D43",
+			"description": "unified atomic mass unit: D43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D44",
+			"description": "var: D44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D45",
+			"description": "volt squared per kelvin squared: D45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D46",
+			"description": "volt - ampere: D46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D47",
+			"description": "volt per centimetre: D47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D48",
+			"description": "volt per kelvin: D48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D49",
+			"description": "millivolt per kelvin: D49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D5",
+			"description": "kilogram per square centimetre: D5."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D50",
+			"description": "volt per metre: D50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D51",
+			"description": "volt per millimetre: D51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D52",
+			"description": "watt per kelvin: D52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D53",
+			"description": "watt per metre kelvin: D53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D54",
+			"description": "watt per square metre: D54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D55",
+			"description": "watt per square metre kelvin: D55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D56",
+			"description": "watt per square metre kelvin to the fourth power: D56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D57",
+			"description": "watt per steradian: D57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D58",
+			"description": "watt per steradian square metre: D58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D59",
+			"description": "weber per metre: D59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D6",
+			"description": "roentgen per second: D6."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D60",
+			"description": "weber per millimetre: D60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D61",
+			"description": "minute [unit of angle]: D61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D62",
+			"description": "second [unit of angle]: D62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D63",
+			"description": "book: D63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D65",
+			"description": "round: D65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D68",
+			"description": "number of words: D68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D69",
+			"description": "inch to the fourth power: D69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D70",
+			"description": "calorie (international table): D70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D71",
+			"description": "calorie (international table) per second centimetre kelvin: D71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D72",
+			"description": "calorie (international table) per second square centimetre kelvin: D72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D73",
+			"description": "joule square metre: D73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D74",
+			"description": "kilogram per mole: D74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D75",
+			"description": "calorie (international table) per gram: D75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D76",
+			"description": "calorie (international table) per gram kelvin: D76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D77",
+			"description": "megacoulomb: D77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D78",
+			"description": "megajoule per second: D78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D80",
+			"description": "microwatt: D80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D81",
+			"description": "microtesla: D81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D82",
+			"description": "microvolt: D82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D83",
+			"description": "millinewton metre: D83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D85",
+			"description": "microwatt per square metre: D85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D86",
+			"description": "millicoulomb: D86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D87",
+			"description": "millimole per kilogram: D87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D88",
+			"description": "millicoulomb per cubic metre: D88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D89",
+			"description": "millicoulomb per square metre: D89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D9",
+			"description": "dyne per square centimetre: D9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D91",
+			"description": "rem: D91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D93",
+			"description": "second per cubic metre: D93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D94",
+			"description": "second per cubic metre radian: D94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#D95",
+			"description": "joule per gram: D95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DAA",
+			"description": "decare: DAA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DAD",
+			"description": "ten day: DAD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DAY",
+			"description": "day: DAY."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DB",
+			"description": "dry pound: DB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DBM",
+			"description": "Decibel-milliwatts: DBM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DBW",
+			"description": "Decibel watt: DBW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DD",
+			"description": "degree [unit of angle]: DD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DEC",
+			"description": "decade: DEC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DG",
+			"description": "decigram: DG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DJ",
+			"description": "decagram: DJ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DLT",
+			"description": "decilitre: DLT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DMA",
+			"description": "cubic decametre: DMA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DMK",
+			"description": "square decimetre: DMK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DMO",
+			"description": "standard kilolitre: DMO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DMQ",
+			"description": "cubic decimetre: DMQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DMT",
+			"description": "decimetre: DMT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DN",
+			"description": "decinewton metre: DN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DPC",
+			"description": "dozen piece: DPC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DPR",
+			"description": "dozen pair: DPR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DPT",
+			"description": "displacement tonnage: DPT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DRA",
+			"description": "dram (US): DRA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DRI",
+			"description": "dram (UK): DRI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DRL",
+			"description": "dozen roll: DRL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DT",
+			"description": "dry ton: DT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DTN",
+			"description": "decitonne: DTN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DU",
+			"description": "dyne: DU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DWT",
+			"description": "pennyweight: DWT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DX",
+			"description": "dyne per centimetre: DX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DZN",
+			"description": "dozen: DZN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#DZP",
+			"description": "dozen pack: DZP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E01",
+			"description": "newton per square centimetre: E01."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E07",
+			"description": "megawatt hour per hour: E07."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E08",
+			"description": "megawatt per hertz: E08."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E09",
+			"description": "milliampere hour: E09."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E10",
+			"description": "degree day: E10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E11",
+			"description": "gigacalorie: E11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E12",
+			"description": "mille: E12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E14",
+			"description": "kilocalorie (international table): E14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E15",
+			"description": "kilocalorie (thermochemical) per hour: E15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E16",
+			"description": "million Btu(IT) per hour: E16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E17",
+			"description": "cubic foot per second: E17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E18",
+			"description": "tonne per hour: E18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E19",
+			"description": "ping: E19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E20",
+			"description": "megabit per second: E20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E21",
+			"description": "shares: E21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E22",
+			"description": "TEU: E22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E23",
+			"description": "tyre: E23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E25",
+			"description": "active unit: E25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E27",
+			"description": "dose: E27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E28",
+			"description": "air dry ton: E28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E30",
+			"description": "strand: E30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E31",
+			"description": "square metre per litre: E31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E32",
+			"description": "litre per hour: E32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E33",
+			"description": "foot per thousand: E33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E34",
+			"description": "gigabyte: E34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E35",
+			"description": "terabyte: E35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E36",
+			"description": "petabyte: E36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E37",
+			"description": "pixel: E37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E38",
+			"description": "megapixel: E38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E39",
+			"description": "dots per inch: E39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E4",
+			"description": "gross kilogram: E4."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E40",
+			"description": "part per hundred thousand: E40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E41",
+			"description": "kilogram-force per square millimetre: E41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E42",
+			"description": "kilogram-force per square centimetre: E42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E43",
+			"description": "joule per square centimetre: E43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E44",
+			"description": "kilogram-force metre per square centimetre: E44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E45",
+			"description": "milliohm: E45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E46",
+			"description": "kilowatt hour per cubic metre: E46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E47",
+			"description": "kilowatt hour per kelvin: E47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E48",
+			"description": "service unit: E48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E49",
+			"description": "working day: E49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E50",
+			"description": "accounting unit: E50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E51",
+			"description": "job: E51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E52",
+			"description": "run foot: E52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E53",
+			"description": "test: E53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E54",
+			"description": "trip: E54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E55",
+			"description": "use: E55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E56",
+			"description": "well: E56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E57",
+			"description": "zone: E57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E58",
+			"description": "exabit per second: E58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E59",
+			"description": "exbibyte: E59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E60",
+			"description": "pebibyte: E60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E61",
+			"description": "tebibyte: E61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E62",
+			"description": "gibibyte: E62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E63",
+			"description": "mebibyte: E63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E64",
+			"description": "kibibyte: E64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E65",
+			"description": "exbibit per metre: E65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E66",
+			"description": "exbibit per square metre: E66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E67",
+			"description": "exbibit per cubic metre: E67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E68",
+			"description": "gigabyte per second: E68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E69",
+			"description": "gibibit per metre: E69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E70",
+			"description": "gibibit per square metre: E70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E71",
+			"description": "gibibit per cubic metre: E71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E72",
+			"description": "kibibit per metre: E72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E73",
+			"description": "kibibit per square metre: E73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E74",
+			"description": "kibibit per cubic metre: E74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E75",
+			"description": "mebibit per metre: E75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E76",
+			"description": "mebibit per square metre: E76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E77",
+			"description": "mebibit per cubic metre: E77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E78",
+			"description": "petabit: E78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E79",
+			"description": "petabit per second: E79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E80",
+			"description": "pebibit per metre: E80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E81",
+			"description": "pebibit per square metre: E81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E82",
+			"description": "pebibit per cubic metre: E82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E83",
+			"description": "terabit: E83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E84",
+			"description": "terabit per second: E84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E85",
+			"description": "tebibit per metre: E85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E86",
+			"description": "tebibit per cubic metre: E86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E87",
+			"description": "tebibit per square metre: E87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E88",
+			"description": "bit per metre: E88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E89",
+			"description": "bit per square metre: E89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E90",
+			"description": "reciprocal centimetre: E90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E91",
+			"description": "reciprocal day: E91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E92",
+			"description": "cubic decimetre per hour: E92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E93",
+			"description": "kilogram per hour: E93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E94",
+			"description": "kilomole per second: E94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E95",
+			"description": "mole per second: E95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E96",
+			"description": "degree per second: E96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E97",
+			"description": "millimetre per degree Celcius metre: E97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E98",
+			"description": "degree Celsius per kelvin: E98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#E99",
+			"description": "hectopascal per bar: E99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#EA",
+			"description": "each: EA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#EB",
+			"description": "electronic mail box: EB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#EQ",
+			"description": "equivalent gallon: EQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F01",
+			"description": "bit per cubic metre: F01."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F02",
+			"description": "kelvin per kelvin: F02."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F03",
+			"description": "kilopascal per bar: F03."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F04",
+			"description": "millibar per bar: F04."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F05",
+			"description": "megapascal per bar: F05."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F06",
+			"description": "poise per bar: F06."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F07",
+			"description": "pascal per bar: F07."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F08",
+			"description": "milliampere per inch: F08."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F10",
+			"description": "kelvin per hour: F10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F11",
+			"description": "kelvin per minute: F11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F12",
+			"description": "kelvin per second: F12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F13",
+			"description": "slug: F13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F14",
+			"description": "gram per kelvin: F14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F15",
+			"description": "kilogram per kelvin: F15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F16",
+			"description": "milligram per kelvin: F16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F17",
+			"description": "pound-force per foot: F17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F18",
+			"description": "kilogram square centimetre: F18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F19",
+			"description": "kilogram square millimetre: F19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F20",
+			"description": "pound inch squared: F20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F21",
+			"description": "pound-force inch: F21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F22",
+			"description": "pound-force foot per ampere: F22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F23",
+			"description": "gram per cubic decimetre: F23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F24",
+			"description": "kilogram per kilomole: F24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F25",
+			"description": "gram per hertz: F25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F26",
+			"description": "gram per day: F26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F27",
+			"description": "gram per hour: F27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F28",
+			"description": "gram per minute: F28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F29",
+			"description": "gram per second: F29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F30",
+			"description": "kilogram per day: F30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F31",
+			"description": "kilogram per minute: F31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F32",
+			"description": "milligram per day: F32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F33",
+			"description": "milligram per minute: F33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F34",
+			"description": "milligram per second: F34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F35",
+			"description": "gram per day kelvin: F35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F36",
+			"description": "gram per hour kelvin: F36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F37",
+			"description": "gram per minute kelvin: F37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F38",
+			"description": "gram per second kelvin: F38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F39",
+			"description": "kilogram per day kelvin: F39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F40",
+			"description": "kilogram per hour kelvin: F40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F41",
+			"description": "kilogram per minute kelvin: F41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F42",
+			"description": "kilogram per second kelvin: F42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F43",
+			"description": "milligram per day kelvin: F43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F44",
+			"description": "milligram per hour kelvin: F44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F45",
+			"description": "milligram per minute kelvin: F45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F46",
+			"description": "milligram per second kelvin: F46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F47",
+			"description": "newton per millimetre: F47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F48",
+			"description": "pound-force per inch: F48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F49",
+			"description": "rod [unit of distance]: F49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F50",
+			"description": "micrometre per kelvin: F50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F51",
+			"description": "centimetre per kelvin: F51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F52",
+			"description": "metre per kelvin: F52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F53",
+			"description": "millimetre per kelvin: F53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F54",
+			"description": "milliohm per metre: F54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F55",
+			"description": "ohm per mile (statute mile): F55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F56",
+			"description": "ohm per kilometre: F56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F57",
+			"description": "milliampere per pound-force per square inch: F57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F58",
+			"description": "reciprocal bar: F58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F59",
+			"description": "milliampere per bar: F59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F60",
+			"description": "degree Celsius per bar: F60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F61",
+			"description": "kelvin per bar: F61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F62",
+			"description": "gram per day bar: F62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F63",
+			"description": "gram per hour bar: F63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F64",
+			"description": "gram per minute bar: F64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F65",
+			"description": "gram per second bar: F65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F66",
+			"description": "kilogram per day bar: F66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F67",
+			"description": "kilogram per hour bar: F67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F68",
+			"description": "kilogram per minute bar: F68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F69",
+			"description": "kilogram per second bar: F69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F70",
+			"description": "milligram per day bar: F70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F71",
+			"description": "milligram per hour bar: F71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F72",
+			"description": "milligram per minute bar: F72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F73",
+			"description": "milligram per second bar: F73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F74",
+			"description": "gram per bar: F74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F75",
+			"description": "milligram per bar: F75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F76",
+			"description": "milliampere per millimetre: F76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F77",
+			"description": "pascal second per kelvin: F77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F78",
+			"description": "inch of water: F78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F79",
+			"description": "inch of mercury: F79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F80",
+			"description": "water horse power: F80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F81",
+			"description": "bar per kelvin: F81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F82",
+			"description": "hectopascal per kelvin: F82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F83",
+			"description": "kilopascal per kelvin: F83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F84",
+			"description": "millibar per kelvin: F84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F85",
+			"description": "megapascal per kelvin: F85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F86",
+			"description": "poise per kelvin: F86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F87",
+			"description": "volt per litre minute: F87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F88",
+			"description": "newton centimetre: F88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F89",
+			"description": "newton metre per degree: F89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F90",
+			"description": "newton metre per ampere: F90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F91",
+			"description": "bar litre per second: F91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F92",
+			"description": "bar cubic metre per second: F92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F93",
+			"description": "hectopascal litre per second: F93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F94",
+			"description": "hectopascal cubic metre per second: F94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F95",
+			"description": "millibar litre per second: F95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F96",
+			"description": "millibar cubic metre per second: F96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F97",
+			"description": "megapascal litre per second: F97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F98",
+			"description": "megapascal cubic metre per second: F98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#F99",
+			"description": "pascal litre per second: F99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FAH",
+			"description": "degree Fahrenheit: FAH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FAR",
+			"description": "farad: FAR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FBM",
+			"description": "fibre metre: FBM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FC",
+			"description": "thousand cubic foot: FC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FF",
+			"description": "hundred cubic metre: FF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FH",
+			"description": "micromole: FH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FIT",
+			"description": "failures in time: FIT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FL",
+			"description": "flake ton: FL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FNU",
+			"description": "Formazin nephelometric unit: FNU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FOT",
+			"description": "foot: FOT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FP",
+			"description": "pound per square foot: FP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FR",
+			"description": "foot per minute: FR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FS",
+			"description": "foot per second: FS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FTK",
+			"description": "square foot: FTK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#FTQ",
+			"description": "cubic foot: FTQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G01",
+			"description": "pascal cubic metre per second: G01."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G04",
+			"description": "centimetre per bar: G04."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G05",
+			"description": "metre per bar: G05."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G06",
+			"description": "millimetre per bar: G06."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G08",
+			"description": "square inch per second: G08."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G09",
+			"description": "square metre per second kelvin: G09."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G10",
+			"description": "stokes per kelvin: G10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G11",
+			"description": "gram per cubic centimetre bar: G11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G12",
+			"description": "gram per cubic decimetre bar: G12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G13",
+			"description": "gram per litre bar: G13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G14",
+			"description": "gram per cubic metre bar: G14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G15",
+			"description": "gram per millilitre bar: G15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G16",
+			"description": "kilogram per cubic centimetre bar: G16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G17",
+			"description": "kilogram per litre bar: G17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G18",
+			"description": "kilogram per cubic metre bar: G18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G19",
+			"description": "newton metre per kilogram: G19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G2",
+			"description": "US gallon per minute: G2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G20",
+			"description": "pound-force foot per pound: G20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G21",
+			"description": "cup [unit of volume]: G21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G23",
+			"description": "peck: G23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G24",
+			"description": "tablespoon (US): G24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G25",
+			"description": "teaspoon (US): G25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G26",
+			"description": "stere: G26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G27",
+			"description": "cubic centimetre per kelvin: G27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G28",
+			"description": "litre per kelvin: G28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G29",
+			"description": "cubic metre per kelvin: G29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G3",
+			"description": "Imperial gallon per minute: G3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G30",
+			"description": "millilitre per kelvin: G30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G31",
+			"description": "kilogram per cubic centimetre: G31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G32",
+			"description": "ounce (avoirdupois) per cubic yard: G32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G33",
+			"description": "gram per cubic centimetre kelvin: G33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G34",
+			"description": "gram per cubic decimetre kelvin: G34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G35",
+			"description": "gram per litre kelvin: G35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G36",
+			"description": "gram per cubic metre kelvin: G36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G37",
+			"description": "gram per millilitre kelvin: G37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G38",
+			"description": "kilogram per cubic centimetre kelvin: G38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G39",
+			"description": "kilogram per litre kelvin: G39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G40",
+			"description": "kilogram per cubic metre kelvin: G40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G41",
+			"description": "square metre per second bar: G41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G42",
+			"description": "microsiemens per centimetre: G42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G43",
+			"description": "microsiemens per metre: G43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G44",
+			"description": "nanosiemens per centimetre: G44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G45",
+			"description": "nanosiemens per metre: G45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G46",
+			"description": "stokes per bar: G46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G47",
+			"description": "cubic centimetre per day: G47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G48",
+			"description": "cubic centimetre per hour: G48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G49",
+			"description": "cubic centimetre per minute: G49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G50",
+			"description": "gallon (US) per hour: G50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G51",
+			"description": "litre per second: G51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G52",
+			"description": "cubic metre per day: G52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G53",
+			"description": "cubic metre per minute: G53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G54",
+			"description": "millilitre per day: G54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G55",
+			"description": "millilitre per hour: G55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G56",
+			"description": "cubic inch per hour: G56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G57",
+			"description": "cubic inch per minute: G57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G58",
+			"description": "cubic inch per second: G58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G59",
+			"description": "milliampere per litre minute: G59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G60",
+			"description": "volt per bar: G60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G61",
+			"description": "cubic centimetre per day kelvin: G61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G62",
+			"description": "cubic centimetre per hour kelvin: G62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G63",
+			"description": "cubic centimetre per minute kelvin: G63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G64",
+			"description": "cubic centimetre per second kelvin: G64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G65",
+			"description": "litre per day kelvin: G65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G66",
+			"description": "litre per hour kelvin: G66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G67",
+			"description": "litre per minute kelvin: G67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G68",
+			"description": "litre per second kelvin: G68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G69",
+			"description": "cubic metre per day kelvin: G69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G70",
+			"description": "cubic metre per hour kelvin: G70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G71",
+			"description": "cubic metre per minute kelvin: G71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G72",
+			"description": "cubic metre per second kelvin: G72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G73",
+			"description": "millilitre per day kelvin: G73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G74",
+			"description": "millilitre per hour kelvin: G74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G75",
+			"description": "millilitre per minute kelvin: G75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G76",
+			"description": "millilitre per second kelvin: G76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G77",
+			"description": "millimetre to the fourth power: G77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G78",
+			"description": "cubic centimetre per day bar: G78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G79",
+			"description": "cubic centimetre per hour bar: G79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G80",
+			"description": "cubic centimetre per minute bar: G80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G81",
+			"description": "cubic centimetre per second bar: G81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G82",
+			"description": "litre per day bar: G82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G83",
+			"description": "litre per hour bar: G83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G84",
+			"description": "litre per minute bar: G84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G85",
+			"description": "litre per second bar: G85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G86",
+			"description": "cubic metre per day bar: G86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G87",
+			"description": "cubic metre per hour bar: G87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G88",
+			"description": "cubic metre per minute bar: G88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G89",
+			"description": "cubic metre per second bar: G89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G90",
+			"description": "millilitre per day bar: G90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G91",
+			"description": "millilitre per hour bar: G91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G92",
+			"description": "millilitre per minute bar: G92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G93",
+			"description": "millilitre per second bar: G93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G94",
+			"description": "cubic centimetre per bar: G94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G95",
+			"description": "litre per bar: G95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G96",
+			"description": "cubic metre per bar: G96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G97",
+			"description": "millilitre per bar: G97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G98",
+			"description": "microhenry per kiloohm: G98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#G99",
+			"description": "microhenry per ohm: G99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GB",
+			"description": "gallon (US) per day: GB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GBQ",
+			"description": "gigabecquerel: GBQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GDW",
+			"description": "gram, dry weight: GDW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GE",
+			"description": "pound per gallon (US): GE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GF",
+			"description": "gram per metre (gram per 100 centimetres): GF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GFI",
+			"description": "gram of fissile isotope: GFI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GGR",
+			"description": "great gross: GGR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GIA",
+			"description": "gill (US): GIA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GIC",
+			"description": "gram, including container: GIC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GII",
+			"description": "gill (UK): GII."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GIP",
+			"description": "gram, including inner packaging: GIP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GJ",
+			"description": "gram per millilitre: GJ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GL",
+			"description": "gram per litre: GL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GLD",
+			"description": "dry gallon (US): GLD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GLI",
+			"description": "gallon (UK): GLI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GLL",
+			"description": "gallon (US): GLL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GM",
+			"description": "gram per square metre: GM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GO",
+			"description": "milligram per square metre: GO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GP",
+			"description": "milligram per cubic metre: GP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GQ",
+			"description": "microgram per cubic metre: GQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GRM",
+			"description": "gram: GRM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GRN",
+			"description": "grain: GRN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GRO",
+			"description": "gross: GRO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GRT",
+			"description": "gross register ton: GRT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GT",
+			"description": "gross ton: GT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GV",
+			"description": "gigajoule: GV."
+		},
+		{
+			"const": "unece:UnitMeasureCode#GWH",
+			"description": "gigawatt hour: GWH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H03",
+			"description": "henry per kiloohm: H03."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H04",
+			"description": "henry per ohm: H04."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H05",
+			"description": "millihenry per kiloohm: H05."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H06",
+			"description": "millihenry per ohm: H06."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H07",
+			"description": "pascal second per bar: H07."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H08",
+			"description": "microbecquerel: H08."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H09",
+			"description": "reciprocal year: H09."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H10",
+			"description": "reciprocal hour: H10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H11",
+			"description": "reciprocal month: H11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H12",
+			"description": "degree Celsius per hour: H12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H13",
+			"description": "degree Celsius per minute: H13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H14",
+			"description": "degree Celsius per second: H14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H15",
+			"description": "square centimetre per gram: H15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H16",
+			"description": "square decametre: H16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H18",
+			"description": "square hectometre: H18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H19",
+			"description": "cubic hectometre: H19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H20",
+			"description": "cubic kilometre: H20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H21",
+			"description": "blank: H21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H22",
+			"description": "volt square inch per pound-force: H22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H23",
+			"description": "volt per inch: H23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H24",
+			"description": "volt per microsecond: H24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H25",
+			"description": "percent per kelvin: H25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H26",
+			"description": "ohm per metre: H26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H27",
+			"description": "degree per metre: H27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H28",
+			"description": "microfarad per kilometre: H28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H29",
+			"description": "microgram per litre: H29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H30",
+			"description": "square micrometre (square micron): H30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H31",
+			"description": "ampere per kilogram: H31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H32",
+			"description": "ampere squared second: H32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H33",
+			"description": "farad per kilometre: H33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H34",
+			"description": "hertz metre: H34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H35",
+			"description": "kelvin metre per watt: H35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H36",
+			"description": "megaohm per kilometre: H36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H37",
+			"description": "megaohm per metre: H37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H38",
+			"description": "megaampere: H38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H39",
+			"description": "megahertz kilometre: H39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H40",
+			"description": "newton per ampere: H40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H41",
+			"description": "newton metre watt to the power minus 0,5: H41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H42",
+			"description": "pascal per metre: H42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H43",
+			"description": "siemens per centimetre: H43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H44",
+			"description": "teraohm: H44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H45",
+			"description": "volt second per metre: H45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H46",
+			"description": "volt per second: H46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H47",
+			"description": "watt per cubic metre: H47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H48",
+			"description": "attofarad: H48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H49",
+			"description": "centimetre per hour: H49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H50",
+			"description": "reciprocal cubic centimetre: H50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H51",
+			"description": "decibel per kilometre: H51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H52",
+			"description": "decibel per metre: H52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H53",
+			"description": "kilogram per bar: H53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H54",
+			"description": "kilogram per cubic decimetre kelvin: H54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H55",
+			"description": "kilogram per cubic decimetre bar: H55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H56",
+			"description": "kilogram per square metre second: H56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H57",
+			"description": "inch per two pi radiant: H57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H58",
+			"description": "metre per volt second: H58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H59",
+			"description": "square metre per newton: H59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H60",
+			"description": "cubic metre per cubic metre: H60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H61",
+			"description": "millisiemens per centimetre: H61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H62",
+			"description": "millivolt per minute: H62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H63",
+			"description": "milligram per square centimetre: H63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H64",
+			"description": "milligram per gram: H64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H65",
+			"description": "millilitre per cubic metre: H65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H66",
+			"description": "millimetre per year: H66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H67",
+			"description": "millimetre per hour: H67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H68",
+			"description": "millimole per gram: H68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H69",
+			"description": "picopascal per kilometre: H69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H70",
+			"description": "picosecond: H70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H71",
+			"description": "percent per month: H71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H72",
+			"description": "percent per hectobar: H72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H73",
+			"description": "percent per decakelvin: H73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H74",
+			"description": "watt per metre: H74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H75",
+			"description": "decapascal: H75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H76",
+			"description": "gram per millimetre: H76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H77",
+			"description": "module width: H77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H78",
+			"description": "conventional centimetre of water: H78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H79",
+			"description": "Charrière: H79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H80",
+			"description": "rack unit: H80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H81",
+			"description": "millimetre per minute: H81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H82",
+			"description": "big point: H82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H83",
+			"description": "litre per kilogram: H83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H84",
+			"description": "gram millimetre: H84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H85",
+			"description": "reciprocal week: H85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H87",
+			"description": "piece: H87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H88",
+			"description": "megaohm kilometre: H88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H89",
+			"description": "percent per ohm: H89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H90",
+			"description": "percent per degree: H90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H91",
+			"description": "percent per ten thousand: H91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H92",
+			"description": "percent per one hundred thousand: H92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H93",
+			"description": "percent per hundred: H93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H94",
+			"description": "percent per thousand: H94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H95",
+			"description": "percent per volt: H95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H96",
+			"description": "percent per bar: H96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H98",
+			"description": "percent per inch: H98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#H99",
+			"description": "percent per metre: H99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HA",
+			"description": "hank: HA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HAD",
+			"description": "Piece Day: HAD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HAR",
+			"description": "hectare: HAR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HBA",
+			"description": "hectobar: HBA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HBX",
+			"description": "hundred boxes: HBX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HC",
+			"description": "hundred count: HC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HDW",
+			"description": "hundred kilogram, dry weight: HDW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HEA",
+			"description": "head: HEA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HGM",
+			"description": "hectogram: HGM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HH",
+			"description": "hundred cubic foot: HH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HIU",
+			"description": "hundred international unit: HIU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HJ",
+			"description": "metric horse power: HJ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HKM",
+			"description": "hundred kilogram, net mass: HKM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HLT",
+			"description": "hectolitre: HLT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HM",
+			"description": "mile per hour (statute mile): HM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HMO",
+			"description": "Piece Month: HMO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HMQ",
+			"description": "million cubic metre: HMQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HMT",
+			"description": "hectometre: HMT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HN",
+			"description": "conventional millimetre of mercury: HN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HP",
+			"description": "conventional millimetre of water: HP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HPA",
+			"description": "hectolitre of pure alcohol: HPA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HTZ",
+			"description": "hertz: HTZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HUR",
+			"description": "hour: HUR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#HWE",
+			"description": "Piece Week: HWE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#IA",
+			"description": "inch pound (pound inch): IA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#IE",
+			"description": "person: IE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#INH",
+			"description": "inch: INH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#INK",
+			"description": "square inch: INK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#INQ",
+			"description": "cubic inch: INQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ISD",
+			"description": "international sugar degree: ISD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#IU",
+			"description": "inch per second: IU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#IV",
+			"description": "inch per second squared: IV."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J10",
+			"description": "percent per millimetre: J10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J12",
+			"description": "per mille per psi: J12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J13",
+			"description": "degree API: J13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J14",
+			"description": "degree Baume (origin scale): J14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J15",
+			"description": "degree Baume (US heavy): J15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J16",
+			"description": "degree Baume (US light): J16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J17",
+			"description": "degree Balling: J17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J18",
+			"description": "degree Brix: J18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J19",
+			"description": "degree Fahrenheit hour square foot per British thermal unit (thermochemical): J19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J2",
+			"description": "joule per kilogram: J2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J20",
+			"description": "degree Fahrenheit per kelvin: J20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J21",
+			"description": "degree Fahrenheit per bar: J21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J22",
+			"description": "degree Fahrenheit hour square foot per British thermal unit (international table): J22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J23",
+			"description": "degree Fahrenheit per hour: J23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J24",
+			"description": "degree Fahrenheit per minute: J24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J25",
+			"description": "degree Fahrenheit per second: J25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J26",
+			"description": "reciprocal degree Fahrenheit: J26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J27",
+			"description": "degree Oechsle: J27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J28",
+			"description": "degree Rankine per hour: J28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J29",
+			"description": "degree Rankine per minute: J29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J30",
+			"description": "degree Rankine per second: J30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J31",
+			"description": "degree Twaddell: J31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J32",
+			"description": "micropoise: J32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J33",
+			"description": "microgram per kilogram: J33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J34",
+			"description": "microgram per cubic metre kelvin: J34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J35",
+			"description": "microgram per cubic metre bar: J35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J36",
+			"description": "microlitre per litre: J36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J38",
+			"description": "baud: J38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J39",
+			"description": "British thermal unit (mean): J39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J40",
+			"description": "British thermal unit (international table) foot per hour square foot degree Fahrenheit: J40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J41",
+			"description": "British thermal unit (international table) inch per hour square foot degree Fahrenheit: J41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J42",
+			"description": "British thermal unit (international table) inch per second square foot degree Fahrenheit: J42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J43",
+			"description": "British thermal unit (international table) per pound degree Fahrenheit: J43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J44",
+			"description": "British thermal unit (international table) per minute: J44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J45",
+			"description": "British thermal unit (international table) per second: J45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J46",
+			"description": "British thermal unit (thermochemical) foot per hour square foot degree Fahrenheit: J46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J47",
+			"description": "British thermal unit (thermochemical) per hour: J47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J48",
+			"description": "British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit: J48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J49",
+			"description": "British thermal unit (thermochemical) inch per second square foot degree Fahrenheit: J49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J50",
+			"description": "British thermal unit (thermochemical) per pound degree Fahrenheit: J50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J51",
+			"description": "British thermal unit (thermochemical) per minute: J51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J52",
+			"description": "British thermal unit (thermochemical) per second: J52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J53",
+			"description": "coulomb square metre per kilogram: J53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J54",
+			"description": "megabaud: J54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J55",
+			"description": "watt second: J55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J56",
+			"description": "bar per bar: J56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J57",
+			"description": "barrel (UK petroleum): J57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J58",
+			"description": "barrel (UK petroleum) per minute: J58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J59",
+			"description": "barrel (UK petroleum) per day: J59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J60",
+			"description": "barrel (UK petroleum) per hour: J60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J61",
+			"description": "barrel (UK petroleum) per second: J61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J62",
+			"description": "barrel (US petroleum) per hour: J62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J63",
+			"description": "barrel (US petroleum) per second: J63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J64",
+			"description": "bushel (UK) per day: J64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J65",
+			"description": "bushel (UK) per hour: J65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J66",
+			"description": "bushel (UK) per minute: J66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J67",
+			"description": "bushel (UK) per second: J67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J68",
+			"description": "bushel (US dry) per day: J68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J69",
+			"description": "bushel (US dry) per hour: J69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J70",
+			"description": "bushel (US dry) per minute: J70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J71",
+			"description": "bushel (US dry) per second: J71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J72",
+			"description": "centinewton metre: J72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J73",
+			"description": "centipoise per kelvin: J73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J74",
+			"description": "centipoise per bar: J74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J75",
+			"description": "calorie (mean): J75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J76",
+			"description": "calorie (international table) per gram degree Celsius: J76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J78",
+			"description": "calorie (thermochemical) per centimetre second degree Celsius: J78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J79",
+			"description": "calorie (thermochemical) per gram degree Celsius: J79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J81",
+			"description": "calorie (thermochemical) per minute: J81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J82",
+			"description": "calorie (thermochemical) per second: J82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J83",
+			"description": "clo: J83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J84",
+			"description": "centimetre per second kelvin: J84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J85",
+			"description": "centimetre per second bar: J85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J87",
+			"description": "cubic centimetre per cubic metre: J87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J89",
+			"description": "centimetre of mercury: J89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J90",
+			"description": "cubic decimetre per day: J90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J91",
+			"description": "cubic decimetre per cubic metre: J91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J92",
+			"description": "cubic decimetre per minute: J92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J93",
+			"description": "cubic decimetre per second: J93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J94",
+			"description": "dyne centimetre: J94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J95",
+			"description": "ounce (UK fluid) per day: J95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J96",
+			"description": "ounce (UK fluid) per hour: J96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J97",
+			"description": "ounce (UK fluid) per minute: J97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J98",
+			"description": "ounce (UK fluid) per second: J98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#J99",
+			"description": "ounce (US fluid) per day: J99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JE",
+			"description": "joule per kelvin: JE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JK",
+			"description": "megajoule per kilogram: JK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JM",
+			"description": "megajoule per cubic metre: JM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JNT",
+			"description": "pipeline joint: JNT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JOU",
+			"description": "joule: JOU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JPS",
+			"description": "hundred metre: JPS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#JWL",
+			"description": "number of jewels: JWL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K1",
+			"description": "kilowatt demand: K1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K10",
+			"description": "ounce (US fluid) per hour: K10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K11",
+			"description": "ounce (US fluid) per minute: K11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K12",
+			"description": "ounce (US fluid) per second: K12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K13",
+			"description": "foot per degree Fahrenheit: K13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K14",
+			"description": "foot per hour: K14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K15",
+			"description": "foot pound-force per hour: K15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K16",
+			"description": "foot pound-force per minute: K16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K17",
+			"description": "foot per psi: K17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K18",
+			"description": "foot per second degree Fahrenheit: K18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K19",
+			"description": "foot per second psi: K19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K2",
+			"description": "kilovolt ampere reactive demand: K2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K20",
+			"description": "reciprocal cubic foot: K20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K21",
+			"description": "cubic foot per degree Fahrenheit: K21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K22",
+			"description": "cubic foot per day: K22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K23",
+			"description": "cubic foot per psi: K23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K24",
+			"description": "foot of water: K24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K25",
+			"description": "foot of mercury: K25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K26",
+			"description": "gallon (UK) per day: K26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K27",
+			"description": "gallon (UK) per hour: K27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K28",
+			"description": "gallon (UK) per second: K28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K3",
+			"description": "kilovolt ampere reactive hour: K3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K30",
+			"description": "gallon (US liquid) per second: K30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K31",
+			"description": "gram-force per square centimetre: K31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K32",
+			"description": "gill (UK) per day: K32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K33",
+			"description": "gill (UK) per hour: K33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K34",
+			"description": "gill (UK) per minute: K34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K35",
+			"description": "gill (UK) per second: K35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K36",
+			"description": "gill (US) per day: K36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K37",
+			"description": "gill (US) per hour: K37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K38",
+			"description": "gill (US) per minute: K38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K39",
+			"description": "gill (US) per second: K39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K40",
+			"description": "standard acceleration of free fall: K40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K41",
+			"description": "grain per gallon (US): K41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K42",
+			"description": "horsepower (boiler): K42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K43",
+			"description": "horsepower (electric): K43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K45",
+			"description": "inch per degree Fahrenheit: K45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K46",
+			"description": "inch per psi: K46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K47",
+			"description": "inch per second degree Fahrenheit: K47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K48",
+			"description": "inch per second psi: K48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K49",
+			"description": "reciprocal cubic inch: K49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K5",
+			"description": "kilovolt ampere (reactive): K5."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K50",
+			"description": "kilobaud: K50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K51",
+			"description": "kilocalorie (mean): K51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K52",
+			"description": "kilocalorie (international table) per hour metre degree Celsius: K52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K53",
+			"description": "kilocalorie (thermochemical): K53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K54",
+			"description": "kilocalorie (thermochemical) per minute: K54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K55",
+			"description": "kilocalorie (thermochemical) per second: K55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K58",
+			"description": "kilomole per hour: K58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K59",
+			"description": "kilomole per cubic metre kelvin: K59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K6",
+			"description": "kilolitre: K6."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K60",
+			"description": "kilomole per cubic metre bar: K60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K61",
+			"description": "kilomole per minute: K61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K62",
+			"description": "litre per litre: K62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K63",
+			"description": "reciprocal litre: K63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K64",
+			"description": "pound (avoirdupois) per degree Fahrenheit: K64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K65",
+			"description": "pound (avoirdupois) square foot: K65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K66",
+			"description": "pound (avoirdupois) per day: K66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K67",
+			"description": "pound per foot hour: K67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K68",
+			"description": "pound per foot second: K68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K69",
+			"description": "pound (avoirdupois) per cubic foot degree Fahrenheit: K69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K70",
+			"description": "pound (avoirdupois) per cubic foot psi: K70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K71",
+			"description": "pound (avoirdupois) per gallon (UK): K71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K73",
+			"description": "pound (avoirdupois) per hour degree Fahrenheit: K73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K74",
+			"description": "pound (avoirdupois) per hour psi: K74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K75",
+			"description": "pound (avoirdupois) per cubic inch degree Fahrenheit: K75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K76",
+			"description": "pound (avoirdupois) per cubic inch psi: K76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K77",
+			"description": "pound (avoirdupois) per psi: K77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K78",
+			"description": "pound (avoirdupois) per minute: K78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K79",
+			"description": "pound (avoirdupois) per minute degree Fahrenheit: K79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K80",
+			"description": "pound (avoirdupois) per minute psi: K80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K81",
+			"description": "pound (avoirdupois) per second: K81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K82",
+			"description": "pound (avoirdupois) per second degree Fahrenheit: K82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K83",
+			"description": "pound (avoirdupois) per second psi: K83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K84",
+			"description": "pound per cubic yard: K84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K85",
+			"description": "pound-force per square foot: K85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K86",
+			"description": "pound-force per square inch degree Fahrenheit: K86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K87",
+			"description": "psi cubic inch per second: K87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K88",
+			"description": "psi litre per second: K88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K89",
+			"description": "psi cubic metre per second: K89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K90",
+			"description": "psi cubic yard per second: K90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K91",
+			"description": "pound-force second per square foot: K91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K92",
+			"description": "pound-force second per square inch: K92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K93",
+			"description": "reciprocal psi: K93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K94",
+			"description": "quart (UK liquid) per day: K94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K95",
+			"description": "quart (UK liquid) per hour: K95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K96",
+			"description": "quart (UK liquid) per minute: K96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K97",
+			"description": "quart (UK liquid) per second: K97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K98",
+			"description": "quart (US liquid) per day: K98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#K99",
+			"description": "quart (US liquid) per hour: K99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KA",
+			"description": "cake: KA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KAT",
+			"description": "katal: KAT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KB",
+			"description": "kilocharacter: KB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KBA",
+			"description": "kilobar: KBA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KCC",
+			"description": "kilogram of choline chloride: KCC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KDW",
+			"description": "kilogram drained net weight: KDW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KEL",
+			"description": "kelvin: KEL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KGM",
+			"description": "kilogram: KGM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KGS",
+			"description": "kilogram per second: KGS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KHY",
+			"description": "kilogram of hydrogen peroxide: KHY."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KHZ",
+			"description": "kilohertz: KHZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KI",
+			"description": "kilogram per millimetre width: KI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KIC",
+			"description": "kilogram, including container: KIC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KIP",
+			"description": "kilogram, including inner packaging: KIP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KJ",
+			"description": "kilosegment: KJ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KJO",
+			"description": "kilojoule: KJO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KL",
+			"description": "kilogram per metre: KL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KLK",
+			"description": "lactic dry material percentage: KLK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KLX",
+			"description": "kilolux: KLX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KMA",
+			"description": "kilogram of methylamine: KMA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KMH",
+			"description": "kilometre per hour: KMH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KMK",
+			"description": "square kilometre: KMK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KMQ",
+			"description": "kilogram per cubic metre: KMQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KMT",
+			"description": "kilometre: KMT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KNI",
+			"description": "kilogram of nitrogen: KNI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KNM",
+			"description": "kilonewton per square metre: KNM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KNS",
+			"description": "kilogram named substance: KNS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KNT",
+			"description": "knot: KNT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KO",
+			"description": "milliequivalence caustic potash per gram of product: KO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KPA",
+			"description": "kilopascal: KPA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KPH",
+			"description": "kilogram of potassium hydroxide (caustic potash): KPH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KPO",
+			"description": "kilogram of potassium oxide: KPO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KPP",
+			"description": "kilogram of phosphorus pentoxide (phosphoric anhydride): KPP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KR",
+			"description": "kiloroentgen: KR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KSD",
+			"description": "kilogram of substance 90 % dry: KSD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KSH",
+			"description": "kilogram of sodium hydroxide (caustic soda): KSH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KT",
+			"description": "kit: KT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KTN",
+			"description": "kilotonne: KTN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KUR",
+			"description": "kilogram of uranium: KUR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KVA",
+			"description": "kilovolt - ampere: KVA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KVR",
+			"description": "kilovar: KVR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KVT",
+			"description": "kilovolt: KVT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KW",
+			"description": "kilogram per millimetre: KW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWH",
+			"description": "kilowatt hour: KWH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWN",
+			"description": "Kilowatt hour per normalized cubic metre: KWN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWO",
+			"description": "kilogram of tungsten trioxide: KWO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWS",
+			"description": "Kilowatt hour per standard cubic metre: KWS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWT",
+			"description": "kilowatt: KWT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KWY",
+			"description": "kilowatt year: KWY."
+		},
+		{
+			"const": "unece:UnitMeasureCode#KX",
+			"description": "millilitre per kilogram: KX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L10",
+			"description": "quart (US liquid) per minute: L10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L11",
+			"description": "quart (US liquid) per second: L11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L12",
+			"description": "metre per second kelvin: L12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L13",
+			"description": "metre per second bar: L13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L14",
+			"description": "square metre hour degree Celsius per kilocalorie (international table): L14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L15",
+			"description": "millipascal second per kelvin: L15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L16",
+			"description": "millipascal second per bar: L16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L17",
+			"description": "milligram per cubic metre kelvin: L17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L18",
+			"description": "milligram per cubic metre bar: L18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L19",
+			"description": "millilitre per litre: L19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L2",
+			"description": "litre per minute: L2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L20",
+			"description": "reciprocal cubic millimetre: L20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L21",
+			"description": "cubic millimetre per cubic metre: L21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L23",
+			"description": "mole per hour: L23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L24",
+			"description": "mole per kilogram kelvin: L24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L25",
+			"description": "mole per kilogram bar: L25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L26",
+			"description": "mole per litre kelvin: L26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L27",
+			"description": "mole per litre bar: L27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L28",
+			"description": "mole per cubic metre kelvin: L28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L29",
+			"description": "mole per cubic metre bar: L29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L30",
+			"description": "mole per minute: L30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L31",
+			"description": "milliroentgen aequivalent men: L31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L32",
+			"description": "nanogram per kilogram: L32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L33",
+			"description": "ounce (avoirdupois) per day: L33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L34",
+			"description": "ounce (avoirdupois) per hour: L34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L35",
+			"description": "ounce (avoirdupois) per minute: L35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L36",
+			"description": "ounce (avoirdupois) per second: L36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L37",
+			"description": "ounce (avoirdupois) per gallon (UK): L37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L38",
+			"description": "ounce (avoirdupois) per gallon (US): L38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L39",
+			"description": "ounce (avoirdupois) per cubic inch: L39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L40",
+			"description": "ounce (avoirdupois)-force: L40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L41",
+			"description": "ounce (avoirdupois)-force inch: L41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L42",
+			"description": "picosiemens per metre: L42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L43",
+			"description": "peck (UK): L43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L44",
+			"description": "peck (UK) per day: L44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L45",
+			"description": "peck (UK) per hour: L45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L46",
+			"description": "peck (UK) per minute: L46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L47",
+			"description": "peck (UK) per second: L47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L48",
+			"description": "peck (US dry) per day: L48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L49",
+			"description": "peck (US dry) per hour: L49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L50",
+			"description": "peck (US dry) per minute: L50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L51",
+			"description": "peck (US dry) per second: L51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L52",
+			"description": "psi per psi: L52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L53",
+			"description": "pint (UK) per day: L53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L54",
+			"description": "pint (UK) per hour: L54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L55",
+			"description": "pint (UK) per minute: L55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L56",
+			"description": "pint (UK) per second: L56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L57",
+			"description": "pint (US liquid) per day: L57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L58",
+			"description": "pint (US liquid) per hour: L58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L59",
+			"description": "pint (US liquid) per minute: L59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L60",
+			"description": "pint (US liquid) per second: L60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L63",
+			"description": "slug per day: L63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L64",
+			"description": "slug per foot second: L64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L65",
+			"description": "slug per cubic foot: L65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L66",
+			"description": "slug per hour: L66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L67",
+			"description": "slug per minute: L67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L68",
+			"description": "slug per second: L68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L69",
+			"description": "tonne per kelvin: L69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L70",
+			"description": "tonne per bar: L70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L71",
+			"description": "tonne per day: L71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L72",
+			"description": "tonne per day kelvin: L72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L73",
+			"description": "tonne per day bar: L73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L74",
+			"description": "tonne per hour kelvin: L74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L75",
+			"description": "tonne per hour bar: L75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L76",
+			"description": "tonne per cubic metre kelvin: L76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L77",
+			"description": "tonne per cubic metre bar: L77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L78",
+			"description": "tonne per minute: L78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L79",
+			"description": "tonne per minute kelvin: L79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L80",
+			"description": "tonne per minute bar: L80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L81",
+			"description": "tonne per second: L81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L82",
+			"description": "tonne per second kelvin: L82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L83",
+			"description": "tonne per second bar: L83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L84",
+			"description": "ton (UK shipping): L84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L85",
+			"description": "ton long per day: L85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L86",
+			"description": "ton (US shipping): L86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L87",
+			"description": "ton short per degree Fahrenheit: L87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L88",
+			"description": "ton short per day: L88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L89",
+			"description": "ton short per hour degree Fahrenheit: L89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L90",
+			"description": "ton short per hour psi: L90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L91",
+			"description": "ton short per psi: L91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L92",
+			"description": "ton (UK long) per cubic yard: L92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L93",
+			"description": "ton (US short) per cubic yard: L93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L94",
+			"description": "ton-force (US short): L94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L95",
+			"description": "common year: L95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L96",
+			"description": "sidereal year: L96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L98",
+			"description": "yard per degree Fahrenheit: L98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#L99",
+			"description": "yard per psi: L99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LA",
+			"description": "pound per cubic inch: LA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LAC",
+			"description": "lactose excess percentage: LAC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LBR",
+			"description": "pound: LBR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LBT",
+			"description": "troy pound (US): LBT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LD",
+			"description": "litre per day: LD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LEF",
+			"description": "leaf: LEF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LF",
+			"description": "linear foot: LF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LH",
+			"description": "labour hour: LH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LK",
+			"description": "link: LK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LM",
+			"description": "linear metre: LM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LN",
+			"description": "length: LN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LO",
+			"description": "lot [unit of procurement]: LO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LP",
+			"description": "liquid pound: LP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LPA",
+			"description": "litre of pure alcohol: LPA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LR",
+			"description": "layer: LR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LS",
+			"description": "lump sum: LS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LTN",
+			"description": "ton (UK) or long ton (US): LTN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LTR",
+			"description": "litre: LTR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LUB",
+			"description": "metric ton, lubricating oil: LUB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LUM",
+			"description": "lumen: LUM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LUX",
+			"description": "lux: LUX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#LY",
+			"description": "linear yard: LY."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M1",
+			"description": "milligram per litre: M1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M10",
+			"description": "reciprocal cubic yard: M10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M11",
+			"description": "cubic yard per degree Fahrenheit: M11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M12",
+			"description": "cubic yard per day: M12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M13",
+			"description": "cubic yard per hour: M13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M14",
+			"description": "cubic yard per psi: M14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M15",
+			"description": "cubic yard per minute: M15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M16",
+			"description": "cubic yard per second: M16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M17",
+			"description": "kilohertz metre: M17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M18",
+			"description": "gigahertz metre: M18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M19",
+			"description": "Beaufort: M19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M20",
+			"description": "reciprocal megakelvin or megakelvin to the power minus one: M20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M21",
+			"description": "reciprocal kilovolt - ampere reciprocal hour: M21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M22",
+			"description": "millilitre per square centimetre minute: M22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M23",
+			"description": "newton per centimetre: M23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M24",
+			"description": "ohm kilometre: M24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M25",
+			"description": "percent per degree Celsius: M25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M26",
+			"description": "gigaohm per metre: M26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M27",
+			"description": "megahertz metre: M27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M29",
+			"description": "kilogram per kilogram: M29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M30",
+			"description": "reciprocal volt - ampere reciprocal second: M30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M31",
+			"description": "kilogram per kilometre: M31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M32",
+			"description": "pascal second per litre: M32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M33",
+			"description": "millimole per litre: M33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M34",
+			"description": "newton metre per square metre: M34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M35",
+			"description": "millivolt - ampere: M35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M36",
+			"description": "30-day month: M36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M37",
+			"description": "actual/360: M37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M38",
+			"description": "kilometre per second squared: M38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M39",
+			"description": "centimetre per second squared: M39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M4",
+			"description": "monetary value: M4."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M40",
+			"description": "yard per second squared: M40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M41",
+			"description": "millimetre per second squared: M41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M42",
+			"description": "mile (statute mile) per second squared: M42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M43",
+			"description": "mil: M43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M44",
+			"description": "revolution: M44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M45",
+			"description": "degree [unit of angle] per second squared: M45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M46",
+			"description": "revolution per minute: M46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M47",
+			"description": "circular mil: M47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M48",
+			"description": "square mile (based on U.S. survey foot): M48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M49",
+			"description": "chain (based on U.S. survey foot): M49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M5",
+			"description": "microcurie: M5."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M50",
+			"description": "furlong: M50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M51",
+			"description": "foot (U.S. survey): M51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M52",
+			"description": "mile (based on U.S. survey foot): M52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M53",
+			"description": "metre per pascal: M53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M55",
+			"description": "metre per radiant: M55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M56",
+			"description": "shake: M56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M57",
+			"description": "mile per minute: M57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M58",
+			"description": "mile per second: M58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M59",
+			"description": "metre per second pascal: M59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M60",
+			"description": "metre per hour: M60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M61",
+			"description": "inch per year: M61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M62",
+			"description": "kilometre per second: M62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M63",
+			"description": "inch per minute: M63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M64",
+			"description": "yard per second: M64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M65",
+			"description": "yard per minute: M65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M66",
+			"description": "yard per hour: M66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M67",
+			"description": "acre-foot (based on U.S. survey foot): M67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M68",
+			"description": "cord (128 ft3): M68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M69",
+			"description": "cubic mile (UK statute): M69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M7",
+			"description": "micro-inch: M7."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M70",
+			"description": "ton, register: M70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M71",
+			"description": "cubic metre per pascal: M71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M72",
+			"description": "bel: M72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M73",
+			"description": "kilogram per cubic metre pascal: M73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M74",
+			"description": "kilogram per pascal: M74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M75",
+			"description": "kilopound-force: M75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M76",
+			"description": "poundal: M76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M77",
+			"description": "kilogram metre per second squared: M77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M78",
+			"description": "pond: M78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M79",
+			"description": "square foot per hour: M79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M80",
+			"description": "stokes per pascal: M80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M81",
+			"description": "square centimetre per second: M81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M82",
+			"description": "square metre per second pascal: M82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M83",
+			"description": "denier: M83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M84",
+			"description": "pound per yard: M84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M85",
+			"description": "ton, assay: M85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M86",
+			"description": "pfund: M86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M87",
+			"description": "kilogram per second pascal: M87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M88",
+			"description": "tonne per month: M88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M89",
+			"description": "tonne per year: M89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M9",
+			"description": "million Btu per 1000 cubic foot: M9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M90",
+			"description": "kilopound per hour: M90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M91",
+			"description": "pound per pound: M91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M92",
+			"description": "pound-force foot: M92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M93",
+			"description": "newton metre per radian: M93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M94",
+			"description": "kilogram metre: M94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M95",
+			"description": "poundal foot: M95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M96",
+			"description": "poundal inch: M96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M97",
+			"description": "dyne metre: M97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M98",
+			"description": "kilogram centimetre per second: M98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#M99",
+			"description": "gram centimetre per second: M99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MAH",
+			"description": "megavolt ampere reactive hour: MAH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MAL",
+			"description": "megalitre: MAL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MAM",
+			"description": "megametre: MAM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MAR",
+			"description": "megavar: MAR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MAW",
+			"description": "megawatt: MAW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MBE",
+			"description": "thousand standard brick equivalent: MBE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MBF",
+			"description": "thousand board foot: MBF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MBR",
+			"description": "millibar: MBR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MC",
+			"description": "microgram: MC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MCU",
+			"description": "millicurie: MCU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MD",
+			"description": "air dry metric ton: MD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MGM",
+			"description": "milligram: MGM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MHZ",
+			"description": "megahertz: MHZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MIK",
+			"description": "square mile (statute mile): MIK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MIL",
+			"description": "thousand: MIL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MIN",
+			"description": "minute [unit of time]: MIN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MIO",
+			"description": "million: MIO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MIU",
+			"description": "million international unit: MIU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MKD",
+			"description": "Square Metre Day: MKD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MKM",
+			"description": "Square Metre Month: MKM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MKW",
+			"description": "Square Metre Week: MKW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MLD",
+			"description": "milliard: MLD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MLT",
+			"description": "millilitre: MLT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MMK",
+			"description": "square millimetre: MMK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MMQ",
+			"description": "cubic millimetre: MMQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MMT",
+			"description": "millimetre: MMT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MND",
+			"description": "kilogram, dry weight: MND."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MNJ",
+			"description": "Mega Joule per Normalised cubic Metre: MNJ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MON",
+			"description": "month: MON."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MPA",
+			"description": "megapascal: MPA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MQD",
+			"description": "Cubic Metre Day: MQD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MQH",
+			"description": "cubic metre per hour: MQH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MQM",
+			"description": "Cubic Metre Month: MQM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MQS",
+			"description": "cubic metre per second: MQS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MQW",
+			"description": "Cubic Metre Week: MQW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MRD",
+			"description": "Metre Day: MRD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MRM",
+			"description": "Metre Month: MRM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MRW",
+			"description": "Metre Week: MRW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MSK",
+			"description": "metre per second squared: MSK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MTK",
+			"description": "square metre: MTK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MTQ",
+			"description": "cubic metre: MTQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MTR",
+			"description": "metre: MTR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MTS",
+			"description": "metre per second: MTS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MTZ",
+			"description": "milihertz: MTZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MVA",
+			"description": "megavolt - ampere: MVA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#MWH",
+			"description": "megawatt hour (1000 kW.h): MWH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N1",
+			"description": "pen calorie: N1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N10",
+			"description": "pound foot per second: N10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N11",
+			"description": "pound inch per second: N11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N12",
+			"description": "Pferdestaerke: N12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N13",
+			"description": "centimetre of mercury (0 ºC): N13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N14",
+			"description": "centimetre of water (4 ºC): N14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N15",
+			"description": "foot of water (39.2 ºF): N15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N16",
+			"description": "inch of mercury (32 ºF): N16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N17",
+			"description": "inch of mercury (60 ºF): N17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N18",
+			"description": "inch of water (39.2 ºF): N18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N19",
+			"description": "inch of water (60 ºF): N19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N20",
+			"description": "kip per square inch: N20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N21",
+			"description": "poundal per square foot: N21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N22",
+			"description": "ounce (avoirdupois) per square inch: N22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N23",
+			"description": "conventional metre of water: N23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N24",
+			"description": "gram per square millimetre: N24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N25",
+			"description": "pound per square yard: N25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N26",
+			"description": "poundal per square inch: N26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N27",
+			"description": "foot to the fourth power: N27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N28",
+			"description": "cubic decimetre per kilogram: N28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N29",
+			"description": "cubic foot per pound: N29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N3",
+			"description": "print point: N3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N30",
+			"description": "cubic inch per pound: N30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N31",
+			"description": "kilonewton per metre: N31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N32",
+			"description": "poundal per inch: N32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N33",
+			"description": "pound-force per yard: N33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N34",
+			"description": "poundal second per square foot: N34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N35",
+			"description": "poise per pascal: N35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N36",
+			"description": "newton second per square metre: N36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N37",
+			"description": "kilogram per metre second: N37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N38",
+			"description": "kilogram per metre minute: N38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N39",
+			"description": "kilogram per metre day: N39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N40",
+			"description": "kilogram per metre hour: N40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N41",
+			"description": "gram per centimetre second: N41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N42",
+			"description": "poundal second per square inch: N42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N43",
+			"description": "pound per foot minute: N43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N44",
+			"description": "pound per foot day: N44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N45",
+			"description": "cubic metre per second pascal: N45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N46",
+			"description": "foot poundal: N46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N47",
+			"description": "inch poundal: N47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N48",
+			"description": "watt per square centimetre: N48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N49",
+			"description": "watt per square inch: N49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N50",
+			"description": "British thermal unit (international table) per square foot hour: N50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N51",
+			"description": "British thermal unit (thermochemical) per square foot hour: N51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N52",
+			"description": "British thermal unit (thermochemical) per square foot minute: N52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N53",
+			"description": "British thermal unit (international table) per square foot second: N53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N54",
+			"description": "British thermal unit (thermochemical) per square foot second: N54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N55",
+			"description": "British thermal unit (international table) per square inch second: N55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N56",
+			"description": "calorie (thermochemical) per square centimetre minute: N56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N57",
+			"description": "calorie (thermochemical) per square centimetre second: N57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N58",
+			"description": "British thermal unit (international table) per cubic foot: N58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N59",
+			"description": "British thermal unit (thermochemical) per cubic foot: N59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N60",
+			"description": "British thermal unit (international table) per degree Fahrenheit: N60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N61",
+			"description": "British thermal unit (thermochemical) per degree Fahrenheit: N61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N62",
+			"description": "British thermal unit (international table) per degree Rankine: N62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N63",
+			"description": "British thermal unit (thermochemical) per degree Rankine: N63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N64",
+			"description": "British thermal unit (thermochemical) per pound degree Rankine: N64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N65",
+			"description": "kilocalorie (international table) per gram kelvin: N65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N66",
+			"description": "British thermal unit (39 ºF): N66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N67",
+			"description": "British thermal unit (59 ºF): N67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N68",
+			"description": "British thermal unit (60 ºF): N68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N69",
+			"description": "calorie (20 ºC): N69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N70",
+			"description": "quad (1015 BtuIT): N70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N71",
+			"description": "therm (EC): N71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N72",
+			"description": "therm (U.S.): N72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N73",
+			"description": "British thermal unit (thermochemical) per pound: N73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N74",
+			"description": "British thermal unit (international table) per hour square foot degree Fahrenheit: N74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N75",
+			"description": "British thermal unit (thermochemical) per hour square foot degree Fahrenheit: N75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N76",
+			"description": "British thermal unit (international table) per second square foot degree Fahrenheit: N76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N77",
+			"description": "British thermal unit (thermochemical) per second square foot degree Fahrenheit: N77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N78",
+			"description": "kilowatt per square metre kelvin: N78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N79",
+			"description": "kelvin per pascal: N79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N80",
+			"description": "watt per metre degree Celsius: N80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N81",
+			"description": "kilowatt per metre kelvin: N81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N82",
+			"description": "kilowatt per metre degree Celsius: N82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N83",
+			"description": "metre per degree Celcius metre: N83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N84",
+			"description": "degree Fahrenheit hour per British thermal unit (international table): N84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N85",
+			"description": "degree Fahrenheit hour per British thermal unit (thermochemical): N85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N86",
+			"description": "degree Fahrenheit second per British thermal unit (international table): N86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N87",
+			"description": "degree Fahrenheit second per British thermal unit (thermochemical): N87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N88",
+			"description": "degree Fahrenheit hour square foot per British thermal unit (international table) inch: N88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N89",
+			"description": "degree Fahrenheit hour square foot per British thermal unit (thermochemical) inch: N89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N90",
+			"description": "kilofarad: N90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N91",
+			"description": "reciprocal joule: N91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N92",
+			"description": "picosiemens: N92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N93",
+			"description": "ampere per pascal: N93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N94",
+			"description": "franklin: N94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N95",
+			"description": "ampere minute: N95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N96",
+			"description": "biot: N96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N97",
+			"description": "gilbert: N97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N98",
+			"description": "volt per pascal: N98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#N99",
+			"description": "picovolt: N99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NA",
+			"description": "milligram per kilogram: NA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NAR",
+			"description": "number of articles: NAR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NCL",
+			"description": "number of cells: NCL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NEW",
+			"description": "newton: NEW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NF",
+			"description": "message: NF."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NIL",
+			"description": "nil: NIL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NIU",
+			"description": "number of international units: NIU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NL",
+			"description": "load: NL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NM3",
+			"description": "Normalised cubic metre: NM3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NMI",
+			"description": "nautical mile: NMI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NMP",
+			"description": "number of packs: NMP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NPR",
+			"description": "number of pairs: NPR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NPT",
+			"description": "number of parts: NPT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NQ",
+			"description": "mho: NQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NR",
+			"description": "micromho: NR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NT",
+			"description": "net ton: NT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NTT",
+			"description": "net register ton: NTT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NTU",
+			"description": "Nephelometric turbidity unit: NTU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NU",
+			"description": "newton metre: NU."
+		},
+		{
+			"const": "unece:UnitMeasureCode#NX",
+			"description": "part per thousand: NX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OA",
+			"description": "panel: OA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ODE",
+			"description": "ozone depletion equivalent: ODE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ODG",
+			"description": "ODS Grams: ODG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ODK",
+			"description": "ODS Kilograms: ODK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ODM",
+			"description": "ODS Milligrams: ODM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OHM",
+			"description": "ohm: OHM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ON",
+			"description": "ounce per square yard: ON."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ONZ",
+			"description": "ounce (avoirdupois): ONZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OPM",
+			"description": "oscillations per minute: OPM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OT",
+			"description": "overtime hour: OT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OZ",
+			"description": "ounce av: OZ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OZA",
+			"description": "fluid ounce (US): OZA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#OZI",
+			"description": "fluid ounce (UK): OZI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P1",
+			"description": "percent: P1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P10",
+			"description": "coulomb per metre: P10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P11",
+			"description": "kiloweber: P11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P12",
+			"description": "gamma: P12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P13",
+			"description": "kilotesla: P13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P14",
+			"description": "joule per second: P14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P15",
+			"description": "joule per minute: P15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P16",
+			"description": "joule per hour: P16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P17",
+			"description": "joule per day: P17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P18",
+			"description": "kilojoule per second: P18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P19",
+			"description": "kilojoule per minute: P19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P2",
+			"description": "pound per foot: P2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P20",
+			"description": "kilojoule per hour: P20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P21",
+			"description": "kilojoule per day: P21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P22",
+			"description": "nanoohm: P22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P23",
+			"description": "ohm circular-mil per foot: P23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P24",
+			"description": "kilohenry: P24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P25",
+			"description": "lumen per square foot: P25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P26",
+			"description": "phot: P26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P27",
+			"description": "footcandle: P27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P28",
+			"description": "candela per square inch: P28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P29",
+			"description": "footlambert: P29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P30",
+			"description": "lambert: P30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P31",
+			"description": "stilb: P31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P32",
+			"description": "candela per square foot: P32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P33",
+			"description": "kilocandela: P33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P34",
+			"description": "millicandela: P34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P35",
+			"description": "Hefner-Kerze: P35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P36",
+			"description": "international candle: P36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P37",
+			"description": "British thermal unit (international table) per square foot: P37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P38",
+			"description": "British thermal unit (thermochemical) per square foot: P38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P39",
+			"description": "calorie (thermochemical) per square centimetre: P39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P40",
+			"description": "langley: P40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P41",
+			"description": "decade (logarithmic): P41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P42",
+			"description": "pascal squared second: P42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P43",
+			"description": "bel per metre: P43."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P44",
+			"description": "pound mole: P44."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P45",
+			"description": "pound mole per second: P45."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P46",
+			"description": "pound mole per minute: P46."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P47",
+			"description": "kilomole per kilogram: P47."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P48",
+			"description": "pound mole per pound: P48."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P49",
+			"description": "newton square metre per ampere: P49."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P5",
+			"description": "five pack: P5."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P50",
+			"description": "weber metre: P50."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P51",
+			"description": "mol per kilogram pascal: P51."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P52",
+			"description": "mol per cubic metre pascal: P52."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P53",
+			"description": "unit pole: P53."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P54",
+			"description": "milligray per second: P54."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P55",
+			"description": "microgray per second: P55."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P56",
+			"description": "nanogray per second: P56."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P57",
+			"description": "gray per minute: P57."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P58",
+			"description": "milligray per minute: P58."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P59",
+			"description": "microgray per minute: P59."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P60",
+			"description": "nanogray per minute: P60."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P61",
+			"description": "gray per hour: P61."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P62",
+			"description": "milligray per hour: P62."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P63",
+			"description": "microgray per hour: P63."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P64",
+			"description": "nanogray per hour: P64."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P65",
+			"description": "sievert per second: P65."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P66",
+			"description": "millisievert per second: P66."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P67",
+			"description": "microsievert per second: P67."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P68",
+			"description": "nanosievert per second: P68."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P69",
+			"description": "rem per second: P69."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P70",
+			"description": "sievert per hour: P70."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P71",
+			"description": "millisievert per hour: P71."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P72",
+			"description": "microsievert per hour: P72."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P73",
+			"description": "nanosievert per hour: P73."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P74",
+			"description": "sievert per minute: P74."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P75",
+			"description": "millisievert per minute: P75."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P76",
+			"description": "microsievert per minute: P76."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P77",
+			"description": "nanosievert per minute: P77."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P78",
+			"description": "reciprocal square inch: P78."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P79",
+			"description": "pascal square metre per kilogram: P79."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P80",
+			"description": "millipascal per metre: P80."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P81",
+			"description": "kilopascal per metre: P81."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P82",
+			"description": "hectopascal per metre: P82."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P83",
+			"description": "standard atmosphere per metre: P83."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P84",
+			"description": "technical atmosphere per metre: P84."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P85",
+			"description": "torr per metre: P85."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P86",
+			"description": "psi per inch: P86."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P87",
+			"description": "cubic metre per second square metre: P87."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P88",
+			"description": "rhe: P88."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P89",
+			"description": "pound-force foot per inch: P89."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P90",
+			"description": "pound-force inch per inch: P90."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P91",
+			"description": "perm (0 ºC): P91."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P92",
+			"description": "perm (23 ºC): P92."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P93",
+			"description": "byte per second: P93."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P94",
+			"description": "kilobyte per second: P94."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P95",
+			"description": "megabyte per second: P95."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P96",
+			"description": "reciprocal volt: P96."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P97",
+			"description": "reciprocal radian: P97."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P98",
+			"description": "pascal to the power sum of stoichiometric numbers: P98."
+		},
+		{
+			"const": "unece:UnitMeasureCode#P99",
+			"description": "mole per cubiv metre to the power sum of stoichiometric numbers: P99."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PAL",
+			"description": "pascal: PAL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PD",
+			"description": "pad: PD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PFL",
+			"description": "proof litre: PFL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PGL",
+			"description": "proof gallon: PGL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PI",
+			"description": "pitch: PI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PLA",
+			"description": "degree Plato: PLA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PO",
+			"description": "pound per inch of length: PO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PQ",
+			"description": "page per inch: PQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PR",
+			"description": "pair: PR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PS",
+			"description": "pound-force per square inch: PS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PT",
+			"description": "pint (US): PT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PTD",
+			"description": "dry pint (US): PTD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PTI",
+			"description": "pint (UK): PTI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PTL",
+			"description": "liquid pint (US): PTL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#PTN",
+			"description": "portion: PTN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q10",
+			"description": "joule per tesla: Q10."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q11",
+			"description": "erlang: Q11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q12",
+			"description": "octet: Q12."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q13",
+			"description": "octet per second: Q13."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q14",
+			"description": "shannon: Q14."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q15",
+			"description": "hartley: Q15."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q16",
+			"description": "natural unit of information: Q16."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q17",
+			"description": "shannon per second: Q17."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q18",
+			"description": "hartley per second: Q18."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q19",
+			"description": "natural unit of information per second: Q19."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q20",
+			"description": "second per kilogramm: Q20."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q21",
+			"description": "watt square metre: Q21."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q22",
+			"description": "second per radian cubic metre: Q22."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q23",
+			"description": "weber to the power minus one: Q23."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q24",
+			"description": "reciprocal inch: Q24."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q25",
+			"description": "dioptre: Q25."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q26",
+			"description": "one per one: Q26."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q27",
+			"description": "newton metre per metre: Q27."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q28",
+			"description": "kilogram per square metre pascal second: Q28."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q29",
+			"description": "microgram per hectogram: Q29."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q3",
+			"description": "meal: Q3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q30",
+			"description": "pH (potential of Hydrogen): Q30."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q31",
+			"description": "kilojoule per gram: Q31."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q32",
+			"description": "femtolitre: Q32."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q33",
+			"description": "picolitre: Q33."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q34",
+			"description": "nanolitre: Q34."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q35",
+			"description": "megawatts per minute: Q35."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q36",
+			"description": "square metre per cubic metre: Q36."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q37",
+			"description": "Standard cubic metre per day: Q37."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q38",
+			"description": "Standard cubic metre per hour: Q38."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q39",
+			"description": "Normalized cubic metre per day: Q39."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q40",
+			"description": "Normalized cubic metre per hour: Q40."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q41",
+			"description": "Joule per normalised cubic metre: Q41."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Q42",
+			"description": "Joule per standard cubic metre: Q42."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QA",
+			"description": "page - facsimile: QA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QAN",
+			"description": "quarter (of a year): QAN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QB",
+			"description": "page - hardcopy: QB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QR",
+			"description": "quire: QR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QT",
+			"description": "quart (US): QT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QTD",
+			"description": "dry quart (US): QTD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QTI",
+			"description": "quart (UK): QTI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QTL",
+			"description": "liquid quart (US): QTL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#QTR",
+			"description": "quarter (UK): QTR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#R1",
+			"description": "pica: R1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#R9",
+			"description": "thousand cubic metre: R9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RH",
+			"description": "running or operating hour: RH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RM",
+			"description": "ream: RM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ROM",
+			"description": "room: ROM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RP",
+			"description": "pound per ream: RP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RPM",
+			"description": "revolutions per minute: RPM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RPS",
+			"description": "revolutions per second: RPS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#RT",
+			"description": "revenue ton mile: RT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#S3",
+			"description": "square foot per second: S3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#S4",
+			"description": "square metre per second: S4."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SAN",
+			"description": "half year (6 months): SAN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SCO",
+			"description": "score: SCO."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SCR",
+			"description": "scruple: SCR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SEC",
+			"description": "second [unit of time]: SEC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SET",
+			"description": "set: SET."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SG",
+			"description": "segment: SG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SHT",
+			"description": "shipping ton: SHT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SIE",
+			"description": "siemens: SIE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SM3",
+			"description": "Standard cubic metre: SM3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SMI",
+			"description": "mile (statute mile): SMI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SQ",
+			"description": "square: SQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SQR",
+			"description": "square, roofing: SQR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SR",
+			"description": "strip: SR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STC",
+			"description": "stick: STC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STI",
+			"description": "stone (UK): STI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STK",
+			"description": "stick, cigarette: STK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STL",
+			"description": "standard litre: STL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STN",
+			"description": "ton (US) or short ton (UK/US): STN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#STW",
+			"description": "straw: STW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SW",
+			"description": "skein: SW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SX",
+			"description": "shipment: SX."
+		},
+		{
+			"const": "unece:UnitMeasureCode#SYR",
+			"description": "syringe: SYR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#T0",
+			"description": "telecommunication line in service: T0."
+		},
+		{
+			"const": "unece:UnitMeasureCode#T3",
+			"description": "thousand piece: T3."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TAH",
+			"description": "kiloampere hour (thousand ampere hour): TAH."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TAN",
+			"description": "total acid number: TAN."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TI",
+			"description": "thousand square inch: TI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TIC",
+			"description": "metric ton, including container: TIC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TIP",
+			"description": "metric ton, including inner packaging: TIP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TKM",
+			"description": "tonne kilometre: TKM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TMS",
+			"description": "kilogram of imported meat, less offal: TMS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TNE",
+			"description": "tonne (metric ton): TNE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TP",
+			"description": "ten pack: TP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TPI",
+			"description": "teeth per inch: TPI."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TPR",
+			"description": "ten pair: TPR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TQD",
+			"description": "thousand cubic metre per day: TQD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TRL",
+			"description": "trillion (EUR): TRL."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TST",
+			"description": "ten set: TST."
+		},
+		{
+			"const": "unece:UnitMeasureCode#TTS",
+			"description": "ten thousand sticks: TTS."
+		},
+		{
+			"const": "unece:UnitMeasureCode#U1",
+			"description": "treatment: U1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#U2",
+			"description": "tablet: U2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#UA",
+			"description": "torr: UA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#UB",
+			"description": "telecommunication line in service average: UB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#UC",
+			"description": "telecommunication port: UC."
+		},
+		{
+			"const": "unece:UnitMeasureCode#UIG",
+			"description": "international unit per gram: UIG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#VA",
+			"description": "volt - ampere per kilogram: VA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#VLT",
+			"description": "volt: VLT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#VP",
+			"description": "percent volume: VP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#W2",
+			"description": "wet kilo: W2."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WA",
+			"description": "watt per kilogram: WA."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WB",
+			"description": "wet pound: WB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WCD",
+			"description": "cord: WCD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WE",
+			"description": "wet ton: WE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WEB",
+			"description": "weber: WEB."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WEE",
+			"description": "week: WEE."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WG",
+			"description": "wine gallon: WG."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WHR",
+			"description": "watt hour: WHR."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WM",
+			"description": "working month: WM."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WSD",
+			"description": "standard: WSD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WTT",
+			"description": "watt: WTT."
+		},
+		{
+			"const": "unece:UnitMeasureCode#WW",
+			"description": "millilitre of water: WW."
+		},
+		{
+			"const": "unece:UnitMeasureCode#X1",
+			"description": "Gunter's chain: X1."
+		},
+		{
+			"const": "unece:UnitMeasureCode#YDK",
+			"description": "square yard: YDK."
+		},
+		{
+			"const": "unece:UnitMeasureCode#YDQ",
+			"description": "cubic yard: YDQ."
+		},
+		{
+			"const": "unece:UnitMeasureCode#YRD",
+			"description": "yard: YRD."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Z11",
+			"description": "hanging container: Z11."
+		},
+		{
+			"const": "unece:UnitMeasureCode#Z9",
+			"description": "nanomole: Z9."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ZP",
+			"description": "page: ZP."
+		},
+		{
+			"const": "unece:UnitMeasureCode#ZZ",
+			"description": "mutually defined: ZZ."
+		}
+	]
+}

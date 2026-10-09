@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceGovernmentRegistrationTypeCodeList",
+	"title": "UneceGovernmentRegistrationTypeCodeList",
+	"description": "Values for UneceGovernmentRegistration typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:specifiedGovernmentRegistration",
+			"description": "A governmental registration specified for this trade party."
+		}
+	]
+}

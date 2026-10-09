@@ -1,33 +1,50 @@
 {
-	"name": "@twin.org/schema",
-	"version": "0.0.1-next.6",
+	"name": "@3sixty/schema",
+	"version": "0.10.1",
 	"description": "Schema",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twinfoundation/schema.git"
+		"url": "git+https://github.com/3sixtyglobal/schema.git"
 	},
 	"author": "martyn.janes@iota.org",
 	"license": "Apache-2.0",
 	"scripts": {
-		"format": "prettier --write .",
-		"lint:format": "prettier --config .prettierrc --check .",
-		"lint:markdown": "markdownlint **/*.md --ignore **/node_modules/** --ignore **/docs/reference/**",
+		"format": "prettier --write . --log-level silent",
+		"lint:format": "prettier --config prettier.config.mjs --check .",
+		"lint:markdown": "markdownlint-cli2",
 		"lint:spell": "cspell ** --no-progress",
-		"lint": "npm run lint:format && npm run lint:markdown && npm run lint:spell",
+		"lint": "concurrently -g -n format,markdown,spell \"pnpm run lint:format\" \"pnpm run lint:markdown\" \"pnpm run lint:spell\"",
+		"docs": "node ./scripts/workspaces.mjs docs",
 		"dist": "echo There is no dist in this package",
+		"quality": "pnpm run format && pnpm run lint && pnpm run dist",
 		"commitlint": "commitlint --edit",
-		"prepare": "husky",
-		"update-schemas": "node scripts/update-schemas.mjs && npm run format"
+		"prepare": "node ./scripts/install-hooks.mjs",
+		"update-schemas": "node scripts/update-schemas.mjs && pnpm run format",
+		"package:update": "pnpm update --interactive --latest"
 	},
+	"packageManager": "pnpm@12.4.1",
 	"engines": {
 		"node": ">=20.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.8.0",
-		"@commitlint/config-conventional": "19.8.0",
-		"cspell": "8.14.4",
-		"husky": "9.1.7",
-		"markdownlint-cli": "0.41.0",
-		"prettier": "3.3.3"
-	}
+		"@commitlint/cli": "21.2.3",
+		"@commitlint/config-conventional": "21.2.3",
+		"concurrently": "10.0.5",
+		"cspell": "10.3.3",
+		"fast-glob": "3.3.3",
+		"markdownlint-cli2": "0.23.3",
+		"prettier": "3.9.8"
+	},
+	"keywords": [
+		"twin",
+		"trade",
+		"iota",
+		"framework",
+		"blockchain",
+		"schema"
+	],
+	"bugs": {
+		"url": "git+https://github.com/3sixtyglobal/schema/issues"
+	},
+	"homepage": "https://3sixty.global"
 }

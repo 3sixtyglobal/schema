@@ -1,0 +1,260 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeSettlementMonetarySummation",
+	"title": "UneceTradeSettlementMonetarySummation",
+	"description": "A collection of monetary amount totals specified for a trade settlement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "TradeSettlementMonetarySummation",
+			"description": "JSON-LD Type."
+		},
+		"adjustedBalanceOutAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value that is an adjusted amount balanced out for this trade settlement monetary summation."
+		},
+		"adjustedInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of an adjusted amount being reported for information in this monetary summation."
+		},
+		"allowanceTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all allowance amounts being reported in this trade settlement monetary summation."
+		},
+		"balanceOutAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value that is an amount balanced out for this trade settlement monetary summation."
+		},
+		"chargeTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all charge amounts being reported in this trade settlement monetary summation."
+		},
+		"duePayableAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value that is an amount due and payable for this trade settlement monetary summation, such as the amount due\nto the creditor."
+		},
+		"equivalentTransferTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value transferred as an equivalent amount in the credit transfer payment in this trade settlement monetary\nsummation, such as the amount transferred between debtor and creditor, before deduction of charges, expressed in the\ncurrency of the debtor's account, and transferred into a different currency."
+		},
+		"excludingTaxesLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the line total, excluding taxes, being reported in this trade settlement monetary summation."
+		},
+		"freightChargeTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all freight charges being reported in this trade settlement monetary summation."
+		},
+		"grandTotal": {
+			"type": "string",
+			"description": "A grand total, expressed as text, for this trade settlement monetary summation."
+		},
+		"grandTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the grand total of this trade settlement monetary summation, to include addition and subtraction of\nindividual summation amounts."
+		},
+		"grossLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, excluding line level allowances and charges and taxes, being reported\nin this trade settlement monetary summation."
+		},
+		"includingTaxesLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the line total, including taxes, being reported in this trade settlement monetary summation."
+		},
+		"informationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of an amount being reported for information in this trade settlement monetary summation."
+		},
+		"insuranceChargeTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all insurance charges being reported in this trade settlement monetary summation."
+		},
+		"lineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the line amount total being reported in this trade settlement monetary summation."
+		},
+		"netIncludingTaxesLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level\ntaxes, being reported in this trade settlement monetary summation."
+		},
+		"netLineTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level\ntaxes, being reported in this trade settlement monetary summation."
+		},
+		"originalInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of an original amount being reported for information in this monetary summation."
+		},
+		"packingChargeTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all packing charges being reported in this trade settlement monetary summation."
+		},
+		"paymentTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a payment total reported in this trade settlement monetary summation."
+		},
+		"productValueExcludingTobaccoTaxInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value which constitutes the total product value excluding tobacco tax stated for information purposes in this\ntrade settlement monetary summation."
+		},
+		"productWeightLossInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the loss of weight of a product, such as fresh goods, stated for information purposes in this trade\nsettlement monetary summation."
+		},
+		"retailValueExcludingTaxInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value which constitutes the retail value excluding all duties and taxes stated for information purposes in\nthis trade settlement monetary summation."
+		},
+		"roundingAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a rounding amount being applied in this trade settlement monetary summation."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A document referenced for the monetary summation of this trade settlement."
+		},
+		"taxBasisTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all tax basis amounts being reported in this trade settlement monetary summation."
+		},
+		"taxTotalAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total of all tax amounts being reported in this trade settlement monetary summation."
+		},
+		"totalAllowanceChargeAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a total allowance and charge reported in this trade settlement monetary summation."
+		},
+		"totalDepositFeeInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the total deposit fee stated for information purposes in this trade settlement monetary summation."
+		},
+		"totalDiscountAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a total discount reported in this trade settlement monetary summation."
+		},
+		"totalDiscountBasisAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a total discount basis reported in this trade settlement monetary summation."
+		},
+		"totalPenaltyAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a total penalty reported in this trade settlement monetary summation."
+		},
+		"totalPrepaidAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a prepaid total reported in this trade settlement monetary summation."
+		},
+		"totalRetailValueInformationAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value which constitutes the total retail value stated for information purposes in this trade settlement\nmonetary summation."
+		}
+	},
+	"required": ["type"]
+}

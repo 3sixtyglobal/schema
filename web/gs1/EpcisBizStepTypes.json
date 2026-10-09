@@ -1,0 +1,172 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisBizStepTypes",
+	"title": "EpcisBizStepTypes",
+	"description": "Supported EPCIS 2.0 `bizStep` values.\n\nThese values come from the GS1 EPCIS / CBV (Core Business Vocabulary).\nUse the union type `EpcisBizStepTypes` when you want to restrict a field to known CBV values.",
+	"anyOf": [
+		{
+			"const": "accepting",
+			"description": "Activity where an object changes possession and/or ownership."
+		},
+		{
+			"const": "arriving",
+			"description": "Activity where an object arrives at a location."
+		},
+		{
+			"const": "assembling",
+			"description": "Combining one or more objects to create a new finished product while originals\nremain recognisable."
+		},
+		{
+			"const": "collecting",
+			"description": "Picking up and collecting an object for future disposal, recycling, or re-use."
+		},
+		{
+			"const": "commissioning",
+			"description": "Associating a new instance- or class-level identifier with a specific object\nfor the first time."
+		},
+		{
+			"const": "consigning",
+			"description": "Overall process covering staging_outbound, loading, departing, and accepting\nwhen granular steps are unknown."
+		},
+		{
+			"const": "creating_class_instance",
+			"description": "Step where an instance or increased quantity of a class-level identifier is\nproduced and may repeat."
+		},
+		{
+			"const": "cycle_counting",
+			"description": "Counting objects within a location for business needs other than accounting."
+		},
+		{
+			"const": "decommissioning",
+			"description": "Disassociating an instance-level identifier from an object; it may be\nre-commissioned later with a new identifier."
+		},
+		{
+			"const": "departing",
+			"description": "Activity where an object leaves a location on its way to a destination."
+		},
+		{
+			"const": "destroying",
+			"description": "Process of terminating an object so it should not be subject of subsequent events."
+		},
+		{
+			"const": "disassembling",
+			"description": "Breaking down an object into separate, uniquely identified component parts."
+		},
+		{
+			"const": "dispensing",
+			"description": "Making a product available in full or part to a consumer."
+		},
+		{
+			"const": "encoding",
+			"description": "Writing an instance-level identifier to a barcode or RFID tag before\nassociation with an object."
+		},
+		{
+			"const": "entering_exiting",
+			"description": "Activity at a facility entrance/exit where customers leave with purchases or\nenter with returns."
+		},
+		{
+			"const": "holding",
+			"description": "Segregating an object for further review."
+		},
+		{
+			"const": "inspecting",
+			"description": "Reviewing objects to address potential defects while keeping them viable in the\nsupply chain."
+		},
+		{
+			"const": "installing",
+			"description": "Putting an object into a composite object that already exists."
+		},
+		{
+			"const": "killing",
+			"description": "Terminating an RFID tag previously associated with an object while the object\ncontinues to exist."
+		},
+		{
+			"const": "loading",
+			"description": "Loading an object into a shipping conveyance."
+		},
+		{
+			"const": "other",
+			"description": "A business step not identified by the CBV list."
+		},
+		{
+			"const": "packing",
+			"description": "Putting objects into a larger container for shipping, typically where\naggregation occurs."
+		},
+		{
+			"const": "picking",
+			"description": "Selecting objects to fill an order."
+		},
+		{
+			"const": "receiving",
+			"description": "Indicating an object is being received at a location and added to inventory."
+		},
+		{
+			"const": "removing",
+			"description": "Taking an object out of a composite object; opposite of installing."
+		},
+		{
+			"const": "repackaging",
+			"description": "Changing an object's packaging configuration."
+		},
+		{
+			"const": "repairing",
+			"description": "Repairing a malfunctioning product without replacing it."
+		},
+		{
+			"const": "replacing",
+			"description": "Substituting or exchanging an object for another object."
+		},
+		{
+			"const": "reserving",
+			"description": "Providing a set of not-yet-commissioned instance identifiers for use by another party."
+		},
+		{
+			"const": "retail_selling",
+			"description": "Point-of-sale activity transferring ownership to a customer for value."
+		},
+		{
+			"const": "shipping",
+			"description": "Overall process covering staging_outbound, loading, and departing when finer\ndetail is unavailable."
+		},
+		{
+			"const": "staging_outbound",
+			"description": "Moving an object from a facility to an area where it awaits transport pick-up."
+		},
+		{
+			"const": "stock_taking",
+			"description": "Counting objects within a location following established rules for accounting purposes."
+		},
+		{
+			"const": "stocking",
+			"description": "Activity within a location to make an object available to customers or order\nfulfilment."
+		},
+		{
+			"const": "storing",
+			"description": "Moving an object into and out of storage within a location."
+		},
+		{
+			"const": "transporting",
+			"description": "Moving an object from one location to another using a vehicle."
+		},
+		{
+			"const": "unloading",
+			"description": "Unloading an object from a shipping conveyance."
+		},
+		{
+			"const": "unpacking",
+			"description": "Removing products from a larger container, usually after receiving or\naccepting."
+		},
+		{
+			"const": "void_shipping",
+			"description": "Declaring that objects in a prior outbound process were not shipped as previously indicated."
+		},
+		{
+			"const": "sensor_reporting",
+			"description": "Returning sensor data about the physical properties or condition of an object or location."
+		},
+		{
+			"const": "sampling",
+			"description": "Testing activity where portions of an object are examined, rendering the\nsampled object no longer viable."
+		}
+	]
+}

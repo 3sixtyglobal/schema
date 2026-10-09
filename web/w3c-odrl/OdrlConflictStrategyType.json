@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlConflictStrategyType",
+	"title": "OdrlConflictStrategyType",
+	"description": "The types for ODRL Conflict Resolution Strategies.",
+	"anyOf": [
+		{
+			"const": "perm",
+			"description": "Permission type."
+		},
+		{
+			"const": "prohibit",
+			"description": "Prohibition type."
+		},
+		{
+			"const": "invalid",
+			"description": "Invalid type."
+		}
+	]
+}

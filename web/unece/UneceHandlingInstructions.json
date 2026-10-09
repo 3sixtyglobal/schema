@@ -1,0 +1,100 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceHandlingInstructions",
+	"title": "UneceHandlingInstructions",
+	"description": "Handling information of an instructive nature.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "HandlingInstructions",
+			"description": "JSON-LD Type."
+		},
+		"applicableTransportSettingTemperature": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportSettingTemperature"
+			},
+			"description": "A transport related temperature setting applicable to these handling instructions."
+		},
+		"deliveryApplicableTemperature": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInstructedTemperature",
+			"description": "The instructed temperature for delivery applicable to these handling instructions."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these handling instructions."
+		},
+		"exclusiveUsageIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not an exclusive usage exists in these handling instructions."
+		},
+		"handling": {
+			"type": "string",
+			"description": "A textual expression of these handling instructions."
+		},
+		"handlingCode": {
+			"type": "string",
+			"description": "A code specifying these handling instructions."
+		},
+		"handlingInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "A code specifying a description of these handling instructions."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this handling instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "A type, expressed as text, for these handling instructions."
+		},
+		"itemName": {
+			"type": "string",
+			"description": "A name, expressed as text, of an item included in these handling instructions."
+		},
+		"marketDeliveryApplicableTemperature": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInstructedTemperature",
+			"description": "The instructed temperature for market delivery applicable to these handling instructions."
+		},
+		"maximumStackabilityApplicableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
+		},
+		"maximumStackabilityWeightApplicableMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The maximum stackability weight applicable to these handling instructions."
+		},
+		"maximumStorageHumidityApplicableMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the maximum storage humidity applicable to these handling instructions."
+		},
+		"minimumStorageHumidityApplicableMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the minimum storage humidity applicable to these handling instructions."
+		},
+		"procedure": {
+			"type": "string",
+			"description": "A procedure, expressed as text, for these handling instructions."
+		},
+		"requirementIndicator": {
+			"type": "boolean",
+			"description": "An indication of whether or not a requirement exists for these handling instructions."
+		},
+		"storageApplicableTemperature": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInstructedTemperature",
+			"description": "The instructed temperature for storage applicable to these handling instructions."
+		}
+	},
+	"required": ["type"]
+}

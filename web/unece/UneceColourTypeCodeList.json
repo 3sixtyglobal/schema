@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceColourTypeCodeList",
+	"title": "UneceColourTypeCodeList",
+	"description": "Values for UneceColour typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:specifiedColour",
+			"description": "A colour specified for this trade product."
+		}
+	]
+}

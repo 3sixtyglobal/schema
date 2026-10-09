@@ -1,0 +1,363 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceHeaderTradeAgreement",
+	"title": "UneceHeaderTradeAgreement",
+	"description": "The contractual terms of a header trade agreement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "HeaderTradeAgreement",
+			"description": "JSON-LD Type."
+		},
+		"additionalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An additional document referenced in this header trade agreement."
+		},
+		"applicableDeliveryTerms": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDeliveryTerms",
+			"description": "The terms of delivery applicable to this header trade agreement."
+		},
+		"applicableForecastTerms": {
+			"$ref": "https://schema.3sixty.global/unece/UneceForecastTerms",
+			"description": "The supply chain forecast terms applicable to this header trade agreement."
+		},
+		"applicableLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location or place applicable to this header trade agreement."
+		},
+		"applicableLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location or place applicable to this header trade agreement."
+		},
+		"applicablePaymentTerms": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePaymentTerms",
+			"description": "The payment terms applicable to this header trade agreement."
+		},
+		"applicableRegulatoryProcedure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRegulatoryProcedure"
+			},
+			"description": "A cross-border regulatory procedure applicable to this header trade agreement."
+		},
+		"blanketOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The blanket order document referenced in this header trade agreement."
+		},
+		"buyerAgentParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The buyer agent party for this header trade agreement."
+		},
+		"buyerApprovedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement.",
+			"format": "date-time"
+		},
+		"buyerAssignedAccountantParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party assigned as an accountant by the buyer for this header trade agreement."
+		},
+		"buyerOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The buyer generated order document referenced in this header trade agreement."
+		},
+		"buyerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The buyer party for this header trade agreement."
+		},
+		"buyerReference": {
+			"type": "string",
+			"description": "A buyer reference, expressed as text, for this header trade agreement."
+		},
+		"buyerRequisitionerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party who is a buyer requisitioner in this header trade agreement."
+		},
+		"buyerTaxRepresentativeParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party acting as a tax representative for the buyer for this header trade agreement."
+		},
+		"carrierParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The carrier party, at header level, for this trade agreement."
+		},
+		"catalogueDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A catalogue document referenced in this header trade agreement."
+		},
+		"catalogueInformationProviderParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party that provides catalogue information for this header trade agreement."
+		},
+		"catalogueInformationReceiverParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party that receives catalogue information for this header trade agreement."
+		},
+		"catalogueRequestDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A catalogue request document referenced in this header trade agreement."
+		},
+		"catalogueSubscriptionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A catalogue subscription document referenced in this header trade agreement."
+		},
+		"contractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A contract document referenced in this header trade agreement."
+		},
+		"demandForecastDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A demand forecast document referenced in this header trade agreement."
+		},
+		"engineeringChangeDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The engineering change document referenced in this header trade agreement."
+		},
+		"exportLicenceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The export licence document referenced in this header trade agreement."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this header trade agreement."
+		},
+		"impactCode": {
+			"type": "string",
+			"description": "The code specifying the impact for this header trade agreement."
+		},
+		"importLicenceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The import licence document referenced in this header trade agreement."
+		},
+		"letterOfCreditDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The letter of credit document referenced in this header trade agreement."
+		},
+		"marketplaceOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The marketplace generated order document referenced in this header trade agreement."
+		},
+		"orderResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The order response document referenced in this header trade agreement."
+		},
+		"originalOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The original order document referenced in this header trade agreement."
+		},
+		"previousOrderChangeDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The previous order change document referenced in this header trade agreement."
+		},
+		"previousOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The previous order document referenced in this header trade agreement."
+		},
+		"previousOrderResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The previous order response document referenced in this header trade agreement."
+		},
+		"priceListDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The price list document referenced in this header trade agreement."
+		},
+		"pricingBaseApplicableLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"description": "The logistics location applicable to the pricing base for this header trade agreement."
+		},
+		"primeContractSellerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The seller party acting as the prime contractor for this header trade agreement."
+		},
+		"priorityCode": {
+			"type": "string",
+			"description": "The code specifying the priority for this header trade agreement."
+		},
+		"priorityDescriptionCode": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePriorityDescriptionCodeList",
+			"description": "The code specifying the delivery priority for this header trade agreement."
+		},
+		"procurementParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The procurement party for this header trade agreement."
+		},
+		"productEndUserParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party acting as the end user for the products in this header trade agreement."
+		},
+		"promotionalDealDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The promotional deal document referenced in this header trade agreement."
+		},
+		"purchaseConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A purchase conditions document referenced in this header trade agreement."
+		},
+		"quotationDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation document referenced in this header trade agreement."
+		},
+		"quotationProposalDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation proposal document referenced in this header trade agreement."
+		},
+		"quotationProposalResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation proposal response document referenced in this header trade agreement."
+		},
+		"quotationRequestDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation request document referenced in this header trade agreement."
+		},
+		"quotationRequestResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation request response document referenced in this header trade agreement."
+		},
+		"quoteReferencedWorkflowObject": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWorkflowObject",
+			"description": "The quote trade workflow object referenced in this header trade agreement."
+		},
+		"reference": {
+			"type": "string",
+			"description": "A reference, expressed as text, for this header trade agreement."
+		},
+		"relevantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A relevant party for this header trade agreement."
+		},
+		"requisitionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A requisition document referenced in this header trade agreement."
+		},
+		"requisitionerDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A requisitioner document referenced in this header trade agreement."
+		},
+		"revisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for the revision of this header trade agreement."
+		},
+		"salesAgentParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The agent party representing the seller for this header trade agreement."
+		},
+		"salesConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A sales conditions document referenced in this header trade agreement."
+		},
+		"salesReportDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The sales report document referenced in this header trade agreement."
+		},
+		"sellerAssignedAccountantParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party assigned as an accountant by the seller for this header trade agreement."
+		},
+		"sellerOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The seller generated order document referenced in this header trade agreement."
+		},
+		"sellerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The seller party for this header trade agreement."
+		},
+		"sellerReference": {
+			"type": "string",
+			"description": "A seller reference, expressed as text, for this header trade agreement."
+		},
+		"sellerTaxRepresentativeParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party acting as a tax representative for the seller for this header trade agreement."
+		},
+		"shippingPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The shipping period specified in this header trade agreement."
+		},
+		"specifiedProject": {
+			"$ref": "https://schema.3sixty.global/unece/UneceProject",
+			"description": "The procuring project specified for this header trade agreement."
+		},
+		"supplyInstructionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A supply instruction document referenced in this header trade agreement."
+		},
+		"targetMarketCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A target market country for this header trade agreement."
+		},
+		"ultimateCustomerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An ultimate customer order document referenced for this header trade agreement."
+		}
+	},
+	"required": ["type"]
+}

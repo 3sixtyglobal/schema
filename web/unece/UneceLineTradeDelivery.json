@@ -1,0 +1,569 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLineTradeDelivery",
+	"title": "UneceLineTradeDelivery",
+	"description": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LineTradeDelivery",
+			"description": "JSON-LD Type."
+		},
+		"acceptanceEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An acceptance delivery event, at line level, for this trade delivery."
+		},
+		"actualDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An actual delivery event, at line level, for this trade delivery."
+		},
+		"actualDespatchEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "An actual despatch event, at line level, for this trade delivery."
+		},
+		"actualLoadingEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The actual loading event, at line level, for this trade delivery."
+		},
+		"actualPickUpEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The actual pick-up event, at line level, for this trade delivery."
+		},
+		"actualReceiptEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The actual receipt event, at line level, for this trade delivery."
+		},
+		"actualUnloadingEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The actual unloading event, at line level, for this trade delivery."
+		},
+		"additionalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An additional document, at line level, referenced for this trade delivery."
+		},
+		"agreedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, agreed for this trade delivery."
+		},
+		"applicableDangerousGoods": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDangerousGoods",
+			"description": "The transport dangerous goods details, at line level, applicable to this trade delivery."
+		},
+		"availableInventory": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainInventory"
+			},
+			"description": "Inventory available, at line level, for this trade delivery."
+		},
+		"availableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, available for this trade delivery."
+		},
+		"billedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, billed for in this trade delivery."
+		},
+		"buyerOrderDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value, at line level, of the buyer order for this trade delivery.",
+			"format": "date-time"
+		},
+		"cancelledQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, cancelled for this trade delivery."
+		},
+		"chargeFreeQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, free of charge, in this trade delivery."
+		},
+		"classificationDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The referenced classification document, at line level, for this trade delivery."
+		},
+		"confirmedDeliveryEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The confirmed delivery event, at line level, for this trade delivery."
+		},
+		"confirmedDespatchEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The despatch event, at line level, confirmed for this trade delivery."
+		},
+		"confirmedPickUpEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The pick-up event, at line level, confirmed for this trade delivery."
+		},
+		"confirmedReleaseEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The release event, at line level, confirmed for this trade delivery."
+		},
+		"consignmentInventory": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainInventory"
+			},
+			"description": "Supply chain consignment inventory, at line level, for this trade delivery."
+		},
+		"consumptionReportDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The consumption report document, at line level, referenced from this trade delivery."
+		},
+		"consumptionSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain consumption schedule, at line level, for this trade delivery."
+		},
+		"customerInventory": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainInventory"
+			},
+			"description": "Supply chain customer inventory, at line level, for this trade delivery."
+		},
+		"deliveryNoteDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The delivery note document, at line level, referenced for this trade delivery."
+		},
+		"deliverySchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain delivery schedule, at line level, for this trade delivery."
+		},
+		"despatchAdviceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The despatch advice document, at line level, referenced for this trade delivery."
+		},
+		"despatchSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain despatch schedule, at line level, for this trade delivery."
+		},
+		"despatchedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, despatched for this trade delivery."
+		},
+		"destroyedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, destroyed for this trade delivery."
+		},
+		"disposalParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A disposal party, at line level, for this trade delivery."
+		},
+		"dueInAvailableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The due in available quantity, at line level, for this trade delivery."
+		},
+		"dueInForecastedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The due in forecasted quantity, at line level, for this trade delivery."
+		},
+		"dueInRequestedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The due in requested quantity, at line level, for this trade delivery."
+		},
+		"dueInReturnedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The due in returned quantity, at line level, for this trade delivery."
+		},
+		"economicOrderQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The economic order quantity, at line level, for this trade delivery."
+		},
+		"finalDeliveryIndicator": {
+			"type": "boolean",
+			"description": "The indication, at line level, of whether or not this trade delivery is the final delivery."
+		},
+		"finalDestinationCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The country of final destination, at line level, for line trade delivery."
+		},
+		"fullyDeliveredIndicator": {
+			"type": "boolean",
+			"description": "The indication, at line level, of whether or not this trade delivery is fully delivered."
+		},
+		"gFMTransferRejectedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The Government Furnished Material (GFM) transfer rejected quantity, at line level, for this trade delivery."
+		},
+		"goodsOwnershipChangeDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the goods ownership change, at line level, for this trade\ndelivery.",
+			"format": "date-time"
+		},
+		"goodsReceiptNoteDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The goods receipt note document, at line level, referenced for this trade delivery."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier, at line level, for this trade delivery."
+		},
+		"includedPackaging": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
+			},
+			"description": "Packaging included, at line level, in this trade delivery."
+		},
+		"individualPackageQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity within the individual package, at line level, for this trade delivery."
+		},
+		"informationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note with information, at line level, for this trade delivery."
+		},
+		"inventoryManagerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "An inventory manager party, at line level, for this trade delivery."
+		},
+		"latestDespatchedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The latest quantity, at line level, despatched in this trade delivery."
+		},
+		"lineTradeDeliveryQuantityDiscrepancyNatureCode": {
+			"type": "string",
+			"description": "The code specifying the nature of the discrepancy of the quantity, at line level, for this trade delivery."
+		},
+		"lineTradeDeliveryQuantityVariationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of quantity variation, at line level, for this trade delivery."
+		},
+		"logisticsPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
+			},
+			"description": "A referenced logistics package, at line level, for this trade delivery."
+		},
+		"logisticsServiceProviderParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A logistics service provider party, at line level, for this trade delivery."
+		},
+		"modificationForecastedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The modification of a forecasted quantity, at line level, for this trade delivery."
+		},
+		"orderQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, ordered for this trade delivery."
+		},
+		"orderSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain order schedule, at line level, for this trade delivery."
+		},
+		"overDeliveryAllowedIndicator": {
+			"type": "boolean",
+			"description": "The indication, at line level, of whether or not over delivery is allowed for this trade delivery."
+		},
+		"packageQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of packages, at line level, in this trade delivery."
+		},
+		"packingListDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The packing list document, at line level, referenced for this trade delivery."
+		},
+		"partialDeliveryAllowedIndicator": {
+			"type": "boolean",
+			"description": "The indication, at line level, of whether or not this trade delivery can be partially delivered."
+		},
+		"perPackageUnitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units per package, at line level, in this trade delivery."
+		},
+		"pickUpAvailabilityDateTime": {
+			"type": "string",
+			"description": "The formatted date, time, date time, or other date time value, at line level, when this delivery is available for\npick-up.",
+			"format": "date-time"
+		},
+		"plannedConsignment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignment"
+			},
+			"description": "A consignment, at line level, planned for this trade delivery."
+		},
+		"plannedDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A delivery event, at line level, planned for this trade delivery."
+		},
+		"plannedDespatchEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A despatch event, at line level, planned for this trade delivery."
+		},
+		"plannedPickUpEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The pick-up event, at line level, planned for this trade delivery."
+		},
+		"plannedShipToDeliveryEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent",
+			"description": "The planned ship to delivery event, at line level, for this trade delivery."
+		},
+		"productUnitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of product units, at line level, in this trade delivery."
+		},
+		"projectedSupplyPlan": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyPlan"
+			},
+			"description": "A supply plan, at line level, projected for this trade delivery."
+		},
+		"quantityCalculationMethodCode": {
+			"type": "string",
+			"description": "The code specifying the quantity calculation method of this line trade delivery."
+		},
+		"quantityVariationReason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for a quantity variation, at line level, for this trade delivery."
+		},
+		"quantityVariationReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason for the quantity variation, at line level, for this trade delivery."
+		},
+		"receiptSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain receipt schedule, at line level, for this trade delivery."
+		},
+		"receivedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, received for this trade delivery."
+		},
+		"receivingAdviceDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A receiving advice document, at line level, referenced for this trade delivery."
+		},
+		"rejectedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, rejected for this trade delivery."
+		},
+		"relatedConsignment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignment"
+			},
+			"description": "A consignment, at line level, related to this line trade delivery."
+		},
+		"remainingRequestedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The remaining quantity, at line level, requested for this trade delivery."
+		},
+		"requestedDeliveryEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A delivery event, at line level, requested for this trade delivery."
+		},
+		"requestedDespatchEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A despatch event, at line level, requested for this trade delivery."
+		},
+		"requestedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, requested for this trade delivery."
+		},
+		"returnedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, returned for this trade delivery."
+		},
+		"reverseBilledQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The reverse billed quantity, at line level, for this trade delivery."
+		},
+		"shipFromParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The ship from party, at line level, for this trade delivery."
+		},
+		"shipToParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The ship to party, at line level, for this trade delivery."
+		},
+		"shipmentScheduleDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The shipment schedule document referenced, at line level, for this trade delivery."
+		},
+		"specifiedDeliveryAdjustment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDeliveryAdjustment"
+			},
+			"description": "A delivery adjustment, at line level, specified for this trade delivery."
+		},
+		"specifiedDeliveryInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDeliveryInstructions"
+			},
+			"description": "Delivery instructions, at line level, specified for this trade delivery."
+		},
+		"specifiedHandlingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceHandlingInstructions"
+			},
+			"description": "Handling instructions, at line level, specified for this trade delivery."
+		},
+		"specifiedPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
+			},
+			"description": "A logistics package, at line level, specified for this trade delivery."
+		},
+		"specifiedSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply chain schedule, specified at line level, for this trade delivery."
+		},
+		"splitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A split quantity for this line trade delivery."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status, at line level, for this trade delivery."
+		},
+		"subordinateId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A subordinate identifier, at line level, for this trade delivery."
+		},
+		"supplySpecifiedSchedule": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSchedule"
+			},
+			"description": "A supply (replenishment) schedule, specified at line level, for this trade delivery."
+		},
+		"turnInReceivedQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The turn in quantity, at line level, received for this trade delivery."
+		},
+		"ultimateShipToDeliveryDateTime": {
+			"type": "string",
+			"description": "The formatted date, time, date time, or other date time value, at line level, when this trade delivery is delivered to\nthe ultimate ship to party.",
+			"format": "date-time"
+		},
+		"ultimateShipToParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The ultimate ship to party, at line level, for this trade delivery."
+		},
+		"unavailableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The quantity, at line level, unavailable for this trade delivery."
+		},
+		"usedLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "A logistics label, at line level, used for this trade delivery."
+		},
+		"utilizedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
+			},
+			"description": "A piece of logistics transport equipment, at line level, utilized for this trade delivery."
+		},
+		"volumeUnitGrossVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType",
+			"description": "The measure, at line level, of the gross volume of this trade delivery."
+		},
+		"volumeUnitNetVolumeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType",
+			"description": "The measure, at line level, of the net volume of this line trade delivery."
+		},
+		"weightUnitChargeableWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure of the chargeable weight, at line level, for this trade delivery."
+		},
+		"weightUnitGrossWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure, at line level, of the gross weight (mass) of this line trade delivery."
+		},
+		"weightUnitNetWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure, at line level, of the net weight (mass) of this trade delivery."
+		},
+		"weightUnitTheoreticalWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
+			"description": "The measure, at line level, of the theoretical weight of this trade delivery."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceResponsibleGovernmentAgencyInvolvementCodeList",
+	"title": "UneceResponsibleGovernmentAgencyInvolvementCodeList",
+	"description": "A character string used to represent a responsible government agency involvement.",
+	"anyOf": [
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#1",
+			"description": "Carried out as instructed: 1."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#2",
+			"description": "Carried out as amended: 2."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#3",
+			"description": "Completed: 3."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#4",
+			"description": "Not applicable: 4."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#5",
+			"description": "Optimal: 5."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#6",
+			"description": "Required: 6."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#7",
+			"description": "Applicable: 7."
+		},
+		{
+			"const": "unece:ResponsibleGovernmentAgencyInvolvementCodeList#8",
+			"description": "Export certificate required: 8."
+		}
+	]
+}

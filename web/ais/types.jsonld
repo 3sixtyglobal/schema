@@ -1,38 +1,50 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-ais": "https://schema.twindev.org/ais/",
-		"twin-immutable-proof": "https://schema.twindev.org/immutable-proof/",
-		"schema": "http://schema.org/",
+		"twin-ais": "https://schema.3sixty.global/ais/",
+		"sch": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"AuditableItemStream": "twin-ais:AuditableItemStream",
+		"AuditableItemStreamEntryBase": "twin-ais:AuditableItemStreamEntryBase",
+		"AuditableItemStreamBase": "twin-ais:AuditableItemStreamBase",
 		"AuditableItemStreamEntry": "twin-ais:AuditableItemStreamEntry",
-		"entryObject": {
-			"@id": "twin-ais:entryObject",
-			"@type": "@json"
-		},
-		"verification": "twin-ais:verification",
-		"index": {
-			"@id": "twin-ais:index",
-			"@type": "schema:Integer"
-		},
-		"immutableInterval": {
-			"@id": "twin-ais:immutableInterval",
-			"@type": "schema:Integer"
-		},
-		"proofId": {
-			"@id": "twin-ais:proofId",
-			"@type": "schema:identifier"
-		},
-		"state": {
-			"@id": "twin-ais:state",
-			"@type": "schema:Text"
+		"AuditableItemStream": "twin-ais:AuditableItemStream",
+		"AuditableItemStreamList": "twin-ais:AuditableItemStreamList",
+		"AuditableItemStreamEntryList": "twin-ais:AuditableItemStreamEntryList",
+		"AuditableItemStreamEntryObjectList": "twin-ais:AuditableItemStreamEntryObjectList",
+		"closed": {
+			"@id": "twin-ais:closed",
+			"@type": "sch:Boolean"
 		},
 		"entries": {
 			"@id": "twin-ais:entries",
 			"@container": "@set"
+		},
+		"entryObject": {
+			"@id": "twin-ais:entryObject",
+			"@type": "@json"
+		},
+		"immutableInterval": {
+			"@id": "twin-ais:immutableInterval",
+			"@type": "sch:Integer"
+		},
+		"index": {
+			"@id": "twin-ais:index",
+			"@type": "sch:Integer"
+		},
+		"mode": {
+			"@id": "twin-ais:mode",
+			"@type": "sch:Text"
+		},
+		"numberOfItems": {
+			"@id": "sch:numberOfItems"
+		},
+		"proofId": {
+			"@id": "twin-ais:proofId",
+			"@type": "sch:identifier"
+		},
+		"verification": {
+			"@id": "twin-ais:verification"
 		}
 	}
 }

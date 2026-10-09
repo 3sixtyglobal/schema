@@ -1,0 +1,103 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSustainabilityInspection",
+	"title": "UneceSustainabilityInspection",
+	"description": "The process of performing documented checks of sustainability characteristics, with a focus on discovering deviations,\nrelated to documented sustainability requirements.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SustainabilityInspection",
+			"description": "JSON-LD Type."
+		},
+		"applicableInspectionResult": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInspectionResult",
+			"description": "The specified inspection result applicable to this sustainability inspection."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this sustainability inspection."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A characteristic applicable to this sustainability inspection."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached for this sustainability inspection."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this sustainability inspection."
+		},
+		"executionParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party responsible for the execution of this sustainability inspection."
+		},
+		"executionPerson": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInspectionPerson",
+			"description": "The inspector responsible for the execution of this sustainability inspection."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this sustainability inspection."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this sustainability inspection."
+		},
+		"outsourcedIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this sustainability inspection is outsourced."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this sustainability inspection."
+		},
+		"specifiedInspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
+			},
+			"description": "A specified inspection event for this sustainability inspection."
+		},
+		"specifiedInspectionStatus": {
+			"$ref": "https://schema.3sixty.global/unece/UneceInspectionStatus",
+			"description": "The inspection status specified for this sustainability inspection."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspectionTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of sustainability inspection."
+		}
+	},
+	"required": ["type"]
+}

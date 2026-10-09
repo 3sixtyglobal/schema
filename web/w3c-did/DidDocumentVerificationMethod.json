@@ -1,88 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod",
+	"$id": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod",
+	"title": "DidDocumentVerificationMethod",
 	"description": "Interface describing a DID document verification method.",
 	"type": "object",
 	"properties": {
-		"@context": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
-		},
-		"@id": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@included": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-		},
-		"@graph": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						}
-					]
-				}
-			]
-		},
-		"@nest": {
-			"anyOf": [
-				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						}
-					]
-				}
-			]
-		},
-		"@type": {
-			"anyOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				}
-			]
-		},
-		"@reverse": {
-			"type": "object",
-			"additionalProperties": {
-				"type": "string"
-			}
-		},
-		"@index": {
-			"type": "string"
-		},
 		"id": {
 			"type": "string",
 			"description": "The id of the entry."
@@ -97,247 +19,23 @@
 		},
 		"publicKeyMultibase": {
 			"type": "string",
-			"description": "The public key for the entry. Spec https://datatracker.ietf.org/doc/html/draft-multiformats-multibase-03 ."
+			"description": "The public key for the entry.\nSpec https://datatracker.ietf.org/doc/html/draft-multiformats-multibase-03 ."
 		},
 		"publicKeyJwk": {
-			"type": "object",
-			"additionalProperties": {
-				"anyOf": [
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-					},
-					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-					},
-					{
-						"type": "array"
-					}
-				]
-			},
-			"properties": {
-				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionRoot"
+			"allOf": [
+				{
+					"$ref": "https://schema.3sixty.global/framework/Jwk"
 				},
-				"@id": {
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
-						}
-					]
-				},
-				"@included": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-				},
-				"@graph": {
-					"anyOf": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
-								}
-							]
-						}
-					]
-				},
-				"@nest": {
-					"anyOf": [
-						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdJsonObject"
-								}
-							]
-						}
-					]
-				},
-				"@type": {
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"type": "array",
-							"items": false,
-							"prefixItems": [
-								{
-									"type": "string"
-								}
-							]
-						}
-					]
-				},
-				"@reverse": {
-					"type": "object",
-					"additionalProperties": {
-						"type": "string"
-					}
-				},
-				"@index": {
-					"type": "string"
-				},
-				"kty": {
-					"type": "string",
-					"description": "JWK \"kty\" (Key Type) Parameter"
-				},
-				"alg": {
-					"type": "string",
-					"description": "JWK \"alg\" (Algorithm) Parameter"
-				},
-				"key_ops": {
-					"type": "array",
-					"items": false,
-					"description": "JWK \"key_ops\" (Key Operations) Parameter",
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				},
-				"ext": {
-					"type": "boolean",
-					"description": "JWK \"ext\" (Extractable) Parameter"
-				},
-				"use": {
-					"type": "string",
-					"description": "JWK \"use\" (Public Key Use) Parameter"
-				},
-				"x5c": {
-					"type": "array",
-					"items": false,
-					"description": "JWK \"x5c\" (X.509 Certificate Chain) Parameter",
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
-				},
-				"x5t": {
-					"type": "string",
-					"description": "JWK \"x5t\" (X.509 Certificate SHA-1 Thumbprint) Parameter"
-				},
-				"x5t#S256": {
-					"type": "string",
-					"description": "JWK \"x5t#S256\" (X.509 Certificate SHA-256 Thumbprint) Parameter"
-				},
-				"x5u": {
-					"type": "string",
-					"description": "JWK \"x5u\" (X.509 URL) Parameter"
-				},
-				"kid": {
-					"type": "string",
-					"description": "JWK \"kid\" (Key ID) Parameter"
-				},
-				"crv": {
-					"type": "string",
-					"description": "- EC JWK \"crv\" (Curve) Parameter\n- OKP JWK \"crv\" (The Subtype of Key Pair) Parameter"
-				},
-				"d": {
-					"type": "string",
-					"description": "- Private RSA JWK \"d\" (Private Exponent) Parameter\n- Private EC JWK \"d\" (ECC Private Key) Parameter\n- Private OKP JWK \"d\" (The Private Key) Parameter"
-				},
-				"dp": {
-					"type": "string",
-					"description": "Private RSA JWK \"dp\" (First Factor CRT Exponent) Parameter"
-				},
-				"dq": {
-					"type": "string",
-					"description": "Private RSA JWK \"dq\" (Second Factor CRT Exponent) Parameter"
-				},
-				"e": {
-					"type": "string",
-					"description": "RSA JWK \"e\" (Exponent) Parameter"
-				},
-				"k": {
-					"type": "string",
-					"description": "Oct JWK \"k\" (Key Value) Parameter"
-				},
-				"n": {
-					"type": "string",
-					"description": "RSA JWK \"n\" (Modulus) Parameter"
-				},
-				"p": {
-					"type": "string",
-					"description": "Private RSA JWK \"p\" (First Prime Factor) Parameter"
-				},
-				"q": {
-					"type": "string",
-					"description": "Private RSA JWK \"q\" (Second Prime Factor) Parameter"
-				},
-				"qi": {
-					"type": "string",
-					"description": "Private RSA JWK \"qi\" (First CRT Coefficient) Parameter"
-				},
-				"x": {
-					"type": "string",
-					"description": "- EC JWK \"x\" (X Coordinate) Parameter\n- OKP JWK \"x\" (The public key) Parameter"
-				},
-				"y": {
-					"type": "string",
-					"description": "EC JWK \"y\" (Y Coordinate) Parameter"
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				}
-			},
-			"description": "The public key for the entry as a JWK. Spec https://datatracker.ietf.org/doc/html/rfc7517 ."
+			],
+			"description": "The public key for the entry as a JWK.\nSpec https://datatracker.ietf.org/doc/html/rfc7517 ."
 		},
 		"revocation": {
 			"type": "string",
 			"description": "Multi key partial revocation."
 		}
 	},
-	"required": ["id", "controller", "type"],
-	"additionalProperties": {
-		"anyOf": [
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIndexMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIncludedBlock"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdIdMap"
-			},
-			{
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdTypeMap"
-			},
-			{
-				"type": "array"
-			}
-		]
-	}
+	"required": ["id", "controller", "type"]
 }

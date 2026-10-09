@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingEntryProcessingCodeList",
+	"title": "UneceAccountingEntryProcessingCodeList",
+	"description": "A character string used to represent the processing of an accounting entry.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#1",
+			"description": "Validated: 1."
+		},
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#2",
+			"description": "Non Validated: 2."
+		},
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#3",
+			"description": "Proposed: 3."
+		},
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#4",
+			"description": "Simulated: 4."
+		},
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#5",
+			"description": "Postponed: 5."
+		},
+		{
+			"const": "unece:AccountingEntryProcessingCodeList#6",
+			"description": "Removed: 6."
+		}
+	]
+}

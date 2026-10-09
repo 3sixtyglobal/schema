@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTemperatureTypeCodeList",
+	"title": "UneceTemperatureTypeCodeList",
+	"description": "A character string used to replace or represent a type of temperature.",
+	"anyOf": [
+		{
+			"const": "unece:TemperatureTypeCodeList#1",
+			"description": "Storage temperature: 1."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#2",
+			"description": "Transport temperature: 2."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#3",
+			"description": "Cargo operating temperature: 3."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#4",
+			"description": "Transport emergency temperature: 4."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#5",
+			"description": "Transport control temperature: 5."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#6",
+			"description": "Boiling point: 6."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#7",
+			"description": "Temperature, recorded: 7."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#8",
+			"description": "Self-accelerating decomposition temperature (SADT): 8."
+		},
+		{
+			"const": "unece:TemperatureTypeCodeList#9",
+			"description": "Self-accelerating polymerization temperature (SAPT): 9."
+		}
+	]
+}

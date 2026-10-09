@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceComplexDescription",
+	"title": "UneceComplexDescription",
+	"description": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a\nwork item complex description.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ComplexDescription",
+			"description": "JSON-LD Type."
+		},
+		"abstract": {
+			"type": "string",
+			"description": "A textual abstract of the content of the work item complex description."
+		},
+		"content": {
+			"type": "string",
+			"description": "Content, expressed as text, for this work item complex description."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this work item complex description."
+		},
+		"requestingQuery": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecificationQuery"
+			},
+			"description": "A requesting specification query for this work item complex description."
+		},
+		"respondingResponse": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceResponse"
+			},
+			"description": "A responding specification response for this work item complex description."
+		},
+		"subsetComplexDescription": {
+			"$ref": "https://schema.3sixty.global/unece/UneceComplexDescription",
+			"description": "The complex description subset for this work item complex description."
+		}
+	},
+	"required": ["type"]
+}

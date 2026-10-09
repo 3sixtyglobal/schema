@@ -1,0 +1,107 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase",
+	"title": "DcatCatalogBase",
+	"description": "Base interface for DCAT Catalog without JSON-LD context.\nThis is the context-free variant of IDcatCatalog, intended for embedding\ncatalogs inline within other objects where the context is provided by the enclosing document.\nNote: dcat:Catalog is a sub-class of dcat:Dataset per the W3C spec.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "dcat:Catalog",
+			"description": "The type identifier, typically \"Catalog\"."
+		},
+		"foaf:homepage": {
+			"type": "string",
+			"description": "A homepage of the catalog (a public Web document usually available in HTML)."
+		},
+		"dcat:themeTaxonomy": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
+					}
+				}
+			],
+			"description": "A knowledge organization system (KOS) used to classify the resources in the catalog."
+		},
+		"dcat:resource": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
+					}
+				}
+			],
+			"description": "A resource that is listed in the catalog."
+		},
+		"dcat:dataset": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+					}
+				}
+			],
+			"description": "A dataset that is listed in the catalog."
+		},
+		"dcat:service": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase"
+					}
+				}
+			],
+			"description": "A data service that is listed in the catalog."
+		},
+		"dcat:catalog": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase"
+					}
+				}
+			],
+			"description": "A catalog that is listed in the catalog."
+		},
+		"dcat:record": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
+					}
+				}
+			],
+			"description": "A record describing the registration of a single resource in the catalog."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+		}
+	]
+}

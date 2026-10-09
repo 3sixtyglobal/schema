@@ -1,0 +1,96 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTaxCategoryCodeList",
+	"title": "UneceTaxCategoryCodeList",
+	"description": "A character string used to represent a duty or tax category.",
+	"anyOf": [
+		{
+			"const": "unece:TaxCategoryCodeList#A",
+			"description": "Mixed tax rate: A."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#AA",
+			"description": "Lower rate: AA."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#AB",
+			"description": "Exempt for resale: AB."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#AC",
+			"description": "Value Added Tax (VAT) not now due for payment: AC."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#AD",
+			"description": "Value Added Tax (VAT) due from a previous invoice: AD."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#AE",
+			"description": "VAT Reverse Charge: AE."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#B",
+			"description": "Transferred (VAT): B."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#C",
+			"description": "Duty paid by supplier: C."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#D",
+			"description": "Value Added Tax (VAT) margin scheme - travel agents: D."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#E",
+			"description": "Exempt from tax: E."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#F",
+			"description": "Value Added Tax (VAT) margin scheme - second-hand goods: F."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#G",
+			"description": "Free export item, tax not charged: G."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#H",
+			"description": "Higher rate: H."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#I",
+			"description": "Value Added Tax (VAT) margin scheme - works of art Margin scheme — Works of art: I."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#J",
+			"description": "Value Added Tax (VAT) margin scheme - collector’s items and antiques: J."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#K",
+			"description": "VAT exempt for EEA intra-community supply of goods and services: K."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#L",
+			"description": "Canary Islands general indirect tax: L."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#M",
+			"description": "Tax for production, services and importation in Ceuta and Melilla: M."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#N",
+			"description": "standard rate additional VAT: N."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#O",
+			"description": "Services outside scope of tax: O."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#S",
+			"description": "Standard rate: S."
+		},
+		{
+			"const": "unece:TaxCategoryCodeList#Z",
+			"description": "Zero rated goods: Z."
+		}
+	]
+}

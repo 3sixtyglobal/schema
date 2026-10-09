@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsTombstone",
+	"title": "ActivityStreamsTombstone",
+	"description": "A W3C Activity Streams Tombstone.\n\nA `Tombstone` represents an object that has been deleted. Implementations can\ninclude `formerType` and `deleted` to provide additional context.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"anyOf": [
+				{
+					"const": "Tombstone"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"anyOf": [
+							{
+								"const": "Tombstone"
+							},
+							{
+								"type": "string"
+							}
+						]
+					}
+				}
+			],
+			"description": "Tombstone type."
+		},
+		"deleted": {
+			"type": "string",
+			"description": "The date and time at which the object was deleted.",
+			"format": "date-time"
+		},
+		"formerType": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "The former type of the deleted object."
+		}
+	},
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject"
+		}
+	]
+}

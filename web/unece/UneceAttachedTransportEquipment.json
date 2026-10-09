@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAttachedTransportEquipment",
+	"title": "UneceAttachedTransportEquipment",
+	"description": "A piece of attached transport equipment, such as a chain or a tarpaulin.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AttachedTransportEquipment",
+			"description": "JSON-LD Type."
+		},
+		"characteristic": {
+			"type": "string",
+			"description": "The textual description of the characteristics, i.e. size and type, of this piece of attached transport equipment."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of this piece of attached transport equipment."
+		},
+		"transportEquipmentCategoryCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEquipmentCategoryCodeList"
+			},
+			"description": "A code specifying a category of this piece of attached transport equipment."
+		},
+		"transportEquipmentSizeTypeCharacteristicCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEquipmentSizeTypeCodeList",
+			"description": "The code specifying the characteristics, i.e. size and type, of this piece of attached transport equipment."
+		},
+		"unitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units of attached transport equipment."
+		}
+	},
+	"required": ["type"]
+}

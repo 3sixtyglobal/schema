@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration",
+	"title": "UneceSpecifiedDeclaration",
+	"description": "An act of notification by formal documentation or action, in any form prescribed or accepted, such as a\nself-declaration.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedDeclaration",
+			"description": "JSON-LD Type."
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard associated with this specified declaration."
+		},
+		"assuranceLevelCode": {
+			"type": "string",
+			"description": "A code specifying an assurance level of this specified declaration."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified declaration."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this specified declaration."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The issue date, time, date time or other date time value for this specified declaration.",
+			"format": "date-time"
+		},
+		"issuerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party that issues this specified declaration."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified declaration."
+		},
+		"subjectTypeCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a subject type for this specified declaration."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclarationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of specified declaration."
+		},
+		"verifiedObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+			},
+			"description": "An object verified for this specified declaration."
+		}
+	},
+	"required": ["type"]
+}

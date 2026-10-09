@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolVersion",
+	"title": "DataspaceProtocolVersion",
+	"description": "Interface for a single supported Dataspace Protocol version entry.",
+	"type": "object",
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "The protocol version identifier (e.g. \"2025-1\"). An open string to accommodate future\nversions; known values are \"0.8\", \"2024-1\", and \"2025-1\"."
+		},
+		"path": {
+			"type": "string",
+			"description": "The URL path prefix at which the versioned endpoints are served (e.g. \"/dsp/2025-1\")."
+		},
+		"binding": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolVersionBindingType",
+			"description": "The transport binding for this version's endpoints."
+		},
+		"serviceId": {
+			"type": "string",
+			"description": "Data Service identifier, allowing a Data Service to group multiple version entries.\nCorresponds to the `@id` of the Data Service in the DID document."
+		},
+		"identifierType": {
+			"type": "string",
+			"description": "Participant identifier scheme (e.g. \"did:web\", \"D-U-N-S\")."
+		},
+		"auth": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolAuth",
+			"description": "Authentication descriptor for the versioned endpoints."
+		}
+	},
+	"required": ["version", "path", "binding"]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContractNegotiationEventType",
+	"title": "DataspaceProtocolContractNegotiationEventType",
+	"description": "The types for Dataspace Protocol Contract Negotiation Events.",
+	"anyOf": [
+		{
+			"const": "ACCEPTED",
+			"description": "Accepted."
+		},
+		{
+			"const": "FINALIZED",
+			"description": "Finalized."
+		}
+	]
+}

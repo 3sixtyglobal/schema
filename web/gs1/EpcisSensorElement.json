@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisSensorElement",
+	"title": "EpcisSensorElement",
+	"description": "EPCIS 2.0 SensorElement grouping metadata and one or more SensorReport\nentries.",
+	"type": "object",
+	"properties": {
+		"sensorMetadata": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisSensorMetadata",
+			"description": "(Optional) Element containing metadata attributes applicable to all\nsensorReport entries within this sensorElement."
+		},
+		"sensorReport": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/gs1/EpcisSensorReport"
+			},
+			"description": "An element containing one or several attributes that pertain to a specific\nsensor observation."
+		}
+	},
+	"required": ["sensorReport"]
+}

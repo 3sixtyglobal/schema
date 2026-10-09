@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSensorTypeCodeList",
+	"title": "UneceSensorTypeCodeList",
+	"description": "Values for UneceSensor typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:embeddedSensor",
+			"description": "An embedded sensor of this monitoring IOT device."
+		},
+		{
+			"const": "unece:remoteSensor",
+			"description": "A remote sensor of this monitoring IOT device."
+		}
+	]
+}

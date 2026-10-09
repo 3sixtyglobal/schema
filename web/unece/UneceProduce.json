@@ -1,0 +1,76 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProduce",
+	"title": "UneceProduce",
+	"description": "Agricultural plants or plant products grown and harvested, such as grain, fruit, vegetables, silage.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Produce",
+			"description": "JSON-LD Type."
+		},
+		"calculatedYieldMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the calculated yield, such as weight per surface area unit, of this crop produce."
+		},
+		"estimatedYieldMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the estimated yield, such as weight per surface area unit, of this crop produce."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this crop produce."
+		},
+		"inputSpecifiedBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatch"
+			},
+			"description": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, for this crop produce."
+		},
+		"outputSpecifiedBatch": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatch"
+			},
+			"description": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
+		},
+		"subordinateTypeCode": {
+			"type": "string",
+			"description": "The code specifying the subordinate type of crop produce, such as product or by-product."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProduceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of crop produce."
+		}
+	},
+	"required": ["type", "outputSpecifiedBatch"]
+}

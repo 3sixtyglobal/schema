@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceScheduleTypeCodeList",
+	"title": "UneceScheduleTypeCodeList",
+	"description": "Values for UneceSchedule typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:consumptionSchedule",
+			"description": "A supply chain consumption schedule, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:deliverySchedule",
+			"description": "A supply chain delivery schedule, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:despatchSchedule",
+			"description": "A supply chain despatch schedule, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:orderSchedule",
+			"description": "A supply chain order schedule, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:receiptSchedule",
+			"description": "A supply chain receipt schedule, at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:specifiedSchedule",
+			"description": "A supply chain schedule, at header level, specified for this trade delivery.\nA supply chain schedule, specified at line level, for this trade delivery."
+		},
+		{
+			"const": "unece:supplySpecifiedSchedule",
+			"description": "A supply (replenishment) schedule, specified at line level, for this trade delivery."
+		}
+	]
+}

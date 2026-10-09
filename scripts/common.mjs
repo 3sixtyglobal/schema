@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0.
 import { exec, spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 
 /**
  * Load a JSON file.
@@ -109,4 +110,224 @@ export async function isSymbolicLink(item) {
 	} catch {
 		return false;
 	}
+}
+
+/**
+ * Strip interface prefix if there is one.
+ * @param input The input to strip.
+ * @returns The input with any interface prefix stripped.
+ */
+export function stripPrefix(input) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (/^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return output;
+	}
+
+	return '';
+}
+
+/**
+ * Split a string into words.
+ * @param input The input to split.
+ * @returns The string split into words.
+ */
+export function words(input) {
+	if (!(typeof input === 'string' && input.length > 0)) {
+		return [];
+	}
+
+	const normalized = input
+		.replace(/([\da-z])([A-Z])/g, '$1 $2')
+		.replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
+		.replace(/[._-]+/g, ' ');
+
+	return normalized.trim().match(/[^\u0000-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007F]+/g) ?? [];
+}
+
+/**
+ * Convert the input string to kebab case.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The kebab case version of the input.
+ */
+export function kebabCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output).join('-').toLowerCase();
+	}
+
+	return '';
+}
+
+/**
+ * Convert the input string to snake case.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The snake case version of the input.
+ */
+export function snakeCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output).join('_').toLowerCase();
+	}
+
+	return '';
+}
+
+/**
+ * Pascal case all the words.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The pascal case version of the input.
+ */
+export function pascalCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		return words(output)
+			.map(w => {
+				if (w.length > 1 && w === w.toUpperCase()) {
+					return w;
+				}
+				return `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`;
+			})
+			.join('');
+	}
+
+	return '';
+}
+
+/**
+ * Camel case all the words.
+ * @param input The input to convert.
+ * @param stripInterfacePrefix Strip interface prefixes.
+ * @returns The camel case version of the input.
+ */
+export function camelCase(input, stripInterfacePrefix = true) {
+	if (typeof input === 'string' && input.length > 0) {
+		let output = input;
+		if (stripInterfacePrefix && /^I[A-Z]/.test(output)) {
+			output = output.slice(1);
+		}
+		const splitWords = words(output);
+		return splitWords.length === 0
+			? ''
+			: `${splitWords[0].toLowerCase()}${splitWords
+					.slice(1)
+					.map(w => {
+						if (w.length > 1 && w === w.toUpperCase()) {
+							return w;
+						}
+						return `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`;
+					})
+					.join('')}`;
+	}
+
+	return '';
+}
+
+/**
+ * Convert a string to uppercase.
+ * @param input The input to convert.
+ * @returns The uppercase version of the input.
+ */
+export function upperCase(input) {
+	return input?.toUpperCase() ?? '';
+}
+
+/**
+ * Convert a string to interface case (PascalCase with I prefix).
+ * @param input The input to convert.
+ * @returns The interface case version of the input.
+ */
+export function interfaceCase(input) {
+	const pascal = pascalCase(input, false);
+	return pascal ? `I${pascal}` : '';
+}
+
+/**
+ * Load the prerelease manifest from the next branch on origin, falling back to
+ * the local copy when the ref cannot be fetched. The local copy on main can be
+ * stale: it only refreshes when next is merged in, which hotfix releases skip.
+ * @param manifestFilename The path of the prerelease manifest.
+ * @returns The parsed manifest.
+ */
+export async function loadNextPrereleaseManifest(manifestFilename) {
+	try {
+		await execAsync('git fetch --no-tags --depth=1 origin next');
+		const content = await execAsync(`git show "FETCH_HEAD:${manifestFilename}"`);
+		return JSON.parse(content);
+	} catch {
+		process.stdout.write(
+			`Could not read ${manifestFilename} from origin/next, using the local copy\n`
+		);
+		return loadJson(manifestFilename);
+	}
+}
+
+/**
+ * Load the workspace package directories for a repository, in dependency order so
+ * that a package always appears after the packages it depends on.
+ * pnpm is asked for the project list, falling back to the npm workspaces field so
+ * repositories which have not moved to pnpm can still be read.
+ * @param rootDir The root directory of the repository, defaults to the current directory.
+ * @returns The package directories relative to the root, in dependency order.
+ */
+export async function loadWorkspaceDirs(rootDir = '.') {
+	return (await loadPnpmWorkspaceDirs(rootDir)) ?? loadNpmWorkspaceDirs(rootDir);
+}
+
+/**
+ * Ask pnpm for the projects in the workspace. pnpm walks them in dependency order,
+ * and running one at a time keeps the output in that order. The dependencies have
+ * to be installed first, otherwise pnpm installs them before running the command.
+ * @param rootDir The root directory of the repository.
+ * @returns The package directories, or undefined if this is not a pnpm workspace.
+ */
+async function loadPnpmWorkspaceDirs(rootDir) {
+	const resolvedRoot = path.resolve(rootDir);
+
+	if (await fileExists(path.join(resolvedRoot, 'pnpm-workspace.yaml'))) {
+		const output = await execAsync(
+			`pnpm --dir "${resolvedRoot}" --recursive --workspace-concurrency=1 exec node -e "console.log(process.cwd())"`
+		);
+
+		// The workspace root is not one of the packages, so it drops out as the only
+		// entry with an empty relative path.
+		return output
+			.split(/\r?\n/)
+			.map(line => path.relative(resolvedRoot, line.trim()).split(path.sep).join('/'))
+			.filter(workspaceDir => workspaceDir.length > 0);
+	}
+}
+
+/**
+ * Read the workspaces field from the root package.json, which is how the
+ * repositories still on npm describe their packages. The entries are already
+ * maintained in dependency order.
+ * @param rootDir The root directory of the repository.
+ * @returns The package directories, or an empty array if there are none.
+ */
+async function loadNpmWorkspaceDirs(rootDir) {
+	const packageJsonFilename = path.join(rootDir, 'package.json');
+
+	if (await fileExists(packageJsonFilename)) {
+		const packageJson = await loadJson(packageJsonFilename);
+		if (Array.isArray(packageJson.workspaces)) {
+			return packageJson.workspaces;
+		}
+	}
+
+	return [];
 }

@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceObject",
+	"title": "UneceObject",
+	"description": "Anything that is visible or tangible, such as a product, process, or organization.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Object",
+			"description": "JSON-LD Type."
+		},
+		"category": {
+			"type": "string",
+			"description": "A category, expressed as text, for this specified object."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category for this specified object."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this specified object."
+		},
+		"objectType": {
+			"type": "string",
+			"description": "A type, expressed as text, for this specified object."
+		},
+		"remark": {
+			"type": "string",
+			"description": "A remark, expressed as text, for this specified object."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceObjectTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of specified object."
+		}
+	},
+	"required": ["type"]
+}

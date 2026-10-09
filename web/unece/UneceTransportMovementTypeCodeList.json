@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportMovementTypeCodeList",
+	"title": "UneceTransportMovementTypeCodeList",
+	"description": "A character string used to represent a transport movement type.",
+	"anyOf": [
+		{
+			"const": "unece:TransportMovementTypeCodeList#1",
+			"description": "Export: 1."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#2",
+			"description": "Import: 2."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#3",
+			"description": "Transit: 3."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#4",
+			"description": "Relay: 4."
+		},
+		{
+			"const": "unece:TransportMovementTypeCodeList#5",
+			"description": "Transshipment: 5."
+		}
+	]
+}

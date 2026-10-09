@@ -1,0 +1,122 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLocationParty",
+	"title": "UneceLocationParty",
+	"description": "An individual, a group, or a body having a role related to a location.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LocationParty",
+			"description": "JSON-LD Type."
+		},
+		"countryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique country identifier for this location party."
+		},
+		"definedContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeContact"
+			},
+			"description": "A trade contact defined for this location party."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this location party."
+		},
+		"faxCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Fax communication information for this location party."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier of this location party."
+		},
+		"locationPartyRoleCode": {
+			"type": "string",
+			"description": "A code specifying a role of this location party."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this location party."
+		},
+		"postalAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
+			},
+			"description": "A postal address for this location party."
+		},
+		"providedService": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceService"
+			},
+			"description": "A transport service provided by this location party."
+		},
+		"specifiedLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location or place specified for this party."
+		},
+		"specifiedTransportPerson": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportPerson"
+			},
+			"description": "A transport related person specified for this location party."
+		},
+		"telephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Telephone communication information for this location party."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLocationPartyTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying the type of location party that is independent of its role."
+		},
+		"uRICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
+		}
+	},
+	"required": ["type"]
+}

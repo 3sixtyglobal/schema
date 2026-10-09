@@ -1,0 +1,65 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductFinishingTreatment",
+	"title": "UneceProductFinishingTreatment",
+	"description": "Improving measures for manufactured components or products to meet end use requirements.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductFinishingTreatment",
+			"description": "JSON-LD Type."
+		},
+		"applicableProcessCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+			},
+			"description": "A process certificate applicable to this specified product finishing treatment."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this specified product finishing treatment."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified product finishing treatment."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified product finishing treatment."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProductFinishingTreatmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of product finishing treatment."
+		},
+		"usedMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Material used for this specified product finishing treatment."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePackagingInstructions",
+	"title": "UnecePackagingInstructions",
+	"description": "Packaging information of an instructive nature.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PackagingInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these packaging instructions."
+		},
+		"handling": {
+			"type": "string",
+			"description": "Packaging handling instructions, expressed as text."
+		},
+		"handlingCode": {
+			"type": "string",
+			"description": "A code specifying packaging handling instructions."
+		},
+		"instructionsType": {
+			"type": "string",
+			"description": "A type, expressed as text, of these packaging instructions."
+		},
+		"itemName": {
+			"type": "string",
+			"description": "A name, expressed as text, of an item included in these packaging instructions."
+		},
+		"packagingInstructionsDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying a description of these packaging instructions."
+		},
+		"procedure": {
+			"type": "string",
+			"description": "A procedure, expressed as text, for these packaging instructions."
+		},
+		"requirementIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not there is a requirement for these packaging instructions."
+		}
+	},
+	"required": ["type"]
+}

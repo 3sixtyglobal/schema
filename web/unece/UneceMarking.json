@@ -1,0 +1,63 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMarking",
+	"title": "UneceMarking",
+	"description": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Marking",
+			"description": "JSON-LD Type."
+		},
+		"automaticDataCaptureMethodTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAutomaticDataCaptureMethodCodeList"
+			},
+			"description": "A code specifying an automatic data capture method type for this packaging marking."
+		},
+		"content": {
+			"type": "string",
+			"description": "Content, expressed as text, of this packaging marking."
+		},
+		"contentAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "Content, expressed as a monetary amount, for this packaging marking."
+		},
+		"contentCode": {
+			"type": "string",
+			"description": "Content, expressed as a code, of this packaging marking."
+		},
+		"contentDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value for the content of this packaging marking.",
+			"format": "date-time"
+		},
+		"packagingMarkingBarcodeTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of barcode for this packaging marking."
+		},
+		"packagingMarkingTypeCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackagingMarkingCodeList"
+			},
+			"description": "A code specifying a type of packaging marking."
+		},
+		"specifiedLogisticsLabel": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
+			},
+			"description": "A logistics label specified for this packaging marking."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,168 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceExperienceItem",
+	"title": "UneceExperienceItem",
+	"description": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a\nguided tour being used or reported on for trade purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ExperienceItem",
+			"description": "JSON-LD Type."
+		},
+		"applicablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An applicable period for this specified experience item."
+		},
+		"applicableQuantityUnitTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of quantity unit applicable for this specified experience item."
+		},
+		"availablePeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "An available period for this specified experience item."
+		},
+		"availableProduct": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceExperienceProduct"
+			},
+			"description": "An available product for this specified experience item."
+		},
+		"availableUnitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units available for this specified experience item."
+		},
+		"brandName": {
+			"type": "string",
+			"description": "A brand name, expressed as text, of this specified experience item."
+		},
+		"calculatedPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "A calculated price for this specified experience item."
+		},
+		"capabilityLevel": {
+			"type": "string",
+			"description": "A capability level, expressed as text, for this specified experience item."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category for this specified experience item."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified experience item."
+		},
+		"destination": {
+			"type": "string",
+			"description": "A destination, expressed as text, for this specified experience item."
+		},
+		"guestSpecialCareIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not guest special care is applicable for this specified experience item."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this specified experience item."
+		},
+		"indemnityClause": {
+			"type": "string",
+			"description": "An indemnity clause, expressed as text, for this specified experience item."
+		},
+		"instruction": {
+			"type": "string",
+			"description": "An instruction, expressed as text, for this specified experience item."
+		},
+		"lowerPriceLimitAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of a lower price limit of this specified experience item."
+		},
+		"maximumGuestQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The maximum number of guests for this specified experience item."
+		},
+		"minimumGuestQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The minimum number of guests for this specified experience item."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this specified experience item."
+		},
+		"reservationGuarantee": {
+			"type": "string",
+			"description": "A reservation guarantee, expressed as text, for this specified experience item."
+		},
+		"responseStatusCode": {
+			"type": "string",
+			"description": "The code specifying the response status for this specified experience item."
+		},
+		"specifiedExperienceEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceExperienceEvent"
+			},
+			"description": "An event for this specified experience item."
+		},
+		"specifiedTradeParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party specified for this specified experience item."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status for this specified experience item."
+		},
+		"theme": {
+			"type": "string",
+			"description": "A theme, expressed as text, for this specified experience item."
+		},
+		"themeTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of theme for this specified experience item."
+		},
+		"unitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units for this specified experience item."
+		},
+		"upperPriceLimitAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of an upper price limit of this specified experience item."
+		},
+		"visitingPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A visiting period for this specified experience item."
+		}
+	},
+	"required": ["type"]
+}

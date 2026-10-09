@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportEquipmentHaulageArrangementsCodeList",
+	"title": "UneceTransportEquipmentHaulageArrangementsCodeList",
+	"description": "A character string used to represent the transport equipment haulage arrangements.",
+	"anyOf": [
+		{
+			"const": "unece:TransportEquipmentHaulageArrangementsCodeList#1",
+			"description": "Carrier: 1."
+		},
+		{
+			"const": "unece:TransportEquipmentHaulageArrangementsCodeList#2",
+			"description": "Merchant: 2."
+		}
+	]
+}

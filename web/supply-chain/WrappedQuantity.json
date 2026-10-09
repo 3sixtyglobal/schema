@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/supply-chain/WrappedQuantity",
+	"title": "WrappedQuantity",
+	"description": "Wrapped UNECE quantity structure (D23B).",
+	"type": "object",
+	"properties": {
+		"unece:QuantityTypeValue": {
+			"type": "string",
+			"description": "Quantity numeric value."
+		},
+		"unece:QuantityTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityCode",
+			"description": "Unit of measure code."
+		}
+	},
+	"required": ["unece:QuantityTypeValue"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+		}
+	]
+}

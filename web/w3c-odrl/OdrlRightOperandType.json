@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlRightOperandType",
+	"title": "OdrlRightOperandType",
+	"description": "The types for ODRL Right Operand Types.",
+	"anyOf": [
+		{
+			"const": "odrl:policyUsage",
+			"description": "Reference to policy usage events."
+		}
+	]
+}

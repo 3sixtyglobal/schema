@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportPayload",
+	"title": "DcsaTransportPayload",
+	"description": "Transport payload.\n\nSource: `transportPayload` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"eventClassifierCode": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventClassifierCodeNoReq",
+			"description": "Event classifier code."
+		},
+		"transportEventTypeCode": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportEventTypeCodes",
+			"description": "Transport event type code."
+		},
+		"transportCall": {
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCall",
+			"description": "Transport call context."
+		},
+		"delayReasonCode": {
+			"type": "string",
+			"description": "Delay reason code.\nThe authoritative schema references the shared `delayReasonCode` from DCSA_DOMAIN."
+		},
+		"changeRemark": {
+			"type": "string",
+			"description": "Free-text field to provide information as to why the TransportEvent was sent."
+		},
+		"relatedDocumentReferences": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
+			},
+			"description": "Related documents."
+		},
+		"references": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaReference"
+			},
+			"description": "Additional references."
+		}
+	},
+	"required": ["eventClassifierCode", "transportEventTypeCode", "transportCall"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseEvent"
+		}
+	]
+}

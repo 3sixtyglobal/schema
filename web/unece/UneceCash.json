@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCash",
+	"title": "UneceCash",
+	"description": "Coins, banknotes paid by the recipient of goods or services to the provider.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Cash",
+			"description": "JSON-LD Type."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this cash used for payment. is applicable."
+		},
+		"currencyCode": {
+			"type": "string",
+			"description": "The code specifying a currency of this cash used for payment."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of cash used for this payment."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCashTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of cash used for payment."
+		}
+	},
+	"required": ["type"]
+}

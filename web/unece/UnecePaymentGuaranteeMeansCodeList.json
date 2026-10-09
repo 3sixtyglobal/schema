@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentGuaranteeMeansCodeList",
+	"title": "UnecePaymentGuaranteeMeansCodeList",
+	"description": "A character string used to represent a payment guarantee means.",
+	"anyOf": [
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#1",
+			"description": "Factor guarantee: 1."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#10",
+			"description": "Bank guarantee: 10."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#11",
+			"description": "Public authority guarantee: 11."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#12",
+			"description": "Third party guarantee: 12."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#13",
+			"description": "Standby letter of credit: 13."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#14",
+			"description": "No guarantee: 14."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#20",
+			"description": "Goods as security: 20."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#21",
+			"description": "Business as security: 21."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#23",
+			"description": "Warrant or similar (warehouse receipts): 23."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#24",
+			"description": "Mortgage: 24."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#45",
+			"description": "Insurance certificate: 45."
+		},
+		{
+			"const": "unece:PaymentGuaranteeMeansCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

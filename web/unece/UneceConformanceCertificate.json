@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceConformanceCertificate",
+	"title": "UneceConformanceCertificate",
+	"description": "The label delivered by a trusted third party to assess the compliance of a product or a service with an agreed standard.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ConformanceCertificate",
+			"description": "JSON-LD Type."
+		},
+		"certificateTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
+			"description": "The code specifying the type of conformance certificate."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of this conformance certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this conformance certificate was issued.",
+			"format": "date-time"
+		},
+		"issuingPartyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of the issuing party of this conformance certificate."
+		},
+		"softwareOperatingSystem": {
+			"type": "string",
+			"description": "The software operating system, expressed as text, for which this conformance certificate is produced."
+		}
+	},
+	"required": ["type"]
+}

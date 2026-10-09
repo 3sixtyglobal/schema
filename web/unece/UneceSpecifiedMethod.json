@@ -1,0 +1,83 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedMethod",
+	"title": "UneceSpecifiedMethod",
+	"description": "A defined way of performing something.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedMethod",
+			"description": "JSON-LD Type."
+		},
+		"applicableParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
+			},
+			"description": "A parameter applicable to this specified method."
+		},
+		"certificationId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A certification identifier of this specified method."
+		},
+		"certificationTypeCode": {
+			"type": "string",
+			"description": "The code specifying the certification type of this method."
+		},
+		"externalReference": {
+			"type": "string",
+			"description": "An external reference, expressed as text, for this specified method."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified method."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this specified method."
+		},
+		"localTypeCode": {
+			"type": "string",
+			"description": "The code specifying the local type for this method."
+		},
+		"measurementCode": {
+			"type": "string",
+			"description": "The code specifying the measurement for this method."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this specified method."
+		},
+		"obligatoryTypeCode": {
+			"type": "string",
+			"description": "The code specifying the obligatory type for this method."
+		},
+		"standardTypeCode": {
+			"type": "string",
+			"description": "The code specifying the standard type for this method."
+		},
+		"usedTechnologyCode": {
+			"type": "string",
+			"description": "The code specifying the technology used by this method."
+		}
+	},
+	"required": ["type"]
+}

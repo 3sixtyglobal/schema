@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceClassificationTypeCodeList",
+	"title": "UneceClassificationTypeCodeList",
+	"description": "Values for UneceClassification typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableClassification",
+			"description": "A product classification applicable to this trade product instance."
+		},
+		{
+			"const": "unece:designatedClassification",
+			"description": "A product classification designated for this trade product."
+		}
+	]
+}

@@ -1,9 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdIdMap",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdIdMap",
+	"title": "JsonLdIdMap",
 	"description": "An id map is used to associate an IRI with a value that allows easy programmatic access.",
 	"type": "object",
 	"additionalProperties": {
-		"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+		"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 	}
 }

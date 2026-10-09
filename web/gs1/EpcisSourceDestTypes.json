@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisSourceDestTypes",
+	"title": "EpcisSourceDestTypes",
+	"description": "Supported EPCIS 2.0 `source-dest-type` values describing the role of a party\nor location in a transfer.",
+	"anyOf": [
+		{
+			"const": "owning_party",
+			"description": "Identifier denotes the party who owns (or will own) the objects at the\nbusiness transfer endpoint."
+		},
+		{
+			"const": "possessing_party",
+			"description": "Identifier denotes the party who has (or will have) physical possession of\nthe objects at the endpoint."
+		},
+		{
+			"const": "location",
+			"description": "Identifier denotes the physical location of the originating or terminating\nendpoint of the business transfer."
+		}
+	]
+}

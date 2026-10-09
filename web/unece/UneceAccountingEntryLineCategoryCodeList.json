@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAccountingEntryLineCategoryCodeList",
+	"title": "UneceAccountingEntryLineCategoryCodeList",
+	"description": "A character string used to represent the category of a line of an accounting entry.",
+	"anyOf": [
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#1",
+			"description": "Normal: 1."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#2",
+			"description": "Opening Balance: 2."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#3",
+			"description": "Simulation: 3."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#4",
+			"description": "Paid Commercial Paper Not Yet Due From a Prior Period: 4."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#5",
+			"description": "Not Matched Line in a Prior Year: 5."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#6",
+			"description": "Not Reconcilied Line in a Prior Period: 6."
+		},
+		{
+			"const": "unece:AccountingEntryLineCategoryCodeList#7",
+			"description": "Closing Balance: 7."
+		}
+	]
+}

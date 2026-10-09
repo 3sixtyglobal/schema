@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlementTypeCodeList",
+	"title": "UnecePaymentTradeSettlementTypeCodeList",
+	"description": "Values for UnecePaymentTradeSettlement typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:specifiedPaymentTradeSettlement",
+			"description": "A payment trade settlement specified for this trade price.\nA trade settlement payment specified for this trade settlement payment.\nThe payment trade settlement for this specified requirement."
+		}
+	]
+}

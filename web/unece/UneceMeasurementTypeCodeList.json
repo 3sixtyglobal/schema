@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMeasurementTypeCodeList",
+	"title": "UneceMeasurementTypeCodeList",
+	"description": "Values for UneceMeasurement typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:associatedMeasurement",
+			"description": "A measurement associated with this document clause."
+		},
+		{
+			"const": "unece:controlTemperatureMeasurement",
+			"description": "The measurement of the control temperature of these transported dangerous goods."
+		},
+		{
+			"const": "unece:emergencyTemperatureMeasurement",
+			"description": "The measurement of the emergency temperature of these transported dangerous goods."
+		},
+		{
+			"const": "unece:flashpointTemperatureMeasurement",
+			"description": "A measurement of the flashpoint temperature of these transported dangerous goods."
+		}
+	]
+}

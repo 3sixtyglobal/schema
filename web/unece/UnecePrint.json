@@ -1,0 +1,125 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePrint",
+	"title": "UnecePrint",
+	"description": "Any text or pattern put on the surface of a product using a specific material such as dye.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Print",
+			"description": "JSON-LD Type."
+		},
+		"applicableMaterial": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
+			},
+			"description": "Material applicable to this product print."
+		},
+		"applicableMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A specified method applicable to this product print."
+		},
+		"applicableProductionDevice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
+			},
+			"description": "A production device applicable to this product print."
+		},
+		"applicableTechnicalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+			},
+			"description": "A technical characteristic applicable to this product print."
+		},
+		"backgroundColourCode": {
+			"type": "string",
+			"description": "The code specifying the background colour for this product print."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product print."
+		},
+		"design": {
+			"type": "string",
+			"description": "A textual description of a design for this product print."
+		},
+		"designCode": {
+			"type": "string",
+			"description": "The code specifying the design for this product print."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this product print."
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this product print."
+		},
+		"relatedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A trade party related to this product print."
+		},
+		"section": {
+			"type": "string",
+			"description": "A section, expressed as text, of this product print."
+		},
+		"sectionCode": {
+			"type": "string",
+			"description": "The code specifying the section for this product print."
+		},
+		"specifiedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document specified for this product print."
+		},
+		"specifiedMachine": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
+			},
+			"description": "A production machine specified for this product print."
+		},
+		"testIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this product print is a test."
+		},
+		"textContent": {
+			"type": "string",
+			"description": "A textual description of the content for this product print."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UnecePrintTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of product print."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,14 +1,112 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidTypes",
+	"$id": "https://schema.3sixty.global/w3c-did/DidTypes",
+	"title": "DidTypes",
 	"description": "The types for DIDs.",
-	"type": "string",
-	"enum": [
-		"VerifiableCredential",
-		"VerifiablePresentation",
-		"Ed25519VerificationKey2020",
-		"JsonWebKey2020",
-		"LinkedDomains",
-		"Multikey"
+	"anyOf": [
+		{
+			"const": "Document",
+			"description": "The type for Document."
+		},
+		{
+			"const": "VerifiableCredential",
+			"description": "The type for Verifiable Credential."
+		},
+		{
+			"const": "VerifiablePresentation",
+			"description": "The type for Verifiable Presentation."
+		},
+		{
+			"const": "Ed25519VerificationKey2020",
+			"description": "The type for Ed25519VerificationKey2020."
+		},
+		{
+			"const": "JsonWebKey2020",
+			"description": "The type for JsonWebKey2020."
+		},
+		{
+			"const": "LinkedDomains",
+			"description": "The type for LinkedDomains."
+		},
+		{
+			"const": "Multikey",
+			"description": "The type for Multikey."
+		},
+		{
+			"const": "CredentialSchema",
+			"description": "The type for CredentialSchema."
+		},
+		{
+			"const": "CredentialStatus",
+			"description": "The type for CredentialStatus."
+		},
+		{
+			"const": "CryptoSuites",
+			"description": "The type for CryptoSuites."
+		},
+		{
+			"const": "DataIntegrityProof",
+			"description": "The type for DataIntegrityProof."
+		},
+		{
+			"const": "DocumentVerificationMethod",
+			"description": "The type for DocumentVerificationMethod."
+		},
+		{
+			"const": "JsonWebSignature2020Proof",
+			"description": "The type for JsonWebSignature2020Proof."
+		},
+		{
+			"const": "Label",
+			"description": "The type for Label."
+		},
+		{
+			"const": "PresentationVerification",
+			"description": "The type for PresentationVerification."
+		},
+		{
+			"const": "Proof",
+			"description": "The type for Proof."
+		},
+		{
+			"const": "ProofTypes",
+			"description": "The type for ProofTypes."
+		},
+		{
+			"const": "Service",
+			"description": "The type for Service."
+		},
+		{
+			"const": "Types",
+			"description": "The type for Types."
+		},
+		{
+			"const": "VerifiableCredentialCommon",
+			"description": "The type for VerifiableCredentialCommon."
+		},
+		{
+			"const": "VerifiableCredentialV1",
+			"description": "The type for VerifiableCredentialV1."
+		},
+		{
+			"const": "VerifiableCredentialV2",
+			"description": "The type for VerifiableCredentialV2."
+		},
+		{
+			"const": "VerifiablePresentationCommon",
+			"description": "The type for VerifiablePresentationCommon."
+		},
+		{
+			"const": "VerifiablePresentationV1",
+			"description": "The type for VerifiablePresentationV1."
+		},
+		{
+			"const": "VerifiablePresentationV2",
+			"description": "The type for VerifiablePresentationV2."
+		},
+		{
+			"const": "VerificationMethodType",
+			"description": "The type for VerificationMethodType."
+		}
 	]
 }

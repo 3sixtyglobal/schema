@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportServicePaymentArrangementCodeList",
+	"title": "UneceTransportServicePaymentArrangementCodeList",
+	"description": "A character string used to represent a transport service payment arrangement.",
+	"anyOf": [
+		{
+			"const": "unece:TransportServicePaymentArrangementCodeList#A",
+			"description": "Payable elsewhere: A."
+		},
+		{
+			"const": "unece:TransportServicePaymentArrangementCodeList#B",
+			"description": "Third party to pay: B."
+		},
+		{
+			"const": "unece:TransportServicePaymentArrangementCodeList#C",
+			"description": "Collect: C."
+		},
+		{
+			"const": "unece:TransportServicePaymentArrangementCodeList#P",
+			"description": "Prepaid: P."
+		}
+	]
+}

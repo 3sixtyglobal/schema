@@ -1,0 +1,401 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLineTradeAgreement",
+	"title": "UneceLineTradeAgreement",
+	"description": "The contractual terms of a line trade agreement.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LineTradeAgreement",
+			"description": "JSON-LD Type."
+		},
+		"additionalDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An additional document referenced in this line trade agreement."
+		},
+		"agreedPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "An agreed product price for this line trade agreement."
+		},
+		"applicableDeliveryTerms": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDeliveryTerms",
+			"description": "The terms of delivery applicable to this line trade agreement."
+		},
+		"applicableForecastTerms": {
+			"$ref": "https://schema.3sixty.global/unece/UneceForecastTerms",
+			"description": "The supply chain forecast terms applicable to this line trade agreement."
+		},
+		"blanketOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The blanket order document referenced in this line trade agreement."
+		},
+		"buyerApprovedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement.",
+			"format": "date-time"
+		},
+		"buyerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A buyer generated order document referenced in this line trade agreement."
+		},
+		"buyerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The buyer party for this line trade agreement."
+		},
+		"buyerReference": {
+			"type": "string",
+			"description": "A buyer reference, expressed as text, for this line trade agreement."
+		},
+		"buyerRequisitionerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party who is a buyer requisitioner in this line trade agreement."
+		},
+		"carrierParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A carrier party for this line trade agreement."
+		},
+		"catalogueDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A catalogue document referenced by this line trade agreement."
+		},
+		"catalogueInformationProviderParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party that provides catalogue information for this line trade agreement."
+		},
+		"contractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A contract document referenced in this line trade agreement."
+		},
+		"deliveryOrderFulfilmentLeadTimeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"description": "The measure of the expected time interval between the receipt of an order and its delivery fulfilment according to this\nline trade agreement."
+		},
+		"demandForecastDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A demand forecast document referenced in this line trade agreement."
+		},
+		"economicOrderQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The economic order quantity for this line trade agreement."
+		},
+		"engineeringChangeDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The engineering change document referenced in this line trade agreement."
+		},
+		"exclusivityPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The exclusivity period specified in this line trade agreement."
+		},
+		"exportLicenceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The export licence document referenced in this line trade agreement."
+		},
+		"grossPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "A gross product price in this line trade agreement."
+		},
+		"guaranteedProductLifeSpanPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The guaranteed product life span specified in this line trade agreement."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for this line trade agreement."
+		},
+		"immediatePreviousPriceListDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The immediate previous price list document referenced in this line trade agreement."
+		},
+		"impactCode": {
+			"type": "string",
+			"description": "The code specifying the impact for this line trade agreement."
+		},
+		"importLicenceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The import licence document referenced in this line trade agreement."
+		},
+		"includedMarketplace": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMarketplace"
+			},
+			"description": "A marketplace included in this line trade agreement."
+		},
+		"incrementalProductOrderableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The incremental product orderable quantity for this line trade agreement."
+		},
+		"informationUseRestrictionIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the use of the information provided in this line trade agreement is restricted."
+		},
+		"itemBuyerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The item buyer party for this line trade agreement."
+		},
+		"itemSellerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The item seller party for this line trade agreement."
+		},
+		"letterOfCreditDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The letter of credit document referenced in this line trade agreement."
+		},
+		"manufacturerParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A manufacturer party, at line level, for this trade agreement."
+		},
+		"marketplaceOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The marketplace generated order document referenced in this line trade agreement."
+		},
+		"maximumOrderQuantityOrderingPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The maximum order quantity ordering period specified in this line trade agreement."
+		},
+		"maximumProductOrderableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The maximum product orderable quantity for this line trade agreement."
+		},
+		"minimumOrderQuantityOrderingPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The minimum order quantity ordering period specified in this line trade agreement."
+		},
+		"minimumProductOrderableQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The minimum product orderable quantity for this line trade agreement."
+		},
+		"netPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "A net product price in this line trade agreement."
+		},
+		"orderPriceProductPrice": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradePrice"
+			},
+			"description": "An order price for a product in this line trade agreement."
+		},
+		"orderProductUnitMeasureCode": {
+			"type": "string",
+			"description": "The code specifying the order product unit of measure, such as kilogram or litre, for this line trade agreement."
+		},
+		"orderingSpecifiedPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The ordering period specified in this line trade agreement."
+		},
+		"originalOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The original order document referenced in this line trade agreement."
+		},
+		"pickUpOrderFulfilmentLeadTimeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
+			"description": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this\nline trade agreement."
+		},
+		"previousOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The previous order document referenced in this line trade agreement."
+		},
+		"priceListDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The price list document referenced in this line trade agreement."
+		},
+		"primeContractSellerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The seller party acting as the prime contractor for this line trade agreement."
+		},
+		"priorityCode": {
+			"type": "string",
+			"description": "The code specifying the priority for this line trade agreement."
+		},
+		"priorityDescriptionCode": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePriorityDescriptionCodeList",
+			"description": "The code specifying the delivery priority for this line trade agreement."
+		},
+		"procurementParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The procurement party for this line trade agreement."
+		},
+		"productAvailabilityCode": {
+			"type": "string",
+			"description": "The code specifying the product availability according to this line trade agreement."
+		},
+		"productEndUserParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party acting as the end user for the products in this line trade agreement."
+		},
+		"productMadeToOrderIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or\ncustomized only after receipt of order."
+		},
+		"productOrderableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the product can be ordered according to this line trade agreement."
+		},
+		"productReorderableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not the product can be reordered according to this line trade agreement."
+		},
+		"promotionalDealDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The promotional deal document referenced in this line trade agreement."
+		},
+		"quotationDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation document referenced in this line trade agreement."
+		},
+		"quotationProposalDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation proposal document referenced in this line trade agreement."
+		},
+		"quotationProposalResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation proposal response document referenced in this line trade agreement."
+		},
+		"quotationRequestDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation request document referenced in this line trade agreement."
+		},
+		"quotationRequestResponseDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The quotation request response document referenced in this line trade agreement."
+		},
+		"reference": {
+			"type": "string",
+			"description": "A reference, expressed as text, for this line trade agreement."
+		},
+		"relevantParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party relevant for this line trade agreement."
+		},
+		"requisitionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A requisition document referenced in this line trade agreement."
+		},
+		"requisitionerDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A requisitioner document referenced in this line trade agreement."
+		},
+		"resalePeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
+			"description": "The resale period specified in this line trade agreement."
+		},
+		"resaleProductUnitMeasureCode": {
+			"type": "string",
+			"description": "The code specifying the resale product unit of measure, such as kilogram or litre, for this trade line agreement."
+		},
+		"revisionId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier for the revision of this line trade agreement."
+		},
+		"salesConditionsDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A sales conditions document referenced by this line trade agreement."
+		},
+		"salesReportDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The sales report document referenced in this line trade agreement."
+		},
+		"sellerOrderDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The seller generated order document referenced in this line trade agreement."
+		},
+		"sellerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The seller party for this line trade agreement."
+		},
+		"sellerReference": {
+			"type": "string",
+			"description": "A seller reference, expressed as text, for this line trade agreement."
+		},
+		"supplyInstructionDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A supply instruction document referenced in this line trade agreement."
+		},
+		"supportCentreParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The support centre party for this line trade agreement."
+		},
+		"targetMarketCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A target market country for this line trade agreement."
+		},
+		"ultimateCustomerOrderDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "An ultimate customer order document referenced for this line trade agreement."
+		}
+	},
+	"required": ["type"]
+}

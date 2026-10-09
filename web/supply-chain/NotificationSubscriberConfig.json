@@ -1,0 +1,122 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
+	"title": "NotificationSubscriberConfig",
+	"description": "Configuration for a notification subscriber.",
+	"type": "object",
+	"properties": {
+		"baseEndpoint": {
+			"type": "string",
+			"description": "Base endpoint for sending notifications."
+		},
+		"auth": {
+			"type": "object",
+			"properties": {
+				"method": {
+					"$ref": "https://schema.3sixty.global/supply-chain/SubscriberHttpMethod",
+					"description": "The type of authentication to use."
+				},
+				"security": {
+					"type": "object",
+					"properties": {
+						"in": {
+							"type": "string",
+							"description": "The location of the authentication information."
+						},
+						"type": {
+							"type": "string",
+							"description": "The type of security scheme."
+						},
+						"name": {
+							"type": "string",
+							"description": "The name of the header, query parameter, or cookie to be used."
+						},
+						"scheme": {
+							"type": "string",
+							"description": "The HTTP authentication scheme to be used."
+						}
+					},
+					"description": "Security scheme details."
+				},
+				"credentials": {
+					"type": "object",
+					"properties": {
+						"algorithm": {
+							"anyOf": [
+								{
+									"const": "RS256"
+								},
+								{
+									"const": "HS256"
+								}
+							],
+							"description": "JWT token configuration."
+						},
+						"privateKey": {
+							"type": "string",
+							"description": "Private key for signing JWT tokens."
+						},
+						"accessToken": {
+							"type": "string",
+							"description": "Access token for authentication."
+						},
+						"username": {
+							"type": "string",
+							"description": "Username for HTTP Basic authentication."
+						},
+						"password": {
+							"type": "string",
+							"description": "Password for HTTP Basic authentication."
+						}
+					},
+					"description": "Credentials and token information."
+				},
+				"subjectPayload": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "JWT token claims."
+				},
+				"bodyPayload": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "Optional body payload for the authentication request."
+				},
+				"path": {
+					"type": "string",
+					"description": "Optional path to append to the base endpoint."
+				},
+				"responseTokenPath": {
+					"type": "string",
+					"description": "Optional path to extract the token from the authentication response."
+				}
+			},
+			"description": "Authentication and request details for sending notifications."
+		},
+		"request": {
+			"type": "object",
+			"properties": {
+				"method": {
+					"$ref": "https://schema.3sixty.global/supply-chain/SubscriberHttpMethod",
+					"description": "The type of authentication to use."
+				},
+				"path": {
+					"type": "string",
+					"description": "Optional path to append to the base endpoint."
+				},
+				"headers": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "Additional headers to include in the request."
+				}
+			},
+			"description": "Optional request configuration overrides."
+		}
+	},
+	"required": ["baseEndpoint", "auth"]
+}

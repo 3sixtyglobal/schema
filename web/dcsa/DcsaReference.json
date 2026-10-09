@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaReference",
+	"title": "DcsaReference",
+	"description": "A generic reference (shipper/forwarder references).\n\nThe OpenAPI references a shared `referenceType` enum from DCSA_DOMAIN; this\npackage does not model it yet, so `type` is left as a string.",
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string",
+			"description": "Reference type."
+		},
+		"value": {
+			"type": "string",
+			"description": "Reference value."
+		}
+	},
+	"required": ["type", "value"]
+}

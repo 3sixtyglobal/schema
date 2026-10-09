@@ -1,0 +1,414 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceConsignmentItem",
+	"title": "UneceConsignmentItem",
+	"description": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs\npurposes.\nAn item within a supply chain consignment of goods separately identified for transport and customs purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ConsignmentItem",
+			"description": "JSON-LD Type."
+		},
+		"applicableCustomsValuation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCustomsValuation"
+			},
+			"description": "A customs valuation applicable to this supply chain consignment item."
+		},
+		"applicableDangerousGoods": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDangerousGoods"
+			},
+			"description": "Dangerous goods transport details applicable to this supply chain consignment item."
+		},
+		"applicableNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
+			},
+			"description": "A note providing information applicable to this supply chain consignment item."
+		},
+		"applicableRegulatoryProcedure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRegulatoryProcedure"
+			},
+			"description": "A cross-border regulatory procedure applicable to this supply chain consignment item."
+		},
+		"applicableServiceCharge": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceServiceCharge"
+			},
+			"description": "A logistics service charge applicable to this supply chain consignment item."
+		},
+		"applicableTransportMeans": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportMeans",
+			"description": "The means of transport applicable to this supply chain consignment item."
+		},
+		"associatedDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A referenced document associated with this referenced supply chain consignment item."
+		},
+		"associatedTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
+			},
+			"description": "A referenced piece of transport equipment associated with this supply chain consignment item."
+		},
+		"borderClearanceInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
+			},
+			"description": "Border clearance instructions for this supply chain consignment item."
+		},
+		"cargoToleranceInformation": {
+			"type": "string",
+			"description": "Cargo tolerance information, expressed as text, for this supply chain consignment item."
+		},
+		"classificationDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The referenced classification document for this supply chain consignment item."
+		},
+		"damageRemarks": {
+			"type": "string",
+			"description": "Damage remarks, expressed as text, for this supply chain consignment item."
+		},
+		"declaredForCustomsLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
+			"description": "The location of this supply chain consignment item as declared for customs."
+		},
+		"declaredValueForCarriageAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of\nvarying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to\ngoods or delayed delivery."
+		},
+		"declaredValueForCustomsAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of this supply chain consignment item as declared for customs purposes."
+		},
+		"declaredValueForStatisticsAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of this supply chain consignment item as declared for statistical purposes."
+		},
+		"deliveryInstructionsText": {
+			"type": "string",
+			"description": "Delivery instructions, expressed as text, for this supply chain consignment item."
+		},
+		"deliveryParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party to whom this supply chain consignment item will be or has been delivered."
+		},
+		"deliveryTransportEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
+			"description": "The delivery event for this supply chain consignment item."
+		},
+		"despatchParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party from whom this supply chain consignment item will be or has been despatched."
+		},
+		"destinationCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The destination country for this supply chain consignment item."
+		},
+		"examinationEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "An examination event for this supply chain consignment item."
+		},
+		"exportCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The export country for this supply chain consignment item."
+		},
+		"exportGeopoliticalRegion": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeopoliticalRegion",
+			"description": "The geopolitical region of export for this supply chain consignment item."
+		},
+		"exportTypeCode": {
+			"type": "string",
+			"description": "The code specifying the export type of supply chain consignment item."
+		},
+		"fOBAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value for this supply chain consignment item as calculated under FOB (Free On Board) delivery terms."
+		},
+		"firstTypeExtensionCode": {
+			"type": "string",
+			"description": "The code used as a first extension to the type code for further specifying the type of supply chain consignment item."
+		},
+		"globalId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A global identifier for this supply chain consignment item."
+		},
+		"goodsTypeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of referenced supply chain consignment item."
+		},
+		"goodsTypeExtensionTypeExtensionCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeExtensionCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code used as an extension to the type code for further specifying the type of referenced supply chain consignment\nitem."
+		},
+		"goodsUnitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A quantity of goods, such as gaseous fuel systems or automotive parts, in this supply chain consignment item."
+		},
+		"handlingInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceHandlingInstructions"
+			},
+			"description": "Handling instructions for this supply chain consignment item."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this supply chain consignment item."
+		},
+		"importTypeCode": {
+			"type": "string",
+			"description": "The code specifying the import type of supply chain consignment item."
+		},
+		"importationCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The importation country for this supply chain consignment item."
+		},
+		"includedSupplyChainTradeLineItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeLineItem"
+			},
+			"description": "A trade line item included in this supply chain consignment item."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this supply chain consignment item."
+		},
+		"insuranceValueAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of this supply chain consignment item as covered by an insurance policy."
+		},
+		"invoiceAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value for an invoice for this supply chain consignment item."
+		},
+		"linearDimension": {
+			"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension",
+			"description": "The linear spatial dimensions of this supply chain consignment item."
+		},
+		"linearUnitLoadingLengthMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
+			"description": "The measure of the loading length of this supply chain consignment item."
+		},
+		"manufacturerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party which manufactured this supply chain consignment item."
+		},
+		"nationalTypeExtensionCode": {
+			"type": "string",
+			"description": "The code used as a national extension to the type code for further specifying the type of supply chain consignment item."
+		},
+		"natureIdentificationCargo": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCargo"
+			},
+			"description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical\nor transport purposes."
+		},
+		"originCountry": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
+			"description": "The country of origin where this supply chain consignment item has been produced."
+		},
+		"originGeopoliticalRegion": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGeopoliticalRegion",
+			"description": "The geopolitical region of origin for this supply chain consignment item."
+		},
+		"packageQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The package quantity for this supply chain consignment item."
+		},
+		"packageType": {
+			"type": "string",
+			"description": "A package type, expressed as text, for this supply chain consignment item."
+		},
+		"physicalShippingMarks": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceShippingMarks"
+			},
+			"description": "Physical logistics shipping marks and barcode information for this supply chain consignment item."
+		},
+		"pickUpEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A pick-up transport event for this supply chain consignment item."
+		},
+		"previousAdministrativeDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A previous administrative referenced document for this supply chain consignment item."
+		},
+		"quarantineInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuarantineInstructions"
+			},
+			"description": "Quarantine instructions for this supply chain consignment item."
+		},
+		"reportedLogisticsStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatus"
+			},
+			"description": "A logistics status reported for this supply chain consignment item."
+		},
+		"secondTypeExtensionCode": {
+			"type": "string",
+			"description": "The code used as a second extension to the type code for further specifying the type of supply chain consignment item."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number for this referenced supply chain consignment item."
+		},
+		"specialInstructions": {
+			"type": "string",
+			"description": "Special instructions, expressed as text, for this supply chain consignment item."
+		},
+		"specifiedInspectionEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
+			},
+			"description": "An inspection event specified for this supply chain consignment item."
+		},
+		"specifiedRiskAnalysisResult": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceRiskAnalysisResult"
+			},
+			"description": "Results of a logistics risk analysis specified for this supply chain consignment item."
+		},
+		"tariffQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The tariff quantity in this supply chain consignment item."
+		},
+		"totalChargeAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of all freight and other service charges for this supply chain consignment item."
+		},
+		"totalExportExitToImportEntryChargeAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain\nconsignment item calculated from the export exit location to the import entry location."
+		},
+		"tradeLineItemQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of trade line items in this referenced supply chain consignment item."
+		},
+		"transitCountry": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
+			},
+			"description": "A transit country for this supply chain consignment item."
+		},
+		"transportContractDocument": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
+			},
+			"description": "A transport contract document for this supply chain consignment item."
+		},
+		"transportPackage": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
+			},
+			"description": "A transport package for this supply chain consignment item."
+		},
+		"transportTemperature": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportSettingTemperature",
+			"description": "The transport temperature setting for this supply chain consignment item."
+		},
+		"vanningEvent": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
+			"description": "The vanning event for this supply chain consignment item, i.e. the loading of this consignment item at the place of\noriginal despatch."
+		},
+		"volumeUnitGrossVolumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType"
+			},
+			"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply\nchain consignment item."
+		},
+		"weightUnitChargeableWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "A measure of the supply chain consignment item weight on which charges are to be based."
+		},
+		"weightUnitGrossWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any\ntransport equipment."
+		},
+		"weightUnitNetWeightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
+			},
+			"description": "A measure of the net weight (mass) of this supply chain consignment item which excludes all packaging."
+		}
+	},
+	"required": ["type"]
+}

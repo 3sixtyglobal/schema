@@ -1,0 +1,1036 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBinaryObjectCharacterSetCodeList",
+	"title": "UneceBinaryObjectCharacterSetCodeList",
+	"description": "A code specifying the character set of the binary object if the mime type is text.",
+	"anyOf": [
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#10",
+			"description": "ISO_8859-7:1987: 10."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#100",
+			"description": "us-dk: 100."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1000",
+			"description": "ISO-10646-UCS-2: 1000."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1001",
+			"description": "ISO-10646-UCS-4: 1001."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1002",
+			"description": "ISO-10646-UCS-Basic: 1002."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1003",
+			"description": "ISO-10646-Unicode-Latin1: 1003."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1004",
+			"description": "ISO-10646-J-1: 1004."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1005",
+			"description": "ISO-Unicode-IBM-1261: 1005."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1006",
+			"description": "ISO-Unicode-IBM-1268: 1006."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1007",
+			"description": "ISO-Unicode-IBM-1276: 1007."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1008",
+			"description": "ISO-Unicode-IBM-1264: 1008."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1009",
+			"description": "ISO-Unicode-IBM-1265: 1009."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#101",
+			"description": "dk-us: 101."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1010",
+			"description": "UNICODE-1-1: 1010."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1011",
+			"description": "SCSU: 1011."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1012",
+			"description": "UTF-7: 1012."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1013",
+			"description": "UTF-16BE: 1013."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1014",
+			"description": "UTF-16LE: 1014."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1015",
+			"description": "UTF-16: 1015."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1016",
+			"description": "CESU-8: 1016."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1017",
+			"description": "UTF-32: 1017."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1018",
+			"description": "UTF-32BE: 1018."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1019",
+			"description": "UTF-32LE: 1019."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#102",
+			"description": "KSC5636: 102."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#1020",
+			"description": "BOCU-1: 1020."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#103",
+			"description": "UNICODE-1-1-UTF-7: 103."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#104",
+			"description": "ISO-2022-CN: 104."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#105",
+			"description": "ISO-2022-CN-EXT: 105."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#106",
+			"description": "UTF-8: 106."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#109",
+			"description": "ISO-8859-13: 109."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#11",
+			"description": "ISO_8859-8:1988: 11."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#110",
+			"description": "ISO-8859-14: 110."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#111",
+			"description": "ISO-8859-15: 111."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#112",
+			"description": "ISO-8859-16: 112."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#113",
+			"description": "GBK: 113."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#114",
+			"description": "GB18030: 114."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#115",
+			"description": "OSD_EBCDIC_DF04_15: 115."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#116",
+			"description": "OSD_EBCDIC_DF03_IRV: 116."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#117",
+			"description": "OSD_EBCDIC_DF04_1: 117."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#118",
+			"description": "ISO-11548-1: 118."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#119",
+			"description": "KZ-1048: 119."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#12",
+			"description": "ISO_8859-9:1989: 12."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#13",
+			"description": "ISO-8859-10: 13."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#14",
+			"description": "ISO_6937-2-add: 14."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#15",
+			"description": "JIS_X0201: 15."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#16",
+			"description": "JIS_Encoding: 16."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#17",
+			"description": "Shift_JIS: 17."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#18",
+			"description": "Extended_UNIX_Code_Packed_Format_for_Japanese: 18."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#19",
+			"description": "Extended_UNIX_Code_Fixed_Width_for_Japanese: 19."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#20",
+			"description": "BS_4730: 20."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2000",
+			"description": "ISO-8859-1-Windows-3.0-Latin-1: 2000."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2001",
+			"description": "ISO-8859-1-Windows-3.1-Latin-1: 2001."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2002",
+			"description": "ISO-8859-2-Windows-Latin-2: 2002."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2003",
+			"description": "ISO-8859-9-Windows-Latin-5: 2003."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2004",
+			"description": "hp-roman8: 2004."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2005",
+			"description": "Adobe-Standard-Encoding: 2005."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2006",
+			"description": "Ventura-US: 2006."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2007",
+			"description": "Ventura-International: 2007."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2008",
+			"description": "DEC-MCS: 2008."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2009",
+			"description": "IBM850: 2009."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2010",
+			"description": "IBM852: 2010."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2011",
+			"description": "IBM437: 2011."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2012",
+			"description": "PC8-Danish-Norwegian: 2012."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2013",
+			"description": "IBM862: 2013."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2014",
+			"description": "PC8-Turkish: 2014."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2015",
+			"description": "IBM-Symbols: 2015."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2016",
+			"description": "IBM-Thai: 2016."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2017",
+			"description": "HP-Legal: 2017."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2018",
+			"description": "HP-Pi-font: 2018."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2019",
+			"description": "HP-Math8: 2019."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2020",
+			"description": "Adobe-Symbol-Encoding: 2020."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2021",
+			"description": "HP-DeskTop: 2021."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2022",
+			"description": "Ventura-Math: 2022."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2023",
+			"description": "Microsoft-Publishing: 2023."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2024",
+			"description": "Windows-31J: 2024."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2025",
+			"description": "GB2312: 2025."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2026",
+			"description": "Big5: 2026."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2027",
+			"description": "macintosh: 2027."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2028",
+			"description": "IBM037: 2028."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2029",
+			"description": "IBM038: 2029."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2030",
+			"description": "IBM273: 2030."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2031",
+			"description": "IBM274: 2031."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2032",
+			"description": "IBM275: 2032."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2033",
+			"description": "IBM277: 2033."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2034",
+			"description": "IBM278: 2034."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2035",
+			"description": "IBM280: 2035."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2036",
+			"description": "IBM281: 2036."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2037",
+			"description": "IBM284: 2037."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2038",
+			"description": "IBM285: 2038."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2039",
+			"description": "IBM290: 2039."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2040",
+			"description": "IBM297: 2040."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2041",
+			"description": "IBM420: 2041."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2042",
+			"description": "IBM423: 2042."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2043",
+			"description": "IBM424: 2043."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2044",
+			"description": "IBM500: 2044."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2045",
+			"description": "IBM851: 2045."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2046",
+			"description": "IBM855: 2046."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2047",
+			"description": "IBM857: 2047."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2048",
+			"description": "IBM860: 2048."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2049",
+			"description": "IBM861: 2049."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2050",
+			"description": "IBM863: 2050."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2051",
+			"description": "IBM864: 2051."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2052",
+			"description": "IBM865: 2052."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2053",
+			"description": "IBM868: 2053."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2054",
+			"description": "IBM869: 2054."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2055",
+			"description": "IBM870: 2055."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2056",
+			"description": "IBM871: 2056."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2057",
+			"description": "IBM880: 2057."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2058",
+			"description": "IBM891: 2058."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2059",
+			"description": "IBM903: 2059."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2060",
+			"description": "IBM904: 2060."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2061",
+			"description": "IBM905: 2061."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2062",
+			"description": "IBM918: 2062."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2063",
+			"description": "IBM1026: 2063."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2064",
+			"description": "EBCDIC-AT-DE: 2064."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2065",
+			"description": "EBCDIC-AT-DE-A: 2065."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2066",
+			"description": "EBCDIC-CA-FR: 2066."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2067",
+			"description": "EBCDIC-DK-NO: 2067."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2068",
+			"description": "EBCDIC-DK-NO-A: 2068."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2069",
+			"description": "EBCDIC-FI-SE: 2069."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2070",
+			"description": "EBCDIC-FI-SE-A: 2070."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2071",
+			"description": "EBCDIC-FR: 2071."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2072",
+			"description": "EBCDIC-IT: 2072."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2073",
+			"description": "EBCDIC-PT: 2073."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2074",
+			"description": "EBCDIC-ES: 2074."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2075",
+			"description": "EBCDIC-ES-A: 2075."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2076",
+			"description": "EBCDIC-ES-S: 2076."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2077",
+			"description": "EBCDIC-UK: 2077."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2078",
+			"description": "EBCDIC-US: 2078."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2079",
+			"description": "UNKNOWN-8BIT: 2079."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2080",
+			"description": "MNEMONIC: 2080."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2081",
+			"description": "MNEM: 2081."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2082",
+			"description": "VISCII: 2082."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2083",
+			"description": "VIQR: 2083."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2084",
+			"description": "KOI8-R: 2084."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2085",
+			"description": "HZ-GB-2312: 2085."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2086",
+			"description": "IBM866: 2086."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2087",
+			"description": "IBM775: 2087."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2088",
+			"description": "KOI8-U: 2088."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2089",
+			"description": "IBM00858: 2089."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2090",
+			"description": "IBM00924: 2090."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2091",
+			"description": "IBM01140: 2091."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2092",
+			"description": "IBM01141: 2092."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2093",
+			"description": "IBM01142: 2093."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2094",
+			"description": "IBM01143: 2094."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2095",
+			"description": "IBM01144: 2095."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2096",
+			"description": "IBM01145: 2096."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2097",
+			"description": "IBM01146: 2097."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2098",
+			"description": "IBM01147: 2098."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2099",
+			"description": "IBM01148: 2099."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#21",
+			"description": "SEN_850200_C: 21."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2100",
+			"description": "IBM01149: 2100."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2101",
+			"description": "Big5-HKSCS: 2101."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2102",
+			"description": "IBM1047: 2102."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2103",
+			"description": "PTCP154: 2103."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2104",
+			"description": "Amiga-1251: 2104."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2105",
+			"description": "KOI7-switched: 2105."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2106",
+			"description": "BRF: 2106."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2107",
+			"description": "TSCII: 2107."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2108",
+			"description": "CP51932: 2108."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2109",
+			"description": "windows-874: 2109."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#22",
+			"description": "IT: 22."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2250",
+			"description": "windows-1250: 2250."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2251",
+			"description": "windows-1251: 2251."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2252",
+			"description": "windows-1252: 2252."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2253",
+			"description": "windows-1253: 2253."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2254",
+			"description": "windows-1254: 2254."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2255",
+			"description": "windows-1255: 2255."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2256",
+			"description": "windows-1256: 2256."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2257",
+			"description": "windows-1257: 2257."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2258",
+			"description": "windows-1258: 2258."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2259",
+			"description": "TIS-620: 2259."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#2260",
+			"description": "CP50220: 2260."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#23",
+			"description": "ES: 23."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#24",
+			"description": "DIN_66003: 24."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#25",
+			"description": "NS_4551-1: 25."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#26",
+			"description": "NF_Z_62-010: 26."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#27",
+			"description": "ISO-10646-UTF-1: 27."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#28",
+			"description": "ISO_646.basic:1983: 28."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#29",
+			"description": "INVARIANT: 29."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#3",
+			"description": "US-ASCII: 3."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#30",
+			"description": "ISO_646.irv:1983: 30."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#31",
+			"description": "NATS-SEFI: 31."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#32",
+			"description": "NATS-SEFI-ADD: 32."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#33",
+			"description": "NATS-DANO: 33."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#34",
+			"description": "NATS-DANO-ADD: 34."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#35",
+			"description": "SEN_850200_B: 35."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#36",
+			"description": "KS_C_5601-1987: 36."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#37",
+			"description": "ISO-2022-KR: 37."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#38",
+			"description": "EUC-KR: 38."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#39",
+			"description": "ISO-2022-JP: 39."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#4",
+			"description": "ISO_8859-1:1987: 4."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#40",
+			"description": "ISO-2022-JP-2: 40."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#41",
+			"description": "JIS_C6220-1969-jp: 41."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#42",
+			"description": "JIS_C6220-1969-ro: 42."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#43",
+			"description": "PT: 43."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#44",
+			"description": "greek7-old: 44."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#45",
+			"description": "latin-greek: 45."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#46",
+			"description": "NF_Z_62-010_(1973): 46."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#47",
+			"description": "Latin-greek-1: 47."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#48",
+			"description": "ISO_5427: 48."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#49",
+			"description": "JIS_C6226-1978: 49."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#5",
+			"description": "ISO_8859-2:1987: 5."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#50",
+			"description": "BS_viewdata: 50."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#51",
+			"description": "INIS: 51."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#52",
+			"description": "INIS-8: 52."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#53",
+			"description": "INIS-cyrillic: 53."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#54",
+			"description": "ISO_5427:1981: 54."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#55",
+			"description": "ISO_5428:1980: 55."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#56",
+			"description": "GB_1988-80: 56."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#57",
+			"description": "GB_2312-80: 57."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#58",
+			"description": "NS_4551-2: 58."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#59",
+			"description": "videotex-suppl: 59."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#6",
+			"description": "ISO_8859-3:1988: 6."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#60",
+			"description": "PT2: 60."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#61",
+			"description": "ES2: 61."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#62",
+			"description": "MSZ_7795.3: 62."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#63",
+			"description": "JIS_C6226-1983: 63."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#64",
+			"description": "greek7: 64."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#65",
+			"description": "ASMO_449: 65."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#66",
+			"description": "iso-ir-90: 66."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#67",
+			"description": "JIS_C6229-1984-a: 67."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#68",
+			"description": "JIS_C6229-1984-b: 68."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#69",
+			"description": "JIS_C6229-1984-b-add: 69."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#7",
+			"description": "ISO_8859-4:1988: 7."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#70",
+			"description": "JIS_C6229-1984-hand: 70."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#71",
+			"description": "JIS_C6229-1984-hand-add: 71."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#72",
+			"description": "JIS_C6229-1984-kana: 72."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#73",
+			"description": "ISO_2033-1983: 73."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#74",
+			"description": "ANSI_X3.110-1983: 74."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#75",
+			"description": "T.61-7bit: 75."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#76",
+			"description": "T.61-8bit: 76."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#77",
+			"description": "ECMA-cyrillic: 77."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#78",
+			"description": "CSA_Z243.4-1985-1: 78."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#79",
+			"description": "CSA_Z243.4-1985-2: 79."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#8",
+			"description": "ISO_8859-5:1988: 8."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#80",
+			"description": "CSA_Z243.4-1985-gr: 80."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#81",
+			"description": "ISO_8859-6-E: 81."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#82",
+			"description": "ISO_8859-6-I: 82."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#83",
+			"description": "T.101-G2: 83."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#84",
+			"description": "ISO_8859-8-E: 84."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#85",
+			"description": "ISO_8859-8-I: 85."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#86",
+			"description": "CSN_369103: 86."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#87",
+			"description": "JUS_I.B1.002: 87."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#88",
+			"description": "IEC_P27-1: 88."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#89",
+			"description": "JUS_I.B1.003-serb: 89."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#9",
+			"description": "ISO_8859-6:1987: 9."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#90",
+			"description": "JUS_I.B1.003-mac: 90."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#91",
+			"description": "greek-ccitt: 91."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#92",
+			"description": "NC_NC00-10:81: 92."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#93",
+			"description": "ISO_6937-2-25: 93."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#94",
+			"description": "GOST_19768-74: 94."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#95",
+			"description": "ISO_8859-supp: 95."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#96",
+			"description": "ISO_10367-box: 96."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#97",
+			"description": "latin-lap: 97."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#98",
+			"description": "JIS_X0212-1990: 98."
+		},
+		{
+			"const": "unece:BinaryObjectCharacterSetCodeList#99",
+			"description": "DS_2089: 99."
+		}
+	]
+}

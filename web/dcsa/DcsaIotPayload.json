@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaIotPayload",
+	"title": "DcsaIotPayload",
+	"description": "IoT payload.\n\nSource: `iotPayload` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseEvent"
+		},
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseIoTEvent"
+		}
+	]
+}

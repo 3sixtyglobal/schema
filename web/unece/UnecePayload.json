@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePayload",
+	"title": "UnecePayload",
+	"description": "Transmitted data that is included in an XHE (Exchange Header Envelope).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Payload",
+			"description": "JSON-LD Type."
+		},
+		"includedPayloadInstance": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePayloadInstance"
+			},
+			"description": "A payload instance included in this XHE payload."
+		}
+	},
+	"required": ["type", "includedPayloadInstance"]
+}

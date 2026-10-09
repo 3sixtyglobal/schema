@@ -1,4 +1,4 @@
-# @twin.org/schema - Changelog
+# Changelog
 
 ## v0.0.1-next.6
 

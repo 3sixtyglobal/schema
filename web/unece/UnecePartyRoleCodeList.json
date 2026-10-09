@@ -1,0 +1,2508 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePartyRoleCodeList",
+	"title": "UnecePartyRoleCodeList",
+	"description": "A character string used to replace or represent a role of a party.",
+	"anyOf": [
+		{
+			"const": "unece:PartyRoleCodeList#AA",
+			"description": "Party to be billed (AAR Accounting rule 11): AA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AB",
+			"description": "Buyer's agent/representative: AB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AE",
+			"description": "Declarant's agent/representative: AE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AF",
+			"description": "Transit principal: AF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AG",
+			"description": "Agent: AG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AH",
+			"description": "Transit principal's agent/representative: AH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AI",
+			"description": "Successful job applicant: AI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AJ",
+			"description": "Party issuing mutually agreed codes: AJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AK",
+			"description": "Acknowledgement recipient: AK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AL",
+			"description": "Principal responsible party: AL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AM",
+			"description": "Authorized official: AM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AN",
+			"description": "Approved importer: AN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AO",
+			"description": "Account of: AO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AP",
+			"description": "Accepting party: AP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AQ",
+			"description": "Approved consignor: AQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AR",
+			"description": "Authorized exporter: AR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AS",
+			"description": "Account servicing financial institution: AS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AT",
+			"description": "Authorized importer: AT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AU",
+			"description": "Authorized trader (transit): AU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AV",
+			"description": "Authorizing official: AV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AW",
+			"description": "Applicant's bank: AW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AX",
+			"description": "Authenticating party: AX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AY",
+			"description": "Animal being investigated: AY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#AZ",
+			"description": "Issuing bank: AZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#B1",
+			"description": "Contact bank 1: B1."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#B2",
+			"description": "Contact bank 2: B2."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BA",
+			"description": "Booking agent: BA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BB",
+			"description": "Buyer bank identification: BB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BC",
+			"description": "Negotiating bank: BC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BD",
+			"description": "Documentary credit reimbursing bank: BD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BE",
+			"description": "Beneficiary: BE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BF",
+			"description": "Beneficiary's bank: BF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BG",
+			"description": "Employer: BG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BH",
+			"description": "Previous employer: BH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BI",
+			"description": "Buyer's financial institution: BI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BJ",
+			"description": "Release to party: BJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BK",
+			"description": "Financial institution: BK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BL",
+			"description": "Bill of lading recipient: BL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BM",
+			"description": "Insured: BM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BN",
+			"description": "Insurance beneficiary: BN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BO",
+			"description": "Broker or sales office: BO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BP",
+			"description": "Building site purchaser: BP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BQ",
+			"description": "Cheque drawn bank: BQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BS",
+			"description": "Bill and ship to: BS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BT",
+			"description": "Party to be billed for other than freight (bill to): BT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BU",
+			"description": "Service bureau: BU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BV",
+			"description": "Member: BV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BW",
+			"description": "Borrower: BW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BX",
+			"description": "Building site engineer: BX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BY",
+			"description": "Buyer: BY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#BZ",
+			"description": "Building site forwarder: BZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#C1",
+			"description": "In care of party no. 1: C1."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#C2",
+			"description": "In care of party no. 2: C2."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CA",
+			"description": "Carrier: CA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CB",
+			"description": "Customs broker: CB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CC",
+			"description": "Claimant: CC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CD",
+			"description": "Agent's bank: CD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CE",
+			"description": "Ceding company: CE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CF",
+			"description": "Container operator/lessee: CF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CG",
+			"description": "Carrier's agent: CG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CH",
+			"description": "Connecting carrier: CH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CI",
+			"description": "Commission processor: CI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CJ",
+			"description": "Previous member: CJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CK",
+			"description": "Empty equipment despatch party: CK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CL",
+			"description": "Container location party: CL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CM",
+			"description": "Customs: CM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CN",
+			"description": "Consignee: CN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CNX",
+			"description": "Cash pool top account servicing financial institution: CNX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CNY",
+			"description": "Cash pool level account servicing financial institution: CNY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CNZ",
+			"description": "Cash pool sub-account servicing financial institution: CNZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CO",
+			"description": "Corporate office: CO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COA",
+			"description": "Entity in which a financial interest is held: COA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COB",
+			"description": "Intermediate level parent company: COB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COC",
+			"description": "Transshipment party: COC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COD",
+			"description": "Quotation requesting party: COD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COE",
+			"description": "Party maintaining the codes used in the message: COE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COF",
+			"description": "Party maintaining the identifiers used in the message: COF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COG",
+			"description": "Dispatcher: COG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COH",
+			"description": "Submitter of sample: COH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COI",
+			"description": "Institutional provider: COI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COJ",
+			"description": "Primary health care provider: COJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COK",
+			"description": "Assistant surgeon: COK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COL",
+			"description": "Admitting health care provider: COL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COM",
+			"description": "Referring health care provider: COM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CON",
+			"description": "Supervising health care provider: CON."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COO",
+			"description": "Party providing financing: COO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COP",
+			"description": "Convoying party: COP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COQ",
+			"description": "Nominated bank: COQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COR",
+			"description": "Family member: COR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COS",
+			"description": "Co-participant: COS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COT",
+			"description": "Involved party: COT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COU",
+			"description": "Assigner: COU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COV",
+			"description": "Registered principal: COV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COW",
+			"description": "Freight payer on behalf of the consignor: COW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COX",
+			"description": "Freight payer on behalf of the consignee: COX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COY",
+			"description": "Party responsible for disinfection: COY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#COZ",
+			"description": "Party responsible for refueling: COZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CP",
+			"description": "Party to receive certificate of compliance: CP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPA",
+			"description": "Advising bank: CPA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPB",
+			"description": "Reimbursing bank: CPB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPC",
+			"description": "Advise through bank: CPC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPD",
+			"description": "Charges payer at destination: CPD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPE",
+			"description": "Transport means master name: CPE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPF",
+			"description": "Means of transport charterer: CPF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPG",
+			"description": "Excise party: CPG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPH",
+			"description": "Copy report to: CPH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPI",
+			"description": "Related healthcare party: CPI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPJ",
+			"description": "Clinical information provider: CPJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPK",
+			"description": "Service requester: CPK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPL",
+			"description": "Patient admitted by: CPL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPM",
+			"description": "Patient discharged to: CPM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPN",
+			"description": "Patient hosted by: CPN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CPO",
+			"description": "Prescriber's contact person: CPO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CQ",
+			"description": "Cheque order: CQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CR",
+			"description": "Empty equipment return party: CR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CS",
+			"description": "Consolidator: CS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CT",
+			"description": "Consignee to be specified: CT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CU",
+			"description": "Container return company: CU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CV",
+			"description": "Consignee of vessel: CV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CW",
+			"description": "Equipment owner: CW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CX",
+			"description": "Consignee's agent: CX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CY",
+			"description": "Commissionable agent: CY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#CZ",
+			"description": "Consignor: CZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DA",
+			"description": "Available with bank (documentary credits): DA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DB",
+			"description": "Distributor branch: DB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DC",
+			"description": "Deconsolidator: DC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCP",
+			"description": "Despatch charge payer: DCP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCQ",
+			"description": "Prescription database owner: DCQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCR",
+			"description": "Original prescriber: DCR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCS",
+			"description": "Temporary employee: DCS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCT",
+			"description": "Designer: DCT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCU",
+			"description": "Quotation delivered to: DCU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCV",
+			"description": "Developer: DCV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCW",
+			"description": "Test execution party: DCW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCX",
+			"description": "Party to receive refund: DCX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCY",
+			"description": "Authorised issuer of prescription: DCY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DCZ",
+			"description": "Authorised dispenser of medicine: DCZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DD",
+			"description": "Documentary credit account party's bank: DD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDA",
+			"description": "Report responsible party: DDA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDB",
+			"description": "Initial sender: DDB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDC",
+			"description": "The party authorising the original prescription: DDC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDD",
+			"description": "Applicant: DDD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDE",
+			"description": "Meter reader: DDE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDF",
+			"description": "Primary electronic business contact: DDF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDG",
+			"description": "Alternate electronic business contact: DDG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDH",
+			"description": "Primary government business contact: DDH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDI",
+			"description": "Alternate government business contact: DDI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDJ",
+			"description": "Past performance contact: DDJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDK",
+			"description": "Balance responsible party: DDK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDL",
+			"description": "Group of passengers: DDL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDM",
+			"description": "Grid operator: DDM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDN",
+			"description": "First financial institution in the transaction chain: DDN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDO",
+			"description": "Location manager: DDO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDP",
+			"description": "Group leader: DDP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDQ",
+			"description": "Energy Supplier: DDQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDR",
+			"description": "Consignor's freight forwarder: DDR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDS",
+			"description": "Consignee's freight forwarder: DDS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDT",
+			"description": "In transit crew member: DDT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDU",
+			"description": "In transit passenger: DDU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDV",
+			"description": "Energy consumption imbalance responsible party: DDV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDW",
+			"description": "Energy production imbalance responsible party: DDW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDX",
+			"description": "Imbalance settlement responsible party: DDX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDY",
+			"description": "Transmission capacity allocator: DDY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DDZ",
+			"description": "Metering point administrator: DDZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DE",
+			"description": "Depositor: DE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEA",
+			"description": "Metered data aggregator: DEA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEB",
+			"description": "Meter operator: DEB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEC",
+			"description": "Party connected to grid: DEC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DED",
+			"description": "Profile maintenance party: DED."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEE",
+			"description": "Stowaway: DEE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEF",
+			"description": "Meat cutter: DEF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEG",
+			"description": "Consortium Carrier (maritime): DEG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEH",
+			"description": "Non-vessel operating carrier: DEH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEI",
+			"description": "Means of transport operator: DEI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEJ",
+			"description": "Stuffing address: DEJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEK",
+			"description": "Mooring service provider: DEK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEL",
+			"description": "Pilotage service provider: DEL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEM",
+			"description": "Berth towage service provider: DEM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEN",
+			"description": "Agent/representative, direct representation: DEN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEO",
+			"description": "Agent/representative, indirect representation: DEO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEP",
+			"description": "Stevedore: DEP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEQ",
+			"description": "Shipper: DEQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DER",
+			"description": "Source data pool: DER."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DES",
+			"description": "Brand owner: DES."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DET",
+			"description": "Cockpit crew: DET."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEU",
+			"description": "Cabin crew: DEU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEV",
+			"description": "Airline operations management, not in cockpit: DEV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEW",
+			"description": "Cargo non-cockpit crew and/or non-crew personnel: DEW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEX",
+			"description": "Pilots seated outside cockpit: DEX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEY",
+			"description": "Commercial verifier: DEY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DEZ",
+			"description": "Authorized issuer: DEZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DF",
+			"description": "Documentary credit applicant: DF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFA",
+			"description": "Bank for deposit of duties/taxes/fees: DFA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFB",
+			"description": "Company security officer (IMO Circular MSC 1130): DFB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFC",
+			"description": "Distiller: DFC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFD",
+			"description": "Drayman/lighterman: DFD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFE",
+			"description": "Exhibitor: DFE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFF",
+			"description": "Feedlot: DFF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFG",
+			"description": "Government official: DFG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFH",
+			"description": "Government service requestor: DFH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFI",
+			"description": "Crop grower: DFI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFJ",
+			"description": "ISPS Responsible Party: DFJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFK",
+			"description": "LPCO authorized party: DFK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFL",
+			"description": "Operator of property, registered: DFL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFM",
+			"description": "Organic growth certifier, accredited: DFM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFN",
+			"description": "Party holding Certificate of Financial Responsibility: DFN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFO",
+			"description": "Port facility security officer: DFO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFP",
+			"description": "Vehicle owner: DFP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFQ",
+			"description": "Security certificate issuer, recognized: DFQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFR",
+			"description": "Ship Security Officer: DFR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFS",
+			"description": "Certificate issuer, veterinary: DFS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFT",
+			"description": "Assembler: DFT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFU",
+			"description": "Competitor: DFU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFV",
+			"description": "Right holder: DFV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFW",
+			"description": "Authorised Economic Operator (AEO): DFW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFX",
+			"description": "Manufacturer of equipment: DFX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFY",
+			"description": "Crew other ship: DFY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DFZ",
+			"description": "Article information responsible party: DFZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DG",
+			"description": "Documentary credit beneficiary: DG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGA",
+			"description": "Price information responsible party: DGA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGB",
+			"description": "Invoice processing party: DGB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGC",
+			"description": "Logistic service provider: DGC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGD",
+			"description": "Fattener: DGD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGE",
+			"description": "Breeder: DGE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGF",
+			"description": "Calorific Value Responsible: DGF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGG",
+			"description": "Balancing Service Provider: DGG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGH",
+			"description": "Consent Administrator: DGH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGI",
+			"description": "Energy Service Company (ESCO): DGI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGJ",
+			"description": "Resource Aggregator: DGJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGK",
+			"description": "Resource Provider: DGK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGL",
+			"description": "Metered Data Administrator: DGL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGM",
+			"description": "Consumer: DGM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGN",
+			"description": "Farmer: DGN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGO",
+			"description": "Recycler: DGO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGP",
+			"description": "Retailer: DGP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGQ",
+			"description": "Second Party: DGQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGR",
+			"description": "Waste Disposal Provider: DGR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGS",
+			"description": "Tanner: DGS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGT",
+			"description": "Service Provider: DGT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGU",
+			"description": "Ginner: DGU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGV",
+			"description": "Spinner: DGV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DGW",
+			"description": "Weaver: DGW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DH",
+			"description": "Documentary credit account party: DH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DI",
+			"description": "Documentary credit second beneficiary: DI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DJ",
+			"description": "Party according to documentary credit transaction: DJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DK",
+			"description": "Documentary credit beneficiary's bank: DK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DL",
+			"description": "Factor: DL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DM",
+			"description": "Party to whom documents are to be presented: DM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DN",
+			"description": "Owner of operation: DN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DO",
+			"description": "Document recipient: DO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DP",
+			"description": "Delivery party: DP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DQ",
+			"description": "Owner's agent: DQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DR",
+			"description": "Driver: DR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DS",
+			"description": "Distributor: DS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DT",
+			"description": "Declarant: DT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DU",
+			"description": "Owner's representative: DU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DV",
+			"description": "Project management office: DV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DW",
+			"description": "Drawee: DW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DX",
+			"description": "Engineer (construction): DX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DY",
+			"description": "Engineer, resident (construction): DY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#DZ",
+			"description": "Architect: DZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EA",
+			"description": "Architect-designer: EA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EB",
+			"description": "Building inspectorate: EB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EC",
+			"description": "Exchanger: EC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ED",
+			"description": "Engineer, consultant: ED."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EE",
+			"description": "Location of goods for customs examination before clearance: EE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EF",
+			"description": "Project coordination office: EF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EG",
+			"description": "Surveyor, topographical: EG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EH",
+			"description": "Engineer, measurement: EH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EI",
+			"description": "Controller, quality: EI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EJ",
+			"description": "Surveyor, quantity: EJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EK",
+			"description": "Surveyor (professional), quantity: EK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EL",
+			"description": "Project: EL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EM",
+			"description": "Party to receive electronic memo of invoice: EM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EN",
+			"description": "Tenderer: EN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EO",
+			"description": "Owner of equipment: EO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EP",
+			"description": "Equipment drop-off party: EP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EQ",
+			"description": "Empty container responsible party: EQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ER",
+			"description": "Empty container return agent: ER."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ES",
+			"description": "Contractor, lead: ES."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ET",
+			"description": "Co-contractor: ET."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EU",
+			"description": "Contractor, general: EU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EV",
+			"description": "Subcontractor: EV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EW",
+			"description": "Subcontractor with direct payment: EW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EX",
+			"description": "Exporter: EX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EY",
+			"description": "Subcontractor, nominated: EY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#EZ",
+			"description": "Operator, essential services: EZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FA",
+			"description": "Operator, communication channel: FA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FB",
+			"description": "Nominated freight company: FB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FC",
+			"description": "Contractor, main: FC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FD",
+			"description": "Buyer's parent company: FD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FE",
+			"description": "Credit rating agency: FE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FF",
+			"description": "Factor, correspondent: FF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FG",
+			"description": "Buyer as officially registered: FG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FH",
+			"description": "Seller as officially registered: FH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FI",
+			"description": "Copy message to: FI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FJ",
+			"description": "Trade Union: FJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FK",
+			"description": "Previous Trade Union: FK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FL",
+			"description": "Passenger: FL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FM",
+			"description": "Crew member: FM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FN",
+			"description": "Tariff issuer: FN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FO",
+			"description": "Party performing inspection: FO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FP",
+			"description": "Freight/charges payer: FP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FQ",
+			"description": "Container survey agent: FQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FR",
+			"description": "Message from: FR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FS",
+			"description": "Party authorized to make definite a contract action: FS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FT",
+			"description": "Financial settlement party: FT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FU",
+			"description": "Hazardous material office: FU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FV",
+			"description": "Party providing government furnished property: FV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FW",
+			"description": "Freight forwarder: FW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FX",
+			"description": "Current receiver: FX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FY",
+			"description": "Current sender: FY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#FZ",
+			"description": "Grouping centre: FZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GA",
+			"description": "Road carrier: GA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GB",
+			"description": "Chamber of commerce: GB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GC",
+			"description": "Goods custodian: GC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GD",
+			"description": "Producer: GD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GE",
+			"description": "Registration tribunal: GE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GF",
+			"description": "Slot charter party: GF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GH",
+			"description": "Applicant for job: GH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GI",
+			"description": "Spouse: GI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GJ",
+			"description": "Mother: GJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GK",
+			"description": "Father: GK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GL",
+			"description": "Socially insured person: GL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GM",
+			"description": "Inventory controller: GM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GN",
+			"description": "Processor: GN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GO",
+			"description": "Goods owner: GO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GP",
+			"description": "Packer: GP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GQ",
+			"description": "Slaughterer: GQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GR",
+			"description": "Goods releasing party: GR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GS",
+			"description": "Consignor's representative: GS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GT",
+			"description": "Rail carrier: GT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GU",
+			"description": "Originator of article number: GU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GV",
+			"description": "Procurement responsibility for order: GV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GW",
+			"description": "Party fulfilling all operations: GW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GX",
+			"description": "Central catalogue party: GX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GY",
+			"description": "Inventory reporting party: GY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#GZ",
+			"description": "Substitute supplier: GZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HA",
+			"description": "Party which delivers consignments to the terminal: HA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HB",
+			"description": "Party which picks up consignments from the terminal: HB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HC",
+			"description": "Transit freight forwarder: HC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HD",
+			"description": "Inspection and acceptance party: HD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HE",
+			"description": "Transportation office: HE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HF",
+			"description": "Contract administration office: HF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HG",
+			"description": "Investigator: HG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HH",
+			"description": "Audit office: HH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HI",
+			"description": "Requestor: HI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HJ",
+			"description": "Foreign disclosure information office: HJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HK",
+			"description": "Mark-for party: HK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HL",
+			"description": "Party to receive reports: HL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HM",
+			"description": "Alternative manufacturer: HM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HN",
+			"description": "Service performer: HN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HO",
+			"description": "Shipper's association: HO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HP",
+			"description": "Final message recipient: HP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HQ",
+			"description": "Account owner: HQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HR",
+			"description": "Shipping line service: HR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HS",
+			"description": "Creditor: HS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HT",
+			"description": "Clearing house: HT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HU",
+			"description": "Ordering bank: HU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HV",
+			"description": "Receiver of funds: HV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HW",
+			"description": "Sender of funds: HW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HX",
+			"description": "Debtor: HX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HY",
+			"description": "Presenting bank: HY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#HZ",
+			"description": "Work team: HZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#I1",
+			"description": "Intermediary bank 1: I1."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#I2",
+			"description": "Intermediary bank 2: I2."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IB",
+			"description": "Intermediary/broker: IB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IC",
+			"description": "Intermediate consignee: IC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ID",
+			"description": "Replacing manufacturer: ID."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IE",
+			"description": "Non-resident third party company with whom financial account is held: IE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IF",
+			"description": "Non-resident group company with whom financial account is held: IF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IG",
+			"description": "Non-resident beneficiary: IG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IH",
+			"description": "Resident beneficiary: IH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#II",
+			"description": "Invoice issuer: II."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IJ",
+			"description": "Non-resident instructing party: IJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IL",
+			"description": "Resident instructing party: IL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IM",
+			"description": "Importer: IM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IN",
+			"description": "Insurer: IN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IO",
+			"description": "Insurance company: IO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IP",
+			"description": "Insurance claim adjuster: IP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IQ",
+			"description": "Domestic financial institution: IQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IR",
+			"description": "Non-domestic financial institution: IR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IS",
+			"description": "Party to receive certified inspection report: IS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IT",
+			"description": "Installation on site: IT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IU",
+			"description": "Non-resident debtor: IU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IV",
+			"description": "Invoicee: IV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IW",
+			"description": "Non-resident creditor: IW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IX",
+			"description": "Supplier work team: IX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IY",
+			"description": "Tenant manager: IY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#IZ",
+			"description": "Party mandated to liquidate an enterprise: IZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JA",
+			"description": "Certified accountant: JA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JB",
+			"description": "Goods collection party: JB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JC",
+			"description": "Party at final place of positioning: JC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JD",
+			"description": "Customs office of clearance: JD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JE",
+			"description": "Party from whom customs documents are to be picked up: JE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JF",
+			"description": "Party from whom non-customs documents are to be picked up: JF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JG",
+			"description": "Party to receive customs documents: JG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#JH",
+			"description": "Party to receive non-customs documents: JH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LA",
+			"description": "Party designated to provide living animal care: LA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LB",
+			"description": "Co-producer: LB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LC",
+			"description": "Party declaring the Value Added Tax (VAT): LC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LD",
+			"description": "Party recovering the Value Added Tax (VAT): LD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LE",
+			"description": "Person on claim: LE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LF",
+			"description": "Buyer's corporate office: LF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LG",
+			"description": "Supplier's corporate office: LG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LH",
+			"description": "Liquidator: LH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LI",
+			"description": "Account coordinator: LI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LJ",
+			"description": "Inspection leader: LJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LK",
+			"description": "Patient: LK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LL",
+			"description": "Patient companion: LL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LM",
+			"description": "Medical treatment executant: LM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LN",
+			"description": "Lender: LN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LO",
+			"description": "Medical treatment prescriber: LO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LP",
+			"description": "Loading party: LP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LQ",
+			"description": "Debt payment authorisation party: LQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LR",
+			"description": "Administration centre: LR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LS",
+			"description": "Product services and repairs centre: LS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LT",
+			"description": "Secretariat: LT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LU",
+			"description": "Entry point technical assessment group: LU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#LV",
+			"description": "Party assigning a status: LV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MA",
+			"description": "Party for whom item is ultimately intended: MA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MAD",
+			"description": "Meter administrator: MAD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MDR",
+			"description": "Metered data responsible: MDR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MF",
+			"description": "Manufacturer of goods: MF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MG",
+			"description": "Party designated to execute re-icing: MG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MI",
+			"description": "Planning schedule/material release issuer: MI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MOP",
+			"description": "Market operator: MOP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MP",
+			"description": "Manufacturing unit: MP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MR",
+			"description": "Message recipient: MR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MS",
+			"description": "Document/message issuer/sender: MS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#MT",
+			"description": "Party designated to execute sanitary procedures: MT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#N2",
+			"description": "Notify party no. 2: N2."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#NI",
+			"description": "Notify party: NI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OA",
+			"description": "Break bulk berth operator: OA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OB",
+			"description": "Ordered by: OB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OC",
+			"description": "Party data responsible party: OC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OD",
+			"description": "Equipment repair party: OD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OE",
+			"description": "Owner of property: OE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OF",
+			"description": "On behalf of: OF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OG",
+			"description": "Owner or lessor's surveyor: OG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OH",
+			"description": "Lessee's surveyor: OH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OI",
+			"description": "Outside inspection agency: OI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OJ",
+			"description": "Third party: OJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OK",
+			"description": "Receiver's sub-entity: OK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OL",
+			"description": "Case of need party: OL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OM",
+			"description": "Collecting bank: OM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ON",
+			"description": "Remitting bank: ON."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OO",
+			"description": "Order of the shipper party: OO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OP",
+			"description": "Operator of property or equipment: OP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OQ",
+			"description": "Collection principal: OQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OR",
+			"description": "Ordered bank: OR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OS",
+			"description": "Original shipper: OS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OT",
+			"description": "Outside test agency: OT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OU",
+			"description": "Account owner's servicing bank on the sending side: OU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OV",
+			"description": "Transport means owner: OV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OW",
+			"description": "Account owner's servicing bank on the receiving side: OW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OX",
+			"description": "Sender's correspondent bank: OX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OY",
+			"description": "Ordering customer: OY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#OZ",
+			"description": "Receiver's correspondent bank: OZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#P1",
+			"description": "Contact party 1: P1."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#P2",
+			"description": "Contact party 2: P2."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#P3",
+			"description": "Contact party 3: P3."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#P4",
+			"description": "Contact party 4: P4."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PA",
+			"description": "Party to receive inspection report: PA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PAD",
+			"description": "Party Administrator: PAD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PB",
+			"description": "Paying financial institution: PB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PC",
+			"description": "Actual purchaser's customer: PC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PD",
+			"description": "Purchaser's department buyer: PD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PE",
+			"description": "Payee: PE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PF",
+			"description": "Party to receive freight bill: PF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PG",
+			"description": "Prime contractor: PG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PH",
+			"description": "Payer's financial institution: PH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PI",
+			"description": "Payee's company name/ID: PI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PJ",
+			"description": "Party to receive correspondence: PJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PK",
+			"description": "Contact party: PK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PM",
+			"description": "Party to receive paper memo of invoice: PM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PN",
+			"description": "Party to receive shipping notice: PN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PO",
+			"description": "Ordering party: PO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#POA",
+			"description": "Port Authority: POA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PP",
+			"description": "Platform provider party: PP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PQ",
+			"description": "Certifying party: PQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PR",
+			"description": "Payer: PR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PS",
+			"description": "Payer's company name/ID (Check, Draft or Wire): PS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PT",
+			"description": "Party to receive test report: PT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PW",
+			"description": "Despatch party: PW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PX",
+			"description": "Party to receive all documents: PX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PY",
+			"description": "Checking party: PY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#PZ",
+			"description": "Party to print some document: PZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RA",
+			"description": "Central bank or regulatory authority: RA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RB",
+			"description": "Receiving financial institution: RB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RCA",
+			"description": "Reconciliation accountable: RCA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RCR",
+			"description": "Reconciliation responsible: RCR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RE",
+			"description": "Party to receive commercial invoice remittance: RE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RF",
+			"description": "Received from: RF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RH",
+			"description": "Seller's financial institution: RH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RI",
+			"description": "Reinsurance intermediary/broker: RI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RL",
+			"description": "Reporting carrier (Customs): RL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RM",
+			"description": "Reporting carrier's nominated agent/representative (Customs): RM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RP",
+			"description": "Routing party: RP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RS",
+			"description": "Party to receive statement of account: RS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RV",
+			"description": "Receiver of cheque: RV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#RW",
+			"description": "Issuer of waybill: RW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SB",
+			"description": "Sales responsibility: SB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SE",
+			"description": "Seller: SE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SF",
+			"description": "Ship from: SF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SG",
+			"description": "Store group: SG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SI",
+			"description": "Shipping schedule issuer: SI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SN",
+			"description": "Store keeper: SN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SO",
+			"description": "Sold to if different than bill to: SO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SPC",
+			"description": "SOLAS verified gross mass responsible party: SPC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SR",
+			"description": "Seller agent: SR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SS",
+			"description": "Social securities collector's office: SS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ST",
+			"description": "Ship to: ST."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SU",
+			"description": "Supplier: SU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SX",
+			"description": "Surety for additions: SX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SY",
+			"description": "Surety: SY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#SZ",
+			"description": "Surety for antidumping/countervailing duty: SZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TA",
+			"description": "Legal receiver: TA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TB",
+			"description": "Submitter: TB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TC",
+			"description": "Tax collector's office: TC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TCP",
+			"description": "Transit charge payer: TCP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TCR",
+			"description": "Transport capacity responsible party: TCR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TD",
+			"description": "Party to receive technical documentation: TD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TE",
+			"description": "Bankruptcy referee: TE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TF",
+			"description": "Source of information: TF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TG",
+			"description": "Judge: TG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TH",
+			"description": "Attorney: TH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TI",
+			"description": "Law firm: TI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TJ",
+			"description": "Trustee: TJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TK",
+			"description": "Signatory: TK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TL",
+			"description": "Occupant: TL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TM",
+			"description": "Co-occupant: TM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TN",
+			"description": "Subject of inquiry: TN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TO",
+			"description": "Lessor: TO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TP",
+			"description": "Owner of residence: TP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TQ",
+			"description": "Founder: TQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TR",
+			"description": "Terminal operator: TR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TS",
+			"description": "Party to receive certified test results: TS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TT",
+			"description": "Transfer to: TT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TU",
+			"description": "President: TU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TV",
+			"description": "Chairperson: TV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TW",
+			"description": "Legal title holder: TW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TX",
+			"description": "Shareholder: TX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TY",
+			"description": "Provider: TY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#TZ",
+			"description": "Military branch: TZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UA",
+			"description": "Educational institution: UA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UB",
+			"description": "Assignor: UB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UC",
+			"description": "Ultimate consignee: UC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UD",
+			"description": "Ultimate customer: UD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UE",
+			"description": "Advisor: UE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UF",
+			"description": "Co-defendant: UF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UG",
+			"description": "Merged company with retained identity: UG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UH",
+			"description": "Party represented: UH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UHP",
+			"description": "Unexpected handling party: UHP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UI",
+			"description": "Assignee: UI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UJ",
+			"description": "Key person: UJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UK",
+			"description": "Author: UK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UL",
+			"description": "Ultimate parent company: UL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UM",
+			"description": "Party not to be confused with: UM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UN",
+			"description": "Accountant: UN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UO",
+			"description": "Plaintiff: UO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UP",
+			"description": "Unloading party: UP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UQ",
+			"description": "Parent company: UQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UR",
+			"description": "Affiliated company: UR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#US",
+			"description": "Bailiff: US."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UT",
+			"description": "Merged company: UT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UU",
+			"description": "Defendant: UU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UV",
+			"description": "Petitioning creditor: UV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UW",
+			"description": "Guarantee agency: UW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UX",
+			"description": "Organization group: UX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UY",
+			"description": "Subsidiary: UY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#UZ",
+			"description": "Industry association: UZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VA",
+			"description": "Joint owner: VA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VB",
+			"description": "Joint venture: VB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VC",
+			"description": "Filing office: VC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VE",
+			"description": "Court: VE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VF",
+			"description": "Liability holder: VF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VG",
+			"description": "Local government sponsor: VG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VH",
+			"description": "Mortgage company: VH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VI",
+			"description": "Notary public: VI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VJ",
+			"description": "Officer: VJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VK",
+			"description": "Publisher: VK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VL",
+			"description": "Party manufactured for: VL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VM",
+			"description": "Previous owner: VM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VN",
+			"description": "Vendor: VN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VO",
+			"description": "Purchased company: VO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VP",
+			"description": "Receiver manager: VP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VQ",
+			"description": "Responsible government agency: VQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VR",
+			"description": "Sole proprietor: VR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VS",
+			"description": "Auctioneer: VS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VT",
+			"description": "Branch: VT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VU",
+			"description": "Business: VU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VV",
+			"description": "Ultimate same country parent company: VV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VW",
+			"description": "Responsible party: VW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VX",
+			"description": "Secured party: VX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VY",
+			"description": "Other related party: VY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#VZ",
+			"description": "Co-debtor: VZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WA",
+			"description": "Company which holds financial interest: WA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WB",
+			"description": "Rating organization: WB."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WC",
+			"description": "Information reference agency: WC."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WD",
+			"description": "Warehouse depositor: WD."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WE",
+			"description": "Compilation agency: WE."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WF",
+			"description": "Information maintenance agency: WF."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WG",
+			"description": "Information dissemination agency: WG."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WH",
+			"description": "Warehouse keeper: WH."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WI",
+			"description": "Inspection address: WI."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WJ",
+			"description": "Refusal party: WJ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WK",
+			"description": "Value added network provider: WK."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WL",
+			"description": "Agency: WL."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WM",
+			"description": "Works manager: WM."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WN",
+			"description": "Party to receive order to supply: WN."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WO",
+			"description": "Party to receive invitation to offer: WO."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WP",
+			"description": "Sub-entity: WP."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WPA",
+			"description": "Weighting party: WPA."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WQ",
+			"description": "Doing business as: WQ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WR",
+			"description": "Party submitting quote: WR."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WS",
+			"description": "Wholesaler: WS."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WT",
+			"description": "Affiliated party: WT."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WU",
+			"description": "Previous name: WU."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WV",
+			"description": "Party performing task: WV."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WW",
+			"description": "Registering party: WW."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WX",
+			"description": "Inland clearance depot operator: WX."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WY",
+			"description": "Destination terminal operator: WY."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#WZ",
+			"description": "Departure terminal operator: WZ."
+		},
+		{
+			"const": "unece:PartyRoleCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

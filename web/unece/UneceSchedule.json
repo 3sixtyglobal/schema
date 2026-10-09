@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSchedule",
+	"title": "UneceSchedule",
+	"description": "A series of planned activities or things to be done in this supply chain.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Schedule",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this supply chain schedule."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this supply chain schedule."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time of an occurrence in this supply chain schedule.",
+			"format": "date-time"
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "A code specifying the status of this supply chain schedule."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceScheduleTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying the type of supply chain schedule."
+		}
+	},
+	"required": ["type"]
+}

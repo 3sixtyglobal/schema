@@ -1,0 +1,156 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportEventTypeCodeList",
+	"title": "UneceTransportEventTypeCodeList",
+	"description": "Values for UneceTransportEvent typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:arrivalEvent",
+			"description": "An arrival event for this logistics transport movement."
+		},
+		{
+			"const": "unece:arrivalReportedEvent",
+			"description": "A transport arrival event reported for this logistics status."
+		},
+		{
+			"const": "unece:bondedWarehouseStorageEvent",
+			"description": "A bonded warehouse storage event for this supply chain consignment.\nA bonded warehouse storage event specifying when and where this piece of logistics transport equipment will be, or has\nbeen, stored."
+		},
+		{
+			"const": "unece:borderCrossingEvent",
+			"description": "A border crossing event for this logistics transport movement."
+		},
+		{
+			"const": "unece:callEvent",
+			"description": "A call event for this logistics transport movement."
+		},
+		{
+			"const": "unece:consolidationEvent",
+			"description": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been,\nstuffed."
+		},
+		{
+			"const": "unece:damageEvent",
+			"description": "A damage event for this logistics transport movement."
+		},
+		{
+			"const": "unece:deconsolidationEvent",
+			"description": "A deconsolidation event for this piece of logistics transport equipment."
+		},
+		{
+			"const": "unece:delaySpecifiedEvent",
+			"description": "A delay specified for this referenced transport event."
+		},
+		{
+			"const": "unece:deliveryTransportEvent",
+			"description": "A delivery event for this piece of logistics transport equipment.\nThe delivery event for this supply chain consignment item.\nThe delivery event for this supply chain consignment."
+		},
+		{
+			"const": "unece:departureEvent",
+			"description": "A departure event during this logistics transport movement."
+		},
+		{
+			"const": "unece:departureReportedEvent",
+			"description": "A transport departure event reported for this logistics status."
+		},
+		{
+			"const": "unece:devanningEvent",
+			"description": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the\nplace of delivery.\nA transport devanning event for this supply chain consignment, i.e. the unloading of this consignment at the place of\ndelivery."
+		},
+		{
+			"const": "unece:examinationEvent",
+			"description": "An examination event for this cross-border regulatory procedure.\nAn examination event for this supply chain consignment item.\nAn examination event for this supply chain consignment."
+		},
+		{
+			"const": "unece:firstArrivalEvent",
+			"description": "The first arrival event for this logistics transport movement."
+		},
+		{
+			"const": "unece:itineraryStopEvent",
+			"description": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
+		},
+		{
+			"const": "unece:loadingEvent",
+			"description": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this\nlogistics transport movement.\nThe loading event for this piece of logistics transport equipment."
+		},
+		{
+			"const": "unece:loadingReportedEvent",
+			"description": "A transport loading event reported for this logistics status."
+		},
+		{
+			"const": "unece:nextDeliveryEvent",
+			"description": "A next delivery event for this transportation waste material."
+		},
+		{
+			"const": "unece:pickUpEvent",
+			"description": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected,\ni.e. picked-up by the carrier.\nA pick-up transport event for this supply chain consignment item.\nThe pick-up event for this supply chain consignment."
+		},
+		{
+			"const": "unece:positioningEvent",
+			"description": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been,\npositioned, i.e. delivered and available for pick-up."
+		},
+		{
+			"const": "unece:previousDeliveryTransportEvent",
+			"description": "A previous delivery event for this transportation waste material."
+		},
+		{
+			"const": "unece:registrationEvent",
+			"description": "A registration event of this logistics transport means."
+		},
+		{
+			"const": "unece:remainingDeliveryEvent",
+			"description": "A delivery event for this remaining transportation waste material component."
+		},
+		{
+			"const": "unece:reportedTransportEvent",
+			"description": "A transport event reported by this monitoring IOT device."
+		},
+		{
+			"const": "unece:reportingIOTDeviceTransportEvent",
+			"description": "An IOT device reported transport event for this piece of logistics transport equipment."
+		},
+		{
+			"const": "unece:shipToShipEvent",
+			"description": "A ship to ship event for this logistics transport movement."
+		},
+		{
+			"const": "unece:specifiedTransportEvent",
+			"description": "A transport event specified for this logistics transport movement."
+		},
+		{
+			"const": "unece:staySpecifiedEvent",
+			"description": "A stay specified for this referenced transport event."
+		},
+		{
+			"const": "unece:storageEvent",
+			"description": "A storage event for this supply chain consignment.\nA storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+		},
+		{
+			"const": "unece:transportEvent",
+			"description": "An event occurring during the transport of this supply chain consignment."
+		},
+		{
+			"const": "unece:transshipmentIntermediateEvent",
+			"description": "A transshipment intermediate event during this logistics transport movement."
+		},
+		{
+			"const": "unece:treatmentEvent",
+			"description": "A treatment event for this cross-border regulatory procedure."
+		},
+		{
+			"const": "unece:unloadingEvent",
+			"description": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics\ntransport movement.\nThe unloading event for this piece of logistics transport equipment."
+		},
+		{
+			"const": "unece:unloadingReportedEvent",
+			"description": "A transport unloading event reported for this logistics status."
+		},
+		{
+			"const": "unece:vanningEvent",
+			"description": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply\nchain consignment.\nThe vanning event for this supply chain consignment item, i.e. the loading of this consignment item at the place of\noriginal despatch.\nThe vanning event for this supply chain consignment, i.e. the loading of this consignment at the place of original\ndespatch."
+		},
+		{
+			"const": "unece:warehouseStorageEvent",
+			"description": "A warehouse storage event for this referenced supply chain consignment."
+		}
+	]
+}

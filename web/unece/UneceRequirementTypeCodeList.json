@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRequirementTypeCodeList",
+	"title": "UneceRequirementTypeCodeList",
+	"description": "Values for UneceRequirement typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:providedRequirement",
+			"description": "A requirement provided for this experience product.\nA specified requirement provided for this experience event."
+		}
+	]
+}

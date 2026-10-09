@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalHoldingEvent",
+	"title": "UneceAnimalHoldingEvent",
+	"description": "The keeping of an animal in a particular location.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AnimalHoldingEvent",
+			"description": "JSON-LD Type."
+		},
+		"locationId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the location for this animal holding event."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the occurrence of this animal holding event.",
+			"format": "date-time"
+		},
+		"relatedTTLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTTLocation"
+			},
+			"description": "A Track and Trace (TT) location related to this animal holding event."
+		},
+		"relatedTechnicalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
+			},
+			"description": "A technical characteristic related to this animal holding event."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceAnimalHoldingEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of animal holding event."
+		}
+	},
+	"required": ["type", "occurrenceDateTime", "typeCode"]
+}

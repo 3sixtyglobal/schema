@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDigitalMethodTypeCodeList",
+	"title": "UneceDigitalMethodTypeCodeList",
+	"description": "Values for UneceDigitalMethod typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:identifiedDigitalMethod",
+			"description": "A digital payment method identified for this trade settlement payment means."
+		}
+	]
+}

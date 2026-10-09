@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEventTypes",
+	"title": "DcsaEventTypes",
+	"description": "DCSA event types.",
+	"anyOf": [
+		{
+			"const": "SHIPMENT",
+			"description": "Shipment event."
+		},
+		{
+			"const": "TRANSPORT",
+			"description": "Transport event."
+		},
+		{
+			"const": "EQUIPMENT",
+			"description": "Equipment event."
+		},
+		{
+			"const": "IOT",
+			"description": "IOT event."
+		},
+		{
+			"const": "REEFER",
+			"description": "Reefer event."
+		}
+	]
+}

@@ -1,14 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidVerificationMethodType",
+	"$id": "https://schema.3sixty.global/w3c-did/DidVerificationMethodType",
+	"title": "DidVerificationMethodType",
 	"description": "The types of verification method.",
-	"type": "string",
-	"enum": [
-		"verificationMethod",
-		"authentication",
-		"assertionMethod",
-		"keyAgreement",
-		"capabilityInvocation",
-		"capabilityDelegation"
+	"anyOf": [
+		{
+			"const": "verificationMethod",
+			"description": "VerificationMethod."
+		},
+		{
+			"const": "authentication",
+			"description": "Authentication."
+		},
+		{
+			"const": "assertionMethod",
+			"description": "Assertion Method."
+		},
+		{
+			"const": "keyAgreement",
+			"description": "Key Agreement."
+		},
+		{
+			"const": "capabilityInvocation",
+			"description": "Capability Invocation."
+		},
+		{
+			"const": "capabilityDelegation",
+			"description": "Capability Delegation."
+		}
 	]
 }

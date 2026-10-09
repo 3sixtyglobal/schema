@@ -1,0 +1,117 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceStowaway",
+	"title": "UneceStowaway",
+	"description": "A person who is found hiding aboard a ship or other conveyance, such as in order to obtain free passage or elude\ndetection.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Stowaway",
+			"description": "JSON-LD Type."
+		},
+		"careProvided": {
+			"type": "string",
+			"description": "Care, expressed as text, that has been provided to this found stowaway."
+		},
+		"claimedLanguageProficiency": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLanguageProficiency"
+			},
+			"description": "Personal language proficiency skills claimed by this found stowaway."
+		},
+		"countryClaimedNationalityId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of a nationality claimed by this found stowaway."
+		},
+		"discoveredDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value on which this found stowaway is discovered.",
+			"format": "date-time"
+		},
+		"embarkationLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
+		},
+		"homeAddress": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
+			},
+			"description": "A home address for this found stowaway."
+		},
+		"intendedDestinationLocationCode": {
+			"type": "string",
+			"description": "A code specifying a location of an intended destination for this found stowaway."
+		},
+		"intendedDestinationName": {
+			"type": "string",
+			"description": "A name, expressed as text, of an intended destination for this found stowaway."
+		},
+		"interviewDateTime": {
+			"type": "string",
+			"description": "A date, time, date time, or other date time value on which this found stowaway is interviewed.",
+			"format": "date-time"
+		},
+		"personalStatement": {
+			"type": "string",
+			"description": "A personal statement, expressed as text, made by this found stowaway."
+		},
+		"photographicPictureBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file providing a photographic picture of this found stowaway."
+		},
+		"physicalDescription": {
+			"type": "string",
+			"description": "The physical description, expressed as text, of this found stowaway."
+		},
+		"possessionList": {
+			"type": "string",
+			"description": "A list of possessions, expressed as text, for this found stowaway."
+		},
+		"providedContact": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeContact"
+			},
+			"description": "A person or department that acts as a point of contact with or for this found stowaway."
+		},
+		"providedName": {
+			"type": "string",
+			"description": "A name, expressed as text, as provided by this found stowaway."
+		},
+		"responsiblePersonStatement": {
+			"type": "string",
+			"description": "A statement, expressed as text, about the stowaway made by the person responsible for operating the means of transport\non which the stowaway was found."
+		},
+		"statedEmbarkationMethod": {
+			"type": "string",
+			"description": "A method, expressed as text, of embarkation stated by this found stowaway."
+		},
+		"statedEmbarkationReason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for embarkation stated by this found stowaway."
+		}
+	},
+	"required": ["type"]
+}

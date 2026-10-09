@@ -1,0 +1,103 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProduct",
+	"title": "UneceProduct",
+	"description": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Product",
+			"description": "JSON-LD Type."
+		},
+		"buyerAssignedId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique buyer assigned identifier for this referenced product."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description for this referenced product."
+		},
+		"globalId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique global identifier for this referenced product."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique identifier for this referenced product."
+		},
+		"industryAssignedId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique industry assigned identifier for this referenced product."
+		},
+		"manufacturerAssignedId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A unique manufacturer assigned identifier for this referenced product."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this referenced product."
+		},
+		"relationshipTypeCode": {
+			"type": "string",
+			"description": "A code specifying a type of relationship for this referenced product."
+		},
+		"sellerAssignedId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique seller assigned identifier for this referenced product."
+		},
+		"unitQuantity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
+			},
+			"description": "A unit quantity of this referenced product."
+		}
+	},
+	"required": ["type"]
+}

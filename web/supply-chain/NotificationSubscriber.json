@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/supply-chain/NotificationSubscriber",
+	"title": "NotificationSubscriber",
+	"description": "Represents a notification subscriber linking providers with consumers.",
+	"type": "object",
+	"properties": {
+		"providerIdentity": {
+			"type": "string",
+			"description": "Identity (e.g. DID) of the data provider."
+		},
+		"providerConfig": {
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
+			"description": "Configuration payload required for outbound notifications."
+		},
+		"consumerIdentity": {
+			"type": "string",
+			"description": "Identity (e.g. DID) of the consumer organisation receiving notifications.\nOptional for backward compat with rows created before the field existed."
+		},
+		"consumerConfig": {
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
+			"description": "Configuration payload required for outbound notifications."
+		},
+		"role": {
+			"type": "string",
+			"description": "The role of the consumer in the supply chain ecosystem (e.g. \"BorderAgency\",\n\"LocationOperator\"). Matches the value referenced by the ODRL `$.party.role`\nJsonPath. When undefined, treated as \"BorderAgency\" for backwards compatibility."
+		},
+		"schemaVersion": {
+			"type": "string",
+			"description": "Identifier of the outbound payload schema this subscriber expects (e.g. \"aut.v2.1\").\nWhen undefined, the dispatching task picks its default."
+		},
+		"dateModified": {
+			"type": "string",
+			"description": "The date/time of when the resource was last modified."
+		}
+	},
+	"required": ["providerIdentity", "consumerConfig"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberListItem"
+		}
+	]
+}

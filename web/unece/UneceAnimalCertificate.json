@@ -1,0 +1,61 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalCertificate",
+	"title": "UneceAnimalCertificate",
+	"description": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about\nthe identity of an animal or a batch of animals.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AnimalCertificate",
+			"description": "JSON-LD Type."
+		},
+		"applicableAnimalCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalCertification"
+			},
+			"description": "An animal certification applicable to this animal certificate."
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this animal certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this animal certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this animal certificate."
+		},
+		"certificateTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
+			"description": "The code specifying the type of animal certificate."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this animal certificate."
+		}
+	},
+	"required": ["type", "certificateTypeCode", "identifier"]
+}

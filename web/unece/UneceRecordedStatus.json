@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRecordedStatus",
+	"title": "UneceRecordedStatus",
+	"description": "Recorded information relevant to a condition or a position of an object.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "RecordedStatus",
+			"description": "JSON-LD Type."
+		},
+		"changedDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this recorded status changed.",
+			"format": "date-time"
+		},
+		"changerName": {
+			"type": "string",
+			"description": "The name of the person or system, expressed as text, that changed this recorded status."
+		},
+		"recordedStatusConditionCode": {
+			"type": "string",
+			"description": "The code specifying the condition for this recorded status."
+		}
+	},
+	"required": ["type", "changedDateTime", "recordedStatusConditionCode"]
+}

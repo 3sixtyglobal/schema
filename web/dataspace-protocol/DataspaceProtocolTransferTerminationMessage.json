@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferTerminationMessage",
+	"title": "DataspaceProtocolTransferTerminationMessage",
+	"description": "Interface for the Dataspace Protocol transfer termination message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "TransferTerminationMessage",
+			"description": "The JSON-LD type."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Provider side."
+		},
+		"code": {
+			"type": "string",
+			"description": "The termination code."
+		},
+		"reason": {
+			"type": "array",
+			"items": {},
+			"description": "The termination reason(s)."
+		}
+	},
+	"required": ["@context", "@type", "consumerPid", "providerPid"]
+}

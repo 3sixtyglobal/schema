@@ -1,0 +1,76 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaShipmentEventTypeCodes",
+	"title": "DcsaShipmentEventTypeCodes",
+	"description": "DCSA shipment event type codes.",
+	"anyOf": [
+		{
+			"const": "RECE",
+			"description": "Received."
+		},
+		{
+			"const": "DRFT",
+			"description": "Drafted."
+		},
+		{
+			"const": "PENA",
+			"description": "Pending Approval."
+		},
+		{
+			"const": "PENU",
+			"description": "Pending Update."
+		},
+		{
+			"const": "PENC",
+			"description": "Pending Confirmation."
+		},
+		{
+			"const": "CONF",
+			"description": "Confirmed."
+		},
+		{
+			"const": "REJE",
+			"description": "Rejected."
+		},
+		{
+			"const": "APPR",
+			"description": "Approved."
+		},
+		{
+			"const": "ISSU",
+			"description": "Issued."
+		},
+		{
+			"const": "SURR",
+			"description": "Surrendered."
+		},
+		{
+			"const": "SUBM",
+			"description": "Submitted."
+		},
+		{
+			"const": "VOID",
+			"description": "Void."
+		},
+		{
+			"const": "REQS",
+			"description": "Requested."
+		},
+		{
+			"const": "CMPL",
+			"description": "Completed."
+		},
+		{
+			"const": "HOLD",
+			"description": "On Hold."
+		},
+		{
+			"const": "RELS",
+			"description": "Released."
+		},
+		{
+			"const": "CANC",
+			"description": "Cancelled."
+		}
+	]
+}

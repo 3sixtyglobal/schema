@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceContextType",
+	"title": "UneceContextType",
+	"description": "The UNECE JSON-LD context type.",
+	"anyOf": [
+		{
+			"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
+		},
+		{
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					{
+						"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
+					}
+				]
+			},
+			"contains": {
+				"const": "https://vocabulary.uncefact.org/unece-context-D23B.jsonld"
+			},
+			"minContains": 1,
+			"maxContains": 1,
+			"minItems": 1
+		}
+	]
+}

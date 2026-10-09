@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionWasteMaterialComponent",
+	"title": "UneceProductionWasteMaterialComponent",
+	"description": "A production material component that is unused and rejected as unwanted.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ProductionWasteMaterialComponent",
+			"description": "JSON-LD Type."
+		},
+		"applicableProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate applicable to this production waste material component."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this production waste material component."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this production waste material component."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterialComponentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of production waste material component."
+		}
+	},
+	"required": ["type"]
+}

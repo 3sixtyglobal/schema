@@ -1,0 +1,203 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlement",
+	"title": "UnecePaymentTradeSettlement",
+	"description": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle,\nfor example a commercial invoice.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "PaymentTradeSettlement",
+			"description": "JSON-LD Type."
+		},
+		"acceptedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value accepted for this payment trade settlement."
+		},
+		"additionalDescription": {
+			"type": "string",
+			"description": "A description, expressed as text, of additional information supplied to enable the matching of an entry with the items\nthat the payment is intended to settle."
+		},
+		"applicableTax": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeTax",
+			"description": "The tax applicable to this payment trade settlement."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The creation date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
+		},
+		"creditNoteAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the credit note for this payment trade settlement."
+		},
+		"creditorReferenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier\nassigned by the creditor to reference the financial transaction."
+		},
+		"creditorReferenceIssuerId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the issuer of the creditor reference for this payment trade settlement."
+		},
+		"creditorReferenceTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of creditor reference for this payment trade settlement."
+		},
+		"discountAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the payment that is the discount for this trade settlement, such as from the application of an\nagreed discount to the amount due."
+		},
+		"dueDateTime": {
+			"type": "string",
+			"description": "The due date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
+		},
+		"duePayableAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the payment that is the exact amount due and payable for this trade settlement, such as the amount\ndue to the creditor."
+		},
+		"identifiedGuarantee": {
+			"$ref": "https://schema.3sixty.global/unece/UneceGuarantee",
+			"description": "The financial guarantee identified for this payment trade settlement."
+		},
+		"instruction": {
+			"type": "string",
+			"description": "An instruction, expressed as text, for this payment trade settlement."
+		},
+		"invoicePayerAssignedReferenceId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the invoice payer assigned reference of this payment trade settlement."
+		},
+		"payeeParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The payee party for this payment trade settlement."
+		},
+		"payerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The payer party for this payment trade settlement."
+		},
+		"paymentAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the payment for this trade settlement payment."
+		},
+		"paymentApplicableCurrencyExchange": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
+			"description": "The currency exchange applicable to this payment trade settlement."
+		},
+		"paymentCurrencyCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
+			"description": "The code specifying the currency for this payment trade settlement."
+		},
+		"penaltyPercent": {
+			"type": "string",
+			"description": "The penalty percentage related to this payment trade settlement."
+		},
+		"priorityCode": {
+			"type": "string",
+			"description": "The code specifying the priority for this payment trade settlement."
+		},
+		"proprietaryCreditorReferenceType": {
+			"type": "string",
+			"description": "The type of proprietary creditor reference, expressed as text, for this payment trade settlement."
+		},
+		"receiptDateTime": {
+			"type": "string",
+			"description": "The receipt date, time, date time, or other date time value for this payment trade settlement.",
+			"format": "date-time"
+		},
+		"recordedExperienceItem": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceExperienceItem"
+			},
+			"description": "A specified experience item recorded for this payment trade settlement."
+		},
+		"refundAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the refund related to this payment trade settlement."
+		},
+		"requestedAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value requested for this payment trade settlement."
+		},
+		"specifiedPaymentMeans": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePaymentMeans",
+			"description": "The payment means specified for this payment trade settlement."
+		},
+		"specifiedTradeSettlementPaymentMonetarySummation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeSettlementPaymentMonetarySummation",
+			"description": "The monetary summation totals specified for this payment trade settlement."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this payment trade settlement."
+		},
+		"taxAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "A monetary value of the tax related to this payment trade settlement."
+		},
+		"totalTaxAmount": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
+			"description": "The monetary value of the total tax for this payment trade settlement."
+		},
+		"transferFeeInclusiveIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this payment trade settlement includes a transfer fee."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlementTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of this payment trade settlement."
+		},
+		"unstructuredDescription": {
+			"type": "string",
+			"description": "An unstructured description, expressed as text, for this payment trade settlement."
+		}
+	},
+	"required": ["type", "specifiedTradeSettlementPaymentMonetarySummation"]
+}

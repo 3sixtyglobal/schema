@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatDatasetSeries",
+	"title": "DcatDatasetSeries",
+	"description": "Interface for DCAT Dataset Series.\nA collection of datasets that are published separately, but share some common\ncharacteristics that enable them to be grouped together.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "dcat:DatasetSeries",
+			"description": "The type identifier, typically \"DatasetSeries\"."
+		},
+		"dcat:first": {
+			"type": "string",
+			"description": "A dataset that is part of this dataset series."
+		},
+		"dcat:last": {
+			"type": "string",
+			"description": "A dataset that is part of this dataset series."
+		},
+		"dcat:seriesMember": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "A dataset that is part of this dataset series."
+		},
+		"dcat:dataset": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+				},
+				{
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
+					}
+				}
+			],
+			"description": "A dataset that is part of this dataset series."
+		}
+	},
+	"required": ["@type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataset"
+		}
+	]
+}

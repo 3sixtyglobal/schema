@@ -1,0 +1,105 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLicence",
+	"title": "UneceLicence",
+	"description": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Licence",
+			"description": "JSON-LD Type."
+		},
+		"associatedStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard associated to this specified licence."
+		},
+		"assuranceLevelCode": {
+			"type": "string",
+			"description": "A code specifying an assurance level of this specified licence."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified licence."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "An expiry date, time, date time or other date time value for this specified licence.",
+			"format": "date-time"
+		},
+		"grantedParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A party granted this specified licence."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified licence."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "An issue date, time, date time or other date time value of this specified licence.",
+			"format": "date-time"
+		},
+		"issuerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The party that issues this specified licence."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this specified licence."
+		},
+		"subjectTypeCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a subject type for this licence."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceLicenceTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of licence."
+		},
+		"validIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified licence is valid."
+		},
+		"verifiedObject": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceObject"
+			},
+			"description": "An object verified for this specified licence."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCustomsValuationTypeCodeList",
+	"title": "UneceCustomsValuationTypeCodeList",
+	"description": "Values for UneceCustomsValuation typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableCustomsValuation",
+			"description": "A cross-border customs valuation applicable to this supply chain consignment.\nA customs valuation applicable to this supply chain consignment item.\nCustoms valuation information applicable to this exchanged declaration."
+		}
+	]
+}

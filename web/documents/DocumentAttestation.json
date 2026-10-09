@@ -1,32 +1,29 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/documents/DocumentAttestation",
+	"$id": "https://schema.3sixty.global/documents/DocumentAttestation",
+	"title": "DocumentAttestation",
 	"description": "Interface describing a document attestation.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 3,
-			"items": false,
-			"maxItems": 3,
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/documents/"
-				},
-				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
-				},
-				{
-					"type": "string",
 					"const": "https://schema.org"
+				},
+				{
+					"const": "https://schema.3sixty.global/documents/"
+				},
+				{
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": false,
+			"minItems": 3,
+			"maxItems": 3,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "DocumentAttestation",
 			"description": "JSON-LD Type."
 		},
@@ -35,7 +32,7 @@
 			"description": "The id of the document."
 		},
 		"documentCode": {
-			"$ref": "https://vocabulary.uncefact.org/DocumentCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
 			"description": "The code for the document type."
 		},
 		"documentRevision": {
@@ -46,9 +43,9 @@
 			"type": "string",
 			"description": "The date/time of when the document was created."
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the document being attested."
+			"description": "The integrity of the document being attested."
 		}
 	},
 	"required": [
@@ -58,7 +55,6 @@
 		"documentCode",
 		"documentRevision",
 		"dateCreated",
-		"blobHash"
-	],
-	"additionalProperties": false
+		"integrity"
+	]
 }

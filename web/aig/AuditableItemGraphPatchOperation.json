@@ -1,39 +1,55 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/aig/AuditableItemGraphPatchOperation",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphPatchOperation",
+	"title": "AuditableItemGraphPatchOperation",
 	"description": "The patch operation for JSON diffs.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/aig/"
+					"const": "https://schema.3sixty.global/aig/"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
-							"type": "string",
-							"const": "https://schema.twindev.org/aig/"
+							"const": "https://schema.3sixty.global/aig/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AuditableItemGraphPatchOperation",
 			"description": "JSON-LD Type."
 		},
 		"patchOperation": {
-			"type": "string",
-			"enum": ["add", "remove", "replace", "move", "copy", "test"],
+			"anyOf": [
+				{
+					"const": "add"
+				},
+				{
+					"const": "remove"
+				},
+				{
+					"const": "replace"
+				},
+				{
+					"const": "move"
+				},
+				{
+					"const": "copy"
+				},
+				{
+					"const": "test"
+				}
+			],
 			"description": "The operation that was performed on the item."
 		},
 		"patchPath": {
@@ -48,6 +64,5 @@
 			"description": "The value to add."
 		}
 	},
-	"required": ["@context", "type", "patchOperation", "patchPath"],
-	"additionalProperties": false
+	"required": ["type", "patchOperation", "patchPath"]
 }

@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferCompletionMessage",
+	"title": "DataspaceProtocolTransferCompletionMessage",
+	"description": "Interface for the Dataspace Protocol transfer completion message.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
+			"description": "The JSON-LD context."
+		},
+		"@type": {
+			"const": "TransferCompletionMessage",
+			"description": "The JSON-LD type."
+		},
+		"consumerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Consumer side."
+		},
+		"providerPid": {
+			"type": "string",
+			"description": "MUST refer to the transfer identifier of the Provider side."
+		}
+	},
+	"required": ["@context", "@type", "consumerPid", "providerPid"]
+}

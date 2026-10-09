@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLocationPartyTypeCodeList",
+	"title": "UneceLocationPartyTypeCodeList",
+	"description": "Values for UneceLocationParty typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:servicingSpecifiedParty",
+			"description": "A servicing party specified for this logistics related location."
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSource",
+	"title": "UneceSource",
+	"description": "A place from which water originates, such as a hot spring or lake that provides water to public drinking water supplies\nand private wells.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Source",
+			"description": "JSON-LD Type."
+		},
+		"bathingProhibitionCaution": {
+			"type": "string",
+			"description": "A caution, expressed as text, of a bathing prohibition for this water source."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category for this water source."
+		},
+		"characteristic": {
+			"type": "string",
+			"description": "A characteristic, expressed as text, for this water source."
+		},
+		"characteristicCode": {
+			"type": "string",
+			"description": "The code specifying the characteristic of this water source."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this water source."
+		},
+		"drinkingProhibitionCaution": {
+			"type": "string",
+			"description": "A caution, expressed as text, of a drinking prohibition for this water source."
+		},
+		"healthBenefit": {
+			"type": "string",
+			"description": "A health benefit, expressed as text, for this water source."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this water source."
+		},
+		"marketingPhrase": {
+			"type": "string",
+			"description": "A marketing phrase, expressed as text, for this water source."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this water source."
+		}
+	},
+	"required": ["type"]
+}

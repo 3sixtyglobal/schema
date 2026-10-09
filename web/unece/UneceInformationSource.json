@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInformationSource",
+	"title": "UneceInformationSource",
+	"description": "A person, organization, thing or place from which information comes, arises or is obtained.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InformationSource",
+			"description": "JSON-LD Type."
+		},
+		"categoryCode": {
+			"type": "string",
+			"description": "The code specifying the category of this specified information source."
+		},
+		"content": {
+			"type": "string",
+			"description": "Content, expressed as text, of this specified information source."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified information source."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this specified information source."
+		},
+		"securityInformation": {
+			"type": "string",
+			"description": "Security information, expressed as text, of this specified information source."
+		},
+		"websiteURIId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the website URI (Uniform Resource Identifier) of this specified information source."
+		}
+	},
+	"required": ["type"]
+}

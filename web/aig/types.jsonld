@@ -1,68 +1,67 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-aig": "https://schema.twindev.org/aig/",
-		"twin-common": "https://schema.twindev.org/common/",
-		"schema": "http://schema.org/",
+		"twin-aig": "https://schema.3sixty.global/aig/",
+		"sch": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
 		"AuditableItemGraphAlias": "twin-aig:AuditableItemGraphAlias",
+		"AuditableItemGraphAuditedElement": "twin-aig:AuditableItemGraphAuditedElement",
+		"AuditableItemGraphPatchOperation": "twin-aig:AuditableItemGraphPatchOperation",
+		"AuditableItemGraphChangeset": "twin-aig:AuditableItemGraphChangeset",
+		"AuditableItemGraphChangesetList": "twin-aig:AuditableItemGraphChangesetList",
 		"AuditableItemGraphEdge": "twin-aig:AuditableItemGraphEdge",
 		"AuditableItemGraphResource": "twin-aig:AuditableItemGraphResource",
+		"AuditableItemGraphListPatch": "twin-aig:AuditableItemGraphListPatch",
 		"AuditableItemGraphVertex": "twin-aig:AuditableItemGraphVertex",
-		"AuditableItemGraphChangeset": "twin-aig:AuditableItemGraphChangeset",
-		"AuditableItemGraphPatchOperation": "twin-aig:AuditableItemGraphPatchOperation",
+		"AuditableItemGraphPartialVertex": "twin-aig:AuditableItemGraphPartialVertex",
+		"AuditableItemGraphVertexList": "twin-aig:AuditableItemGraphVertexList",
+		"AuditableItemGraphVertexVersionList": "twin-aig:AuditableItemGraphVertexVersionList",
+		"add": {
+			"@id": "twin-aig:add",
+			"@container": "@set"
+		},
 		"aliases": {
 			"@id": "twin-aig:aliases",
+			"@container": "@set"
+		},
+		"aliasFormat": {
+			"@id": "twin-aig:aliasFormat",
+			"@type": "sch:Text"
+		},
+		"aliasPatches": {
+			"@id": "twin-aig:aliasPatches"
+		},
+		"auditMode": {
+			"@id": "twin-aig:auditMode",
+			"@type": "sch:Text"
+		},
+		"edgePatches": {
+			"@id": "twin-aig:edgePatches"
+		},
+		"edgeRelationships": {
+			"@id": "twin-aig:edgeRelationships",
 			"@container": "@set"
 		},
 		"edges": {
 			"@id": "twin-aig:edges",
 			"@container": "@set"
 		},
-		"resources": {
-			"@id": "twin-aig:resources",
-			"@container": "@set"
-		},
-		"changesets": {
-			"@id": "twin-aig:changesets",
-			"@container": "@set"
-		},
 		"patches": {
 			"@id": "twin-aig:patches",
 			"@container": "@set"
 		},
-		"resourceObject": {
-			"@id": "twin-aig:resourceObject",
-			"@type": "@json"
-		},
-		"verification": {
-			"@id": "twin-aig:verification"
-		},
-		"edgeRelationship": {
-			"@id": "twin-aig:edgeRelationship",
-			"@type": "schema:Text"
-		},
-		"edgeRelationships": {
-			"@id": "twin-aig:edgeRelationships",
-			"@container": "@set"
-		},
-		"aliasFormat": {
-			"@id": "twin-aig:aliasFormat",
-			"@type": "schema:Text"
+		"patchFrom": {
+			"@id": "twin-aig:patchFrom",
+			"@type": "sch:Text"
 		},
 		"patchOperation": {
 			"@id": "twin-aig:patchOperation",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"patchPath": {
 			"@id": "twin-aig:patchPath",
-			"@type": "schema:Text"
-		},
-		"patchFrom": {
-			"@id": "twin-aig:patchFrom",
-			"@type": "schema:Text"
+			"@type": "sch:Text"
 		},
 		"patchValue": {
 			"@id": "twin-aig:patchValue",
@@ -70,7 +69,33 @@
 		},
 		"proofId": {
 			"@id": "twin-aig:proofId",
-			"@type": "schema:identifier"
+			"@type": "sch:identifier"
+		},
+		"remove": {
+			"@id": "twin-aig:remove",
+			"@container": "@set"
+		},
+		"resourceObject": {
+			"@id": "twin-aig:resourceObject",
+			"@type": "@json"
+		},
+		"resourcePatches": {
+			"@id": "twin-aig:resourcePatches"
+		},
+		"resources": {
+			"@id": "twin-aig:resources",
+			"@container": "@set"
+		},
+		"targetId": {
+			"@id": "twin-aig:targetId",
+			"@type": "@id"
+		},
+		"unique": {
+			"@id": "twin-aig:unique",
+			"@type": "sch:Boolean"
+		},
+		"verification": {
+			"@id": "twin-aig:verification"
 		}
 	}
 }

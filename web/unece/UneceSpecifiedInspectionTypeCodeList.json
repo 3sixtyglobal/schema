@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedInspectionTypeCodeList",
+	"title": "UneceSpecifiedInspectionTypeCodeList",
+	"description": "Values for UneceSpecifiedInspection typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableSpecifiedInspection",
+			"description": "A specified inspection applicable to this logistics transport movement.\nA specified inspection applicable to this product batch.\nA specified inspection applicable to this production facility.\nA specified inspection applicable to this production process.\nA specified inspection applicable to this referenced location.\nA specified inspection applicable to this trade party.\nAn inspection applicable to this trade product."
+		}
+	]
+}

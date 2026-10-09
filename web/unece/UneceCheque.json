@@ -1,0 +1,85 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCheque",
+	"title": "UneceCheque",
+	"description": "A written payment order to a bank to pay the stated sum from the drawer's account.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Cheque",
+			"description": "JSON-LD Type."
+		},
+		"applicableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this payment cheque is applicable."
+		},
+		"clearingRegion": {
+			"type": "string",
+			"description": "The clearing region, expressed as text, for this payment cheque."
+		},
+		"deliveryMethod": {
+			"type": "string",
+			"description": "A delivery method, expressed as text, for this payment cheque."
+		},
+		"deliveryMethodCode": {
+			"type": "string",
+			"description": "The code specifying the delivery method for this payment cheque."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this payment cheque."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this payment cheque."
+		},
+		"instructionPriorityCode": {
+			"type": "string",
+			"description": "The code specifying the instruction priority for this payment cheque, such as the urgency or order of importance for the\nprocessing of the payment cheque."
+		},
+		"layoutDescription": {
+			"type": "string",
+			"description": "The textual description of the layout for this payment cheque, such as a description of the company logo and digitized\nsignature printed on the cheque."
+		},
+		"maturityDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this payment cheque reaches maturity.",
+			"format": "date-time"
+		},
+		"memoField": {
+			"type": "string",
+			"description": "A memo field, expressed as text, on this payment cheque."
+		},
+		"number": {
+			"type": "string",
+			"description": "The number, expressed as text, of this payment cheque."
+		},
+		"printLocation": {
+			"type": "string",
+			"description": "The print location, expressed as text, for this payment cheque."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceChequeTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of payment cheque."
+		}
+	},
+	"required": ["type"]
+}

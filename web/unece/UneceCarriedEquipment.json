@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCarriedEquipment",
+	"title": "UneceCarriedEquipment",
+	"description": "A tool or device carried by a guest for an activity.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "CarriedEquipment",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this guest carried equipment."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, for this guest carried equipment."
+		},
+		"restriction": {
+			"type": "string",
+			"description": "A restriction, expressed as text, for this guest carried equipment."
+		},
+		"specificationNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedNote"
+			},
+			"description": "A specification note for this guest carried equipment."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCarriedEquipmentTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of guest carried equipment."
+		}
+	},
+	"required": ["type"]
+}

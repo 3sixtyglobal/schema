@@ -1,0 +1,231 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionResult",
+	"title": "UneceInspectionResult",
+	"description": "Results obtained by performing an inspection.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InspectionResult",
+			"description": "JSON-LD Type."
+		},
+		"applicableCorrectiveAction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCorrectiveAction"
+			},
+			"description": "A corrective action applicable to this specified inspection result."
+		},
+		"applicableInspectionResultCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
+			},
+			"description": "A characteristic applicable to this specified inspection result."
+		},
+		"applicableMethod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
+			},
+			"description": "A method applicable to this specified inspection result."
+		},
+		"applicablePreventiveAction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePreventiveAction"
+			},
+			"description": "A preventive action applicable to this specified inspection result."
+		},
+		"applicableSpecifiedAction": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedAction"
+			},
+			"description": "An action applicable to this specified inspection result."
+		},
+		"approvalDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the approval of this specified inspection result.",
+			"format": "date-time"
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this specified inspection result."
+		},
+		"attachedInspectionNote": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionNote"
+			},
+			"description": "A note with additional information and or conclusions attached to this specified inspection result."
+		},
+		"expectedValueApplicableCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
+			},
+			"description": "An expected value for the inspection characteristic to be acquired by using the type of inspection applicable to this\nspecified inspection result."
+		},
+		"generalCharacteristic": {
+			"type": "string",
+			"description": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this\nspecified inspection result."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this specified inspection result."
+		},
+		"inspectionDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the inspection for this specified inspection result.",
+			"format": "date-time"
+		},
+		"inspectionParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "An inspection party specified for this inspection result."
+		},
+		"inspectionStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced inspection standard for this specified inspection result."
+		},
+		"laboratoryObservationResult": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceObservationResult"
+			},
+			"description": "A laboratory sample observation result for this specified inspection result."
+		},
+		"maximumStandardValueApplicableCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
+			},
+			"description": "A maximum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
+		},
+		"minimumStandardValueApplicableCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
+			},
+			"description": "A minimum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
+		},
+		"observedValueApplicableCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
+			},
+			"description": "An observed value for the inspection characteristic acquired by using the type of inspection applicable to this\nspecified inspection result."
+		},
+		"obtainedAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion obtained by means of this specified inspection result."
+		},
+		"obtainedConformanceCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceConformanceCertificate"
+			},
+			"description": "A conformance certificate obtained by means of this specified inspection result."
+		},
+		"obtainedOrganizationalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
+			},
+			"description": "An organizational certificate obtained by means of this specified inspection result."
+		},
+		"obtainedProcessCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
+			},
+			"description": "A process certificate obtained by means of this specified inspection result."
+		},
+		"obtainedProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate obtained by means of this specified inspection result."
+		},
+		"obtainedSpecifiedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
+			},
+			"description": "A certificate obtained by means of this specified inspection result."
+		},
+		"outsourcedInspectionParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "An outsourced inspection party for this specified inspection result."
+		},
+		"relatedAssessment": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
+			},
+			"description": "An assessment related to this specified inspection result."
+		},
+		"relatedInstructions": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionInstructions"
+			},
+			"description": "Inspection instructions related to this specified inspection result."
+		},
+		"relatedMaterialType": {
+			"type": "string",
+			"description": "A material type, expressed as text, related to this specified inspection result."
+		},
+		"relatedProductType": {
+			"type": "string",
+			"description": "A product type, expressed as text, related to this specified inspection result."
+		},
+		"shareableIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this specified inspection result is shareable."
+		},
+		"specifiedInspectionReference": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionReference"
+			},
+			"description": "An inspection reference specified for this inspection result."
+		},
+		"statement": {
+			"type": "string",
+			"description": "A statement, expressed as text, for this specified inspection result."
+		},
+		"statusCode": {
+			"type": "string",
+			"description": "The code specifying the status of this inspection result."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceWorkItemDimension",
+	"title": "UneceWorkItemDimension",
+	"description": "A measure of spatial extent associated with this work item, such as length, breadth, or height.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "WorkItemDimension",
+			"description": "JSON-LD Type."
+		},
+		"componentDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWorkItemDimension"
+			},
+			"description": "A work item component dimension for this work item dimension."
+		},
+		"componentWorkItemDimension": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceWorkItemDimension"
+			},
+			"description": "A work item component dimension for this work item dimension."
+		},
+		"contractualLanguageCode": {
+			"type": "string",
+			"description": "The code specifying the contractual language for this work item dimension."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this work item dimension."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this work item dimension."
+		},
+		"valueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measured value for this work item dimension."
+		},
+		"workItemDimensionTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of this work item dimension."
+		}
+	},
+	"required": ["type", "valueMeasure", "workItemDimensionTypeCode"]
+}

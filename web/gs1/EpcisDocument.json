@@ -1,0 +1,60 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisDocument",
+	"title": "EpcisDocument",
+	"description": "EPCIS 2.0 capture document containing header metadata and an event list.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisContextType",
+			"description": "The"
+		},
+		"id": {
+			"type": "string",
+			"description": "The JSON-LD document id."
+		},
+		"type": {
+			"const": "EPCISDocument",
+			"description": "JSON-LD Type."
+		},
+		"schemaVersion": {
+			"type": "string",
+			"description": "Schema version."
+		},
+		"creationDate": {
+			"type": "string",
+			"description": "Creation Date."
+		},
+		"instanceIdentifier": {
+			"type": "string",
+			"description": "(Optional) The instance identifier of an EPCISDocument."
+		},
+		"sender": {
+			"type": "string",
+			"description": "(Optional) The sender of an EPCISDocument."
+		},
+		"receiver": {
+			"type": "string",
+			"description": "(Optional) The intended receiver of an EPCISDocument."
+		},
+		"epcisHeader": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisHeader",
+			"description": "EPCIS Header."
+		},
+		"epcisBody": {
+			"type": "object",
+			"properties": {
+				"eventList": {
+					"type": "array",
+					"items": {
+						"$ref": "https://schema.3sixty.global/gs1/EpcisEvents"
+					},
+					"description": "The list of events."
+				}
+			},
+			"required": ["eventList"],
+			"description": "The EPCIS Body."
+		}
+	},
+	"required": ["@context", "type", "schemaVersion", "creationDate", "epcisBody"]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceCommunicationEventTypeCodeList",
+	"title": "UneceCommunicationEventTypeCodeList",
+	"description": "Values for UneceCommunicationEvent typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:matchingEvent",
+			"description": "A matching event for this communication pairing."
+		},
+		{
+			"const": "unece:relatedEvent",
+			"description": "A communication event related to this monitoring IOT device.\nA communication event related to this piece of logistics transport equipment."
+		}
+	]
+}

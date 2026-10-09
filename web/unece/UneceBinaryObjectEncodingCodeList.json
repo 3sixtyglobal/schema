@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceBinaryObjectEncodingCodeList",
+	"title": "UneceBinaryObjectEncodingCodeList",
+	"description": "A code specifying the encoding algorithm of the binary object.",
+	"anyOf": [
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#1",
+			"description": "ASCII 7 bit: 1."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#2",
+			"description": "ASCII 8 bit: 2."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#3",
+			"description": "Code page 500 (EBCDIC Multinational No. 5): 3."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#4",
+			"description": "Code page 850 (IBM PC Multinational): 4."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#5",
+			"description": "UCS-2: 5."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#6",
+			"description": "UCS-4: 6."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#7",
+			"description": "UTF-8: 7."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#8",
+			"description": "UTF-16: 8."
+		},
+		{
+			"const": "unece:BinaryObjectEncodingCodeList#ZZZ",
+			"description": "Mutually agreed: ZZZ."
+		}
+	]
+}

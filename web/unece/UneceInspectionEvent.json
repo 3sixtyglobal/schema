@@ -1,0 +1,42 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionEvent",
+	"title": "UneceInspectionEvent",
+	"description": "A significant occurrence or happening related to an inspection.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InspectionEvent",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of the inspection for this event."
+		},
+		"occurrenceDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the occurrence of this inspection event.",
+			"format": "date-time"
+		},
+		"occurrenceLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
+			"description": "The referenced location where this inspection event will occur or has occurred."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceInspectionEventTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of inspection for this event."
+		}
+	},
+	"required": ["type", "occurrenceDateTime", "occurrenceLocation"]
+}

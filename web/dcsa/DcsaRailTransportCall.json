@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaRailTransportCall",
+	"title": "DcsaRailTransportCall",
+	"description": "Rail transport call details.\n\nSource: `railTransportCall` schema in the DCSA Event Domain (v3.1.0).",
+	"type": "object",
+	"properties": {
+		"modeOfTransport": {
+			"const": "RAIL",
+			"description": "Discriminator for the transport mode."
+		},
+		"departureID": {
+			"type": "string",
+			"description": "Departure reference ID."
+		},
+		"railService": {
+			"type": "string",
+			"description": "Rail service number."
+		},
+		"railCar": {
+			"type": "string",
+			"description": "Railcar identifier."
+		}
+	},
+	"required": ["modeOfTransport"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase"
+		}
+	]
+}

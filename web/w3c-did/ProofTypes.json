@@ -1,7 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/ProofTypes",
+	"$id": "https://schema.3sixty.global/w3c-did/ProofTypes",
+	"title": "ProofTypes",
 	"description": "The types for proofs.",
-	"type": "string",
-	"enum": ["DataIntegrityProof", "JsonWebSignature2020"]
+	"anyOf": [
+		{
+			"const": "DataIntegrityProof",
+			"description": "The type for Data Integrity Proof."
+		},
+		{
+			"const": "JsonWebSignature2020",
+			"description": "The type for Json Web Signature 2020."
+		}
+	]
 }

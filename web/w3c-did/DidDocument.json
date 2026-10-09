@@ -1,27 +1,33 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidDocument",
-	"description": "Interface describing a DID Document. Spec https://www.w3.org/TR/did-core/#did-document-properties.",
+	"$id": "https://schema.3sixty.global/w3c-did/DidDocument",
+	"title": "DidDocument",
+	"description": "Interface describing a DID Document.\nSpec https://www.w3.org/TR/did-core/#did-document-properties.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
 					"const": "https://www.w3.org/ns/did/v1"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
 					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						"anyOf": [
+							{
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+							},
+							{
+								"const": "https://www.w3.org/ns/did/v1"
+							}
+						]
 					},
-					"prefixItems": [
-						{
-							"type": "string",
-							"const": "https://www.w3.org/ns/did/v1"
-						}
-					]
+					"contains": {
+						"const": "https://www.w3.org/ns/did/v1"
+					},
+					"minContains": 1,
+					"maxContains": 1,
+					"minItems": 1
 				}
 			],
 			"description": "The context for the document."
@@ -37,12 +43,9 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "Aliases for the document."
@@ -54,129 +57,104 @@
 				},
 				{
 					"type": "array",
-					"items": false,
-					"prefixItems": [
-						{
-							"type": "string"
-						}
-					]
+					"items": {
+						"type": "string"
+					}
 				}
 			],
 			"description": "The controller for the document."
 		},
 		"verificationMethod": {
 			"type": "array",
-			"items": false,
-			"description": "The verification methods.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The verification methods."
 		},
 		"authentication": {
 			"type": "array",
-			"items": false,
-			"description": "The authentication methods.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The authentication methods."
 		},
 		"assertionMethod": {
 			"type": "array",
-			"items": false,
-			"description": "The assertion methods.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The assertion methods."
 		},
 		"keyAgreement": {
 			"type": "array",
-			"items": false,
-			"description": "The key agreements.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The key agreements."
 		},
 		"capabilityInvocation": {
 			"type": "array",
-			"items": false,
-			"description": "The capability invocations.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The capability invocations."
 		},
 		"capabilityDelegation": {
 			"type": "array",
-			"items": false,
-			"description": "The capability delegations.",
-			"prefixItems": [
-				{
-					"anyOf": [
-						{
-							"type": "string"
-						},
-						{
-							"$ref": "https://schema.twindev.org/w3c-did/DidDocumentVerificationMethod"
-						}
-					]
-				}
-			]
+			"items": {
+				"anyOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "https://schema.3sixty.global/w3c-did/DidDocumentVerificationMethod"
+					}
+				]
+			},
+			"description": "The capability delegations."
 		},
 		"service": {
 			"type": "array",
-			"items": false,
-			"description": "The services.",
-			"prefixItems": [
-				{
-					"$ref": "https://schema.twindev.org/w3c-did/DidService"
-				}
-			]
+			"items": {
+				"$ref": "https://schema.3sixty.global/w3c-did/DidService"
+			},
+			"description": "The services."
 		}
 	},
-	"required": ["@context", "id"],
-	"additionalProperties": false
+	"required": ["@context", "id"]
 }

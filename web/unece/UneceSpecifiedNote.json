@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedNote",
+	"title": "UneceSpecifiedNote",
+	"description": "A specified textual or coded description, such as a remark or additional information.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SpecifiedNote",
+			"description": "JSON-LD Type."
+		},
+		"content": {
+			"type": "string",
+			"description": "Content, expressed as text, of this specified note."
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the creation of this specified note.",
+			"format": "date-time"
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this specified note."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this specified note."
+		},
+		"name": {
+			"type": "string",
+			"description": "A name, expressed as text, of this specified note."
+		},
+		"specifiedNoteSubjectCode": {
+			"type": "string",
+			"description": "The code specifying the subject of this specified note."
+		},
+		"subject": {
+			"type": "string",
+			"description": "A subject, expressed as text, of this specified note."
+		},
+		"subjectCode": {
+			"type": "string",
+			"description": "The code specifying the subject of this specified note."
+		}
+	},
+	"required": ["type"]
+}

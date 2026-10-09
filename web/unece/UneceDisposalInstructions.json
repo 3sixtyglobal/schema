@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceDisposalInstructions",
+	"title": "UneceDisposalInstructions",
+	"description": "A set of instructions detailing how to properly dispose of a material.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "DisposalInstructions",
+			"description": "JSON-LD Type."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of these disposal instructions."
+		},
+		"disposalInstructionsRecyclingDescriptionCode": {
+			"type": "string",
+			"description": "A code describing recycling in these disposal instructions."
+		},
+		"handling": {
+			"type": "string",
+			"description": "The handling, expressed as text, in this set of disposal instructions."
+		},
+		"materialId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the material to which these disposal instructions apply."
+		},
+		"rCRAHandling": {
+			"type": "string",
+			"description": "The Resource Conservation and Recovery Act (RCRA) handling, expressed as text, in this set of disposal instructions."
+		},
+		"recyclingProcedure": {
+			"type": "string",
+			"description": "A recycling procedure, expressed as text, for these disposal instructions."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceVoucherTypeCodeList",
+	"title": "UneceVoucherTypeCodeList",
+	"description": "Values for UneceVoucher typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:identifiedVoucher",
+			"description": "An experience item voucher identified for this trade settlement payment means."
+		}
+	]
+}

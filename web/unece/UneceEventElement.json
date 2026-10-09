@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceEventElement",
+	"title": "UneceEventElement",
+	"description": "Information about an event in which a Track and Trace (TT) element of one of more physical or digital objects is\nidentified by a specific object class identifier (such as an electronic product class), either a specific quantity or an\nunspecified quantity.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "EventElement",
+			"description": "JSON-LD Type."
+		},
+		"objectClassId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the object class for this TT event element."
+		},
+		"unitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units of this TT event element."
+		}
+	},
+	"required": ["type", "objectClassId"]
+}

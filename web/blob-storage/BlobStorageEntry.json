@@ -1,29 +1,27 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
+	"$id": "https://schema.3sixty.global/blob-storage/BlobStorageEntry",
+	"title": "BlobStorageEntry",
 	"description": "Interface describing a blob storage entry.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"type": "array",
-			"minItems": 2,
-			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-			},
-			"description": "JSON-LD Context.",
 			"prefixItems": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/blob-storage/"
+					"const": "https://schema.3sixty.global/blob-storage/"
 				},
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
-			]
+			],
+			"items": {
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+			},
+			"minItems": 2,
+			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "BlobStorageEntry",
 			"description": "JSON-LD Type."
 		},
@@ -43,9 +41,9 @@
 			"type": "number",
 			"description": "The size of the data in the blob."
 		},
-		"blobHash": {
+		"integrity": {
 			"type": "string",
-			"description": "The hash of the data in the blob."
+			"description": "The integrity of the data in the blob."
 		},
 		"encodingFormat": {
 			"type": "string",
@@ -56,7 +54,7 @@
 			"description": "Indicates if the blob is encrypted."
 		},
 		"compression": {
-			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageCompressionType",
+			"$ref": "https://schema.3sixty.global/blob-storage/BlobStorageCompressionType",
 			"description": "The type of compression used for the blob, if not set it is not stored with compression."
 		},
 		"fileExtension": {
@@ -64,7 +62,7 @@
 			"description": "The extension."
 		},
 		"metadata": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The metadata for the blob as JSON-LD."
 		},
 		"blob": {
@@ -72,6 +70,5 @@
 			"description": "The blob in base64 format, included if the includeContent flag was set in the request."
 		}
 	},
-	"required": ["@context", "type", "id", "dateCreated", "blobSize", "blobHash"],
-	"additionalProperties": false
+	"required": ["@context", "type", "id", "dateCreated", "blobSize", "integrity"]
 }

@@ -1,33 +1,31 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/attestation/AttestationJwtProof",
+	"$id": "https://schema.3sixty.global/attestation/AttestationJwtProof",
+	"title": "AttestationJwtProof",
 	"description": "Interface describing an attestation proof.",
 	"type": "object",
 	"properties": {
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/attestation/"
+					"const": "https://schema.3sixty.global/attestation/"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
-							"type": "string",
-							"const": "https://schema.twindev.org/attestation/"
+							"const": "https://schema.3sixty.global/attestation/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "JwtProof",
 			"description": "The type of the proof."
 		},
@@ -36,6 +34,5 @@
 			"description": "The value of the proof."
 		}
 	},
-	"required": ["@context", "type", "value"],
-	"additionalProperties": false
+	"required": ["@context", "type", "value"]
 }

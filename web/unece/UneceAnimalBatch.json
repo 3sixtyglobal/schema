@@ -1,0 +1,90 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalBatch",
+	"title": "UneceAnimalBatch",
+	"description": "A group of animals dealt with together.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "AnimalBatch",
+			"description": "JSON-LD Type."
+		},
+		"breakUpDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the break up of this animal batch.",
+			"format": "date-time"
+		},
+		"creationDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the creation of this animal batch.",
+			"format": "date-time"
+		},
+		"fLUXId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "A Fisheries Language for Universal eXchange (FLUX) identifier for this animal batch."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this animal batch."
+		},
+		"maximumSizeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The maximum size, expressed as a measure, of the animals for this animal batch."
+		},
+		"minimumSizeMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The minimum size, expressed as a measure, of the animals for this animal batch."
+		},
+		"saleDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value of the sale for this animal batch.",
+			"format": "date-time"
+		},
+		"salesNoteId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for the sales note for this animal batch."
+		},
+		"specifiedDelimitedPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"description": "The delimited period specified for this animal batch."
+		},
+		"specifiedPeriod": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod",
+			"description": "The delimited period specified for this animal batch."
+		},
+		"unitQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The number of units, expressed as a quantity, for this animal batch."
+		},
+		"weightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The weight, expressed as a measure, for this animal batch."
+		}
+	},
+	"required": ["type", "creationDateTime", "identifier"]
+}

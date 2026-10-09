@@ -1,0 +1,145 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceContactPerson",
+	"title": "UneceContactPerson",
+	"description": "An individual human being in a position to give assistance or information.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "ContactPerson",
+			"description": "JSON-LD Type."
+		},
+		"alias": {
+			"type": "string",
+			"description": "The alias, expressed as text, reflecting a shortened form of the name of this person or any other name such as a\nnickname by which this contact person may be known."
+		},
+		"birthDateTime": {
+			"type": "string",
+			"description": "The date, time, date time or other date time value which specifies the birth date for this contact person.",
+			"format": "date-time"
+		},
+		"birthplaceName": {
+			"type": "string",
+			"description": "The name of the place where this contact person was born, expressed as text."
+		},
+		"contactPersonTitleCode": {
+			"type": "string",
+			"description": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
+		},
+		"countryResidenceCountryId": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
+				},
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of the residence country of this contact person."
+		},
+		"emailURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "An email Uniform Resource Identifier (URI) communication for this contact person."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "A name, expressed as text, that this contact person shares with members of his/her family."
+		},
+		"familyNamePrefix": {
+			"type": "string",
+			"description": "The prefix, expressed as text, that precedes this contact person's family name, such as Van, Von."
+		},
+		"faxCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Facsimile communication information for this contact person."
+		},
+		"genderCode": {
+			"type": "string",
+			"description": "The code specifying the gender of this contact person."
+		},
+		"givenName": {
+			"type": "string",
+			"description": "The name, expressed as text, given to this contact person, usually by parents at birth."
+		},
+		"instantMessagingCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "An instant messaging communication for this contact person."
+		},
+		"middleName": {
+			"type": "string",
+			"description": "The middle name, expressed as text, of this contact person, usually given by parents at birth."
+		},
+		"nameSuffix": {
+			"type": "string",
+			"description": "The suffix, expressed as text, that follows this contact person's name, such as Junior, Third."
+		},
+		"role": {
+			"type": "string",
+			"description": "A role, expressed as text, for this contact person."
+		},
+		"specifiedBirthAddress": {
+			"$ref": "https://schema.3sixty.global/unece/UneceBirthAddress",
+			"description": "The birth address specified for this contact person."
+		},
+		"specifiedCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "A universal communication specified for this contact person."
+		},
+		"specifiedEmployerIdentity": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceEmployerIdentity"
+			},
+			"description": "An employer identity specified for this contact person."
+		},
+		"specifiedPersonIdentity": {
+			"$ref": "https://schema.3sixty.global/unece/UnecePersonIdentity",
+			"description": "The person identity specified for this contact person."
+		},
+		"specifiedTaxRegistration": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTaxRegistration"
+			},
+			"description": "A tax registration specified for this contact person."
+		},
+		"telephoneCommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "Telephone communication information for this contact person."
+		},
+		"title": {
+			"type": "string",
+			"description": "The textual expression of the title associated with this contact person, such as Doctor."
+		},
+		"websiteURICommunication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
+			},
+			"description": "A website Uniform Resource Identifier (URI) communication for this contact person."
+		}
+	},
+	"required": ["type"]
+}

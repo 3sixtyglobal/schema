@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/gs1/EpcisQueryDocument",
+	"title": "EpcisQueryDocument",
+	"description": "EPCIS 2.0 QueryDocument used to submit queries to an EPCIS repository.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisContextType",
+			"description": "The"
+		},
+		"id": {
+			"type": "string",
+			"description": "The JSON-LD document id."
+		},
+		"type": {
+			"const": "EPCISQueryDocument",
+			"description": "JSON-LD Type."
+		},
+		"schemaVersion": {
+			"type": "string",
+			"description": "Schema version."
+		},
+		"creationDate": {
+			"type": "string",
+			"description": "Creation Date."
+		},
+		"epcisBody": {
+			"$ref": "https://schema.3sixty.global/gs1/EpcisQueryDocumentBody",
+			"description": "The EPCIS Body."
+		}
+	},
+	"required": ["@context", "type", "epcisBody"]
+}

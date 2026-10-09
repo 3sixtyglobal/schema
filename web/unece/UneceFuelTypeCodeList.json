@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFuelTypeCodeList",
+	"title": "UneceFuelTypeCodeList",
+	"description": "Values for UneceFuel typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:includedFuel",
+			"description": "Gaseous fuels included in the transport of these dangerous goods."
+		}
+	]
+}

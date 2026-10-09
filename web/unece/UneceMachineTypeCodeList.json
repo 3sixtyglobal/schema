@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceMachineTypeCodeList",
+	"title": "UneceMachineTypeCodeList",
+	"description": "Values for UneceMachine typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:allocatedMachine",
+			"description": "A machine allocated to this production process."
+		},
+		{
+			"const": "unece:applicableMachine",
+			"description": "A production machine applicable to this facility production unit.\nA production machine applicable to this product colour."
+		},
+		{
+			"const": "unece:combinedMachine",
+			"description": "A production machine combined with this production machine.\nA production machine combined with this specified production device."
+		},
+		{
+			"const": "unece:specifiedMachine",
+			"description": "A production machine specified for this product print."
+		}
+	]
+}

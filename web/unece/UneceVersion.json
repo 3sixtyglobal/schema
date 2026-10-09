@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceVersion",
+	"title": "UneceVersion",
+	"description": "A specific variant of a document.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Version",
+			"description": "JSON-LD Type."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier for this document version."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date and time or other date time value of issue of this document version.",
+			"format": "date-time"
+		},
+		"name": {
+			"type": "string",
+			"description": "The name, expressed as text, of this document version."
+		}
+	},
+	"required": ["type"]
+}

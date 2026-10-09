@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportMeansDirectionCodeList",
+	"title": "UneceTransportMeansDirectionCodeList",
+	"description": "A character string used to represent the transport means direction.",
+	"anyOf": [
+		{
+			"const": "unece:TransportMeansDirectionCodeList#BS",
+			"description": "Buyer to seller: BS."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SB",
+			"description": "Seller to buyer: SB."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SC",
+			"description": "Subcontractor to seller: SC."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SD",
+			"description": "Seller to drop ship designated location: SD."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SF",
+			"description": "Seller to freight forwarder: SF."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SS",
+			"description": "Seller to subcontractor: SS."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#ST",
+			"description": "Mother vessel to lighter: ST."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#SU",
+			"description": "Lighter to mother vessel: SU."
+		},
+		{
+			"const": "unece:TransportMeansDirectionCodeList#ZZZ",
+			"description": "Mutually defined: ZZZ."
+		}
+	]
+}

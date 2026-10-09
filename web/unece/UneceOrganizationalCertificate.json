@@ -1,0 +1,122 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate",
+	"title": "UneceOrganizationalCertificate",
+	"description": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met\nrequired organizational criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "OrganizationalCertificate",
+			"description": "JSON-LD Type."
+		},
+		"actualEffectiveDateTime": {
+			"type": "string",
+			"description": "The actual effective date, time, date time or other date time value for this organizational certificate.",
+			"format": "date-time"
+		},
+		"applicableAssertion": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
+			},
+			"description": "A sustainability assertion applicable to this organizational certificate."
+		},
+		"applicableObjectCode": {
+			"type": "string",
+			"description": "A code specifying an object for which this organizational certificate is applicable."
+		},
+		"applicableOrganizationCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristic"
+			},
+			"description": "A characteristic applicable to this organization certificate."
+		},
+		"applicableOrganizationalCertification": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertification"
+			},
+			"description": "An organizational certification applicable to this organizational certificate."
+		},
+		"applicableStandard": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
+			},
+			"description": "A referenced standard applicable to this organizational certificate."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this organizational certificate."
+		},
+		"attachedBinaryFile": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
+			},
+			"description": "A binary file attached to this organizational certificate."
+		},
+		"certificateTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
+			"description": "The code specifying the type of organizational certificate."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this organizational certificate."
+		},
+		"expiryDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value when this organizational certificate expires.",
+			"format": "date-time"
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier of this organizational certificate."
+		},
+		"issueDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the issuance of this organizational certificate.",
+			"format": "date-time"
+		},
+		"issueReasonCode": {
+			"type": "string",
+			"description": "The code specifying the reason why this organizational certificate was issued."
+		},
+		"issuingPartyId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of the party issuing this organizational certificate."
+		},
+		"purposeCode": {
+			"type": "string",
+			"description": "The code specifying the purpose of this organizational certificate."
+		},
+		"requestedEffectiveDateTime": {
+			"type": "string",
+			"description": "The requested effective date, time, date time or other date time value for this organizational certificate.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type"]
+}

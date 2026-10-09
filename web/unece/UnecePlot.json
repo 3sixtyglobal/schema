@@ -1,0 +1,111 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UnecePlot",
+	"title": "UnecePlot",
+	"description": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Plot",
+			"description": "JSON-LD Type."
+		},
+		"applicableAgriculturalProcess": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalProcess"
+			},
+			"description": "An agricultural process crop production specified for this crop plot."
+		},
+		"appliedAgriculturalApplication": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
+			},
+			"description": "A specified agricultural application applied to this crop plot."
+		},
+		"areaMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The area measure for this crop plot."
+		},
+		"endDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the end of this crop plot.",
+			"format": "date-time"
+		},
+		"grownCrop": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceFieldCrop"
+			},
+			"description": "A field crop grown on this crop plot."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The identifier for this crop plot."
+		},
+		"includedPlot": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UnecePlot"
+			},
+			"description": "A crop plot included in this crop plot."
+		},
+		"regulatoryOrganicIndicator": {
+			"type": "boolean",
+			"description": "The indication of whether or not this crop plot is certified as regulatory organic."
+		},
+		"regulatorySoilTypeCode": {
+			"type": "string",
+			"description": "The code specifying the type of regulatory soil for this crop plot."
+		},
+		"specifiedAgriculturalCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCertificate"
+			},
+			"description": "An agricultural certificate specified for this crop plot."
+		},
+		"specifiedAgriculturalCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic"
+			},
+			"description": "An agricultural characteristic specified for this crop plot."
+		},
+		"specifiedAgriculturalZoneArea": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalZoneArea"
+			},
+			"description": "An agricultural zone area specified for this crop plot."
+		},
+		"specifiedArea": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceArea"
+			},
+			"description": "An agricultural zone area specified for this crop plot."
+		},
+		"specifiedLocation": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
+			"description": "The referenced location specified for this crop plot."
+		},
+		"startDateTime": {
+			"type": "string",
+			"description": "The date, time, date time, or other date time value for the start of this crop plot.",
+			"format": "date-time"
+		}
+	},
+	"required": ["type", "identifier"]
+}

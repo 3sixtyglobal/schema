@@ -1,0 +1,71 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancialAdjustment",
+	"title": "UneceFinancialAdjustment",
+	"description": "A correction or modification to reflect actual financial conditions.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "FinancialAdjustment",
+			"description": "JSON-LD Type."
+		},
+		"accountingDebitCreditStatusDirectionCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceAccountingDebitCreditStatusCodeList",
+			"description": "The code specifying whether the financial adjustment must be subtracted or added."
+		},
+		"actualAmount": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
+			},
+			"description": "An actual monetary value added or subtracted as a result of this financial adjustment."
+		},
+		"actualDateTime": {
+			"type": "string",
+			"description": "The actual date, time, date time, or other date time value of this financial adjustment.",
+			"format": "date-time"
+		},
+		"actualQuantity": {
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
+			"description": "The actual quantity added or subtracted as a result of this financial adjustment."
+		},
+		"claimRelatedParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The claim related party for this financial adjustment."
+		},
+		"financialAdjustmentReasonCode": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"$ref": "https://schema.3sixty.global/unece/UneceFinancialAdjustmentReasonCodeList"
+					},
+					{
+						"type": "string"
+					}
+				]
+			},
+			"description": "A code specifying a reason for this financial adjustment."
+		},
+		"invoiceReferenceDocument": {
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
+			"description": "The invoice document referenced for this financial adjustment."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this financial adjustment."
+		},
+		"relatedTax": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
+			},
+			"description": "A trade tax related to this financial adjustment."
+		}
+	},
+	"required": ["type"]
+}

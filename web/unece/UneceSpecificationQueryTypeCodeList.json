@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecificationQueryTypeCodeList",
+	"title": "UneceSpecificationQueryTypeCodeList",
+	"description": "Values for UneceSpecificationQuery typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:requestingQuery",
+			"description": "A requesting specification query for this work item complex description."
+		}
+	]
+}

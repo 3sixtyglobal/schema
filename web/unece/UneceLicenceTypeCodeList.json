@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLicenceTypeCodeList",
+	"title": "UneceLicenceTypeCodeList",
+	"description": "Values for UneceLicence typeCode property.",
+	"anyOf": [
+		{
+			"const": "unece:applicableLicence",
+			"description": "A specified licence applicable to this production process.\nA specified licence applicable to this referenced standard.\nA specified licence applicable to this trade party.\nA specified licence applicable to this trade product."
+		}
+	]
+}

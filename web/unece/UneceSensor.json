@@ -1,0 +1,102 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSensor",
+	"title": "UneceSensor",
+	"description": "An object which can detect and measure physical properties and which can record, indicate and transmit such\nmeasurements.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Sensor",
+			"description": "JSON-LD Type."
+		},
+		"actualReportedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement"
+			},
+			"description": "An actual calibrated measurement reported for this monitoring sensor."
+		},
+		"definedControlSettingParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceControlSettingParameter"
+			},
+			"description": "A control setting parameter defined for this monitoring sensor."
+		},
+		"definedOperationalParameter": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceOperationalParameter"
+			},
+			"description": "An operational parameter defined for this monitoring sensor."
+		},
+		"grantedCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate granted for this monitoring sensor."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this monitoring sensor."
+		},
+		"manufacturerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The manufacturer party for this monitoring sensor."
+		},
+		"ownerParty": {
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
+			"description": "The owner party of this monitoring sensor."
+		},
+		"positionCode": {
+			"type": "string",
+			"description": "The code specifying a position of this monitoring sensor."
+		},
+		"precisionMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement"
+			},
+			"description": "A calibrated measurement of precision for this monitoring sensor."
+		},
+		"remainingBatteryChargePercent": {
+			"type": "string",
+			"description": "The percentage of the remaining battery charge of this monitoring sensor."
+		},
+		"scheduledReportedMeasurement": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement"
+			},
+			"description": "A scheduled calibrated measurement reported for this monitoring sensor."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSensorTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying a type of monitoring sensor."
+		},
+		"valueMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the value for this monitoring sensor."
+		}
+	},
+	"required": ["type"]
+}

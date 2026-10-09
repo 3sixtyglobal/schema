@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceRegulatedGoods",
+	"title": "UneceRegulatedGoods",
+	"description": "Articles of trade or commerce which are subject to, or controlled by a rule, regulation, or law at a particular point\nduring their logistics lifecycle.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "RegulatedGoods",
+			"description": "JSON-LD Type."
+		},
+		"applicableDangerousGoods": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceDangerousGoods"
+			},
+			"description": "Transport dangerous goods information applicable to these logistics regulated goods."
+		}
+	},
+	"required": ["type"]
+}

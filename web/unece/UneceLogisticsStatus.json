@@ -1,0 +1,106 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceLogisticsStatus",
+	"title": "UneceLogisticsStatus",
+	"description": "The information relevant to a condition or a position related to logistics.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "LogisticsStatus",
+			"description": "JSON-LD Type."
+		},
+		"arrivalReportedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A transport arrival event reported for this logistics status."
+		},
+		"contactParty": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
+			},
+			"description": "A contact party for this logistics status."
+		},
+		"departureReportedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A transport departure event reported for this logistics status."
+		},
+		"description": {
+			"type": "string",
+			"description": "The textual description of this logistics status."
+		},
+		"information": {
+			"type": "string",
+			"description": "Information, expressed as text, for this logistics status."
+		},
+		"loadingReportedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A transport loading event reported for this logistics status."
+		},
+		"logisticsStatusConditionCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatusCodeList",
+			"description": "The code specifying this logistics status condition [UNECE Recommendation 24]."
+		},
+		"logisticsStatusReasonCode": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatusCodeList"
+			},
+			"description": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
+		},
+		"reason": {
+			"type": "string",
+			"description": "A reason, expressed as text, for this logistics status."
+		},
+		"referenceDateTime": {
+			"type": "string",
+			"description": "The reference date, time, date time or other date time value for this logistics status.",
+			"format": "date-time"
+		},
+		"reportedSupplyChainEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
+			},
+			"description": "A supply chain event reported for this logistics status."
+		},
+		"sequenceNumeric": {
+			"type": "string",
+			"description": "The sequence number of this logistics status, such as within a status report."
+		},
+		"specifiedLogisticsLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
+			},
+			"description": "A location specified for this logistics status."
+		},
+		"unloadingReportedEvent": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
+			},
+			"description": "A transport unloading event reported for this logistics status."
+		},
+		"validityPeriod": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
+			},
+			"description": "A specific validity period for this logistics status."
+		}
+	},
+	"required": ["type"]
+}

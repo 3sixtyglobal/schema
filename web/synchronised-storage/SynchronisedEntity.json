@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntity",
+	"title": "SynchronisedEntity",
+	"description": "The base definition for synchronised entries.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "The id of the entry."
+		},
+		"nodeIdentity": {
+			"type": "string",
+			"description": "The identity of the node that owns the entry."
+		}
+	},
+	"required": ["id", "nodeIdentity"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/synchronised-storage/SynchronisedEntityCore"
+		}
+	]
+}

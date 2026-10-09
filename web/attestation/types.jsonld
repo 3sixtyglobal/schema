@@ -1,14 +1,12 @@
 {
 	"@context": {
 		"@version": 1.1,
-		"@protected": true,
-		"twin-attestation": "https://schema.twindev.org/attestation/",
-		"twin-common": "https://schema.twindev.org/common/",
+		"twin-attestation": "https://schema.3sixty.global/attestation/",
 		"schema": "http://schema.org/",
 		"id": "@id",
 		"type": "@type",
-		"AuditableInformation": "twin-attestation:AuditableInformation",
-		"AuditableJwtProof": "twin-attestation:AuditableJwtProof",
+		"AttestationInformation": "twin-attestation:AttestationInformation",
+		"AttestationJwtProof": "twin-attestation:AttestationJwtProof",
 		"dateTransferred": {
 			"@id": "twin-attestation:dateTransferred",
 			"@type": "schema:Date"
@@ -17,11 +15,10 @@
 			"@id": "twin-attestation:ownerIdentity",
 			"@type": "schema:identifier"
 		},
-		"holderIdentity": {
-			"@id": "twin-attestation:holderIdentity",
-			"@type": "schema:identifier"
+		"value": {
+			"@id": "twin-attestation:value",
+			"@type": "schema:Text"
 		},
-		"proof": "twin-attestation:proof",
 		"verificationFailure": {
 			"@id": "twin-attestation:verificationFailure",
 			"@type": "schema:Text"

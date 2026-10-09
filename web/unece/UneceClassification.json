@@ -1,0 +1,79 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceClassification",
+	"title": "UneceClassification",
+	"description": "A systematic arrangement of products in classes or categories according to established criteria.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Classification",
+			"description": "JSON-LD Type."
+		},
+		"applicableStandard": {
+			"$ref": "https://schema.3sixty.global/unece/UneceStandard",
+			"description": "The referenced standard that is applicable to this product classification."
+		},
+		"classCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product class characteristic for this product classification."
+		},
+		"classCode": {
+			"type": "string",
+			"description": "The code specifying the class for this product classification."
+		},
+		"classContentTypeDescription": {
+			"type": "string",
+			"description": "The textual description for the class content type of this product classification."
+		},
+		"classContentTypeDescriptionCode": {
+			"type": "string",
+			"description": "The code specifying the description of the class content type of this product classification."
+		},
+		"className": {
+			"type": "string",
+			"description": "A class name, expressed as text, for this product classification."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this product classification."
+		},
+		"subClassCode": {
+			"type": "string",
+			"description": "The code specifying the sub class for this product classification."
+		},
+		"systemId": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "The unique identifier of the classification system for this product classification."
+		},
+		"systemName": {
+			"type": "string",
+			"description": "A name, expressed as text, of the classification system for this product classification."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceClassificationTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of product classification."
+		}
+	},
+	"required": ["type"]
+}

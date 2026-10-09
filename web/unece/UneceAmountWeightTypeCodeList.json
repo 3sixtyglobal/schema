@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceAmountWeightTypeCodeList",
+	"title": "UneceAmountWeightTypeCodeList",
+	"description": "A character string used to represent the type of amount weight.",
+	"anyOf": [
+		{
+			"const": "unece:AmountWeightTypeCodeList#D",
+			"description": "Decimalized amount: D."
+		},
+		{
+			"const": "unece:AmountWeightTypeCodeList#MDC",
+			"description": "Milliard currency amount: MDC."
+		},
+		{
+			"const": "unece:AmountWeightTypeCodeList#MNC",
+			"description": "Million currency amount: MNC."
+		},
+		{
+			"const": "unece:AmountWeightTypeCodeList#R",
+			"description": "Rounded amount: R."
+		},
+		{
+			"const": "unece:AmountWeightTypeCodeList#T",
+			"description": "Truncated amount: T."
+		},
+		{
+			"const": "unece:AmountWeightTypeCodeList#TC",
+			"description": "Thousand currency amount: TC."
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataAddress",
+	"title": "DataspaceProtocolDataAddress",
+	"description": "Interface for a Dataspace Protocol data address.",
+	"type": "object",
+	"properties": {
+		"@type": {
+			"const": "DataAddress",
+			"description": "The JSON-LD type."
+		},
+		"endpointType": {
+			"type": "string",
+			"description": "The endpoint type identifier."
+		},
+		"endpoint": {
+			"type": "string",
+			"description": "The endpoint URL or address."
+		},
+		"endpointProperties": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolEndpointProperty"
+			},
+			"description": "Transport-specific endpoint properties."
+		}
+	},
+	"required": ["@type", "endpointType"]
+}

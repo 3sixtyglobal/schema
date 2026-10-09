@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType",
+	"title": "UneceVolumeUnitMeasureType",
+	"description": "The numeric value determined by volume measuring.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "VolumeUnitMeasureType",
+			"description": "JSON-LD Type."
+		},
+		"VolumeUnitMeasureTypeValue": {
+			"type": "string",
+			"description": "The numeric value."
+		},
+		"VolumeUnitMeasureTypeCode": {
+			"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureCode",
+			"description": "The unit code."
+		}
+	},
+	"required": ["type"]
+}

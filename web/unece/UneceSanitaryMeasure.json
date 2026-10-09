@@ -1,0 +1,42 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceSanitaryMeasure",
+	"title": "UneceSanitaryMeasure",
+	"description": "Sanitary measures as reported for a WHO MDH (Maritime Declaration of Health).",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "SanitaryMeasure",
+			"description": "JSON-LD Type."
+		},
+		"applicationDateTime": {
+			"type": "string",
+			"description": "An application date, time, date time or other date time value for this MDH sanitary measure.",
+			"format": "date-time"
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this MDH sanitary measure."
+		},
+		"location": {
+			"type": "string",
+			"description": "A location, expressed as text, for this MDH sanitary measure."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceSanitaryMeasureTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "A code specifying a type of MDH sanitary measure."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,32 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"sc": "https://schema.3sixty.global/supply-chain/",
+		"unece": "https://vocabulary.uncefact.org",
+		"dcterms": "http://purl.org/dc/terms/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"id": "@id",
+		"type": "@type",
+		"SystemEvent": "sc:SystemEvent",
+		"date": {
+			"@id": "dcterms:date",
+			"@type": "xsd:dateTimestamp"
+		},
+		"object": {
+			"@id": "sc:object",
+			"@type": "@id"
+		},
+		"source": {
+			"@id": "sc:source",
+			"@type": "@id"
+		},
+		"target": {
+			"@id": "sc:target",
+			"@type": "@id"
+		},
+		"typeCode": {
+			"@id": "unece:typeCode",
+			"@type": "xsd:string"
+		}
+	}
+}

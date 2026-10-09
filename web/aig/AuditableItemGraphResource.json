@@ -1,57 +1,43 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/aig/AuditableItemGraphResource",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphResource",
+	"title": "AuditableItemGraphResource",
 	"description": "Interface describing an auditable item graph vertex resource.",
 	"type": "object",
 	"properties": {
-		"id": {
-			"type": "string",
-			"description": "The id of the element."
-		},
-		"dateCreated": {
-			"type": "string",
-			"description": "The date/time of when the element was created."
-		},
-		"dateModified": {
-			"type": "string",
-			"description": "The date/time of when the element was modified."
-		},
-		"dateDeleted": {
-			"type": "string",
-			"description": "The date/time of when the element was deleted, as we never actually remove items."
-		},
 		"@context": {
 			"anyOf": [
 				{
-					"type": "string",
-					"const": "https://schema.twindev.org/aig/"
+					"const": "https://schema.3sixty.global/aig/"
 				},
 				{
 					"type": "array",
-					"minItems": 1,
-					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
-					},
 					"prefixItems": [
 						{
-							"type": "string",
-							"const": "https://schema.twindev.org/aig/"
+							"const": "https://schema.3sixty.global/aig/"
 						}
-					]
+					],
+					"items": {
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
+					},
+					"minItems": 1
 				}
 			],
 			"description": "JSON-LD Context."
 		},
 		"type": {
-			"type": "string",
 			"const": "AuditableItemGraphResource",
 			"description": "JSON-LD Type."
 		},
 		"resourceObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The JSON-LD object for the resource."
 		}
 	},
-	"required": ["@context", "type"],
-	"additionalProperties": false
+	"required": ["type"],
+	"allOf": [
+		{
+			"$ref": "https://schema.3sixty.global/aig/AuditableItemGraphAuditedElement"
+		}
+	]
 }

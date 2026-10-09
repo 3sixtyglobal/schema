@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionReference",
+	"title": "UneceInspectionReference",
+	"description": "The identification of related information for an inspection.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "InspectionReference",
+			"description": "JSON-LD Type."
+		},
+		"abbreviation": {
+			"type": "string",
+			"description": "The shortened text string to identify this inspection reference."
+		},
+		"comment": {
+			"type": "string",
+			"description": "A comment, expressed as text, for this inspection reference."
+		},
+		"description": {
+			"type": "string",
+			"description": "A textual description of this inspection reference."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this inspection reference."
+		},
+		"propertyReferenceCode": {
+			"type": "string",
+			"description": "The code specifying the property reference of this inspection reference."
+		},
+		"status": {
+			"type": "string",
+			"description": "A status, expressed as text, for this inspection reference."
+		},
+		"value": {
+			"type": "string",
+			"description": "A value, expressed as text, for this inspection reference."
+		},
+		"valueCode": {
+			"type": "string",
+			"description": "The value, expressed as a code, for this inspection reference."
+		}
+	},
+	"required": ["type"]
+}

@@ -1,0 +1,132 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://schema.3sixty.global/unece/UneceChemical",
+	"title": "UneceChemical",
+	"description": "Any clearly defined substance having a defined molecular composition.",
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
+			"description": "JSON-LD Context."
+		},
+		"type": {
+			"const": "Chemical",
+			"description": "JSON-LD Type."
+		},
+		"applicableHazardousMaterial": {
+			"$ref": "https://schema.3sixty.global/unece/UneceHazardousMaterial",
+			"description": "An applicable toxicological hazardous material for this distinct chemical."
+		},
+		"applicableProductCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
+			},
+			"description": "A product characteristic applicable to this distinct chemical."
+		},
+		"applicableSustainabilityCharacteristic": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
+			},
+			"description": "A sustainability characteristic applicable to this distinct chemical."
+		},
+		"commonName": {
+			"type": "string",
+			"description": "A common name, expressed as text, for this distinct chemical."
+		},
+		"familyName": {
+			"type": "string",
+			"description": "The family name expressed as text for this distinct chemical."
+		},
+		"formulaDescription": {
+			"type": "string",
+			"description": "The textual description of the formula for this distinct chemical."
+		},
+		"identifier": {
+			"anyOf": [
+				{
+					"type": "string"
+				},
+				{
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
+				}
+			],
+			"description": "An identifier of this distinct chemical."
+		},
+		"massMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the mass of this distinct chemical."
+		},
+		"massRatioMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A mass measure of this distinct chemical expressed as a ratio to another mass, such as the total mass."
+		},
+		"molecularWeightMeasure": {
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
+			"description": "The measure of the molecular weight (in grams) for this distinct chemical."
+		},
+		"presenceMeasurement": {
+			"$ref": "https://schema.3sixty.global/unece/UneceIngredientRangeMeasurement",
+			"description": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+		},
+		"presencePercent": {
+			"type": "string",
+			"description": "The percentage of the presence of distinct chemical."
+		},
+		"scientificName": {
+			"type": "string",
+			"description": "The scientific name, expressed as text, for this distinct chemical."
+		},
+		"specifiedProductCertificate": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
+			},
+			"description": "A product certificate specified for this distinct chemical."
+		},
+		"synonymName": {
+			"type": "string",
+			"description": "A synonym name, expressed as text, for this distinct chemical."
+		},
+		"typeCode": {
+			"anyOf": [
+				{
+					"$ref": "https://schema.3sixty.global/unece/UneceChemicalTypeCodeList"
+				},
+				{
+					"type": "string"
+				}
+			],
+			"description": "The code specifying the type of distinct chemical."
+		},
+		"volumeMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the volume of this distinct chemical."
+		},
+		"volumeRatioMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
+		},
+		"weightMeasure": {
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
+			},
+			"description": "A measure of the weight of this distinct chemical."
+		}
+	},
+	"required": ["type"]
+}
