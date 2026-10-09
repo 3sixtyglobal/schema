@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGeographicalGrid",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalGrid",
 	"title": "UneceGeographicalGrid",
 	"description": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on\nthe surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical grid."
 		},
 		"associatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics location associated with this specified geographical grid."
 		},
@@ -46,7 +46,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this geographical grid."
@@ -66,7 +66,7 @@
 		"specifiedPlot": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+				"$ref": "https://schema.3sixty.global/unece/UnecePlot"
 			},
 			"description": "A crop plot specified for this geographical grid."
 		}

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLineTradeSettlement",
+	"$id": "https://schema.3sixty.global/unece/UneceLineTradeSettlement",
 	"title": "UneceLineTradeSettlement",
 	"description": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the\nfinancial transaction is intended to settle, for example a commercial invoice.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"additionalDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "An additional document referenced in this line trade settlement."
 		},
@@ -27,28 +27,28 @@
 		"applicableTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
 			},
 			"description": "A tax applicable to this line trade settlement."
 		},
 		"associatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A document associated with this line trade settlement."
 		},
 		"associatedDocumentLineDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentLineDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocumentLineDocument"
 			},
 			"description": "A document line associated with this line trade settlement."
 		},
 		"billingPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A billing period specified for this line trade settlement."
 		},
@@ -68,7 +68,7 @@
 		"invoiceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "An invoice document referenced in this line trade settlement."
 		},
@@ -77,18 +77,18 @@
 			"description": "The invoice issuer reference, expressed as text, for this line settlement."
 		},
 		"invoiceeParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party to whom an invoice is issued for this line trade settlement."
 		},
 		"payableSpecifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "A payable accounting account specified for this line trade settlement."
 		},
 		"payerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The payer party for this line trade settlement."
 		},
 		"payerReference": {
@@ -98,7 +98,7 @@
 		"paymentAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of a payment for this line trade settlement."
 		},
@@ -107,74 +107,74 @@
 			"description": "A payment reference, expressed as text, for this line trade settlement."
 		},
 		"priceCurrencyCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the price currency for this line trade settlement."
 		},
 		"purchaseSpecifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "A purchase accounting account specified for this line trade settlement."
 		},
 		"receivableSpecifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "A receivable accounting account specified for this line trade settlement."
 		},
 		"salesSpecifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "A sales accounting account specified for this line trade settlement."
 		},
 		"specifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "An accounting account specified for this line trade settlement."
 		},
 		"specifiedAllowanceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge"
 			},
 			"description": "An allowance or charge specified for this line trade settlement."
 		},
 		"specifiedFinancialAdjustment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancialAdjustment"
+				"$ref": "https://schema.3sixty.global/unece/UneceFinancialAdjustment"
 			},
 			"description": "A financial adjustment specified for this line trade settlement."
 		},
 		"specifiedFinancialCard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFinancialCard"
+				"$ref": "https://schema.3sixty.global/unece/UneceFinancialCard"
 			},
 			"description": "A financial card specified in this line trade settlement."
 		},
 		"specifiedPaymentTerms": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentTerms"
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentTerms"
 			},
 			"description": "Payment terms specified for this line trade settlement."
 		},
 		"specifiedServiceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceServiceCharge"
 			},
 			"description": "A logistics service charge specified for this line trade settlement."
 		},
 		"specifiedTradeSettlementLineMonetarySummation": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeSettlementLineMonetarySummation",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeSettlementLineMonetarySummation",
 			"description": "The monetary summation totals specified for this line trade settlement."
 		},
 		"statusCode": {
@@ -184,18 +184,18 @@
 		"subtotalCalculatedTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
 			},
 			"description": "A tax subtotal calculated for this line trade settlement."
 		},
 		"totalAdjustmentAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of the total adjustment for this line trade settlement."
 		},
 		"tradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLineTradeTransaction"
+				"$ref": "https://schema.3sixty.global/unece/UneceLineTradeTransaction"
 			},
 			"description": "A trade transaction referenced in this line trade settlement."
 		}

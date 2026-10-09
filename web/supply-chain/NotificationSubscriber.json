@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/supply-chain/NotificationSubscriber",
+	"$id": "https://schema.3sixty.global/supply-chain/NotificationSubscriber",
 	"title": "NotificationSubscriber",
 	"description": "Represents a notification subscriber linking providers with consumers.",
 	"type": "object",
@@ -10,7 +10,7 @@
 			"description": "Identity (e.g. DID) of the data provider."
 		},
 		"providerConfig": {
-			"$ref": "https://schema.twindev.org/supply-chain/NotificationSubscriberConfig",
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
 			"description": "Configuration payload required for outbound notifications."
 		},
 		"consumerIdentity": {
@@ -18,7 +18,7 @@
 			"description": "Identity (e.g. DID) of the consumer organisation receiving notifications.\nOptional for backward compat with rows created before the field existed."
 		},
 		"consumerConfig": {
-			"$ref": "https://schema.twindev.org/supply-chain/NotificationSubscriberConfig",
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
 			"description": "Configuration payload required for outbound notifications."
 		},
 		"role": {
@@ -37,7 +37,7 @@
 	"required": ["providerIdentity", "consumerConfig"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/supply-chain/NotificationSubscriberListItem"
+			"$ref": "https://schema.3sixty.global/supply-chain/NotificationSubscriberListItem"
 		}
 	]
 }

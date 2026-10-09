@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTolerance",
+	"$id": "https://schema.3sixty.global/unece/UneceTolerance",
 	"title": "UneceTolerance",
 	"description": "Permissible limit or limits of variation that is fixed for the case in question but may be different in other cases.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -30,7 +30,7 @@
 			"description": "The minus percentage value of this specified tolerance."
 		},
 		"minusValueQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The minus quantity value of this specified tolerance."
 		},
 		"surplusValuePercent": {
@@ -38,7 +38,7 @@
 			"description": "The surplus percentage value of this specified tolerance."
 		},
 		"surplusValueQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The surplus quantity value of this specified tolerance."
 		}
 	},

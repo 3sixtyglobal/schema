@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCountrySubDivision",
+	"$id": "https://schema.3sixty.global/unece/UneceCountrySubDivision",
 	"title": "UneceCountrySubDivision",
 	"description": "A political or physical area or region within the political boundaries of a country used or referenced for trade\npurposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"activityAuthorizedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party that is authorized to perform an activity in this trade country sub-division."
 		},
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this trade country sub-division."
@@ -38,7 +38,7 @@
 		"locationFunctionTypeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceLocationFunctionCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceLocationFunctionCodeList"
 				},
 				{
 					"type": "string"
@@ -53,21 +53,21 @@
 		"subordinateCountrySubDivision": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountrySubDivision"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountrySubDivision"
 			},
 			"description": "A subordinate country sub-division within this trade country sub-division."
 		},
 		"superordinateCountrySubDivision": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountrySubDivision"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountrySubDivision"
 			},
 			"description": "A superordinate country sub-division for this trade country sub-division."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCountrySubDivisionTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceCountrySubDivisionTypeCodeList"
 				},
 				{
 					"type": "string"

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGuestHealthIndication",
+	"$id": "https://schema.3sixty.global/unece/UneceGuestHealthIndication",
 	"title": "UneceGuestHealthIndication",
 	"description": "A guest's physical or mental condition.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -28,7 +28,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceGuestHealthIndicationTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceGuestHealthIndicationTypeCodeList"
 				},
 				{
 					"type": "string"

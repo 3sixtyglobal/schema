@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisAttribute",
+	"$id": "https://schema.3sixty.global/gs1/EpcisAttribute",
 	"title": "EpcisAttribute",
 	"description": "EPCIS 2.0 Vocabulary Attribute describing metadata on vocabulary elements.",
 	"type": "object",
@@ -10,7 +10,7 @@
 			"description": "Attribute id."
 		},
 		"attribute": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodePrimitive",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodePrimitive",
 			"description": "Attribute value."
 		}
 	},

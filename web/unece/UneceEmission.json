@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceEmission",
+	"$id": "https://schema.3sixty.global/unece/UneceEmission",
 	"title": "UneceEmission",
 	"description": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a\nresidential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,20 +14,20 @@
 			"description": "JSON-LD Type."
 		},
 		"affectedDistanceMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 			"description": "The affected distance over which this calculated emission is measured."
 		},
 		"pollutionMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the pollution calculated for this emission."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceEmissionTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceEmissionTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -38,7 +38,7 @@
 		"weightUnitWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
 			},
 			"description": "A weight for which this calculated emission is measured."
 		}

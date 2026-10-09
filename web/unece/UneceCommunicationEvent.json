@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCommunicationEvent",
+	"$id": "https://schema.3sixty.global/unece/UneceCommunicationEvent",
 	"title": "UneceCommunicationEvent",
 	"description": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting\ndigital data by using the internet.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"associatedGeographicalFeature": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature"
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
 			},
 			"description": "A geographical feature associated with this communication event."
 		},
@@ -30,7 +30,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this communication event."
@@ -41,11 +41,11 @@
 			"format": "date-time"
 		},
 		"occurrenceLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The logistics location where this communication event will occur or has occurred."
 		},
 		"operationalResponsibleParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The operational responsible party for this communication event."
 		},
 		"reasonCode": {
@@ -55,7 +55,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCommunicationEventTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceCommunicationEventTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -64,11 +64,11 @@
 			"description": "The code specifying the type of communication event."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of units for this communication event."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of a value for this communication event."
 		}
 	},

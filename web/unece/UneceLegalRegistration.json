@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLegalRegistration",
+	"$id": "https://schema.3sixty.global/unece/UneceLegalRegistration",
 	"title": "UneceLegalRegistration",
 	"description": "The recording of items or details for a specific legal purpose.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,13 +20,13 @@
 		"countryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the country in which this legal registration is valid."
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier of the country sub-division for this legal registration."
@@ -48,7 +48,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this legal registration."
@@ -64,7 +64,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a licence for this legal registration."
@@ -76,7 +76,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceLegalRegistrationTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceLegalRegistrationTypeCodeList"
 				},
 				{
 					"type": "string"

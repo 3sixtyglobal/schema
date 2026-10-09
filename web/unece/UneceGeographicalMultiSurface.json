@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGeographicalMultiSurface",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalMultiSurface",
 	"title": "UneceGeographicalMultiSurface",
 	"description": "A collection of surfaces on the Earth (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical multi-surface."
 		},
 		"includedPolygon": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePolygon"
+				"$ref": "https://schema.3sixty.global/unece/UnecePolygon"
 			},
 			"description": "A polygon included in this geographical multi-surface."
 		}

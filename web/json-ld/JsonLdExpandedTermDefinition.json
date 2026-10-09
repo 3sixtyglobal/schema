@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdExpandedTermDefinition",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdExpandedTermDefinition",
 	"title": "JsonLdExpandedTermDefinition",
 	"description": "An expanded term definition is used to describe the mapping between a term\nand its expanded identifier, as well as other properties of the value\nassociated with the term when it is used as key in a node object.",
 	"allOf": [
@@ -33,7 +33,7 @@
 					"type": "string"
 				},
 				"@context": {
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinition"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinition"
 				},
 				"@prefix": {
 					"type": "boolean"
@@ -88,7 +88,7 @@
 											"const": "@set"
 										},
 										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
 										}
 									]
 								},
@@ -103,13 +103,13 @@
 												"const": "@set"
 											},
 											{
-												"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerType"
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerType"
 											}
 										]
 									}
 								},
 								{
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdContainerTypeArray"
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdContainerTypeArray"
 								},
 								{
 									"type": "null"

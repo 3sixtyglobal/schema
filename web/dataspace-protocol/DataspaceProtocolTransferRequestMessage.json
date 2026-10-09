@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferRequestMessage",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferRequestMessage",
 	"title": "DataspaceProtocolTransferRequestMessage",
 	"description": "Interface for the Dataspace Protocol transfer request message.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		},
 		"@type": {
@@ -30,7 +30,7 @@
 			"description": "The format property is a format specified by a Distribution for the Dataset associated with the Agreement.\nThis is generally obtained from the Provider's Catalog."
 		},
 		"dataAddress": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataAddress",
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataAddress",
 			"description": "If defined MUST contain a transport-specific set of properties for pushing the data.\nIt MAY include an endpoint, a temporary authorization via the endpointProperties property - depending on the endpointType."
 		}
 	},

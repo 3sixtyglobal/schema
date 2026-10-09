@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTransportationWasteRecoveryDisposalProcess",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportationWasteRecoveryDisposalProcess",
 	"title": "UneceTransportationWasteRecoveryDisposalProcess",
 	"description": "A process of either regaining substances in usable form, or of getting rid of substances resulting from transportation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate specified for this transportation waste recovery disposal process."
 		},

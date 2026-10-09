@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAgriculturalCertificate",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalCertificate",
 	"title": "UneceAgriculturalCertificate",
 	"description": "A legal proof of ownership, worthiness or qualification to operate an agricultural item.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -21,7 +21,7 @@
 		"applicableAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion applicable to this agricultural certificate."
 		},
@@ -32,26 +32,26 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this agricultural certificate."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this agricultural certificate."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this agricultural certificate."
 		},
 		"certificateTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of agricultural certificate."
 		},
 		"description": {
@@ -69,7 +69,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this agricultural certificate."
@@ -89,7 +89,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the issuing party of this agricultural certificate."

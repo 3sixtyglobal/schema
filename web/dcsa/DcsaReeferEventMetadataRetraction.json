@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaReeferEventMetadataRetraction",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaReeferEventMetadataRetraction",
 	"title": "DcsaReeferEventMetadataRetraction",
 	"description": "Reefer event metadata (retraction).\n\nSource: `metadata` + `retractedEventID` rule in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -14,11 +14,11 @@
 			"description": "Date-time when the event was created by the publisher."
 		},
 		"publisher": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaPublisher",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaPublisher",
 			"description": "The party publishing this event."
 		},
 		"publisherRole": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTntPublisherRole",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTntPublisherRole",
 			"description": "Publisher role (context of the publisher)."
 		},
 		"eventType": {

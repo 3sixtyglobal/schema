@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceBreakdownStatement",
+	"$id": "https://schema.3sixty.global/unece/UneceBreakdownStatement",
 	"title": "UneceBreakdownStatement",
 	"description": "A detailed statement of work, prices, and dimensions for this valuation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"binaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A specified binary file referenced by this valuation breakdown statement."
 		},
 		"changedStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRecordedStatus"
+				"$ref": "https://schema.3sixty.global/unece/UneceRecordedStatus"
 			},
 			"description": "A changed recorded status for this valuation breakdown statement."
 		},
@@ -38,7 +38,7 @@
 		"creationBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A specified binary file used to create this valuation breakdown statement."
 		},
@@ -48,7 +48,7 @@
 			"format": "date-time"
 		},
 		"defaultCurrencyCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the default currency for this valuation breakdown statement."
 		},
 		"defaultLanguageCode": {
@@ -65,7 +65,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this valuation breakdown statement."
@@ -73,14 +73,14 @@
 		"itemBasicWorkItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBasicWorkItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceBasicWorkItem"
 			},
 			"description": "A basic work item in this valuation breakdown statement."
 		},
 		"itemGroupedWorkItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGroupedWorkItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceGroupedWorkItem"
 			},
 			"description": "A grouped work item in this valuation breakdown statement."
 		},
@@ -90,7 +90,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier of a method of measurement for this valuation breakdown statement."
@@ -105,7 +105,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a price list for this valuation breakdown statement."
@@ -113,7 +113,7 @@
 		"readerBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A specified binary file used to read this valuation breakdown statement."
 		},
@@ -124,7 +124,7 @@
 		"totalPrice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCalculatedPrice"
+				"$ref": "https://schema.3sixty.global/unece/UneceCalculatedPrice"
 			},
 			"description": "A total calculated price for this valuation breakdown statement."
 		},

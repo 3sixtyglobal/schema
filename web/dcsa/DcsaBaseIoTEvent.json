@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaBaseIoTEvent",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBaseIoTEvent",
 	"title": "DcsaBaseIoTEvent",
 	"description": "Base IoT event attributes.\n\nSource: `baseIoTEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -14,11 +14,11 @@
 			"description": "IoT events are always \"ACT\"."
 		},
 		"iotEventTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventTypeCodes",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventTypeCodes",
 			"description": "IoT event type code."
 		},
 		"iotEventCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaIotEventCode",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaIotEventCode",
 			"description": "IoT event code."
 		},
 		"geoLocation": {
@@ -31,7 +31,7 @@
 		"relatedDocumentReferences": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
 			},
 			"description": "Related document references."
 		}

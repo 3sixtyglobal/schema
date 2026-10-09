@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTransportationHealth",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportationHealth",
 	"title": "UneceTransportationHealth",
 	"description": "Health indications to be reported on a WHO MDH (Maritime Declaration of Health).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,63 +16,63 @@
 		"diedOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A died onboard indication for this MDH transportation health."
 		},
 		"diseaseOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A disease onboard indication for this MDH transportation health."
 		},
 		"illPersonNowOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "An ill person or persons now onboard indication for this MDH transportation health."
 		},
 		"medicalPractitionerConsultedHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A medical practitioner consulted indication for this MDH transportation health."
 		},
 		"moreIllOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A more ill onboard indication for this MDH transportation health."
 		},
 		"onboardInfectionConditionHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "An onboard infection condition indication for this MDH transportation health."
 		},
 		"sanitaryMeasureAppliedHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "An applied sanitary measure indication for this MDH transportation health."
 		},
 		"sickAnimalOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A sick animal or animals onboard indication for this MDH transportation health."
 		},
 		"stowawayFoundOnboardHealthIndication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMDHHealthIndication"
+				"$ref": "https://schema.3sixty.global/unece/UneceMDHHealthIndication"
 			},
 			"description": "A stowaway or stowaways found onboard indication for this MDH transportation health."
 		}

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/attestation/AttestationInformation",
+	"$id": "https://schema.3sixty.global/attestation/AttestationInformation",
 	"title": "AttestationInformation",
 	"description": "Interface describing the collated attestation information.",
 	"type": "object",
@@ -12,14 +12,14 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.twindev.org/attestation/"
+					"const": "https://schema.3sixty.global/attestation/"
 				},
 				{
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 3,
 			"description": "JSON-LD Context."
@@ -45,11 +45,11 @@
 			"description": "The identity of the owner."
 		},
 		"attestationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The data that was attested."
 		},
 		"proof": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The proof for the attested data."
 		},
 		"verified": {

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/foaf/FoafAgent",
+	"$id": "https://schema.3sixty.global/foaf/FoafAgent",
 	"title": "FoafAgent",
 	"description": "A FOAF Agent.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/foaf/FoafContextType",
+			"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
 			"description": "The LD Context."
 		},
 		"@type": {
@@ -36,38 +36,38 @@
 		"made": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 					}
 				}
 			],
 			"description": "Something that was made by this agent."
 		},
 		"weblog": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 			"description": "A weblog of some thing (whether person, group, company etc.)."
 		},
 		"openid": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 			"description": "An OpenID for an agent."
 		},
 		"interest": {
-			"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+			"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 			"description": "A page about a topic of interest to this person."
 		},
 		"topic_interest": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "A thing of interest to this person."
 		}
 	},
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/foaf/FoafBaseObject"
+			"$ref": "https://schema.3sixty.global/foaf/FoafBaseObject"
 		}
 	]
 }

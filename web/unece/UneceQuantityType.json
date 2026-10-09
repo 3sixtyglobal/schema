@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceQuantityType",
+	"$id": "https://schema.3sixty.global/unece/UneceQuantityType",
 	"title": "UneceQuantityType",
 	"description": "Missing description.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The numeric value."
 		},
 		"QuantityTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityCode",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityCode",
 			"description": "The unit code."
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOffer",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOffer",
 	"title": "DataspaceProtocolOffer",
 	"description": "Offer interface compliant with Eclipse Data Space Protocol, requiring an id and context.",
 	"type": "object",
@@ -10,14 +10,14 @@
 			"description": "Unique identifier for the offer."
 		},
 		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlContextType",
 			"description": "The JSON-LD context."
 		}
 	},
 	"required": ["@id", "@context"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive",
 	"title": "DcsaEventMetadataActive",
 	"description": "Active event metadata (not a retraction).\n\nThe OpenAPI schema defines `retractedEventID` with a default of `null`, so we\nallow it to be omitted or explicitly set to `null`.",
 	"type": "object",
@@ -12,7 +12,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataBase"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataBase"
 		}
 	]
 }

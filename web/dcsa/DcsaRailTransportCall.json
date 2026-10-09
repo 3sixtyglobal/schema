@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaRailTransportCall",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaRailTransportCall",
 	"title": "DcsaRailTransportCall",
 	"description": "Rail transport call details.\n\nSource: `railTransportCall` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -25,7 +25,7 @@
 	"required": ["modeOfTransport"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallBase"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallBase"
 		}
 	]
 }

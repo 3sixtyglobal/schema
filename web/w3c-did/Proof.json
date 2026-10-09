@@ -1,14 +1,14 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/Proof",
+	"$id": "https://schema.3sixty.global/w3c-did/Proof",
 	"title": "Proof",
 	"description": "Interface describing a proof.",
 	"oneOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-did/DataIntegrityProof"
+			"$ref": "https://schema.3sixty.global/w3c-did/DataIntegrityProof"
 		},
 		{
-			"$ref": "https://schema.twindev.org/w3c-did/JsonWebSignature2020Proof"
+			"$ref": "https://schema.3sixty.global/w3c-did/JsonWebSignature2020Proof"
 		}
 	]
 }

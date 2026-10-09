@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisDocument",
+	"$id": "https://schema.3sixty.global/gs1/EpcisDocument",
 	"title": "EpcisDocument",
 	"description": "EPCIS 2.0 capture document containing header metadata and an event list.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/gs1/EpcisContextType",
+			"$ref": "https://schema.3sixty.global/gs1/EpcisContextType",
 			"description": "The"
 		},
 		"id": {
@@ -38,7 +38,7 @@
 			"description": "(Optional) The intended receiver of an EPCISDocument."
 		},
 		"epcisHeader": {
-			"$ref": "https://schema.twindev.org/gs1/EpcisHeader",
+			"$ref": "https://schema.3sixty.global/gs1/EpcisHeader",
 			"description": "EPCIS Header."
 		},
 		"epcisBody": {
@@ -47,7 +47,7 @@
 				"eventList": {
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/gs1/EpcisEvents"
+						"$ref": "https://schema.3sixty.global/gs1/EpcisEvents"
 					},
 					"description": "The list of events."
 				}

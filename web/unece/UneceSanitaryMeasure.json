@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSanitaryMeasure",
+	"$id": "https://schema.3sixty.global/unece/UneceSanitaryMeasure",
 	"title": "UneceSanitaryMeasure",
 	"description": "Sanitary measures as reported for a WHO MDH (Maritime Declaration of Health).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -29,7 +29,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceSanitaryMeasureTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceSanitaryMeasureTypeCodeList"
 				},
 				{
 					"type": "string"

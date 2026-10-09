@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSeal",
+	"$id": "https://schema.3sixty.global/unece/UneceSeal",
 	"title": "UneceSeal",
 	"description": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other\nlogistics operations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,13 +19,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this logistics seal."
 		},
 		"issuingParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party issuing this logistics seal."
 		},
 		"logisticsSealTypeCode": {
@@ -33,7 +33,7 @@
 			"description": "The code specifying the type of logistics seal."
 		},
 		"logisticsSealingPartyRoleCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceSealingPartyRoleCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceSealingPartyRoleCodeList",
 			"description": "The code specifying the role of the party responsible for the sealing of this logistics seal."
 		},
 		"maximumId": {
@@ -42,7 +42,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The maximum unique identifier used for these logistics seals."
@@ -50,7 +50,7 @@
 		"sealConditionCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSealConditionCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceSealConditionCodeList"
 			},
 			"description": "A code specifying a condition of this logistics seal."
 		},

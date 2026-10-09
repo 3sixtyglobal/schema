@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaShipmentPayload",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload",
 	"title": "DcsaShipmentPayload",
 	"description": "Shipment payload.\n\nSource: `shipmentPayload` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -10,11 +10,11 @@
 			"description": "Shipment events are always \"ACT\"."
 		},
 		"shipmentEventTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaShipmentEventTypeCodes",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentEventTypeCodes",
 			"description": "Shipment event type code."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaDocumentTypeCodes",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaDocumentTypeCodes",
 			"description": "Document type code.\nIdentifies what kind of document `documentReference` points to."
 		},
 		"documentReference": {
@@ -28,14 +28,14 @@
 		"relatedDocumentReferences": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
 			},
 			"description": "Related documents."
 		},
 		"references": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaReference"
 			},
 			"description": "Additional references."
 		}
@@ -48,7 +48,7 @@
 	],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseEvent"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseEvent"
 		}
 	]
 }

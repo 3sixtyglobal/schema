@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTechnicalCharacteristic",
+	"$id": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic",
 	"title": "UneceTechnicalCharacteristic",
 	"description": "A prominent technical attribute or aspect.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,12 +16,12 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this technical characteristic."
 		},
 		"capacityValueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The capacity, expressed as a measure, such as a production volume, a surface area or a number of animals, for this\ntechnical characteristic."
 		},
 		"certificationCode": {
@@ -31,7 +31,7 @@
 		"componentMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
 			},
 			"description": "A specified material component of this technical characteristic."
 		},
@@ -54,7 +54,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this technical characteristic."
@@ -75,14 +75,14 @@
 		"specifiedAnimalHoldingEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAnimalHoldingEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalHoldingEvent"
 			},
 			"description": "An animal holding event specified for this technical characteristic."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this technical characteristic."
 		},
@@ -97,7 +97,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristicTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristicTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -110,7 +110,7 @@
 			"description": "A value, expressed as text, for this technical characteristic."
 		},
 		"valueAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this technical characteristic."
 		},
 		"valueDateTime": {
@@ -123,7 +123,7 @@
 			"description": "The value, expressed as an indicator, for this technical characteristic."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the value of this technical characteristic."
 		},
 		"valueNumeric": {
@@ -133,21 +133,21 @@
 		"valueParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
 			},
 			"description": "A parameter specified for the value of this technical characteristic."
 		},
 		"valueRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRange"
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
 			},
 			"description": "A range specified for the value of this technical characteristic."
 		},
 		"valueTolerance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
 			},
 			"description": "A tolerance specified for the value of this technical characteristic."
 		}

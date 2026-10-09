@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceContract",
+	"$id": "https://schema.3sixty.global/unece/UneceContract",
 	"title": "UneceContract",
 	"description": "An agreement between two or more parties for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 			"format": "date-time"
 		},
 		"automaticExtensionDurationMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the duration of the automatic extension for this trade contract."
 		},
 		"description": {
@@ -32,7 +32,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this trade contract."
@@ -58,7 +58,7 @@
 		"signedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedLocation"
 			},
 			"description": "A location where this trade contract was or will be signed."
 		},

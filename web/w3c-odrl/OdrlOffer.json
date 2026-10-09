@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlOffer",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlOffer",
 	"title": "OdrlOffer",
 	"description": "Interface representing an ODRL Offer.\nAn Offer requires an assigner (the party making the offer).\nhttps://www.w3.org/TR/odrl-model/#policy-offer",
 	"type": "object",
@@ -15,7 +15,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 				}
 			],
 			"description": "The assigner of the offer.\nRequired for Offer policies."
@@ -24,7 +24,7 @@
 	"required": ["@type", "assigner"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicy"
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPolicy"
 		}
 	]
 }

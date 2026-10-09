@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/foaf/FoafContextType",
+	"$id": "https://schema.3sixty.global/foaf/FoafContextType",
 	"title": "FoafContextType",
 	"description": "The FOAF JSON-LD context type.",
 	"anyOf": [
@@ -12,7 +12,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 					},
 					{
 						"const": "https://xmlns.com/foaf/0.1/"

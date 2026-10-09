@@ -1,18 +1,18 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLink",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLink",
 	"title": "ActivityStreamsLink",
 	"description": "A W3C Activity Streams Link.\n\nA `Link` is used to reference a resource by URI (via `href`) and can include\noptional presentation metadata such as `name`, `mediaType`, `height`, and `width`.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
 			"description": "The LD Context."
 		},
 		"type": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLinkTypes"
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLinkTypes"
 				},
 				{
 					"type": "string"
@@ -22,7 +22,7 @@
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLinkTypes"
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLinkTypes"
 							},
 							{
 								"type": "string"
@@ -44,7 +44,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
 				}
 			],
 			"description": "A natural language name for the link."
@@ -85,7 +85,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -95,7 +95,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}

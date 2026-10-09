@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceProduct",
+	"$id": "https://schema.3sixty.global/unece/UneceProduct",
 	"title": "UneceProduct",
 	"description": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique buyer assigned identifier for this referenced product."
@@ -34,7 +34,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique global identifier for this referenced product."
@@ -45,7 +45,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this referenced product."
@@ -56,7 +56,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique industry assigned identifier for this referenced product."
@@ -67,7 +67,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique manufacturer assigned identifier for this referenced product."
@@ -86,7 +86,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique seller assigned identifier for this referenced product."
@@ -94,7 +94,7 @@
 		"unitQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
 			},
 			"description": "A unit quantity of this referenced product."
 		}

@@ -1,17 +1,17 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaEventPayload",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEventPayload",
 	"title": "DcsaEventPayload",
 	"description": "Payload union for the base `event` schema (T&T events).",
 	"anyOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaShipmentPayload"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload"
 		},
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEquipmentPayload"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEquipmentPayload"
 		},
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportPayload"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportPayload"
 		}
 	]
 }

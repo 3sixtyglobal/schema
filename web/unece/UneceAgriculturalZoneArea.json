@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAgriculturalZoneArea",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalZoneArea",
 	"title": "UneceAgriculturalZoneArea",
 	"description": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform\nagricultural treatment.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicableAgriculturalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic"
 			},
 			"description": "An agricultural characteristic applicable to this agricultural zone area."
 		},
 		"appliedAgriculturalApplication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
 			},
 			"description": "A specified agricultural application applied to this agricultural zone area."
 		},
@@ -34,7 +34,7 @@
 		"harvestedProduce": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProduce"
+				"$ref": "https://schema.3sixty.global/unece/UneceProduce"
 			},
 			"description": "Crop produce harvested from this agricultural zone area."
 		},
@@ -44,7 +44,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this agricultural zone area."
@@ -58,20 +58,20 @@
 			"description": "The name, expressed as text, for this agricultural zone area."
 		},
 		"specifiedLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLocation",
 			"description": "The referenced location specified for this agricultural zone area."
 		},
 		"specifiedPlot": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+				"$ref": "https://schema.3sixty.global/unece/UnecePlot"
 			},
 			"description": "A crop plot specified for this agricultural zone area."
 		},
 		"subordinateArea": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalZoneArea"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalZoneArea"
 			},
 			"description": "An agricultural zone area subordinate to this agricultural zone area."
 		},
@@ -81,7 +81,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier issued by a third party for this agricultural zone area."

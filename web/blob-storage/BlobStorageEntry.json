@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/blob-storage/BlobStorageEntry",
+	"$id": "https://schema.3sixty.global/blob-storage/BlobStorageEntry",
 	"title": "BlobStorageEntry",
 	"description": "Interface describing a blob storage entry.",
 	"type": "object",
@@ -9,14 +9,14 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"const": "https://schema.twindev.org/blob-storage/"
+					"const": "https://schema.3sixty.global/blob-storage/"
 				},
 				{
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."
@@ -54,7 +54,7 @@
 			"description": "Indicates if the blob is encrypted."
 		},
 		"compression": {
-			"$ref": "https://schema.twindev.org/blob-storage/BlobStorageCompressionType",
+			"$ref": "https://schema.3sixty.global/blob-storage/BlobStorageCompressionType",
 			"description": "The type of compression used for the blob, if not set it is not stored with compression."
 		},
 		"fileExtension": {
@@ -62,7 +62,7 @@
 			"description": "The extension."
 		},
 		"metadata": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "The metadata for the blob as JSON-LD."
 		},
 		"blob": {

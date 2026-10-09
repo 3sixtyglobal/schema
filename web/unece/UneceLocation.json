@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLocation",
+	"$id": "https://schema.3sixty.global/unece/UneceLocation",
 	"title": "UneceLocation",
 	"description": "A reference to a physical location or place.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,35 +16,35 @@
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
 			},
 			"description": "A specified inspection applicable to this referenced location."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this referenced location."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this referenced location."
 		},
 		"appliedAgriculturalApplication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
 			},
 			"description": "A specified agricultural application applied to this referenced location."
 		},
 		"associatedGeographicalFeature": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature"
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature"
 			},
 			"description": "A geographical feature associated with this referenced location."
 		},
@@ -58,13 +58,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the country sub-division for this referenced location."
 		},
 		"definedCoordinateReferenceSystem": {
-			"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
+			"$ref": "https://schema.3sixty.global/unece/UneceCoordinateReferenceSystem",
 			"description": "The Coordinate System (CS) engineering coordinate reference system defined for this referenced location."
 		},
 		"description": {
@@ -77,7 +77,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global identifier of this referenced location."
@@ -88,25 +88,25 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this referenced location such as a United Nations Blue Number (UNBN) or GS1 Global Location Number\n(GLN)."
 		},
 		"includedPolygon": {
-			"$ref": "https://schema.twindev.org/unece/UnecePolygon",
+			"$ref": "https://schema.3sixty.global/unece/UnecePolygon",
 			"description": "The polygon included for this referenced location."
 		},
 		"locationCountryId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the country for this referenced location."
@@ -124,63 +124,63 @@
 			"description": "A name, expressed as text, of this referenced location."
 		},
 		"physicalGeographicalFeature": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalFeature",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalFeature",
 			"description": "The physical geographical feature specified for this referenced location."
 		},
 		"physicalGeographicalPoint": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalPoint",
 			"description": "The physical geographical point specified for this location."
 		},
 		"postalAddress": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeAddress",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress",
 			"description": "The postal trade address for this referenced location."
 		},
 		"relatedProductionUnit": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionUnit"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionUnit"
 			},
 			"description": "A facility production unit related to this referenced location."
 		},
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this referenced location."
 		},
 		"specifiedFacility": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionFacility"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionFacility"
 			},
 			"description": "A production facility specified for this referenced location."
 		},
 		"specifiedInventory": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainInventory"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainInventory"
 			},
 			"description": "Supply chain inventory specified for this referenced location."
 		},
 		"specifiedLaboratoryObservationReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLaboratoryObservationReference"
+				"$ref": "https://schema.3sixty.global/unece/UneceLaboratoryObservationReference"
 			},
 			"description": "A laboratory observation reference specified for this referenced location."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this referenced location."
 		},
 		"specifiedTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A trade party specified for this referenced location."
 		},

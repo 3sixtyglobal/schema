@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGuestArrival",
+	"$id": "https://schema.3sixty.global/unece/UneceGuestArrival",
 	"title": "UneceGuestArrival",
 	"description": "The act of coming to or reaching a place by a specified guest.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the carrier for this specified guest arrival."
@@ -34,7 +34,7 @@
 			"format": "date-time"
 		},
 		"transportModeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportModeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportModeCodeList",
 			"description": "The code specifying the transport mode of this specified guest arrival."
 		}
 	},

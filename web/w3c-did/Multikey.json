@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/Multikey",
+	"$id": "https://schema.3sixty.global/w3c-did/Multikey",
 	"title": "Multikey",
 	"description": "Interface describing a Multikey.\nhttps://www.w3.org/TR/cid-1.0/",
 	"type": "object",
@@ -18,7 +18,7 @@
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 							},
 							{
 								"const": "https://www.w3.org/ns/cid/v1"
@@ -37,7 +37,7 @@
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 							},
 							{
 								"const": "https://w3id.org/security/multikey/v1"

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic",
 	"title": "UneceInspectionResultCharacteristic",
 	"description": "A property of a collection of diagnostic data, visual or technical data, obtained by a performed inspection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
 			},
 			"description": "A specified method applicable to this inspection result characteristic."
 		},
@@ -27,14 +27,14 @@
 		"interpretationResultApplicableParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceObservationObjectiveParameter"
+				"$ref": "https://schema.3sixty.global/unece/UneceObservationObjectiveParameter"
 			},
 			"description": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
 		},
 		"measuredAccuracyMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "Accuracy, expressed as a measure, of the measurement for this inspection result characteristic."
 		},
@@ -45,7 +45,7 @@
 		"measuredValueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measured value for this inspection result characteristic."
 		},

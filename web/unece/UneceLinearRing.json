@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLinearRing",
+	"$id": "https://schema.3sixty.global/unece/UneceLinearRing",
 	"title": "UneceLinearRing",
 	"description": "A specified array of points which define a closed loop which is not self intersecting.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this linear ring."
 		},
 		"coordinate": {
@@ -22,7 +22,7 @@
 			"description": "A coordinate, expressed as text, for this specified linear ring."
 		},
 		"coordinateDirectPosition": {
-			"$ref": "https://schema.twindev.org/unece/UneceDirectPosition",
+			"$ref": "https://schema.3sixty.global/unece/UneceDirectPosition",
 			"description": "The specified direct position of a coordinate for this linear ring."
 		}
 	},

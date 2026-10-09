@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaBaseEvent",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBaseEvent",
 	"title": "DcsaBaseEvent",
 	"description": "Base event attributes shared by all payloads.\n\nSource: `baseEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
 		"eventClassifierCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCode",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventClassifierCode",
 			"description": "Code for the event classifier.\n\nNote: allowed values depend on event type. Some event categories in the upstream spec\nconstrain this to a subset (e.g. Shipment/IoT/Reefer are always ACT)."
 		},
 		"eventDateTime": {

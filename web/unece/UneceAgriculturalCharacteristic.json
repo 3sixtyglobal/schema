@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristic",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristic",
 	"title": "UneceAgriculturalCharacteristic",
 	"description": "A prominent attribute or aspect of an agricultural object.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this agricultural characteristic."
@@ -35,7 +35,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCharacteristicTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCharacteristicTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -48,7 +48,7 @@
 			"description": "The value, expressed as text, for this agricultural characteristic."
 		},
 		"valueAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The value, expressed as an amount, for this agricultural characteristic."
 		},
 		"valueDateTime": {
@@ -61,13 +61,13 @@
 			"description": "The value, expressed as an indicator, for this agricultural characteristic."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of a value for this agricultural characteristic."
 		},
 		"valueMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
 			},
 			"description": "A method specified for the value of this agricultural characteristic."
 		},
@@ -78,21 +78,21 @@
 		"valueParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
 			},
 			"description": "A parameter specified for the value of this agricultural characteristic."
 		},
 		"valueRange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRange"
+				"$ref": "https://schema.3sixty.global/unece/UneceRange"
 			},
 			"description": "A range specified for the value of this agricultural characteristic."
 		},
 		"valueTolerance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
 			},
 			"description": "A tolerance specified for the value of this agricultural characteristic."
 		}

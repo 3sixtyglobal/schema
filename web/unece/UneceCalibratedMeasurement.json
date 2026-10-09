@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCalibratedMeasurement",
+	"$id": "https://schema.3sixty.global/unece/UneceCalibratedMeasurement",
 	"title": "UneceCalibratedMeasurement",
 	"description": "A measurement established by a device which is tested to a calibration standard of known accuracy.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this calibrated measurement."
@@ -29,7 +29,7 @@
 			"description": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
 		},
 		"toleranceMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the tolerance of this calibrated measurement."
 		},
 		"tolerancePercent": {
@@ -39,7 +39,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCalibratedMeasurementTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceCalibratedMeasurementTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -52,7 +52,7 @@
 			"description": "The code specifying a value for this calibrated measurement."
 		},
 		"valueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The value of a measure for this calibrated measurement."
 		},
 		"versionId": {
@@ -61,7 +61,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of a version of this calibrated measurement."

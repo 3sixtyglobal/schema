@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceShippingMarks",
+	"$id": "https://schema.3sixty.global/unece/UneceShippingMarks",
 	"title": "UneceShippingMarks",
 	"description": "Physical markings or labels on individual packages or transport units for logistics purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"barcodeLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
 			},
 			"description": "A barcode label that is a part of these logistics shipping marks."
 		},
@@ -25,7 +25,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/unece/UneceMarkingInstructionCodeList"
+						"$ref": "https://schema.3sixty.global/unece/UneceMarkingInstructionCodeList"
 					},
 					{
 						"type": "string"
@@ -45,21 +45,21 @@
 		"rFIDLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
 			},
 			"description": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
 		},
 		"radioactiveLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
 			},
 			"description": "Radioactive labelling that is a part of these logistics shipping marks."
 		},
 		"vINLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLabel"
 			},
 			"description": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
 		}

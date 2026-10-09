@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraint",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraint",
 	"title": "OdrlLogicalConstraint",
 	"description": "Interface for ODRL Logical Constraints.\nA Logical Constraint compares two or more existing Constraints by one logical operator.\nIf the comparison returns a logical match, then the Logical Constraint is satisfied.\nhttps://www.w3.org/TR/odrl-model/#constraint-logical",
 	"type": "object",
@@ -11,19 +11,19 @@
 			"format": "uri"
 		},
 		"and": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
 			"description": "AND operator - all constraints must be satisfied.\nExactly one logical operator must be present."
 		},
 		"or": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
 			"description": "OR operator - at least one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"xone": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
 			"description": "XOR operator - exactly one constraint must be satisfied.\nExactly one logical operator must be present."
 		},
 		"andSequence": {
-			"$ref": "https://schema.twindev.org/w3c-odrl/OdrlLogicalConstraintOperand",
+			"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlLogicalConstraintOperand",
 			"description": "AND Sequence operator - all constraints must be satisfied in order.\nExactly one logical operator must be present."
 		}
 	}

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisPersistentDisposition",
+	"$id": "https://schema.3sixty.global/gs1/EpcisPersistentDisposition",
 	"title": "EpcisPersistentDisposition",
 	"description": "EPCIS 2.0 PersistentDisposition indicating business conditions to set or unset\nindependently of event disposition.",
 	"type": "object",
@@ -10,7 +10,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/gs1/EpcisDispositionTypes"
+						"$ref": "https://schema.3sixty.global/gs1/EpcisDispositionTypes"
 					},
 					{
 						"type": "string"
@@ -24,7 +24,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/gs1/EpcisDispositionTypes"
+						"$ref": "https://schema.3sixty.global/gs1/EpcisDispositionTypes"
 					},
 					{
 						"type": "string"

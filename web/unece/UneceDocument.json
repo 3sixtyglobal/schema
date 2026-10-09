@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceDocument",
+	"$id": "https://schema.3sixty.global/unece/UneceDocument",
 	"title": "UneceDocument",
 	"description": "Written, printed or electronic matter that is referenced.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"acceptablePeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
 			"description": "The specified period within which this referenced document may be accepted."
 		},
 		"acceptanceDateTime": {
@@ -25,7 +25,7 @@
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A specified binary file attached to this referenced document."
 		},
@@ -43,13 +43,13 @@
 			"description": "The code specifying the category of this referenced document."
 		},
 		"communicationChannelCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunicationChannelCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunicationChannelCodeList",
 			"description": "The code specifying the channel by which this referenced document is sent, such as mail, email, fax."
 		},
 		"contractualClause": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceClause"
+				"$ref": "https://schema.3sixty.global/unece/UneceClause"
 			},
 			"description": "A contractual clause of this referenced document."
 		},
@@ -62,11 +62,11 @@
 			"description": "The indication of whether or not the referenced document is a copy."
 		},
 		"copyIssuedQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of copies issued of this referenced document."
 		},
 		"copyRequiredQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of copies required of this referenced document."
 		},
 		"creationDateTime": {
@@ -85,23 +85,23 @@
 		"documentLanguageId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceLanguageId"
+					"$ref": "https://schema.3sixty.global/unece/UneceLanguageId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for a language used in this referenced document."
 		},
 		"documentLineStatusCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLineStatusCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceLineStatusCodeList",
 			"description": "The code specifying the status of a line in this referenced document."
 		},
 		"documentStatusCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentStatusCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentStatusCodeList",
 			"description": "The code specifying the status for this referenced document."
 		},
 		"documentType": {
@@ -109,11 +109,11 @@
 			"description": "A type, expressed as text, for this referenced document."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of referenced document."
 		},
 		"effectiveSpecifiedPeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
 			"description": "The specified period within which this referenced document is effective."
 		},
 		"electronicPresentationIndicator": {
@@ -126,7 +126,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique global identifier for this referenced document."
@@ -137,7 +137,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this referenced document."
@@ -145,14 +145,14 @@
 		"includedAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value included in this referenced document."
 		},
 		"includedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A note included in this referenced document."
 		},
@@ -166,7 +166,7 @@
 			"format": "date-time"
 		},
 		"issueLogisticsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The logistics related location where this referenced document has been issued."
 		},
 		"issuerAssignedId": {
@@ -175,19 +175,19 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique issuer assigned identifier for this referenced document."
 		},
 		"issuerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The trade related party that issues this referenced document."
 		},
 		"issuerSpecifiedInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentHandlingInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocumentHandlingInstructions"
 			},
 			"description": "Handling instructions specified by the issuer for this referenced document."
 		},
@@ -197,7 +197,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of an item in this referenced document."
@@ -212,21 +212,21 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of a line in this referenced document."
 		},
 		"lineItemQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of line items in this referenced document."
 		},
 		"lodgementLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The logistics related location where this referenced document has been lodged."
 		},
 		"messageFunctionPurposeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceMessageFunctionCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceMessageFunctionCodeList",
 			"description": "The code specifying the purpose of this referenced document."
 		},
 		"name": {
@@ -234,11 +234,11 @@
 			"description": "A name, expressed as text, for this referenced document."
 		},
 		"originalIssuedQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of originals issued of this referenced document."
 		},
 		"originalRequiredQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of originals required of this referenced document."
 		},
 		"pageId": {
@@ -247,7 +247,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the page for this referenced document."
@@ -258,7 +258,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for a previous revision of this referenced document."
@@ -283,7 +283,7 @@
 		"recipientTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A trade related party that receives this referenced document."
 		},
@@ -295,7 +295,7 @@
 		"referenceRelationshipTypeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceReferenceCodeList"
 				},
 				{
 					"type": "string"
@@ -306,7 +306,7 @@
 		"referenceTypeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceReferenceCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceReferenceCodeList"
 				},
 				{
 					"type": "string"
@@ -337,7 +337,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for a revision of this referenced document."
@@ -347,20 +347,20 @@
 			"description": "A section name, expressed as text, for this referenced document."
 		},
 		"senderTradeParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The trade related party that sends this referenced document."
 		},
 		"signatoryAuthentication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAuthentication"
+				"$ref": "https://schema.3sixty.global/unece/UneceAuthentication"
 			},
 			"description": "A signatory authentication for this referenced document."
 		},
 		"specifiedDocumentStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentStatus"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocumentStatus"
 			},
 			"description": "Status information specified for this referenced document."
 		},
@@ -374,7 +374,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the subordinate line of this referenced document."
@@ -393,7 +393,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
@@ -401,7 +401,7 @@
 		"validityPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A period of validity specified for this referenced document."
 		},
@@ -411,7 +411,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the version of this referenced document."

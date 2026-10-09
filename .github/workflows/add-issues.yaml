@@ -10,12 +10,10 @@ on:
 
 jobs:
   add-to-project:
-    runs-on:
-      labels: ${{ github.event.repository.private && 'self-hosted-small' || 'ubuntu-latest' }}
-      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+    runs-on: ${{ github.event.repository.private && fromJSON('{"group":"3sixty","labels":"self-hosted"}') || 'ubuntu-latest' }}
 
     steps:
-      - uses: actions/add-to-project@v1.0.2
+      - uses: actions/add-to-project@v2.0.0
         with:
-          project-url: https://github.com/orgs/twinfoundation/projects/3
-          github-token: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+          project-url: https://github.com/orgs/3sixtyglobal/projects/1
+          github-token: ${{ secrets.ORG_GHA_RELEASE_TOKEN }}

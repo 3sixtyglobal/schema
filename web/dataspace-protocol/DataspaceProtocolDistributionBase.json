@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDistributionBase",
 	"title": "DataspaceProtocolDistributionBase",
 	"description": "Base distribution interface compliant with Eclipse Data Space Protocol, requiring a format and accessService.",
 	"type": "object",
@@ -16,7 +16,7 @@
 		"hasPolicy": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolOfferBase"
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolOfferBase"
 			},
 			"description": "Optional array of ODRL offers; when present, must contain at least one entry.",
 			"minItems": 1
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
+					"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataServiceBase"
 				}
 			],
 			"description": "Access service URI or inline access service definition."

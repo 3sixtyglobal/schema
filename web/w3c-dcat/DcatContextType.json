@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-dcat/DcatContextType",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatContextType",
 	"title": "DcatContextType",
 	"description": "The DCAT JSON-LD context type.\nSupports the DCAT context URL or arrays with additional context definitions.",
 	"type": "object",
@@ -21,7 +21,7 @@
 	"required": ["dcat", "dcterms"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinition"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinition"
 		}
 	]
 }

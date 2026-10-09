@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTTAggregationEvent",
+	"$id": "https://schema.3sixty.global/unece/UneceTTAggregationEvent",
 	"title": "UneceTTAggregationEvent",
 	"description": "A Track and Trace (TT) event where objects or processes are grouped.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -27,7 +27,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An instance identifier for a child object of this TT aggregation event."
@@ -35,14 +35,14 @@
 		"childQuantitySpecifiedEventElement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceEventElement"
+				"$ref": "https://schema.3sixty.global/unece/UneceEventElement"
 			},
 			"description": "A quantity event element specified for a child of this TT aggregation event."
 		},
 		"destinationRelatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
 			},
 			"description": "A destination related party for this TT aggregation event."
 		},
@@ -56,7 +56,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this TT aggregation event."
@@ -72,13 +72,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the parent object for this TT aggregation event."
 		},
 		"readPointRelatedLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
 			"description": "The read point related location of this TT aggregation event."
 		},
 		"recordedDateTime": {
@@ -89,32 +89,32 @@
 		"relatedCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertification"
 			},
 			"description": "A certification related to this TT aggregation event."
 		},
 		"relatedTTLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceTTLocation",
 			"description": "The location related to this TT aggregation event."
 		},
 		"sourceRelatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTTParty"
 			},
 			"description": "A source related party for this TT aggregation event."
 		},
 		"specifiedError": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceError"
+				"$ref": "https://schema.3sixty.global/unece/UneceError"
 			},
 			"description": "A declared error specified for this TT aggregation event."
 		},
 		"specifiedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTTradeTransaction"
+				"$ref": "https://schema.3sixty.global/unece/UneceTTTradeTransaction"
 			},
 			"description": "A trade transaction specified for this TT aggregation event."
 		}

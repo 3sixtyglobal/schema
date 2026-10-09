@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceInspectionResult",
+	"$id": "https://schema.3sixty.global/unece/UneceInspectionResult",
 	"title": "UneceInspectionResult",
 	"description": "Results obtained by performing an inspection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,35 +16,35 @@
 		"applicableCorrectiveAction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCorrectiveAction"
+				"$ref": "https://schema.3sixty.global/unece/UneceCorrectiveAction"
 			},
 			"description": "A corrective action applicable to this specified inspection result."
 		},
 		"applicableInspectionResultCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
 			},
 			"description": "A characteristic applicable to this specified inspection result."
 		},
 		"applicableMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
 			},
 			"description": "A method applicable to this specified inspection result."
 		},
 		"applicablePreventiveAction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePreventiveAction"
+				"$ref": "https://schema.3sixty.global/unece/UnecePreventiveAction"
 			},
 			"description": "A preventive action applicable to this specified inspection result."
 		},
 		"applicableSpecifiedAction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedAction"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedAction"
 			},
 			"description": "An action applicable to this specified inspection result."
 		},
@@ -56,21 +56,21 @@
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this specified inspection result."
 		},
 		"attachedInspectionNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionNote"
 			},
 			"description": "A note with additional information and or conclusions attached to this specified inspection result."
 		},
 		"expectedValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
 			},
 			"description": "An expected value for the inspection characteristic to be acquired by using the type of inspection applicable to this\nspecified inspection result."
 		},
@@ -84,7 +84,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this specified inspection result."
@@ -97,105 +97,105 @@
 		"inspectionParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "An inspection party specified for this inspection result."
 		},
 		"inspectionStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced inspection standard for this specified inspection result."
 		},
 		"laboratoryObservationResult": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceObservationResult"
+				"$ref": "https://schema.3sixty.global/unece/UneceObservationResult"
 			},
 			"description": "A laboratory sample observation result for this specified inspection result."
 		},
 		"maximumStandardValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
 			},
 			"description": "A maximum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
 		},
 		"minimumStandardValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
 			},
 			"description": "A minimum standard value for the inspection characteristic observed or measured by using the type of inspection\napplicable to this specified inspection result."
 		},
 		"observedValueApplicableCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionResultCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionResultCharacteristic"
 			},
 			"description": "An observed value for the inspection characteristic acquired by using the type of inspection applicable to this\nspecified inspection result."
 		},
 		"obtainedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion obtained by means of this specified inspection result."
 		},
 		"obtainedConformanceCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceConformanceCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceConformanceCertificate"
 			},
 			"description": "A conformance certificate obtained by means of this specified inspection result."
 		},
 		"obtainedOrganizationalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
 			},
 			"description": "An organizational certificate obtained by means of this specified inspection result."
 		},
 		"obtainedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate obtained by means of this specified inspection result."
 		},
 		"obtainedProductCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
 			},
 			"description": "A product certificate obtained by means of this specified inspection result."
 		},
 		"obtainedSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate obtained by means of this specified inspection result."
 		},
 		"outsourcedInspectionParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "An outsourced inspection party for this specified inspection result."
 		},
 		"relatedAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
 			},
 			"description": "An assessment related to this specified inspection result."
 		},
 		"relatedInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionInstructions"
 			},
 			"description": "Inspection instructions related to this specified inspection result."
 		},
@@ -214,7 +214,7 @@
 		"specifiedInspectionReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionReference"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionReference"
 			},
 			"description": "An inspection reference specified for this inspection result."
 		},

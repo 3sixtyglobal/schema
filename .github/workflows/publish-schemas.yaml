@@ -2,15 +2,6 @@ name: Publish Schemas
 
 on:
   workflow_dispatch:
-    inputs:
-      # Which branch are we publishing the deployments from?
-      releaseType:
-        description: 'Branch to prepare the deployments on'
-        required: true
-        type: choice
-        options:
-          - '🚧 prerelease (next branch)' # For prereleases (e.g., 0.1.0-next.1)
-          - '🚀 production (main branch)' # For production releases (e.g., 1.0.0, 1.1.0, 1.1.1)
 
 permissions:
   contents: read
@@ -19,41 +10,23 @@ permissions:
 
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_SCHEMA }}
-  VERCEL_ORG_ID: ${{ secrets.TWIN_VERCEL_ORG_ID }}
+  VERCEL_ORG_ID: ${{ secrets.ORG_VERCEL_ORG_ID }}
 
 jobs:
   deploy:
-    runs-on:
-      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
-      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+    runs-on: ${{ github.event.repository.private && fromJSON('{"group":"3sixty","labels":"self-hosted"}') || 'ubuntu-latest' }}
 
     steps:
-      # Set branch variable based on release type
-      - name: Set target branch
-        id: set-branch
-        run: |
-          INPUT="${{ github.event.inputs.releaseType }}"
-          if [[ "$INPUT" == *"next"* ]]; then
-            BRANCH="next"
-          elif [[ "$INPUT" == *"main"* ]]; then
-            BRANCH="main"
-          else
-            echo "Error: Unrecognized release type: $INPUT"
-            exit 1
-          fi
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-          echo "Using branch: $BRANCH"
-
-      # Clone the repository to the runner
+      # Clone the main branch to the runner
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }} # Using GITHUB_TOKEN makes actions run as github-actions bot
-          ref: ${{ steps.set-branch.outputs.branch }} # Checkout the calculated branch
+          ref: main
           fetch-depth: 0 # Needed for merge operations
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
@@ -62,9 +35,9 @@ jobs:
         id: deploy
         run: |
           DEPLOYMENT_URL=$(npx --yes vercel deploy \
-          --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
-          --scope=${{ secrets.TWIN_VERCEL_SCOPE }} \
-          --target=${{ steps.set-branch.outputs.branch == 'main' && 'production' || 'next' }} \
+          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
+          --scope=${{ secrets.ORG_VERCEL_SCOPE }} \
+          --target=production \
           --force)
           echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
 
@@ -73,6 +46,6 @@ jobs:
         run: |
           npx --yes vercel alias set \
           ${{ steps.deploy.outputs.deployment-url }} \
-          ${{ steps.set-branch.outputs.branch == 'main' && secrets.DOMAIN_SCHEMA_PROD || secrets.DOMAIN_SCHEMA_PREVIEW }} \
-          --token=${{ secrets.TWIN_VERCEL_TOKEN }} \
-          --scope=${{ secrets.TWIN_VERCEL_SCOPE }}
+          ${{ secrets.DOMAIN_SCHEMA_PROD }} \
+          --token=${{ secrets.ORG_VERCEL_TOKEN }} \
+          --scope=${{ secrets.ORG_VERCEL_SCOPE }}

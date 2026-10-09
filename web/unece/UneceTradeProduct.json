@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTradeProduct",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeProduct",
 	"title": "UneceTradeProduct",
 	"description": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"acquisitionLeadTimeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the acquisition lead time for this trade product."
 		},
@@ -27,165 +27,165 @@
 		"additionalReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "An additional referenced document for this trade product, such as a manual or a certificate."
 		},
 		"applicableAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
 			},
 			"description": "An assessment applicable to this trade product."
 		},
 		"applicableDangerousGoods": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods"
+				"$ref": "https://schema.3sixty.global/unece/UneceDangerousGoods"
 			},
 			"description": "Transport dangerous goods information applicable for this trade product."
 		},
 		"applicableDeclaration": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclaration"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration"
 			},
 			"description": "A specified declaration applicable to this trade product."
 		},
 		"applicableDisposalInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
 			},
 			"description": "Disposal instructions applicable to this trade product."
 		},
 		"applicableFault": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFault"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFault"
 			},
 			"description": "A fault applicable to this trade product."
 		},
 		"applicableGoodsCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic"
 			},
 			"description": "A material goods characteristic applicable to this trade product."
 		},
 		"applicableKeyword": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceKeyword"
+				"$ref": "https://schema.3sixty.global/unece/UneceKeyword"
 			},
 			"description": "A keyword applicable to this trade product."
 		},
 		"applicableLicence": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLicence"
+				"$ref": "https://schema.3sixty.global/unece/UneceLicence"
 			},
 			"description": "A specified licence applicable to this trade product."
 		},
 		"applicableLogisticsPackaging": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsPackaging"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsPackaging"
 			},
 			"description": "Logistics packaging applicable to this trade product."
 		},
 		"applicablePeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A specified period applicable to this trade product."
 		},
 		"applicableProductCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCharacteristic"
 			},
 			"description": "A characteristic applicable to this trade product."
 		},
 		"applicableProductionProcess": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionProcess"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
 			},
 			"description": "A production process applicable to this trade product."
 		},
 		"applicableSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate applicable to this trade product."
 		},
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
 			},
 			"description": "An inspection applicable to this trade product."
 		},
 		"applicableSupplyChainPackaging": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainPackaging"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainPackaging"
 			},
 			"description": "Packaging applicable for use with this trade product."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this trade product."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this trade product."
 		},
 		"applicableTechnicalCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTechnicalCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceTechnicalCharacteristic"
 			},
 			"description": "A technical characteristic applicable to this trade product."
 		},
 		"applicableTradeProductCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification"
 			},
 			"description": "A certification applicable to this trade product."
 		},
 		"appliedChemicalTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment"
 			},
 			"description": "A chemical treatment applied to this trade product."
 		},
 		"appliedProductFinishingTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductFinishingTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductFinishingTreatment"
 			},
 			"description": "A product finishing treatment applied to this trade product."
 		},
 		"areaDensityMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the area density, such as paper density 100 gsm, of this trade product."
 		},
 		"attachedSecurityTag": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSecurityTag"
+				"$ref": "https://schema.3sixty.global/unece/UneceSecurityTag"
 			},
 			"description": "A tag device attached to this trade product to provide protection from a peril such as theft."
 		},
@@ -199,7 +199,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A batch identifier for this trade product."
@@ -213,7 +213,7 @@
 			"description": "The brand name, expressed as text, for this trade product."
 		},
 		"brandOwnerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party that owns the brand of this trade product."
 		},
 		"brandRangeName": {
@@ -226,7 +226,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique buyer assigned identifier for this trade product."
@@ -234,7 +234,7 @@
 		"buyerSuppliedPartsReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A buyer supplier parts document referenced for this trade product."
 		},
@@ -250,14 +250,14 @@
 		"careSpecifiedLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductLabel"
 			},
 			"description": "A product care label specified for this trade product."
 		},
 		"certificationEvidenceReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced certification evidence document for this trade product."
 		},
@@ -271,7 +271,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A collection identifier of this trade product."
@@ -298,7 +298,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the colour matching sample for this trade product."
@@ -310,7 +310,7 @@
 		"componentMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
 			},
 			"description": "A material component of this trade product."
 		},
@@ -335,7 +335,7 @@
 			"description": "A consumer gender description, expressed as text, for this trade product."
 		},
 		"contentUnitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of content units of this trade product."
 		},
 		"contentVariableMeasureIndicator": {
@@ -352,7 +352,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique customer assigned identifier for this trade product."
@@ -367,7 +367,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The DNA marker identifier of this trade product."
@@ -383,7 +383,7 @@
 		"designatedClassification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceClassification"
+				"$ref": "https://schema.3sixty.global/unece/UneceClassification"
 			},
 			"description": "A product classification designated for this trade product."
 		},
@@ -397,7 +397,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The digital platform assigned identifier for this trade product."
@@ -405,12 +405,12 @@
 		"distributorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A distributor trade party for this trade product."
 		},
 		"drainedNetWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the drained net weight (mass) of this trade product."
 		},
 		"ePCId": {
@@ -419,7 +419,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The EPC (Electronic Product Code) identifier of this trade product."
@@ -435,14 +435,14 @@
 		"endUseProductGroup": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductGroup"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductGroup"
 			},
 			"description": "An end use product group for this trade product."
 		},
 		"endUserParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "An end user party for this trade product."
 		},
@@ -460,7 +460,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique Federal Supply Class (FSC) identifier for this trade product."
@@ -468,20 +468,20 @@
 		"finalAssemblyCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A final assembly country for this trade product."
 		},
 		"fromDeliveryLifeSpanMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of delivery."
 		},
 		"fromOpeningLifeSpanMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of opening."
 		},
 		"fromProductionLifeSpanMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of the life span of this trade product from date of production."
 		},
 		"functionDescription": {
@@ -498,7 +498,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A Global Trade Item Number (GTIN) identifier for this trade product."
@@ -513,7 +513,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global extension identifier for this trade product, such as a prefix or a suffix."
@@ -524,7 +524,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique global identifier for this trade product."
@@ -532,14 +532,14 @@
 		"grossVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the gross volume for this trade product."
 		},
 		"grossWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the gross weight (mass) of this trade product."
 		},
@@ -549,7 +549,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this trade product."
@@ -557,22 +557,22 @@
 		"includedProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceProduct"
 			},
 			"description": "An included product referenced from this trade product."
 		},
 		"includedProductContentUnitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of content units of products included in this trade product."
 		},
 		"includedProductTypeQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of different product types included at the next lower level in this trade product."
 		},
 		"individualProductInstance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductInstance"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductInstance"
 			},
 			"description": "An individual instance of this trade product."
 		},
@@ -582,7 +582,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique industry assigned identifier for this product."
@@ -590,22 +590,22 @@
 		"informationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "An information note for this trade product."
 		},
 		"innerPackContentUnitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of content units in an inner pack of this trade product."
 		},
 		"innerPackQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of inner packs of this trade product."
 		},
 		"inspectionReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced inspection document for this trade product."
 		},
@@ -619,7 +619,7 @@
 			"format": "date-time"
 		},
 		"legalRightsOwnerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party that owns the legal rights for this trade product."
 		},
 		"lifeCycleStageCode": {
@@ -633,23 +633,23 @@
 		"linearDimension": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension"
 			},
 			"description": "Linear spatial dimensions of this trade product."
 		},
 		"mSDSReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A Material Safety Data Sheet (MSDS) document referenced for this product."
 		},
 		"mSRPPrice": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradePrice",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradePrice",
 			"description": "The MSRP (Manufacturer Suggested Retail Price) for this trade product."
 		},
 		"manufactureCountry": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
 			"description": "The country of manufacture of this trade product."
 		},
 		"manufacturerAssignedId": {
@@ -658,7 +658,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique manufacturer assigned identifier for this trade product."
@@ -666,7 +666,7 @@
 		"manufacturerParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A manufacturer party for this trade product."
 		},
@@ -677,7 +677,7 @@
 		"marketingCampaignReferenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced marketing campaign document for this trade product."
 		},
@@ -688,21 +688,21 @@
 		"marketingFeature": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProductFeature"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProductFeature"
 			},
 			"description": "A marketing feature of this trade product."
 		},
 		"maximumLinearDimension": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension"
 			},
 			"description": "Maximum linear spatial dimensions of this trade product."
 		},
 		"minimumLinearDimension": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension"
 			},
 			"description": "Minimum linear spatial dimensions of this trade product."
 		},
@@ -712,7 +712,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique model identifier for this trade product."
@@ -727,7 +727,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique National Item Identification Number (NIIN) identifier for this trade product."
@@ -738,7 +738,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique National Stock Number (NSN) identifier for this trade product."
@@ -750,28 +750,28 @@
 		"netVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of a net volume for this trade product."
 		},
 		"netWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the net weight (mass) of this trade product."
 		},
 		"originCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A country of origin for this trade product."
 		},
 		"originLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A location of origin for this trade product."
 		},
@@ -790,14 +790,14 @@
 		"presentationBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file presentation specified for this trade product."
 		},
 		"preservationAppliedMethod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMethod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMethod"
 			},
 			"description": "A preservation method applied to this trade product."
 		},
@@ -811,7 +811,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the print design for this trade product."
@@ -826,7 +826,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for a product group for this trade product."
@@ -839,7 +839,7 @@
 		"productionLeadTimeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the production lead time for this trade product."
 		},
@@ -849,7 +849,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The promotional variant identifier for this trade product."
@@ -861,7 +861,7 @@
 		"qualityParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
 			},
 			"description": "A quality parameter specified for this trade product."
 		},
@@ -887,7 +887,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier assigned to indicate conformity with a regulation or standard for this trade product, such as \"CE\" which\ndeclares that the product conforms with the essential requirements of the applicable EC directives."
@@ -899,28 +899,28 @@
 		"relatedAnimal": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTAnimal"
+				"$ref": "https://schema.3sixty.global/unece/UneceTTAnimal"
 			},
 			"description": "A TT (Track and Trace) animal, such as one kept or raised on a farm or ranch, related to this trade product."
 		},
 		"relatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
 			},
 			"description": "A referenced location related to this trade product."
 		},
 		"relatedPackage": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePackage"
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
 			},
 			"description": "A logistics package related to this trade product."
 		},
 		"relatedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction"
 			},
 			"description": "A supply chain trade transaction related to this trade product."
 		},
@@ -931,14 +931,14 @@
 		"responsibleParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party responsible for this trade product."
 		},
 		"responsibleTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party responsible for this trade product."
 		},
@@ -949,7 +949,7 @@
 		"salesCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A sales country for this trade product."
 		},
@@ -972,7 +972,7 @@
 		"securityInformationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A security information note for this trade product."
 		},
@@ -982,7 +982,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique seller assigned identifier for this trade product."
@@ -1002,75 +1002,75 @@
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this trade product."
 		},
 		"specifiedColour": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceColour"
+				"$ref": "https://schema.3sixty.global/unece/UneceColour"
 			},
 			"description": "A colour specified for this trade product."
 		},
 		"specifiedFacility": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionFacility"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionFacility"
 			},
 			"description": "A production facility specified for this trade product."
 		},
 		"specifiedLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductLabel"
 			},
 			"description": "A product label specified for this trade product."
 		},
 		"specifiedPicture": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePicture"
+				"$ref": "https://schema.3sixty.global/unece/UnecePicture"
 			},
 			"description": "A photographic picture specified for this trade product."
 		},
 		"specifiedPrint": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePrint"
+				"$ref": "https://schema.3sixty.global/unece/UnecePrint"
 			},
 			"description": "A product print specified for this trade product."
 		},
 		"specifiedProductCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
 			},
 			"description": "A product certificate specified for this trade product."
 		},
 		"specifiedProductGroup": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductGroup"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductGroup"
 			},
 			"description": "A product group specified for this trade product."
 		},
 		"specifiedProductLabel": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductLabel"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductLabel"
 			},
 			"description": "A product label specified for this trade product."
 		},
 		"specifiedSupplyChainEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
 			},
 			"description": "A supply chain event specified for this trade product."
 		},
 		"specifiedSupplyPlan": {
-			"$ref": "https://schema.twindev.org/unece/UneceSupplyPlan",
+			"$ref": "https://schema.3sixty.global/unece/UneceSupplyPlan",
 			"description": "The specification of the delivery quantities and delivery date/time values in a supply plan for this trade product."
 		},
 		"statusCode": {
@@ -1080,7 +1080,7 @@
 		"storageInformationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A storage information note for this trade product."
 		},
@@ -1091,7 +1091,7 @@
 		"subcontractorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A subcontractor party for this trade product."
 		},
@@ -1106,21 +1106,21 @@
 		"substituteProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceProduct"
 			},
 			"description": "A referenced product that may substitute for this trade product."
 		},
 		"substitutedProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceProduct"
 			},
 			"description": "A referenced product that is substituted by this trade product."
 		},
 		"suppliedFromCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A country of supply for this trade product."
 		},
@@ -1130,7 +1130,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for a tracking system of this trade product."
@@ -1142,14 +1142,14 @@
 		"transportInformationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A transport information note for this trade product."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceTradeProductTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceTradeProductTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -1167,7 +1167,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The URI (Uniform Resource Identifier), such as a web or an email address, for this trade product."
@@ -1178,7 +1178,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An ultimate customer assigned extension identifier for this trade product."
@@ -1190,7 +1190,7 @@
 		"usageInformationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A usage information note for this trade product."
 		},
@@ -1212,7 +1212,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A variant identifier of this trade product."

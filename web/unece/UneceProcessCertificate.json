@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceProcessCertificate",
+	"$id": "https://schema.3sixty.global/unece/UneceProcessCertificate",
 	"title": "UneceProcessCertificate",
 	"description": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required\ncriteria.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 			"format": "date-time"
 		},
 		"applicableAssertion": {
-			"$ref": "https://schema.twindev.org/unece/UneceAssertion",
+			"$ref": "https://schema.3sixty.global/unece/UneceAssertion",
 			"description": "The sustainability assertion applicable to this process certificate."
 		},
 		"applicableObjectCode": {
@@ -29,40 +29,40 @@
 		"applicableProcessCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertification"
 			},
 			"description": "A process certification applicable to this process certificate."
 		},
 		"applicableProcessCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCharacteristic"
 			},
 			"description": "A process characteristic applicable to this process certificate."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this process certificate."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this process certificate."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this process certificate."
 		},
 		"certificateTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of process certificate."
 		},
 		"description": {
@@ -80,7 +80,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this process certificate."
@@ -100,7 +100,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the party issuing this process certificate."

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-dcat/DcatCatalogBase",
+	"$id": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase",
 	"title": "DcatCatalogBase",
 	"description": "Base interface for DCAT Catalog without JSON-LD context.\nThis is the context-free variant of IDcatCatalog, intended for embedding\ncatalogs inline within other objects where the context is provided by the enclosing document.\nNote: dcat:Catalog is a sub-class of dcat:Dataset per the W3C spec.",
 	"type": "object",
@@ -16,12 +16,12 @@
 		"dcat:themeTaxonomy": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 					}
 				}
 			],
@@ -30,12 +30,12 @@
 		"dcat:resource": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 					}
 				}
 			],
@@ -44,12 +44,12 @@
 		"dcat:dataset": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
 					}
 				}
 			],
@@ -58,12 +58,12 @@
 		"dcat:service": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatDataServiceBase"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatDataServiceBase"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDataServiceBase"
 					}
 				}
 			],
@@ -72,12 +72,12 @@
 		"dcat:catalog": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogBase"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogBase"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogBase"
 					}
 				}
 			],
@@ -86,12 +86,12 @@
 		"dcat:record": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
+					"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
+						"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
 					}
 				}
 			],
@@ -101,7 +101,7 @@
 	"required": ["@type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-dcat/DcatDatasetBase"
+			"$ref": "https://schema.3sixty.global/w3c-dcat/DcatDatasetBase"
 		}
 	]
 }

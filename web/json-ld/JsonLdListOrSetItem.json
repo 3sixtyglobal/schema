@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/json-ld/JsonLdListOrSetItem",
+	"$id": "https://schema.3sixty.global/json-ld/JsonLdListOrSetItem",
 	"title": "JsonLdListOrSetItem",
 	"description": "A list or set item can be a null, boolean, number, string, node object, or value object.",
 	"anyOf": [
@@ -17,10 +17,10 @@
 			"type": "string"
 		},
 		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 		},
 		{
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 		}
 	]
 }

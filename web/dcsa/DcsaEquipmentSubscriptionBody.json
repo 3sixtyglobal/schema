@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaEquipmentSubscriptionBody",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEquipmentSubscriptionBody",
 	"title": "DcsaEquipmentSubscriptionBody",
 	"description": "Equipment subscription filters.\n\nSource: `equipmentSubscriptionBody` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -8,7 +8,7 @@
 		"equipmentEventTypeCodes": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaEquipmentEventTypeCodes"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaEquipmentEventTypeCodes"
 			},
 			"description": "Equipment event type codes to filter by."
 		},
@@ -19,7 +19,7 @@
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallSubscriptionBody"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallSubscriptionBody"
 		}
 	]
 }

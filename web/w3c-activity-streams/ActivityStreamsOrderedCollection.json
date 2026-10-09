@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsOrderedCollection",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsOrderedCollection",
 	"title": "ActivityStreamsOrderedCollection",
 	"description": "A W3C Activity Streams OrderedCollection.\n\nAn `OrderedCollection` is a `Collection` whose items are explicitly ordered.",
 	"type": "object",
@@ -35,7 +35,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -45,7 +45,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -57,7 +57,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsCollection"
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsCollection"
 		}
 	]
 }

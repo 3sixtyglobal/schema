@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceExperienceProgramAction",
+	"$id": "https://schema.3sixty.global/unece/UneceExperienceProgramAction",
 	"title": "UneceExperienceProgramAction",
 	"description": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure\nexperience, a business experience, or a wellness experience.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"specifiedTradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party specified for this experience program action."
 		},

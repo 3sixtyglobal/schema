@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCircle",
+	"$id": "https://schema.3sixty.global/unece/UneceCircle",
 	"title": "UneceCircle",
 	"description": "A planar surface specified as one completely round flat shape in the mathematical sense.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,22 +14,22 @@
 			"description": "JSON-LD Type."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this specified circle."
 		},
 		"associatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics location associated with this specified circle."
 		},
 		"centreGeographicalPoint": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalPoint",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalPoint",
 			"description": "The geographical point which defines the centre of this specified circle."
 		},
 		"radiusMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the radius for this specified circle."
 		}
 	},

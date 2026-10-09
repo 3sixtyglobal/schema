@@ -5,49 +5,49 @@
 		"description": "The JSON-LD Context that defines common terms used across TWIN schemas."
 	},
 	{
-		"repo": "twin-auditable-item-graph",
+		"repo": "auditable-item-graph",
 		"packages": ["auditable-item-graph-models"],
 		"title": "Auditable Item Graph",
 		"namespace": "aig"
 	},
 	{
-		"repo": "twin-auditable-item-stream",
+		"repo": "auditable-item-stream",
 		"packages": ["auditable-item-stream-models"],
 		"title": "Auditable Item Stream",
 		"namespace": "ais"
 	},
 	{
-		"repo": "twin-attestation",
+		"repo": "attestation",
 		"packages": ["attestation-models"],
 		"title": "Attestation",
 		"namespace": "attestation"
 	},
 	{
-		"repo": "twin-blob-storage",
+		"repo": "blob-storage",
 		"packages": ["blob-storage-models"],
 		"title": "Blob Storage",
 		"namespace": "blob-storage"
 	},
 	{
-		"repo": "twin-document-management",
+		"repo": "document-management",
 		"packages": ["document-management-models"],
 		"title": "Documents",
 		"namespace": "documents"
 	},
 	{
-		"repo": "twin-synchronised-storage",
+		"repo": "synchronised-storage",
 		"packages": ["synchronised-storage-models"],
 		"title": "Synchronised Storage",
 		"namespace": "synchronised-storage"
 	},
 	{
-		"repo": "twin-immutable-proof",
+		"repo": "immutable-proof",
 		"packages": ["immutable-proof-models"],
 		"title": "Immutable Proof",
 		"namespace": "immutable-proof"
 	},
 	{
-		"repo": "twin-verifiable-storage",
+		"repo": "verifiable-storage",
 		"packages": [
 			"verifiable-storage-connector-iota",
 			"verifiable-storage-connector-entity-storage"
@@ -56,32 +56,32 @@
 		"namespace": "verifiable-storage"
 	},
 	{
-		"repo": "twin-framework",
+		"repo": "framework",
 		"types": ["Jwk", "TimestampMilliseconds", "TimestampSeconds", "URN"],
 		"title": "Framework",
 		"namespace": "framework"
 	},
 	{
-		"repo": "twin-data",
+		"repo": "data",
 		"packages": ["data-json-ld"],
 		"title": "JSON-LD",
 		"namespace": "json-ld"
 	},
 	{
-		"repo": "twin-dataspace",
+		"repo": "dataspace",
 		"packages": ["dataspace-models"],
 		"title": "Dataspace",
 		"namespace": "dataspace",
 		"jsonLdTypes": []
 	},
 	{
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-w3c-did"],
 		"title": "W3C DID",
 		"namespace": "w3c-did"
 	},
 	{
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-w3c-odrl"],
 		"title": "W3C ODRL",
 		"namespace": "w3c-odrl",
@@ -89,21 +89,21 @@
 		"jsonLdLink": "https://www.w3.org/ns/odrl.jsonld"
 	},
 	{
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-w3c-activity-streams"],
 		"title": "W3C Activity Streams",
 		"namespace": "w3c-activity-streams",
 		"jsonLdTypes": []
 	},
 	{
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-w3c-dcat"],
 		"title": "W3C DCAT",
 		"namespace": "w3c-dcat",
 		"jsonLdTypes": []
 	},
 	{
-		"repo": "twin-standards",
+		"repo": "standards",
 		"description": "The UNECE Standards for BSP (Buy-Ship-Pay) <a target='_blank' href='https://vocabulary.uncefact.org/about'>https://vocabulary.uncefact.org/about</a>",
 		"packages": ["standards-unece"],
 		"title": "UNECE",
@@ -120,7 +120,7 @@
 	{
 		"title": "Dataspace Protocol",
 		"description": "This document outlines the key elements of the <a target='_blank' href='https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/'>Contract Negotiation Protocol</a>",
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-dataspace-protocol"],
 		"namespace": "dataspace-protocol",
 		"jsonLdTypes": [],
@@ -130,19 +130,19 @@
 		"title": "FOAF (Friend Of A Friend)",
 		"namespace": "foaf",
 		"description": "The JSON-LD Contexts are defined here as there is not an authoritative online resource from the FOAF body itself. <a target='_blank' href='http://xmlns.com/foaf/spec/'>FOAF Schema</a>",
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-foaf"]
 	},
 	{
 		"title": "DCSA (Digital Container Shipping Association)",
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-dcsa"],
 		"namespace": "dcsa",
 		"jsonLdTypes": []
 	},
 	{
 		"title": "GS1",
-		"repo": "twin-standards",
+		"repo": "standards",
 		"packages": ["standards-gs1"],
 		"namespace": "gs1",
 		"jsonLdTypes": []
@@ -164,7 +164,7 @@
 	},
 	{
 		"title": "Supply Chain Application",
-		"repo": "twin-supply-chain",
+		"repo": "supply-chain",
 		"packages": ["supply-chain-models"],
 		"namespace": "supply-chain",
 		"description": "The JSON-LD Context that defines terms specific to the supply chain application"

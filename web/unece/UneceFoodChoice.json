@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceFoodChoice",
+	"$id": "https://schema.3sixty.global/unece/UneceFoodChoice",
 	"title": "UneceFoodChoice",
 	"description": "A guest's decision which food to buy or eat.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -28,7 +28,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceFoodChoiceTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceFoodChoiceTypeCodeList"
 				},
 				{
 					"type": "string"

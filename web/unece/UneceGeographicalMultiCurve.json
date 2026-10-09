@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGeographicalMultiCurve",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalMultiCurve",
 	"title": "UneceGeographicalMultiCurve",
 	"description": "A collection of curves on the surface of the Earth (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,13 +18,13 @@
 			"description": "The direct position list associated with this geographical multi-curve."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical multi-curve."
 		},
 		"memberGeographicalLine": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceGeographicalLine"
+				"$ref": "https://schema.3sixty.global/unece/UneceGeographicalLine"
 			},
 			"description": "A geographical line member of this geographical multi-curve."
 		}

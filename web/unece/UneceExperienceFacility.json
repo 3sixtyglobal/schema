@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceExperienceFacility",
+	"$id": "https://schema.3sixty.global/unece/UneceExperienceFacility",
 	"title": "UneceExperienceFacility",
 	"description": "A structure or place, such as a restaurant, hotel, theme park, hot spring bathing pool, parking lot, or meeting room,\nthat provides a particular experience.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,7 +20,7 @@
 		"availableRoute": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedRoute"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedRoute"
 			},
 			"description": "An available route specified for this experience facility."
 		},
@@ -47,7 +47,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this experience facility."
@@ -64,21 +64,21 @@
 		"physicalSpecifiedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedLocation"
 			},
 			"description": "A physical location specified for this experience facility."
 		},
 		"specifiedCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "A specified universal communication for this experience facility."
 		},
 		"usedSource": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSource"
+				"$ref": "https://schema.3sixty.global/unece/UneceSource"
 			},
 			"description": "A water source used by this experience facility."
 		}

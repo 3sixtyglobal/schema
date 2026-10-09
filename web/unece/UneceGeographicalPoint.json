@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGeographicalPoint",
+	"$id": "https://schema.3sixty.global/unece/UneceGeographicalPoint",
 	"title": "UneceGeographicalPoint",
 	"description": "A point on the surface of the Earth (reference ISO 19136).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,13 +18,13 @@
 			"description": "The direct position list associated with this geographical point."
 		},
 		"associatedGeographicalObjectCharacteristic": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalObjectCharacteristic",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalObjectCharacteristic",
 			"description": "The geographical object characteristic associated with this geographical point."
 		},
 		"associatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics location associated with this specified geographical point."
 		}

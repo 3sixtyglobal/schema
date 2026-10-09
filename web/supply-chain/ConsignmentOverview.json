@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/supply-chain/ConsignmentOverview",
+	"$id": "https://schema.3sixty.global/supply-chain/ConsignmentOverview",
 	"title": "ConsignmentOverview",
 	"description": "Consignment overview interface for listing operations (supports both v1 and v2 payloads).",
 	"type": "object",
@@ -38,28 +38,28 @@
 			"description": "Exit location of the consignment"
 		},
 		"firstConsignor": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The first consignor of the consignment, which is the party that initially sent the goods."
 		},
 		"lastConsignee": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The last consignee of the consignment"
 		},
 		"tradeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "The import and exporter of the consignment"
 		},
 		"carrierParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The carrier party responsible for the consignment"
 		},
 		"commodities": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignmentItem"
 			},
 			"description": "Commodities in the consignment"
 		},
@@ -74,7 +74,7 @@
 		"transportMeans": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
 			},
 			"description": "Details of the transport means used for the consignment"
 		},

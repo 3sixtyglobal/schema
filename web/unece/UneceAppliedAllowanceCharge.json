@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAppliedAllowanceCharge",
+	"$id": "https://schema.3sixty.global/unece/UneceAppliedAllowanceCharge",
 	"title": "UneceAppliedAllowanceCharge",
 	"description": "The applied allowance or charge component of pricing.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"actualAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The actual monetary value of the applied allowance charge."
 		},
 		"appliedAllowanceChargeReasonCode": {
@@ -22,7 +22,7 @@
 			"description": "The code specifying the reason for this applied allowance charge."
 		},
 		"basisAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value that is the basis on which the applied allowance charge is calculated."
 		},
 		"calculationPercent": {
@@ -30,7 +30,7 @@
 			"description": "The percentage used to calculate the applied allowance charge."
 		},
 		"categoryAppliedTax": {
-			"$ref": "https://schema.twindev.org/unece/UneceAppliedTax",
+			"$ref": "https://schema.3sixty.global/unece/UneceAppliedTax",
 			"description": "The applied tax category of this applied allowance charge."
 		},
 		"chargeIndicator": {

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/immutable-proof/ImmutableProof",
+	"$id": "https://schema.3sixty.global/immutable-proof/ImmutableProof",
 	"title": "ImmutableProof",
 	"description": "Interface describing an immutable proof state.",
 	"type": "object",
@@ -9,10 +9,10 @@
 			"type": "array",
 			"prefixItems": [
 				{
-					"const": "https://schema.twindev.org/immutable-proof/"
+					"const": "https://schema.3sixty.global/immutable-proof/"
 				},
 				{
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
 			],
 			"items": false,

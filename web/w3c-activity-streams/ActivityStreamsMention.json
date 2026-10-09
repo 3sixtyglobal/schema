@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsMention",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsMention",
 	"title": "ActivityStreamsMention",
 	"description": "A W3C Activity Streams Mention.\n\nA `Mention` is a specialised `Link` typically used to identify users or\nobjects being mentioned within content.",
 	"type": "object",
@@ -33,7 +33,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsLink"
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsLink"
 		}
 	]
 }

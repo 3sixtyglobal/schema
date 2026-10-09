@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceDeliverySchedule",
+	"$id": "https://schema.3sixty.global/unece/UneceDeliverySchedule",
 	"title": "UneceDeliverySchedule",
 	"description": "Specification of the forecasted delivery quantities and date/time values for a delivery schedule.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,14 +20,14 @@
 		"shipToParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A ship to party for this forecast delivery schedule."
 		},
 		"specifiedTradeLineItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeLineItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeLineItem"
 			},
 			"description": "A trade line item specified for this forecast delivery schedule."
 		}

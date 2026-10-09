@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
 	"title": "ActivityStreamsContextType",
 	"description": "The Activity Streams JSON-LD context type.",
 	"anyOf": [
@@ -12,7 +12,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+						"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 					},
 					{
 						"const": "https://www.w3.org/ns/activitystreams"

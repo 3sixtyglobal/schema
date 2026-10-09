@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceConsignment",
+	"$id": "https://schema.3sixty.global/unece/UneceConsignment",
 	"title": "UneceConsignment",
 	"description": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor\nto one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one\nsingle transport contract.\nA referenced, separately identifiable collection of goods items to be transported or available to be transported from\none consignor to one consignee via one or more modes of transport where each consignment is the subject of one single\ntransport contract.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,64 +16,64 @@
 		"applicableAllowanceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge"
 			},
 			"description": "An allowance or charge applicable to this supply chain consignment."
 		},
 		"applicableCargoInsurance": {
-			"$ref": "https://schema.twindev.org/unece/UneceCargoInsurance",
+			"$ref": "https://schema.3sixty.global/unece/UneceCargoInsurance",
 			"description": "The cargo insurance applicable to this supply chain consignment."
 		},
 		"applicableCurrencyExchange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange"
 			},
 			"description": "A currency exchange applicable to this supply chain consignment."
 		},
 		"applicableCustomsValuation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCustomsValuation"
+				"$ref": "https://schema.3sixty.global/unece/UneceCustomsValuation"
 			},
 			"description": "A cross-border customs valuation applicable to this supply chain consignment."
 		},
 		"applicableDangerousGoods": {
-			"$ref": "https://schema.twindev.org/unece/UneceDangerousGoods",
+			"$ref": "https://schema.3sixty.global/unece/UneceDangerousGoods",
 			"description": "Dangerous goods applicable to the transport of this supply chain consignment."
 		},
 		"applicableRegulatoryProcedure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRegulatoryProcedure"
+				"$ref": "https://schema.3sixty.global/unece/UneceRegulatoryProcedure"
 			},
 			"description": "A cross-border regulatory procedure applicable to this supply chain consignment."
 		},
 		"applicableServiceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceServiceCharge"
 			},
 			"description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
 		},
 		"associatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced document associated with this supply chain consignment, such as the certificate of origin or dangerous\ngoods note."
 		},
 		"associatedInvoiceAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of an invoice associated with this supply chain consignment."
 		},
 		"associatedInvoiceDiscountAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the discount on an invoice associated with this supply chain consignment."
 		},
@@ -84,16 +84,16 @@
 		"associatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A trade party associated with this supply chain consignment."
 		},
 		"atArrivalTransportMovement": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement",
 			"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport arrives in a\ncountry or at a regional border."
 		},
 		"atDepartureTransportMovement": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement",
 			"description": "The logistics transport movement for this supply chain consignment at the point when the means of transport departs a\ncountry or regional border."
 		},
 		"availabilityDueDateTime": {
@@ -104,19 +104,19 @@
 		"bondedWarehouseStorageEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "A bonded warehouse storage event for this supply chain consignment."
 		},
 		"borderCrossingTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
 			},
 			"description": "A border crossing logistics transport movement for this supply chain consignment."
 		},
 		"cODAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of the COD (Cash On Delivery) amount to be collected by the carrier upon delivery of this supply\nchain consignment."
 		},
 		"cargoInsuranceInstructionsInformation": {
@@ -133,11 +133,11 @@
 			"format": "date-time"
 		},
 		"carrierAcceptanceLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The location where this supply chain consignment will be, or has been, accepted by the carrier."
 		},
 		"carrierAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party acting as the agent of the carrier for this supply chain consignment."
 		},
 		"carrierAssignedId": {
@@ -146,13 +146,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference\nnumber when cargo space is reserved prior to loading."
 		},
 		"carrierParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The carrier party for this supply chain consignment."
 		},
 		"carrierProvidedInformation": {
@@ -160,22 +160,22 @@
 			"description": "Information, expressed as text, provided by the carrier for this supply chain consignment."
 		},
 		"chargeableTransportationStageQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of separately chargeable transportation stages to be covered by this supply chain consignment."
 		},
 		"classificationDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocument",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
 			"description": "The referenced classification document for this supply chain consignment."
 		},
 		"connectingCarrierParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A connecting carrier party for this supply chain consignment."
 		},
 		"consigneeAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
 		},
 		"consigneeAssignedId": {
@@ -184,25 +184,25 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier assigned by the consignee to this referenced supply chain consignment."
 		},
 		"consigneeParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The consignee party for this supply chain consignment."
 		},
 		"consigneeReceiptLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The location at which this supply chain consignment will be or has been received by the consignee."
 		},
 		"consignmentItemQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of consignment items separately defined for transport or customs purposes within this supply chain\nconsignment."
 		},
 		"consignorAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
 		},
 		"consignorAssignedId": {
@@ -211,19 +211,19 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier assigned by the consignor to this referenced supply chain consignment."
 		},
 		"consignorParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The consignor party for this supply chain consignment."
 		},
 		"consignorProvidedBorderClearanceInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
 			},
 			"description": "Border clearance instructions provided by the consignor for this supply chain consignment."
 		},
@@ -232,7 +232,7 @@
 			"description": "Information, expressed as text, provided by the consignor for this supply chain consignment."
 		},
 		"consolidatorParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party responsible for the consolidation of this supply chain consignment."
 		},
 		"containerizationIndicator": {
@@ -245,7 +245,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A contract identifier for this supply chain consignment."
@@ -257,19 +257,19 @@
 		"currencyServiceChargeCurrencyCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList"
 			},
 			"description": "A code specifying a service charge currency for this supply chain consignment."
 		},
 		"currencyServiceTariffCurrencyCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList"
 			},
 			"description": "A code specifying a service tariff currency for this supply chain consignment."
 		},
 		"customsExportAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this\nsupply chain consignment."
 		},
 		"customsId": {
@@ -278,44 +278,44 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier, for customs purposes, for this consignment."
 		},
 		"customsImportAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party acting as an agent for, or on behalf of, the consignee with respect to the customs import procedures for this\nsupply chain consignment."
 		},
 		"customsRequiredInvoiceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced invoice document required by customs for this supply chain consignment."
 		},
 		"customsTransitAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party acting as an agent for, or on behalf of, the consignor with respect to customs transit procedures for this\nsupply chain consignment."
 		},
 		"dangerousGoodsNotifierParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party responsible for providing the dangerous goods notification in accordance with the dangerous goods regulations\nrelevant for this supply chain consignment."
 		},
 		"declaredForCustomsLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The location of this supply chain consignment as declared for customs."
 		},
 		"declaredValueForCarriageAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying\nthe carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or\ndelayed delivery."
 		},
 		"declaredValueForCustomsAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value declared for customs purposes for this supply chain consignment."
 		},
 		"deconsolidatorParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party responsible for the deconsolidation of this supply chain consignment."
 		},
 		"deliveryInformation": {
@@ -325,16 +325,16 @@
 		"deliveryInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDeliveryInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceDeliveryInstructions"
 			},
 			"description": "Delivery instructions for this supply chain consignment."
 		},
 		"deliveryParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party to whom this supply chain consignment will be, or has been, delivered."
 		},
 		"deliveryTransportEvent": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
 			"description": "The delivery event for this supply chain consignment."
 		},
 		"demurrageInformation": {
@@ -342,36 +342,36 @@
 			"description": "Demurrage information, expressed as text, for this supply chain consignment."
 		},
 		"despatchParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party from whom this supply chain consignment will be or has been despatched."
 		},
 		"destinationCountry": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
 			"description": "The destination country for this supply chain consignment."
 		},
 		"devanningEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the\nplace of delivery."
 		},
 		"estimatedApplicableServiceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceServiceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceServiceCharge"
 			},
 			"description": "An estimated logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
 		},
 		"examinationEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "An examination event for this supply chain consignment."
 		},
 		"exportCountry": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
 			"description": "The export country for this supply chain consignment."
 		},
 		"exportExitDateTime": {
@@ -380,23 +380,23 @@
 			"format": "date-time"
 		},
 		"exportGeopoliticalRegion": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeopoliticalRegion",
 			"description": "The geopolitical region of export for this supply chain consignment."
 		},
 		"exporterParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party who exports this supply chain consignment."
 		},
 		"fOBAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value that has to be, or has been, paid for this supply chain consignment as calculated under FOB (Free on\nBoard) delivery terms."
 		},
 		"finalDestinationCountry": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
 			"description": "The final destination country for this supply chain consignment."
 		},
 		"finalDestinationLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The final destination location for this supply chain consignment."
 		},
 		"freightForwarderAssignedId": {
@@ -405,13 +405,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier assigned by the freight forwarder to this referenced supply chain consignment."
 		},
 		"freightForwarderParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The freight forwarder party for this supply chain consignment."
 		},
 		"globalId": {
@@ -420,7 +420,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A global identifier of this supply chain consignment."
@@ -432,21 +432,21 @@
 		"groupingCentreParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A grouping centre party for this supply chain consignment."
 		},
 		"handlingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceHandlingInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceHandlingInstructions"
 			},
 			"description": "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be\nloaded on a means of transport."
 		},
 		"haulageInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceHaulageInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceHaulageInstructions"
 			},
 			"description": "Haulage instructions for this supply chain consignment."
 		},
@@ -456,35 +456,35 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this referenced supply chain consignment."
 		},
 		"importCountry": {
-			"$ref": "https://schema.twindev.org/unece/UneceCountry",
+			"$ref": "https://schema.3sixty.global/unece/UneceCountry",
 			"description": "The import country for this supply chain consignment."
 		},
 		"importerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party who imports this supply chain consignment."
 		},
 		"includedConsignment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceConsignment"
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignment"
 			},
 			"description": "A referenced consignment included in this supply chain consignment."
 		},
 		"includedConsignmentItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceConsignmentItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceConsignmentItem"
 			},
 			"description": "A referenced consignment item included in this referenced supply chain consignment."
 		},
 		"includedTareGrossWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the gross weight (mass) including the tare weight of this supply chain consignment."
 		},
 		"information": {
@@ -494,48 +494,48 @@
 		"insuranceApplicableCurrencyExchange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange"
 			},
 			"description": "A currency exchange applicable to an insurance charge for this supply chain consignment."
 		},
 		"insurancePremiumAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of the insurance premium for this supply chain consignment."
 		},
 		"insuranceValueAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of this supply chain consignment as covered by an insurance policy."
 		},
 		"intermediateConsigneeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party that is an intermediate consignee for this supply chain consignment."
 		},
 		"invoiceApplicableCurrencyExchange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange"
 			},
 			"description": "A currency exchange applicable to the invoice for this supply chain consignment."
 		},
 		"invoiceeAssociatedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "An invoicee trade party associated with this supply chain consignment."
 		},
 		"linearUnitLoadingLengthMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType"
 			},
 			"description": "A measure of the loading length which is the length along a means of transport over which the complete width and height\nis needed for loading all the goods items in this supply chain consignment."
 		},
 		"loadingBaseportLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the\ntransport contract."
 		},
 		"loadingInformation": {
@@ -545,16 +545,16 @@
 		"loadingInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportInstructions"
 			},
 			"description": "Loading instructions for this supply chain consignment."
 		},
 		"loadingListQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of loading lists, manifests or similar documents for this supply chain consignment."
 		},
 		"loadingLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The logistics location where the supply chain consignment is loaded."
 		},
 		"loadingSequenceNumeric": {
@@ -562,25 +562,25 @@
 			"description": "The loading sequence number for this supply chain consignment."
 		},
 		"localConsigneeAgentParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The local party authorized to act for or on behalf of the consignee for this supply chain consignment."
 		},
 		"mainCarriageTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
 			},
 			"description": "A main carriage logistics transport movement for this supply chain consignment."
 		},
 		"manifestAssociatedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced manifest document associated to this supply chain consignment."
 		},
 		"natureIdentificationCargo": {
-			"$ref": "https://schema.twindev.org/unece/UneceCargo",
+			"$ref": "https://schema.3sixty.global/unece/UneceCargo",
 			"description": "Transport cargo details of this supply chain consignment sufficient to identify its nature for customs, statistical or\ntransport purposes."
 		},
 		"nilCarriageValueIndicator": {
@@ -598,41 +598,41 @@
 		"notifiedParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party who has been or will be notified about this supply chain consignment."
 		},
 		"onCarriageTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
 			},
 			"description": "An on-carriage logistics transport movement for this supply chain consignment."
 		},
 		"onwardRoutingLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "An onward routing location for this supply chain consignment."
 		},
 		"originCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A country of origin for this supply chain consignment."
 		},
 		"originGeopoliticalRegion": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeopoliticalRegion",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeopoliticalRegion",
 			"description": "The geopolitical region of origin for this supply chain consignment."
 		},
 		"originalDespatchLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The location from which this supply chain consignment was originally despatched."
 		},
 		"packageQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of packages within this supply chain consignment."
 		},
 		"packageType": {
@@ -642,36 +642,36 @@
 		"physicalShippingMarks": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceShippingMarks"
+				"$ref": "https://schema.3sixty.global/unece/UneceShippingMarks"
 			},
 			"description": "Physical logistics shipping marks and barcoding information related to this supply chain consignment."
 		},
 		"pickUpEvent": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
 			"description": "The pick-up event for this supply chain consignment."
 		},
 		"pickUpParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The pick-up trade party for this supply chain consignment."
 		},
 		"preCarriageTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
 			},
 			"description": "A pre-carriage logistics transport movement for this supply chain consignment."
 		},
 		"previousAdministrativeDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A previous administrative referenced document for this supply chain consignment."
 		},
 		"reExportCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A re-export country for this supply chain consignment."
 		},
@@ -682,14 +682,14 @@
 		"relatedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction"
 			},
 			"description": "A trade transaction related to this supply chain consignment."
 		},
 		"reportedLogisticsStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatus"
 			},
 			"description": "A logistics status reported for this supply chain consignment."
 		},
@@ -704,12 +704,12 @@
 		"serviceChargeApplicableCurrencyExchange": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange"
+				"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange"
 			},
 			"description": "A currency exchange applicable to a service charge for this supply chain consignment."
 		},
 		"shipFromParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The ship from party for this supply chain consignment."
 		},
 		"shipStoresIndicator": {
@@ -717,7 +717,7 @@
 			"description": "The indication of whether or not this supply chain consignment is for ship stores, such as for consumption on the means\nof transport."
 		},
 		"shipToParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The ship to party for this supply chain consignment."
 		},
 		"shippedOnboardDateTime": {
@@ -728,56 +728,56 @@
 		"specifiedDeliveryTerms": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDeliveryTerms"
+				"$ref": "https://schema.3sixty.global/unece/UneceDeliveryTerms"
 			},
 			"description": "Delivery terms specified for this supply chain consignment."
 		},
 		"specifiedInspectionEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInspectionEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceInspectionEvent"
 			},
 			"description": "An inspection event specified for this supply chain consignment."
 		},
 		"specifiedLogisticsStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsStatus"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsStatus"
 			},
 			"description": "Logistics status information specified for this supply chain consignment."
 		},
 		"specifiedRiskAnalysisResult": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRiskAnalysisResult"
+				"$ref": "https://schema.3sixty.global/unece/UneceRiskAnalysisResult"
 			},
 			"description": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
 		},
 		"specifiedSupplyChainReference": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainReference"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainReference"
 			},
 			"description": "A reference specified for this supply chain consignment."
 		},
 		"specifiedTransportMovement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportMovement"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement"
 			},
 			"description": "A logistics transport movement specified for this supply chain consignment."
 		},
 		"statementNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A statement note for this referenced supply chain consignment."
 		},
 		"storageEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "A storage event for this supply chain consignment."
 		},
@@ -786,31 +786,31 @@
 			"description": "A textual summary description of this supply chain consignment."
 		},
 		"totalAllowanceChargeAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The total monetary value of all allowances and charges for this supply chain consignment."
 		},
 		"totalChargeAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The total monetary value of all freight and other service charges for this supply chain consignment."
 		},
 		"totalCollectChargeAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The total monetary value of all freight and other service charges which are to be collected from the consignee at or\nafter delivery for this supply chain consignment."
 		},
 		"totalDisbursementAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of total disbursement for this supply chain consignment, such as the amount to be collected by the\ncarrier according to the order given by the consignor."
 		},
 		"totalExportExitToImportEntryChargeAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain\nconsignment calculated from the export exit location to the import entry location."
 		},
 		"totalPrepaidChargeAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The total monetary value of all freight and other service charges which have been paid in advance for this supply chain\nconsignment."
 		},
 		"totalTareWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the total tare weight (mass) of this supply chain consignment."
 		},
 		"tradedParcelId": {
@@ -819,7 +819,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A traded parcel identifier for this supply chain consignment."
@@ -827,25 +827,25 @@
 		"transitCountry": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCountry"
+				"$ref": "https://schema.3sixty.global/unece/UneceCountry"
 			},
 			"description": "A transit country for this supply chain consignment."
 		},
 		"transitLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A location of transit for this supply chain consignment."
 		},
 		"transportContractDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocument",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument",
 			"description": "The referenced transport contract document for this supply chain consignment, such as an airwaybill or a seawaybill."
 		},
 		"transportEquipmentQuantity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceQuantityType"
+				"$ref": "https://schema.3sixty.global/unece/UneceQuantityType"
 			},
 			"description": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain\nconsignment."
 		},
@@ -856,30 +856,30 @@
 		"transportEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "An event occurring during the transport of this supply chain consignment."
 		},
 		"transportPackage": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePackage"
+				"$ref": "https://schema.3sixty.global/unece/UnecePackage"
 			},
 			"description": "Transport packages for this supply chain consignment."
 		},
 		"transportService": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceService"
+				"$ref": "https://schema.3sixty.global/unece/UneceService"
 			},
 			"description": "A transport service for this supply chain consignment."
 		},
 		"transportServicePaymentArrangementCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportServicePaymentArrangementCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportServicePaymentArrangementCodeList",
 			"description": "The code specifying the payment arrangements for this supply chain consignment."
 		},
 		"transportServicesBuyerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party which is the buyer of the transport services for this supply chain consignment."
 		},
 		"transportSplitDescription": {
@@ -889,7 +889,7 @@
 		"transshipmentLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A transshipment location for this supply chain consignment."
 		},
@@ -898,11 +898,11 @@
 			"description": "The indication of whether or not transshipment is permitted for this supply chain consignment."
 		},
 		"unloadingBaseportLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to\nthe transport contract."
 		},
 		"unloadingLocation": {
-			"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation",
+			"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation",
 			"description": "The logistics location where the supply chain consignment is unloaded."
 		},
 		"unloadingSequenceNumeric": {
@@ -912,25 +912,25 @@
 		"utilizedTransportEquipment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsTransportEquipment"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsTransportEquipment"
 			},
 			"description": "Logistics transport equipment utilized for this supply chain consignment."
 		},
 		"vanningEvent": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportEvent",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent",
 			"description": "The vanning event for this supply chain consignment, i.e. the loading of this consignment at the place of original\ndespatch."
 		},
 		"volumeUnitGrossVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType"
 			},
 			"description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply\nchain consignment."
 		},
 		"volumeUnitNetVolumeMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceVolumeUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceVolumeUnitMeasureType"
 			},
 			"description": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
 		},
@@ -942,49 +942,49 @@
 		"warehouseDepositorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party depositing goods in a warehouse for this supply chain consignment."
 		},
 		"warehouseKeeperParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party taking responsibility for goods stored in a warehouse for this supply chain consignment."
 		},
 		"warehouseOperatorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A party that operates a warehouse in which goods are stored for this supply chain consignment."
 		},
 		"warehouseStorageEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "A warehouse storage event for this referenced supply chain consignment."
 		},
 		"weightUnitChargeableWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
 			},
 			"description": "A measure of a chargeable weight of this supply chain consignment."
 		},
 		"weightUnitGrossWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
 			},
 			"description": "A measure of the gross weight (mass) of this supply chain consignment which includes the weight of packaging but which\nexcludes the weight of any transport equipment."
 		},
 		"weightUnitNetWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType"
 			},
 			"description": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain\nconsignment and that of any transport equipment."
 		}

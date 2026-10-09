@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSpecifiedCertification",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedCertification",
 	"title": "UneceSpecifiedCertification",
 	"description": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification\nrequirements stipulated in a standard or regulation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this specified certification."
@@ -45,14 +45,14 @@
 		"relatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
 			},
 			"description": "A referenced location related to this specified certification."
 		},
 		"relatedStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard related to this specified certification."
 		},
@@ -63,7 +63,7 @@
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion for this specified certification."
 		},
@@ -82,7 +82,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A Uniform Resource Identifier (URI) for this specified certification."

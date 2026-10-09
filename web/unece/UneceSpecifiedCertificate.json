@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSpecifiedCertificate",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate",
 	"title": "UneceSpecifiedCertificate",
 	"description": "A document issued by a government, public organization or association to certify a property of a person, entity, process\nor object.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -25,7 +25,7 @@
 		"applicableClause": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceClause"
+				"$ref": "https://schema.3sixty.global/unece/UneceClause"
 			},
 			"description": "A clause applicable to this specified certificate."
 		},
@@ -36,14 +36,14 @@
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this specified certificate."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this specified certificate."
 		},
@@ -54,14 +54,14 @@
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this specified certificate."
 		},
 		"availableLanguageCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLanguageCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceLanguageCodeList"
 			},
 			"description": "A code specifying an available language for this specified certificate."
 		},
@@ -76,23 +76,23 @@
 		"certificateTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList"
 			},
 			"description": "A code specifying a type of specified certificate."
 		},
 		"certifiedObject": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceObject"
+				"$ref": "https://schema.3sixty.global/unece/UneceObject"
 			},
 			"description": "An object certified by this specified certificate."
 		},
 		"certifiedParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The certified party for this specified certificate."
 		},
 		"certifiedPersonQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of certified persons for this specified certificate."
 		},
 		"description": {
@@ -120,7 +120,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this specified certificate."
@@ -128,7 +128,7 @@
 		"issuanceLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeLocation"
 			},
 			"description": "An issuance location for this specified certificate."
 		},
@@ -142,7 +142,7 @@
 			"description": "The code specifying the reason why this specified certificate was issued."
 		},
 		"issuerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The issuer party for this specified certificate."
 		},
 		"latestEndorsementDateTime": {
@@ -160,13 +160,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of a party for this specified certificate."
 		},
 		"providingParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party, other than the issuer, providing this specified certificate."
 		},
 		"purposeCode": {
@@ -176,14 +176,14 @@
 		"relatedTradeTransaction": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainTradeTransaction"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainTradeTransaction"
 			},
 			"description": "A supply chain trade transaction related to this specified certificate."
 		},
 		"reportedDocumentStatus": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentStatus"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocumentStatus"
 			},
 			"description": "A reported status for this specified certificate."
 		},
@@ -209,7 +209,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/unece/UneceSubjectCodeList"
+						"$ref": "https://schema.3sixty.global/unece/UneceSubjectCodeList"
 					},
 					{
 						"type": "string"

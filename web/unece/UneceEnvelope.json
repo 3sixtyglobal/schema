@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceEnvelope",
+	"$id": "https://schema.3sixty.global/unece/UneceEnvelope",
 	"title": "UneceEnvelope",
 	"description": "A structure providing XHE (Exchange Header Envelope) information.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,17 +19,17 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The customization identifier for this XHE envelope."
 		},
 		"includedPayload": {
-			"$ref": "https://schema.twindev.org/unece/UnecePayload",
+			"$ref": "https://schema.3sixty.global/unece/UnecePayload",
 			"description": "The payload included in this XHE envelope."
 		},
 		"metadataDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceXHEDocument",
+			"$ref": "https://schema.3sixty.global/unece/UneceXHEDocument",
 			"description": "The document metadata for this XHE envelope."
 		},
 		"payloadIncludedIndicator": {
@@ -42,7 +42,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The profile execution identifier for this XHE envelope."
@@ -53,7 +53,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The profile identifier for this XHE envelope."
@@ -64,7 +64,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The version identifier for this XHE envelope."

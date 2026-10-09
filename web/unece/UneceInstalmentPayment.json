@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceInstalmentPayment",
+	"$id": "https://schema.3sixty.global/unece/UneceInstalmentPayment",
 	"title": "UneceInstalmentPayment",
 	"description": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two\nor more parties.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -21,7 +21,7 @@
 		"paidAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value paid or to be paid for this instalment payment."
 		},
@@ -31,13 +31,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The sequence identifier for this instalment payment."
 		},
 		"specifiedFinancingRequestResultDocument": {
-			"$ref": "https://schema.twindev.org/unece/UneceFinancingRequestResultDocument",
+			"$ref": "https://schema.3sixty.global/unece/UneceFinancingRequestResultDocument",
 			"description": "The financing request result document specified for this instalment payment."
 		}
 	},

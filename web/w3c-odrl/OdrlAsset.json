@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-odrl/OdrlAsset",
+	"$id": "https://schema.3sixty.global/w3c-odrl/OdrlAsset",
 	"title": "OdrlAsset",
 	"description": "Interface for ODRL Assets.\nhttps://www.w3.org/TR/odrl-model/#asset",
 	"type": "object",
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+					"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
 				},
 				{
 					"type": "array",
@@ -29,7 +29,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+								"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
 							}
 						]
 					}

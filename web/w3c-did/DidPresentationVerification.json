@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidPresentationVerification",
+	"$id": "https://schema.3sixty.global/w3c-did/DidPresentationVerification",
 	"title": "DidPresentationVerification",
 	"description": "Interface describing the result of checking verifiable presentation.",
 	"type": "object",
@@ -21,7 +21,7 @@
 					"description": "Is the holder verified."
 				},
 				"document": {
-					"$ref": "https://schema.twindev.org/w3c-did/DidDocument",
+					"$ref": "https://schema.3sixty.global/w3c-did/DidDocument",
 					"description": "The DID document for the holder."
 				}
 			},

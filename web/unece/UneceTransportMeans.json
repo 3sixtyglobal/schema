@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTransportMeans",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportMeans",
 	"title": "UneceTransportMeans",
 	"description": "Reference to a device or method used to convey people, goods, or other objects from place to place.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this referenced transport means, such as the International Maritime Organization number for a vessel."
@@ -37,7 +37,7 @@
 			"description": "The type, expressed as text, of this referenced transport means."
 		},
 		"transportMeansTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportMeansTypeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportMeansTypeCodeList",
 			"description": "The code specifying the type of referenced transport means [Reference UNECE Recommendation 28]."
 		}
 	},

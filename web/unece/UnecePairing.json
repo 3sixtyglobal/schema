@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UnecePairing",
+	"$id": "https://schema.3sixty.global/unece/UnecePairing",
 	"title": "UnecePairing",
 	"description": "The process by which two potentially communicating entities are linked.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"matchingEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunicationEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunicationEvent"
 			},
 			"description": "A matching event for this communication pairing."
 		},
@@ -34,7 +34,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the target entity for this communication pairing."

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceProduce",
+	"$id": "https://schema.3sixty.global/unece/UneceProduce",
 	"title": "UneceProduce",
 	"description": "Agricultural plants or plant products grown and harvested, such as grain, fruit, vegetables, silage.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"calculatedYieldMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the calculated yield, such as weight per surface area unit, of this crop produce."
 		},
 		"estimatedYieldMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the estimated yield, such as weight per surface area unit, of this crop produce."
 		},
@@ -33,7 +33,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this crop produce."
@@ -41,7 +41,7 @@
 		"inputSpecifiedBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCropProduceBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatch"
 			},
 			"description": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
 		},
@@ -52,7 +52,7 @@
 		"outputSpecifiedBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCropProduceBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatch"
 			},
 			"description": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
 		},
@@ -63,7 +63,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceProduceTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceProduceTypeCodeList"
 				},
 				{
 					"type": "string"

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCalculatedPrice",
+	"$id": "https://schema.3sixty.global/unece/UneceCalculatedPrice",
 	"title": "UneceCalculatedPrice",
 	"description": "Information related to a calculated price.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,14 +20,14 @@
 		"chargeAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the calculated price to be charged."
 		},
 		"relatedAllowanceCharge": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAppliedAllowanceCharge"
+				"$ref": "https://schema.3sixty.global/unece/UneceAppliedAllowanceCharge"
 			},
 			"description": "Applied allowance charge information related to this calculated price."
 		}

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaShipmentEvent",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaShipmentEvent",
 	"title": "DcsaShipmentEvent",
 	"description": "The `ShipmentEvent` is a specialized event to handle all events related to documentation.\n\nSource: `shipmentEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"oneOf": [
@@ -17,13 +17,13 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataActive"
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataActive"
 						}
 					],
 					"description": "Event metadata (eventType = SHIPMENT)."
 				},
 				"payload": {
-					"$ref": "https://schema.twindev.org/dcsa/DcsaShipmentPayload",
+					"$ref": "https://schema.3sixty.global/dcsa/DcsaShipmentPayload",
 					"description": "Business attributes related to the `ShipmentEvent`."
 				}
 			},
@@ -42,7 +42,7 @@
 					"required": ["eventType"],
 					"allOf": [
 						{
-							"$ref": "https://schema.twindev.org/dcsa/DcsaEventMetadataRetraction"
+							"$ref": "https://schema.3sixty.global/dcsa/DcsaEventMetadataRetraction"
 						}
 					],
 					"description": "Retraction metadata (eventType = SHIPMENT)."

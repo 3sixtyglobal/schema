@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceRequirement",
+	"$id": "https://schema.3sixty.global/unece/UneceRequirement",
 	"title": "UneceRequirement",
 	"description": "Common conditions contained in a contract or agreement applicable between trading partners.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -22,17 +22,17 @@
 			"description": "A rule, expressed as text, for this specified requirement."
 		},
 		"specifiedPaymentTradeSettlement": {
-			"$ref": "https://schema.twindev.org/unece/UnecePaymentTradeSettlement",
+			"$ref": "https://schema.3sixty.global/unece/UnecePaymentTradeSettlement",
 			"description": "The payment trade settlement for this specified requirement."
 		},
 		"specifyingParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The party specifying this specified requirement."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceRequirementTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceRequirementTypeCodeList"
 				},
 				{
 					"type": "string"

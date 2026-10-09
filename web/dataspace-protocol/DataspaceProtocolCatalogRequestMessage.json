@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogRequestMessage",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolCatalogRequestMessage",
 	"title": "DataspaceProtocolCatalogRequestMessage",
 	"description": "Interface for the Dataspace Protocol catalog request message.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		},
 		"@type": {

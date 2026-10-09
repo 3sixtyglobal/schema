@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/documents/DocumentBase",
+	"$id": "https://schema.3sixty.global/documents/DocumentBase",
 	"title": "DocumentBase",
 	"description": "Interface describing a document base.",
 	"type": "object",
@@ -14,11 +14,11 @@
 			"description": "The format of the document id."
 		},
 		"documentCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
 			"description": "The code for the document type."
 		},
 		"annotationObject": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "Additional annotation information for the document."
 		}
 	},

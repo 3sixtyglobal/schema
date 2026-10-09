@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceFinancingSummaryDocument",
+	"$id": "https://schema.3sixty.global/unece/UneceFinancingSummaryDocument",
 	"title": "UneceFinancingSummaryDocument",
 	"description": "A collection of financing related data that provides an overview of key points.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"acceptedTransactionOriginalTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "An original total monetary value of accepted transactions in this financing summary document."
 		},
@@ -27,24 +27,24 @@
 		"financedTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A financed total monetary value in this financing summary document."
 		},
 		"financedTransactionSpecifiedQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of financed transactions specified in this financing summary document."
 		},
 		"lineOfCreditSpecifiedFinancialAccount": {
-			"$ref": "https://schema.twindev.org/unece/UneceFinancingFinancialAccount",
+			"$ref": "https://schema.3sixty.global/unece/UneceFinancingFinancialAccount",
 			"description": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
 		},
 		"relatedBooking": {
-			"$ref": "https://schema.twindev.org/unece/UneceBooking",
+			"$ref": "https://schema.3sixty.global/unece/UneceBooking",
 			"description": "The financial booking related to this financing summary document."
 		},
 		"specifiedCreditorFinancialAccount": {
-			"$ref": "https://schema.twindev.org/unece/UneceCreditorFinancialAccount",
+			"$ref": "https://schema.3sixty.global/unece/UneceCreditorFinancialAccount",
 			"description": "The creditor financial account, used for crediting, specified for this financing summary document."
 		}
 	},

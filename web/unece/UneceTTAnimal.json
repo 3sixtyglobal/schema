@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTTAnimal",
+	"$id": "https://schema.3sixty.global/unece/UneceTTAnimal",
 	"title": "UneceTTAnimal",
 	"description": "A Track and Trace (TT) animal or a group of animals, such as those kept or raised on a farm, ranch.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,13 +14,13 @@
 			"description": "JSON-LD Type."
 		},
 		"holderResponsibleParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
 			"description": "The holder responsible party for this TT animal."
 		},
 		"relatedTTLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTTLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceTTLocation"
 			},
 			"description": "A location related to this TT animal."
 		},
@@ -29,52 +29,52 @@
 			"description": "The code specifying the type of species and subclasses of this TT animal, such as bovine, sheep or salmon."
 		},
 		"specifiedAnimalBatch": {
-			"$ref": "https://schema.twindev.org/unece/UneceAnimalBatch",
+			"$ref": "https://schema.3sixty.global/unece/UneceAnimalBatch",
 			"description": "The animal batch specified for this TT animal."
 		},
 		"specifiedAnimalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAnimalCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalCertificate"
 			},
 			"description": "An animal certificate specified for this TT animal."
 		},
 		"specifiedAnimalHoldingEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAnimalHoldingEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalHoldingEvent"
 			},
 			"description": "An animal holding event specified for this TT animal."
 		},
 		"specifiedAnimalIdentity": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAnimalIdentity"
+				"$ref": "https://schema.3sixty.global/unece/UneceAnimalIdentity"
 			},
 			"description": "An animal identity specified for this TT animal."
 		},
 		"specifiedDelimitedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod"
 			},
 			"description": "A delimited period specified for this TT animal."
 		},
 		"specifiedIndividualTTAnimal": {
-			"$ref": "https://schema.twindev.org/unece/UneceIndividualTTAnimal",
+			"$ref": "https://schema.3sixty.global/unece/UneceIndividualTTAnimal",
 			"description": "The individual tracking animal specified for this TT animal."
 		},
 		"specifiedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod"
 			},
 			"description": "A delimited period specified for this TT animal."
 		},
 		"specifiedSpeciesTTAnimal": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpeciesTTAnimal"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpeciesTTAnimal"
 			},
 			"description": "A species specified for this TT animal."
 		}

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceDeliveryAdjustment",
+	"$id": "https://schema.3sixty.global/unece/UneceDeliveryAdjustment",
 	"title": "UneceDeliveryAdjustment",
 	"description": "A correction or modification to reflect actual delivery conditions.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"actualAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "An actual monetary value added or subtracted as a result of this delivery adjustment."
 		},
@@ -26,13 +26,13 @@
 			"format": "date-time"
 		},
 		"actualQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The actual quantity added or subtracted as a result of this delivery adjustment."
 		},
 		"adjustmentReasonCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceAdjustmentReasonCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceAdjustmentReasonCodeList"
 				},
 				{
 					"type": "string"

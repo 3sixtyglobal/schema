@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceStowaway",
+	"$id": "https://schema.3sixty.global/unece/UneceStowaway",
 	"title": "UneceStowaway",
 	"description": "A person who is found hiding aboard a ship or other conveyance, such as in order to obtain free passage or elude\ndetection.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -20,20 +20,20 @@
 		"claimedLanguageProficiency": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLanguageProficiency"
+				"$ref": "https://schema.3sixty.global/unece/UneceLanguageProficiency"
 			},
 			"description": "Personal language proficiency skills claimed by this found stowaway."
 		},
 		"countryClaimedNationalityId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCountryId"
+					"$ref": "https://schema.3sixty.global/unece/UneceCountryId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of a nationality claimed by this found stowaway."
@@ -46,14 +46,14 @@
 		"embarkationLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLogisticsLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLogisticsLocation"
 			},
 			"description": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
 		},
 		"homeAddress": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
 			},
 			"description": "A home address for this found stowaway."
 		},
@@ -77,7 +77,7 @@
 		"photographicPictureBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file providing a photographic picture of this found stowaway."
 		},
@@ -92,7 +92,7 @@
 		"providedContact": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeContact"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeContact"
 			},
 			"description": "A person or department that acts as a point of contact with or for this found stowaway."
 		},

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/supply-chain/NotificationSubscriberConfig",
+	"$id": "https://schema.3sixty.global/supply-chain/NotificationSubscriberConfig",
 	"title": "NotificationSubscriberConfig",
 	"description": "Configuration for a notification subscriber.",
 	"type": "object",
@@ -13,7 +13,7 @@
 			"type": "object",
 			"properties": {
 				"method": {
-					"$ref": "https://schema.twindev.org/supply-chain/SubscriberHttpMethod",
+					"$ref": "https://schema.3sixty.global/supply-chain/SubscriberHttpMethod",
 					"description": "The type of authentication to use."
 				},
 				"security": {
@@ -100,7 +100,7 @@
 			"type": "object",
 			"properties": {
 				"method": {
-					"$ref": "https://schema.twindev.org/supply-chain/SubscriberHttpMethod",
+					"$ref": "https://schema.3sixty.global/supply-chain/SubscriberHttpMethod",
 					"description": "The type of authentication to use."
 				},
 				"path": {

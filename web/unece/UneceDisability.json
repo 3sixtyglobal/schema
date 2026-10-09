@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceDisability",
+	"$id": "https://schema.3sixty.global/unece/UneceDisability",
 	"title": "UneceDisability",
 	"description": "A physical or mental condition that limits a guest's movements, senses, or activities.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -37,7 +37,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceDisabilityTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceDisabilityTypeCodeList"
 				},
 				{
 					"type": "string"

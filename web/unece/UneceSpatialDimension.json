@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSpatialDimension",
+	"$id": "https://schema.3sixty.global/unece/UneceSpatialDimension",
 	"title": "UneceSpatialDimension",
 	"description": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"componentSpatialDimension": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpatialDimension"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpatialDimension"
 			},
 			"description": "A dimension that is a component of this spatial dimension."
 		},
@@ -25,11 +25,11 @@
 			"description": "A textual description of this spatial dimension."
 		},
 		"dimensionTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDimensionTypeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDimensionTypeCodeList",
 			"description": "The code specifying the type of spatial dimension, such as thickness, area, or volume."
 		},
 		"heightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the height component of this spatial dimension."
 		},
 		"identifier": {
@@ -38,41 +38,41 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this spatial dimension."
 		},
 		"lengthMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the length component of this spatial dimension."
 		},
 		"linearUnitDiameterMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the diameter component for this spatial dimension."
 		},
 		"linearUnitHeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the height component of this spatial dimension."
 		},
 		"linearUnitLengthMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the length component of this spatial dimension."
 		},
 		"linearUnitWidthMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 			"description": "The measure of the width component of this spatial dimension."
 		},
 		"unitQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The number of units with these spatial dimensions."
 		},
 		"unitValueMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceUnitMeasureType",
 			"description": "The measure of the value of this spatial dimension."
 		},
 		"widthMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the width component of this spatial dimension."
 		}
 	},

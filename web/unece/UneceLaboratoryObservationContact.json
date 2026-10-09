@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLaboratoryObservationContact",
+	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationContact",
 	"title": "UneceLaboratoryObservationContact",
 	"description": "A person or department that acts as a point of contact for laboratory observations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,11 +18,11 @@
 			"description": "The name, expressed as text, of the department to which this laboratory observation contact belongs."
 		},
 		"emailCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The email address of this laboratory observation contact."
 		},
 		"faxCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The fax number of this laboratory observation contact."
 		},
 		"identifier": {
@@ -31,13 +31,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this laboratory observation contact."
 		},
 		"mobileTelephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The mobile phone number of this laboratory observation contact."
 		},
 		"personName": {
@@ -45,7 +45,7 @@
 			"description": "The name, expressed as text, of the person for this laboratory observation contact."
 		},
 		"telephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The telephone number of this laboratory observation contact."
 		}
 	},

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSubordinateTradeLineItem",
+	"$id": "https://schema.3sixty.global/unece/UneceSubordinateTradeLineItem",
 	"title": "UneceSubordinateTradeLineItem",
 	"description": "A collection of information specific to a subordinate item being used or reported on for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"applicableProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
 			},
 			"description": "A product applicable for this subordinate trade line item."
 		},
@@ -27,7 +27,7 @@
 		"goodsTypeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -40,7 +40,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/unece/UneceGoodsTypeExtensionCodeList"
+						"$ref": "https://schema.3sixty.global/unece/UneceGoodsTypeExtensionCodeList"
 					},
 					{
 						"type": "string"
@@ -55,7 +55,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this subordinate trade line item."
@@ -63,7 +63,7 @@
 		"includedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A note included in this subordinate trade line item."
 		},
@@ -76,21 +76,21 @@
 			"description": "The code specifying the response reason of this subordinate trade line item."
 		},
 		"specifiedProduct": {
-			"$ref": "https://schema.twindev.org/unece/UneceProduct",
+			"$ref": "https://schema.3sixty.global/unece/UneceProduct",
 			"description": "The referenced product specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeAgreement": {
-			"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeAgreement",
+			"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeAgreement",
 			"description": "The trade agreement specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeDelivery": {
-			"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeDelivery",
+			"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeDelivery",
 			"description": "The delivery specified for this subordinate trade line item."
 		},
 		"specifiedSubordinateLineTradeSettlement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSubordinateLineTradeSettlement"
+				"$ref": "https://schema.3sixty.global/unece/UneceSubordinateLineTradeSettlement"
 			},
 			"description": "A trade settlement specified for this subordinate trade line item."
 		}

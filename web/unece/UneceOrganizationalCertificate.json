@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceOrganizationalCertificate",
+	"$id": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate",
 	"title": "UneceOrganizationalCertificate",
 	"description": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met\nrequired organizational criteria.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -21,7 +21,7 @@
 		"applicableAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion applicable to this organizational certificate."
 		},
@@ -32,40 +32,40 @@
 		"applicableOrganizationCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceOrganizationCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationCharacteristic"
 			},
 			"description": "A characteristic applicable to this organization certificate."
 		},
 		"applicableOrganizationalCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertification"
 			},
 			"description": "An organizational certification applicable to this organizational certificate."
 		},
 		"applicableStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard applicable to this organizational certificate."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this organizational certificate."
 		},
 		"attachedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file attached to this organizational certificate."
 		},
 		"certificateTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCertificateTypeCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCertificateTypeCodeList",
 			"description": "The code specifying the type of organizational certificate."
 		},
 		"description": {
@@ -83,7 +83,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this organizational certificate."
@@ -103,7 +103,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of the party issuing this organizational certificate."

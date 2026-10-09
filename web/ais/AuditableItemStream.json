@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/ais/AuditableItemStream",
+	"$id": "https://schema.3sixty.global/ais/AuditableItemStream",
 	"title": "AuditableItemStream",
 	"description": "Interface describing an auditable item stream.",
 	"type": "object",
@@ -42,7 +42,7 @@
 				"itemListElement": {
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/ais/AuditableItemStreamEntry"
+						"$ref": "https://schema.3sixty.global/ais/AuditableItemStreamEntry"
 					}
 				}
 			},
@@ -50,14 +50,14 @@
 			"description": "Entries in the stream."
 		},
 		"verification": {
-			"$ref": "https://schema.twindev.org/immutable-proof/ImmutableProofVerification",
+			"$ref": "https://schema.3sixty.global/immutable-proof/ImmutableProofVerification",
 			"description": "The verification of the stream."
 		}
 	},
 	"required": ["id", "dateCreated"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/ais/AuditableItemStreamBase"
+			"$ref": "https://schema.3sixty.global/ais/AuditableItemStreamBase"
 		}
 	]
 }

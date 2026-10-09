@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-did/DidVerifiablePresentationCommon",
+	"$id": "https://schema.3sixty.global/w3c-did/DidVerifiablePresentationCommon",
 	"title": "DidVerifiablePresentationCommon",
 	"description": "Interface describing a verifiable presentation.",
 	"type": "object",
@@ -30,12 +30,12 @@
 		"proof": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-did/Proof"
+					"$ref": "https://schema.3sixty.global/w3c-did/Proof"
 				},
 				{
 					"type": "array",
 					"items": {
-						"$ref": "https://schema.twindev.org/w3c-did/Proof"
+						"$ref": "https://schema.3sixty.global/w3c-did/Proof"
 					}
 				}
 			],

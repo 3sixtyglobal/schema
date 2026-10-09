@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisAggregationEvent",
+	"$id": "https://schema.3sixty.global/gs1/EpcisAggregationEvent",
 	"title": "EpcisAggregationEvent",
 	"description": "EPCIS 2.0 AggregationEvent describing how child objects are associated with or\ndisassociated from a parent object.",
 	"type": "object",
@@ -23,18 +23,18 @@
 		"childQuantityList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisQuantity"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisQuantity"
 			},
 			"description": "Unordered list of one or more QuantityElements identifying contained objects\nat the class level; may be empty only with action DELETE when disaggregating\nall children."
 		},
 		"action": {
-			"$ref": "https://schema.twindev.org/gs1/EpcisActionTypes",
+			"$ref": "https://schema.3sixty.global/gs1/EpcisActionTypes",
 			"description": "How this event relates to the lifecycle of the EPCs named in this event."
 		},
 		"bizStep": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1/EpcisBizStepTypes"
+					"$ref": "https://schema.3sixty.global/gs1/EpcisBizStepTypes"
 				},
 				{
 					"type": "string"
@@ -45,7 +45,7 @@
 		"disposition": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1/EpcisDispositionTypes"
+					"$ref": "https://schema.3sixty.global/gs1/EpcisDispositionTypes"
 				},
 				{
 					"type": "string"
@@ -54,38 +54,38 @@
 			"description": "(Optional) The business condition of the objects associated with the EPCs,\npresumed to hold true until contradicted by a subsequent event."
 		},
 		"readPoint": {
-			"$ref": "https://schema.twindev.org/gs1/EpcisLocation",
+			"$ref": "https://schema.3sixty.global/gs1/EpcisLocation",
 			"description": "(Optional) The read point at which the event took place."
 		},
 		"bizLocation": {
-			"$ref": "https://schema.twindev.org/gs1/EpcisLocation",
+			"$ref": "https://schema.3sixty.global/gs1/EpcisLocation",
 			"description": "(Optional) The business location where the objects associated with the EPCs\nmay be found, until contradicted by a subsequent event."
 		},
 		"bizTransactionList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisBizTransaction"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisBizTransaction"
 			},
 			"description": "(Optional) An unordered list of business transactions that define the context\nof this event."
 		},
 		"sourceList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisSource"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisSource"
 			},
 			"description": "(Optional) Unordered list of Source elements that provide context about the\noriginating endpoint of a business transfer of which this event is a part."
 		},
 		"destinationList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisDestination"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisDestination"
 			},
 			"description": "(Optional) Unordered list of Destination elements that provide context about the\nterminating endpoint of a business transfer of which this event is a part."
 		},
 		"sensorElementList": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisSensorElement"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisSensorElement"
 			},
 			"description": "(Optional) Connects event to one or more SensorElements."
 		}
@@ -93,7 +93,7 @@
 	"required": ["type", "action"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/gs1/EpcisEvent"
+			"$ref": "https://schema.3sixty.global/gs1/EpcisEvent"
 		}
 	]
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceNegotiationContext",
+	"$id": "https://schema.3sixty.global/unece/UneceNegotiationContext",
 	"title": "UneceNegotiationContext",
 	"description": "The protocol and setting of a negotiation.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of the negotiation context."
@@ -27,7 +27,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceNegotiationContextTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceNegotiationContextTypeCodeList"
 				},
 				{
 					"type": "string"

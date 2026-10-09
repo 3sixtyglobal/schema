@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAnimalCertification",
+	"$id": "https://schema.3sixty.global/unece/UneceAnimalCertification",
 	"title": "UneceAnimalCertification",
 	"description": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification\nrequirements as stipulated in regulations.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"relatedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
 			},
 			"description": "A referenced location related to this animal certification."
 		},
@@ -35,7 +35,7 @@
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this animal certification."
 		},

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceWeightUnitMeasureType",
+	"$id": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureType",
 	"title": "UneceWeightUnitMeasureType",
 	"description": "The numeric value determined by weight measuring.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The numeric value."
 		},
 		"WeightUnitMeasureTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceWeightUnitMeasureCode",
+			"$ref": "https://schema.3sixty.global/unece/UneceWeightUnitMeasureCode",
 			"description": "The unit code."
 		}
 	},

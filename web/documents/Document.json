@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/documents/Document",
+	"$id": "https://schema.3sixty.global/documents/Document",
 	"title": "Document",
 	"description": "Interface describing a document.",
 	"type": "object",
@@ -12,14 +12,14 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.twindev.org/documents/"
+					"const": "https://schema.3sixty.global/documents/"
 				},
 				{
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 3,
 			"description": "JSON-LD Context."
@@ -80,7 +80,7 @@
 	],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/documents/DocumentBase"
+			"$ref": "https://schema.3sixty.global/documents/DocumentBase"
 		}
 	]
 }

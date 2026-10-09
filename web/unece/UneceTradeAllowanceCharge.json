@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTradeAllowanceCharge",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeAllowanceCharge",
 	"title": "UneceTradeAllowanceCharge",
 	"description": "A component of pricing, such as an allowance or charge for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,22 +16,22 @@
 		"actualAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "An actual monetary value of the trade allowance charge."
 		},
 		"actualCurrencyExchange": {
-			"$ref": "https://schema.twindev.org/unece/UneceCurrencyExchange",
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyExchange",
 			"description": "The actual trade currency exchange for this trade allowance charge."
 		},
 		"allowanceChargeIdTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeIdCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceAllowanceChargeIdCodeList",
 			"description": "The code specifying the type of this trade allowance charge."
 		},
 		"allowanceChargeReasonCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceAllowanceChargeReasonCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceAllowanceChargeReasonCodeList"
 				},
 				{
 					"type": "string"
@@ -47,12 +47,12 @@
 		"basisAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value that is the basis on which this trade allowance charge is calculated."
 		},
 		"basisQuantity": {
-			"$ref": "https://schema.twindev.org/unece/UneceQuantityType",
+			"$ref": "https://schema.3sixty.global/unece/UneceQuantityType",
 			"description": "The quantity on which this trade allowance charge is based."
 		},
 		"calculationPercent": {
@@ -62,7 +62,7 @@
 		"categoryTradeTax": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeTax"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeTax"
 			},
 			"description": "A tax category of this trade allowance charge."
 		},
@@ -73,7 +73,7 @@
 		"deductionAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value to be deducted from this trade allowance charge."
 		},
@@ -87,7 +87,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this trade allowance charge."
@@ -107,16 +107,16 @@
 		"specifiedAccountingAccount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAccountingAccount"
+				"$ref": "https://schema.3sixty.global/unece/UneceAccountingAccount"
 			},
 			"description": "An accounting account specified for this trade allowance charge."
 		},
 		"unitBasisAmount": {
-			"$ref": "https://schema.twindev.org/unece/UneceAmountType",
+			"$ref": "https://schema.3sixty.global/unece/UneceAmountType",
 			"description": "The monetary value of the unit basis on which the allowance or charge is calculated."
 		},
 		"validityPeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
 			"description": "The specified period for which this trade allowance charge is valid."
 		}
 	},

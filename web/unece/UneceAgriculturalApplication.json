@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAgriculturalApplication",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalApplication",
 	"title": "UneceAgriculturalApplication",
 	"description": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate,\nconstruction, plant, animal or product.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,35 +16,35 @@
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this agricultural application."
 		},
 		"appliedArea": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalZoneArea"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalZoneArea"
 			},
 			"description": "A specified agricultural application applied to this agricultural zone area."
 		},
 		"appliedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalCertificate"
 			},
 			"description": "An agricultural certificate applied to this specified agricultural application."
 		},
 		"appliedChemicalTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment"
 			},
 			"description": "A specified chemical treatment applied to this agricultural application."
 		},
 		"appliedMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Specified material applied to this agricultural application."
 		},
@@ -54,7 +54,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this specified agricultural application."
@@ -62,21 +62,21 @@
 		"specifiedLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceLocation"
 			},
 			"description": "A referenced location specified for this specified agricultural application."
 		},
 		"specifiedPlot": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePlot"
+				"$ref": "https://schema.3sixty.global/unece/UnecePlot"
 			},
 			"description": "A crop plot specified for this agricultural application."
 		},
 		"specifiedProductBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
 			},
 			"description": "A product batch specified for this specified agricultural application."
 		}

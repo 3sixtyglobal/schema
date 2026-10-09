@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisSensorReport",
+	"$id": "https://schema.3sixty.global/gs1/EpcisSensorReport",
 	"title": "EpcisSensorReport",
 	"description": "EPCIS 2.0 SensorReport containing measurement values and related sensor\nobservation details.",
 	"type": "object",
@@ -8,7 +8,7 @@
 		"type": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1/EpcisMeasurementTypes"
+					"$ref": "https://schema.3sixty.global/gs1/EpcisMeasurementTypes"
 				},
 				{
 					"type": "string"
@@ -19,7 +19,7 @@
 		"exception": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1/EpcisSensorAlertTypes"
+					"$ref": "https://schema.3sixty.global/gs1/EpcisSensorAlertTypes"
 				},
 				{
 					"type": "string"
@@ -70,7 +70,7 @@
 		"component": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/gs1/EpcisComponentTypes"
+					"$ref": "https://schema.3sixty.global/gs1/EpcisComponentTypes"
 				},
 				{
 					"type": "string"

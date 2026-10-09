@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAcknowledgementDocument",
+	"$id": "https://schema.3sixty.global/unece/UneceAcknowledgementDocument",
 	"title": "UneceAcknowledgementDocument",
 	"description": "A document exchanged between parties for a business application level acknowledgement of the receipt of information.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,14 +24,14 @@
 		"acknowledgementDocumentStatusCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceStatusCodeList"
 			},
 			"description": "A code specifying a status for this acknowledgement document."
 		},
 		"acknowledgementStatusCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAcknowledgementCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceAcknowledgementCodeList"
 			},
 			"description": "A code specifying an acknowledgment status for this acknowledgement document."
 		},
@@ -51,7 +51,7 @@
 		"documentTypeCode": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList"
 			},
 			"description": "A code specifying a type of acknowledgement document."
 		},
@@ -61,7 +61,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this acknowledgement document."
@@ -77,7 +77,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of an item in this acknowledgement document."
@@ -101,7 +101,7 @@
 		"referenceDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A document referenced by this acknowledgement document."
 		},

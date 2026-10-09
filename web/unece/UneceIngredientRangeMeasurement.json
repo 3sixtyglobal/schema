@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceIngredientRangeMeasurement",
+	"$id": "https://schema.3sixty.global/unece/UneceIngredientRangeMeasurement",
 	"title": "UneceIngredientRangeMeasurement",
 	"description": "A measurement of the variation limits of an ingredient.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The textual description of this ingredient range measurement."
 		},
 		"lowerLimitActualMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The actual lower limit measure of this ingredient range measurement."
 		},
 		"lowerLimitComparisonOperatorCode": {
@@ -26,11 +26,11 @@
 			"description": "The code specifying the comparison operator for the lower limit of this ingredient range measurement."
 		},
 		"lowerLimitPressureConditionMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the pressure condition at which this lower limit ingredient range measurement is taken."
 		},
 		"upperLimitActualMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The actual upper limit measure of this ingredient range measurement."
 		},
 		"upperLimitComparisonOperatorCode": {
@@ -38,7 +38,7 @@
 			"description": "The code specifying the comparison operator for the upper limit of this ingredient range measurement."
 		},
 		"upperLimitPressureConditionMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the pressure condition at which this upper limit ingredient range measurement is taken."
 		}
 	},

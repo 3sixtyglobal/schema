@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/gs1/EpcisVocabularyElement",
+	"$id": "https://schema.3sixty.global/gs1/EpcisVocabularyElement",
 	"title": "EpcisVocabularyElement",
 	"description": "EPCIS 2.0 VocabularyElement representing a master data entity with\nattributes and optional children.",
 	"type": "object",
@@ -12,7 +12,7 @@
 		"attributes": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/gs1/EpcisAttribute"
+				"$ref": "https://schema.3sixty.global/gs1/EpcisAttribute"
 			},
 			"description": "Attributes."
 		},

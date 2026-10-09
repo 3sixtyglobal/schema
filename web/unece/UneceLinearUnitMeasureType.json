@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLinearUnitMeasureType",
+	"$id": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureType",
 	"title": "UneceLinearUnitMeasureType",
 	"description": "The numeric value determined by linear measuring.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The numeric value."
 		},
 		"LinearUnitMeasureTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceLinearUnitMeasureCode",
+			"$ref": "https://schema.3sixty.global/unece/UneceLinearUnitMeasureCode",
 			"description": "The unit code."
 		}
 	},

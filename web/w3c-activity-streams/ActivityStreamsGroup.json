@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsGroup",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsGroup",
 	"title": "ActivityStreamsGroup",
 	"description": "A W3C Activity Streams Group.\n\nA `Group` represents a group of individuals.",
 	"type": "object",
@@ -33,7 +33,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsActor"
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsActor"
 		}
 	]
 }

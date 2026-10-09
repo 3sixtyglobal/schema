@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UnecePaymentFinancialAccount",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentFinancialAccount",
 	"title": "UnecePaymentFinancialAccount",
 	"description": "A specific business arrangement whereby monetary values pertaining to payment, collected or paid, are recorded.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique International Bank Account Number (IBAN) identifier for this payment financial account."
@@ -34,19 +34,19 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this payment financial account."
 		},
 		"paymentFinancialAccountCurrencyCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceCurrencyCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceCurrencyCodeList",
 			"description": "The code specifying the currency of this payment financial account."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UnecePaymentFinancialAccountTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UnecePaymentFinancialAccountTypeCodeList"
 				},
 				{
 					"type": "string"

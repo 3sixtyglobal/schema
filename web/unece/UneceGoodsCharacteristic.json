@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceGoodsCharacteristic",
+	"$id": "https://schema.3sixty.global/unece/UneceGoodsCharacteristic",
 	"title": "UneceGoodsCharacteristic",
 	"description": "A distinctive feature of a material contained within physical goods.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,11 +14,11 @@
 			"description": "JSON-LD Type."
 		},
 		"absolutePresenceVolumeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The volume measure of the absolute presence of this material goods characteristic."
 		},
 		"absolutePresenceWeightMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The weight measure of the absolute presence of this material goods characteristic."
 		},
 		"description": {
@@ -32,7 +32,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceGoodsCharacteristicTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceGoodsCharacteristicTypeCodeList"
 				},
 				{
 					"type": "string"

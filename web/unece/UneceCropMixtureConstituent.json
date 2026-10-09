@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCropMixtureConstituent",
+	"$id": "https://schema.3sixty.global/unece/UneceCropMixtureConstituent",
 	"title": "UneceCropMixtureConstituent",
 	"description": "A plant species or variety constituting part of a field crop mixture.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The percent of the crop proportion of this field crop mixture constituent."
 		},
 		"specifiedBotanicalCrop": {
-			"$ref": "https://schema.twindev.org/unece/UneceBotanicalCrop",
+			"$ref": "https://schema.3sixty.global/unece/UneceBotanicalCrop",
 			"description": "The botanical crop specified for this field crop mixture constituent."
 		}
 	},

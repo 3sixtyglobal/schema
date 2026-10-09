@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTradeContact",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeContact",
 	"title": "UneceTradeContact",
 	"description": "A person or a department that acts as a point of contact with another person or department in a trading relationship.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"accessibleLocation": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedLocation"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedLocation"
 			},
 			"description": "An accessible location specified for this trade contact."
 		},
@@ -27,7 +27,7 @@
 		"contactTypeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceContactTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceContactTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -44,24 +44,24 @@
 			"description": "A textual description of this trade contact."
 		},
 		"directTelephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The direct telephone communication information for this trade contact."
 		},
 		"eDICommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Electronic Data Interchange (EDI) communication information for this trade contact."
 		},
 		"emailURICommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The email URI communication information for this trade contact."
 		},
 		"faxCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Fax communication information for this trade contact."
 		},
@@ -71,7 +71,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this trade contact."
@@ -79,7 +79,7 @@
 		"instantMessagingCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Instant messaging communication information for this trade contact."
 		},
@@ -88,7 +88,7 @@
 			"description": "A job title, position or designation, expressed as text, of this trade contact within an organization, such as Director,\nSoftware Engineer, Purchasing Manager."
 		},
 		"mobileTelephoneCommunication": {
-			"$ref": "https://schema.twindev.org/unece/UneceCommunication",
+			"$ref": "https://schema.3sixty.global/unece/UneceCommunication",
 			"description": "The mobile telephone communication information for this trade contact."
 		},
 		"personId": {
@@ -97,7 +97,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this trade contact person."
@@ -109,7 +109,7 @@
 		"postalAddress": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeAddress"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeAddress"
 			},
 			"description": "Postal address information for this trade contact."
 		},
@@ -118,48 +118,48 @@
 			"description": "A responsibility, expressed as text, of this trade contact."
 		},
 		"specifiedContactPerson": {
-			"$ref": "https://schema.twindev.org/unece/UneceContactPerson",
+			"$ref": "https://schema.3sixty.global/unece/UneceContactPerson",
 			"description": "The contact person specified for this trade contact."
 		},
 		"specifiedNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "A note specified for this trade contact."
 		},
 		"telephoneCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Telephone communication information for this trade contact."
 		},
 		"telexCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Telegraphy (Telex) communication information for this trade contact."
 		},
 		"uRICommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Uniform Resource Identifier (URI) communication information for this trade contact, such as a web or an email address."
 		},
 		"usedCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "A communication used by this trade contact."
 		},
 		"vOIPCommunication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunication"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunication"
 			},
 			"description": "Voice Over Internet Protocol (VOIP) communication information for this trade contact."
 		}

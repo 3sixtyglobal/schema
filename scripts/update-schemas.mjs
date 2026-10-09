@@ -145,7 +145,7 @@ async function generateTypesPage(schema, types) {
 	} else {
 		template = template.replace(
 			/\${repo}/g,
-			`Repo: <a href="https://github.com/iotaledger/${schema.repo}" target="_blank">https://github.com/iotaledger/${schema.repo}</a><br /><br /><hr /><br />`
+			`Repo: <a href="https://github.com/3sixtyglobal/${schema.repo}" target="_blank">https://github.com/3sixtyglobal/${schema.repo}</a><br /><br /><hr /><br />`
 		);
 	}
 
@@ -167,7 +167,7 @@ async function generateTypesPage(schema, types) {
 			<br />
 			<p>
 				<b>Root namespace:</b>
-				https://schema.twindev.org/${schema.namespace}/
+				https://schema.3sixty.global/${schema.namespace}/
 			</p>
 			<br /><ul>${typesList}</ul><br /><hr /><br /><br />`;
 
@@ -181,7 +181,7 @@ async function generateTypesPage(schema, types) {
 		const jsonLdList = allTypes
 			.map(
 				t =>
-					`<li><a href="./${t}.jsonld">https://schema.twindev.org/${schema.namespace}/${t}.jsonld</a></li>`
+					`<li><a href="./${t}.jsonld">https://schema.3sixty.global/${schema.namespace}/${t}.jsonld</a></li>`
 			)
 			.join('');
 
@@ -215,7 +215,7 @@ async function createRewriteRules(schemas) {
 
 		redirects.push({
 			source: `/${rewriteName}`,
-			destination: `https://schema.twindev.org/${rewriteName}/`,
+			destination: `https://schema.3sixty.global/${rewriteName}/`,
 			permanent: true
 		});
 		rewrites.push({
@@ -228,7 +228,7 @@ async function createRewriteRules(schemas) {
 					value: 'text/html.*'
 				}
 			],
-			destination: `https://schema.twindev.org/${rewriteName}/types.html`
+			destination: `https://schema.3sixty.global/${rewriteName}/types.html`
 		});
 		if (Array.isArray(jsonLdTypes)) {
 			for (const type of jsonLdTypes) {
@@ -242,7 +242,7 @@ async function createRewriteRules(schemas) {
 							value: 'application/ld\\+json.*'
 						}
 					],
-					destination: `https://schema.twindev.org/${rewriteName}/${type}.jsonld`
+					destination: `https://schema.3sixty.global/${rewriteName}/${type}.jsonld`
 				});
 			}
 		} else {
@@ -256,7 +256,7 @@ async function createRewriteRules(schemas) {
 						value: 'application/ld\\+json.*'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/types.jsonld`
+				destination: `https://schema.3sixty.global/${rewriteName}/types.jsonld`
 			});
 		}
 		if (hasTypes) {
@@ -270,7 +270,7 @@ async function createRewriteRules(schemas) {
 						value: 'application/ld\\+json.*'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/:path*.json`
+				destination: `https://schema.3sixty.global/${rewriteName}/:path*.json`
 			});
 			rewrites.push({
 				// description: `JSON Schemas: '${rewriteName}/*' returns '${rewriteName}/*.json' when requested with 'application/json' header`,
@@ -282,7 +282,7 @@ async function createRewriteRules(schemas) {
 						value: 'application/json'
 					}
 				],
-				destination: `https://schema.twindev.org/${rewriteName}/:path*.json`
+				destination: `https://schema.3sixty.global/${rewriteName}/:path*.json`
 			});
 		}
 	}
@@ -314,7 +314,7 @@ async function createRewriteRules(schemas) {
  */
 async function resolvePackagePath(repo, pkg) {
 	const candidates = [
-		path.resolve(path.join('../../twin-workspace', repo, 'packages', pkg)),
+		path.resolve(path.join('../../workspace-core', repo, 'packages', pkg)),
 		path.resolve(path.join('..', repo, 'packages', pkg))
 	];
 

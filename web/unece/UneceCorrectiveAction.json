@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCorrectiveAction",
+	"$id": "https://schema.3sixty.global/unece/UneceCorrectiveAction",
 	"title": "UneceCorrectiveAction",
 	"description": "Improvements taken to eliminate causes of non-conformities or other undesirable situations, such as to an organization's\nprocesses or products.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceCorrectiveActionTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceCorrectiveActionTypeCodeList"
 				},
 				{
 					"type": "string"

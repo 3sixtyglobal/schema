@@ -1,18 +1,18 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObject",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObject",
 	"title": "ActivityStreamsObject",
 	"description": "A W3C Activity Streams Object.\n\nThis is the base type for most ActivityStreams entities. It supports natural language\nvalues (e.g. `name`, `summary`, `content`) as either plain strings or language maps.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsContextType",
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsContextType",
 			"description": "The LD Context."
 		},
 		"type": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObjectTypes"
+					"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObjectTypes"
 				},
 				{
 					"type": "string"
@@ -22,7 +22,7 @@
 					"items": {
 						"anyOf": [
 							{
-								"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsObjectTypes"
+								"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsObjectTypes"
 							},
 							{
 								"type": "string"
@@ -44,13 +44,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
 				}
 			],
 			"description": "Natural language name."
 		},
 		"nameMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
 			"description": "Natural language name map."
 		},
 		"summary": {
@@ -59,13 +59,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
 				}
 			],
 			"description": "Natural language summary."
 		},
 		"summaryMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
 			"description": "Natural language summary map."
 		},
 		"content": {
@@ -74,13 +74,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap"
 				}
 			],
 			"description": "Natural language content."
 		},
 		"contentMap": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdLanguageMap",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdLanguageMap",
 			"description": "Natural language content map."
 		},
 		"url": {
@@ -89,7 +89,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -99,7 +99,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -113,7 +113,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -123,7 +123,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -137,7 +137,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -147,7 +147,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -186,7 +186,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -196,7 +196,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -210,7 +210,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -220,7 +220,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -234,7 +234,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -244,7 +244,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -258,7 +258,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -268,7 +268,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -282,7 +282,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -292,7 +292,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -306,7 +306,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -316,7 +316,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -330,7 +330,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -340,7 +340,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -354,7 +354,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -364,7 +364,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -373,7 +373,7 @@
 			"description": "In reply to."
 		},
 		"replies": {
-			"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+			"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 			"description": "Replies collection.\n\nTypically an embedded `Collection` of Objects that are replies to this object."
 		},
 		"preview": {
@@ -382,7 +382,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -392,7 +392,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -406,7 +406,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -416,7 +416,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -430,7 +430,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -440,7 +440,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -454,7 +454,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -464,7 +464,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}
@@ -478,7 +478,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 				},
 				{
 					"type": "array",
@@ -488,7 +488,7 @@
 								"type": "string"
 							},
 							{
-								"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+								"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 							}
 						]
 					}

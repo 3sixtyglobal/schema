@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/supply-chain/SupplyChainAppDocument",
+	"$id": "https://schema.3sixty.global/supply-chain/SupplyChainAppDocument",
 	"title": "SupplyChainAppDocument",
 	"description": "Supply Chain App Document.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -14,7 +14,7 @@
 			"description": "JSON-LD Type."
 		},
 		"documentTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
 			"description": "The code specifying the type of referenced document."
 		},
 		"identifier": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A unique identifier for this referenced document."
@@ -39,7 +39,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique Uniform Resource Identifier (URI) for this referenced document."
@@ -50,7 +50,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the version of this referenced document."
@@ -67,7 +67,7 @@
 	],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/unece/UneceDocument"
+			"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 		}
 	]
 }

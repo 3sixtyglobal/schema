@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceMarketplace",
+	"$id": "https://schema.3sixty.global/unece/UneceMarketplace",
 	"title": "UneceMarketplace",
 	"description": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or\nservices.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this specified marketplace."
@@ -31,7 +31,7 @@
 		"orderingAvailablePeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAvailablePeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceAvailablePeriod"
 			},
 			"description": "An available ordering period for this specified marketplace."
 		},
@@ -49,7 +49,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A website Uniform Resource Identifier (URI) for this specified marketplace."

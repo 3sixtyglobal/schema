@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceClause",
+	"$id": "https://schema.3sixty.global/unece/UneceClause",
 	"title": "UneceClause",
 	"description": "A distinct article or provision in a document, which requires compliance.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"associatedMeasurement": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasurement"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasurement"
 			},
 			"description": "A measurement associated with this document clause."
 		},
 		"associatedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A period of time associated with this document clause."
 		},
@@ -37,7 +37,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this document clause."
@@ -48,7 +48,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The Uniform Resource Locator (URL) for this document clause."

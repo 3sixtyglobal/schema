@@ -1,29 +1,29 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/supply-chain/SupplyChainAppConsignment",
+	"$id": "https://schema.3sixty.global/supply-chain/SupplyChainAppConsignment",
 	"title": "SupplyChainAppConsignment",
 	"description": "V2 consignment (D23B context).\nAll extended fields are optional for ingestion but validated if present.",
 	"type": "object",
 	"properties": {
 		"consignmentItemQuantity": {
-			"$ref": "https://schema.twindev.org/supply-chain/WrappedQuantity",
+			"$ref": "https://schema.3sixty.global/supply-chain/WrappedQuantity",
 			"description": "Wrapped quantity structures."
 		},
 		"packageQuantity": {
-			"$ref": "https://schema.twindev.org/supply-chain/WrappedQuantity",
+			"$ref": "https://schema.3sixty.global/supply-chain/WrappedQuantity",
 			"description": "Wrapped package quantity."
 		},
 		"weightUnitNetWeightMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/supply-chain/WrappedWeightMeasure"
+				"$ref": "https://schema.3sixty.global/supply-chain/WrappedWeightMeasure"
 			},
 			"description": "Wrapped weight net measurement"
 		}
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/supply-chain/UneceConsignmentConstrained"
+			"$ref": "https://schema.3sixty.global/supply-chain/UneceConsignmentConstrained"
 		}
 	]
 }

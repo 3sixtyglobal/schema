@@ -15,22 +15,24 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  ORG_GPG_EMAIL: ${{ secrets.ORG_GPG_EMAIL }}
+  ORG_GPG_NAME: ${{ secrets.ORG_GPG_NAME }}
+
 jobs:
   update-schemas:
-    # Private repos route to the self-hosted 'twin' runner group; public repos fall back to
+    # Private repos route to the self-hosted '3sixty' runner group; public repos fall back to
     # GitHub-hosted ubuntu-latest so the workflow works in open-source forks without secrets.
-    runs-on:
-      labels: ${{ github.event.repository.private && 'self-hosted' || 'ubuntu-latest' }}
-      group: ${{ github.event.repository.private && 'twin' || 'default' }}
+    runs-on: ${{ github.event.repository.private && fromJSON('{"group":"3sixty","labels":"self-hosted"}') || 'ubuntu-latest' }}
 
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
 
@@ -38,7 +40,7 @@ jobs:
       # resolves repositories from the parent workspace, the same way it does locally.
       - name: Checkout sibling repositories
         env:
-          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_GHA_RELEASE_TOKEN }}
         run: |
           # Exit immediately on error, treat unset variables as errors, and propagate pipe failures.
           set -euo pipefail
@@ -66,7 +68,7 @@ jobs:
             git clone \
               --depth 1 \
               --branch "${{ github.ref_name }}" \
-              "https://x-access-token:${GH_TOKEN}@github.com/iotaledger/${repo_name}.git" \
+              "https://x-access-token:${GH_TOKEN}@github.com/3sixtyglobal/${repo_name}.git" \
               "$target_path"
           done
 
@@ -83,18 +85,20 @@ jobs:
       # Import GPG key for signing commits
       - name: Import GPG key
         run: |
-          echo "$TWIN_GPG_PRIVATE_KEY" | base64 --decode | gpg --import
-          echo "TWIN_GPG_KEY_ID=$TWIN_GPG_KEY_ID" >> $GITHUB_ENV
+          echo "$ORG_GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+          echo "ORG_GPG_KEY_ID=$ORG_GPG_KEY_ID" >> $GITHUB_ENV
         env:
-          TWIN_GPG_PRIVATE_KEY: ${{ secrets.TWIN_GPG_PRIVATE_KEY }}
-          TWIN_GPG_KEY_ID: ${{ secrets.TWIN_GPG_KEY_ID }}
+          ORG_GPG_PRIVATE_KEY: ${{ secrets.ORG_GPG_PRIVATE_KEY }}
+          ORG_GPG_KEY_ID: ${{ secrets.ORG_GPG_KEY_ID }}
+          ORG_GPG_EMAIL: ${{ secrets.ORG_GPG_EMAIL }}
+          ORG_GPG_NAME: ${{ secrets.ORG_GPG_NAME }}
 
       # Set git config once for all subsequent steps
       - name: Configure Git
         run: |
-          git config --global user.email "github@twindev.org"
-          git config --global user.name "TWIN GitHub Bot"
-          git config --global user.signingkey "$TWIN_GPG_KEY_ID"
+          git config --global user.email "$ORG_GPG_EMAIL"
+          git config --global user.name "$ORG_GPG_NAME"
+          git config --global user.signingkey "$ORG_GPG_KEY_ID"
           git config --global commit.gpgsign true
           git config --global tag.gpgsign true
 
@@ -119,7 +123,7 @@ jobs:
         run: |
           gh pr review ${{ steps.create-pr.outputs.pr_number }} --approve
         env:
-          GH_TOKEN: ${{ secrets.TWIN_GHA_RELEASE_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_GHA_RELEASE_TOKEN }}
 
       # Always remove sibling clones so self-hosted runners do not accumulate stale repositories.
       # `if: always()` ensures this runs even when earlier steps fail.
@@ -140,7 +144,7 @@ jobs:
       - name: Cleanup GPG key
         if: always()
         run: |
-          FINGERPRINT=$(gpg --list-secret-keys --with-colons "$TWIN_GPG_KEY_ID" | awk -F: '/fpr:/ {print $10}' | head -1)
+          FINGERPRINT=$(gpg --list-secret-keys --with-colons "$ORG_GPG_KEY_ID" | awk -F: '/fpr:/ {print $10}' | head -1)
           if [ -n "$FINGERPRINT" ]; then
             gpg --batch --yes --delete-secret-keys "$FINGERPRINT" || true
             gpg --batch --yes --delete-keys "$FINGERPRINT" || true

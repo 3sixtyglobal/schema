@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceProductionProcess",
+	"$id": "https://schema.3sixty.global/unece/UneceProductionProcess",
 	"title": "UneceProductionProcess",
 	"description": "A naturally occurring or designed sequence of operations or events in order to produce something.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,126 +16,126 @@
 		"additionalInformationNote": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceNote"
+				"$ref": "https://schema.3sixty.global/unece/UneceNote"
 			},
 			"description": "An additional information note for this production process."
 		},
 		"allocatedMachine": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMachine"
+				"$ref": "https://schema.3sixty.global/unece/UneceMachine"
 			},
 			"description": "A machine allocated to this production process."
 		},
 		"allocatedProductionDevice": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionDevice"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionDevice"
 			},
 			"description": "A production device allocated to this production process."
 		},
 		"applicableAssessment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssessment"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssessment"
 			},
 			"description": "An assessment applicable to this production process."
 		},
 		"applicableDeclaration": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedDeclaration"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedDeclaration"
 			},
 			"description": "A specified declaration applicable to this production process."
 		},
 		"applicableFault": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedFault"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedFault"
 			},
 			"description": "A specified fault applicable to this production process."
 		},
 		"applicableLicence": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceLicence"
+				"$ref": "https://schema.3sixty.global/unece/UneceLicence"
 			},
 			"description": "A specified licence applicable to this production process."
 		},
 		"applicableParameter": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameter"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameter"
 			},
 			"description": "A specified parameter applicable to this production process."
 		},
 		"applicablePeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A period applicable to this production process."
 		},
 		"applicableProductionCycle": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionCycle"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionCycle"
 			},
 			"description": "A specified production cycle applicable to this production process."
 		},
 		"applicableSpecifiedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedCertificate"
 			},
 			"description": "A certificate applicable to this production process."
 		},
 		"applicableSpecifiedInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedInspection"
 			},
 			"description": "A specified inspection applicable to this production process."
 		},
 		"applicableSustainabilityCharacteristic": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityCharacteristic"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityCharacteristic"
 			},
 			"description": "A sustainability characteristic applicable to this production process."
 		},
 		"applicableSustainabilityInspection": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSustainabilityInspection"
+				"$ref": "https://schema.3sixty.global/unece/UneceSustainabilityInspection"
 			},
 			"description": "A sustainability inspection applicable to this production process."
 		},
 		"appliedChemicalTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedChemicalTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedChemicalTreatment"
 			},
 			"description": "A chemical treatment applied during this production process."
 		},
 		"appliedCropProtectionTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCropProtectionTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProtectionTreatment"
 			},
 			"description": "A crop protection treatment applied during this production process."
 		},
 		"appliedProductFinishingTreatment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductFinishingTreatment"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductFinishingTreatment"
 			},
 			"description": "A product finishing treatment applied during this production process."
 		},
 		"associatedStandard": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceStandard"
+				"$ref": "https://schema.3sixty.global/unece/UneceStandard"
 			},
 			"description": "A referenced standard associated with this production process."
 		},
@@ -161,7 +161,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of this production process."
@@ -169,21 +169,21 @@
 		"inputApplicableBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
 			},
 			"description": "An input product batch applicable to this production process."
 		},
 		"inputApplicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Input material applicable to this production process."
 		},
 		"inputApplicableProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
 			},
 			"description": "An input product applicable to this production process."
 		},
@@ -194,7 +194,7 @@
 		"manufacturerParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A manufacturer party for this production process."
 		},
@@ -210,7 +210,7 @@
 		"occurrenceEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSupplyChainEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceSupplyChainEvent"
 			},
 			"description": "An occurrence of an event for this production process."
 		},
@@ -225,28 +225,28 @@
 		"outputApplicableBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatch"
 			},
 			"description": "An output product batch applicable to this production process."
 		},
 		"outputApplicableMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedMaterial"
 			},
 			"description": "Output material applicable to this production process."
 		},
 		"outputApplicableProduct": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProduct"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProduct"
 			},
 			"description": "An output product applicable to this production process."
 		},
 		"performedWorkItem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessWorkItem"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessWorkItem"
 			},
 			"description": "A work item performed for this production process."
 		},
@@ -265,7 +265,7 @@
 		"productionWasteInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
 			},
 			"description": "Disposal instructions for the waste resulting from this production process."
 		},
@@ -276,84 +276,84 @@
 		"relatedBinaryFile": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceBinaryFile"
+				"$ref": "https://schema.3sixty.global/unece/UneceBinaryFile"
 			},
 			"description": "A binary file related to this production process."
 		},
 		"reportedProductionWasteMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionWasteMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterial"
 			},
 			"description": "Waste material reported for this production process."
 		},
 		"specificationDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A specification document referenced for this production process."
 		},
 		"specifiedAssertion": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAssertion"
+				"$ref": "https://schema.3sixty.global/unece/UneceAssertion"
 			},
 			"description": "A sustainability assertion specified for this production process."
 		},
 		"specifiedDocument": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDocument"
+				"$ref": "https://schema.3sixty.global/unece/UneceDocument"
 			},
 			"description": "A referenced document specified for this production process."
 		},
 		"specifiedFacility": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionFacility"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionFacility"
 			},
 			"description": "A production facility specified for this production process."
 		},
 		"specifiedOrganizationalCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertificate"
 			},
 			"description": "An organizational certificate specified for this production process."
 		},
 		"specifiedOrganizationalCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceOrganizationalCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceOrganizationalCertification"
 			},
 			"description": "An organizational certification specified for this production process."
 		},
 		"specifiedProcessCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertificate"
 			},
 			"description": "A process certificate specified for this production process."
 		},
 		"specifiedProcessCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProcessCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceProcessCertification"
 			},
 			"description": "A process certification specified for this production process."
 		},
 		"specifiedProductBatchCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductBatchCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductBatchCertification"
 			},
 			"description": "A product batch certification specified for this production process."
 		},
 		"specifiedTradeProductCertification": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeProductCertification"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeProductCertification"
 			},
 			"description": "A trade product certification specified for this production process."
 		},
@@ -372,14 +372,14 @@
 		"subcontractorParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A subcontractor party specified for this production process."
 		},
 		"subordinateProcess": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionProcess"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionProcess"
 			},
 			"description": "A subordinate process of this production process."
 		}

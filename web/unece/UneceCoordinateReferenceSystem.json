@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem",
+	"$id": "https://schema.3sixty.global/unece/UneceCoordinateReferenceSystem",
 	"title": "UneceCoordinateReferenceSystem",
 	"description": "A coordinate reference system that is used in a contextually local sense to describe the relative locations of objects\nin which coordinates of points are recorded in a Coordinate System (CS) (reference ISO 19111).",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this CS engineering coordinate reference system."
@@ -35,21 +35,21 @@
 		"specifiedDelimitedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod"
 			},
 			"description": "A delimited period specified for this CS engineering coordinate reference system."
 		},
 		"specifiedPeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDelimitedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceDelimitedPeriod"
 			},
 			"description": "A delimited period specified for this CS engineering coordinate reference system."
 		},
 		"subordinateCoordinateReferenceSystem": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCoordinateReferenceSystem"
+				"$ref": "https://schema.3sixty.global/unece/UneceCoordinateReferenceSystem"
 			},
 			"description": "A CS engineering coordinate reference system subordinate to this CS engineering coordinate reference system."
 		}

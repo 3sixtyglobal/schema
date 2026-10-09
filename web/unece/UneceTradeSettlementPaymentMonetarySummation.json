@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTradeSettlementPaymentMonetarySummation",
+	"$id": "https://schema.3sixty.global/unece/UneceTradeSettlementPaymentMonetarySummation",
 	"title": "UneceTradeSettlementPaymentMonetarySummation",
 	"description": "A collection of monetary amount totals specified for a trade settlement payment.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,63 +16,63 @@
 		"adjustedBalanceOutAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value that is an adjusted amount balanced out for this trade settlement payment monetary summation."
 		},
 		"applicablePaymentBalanceOut": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentBalanceOut"
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentBalanceOut"
 			},
 			"description": "A balance out applicable to this trade settlement payment monetary summation."
 		},
 		"balanceOutAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value that is an amount balanced out for this trade settlement payment monetary summation."
 		},
 		"equivalentTransferTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value transferred as an equivalent amount in the credit transfer payment in this trade settlement payment\nmonetary summation, such as the amount transferred between debtor and creditor, before deduction of charges, expressed\nin the currency of the debtor's account, and transferred into a different currency."
 		},
 		"grandTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of a grand total reported in this trade settlement payment monetary summation."
 		},
 		"includingTaxesLineTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the line total, including taxes, being reported in this trade settlement payment monetary summation."
 		},
 		"netLineTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the net total of all line amounts, including line level allowances and charges and excluding line\nlevel taxes, being reported in this trade settlement payment monetary summation."
 		},
 		"paymentTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of a payment total reported in this trade settlement payment monetary summation."
 		},
 		"taxTotalAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of the total of all tax amounts reported in this trade settlement payment monetary summation."
 		}

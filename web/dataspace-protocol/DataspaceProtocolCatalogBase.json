@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogBase",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolCatalogBase",
 	"title": "DataspaceProtocolCatalogBase",
 	"description": "Base catalog interface compliant with Eclipse Data Space Protocol, requiring an id and participantId.",
 	"type": "object",
@@ -20,28 +20,28 @@
 		"catalog": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolCatalogBase"
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolCatalogBase"
 			},
 			"description": "Nested catalogs."
 		},
 		"dataset": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDatasetBase"
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDatasetBase"
 			},
 			"description": "Datasets registered in this catalog."
 		},
 		"distribution": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDistributionBase"
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDistributionBase"
 			},
 			"description": "Distributions for this catalog."
 		},
 		"service": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolDataServiceBase"
+				"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolDataServiceBase"
 			},
 			"description": "Data services registered in this catalog."
 		}
@@ -136,7 +136,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
+									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -166,7 +166,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.twindev.org/foaf/FoafImage",
+									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -199,12 +199,12 @@
 								"foaf:made": {
 									"anyOf": [
 										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 										},
 										{
 											"type": "array",
 											"items": {
-												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 											}
 										}
 									],
@@ -212,22 +212,22 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:topic_interest": {
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 									"description": "A thing of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								}
@@ -249,7 +249,7 @@
 							"type": "object",
 							"properties": {
 								"@context": {
-									"$ref": "https://schema.twindev.org/foaf/FoafContextType",
+									"$ref": "https://schema.3sixty.global/foaf/FoafContextType",
 									"description": "The LD Context.",
 									"$comment": "Inherited from FoafAgent"
 								},
@@ -279,7 +279,7 @@
 									"$comment": "Inherited from FoafBaseObject"
 								},
 								"foaf:depiction": {
-									"$ref": "https://schema.twindev.org/foaf/FoafImage",
+									"$ref": "https://schema.3sixty.global/foaf/FoafImage",
 									"description": "A depiction of some thing.",
 									"$comment": "Inherited from FoafBaseObject"
 								},
@@ -312,12 +312,12 @@
 								"foaf:made": {
 									"anyOf": [
 										{
-											"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+											"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 										},
 										{
 											"type": "array",
 											"items": {
-												"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+												"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 											}
 										}
 									],
@@ -325,22 +325,22 @@
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:weblog": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "A weblog of some thing (whether person, group, company etc.).",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:openid": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "An OpenID for an agent.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:interest": {
-									"$ref": "https://schema.twindev.org/foaf/FoafDocument",
+									"$ref": "https://schema.3sixty.global/foaf/FoafDocument",
 									"description": "A page about a topic of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								},
 								"foaf:topic_interest": {
-									"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject",
+									"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject",
 									"description": "A thing of interest to this person.",
 									"$comment": "Inherited from FoafAgent"
 								}
@@ -358,7 +358,7 @@
 				"dcterms:accessRights": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -370,7 +370,7 @@
 				"dcterms:license": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -382,7 +382,7 @@
 				"dcterms:rights": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -414,7 +414,7 @@
 				"dcat:contactPoint": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -471,7 +471,7 @@
 				"dcat:qualifiedRelation": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-dcat/DcatRelationship"
+							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatRelationship"
 						},
 						{
 							"type": "string"
@@ -485,7 +485,7 @@
 					"type": "object",
 					"properties": {
 						"@type": {
-							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPolicyType",
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPolicyType",
 							"description": "The type of policy.\nMust be one of: \"Set\", \"Offer\", \"Agreement\""
 						},
 						"uid": {
@@ -513,10 +513,10 @@
 									"type": "string"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
 								},
 								{
 									"type": "array",
@@ -526,10 +526,10 @@
 												"type": "string"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
 											}
 										]
 									}
@@ -543,10 +543,10 @@
 									"type": "string"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
 								},
 								{
 									"type": "array",
@@ -556,10 +556,10 @@
 												"type": "string"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlParty"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlParty"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPartyCollection"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPartyCollection"
 											}
 										]
 									}
@@ -573,10 +573,10 @@
 									"type": "string"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
 								},
 								{
 									"type": "array",
@@ -586,10 +586,10 @@
 												"type": "string"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAsset"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAsset"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAssetCollection"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAssetCollection"
 											}
 										]
 									}
@@ -600,26 +600,26 @@
 						"action": {
 							"anyOf": [
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
 								},
 								{
 									"type": "string"
 								},
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
 								},
 								{
 									"type": "array",
 									"items": {
 										"anyOf": [
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlActionType"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlActionType"
 											},
 											{
 												"type": "string"
 											},
 											{
-												"$ref": "https://schema.twindev.org/w3c-odrl/OdrlAction"
+												"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlAction"
 											}
 										]
 									}
@@ -642,18 +642,18 @@
 							"description": "The parent policy(ies) this policy inherits from.\nIRIs identifying the parent Policy(ies)."
 						},
 						"conflict": {
-							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlConflictStrategyType",
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlConflictStrategyType",
 							"description": "The conflict resolution strategy.\n- perm: Permissions override Prohibitions\n- prohibit: Prohibitions override Permissions\n- invalid: Policy is void if conflicts exist (default)"
 						},
 						"permission": {
 							"anyOf": [
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
 								},
 								{
 									"type": "array",
 									"items": {
-										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlPermission"
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlPermission"
 									}
 								}
 							],
@@ -662,12 +662,12 @@
 						"prohibition": {
 							"anyOf": [
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
 								},
 								{
 									"type": "array",
 									"items": {
-										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlProhibition"
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlProhibition"
 									}
 								}
 							],
@@ -676,19 +676,19 @@
 						"obligation": {
 							"anyOf": [
 								{
-									"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+									"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
 								},
 								{
 									"type": "array",
 									"items": {
-										"$ref": "https://schema.twindev.org/w3c-odrl/OdrlDuty"
+										"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlDuty"
 									}
 								}
 							],
 							"description": "The obligations in the policy.\nAt least one of permission, prohibition, or obligation must be present."
 						},
 						"@context": {
-							"$ref": "https://schema.twindev.org/w3c-odrl/OdrlContextType",
+							"$ref": "https://schema.3sixty.global/w3c-odrl/OdrlContextType",
 							"description": "The context for the policy.\nMust include \"https://www.w3.org/ns/odrl.jsonld\""
 						}
 					},
@@ -708,7 +708,7 @@
 				"dcterms:spatial": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -729,7 +729,7 @@
 					"$comment": "Inherited from DcatDatasetBase"
 				},
 				"dcterms:temporal": {
-					"$ref": "https://schema.twindev.org/dublin-core/DublinCorePeriodOfTime",
+					"$ref": "https://schema.3sixty.global/dublin-core/DublinCorePeriodOfTime",
 					"description": "The temporal period that the dataset covers.",
 					"$comment": "Inherited from DcatDatasetBase"
 				},
@@ -742,7 +742,7 @@
 				"prov:wasGeneratedBy": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/json-ld/JsonLdNodeObject"
+							"$ref": "https://schema.3sixty.global/json-ld/JsonLdNodeObject"
 						},
 						{
 							"type": "string"
@@ -759,12 +759,12 @@
 				"dcat:themeTaxonomy": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+								"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 							}
 						}
 					],
@@ -774,12 +774,12 @@
 				"dcat:resource": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.twindev.org/w3c-dcat/DcatResource"
+								"$ref": "https://schema.3sixty.global/w3c-dcat/DcatResource"
 							}
 						}
 					],
@@ -789,12 +789,12 @@
 				"dcat:record": {
 					"anyOf": [
 						{
-							"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
+							"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
 						},
 						{
 							"type": "array",
 							"items": {
-								"$ref": "https://schema.twindev.org/w3c-dcat/DcatCatalogRecordBase"
+								"$ref": "https://schema.3sixty.global/w3c-dcat/DcatCatalogRecordBase"
 							}
 						}
 					],

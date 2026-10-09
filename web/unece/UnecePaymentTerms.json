@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UnecePaymentTerms",
+	"$id": "https://schema.3sixty.global/unece/UnecePaymentTerms",
 	"title": "UnecePaymentTerms",
 	"description": "Terms and conditions by which payment has been or will be made for trade purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,14 +16,14 @@
 		"applicablePaymentDiscountTerms": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentDiscountTerms"
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentDiscountTerms"
 			},
 			"description": "Trade payment discount terms applicable to these trade payment terms."
 		},
 		"applicablePaymentPenaltyTerms": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePaymentPenaltyTerms"
+				"$ref": "https://schema.3sixty.global/unece/UnecePaymentPenaltyTerms"
 			},
 			"description": "Trade payment penalty terms applicable to these trade payment terms."
 		},
@@ -42,13 +42,13 @@
 			"format": "date-time"
 		},
 		"durationUnitDurationMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceDurationUnitMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceDurationUnitMeasureType",
 			"description": "The measure of a length of time duration specified for these trade payment terms, such as 12 hours, 15 days, 2 weeks, 3\nmonths, 5 years."
 		},
 		"equivalentAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "An equivalent monetary value to be transferred between debtor and creditor before deduction of charges for these trade\npayment terms, expressed in the currency of the debtor's account which is different from the currency in which it is to\nbe transferred."
 		},
@@ -59,7 +59,7 @@
 		"instructedAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value that has been instructed to be transferred between debtor and creditor for these trade payment terms\nbefore deduction of charges."
 		},
@@ -70,7 +70,7 @@
 		"partialPaymentAmount": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAmountType"
+				"$ref": "https://schema.3sixty.global/unece/UneceAmountType"
 			},
 			"description": "A monetary value of a partial payment in these trade payment terms."
 		},
@@ -81,7 +81,7 @@
 		"payeeParty": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTradeParty"
+				"$ref": "https://schema.3sixty.global/unece/UneceTradeParty"
 			},
 			"description": "A payee party in these trade payment terms."
 		},
@@ -92,13 +92,13 @@
 		"paymentTermsId": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsId"
+					"$ref": "https://schema.3sixty.global/unece/UnecePaymentTermsId"
 				},
 				{
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of these trade payment terms."
@@ -108,7 +108,7 @@
 			"items": {
 				"anyOf": [
 					{
-						"$ref": "https://schema.twindev.org/unece/UnecePaymentTermsTypeCodeList"
+						"$ref": "https://schema.3sixty.global/unece/UnecePaymentTermsTypeCodeList"
 					},
 					{
 						"type": "string"
@@ -118,7 +118,7 @@
 			"description": "A code specifying the type of trade payment terms."
 		},
 		"settlementPeriodMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date,\nsuch as 30 days, 3 months."
 		},
 		"tradePaymentTermsDirectDebitMandateId": {
@@ -127,7 +127,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of a direct debit mandate in these trade payment terms."
@@ -142,7 +142,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier of a payment means in these trade payment terms."

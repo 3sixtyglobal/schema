@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTransportRoute",
+	"$id": "https://schema.3sixty.global/unece/UneceTransportRoute",
 	"title": "UneceTransportRoute",
 	"description": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"frequencyEffectivePeriod": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod"
+				"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod"
 			},
 			"description": "A specified period of time for which a frequency is effective for this transport route."
 		},
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier of this transport route."
@@ -46,7 +46,7 @@
 		"itineraryStopEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
 		},
@@ -60,7 +60,7 @@
 			"description": "A type, expressed as text, for this transport route."
 		},
 		"scheduledPeriod": {
-			"$ref": "https://schema.twindev.org/unece/UneceSpecifiedPeriod",
+			"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedPeriod",
 			"description": "The specified period during which this transport route is scheduled."
 		},
 		"securityLevelCode": {
@@ -68,7 +68,7 @@
 			"description": "A code specifying a security level for this transport route."
 		},
 		"specifiedTransportMovement": {
-			"$ref": "https://schema.twindev.org/unece/UneceTransportMovement",
+			"$ref": "https://schema.3sixty.global/unece/UneceTransportMovement",
 			"description": "The logistics transport movement specified for this transport route."
 		},
 		"transportMeans": {
@@ -76,7 +76,7 @@
 			"description": "A means of transport, expressed as text, for this transport route."
 		},
 		"transportRouteStatusCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceStatusCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceStatusCodeList",
 			"description": "The code specifying a status for a transport route, such as planned or actual."
 		}
 	},

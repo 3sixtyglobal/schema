@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAirFlowUnitMeasureType",
+	"$id": "https://schema.3sixty.global/unece/UneceAirFlowUnitMeasureType",
 	"title": "UneceAirFlowUnitMeasureType",
 	"description": "The numeric value determined by a measurement of air flow.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -18,7 +18,7 @@
 			"description": "The numeric value."
 		},
 		"AirFlowUnitMeasureTypeCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceAirFlowUnitMeasureCode",
+			"$ref": "https://schema.3sixty.global/unece/UneceAirFlowUnitMeasureCode",
 			"description": "The unit code."
 		}
 	},

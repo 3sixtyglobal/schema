@@ -1,14 +1,14 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaEvent",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEvent",
 	"title": "DcsaEvent",
 	"description": "A DCSA Event object.\n\nSource: `event` schema in the DCSA Event Domain (v3.1.0).",
 	"anyOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventWithPayload"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventWithPayload"
 		},
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventRetraction"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventRetraction"
 		}
 	]
 }

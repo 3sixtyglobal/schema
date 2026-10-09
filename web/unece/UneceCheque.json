@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCheque",
+	"$id": "https://schema.3sixty.global/unece/UneceCheque",
 	"title": "UneceCheque",
 	"description": "A written payment order to a bank to pay the stated sum from the drawer's account.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -39,7 +39,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this payment cheque."
@@ -72,7 +72,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceChequeTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceChequeTypeCodeList"
 				},
 				{
 					"type": "string"

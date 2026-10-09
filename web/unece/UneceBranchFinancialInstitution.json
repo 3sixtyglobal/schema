@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceBranchFinancialInstitution",
+	"$id": "https://schema.3sixty.global/unece/UneceBranchFinancialInstitution",
 	"title": "UneceBranchFinancialInstitution",
 	"description": "A sub-division of a bank, building society, credit union, stock brokerage, or similar business; established primarily to\nprovide financial services and financial transactions.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,13 +19,13 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The unique identifier for this branch of a financial institution."
 		},
 		"locationAddress": {
-			"$ref": "https://schema.twindev.org/unece/UneceFinancialInstitutionAddress",
+			"$ref": "https://schema.3sixty.global/unece/UneceFinancialInstitutionAddress",
 			"description": "The location address for this branch of a financial institution."
 		},
 		"name": {

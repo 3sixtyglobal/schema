@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaBaseReeferEvent",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaBaseReeferEvent",
 	"title": "DcsaBaseReeferEvent",
 	"description": "Base reefer event attributes.\n\nSource: `baseReeferEvent` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -14,15 +14,15 @@
 			"description": "Reefer events are always \"ACT\"."
 		},
 		"reeferEventTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferEventTypeCodes",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferEventTypeCodes",
 			"description": "Reefer event type code."
 		},
 		"measurements": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferMeasurements",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferMeasurements",
 			"description": "Measured reefer values (conditioned by event type)."
 		},
 		"setpoints": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaReeferSetpoint",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaReeferSetpoint",
 			"description": "Reefer setpoint values (conditioned by event type)."
 		},
 		"geoLocation": {
@@ -35,7 +35,7 @@
 		"relatedDocumentReferences": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
 			},
 			"description": "Related document references."
 		}

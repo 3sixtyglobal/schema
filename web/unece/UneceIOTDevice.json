@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceIOTDevice",
+	"$id": "https://schema.3sixty.global/unece/UneceIOTDevice",
 	"title": "UneceIOTDevice",
 	"description": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously\ntransmit digital data.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the asset, such as a container, to which this monitoring IOT device is attached."
@@ -31,14 +31,14 @@
 		"embeddedSensor": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSensor"
+				"$ref": "https://schema.3sixty.global/unece/UneceSensor"
 			},
 			"description": "An embedded sensor of this monitoring IOT device."
 		},
 		"grantedCertificate": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductCertificate"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductCertificate"
 			},
 			"description": "A product certificate granted for this monitoring IOT device."
 		},
@@ -48,7 +48,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "An identifier for this monitoring IOT device."
@@ -56,12 +56,12 @@
 		"interfaceEquipment": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceEquipment"
+				"$ref": "https://schema.3sixty.global/unece/UneceEquipment"
 			},
 			"description": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
 		},
 		"latestReceivedGeographicalCoordinate": {
-			"$ref": "https://schema.twindev.org/unece/UneceGeographicalCoordinate",
+			"$ref": "https://schema.3sixty.global/unece/UneceGeographicalCoordinate",
 			"description": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
 		},
 		"latestReceivedSignalDateTime": {
@@ -70,7 +70,7 @@
 			"format": "date-time"
 		},
 		"manufacturerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The manufacturer party of this monitoring IOT device."
 		},
 		"modelId": {
@@ -79,7 +79,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "A model identifier for this monitoring IOT device."
@@ -89,11 +89,11 @@
 			"description": "The code specifying the operational status, such as broken, stolen, unpaired, inactive of this monitoring IOT device."
 		},
 		"operatorParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
 		},
 		"ownerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The owner party of this monitoring IOT device."
 		},
 		"positionCode": {
@@ -105,13 +105,13 @@
 			"description": "The code specifying a type of power source for this monitoring IOT device."
 		},
 		"providerParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTradeParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTradeParty",
 			"description": "The provider party for this monitoring IOT device."
 		},
 		"relatedEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCommunicationEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceCommunicationEvent"
 			},
 			"description": "A communication event related to this monitoring IOT device."
 		},
@@ -122,28 +122,28 @@
 		"remoteSensor": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceSensor"
+				"$ref": "https://schema.3sixty.global/unece/UneceSensor"
 			},
 			"description": "A remote sensor of this monitoring IOT device."
 		},
 		"reportedTransportEvent": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTransportEvent"
+				"$ref": "https://schema.3sixty.global/unece/UneceTransportEvent"
 			},
 			"description": "A transport event reported by this monitoring IOT device."
 		},
 		"reportingSensorPairing": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UnecePairing"
+				"$ref": "https://schema.3sixty.global/unece/UnecePairing"
 			},
 			"description": "A sensor communication pairing reported for this monitoring IOT device."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceIOTDeviceTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceIOTDeviceTypeCodeList"
 				},
 				{
 					"type": "string"

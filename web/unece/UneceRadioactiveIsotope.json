@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceRadioactiveIsotope",
+	"$id": "https://schema.3sixty.global/unece/UneceRadioactiveIsotope",
 	"title": "UneceRadioactiveIsotope",
 	"description": "Any of several species of the same chemical element with different masses whose nuclei are unstable and dissipate excess\nenergy by spontaneously emitting radiation in the form of alpha, beta, or gamma rays.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -16,7 +16,7 @@
 		"activityLevelMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of the activity level of this specified radioactive isotope."
 		},
@@ -31,14 +31,14 @@
 		"specifiedRadionuclide": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceRadionuclide"
+				"$ref": "https://schema.3sixty.global/unece/UneceRadionuclide"
 			},
 			"description": "The radionuclide details specified for this radioactive isotope."
 		},
 		"unitActivityLevelMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceUnitMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceUnitMeasureType"
 			},
 			"description": "A measure of the activity level of this specified radioactive isotope."
 		}

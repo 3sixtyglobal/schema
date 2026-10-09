@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsArticle",
+	"$id": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsArticle",
 	"title": "ActivityStreamsArticle",
 	"description": "A W3C Activity Streams Article.\n\nAn `Article` is a written work.",
 	"type": "object",
@@ -33,7 +33,7 @@
 	"required": ["type"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/w3c-activity-streams/ActivityStreamsDocument"
+			"$ref": "https://schema.3sixty.global/w3c-activity-streams/ActivityStreamsDocument"
 		}
 	]
 }

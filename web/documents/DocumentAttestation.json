@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/documents/DocumentAttestation",
+	"$id": "https://schema.3sixty.global/documents/DocumentAttestation",
 	"title": "DocumentAttestation",
 	"description": "Interface describing a document attestation.",
 	"type": "object",
@@ -12,10 +12,10 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.twindev.org/documents/"
+					"const": "https://schema.3sixty.global/documents/"
 				},
 				{
-					"const": "https://schema.twindev.org/common/"
+					"const": "https://schema.3sixty.global/common/"
 				}
 			],
 			"items": false,
@@ -32,7 +32,7 @@
 			"description": "The id of the document."
 		},
 		"documentCode": {
-			"$ref": "https://schema.twindev.org/unece/UneceDocumentCodeList",
+			"$ref": "https://schema.3sixty.global/unece/UneceDocumentCodeList",
 			"description": "The code for the document type."
 		},
 		"documentRevision": {

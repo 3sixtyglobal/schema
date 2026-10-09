@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceCooperatingOrganization",
+	"$id": "https://schema.3sixty.global/unece/UneceCooperatingOrganization",
 	"title": "UneceCooperatingOrganization",
 	"description": "An organized structure set up for a particular purpose, such as a business, government body, department, charity, or\nfinancial institution that is working together with another organization, business, or person.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -24,7 +24,7 @@
 		"usedInformationSource": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceInformationSource"
+				"$ref": "https://schema.3sixty.global/unece/UneceInformationSource"
 			},
 			"description": "A specified cooperative information source used for or from this cooperating organization."
 		}

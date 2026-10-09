@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaTransportSubscriptionBody",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaTransportSubscriptionBody",
 	"title": "DcsaTransportSubscriptionBody",
 	"description": "Transport subscription filters.\n\nSource: `transportSubscriptionBody` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
@@ -8,14 +8,14 @@
 		"transportEventTypeCodes": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaTransportEventTypeCodes"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportEventTypeCodes"
 			},
 			"description": "Transport event type codes to filter by."
 		}
 	},
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaTransportCallSubscriptionBody"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaTransportCallSubscriptionBody"
 		}
 	]
 }

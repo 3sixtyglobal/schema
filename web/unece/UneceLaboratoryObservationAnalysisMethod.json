@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceLaboratoryObservationAnalysisMethod",
+	"$id": "https://schema.3sixty.global/unece/UneceLaboratoryObservationAnalysisMethod",
 	"title": "UneceLaboratoryObservationAnalysisMethod",
 	"description": "A defined way of performing laboratory observation analysis.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -19,7 +19,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for the certificate granted to a party for this laboratory observation analysis method."
@@ -38,7 +38,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this laboratory observation analysis method."
@@ -60,7 +60,7 @@
 			"description": "The code specifying the type of analysis method obligatory for the laboratory observation."
 		},
 		"sampledObjectMinimumRequiredObjectSizeMeasure": {
-			"$ref": "https://schema.twindev.org/unece/UneceMeasureType",
+			"$ref": "https://schema.3sixty.global/unece/UneceMeasureType",
 			"description": "The measure of the minimum object size required for this laboratory observation analysis method."
 		},
 		"standardTypeCode": {

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceTTExchangedDocument",
+	"$id": "https://schema.3sixty.global/unece/UneceTTExchangedDocument",
 	"title": "UneceTTExchangedDocument",
 	"description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties\nfor Track and Trace (TT) purposes.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier for this TT exchanged document."
@@ -34,11 +34,11 @@
 			"format": "date-time"
 		},
 		"receiverSpecifiedParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
 			"description": "The receiving party specified for this TT exchanged document."
 		},
 		"senderSpecifiedParty": {
-			"$ref": "https://schema.twindev.org/unece/UneceTTParty",
+			"$ref": "https://schema.3sixty.global/unece/UneceTTParty",
 			"description": "The sending party specified for this TT exchanged document."
 		},
 		"tTExchangedDocumentPurposeCode": {

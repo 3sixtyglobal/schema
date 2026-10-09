@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/aig/AuditableItemGraphVertexVersionList",
+	"$id": "https://schema.3sixty.global/aig/AuditableItemGraphVertexVersionList",
 	"title": "AuditableItemGraphVertexVersionList",
 	"description": "Interface describing a list of auditable item graph vertex version numbers.",
 	"type": "object",
@@ -12,11 +12,11 @@
 					"const": "https://schema.org"
 				},
 				{
-					"const": "https://schema.twindev.org/aig/"
+					"const": "https://schema.3sixty.global/aig/"
 				}
 			],
 			"items": {
-				"$ref": "https://schema.twindev.org/json-ld/JsonLdContextDefinitionElement"
+				"$ref": "https://schema.3sixty.global/json-ld/JsonLdContextDefinitionElement"
 			},
 			"minItems": 2,
 			"description": "JSON-LD Context."

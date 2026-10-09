@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferProcess",
+	"$id": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferProcess",
 	"title": "DataspaceProtocolTransferProcess",
 	"description": "Interface for the Dataspace Protocol transfer process acknowledgment.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolContextType",
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolContextType",
 			"description": "The JSON-LD context."
 		},
 		"@type": {
@@ -22,7 +22,7 @@
 			"description": "MUST refer to the transfer identifier of the Provider side."
 		},
 		"state": {
-			"$ref": "https://schema.twindev.org/dataspace-protocol/DataspaceProtocolTransferProcessStateType",
+			"$ref": "https://schema.3sixty.global/dataspace-protocol/DataspaceProtocolTransferProcessStateType",
 			"description": "The transfer process state."
 		}
 	},

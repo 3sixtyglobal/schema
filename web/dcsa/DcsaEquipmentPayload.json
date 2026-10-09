@@ -1,16 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/dcsa/DcsaEquipmentPayload",
+	"$id": "https://schema.3sixty.global/dcsa/DcsaEquipmentPayload",
 	"title": "DcsaEquipmentPayload",
 	"description": "Equipment payload.\n\nSource: `equipmentPayload` schema in the DCSA Event Domain (v3.1.0).",
 	"type": "object",
 	"properties": {
 		"eventClassifierCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEventClassifierCodeNoReq",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventClassifierCodeNoReq",
 			"description": "Event classifier code."
 		},
 		"equipmentEventTypeCode": {
-			"$ref": "https://schema.twindev.org/dcsa/DcsaEquipmentEventTypeCodes",
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaEquipmentEventTypeCodes",
 			"description": "Equipment event type code."
 		},
 		"emptyIndicatorCode": {
@@ -39,14 +39,14 @@
 		"relatedDocumentReferences": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaRelatedDocumentReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaRelatedDocumentReference"
 			},
 			"description": "Related documents."
 		},
 		"references": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/dcsa/DcsaReference"
+				"$ref": "https://schema.3sixty.global/dcsa/DcsaReference"
 			},
 			"description": "Additional references."
 		}
@@ -54,7 +54,7 @@
 	"required": ["eventClassifierCode", "equipmentEventTypeCode", "emptyIndicatorCode"],
 	"allOf": [
 		{
-			"$ref": "https://schema.twindev.org/dcsa/DcsaBaseEvent"
+			"$ref": "https://schema.3sixty.global/dcsa/DcsaBaseEvent"
 		}
 	]
 }

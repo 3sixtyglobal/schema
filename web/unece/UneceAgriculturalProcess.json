@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceAgriculturalProcess",
+	"$id": "https://schema.3sixty.global/unece/UneceAgriculturalProcess",
 	"title": "UneceAgriculturalProcess",
 	"description": "A practice of cultivating land, raising crops, or treatment of the agricultural produce.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -26,7 +26,7 @@
 		"appliedAgriculturalApplication": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceAgriculturalApplication"
+				"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalApplication"
 			},
 			"description": "An agricultural application applied to a crop production agricultural process."
 		},
@@ -42,7 +42,7 @@
 		"harvestedBatch": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceCropProduceBatch"
+				"$ref": "https://schema.3sixty.global/unece/UneceCropProduceBatch"
 			},
 			"description": "A crop produce batch harvested in the crop production for this agricultural process."
 		},
@@ -54,21 +54,21 @@
 		"productionWasteInstructions": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceDisposalInstructions"
+				"$ref": "https://schema.3sixty.global/unece/UneceDisposalInstructions"
 			},
 			"description": "Disposal instructions related to production waste for this agricultural crop production process."
 		},
 		"reportedProductionWasteMaterial": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceProductionWasteMaterial"
+				"$ref": "https://schema.3sixty.global/unece/UneceProductionWasteMaterial"
 			},
 			"description": "Production waste material reported for this agricultural crop production process."
 		},
 		"specifiedFieldCrop": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceFieldCrop"
+				"$ref": "https://schema.3sixty.global/unece/UneceFieldCrop"
 			},
 			"description": "A field crop specified for this crop production agricultural process."
 		},
@@ -83,7 +83,7 @@
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceAgriculturalProcessTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceAgriculturalProcessTypeCodeList"
 				},
 				{
 					"type": "string"

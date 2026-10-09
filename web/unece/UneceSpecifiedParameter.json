@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://schema.twindev.org/unece/UneceSpecifiedParameter",
+	"$id": "https://schema.3sixty.global/unece/UneceSpecifiedParameter",
 	"title": "UneceSpecifiedParameter",
 	"description": "A specified feature that is fixed for the case in question but may be different in other cases.",
 	"type": "object",
 	"properties": {
 		"@context": {
-			"$ref": "https://schema.twindev.org/unece/UneceContextType",
+			"$ref": "https://schema.3sixty.global/unece/UneceContextType",
 			"description": "JSON-LD Context."
 		},
 		"type": {
@@ -23,7 +23,7 @@
 					"type": "string"
 				},
 				{
-					"$ref": "https://schema.twindev.org/json-ld/JsonLdValueObject"
+					"$ref": "https://schema.3sixty.global/json-ld/JsonLdValueObject"
 				}
 			],
 			"description": "The identifier of this specified parameter."
@@ -43,14 +43,14 @@
 		"statusValueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of a value of the status for this specified parameter."
 		},
 		"typeCode": {
 			"anyOf": [
 				{
-					"$ref": "https://schema.twindev.org/unece/UneceSpecifiedParameterTypeCodeList"
+					"$ref": "https://schema.3sixty.global/unece/UneceSpecifiedParameterTypeCodeList"
 				},
 				{
 					"type": "string"
@@ -69,14 +69,14 @@
 		"valueMeasure": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceMeasureType"
+				"$ref": "https://schema.3sixty.global/unece/UneceMeasureType"
 			},
 			"description": "A measure of a value for this specified parameter."
 		},
 		"valueTolerance": {
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.twindev.org/unece/UneceTolerance"
+				"$ref": "https://schema.3sixty.global/unece/UneceTolerance"
 			},
 			"description": "A tolerance specified for the value of this parameter."
 		}
